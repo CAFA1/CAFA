@@ -1,3 +1,5 @@
 *.so
 *.o
 obj-ia32
+1-1-0logs.txt
+1-1-addrs.txt
