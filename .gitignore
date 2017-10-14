@@ -1,5 +1,5 @@
 *.so
 *.o
-pintraces/obj-ia32
+pintraces/obj-ia32/
 pintraces/1-1-0logs.txt
 pintraces/1-1-addrs.txt
