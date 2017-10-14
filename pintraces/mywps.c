@@ -10,6 +10,10 @@ struct mm{
   int crc1;
   int crc2;
 };
+bool match(int a,int b)
+{
+  return a==b
+}
 int main(int argc, char **argv)
 {
   int fd;
@@ -37,10 +41,12 @@ int main(int argc, char **argv)
   printf("crc_code : %lx\n", crc_code);  
   printf("crc_code_file : %lx\n", crcfile); 
 
-  if(mm1.crc2==crcfile)
+  if(match(mm1.crc2,crcfile))
   {
     printf("match\n");
+    
   }
+ 
   close(fd);  
     
   return 0;

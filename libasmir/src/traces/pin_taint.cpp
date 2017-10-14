@@ -1721,6 +1721,7 @@ void InitInstr() {
   instrument_functions[XED_ICLASS_MOVSD] = &Instrument_MOV; //83
   instrument_functions[XED_ICLASS_MOVZX] = &Instrument_MOV; //236
   instrument_functions[XED_ICLASS_MOVSX] = &Instrument_MOV; //378
+  //instrument_functions[XED_ICLASS_MOVSX] = &Instrument_MOV; //378
   //instrument_functions[XED_ICLASS_FXCH] = &Instrument_FXCH; //378
   //instrument_functions[XED_ICLASS_FUCOMI] = &Instrument_FUCOMI; //378
   
@@ -1964,7 +1965,12 @@ VOID InstructionProp(INS ins, VOID *v)
       IARG_END);
     return;
   }
+  //liu 1014
   
+  //liu 1014
+
+
+
   // TODO:These are already instruction specific, need to move them to instfunction.c
   //查看是不是xor A,A 等类型，如果是，则清除污点
   if (INS_Mnemonic(ins) == "XOR" || INS_Mnemonic(ins) == "SUB" || INS_Mnemonic(ins) == "SBB")
