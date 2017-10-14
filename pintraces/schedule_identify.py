@@ -26,12 +26,12 @@ def run_cmd(offsets1,offsets2,coverage,elfpath,filepath):
     print "[*] Just about to run ", pin_cmd  #-skip-taints 2
     os.system(pin_cmd)
     
-def get_jz():
+def get_high():
     f1 = open("1-1-0logs.txt","r")
     result = list()
     for line in f1.readlines():
         if(line.find("[HIGH-TNT_JMP] PC ")!=-1):
-            result.append(int(line[line.index("0x"):line.index(" count")],16))
+            result.append(int(line[line.index("0x"):],16))
          
     return result
 def get_bbl():
@@ -125,7 +125,11 @@ def compare_run(offsets1,offsets2,coverage,elfpath):
         #print_list(result_jz)
     #print_dict(r_good)
     #print_dict(r_bad)
-
+    result_high=get_high()
+    myset1 = set(result_high)
+    result_all=myset1&myset
+    print "result_all!!!!!!"
+    print_list(result_all)
 
     
 

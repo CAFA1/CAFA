@@ -208,6 +208,18 @@ ADDRINT GetRtnAddr(ADDRINT addr)
     return 0;
   }
 }
+//liu 1014
+ bool REG_is_eflag(REG r)
+{
+  if(r==REG_EFLAGS)
+  {
+    return true;
+  }
+  else
+  {
+    return false;
+  }
+}
 //liu 925
 static bool REG_is_dift_eflag(REG r)
 {
@@ -2075,25 +2087,13 @@ VOID InstructionProp(INS ins, VOID *v)
     uint32_t index_reg_write2 =0 ;
     // dont transfort instructions
     if(INS_Opcode(ins)==XED_ICLASS_CALL_FAR || INS_Opcode(ins)==XED_ICLASS_CALL_NEAR
-      || INS_Opcode(ins)==XED_ICLASS_RET_FAR || INS_Opcode(ins)==XED_ICLASS_RET_NEAR
+      || INS_Opcode(ins)==XED_ICLASS_RET_FAR || INS_Opcode(ins)==XED_ICLASS_RET_NEAR|| INS_Opcode(ins)==XED_ICLASS_JMP
       )
     {
       
       return;
     }
-    // print operands of other instruction
-    if(INS_Opcode(ins)==XED_ICLASS_SETNZ || INS_Opcode(ins)==XED_ICLASS_SETZ
-      
-      )
-    {
-      TraceFile<< "here instructions: "<<INS_Disassemble(ins)<<endl;
-      for(ii=0; ii < valcount; ii++) 
-      {
-        //opndvals[valcount].type.type = MEM;
-        TraceFile<<" operation: "<<opndvals[ii].taint<<" reg: "<<REG_StringShort((LEVEL_BASE::REG)opndvals[ii].reg)<<" size: "<<opndvals[ii].type.size<<endl;
-      }
-      return;
-    }
+    
 
      for(ii=0; ii < valcount; ii++) 
     {
@@ -2143,32 +2143,47 @@ VOID InstructionProp(INS ins, VOID *v)
       }
       
     }
+    /*
+    // print operands of other instruction
+    if(INS_Opcode(ins)==XED_ICLASS_SETZ 
+      //|| INS_Opcode(ins)==XED_ICLASS_SETNZ || XED_ICLASS_JMP == INS_Opcode(ins) || XED_ICLASS_CMP == INS_Opcode(ins)
+      
+      )
+    {
+      TraceFile<< "here instructions: "<<INS_Disassemble(ins)<<" count_reg_read: "<<count_reg_read<<" count_reg_write: "<<count_reg_write<<" memRead: "<<memRead<<" memWrite: "<<memWrite<<" index_reg_read: "<<index_reg_read<<" REG_EFLAGS: "<<REG_EFLAGS<<endl;
+      for(ii=0; ii < valcount; ii++) 
+      {
 
+        
+        TraceFile<<" operation: "<<opndvals[ii].taint<<" reg: "<<REG_StringShort((LEVEL_BASE::REG)opndvals[ii].reg)<<" size: "<<opndvals[ii].type.size<<endl;
+      }
+      
+    }*/
 
     if(count_reg_read==0 && count_reg_write==0 && memRead==0 && memWrite==0)
     {
       
-      TraceFile<<" 0->0: "<<INS_Disassemble(ins)<<" iaddr "<<hex<<iaddr<<endl;
+      //TraceFile<<" 0->0: "<<INS_Disassemble(ins)<<" iaddr "<<hex<<iaddr<<endl;
 
         
       return;
     } 
-    //count_reg_read 0x2 count_reg_write 0x3 memRead 0 memWrite 0
-    else if(count_reg_read==2 && count_reg_write==3 && memRead==0 && memWrite==0)
+      
+    else if(count_reg_read==1 && count_reg_write==1 && memRead==0 && memWrite==0)
     {
-      if(REG_is_dift_eflag(static_cast<REG>(index_reg_write)))
+      if(REG_is_eflag((LEVEL_BASE::REG)index_reg_read))
       {
-        TraceFile<<" R2->R3: "<<INS_Disassemble(ins)<<" iaddr "<<hex<<iaddr<<endl;
+        TraceFile<<" eflags: "<<INS_Disassemble(ins)<<" iaddr "<<hex<<iaddr<<endl;
+
+        TraceFile<<"read reg: "<<REG_StringShort((LEVEL_BASE::REG)index_reg_read)<<" write reg: "<<REG_StringShort((LEVEL_BASE::REG)index_reg_write)<<endl;
 
         IFCOND(ins);   
         INS_InsertThenCall(ins,IPOINT_BEFORE, 
-          (AFUNPTR) liuR2_R3,IARG_FAST_ANALYSIS_CALL,
+          (AFUNPTR) liuR_R,IARG_FAST_ANALYSIS_CALL,
           IARG_UINT32, iaddr,
           IARG_UINT32, index_reg_read,
           IARG_UINT32, index_reg_write,
-          IARG_UINT32, index_reg_read1,
-          IARG_UINT32, index_reg_write1,
-          IARG_UINT32, index_reg_write2,
+          
           IARG_THREAD_ID,
           IARG_END);
       }
