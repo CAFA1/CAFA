@@ -1,0 +1,7368 @@
+"solver.ml" 15 241 274 "solver.ml" 15 241 278
+type(
+  string
+)
+ident(
+  def name "solver.ml" 15 241 310 "solver.ml" 15 241 314
+)
+"solver.ml" 15 241 281 "solver.ml" 15 241 289
+type(
+  string
+)
+"solver.ml" 15 241 294 "solver.ml" 15 241 301
+type(
+  [> `NoDebug ]
+)
+ident(
+  def default "solver.ml" 15 241 310 "solver.ml" 15 241 314
+)
+"solver.ml" 15 241 302 "solver.ml" 15 241 310
+type(
+  [> `NoDebug ] as 'a
+)
+"solver.ml" 15 241 252 "solver.ml" 15 241 315
+call(
+  stack
+)
+"solver.ml" 20 360 364 "solver.ml" 20 360 370
+type(
+  string -> 'a
+)
+ident(
+  def serror "solver.ml" 23 422 422 --
+)
+"solver.ml" 20 360 371 "solver.ml" 20 360 372
+type(
+  string
+)
+ident(
+  def s "solver.ml" 20 360 375 "solver.ml" 20 360 398
+)
+"solver.ml" 20 360 375 "solver.ml" 20 360 380
+type(
+  exn -> 'a
+)
+ident(
+  ext_ref Pervasives.raise
+)
+"solver.ml" 20 360 395 "solver.ml" 20 360 396
+type(
+  string
+)
+ident(
+  int_ref s "solver.ml" 20 360 371 "solver.ml" 20 360 372
+)
+"solver.ml" 20 360 382 "solver.ml" 20 360 397
+type(
+  exn
+)
+"solver.ml" 20 360 375 "solver.ml" 20 360 398
+type(
+  'a
+)
+"solver.ml" 20 360 371 "solver.ml" 20 360 398
+type(
+  string -> 'a
+)
+"solver.ml" 23 422 426 "solver.ml" 23 422 446
+type(
+  int array -> string
+)
+ident(
+  def byte_array_to_string "solver.ml" 30 647 647 --
+)
+"solver.ml" 23 422 447 "solver.ml" 23 422 449
+type(
+  int array
+)
+ident(
+  def ar "solver.ml" 24 452 454 "solver.ml" 27 605 608
+)
+"solver.ml" 24 452 458 "solver.ml" 24 452 467
+type(
+  int
+)
+"solver.ml" 24 452 470 "solver.ml" 24 452 482
+type(
+  int array -> int
+)
+ident(
+  ext_ref Array.length
+)
+"solver.ml" 24 452 483 "solver.ml" 24 452 485
+type(
+  int array
+)
+ident(
+  int_ref ar "solver.ml" 23 422 447 "solver.ml" 23 422 449
+)
+"solver.ml" 24 452 470 "solver.ml" 24 452 485
+type(
+  int
+)
+"solver.ml" 25 489 495 "solver.ml" 25 489 496
+type(
+  string
+)
+"solver.ml" 25 489 499 "solver.ml" 25 489 512
+type(
+  int -> string
+)
+ident(
+  ext_ref String.create
+)
+"solver.ml" 25 489 513 "solver.ml" 25 489 522
+type(
+  int
+)
+ident(
+  int_ref bitlength "solver.ml" 24 452 458 "solver.ml" 24 452 467
+)
+"solver.ml" 25 489 499 "solver.ml" 25 489 522
+type(
+  string
+)
+"solver.ml" 26 526 528 "solver.ml" 26 526 539
+type(
+  (int -> int -> unit) -> int array -> unit
+)
+ident(
+  ext_ref Array.iteri
+)
+"solver.ml" 26 526 545 "solver.ml" 26 526 546
+type(
+  int
+)
+ident(
+  def i "solver.ml" 26 526 547 "solver.ml" 26 526 599
+)
+"solver.ml" 26 526 547 "solver.ml" 26 526 548
+type(
+  int
+)
+ident(
+  def c "solver.ml" 26 526 552 "solver.ml" 26 526 599
+)
+"solver.ml" 26 526 552 "solver.ml" 26 526 553
+type(
+  string
+)
+ident(
+  int_ref s "solver.ml" 25 489 495 "solver.ml" 25 489 496
+)
+"solver.ml" 26 526 555 "solver.ml" 26 526 564
+type(
+  int
+)
+ident(
+  int_ref bitlength "solver.ml" 24 452 458 "solver.ml" 24 452 467
+)
+"solver.ml" 26 526 565 "solver.ml" 26 526 566
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( - )
+)
+"solver.ml" 26 526 567 "solver.ml" 26 526 568
+type(
+  int
+)
+ident(
+  int_ref i "solver.ml" 26 526 545 "solver.ml" 26 526 546
+)
+"solver.ml" 26 526 555 "solver.ml" 26 526 568
+type(
+  int
+)
+"solver.ml" 26 526 569 "solver.ml" 26 526 570
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( - )
+)
+"solver.ml" 26 526 571 "solver.ml" 26 526 572
+type(
+  int
+)
+"solver.ml" 26 526 555 "solver.ml" 26 526 572
+type(
+  int
+)
+"solver.ml" 26 526 578 "solver.ml" 26 526 589
+type(
+  int -> char
+)
+ident(
+  ext_ref Pervasives.char_of_int
+)
+"solver.ml" 26 526 591 "solver.ml" 26 526 592
+type(
+  int
+)
+ident(
+  int_ref c "solver.ml" 26 526 547 "solver.ml" 26 526 548
+)
+"solver.ml" 26 526 592 "solver.ml" 26 526 593
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( + )
+)
+"solver.ml" 26 526 593 "solver.ml" 26 526 597
+type(
+  int
+)
+"solver.ml" 26 526 591 "solver.ml" 26 526 597
+type(
+  int
+)
+"solver.ml" 26 526 578 "solver.ml" 26 526 598
+call(
+  stack
+)
+type(
+  char
+)
+"solver.ml" 26 526 552 "solver.ml" 26 526 599
+type(
+  unit
+)
+type(
+  string -> int -> char -> unit
+)
+ident(
+  ext_ref String.set
+)
+"solver.ml" 26 526 547 "solver.ml" 26 526 599
+type(
+  int -> unit
+)
+"solver.ml" 26 526 545 "solver.ml" 26 526 599
+type(
+  int -> int -> unit
+)
+"solver.ml" 26 526 601 "solver.ml" 26 526 603
+type(
+  int array
+)
+ident(
+  int_ref ar "solver.ml" 23 422 447 "solver.ml" 23 422 449
+)
+"solver.ml" 26 526 528 "solver.ml" 26 526 603
+call(
+  stack
+)
+type(
+  unit
+)
+"solver.ml" 27 605 607 "solver.ml" 27 605 608
+type(
+  string
+)
+ident(
+  int_ref s "solver.ml" 25 489 495 "solver.ml" 25 489 496
+)
+"solver.ml" 26 526 528 "solver.ml" 27 605 608
+type(
+  string
+)
+"solver.ml" 25 489 491 "solver.ml" 27 605 608
+type(
+  string
+)
+"solver.ml" 24 452 454 "solver.ml" 27 605 608
+type(
+  string
+)
+"solver.ml" 23 422 447 "solver.ml" 27 605 608
+type(
+  int array -> string
+)
+"solver.ml" 30 647 651 "solver.ml" 30 647 659
+type(
+  Type.typ -> int
+)
+ident(
+  def get_bits "solver.ml" 32 687 687 --
+)
+"solver.ml" 30 647 662 "solver.ml" 30 647 685
+type(
+  Type.typ -> int
+)
+ident(
+  ext_ref Typecheck.bits_of_width
+)
+"solver.ml" 32 687 691 "solver.ml" 32 687 698
+type(
+  int ref
+)
+ident(
+  def timeout "solver.ml" 35 755 755 --
+)
+"solver.ml" 32 687 701 "solver.ml" 32 687 704
+type(
+  int -> int ref
+)
+ident(
+  ext_ref Pervasives.ref
+)
+"solver.ml" 32 687 705 "solver.ml" 32 687 706
+type(
+  int
+)
+"solver.ml" 32 687 701 "solver.ml" 32 687 706
+type(
+  int ref
+)
+"solver.ml" 82 2711 2717 "solver.ml" 82 2711 2721
+type(
+  string
+)
+ident(
+  def name "solver.ml" 83 2738 2740 "solver.ml" 98 3081 3084
+)
+"solver.ml" 82 2711 2724 "solver.ml" 82 2711 2737
+type(
+  string
+)
+"solver.ml" 83 2738 2744 "solver.ml" 83 2738 2749
+type(
+  'a -> 'b
+)
+ident(
+  def abort "solver.ml" 84 2786 2788 "solver.ml" 98 3081 3084
+)
+"solver.ml" 83 2738 2750 "solver.ml" 83 2738 2751
+type(
+  'a
+)
+"solver.ml" 83 2738 2754 "solver.ml" 83 2738 2762
+type(
+  string -> 'b
+)
+ident(
+  ext_ref Pervasives.failwith
+)
+"solver.ml" 83 2738 2763 "solver.ml" 83 2738 2785
+type(
+  string
+)
+"solver.ml" 83 2738 2754 "solver.ml" 83 2738 2785
+call(
+  tail
+)
+type(
+  'b
+)
+"solver.ml" 83 2738 2750 "solver.ml" 83 2738 2785
+type(
+  'a -> 'b
+)
+"solver.ml" 84 2786 2792 "solver.ml" 84 2786 2798
+type(
+  'c -> 'd
+)
+ident(
+  def mk_set "solver.ml" 96 3059 3079 "solver.ml" 98 3081 3084
+)
+"solver.ml" 84 2786 2801 "solver.ml" 84 2786 2806
+type(
+  'c -> 'd
+)
+ident(
+  int_ref abort "solver.ml" 83 2738 2744 "solver.ml" 83 2738 2749
+)
+"solver.ml" 85 2807 2813 "solver.ml" 85 2807 2820
+type(
+  'e -> 'f
+)
+ident(
+  def del_set "solver.ml" 96 3059 3079 "solver.ml" 98 3081 3084
+)
+"solver.ml" 85 2807 2823 "solver.ml" 85 2807 2828
+type(
+  'e -> 'f
+)
+ident(
+  int_ref abort "solver.ml" 83 2738 2744 "solver.ml" 83 2738 2749
+)
+"solver.ml" 86 2829 2835 "solver.ml" 86 2829 2842
+type(
+  'g -> 'h
+)
+ident(
+  def convert "solver.ml" 96 3059 3079 "solver.ml" 98 3081 3084
+)
+"solver.ml" 86 2829 2845 "solver.ml" 86 2829 2850
+type(
+  'g -> 'h
+)
+ident(
+  int_ref abort "solver.ml" 83 2738 2744 "solver.ml" 83 2738 2749
+)
+"solver.ml" 87 2851 2857 "solver.ml" 87 2851 2868
+type(
+  'i -> 'j
+)
+ident(
+  def add_binding "solver.ml" 96 3059 3079 "solver.ml" 98 3081 3084
+)
+"solver.ml" 87 2851 2871 "solver.ml" 87 2851 2876
+type(
+  'i -> 'j
+)
+ident(
+  int_ref abort "solver.ml" 83 2738 2744 "solver.ml" 83 2738 2749
+)
+"solver.ml" 88 2877 2883 "solver.ml" 88 2877 2894
+type(
+  'k -> 'l
+)
+ident(
+  def del_binding "solver.ml" 96 3059 3079 "solver.ml" 98 3081 3084
+)
+"solver.ml" 88 2877 2897 "solver.ml" 88 2877 2902
+type(
+  'k -> 'l
+)
+ident(
+  int_ref abort "solver.ml" 83 2738 2744 "solver.ml" 83 2738 2749
+)
+"solver.ml" 89 2903 2909 "solver.ml" 89 2903 2923
+type(
+  'm -> 'n
+)
+ident(
+  def add_constraint "solver.ml" 96 3059 3079 "solver.ml" 98 3081 3084
+)
+"solver.ml" 89 2903 2926 "solver.ml" 89 2903 2931
+type(
+  'm -> 'n
+)
+ident(
+  int_ref abort "solver.ml" 83 2738 2744 "solver.ml" 83 2738 2749
+)
+"solver.ml" 90 2932 2938 "solver.ml" 90 2932 2944
+type(
+  'o -> 'p
+)
+ident(
+  def is_sat "solver.ml" 96 3059 3079 "solver.ml" 98 3081 3084
+)
+"solver.ml" 90 2932 2947 "solver.ml" 90 2932 2952
+type(
+  'o -> 'p
+)
+ident(
+  int_ref abort "solver.ml" 83 2738 2744 "solver.ml" 83 2738 2749
+)
+"solver.ml" 91 2953 2959 "solver.ml" 91 2953 2968
+type(
+  'q -> 'r
+)
+ident(
+  def get_model "solver.ml" 96 3059 3079 "solver.ml" 98 3081 3084
+)
+"solver.ml" 91 2953 2971 "solver.ml" 91 2953 2976
+type(
+  'q -> 'r
+)
+ident(
+  int_ref abort "solver.ml" 83 2738 2744 "solver.ml" 83 2738 2749
+)
+"solver.ml" 92 2977 2983 "solver.ml" 92 2977 2992
+type(
+  's -> 't
+)
+ident(
+  def model_exp "solver.ml" 96 3059 3079 "solver.ml" 98 3081 3084
+)
+"solver.ml" 92 2977 2995 "solver.ml" 92 2977 3000
+type(
+  's -> 't
+)
+ident(
+  int_ref abort "solver.ml" 83 2738 2744 "solver.ml" 83 2738 2749
+)
+"solver.ml" 93 3001 3007 "solver.ml" 93 3001 3011
+type(
+  'u -> 'v
+)
+ident(
+  def push "solver.ml" 96 3059 3079 "solver.ml" 98 3081 3084
+)
+"solver.ml" 93 3001 3014 "solver.ml" 93 3001 3019
+type(
+  'u -> 'v
+)
+ident(
+  int_ref abort "solver.ml" 83 2738 2744 "solver.ml" 83 2738 2749
+)
+"solver.ml" 94 3020 3026 "solver.ml" 94 3020 3029
+type(
+  'w -> 'x
+)
+ident(
+  def pop "solver.ml" 96 3059 3079 "solver.ml" 98 3081 3084
+)
+"solver.ml" 94 3020 3032 "solver.ml" 94 3020 3037
+type(
+  'w -> 'x
+)
+ident(
+  int_ref abort "solver.ml" 83 2738 2744 "solver.ml" 83 2738 2749
+)
+"solver.ml" 95 3038 3044 "solver.ml" 95 3038 3050
+type(
+  'y -> 'z
+)
+ident(
+  def pp_sol "solver.ml" 96 3059 3079 "solver.ml" 98 3081 3084
+)
+"solver.ml" 95 3038 3053 "solver.ml" 95 3038 3058
+type(
+  'y -> 'z
+)
+ident(
+  int_ref abort "solver.ml" 83 2738 2744 "solver.ml" 83 2738 2749
+)
+"solver.ml" 96 3059 3065 "solver.ml" 96 3059 3071
+type(
+  'a1 -> 'b1
+)
+ident(
+  def pp_exp "solver.ml" 96 3059 3079 "solver.ml" 98 3081 3084
+)
+"solver.ml" 96 3059 3074 "solver.ml" 96 3059 3079
+type(
+  'a1 -> 'b1
+)
+ident(
+  int_ref abort "solver.ml" 83 2738 2744 "solver.ml" 83 2738 2749
+)
+"solver.ml" 180 5040 5046 "solver.ml" 180 5040 5060
+type(
+  Ast.exp -> bool
+)
+ident(
+  def is_satisfiable "solver.ml" 190 5374 5376 "solver.ml" 265 7395 7398
+)
+"solver.ml" 180 5040 5061 "solver.ml" 180 5040 5068
+type(
+  Ast.exp
+)
+ident(
+  def formula "solver.ml" 181 5071 5075 "solver.ml" 188 5362 5372
+)
+"solver.ml" 181 5071 5079 "solver.ml" 181 5071 5082
+type(
+  S.set
+)
+"solver.ml" 181 5071 5085 "solver.ml" 181 5071 5093
+type(
+  unit -> S.set
+)
+ident(
+  ext_ref S.mk_set
+)
+"solver.ml" 181 5071 5094 "solver.ml" 181 5071 5096
+type(
+  unit
+)
+"solver.ml" 181 5071 5085 "solver.ml" 181 5071 5096
+call(
+  stack
+)
+type(
+  S.set
+)
+"solver.ml" 182 5100 5108 "solver.ml" 182 5100 5115
+type(
+  S.exp
+)
+"solver.ml" 182 5100 5118 "solver.ml" 182 5100 5127
+type(
+  S.set -> Ast.exp -> S.exp
+)
+ident(
+  ext_ref S.convert
+)
+"solver.ml" 182 5100 5128 "solver.ml" 182 5100 5131
+type(
+  S.set
+)
+ident(
+  int_ref ctx "solver.ml" 181 5071 5079 "solver.ml" 181 5071 5082
+)
+"solver.ml" 182 5100 5132 "solver.ml" 182 5100 5139
+type(
+  Ast.exp
+)
+ident(
+  int_ref formula "solver.ml" 180 5040 5061 "solver.ml" 180 5040 5068
+)
+"solver.ml" 182 5100 5118 "solver.ml" 182 5100 5139
+call(
+  stack
+)
+type(
+  S.exp
+)
+"solver.ml" 184 5198 5202 "solver.ml" 184 5198 5218
+type(
+  S.set -> S.exp -> unit
+)
+ident(
+  ext_ref S.add_constraint
+)
+"solver.ml" 184 5198 5219 "solver.ml" 184 5198 5222
+type(
+  S.set
+)
+ident(
+  int_ref ctx "solver.ml" 181 5071 5079 "solver.ml" 181 5071 5082
+)
+"solver.ml" 184 5198 5223 "solver.ml" 184 5198 5230
+type(
+  S.exp
+)
+ident(
+  int_ref formula "solver.ml" 182 5100 5108 "solver.ml" 182 5100 5115
+)
+"solver.ml" 184 5198 5202 "solver.ml" 184 5198 5230
+call(
+  stack
+)
+type(
+  unit
+)
+"solver.ml" 185 5232 5240 "solver.ml" 185 5232 5246
+type(
+  bool
+)
+"solver.ml" 185 5232 5249 "solver.ml" 185 5232 5257
+type(
+  S.set -> bool
+)
+ident(
+  ext_ref S.is_sat
+)
+"solver.ml" 185 5232 5258 "solver.ml" 185 5232 5261
+type(
+  S.set
+)
+ident(
+  int_ref ctx "solver.ml" 181 5071 5079 "solver.ml" 181 5071 5082
+)
+"solver.ml" 185 5232 5249 "solver.ml" 185 5232 5261
+call(
+  stack
+)
+type(
+  bool
+)
+"solver.ml" 187 5343 5347 "solver.ml" 187 5343 5356
+type(
+  S.set -> unit
+)
+ident(
+  ext_ref S.del_set
+)
+"solver.ml" 187 5343 5357 "solver.ml" 187 5343 5360
+type(
+  S.set
+)
+ident(
+  int_ref ctx "solver.ml" 181 5071 5079 "solver.ml" 181 5071 5082
+)
+"solver.ml" 187 5343 5347 "solver.ml" 187 5343 5360
+call(
+  stack
+)
+type(
+  unit
+)
+"solver.ml" 188 5362 5366 "solver.ml" 188 5362 5372
+type(
+  bool
+)
+ident(
+  int_ref answer "solver.ml" 185 5232 5240 "solver.ml" 185 5232 5246
+)
+"solver.ml" 187 5343 5347 "solver.ml" 188 5362 5372
+type(
+  bool
+)
+"solver.ml" 185 5232 5236 "solver.ml" 188 5362 5372
+type(
+  bool
+)
+"solver.ml" 184 5198 5202 "solver.ml" 188 5362 5372
+type(
+  bool
+)
+"solver.ml" 182 5100 5104 "solver.ml" 188 5362 5372
+type(
+  bool
+)
+"solver.ml" 181 5071 5075 "solver.ml" 188 5362 5372
+type(
+  bool
+)
+"solver.ml" 180 5040 5061 "solver.ml" 188 5362 5372
+type(
+  Ast.exp -> bool
+)
+"solver.ml" 190 5374 5380 "solver.ml" 190 5374 5388
+type(
+  Ast.exp -> bool
+)
+ident(
+  def is_valid "solver.ml" 204 5869 5871 "solver.ml" 265 7395 7398
+)
+"solver.ml" 190 5374 5389 "solver.ml" 190 5374 5396
+type(
+  Ast.exp
+)
+ident(
+  def formula "solver.ml" 191 5399 5403 "solver.ml" 202 5853 5867
+)
+"solver.ml" 191 5399 5407 "solver.ml" 191 5399 5410
+type(
+  S.set
+)
+"solver.ml" 191 5399 5413 "solver.ml" 191 5399 5421
+type(
+  unit -> S.set
+)
+ident(
+  ext_ref S.mk_set
+)
+"solver.ml" 191 5399 5422 "solver.ml" 191 5399 5424
+type(
+  unit
+)
+"solver.ml" 191 5399 5413 "solver.ml" 191 5399 5424
+call(
+  stack
+)
+type(
+  S.set
+)
+"solver.ml" 194 5511 5519 "solver.ml" 194 5511 5520
+type(
+  Ast.exp
+)
+"solver.ml" 194 5511 5528 "solver.ml" 194 5511 5531
+type(
+  Type.unop_type
+)
+"solver.ml" 194 5511 5533 "solver.ml" 194 5511 5540
+type(
+  Ast.exp
+)
+ident(
+  int_ref formula "solver.ml" 190 5374 5389 "solver.ml" 190 5374 5396
+)
+"solver.ml" 194 5511 5523 "solver.ml" 194 5511 5541
+type(
+  Type.unop_type * Ast.exp
+)
+type(
+  Ast.exp
+)
+"solver.ml" 196 5599 5607 "solver.ml" 196 5599 5614
+type(
+  S.exp
+)
+"solver.ml" 196 5599 5617 "solver.ml" 196 5599 5626
+type(
+  S.set -> Ast.exp -> S.exp
+)
+ident(
+  ext_ref S.convert
+)
+"solver.ml" 196 5599 5627 "solver.ml" 196 5599 5630
+type(
+  S.set
+)
+ident(
+  int_ref ctx "solver.ml" 191 5399 5407 "solver.ml" 191 5399 5410
+)
+"solver.ml" 196 5599 5631 "solver.ml" 196 5599 5632
+type(
+  Ast.exp
+)
+ident(
+  int_ref e "solver.ml" 194 5511 5519 "solver.ml" 194 5511 5520
+)
+"solver.ml" 196 5599 5617 "solver.ml" 196 5599 5632
+call(
+  stack
+)
+type(
+  S.exp
+)
+"solver.ml" 198 5693 5697 "solver.ml" 198 5693 5713
+type(
+  S.set -> S.exp -> unit
+)
+ident(
+  ext_ref S.add_constraint
+)
+"solver.ml" 198 5693 5714 "solver.ml" 198 5693 5717
+type(
+  S.set
+)
+ident(
+  int_ref ctx "solver.ml" 191 5399 5407 "solver.ml" 191 5399 5410
+)
+"solver.ml" 198 5693 5718 "solver.ml" 198 5693 5725
+type(
+  S.exp
+)
+ident(
+  int_ref formula "solver.ml" 196 5599 5607 "solver.ml" 196 5599 5614
+)
+"solver.ml" 198 5693 5697 "solver.ml" 198 5693 5725
+call(
+  stack
+)
+type(
+  unit
+)
+"solver.ml" 199 5727 5735 "solver.ml" 199 5727 5741
+type(
+  bool
+)
+"solver.ml" 199 5727 5744 "solver.ml" 199 5727 5752
+type(
+  S.set -> bool
+)
+ident(
+  ext_ref S.is_sat
+)
+"solver.ml" 199 5727 5753 "solver.ml" 199 5727 5756
+type(
+  S.set
+)
+ident(
+  int_ref ctx "solver.ml" 191 5399 5407 "solver.ml" 191 5399 5410
+)
+"solver.ml" 199 5727 5744 "solver.ml" 199 5727 5756
+call(
+  stack
+)
+type(
+  bool
+)
+"solver.ml" 201 5834 5838 "solver.ml" 201 5834 5847
+type(
+  S.set -> unit
+)
+ident(
+  ext_ref S.del_set
+)
+"solver.ml" 201 5834 5848 "solver.ml" 201 5834 5851
+type(
+  S.set
+)
+ident(
+  int_ref ctx "solver.ml" 191 5399 5407 "solver.ml" 191 5399 5410
+)
+"solver.ml" 201 5834 5838 "solver.ml" 201 5834 5851
+call(
+  stack
+)
+type(
+  unit
+)
+"solver.ml" 202 5853 5857 "solver.ml" 202 5853 5860
+type(
+  bool -> bool
+)
+ident(
+  ext_ref Pervasives.not
+)
+"solver.ml" 202 5853 5861 "solver.ml" 202 5853 5867
+type(
+  bool
+)
+ident(
+  int_ref answer "solver.ml" 199 5727 5735 "solver.ml" 199 5727 5741
+)
+"solver.ml" 202 5853 5857 "solver.ml" 202 5853 5867
+type(
+  bool
+)
+"solver.ml" 201 5834 5838 "solver.ml" 202 5853 5867
+type(
+  bool
+)
+"solver.ml" 199 5727 5731 "solver.ml" 202 5853 5867
+type(
+  bool
+)
+"solver.ml" 198 5693 5697 "solver.ml" 202 5853 5867
+type(
+  bool
+)
+"solver.ml" 196 5599 5603 "solver.ml" 202 5853 5867
+type(
+  bool
+)
+"solver.ml" 194 5511 5515 "solver.ml" 202 5853 5867
+type(
+  bool
+)
+"solver.ml" 191 5399 5403 "solver.ml" 202 5853 5867
+type(
+  bool
+)
+"solver.ml" 190 5374 5389 "solver.ml" 202 5853 5867
+type(
+  Ast.exp -> bool
+)
+"solver.ml" 204 5869 5893 "solver.ml" 204 5869 5897
+type(
+  < add_binding : Ast.var -> Ast.exp -> unit;
+    add_constraint : Ast.exp -> unit; del_binding : Ast.var -> unit;
+    is_sat : bool; is_valid : Ast.exp -> bool;
+    model_exp : Ast.exp -> Ast.exp; pop : unit; pp_sol : string; push : 
+    unit; .. >
+)
+"solver.ml" 208 5964 5974 "solver.ml" 208 5964 5976
+type(
+  S.set
+)
+ident(
+  def s' "solver.ml" 209 5994 6000 "solver.ml" 212 6132 6140
+)
+"solver.ml" 208 5964 5979 "solver.ml" 208 5964 5987
+type(
+  unit -> S.set
+)
+ident(
+  ext_ref S.mk_set
+)
+"solver.ml" 208 5964 5988 "solver.ml" 208 5964 5990
+type(
+  unit
+)
+"solver.ml" 208 5964 5979 "solver.ml" 208 5964 5990
+call(
+  stack
+)
+type(
+  S.set
+)
+"solver.ml" 209 5994 6000 "solver.ml" 209 5994 6011
+type(
+  (S.set -> unit) -> S.set -> unit
+)
+ident(
+  ext_ref Gc.finalise
+)
+"solver.ml" 209 5994 6017 "solver.ml" 209 5994 6020
+type(
+  S.set
+)
+ident(
+  def set "solver.ml" 210 6024 6046 "solver.ml" 211 6091 6126
+)
+"solver.ml" 210 6024 6046 "solver.ml" 210 6024 6053
+type(
+  (unit, unit, string, unit) format4 -> unit
+)
+ident(
+  ext_ref D.dprintf
+)
+"solver.ml" 210 6024 6054 "solver.ml" 210 6024 6089
+type(
+  (unit, unit, string, unit) format4
+)
+"solver.ml" 210 6024 6046 "solver.ml" 210 6024 6089
+call(
+  stack
+)
+type(
+  unit
+)
+"solver.ml" 211 6091 6113 "solver.ml" 211 6091 6122
+type(
+  S.set -> unit
+)
+ident(
+  ext_ref S.del_set
+)
+"solver.ml" 211 6091 6123 "solver.ml" 211 6091 6126
+type(
+  S.set
+)
+ident(
+  int_ref set "solver.ml" 209 5994 6017 "solver.ml" 209 5994 6020
+)
+"solver.ml" 211 6091 6113 "solver.ml" 211 6091 6126
+call(
+  tail
+)
+type(
+  unit
+)
+"solver.ml" 210 6024 6046 "solver.ml" 211 6091 6126
+type(
+  unit
+)
+"solver.ml" 209 5994 6017 "solver.ml" 211 6091 6126
+type(
+  S.set -> unit
+)
+"solver.ml" 211 6091 6128 "solver.ml" 211 6091 6130
+type(
+  S.set
+)
+ident(
+  int_ref s' "solver.ml" 208 5964 5974 "solver.ml" 208 5964 5976
+)
+"solver.ml" 209 5994 6000 "solver.ml" 211 6091 6130
+call(
+  stack
+)
+type(
+  unit
+)
+"solver.ml" 212 6132 6138 "solver.ml" 212 6132 6140
+type(
+  S.set
+)
+ident(
+  int_ref s' "solver.ml" 208 5964 5974 "solver.ml" 208 5964 5976
+)
+"solver.ml" 209 5994 6000 "solver.ml" 212 6132 6140
+type(
+  S.set
+)
+"solver.ml" 208 5964 5970 "solver.ml" 212 6132 6140
+type(
+  S.set
+)
+"solver.ml" 220 6336 6342 "solver.ml" 220 6336 6348
+type(
+  S.set -> unit
+)
+ident(
+  ext_ref S.push
+)
+"solver.ml" 220 6336 6349 "solver.ml" 220 6336 6350
+type(
+  S.set
+)
+"solver.ml" 220 6336 6342 "solver.ml" 220 6336 6350
+call(
+  tail
+)
+type(
+  unit
+)
+type(
+  unit
+)
+"solver.ml" 219 6318 6322 "solver.ml" 220 6336 6350
+type(
+  (< add_binding : Ast.var -> Ast.exp -> unit;
+     add_constraint : Ast.exp -> unit; del_binding : Ast.var -> unit;
+     is_sat : bool; is_valid : Ast.exp -> bool;
+     model_exp : Ast.exp -> Ast.exp; pop : unit; pp_sol : string;
+     push : unit; .. >
+   as 'a) ->
+  unit
+)
+"solver.ml" 224 6420 6426 "solver.ml" 224 6420 6431
+type(
+  S.set -> unit
+)
+ident(
+  ext_ref S.pop
+)
+"solver.ml" 224 6420 6432 "solver.ml" 224 6420 6433
+type(
+  S.set
+)
+"solver.ml" 224 6420 6426 "solver.ml" 224 6420 6433
+call(
+  tail
+)
+type(
+  unit
+)
+type(
+  unit
+)
+"solver.ml" 223 6403 6407 "solver.ml" 224 6420 6433
+type(
+  'a -> unit
+)
+"solver.ml" 227 6463 6489 "solver.ml" 227 6463 6490
+type(
+  Ast.exp
+)
+ident(
+  def c "solver.ml" 228 6493 6499 "solver.ml" 228 6493 6533
+)
+"solver.ml" 228 6493 6499 "solver.ml" 228 6493 6515
+type(
+  S.set -> S.exp -> unit
+)
+ident(
+  ext_ref S.add_constraint
+)
+"solver.ml" 228 6493 6516 "solver.ml" 228 6493 6517
+type(
+  S.set
+)
+"solver.ml" 228 6493 6519 "solver.ml" 228 6493 6528
+type(
+  S.set -> Ast.exp -> S.exp
+)
+ident(
+  ext_ref S.convert
+)
+"solver.ml" 228 6493 6529 "solver.ml" 228 6493 6530
+type(
+  S.set
+)
+"solver.ml" 228 6493 6531 "solver.ml" 228 6493 6532
+type(
+  Ast.exp
+)
+ident(
+  int_ref c "solver.ml" 227 6463 6489 "solver.ml" 227 6463 6490
+)
+"solver.ml" 228 6493 6519 "solver.ml" 228 6493 6532
+call(
+  stack
+)
+type(
+  S.exp
+)
+"solver.ml" 228 6493 6499 "solver.ml" 228 6493 6533
+call(
+  tail
+)
+type(
+  unit
+)
+"solver.ml" 227 6463 6489 "solver.ml" 228 6493 6533
+type(
+  Ast.exp -> unit
+)
+type(
+  Ast.exp -> unit
+)
+"solver.ml" 227 6463 6467 "solver.ml" 228 6493 6533
+type(
+  'a -> Ast.exp -> unit
+)
+"solver.ml" 231 6560 6583 "solver.ml" 231 6560 6584
+type(
+  Ast.var
+)
+ident(
+  def v "solver.ml" 231 6560 6585 "solver.ml" 232 6589 6628
+)
+"solver.ml" 231 6560 6585 "solver.ml" 231 6560 6586
+type(
+  Ast.exp
+)
+ident(
+  def c "solver.ml" 232 6589 6595 "solver.ml" 232 6589 6628
+)
+"solver.ml" 232 6589 6595 "solver.ml" 232 6589 6608
+type(
+  S.set -> Ast.var -> S.exp -> unit
+)
+ident(
+  ext_ref S.add_binding
+)
+"solver.ml" 232 6589 6609 "solver.ml" 232 6589 6610
+type(
+  S.set
+)
+"solver.ml" 232 6589 6611 "solver.ml" 232 6589 6612
+type(
+  Ast.var
+)
+ident(
+  int_ref v "solver.ml" 231 6560 6583 "solver.ml" 231 6560 6584
+)
+"solver.ml" 232 6589 6614 "solver.ml" 232 6589 6623
+type(
+  S.set -> Ast.exp -> S.exp
+)
+ident(
+  ext_ref S.convert
+)
+"solver.ml" 232 6589 6624 "solver.ml" 232 6589 6625
+type(
+  S.set
+)
+"solver.ml" 232 6589 6626 "solver.ml" 232 6589 6627
+type(
+  Ast.exp
+)
+ident(
+  int_ref c "solver.ml" 231 6560 6585 "solver.ml" 231 6560 6586
+)
+"solver.ml" 232 6589 6614 "solver.ml" 232 6589 6627
+call(
+  stack
+)
+type(
+  S.exp
+)
+"solver.ml" 232 6589 6595 "solver.ml" 232 6589 6628
+call(
+  tail
+)
+type(
+  unit
+)
+"solver.ml" 231 6560 6585 "solver.ml" 232 6589 6628
+type(
+  Ast.exp -> unit
+)
+"solver.ml" 231 6560 6583 "solver.ml" 232 6589 6628
+type(
+  Ast.var -> Ast.exp -> unit
+)
+type(
+  Ast.var -> Ast.exp -> unit
+)
+"solver.ml" 231 6560 6564 "solver.ml" 232 6589 6628
+type(
+  'a -> Ast.var -> Ast.exp -> unit
+)
+"solver.ml" 235 6658 6681 "solver.ml" 235 6658 6682
+type(
+  Ast.var
+)
+ident(
+  def v "solver.ml" 236 6685 6691 "solver.ml" 236 6685 6708
+)
+"solver.ml" 236 6685 6691 "solver.ml" 236 6685 6704
+type(
+  S.set -> Ast.var -> unit
+)
+ident(
+  ext_ref S.del_binding
+)
+"solver.ml" 236 6685 6705 "solver.ml" 236 6685 6706
+type(
+  S.set
+)
+"solver.ml" 236 6685 6707 "solver.ml" 236 6685 6708
+type(
+  Ast.var
+)
+ident(
+  int_ref v "solver.ml" 235 6658 6681 "solver.ml" 235 6658 6682
+)
+"solver.ml" 236 6685 6691 "solver.ml" 236 6685 6708
+call(
+  tail
+)
+type(
+  unit
+)
+"solver.ml" 235 6658 6681 "solver.ml" 236 6685 6708
+type(
+  Ast.var -> unit
+)
+type(
+  Ast.var -> unit
+)
+"solver.ml" 235 6658 6662 "solver.ml" 236 6685 6708
+type(
+  'a -> Ast.var -> unit
+)
+"solver.ml" 240 6795 6801 "solver.ml" 240 6795 6809
+type(
+  S.set -> bool
+)
+ident(
+  ext_ref S.is_sat
+)
+"solver.ml" 240 6795 6810 "solver.ml" 240 6795 6811
+type(
+  S.set
+)
+"solver.ml" 240 6795 6801 "solver.ml" 240 6795 6811
+call(
+  tail
+)
+type(
+  bool
+)
+type(
+  bool
+)
+"solver.ml" 239 6775 6779 "solver.ml" 240 6795 6811
+type(
+  'a -> bool
+)
+"solver.ml" 247 6986 7006 "solver.ml" 247 6986 7007
+type(
+  Ast.exp
+)
+ident(
+  def f "solver.ml" 248 7010 7016 "solver.ml" 253 7194 7205
+)
+"solver.ml" 248 7010 7016 "solver.ml" 248 7010 7020
+type(
+  'a
+)
+"solver.ml" 248 7010 7016 "solver.ml" 248 7010 7025
+call(
+  stack
+)
+type(
+  unit
+)
+"solver.ml" 250 7107 7113 "solver.ml" 250 7107 7117
+type(
+  'a
+)
+"solver.ml" 250 7107 7113 "solver.ml" 250 7107 7132
+call(
+  stack
+)
+type(
+  Ast.exp -> unit
+)
+"solver.ml" 250 7107 7139 "solver.ml" 250 7107 7142
+type(
+  Type.unop_type
+)
+"solver.ml" 250 7107 7144 "solver.ml" 250 7107 7145
+type(
+  Ast.exp
+)
+ident(
+  int_ref f "solver.ml" 247 6986 7006 "solver.ml" 247 6986 7007
+)
+"solver.ml" 250 7107 7134 "solver.ml" 250 7107 7146
+type(
+  Type.unop_type * Ast.exp
+)
+type(
+  Ast.exp
+)
+"solver.ml" 250 7107 7113 "solver.ml" 250 7107 7147
+type(
+  unit
+)
+"solver.ml" 251 7149 7159 "solver.ml" 251 7149 7160
+type(
+  bool
+)
+"solver.ml" 251 7149 7163 "solver.ml" 251 7149 7167
+type(
+  'a
+)
+"solver.ml" 251 7149 7163 "solver.ml" 251 7149 7174
+call(
+  stack
+)
+type(
+  bool
+)
+"solver.ml" 252 7178 7184 "solver.ml" 252 7178 7188
+type(
+  'a
+)
+"solver.ml" 252 7178 7184 "solver.ml" 252 7178 7192
+call(
+  stack
+)
+type(
+  unit
+)
+"solver.ml" 253 7194 7200 "solver.ml" 253 7194 7203
+type(
+  bool -> bool
+)
+ident(
+  ext_ref Pervasives.not
+)
+"solver.ml" 253 7194 7204 "solver.ml" 253 7194 7205
+type(
+  bool
+)
+ident(
+  int_ref r "solver.ml" 251 7149 7159 "solver.ml" 251 7149 7160
+)
+"solver.ml" 253 7194 7200 "solver.ml" 253 7194 7205
+type(
+  bool
+)
+"solver.ml" 252 7178 7184 "solver.ml" 253 7194 7205
+type(
+  bool
+)
+"solver.ml" 251 7149 7155 "solver.ml" 253 7194 7205
+type(
+  bool
+)
+"solver.ml" 250 7107 7113 "solver.ml" 253 7194 7205
+type(
+  bool
+)
+"solver.ml" 248 7010 7016 "solver.ml" 253 7194 7205
+type(
+  bool
+)
+"solver.ml" 247 6986 7006 "solver.ml" 253 7194 7205
+type(
+  Ast.exp -> bool
+)
+type(
+  Ast.exp -> bool
+)
+"solver.ml" 247 6986 6990 "solver.ml" 253 7194 7205
+type(
+  'a -> Ast.exp -> bool
+)
+"solver.ml" 256 7254 7275 "solver.ml" 256 7254 7276
+type(
+  Ast.exp
+)
+ident(
+  def e "solver.ml" 257 7279 7285 "solver.ml" 257 7279 7316
+)
+"solver.ml" 257 7279 7285 "solver.ml" 257 7279 7296
+type(
+  S.set -> S.model -> Ast.exp -> Ast.exp
+)
+ident(
+  ext_ref S.model_exp
+)
+"solver.ml" 257 7279 7297 "solver.ml" 257 7279 7298
+type(
+  S.set
+)
+"solver.ml" 257 7279 7300 "solver.ml" 257 7279 7311
+type(
+  S.set -> S.model
+)
+ident(
+  ext_ref S.get_model
+)
+"solver.ml" 257 7279 7312 "solver.ml" 257 7279 7313
+type(
+  S.set
+)
+"solver.ml" 257 7279 7300 "solver.ml" 257 7279 7313
+call(
+  stack
+)
+type(
+  S.model
+)
+"solver.ml" 257 7279 7315 "solver.ml" 257 7279 7316
+type(
+  Ast.exp
+)
+ident(
+  int_ref e "solver.ml" 256 7254 7275 "solver.ml" 256 7254 7276
+)
+"solver.ml" 257 7279 7285 "solver.ml" 257 7279 7316
+call(
+  tail
+)
+type(
+  Ast.exp
+)
+"solver.ml" 256 7254 7275 "solver.ml" 257 7279 7316
+type(
+  Ast.exp -> Ast.exp
+)
+type(
+  Ast.exp -> Ast.exp
+)
+"solver.ml" 256 7254 7258 "solver.ml" 257 7279 7316
+type(
+  'a -> Ast.exp -> Ast.exp
+)
+"solver.ml" 260 7338 7344 "solver.ml" 260 7338 7352
+type(
+  S.set -> string
+)
+ident(
+  ext_ref S.pp_sol
+)
+"solver.ml" 260 7338 7353 "solver.ml" 260 7338 7354
+type(
+  S.set
+)
+"solver.ml" 260 7338 7344 "solver.ml" 260 7338 7354
+call(
+  tail
+)
+type(
+  string
+)
+type(
+  string
+)
+"solver.ml" 259 7318 7322 "solver.ml" 260 7338 7354
+type(
+  'a -> string
+)
+"solver.ml" 263 7362 7368 "solver.ml" 263 7362 7377
+type(
+  unit -> solver
+)
+ident(
+  def newsolver "solver.ml" 263 7362 7393 "solver.ml" 265 7395 7398
+)
+"solver.ml" 263 7362 7378 "solver.ml" 263 7362 7380
+type(
+  unit
+)
+"solver.ml" 263 7362 7383 "solver.ml" 263 7362 7393
+type(
+  solver
+)
+"solver.ml" 263 7362 7378 "solver.ml" 263 7362 7393
+type(
+  unit -> solver
+)
+"solver.ml" 554 16689 16701 "solver.ml" 554 16689 16717
+call(
+  stack
+)
+"solver.ml" 560 16825 16831 "solver.ml" 560 16825 16835
+type(
+  string
+)
+ident(
+  def name "solver.ml" 562 16852 16854 "solver.ml" 628 18580 18583
+)
+"solver.ml" 560 16825 16838 "solver.ml" 560 16825 16850
+type(
+  string
+)
+ident(
+  ext_ref S.solvername
+)
+"solver.ml" 573 17086 17092 "solver.ml" 573 17086 17098
+type(
+  unit -> set
+)
+ident(
+  def mk_set "solver.ml" 576 17208 17210 "solver.ml" 628 18580 18583
+)
+"solver.ml" 573 17086 17099 "solver.ml" 573 17086 17101
+type(
+  unit
+)
+"solver.ml" 574 17104 17117 "solver.ml" 574 17104 17119
+type(
+  Ast.exp list
+)
+"solver.ml" 574 17104 17135 "solver.ml" 574 17104 17147
+type(
+  unit -> Ast.exp list Stack.t
+)
+ident(
+  ext_ref Stack.create
+)
+"solver.ml" 574 17104 17148 "solver.ml" 574 17104 17150
+type(
+  unit
+)
+"solver.ml" 574 17104 17135 "solver.ml" 574 17104 17150
+call(
+  stack
+)
+type(
+  Ast.exp list Stack.t
+)
+"solver.ml" 574 17104 17157 "solver.ml" 574 17104 17171
+type(
+  int -> varmap
+)
+ident(
+  ext_ref Var.VarHash.create
+)
+"solver.ml" 574 17104 17172 "solver.ml" 574 17104 17175
+type(
+  int
+)
+"solver.ml" 574 17104 17157 "solver.ml" 574 17104 17175
+call(
+  stack
+)
+type(
+  varmap
+)
+"solver.ml" 574 17104 17190 "solver.ml" 574 17104 17202
+type(
+  unit -> varmap Stack.t
+)
+ident(
+  ext_ref Stack.create
+)
+"solver.ml" 574 17104 17203 "solver.ml" 574 17104 17205
+type(
+  unit
+)
+"solver.ml" 574 17104 17190 "solver.ml" 574 17104 17205
+call(
+  stack
+)
+type(
+  varmap Stack.t
+)
+"solver.ml" 574 17104 17108 "solver.ml" 574 17104 17206
+type(
+  set
+)
+"solver.ml" 573 17086 17099 "solver.ml" 574 17104 17206
+type(
+  unit -> set
+)
+"solver.ml" 576 17208 17214 "solver.ml" 576 17208 17221
+type(
+  'a -> unit
+)
+ident(
+  def del_set "solver.ml" 578 17230 17232 "solver.ml" 628 18580 18583
+)
+"solver.ml" 576 17208 17222 "solver.ml" 576 17208 17223
+type(
+  'a
+)
+"solver.ml" 576 17208 17226 "solver.ml" 576 17208 17228
+type(
+  unit
+)
+"solver.ml" 576 17208 17222 "solver.ml" 576 17208 17228
+type(
+  'a -> unit
+)
+"solver.ml" 578 17230 17240 "solver.ml" 578 17230 17247
+type(
+  set -> Ast.exp -> Ast.exp
+)
+ident(
+  def convert "solver.ml" 578 17230 17232 "solver.ml" 628 18580 18583
+)
+"solver.ml" 579 17250 17258 "solver.ml" 579 17250 17259
+type(
+  Ast.exp Var.VarHash.t -> Ast_visitor.nop
+)
+"solver.ml" 579 17250 17260 "solver.ml" 579 17250 17264
+type(
+  Ast.exp Var.VarHash.t
+)
+ident(
+  def vars "solver.ml" 579 17250 17267 "solver.ml" 588 17528 17535
+)
+"solver.ml" 579 17250 17274 "solver.ml" 579 17250 17278
+type(
+  Ast_visitor.nop
+)
+"solver.ml" 582 17344 17358 "solver.ml" 582 17344 17359
+type(
+  Ast.var
+)
+ident(
+  def v "solver.ml" 583 17363 17373 "solver.ml" 586 17465 17501
+)
+"solver.ml" 582 17344 17354 "solver.ml" 582 17344 17359
+type(
+  Ast.exp
+)
+"solver.ml" 583 17363 17377 "solver.ml" 583 17363 17381
+type(
+  Ast.exp
+)
+"solver.ml" 583 17363 17389 "solver.ml" 583 17363 17401
+type(
+  Ast.exp Var.VarHash.t -> Var.VarHash.key -> Ast.exp
+)
+ident(
+  ext_ref Var.VarHash.find
+)
+"solver.ml" 583 17363 17402 "solver.ml" 583 17363 17406
+type(
+  Ast.exp Var.VarHash.t
+)
+ident(
+  int_ref vars "solver.ml" 579 17250 17260 "solver.ml" 579 17250 17264
+)
+"solver.ml" 583 17363 17407 "solver.ml" 583 17363 17408
+type(
+  Ast.var
+)
+ident(
+  int_ref v "solver.ml" 582 17344 17358 "solver.ml" 582 17344 17359
+)
+"solver.ml" 583 17363 17389 "solver.ml" 583 17363 17408
+call(
+  stack
+)
+type(
+  Ast.exp
+)
+"solver.ml" 584 17409 17426 "solver.ml" 584 17409 17435
+type(
+  exn
+)
+"solver.ml" 585 17439 17458 "solver.ml" 585 17439 17459
+type(
+  Ast.var
+)
+ident(
+  int_ref v "solver.ml" 582 17344 17358 "solver.ml" 582 17344 17359
+)
+"solver.ml" 585 17439 17454 "solver.ml" 585 17439 17459
+type(
+  Ast.exp
+)
+"solver.ml" 583 17363 17385 "solver.ml" 585 17439 17460
+type(
+  Ast.exp
+)
+"solver.ml" 586 17465 17497 "solver.ml" 586 17465 17501
+type(
+  Ast.exp
+)
+ident(
+  int_ref newv "solver.ml" 583 17363 17377 "solver.ml" 583 17363 17381
+)
+"solver.ml" 586 17465 17475 "solver.ml" 586 17465 17501
+type(
+  Ast.exp Type.visit_action
+)
+"solver.ml" 583 17363 17373 "solver.ml" 586 17465 17501
+type(
+  Ast.exp Type.visit_action
+)
+"solver.ml" 587 17502 17512 "solver.ml" 587 17502 17513
+type(
+  Ast.exp
+)
+ident(
+  def e "solver.ml" 587 17502 17517 "solver.ml" 587 17502 17527
+)
+"solver.ml" 587 17502 17517 "solver.ml" 587 17502 17527
+type(
+  Ast.exp Type.visit_action
+)
+"solver.ml" 581 17310 17335 "solver.ml" 587 17502 17527
+type(
+  Ast.exp -> Ast.exp Type.visit_action
+)
+type(
+  Ast.exp -> Ast.exp Type.visit_action
+)
+"solver.ml" 581 17310 17316 "solver.ml" 587 17502 17527
+type(
+  Ast_visitor.nop -> Ast.exp -> Ast.exp Type.visit_action
+)
+"solver.ml" 579 17250 17267 "solver.ml" 588 17528 17535
+type(
+  Ast_visitor.nop
+)
+"solver.ml" 579 17250 17260 "solver.ml" 588 17528 17535
+type(
+  Ast.exp Var.VarHash.t -> Ast_visitor.nop
+)
+"solver.ml" 589 17539 17554 "solver.ml" 589 17539 17558
+type(
+  varmap
+)
+ident(
+  def vars "solver.ml" 589 17539 17560 "solver.ml" 590 17565 17604
+)
+"solver.ml" 589 17539 17548 "solver.ml" 589 17539 17559
+type(
+  set
+)
+"solver.ml" 589 17539 17560 "solver.ml" 589 17539 17561
+type(
+  Ast.exp
+)
+ident(
+  def e "solver.ml" 590 17565 17571 "solver.ml" 590 17565 17604
+)
+"solver.ml" 590 17565 17571 "solver.ml" 590 17565 17593
+type(
+  Ast_visitor.t -> Ast.exp -> Ast.exp
+)
+ident(
+  ext_ref Ast_visitor.exp_accept
+)
+"solver.ml" 590 17565 17595 "solver.ml" 590 17565 17596
+type(
+  varmap -> Ast_visitor.t
+)
+ident(
+  int_ref v "solver.ml" 579 17250 17258 "solver.ml" 579 17250 17259
+)
+"solver.ml" 590 17565 17597 "solver.ml" 590 17565 17601
+type(
+  varmap
+)
+ident(
+  int_ref vars "solver.ml" 589 17539 17554 "solver.ml" 589 17539 17558
+)
+"solver.ml" 590 17565 17595 "solver.ml" 590 17565 17601
+call(
+  stack
+)
+type(
+  Ast_visitor.t
+)
+"solver.ml" 590 17565 17603 "solver.ml" 590 17565 17604
+type(
+  Ast.exp
+)
+ident(
+  int_ref e "solver.ml" 589 17539 17560 "solver.ml" 589 17539 17561
+)
+"solver.ml" 590 17565 17571 "solver.ml" 590 17565 17604
+call(
+  tail
+)
+type(
+  Ast.exp
+)
+"solver.ml" 589 17539 17560 "solver.ml" 590 17565 17604
+type(
+  Ast.exp -> Ast.exp
+)
+"solver.ml" 589 17539 17548 "solver.ml" 590 17565 17604
+type(
+  set -> Ast.exp -> Ast.exp
+)
+"solver.ml" 579 17250 17254 "solver.ml" 590 17565 17605
+type(
+  set -> Ast.exp -> Ast.exp
+)
+"solver.ml" 592 17607 17613 "solver.ml" 592 17607 17624
+type(
+  set -> Var.VarHash.key -> Ast.exp -> unit
+)
+ident(
+  def add_binding "solver.ml" 596 17725 17727 "solver.ml" 628 18580 18583
+)
+"solver.ml" 592 17607 17631 "solver.ml" 592 17607 17635
+type(
+  varmap
+)
+ident(
+  def vars "solver.ml" 592 17607 17637 "solver.ml" 594 17678 17702
+)
+"solver.ml" 592 17607 17625 "solver.ml" 592 17607 17636
+type(
+  set
+)
+"solver.ml" 592 17607 17637 "solver.ml" 592 17607 17638
+type(
+  Var.VarHash.key
+)
+ident(
+  def v "solver.ml" 592 17607 17639 "solver.ml" 594 17678 17702
+)
+"solver.ml" 592 17607 17639 "solver.ml" 592 17607 17640
+type(
+  Ast.exp
+)
+ident(
+  def e "solver.ml" 594 17678 17682 "solver.ml" 594 17678 17702
+)
+"solver.ml" 594 17678 17682 "solver.ml" 594 17678 17693
+type(
+  varmap -> Var.VarHash.key -> Ast.exp -> unit
+)
+ident(
+  ext_ref Var.VarHash.add
+)
+"solver.ml" 594 17678 17694 "solver.ml" 594 17678 17698
+type(
+  varmap
+)
+ident(
+  int_ref vars "solver.ml" 592 17607 17631 "solver.ml" 592 17607 17635
+)
+"solver.ml" 594 17678 17699 "solver.ml" 594 17678 17700
+type(
+  Var.VarHash.key
+)
+ident(
+  int_ref v "solver.ml" 592 17607 17637 "solver.ml" 592 17607 17638
+)
+"solver.ml" 594 17678 17701 "solver.ml" 594 17678 17702
+type(
+  Ast.exp
+)
+ident(
+  int_ref e "solver.ml" 592 17607 17639 "solver.ml" 592 17607 17640
+)
+"solver.ml" 594 17678 17682 "solver.ml" 594 17678 17702
+call(
+  tail
+)
+type(
+  unit
+)
+"solver.ml" 592 17607 17639 "solver.ml" 594 17678 17702
+type(
+  Ast.exp -> unit
+)
+"solver.ml" 592 17607 17637 "solver.ml" 594 17678 17702
+type(
+  Var.VarHash.key -> Ast.exp -> unit
+)
+"solver.ml" 592 17607 17625 "solver.ml" 594 17678 17702
+type(
+  set -> Var.VarHash.key -> Ast.exp -> unit
+)
+"solver.ml" 596 17725 17731 "solver.ml" 596 17725 17742
+type(
+  set -> Var.VarHash.key -> unit
+)
+ident(
+  def del_binding "solver.ml" 599 17786 17788 "solver.ml" 628 18580 18583
+)
+"solver.ml" 596 17725 17749 "solver.ml" 596 17725 17753
+type(
+  varmap
+)
+ident(
+  def vars "solver.ml" 596 17725 17755 "solver.ml" 597 17759 17784
+)
+"solver.ml" 596 17725 17743 "solver.ml" 596 17725 17754
+type(
+  set
+)
+"solver.ml" 596 17725 17755 "solver.ml" 596 17725 17756
+type(
+  Var.VarHash.key
+)
+ident(
+  def v "solver.ml" 597 17759 17763 "solver.ml" 597 17759 17784
+)
+"solver.ml" 597 17759 17763 "solver.ml" 597 17759 17777
+type(
+  varmap -> Var.VarHash.key -> unit
+)
+ident(
+  ext_ref Var.VarHash.remove
+)
+"solver.ml" 597 17759 17778 "solver.ml" 597 17759 17782
+type(
+  varmap
+)
+ident(
+  int_ref vars "solver.ml" 596 17725 17749 "solver.ml" 596 17725 17753
+)
+"solver.ml" 597 17759 17783 "solver.ml" 597 17759 17784
+type(
+  Var.VarHash.key
+)
+ident(
+  int_ref v "solver.ml" 596 17725 17755 "solver.ml" 596 17725 17756
+)
+"solver.ml" 597 17759 17763 "solver.ml" 597 17759 17784
+call(
+  tail
+)
+type(
+  unit
+)
+"solver.ml" 596 17725 17755 "solver.ml" 597 17759 17784
+type(
+  Var.VarHash.key -> unit
+)
+"solver.ml" 596 17725 17743 "solver.ml" 597 17759 17784
+type(
+  set -> Var.VarHash.key -> unit
+)
+"solver.ml" 599 17786 17792 "solver.ml" 599 17786 17806
+type(
+  set -> Ast.exp -> unit
+)
+ident(
+  def add_constraint "solver.ml" 602 17848 17850 "solver.ml" 628 18580 18583
+)
+"solver.ml" 599 17786 17807 "solver.ml" 599 17786 17810
+type(
+  set
+)
+ident(
+  def ctx "solver.ml" 599 17786 17811 "solver.ml" 600 17815 17846
+)
+"solver.ml" 599 17786 17811 "solver.ml" 599 17786 17812
+type(
+  Ast.exp
+)
+ident(
+  def e "solver.ml" 600 17815 17819 "solver.ml" 600 17815 17846
+)
+"solver.ml" 600 17815 17819 "solver.ml" 600 17815 17822
+type(
+  set
+)
+ident(
+  int_ref ctx "solver.ml" 599 17786 17807 "solver.ml" 599 17786 17810
+)
+"solver.ml" 600 17815 17832 "solver.ml" 600 17815 17833
+type(
+  Ast.exp
+)
+ident(
+  int_ref e "solver.ml" 599 17786 17811 "solver.ml" 599 17786 17812
+)
+"solver.ml" 600 17815 17837 "solver.ml" 600 17815 17840
+type(
+  set
+)
+ident(
+  int_ref ctx "solver.ml" 599 17786 17807 "solver.ml" 599 17786 17810
+)
+"solver.ml" 600 17815 17837 "solver.ml" 600 17815 17846
+type(
+  Ast.exp list
+)
+"solver.ml" 600 17815 17832 "solver.ml" 600 17815 17846
+type(
+  Ast.exp list
+)
+"solver.ml" 600 17815 17819 "solver.ml" 600 17815 17846
+type(
+  unit
+)
+"solver.ml" 599 17786 17811 "solver.ml" 600 17815 17846
+type(
+  Ast.exp -> unit
+)
+"solver.ml" 599 17786 17807 "solver.ml" 600 17815 17846
+type(
+  set -> Ast.exp -> unit
+)
+"solver.ml" 602 17848 17854 "solver.ml" 602 17848 17860
+type(
+  set -> bool
+)
+ident(
+  def is_sat "solver.ml" 614 18148 18150 "solver.ml" 628 18580 18583
+)
+"solver.ml" 602 17848 17868 "solver.ml" 602 17848 17873
+type(
+  Ast.exp list
+)
+ident(
+  def forms "solver.ml" 603 17877 17881 "solver.ml" 612 18130 18146
+)
+"solver.ml" 602 17848 17861 "solver.ml" 602 17848 17874
+type(
+  set
+)
+"solver.ml" 603 17877 17885 "solver.ml" 603 17877 17886
+type(
+  Ast.exp
+)
+"solver.ml" 603 17877 17889 "solver.ml" 603 17877 17903
+type(
+  (Ast.exp -> Ast.exp -> Ast.exp) -> Ast.exp -> Ast.exp list -> Ast.exp
+)
+ident(
+  ext_ref List.fold_left
+)
+"solver.ml" 604 17904 17915 "solver.ml" 604 17904 17916
+type(
+  Ast.exp
+)
+ident(
+  def f "solver.ml" 604 17904 17917 "solver.ml" 604 17904 17935
+)
+"solver.ml" 604 17904 17917 "solver.ml" 604 17904 17918
+type(
+  Ast.exp
+)
+ident(
+  def e "solver.ml" 604 17904 17922 "solver.ml" 604 17904 17935
+)
+"solver.ml" 604 17904 17922 "solver.ml" 604 17904 17927
+type(
+  Type.binop_type -> Ast.exp -> Ast.exp -> Ast.exp
+)
+ident(
+  ext_ref Ast_convenience.binop
+)
+"solver.ml" 604 17904 17928 "solver.ml" 604 17904 17931
+type(
+  Type.binop_type
+)
+"solver.ml" 604 17904 17932 "solver.ml" 604 17904 17933
+type(
+  Ast.exp
+)
+ident(
+  int_ref f "solver.ml" 604 17904 17915 "solver.ml" 604 17904 17916
+)
+"solver.ml" 604 17904 17934 "solver.ml" 604 17904 17935
+type(
+  Ast.exp
+)
+ident(
+  int_ref e "solver.ml" 604 17904 17917 "solver.ml" 604 17904 17918
+)
+"solver.ml" 604 17904 17922 "solver.ml" 604 17904 17935
+call(
+  tail
+)
+type(
+  Ast.exp
+)
+"solver.ml" 604 17904 17917 "solver.ml" 604 17904 17935
+type(
+  Ast.exp -> Ast.exp
+)
+"solver.ml" 604 17904 17915 "solver.ml" 604 17904 17935
+type(
+  Ast.exp -> Ast.exp -> Ast.exp
+)
+"solver.ml" 605 17937 17943 "solver.ml" 605 17937 17951
+type(
+  Ast.exp
+)
+ident(
+  ext_ref Ast.exp_true
+)
+"solver.ml" 606 17952 17958 "solver.ml" 606 17952 17963
+type(
+  Ast.exp list
+)
+ident(
+  int_ref forms "solver.ml" 602 17848 17868 "solver.ml" 602 17848 17873
+)
+"solver.ml" 603 17877 17889 "solver.ml" 606 17952 17963
+call(
+  stack
+)
+type(
+  Ast.exp
+)
+"solver.ml" 609 18024 18032 "solver.ml" 609 18024 18038
+type(
+  Ast.exp
+)
+"solver.ml" 609 18024 18041 "solver.ml" 609 18024 18045
+type(
+  Type.unop_type -> Ast.exp -> Ast.exp
+)
+ident(
+  ext_ref Ast_convenience.unop
+)
+"solver.ml" 609 18024 18046 "solver.ml" 609 18024 18049
+type(
+  Type.unop_type
+)
+"solver.ml" 609 18024 18050 "solver.ml" 609 18024 18051
+type(
+  Ast.exp
+)
+ident(
+  int_ref f "solver.ml" 603 17877 17885 "solver.ml" 603 17877 17886
+)
+"solver.ml" 609 18024 18041 "solver.ml" 609 18024 18051
+call(
+  stack
+)
+type(
+  Ast.exp
+)
+"solver.ml" 610 18055 18065 "solver.ml" 610 18055 18085
+type(
+  ?timeout:int ->
+  ?remove:bool ->
+  ?exists:Ast.var list -> ?foralls:Ast.var list -> Ast.exp -> Smtexec.result
+)
+ident(
+  ext_ref S.check_exp_validity
+)
+"solver.ml" 610 18055 18086 "solver.ml" 610 18055 18092
+type(
+  Ast.exp
+)
+ident(
+  int_ref validf "solver.ml" 609 18024 18032 "solver.ml" 609 18024 18038
+)
+"solver.ml" 610 18055 18065 "solver.ml" 610 18055 18092
+call(
+  stack
+)
+type(
+  Smtexec.result
+)
+"solver.ml" 611 18098 18120 "solver.ml" 611 18098 18121
+type(
+  Smtexec.model
+)
+"solver.ml" 611 18098 18104 "solver.ml" 611 18098 18121
+type(
+  Smtexec.result
+)
+"solver.ml" 611 18098 18125 "solver.ml" 611 18098 18129
+type(
+  bool
+)
+"solver.ml" 612 18130 18136 "solver.ml" 612 18130 18137
+type(
+  Smtexec.result
+)
+"solver.ml" 612 18130 18141 "solver.ml" 612 18130 18146
+type(
+  bool
+)
+"solver.ml" 610 18055 18059 "solver.ml" 612 18130 18146
+type(
+  bool
+)
+"solver.ml" 609 18024 18028 "solver.ml" 612 18130 18146
+type(
+  bool
+)
+"solver.ml" 603 17877 17881 "solver.ml" 612 18130 18146
+type(
+  bool
+)
+"solver.ml" 602 17848 17861 "solver.ml" 612 18130 18146
+type(
+  set -> bool
+)
+"solver.ml" 614 18148 18154 "solver.ml" 614 18148 18163
+type(
+  'b -> 'c
+)
+ident(
+  def get_model "solver.ml" 615 18193 18195 "solver.ml" 628 18580 18583
+)
+"solver.ml" 614 18148 18164 "solver.ml" 614 18148 18165
+type(
+  'b
+)
+"solver.ml" 614 18148 18168 "solver.ml" 614 18148 18176
+type(
+  string -> 'c
+)
+ident(
+  ext_ref Pervasives.failwith
+)
+"solver.ml" 614 18148 18177 "solver.ml" 614 18148 18192
+type(
+  string
+)
+"solver.ml" 614 18148 18168 "solver.ml" 614 18148 18192
+call(
+  tail
+)
+type(
+  'c
+)
+"solver.ml" 614 18148 18164 "solver.ml" 614 18148 18192
+type(
+  'b -> 'c
+)
+"solver.ml" 615 18193 18199 "solver.ml" 615 18193 18208
+type(
+  'd -> 'e
+)
+ident(
+  def model_exp "solver.ml" 617 18239 18241 "solver.ml" 628 18580 18583
+)
+"solver.ml" 615 18193 18209 "solver.ml" 615 18193 18210
+type(
+  'd
+)
+"solver.ml" 615 18193 18213 "solver.ml" 615 18193 18221
+type(
+  string -> 'e
+)
+ident(
+  ext_ref Pervasives.failwith
+)
+"solver.ml" 615 18193 18222 "solver.ml" 615 18193 18237
+type(
+  string
+)
+"solver.ml" 615 18193 18213 "solver.ml" 615 18193 18237
+call(
+  tail
+)
+type(
+  'e
+)
+"solver.ml" 615 18193 18209 "solver.ml" 615 18193 18237
+type(
+  'd -> 'e
+)
+"solver.ml" 617 18239 18245 "solver.ml" 617 18239 18249
+type(
+  set -> unit
+)
+ident(
+  def push "solver.ml" 621 18392 18394 "solver.ml" 628 18580 18583
+)
+"solver.ml" 617 18239 18257 "solver.ml" 617 18239 18262
+type(
+  Ast.exp list
+)
+ident(
+  def forms "solver.ml" 618 18319 18323 "solver.ml" 619 18358 18390
+)
+"solver.ml" 617 18239 18276 "solver.ml" 617 18239 18287
+type(
+  Ast.exp list Stack.t
+)
+ident(
+  def forms_stack "solver.ml" 618 18319 18323 "solver.ml" 619 18358 18390
+)
+"solver.ml" 617 18239 18294 "solver.ml" 617 18239 18298
+type(
+  varmap
+)
+ident(
+  def vars "solver.ml" 618 18319 18323 "solver.ml" 619 18358 18390
+)
+"solver.ml" 617 18239 18313 "solver.ml" 617 18239 18315
+type(
+  varmap Stack.t
+)
+ident(
+  def vs "solver.ml" 618 18319 18323 "solver.ml" 619 18358 18390
+)
+"solver.ml" 617 18239 18250 "solver.ml" 617 18239 18316
+type(
+  set
+)
+"solver.ml" 618 18319 18323 "solver.ml" 618 18319 18333
+type(
+  varmap -> varmap Stack.t -> unit
+)
+ident(
+  ext_ref Stack.push
+)
+"solver.ml" 618 18319 18335 "solver.ml" 618 18319 18347
+type(
+  varmap -> varmap
+)
+ident(
+  ext_ref Var.VarHash.copy
+)
+"solver.ml" 618 18319 18348 "solver.ml" 618 18319 18352
+type(
+  varmap
+)
+ident(
+  int_ref vars "solver.ml" 617 18239 18294 "solver.ml" 617 18239 18298
+)
+"solver.ml" 618 18319 18335 "solver.ml" 618 18319 18352
+call(
+  stack
+)
+type(
+  varmap
+)
+"solver.ml" 618 18319 18354 "solver.ml" 618 18319 18356
+type(
+  varmap Stack.t
+)
+ident(
+  int_ref vs "solver.ml" 617 18239 18313 "solver.ml" 617 18239 18315
+)
+"solver.ml" 618 18319 18323 "solver.ml" 618 18319 18356
+call(
+  stack
+)
+type(
+  unit
+)
+"solver.ml" 619 18358 18362 "solver.ml" 619 18358 18372
+type(
+  Ast.exp list -> Ast.exp list Stack.t -> unit
+)
+ident(
+  ext_ref Stack.push
+)
+"solver.ml" 619 18358 18373 "solver.ml" 619 18358 18378
+type(
+  Ast.exp list
+)
+ident(
+  int_ref forms "solver.ml" 617 18239 18257 "solver.ml" 617 18239 18262
+)
+"solver.ml" 619 18358 18379 "solver.ml" 619 18358 18390
+type(
+  Ast.exp list Stack.t
+)
+ident(
+  int_ref forms_stack "solver.ml" 617 18239 18276 "solver.ml" 617 18239 18287
+)
+"solver.ml" 619 18358 18362 "solver.ml" 619 18358 18390
+call(
+  tail
+)
+type(
+  unit
+)
+"solver.ml" 618 18319 18323 "solver.ml" 619 18358 18390
+type(
+  unit
+)
+"solver.ml" 617 18239 18250 "solver.ml" 619 18358 18390
+type(
+  set -> unit
+)
+"solver.ml" 621 18392 18398 "solver.ml" 621 18392 18401
+type(
+  set -> unit
+)
+ident(
+  def pop "solver.ml" 625 18505 18507 "solver.ml" 628 18580 18583
+)
+"solver.ml" 621 18392 18402 "solver.ml" 621 18392 18405
+type(
+  set
+)
+ident(
+  def ctx "solver.ml" 622 18408 18412 "solver.ml" 623 18461 18503
+)
+"solver.ml" 622 18408 18416 "solver.ml" 622 18408 18418
+type(
+  unit
+)
+"solver.ml" 622 18408 18421 "solver.ml" 622 18408 18424
+type(
+  set
+)
+ident(
+  int_ref ctx "solver.ml" 621 18392 18402 "solver.ml" 621 18392 18405
+)
+"solver.ml" 622 18408 18433 "solver.ml" 622 18408 18442
+type(
+  varmap Stack.t -> varmap
+)
+ident(
+  ext_ref Stack.pop
+)
+"solver.ml" 622 18408 18443 "solver.ml" 622 18408 18446
+type(
+  set
+)
+ident(
+  int_ref ctx "solver.ml" 621 18392 18402 "solver.ml" 621 18392 18405
+)
+"solver.ml" 622 18408 18443 "solver.ml" 622 18408 18457
+type(
+  varmap Stack.t
+)
+"solver.ml" 622 18408 18433 "solver.ml" 622 18408 18457
+call(
+  stack
+)
+type(
+  varmap
+)
+"solver.ml" 622 18408 18421 "solver.ml" 622 18408 18457
+type(
+  unit
+)
+"solver.ml" 623 18461 18465 "solver.ml" 623 18461 18468
+type(
+  set
+)
+ident(
+  int_ref ctx "solver.ml" 621 18392 18402 "solver.ml" 621 18392 18405
+)
+"solver.ml" 623 18461 18478 "solver.ml" 623 18461 18487
+type(
+  Ast.exp list Stack.t -> Ast.exp list
+)
+ident(
+  ext_ref Stack.pop
+)
+"solver.ml" 623 18461 18488 "solver.ml" 623 18461 18491
+type(
+  set
+)
+ident(
+  int_ref ctx "solver.ml" 621 18392 18402 "solver.ml" 621 18392 18405
+)
+"solver.ml" 623 18461 18488 "solver.ml" 623 18461 18503
+type(
+  Ast.exp list Stack.t
+)
+"solver.ml" 623 18461 18478 "solver.ml" 623 18461 18503
+call(
+  stack
+)
+type(
+  Ast.exp list
+)
+"solver.ml" 623 18461 18465 "solver.ml" 623 18461 18503
+type(
+  unit
+)
+"solver.ml" 622 18408 18412 "solver.ml" 623 18461 18503
+type(
+  unit
+)
+"solver.ml" 621 18392 18402 "solver.ml" 623 18461 18503
+type(
+  set -> unit
+)
+"solver.ml" 625 18505 18511 "solver.ml" 625 18505 18517
+type(
+  'f -> string
+)
+ident(
+  def pp_sol "solver.ml" 627 18542 18544 "solver.ml" 628 18580 18583
+)
+"solver.ml" 625 18505 18518 "solver.ml" 625 18505 18519
+type(
+  'f
+)
+"solver.ml" 626 18522 18526 "solver.ml" 626 18522 18541
+type(
+  string
+)
+"solver.ml" 625 18505 18518 "solver.ml" 626 18522 18541
+type(
+  'f -> string
+)
+"solver.ml" 627 18542 18548 "solver.ml" 627 18542 18554
+type(
+  'g -> Ast.exp -> string
+)
+ident(
+  def pp_exp "solver.ml" 627 18542 18579 "solver.ml" 628 18580 18583
+)
+"solver.ml" 627 18542 18555 "solver.ml" 627 18542 18556
+type(
+  'g
+)
+"solver.ml" 627 18542 18559 "solver.ml" 627 18542 18579
+type(
+  Ast.exp -> string
+)
+ident(
+  ext_ref Pp.ast_exp_to_string
+)
+"solver.ml" 627 18542 18555 "solver.ml" 627 18542 18579
+type(
+  'g -> Ast.exp -> string
+)
+"solver.ml" 630 18585 18607 "solver.ml" 630 18585 18632
+call(
+  stack
+)
+"solver.ml" 630 18585 18602 "solver.ml" 630 18585 18633
+call(
+  stack
+)
+"solver.ml" 631 18634 18662 "solver.ml" 631 18634 18693
+call(
+  stack
+)
+"solver.ml" 631 18634 18657 "solver.ml" 631 18634 18694
+call(
+  stack
+)
+"solver.ml" 632 18695 18718 "solver.ml" 632 18695 18744
+call(
+  stack
+)
+"solver.ml" 632 18695 18713 "solver.ml" 632 18695 18745
+call(
+  stack
+)
+"solver.ml" 633 18746 18775 "solver.ml" 633 18746 18807
+call(
+  stack
+)
+"solver.ml" 633 18746 18770 "solver.ml" 633 18746 18808
+call(
+  stack
+)
+"solver.ml" 634 18809 18833 "solver.ml" 634 18809 18860
+call(
+  stack
+)
+"solver.ml" 634 18809 18828 "solver.ml" 634 18809 18861
+call(
+  stack
+)
+"solver.ml" 638 18891 18895 "solver.ml" 638 18891 18902
+type(
+  (string, unit -> STPExec.solver) Hashtbl.t
+)
+ident(
+  def solvers "solver.ml" 639 18926 18926 --
+)
+"solver.ml" 638 18891 18905 "solver.ml" 638 18891 18919
+type(
+  int -> (string, unit -> STPExec.solver) Hashtbl.t
+)
+ident(
+  ext_ref Hashtbl.create
+)
+"solver.ml" 638 18891 18920 "solver.ml" 638 18891 18922
+type(
+  int
+)
+"solver.ml" 638 18891 18905 "solver.ml" 638 18891 18922
+call(
+  stack
+)
+type(
+  (string, unit -> STPExec.solver) Hashtbl.t
+)
+"solver.ml" 639 18926 18926 "solver.ml" 639 18926 18935
+type(
+  (string * (unit -> STPExec.solver) -> unit) ->
+  (string * (unit -> STPExec.solver)) list -> unit
+)
+ident(
+  ext_ref List.iter
+)
+"solver.ml" 639 18926 18942 "solver.ml" 639 18926 18943
+type(
+  string
+)
+ident(
+  def n "solver.ml" 639 18926 18950 "solver.ml" 639 18926 18973
+)
+"solver.ml" 639 18926 18944 "solver.ml" 639 18926 18945
+type(
+  unit -> STPExec.solver
+)
+ident(
+  def s "solver.ml" 639 18926 18950 "solver.ml" 639 18926 18973
+)
+"solver.ml" 639 18926 18942 "solver.ml" 639 18926 18945
+type(
+  string * (unit -> STPExec.solver)
+)
+"solver.ml" 639 18926 18950 "solver.ml" 639 18926 18961
+type(
+  (string, unit -> STPExec.solver) Hashtbl.t ->
+  string -> (unit -> STPExec.solver) -> unit
+)
+ident(
+  ext_ref Hashtbl.add
+)
+"solver.ml" 639 18926 18962 "solver.ml" 639 18926 18969
+type(
+  (string, unit -> STPExec.solver) Hashtbl.t
+)
+ident(
+  int_ref solvers "solver.ml" 638 18891 18895 "solver.ml" 638 18891 18902
+)
+"solver.ml" 639 18926 18970 "solver.ml" 639 18926 18971
+type(
+  string
+)
+ident(
+  int_ref n "solver.ml" 639 18926 18942 "solver.ml" 639 18926 18943
+)
+"solver.ml" 639 18926 18972 "solver.ml" 639 18926 18973
+type(
+  unit -> STPExec.solver
+)
+ident(
+  int_ref s "solver.ml" 639 18926 18944 "solver.ml" 639 18926 18945
+)
+"solver.ml" 639 18926 18950 "solver.ml" 639 18926 18973
+call(
+  tail
+)
+type(
+  unit
+)
+"solver.ml" 639 18926 18941 "solver.ml" 639 18926 18973
+type(
+  string * (unit -> STPExec.solver) -> unit
+)
+"solver.ml" 641 18979 18984 "solver.ml" 641 18979 18989
+type(
+  string
+)
+"solver.ml" 641 18979 18991 "solver.ml" 641 18979 19008
+type(
+  unit -> STPExec.solver
+)
+ident(
+  ext_ref STPExec.newsolver
+)
+"solver.ml" 641 18979 18984 "solver.ml" 641 18979 19008
+type(
+  string * (unit -> STPExec.solver)
+)
+"solver.ml" 642 19010 19017 "solver.ml" 642 19010 19029
+type(
+  string
+)
+"solver.ml" 642 19010 19031 "solver.ml" 642 19010 19054
+type(
+  unit -> STPExec.solver
+)
+ident(
+  ext_ref STPSMTLIBExec.newsolver
+)
+"solver.ml" 642 19010 19017 "solver.ml" 642 19010 19054
+type(
+  string * (unit -> STPExec.solver)
+)
+"solver.ml" 643 19056 19063 "solver.ml" 643 19056 19069
+type(
+  string
+)
+"solver.ml" 643 19056 19071 "solver.ml" 643 19056 19089
+type(
+  unit -> STPExec.solver
+)
+ident(
+  ext_ref CVC3Exec.newsolver
+)
+"solver.ml" 643 19056 19063 "solver.ml" 643 19056 19089
+type(
+  string * (unit -> STPExec.solver)
+)
+"solver.ml" 644 19091 19098 "solver.ml" 644 19091 19111
+type(
+  string
+)
+"solver.ml" 644 19091 19113 "solver.ml" 644 19091 19137
+type(
+  unit -> STPExec.solver
+)
+ident(
+  ext_ref CVC3SMTLIBExec.newsolver
+)
+"solver.ml" 644 19091 19098 "solver.ml" 644 19091 19137
+type(
+  string * (unit -> STPExec.solver)
+)
+"solver.ml" 645 19139 19146 "solver.ml" 645 19139 19153
+type(
+  string
+)
+"solver.ml" 645 19139 19155 "solver.ml" 645 19139 19174
+type(
+  unit -> STPExec.solver
+)
+ident(
+  ext_ref YICESExec.newsolver
+)
+"solver.ml" 645 19139 19146 "solver.ml" 645 19139 19174
+type(
+  string * (unit -> STPExec.solver)
+)
+"solver.ml" 646 19176 19183 "solver.ml" 646 19176 19187
+type(
+  string
+)
+"solver.ml" 646 19176 19189 "solver.ml" 646 19176 19201
+type(
+  unit -> STPExec.solver
+)
+ident(
+  ext_ref Z3.newsolver
+)
+"solver.ml" 646 19176 19183 "solver.ml" 646 19176 19201
+type(
+  string * (unit -> STPExec.solver)
+)
+"solver.ml" 647 19203 19209 "solver.ml" 647 19203 19211
+type(
+  (string * (unit -> STPExec.solver)) list
+)
+"solver.ml" 646 19176 19182 "solver.ml" 647 19203 19211
+type(
+  (string * (unit -> STPExec.solver)) list
+)
+"solver.ml" 645 19139 19145 "solver.ml" 647 19203 19211
+type(
+  (string * (unit -> STPExec.solver)) list
+)
+"solver.ml" 644 19091 19097 "solver.ml" 647 19203 19211
+type(
+  (string * (unit -> STPExec.solver)) list
+)
+"solver.ml" 643 19056 19062 "solver.ml" 647 19203 19211
+type(
+  (string * (unit -> STPExec.solver)) list
+)
+"solver.ml" 642 19010 19016 "solver.ml" 647 19203 19211
+type(
+  (string * (unit -> STPExec.solver)) list
+)
+"solver.ml" 641 18979 18983 "solver.ml" 647 19203 19211
+type(
+  (string * (unit -> STPExec.solver)) list
+)
+"solver.ml" 639 18926 18926 "solver.ml" 648 19212 19215
+call(
+  stack
+)
+type(
+  unit
+)
+"solver.ml" 652 19250 19254 "solver.ml" 652 19250 19261
+type(
+  Ast.exp
+)
+ident(
+  def memtest "solver.ml" 659 19564 19564 --
+)
+"solver.ml" 653 19264 19270 "solver.ml" 653 19264 19273
+type(
+  Var.t
+)
+"solver.ml" 653 19264 19276 "solver.ml" 653 19264 19282
+type(
+  string -> Type.typ -> Var.t
+)
+ident(
+  ext_ref Var.newvar
+)
+"solver.ml" 653 19264 19283 "solver.ml" 653 19264 19288
+type(
+  string
+)
+"solver.ml" 653 19264 19295 "solver.ml" 653 19264 19301
+type(
+  Type.typ
+)
+ident(
+  ext_ref Ast.reg_32
+)
+"solver.ml" 653 19264 19290 "solver.ml" 653 19264 19301
+type(
+  Type.typ
+)
+"solver.ml" 653 19264 19276 "solver.ml" 653 19264 19302
+call(
+  stack
+)
+type(
+  Var.t
+)
+"solver.ml" 655 19400 19406 "solver.ml" 655 19400 19410
+type(
+  Ast.exp
+)
+"solver.ml" 655 19400 19422 "solver.ml" 655 19400 19425
+type(
+  Ast.var
+)
+ident(
+  int_ref mem "solver.ml" 653 19264 19270 "solver.ml" 653 19264 19273
+)
+"solver.ml" 655 19400 19418 "solver.ml" 655 19400 19426
+type(
+  Ast.exp
+)
+"solver.ml" 655 19400 19432 "solver.ml" 655 19400 19439
+type(
+  int -> Big_int_Z.big_int
+)
+ident(
+  ext_ref Big_int_convenience.biconst
+)
+"solver.ml" 655 19400 19440 "solver.ml" 655 19400 19442
+type(
+  int
+)
+"solver.ml" 655 19400 19432 "solver.ml" 655 19400 19442
+call(
+  stack
+)
+type(
+  Big_int_Z.big_int
+)
+"solver.ml" 655 19400 19444 "solver.ml" 655 19400 19450
+type(
+  Type.typ
+)
+ident(
+  ext_ref Ast.reg_32
+)
+"solver.ml" 655 19400 19428 "solver.ml" 655 19400 19451
+type(
+  Big_int_Z.big_int * Type.typ
+)
+type(
+  Ast.exp
+)
+"solver.ml" 655 19400 19453 "solver.ml" 655 19400 19462
+type(
+  Ast.exp
+)
+ident(
+  ext_ref Ast.exp_false
+)
+"solver.ml" 655 19400 19464 "solver.ml" 655 19400 19470
+type(
+  Type.typ
+)
+ident(
+  ext_ref Ast.reg_32
+)
+"solver.ml" 655 19400 19413 "solver.ml" 655 19400 19471
+type(
+  Ast.exp * Ast.exp * Ast.exp * Type.typ
+)
+type(
+  Ast.exp
+)
+"solver.ml" 656 19475 19481 "solver.ml" 656 19475 19485
+type(
+  Ast.exp
+)
+"solver.ml" 656 19475 19494 "solver.ml" 656 19475 19496
+type(
+  Type.binop_type
+)
+"solver.ml" 656 19475 19498 "solver.ml" 656 19475 19502
+type(
+  Ast.exp
+)
+ident(
+  int_ref load "solver.ml" 655 19400 19406 "solver.ml" 655 19400 19410
+)
+"solver.ml" 656 19475 19508 "solver.ml" 656 19475 19515
+type(
+  int -> Big_int_Z.big_int
+)
+ident(
+  ext_ref Big_int_convenience.biconst
+)
+"solver.ml" 656 19475 19516 "solver.ml" 656 19475 19518
+type(
+  int
+)
+"solver.ml" 656 19475 19508 "solver.ml" 656 19475 19518
+call(
+  stack
+)
+type(
+  Big_int_Z.big_int
+)
+"solver.ml" 656 19475 19520 "solver.ml" 656 19475 19526
+type(
+  Type.typ
+)
+ident(
+  ext_ref Ast.reg_32
+)
+"solver.ml" 656 19475 19504 "solver.ml" 656 19475 19527
+type(
+  Big_int_Z.big_int * Type.typ
+)
+type(
+  Ast.exp
+)
+"solver.ml" 656 19475 19488 "solver.ml" 656 19475 19528
+type(
+  Type.binop_type * Ast.exp * Ast.exp
+)
+type(
+  Ast.exp
+)
+"solver.ml" 657 19532 19534 "solver.ml" 657 19532 19557
+type(
+  Ast.exp -> Ast.exp
+)
+ident(
+  ext_ref Memory2array.coerce_exp
+)
+"solver.ml" 657 19532 19558 "solver.ml" 657 19532 19562
+type(
+  Ast.exp
+)
+ident(
+  int_ref test "solver.ml" 656 19475 19481 "solver.ml" 656 19475 19485
+)
+"solver.ml" 657 19532 19534 "solver.ml" 657 19532 19562
+call(
+  stack
+)
+type(
+  Ast.exp
+)
+"solver.ml" 656 19475 19477 "solver.ml" 657 19532 19562
+type(
+  Ast.exp
+)
+"solver.ml" 655 19400 19402 "solver.ml" 657 19532 19562
+type(
+  Ast.exp
+)
+"solver.ml" 653 19264 19266 "solver.ml" 657 19532 19562
+type(
+  Ast.exp
+)
+"solver.ml" 659 19564 19568 "solver.ml" 659 19564 19578
+type(
+  Ast.exp
+)
+ident(
+  def stupidtest "solver.ml" 663 19649 19649 --
+)
+"solver.ml" 660 19581 19587 "solver.ml" 660 19581 19588
+type(
+  Ast.exp
+)
+"solver.ml" 660 19581 19595 "solver.ml" 660 19581 19601
+type(
+  string -> Type.typ -> Ast.var
+)
+ident(
+  ext_ref Var.newvar
+)
+"solver.ml" 660 19581 19602 "solver.ml" 660 19581 19605
+type(
+  string
+)
+"solver.ml" 660 19581 19606 "solver.ml" 660 19581 19611
+type(
+  Type.typ
+)
+ident(
+  ext_ref Ast.reg_8
+)
+"solver.ml" 660 19581 19595 "solver.ml" 660 19581 19611
+call(
+  stack
+)
+type(
+  Ast.var
+)
+"solver.ml" 660 19581 19591 "solver.ml" 660 19581 19612
+type(
+  Ast.exp
+)
+"solver.ml" 661 19616 19624 "solver.ml" 661 19616 19626
+type(
+  Type.binop_type
+)
+"solver.ml" 661 19616 19628 "solver.ml" 661 19616 19629
+type(
+  Ast.exp
+)
+ident(
+  int_ref x "solver.ml" 660 19581 19587 "solver.ml" 660 19581 19588
+)
+"solver.ml" 661 19616 19635 "solver.ml" 661 19616 19638
+type(
+  Big_int_Z.big_int
+)
+ident(
+  ext_ref Big_int_convenience.bi2
+)
+"solver.ml" 661 19616 19640 "solver.ml" 661 19616 19645
+type(
+  Type.typ
+)
+ident(
+  ext_ref Ast.reg_8
+)
+"solver.ml" 661 19616 19631 "solver.ml" 661 19616 19646
+type(
+  Big_int_Z.big_int * Type.typ
+)
+type(
+  Ast.exp
+)
+"solver.ml" 661 19616 19618 "solver.ml" 661 19616 19647
+type(
+  Type.binop_type * Ast.exp * Ast.exp
+)
+type(
+  Ast.exp
+)
+"solver.ml" 660 19581 19583 "solver.ml" 661 19616 19647
+type(
+  Ast.exp
+)
+"solver.ml" 663 19649 19653 "solver.ml" 663 19649 19658
+type(
+  Ast.exp
+)
+ident(
+  def test1 "solver.ml" 844 27608 27608 --
+)
+"solver.ml" 664 19661 19667 "solver.ml" 664 19661 19669
+type(
+  Ast.exp
+)
+"solver.ml" 664 19661 19677 "solver.ml" 664 19661 19683
+type(
+  string -> Type.typ -> Ast.var
+)
+ident(
+  ext_ref Var.newvar
+)
+"solver.ml" 664 19661 19684 "solver.ml" 664 19661 19688
+type(
+  string
+)
+"solver.ml" 664 19661 19689 "solver.ml" 664 19661 19694
+type(
+  Type.typ
+)
+ident(
+  ext_ref Ast.reg_8
+)
+"solver.ml" 664 19661 19677 "solver.ml" 664 19661 19694
+call(
+  stack
+)
+type(
+  Ast.var
+)
+"solver.ml" 664 19661 19673 "solver.ml" 664 19661 19695
+type(
+  Ast.exp
+)
+"solver.ml" 665 19699 19705 "solver.ml" 665 19699 19707
+type(
+  Ast.exp
+)
+"solver.ml" 665 19699 19715 "solver.ml" 665 19699 19721
+type(
+  string -> Type.typ -> Ast.var
+)
+ident(
+  ext_ref Var.newvar
+)
+"solver.ml" 665 19699 19722 "solver.ml" 665 19699 19726
+type(
+  string
+)
+"solver.ml" 665 19699 19727 "solver.ml" 665 19699 19732
+type(
+  Type.typ
+)
+ident(
+  ext_ref Ast.reg_8
+)
+"solver.ml" 665 19699 19715 "solver.ml" 665 19699 19732
+call(
+  stack
+)
+type(
+  Ast.var
+)
+"solver.ml" 665 19699 19711 "solver.ml" 665 19699 19733
+type(
+  Ast.exp
+)
+"solver.ml" 666 19737 19743 "solver.ml" 666 19737 19745
+type(
+  Ast.exp
+)
+"solver.ml" 666 19737 19753 "solver.ml" 666 19737 19759
+type(
+  string -> Type.typ -> Ast.var
+)
+ident(
+  ext_ref Var.newvar
+)
+"solver.ml" 666 19737 19760 "solver.ml" 666 19737 19764
+type(
+  string
+)
+"solver.ml" 666 19737 19765 "solver.ml" 666 19737 19770
+type(
+  Type.typ
+)
+ident(
+  ext_ref Ast.reg_8
+)
+"solver.ml" 666 19737 19753 "solver.ml" 666 19737 19770
+call(
+  stack
+)
+type(
+  Ast.var
+)
+"solver.ml" 666 19737 19749 "solver.ml" 666 19737 19771
+type(
+  Ast.exp
+)
+"solver.ml" 667 19775 19781 "solver.ml" 667 19775 19788
+type(
+  Ast.exp
+)
+"solver.ml" 668 19791 19801 "solver.ml" 668 19791 19807
+type(
+  Type.binop_type
+)
+"solver.ml" 669 19809 19824 "solver.ml" 669 19809 19837
+type(
+  Type.cast_type
+)
+"solver.ml" 670 19839 19854 "solver.ml" 670 19839 19860
+type(
+  Type.typ
+)
+ident(
+  ext_ref Ast.reg_32
+)
+"solver.ml" 671 19862 19882 "solver.ml" 671 19862 19890
+type(
+  Type.cast_type
+)
+"solver.ml" 672 19892 19912 "solver.ml" 672 19892 19917
+type(
+  Type.typ
+)
+ident(
+  ext_ref Ast.reg_8
+)
+"solver.ml" 673 19919 19945 "solver.ml" 673 19919 19948
+type(
+  Type.binop_type
+)
+"solver.ml" 674 19950 19982 "solver.ml" 674 19950 19988
+type(
+  Type.binop_type
+)
+"solver.ml" 675 19990 20028 "solver.ml" 675 19990 20030
+type(
+  Type.binop_type
+)
+"solver.ml" 676 20032 20076 "solver.ml" 676 20032 20082
+type(
+  Type.binop_type
+)
+"solver.ml" 677 20084 20133 "solver.ml" 677 20084 20146
+type(
+  Type.cast_type
+)
+"solver.ml" 677 20084 20148 "solver.ml" 677 20084 20154
+type(
+  Type.typ
+)
+ident(
+  ext_ref Ast.reg_32
+)
+"solver.ml" 677 20084 20156 "solver.ml" 677 20084 20158
+type(
+  Ast.exp
+)
+ident(
+  int_ref b4 "solver.ml" 666 19737 19743 "solver.ml" 666 19737 19745
+)
+"solver.ml" 677 20084 20128 "solver.ml" 677 20084 20159
+type(
+  Type.cast_type * Type.typ * Ast.exp
+)
+type(
+  Ast.exp
+)
+"solver.ml" 678 20161 20209 "solver.ml" 678 20161 20216
+type(
+  int -> Big_int_Z.big_int
+)
+ident(
+  ext_ref Big_int_convenience.biconst
+)
+"solver.ml" 678 20161 20217 "solver.ml" 678 20161 20219
+type(
+  int
+)
+"solver.ml" 678 20161 20209 "solver.ml" 678 20161 20219
+call(
+  stack
+)
+type(
+  Big_int_Z.big_int
+)
+"solver.ml" 678 20161 20220 "solver.ml" 678 20161 20226
+type(
+  Type.typ
+)
+ident(
+  ext_ref Ast.reg_32
+)
+"solver.ml" 678 20161 20205 "solver.ml" 678 20161 20227
+type(
+  Big_int_Z.big_int * Type.typ
+)
+type(
+  Ast.exp
+)
+"solver.ml" 676 20032 20070 "solver.ml" 678 20161 20228
+type(
+  Type.binop_type * Ast.exp * Ast.exp
+)
+type(
+  Ast.exp
+)
+"solver.ml" 679 20230 20274 "solver.ml" 679 20230 20276
+type(
+  Type.binop_type
+)
+"solver.ml" 680 20278 20326 "solver.ml" 680 20278 20335
+type(
+  int64 -> Big_int_Z.big_int
+)
+ident(
+  ext_ref Big_int_convenience.biconst64
+)
+"solver.ml" 680 20278 20336 "solver.ml" 680 20278 20345
+type(
+  int64
+)
+"solver.ml" 680 20278 20326 "solver.ml" 680 20278 20345
+call(
+  stack
+)
+type(
+  Big_int_Z.big_int
+)
+"solver.ml" 680 20278 20346 "solver.ml" 680 20278 20352
+type(
+  Type.typ
+)
+ident(
+  ext_ref Ast.reg_32
+)
+"solver.ml" 680 20278 20322 "solver.ml" 680 20278 20353
+type(
+  Big_int_Z.big_int * Type.typ
+)
+type(
+  Ast.exp
+)
+"solver.ml" 681 20355 20405 "solver.ml" 681 20355 20407
+type(
+  Type.binop_type
+)
+"solver.ml" 682 20409 20465 "solver.ml" 682 20409 20471
+type(
+  Type.binop_type
+)
+"solver.ml" 683 20473 20534 "solver.ml" 683 20473 20547
+type(
+  Type.cast_type
+)
+"solver.ml" 683 20473 20549 "solver.ml" 683 20473 20555
+type(
+  Type.typ
+)
+ident(
+  ext_ref Ast.reg_32
+)
+"solver.ml" 683 20473 20557 "solver.ml" 683 20473 20559
+type(
+  Ast.exp
+)
+ident(
+  int_ref b3 "solver.ml" 665 19699 19705 "solver.ml" 665 19699 19707
+)
+"solver.ml" 683 20473 20529 "solver.ml" 683 20473 20560
+type(
+  Type.cast_type * Type.typ * Ast.exp
+)
+type(
+  Ast.exp
+)
+"solver.ml" 684 20562 20622 "solver.ml" 684 20562 20625
+type(
+  Big_int_Z.big_int
+)
+ident(
+  ext_ref Big_int_convenience.bi8
+)
+"solver.ml" 684 20562 20626 "solver.ml" 684 20562 20632
+type(
+  Type.typ
+)
+ident(
+  ext_ref Ast.reg_32
+)
+"solver.ml" 684 20562 20618 "solver.ml" 684 20562 20633
+type(
+  Big_int_Z.big_int * Type.typ
+)
+type(
+  Ast.exp
+)
+"solver.ml" 682 20409 20459 "solver.ml" 684 20562 20634
+type(
+  Type.binop_type * Ast.exp * Ast.exp
+)
+type(
+  Ast.exp
+)
+"solver.ml" 685 20636 20691 "solver.ml" 685 20636 20704
+type(
+  Type.cast_type
+)
+"solver.ml" 685 20636 20706 "solver.ml" 685 20636 20712
+type(
+  Type.typ
+)
+ident(
+  ext_ref Ast.reg_32
+)
+"solver.ml" 685 20636 20714 "solver.ml" 685 20636 20716
+type(
+  Ast.exp
+)
+ident(
+  int_ref b2 "solver.ml" 664 19661 19667 "solver.ml" 664 19661 19669
+)
+"solver.ml" 685 20636 20686 "solver.ml" 685 20636 20717
+type(
+  Type.cast_type * Type.typ * Ast.exp
+)
+type(
+  Ast.exp
+)
+"solver.ml" 681 20355 20399 "solver.ml" 685 20636 20718
+type(
+  Type.binop_type * Ast.exp * Ast.exp
+)
+type(
+  Ast.exp
+)
+"solver.ml" 679 20230 20268 "solver.ml" 685 20636 20719
+type(
+  Type.binop_type * Ast.exp * Ast.exp
+)
+type(
+  Ast.exp
+)
+"solver.ml" 675 19990 20022 "solver.ml" 685 20636 20720
+type(
+  Type.binop_type * Ast.exp * Ast.exp
+)
+type(
+  Ast.exp
+)
+"solver.ml" 686 20722 20758 "solver.ml" 686 20722 20765
+type(
+  int -> Big_int_Z.big_int
+)
+ident(
+  ext_ref Big_int_convenience.biconst
+)
+"solver.ml" 686 20722 20766 "solver.ml" 686 20722 20768
+type(
+  int
+)
+"solver.ml" 686 20722 20758 "solver.ml" 686 20722 20768
+call(
+  stack
+)
+type(
+  Big_int_Z.big_int
+)
+"solver.ml" 686 20722 20769 "solver.ml" 686 20722 20775
+type(
+  Type.typ
+)
+ident(
+  ext_ref Ast.reg_32
+)
+"solver.ml" 686 20722 20754 "solver.ml" 686 20722 20776
+type(
+  Big_int_Z.big_int * Type.typ
+)
+type(
+  Ast.exp
+)
+"solver.ml" 674 19950 19976 "solver.ml" 686 20722 20777
+type(
+  Type.binop_type * Ast.exp * Ast.exp
+)
+type(
+  Ast.exp
+)
+"solver.ml" 687 20779 20809 "solver.ml" 687 20779 20816
+type(
+  int -> Big_int_Z.big_int
+)
+ident(
+  ext_ref Big_int_convenience.biconst
+)
+"solver.ml" 687 20779 20817 "solver.ml" 687 20779 20821
+type(
+  int
+)
+"solver.ml" 687 20779 20809 "solver.ml" 687 20779 20821
+call(
+  stack
+)
+type(
+  Big_int_Z.big_int
+)
+"solver.ml" 687 20779 20822 "solver.ml" 687 20779 20828
+type(
+  Type.typ
+)
+ident(
+  ext_ref Ast.reg_32
+)
+"solver.ml" 687 20779 20805 "solver.ml" 687 20779 20829
+type(
+  Big_int_Z.big_int * Type.typ
+)
+type(
+  Ast.exp
+)
+"solver.ml" 673 19919 19939 "solver.ml" 687 20779 20830
+type(
+  Type.binop_type * Ast.exp * Ast.exp
+)
+type(
+  Ast.exp
+)
+"solver.ml" 671 19862 19877 "solver.ml" 687 20779 20831
+type(
+  Type.cast_type * Type.typ * Ast.exp
+)
+type(
+  Ast.exp
+)
+"solver.ml" 669 19809 19819 "solver.ml" 687 20779 20832
+type(
+  Type.cast_type * Type.typ * Ast.exp
+)
+type(
+  Ast.exp
+)
+"solver.ml" 688 20834 20848 "solver.ml" 688 20834 20855
+type(
+  int -> Big_int_Z.big_int
+)
+ident(
+  ext_ref Big_int_convenience.biconst
+)
+"solver.ml" 688 20834 20856 "solver.ml" 688 20834 20858
+type(
+  int
+)
+"solver.ml" 688 20834 20848 "solver.ml" 688 20834 20858
+call(
+  stack
+)
+type(
+  Big_int_Z.big_int
+)
+"solver.ml" 688 20834 20859 "solver.ml" 688 20834 20865
+type(
+  Type.typ
+)
+ident(
+  ext_ref Ast.reg_32
+)
+"solver.ml" 688 20834 20844 "solver.ml" 688 20834 20866
+type(
+  Big_int_Z.big_int * Type.typ
+)
+type(
+  Ast.exp
+)
+"solver.ml" 668 19791 19795 "solver.ml" 688 20834 20867
+type(
+  Type.binop_type * Ast.exp * Ast.exp
+)
+type(
+  Ast.exp
+)
+"solver.ml" 690 20873 20879 "solver.ml" 690 20873 20886
+type(
+  Ast.exp
+)
+"solver.ml" 691 20889 20899 "solver.ml" 691 20889 20905
+type(
+  Type.binop_type
+)
+"solver.ml" 692 20907 20922 "solver.ml" 692 20907 20935
+type(
+  Type.cast_type
+)
+"solver.ml" 693 20937 20952 "solver.ml" 693 20937 20958
+type(
+  Type.typ
+)
+ident(
+  ext_ref Ast.reg_32
+)
+"solver.ml" 694 20960 20980 "solver.ml" 694 20960 20988
+type(
+  Type.cast_type
+)
+"solver.ml" 695 20990 21010 "solver.ml" 695 20990 21015
+type(
+  Type.typ
+)
+ident(
+  ext_ref Ast.reg_8
+)
+"solver.ml" 696 21017 21043 "solver.ml" 696 21017 21046
+type(
+  Type.binop_type
+)
+"solver.ml" 697 21048 21080 "solver.ml" 697 21048 21086
+type(
+  Type.binop_type
+)
+"solver.ml" 698 21088 21126 "solver.ml" 698 21088 21128
+type(
+  Type.binop_type
+)
+"solver.ml" 699 21130 21174 "solver.ml" 699 21130 21180
+type(
+  Type.binop_type
+)
+"solver.ml" 699 21130 21187 "solver.ml" 699 21130 21200
+type(
+  Type.cast_type
+)
+"solver.ml" 699 21130 21202 "solver.ml" 699 21130 21208
+type(
+  Type.typ
+)
+ident(
+  ext_ref Ast.reg_32
+)
+"solver.ml" 699 21130 21210 "solver.ml" 699 21130 21212
+type(
+  Ast.exp
+)
+ident(
+  int_ref b4 "solver.ml" 666 19737 19743 "solver.ml" 666 19737 19745
+)
+"solver.ml" 699 21130 21182 "solver.ml" 699 21130 21213
+type(
+  Type.cast_type * Type.typ * Ast.exp
+)
+type(
+  Ast.exp
+)
+"solver.ml" 700 21215 21263 "solver.ml" 700 21215 21270
+type(
+  int -> Big_int_Z.big_int
+)
+ident(
+  ext_ref Big_int_convenience.biconst
+)
+"solver.ml" 700 21215 21271 "solver.ml" 700 21215 21273
+type(
+  int
+)
+"solver.ml" 700 21215 21263 "solver.ml" 700 21215 21273
+call(
+  stack
+)
+type(
+  Big_int_Z.big_int
+)
+"solver.ml" 700 21215 21274 "solver.ml" 700 21215 21280
+type(
+  Type.typ
+)
+ident(
+  ext_ref Ast.reg_32
+)
+"solver.ml" 700 21215 21259 "solver.ml" 700 21215 21281
+type(
+  Big_int_Z.big_int * Type.typ
+)
+type(
+  Ast.exp
+)
+"solver.ml" 699 21130 21168 "solver.ml" 700 21215 21282
+type(
+  Type.binop_type * Ast.exp * Ast.exp
+)
+type(
+  Ast.exp
+)
+"solver.ml" 701 21284 21328 "solver.ml" 701 21284 21330
+type(
+  Type.binop_type
+)
+"solver.ml" 701 21284 21336 "solver.ml" 701 21284 21345
+type(
+  int64 -> Big_int_Z.big_int
+)
+ident(
+  ext_ref Big_int_convenience.biconst64
+)
+"solver.ml" 701 21284 21346 "solver.ml" 701 21284 21355
+type(
+  int64
+)
+"solver.ml" 701 21284 21336 "solver.ml" 701 21284 21355
+call(
+  stack
+)
+type(
+  Big_int_Z.big_int
+)
+"solver.ml" 701 21284 21356 "solver.ml" 701 21284 21362
+type(
+  Type.typ
+)
+ident(
+  ext_ref Ast.reg_32
+)
+"solver.ml" 701 21284 21332 "solver.ml" 701 21284 21363
+type(
+  Big_int_Z.big_int * Type.typ
+)
+type(
+  Ast.exp
+)
+"solver.ml" 702 21365 21415 "solver.ml" 702 21365 21417
+type(
+  Type.binop_type
+)
+"solver.ml" 703 21419 21475 "solver.ml" 703 21419 21481
+type(
+  Type.binop_type
+)
+"solver.ml" 703 21419 21488 "solver.ml" 703 21419 21501
+type(
+  Type.cast_type
+)
+"solver.ml" 703 21419 21503 "solver.ml" 703 21419 21509
+type(
+  Type.typ
+)
+ident(
+  ext_ref Ast.reg_32
+)
+"solver.ml" 703 21419 21511 "solver.ml" 703 21419 21513
+type(
+  Ast.exp
+)
+ident(
+  int_ref b3 "solver.ml" 665 19699 19705 "solver.ml" 665 19699 19707
+)
+"solver.ml" 703 21419 21483 "solver.ml" 703 21419 21514
+type(
+  Type.cast_type * Type.typ * Ast.exp
+)
+type(
+  Ast.exp
+)
+"solver.ml" 704 21516 21576 "solver.ml" 704 21516 21583
+type(
+  int -> Big_int_Z.big_int
+)
+ident(
+  ext_ref Big_int_convenience.biconst
+)
+"solver.ml" 704 21516 21584 "solver.ml" 704 21516 21585
+type(
+  int
+)
+"solver.ml" 704 21516 21576 "solver.ml" 704 21516 21585
+call(
+  stack
+)
+type(
+  Big_int_Z.big_int
+)
+"solver.ml" 704 21516 21586 "solver.ml" 704 21516 21592
+type(
+  Type.typ
+)
+ident(
+  ext_ref Ast.reg_32
+)
+"solver.ml" 704 21516 21572 "solver.ml" 704 21516 21593
+type(
+  Big_int_Z.big_int * Type.typ
+)
+type(
+  Ast.exp
+)
+"solver.ml" 703 21419 21469 "solver.ml" 704 21516 21594
+type(
+  Type.binop_type * Ast.exp * Ast.exp
+)
+type(
+  Ast.exp
+)
+"solver.ml" 705 21596 21651 "solver.ml" 705 21596 21664
+type(
+  Type.cast_type
+)
+"solver.ml" 705 21596 21666 "solver.ml" 705 21596 21672
+type(
+  Type.typ
+)
+ident(
+  ext_ref Ast.reg_32
+)
+"solver.ml" 705 21596 21674 "solver.ml" 705 21596 21676
+type(
+  Ast.exp
+)
+ident(
+  int_ref b2 "solver.ml" 664 19661 19667 "solver.ml" 664 19661 19669
+)
+"solver.ml" 705 21596 21646 "solver.ml" 705 21596 21677
+type(
+  Type.cast_type * Type.typ * Ast.exp
+)
+type(
+  Ast.exp
+)
+"solver.ml" 702 21365 21409 "solver.ml" 705 21596 21678
+type(
+  Type.binop_type * Ast.exp * Ast.exp
+)
+type(
+  Ast.exp
+)
+"solver.ml" 701 21284 21322 "solver.ml" 705 21596 21679
+type(
+  Type.binop_type * Ast.exp * Ast.exp
+)
+type(
+  Ast.exp
+)
+"solver.ml" 698 21088 21120 "solver.ml" 705 21596 21680
+type(
+  Type.binop_type * Ast.exp * Ast.exp
+)
+type(
+  Ast.exp
+)
+"solver.ml" 706 21682 21718 "solver.ml" 706 21682 21725
+type(
+  int -> Big_int_Z.big_int
+)
+ident(
+  ext_ref Big_int_convenience.biconst
+)
+"solver.ml" 706 21682 21726 "solver.ml" 706 21682 21728
+type(
+  int
+)
+"solver.ml" 706 21682 21718 "solver.ml" 706 21682 21728
+call(
+  stack
+)
+type(
+  Big_int_Z.big_int
+)
+"solver.ml" 706 21682 21729 "solver.ml" 706 21682 21735
+type(
+  Type.typ
+)
+ident(
+  ext_ref Ast.reg_32
+)
+"solver.ml" 706 21682 21714 "solver.ml" 706 21682 21736
+type(
+  Big_int_Z.big_int * Type.typ
+)
+type(
+  Ast.exp
+)
+"solver.ml" 697 21048 21074 "solver.ml" 706 21682 21737
+type(
+  Type.binop_type * Ast.exp * Ast.exp
+)
+type(
+  Ast.exp
+)
+"solver.ml" 707 21739 21769 "solver.ml" 707 21739 21776
+type(
+  int -> Big_int_Z.big_int
+)
+ident(
+  ext_ref Big_int_convenience.biconst
+)
+"solver.ml" 707 21739 21777 "solver.ml" 707 21739 21781
+type(
+  int
+)
+"solver.ml" 707 21739 21769 "solver.ml" 707 21739 21781
+call(
+  stack
+)
+type(
+  Big_int_Z.big_int
+)
+"solver.ml" 707 21739 21782 "solver.ml" 707 21739 21788
+type(
+  Type.typ
+)
+ident(
+  ext_ref Ast.reg_32
+)
+"solver.ml" 707 21739 21765 "solver.ml" 707 21739 21789
+type(
+  Big_int_Z.big_int * Type.typ
+)
+type(
+  Ast.exp
+)
+"solver.ml" 696 21017 21037 "solver.ml" 707 21739 21790
+type(
+  Type.binop_type * Ast.exp * Ast.exp
+)
+type(
+  Ast.exp
+)
+"solver.ml" 694 20960 20975 "solver.ml" 707 21739 21791
+type(
+  Type.cast_type * Type.typ * Ast.exp
+)
+type(
+  Ast.exp
+)
+"solver.ml" 692 20907 20917 "solver.ml" 707 21739 21792
+type(
+  Type.cast_type * Type.typ * Ast.exp
+)
+type(
+  Ast.exp
+)
+"solver.ml" 708 21794 21808 "solver.ml" 708 21794 21815
+type(
+  int -> Big_int_Z.big_int
+)
+ident(
+  ext_ref Big_int_convenience.biconst
+)
+"solver.ml" 708 21794 21816 "solver.ml" 708 21794 21818
+type(
+  int
+)
+"solver.ml" 708 21794 21808 "solver.ml" 708 21794 21818
+call(
+  stack
+)
+type(
+  Big_int_Z.big_int
+)
+"solver.ml" 708 21794 21819 "solver.ml" 708 21794 21825
+type(
+  Type.typ
+)
+ident(
+  ext_ref Ast.reg_32
+)
+"solver.ml" 708 21794 21804 "solver.ml" 708 21794 21826
+type(
+  Big_int_Z.big_int * Type.typ
+)
+type(
+  Ast.exp
+)
+"solver.ml" 691 20889 20893 "solver.ml" 708 21794 21827
+type(
+  Type.binop_type * Ast.exp * Ast.exp
+)
+type(
+  Ast.exp
+)
+"solver.ml" 710 21833 21839 "solver.ml" 710 21833 21846
+type(
+  Ast.exp
+)
+"solver.ml" 711 21849 21859 "solver.ml" 711 21849 21865
+type(
+  Type.binop_type
+)
+"solver.ml" 712 21867 21882 "solver.ml" 712 21867 21895
+type(
+  Type.cast_type
+)
+"solver.ml" 713 21897 21912 "solver.ml" 713 21897 21918
+type(
+  Type.typ
+)
+ident(
+  ext_ref Ast.reg_32
+)
+"solver.ml" 714 21920 21940 "solver.ml" 714 21920 21948
+type(
+  Type.cast_type
+)
+"solver.ml" 715 21950 21970 "solver.ml" 715 21950 21975
+type(
+  Type.typ
+)
+ident(
+  ext_ref Ast.reg_8
+)
+"solver.ml" 716 21977 22003 "solver.ml" 716 21977 22006
+type(
+  Type.binop_type
+)
+"solver.ml" 717 22008 22040 "solver.ml" 717 22008 22046
+type(
+  Type.binop_type
+)
+"solver.ml" 718 22048 22086 "solver.ml" 718 22048 22088
+type(
+  Type.binop_type
+)
+"solver.ml" 719 22090 22134 "solver.ml" 719 22090 22140
+type(
+  Type.binop_type
+)
+"solver.ml" 719 22090 22147 "solver.ml" 719 22090 22160
+type(
+  Type.cast_type
+)
+"solver.ml" 719 22090 22162 "solver.ml" 719 22090 22168
+type(
+  Type.typ
+)
+ident(
+  ext_ref Ast.reg_32
+)
+"solver.ml" 719 22090 22170 "solver.ml" 719 22090 22172
+type(
+  Ast.exp
+)
+ident(
+  int_ref b4 "solver.ml" 666 19737 19743 "solver.ml" 666 19737 19745
+)
+"solver.ml" 719 22090 22142 "solver.ml" 719 22090 22173
+type(
+  Type.cast_type * Type.typ * Ast.exp
+)
+type(
+  Ast.exp
+)
+"solver.ml" 720 22175 22223 "solver.ml" 720 22175 22230
+type(
+  int -> Big_int_Z.big_int
+)
+ident(
+  ext_ref Big_int_convenience.biconst
+)
+"solver.ml" 720 22175 22231 "solver.ml" 720 22175 22233
+type(
+  int
+)
+"solver.ml" 720 22175 22223 "solver.ml" 720 22175 22233
+call(
+  stack
+)
+type(
+  Big_int_Z.big_int
+)
+"solver.ml" 720 22175 22234 "solver.ml" 720 22175 22240
+type(
+  Type.typ
+)
+ident(
+  ext_ref Ast.reg_32
+)
+"solver.ml" 720 22175 22219 "solver.ml" 720 22175 22241
+type(
+  Big_int_Z.big_int * Type.typ
+)
+type(
+  Ast.exp
+)
+"solver.ml" 719 22090 22128 "solver.ml" 720 22175 22242
+type(
+  Type.binop_type * Ast.exp * Ast.exp
+)
+type(
+  Ast.exp
+)
+"solver.ml" 721 22244 22288 "solver.ml" 721 22244 22290
+type(
+  Type.binop_type
+)
+"solver.ml" 721 22244 22296 "solver.ml" 721 22244 22305
+type(
+  int64 -> Big_int_Z.big_int
+)
+ident(
+  ext_ref Big_int_convenience.biconst64
+)
+"solver.ml" 721 22244 22306 "solver.ml" 721 22244 22315
+type(
+  int64
+)
+"solver.ml" 721 22244 22296 "solver.ml" 721 22244 22315
+call(
+  stack
+)
+type(
+  Big_int_Z.big_int
+)
+"solver.ml" 721 22244 22316 "solver.ml" 721 22244 22322
+type(
+  Type.typ
+)
+ident(
+  ext_ref Ast.reg_32
+)
+"solver.ml" 721 22244 22292 "solver.ml" 721 22244 22323
+type(
+  Big_int_Z.big_int * Type.typ
+)
+type(
+  Ast.exp
+)
+"solver.ml" 722 22325 22375 "solver.ml" 722 22325 22377
+type(
+  Type.binop_type
+)
+"solver.ml" 723 22379 22435 "solver.ml" 723 22379 22441
+type(
+  Type.binop_type
+)
+"solver.ml" 723 22379 22448 "solver.ml" 723 22379 22461
+type(
+  Type.cast_type
+)
+"solver.ml" 723 22379 22463 "solver.ml" 723 22379 22469
+type(
+  Type.typ
+)
+ident(
+  ext_ref Ast.reg_32
+)
+"solver.ml" 723 22379 22471 "solver.ml" 723 22379 22473
+type(
+  Ast.exp
+)
+ident(
+  int_ref b3 "solver.ml" 665 19699 19705 "solver.ml" 665 19699 19707
+)
+"solver.ml" 723 22379 22443 "solver.ml" 723 22379 22474
+type(
+  Type.cast_type * Type.typ * Ast.exp
+)
+type(
+  Ast.exp
+)
+"solver.ml" 724 22476 22536 "solver.ml" 724 22476 22539
+type(
+  Big_int_Z.big_int
+)
+ident(
+  ext_ref Big_int_convenience.bi8
+)
+"solver.ml" 724 22476 22540 "solver.ml" 724 22476 22546
+type(
+  Type.typ
+)
+ident(
+  ext_ref Ast.reg_32
+)
+"solver.ml" 724 22476 22532 "solver.ml" 724 22476 22547
+type(
+  Big_int_Z.big_int * Type.typ
+)
+type(
+  Ast.exp
+)
+"solver.ml" 723 22379 22429 "solver.ml" 724 22476 22548
+type(
+  Type.binop_type * Ast.exp * Ast.exp
+)
+type(
+  Ast.exp
+)
+"solver.ml" 725 22550 22605 "solver.ml" 725 22550 22618
+type(
+  Type.cast_type
+)
+"solver.ml" 725 22550 22620 "solver.ml" 725 22550 22626
+type(
+  Type.typ
+)
+ident(
+  ext_ref Ast.reg_32
+)
+"solver.ml" 725 22550 22628 "solver.ml" 725 22550 22630
+type(
+  Ast.exp
+)
+ident(
+  int_ref b2 "solver.ml" 664 19661 19667 "solver.ml" 664 19661 19669
+)
+"solver.ml" 725 22550 22600 "solver.ml" 725 22550 22631
+type(
+  Type.cast_type * Type.typ * Ast.exp
+)
+type(
+  Ast.exp
+)
+"solver.ml" 722 22325 22369 "solver.ml" 725 22550 22632
+type(
+  Type.binop_type * Ast.exp * Ast.exp
+)
+type(
+  Ast.exp
+)
+"solver.ml" 721 22244 22282 "solver.ml" 725 22550 22633
+type(
+  Type.binop_type * Ast.exp * Ast.exp
+)
+type(
+  Ast.exp
+)
+"solver.ml" 718 22048 22080 "solver.ml" 725 22550 22634
+type(
+  Type.binop_type * Ast.exp * Ast.exp
+)
+type(
+  Ast.exp
+)
+"solver.ml" 726 22636 22672 "solver.ml" 726 22636 22675
+type(
+  Big_int_Z.big_int
+)
+ident(
+  ext_ref Big_int_convenience.bi8
+)
+"solver.ml" 726 22636 22676 "solver.ml" 726 22636 22682
+type(
+  Type.typ
+)
+ident(
+  ext_ref Ast.reg_32
+)
+"solver.ml" 726 22636 22668 "solver.ml" 726 22636 22683
+type(
+  Big_int_Z.big_int * Type.typ
+)
+type(
+  Ast.exp
+)
+"solver.ml" 717 22008 22034 "solver.ml" 726 22636 22684
+type(
+  Type.binop_type * Ast.exp * Ast.exp
+)
+type(
+  Ast.exp
+)
+"solver.ml" 727 22686 22716 "solver.ml" 727 22686 22723
+type(
+  int -> Big_int_Z.big_int
+)
+ident(
+  ext_ref Big_int_convenience.biconst
+)
+"solver.ml" 727 22686 22724 "solver.ml" 727 22686 22728
+type(
+  int
+)
+"solver.ml" 727 22686 22716 "solver.ml" 727 22686 22728
+call(
+  stack
+)
+type(
+  Big_int_Z.big_int
+)
+"solver.ml" 727 22686 22729 "solver.ml" 727 22686 22735
+type(
+  Type.typ
+)
+ident(
+  ext_ref Ast.reg_32
+)
+"solver.ml" 727 22686 22712 "solver.ml" 727 22686 22736
+type(
+  Big_int_Z.big_int * Type.typ
+)
+type(
+  Ast.exp
+)
+"solver.ml" 716 21977 21997 "solver.ml" 727 22686 22737
+type(
+  Type.binop_type * Ast.exp * Ast.exp
+)
+type(
+  Ast.exp
+)
+"solver.ml" 714 21920 21935 "solver.ml" 727 22686 22738
+type(
+  Type.cast_type * Type.typ * Ast.exp
+)
+type(
+  Ast.exp
+)
+"solver.ml" 712 21867 21877 "solver.ml" 727 22686 22739
+type(
+  Type.cast_type * Type.typ * Ast.exp
+)
+type(
+  Ast.exp
+)
+"solver.ml" 728 22741 22755 "solver.ml" 728 22741 22758
+type(
+  Big_int_Z.big_int
+)
+ident(
+  ext_ref Big_int_convenience.bi8
+)
+"solver.ml" 728 22741 22759 "solver.ml" 728 22741 22765
+type(
+  Type.typ
+)
+ident(
+  ext_ref Ast.reg_32
+)
+"solver.ml" 728 22741 22751 "solver.ml" 728 22741 22766
+type(
+  Big_int_Z.big_int * Type.typ
+)
+type(
+  Ast.exp
+)
+"solver.ml" 711 21849 21853 "solver.ml" 728 22741 22767
+type(
+  Type.binop_type * Ast.exp * Ast.exp
+)
+type(
+  Ast.exp
+)
+"solver.ml" 730 22773 22779 "solver.ml" 730 22773 22786
+type(
+  Ast.exp
+)
+"solver.ml" 731 22789 22798 "solver.ml" 731 22789 22811
+type(
+  Type.cast_type
+)
+"solver.ml" 732 22813 22822 "solver.ml" 732 22813 22828
+type(
+  Type.typ
+)
+ident(
+  ext_ref Ast.reg_32
+)
+"solver.ml" 733 22830 22844 "solver.ml" 733 22830 22852
+type(
+  Type.cast_type
+)
+"solver.ml" 734 22854 22868 "solver.ml" 734 22854 22873
+type(
+  Type.typ
+)
+ident(
+  ext_ref Ast.reg_8
+)
+"solver.ml" 735 22875 22895 "solver.ml" 735 22875 22898
+type(
+  Type.binop_type
+)
+"solver.ml" 736 22900 22926 "solver.ml" 736 22900 22928
+type(
+  Type.binop_type
+)
+"solver.ml" 737 22930 22962 "solver.ml" 737 22930 22968
+type(
+  Type.binop_type
+)
+"solver.ml" 737 22930 22975 "solver.ml" 737 22930 22988
+type(
+  Type.cast_type
+)
+"solver.ml" 737 22930 22990 "solver.ml" 737 22930 22996
+type(
+  Type.typ
+)
+ident(
+  ext_ref Ast.reg_32
+)
+"solver.ml" 737 22930 22998 "solver.ml" 737 22930 23000
+type(
+  Ast.exp
+)
+ident(
+  int_ref b4 "solver.ml" 666 19737 19743 "solver.ml" 666 19737 19745
+)
+"solver.ml" 737 22930 22970 "solver.ml" 737 22930 23001
+type(
+  Type.cast_type * Type.typ * Ast.exp
+)
+type(
+  Ast.exp
+)
+"solver.ml" 738 23003 23039 "solver.ml" 738 23003 23046
+type(
+  int -> Big_int_Z.big_int
+)
+ident(
+  ext_ref Big_int_convenience.biconst
+)
+"solver.ml" 738 23003 23047 "solver.ml" 738 23003 23049
+type(
+  int
+)
+"solver.ml" 738 23003 23039 "solver.ml" 738 23003 23049
+call(
+  stack
+)
+type(
+  Big_int_Z.big_int
+)
+"solver.ml" 738 23003 23050 "solver.ml" 738 23003 23056
+type(
+  Type.typ
+)
+ident(
+  ext_ref Ast.reg_32
+)
+"solver.ml" 738 23003 23035 "solver.ml" 738 23003 23057
+type(
+  Big_int_Z.big_int * Type.typ
+)
+type(
+  Ast.exp
+)
+"solver.ml" 737 22930 22956 "solver.ml" 738 23003 23058
+type(
+  Type.binop_type * Ast.exp * Ast.exp
+)
+type(
+  Ast.exp
+)
+"solver.ml" 739 23060 23092 "solver.ml" 739 23060 23094
+type(
+  Type.binop_type
+)
+"solver.ml" 739 23060 23100 "solver.ml" 739 23060 23109
+type(
+  int64 -> Big_int_Z.big_int
+)
+ident(
+  ext_ref Big_int_convenience.biconst64
+)
+"solver.ml" 739 23060 23110 "solver.ml" 739 23060 23119
+type(
+  int64
+)
+"solver.ml" 739 23060 23100 "solver.ml" 739 23060 23119
+call(
+  stack
+)
+type(
+  Big_int_Z.big_int
+)
+"solver.ml" 739 23060 23120 "solver.ml" 739 23060 23126
+type(
+  Type.typ
+)
+ident(
+  ext_ref Ast.reg_32
+)
+"solver.ml" 739 23060 23096 "solver.ml" 739 23060 23127
+type(
+  Big_int_Z.big_int * Type.typ
+)
+type(
+  Ast.exp
+)
+"solver.ml" 740 23129 23167 "solver.ml" 740 23129 23169
+type(
+  Type.binop_type
+)
+"solver.ml" 741 23171 23215 "solver.ml" 741 23171 23221
+type(
+  Type.binop_type
+)
+"solver.ml" 741 23171 23228 "solver.ml" 741 23171 23241
+type(
+  Type.cast_type
+)
+"solver.ml" 741 23171 23243 "solver.ml" 741 23171 23249
+type(
+  Type.typ
+)
+ident(
+  ext_ref Ast.reg_32
+)
+"solver.ml" 741 23171 23251 "solver.ml" 741 23171 23253
+type(
+  Ast.exp
+)
+ident(
+  int_ref b3 "solver.ml" 665 19699 19705 "solver.ml" 665 19699 19707
+)
+"solver.ml" 741 23171 23223 "solver.ml" 741 23171 23254
+type(
+  Type.cast_type * Type.typ * Ast.exp
+)
+type(
+  Ast.exp
+)
+"solver.ml" 742 23256 23304 "solver.ml" 742 23256 23307
+type(
+  Big_int_Z.big_int
+)
+ident(
+  ext_ref Big_int_convenience.bi8
+)
+"solver.ml" 742 23256 23308 "solver.ml" 742 23256 23314
+type(
+  Type.typ
+)
+ident(
+  ext_ref Ast.reg_32
+)
+"solver.ml" 742 23256 23300 "solver.ml" 742 23256 23315
+type(
+  Big_int_Z.big_int * Type.typ
+)
+type(
+  Ast.exp
+)
+"solver.ml" 741 23171 23209 "solver.ml" 742 23256 23316
+type(
+  Type.binop_type * Ast.exp * Ast.exp
+)
+type(
+  Ast.exp
+)
+"solver.ml" 743 23318 23361 "solver.ml" 743 23318 23374
+type(
+  Type.cast_type
+)
+"solver.ml" 743 23318 23376 "solver.ml" 743 23318 23382
+type(
+  Type.typ
+)
+ident(
+  ext_ref Ast.reg_32
+)
+"solver.ml" 743 23318 23384 "solver.ml" 743 23318 23386
+type(
+  Ast.exp
+)
+ident(
+  int_ref b2 "solver.ml" 664 19661 19667 "solver.ml" 664 19661 19669
+)
+"solver.ml" 743 23318 23356 "solver.ml" 743 23318 23387
+type(
+  Type.cast_type * Type.typ * Ast.exp
+)
+type(
+  Ast.exp
+)
+"solver.ml" 740 23129 23161 "solver.ml" 743 23318 23388
+type(
+  Type.binop_type * Ast.exp * Ast.exp
+)
+type(
+  Ast.exp
+)
+"solver.ml" 739 23060 23086 "solver.ml" 743 23318 23389
+type(
+  Type.binop_type * Ast.exp * Ast.exp
+)
+type(
+  Ast.exp
+)
+"solver.ml" 736 22900 22920 "solver.ml" 743 23318 23390
+type(
+  Type.binop_type * Ast.exp * Ast.exp
+)
+type(
+  Ast.exp
+)
+"solver.ml" 744 23392 23416 "solver.ml" 744 23392 23423
+type(
+  int -> Big_int_Z.big_int
+)
+ident(
+  ext_ref Big_int_convenience.biconst
+)
+"solver.ml" 744 23392 23424 "solver.ml" 744 23392 23428
+type(
+  int
+)
+"solver.ml" 744 23392 23416 "solver.ml" 744 23392 23428
+call(
+  stack
+)
+type(
+  Big_int_Z.big_int
+)
+"solver.ml" 744 23392 23429 "solver.ml" 744 23392 23435
+type(
+  Type.typ
+)
+ident(
+  ext_ref Ast.reg_32
+)
+"solver.ml" 744 23392 23412 "solver.ml" 744 23392 23436
+type(
+  Big_int_Z.big_int * Type.typ
+)
+type(
+  Ast.exp
+)
+"solver.ml" 735 22875 22889 "solver.ml" 744 23392 23437
+type(
+  Type.binop_type * Ast.exp * Ast.exp
+)
+type(
+  Ast.exp
+)
+"solver.ml" 733 22830 22839 "solver.ml" 744 23392 23438
+type(
+  Type.cast_type * Type.typ * Ast.exp
+)
+type(
+  Ast.exp
+)
+"solver.ml" 731 22789 22793 "solver.ml" 744 23392 23439
+type(
+  Type.cast_type * Type.typ * Ast.exp
+)
+type(
+  Ast.exp
+)
+"solver.ml" 746 23445 23451 "solver.ml" 746 23445 23456
+type(
+  Ast.exp
+)
+"solver.ml" 747 23459 23469 "solver.ml" 747 23459 23475
+type(
+  Type.binop_type
+)
+"solver.ml" 748 23477 23492 "solver.ml" 748 23477 23505
+type(
+  Type.cast_type
+)
+"solver.ml" 749 23507 23522 "solver.ml" 749 23507 23528
+type(
+  Type.typ
+)
+ident(
+  ext_ref Ast.reg_32
+)
+"solver.ml" 750 23530 23550 "solver.ml" 750 23530 23558
+type(
+  Type.cast_type
+)
+"solver.ml" 751 23560 23580 "solver.ml" 751 23560 23585
+type(
+  Type.typ
+)
+ident(
+  ext_ref Ast.reg_8
+)
+"solver.ml" 752 23587 23613 "solver.ml" 752 23587 23616
+type(
+  Type.binop_type
+)
+"solver.ml" 753 23618 23650 "solver.ml" 753 23618 23656
+type(
+  Type.binop_type
+)
+"solver.ml" 754 23658 23696 "solver.ml" 754 23658 23698
+type(
+  Type.binop_type
+)
+"solver.ml" 755 23700 23744 "solver.ml" 755 23700 23750
+type(
+  Type.binop_type
+)
+"solver.ml" 756 23752 23801 "solver.ml" 756 23752 23814
+type(
+  Type.cast_type
+)
+"solver.ml" 756 23752 23816 "solver.ml" 756 23752 23822
+type(
+  Type.typ
+)
+ident(
+  ext_ref Ast.reg_32
+)
+"solver.ml" 756 23752 23824 "solver.ml" 756 23752 23826
+type(
+  Ast.exp
+)
+ident(
+  int_ref b4 "solver.ml" 666 19737 19743 "solver.ml" 666 19737 19745
+)
+"solver.ml" 756 23752 23796 "solver.ml" 756 23752 23827
+type(
+  Type.cast_type * Type.typ * Ast.exp
+)
+type(
+  Ast.exp
+)
+"solver.ml" 757 23829 23877 "solver.ml" 757 23829 23884
+type(
+  int -> Big_int_Z.big_int
+)
+ident(
+  ext_ref Big_int_convenience.biconst
+)
+"solver.ml" 757 23829 23885 "solver.ml" 757 23829 23887
+type(
+  int
+)
+"solver.ml" 757 23829 23877 "solver.ml" 757 23829 23887
+call(
+  stack
+)
+type(
+  Big_int_Z.big_int
+)
+"solver.ml" 757 23829 23888 "solver.ml" 757 23829 23894
+type(
+  Type.typ
+)
+ident(
+  ext_ref Ast.reg_32
+)
+"solver.ml" 757 23829 23873 "solver.ml" 757 23829 23895
+type(
+  Big_int_Z.big_int * Type.typ
+)
+type(
+  Ast.exp
+)
+"solver.ml" 755 23700 23738 "solver.ml" 757 23829 23896
+type(
+  Type.binop_type * Ast.exp * Ast.exp
+)
+type(
+  Ast.exp
+)
+"solver.ml" 758 23898 23942 "solver.ml" 758 23898 23944
+type(
+  Type.binop_type
+)
+"solver.ml" 758 23898 23950 "solver.ml" 758 23898 23959
+type(
+  int64 -> Big_int_Z.big_int
+)
+ident(
+  ext_ref Big_int_convenience.biconst64
+)
+"solver.ml" 758 23898 23960 "solver.ml" 758 23898 23969
+type(
+  int64
+)
+"solver.ml" 758 23898 23950 "solver.ml" 758 23898 23969
+call(
+  stack
+)
+type(
+  Big_int_Z.big_int
+)
+"solver.ml" 758 23898 23970 "solver.ml" 758 23898 23976
+type(
+  Type.typ
+)
+ident(
+  ext_ref Ast.reg_32
+)
+"solver.ml" 758 23898 23946 "solver.ml" 758 23898 23977
+type(
+  Big_int_Z.big_int * Type.typ
+)
+type(
+  Ast.exp
+)
+"solver.ml" 759 23979 24029 "solver.ml" 759 23979 24031
+type(
+  Type.binop_type
+)
+"solver.ml" 760 24033 24089 "solver.ml" 760 24033 24095
+type(
+  Type.binop_type
+)
+"solver.ml" 760 24033 24102 "solver.ml" 760 24033 24115
+type(
+  Type.cast_type
+)
+"solver.ml" 760 24033 24117 "solver.ml" 760 24033 24123
+type(
+  Type.typ
+)
+ident(
+  ext_ref Ast.reg_32
+)
+"solver.ml" 760 24033 24125 "solver.ml" 760 24033 24127
+type(
+  Ast.exp
+)
+ident(
+  int_ref b3 "solver.ml" 665 19699 19705 "solver.ml" 665 19699 19707
+)
+"solver.ml" 760 24033 24097 "solver.ml" 760 24033 24128
+type(
+  Type.cast_type * Type.typ * Ast.exp
+)
+type(
+  Ast.exp
+)
+"solver.ml" 761 24130 24190 "solver.ml" 761 24130 24193
+type(
+  Big_int_Z.big_int
+)
+ident(
+  ext_ref Big_int_convenience.bi8
+)
+"solver.ml" 761 24130 24194 "solver.ml" 761 24130 24200
+type(
+  Type.typ
+)
+ident(
+  ext_ref Ast.reg_32
+)
+"solver.ml" 761 24130 24186 "solver.ml" 761 24130 24201
+type(
+  Big_int_Z.big_int * Type.typ
+)
+type(
+  Ast.exp
+)
+"solver.ml" 760 24033 24083 "solver.ml" 761 24130 24202
+type(
+  Type.binop_type * Ast.exp * Ast.exp
+)
+type(
+  Ast.exp
+)
+"solver.ml" 762 24204 24259 "solver.ml" 762 24204 24272
+type(
+  Type.cast_type
+)
+"solver.ml" 762 24204 24274 "solver.ml" 762 24204 24280
+type(
+  Type.typ
+)
+ident(
+  ext_ref Ast.reg_32
+)
+"solver.ml" 762 24204 24282 "solver.ml" 762 24204 24284
+type(
+  Ast.exp
+)
+ident(
+  int_ref b2 "solver.ml" 664 19661 19667 "solver.ml" 664 19661 19669
+)
+"solver.ml" 762 24204 24254 "solver.ml" 762 24204 24285
+type(
+  Type.cast_type * Type.typ * Ast.exp
+)
+type(
+  Ast.exp
+)
+"solver.ml" 759 23979 24023 "solver.ml" 762 24204 24286
+type(
+  Type.binop_type * Ast.exp * Ast.exp
+)
+type(
+  Ast.exp
+)
+"solver.ml" 758 23898 23936 "solver.ml" 762 24204 24287
+type(
+  Type.binop_type * Ast.exp * Ast.exp
+)
+type(
+  Ast.exp
+)
+"solver.ml" 754 23658 23690 "solver.ml" 762 24204 24288
+type(
+  Type.binop_type * Ast.exp * Ast.exp
+)
+type(
+  Ast.exp
+)
+"solver.ml" 763 24290 24326 "solver.ml" 763 24290 24333
+type(
+  int -> Big_int_Z.big_int
+)
+ident(
+  ext_ref Big_int_convenience.biconst
+)
+"solver.ml" 763 24290 24334 "solver.ml" 763 24290 24336
+type(
+  int
+)
+"solver.ml" 763 24290 24326 "solver.ml" 763 24290 24336
+call(
+  stack
+)
+type(
+  Big_int_Z.big_int
+)
+"solver.ml" 763 24290 24337 "solver.ml" 763 24290 24343
+type(
+  Type.typ
+)
+ident(
+  ext_ref Ast.reg_32
+)
+"solver.ml" 763 24290 24322 "solver.ml" 763 24290 24344
+type(
+  Big_int_Z.big_int * Type.typ
+)
+type(
+  Ast.exp
+)
+"solver.ml" 753 23618 23644 "solver.ml" 763 24290 24345
+type(
+  Type.binop_type * Ast.exp * Ast.exp
+)
+type(
+  Ast.exp
+)
+"solver.ml" 764 24347 24377 "solver.ml" 764 24347 24384
+type(
+  int -> Big_int_Z.big_int
+)
+ident(
+  ext_ref Big_int_convenience.biconst
+)
+"solver.ml" 764 24347 24385 "solver.ml" 764 24347 24389
+type(
+  int
+)
+"solver.ml" 764 24347 24377 "solver.ml" 764 24347 24389
+call(
+  stack
+)
+type(
+  Big_int_Z.big_int
+)
+"solver.ml" 764 24347 24390 "solver.ml" 764 24347 24396
+type(
+  Type.typ
+)
+ident(
+  ext_ref Ast.reg_32
+)
+"solver.ml" 764 24347 24373 "solver.ml" 764 24347 24397
+type(
+  Big_int_Z.big_int * Type.typ
+)
+type(
+  Ast.exp
+)
+"solver.ml" 752 23587 23607 "solver.ml" 764 24347 24398
+type(
+  Type.binop_type * Ast.exp * Ast.exp
+)
+type(
+  Ast.exp
+)
+"solver.ml" 750 23530 23545 "solver.ml" 764 24347 24399
+type(
+  Type.cast_type * Type.typ * Ast.exp
+)
+type(
+  Ast.exp
+)
+"solver.ml" 748 23477 23487 "solver.ml" 764 24347 24400
+type(
+  Type.cast_type * Type.typ * Ast.exp
+)
+type(
+  Ast.exp
+)
+"solver.ml" 765 24402 24416 "solver.ml" 765 24402 24423
+type(
+  int -> Big_int_Z.big_int
+)
+ident(
+  ext_ref Big_int_convenience.biconst
+)
+"solver.ml" 765 24402 24424 "solver.ml" 765 24402 24426
+type(
+  int
+)
+"solver.ml" 765 24402 24416 "solver.ml" 765 24402 24426
+call(
+  stack
+)
+type(
+  Big_int_Z.big_int
+)
+"solver.ml" 765 24402 24427 "solver.ml" 765 24402 24433
+type(
+  Type.typ
+)
+ident(
+  ext_ref Ast.reg_32
+)
+"solver.ml" 765 24402 24412 "solver.ml" 765 24402 24434
+type(
+  Big_int_Z.big_int * Type.typ
+)
+type(
+  Ast.exp
+)
+"solver.ml" 747 23459 23463 "solver.ml" 765 24402 24435
+type(
+  Type.binop_type * Ast.exp * Ast.exp
+)
+type(
+  Ast.exp
+)
+"solver.ml" 767 24441 24447 "solver.ml" 767 24441 24452
+type(
+  Ast.exp
+)
+"solver.ml" 768 24455 24465 "solver.ml" 768 24455 24471
+type(
+  Type.binop_type
+)
+"solver.ml" 769 24473 24488 "solver.ml" 769 24473 24501
+type(
+  Type.cast_type
+)
+"solver.ml" 770 24503 24518 "solver.ml" 770 24503 24524
+type(
+  Type.typ
+)
+ident(
+  ext_ref Ast.reg_32
+)
+"solver.ml" 771 24526 24546 "solver.ml" 771 24526 24554
+type(
+  Type.cast_type
+)
+"solver.ml" 772 24556 24576 "solver.ml" 772 24556 24581
+type(
+  Type.typ
+)
+ident(
+  ext_ref Ast.reg_8
+)
+"solver.ml" 773 24583 24609 "solver.ml" 773 24583 24612
+type(
+  Type.binop_type
+)
+"solver.ml" 774 24614 24646 "solver.ml" 774 24614 24652
+type(
+  Type.binop_type
+)
+"solver.ml" 775 24654 24692 "solver.ml" 775 24654 24694
+type(
+  Type.binop_type
+)
+"solver.ml" 776 24696 24740 "solver.ml" 776 24696 24746
+type(
+  Type.binop_type
+)
+"solver.ml" 777 24748 24797 "solver.ml" 777 24748 24810
+type(
+  Type.cast_type
+)
+"solver.ml" 777 24748 24812 "solver.ml" 777 24748 24818
+type(
+  Type.typ
+)
+ident(
+  ext_ref Ast.reg_32
+)
+"solver.ml" 777 24748 24820 "solver.ml" 777 24748 24822
+type(
+  Ast.exp
+)
+ident(
+  int_ref b4 "solver.ml" 666 19737 19743 "solver.ml" 666 19737 19745
+)
+"solver.ml" 777 24748 24792 "solver.ml" 777 24748 24823
+type(
+  Type.cast_type * Type.typ * Ast.exp
+)
+type(
+  Ast.exp
+)
+"solver.ml" 778 24825 24873 "solver.ml" 778 24825 24880
+type(
+  int -> Big_int_Z.big_int
+)
+ident(
+  ext_ref Big_int_convenience.biconst
+)
+"solver.ml" 778 24825 24881 "solver.ml" 778 24825 24883
+type(
+  int
+)
+"solver.ml" 778 24825 24873 "solver.ml" 778 24825 24883
+call(
+  stack
+)
+type(
+  Big_int_Z.big_int
+)
+"solver.ml" 778 24825 24884 "solver.ml" 778 24825 24890
+type(
+  Type.typ
+)
+ident(
+  ext_ref Ast.reg_32
+)
+"solver.ml" 778 24825 24869 "solver.ml" 778 24825 24891
+type(
+  Big_int_Z.big_int * Type.typ
+)
+type(
+  Ast.exp
+)
+"solver.ml" 776 24696 24734 "solver.ml" 778 24825 24892
+type(
+  Type.binop_type * Ast.exp * Ast.exp
+)
+type(
+  Ast.exp
+)
+"solver.ml" 779 24894 24938 "solver.ml" 779 24894 24940
+type(
+  Type.binop_type
+)
+"solver.ml" 779 24894 24946 "solver.ml" 779 24894 24955
+type(
+  int64 -> Big_int_Z.big_int
+)
+ident(
+  ext_ref Big_int_convenience.biconst64
+)
+"solver.ml" 779 24894 24956 "solver.ml" 779 24894 24965
+type(
+  int64
+)
+"solver.ml" 779 24894 24946 "solver.ml" 779 24894 24965
+call(
+  stack
+)
+type(
+  Big_int_Z.big_int
+)
+"solver.ml" 779 24894 24966 "solver.ml" 779 24894 24972
+type(
+  Type.typ
+)
+ident(
+  ext_ref Ast.reg_32
+)
+"solver.ml" 779 24894 24942 "solver.ml" 779 24894 24973
+type(
+  Big_int_Z.big_int * Type.typ
+)
+type(
+  Ast.exp
+)
+"solver.ml" 780 24975 25025 "solver.ml" 780 24975 25027
+type(
+  Type.binop_type
+)
+"solver.ml" 781 25029 25085 "solver.ml" 781 25029 25091
+type(
+  Type.binop_type
+)
+"solver.ml" 781 25029 25098 "solver.ml" 781 25029 25111
+type(
+  Type.cast_type
+)
+"solver.ml" 781 25029 25113 "solver.ml" 781 25029 25119
+type(
+  Type.typ
+)
+ident(
+  ext_ref Ast.reg_32
+)
+"solver.ml" 781 25029 25121 "solver.ml" 781 25029 25123
+type(
+  Ast.exp
+)
+ident(
+  int_ref b3 "solver.ml" 665 19699 19705 "solver.ml" 665 19699 19707
+)
+"solver.ml" 781 25029 25093 "solver.ml" 781 25029 25124
+type(
+  Type.cast_type * Type.typ * Ast.exp
+)
+type(
+  Ast.exp
+)
+"solver.ml" 782 25126 25186 "solver.ml" 782 25126 25189
+type(
+  Big_int_Z.big_int
+)
+ident(
+  ext_ref Big_int_convenience.bi8
+)
+"solver.ml" 782 25126 25190 "solver.ml" 782 25126 25196
+type(
+  Type.typ
+)
+ident(
+  ext_ref Ast.reg_32
+)
+"solver.ml" 782 25126 25182 "solver.ml" 782 25126 25197
+type(
+  Big_int_Z.big_int * Type.typ
+)
+type(
+  Ast.exp
+)
+"solver.ml" 781 25029 25079 "solver.ml" 782 25126 25198
+type(
+  Type.binop_type * Ast.exp * Ast.exp
+)
+type(
+  Ast.exp
+)
+"solver.ml" 783 25200 25255 "solver.ml" 783 25200 25268
+type(
+  Type.cast_type
+)
+"solver.ml" 783 25200 25270 "solver.ml" 783 25200 25276
+type(
+  Type.typ
+)
+ident(
+  ext_ref Ast.reg_32
+)
+"solver.ml" 783 25200 25278 "solver.ml" 783 25200 25280
+type(
+  Ast.exp
+)
+ident(
+  int_ref b2 "solver.ml" 664 19661 19667 "solver.ml" 664 19661 19669
+)
+"solver.ml" 783 25200 25250 "solver.ml" 783 25200 25281
+type(
+  Type.cast_type * Type.typ * Ast.exp
+)
+type(
+  Ast.exp
+)
+"solver.ml" 780 24975 25019 "solver.ml" 783 25200 25282
+type(
+  Type.binop_type * Ast.exp * Ast.exp
+)
+type(
+  Ast.exp
+)
+"solver.ml" 779 24894 24932 "solver.ml" 783 25200 25283
+type(
+  Type.binop_type * Ast.exp * Ast.exp
+)
+type(
+  Ast.exp
+)
+"solver.ml" 775 24654 24686 "solver.ml" 783 25200 25284
+type(
+  Type.binop_type * Ast.exp * Ast.exp
+)
+type(
+  Ast.exp
+)
+"solver.ml" 784 25286 25322 "solver.ml" 784 25286 25329
+type(
+  int -> Big_int_Z.big_int
+)
+ident(
+  ext_ref Big_int_convenience.biconst
+)
+"solver.ml" 784 25286 25330 "solver.ml" 784 25286 25332
+type(
+  int
+)
+"solver.ml" 784 25286 25322 "solver.ml" 784 25286 25332
+call(
+  stack
+)
+type(
+  Big_int_Z.big_int
+)
+"solver.ml" 784 25286 25333 "solver.ml" 784 25286 25339
+type(
+  Type.typ
+)
+ident(
+  ext_ref Ast.reg_32
+)
+"solver.ml" 784 25286 25318 "solver.ml" 784 25286 25340
+type(
+  Big_int_Z.big_int * Type.typ
+)
+type(
+  Ast.exp
+)
+"solver.ml" 774 24614 24640 "solver.ml" 784 25286 25341
+type(
+  Type.binop_type * Ast.exp * Ast.exp
+)
+type(
+  Ast.exp
+)
+"solver.ml" 785 25343 25373 "solver.ml" 785 25343 25380
+type(
+  int -> Big_int_Z.big_int
+)
+ident(
+  ext_ref Big_int_convenience.biconst
+)
+"solver.ml" 785 25343 25381 "solver.ml" 785 25343 25385
+type(
+  int
+)
+"solver.ml" 785 25343 25373 "solver.ml" 785 25343 25385
+call(
+  stack
+)
+type(
+  Big_int_Z.big_int
+)
+"solver.ml" 785 25343 25386 "solver.ml" 785 25343 25392
+type(
+  Type.typ
+)
+ident(
+  ext_ref Ast.reg_32
+)
+"solver.ml" 785 25343 25369 "solver.ml" 785 25343 25393
+type(
+  Big_int_Z.big_int * Type.typ
+)
+type(
+  Ast.exp
+)
+"solver.ml" 773 24583 24603 "solver.ml" 785 25343 25394
+type(
+  Type.binop_type * Ast.exp * Ast.exp
+)
+type(
+  Ast.exp
+)
+"solver.ml" 771 24526 24541 "solver.ml" 785 25343 25395
+type(
+  Type.cast_type * Type.typ * Ast.exp
+)
+type(
+  Ast.exp
+)
+"solver.ml" 769 24473 24483 "solver.ml" 785 25343 25396
+type(
+  Type.cast_type * Type.typ * Ast.exp
+)
+type(
+  Ast.exp
+)
+"solver.ml" 786 25398 25412 "solver.ml" 786 25398 25419
+type(
+  int -> Big_int_Z.big_int
+)
+ident(
+  ext_ref Big_int_convenience.biconst
+)
+"solver.ml" 786 25398 25420 "solver.ml" 786 25398 25422
+type(
+  int
+)
+"solver.ml" 786 25398 25412 "solver.ml" 786 25398 25422
+call(
+  stack
+)
+type(
+  Big_int_Z.big_int
+)
+"solver.ml" 786 25398 25423 "solver.ml" 786 25398 25429
+type(
+  Type.typ
+)
+ident(
+  ext_ref Ast.reg_32
+)
+"solver.ml" 786 25398 25408 "solver.ml" 786 25398 25430
+type(
+  Big_int_Z.big_int * Type.typ
+)
+type(
+  Ast.exp
+)
+"solver.ml" 768 24455 24459 "solver.ml" 786 25398 25431
+type(
+  Type.binop_type * Ast.exp * Ast.exp
+)
+type(
+  Ast.exp
+)
+"solver.ml" 788 25437 25443 "solver.ml" 788 25437 25448
+type(
+  Ast.exp
+)
+"solver.ml" 789 25451 25461 "solver.ml" 789 25451 25467
+type(
+  Type.binop_type
+)
+"solver.ml" 790 25469 25484 "solver.ml" 790 25469 25497
+type(
+  Type.cast_type
+)
+"solver.ml" 791 25499 25514 "solver.ml" 791 25499 25520
+type(
+  Type.typ
+)
+ident(
+  ext_ref Ast.reg_32
+)
+"solver.ml" 792 25522 25542 "solver.ml" 792 25522 25550
+type(
+  Type.cast_type
+)
+"solver.ml" 793 25552 25572 "solver.ml" 793 25552 25577
+type(
+  Type.typ
+)
+ident(
+  ext_ref Ast.reg_8
+)
+"solver.ml" 794 25579 25605 "solver.ml" 794 25579 25608
+type(
+  Type.binop_type
+)
+"solver.ml" 795 25610 25642 "solver.ml" 795 25610 25648
+type(
+  Type.binop_type
+)
+"solver.ml" 796 25650 25688 "solver.ml" 796 25650 25690
+type(
+  Type.binop_type
+)
+"solver.ml" 797 25692 25736 "solver.ml" 797 25692 25742
+type(
+  Type.binop_type
+)
+"solver.ml" 797 25692 25749 "solver.ml" 797 25692 25762
+type(
+  Type.cast_type
+)
+"solver.ml" 797 25692 25764 "solver.ml" 797 25692 25770
+type(
+  Type.typ
+)
+ident(
+  ext_ref Ast.reg_32
+)
+"solver.ml" 797 25692 25772 "solver.ml" 797 25692 25774
+type(
+  Ast.exp
+)
+ident(
+  int_ref b4 "solver.ml" 666 19737 19743 "solver.ml" 666 19737 19745
+)
+"solver.ml" 797 25692 25744 "solver.ml" 797 25692 25775
+type(
+  Type.cast_type * Type.typ * Ast.exp
+)
+type(
+  Ast.exp
+)
+"solver.ml" 798 25777 25825 "solver.ml" 798 25777 25832
+type(
+  int -> Big_int_Z.big_int
+)
+ident(
+  ext_ref Big_int_convenience.biconst
+)
+"solver.ml" 798 25777 25833 "solver.ml" 798 25777 25835
+type(
+  int
+)
+"solver.ml" 798 25777 25825 "solver.ml" 798 25777 25835
+call(
+  stack
+)
+type(
+  Big_int_Z.big_int
+)
+"solver.ml" 798 25777 25836 "solver.ml" 798 25777 25842
+type(
+  Type.typ
+)
+ident(
+  ext_ref Ast.reg_32
+)
+"solver.ml" 798 25777 25821 "solver.ml" 798 25777 25843
+type(
+  Big_int_Z.big_int * Type.typ
+)
+type(
+  Ast.exp
+)
+"solver.ml" 797 25692 25730 "solver.ml" 798 25777 25844
+type(
+  Type.binop_type * Ast.exp * Ast.exp
+)
+type(
+  Ast.exp
+)
+"solver.ml" 799 25846 25890 "solver.ml" 799 25846 25892
+type(
+  Type.binop_type
+)
+"solver.ml" 799 25846 25898 "solver.ml" 799 25846 25907
+type(
+  int64 -> Big_int_Z.big_int
+)
+ident(
+  ext_ref Big_int_convenience.biconst64
+)
+"solver.ml" 799 25846 25908 "solver.ml" 799 25846 25917
+type(
+  int64
+)
+"solver.ml" 799 25846 25898 "solver.ml" 799 25846 25917
+call(
+  stack
+)
+type(
+  Big_int_Z.big_int
+)
+"solver.ml" 799 25846 25918 "solver.ml" 799 25846 25924
+type(
+  Type.typ
+)
+ident(
+  ext_ref Ast.reg_32
+)
+"solver.ml" 799 25846 25894 "solver.ml" 799 25846 25925
+type(
+  Big_int_Z.big_int * Type.typ
+)
+type(
+  Ast.exp
+)
+"solver.ml" 800 25927 25977 "solver.ml" 800 25927 25979
+type(
+  Type.binop_type
+)
+"solver.ml" 801 25981 26037 "solver.ml" 801 25981 26043
+type(
+  Type.binop_type
+)
+"solver.ml" 801 25981 26050 "solver.ml" 801 25981 26063
+type(
+  Type.cast_type
+)
+"solver.ml" 801 25981 26065 "solver.ml" 801 25981 26071
+type(
+  Type.typ
+)
+ident(
+  ext_ref Ast.reg_32
+)
+"solver.ml" 801 25981 26073 "solver.ml" 801 25981 26075
+type(
+  Ast.exp
+)
+ident(
+  int_ref b3 "solver.ml" 665 19699 19705 "solver.ml" 665 19699 19707
+)
+"solver.ml" 801 25981 26045 "solver.ml" 801 25981 26076
+type(
+  Type.cast_type * Type.typ * Ast.exp
+)
+type(
+  Ast.exp
+)
+"solver.ml" 802 26078 26138 "solver.ml" 802 26078 26141
+type(
+  Big_int_Z.big_int
+)
+ident(
+  ext_ref Big_int_convenience.bi8
+)
+"solver.ml" 802 26078 26142 "solver.ml" 802 26078 26148
+type(
+  Type.typ
+)
+ident(
+  ext_ref Ast.reg_32
+)
+"solver.ml" 802 26078 26134 "solver.ml" 802 26078 26149
+type(
+  Big_int_Z.big_int * Type.typ
+)
+type(
+  Ast.exp
+)
+"solver.ml" 801 25981 26031 "solver.ml" 802 26078 26150
+type(
+  Type.binop_type * Ast.exp * Ast.exp
+)
+type(
+  Ast.exp
+)
+"solver.ml" 803 26152 26207 "solver.ml" 803 26152 26220
+type(
+  Type.cast_type
+)
+"solver.ml" 803 26152 26222 "solver.ml" 803 26152 26228
+type(
+  Type.typ
+)
+ident(
+  ext_ref Ast.reg_32
+)
+"solver.ml" 803 26152 26230 "solver.ml" 803 26152 26232
+type(
+  Ast.exp
+)
+ident(
+  int_ref b2 "solver.ml" 664 19661 19667 "solver.ml" 664 19661 19669
+)
+"solver.ml" 803 26152 26202 "solver.ml" 803 26152 26233
+type(
+  Type.cast_type * Type.typ * Ast.exp
+)
+type(
+  Ast.exp
+)
+"solver.ml" 800 25927 25971 "solver.ml" 803 26152 26234
+type(
+  Type.binop_type * Ast.exp * Ast.exp
+)
+type(
+  Ast.exp
+)
+"solver.ml" 799 25846 25884 "solver.ml" 803 26152 26235
+type(
+  Type.binop_type * Ast.exp * Ast.exp
+)
+type(
+  Ast.exp
+)
+"solver.ml" 796 25650 25682 "solver.ml" 803 26152 26236
+type(
+  Type.binop_type * Ast.exp * Ast.exp
+)
+type(
+  Ast.exp
+)
+"solver.ml" 804 26238 26274 "solver.ml" 804 26238 26277
+type(
+  Big_int_Z.big_int
+)
+ident(
+  ext_ref Big_int_convenience.bi8
+)
+"solver.ml" 804 26238 26278 "solver.ml" 804 26238 26284
+type(
+  Type.typ
+)
+ident(
+  ext_ref Ast.reg_32
+)
+"solver.ml" 804 26238 26270 "solver.ml" 804 26238 26285
+type(
+  Big_int_Z.big_int * Type.typ
+)
+type(
+  Ast.exp
+)
+"solver.ml" 795 25610 25636 "solver.ml" 804 26238 26286
+type(
+  Type.binop_type * Ast.exp * Ast.exp
+)
+type(
+  Ast.exp
+)
+"solver.ml" 805 26288 26318 "solver.ml" 805 26288 26325
+type(
+  int -> Big_int_Z.big_int
+)
+ident(
+  ext_ref Big_int_convenience.biconst
+)
+"solver.ml" 805 26288 26326 "solver.ml" 805 26288 26330
+type(
+  int
+)
+"solver.ml" 805 26288 26318 "solver.ml" 805 26288 26330
+call(
+  stack
+)
+type(
+  Big_int_Z.big_int
+)
+"solver.ml" 805 26288 26331 "solver.ml" 805 26288 26337
+type(
+  Type.typ
+)
+ident(
+  ext_ref Ast.reg_32
+)
+"solver.ml" 805 26288 26314 "solver.ml" 805 26288 26338
+type(
+  Big_int_Z.big_int * Type.typ
+)
+type(
+  Ast.exp
+)
+"solver.ml" 794 25579 25599 "solver.ml" 805 26288 26339
+type(
+  Type.binop_type * Ast.exp * Ast.exp
+)
+type(
+  Ast.exp
+)
+"solver.ml" 792 25522 25537 "solver.ml" 805 26288 26340
+type(
+  Type.cast_type * Type.typ * Ast.exp
+)
+type(
+  Ast.exp
+)
+"solver.ml" 790 25469 25479 "solver.ml" 805 26288 26341
+type(
+  Type.cast_type * Type.typ * Ast.exp
+)
+type(
+  Ast.exp
+)
+"solver.ml" 806 26343 26357 "solver.ml" 806 26343 26360
+type(
+  Big_int_Z.big_int
+)
+ident(
+  ext_ref Big_int_convenience.bi8
+)
+"solver.ml" 806 26343 26361 "solver.ml" 806 26343 26367
+type(
+  Type.typ
+)
+ident(
+  ext_ref Ast.reg_32
+)
+"solver.ml" 806 26343 26353 "solver.ml" 806 26343 26368
+type(
+  Big_int_Z.big_int * Type.typ
+)
+type(
+  Ast.exp
+)
+"solver.ml" 789 25451 25455 "solver.ml" 806 26343 26369
+type(
+  Type.binop_type * Ast.exp * Ast.exp
+)
+type(
+  Ast.exp
+)
+"solver.ml" 808 26375 26381 "solver.ml" 808 26375 26386
+type(
+  Ast.exp
+)
+"solver.ml" 809 26389 26398 "solver.ml" 809 26389 26411
+type(
+  Type.cast_type
+)
+"solver.ml" 810 26413 26422 "solver.ml" 810 26413 26428
+type(
+  Type.typ
+)
+ident(
+  ext_ref Ast.reg_32
+)
+"solver.ml" 811 26430 26444 "solver.ml" 811 26430 26452
+type(
+  Type.cast_type
+)
+"solver.ml" 812 26454 26468 "solver.ml" 812 26454 26473
+type(
+  Type.typ
+)
+ident(
+  ext_ref Ast.reg_8
+)
+"solver.ml" 813 26475 26495 "solver.ml" 813 26475 26498
+type(
+  Type.binop_type
+)
+"solver.ml" 814 26500 26526 "solver.ml" 814 26500 26528
+type(
+  Type.binop_type
+)
+"solver.ml" 815 26530 26562 "solver.ml" 815 26530 26568
+type(
+  Type.binop_type
+)
+"solver.ml" 815 26530 26575 "solver.ml" 815 26530 26588
+type(
+  Type.cast_type
+)
+"solver.ml" 815 26530 26590 "solver.ml" 815 26530 26596
+type(
+  Type.typ
+)
+ident(
+  ext_ref Ast.reg_32
+)
+"solver.ml" 815 26530 26598 "solver.ml" 815 26530 26600
+type(
+  Ast.exp
+)
+ident(
+  int_ref b4 "solver.ml" 666 19737 19743 "solver.ml" 666 19737 19745
+)
+"solver.ml" 815 26530 26570 "solver.ml" 815 26530 26601
+type(
+  Type.cast_type * Type.typ * Ast.exp
+)
+type(
+  Ast.exp
+)
+"solver.ml" 816 26603 26639 "solver.ml" 816 26603 26646
+type(
+  int -> Big_int_Z.big_int
+)
+ident(
+  ext_ref Big_int_convenience.biconst
+)
+"solver.ml" 816 26603 26647 "solver.ml" 816 26603 26649
+type(
+  int
+)
+"solver.ml" 816 26603 26639 "solver.ml" 816 26603 26649
+call(
+  stack
+)
+type(
+  Big_int_Z.big_int
+)
+"solver.ml" 816 26603 26650 "solver.ml" 816 26603 26656
+type(
+  Type.typ
+)
+ident(
+  ext_ref Ast.reg_32
+)
+"solver.ml" 816 26603 26635 "solver.ml" 816 26603 26657
+type(
+  Big_int_Z.big_int * Type.typ
+)
+type(
+  Ast.exp
+)
+"solver.ml" 815 26530 26556 "solver.ml" 816 26603 26658
+type(
+  Type.binop_type * Ast.exp * Ast.exp
+)
+type(
+  Ast.exp
+)
+"solver.ml" 817 26660 26692 "solver.ml" 817 26660 26694
+type(
+  Type.binop_type
+)
+"solver.ml" 817 26660 26700 "solver.ml" 817 26660 26709
+type(
+  int64 -> Big_int_Z.big_int
+)
+ident(
+  ext_ref Big_int_convenience.biconst64
+)
+"solver.ml" 817 26660 26710 "solver.ml" 817 26660 26719
+type(
+  int64
+)
+"solver.ml" 817 26660 26700 "solver.ml" 817 26660 26719
+call(
+  stack
+)
+type(
+  Big_int_Z.big_int
+)
+"solver.ml" 817 26660 26720 "solver.ml" 817 26660 26726
+type(
+  Type.typ
+)
+ident(
+  ext_ref Ast.reg_32
+)
+"solver.ml" 817 26660 26696 "solver.ml" 817 26660 26727
+type(
+  Big_int_Z.big_int * Type.typ
+)
+type(
+  Ast.exp
+)
+"solver.ml" 818 26729 26767 "solver.ml" 818 26729 26769
+type(
+  Type.binop_type
+)
+"solver.ml" 819 26771 26815 "solver.ml" 819 26771 26821
+type(
+  Type.binop_type
+)
+"solver.ml" 819 26771 26828 "solver.ml" 819 26771 26841
+type(
+  Type.cast_type
+)
+"solver.ml" 819 26771 26843 "solver.ml" 819 26771 26849
+type(
+  Type.typ
+)
+ident(
+  ext_ref Ast.reg_32
+)
+"solver.ml" 819 26771 26851 "solver.ml" 819 26771 26853
+type(
+  Ast.exp
+)
+ident(
+  int_ref b3 "solver.ml" 665 19699 19705 "solver.ml" 665 19699 19707
+)
+"solver.ml" 819 26771 26823 "solver.ml" 819 26771 26854
+type(
+  Type.cast_type * Type.typ * Ast.exp
+)
+type(
+  Ast.exp
+)
+"solver.ml" 820 26856 26904 "solver.ml" 820 26856 26907
+type(
+  Big_int_Z.big_int
+)
+ident(
+  ext_ref Big_int_convenience.bi8
+)
+"solver.ml" 820 26856 26908 "solver.ml" 820 26856 26914
+type(
+  Type.typ
+)
+ident(
+  ext_ref Ast.reg_32
+)
+"solver.ml" 820 26856 26900 "solver.ml" 820 26856 26915
+type(
+  Big_int_Z.big_int * Type.typ
+)
+type(
+  Ast.exp
+)
+"solver.ml" 819 26771 26809 "solver.ml" 820 26856 26916
+type(
+  Type.binop_type * Ast.exp * Ast.exp
+)
+type(
+  Ast.exp
+)
+"solver.ml" 821 26918 26970 "solver.ml" 821 26918 26983
+type(
+  Type.cast_type
+)
+"solver.ml" 821 26918 26985 "solver.ml" 821 26918 26991
+type(
+  Type.typ
+)
+ident(
+  ext_ref Ast.reg_32
+)
+"solver.ml" 821 26918 26993 "solver.ml" 821 26918 26995
+type(
+  Ast.exp
+)
+ident(
+  int_ref b2 "solver.ml" 664 19661 19667 "solver.ml" 664 19661 19669
+)
+"solver.ml" 821 26918 26965 "solver.ml" 821 26918 26996
+type(
+  Type.cast_type * Type.typ * Ast.exp
+)
+type(
+  Ast.exp
+)
+"solver.ml" 818 26729 26761 "solver.ml" 821 26918 26997
+type(
+  Type.binop_type * Ast.exp * Ast.exp
+)
+type(
+  Ast.exp
+)
+"solver.ml" 817 26660 26686 "solver.ml" 821 26918 26998
+type(
+  Type.binop_type * Ast.exp * Ast.exp
+)
+type(
+  Ast.exp
+)
+"solver.ml" 814 26500 26520 "solver.ml" 821 26918 26999
+type(
+  Type.binop_type * Ast.exp * Ast.exp
+)
+type(
+  Ast.exp
+)
+"solver.ml" 822 27001 27025 "solver.ml" 822 27001 27032
+type(
+  int -> Big_int_Z.big_int
+)
+ident(
+  ext_ref Big_int_convenience.biconst
+)
+"solver.ml" 822 27001 27033 "solver.ml" 822 27001 27037
+type(
+  int
+)
+"solver.ml" 822 27001 27025 "solver.ml" 822 27001 27037
+call(
+  stack
+)
+type(
+  Big_int_Z.big_int
+)
+"solver.ml" 822 27001 27038 "solver.ml" 822 27001 27044
+type(
+  Type.typ
+)
+ident(
+  ext_ref Ast.reg_32
+)
+"solver.ml" 822 27001 27021 "solver.ml" 822 27001 27045
+type(
+  Big_int_Z.big_int * Type.typ
+)
+type(
+  Ast.exp
+)
+"solver.ml" 813 26475 26489 "solver.ml" 822 27001 27046
+type(
+  Type.binop_type * Ast.exp * Ast.exp
+)
+type(
+  Ast.exp
+)
+"solver.ml" 811 26430 26439 "solver.ml" 822 27001 27047
+type(
+  Type.cast_type * Type.typ * Ast.exp
+)
+type(
+  Ast.exp
+)
+"solver.ml" 809 26389 26393 "solver.ml" 822 27001 27048
+type(
+  Type.cast_type * Type.typ * Ast.exp
+)
+type(
+  Ast.exp
+)
+"solver.ml" 824 27054 27060 "solver.ml" 824 27054 27065
+type(
+  Ast.exp
+)
+"solver.ml" 825 27068 27078 "solver.ml" 825 27068 27080
+type(
+  Type.binop_type
+)
+"solver.ml" 826 27082 27098 "solver.ml" 826 27082 27100
+type(
+  Type.binop_type
+)
+"solver.ml" 826 27082 27102 "solver.ml" 826 27082 27109
+type(
+  Ast.exp
+)
+ident(
+  int_ref result1 "solver.ml" 667 19775 19781 "solver.ml" 667 19775 19788
+)
+"solver.ml" 826 27082 27117 "solver.ml" 826 27082 27119
+type(
+  Type.binop_type
+)
+"solver.ml" 826 27082 27121 "solver.ml" 826 27082 27128
+type(
+  Ast.exp
+)
+ident(
+  int_ref result2 "solver.ml" 690 20873 20879 "solver.ml" 690 20873 20886
+)
+"solver.ml" 826 27082 27136 "solver.ml" 826 27082 27138
+type(
+  Type.binop_type
+)
+"solver.ml" 826 27082 27140 "solver.ml" 826 27082 27147
+type(
+  Ast.exp
+)
+ident(
+  int_ref result3 "solver.ml" 710 21833 21839 "solver.ml" 710 21833 21846
+)
+"solver.ml" 826 27082 27149 "solver.ml" 826 27082 27156
+type(
+  Ast.exp
+)
+ident(
+  int_ref result4 "solver.ml" 730 22773 22779 "solver.ml" 730 22773 22786
+)
+"solver.ml" 826 27082 27130 "solver.ml" 826 27082 27157
+type(
+  Type.binop_type * Ast.exp * Ast.exp
+)
+type(
+  Ast.exp
+)
+"solver.ml" 826 27082 27111 "solver.ml" 826 27082 27158
+type(
+  Type.binop_type * Ast.exp * Ast.exp
+)
+type(
+  Ast.exp
+)
+"solver.ml" 826 27082 27092 "solver.ml" 826 27082 27159
+type(
+  Type.binop_type * Ast.exp * Ast.exp
+)
+type(
+  Ast.exp
+)
+"solver.ml" 827 27161 27177 "solver.ml" 827 27161 27182
+type(
+  Type.binop_type
+)
+"solver.ml" 828 27184 27206 "solver.ml" 828 27184 27208
+type(
+  Type.binop_type
+)
+"solver.ml" 829 27210 27232 "solver.ml" 829 27210 27237
+type(
+  Ast.exp
+)
+ident(
+  int_ref left1 "solver.ml" 746 23445 23451 "solver.ml" 746 23445 23456
+)
+"solver.ml" 830 27239 27267 "solver.ml" 830 27239 27269
+type(
+  Type.binop_type
+)
+"solver.ml" 831 27271 27299 "solver.ml" 831 27271 27304
+type(
+  Ast.exp
+)
+ident(
+  int_ref left2 "solver.ml" 767 24441 24447 "solver.ml" 767 24441 24452
+)
+"solver.ml" 832 27306 27340 "solver.ml" 832 27306 27342
+type(
+  Type.binop_type
+)
+"solver.ml" 832 27306 27344 "solver.ml" 832 27306 27349
+type(
+  Ast.exp
+)
+ident(
+  int_ref left3 "solver.ml" 788 25437 25443 "solver.ml" 788 25437 25448
+)
+"solver.ml" 832 27306 27351 "solver.ml" 832 27306 27356
+type(
+  Ast.exp
+)
+ident(
+  int_ref left4 "solver.ml" 808 26375 26381 "solver.ml" 808 26375 26386
+)
+"solver.ml" 832 27306 27334 "solver.ml" 832 27306 27357
+type(
+  Type.binop_type * Ast.exp * Ast.exp
+)
+type(
+  Ast.exp
+)
+"solver.ml" 830 27239 27261 "solver.ml" 832 27306 27358
+type(
+  Type.binop_type * Ast.exp * Ast.exp
+)
+type(
+  Ast.exp
+)
+"solver.ml" 828 27184 27200 "solver.ml" 832 27306 27359
+type(
+  Type.binop_type * Ast.exp * Ast.exp
+)
+type(
+  Ast.exp
+)
+"solver.ml" 833 27361 27381 "solver.ml" 833 27361 27390
+type(
+  int64 -> Big_int_Z.big_int
+)
+ident(
+  ext_ref Big_int_convenience.biconst64
+)
+"solver.ml" 833 27361 27391 "solver.ml" 833 27361 27400
+type(
+  int64
+)
+"solver.ml" 833 27361 27381 "solver.ml" 833 27361 27400
+call(
+  stack
+)
+type(
+  Big_int_Z.big_int
+)
+"solver.ml" 833 27361 27401 "solver.ml" 833 27361 27407
+type(
+  Type.typ
+)
+ident(
+  ext_ref Ast.reg_32
+)
+"solver.ml" 833 27361 27377 "solver.ml" 833 27361 27408
+type(
+  Big_int_Z.big_int * Type.typ
+)
+type(
+  Ast.exp
+)
+"solver.ml" 827 27161 27171 "solver.ml" 833 27361 27409
+type(
+  Type.binop_type * Ast.exp * Ast.exp
+)
+type(
+  Ast.exp
+)
+"solver.ml" 825 27068 27072 "solver.ml" 833 27361 27410
+type(
+  Type.binop_type * Ast.exp * Ast.exp
+)
+type(
+  Ast.exp
+)
+"solver.ml" 835 27416 27418 "solver.ml" 835 27416 27423
+type(
+  Ast.exp
+)
+ident(
+  int_ref final "solver.ml" 824 27054 27060 "solver.ml" 824 27054 27065
+)
+"solver.ml" 824 27054 27056 "solver.ml" 835 27416 27423
+type(
+  Ast.exp
+)
+"solver.ml" 808 26375 26377 "solver.ml" 835 27416 27423
+type(
+  Ast.exp
+)
+"solver.ml" 788 25437 25439 "solver.ml" 835 27416 27423
+type(
+  Ast.exp
+)
+"solver.ml" 767 24441 24443 "solver.ml" 835 27416 27423
+type(
+  Ast.exp
+)
+"solver.ml" 746 23445 23447 "solver.ml" 835 27416 27423
+type(
+  Ast.exp
+)
+"solver.ml" 730 22773 22775 "solver.ml" 835 27416 27423
+type(
+  Ast.exp
+)
+"solver.ml" 710 21833 21835 "solver.ml" 835 27416 27423
+type(
+  Ast.exp
+)
+"solver.ml" 690 20873 20875 "solver.ml" 835 27416 27423
+type(
+  Ast.exp
+)
+"solver.ml" 667 19775 19777 "solver.ml" 835 27416 27423
+type(
+  Ast.exp
+)
+"solver.ml" 666 19737 19739 "solver.ml" 835 27416 27423
+type(
+  Ast.exp
+)
+"solver.ml" 665 19699 19701 "solver.ml" 835 27416 27423
+type(
+  Ast.exp
+)
+"solver.ml" 664 19661 19663 "solver.ml" 835 27416 27423
+type(
+  Ast.exp
+)
+"solver.ml" 844 27608 27612 "solver.ml" 844 27608 27616
+type(
+  string -> ('a -> 'b) -> 'a -> unit
+)
+ident(
+  def time "solver.ml" 890 28724 28724 --
+)
+"solver.ml" 844 27608 27617 "solver.ml" 844 27608 27623
+type(
+  string
+)
+ident(
+  def solver "solver.ml" 844 27608 27624 "solver.ml" 853 27794 27847
+)
+"solver.ml" 844 27608 27624 "solver.ml" 844 27608 27629
+type(
+  'a -> 'b
+)
+ident(
+  def solve "solver.ml" 844 27608 27630 "solver.ml" 853 27794 27847
+)
+"solver.ml" 844 27608 27630 "solver.ml" 844 27608 27634
+type(
+  'a
+)
+ident(
+  def test "solver.ml" 845 27637 27639 "solver.ml" 853 27794 27847
+)
+"solver.ml" 845 27637 27643 "solver.ml" 845 27637 27650
+type(
+  ('c -> 'd) -> 'c -> unit
+)
+"solver.ml" 845 27637 27651 "solver.ml" 845 27637 27652
+type(
+  'c -> 'd
+)
+ident(
+  def f "solver.ml" 845 27637 27653 "solver.ml" 848 27691 27699
+)
+"solver.ml" 845 27637 27653 "solver.ml" 845 27637 27654
+type(
+  'c
+)
+ident(
+  def x "solver.ml" 846 27657 27661 "solver.ml" 848 27691 27699
+)
+"solver.ml" 846 27657 27669 "solver.ml" 846 27657 27670
+type(
+  int
+)
+"solver.ml" 846 27657 27674 "solver.ml" 846 27657 27677
+type(
+  int
+)
+"solver.ml" 847 27681 27687 "solver.ml" 847 27681 27688
+type(
+  'c -> 'd
+)
+ident(
+  int_ref f "solver.ml" 845 27637 27651 "solver.ml" 845 27637 27652
+)
+"solver.ml" 847 27681 27689 "solver.ml" 847 27681 27690
+type(
+  'c
+)
+ident(
+  int_ref x "solver.ml" 845 27637 27653 "solver.ml" 845 27637 27654
+)
+"solver.ml" 847 27681 27687 "solver.ml" 847 27681 27690
+call(
+  stack
+)
+type(
+  'd
+)
+"solver.ml" 846 27657 27661 "solver.ml" 848 27691 27699
+type(
+  unit
+)
+"solver.ml" 845 27637 27653 "solver.ml" 848 27691 27699
+type(
+  'c -> unit
+)
+"solver.ml" 845 27637 27651 "solver.ml" 848 27691 27699
+type(
+  ('c -> 'd) -> 'c -> unit
+)
+"solver.ml" 850 27705 27711 "solver.ml" 850 27705 27712
+type(
+  float
+)
+"solver.ml" 850 27705 27715 "solver.ml" 850 27705 27732
+type(
+  unit -> float
+)
+ident(
+  ext_ref Unix.gettimeofday
+)
+"solver.ml" 850 27705 27732 "solver.ml" 850 27705 27734
+type(
+  unit
+)
+"solver.ml" 850 27705 27715 "solver.ml" 850 27705 27734
+call(
+  stack
+)
+type(
+  float
+)
+"solver.ml" 851 27738 27740 "solver.ml" 851 27738 27747
+type(
+  ('a -> 'b) -> 'a -> unit
+)
+ident(
+  int_ref do_many "solver.ml" 845 27637 27643 "solver.ml" 845 27637 27650
+)
+"solver.ml" 851 27738 27748 "solver.ml" 851 27738 27753
+type(
+  'a -> 'b
+)
+ident(
+  int_ref solve "solver.ml" 844 27608 27624 "solver.ml" 844 27608 27629
+)
+"solver.ml" 851 27738 27754 "solver.ml" 851 27738 27758
+type(
+  'a
+)
+ident(
+  int_ref test "solver.ml" 844 27608 27630 "solver.ml" 844 27608 27634
+)
+"solver.ml" 851 27738 27740 "solver.ml" 851 27738 27758
+call(
+  stack
+)
+type(
+  unit
+)
+"solver.ml" 852 27760 27766 "solver.ml" 852 27760 27768
+type(
+  float
+)
+"solver.ml" 852 27760 27771 "solver.ml" 852 27760 27788
+type(
+  unit -> float
+)
+ident(
+  ext_ref Unix.gettimeofday
+)
+"solver.ml" 852 27760 27788 "solver.ml" 852 27760 27790
+type(
+  unit
+)
+"solver.ml" 852 27760 27771 "solver.ml" 852 27760 27790
+call(
+  stack
+)
+type(
+  float
+)
+"solver.ml" 853 27794 27796 "solver.ml" 853 27794 27810
+type(
+  (string -> float -> unit, out_channel, unit) format ->
+  string -> float -> unit
+)
+ident(
+  ext_ref Printf.eprintf
+)
+"solver.ml" 853 27794 27811 "solver.ml" 853 27794 27830
+type(
+  (string -> float -> unit, out_channel, unit) format
+)
+"solver.ml" 853 27794 27831 "solver.ml" 853 27794 27837
+type(
+  string
+)
+ident(
+  int_ref solver "solver.ml" 844 27608 27617 "solver.ml" 844 27608 27623
+)
+"solver.ml" 853 27794 27839 "solver.ml" 853 27794 27841
+type(
+  float
+)
+ident(
+  int_ref t' "solver.ml" 852 27760 27766 "solver.ml" 852 27760 27768
+)
+"solver.ml" 853 27794 27842 "solver.ml" 853 27794 27844
+type(
+  float -> float -> float
+)
+ident(
+  ext_ref Pervasives.( -. )
+)
+"solver.ml" 853 27794 27845 "solver.ml" 853 27794 27846
+type(
+  float
+)
+ident(
+  int_ref t "solver.ml" 850 27705 27711 "solver.ml" 850 27705 27712
+)
+"solver.ml" 853 27794 27839 "solver.ml" 853 27794 27846
+type(
+  float
+)
+"solver.ml" 853 27794 27796 "solver.ml" 853 27794 27847
+call(
+  tail
+)
+type(
+  unit
+)
+"solver.ml" 852 27760 27762 "solver.ml" 853 27794 27847
+type(
+  unit
+)
+"solver.ml" 851 27738 27740 "solver.ml" 853 27794 27847
+type(
+  unit
+)
+"solver.ml" 850 27705 27707 "solver.ml" 853 27794 27847
+type(
+  unit
+)
+"solver.ml" 845 27637 27639 "solver.ml" 853 27794 27847
+type(
+  unit
+)
+"solver.ml" 844 27608 27630 "solver.ml" 853 27794 27847
+type(
+  'a -> unit
+)
+"solver.ml" 844 27608 27624 "solver.ml" 853 27794 27847
+type(
+  ('a -> 'b) -> 'a -> unit
+)
+"solver.ml" 844 27608 27617 "solver.ml" 853 27794 27847
+type(
+  string -> ('a -> 'b) -> 'a -> unit
+)
+"solver.ml" 890 28724 28728 "solver.ml" 890 28724 28740
+type(
+  unit -> unit
+)
+ident(
+  def z3_testcases "solver.ml" 917 29592 29625 --
+)
+"solver.ml" 890 28724 28741 "solver.ml" 890 28724 28743
+type(
+  unit
+)
+"solver.ml" 891 28746 28752 "solver.ml" 891 28746 28753
+type(
+  Z3.solver
+)
+"solver.ml" 891 28746 28756 "solver.ml" 891 28746 28769
+type(
+  Z3.solver
+)
+"solver.ml" 892 28773 28775 "solver.ml" 892 28773 28776
+type(
+  Z3.solver
+)
+ident(
+  int_ref s "solver.ml" 891 28746 28752 "solver.ml" 891 28746 28753
+)
+"solver.ml" 892 28773 28775 "solver.ml" 892 28773 28791
+call(
+  stack
+)
+type(
+  Ast.exp -> unit
+)
+"solver.ml" 892 28773 28792 "solver.ml" 892 28773 28797
+type(
+  Ast.exp
+)
+ident(
+  int_ref test1 "solver.ml" 663 19649 19653 "solver.ml" 663 19649 19658
+)
+"solver.ml" 892 28773 28775 "solver.ml" 892 28773 28797
+type(
+  unit
+)
+"solver.ml" 893 28799 28805 "solver.ml" 893 28799 28806
+type(
+  bool
+)
+"solver.ml" 893 28799 28809 "solver.ml" 893 28799 28810
+type(
+  Z3.solver
+)
+ident(
+  int_ref s "solver.ml" 891 28746 28752 "solver.ml" 891 28746 28753
+)
+"solver.ml" 893 28799 28809 "solver.ml" 893 28799 28817
+call(
+  stack
+)
+type(
+  bool
+)
+"solver.ml" 894 28821 28823 "solver.ml" 894 28821 28830
+type(
+  (bool -> unit, unit, string, unit) format4 -> bool -> unit
+)
+ident(
+  ext_ref D.dprintf
+)
+"solver.ml" 894 28821 28831 "solver.ml" 894 28821 28845
+type(
+  (bool -> unit, unit, string, unit) format4
+)
+"solver.ml" 894 28821 28846 "solver.ml" 894 28821 28847
+type(
+  bool
+)
+ident(
+  int_ref b "solver.ml" 893 28799 28805 "solver.ml" 893 28799 28806
+)
+"solver.ml" 894 28821 28823 "solver.ml" 894 28821 28847
+call(
+  stack
+)
+type(
+  unit
+)
+"solver.ml" 895 28849 28851 "solver.ml" 895 28849 28858
+type(
+  (string -> unit, unit, string, unit) format4 -> string -> unit
+)
+ident(
+  ext_ref D.dprintf
+)
+"solver.ml" 895 28849 28859 "solver.ml" 895 28849 28873
+type(
+  (string -> unit, unit, string, unit) format4
+)
+"solver.ml" 895 28849 28875 "solver.ml" 895 28849 28876
+type(
+  Z3.solver
+)
+ident(
+  int_ref s "solver.ml" 891 28746 28752 "solver.ml" 891 28746 28753
+)
+"solver.ml" 895 28849 28875 "solver.ml" 895 28849 28883
+call(
+  stack
+)
+type(
+  string
+)
+"solver.ml" 895 28849 28851 "solver.ml" 895 28849 28884
+call(
+  stack
+)
+type(
+  unit
+)
+"solver.ml" 897 28887 28893 "solver.ml" 897 28887 28894
+type(
+  Z3.solver
+)
+"solver.ml" 897 28887 28897 "solver.ml" 897 28887 28910
+type(
+  Z3.solver
+)
+"solver.ml" 898 28914 28916 "solver.ml" 898 28914 28917
+type(
+  Z3.solver
+)
+ident(
+  int_ref s "solver.ml" 897 28887 28893 "solver.ml" 897 28887 28894
+)
+"solver.ml" 898 28914 28916 "solver.ml" 898 28914 28932
+call(
+  stack
+)
+type(
+  Ast.exp -> unit
+)
+"solver.ml" 898 28914 28933 "solver.ml" 898 28914 28940
+type(
+  Ast.exp
+)
+ident(
+  int_ref memtest "solver.ml" 652 19250 19254 "solver.ml" 652 19250 19261
+)
+"solver.ml" 898 28914 28916 "solver.ml" 898 28914 28940
+type(
+  unit
+)
+"solver.ml" 899 28942 28944 "solver.ml" 899 28942 28951
+type(
+  (string -> unit, unit, string, unit) format4 -> string -> unit
+)
+ident(
+  ext_ref D.dprintf
+)
+"solver.ml" 899 28942 28952 "solver.ml" 899 28942 28966
+type(
+  (string -> unit, unit, string, unit) format4
+)
+"solver.ml" 899 28942 28968 "solver.ml" 899 28942 28969
+type(
+  Z3.solver
+)
+ident(
+  int_ref s "solver.ml" 897 28887 28893 "solver.ml" 897 28887 28894
+)
+"solver.ml" 899 28942 28968 "solver.ml" 899 28942 28976
+call(
+  stack
+)
+type(
+  string
+)
+"solver.ml" 899 28942 28944 "solver.ml" 899 28942 28977
+call(
+  stack
+)
+type(
+  unit
+)
+"solver.ml" 901 28980 28986 "solver.ml" 901 28980 28987
+type(
+  Z3.solver
+)
+"solver.ml" 901 28980 28990 "solver.ml" 901 28980 29003
+type(
+  Z3.solver
+)
+"solver.ml" 902 29007 29013 "solver.ml" 902 29007 29014
+type(
+  Var.t
+)
+"solver.ml" 902 29007 29017 "solver.ml" 902 29007 29023
+type(
+  string -> Type.typ -> Var.t
+)
+ident(
+  ext_ref Var.newvar
+)
+"solver.ml" 902 29007 29024 "solver.ml" 902 29007 29027
+type(
+  string
+)
+"solver.ml" 902 29007 29028 "solver.ml" 902 29007 29034
+type(
+  Type.typ
+)
+ident(
+  ext_ref Ast.reg_32
+)
+"solver.ml" 902 29007 29017 "solver.ml" 902 29007 29034
+call(
+  stack
+)
+type(
+  Var.t
+)
+"solver.ml" 903 29038 29040 "solver.ml" 903 29038 29041
+type(
+  Z3.solver
+)
+ident(
+  int_ref s "solver.ml" 901 28980 28986 "solver.ml" 901 28980 28987
+)
+"solver.ml" 903 29038 29040 "solver.ml" 903 29038 29056
+call(
+  stack
+)
+type(
+  Ast.exp -> unit
+)
+"solver.ml" 903 29038 29064 "solver.ml" 903 29038 29066
+type(
+  Type.binop_type
+)
+"solver.ml" 903 29038 29072 "solver.ml" 903 29038 29073
+type(
+  Ast.var
+)
+ident(
+  int_ref x "solver.ml" 902 29007 29013 "solver.ml" 902 29007 29014
+)
+"solver.ml" 903 29038 29068 "solver.ml" 903 29038 29074
+type(
+  Ast.exp
+)
+"solver.ml" 903 29038 29080 "solver.ml" 903 29038 29087
+type(
+  int -> Big_int_Z.big_int
+)
+ident(
+  ext_ref Big_int_convenience.biconst
+)
+"solver.ml" 903 29038 29088 "solver.ml" 903 29038 29090
+type(
+  int
+)
+"solver.ml" 903 29038 29080 "solver.ml" 903 29038 29090
+call(
+  stack
+)
+type(
+  Big_int_Z.big_int
+)
+"solver.ml" 903 29038 29092 "solver.ml" 903 29038 29098
+type(
+  Type.typ
+)
+ident(
+  ext_ref Ast.reg_32
+)
+"solver.ml" 903 29038 29076 "solver.ml" 903 29038 29099
+type(
+  Big_int_Z.big_int * Type.typ
+)
+type(
+  Ast.exp
+)
+"solver.ml" 903 29038 29058 "solver.ml" 903 29038 29100
+type(
+  Type.binop_type * Ast.exp * Ast.exp
+)
+type(
+  Ast.exp
+)
+"solver.ml" 903 29038 29040 "solver.ml" 903 29038 29101
+type(
+  unit
+)
+"solver.ml" 904 29103 29105 "solver.ml" 904 29103 29112
+type(
+  (string -> unit, unit, string, unit) format4 -> string -> unit
+)
+ident(
+  ext_ref D.dprintf
+)
+"solver.ml" 904 29103 29113 "solver.ml" 904 29103 29127
+type(
+  (string -> unit, unit, string, unit) format4
+)
+"solver.ml" 904 29103 29129 "solver.ml" 904 29103 29130
+type(
+  Z3.solver
+)
+ident(
+  int_ref s "solver.ml" 901 28980 28986 "solver.ml" 901 28980 28987
+)
+"solver.ml" 904 29103 29129 "solver.ml" 904 29103 29137
+call(
+  stack
+)
+type(
+  string
+)
+"solver.ml" 904 29103 29105 "solver.ml" 904 29103 29138
+call(
+  stack
+)
+type(
+  unit
+)
+"solver.ml" 905 29140 29142 "solver.ml" 905 29140 29143
+type(
+  Z3.solver
+)
+ident(
+  int_ref s "solver.ml" 901 28980 28986 "solver.ml" 901 28980 28987
+)
+"solver.ml" 905 29140 29142 "solver.ml" 905 29140 29148
+call(
+  stack
+)
+type(
+  unit
+)
+"solver.ml" 906 29150 29152 "solver.ml" 906 29150 29153
+type(
+  Z3.solver
+)
+ident(
+  int_ref s "solver.ml" 901 28980 28986 "solver.ml" 901 28980 28987
+)
+"solver.ml" 906 29150 29152 "solver.ml" 906 29150 29168
+call(
+  stack
+)
+type(
+  Ast.exp -> unit
+)
+"solver.ml" 906 29150 29176 "solver.ml" 906 29150 29178
+type(
+  Type.binop_type
+)
+"solver.ml" 906 29150 29184 "solver.ml" 906 29150 29185
+type(
+  Ast.var
+)
+ident(
+  int_ref x "solver.ml" 902 29007 29013 "solver.ml" 902 29007 29014
+)
+"solver.ml" 906 29150 29180 "solver.ml" 906 29150 29186
+type(
+  Ast.exp
+)
+"solver.ml" 906 29150 29192 "solver.ml" 906 29150 29199
+type(
+  int -> Big_int_Z.big_int
+)
+ident(
+  ext_ref Big_int_convenience.biconst
+)
+"solver.ml" 906 29150 29200 "solver.ml" 906 29150 29202
+type(
+  int
+)
+"solver.ml" 906 29150 29192 "solver.ml" 906 29150 29202
+call(
+  stack
+)
+type(
+  Big_int_Z.big_int
+)
+"solver.ml" 906 29150 29204 "solver.ml" 906 29150 29210
+type(
+  Type.typ
+)
+ident(
+  ext_ref Ast.reg_32
+)
+"solver.ml" 906 29150 29188 "solver.ml" 906 29150 29211
+type(
+  Big_int_Z.big_int * Type.typ
+)
+type(
+  Ast.exp
+)
+"solver.ml" 906 29150 29170 "solver.ml" 906 29150 29212
+type(
+  Type.binop_type * Ast.exp * Ast.exp
+)
+type(
+  Ast.exp
+)
+"solver.ml" 906 29150 29152 "solver.ml" 906 29150 29213
+type(
+  unit
+)
+"solver.ml" 907 29215 29217 "solver.ml" 907 29215 29224
+type(
+  (string -> unit, unit, string, unit) format4 -> string -> unit
+)
+ident(
+  ext_ref D.dprintf
+)
+"solver.ml" 907 29215 29225 "solver.ml" 907 29215 29247
+type(
+  (string -> unit, unit, string, unit) format4
+)
+"solver.ml" 907 29215 29249 "solver.ml" 907 29215 29250
+type(
+  Z3.solver
+)
+ident(
+  int_ref s "solver.ml" 901 28980 28986 "solver.ml" 901 28980 28987
+)
+"solver.ml" 907 29215 29249 "solver.ml" 907 29215 29257
+call(
+  stack
+)
+type(
+  string
+)
+"solver.ml" 907 29215 29217 "solver.ml" 907 29215 29258
+call(
+  stack
+)
+type(
+  unit
+)
+"solver.ml" 908 29260 29262 "solver.ml" 908 29260 29263
+type(
+  Z3.solver
+)
+ident(
+  int_ref s "solver.ml" 901 28980 28986 "solver.ml" 901 28980 28987
+)
+"solver.ml" 908 29260 29262 "solver.ml" 908 29260 29267
+call(
+  stack
+)
+type(
+  unit
+)
+"solver.ml" 909 29269 29271 "solver.ml" 909 29269 29278
+type(
+  (string -> unit, unit, string, unit) format4 -> string -> unit
+)
+ident(
+  ext_ref D.dprintf
+)
+"solver.ml" 909 29269 29279 "solver.ml" 909 29269 29301
+type(
+  (string -> unit, unit, string, unit) format4
+)
+"solver.ml" 909 29269 29303 "solver.ml" 909 29269 29304
+type(
+  Z3.solver
+)
+ident(
+  int_ref s "solver.ml" 901 28980 28986 "solver.ml" 901 28980 28987
+)
+"solver.ml" 909 29269 29303 "solver.ml" 909 29269 29311
+call(
+  stack
+)
+type(
+  string
+)
+"solver.ml" 909 29269 29271 "solver.ml" 909 29269 29312
+call(
+  stack
+)
+type(
+  unit
+)
+"solver.ml" 912 29346 29352 "solver.ml" 912 29346 29353
+type(
+  Z3.solver
+)
+"solver.ml" 912 29346 29356 "solver.ml" 912 29346 29369
+type(
+  Z3.solver
+)
+"solver.ml" 913 29373 29379 "solver.ml" 913 29373 29383
+type(
+  Ast.exp
+)
+"solver.ml" 913 29373 29392 "solver.ml" 913 29373 29397
+type(
+  Type.binop_type
+)
+"solver.ml" 913 29373 29403 "solver.ml" 913 29373 29404
+type(
+  Ast.var
+)
+ident(
+  int_ref x "solver.ml" 902 29007 29013 "solver.ml" 902 29007 29014
+)
+"solver.ml" 913 29373 29399 "solver.ml" 913 29373 29405
+type(
+  Ast.exp
+)
+"solver.ml" 913 29373 29411 "solver.ml" 913 29373 29414
+type(
+  Big_int_Z.big_int
+)
+ident(
+  ext_ref Big_int_convenience.bi2
+)
+"solver.ml" 913 29373 29416 "solver.ml" 913 29373 29422
+type(
+  Type.typ
+)
+ident(
+  ext_ref Ast.reg_32
+)
+"solver.ml" 913 29373 29407 "solver.ml" 913 29373 29423
+type(
+  Big_int_Z.big_int * Type.typ
+)
+type(
+  Ast.exp
+)
+"solver.ml" 913 29373 29386 "solver.ml" 913 29373 29424
+type(
+  Type.binop_type * Ast.exp * Ast.exp
+)
+type(
+  Ast.exp
+)
+"solver.ml" 914 29428 29430 "solver.ml" 914 29428 29431
+type(
+  Z3.solver
+)
+ident(
+  int_ref s "solver.ml" 912 29346 29352 "solver.ml" 912 29346 29353
+)
+"solver.ml" 914 29428 29430 "solver.ml" 914 29428 29446
+call(
+  stack
+)
+type(
+  Ast.exp -> unit
+)
+"solver.ml" 914 29428 29454 "solver.ml" 914 29428 29457
+type(
+  Type.binop_type
+)
+"solver.ml" 914 29428 29463 "solver.ml" 914 29428 29466
+type(
+  Big_int_Z.big_int
+)
+ident(
+  ext_ref Big_int_convenience.bi0
+)
+"solver.ml" 914 29428 29468 "solver.ml" 914 29428 29474
+type(
+  Type.typ
+)
+ident(
+  ext_ref Ast.reg_32
+)
+"solver.ml" 914 29428 29459 "solver.ml" 914 29428 29475
+type(
+  Big_int_Z.big_int * Type.typ
+)
+type(
+  Ast.exp
+)
+"solver.ml" 914 29428 29477 "solver.ml" 914 29428 29481
+type(
+  Ast.exp
+)
+ident(
+  int_ref twox "solver.ml" 913 29373 29379 "solver.ml" 913 29373 29383
+)
+"solver.ml" 914 29428 29448 "solver.ml" 914 29428 29482
+type(
+  Type.binop_type * Ast.exp * Ast.exp
+)
+type(
+  Ast.exp
+)
+"solver.ml" 914 29428 29430 "solver.ml" 914 29428 29483
+type(
+  unit
+)
+"solver.ml" 915 29485 29491 "solver.ml" 915 29485 29492
+type(
+  Ast.exp
+)
+"solver.ml" 915 29485 29501 "solver.ml" 915 29485 29504
+type(
+  Type.binop_type
+)
+"solver.ml" 915 29485 29510 "solver.ml" 915 29485 29513
+type(
+  Big_int_Z.big_int
+)
+ident(
+  ext_ref Big_int_convenience.bi0
+)
+"solver.ml" 915 29485 29515 "solver.ml" 915 29485 29521
+type(
+  Type.typ
+)
+ident(
+  ext_ref Ast.reg_32
+)
+"solver.ml" 915 29485 29506 "solver.ml" 915 29485 29522
+type(
+  Big_int_Z.big_int * Type.typ
+)
+type(
+  Ast.exp
+)
+"solver.ml" 915 29485 29528 "solver.ml" 915 29485 29529
+type(
+  Ast.var
+)
+ident(
+  int_ref x "solver.ml" 902 29007 29013 "solver.ml" 902 29007 29014
+)
+"solver.ml" 915 29485 29524 "solver.ml" 915 29485 29530
+type(
+  Ast.exp
+)
+"solver.ml" 915 29485 29495 "solver.ml" 915 29485 29531
+type(
+  Type.binop_type * Ast.exp * Ast.exp
+)
+type(
+  Ast.exp
+)
+"solver.ml" 916 29535 29537 "solver.ml" 916 29535 29544
+type(
+  (bool -> unit, unit, string, unit) format4 -> bool -> unit
+)
+ident(
+  ext_ref D.dprintf
+)
+"solver.ml" 916 29535 29545 "solver.ml" 916 29535 29575
+type(
+  (bool -> unit, unit, string, unit) format4
+)
+"solver.ml" 916 29535 29577 "solver.ml" 916 29535 29578
+type(
+  Z3.solver
+)
+ident(
+  int_ref s "solver.ml" 912 29346 29352 "solver.ml" 912 29346 29353
+)
+"solver.ml" 916 29535 29577 "solver.ml" 916 29535 29587
+call(
+  stack
+)
+type(
+  Ast.exp -> bool
+)
+"solver.ml" 916 29535 29588 "solver.ml" 916 29535 29589
+type(
+  Ast.exp
+)
+ident(
+  int_ref e "solver.ml" 915 29485 29491 "solver.ml" 915 29485 29492
+)
+"solver.ml" 916 29535 29577 "solver.ml" 916 29535 29589
+type(
+  bool
+)
+"solver.ml" 916 29535 29537 "solver.ml" 916 29535 29590
+call(
+  stack
+)
+type(
+  unit
+)
+"solver.ml" 917 29592 29594 "solver.ml" 917 29592 29601
+type(
+  (string -> unit, unit, string, unit) format4 -> string -> unit
+)
+ident(
+  ext_ref D.dprintf
+)
+"solver.ml" 917 29592 29602 "solver.ml" 917 29592 29616
+type(
+  (string -> unit, unit, string, unit) format4
+)
+"solver.ml" 917 29592 29617 "solver.ml" 917 29592 29618
+type(
+  Z3.solver
+)
+ident(
+  int_ref s "solver.ml" 912 29346 29352 "solver.ml" 912 29346 29353
+)
+"solver.ml" 917 29592 29617 "solver.ml" 917 29592 29625
+call(
+  stack
+)
+type(
+  string
+)
+"solver.ml" 917 29592 29594 "solver.ml" 917 29592 29625
+call(
+  tail
+)
+type(
+  unit
+)
+"solver.ml" 916 29535 29537 "solver.ml" 917 29592 29625
+type(
+  unit
+)
+"solver.ml" 915 29485 29487 "solver.ml" 917 29592 29625
+type(
+  unit
+)
+"solver.ml" 914 29428 29430 "solver.ml" 917 29592 29625
+type(
+  unit
+)
+"solver.ml" 913 29373 29375 "solver.ml" 917 29592 29625
+type(
+  unit
+)
+"solver.ml" 912 29346 29348 "solver.ml" 917 29592 29625
+type(
+  unit
+)
+"solver.ml" 909 29269 29271 "solver.ml" 917 29592 29625
+type(
+  unit
+)
+"solver.ml" 908 29260 29262 "solver.ml" 917 29592 29625
+type(
+  unit
+)
+"solver.ml" 907 29215 29217 "solver.ml" 917 29592 29625
+type(
+  unit
+)
+"solver.ml" 906 29150 29152 "solver.ml" 917 29592 29625
+type(
+  unit
+)
+"solver.ml" 905 29140 29142 "solver.ml" 917 29592 29625
+type(
+  unit
+)
+"solver.ml" 904 29103 29105 "solver.ml" 917 29592 29625
+type(
+  unit
+)
+"solver.ml" 903 29038 29040 "solver.ml" 917 29592 29625
+type(
+  unit
+)
+"solver.ml" 902 29007 29009 "solver.ml" 917 29592 29625
+type(
+  unit
+)
+"solver.ml" 901 28980 28982 "solver.ml" 917 29592 29625
+type(
+  unit
+)
+"solver.ml" 899 28942 28944 "solver.ml" 917 29592 29625
+type(
+  unit
+)
+"solver.ml" 898 28914 28916 "solver.ml" 917 29592 29625
+type(
+  unit
+)
+"solver.ml" 897 28887 28889 "solver.ml" 917 29592 29625
+type(
+  unit
+)
+"solver.ml" 895 28849 28851 "solver.ml" 917 29592 29625
+type(
+  unit
+)
+"solver.ml" 894 28821 28823 "solver.ml" 917 29592 29625
+type(
+  unit
+)
+"solver.ml" 893 28799 28801 "solver.ml" 917 29592 29625
+type(
+  unit
+)
+"solver.ml" 892 28773 28775 "solver.ml" 917 29592 29625
+type(
+  unit
+)
+"solver.ml" 891 28746 28748 "solver.ml" 917 29592 29625
+type(
+  unit
+)
+"solver.ml" 890 28724 28741 "solver.ml" 917 29592 29625
+type(
+  unit -> unit
+)

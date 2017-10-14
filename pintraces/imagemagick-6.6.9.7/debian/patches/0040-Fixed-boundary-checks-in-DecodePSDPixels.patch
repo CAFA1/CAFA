@@ -1,0 +1,168 @@
+Backport of:
+
+From b8df15144d91a19ed545893ea492363635a1cb29 Mon Sep 17 00:00:00 2001
+From: dirk <dirk@aa41f4f7-0bf4-0310-aa73-e5a19afd5a74>
+Date: Wed, 17 Dec 2014 07:25:30 +0000
+Subject: [PATCH] Fixed boundary checks in DecodePSDPixels.
+
+git-svn-id: https://subversion.imagemagick.org/subversion/ImageMagick/branches/ImageMagick-6@17310 aa41f4f7-0bf4-0310-aa73-e5a19afd5a74
+Origin:  http://trac.imagemagick.org/changeset/17310
+---
+ coders/psd.c | 72 ++++++++++++++++++++++++++++++------------------------------
+ 1 file changed, 36 insertions(+), 36 deletions(-)
+
+Index: imagemagick-6.6.9.7/coders/psd.c
+===================================================================
+--- imagemagick-6.6.9.7.orig/coders/psd.c	2016-11-15 12:59:19.625057051 -0500
++++ imagemagick-6.6.9.7/coders/psd.c	2016-11-15 12:59:19.621057002 -0500
+@@ -251,6 +251,16 @@
+   const unsigned char *compact_pixels,const ssize_t depth,
+   const size_t number_pixels,unsigned char *pixels)
+ {
++#define CheckNumberCompactPixels \
++  if (packets == 0) \
++    return(i); \
++  packets--
++
++#define CheckNumberPixels(count) \
++  if (((ssize_t) i + count) > (ssize_t) number_pixels) \
++    return(i); \
++  i+=count
++
+   int
+     pixel;
+ 
+@@ -267,23 +277,22 @@
+   packets=(ssize_t) number_compact_pixels;
+   for (i=0; (packets > 1) && (i < (ssize_t) number_pixels); )
+   {
++    CheckNumberCompactPixels;
+     length=(size_t) (*compact_pixels++);
+-    packets--;
+     if (length == 128)
+       continue;
+     if (length > 128)
+       {
+         length=256-length+1;
+-        if ((ssize_t) length + i > (ssize_t) number_pixels)
+-          length=number_pixels-(size_t) i;
++        CheckNumberCompactPixels;
+         pixel=(*compact_pixels++);
+-        packets--;
+         for (j=0; j < (ssize_t) length; j++)
+         {
+           switch (depth)
+           {
+             case 1:
+             {
++              CheckNumberPixels(8);
+               *pixels++=(pixel >> 7) & 0x01 ? 0U : 255U;
+               *pixels++=(pixel >> 6) & 0x01 ? 0U : 255U;
+               *pixels++=(pixel >> 5) & 0x01 ? 0U : 255U;
+@@ -292,29 +301,28 @@
+               *pixels++=(pixel >> 2) & 0x01 ? 0U : 255U;
+               *pixels++=(pixel >> 1) & 0x01 ? 0U : 255U;
+               *pixels++=(pixel >> 0) & 0x01 ? 0U : 255U;
+-              i+=8;
+-              break;
+-            }
+-            case 4:
+-            {
+-              *pixels++=(unsigned char) ((pixel >> 4) & 0xff);
+-              *pixels++=(unsigned char) ((pixel & 0x0f) & 0xff);
+-              i+=2;
+               break;
+             }
+             case 2:
+             {
++              CheckNumberPixels(4);
+               *pixels++=(unsigned char) ((pixel >> 6) & 0x03);
+               *pixels++=(unsigned char) ((pixel >> 4) & 0x03);
+               *pixels++=(unsigned char) ((pixel >> 2) & 0x03);
+               *pixels++=(unsigned char) ((pixel & 0x03) & 0x03);
+-              i+=4;
++              break;
++            }
++            case 4:
++            {
++              CheckNumberPixels(2);
++              *pixels++=(unsigned char) ((pixel >> 4) & 0xff);
++              *pixels++=(unsigned char) ((pixel & 0x0f) & 0xff);
+               break;
+             }
+             default:
+             {
++              CheckNumberPixels(1);
+               *pixels++=(unsigned char) pixel;
+-              i++;
+               break;
+             }
+           }
+@@ -322,14 +330,13 @@
+         continue;
+       }
+     length++;
+-    if ((ssize_t) length + i > (ssize_t) number_pixels)
+-      length=number_pixels-(size_t) i;
+     for (j=0; j < (ssize_t) length; j++)
+     {
+       switch (depth)
+       {
+         case 1:
+         {
++          CheckNumberPixels(8);
+           *pixels++=(*compact_pixels >> 7) & 0x01 ? 0U : 255U;
+           *pixels++=(*compact_pixels >> 6) & 0x01 ? 0U : 255U;
+           *pixels++=(*compact_pixels >> 5) & 0x01 ? 0U : 255U;
+@@ -338,32 +345,32 @@
+           *pixels++=(*compact_pixels >> 2) & 0x01 ? 0U : 255U;
+           *pixels++=(*compact_pixels >> 1) & 0x01 ? 0U : 255U;
+           *pixels++=(*compact_pixels >> 0) & 0x01 ? 0U : 255U;
+-          i+=8;
+-          break;
+-        }
+-        case 4:
+-        {
+-          *pixels++=(*compact_pixels >> 4) & 0xff;
+-          *pixels++=(*compact_pixels & 0x0f) & 0xff;
+-          i+=2;
+           break;
+         }
+         case 2:
+         {
++          CheckNumberPixels(4);
+           *pixels++=(*compact_pixels >> 6) & 0x03;
+           *pixels++=(*compact_pixels >> 4) & 0x03;
+           *pixels++=(*compact_pixels >> 2) & 0x03;
+           *pixels++=(*compact_pixels & 0x03) & 0x03;
+-          i+=4;
++          break;
++        }
++        case 4:
++        {
++          CheckNumberPixels(2);
++          *pixels++=(*compact_pixels >> 4) & 0xff;
++          *pixels++=(*compact_pixels & 0x0f) & 0xff;
+           break;
+         }
+         default:
+         {
++          CheckNumberPixels(1);
+           *pixels++=(*compact_pixels);
+-          i++;
+           break;
+         }
+       }
++      CheckNumberCompactPixels;
+       compact_pixels++;
+     }
+   }
+@@ -584,7 +591,7 @@
+         if ((MagickOffsetType) length < offsets[y])
+           length=(size_t) offsets[y];
+       compact_pixels=(unsigned char *) AcquireQuantumMemory(length,
+-        8*sizeof(*pixels));
++        sizeof(*pixels));
+       if (compact_pixels == (unsigned char *) NULL)
+         ThrowBinaryException(ResourceLimitError,"MemoryAllocationFailed",
+           image->filename);

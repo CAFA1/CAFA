@@ -1,0 +1,28 @@
+From 3e07cd10a9a2215c9edcc0c0e1541c125371cfbc Mon Sep 17 00:00:00 2001
+From: Cristy <urban-warrior@imagemagick.org>
+Date: Sat, 30 Jan 2016 08:51:58 -0500
+Subject: [PATCH] Fix SIGFPE in quantum.c
+
+This is a partial fix of #832506 and needed for it.
+
+Bug-debian: https://bugs.debian.org/832506
+bug-ubuntu: https://bugs.launchpad.net/ubuntu/+source/imagemagick/+bug/1539067
+Bug: https://github.com/ImageMagick/ImageMagick/issues/110
+origin: upstream, https://github.com/ImageMagick/ImageMagick/commit/b5ed738f8060266bf4ae521f7e3ed145aa4498a3
+---
+ magick/quantum.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+Index: imagemagick-6.6.9.7/magick/quantum.c
+===================================================================
+--- imagemagick-6.6.9.7.orig/magick/quantum.c	2016-11-15 15:20:46.256681421 -0500
++++ imagemagick-6.6.9.7/magick/quantum.c	2016-11-15 15:20:46.252681372 -0500
+@@ -581,7 +581,7 @@
+     DestroyQuantumPixels(quantum_info);
+   quantum=(quantum_info->pad+6)*(quantum_info->depth+7)/8;
+   extent=image->columns*quantum;
+-  if (quantum != (extent/image->columns))
++  if ((image->columns != 0) && (quantum != (extent/image->columns)))
+     return(MagickFalse);
+   return(AcquireQuantumPixels(quantum_info,extent));
+ }

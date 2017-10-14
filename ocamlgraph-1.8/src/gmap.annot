@@ -1,0 +1,339 @@
+"src/gmap.ml" 37 1614 1627 "src/gmap.ml" 37 1614 1648
+call(
+  stack
+)
+"src/gmap.ml" 38 1649 1655 "src/gmap.ml" 38 1649 1663
+type(
+  G_Dst.vertex H.t
+)
+ident(
+  def vertices "src/gmap.ml" 40 1679 1681 "src/gmap.ml" 54 1966 1969
+)
+"src/gmap.ml" 38 1649 1666 "src/gmap.ml" 38 1649 1674
+type(
+  int -> G_Dst.vertex H.t
+)
+ident(
+  ext_ref H.create
+)
+"src/gmap.ml" 38 1649 1675 "src/gmap.ml" 38 1649 1677
+type(
+  int
+)
+"src/gmap.ml" 38 1649 1666 "src/gmap.ml" 38 1649 1677
+call(
+  stack
+)
+type(
+  G_Dst.vertex H.t
+)
+"src/gmap.ml" 40 1679 1685 "src/gmap.ml" 40 1679 1699
+type(
+  (H.key -> G_Dst.vertex) -> H.key -> G_Dst.vertex
+)
+ident(
+  def convert_vertex "src/gmap.ml" 48 1820 1822 "src/gmap.ml" 54 1966 1969
+)
+"src/gmap.ml" 40 1679 1700 "src/gmap.ml" 40 1679 1701
+type(
+  H.key -> G_Dst.vertex
+)
+ident(
+  def f "src/gmap.ml" 40 1679 1702 "src/gmap.ml" 46 1810 1818
+)
+"src/gmap.ml" 40 1679 1702 "src/gmap.ml" 40 1679 1703
+type(
+  H.key
+)
+ident(
+  def x "src/gmap.ml" 41 1706 1710 "src/gmap.ml" 46 1810 1818
+)
+"src/gmap.ml" 42 1715 1721 "src/gmap.ml" 42 1715 1727
+type(
+  G_Dst.vertex H.t -> H.key -> G_Dst.vertex
+)
+ident(
+  ext_ref H.find
+)
+"src/gmap.ml" 42 1715 1728 "src/gmap.ml" 42 1715 1736
+type(
+  G_Dst.vertex H.t
+)
+ident(
+  int_ref vertices "src/gmap.ml" 38 1649 1655 "src/gmap.ml" 38 1649 1663
+)
+"src/gmap.ml" 42 1715 1737 "src/gmap.ml" 42 1715 1738
+type(
+  H.key
+)
+ident(
+  int_ref x "src/gmap.ml" 40 1679 1702 "src/gmap.ml" 40 1679 1703
+)
+"src/gmap.ml" 42 1715 1721 "src/gmap.ml" 42 1715 1738
+call(
+  stack
+)
+type(
+  G_Dst.vertex
+)
+"src/gmap.ml" 43 1739 1748 "src/gmap.ml" 43 1739 1757
+type(
+  exn
+)
+"src/gmap.ml" 44 1761 1771 "src/gmap.ml" 44 1761 1773
+type(
+  G_Dst.vertex
+)
+"src/gmap.ml" 44 1761 1776 "src/gmap.ml" 44 1761 1777
+type(
+  H.key -> G_Dst.vertex
+)
+ident(
+  int_ref f "src/gmap.ml" 40 1679 1700 "src/gmap.ml" 40 1679 1701
+)
+"src/gmap.ml" 44 1761 1778 "src/gmap.ml" 44 1761 1779
+type(
+  H.key
+)
+ident(
+  int_ref x "src/gmap.ml" 40 1679 1702 "src/gmap.ml" 40 1679 1703
+)
+"src/gmap.ml" 44 1761 1776 "src/gmap.ml" 44 1761 1779
+call(
+  stack
+)
+type(
+  G_Dst.vertex
+)
+"src/gmap.ml" 45 1783 1789 "src/gmap.ml" 45 1783 1794
+type(
+  G_Dst.vertex H.t -> H.key -> G_Dst.vertex -> unit
+)
+ident(
+  ext_ref H.add
+)
+"src/gmap.ml" 45 1783 1795 "src/gmap.ml" 45 1783 1803
+type(
+  G_Dst.vertex H.t
+)
+ident(
+  int_ref vertices "src/gmap.ml" 38 1649 1655 "src/gmap.ml" 38 1649 1663
+)
+"src/gmap.ml" 45 1783 1804 "src/gmap.ml" 45 1783 1805
+type(
+  H.key
+)
+ident(
+  int_ref x "src/gmap.ml" 40 1679 1702 "src/gmap.ml" 40 1679 1703
+)
+"src/gmap.ml" 45 1783 1806 "src/gmap.ml" 45 1783 1808
+type(
+  G_Dst.vertex
+)
+ident(
+  int_ref x' "src/gmap.ml" 44 1761 1771 "src/gmap.ml" 44 1761 1773
+)
+"src/gmap.ml" 45 1783 1789 "src/gmap.ml" 45 1783 1808
+call(
+  stack
+)
+type(
+  unit
+)
+"src/gmap.ml" 46 1810 1816 "src/gmap.ml" 46 1810 1818
+type(
+  G_Dst.vertex
+)
+ident(
+  int_ref x' "src/gmap.ml" 44 1761 1771 "src/gmap.ml" 44 1761 1773
+)
+"src/gmap.ml" 45 1783 1789 "src/gmap.ml" 46 1810 1818
+type(
+  G_Dst.vertex
+)
+"src/gmap.ml" 44 1761 1767 "src/gmap.ml" 46 1810 1818
+type(
+  G_Dst.vertex
+)
+"src/gmap.ml" 41 1706 1710 "src/gmap.ml" 46 1810 1818
+type(
+  G_Dst.vertex
+)
+"src/gmap.ml" 48 1820 1826 "src/gmap.ml" 48 1820 1829
+type(
+  (H.key -> G_Dst.vertex) -> G_Src.t -> G_Dst.t
+)
+ident(
+  def map "src/gmap.ml" 52 1940 1964 "src/gmap.ml" 54 1966 1969
+)
+"src/gmap.ml" 48 1820 1830 "src/gmap.ml" 48 1820 1831
+type(
+  H.key -> G_Dst.vertex
+)
+ident(
+  def f "src/gmap.ml" 48 1820 1832 "src/gmap.ml" 52 1940 1964
+)
+"src/gmap.ml" 48 1820 1832 "src/gmap.ml" 48 1820 1833
+type(
+  G_Src.t
+)
+ident(
+  def g "src/gmap.ml" 49 1836 1840 "src/gmap.ml" 52 1940 1964
+)
+"src/gmap.ml" 49 1836 1840 "src/gmap.ml" 49 1836 1847
+type(
+  G_Dst.vertex H.t -> unit
+)
+ident(
+  ext_ref H.clear
+)
+"src/gmap.ml" 49 1836 1848 "src/gmap.ml" 49 1836 1856
+type(
+  G_Dst.vertex H.t
+)
+ident(
+  int_ref vertices "src/gmap.ml" 38 1649 1655 "src/gmap.ml" 38 1649 1663
+)
+"src/gmap.ml" 49 1836 1840 "src/gmap.ml" 49 1836 1856
+call(
+  stack
+)
+type(
+  unit
+)
+"src/gmap.ml" 50 1858 1862 "src/gmap.ml" 50 1858 1879
+type(
+  (H.key -> G_Dst.t -> G_Dst.t) -> G_Src.t -> G_Dst.t -> G_Dst.t
+)
+ident(
+  ext_ref G_Src.fold_vertex
+)
+"src/gmap.ml" 51 1880 1891 "src/gmap.ml" 51 1880 1892
+type(
+  H.key
+)
+ident(
+  def x "src/gmap.ml" 51 1880 1893 "src/gmap.ml" 51 1880 1937
+)
+"src/gmap.ml" 51 1880 1893 "src/gmap.ml" 51 1880 1894
+type(
+  G_Dst.t
+)
+ident(
+  def g "src/gmap.ml" 51 1880 1898 "src/gmap.ml" 51 1880 1937
+)
+"src/gmap.ml" 51 1880 1898 "src/gmap.ml" 51 1880 1914
+type(
+  G_Dst.t -> G_Dst.vertex -> G_Dst.t
+)
+ident(
+  ext_ref G_Dst.add_vertex
+)
+"src/gmap.ml" 51 1880 1915 "src/gmap.ml" 51 1880 1916
+type(
+  G_Dst.t
+)
+ident(
+  int_ref g "src/gmap.ml" 51 1880 1893 "src/gmap.ml" 51 1880 1894
+)
+"src/gmap.ml" 51 1880 1918 "src/gmap.ml" 51 1880 1932
+type(
+  (H.key -> G_Dst.vertex) -> H.key -> G_Dst.vertex
+)
+ident(
+  int_ref convert_vertex "src/gmap.ml" 40 1679 1685 "src/gmap.ml" 40 1679 1699
+)
+"src/gmap.ml" 51 1880 1933 "src/gmap.ml" 51 1880 1934
+type(
+  H.key -> G_Dst.vertex
+)
+ident(
+  int_ref f "src/gmap.ml" 48 1820 1830 "src/gmap.ml" 48 1820 1831
+)
+"src/gmap.ml" 51 1880 1935 "src/gmap.ml" 51 1880 1936
+type(
+  H.key
+)
+ident(
+  int_ref x "src/gmap.ml" 51 1880 1891 "src/gmap.ml" 51 1880 1892
+)
+"src/gmap.ml" 51 1880 1917 "src/gmap.ml" 51 1880 1937
+call(
+  stack
+)
+type(
+  G_Dst.vertex
+)
+"src/gmap.ml" 51 1880 1898 "src/gmap.ml" 51 1880 1937
+call(
+  tail
+)
+type(
+  G_Dst.t
+)
+"src/gmap.ml" 51 1880 1886 "src/gmap.ml" 51 1880 1938
+type(
+  H.key -> G_Dst.t -> G_Dst.t
+)
+"src/gmap.ml" 52 1940 1946 "src/gmap.ml" 52 1940 1947
+type(
+  G_Src.t
+)
+ident(
+  int_ref g "src/gmap.ml" 48 1820 1832 "src/gmap.ml" 48 1820 1833
+)
+"src/gmap.ml" 52 1940 1949 "src/gmap.ml" 52 1940 1960
+type(
+  unit -> G_Dst.t
+)
+ident(
+  ext_ref G_Dst.empty
+)
+"src/gmap.ml" 52 1940 1961 "src/gmap.ml" 52 1940 1963
+type(
+  unit
+)
+"src/gmap.ml" 52 1940 1948 "src/gmap.ml" 52 1940 1964
+call(
+  stack
+)
+type(
+  G_Dst.t
+)
+"src/gmap.ml" 50 1858 1862 "src/gmap.ml" 52 1940 1964
+call(
+  tail
+)
+type(
+  G_Dst.t
+)
+"src/gmap.ml" 49 1836 1840 "src/gmap.ml" 52 1940 1964
+type(
+  G_Dst.t
+)
+"src/gmap.ml" 73 2279 2322 "src/gmap.ml" 73 2279 2333
+type(
+  (E.t -> 'a -> 'a) -> t -> 'a -> 'a
+)
+ident(
+  def fold_vertex "src/gmap.ml" 73 2279 2348 "src/gmap.ml" 73 2279 2352
+)
+"src/gmap.ml" 73 2279 2336 "src/gmap.ml" 73 2279 2348
+type(
+  (E.t -> 'a -> 'a) -> t -> 'a -> 'a
+)
+"src/gmap.ml" 74 2354 2403 "src/gmap.ml" 74 2354 2413
+type(
+  t -> edge -> t
+)
+ident(
+  def add_vertex "src/gmap.ml" 74 2354 2426 "src/gmap.ml" 74 2354 2430
+)
+"src/gmap.ml" 74 2354 2416 "src/gmap.ml" 74 2354 2426
+type(
+  t -> edge -> t
+)
+"src/gmap.ml" 72 2270 2272 "src/gmap.ml" 74 2354 2431
+call(
+  tail
+)

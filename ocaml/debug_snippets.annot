@@ -1,0 +1,470 @@
+"debug_snippets.ml" 5 38 71 "debug_snippets.ml" 5 38 75
+type(
+  string
+)
+ident(
+  def name "debug_snippets.ml" 5 38 113 "debug_snippets.ml" 5 38 117
+)
+"debug_snippets.ml" 5 38 78 "debug_snippets.ml" 5 38 94
+type(
+  string
+)
+"debug_snippets.ml" 5 38 99 "debug_snippets.ml" 5 38 106
+type(
+  [> `Debug ]
+)
+ident(
+  def default "debug_snippets.ml" 5 38 113 "debug_snippets.ml" 5 38 117
+)
+"debug_snippets.ml" 5 38 107 "debug_snippets.ml" 5 38 113
+type(
+  [> `Debug ] as 'a
+)
+"debug_snippets.ml" 5 38 49 "debug_snippets.ml" 5 38 118
+call(
+  stack
+)
+"debug_snippets.ml" 11 167 171 "debug_snippets.ml" 11 167 172
+type(
+  Ast_visitor.nop
+)
+ident(
+  def v "debug_snippets.ml" 18 319 319 --
+)
+"debug_snippets.ml" 11 167 181 "debug_snippets.ml" 11 167 187
+type(
+  Ast_visitor.nop
+)
+"debug_snippets.ml" 13 214 234 "debug_snippets.ml" 13 214 238
+type(
+  Ast.stmt
+)
+ident(
+  def stmt "debug_snippets.ml" 14 241 245 "debug_snippets.ml" 15 294 310
+)
+"debug_snippets.ml" 14 241 245 "debug_snippets.ml" 14 241 252
+type(
+  (string -> unit, unit, string, unit) format4 -> string -> unit
+)
+ident(
+  ext_ref D.dprintf
+)
+"debug_snippets.ml" 14 241 253 "debug_snippets.ml" 14 241 263
+type(
+  (string -> unit, unit, string, unit) format4
+)
+"debug_snippets.ml" 14 241 265 "debug_snippets.ml" 14 241 286
+type(
+  Ast.stmt -> string
+)
+ident(
+  ext_ref Pp.ast_stmt_to_string
+)
+"debug_snippets.ml" 14 241 287 "debug_snippets.ml" 14 241 291
+type(
+  Ast.stmt
+)
+ident(
+  int_ref stmt "debug_snippets.ml" 13 214 234 "debug_snippets.ml" 13 214 238
+)
+"debug_snippets.ml" 14 241 264 "debug_snippets.ml" 14 241 292
+call(
+  stack
+)
+type(
+  string
+)
+"debug_snippets.ml" 14 241 245 "debug_snippets.ml" 14 241 292
+call(
+  stack
+)
+type(
+  unit
+)
+"debug_snippets.ml" 15 294 298 "debug_snippets.ml" 15 294 310
+type(
+  Ast.stmt Type.visit_action
+)
+"debug_snippets.ml" 14 241 245 "debug_snippets.ml" 15 294 310
+type(
+  Ast.stmt Type.visit_action
+)
+"debug_snippets.ml" 11 167 175 "debug_snippets.ml" 16 311 314
+type(
+  Ast_visitor.nop
+)
+"debug_snippets.ml" 18 319 323 "debug_snippets.ml" 18 319 335
+type(
+  Cfg.AST.G.t -> unit
+)
+ident(
+  def print_astcfg "debug_snippets.ml" 21 378 378 --
+)
+"debug_snippets.ml" 18 319 336 "debug_snippets.ml" 18 319 337
+type(
+  Cfg.AST.G.t
+)
+ident(
+  def p "debug_snippets.ml" 19 340 342 "debug_snippets.ml" 19 340 376
+)
+"debug_snippets.ml" 19 340 342 "debug_snippets.ml" 19 340 348
+type(
+  Cfg.AST.G.t -> unit
+)
+ident(
+  ext_ref Pervasives.ignore
+)
+"debug_snippets.ml" 19 340 349 "debug_snippets.ml" 19 340 371
+type(
+  Ast_visitor.t -> Cfg.AST.G.t -> Cfg.AST.G.t
+)
+ident(
+  ext_ref Ast_visitor.cfg_accept
+)
+"debug_snippets.ml" 19 340 372 "debug_snippets.ml" 19 340 373
+type(
+  Ast_visitor.t
+)
+ident(
+  int_ref v "debug_snippets.ml" 11 167 171 "debug_snippets.ml" 11 167 172
+)
+"debug_snippets.ml" 19 340 374 "debug_snippets.ml" 19 340 375
+type(
+  Cfg.AST.G.t
+)
+ident(
+  int_ref p "debug_snippets.ml" 18 319 336 "debug_snippets.ml" 18 319 337
+)
+"debug_snippets.ml" 19 340 348 "debug_snippets.ml" 19 340 376
+call(
+  stack
+)
+type(
+  Cfg.AST.G.t
+)
+"debug_snippets.ml" 19 340 342 "debug_snippets.ml" 19 340 376
+type(
+  unit
+)
+"debug_snippets.ml" 21 378 382 "debug_snippets.ml" 21 378 391
+type(
+  Ast.program -> unit
+)
+ident(
+  def print_ast "debug_snippets.ml" 26 465 465 --
+)
+"debug_snippets.ml" 21 378 392 "debug_snippets.ml" 21 378 393
+type(
+  Ast.program
+)
+ident(
+  def p "debug_snippets.ml" 22 396 398 "debug_snippets.ml" 22 396 433
+)
+"debug_snippets.ml" 22 396 398 "debug_snippets.ml" 22 396 404
+type(
+  Ast.program -> unit
+)
+ident(
+  ext_ref Pervasives.ignore
+)
+"debug_snippets.ml" 22 396 405 "debug_snippets.ml" 22 396 428
+type(
+  Ast_visitor.t -> Ast.program -> Ast.program
+)
+ident(
+  ext_ref Ast_visitor.prog_accept
+)
+"debug_snippets.ml" 22 396 429 "debug_snippets.ml" 22 396 430
+type(
+  Ast_visitor.t
+)
+ident(
+  int_ref v "debug_snippets.ml" 11 167 171 "debug_snippets.ml" 11 167 172
+)
+"debug_snippets.ml" 22 396 431 "debug_snippets.ml" 22 396 432
+type(
+  Ast.program
+)
+ident(
+  int_ref p "debug_snippets.ml" 21 378 392 "debug_snippets.ml" 21 378 393
+)
+"debug_snippets.ml" 22 396 404 "debug_snippets.ml" 22 396 433
+call(
+  stack
+)
+type(
+  Ast.program
+)
+"debug_snippets.ml" 22 396 398 "debug_snippets.ml" 22 396 433
+type(
+  unit
+)
+"debug_snippets.ml" 26 465 469 "debug_snippets.ml" 26 465 470
+type(
+  Ssa_visitor.nop
+)
+ident(
+  def v "debug_snippets.ml" 33 617 617 --
+)
+"debug_snippets.ml" 26 465 479 "debug_snippets.ml" 26 465 485
+type(
+  Ssa_visitor.nop
+)
+"debug_snippets.ml" 28 512 532 "debug_snippets.ml" 28 512 536
+type(
+  Ssa.stmt
+)
+ident(
+  def stmt "debug_snippets.ml" 29 539 543 "debug_snippets.ml" 30 592 608
+)
+"debug_snippets.ml" 29 539 543 "debug_snippets.ml" 29 539 550
+type(
+  (string -> unit, unit, string, unit) format4 -> string -> unit
+)
+ident(
+  ext_ref D.dprintf
+)
+"debug_snippets.ml" 29 539 551 "debug_snippets.ml" 29 539 561
+type(
+  (string -> unit, unit, string, unit) format4
+)
+"debug_snippets.ml" 29 539 563 "debug_snippets.ml" 29 539 584
+type(
+  Ssa.stmt -> string
+)
+ident(
+  ext_ref Pp.ssa_stmt_to_string
+)
+"debug_snippets.ml" 29 539 585 "debug_snippets.ml" 29 539 589
+type(
+  Ssa.stmt
+)
+ident(
+  int_ref stmt "debug_snippets.ml" 28 512 532 "debug_snippets.ml" 28 512 536
+)
+"debug_snippets.ml" 29 539 562 "debug_snippets.ml" 29 539 590
+call(
+  stack
+)
+type(
+  string
+)
+"debug_snippets.ml" 29 539 543 "debug_snippets.ml" 29 539 590
+call(
+  stack
+)
+type(
+  unit
+)
+"debug_snippets.ml" 30 592 596 "debug_snippets.ml" 30 592 608
+type(
+  Ssa.stmt Type.visit_action
+)
+"debug_snippets.ml" 29 539 543 "debug_snippets.ml" 30 592 608
+type(
+  Ssa.stmt Type.visit_action
+)
+"debug_snippets.ml" 26 465 473 "debug_snippets.ml" 31 609 612
+type(
+  Ssa_visitor.nop
+)
+"debug_snippets.ml" 33 617 621 "debug_snippets.ml" 33 617 633
+type(
+  Cfg.SSA.G.t -> unit
+)
+ident(
+  def print_ssacfg "debug_snippets.ml" 36 677 677 --
+)
+"debug_snippets.ml" 33 617 634 "debug_snippets.ml" 33 617 635
+type(
+  Cfg.SSA.G.t
+)
+ident(
+  def p "debug_snippets.ml" 34 638 640 "debug_snippets.ml" 34 638 675
+)
+"debug_snippets.ml" 34 638 640 "debug_snippets.ml" 34 638 646
+type(
+  Cfg.SSA.G.t -> unit
+)
+ident(
+  ext_ref Pervasives.ignore
+)
+"debug_snippets.ml" 34 638 647 "debug_snippets.ml" 34 638 670
+type(
+  Ssa_visitor.t -> Cfg.SSA.G.t -> Cfg.SSA.G.t
+)
+ident(
+  ext_ref Ssa_visitor.prog_accept
+)
+"debug_snippets.ml" 34 638 671 "debug_snippets.ml" 34 638 672
+type(
+  Ssa_visitor.t
+)
+ident(
+  int_ref v "debug_snippets.ml" 26 465 469 "debug_snippets.ml" 26 465 470
+)
+"debug_snippets.ml" 34 638 673 "debug_snippets.ml" 34 638 674
+type(
+  Cfg.SSA.G.t
+)
+ident(
+  int_ref p "debug_snippets.ml" 33 617 634 "debug_snippets.ml" 33 617 635
+)
+"debug_snippets.ml" 34 638 646 "debug_snippets.ml" 34 638 675
+call(
+  stack
+)
+type(
+  Cfg.SSA.G.t
+)
+"debug_snippets.ml" 34 638 640 "debug_snippets.ml" 34 638 675
+type(
+  unit
+)
+"debug_snippets.ml" 36 677 681 "debug_snippets.ml" 36 677 690
+type(
+  Ssa.stmt list -> unit
+)
+ident(
+  def print_ssa "debug_snippets.ml" 39 735 735 --
+)
+"debug_snippets.ml" 36 677 691 "debug_snippets.ml" 36 677 692
+type(
+  Ssa.stmt list
+)
+ident(
+  def p "debug_snippets.ml" 37 695 697 "debug_snippets.ml" 37 695 733
+)
+"debug_snippets.ml" 37 695 697 "debug_snippets.ml" 37 695 703
+type(
+  Ssa.stmt list -> unit
+)
+ident(
+  ext_ref Pervasives.ignore
+)
+"debug_snippets.ml" 37 695 704 "debug_snippets.ml" 37 695 728
+type(
+  Ssa_visitor.t -> Ssa.stmt list -> Ssa.stmt list
+)
+ident(
+  ext_ref Ssa_visitor.stmts_accept
+)
+"debug_snippets.ml" 37 695 729 "debug_snippets.ml" 37 695 730
+type(
+  Ssa_visitor.t
+)
+ident(
+  int_ref v "debug_snippets.ml" 26 465 469 "debug_snippets.ml" 26 465 470
+)
+"debug_snippets.ml" 37 695 731 "debug_snippets.ml" 37 695 732
+type(
+  Ssa.stmt list
+)
+ident(
+  int_ref p "debug_snippets.ml" 36 677 691 "debug_snippets.ml" 36 677 692
+)
+"debug_snippets.ml" 37 695 703 "debug_snippets.ml" 37 695 733
+call(
+  stack
+)
+type(
+  Ssa.stmt list
+)
+"debug_snippets.ml" 37 695 697 "debug_snippets.ml" 37 695 733
+type(
+  unit
+)
+"debug_snippets.ml" 39 735 739 "debug_snippets.ml" 39 735 753
+type(
+  Big_int_Z.big_int * Type.typ -> string
+)
+ident(
+  def intv_to_string "debug_snippets.ml" 41 788 834 --
+)
+"debug_snippets.ml" 39 735 755 "debug_snippets.ml" 39 735 756
+type(
+  Big_int_Z.big_int
+)
+ident(
+  def i "debug_snippets.ml" 40 762 764 "debug_snippets.ml" 41 788 834
+)
+"debug_snippets.ml" 39 735 757 "debug_snippets.ml" 39 735 758
+type(
+  Type.typ
+)
+ident(
+  def t "debug_snippets.ml" 40 762 764 "debug_snippets.ml" 41 788 834
+)
+"debug_snippets.ml" 39 735 754 "debug_snippets.ml" 39 735 759
+type(
+  Big_int_Z.big_int * Type.typ
+)
+"debug_snippets.ml" 40 762 768 "debug_snippets.ml" 40 762 769
+type(
+  Ast.exp
+)
+"debug_snippets.ml" 40 762 780 "debug_snippets.ml" 40 762 781
+type(
+  Big_int_Z.big_int
+)
+ident(
+  int_ref i "debug_snippets.ml" 39 735 755 "debug_snippets.ml" 39 735 756
+)
+"debug_snippets.ml" 40 762 782 "debug_snippets.ml" 40 762 783
+type(
+  Type.typ
+)
+ident(
+  int_ref t "debug_snippets.ml" 39 735 757 "debug_snippets.ml" 39 735 758
+)
+"debug_snippets.ml" 40 762 779 "debug_snippets.ml" 40 762 784
+type(
+  Big_int_Z.big_int * Type.typ
+)
+"debug_snippets.ml" 40 762 772 "debug_snippets.ml" 40 762 784
+type(
+  Ast.exp
+)
+"debug_snippets.ml" 41 788 790 "debug_snippets.ml" 41 788 804
+type(
+  (string -> string, unit, string) format -> string -> string
+)
+ident(
+  ext_ref Printf.sprintf
+)
+"debug_snippets.ml" 41 788 805 "debug_snippets.ml" 41 788 809
+type(
+  (string -> string, unit, string) format
+)
+"debug_snippets.ml" 41 788 811 "debug_snippets.ml" 41 788 831
+type(
+  Ast.exp -> string
+)
+ident(
+  ext_ref Pp.ast_exp_to_string
+)
+"debug_snippets.ml" 41 788 832 "debug_snippets.ml" 41 788 833
+type(
+  Ast.exp
+)
+ident(
+  int_ref e "debug_snippets.ml" 40 762 768 "debug_snippets.ml" 40 762 769
+)
+"debug_snippets.ml" 41 788 810 "debug_snippets.ml" 41 788 834
+call(
+  stack
+)
+type(
+  string
+)
+"debug_snippets.ml" 41 788 790 "debug_snippets.ml" 41 788 834
+call(
+  tail
+)
+type(
+  string
+)
+"debug_snippets.ml" 40 762 764 "debug_snippets.ml" 41 788 834
+type(
+  string
+)

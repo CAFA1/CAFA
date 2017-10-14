@@ -1,0 +1,200 @@
+Backport of:
+
+From f40ae7899afa53437ea99f7be105e549e85b0c47 Mon Sep 17 00:00:00 2001
+From: Cristy <urban-warrior@imagemagick.org>
+Date: Sun, 8 Nov 2015 13:16:51 -0500
+Subject: [PATCH] Fix PixelColor off by one on i386
+
+Bug: https://github.com/ImageMagick/ImageMagick/issues/54
+---
+ coders/jpeg.c     | 20 ++++++++++----------
+ magick/cache.c    | 48 +++++++++++++++++++++++++++++++++++++++---------
+ magick/color.c    | 22 ++++++++++++----------
+ magick/identify.c | 26 ++++++++++++++------------
+ 4 files changed, 75 insertions(+), 41 deletions(-)
+
+Index: imagemagick-6.6.9.7/magick/cache.c
+===================================================================
+--- imagemagick-6.6.9.7.orig/magick/cache.c	2016-11-15 14:46:09.703326069 -0500
++++ imagemagick-6.6.9.7/magick/cache.c	2016-11-15 14:46:09.699326020 -0500
+@@ -684,6 +684,11 @@
+   const MagickOffsetType offset,const MagickSizeType length,
+   unsigned char *restrict buffer)
+ {
++#if !defined(MAGICKCORE_HAVE_PREAD)
++  MagickOffsetType
++    current_offset;
++#endif
++
+   register MagickOffsetType
+     i;
+ 
+@@ -693,6 +698,12 @@
+   cache_info->timestamp=time(0);
+ #if !defined(MAGICKCORE_HAVE_PREAD)
+   LockSemaphoreInfo(cache_info->disk_semaphore);
++  current_offset=(MagickOffsetType) lseek(cache_info->file,0,SEEK_CUR);
++  if (current_offset < 0)
++    {
++      UnlockSemaphoreInfo(cache_info->disk_semaphore);
++      return((MagickOffsetType) -1);
++    }
+   if (lseek(cache_info->file,offset,SEEK_SET) < 0)
+     {
+       UnlockSemaphoreInfo(cache_info->disk_semaphore);
+@@ -703,11 +714,11 @@
+   for (i=0; i < (MagickOffsetType) length; i+=count)
+   {
+ #if !defined(MAGICKCORE_HAVE_PREAD)
+-    count=read(cache_info->file,buffer+i,(size_t) MagickMin(length-i,
+-      (MagickSizeType) SSIZE_MAX));
++    count=read(cache_info->file,buffer+i,(size_t) MagickMin(length-i,(size_t)
++      SSIZE_MAX));
+ #else
+-    count=pread(cache_info->file,buffer+i,(size_t) MagickMin(length-i,
+-      (MagickSizeType) SSIZE_MAX),(off_t) (offset+i));
++    count=pread(cache_info->file,buffer+i,(size_t) MagickMin(length-i,(size_t)
++      SSIZE_MAX),(off_t) (offset+i));
+ #endif
+     if (count > 0)
+       continue;
+@@ -719,6 +730,13 @@
+       }
+   }
+ #if !defined(MAGICKCORE_HAVE_PREAD)
++  if (lseek(cache_info->file,current_offset,SEEK_SET) < 0)
++    {
++      UnlockSemaphoreInfo(cache_info->disk_semaphore);
++      return((MagickOffsetType) -1);
++    }
++#endif
++#if !defined(MAGICKCORE_HAVE_PREAD)
+   UnlockSemaphoreInfo(cache_info->disk_semaphore);
+ #endif
+   return(i);
+@@ -728,6 +746,11 @@
+   const MagickOffsetType offset,const MagickSizeType length,
+   const unsigned char *restrict buffer)
+ {
++#if !defined(MAGICKCORE_HAVE_PWRITE)
++  MagickOffsetType
++    current_offset;
++#endif
++
+   register MagickOffsetType
+     i;
+ 
+@@ -737,6 +760,12 @@
+   cache_info->timestamp=time(0);
+ #if !defined(MAGICKCORE_HAVE_PWRITE)
+   LockSemaphoreInfo(cache_info->disk_semaphore);
++  current_offset=(MagickOffsetType) lseek(cache_info->file,0,SEEK_CUR);
++  if (current_offset < 0)
++    {
++      UnlockSemaphoreInfo(cache_info->disk_semaphore);
++      return((MagickOffsetType) -1);
++    }
+   if (lseek(cache_info->file,offset,SEEK_SET) < 0)
+     {
+       UnlockSemaphoreInfo(cache_info->disk_semaphore);
+@@ -763,6 +792,13 @@
+       }
+   }
+ #if !defined(MAGICKCORE_HAVE_PWRITE)
++  if (lseek(cache_info->file,current_offset,SEEK_SET) < 0)
++    {
++      UnlockSemaphoreInfo(cache_info->disk_semaphore);
++      return((MagickOffsetType) -1);
++    }
++#endif
++#if !defined(MAGICKCORE_HAVE_PWRITE)
+   UnlockSemaphoreInfo(cache_info->disk_semaphore);
+ #endif
+   return(i);
+@@ -4750,8 +4786,10 @@
+ 
+   if (IsNexusInCore(cache_info,nexus_info) != MagickFalse)
+     return(MagickTrue);
+-  offset=(MagickOffsetType) nexus_info->region.y*cache_info->columns+
+-    nexus_info->region.x;
++  offset=(MagickOffsetType) nexus_info->region.y*cache_info->columns;
++  if ((offset/cache_info->columns) != (MagickOffsetType) nexus_info->region.y)
++    return(MagickFalse);
++  offset+=nexus_info->region.x;
+   length=(MagickSizeType) nexus_info->region.width*sizeof(PixelPacket);
+   rows=nexus_info->region.height;
+   extent=length*rows;
+Index: imagemagick-6.6.9.7/magick/color.c
+===================================================================
+--- imagemagick-6.6.9.7.orig/magick/color.c	2016-11-15 14:46:09.703326069 -0500
++++ imagemagick-6.6.9.7/magick/color.c	2016-11-15 14:46:09.699326020 -0500
+@@ -2675,17 +2675,20 @@
+       if ((flags & PercentValue) != 0)
+         scale=(MagickRealType) (QuantumRange/100.0);
+       if ((flags & RhoValue) != 0)
+-        color->red=(MagickRealType) ClampToQuantum(scale*geometry_info.rho);
++            color->red=(MagickRealType) ClampToQuantum((MagickRealType)
++              floor(scale*geometry_info.rho));
+       if ((flags & SigmaValue) != 0)
+-        color->green=(MagickRealType) ClampToQuantum(scale*geometry_info.sigma);
++            color->green=(MagickRealType) ClampToQuantum((MagickRealType)
++              floor(scale*geometry_info.sigma));
+       if ((flags & XiValue) != 0)
+-        color->blue=(MagickRealType) ClampToQuantum(scale*geometry_info.xi);
++            color->blue=(MagickRealType) ClampToQuantum((MagickRealType)
++              floor(scale*geometry_info.xi));
+       color->opacity=(MagickRealType) OpaqueOpacity;
+       if ((flags & PsiValue) != 0)
+         {
+           if (color->colorspace == CMYKColorspace)
+-            color->index=(MagickRealType) ClampToQuantum(scale*
+-              geometry_info.psi);
++                color->index=(MagickRealType) ClampToQuantum((MagickRealType)
++                  floor(scale*geometry_info.psi));
+           else
+             if (color->matte != MagickFalse)
+               color->opacity=(MagickRealType) ClampToQuantum((MagickRealType)
+Index: imagemagick-6.6.9.7/magick/identify.c
+===================================================================
+--- imagemagick-6.6.9.7.orig/magick/identify.c	2016-11-15 14:46:09.703326069 -0500
++++ imagemagick-6.6.9.7/magick/identify.c	2016-11-15 14:49:58.110114985 -0500
+@@ -219,11 +219,13 @@
+ 
+   if (channel == AlphaChannel)
+     {
+-      status=fprintf(file,StatisticsFormat,name,ClampToQuantum(scale*
+-        (QuantumRange-channel_statistics[channel].maxima)),
+-        (QuantumRange-channel_statistics[channel].maxima)/(double) QuantumRange,
+-        ClampToQuantum(scale*(QuantumRange-channel_statistics[channel].minima)),
+-        (QuantumRange-channel_statistics[channel].minima)/(double) QuantumRange,
++      status=fprintf(file,StatisticsFormat,name,ClampToQuantum(
++        (MagickRealType) floor(scale*(QuantumRange-
++        channel_statistics[channel].maxima))),(QuantumRange-
++        channel_statistics[channel].maxima)/(double) QuantumRange,
++        ClampToQuantum((MagickRealType) floor(scale*(QuantumRange-
++        channel_statistics[channel].minima))),(QuantumRange-
++        channel_statistics[channel].minima)/(double) QuantumRange,
+         scale*(QuantumRange-channel_statistics[channel].mean),(QuantumRange-
+         channel_statistics[channel].mean)/(double) QuantumRange,scale*
+         channel_statistics[channel].standard_deviation,
+@@ -232,13 +234,13 @@
+         channel_statistics[channel].skewness);
+       return(status);
+     }
+-  status=fprintf(file,StatisticsFormat,name,ClampToQuantum(scale*
+-    channel_statistics[channel].minima),channel_statistics[channel].minima/
+-    (double) QuantumRange,ClampToQuantum(scale*
+-    channel_statistics[channel].maxima),channel_statistics[channel].maxima/
+-    (double) QuantumRange,scale*channel_statistics[channel].mean,
+-    channel_statistics[channel].mean/(double) QuantumRange,scale*
+-    channel_statistics[channel].standard_deviation,
++  status=fprintf(file,StatisticsFormat,name,ClampToQuantum((MagickRealType)
++    floor(scale*channel_statistics[channel].minima)),
++    channel_statistics[channel].minima/(double) QuantumRange,ClampToQuantum(
++    (MagickRealType) (scale*channel_statistics[channel].maxima)),
++    channel_statistics[channel].maxima/(double) QuantumRange,scale*
++    channel_statistics[channel].mean,channel_statistics[channel].mean/(double)
++    QuantumRange,scale*channel_statistics[channel].standard_deviation,
+     channel_statistics[channel].standard_deviation/(double) QuantumRange,
+     channel_statistics[channel].kurtosis,channel_statistics[channel].skewness);
+   return(status);

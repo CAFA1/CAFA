@@ -1,0 +1,3519 @@
+"vc.ml" 6 57 88 "vc.ml" 6 57 92
+type(
+  string
+)
+ident(
+  def name "vc.ml" 6 57 122 "vc.ml" 6 57 126
+)
+"vc.ml" 6 57 95 "vc.ml" 6 57 99
+type(
+  string
+)
+"vc.ml" 6 57 104 "vc.ml" 6 57 111
+type(
+  [> `NoDebug ]
+)
+ident(
+  def default "vc.ml" 6 57 122 "vc.ml" 6 57 126
+)
+"vc.ml" 6 57 114 "vc.ml" 6 57 122
+type(
+  [> `NoDebug ] as 'a
+)
+"vc.ml" 6 57 66 "vc.ml" 6 57 127
+call(
+  stack
+)
+"vc.ml" 17 239 243 "vc.ml" 17 239 258
+type(
+  options
+)
+ident(
+  def default_options "vc.ml" 23 310 310 --
+)
+"vc.ml" 18 263 269 "vc.ml" 18 263 270
+type(
+  int
+)
+"vc.ml" 19 272 281 "vc.ml" 19 272 284
+type(
+  Type.formula_mode
+)
+"vc.ml" 20 286 301 "vc.ml" 20 286 305
+type(
+  bool
+)
+"vc.ml" 17 239 261 "vc.ml" 21 307 308
+type(
+  options
+)
+"vc.ml" 31 615 619 "vc.ml" 31 615 629
+type(
+  t -> options -> Ast.program -> Ast.exp -> Ast.exp * Ast.var list
+)
+ident(
+  def vc_astprog "vc.ml" 40 952 952 --
+)
+"vc.ml" 31 615 630 "vc.ml" 31 615 632
+type(
+  t
+)
+ident(
+  def vc "vc.ml" 31 615 633 "vc.ml" 38 927 950
+)
+"vc.ml" 31 615 633 "vc.ml" 31 615 640
+type(
+  options
+)
+ident(
+  def options "vc.ml" 31 615 641 "vc.ml" 38 927 950
+)
+"vc.ml" 31 615 641 "vc.ml" 31 615 645
+type(
+  Ast.program
+)
+ident(
+  def prog "vc.ml" 31 615 646 "vc.ml" 38 927 950
+)
+"vc.ml" 31 615 646 "vc.ml" 31 615 650
+type(
+  Ast.exp
+)
+ident(
+  def post "vc.ml" 31 615 654 "vc.ml" 38 927 950
+)
+"vc.ml" 31 615 660 "vc.ml" 31 615 662
+type(
+  t
+)
+ident(
+  int_ref vc "vc.ml" 31 615 630 "vc.ml" 31 615 632
+)
+"vc.ml" 32 668 678 "vc.ml" 32 668 680
+type(
+  ast_vc
+)
+ident(
+  def vc "vc.ml" 32 668 684 "vc.ml" 32 668 704
+)
+"vc.ml" 32 668 672 "vc.ml" 32 668 680
+type(
+  t
+)
+"vc.ml" 32 668 684 "vc.ml" 32 668 686
+type(
+  ast_vc
+)
+ident(
+  int_ref vc "vc.ml" 32 668 678 "vc.ml" 32 668 680
+)
+"vc.ml" 32 668 687 "vc.ml" 32 668 694
+type(
+  options
+)
+ident(
+  int_ref options "vc.ml" 31 615 633 "vc.ml" 31 615 640
+)
+"vc.ml" 32 668 695 "vc.ml" 32 668 699
+type(
+  Ast.program
+)
+ident(
+  int_ref prog "vc.ml" 31 615 641 "vc.ml" 31 615 645
+)
+"vc.ml" 32 668 700 "vc.ml" 32 668 704
+type(
+  Ast.exp
+)
+ident(
+  int_ref post "vc.ml" 31 615 646 "vc.ml" 31 615 650
+)
+"vc.ml" 32 668 684 "vc.ml" 32 668 704
+call(
+  tail
+)
+type(
+  Ast.exp * Ast.var list
+)
+"vc.ml" 33 705 715 "vc.ml" 33 705 717
+type(
+  cfg_vc
+)
+ident(
+  def vc "vc.ml" 33 705 721 "vc.ml" 33 705 759
+)
+"vc.ml" 33 705 709 "vc.ml" 33 705 717
+type(
+  t
+)
+"vc.ml" 33 705 721 "vc.ml" 33 705 723
+type(
+  cfg_vc
+)
+ident(
+  int_ref vc "vc.ml" 33 705 715 "vc.ml" 33 705 717
+)
+"vc.ml" 33 705 724 "vc.ml" 33 705 731
+type(
+  options
+)
+ident(
+  int_ref options "vc.ml" 31 615 633 "vc.ml" 31 615 640
+)
+"vc.ml" 33 705 733 "vc.ml" 33 705 748
+type(
+  ?special_error:bool -> Ast.program -> Cfg.AST.G.t
+)
+ident(
+  ext_ref Cfg_ast.of_prog
+)
+"vc.ml" 33 705 749 "vc.ml" 33 705 753
+type(
+  Ast.program
+)
+ident(
+  int_ref prog "vc.ml" 31 615 641 "vc.ml" 31 615 645
+)
+"vc.ml" 33 705 732 "vc.ml" 33 705 754
+call(
+  stack
+)
+type(
+  Cfg.AST.G.t
+)
+"vc.ml" 33 705 755 "vc.ml" 33 705 759
+type(
+  Ast.exp
+)
+ident(
+  int_ref post "vc.ml" 31 615 646 "vc.ml" 31 615 650
+)
+"vc.ml" 33 705 721 "vc.ml" 33 705 759
+call(
+  tail
+)
+type(
+  Ast.exp * Ast.var list
+)
+"vc.ml" 34 760 770 "vc.ml" 34 760 772
+type(
+  ssa_vc
+)
+ident(
+  def vc "vc.ml" 35 776 780 "vc.ml" 38 927 950
+)
+"vc.ml" 34 760 764 "vc.ml" 34 760 772
+type(
+  t
+)
+"vc.ml" 35 776 784 "vc.ml" 35 776 787
+type(
+  Cfg.AST.G.t
+)
+"vc.ml" 35 776 790 "vc.ml" 35 776 805
+type(
+  ?special_error:bool -> Ast.program -> Cfg.AST.G.t
+)
+ident(
+  ext_ref Cfg_ast.of_prog
+)
+"vc.ml" 35 776 806 "vc.ml" 35 776 810
+type(
+  Ast.program
+)
+ident(
+  int_ref prog "vc.ml" 31 615 641 "vc.ml" 31 615 645
+)
+"vc.ml" 35 776 790 "vc.ml" 35 776 810
+call(
+  stack
+)
+type(
+  Cfg.AST.G.t
+)
+"vc.ml" 36 814 835 "vc.ml" 36 814 838
+type(
+  Cfg.SSA.G.t
+)
+"vc.ml" 36 814 850 "vc.ml" 36 814 855
+type(
+  Ast.var -> Var.t
+)
+"vc.ml" 36 814 822 "vc.ml" 36 814 856
+type(
+  Cfg_ssa.translation_results
+)
+"vc.ml" 36 814 859 "vc.ml" 36 814 876
+type(
+  Cfg.AST.G.t -> Cfg_ssa.translation_results
+)
+ident(
+  ext_ref Cfg_ssa.trans_cfg
+)
+"vc.ml" 36 814 877 "vc.ml" 36 814 880
+type(
+  Cfg.AST.G.t
+)
+ident(
+  int_ref cfg "vc.ml" 35 776 784 "vc.ml" 35 776 787
+)
+"vc.ml" 36 814 859 "vc.ml" 36 814 880
+call(
+  stack
+)
+type(
+  Cfg_ssa.translation_results
+)
+"vc.ml" 37 884 892 "vc.ml" 37 884 896
+type(
+  Ast.exp
+)
+"vc.ml" 37 884 899 "vc.ml" 37 884 912
+type(
+  (Ast.var -> Ast.var) -> Ast.exp -> Ast.exp
+)
+ident(
+  ext_ref Utils_common.rename_astexp
+)
+"vc.ml" 37 884 913 "vc.ml" 37 884 918
+type(
+  Ast.var -> Ast.var
+)
+ident(
+  int_ref tossa "vc.ml" 36 814 850 "vc.ml" 36 814 855
+)
+"vc.ml" 37 884 919 "vc.ml" 37 884 923
+type(
+  Ast.exp
+)
+ident(
+  int_ref post "vc.ml" 31 615 646 "vc.ml" 31 615 650
+)
+"vc.ml" 37 884 899 "vc.ml" 37 884 923
+call(
+  stack
+)
+type(
+  Ast.exp
+)
+"vc.ml" 38 927 931 "vc.ml" 38 927 933
+type(
+  ssa_vc
+)
+ident(
+  int_ref vc "vc.ml" 34 760 770 "vc.ml" 34 760 772
+)
+"vc.ml" 38 927 934 "vc.ml" 38 927 941
+type(
+  options
+)
+ident(
+  int_ref options "vc.ml" 31 615 633 "vc.ml" 31 615 640
+)
+"vc.ml" 38 927 942 "vc.ml" 38 927 945
+type(
+  Cfg.SSA.G.t
+)
+ident(
+  int_ref cfg "vc.ml" 36 814 835 "vc.ml" 36 814 838
+)
+"vc.ml" 38 927 946 "vc.ml" 38 927 950
+type(
+  Ast.exp
+)
+ident(
+  int_ref post "vc.ml" 37 884 892 "vc.ml" 37 884 896
+)
+"vc.ml" 38 927 931 "vc.ml" 38 927 950
+call(
+  tail
+)
+type(
+  Ast.exp * Ast.var list
+)
+"vc.ml" 37 884 888 "vc.ml" 38 927 950
+type(
+  Ast.exp * Ast.var list
+)
+"vc.ml" 36 814 818 "vc.ml" 38 927 950
+type(
+  Ast.exp * Ast.var list
+)
+"vc.ml" 35 776 780 "vc.ml" 38 927 950
+type(
+  Ast.exp * Ast.var list
+)
+"vc.ml" 31 615 654 "vc.ml" 38 927 950
+type(
+  Ast.exp * Ast.var list
+)
+"vc.ml" 40 952 956 "vc.ml" 40 952 965
+type(
+  t -> options -> Cfg.AST.G.t -> Ast.exp -> Ast.exp * Ast.var list
+)
+ident(
+  def vc_astcfg "vc.ml" 48 1251 1251 --
+)
+"vc.ml" 40 952 966 "vc.ml" 40 952 968
+type(
+  t
+)
+ident(
+  def vc "vc.ml" 40 952 969 "vc.ml" 46 1226 1249
+)
+"vc.ml" 40 952 969 "vc.ml" 40 952 976
+type(
+  options
+)
+ident(
+  def options "vc.ml" 40 952 977 "vc.ml" 46 1226 1249
+)
+"vc.ml" 40 952 977 "vc.ml" 40 952 981
+type(
+  Cfg.AST.G.t
+)
+ident(
+  def prog "vc.ml" 40 952 982 "vc.ml" 46 1226 1249
+)
+"vc.ml" 40 952 982 "vc.ml" 40 952 986
+type(
+  Ast.exp
+)
+ident(
+  def post "vc.ml" 40 952 990 "vc.ml" 46 1226 1249
+)
+"vc.ml" 40 952 996 "vc.ml" 40 952 998
+type(
+  t
+)
+ident(
+  int_ref vc "vc.ml" 40 952 966 "vc.ml" 40 952 968
+)
+"vc.ml" 41 1004 1014 "vc.ml" 41 1004 1016
+type(
+  ast_vc
+)
+ident(
+  def vc "vc.ml" 41 1004 1020 "vc.ml" 41 1004 1058
+)
+"vc.ml" 41 1004 1008 "vc.ml" 41 1004 1016
+type(
+  t
+)
+"vc.ml" 41 1004 1020 "vc.ml" 41 1004 1022
+type(
+  ast_vc
+)
+ident(
+  int_ref vc "vc.ml" 41 1004 1014 "vc.ml" 41 1004 1016
+)
+"vc.ml" 41 1004 1023 "vc.ml" 41 1004 1030
+type(
+  options
+)
+ident(
+  int_ref options "vc.ml" 40 952 969 "vc.ml" 40 952 976
+)
+"vc.ml" 41 1004 1032 "vc.ml" 41 1004 1047
+type(
+  Cfg.AST.G.t -> Ast.program
+)
+ident(
+  ext_ref Cfg_ast.to_prog
+)
+"vc.ml" 41 1004 1048 "vc.ml" 41 1004 1052
+type(
+  Cfg.AST.G.t
+)
+ident(
+  int_ref prog "vc.ml" 40 952 977 "vc.ml" 40 952 981
+)
+"vc.ml" 41 1004 1031 "vc.ml" 41 1004 1053
+call(
+  stack
+)
+type(
+  Ast.program
+)
+"vc.ml" 41 1004 1054 "vc.ml" 41 1004 1058
+type(
+  Ast.exp
+)
+ident(
+  int_ref post "vc.ml" 40 952 982 "vc.ml" 40 952 986
+)
+"vc.ml" 41 1004 1020 "vc.ml" 41 1004 1058
+call(
+  tail
+)
+type(
+  Ast.exp * Ast.var list
+)
+"vc.ml" 42 1059 1069 "vc.ml" 42 1059 1071
+type(
+  cfg_vc
+)
+ident(
+  def vc "vc.ml" 42 1059 1075 "vc.ml" 42 1059 1095
+)
+"vc.ml" 42 1059 1063 "vc.ml" 42 1059 1071
+type(
+  t
+)
+"vc.ml" 42 1059 1075 "vc.ml" 42 1059 1077
+type(
+  cfg_vc
+)
+ident(
+  int_ref vc "vc.ml" 42 1059 1069 "vc.ml" 42 1059 1071
+)
+"vc.ml" 42 1059 1078 "vc.ml" 42 1059 1085
+type(
+  options
+)
+ident(
+  int_ref options "vc.ml" 40 952 969 "vc.ml" 40 952 976
+)
+"vc.ml" 42 1059 1086 "vc.ml" 42 1059 1090
+type(
+  Cfg.AST.G.t
+)
+ident(
+  int_ref prog "vc.ml" 40 952 977 "vc.ml" 40 952 981
+)
+"vc.ml" 42 1059 1091 "vc.ml" 42 1059 1095
+type(
+  Ast.exp
+)
+ident(
+  int_ref post "vc.ml" 40 952 982 "vc.ml" 40 952 986
+)
+"vc.ml" 42 1059 1075 "vc.ml" 42 1059 1095
+call(
+  tail
+)
+type(
+  Ast.exp * Ast.var list
+)
+"vc.ml" 43 1096 1106 "vc.ml" 43 1096 1108
+type(
+  ssa_vc
+)
+ident(
+  def vc "vc.ml" 44 1112 1116 "vc.ml" 46 1226 1249
+)
+"vc.ml" 43 1096 1100 "vc.ml" 43 1096 1108
+type(
+  t
+)
+"vc.ml" 44 1112 1133 "vc.ml" 44 1112 1136
+type(
+  Cfg.SSA.G.t
+)
+"vc.ml" 44 1112 1148 "vc.ml" 44 1112 1153
+type(
+  Ast.var -> Var.t
+)
+"vc.ml" 44 1112 1120 "vc.ml" 44 1112 1154
+type(
+  Cfg_ssa.translation_results
+)
+"vc.ml" 44 1112 1157 "vc.ml" 44 1112 1174
+type(
+  Cfg.AST.G.t -> Cfg_ssa.translation_results
+)
+ident(
+  ext_ref Cfg_ssa.trans_cfg
+)
+"vc.ml" 44 1112 1175 "vc.ml" 44 1112 1179
+type(
+  Cfg.AST.G.t
+)
+ident(
+  int_ref prog "vc.ml" 40 952 977 "vc.ml" 40 952 981
+)
+"vc.ml" 44 1112 1157 "vc.ml" 44 1112 1179
+call(
+  stack
+)
+type(
+  Cfg_ssa.translation_results
+)
+"vc.ml" 45 1183 1191 "vc.ml" 45 1183 1195
+type(
+  Ast.exp
+)
+"vc.ml" 45 1183 1198 "vc.ml" 45 1183 1211
+type(
+  (Ast.var -> Ast.var) -> Ast.exp -> Ast.exp
+)
+ident(
+  ext_ref Utils_common.rename_astexp
+)
+"vc.ml" 45 1183 1212 "vc.ml" 45 1183 1217
+type(
+  Ast.var -> Ast.var
+)
+ident(
+  int_ref tossa "vc.ml" 44 1112 1148 "vc.ml" 44 1112 1153
+)
+"vc.ml" 45 1183 1218 "vc.ml" 45 1183 1222
+type(
+  Ast.exp
+)
+ident(
+  int_ref post "vc.ml" 40 952 982 "vc.ml" 40 952 986
+)
+"vc.ml" 45 1183 1198 "vc.ml" 45 1183 1222
+call(
+  stack
+)
+type(
+  Ast.exp
+)
+"vc.ml" 46 1226 1230 "vc.ml" 46 1226 1232
+type(
+  ssa_vc
+)
+ident(
+  int_ref vc "vc.ml" 43 1096 1106 "vc.ml" 43 1096 1108
+)
+"vc.ml" 46 1226 1233 "vc.ml" 46 1226 1240
+type(
+  options
+)
+ident(
+  int_ref options "vc.ml" 40 952 969 "vc.ml" 40 952 976
+)
+"vc.ml" 46 1226 1241 "vc.ml" 46 1226 1244
+type(
+  Cfg.SSA.G.t
+)
+ident(
+  int_ref cfg "vc.ml" 44 1112 1133 "vc.ml" 44 1112 1136
+)
+"vc.ml" 46 1226 1245 "vc.ml" 46 1226 1249
+type(
+  Ast.exp
+)
+ident(
+  int_ref post "vc.ml" 45 1183 1191 "vc.ml" 45 1183 1195
+)
+"vc.ml" 46 1226 1230 "vc.ml" 46 1226 1249
+call(
+  tail
+)
+type(
+  Ast.exp * Ast.var list
+)
+"vc.ml" 45 1183 1187 "vc.ml" 46 1226 1249
+type(
+  Ast.exp * Ast.var list
+)
+"vc.ml" 44 1112 1116 "vc.ml" 46 1226 1249
+type(
+  Ast.exp * Ast.var list
+)
+"vc.ml" 40 952 990 "vc.ml" 46 1226 1249
+type(
+  Ast.exp * Ast.var list
+)
+"vc.ml" 48 1251 1255 "vc.ml" 48 1251 1264
+type(
+  t -> options -> Cfg.SSA.G.t -> Ast.exp -> Ast.exp * Ast.var list
+)
+ident(
+  def vc_ssacfg "vc.ml" 53 1452 1452 --
+)
+"vc.ml" 48 1251 1265 "vc.ml" 48 1251 1267
+type(
+  t
+)
+ident(
+  def vc "vc.ml" 48 1251 1268 "vc.ml" 51 1414 1450
+)
+"vc.ml" 48 1251 1268 "vc.ml" 48 1251 1275
+type(
+  options
+)
+ident(
+  def options "vc.ml" 48 1251 1276 "vc.ml" 51 1414 1450
+)
+"vc.ml" 48 1251 1276 "vc.ml" 48 1251 1280
+type(
+  Cfg.SSA.G.t
+)
+ident(
+  def prog "vc.ml" 48 1251 1281 "vc.ml" 51 1414 1450
+)
+"vc.ml" 48 1251 1281 "vc.ml" 48 1251 1285
+type(
+  Ast.exp
+)
+ident(
+  def post "vc.ml" 48 1251 1289 "vc.ml" 51 1414 1450
+)
+"vc.ml" 48 1251 1295 "vc.ml" 48 1251 1297
+type(
+  t
+)
+ident(
+  int_ref vc "vc.ml" 48 1251 1265 "vc.ml" 48 1251 1267
+)
+"vc.ml" 49 1303 1313 "vc.ml" 49 1303 1315
+type(
+  ast_vc
+)
+ident(
+  def vc "vc.ml" 49 1303 1319 "vc.ml" 49 1303 1356
+)
+"vc.ml" 49 1303 1307 "vc.ml" 49 1303 1315
+type(
+  t
+)
+"vc.ml" 49 1303 1319 "vc.ml" 49 1303 1321
+type(
+  ast_vc
+)
+ident(
+  int_ref vc "vc.ml" 49 1303 1313 "vc.ml" 49 1303 1315
+)
+"vc.ml" 49 1303 1322 "vc.ml" 49 1303 1329
+type(
+  options
+)
+ident(
+  int_ref options "vc.ml" 48 1251 1268 "vc.ml" 48 1251 1275
+)
+"vc.ml" 49 1303 1331 "vc.ml" 49 1303 1345
+type(
+  ?remove_temps:bool -> Cfg.SSA.G.t -> Ast.program
+)
+ident(
+  ext_ref Cfg_ssa.to_ast
+)
+"vc.ml" 49 1303 1346 "vc.ml" 49 1303 1350
+type(
+  Cfg.SSA.G.t
+)
+ident(
+  int_ref prog "vc.ml" 48 1251 1276 "vc.ml" 48 1251 1280
+)
+"vc.ml" 49 1303 1330 "vc.ml" 49 1303 1351
+call(
+  stack
+)
+type(
+  Ast.program
+)
+"vc.ml" 49 1303 1352 "vc.ml" 49 1303 1356
+type(
+  Ast.exp
+)
+ident(
+  int_ref post "vc.ml" 48 1251 1281 "vc.ml" 48 1251 1285
+)
+"vc.ml" 49 1303 1319 "vc.ml" 49 1303 1356
+call(
+  tail
+)
+type(
+  Ast.exp * Ast.var list
+)
+"vc.ml" 50 1357 1367 "vc.ml" 50 1357 1369
+type(
+  cfg_vc
+)
+ident(
+  def vc "vc.ml" 50 1357 1373 "vc.ml" 50 1357 1413
+)
+"vc.ml" 50 1357 1361 "vc.ml" 50 1357 1369
+type(
+  t
+)
+"vc.ml" 50 1357 1373 "vc.ml" 50 1357 1375
+type(
+  cfg_vc
+)
+ident(
+  int_ref vc "vc.ml" 50 1357 1367 "vc.ml" 50 1357 1369
+)
+"vc.ml" 50 1357 1376 "vc.ml" 50 1357 1383
+type(
+  options
+)
+ident(
+  int_ref options "vc.ml" 48 1251 1268 "vc.ml" 48 1251 1275
+)
+"vc.ml" 50 1357 1385 "vc.ml" 50 1357 1402
+type(
+  ?remove_temps:bool -> ?dsa:bool -> Cfg.SSA.G.t -> Cfg.AST.G.t
+)
+ident(
+  ext_ref Cfg_ssa.to_astcfg
+)
+"vc.ml" 50 1357 1403 "vc.ml" 50 1357 1407
+type(
+  Cfg.SSA.G.t
+)
+ident(
+  int_ref prog "vc.ml" 48 1251 1276 "vc.ml" 48 1251 1280
+)
+"vc.ml" 50 1357 1384 "vc.ml" 50 1357 1408
+call(
+  stack
+)
+type(
+  Cfg.AST.G.t
+)
+"vc.ml" 50 1357 1409 "vc.ml" 50 1357 1413
+type(
+  Ast.exp
+)
+ident(
+  int_ref post "vc.ml" 48 1251 1281 "vc.ml" 48 1251 1285
+)
+"vc.ml" 50 1357 1373 "vc.ml" 50 1357 1413
+call(
+  tail
+)
+type(
+  Ast.exp * Ast.var list
+)
+"vc.ml" 51 1414 1424 "vc.ml" 51 1414 1426
+type(
+  ssa_vc
+)
+ident(
+  def vc "vc.ml" 51 1414 1430 "vc.ml" 51 1414 1450
+)
+"vc.ml" 51 1414 1418 "vc.ml" 51 1414 1426
+type(
+  t
+)
+"vc.ml" 51 1414 1430 "vc.ml" 51 1414 1432
+type(
+  ssa_vc
+)
+ident(
+  int_ref vc "vc.ml" 51 1414 1424 "vc.ml" 51 1414 1426
+)
+"vc.ml" 51 1414 1433 "vc.ml" 51 1414 1440
+type(
+  options
+)
+ident(
+  int_ref options "vc.ml" 48 1251 1268 "vc.ml" 48 1251 1275
+)
+"vc.ml" 51 1414 1441 "vc.ml" 51 1414 1445
+type(
+  Cfg.SSA.G.t
+)
+ident(
+  int_ref prog "vc.ml" 48 1251 1276 "vc.ml" 48 1251 1280
+)
+"vc.ml" 51 1414 1446 "vc.ml" 51 1414 1450
+type(
+  Ast.exp
+)
+ident(
+  int_ref post "vc.ml" 48 1251 1281 "vc.ml" 48 1251 1285
+)
+"vc.ml" 51 1414 1430 "vc.ml" 51 1414 1450
+call(
+  tail
+)
+type(
+  Ast.exp * Ast.var list
+)
+"vc.ml" 48 1251 1289 "vc.ml" 51 1414 1450
+type(
+  Ast.exp * Ast.var list
+)
+"vc.ml" 53 1452 1456 "vc.ml" 53 1452 1468
+type(
+  'a -> Cfg.SSA.G.t -> Ast.exp -> Ast.exp * Ast.var list
+)
+ident(
+  def compute_dwp1 "vc.ml" 57 1624 1624 --
+)
+"vc.ml" 53 1452 1469 "vc.ml" 53 1452 1470
+type(
+  'a
+)
+"vc.ml" 53 1452 1471 "vc.ml" 53 1452 1474
+type(
+  Cfg.SSA.G.t
+)
+ident(
+  def cfg "vc.ml" 53 1452 1475 "vc.ml" 56 1596 1623
+)
+"vc.ml" 53 1452 1475 "vc.ml" 53 1452 1479
+type(
+  Ast.exp
+)
+ident(
+  def post "vc.ml" 54 1482 1484 "vc.ml" 56 1596 1623
+)
+"vc.ml" 54 1482 1489 "vc.ml" 54 1482 1492
+type(
+  Gcl.t
+)
+"vc.ml" 54 1482 1494 "vc.ml" 54 1482 1501
+type(
+  Ast.var list
+)
+"vc.ml" 54 1482 1488 "vc.ml" 54 1482 1502
+type(
+  Gcl.t * Ast.var list
+)
+"vc.ml" 54 1482 1505 "vc.ml" 54 1482 1525
+type(
+  ?entry:Cfg.SSA.G.V.t ->
+  ?exit:Cfg.SSA.G.V.t ->
+  ?mode:Type.formula_mode -> Cfg.SSA.G.t -> Gcl.t * Ast.var list
+)
+ident(
+  ext_ref Gcl.passified_of_ssa
+)
+"vc.ml" 54 1482 1532 "vc.ml" 54 1482 1539
+type(
+  Type.formula_mode
+)
+"vc.ml" 54 1482 1540 "vc.ml" 54 1482 1543
+type(
+  Cfg.SSA.G.t
+)
+ident(
+  int_ref cfg "vc.ml" 53 1452 1471 "vc.ml" 53 1452 1474
+)
+"vc.ml" 54 1482 1505 "vc.ml" 54 1482 1543
+call(
+  stack
+)
+type(
+  Gcl.t * Ast.var list
+)
+"vc.ml" 55 1547 1554 "vc.ml" 55 1547 1565
+type(
+  Ast.var list
+)
+"vc.ml" 55 1547 1567 "vc.ml" 55 1547 1569
+type(
+  Ast.exp
+)
+"vc.ml" 55 1547 1553 "vc.ml" 55 1547 1570
+type(
+  Ast.var list * Ast.exp
+)
+"vc.ml" 55 1547 1573 "vc.ml" 55 1547 1583
+type(
+  ?simp:(Ast.exp -> Ast.exp) ->
+  ?less_duplication:bool ->
+  ?k:int -> Gcl.t -> Ast.exp -> Ast.var list * Ast.exp
+)
+ident(
+  ext_ref Wp.dwp_1st
+)
+"vc.ml" 55 1547 1584 "vc.ml" 55 1547 1587
+type(
+  Gcl.t
+)
+ident(
+  int_ref gcl "vc.ml" 54 1482 1489 "vc.ml" 54 1482 1492
+)
+"vc.ml" 55 1547 1588 "vc.ml" 55 1547 1592
+type(
+  Ast.exp
+)
+ident(
+  int_ref post "vc.ml" 53 1452 1475 "vc.ml" 53 1452 1479
+)
+"vc.ml" 55 1547 1573 "vc.ml" 55 1547 1592
+call(
+  stack
+)
+type(
+  Ast.var list * Ast.exp
+)
+"vc.ml" 56 1596 1599 "vc.ml" 56 1596 1601
+type(
+  Ast.exp
+)
+ident(
+  int_ref wp "vc.ml" 55 1547 1567 "vc.ml" 55 1547 1569
+)
+"vc.ml" 56 1596 1603 "vc.ml" 56 1596 1614
+type(
+  Ast.var list
+)
+ident(
+  int_ref moreforalls "vc.ml" 55 1547 1554 "vc.ml" 55 1547 1565
+)
+"vc.ml" 56 1596 1614 "vc.ml" 56 1596 1615
+type(
+  Ast.var list -> Ast.var list -> Ast.var list
+)
+ident(
+  ext_ref Pervasives.( @ )
+)
+"vc.ml" 56 1596 1615 "vc.ml" 56 1596 1622
+type(
+  Ast.var list
+)
+ident(
+  int_ref foralls "vc.ml" 54 1482 1494 "vc.ml" 54 1482 1501
+)
+"vc.ml" 56 1596 1603 "vc.ml" 56 1596 1622
+call(
+  stack
+)
+type(
+  Ast.var list
+)
+"vc.ml" 56 1596 1598 "vc.ml" 56 1596 1623
+type(
+  Ast.exp * Ast.var list
+)
+"vc.ml" 55 1547 1549 "vc.ml" 56 1596 1623
+type(
+  Ast.exp * Ast.var list
+)
+"vc.ml" 54 1482 1484 "vc.ml" 56 1596 1623
+type(
+  Ast.exp * Ast.var list
+)
+"vc.ml" 57 1624 1628 "vc.ml" 57 1624 1644
+type(
+  t
+)
+ident(
+  def compute_dwp1_gen "vc.ml" 59 1667 1667 --
+)
+"vc.ml" 57 1624 1653 "vc.ml" 57 1624 1665
+type(
+  ssa_vc
+)
+ident(
+  int_ref compute_dwp1 "vc.ml" 53 1452 1456 "vc.ml" 53 1452 1468
+)
+"vc.ml" 57 1624 1647 "vc.ml" 57 1624 1665
+type(
+  t
+)
+"vc.ml" 59 1667 1671 "vc.ml" 59 1667 1681
+type(
+  'a -> Cfg.AST.G.t -> Ast.exp -> Ast.exp * 'b list
+)
+ident(
+  def compute_wp "vc.ml" 62 1751 1751 --
+)
+"vc.ml" 59 1667 1682 "vc.ml" 59 1667 1683
+type(
+  'a
+)
+"vc.ml" 59 1667 1684 "vc.ml" 59 1667 1687
+type(
+  Cfg.AST.G.t
+)
+ident(
+  def cfg "vc.ml" 59 1667 1688 "vc.ml" 61 1728 1750
+)
+"vc.ml" 59 1667 1688 "vc.ml" 59 1667 1692
+type(
+  Ast.exp
+)
+ident(
+  def post "vc.ml" 60 1695 1697 "vc.ml" 61 1728 1750
+)
+"vc.ml" 60 1695 1701 "vc.ml" 60 1695 1704
+type(
+  Gcl.t
+)
+"vc.ml" 60 1695 1707 "vc.ml" 60 1695 1720
+type(
+  ?entry:Cfg.AST.G.V.t -> ?exit:Cfg.AST.G.V.t -> Cfg.AST.G.t -> Gcl.t
+)
+ident(
+  ext_ref Gcl.of_astcfg
+)
+"vc.ml" 60 1695 1721 "vc.ml" 60 1695 1724
+type(
+  Cfg.AST.G.t
+)
+ident(
+  int_ref cfg "vc.ml" 59 1667 1684 "vc.ml" 59 1667 1687
+)
+"vc.ml" 60 1695 1707 "vc.ml" 60 1695 1724
+call(
+  stack
+)
+type(
+  Gcl.t
+)
+"vc.ml" 61 1728 1731 "vc.ml" 61 1728 1736
+type(
+  ?simp:(Ast.exp -> Ast.exp) -> Gcl.t -> Ast.exp -> Ast.exp
+)
+ident(
+  ext_ref Wp.wp
+)
+"vc.ml" 61 1728 1737 "vc.ml" 61 1728 1740
+type(
+  Gcl.t
+)
+ident(
+  int_ref gcl "vc.ml" 60 1695 1701 "vc.ml" 60 1695 1704
+)
+"vc.ml" 61 1728 1741 "vc.ml" 61 1728 1745
+type(
+  Ast.exp
+)
+ident(
+  int_ref post "vc.ml" 59 1667 1688 "vc.ml" 59 1667 1692
+)
+"vc.ml" 61 1728 1731 "vc.ml" 61 1728 1745
+call(
+  stack
+)
+type(
+  Ast.exp
+)
+"vc.ml" 61 1728 1747 "vc.ml" 61 1728 1749
+type(
+  'b list
+)
+"vc.ml" 61 1728 1730 "vc.ml" 61 1728 1750
+type(
+  Ast.exp * 'b list
+)
+"vc.ml" 60 1695 1697 "vc.ml" 61 1728 1750
+type(
+  Ast.exp * 'b list
+)
+"vc.ml" 62 1751 1755 "vc.ml" 62 1751 1769
+type(
+  t
+)
+ident(
+  def compute_wp_gen "vc.ml" 64 1790 1790 --
+)
+"vc.ml" 62 1751 1778 "vc.ml" 62 1751 1788
+type(
+  cfg_vc
+)
+ident(
+  int_ref compute_wp "vc.ml" 59 1667 1671 "vc.ml" 59 1667 1681
+)
+"vc.ml" 62 1751 1772 "vc.ml" 62 1751 1788
+type(
+  t
+)
+"vc.ml" 64 1790 1794 "vc.ml" 64 1790 1814
+type(
+  options -> Cfg.SSA.G.t -> Ast.exp -> Ast.exp * Ast.var list
+)
+ident(
+  def compute_passified_wp "vc.ml" 67 1931 1931 --
+)
+"vc.ml" 64 1790 1821 "vc.ml" 64 1790 1825
+type(
+  Type.formula_mode
+)
+ident(
+  def mode "vc.ml" 64 1790 1827 "vc.ml" 66 1893 1930
+)
+"vc.ml" 64 1790 1815 "vc.ml" 64 1790 1826
+type(
+  options
+)
+"vc.ml" 64 1790 1827 "vc.ml" 64 1790 1830
+type(
+  Cfg.SSA.G.t
+)
+ident(
+  def cfg "vc.ml" 64 1790 1831 "vc.ml" 66 1893 1930
+)
+"vc.ml" 64 1790 1831 "vc.ml" 64 1790 1835
+type(
+  Ast.exp
+)
+ident(
+  def post "vc.ml" 65 1838 1840 "vc.ml" 66 1893 1930
+)
+"vc.ml" 65 1838 1844 "vc.ml" 65 1838 1847
+type(
+  Gcl.t
+)
+"vc.ml" 65 1838 1849 "vc.ml" 65 1838 1856
+type(
+  Ast.var list
+)
+"vc.ml" 65 1838 1844 "vc.ml" 65 1838 1856
+type(
+  Gcl.t * Ast.var list
+)
+"vc.ml" 65 1838 1859 "vc.ml" 65 1838 1879
+type(
+  ?entry:Cfg.SSA.G.V.t ->
+  ?exit:Cfg.SSA.G.V.t ->
+  ?mode:Type.formula_mode -> Cfg.SSA.G.t -> Gcl.t * Ast.var list
+)
+ident(
+  ext_ref Gcl.passified_of_ssa
+)
+"vc.ml" 65 1838 1881 "vc.ml" 65 1838 1885
+type(
+  Type.formula_mode
+)
+ident(
+  int_ref mode "vc.ml" 64 1790 1821 "vc.ml" 64 1790 1825
+)
+"vc.ml" 65 1838 1886 "vc.ml" 65 1838 1889
+type(
+  Cfg.SSA.G.t
+)
+ident(
+  int_ref cfg "vc.ml" 64 1790 1827 "vc.ml" 64 1790 1830
+)
+"vc.ml" 65 1838 1859 "vc.ml" 65 1838 1889
+call(
+  stack
+)
+type(
+  Gcl.t * Ast.var list
+)
+"vc.ml" 66 1893 1896 "vc.ml" 66 1893 1911
+type(
+  ?simp:(Ast.exp -> Ast.exp) -> Gcl.t -> Ast.exp -> Ast.exp
+)
+ident(
+  ext_ref Wp.passified_wp
+)
+"vc.ml" 66 1893 1912 "vc.ml" 66 1893 1915
+type(
+  Gcl.t
+)
+ident(
+  int_ref gcl "vc.ml" 65 1838 1844 "vc.ml" 65 1838 1847
+)
+"vc.ml" 66 1893 1916 "vc.ml" 66 1893 1920
+type(
+  Ast.exp
+)
+ident(
+  int_ref post "vc.ml" 64 1790 1831 "vc.ml" 64 1790 1835
+)
+"vc.ml" 66 1893 1896 "vc.ml" 66 1893 1920
+call(
+  stack
+)
+type(
+  Ast.exp
+)
+"vc.ml" 66 1893 1922 "vc.ml" 66 1893 1929
+type(
+  Ast.var list
+)
+ident(
+  int_ref foralls "vc.ml" 65 1838 1849 "vc.ml" 65 1838 1856
+)
+"vc.ml" 66 1893 1895 "vc.ml" 66 1893 1930
+type(
+  Ast.exp * Ast.var list
+)
+"vc.ml" 65 1838 1840 "vc.ml" 66 1893 1930
+type(
+  Ast.exp * Ast.var list
+)
+"vc.ml" 67 1931 1935 "vc.ml" 67 1931 1959
+type(
+  t
+)
+ident(
+  def compute_passified_wp_gen "vc.ml" 69 1990 1990 --
+)
+"vc.ml" 67 1931 1968 "vc.ml" 67 1931 1988
+type(
+  ssa_vc
+)
+ident(
+  int_ref compute_passified_wp "vc.ml" 64 1790 1794 "vc.ml" 64 1790 1814
+)
+"vc.ml" 67 1931 1962 "vc.ml" 67 1931 1988
+type(
+  t
+)
+"vc.ml" 69 1990 1994 "vc.ml" 69 1990 2005
+type(
+  'a -> Cfg.SSA.G.t -> Ast.exp -> Ast.exp * 'b list
+)
+ident(
+  def compute_uwp "vc.ml" 72 2092 2092 --
+)
+"vc.ml" 69 1990 2006 "vc.ml" 69 1990 2007
+type(
+  'a
+)
+"vc.ml" 69 1990 2008 "vc.ml" 69 1990 2011
+type(
+  Cfg.SSA.G.t
+)
+ident(
+  def cfg "vc.ml" 69 1990 2012 "vc.ml" 71 2058 2091
+)
+"vc.ml" 69 1990 2012 "vc.ml" 69 1990 2016
+type(
+  Ast.exp
+)
+ident(
+  def post "vc.ml" 70 2019 2021 "vc.ml" 71 2058 2091
+)
+"vc.ml" 70 2019 2025 "vc.ml" 70 2019 2029
+type(
+  Gcl.Ugcl.t
+)
+"vc.ml" 70 2019 2032 "vc.ml" 70 2019 2050
+type(
+  ?entry:Cfg.AST.G.V.t ->
+  ?exit:Cfg.AST.G.V.t -> ?mode:Type.formula_mode -> Cfg.SSA.G.t -> Gcl.Ugcl.t
+)
+ident(
+  ext_ref Gcl.Ugcl.of_ssacfg
+)
+"vc.ml" 70 2019 2051 "vc.ml" 70 2019 2054
+type(
+  Cfg.SSA.G.t
+)
+ident(
+  int_ref cfg "vc.ml" 69 1990 2008 "vc.ml" 69 1990 2011
+)
+"vc.ml" 70 2019 2032 "vc.ml" 70 2019 2054
+call(
+  stack
+)
+type(
+  Gcl.Ugcl.t
+)
+"vc.ml" 71 2058 2061 "vc.ml" 71 2058 2076
+type(
+  Gcl.Ugcl.t -> Ast.exp -> Ast.exp
+)
+ident(
+  ext_ref Wp.dijkstra_uwp
+)
+"vc.ml" 71 2058 2077 "vc.ml" 71 2058 2081
+type(
+  Gcl.Ugcl.t
+)
+ident(
+  int_ref ugcl "vc.ml" 70 2019 2025 "vc.ml" 70 2019 2029
+)
+"vc.ml" 71 2058 2082 "vc.ml" 71 2058 2086
+type(
+  Ast.exp
+)
+ident(
+  int_ref post "vc.ml" 69 1990 2012 "vc.ml" 69 1990 2016
+)
+"vc.ml" 71 2058 2061 "vc.ml" 71 2058 2086
+call(
+  stack
+)
+type(
+  Ast.exp
+)
+"vc.ml" 71 2058 2088 "vc.ml" 71 2058 2090
+type(
+  'b list
+)
+"vc.ml" 71 2058 2060 "vc.ml" 71 2058 2091
+type(
+  Ast.exp * 'b list
+)
+"vc.ml" 70 2019 2021 "vc.ml" 71 2058 2091
+type(
+  Ast.exp * 'b list
+)
+"vc.ml" 72 2092 2096 "vc.ml" 72 2092 2111
+type(
+  t
+)
+ident(
+  def compute_uwp_gen "vc.ml" 74 2133 2133 --
+)
+"vc.ml" 72 2092 2120 "vc.ml" 72 2092 2131
+type(
+  ssa_vc
+)
+ident(
+  int_ref compute_uwp "vc.ml" 69 1990 1994 "vc.ml" 69 1990 2005
+)
+"vc.ml" 72 2092 2114 "vc.ml" 72 2092 2131
+type(
+  t
+)
+"vc.ml" 74 2133 2137 "vc.ml" 74 2133 2158
+type(
+  options -> Cfg.SSA.G.t -> Ast.exp -> Ast.exp * 'a list
+)
+ident(
+  def compute_uwp_efficient "vc.ml" 77 2262 2262 --
+)
+"vc.ml" 74 2133 2165 "vc.ml" 74 2133 2169
+type(
+  Type.formula_mode
+)
+ident(
+  def mode "vc.ml" 74 2133 2171 "vc.ml" 76 2227 2261
+)
+"vc.ml" 74 2133 2159 "vc.ml" 74 2133 2170
+type(
+  options
+)
+"vc.ml" 74 2133 2171 "vc.ml" 74 2133 2174
+type(
+  Cfg.SSA.G.t
+)
+ident(
+  def cfg "vc.ml" 74 2133 2175 "vc.ml" 76 2227 2261
+)
+"vc.ml" 74 2133 2175 "vc.ml" 74 2133 2179
+type(
+  Ast.exp
+)
+ident(
+  def post "vc.ml" 75 2182 2184 "vc.ml" 76 2227 2261
+)
+"vc.ml" 75 2182 2188 "vc.ml" 75 2182 2192
+type(
+  Gcl.Ugcl.t
+)
+"vc.ml" 75 2182 2195 "vc.ml" 75 2182 2213
+type(
+  ?entry:Cfg.AST.G.V.t ->
+  ?exit:Cfg.AST.G.V.t -> ?mode:Type.formula_mode -> Cfg.SSA.G.t -> Gcl.Ugcl.t
+)
+ident(
+  ext_ref Gcl.Ugcl.of_ssacfg
+)
+"vc.ml" 75 2182 2215 "vc.ml" 75 2182 2219
+type(
+  Type.formula_mode
+)
+ident(
+  int_ref mode "vc.ml" 74 2133 2165 "vc.ml" 74 2133 2169
+)
+"vc.ml" 75 2182 2220 "vc.ml" 75 2182 2223
+type(
+  Cfg.SSA.G.t
+)
+ident(
+  int_ref cfg "vc.ml" 74 2133 2171 "vc.ml" 74 2133 2174
+)
+"vc.ml" 75 2182 2195 "vc.ml" 75 2182 2223
+call(
+  stack
+)
+type(
+  Gcl.Ugcl.t
+)
+"vc.ml" 76 2227 2230 "vc.ml" 76 2227 2246
+type(
+  Gcl.Ugcl.t -> Ast.exp -> Ast.exp
+)
+ident(
+  ext_ref Wp.efficient_uwp
+)
+"vc.ml" 76 2227 2247 "vc.ml" 76 2227 2251
+type(
+  Gcl.Ugcl.t
+)
+ident(
+  int_ref ugcl "vc.ml" 75 2182 2188 "vc.ml" 75 2182 2192
+)
+"vc.ml" 76 2227 2252 "vc.ml" 76 2227 2256
+type(
+  Ast.exp
+)
+ident(
+  int_ref post "vc.ml" 74 2133 2175 "vc.ml" 74 2133 2179
+)
+"vc.ml" 76 2227 2230 "vc.ml" 76 2227 2256
+call(
+  stack
+)
+type(
+  Ast.exp
+)
+"vc.ml" 76 2227 2258 "vc.ml" 76 2227 2260
+type(
+  'a list
+)
+"vc.ml" 76 2227 2229 "vc.ml" 76 2227 2261
+type(
+  Ast.exp * 'a list
+)
+"vc.ml" 75 2182 2184 "vc.ml" 76 2227 2261
+type(
+  Ast.exp * 'a list
+)
+"vc.ml" 77 2262 2266 "vc.ml" 77 2262 2291
+type(
+  t
+)
+ident(
+  def compute_uwp_efficient_gen "vc.ml" 79 2323 2323 --
+)
+"vc.ml" 77 2262 2300 "vc.ml" 77 2262 2321
+type(
+  ssa_vc
+)
+ident(
+  int_ref compute_uwp_efficient "vc.ml" 74 2133 2137 "vc.ml" 74 2133 2158
+)
+"vc.ml" 77 2262 2294 "vc.ml" 77 2262 2321
+type(
+  t
+)
+"vc.ml" 79 2323 2327 "vc.ml" 79 2323 2338
+type(
+  options -> Cfg.SSA.G.t -> Ast.exp -> Ast.exp * Ast.var list
+)
+ident(
+  def compute_dwp "vc.ml" 82 2459 2459 --
+)
+"vc.ml" 79 2323 2342 "vc.ml" 79 2323 2343
+type(
+  int
+)
+ident(
+  def k "vc.ml" 79 2323 2356 "vc.ml" 81 2422 2458
+)
+"vc.ml" 79 2323 2350 "vc.ml" 79 2323 2354
+type(
+  Type.formula_mode
+)
+ident(
+  def mode "vc.ml" 79 2323 2356 "vc.ml" 81 2422 2458
+)
+"vc.ml" 79 2323 2339 "vc.ml" 79 2323 2355
+type(
+  options
+)
+"vc.ml" 79 2323 2356 "vc.ml" 79 2323 2359
+type(
+  Cfg.SSA.G.t
+)
+ident(
+  def cfg "vc.ml" 79 2323 2360 "vc.ml" 81 2422 2458
+)
+"vc.ml" 79 2323 2360 "vc.ml" 79 2323 2364
+type(
+  Ast.exp
+)
+ident(
+  def post "vc.ml" 80 2367 2369 "vc.ml" 81 2422 2458
+)
+"vc.ml" 80 2367 2373 "vc.ml" 80 2367 2376
+type(
+  Gcl.t
+)
+"vc.ml" 80 2367 2378 "vc.ml" 80 2367 2385
+type(
+  Ast.var list
+)
+"vc.ml" 80 2367 2373 "vc.ml" 80 2367 2385
+type(
+  Gcl.t * Ast.var list
+)
+"vc.ml" 80 2367 2388 "vc.ml" 80 2367 2408
+type(
+  ?entry:Cfg.SSA.G.V.t ->
+  ?exit:Cfg.SSA.G.V.t ->
+  ?mode:Type.formula_mode -> Cfg.SSA.G.t -> Gcl.t * Ast.var list
+)
+ident(
+  ext_ref Gcl.passified_of_ssa
+)
+"vc.ml" 80 2367 2410 "vc.ml" 80 2367 2414
+type(
+  Type.formula_mode
+)
+ident(
+  int_ref mode "vc.ml" 79 2323 2350 "vc.ml" 79 2323 2354
+)
+"vc.ml" 80 2367 2415 "vc.ml" 80 2367 2418
+type(
+  Cfg.SSA.G.t
+)
+ident(
+  int_ref cfg "vc.ml" 79 2323 2356 "vc.ml" 79 2323 2359
+)
+"vc.ml" 80 2367 2388 "vc.ml" 80 2367 2418
+call(
+  stack
+)
+type(
+  Gcl.t * Ast.var list
+)
+"vc.ml" 81 2422 2425 "vc.ml" 81 2422 2431
+type(
+  ?simp:(Ast.exp -> Ast.exp) ->
+  ?less_duplication:bool ->
+  ?k:int -> Type.formula_mode -> Gcl.t -> Ast.exp -> Ast.exp
+)
+ident(
+  ext_ref Wp.dwp
+)
+"vc.ml" 81 2422 2433 "vc.ml" 81 2422 2434
+type(
+  int
+)
+ident(
+  int_ref k "vc.ml" 79 2323 2342 "vc.ml" 79 2323 2343
+)
+"vc.ml" 81 2422 2435 "vc.ml" 81 2422 2439
+type(
+  Type.formula_mode
+)
+ident(
+  int_ref mode "vc.ml" 79 2323 2350 "vc.ml" 79 2323 2354
+)
+"vc.ml" 81 2422 2440 "vc.ml" 81 2422 2443
+type(
+  Gcl.t
+)
+ident(
+  int_ref gcl "vc.ml" 80 2367 2373 "vc.ml" 80 2367 2376
+)
+"vc.ml" 81 2422 2444 "vc.ml" 81 2422 2448
+type(
+  Ast.exp
+)
+ident(
+  int_ref post "vc.ml" 79 2323 2360 "vc.ml" 79 2323 2364
+)
+"vc.ml" 81 2422 2425 "vc.ml" 81 2422 2448
+call(
+  stack
+)
+type(
+  Ast.exp
+)
+"vc.ml" 81 2422 2450 "vc.ml" 81 2422 2457
+type(
+  Ast.var list
+)
+ident(
+  int_ref foralls "vc.ml" 80 2367 2378 "vc.ml" 80 2367 2385
+)
+"vc.ml" 81 2422 2424 "vc.ml" 81 2422 2458
+type(
+  Ast.exp * Ast.var list
+)
+"vc.ml" 80 2367 2369 "vc.ml" 81 2422 2458
+type(
+  Ast.exp * Ast.var list
+)
+"vc.ml" 82 2459 2463 "vc.ml" 82 2459 2478
+type(
+  t
+)
+ident(
+  def compute_dwp_gen "vc.ml" 84 2500 2500 --
+)
+"vc.ml" 82 2459 2487 "vc.ml" 82 2459 2498
+type(
+  ssa_vc
+)
+ident(
+  int_ref compute_dwp "vc.ml" 79 2323 2327 "vc.ml" 79 2323 2338
+)
+"vc.ml" 82 2459 2481 "vc.ml" 82 2459 2498
+type(
+  t
+)
+"vc.ml" 84 2500 2504 "vc.ml" 84 2500 2519
+type(
+  options -> Cfg.SSA.G.t -> Ast.exp -> Ast.exp * Ast.var list
+)
+ident(
+  def compute_dwp_let "vc.ml" 87 2644 2644 --
+)
+"vc.ml" 84 2500 2523 "vc.ml" 84 2500 2524
+type(
+  int
+)
+ident(
+  def k "vc.ml" 84 2500 2537 "vc.ml" 86 2603 2643
+)
+"vc.ml" 84 2500 2531 "vc.ml" 84 2500 2535
+type(
+  Type.formula_mode
+)
+ident(
+  def mode "vc.ml" 84 2500 2537 "vc.ml" 86 2603 2643
+)
+"vc.ml" 84 2500 2520 "vc.ml" 84 2500 2536
+type(
+  options
+)
+"vc.ml" 84 2500 2537 "vc.ml" 84 2500 2540
+type(
+  Cfg.SSA.G.t
+)
+ident(
+  def cfg "vc.ml" 84 2500 2541 "vc.ml" 86 2603 2643
+)
+"vc.ml" 84 2500 2541 "vc.ml" 84 2500 2545
+type(
+  Ast.exp
+)
+ident(
+  def post "vc.ml" 85 2548 2550 "vc.ml" 86 2603 2643
+)
+"vc.ml" 85 2548 2554 "vc.ml" 85 2548 2557
+type(
+  Gcl.t
+)
+"vc.ml" 85 2548 2559 "vc.ml" 85 2548 2566
+type(
+  Ast.var list
+)
+"vc.ml" 85 2548 2554 "vc.ml" 85 2548 2566
+type(
+  Gcl.t * Ast.var list
+)
+"vc.ml" 85 2548 2569 "vc.ml" 85 2548 2589
+type(
+  ?entry:Cfg.SSA.G.V.t ->
+  ?exit:Cfg.SSA.G.V.t ->
+  ?mode:Type.formula_mode -> Cfg.SSA.G.t -> Gcl.t * Ast.var list
+)
+ident(
+  ext_ref Gcl.passified_of_ssa
+)
+"vc.ml" 85 2548 2591 "vc.ml" 85 2548 2595
+type(
+  Type.formula_mode
+)
+ident(
+  int_ref mode "vc.ml" 84 2500 2531 "vc.ml" 84 2500 2535
+)
+"vc.ml" 85 2548 2596 "vc.ml" 85 2548 2599
+type(
+  Cfg.SSA.G.t
+)
+ident(
+  int_ref cfg "vc.ml" 84 2500 2537 "vc.ml" 84 2500 2540
+)
+"vc.ml" 85 2548 2569 "vc.ml" 85 2548 2599
+call(
+  stack
+)
+type(
+  Gcl.t * Ast.var list
+)
+"vc.ml" 86 2603 2606 "vc.ml" 86 2603 2616
+type(
+  ?simp:(Ast.exp -> Ast.exp) ->
+  ?less_duplication:bool ->
+  ?k:int -> Type.formula_mode -> Gcl.t -> Ast.exp -> Ast.exp
+)
+ident(
+  ext_ref Wp.dwp_let
+)
+"vc.ml" 86 2603 2618 "vc.ml" 86 2603 2619
+type(
+  int
+)
+ident(
+  int_ref k "vc.ml" 84 2500 2523 "vc.ml" 84 2500 2524
+)
+"vc.ml" 86 2603 2620 "vc.ml" 86 2603 2624
+type(
+  Type.formula_mode
+)
+ident(
+  int_ref mode "vc.ml" 84 2500 2531 "vc.ml" 84 2500 2535
+)
+"vc.ml" 86 2603 2625 "vc.ml" 86 2603 2628
+type(
+  Gcl.t
+)
+ident(
+  int_ref gcl "vc.ml" 85 2548 2554 "vc.ml" 85 2548 2557
+)
+"vc.ml" 86 2603 2629 "vc.ml" 86 2603 2633
+type(
+  Ast.exp
+)
+ident(
+  int_ref post "vc.ml" 84 2500 2541 "vc.ml" 84 2500 2545
+)
+"vc.ml" 86 2603 2606 "vc.ml" 86 2603 2633
+call(
+  stack
+)
+type(
+  Ast.exp
+)
+"vc.ml" 86 2603 2635 "vc.ml" 86 2603 2642
+type(
+  Ast.var list
+)
+ident(
+  int_ref foralls "vc.ml" 85 2548 2559 "vc.ml" 85 2548 2566
+)
+"vc.ml" 86 2603 2605 "vc.ml" 86 2603 2643
+type(
+  Ast.exp * Ast.var list
+)
+"vc.ml" 85 2548 2550 "vc.ml" 86 2603 2643
+type(
+  Ast.exp * Ast.var list
+)
+"vc.ml" 87 2644 2648 "vc.ml" 87 2644 2667
+type(
+  t
+)
+ident(
+  def compute_dwp_let_gen "vc.ml" 89 2693 2693 --
+)
+"vc.ml" 87 2644 2676 "vc.ml" 87 2644 2691
+type(
+  ssa_vc
+)
+ident(
+  int_ref compute_dwp_let "vc.ml" 84 2500 2504 "vc.ml" 84 2500 2519
+)
+"vc.ml" 87 2644 2670 "vc.ml" 87 2644 2691
+type(
+  t
+)
+"vc.ml" 89 2693 2697 "vc.ml" 89 2693 2708
+type(
+  options -> Cfg.SSA.G.t -> Ast.exp -> Ast.exp * Ast.var list
+)
+ident(
+  def compute_fwp "vc.ml" 92 2830 2830 --
+)
+"vc.ml" 89 2693 2712 "vc.ml" 89 2693 2713
+type(
+  int
+)
+ident(
+  def k "vc.ml" 89 2693 2726 "vc.ml" 91 2792 2829
+)
+"vc.ml" 89 2693 2720 "vc.ml" 89 2693 2724
+type(
+  Type.formula_mode
+)
+ident(
+  def mode "vc.ml" 89 2693 2726 "vc.ml" 91 2792 2829
+)
+"vc.ml" 89 2693 2709 "vc.ml" 89 2693 2725
+type(
+  options
+)
+"vc.ml" 89 2693 2726 "vc.ml" 89 2693 2729
+type(
+  Cfg.SSA.G.t
+)
+ident(
+  def cfg "vc.ml" 89 2693 2730 "vc.ml" 91 2792 2829
+)
+"vc.ml" 89 2693 2730 "vc.ml" 89 2693 2734
+type(
+  Ast.exp
+)
+ident(
+  def post "vc.ml" 90 2737 2739 "vc.ml" 91 2792 2829
+)
+"vc.ml" 90 2737 2743 "vc.ml" 90 2737 2746
+type(
+  Gcl.t
+)
+"vc.ml" 90 2737 2748 "vc.ml" 90 2737 2755
+type(
+  Ast.var list
+)
+"vc.ml" 90 2737 2743 "vc.ml" 90 2737 2755
+type(
+  Gcl.t * Ast.var list
+)
+"vc.ml" 90 2737 2758 "vc.ml" 90 2737 2778
+type(
+  ?entry:Cfg.SSA.G.V.t ->
+  ?exit:Cfg.SSA.G.V.t ->
+  ?mode:Type.formula_mode -> Cfg.SSA.G.t -> Gcl.t * Ast.var list
+)
+ident(
+  ext_ref Gcl.passified_of_ssa
+)
+"vc.ml" 90 2737 2780 "vc.ml" 90 2737 2784
+type(
+  Type.formula_mode
+)
+ident(
+  int_ref mode "vc.ml" 89 2693 2720 "vc.ml" 89 2693 2724
+)
+"vc.ml" 90 2737 2785 "vc.ml" 90 2737 2788
+type(
+  Cfg.SSA.G.t
+)
+ident(
+  int_ref cfg "vc.ml" 89 2693 2726 "vc.ml" 89 2693 2729
+)
+"vc.ml" 90 2737 2758 "vc.ml" 90 2737 2788
+call(
+  stack
+)
+type(
+  Gcl.t * Ast.var list
+)
+"vc.ml" 91 2792 2795 "vc.ml" 91 2792 2802
+type(
+  ?normalusage:bool ->
+  ?simp:(Ast.exp -> Ast.exp) ->
+  ?k:int -> Type.formula_mode -> Gcl.t -> Ast.exp -> Ast.exp
+)
+ident(
+  ext_ref Fwp.fwp
+)
+"vc.ml" 91 2792 2804 "vc.ml" 91 2792 2805
+type(
+  int
+)
+ident(
+  int_ref k "vc.ml" 89 2693 2712 "vc.ml" 89 2693 2713
+)
+"vc.ml" 91 2792 2806 "vc.ml" 91 2792 2810
+type(
+  Type.formula_mode
+)
+ident(
+  int_ref mode "vc.ml" 89 2693 2720 "vc.ml" 89 2693 2724
+)
+"vc.ml" 91 2792 2811 "vc.ml" 91 2792 2814
+type(
+  Gcl.t
+)
+ident(
+  int_ref gcl "vc.ml" 90 2737 2743 "vc.ml" 90 2737 2746
+)
+"vc.ml" 91 2792 2815 "vc.ml" 91 2792 2819
+type(
+  Ast.exp
+)
+ident(
+  int_ref post "vc.ml" 89 2693 2730 "vc.ml" 89 2693 2734
+)
+"vc.ml" 91 2792 2795 "vc.ml" 91 2792 2819
+call(
+  stack
+)
+type(
+  Ast.exp
+)
+"vc.ml" 91 2792 2821 "vc.ml" 91 2792 2828
+type(
+  Ast.var list
+)
+ident(
+  int_ref foralls "vc.ml" 90 2737 2748 "vc.ml" 90 2737 2755
+)
+"vc.ml" 91 2792 2794 "vc.ml" 91 2792 2829
+type(
+  Ast.exp * Ast.var list
+)
+"vc.ml" 90 2737 2739 "vc.ml" 91 2792 2829
+type(
+  Ast.exp * Ast.var list
+)
+"vc.ml" 92 2830 2834 "vc.ml" 92 2830 2849
+type(
+  t
+)
+ident(
+  def compute_fwp_gen "vc.ml" 94 2871 2871 --
+)
+"vc.ml" 92 2830 2858 "vc.ml" 92 2830 2869
+type(
+  ssa_vc
+)
+ident(
+  int_ref compute_fwp "vc.ml" 89 2693 2697 "vc.ml" 89 2693 2708
+)
+"vc.ml" 92 2830 2852 "vc.ml" 92 2830 2869
+type(
+  t
+)
+"vc.ml" 94 2871 2875 "vc.ml" 94 2871 2890
+type(
+  options -> Cfg.SSA.G.t -> Ast.exp -> Ast.exp * 'a list
+)
+ident(
+  def compute_fwp_uwp "vc.ml" 97 3002 3002 --
+)
+"vc.ml" 94 2871 2894 "vc.ml" 94 2871 2895
+type(
+  int
+)
+ident(
+  def k "vc.ml" 94 2871 2908 "vc.ml" 96 2964 3001
+)
+"vc.ml" 94 2871 2902 "vc.ml" 94 2871 2906
+type(
+  Type.formula_mode
+)
+ident(
+  def mode "vc.ml" 94 2871 2908 "vc.ml" 96 2964 3001
+)
+"vc.ml" 94 2871 2891 "vc.ml" 94 2871 2907
+type(
+  options
+)
+"vc.ml" 94 2871 2908 "vc.ml" 94 2871 2911
+type(
+  Cfg.SSA.G.t
+)
+ident(
+  def cfg "vc.ml" 94 2871 2912 "vc.ml" 96 2964 3001
+)
+"vc.ml" 94 2871 2912 "vc.ml" 94 2871 2916
+type(
+  Ast.exp
+)
+ident(
+  def post "vc.ml" 95 2919 2921 "vc.ml" 96 2964 3001
+)
+"vc.ml" 95 2919 2925 "vc.ml" 95 2919 2929
+type(
+  Gcl.Ugcl.t
+)
+"vc.ml" 95 2919 2932 "vc.ml" 95 2919 2950
+type(
+  ?entry:Cfg.AST.G.V.t ->
+  ?exit:Cfg.AST.G.V.t -> ?mode:Type.formula_mode -> Cfg.SSA.G.t -> Gcl.Ugcl.t
+)
+ident(
+  ext_ref Gcl.Ugcl.of_ssacfg
+)
+"vc.ml" 95 2919 2952 "vc.ml" 95 2919 2956
+type(
+  Type.formula_mode
+)
+ident(
+  int_ref mode "vc.ml" 94 2871 2902 "vc.ml" 94 2871 2906
+)
+"vc.ml" 95 2919 2957 "vc.ml" 95 2919 2960
+type(
+  Cfg.SSA.G.t
+)
+ident(
+  int_ref cfg "vc.ml" 94 2871 2908 "vc.ml" 94 2871 2911
+)
+"vc.ml" 95 2919 2932 "vc.ml" 95 2919 2960
+call(
+  stack
+)
+type(
+  Gcl.Ugcl.t
+)
+"vc.ml" 96 2964 2967 "vc.ml" 96 2964 2978
+type(
+  ?simp:(Ast.exp -> Ast.exp) ->
+  ?k:int -> Type.formula_mode -> Gcl.Ugcl.t -> Ast.exp -> Ast.exp
+)
+ident(
+  ext_ref Fwp.fwp_uwp
+)
+"vc.ml" 96 2964 2980 "vc.ml" 96 2964 2981
+type(
+  int
+)
+ident(
+  int_ref k "vc.ml" 94 2871 2894 "vc.ml" 94 2871 2895
+)
+"vc.ml" 96 2964 2982 "vc.ml" 96 2964 2986
+type(
+  Type.formula_mode
+)
+ident(
+  int_ref mode "vc.ml" 94 2871 2902 "vc.ml" 94 2871 2906
+)
+"vc.ml" 96 2964 2987 "vc.ml" 96 2964 2991
+type(
+  Gcl.Ugcl.t
+)
+ident(
+  int_ref ugcl "vc.ml" 95 2919 2925 "vc.ml" 95 2919 2929
+)
+"vc.ml" 96 2964 2992 "vc.ml" 96 2964 2996
+type(
+  Ast.exp
+)
+ident(
+  int_ref post "vc.ml" 94 2871 2912 "vc.ml" 94 2871 2916
+)
+"vc.ml" 96 2964 2967 "vc.ml" 96 2964 2996
+call(
+  stack
+)
+type(
+  Ast.exp
+)
+"vc.ml" 96 2964 2998 "vc.ml" 96 2964 3000
+type(
+  'a list
+)
+"vc.ml" 96 2964 2966 "vc.ml" 96 2964 3001
+type(
+  Ast.exp * 'a list
+)
+"vc.ml" 95 2919 2921 "vc.ml" 96 2964 3001
+type(
+  Ast.exp * 'a list
+)
+"vc.ml" 97 3002 3006 "vc.ml" 97 3002 3025
+type(
+  t
+)
+ident(
+  def compute_fwp_uwp_gen "vc.ml" 99 3051 3051 --
+)
+"vc.ml" 97 3002 3034 "vc.ml" 97 3002 3049
+type(
+  ssa_vc
+)
+ident(
+  int_ref compute_fwp_uwp "vc.ml" 94 2871 2875 "vc.ml" 94 2871 2890
+)
+"vc.ml" 97 3002 3028 "vc.ml" 97 3002 3049
+type(
+  t
+)
+"vc.ml" 99 3051 3055 "vc.ml" 99 3051 3075
+type(
+  options -> Cfg.SSA.G.t -> Ast.exp -> Ast.exp * Ast.var list
+)
+ident(
+  def compute_fwp_lazyconc "vc.ml" 104 3320 3320 --
+)
+"vc.ml" 99 3051 3079 "vc.ml" 99 3051 3080
+type(
+  int
+)
+ident(
+  def k "vc.ml" 99 3051 3093 "vc.ml" 103 3273 3319
+)
+"vc.ml" 99 3051 3087 "vc.ml" 99 3051 3091
+type(
+  Type.formula_mode
+)
+ident(
+  def mode "vc.ml" 99 3051 3093 "vc.ml" 103 3273 3319
+)
+"vc.ml" 99 3051 3076 "vc.ml" 99 3051 3092
+type(
+  options
+)
+"vc.ml" 99 3051 3093 "vc.ml" 99 3051 3096
+type(
+  Cfg.SSA.G.t
+)
+ident(
+  def cfg "vc.ml" 99 3051 3097 "vc.ml" 103 3273 3319
+)
+"vc.ml" 99 3051 3097 "vc.ml" 99 3051 3101
+type(
+  Ast.exp
+)
+ident(
+  def post "vc.ml" 102 3213 3215 "vc.ml" 103 3273 3319
+)
+"vc.ml" 102 3213 3219 "vc.ml" 102 3213 3222
+type(
+  Gcl.t
+)
+"vc.ml" 102 3213 3224 "vc.ml" 102 3213 3231
+type(
+  Ast.var list
+)
+"vc.ml" 102 3213 3219 "vc.ml" 102 3213 3231
+type(
+  Gcl.t * Ast.var list
+)
+"vc.ml" 102 3213 3234 "vc.ml" 102 3213 3254
+type(
+  ?entry:Cfg.SSA.G.V.t ->
+  ?exit:Cfg.SSA.G.V.t ->
+  ?mode:Type.formula_mode -> Cfg.SSA.G.t -> Gcl.t * Ast.var list
+)
+ident(
+  ext_ref Gcl.passified_of_ssa
+)
+"vc.ml" 102 3213 3261 "vc.ml" 102 3213 3265
+type(
+  Type.formula_mode option
+)
+"vc.ml" 102 3213 3266 "vc.ml" 102 3213 3269
+type(
+  Cfg.SSA.G.t
+)
+ident(
+  int_ref cfg "vc.ml" 99 3051 3093 "vc.ml" 99 3051 3096
+)
+"vc.ml" 102 3213 3234 "vc.ml" 102 3213 3269
+call(
+  stack
+)
+type(
+  Gcl.t * Ast.var list
+)
+"vc.ml" 103 3273 3276 "vc.ml" 103 3273 3292
+type(
+  ?simp:(Ast.exp -> Ast.exp) ->
+  ?k:int -> ?cf:bool -> Type.formula_mode -> Gcl.t -> Ast.exp -> Ast.exp
+)
+ident(
+  ext_ref Fwp.fwp_lazyconc
+)
+"vc.ml" 103 3273 3294 "vc.ml" 103 3273 3295
+type(
+  int
+)
+ident(
+  int_ref k "vc.ml" 99 3051 3079 "vc.ml" 99 3051 3080
+)
+"vc.ml" 103 3273 3296 "vc.ml" 103 3273 3300
+type(
+  Type.formula_mode
+)
+ident(
+  int_ref mode "vc.ml" 99 3051 3087 "vc.ml" 99 3051 3091
+)
+"vc.ml" 103 3273 3301 "vc.ml" 103 3273 3304
+type(
+  Gcl.t
+)
+ident(
+  int_ref gcl "vc.ml" 102 3213 3219 "vc.ml" 102 3213 3222
+)
+"vc.ml" 103 3273 3305 "vc.ml" 103 3273 3309
+type(
+  Ast.exp
+)
+ident(
+  int_ref post "vc.ml" 99 3051 3097 "vc.ml" 99 3051 3101
+)
+"vc.ml" 103 3273 3276 "vc.ml" 103 3273 3309
+call(
+  stack
+)
+type(
+  Ast.exp
+)
+"vc.ml" 103 3273 3311 "vc.ml" 103 3273 3318
+type(
+  Ast.var list
+)
+ident(
+  int_ref foralls "vc.ml" 102 3213 3224 "vc.ml" 102 3213 3231
+)
+"vc.ml" 103 3273 3275 "vc.ml" 103 3273 3319
+type(
+  Ast.exp * Ast.var list
+)
+"vc.ml" 102 3213 3215 "vc.ml" 103 3273 3319
+type(
+  Ast.exp * Ast.var list
+)
+"vc.ml" 104 3320 3324 "vc.ml" 104 3320 3348
+type(
+  t
+)
+ident(
+  def compute_fwp_lazyconc_gen "vc.ml" 106 3379 3379 --
+)
+"vc.ml" 104 3320 3357 "vc.ml" 104 3320 3377
+type(
+  ssa_vc
+)
+ident(
+  int_ref compute_fwp_lazyconc "vc.ml" 99 3051 3055 "vc.ml" 99 3051 3075
+)
+"vc.ml" 104 3320 3351 "vc.ml" 104 3320 3377
+type(
+  t
+)
+"vc.ml" 106 3379 3383 "vc.ml" 106 3379 3407
+type(
+  options -> Cfg.SSA.G.t -> Ast.exp -> Ast.exp * 'a list
+)
+ident(
+  def compute_fwp_lazyconc_uwp "vc.ml" 111 3631 3631 --
+)
+"vc.ml" 106 3379 3411 "vc.ml" 106 3379 3412
+type(
+  int
+)
+ident(
+  def k "vc.ml" 106 3379 3425 "vc.ml" 110 3584 3630
+)
+"vc.ml" 106 3379 3419 "vc.ml" 106 3379 3423
+type(
+  Type.formula_mode
+)
+ident(
+  def mode "vc.ml" 106 3379 3425 "vc.ml" 110 3584 3630
+)
+"vc.ml" 106 3379 3408 "vc.ml" 106 3379 3424
+type(
+  options
+)
+"vc.ml" 106 3379 3425 "vc.ml" 106 3379 3428
+type(
+  Cfg.SSA.G.t
+)
+ident(
+  def cfg "vc.ml" 106 3379 3429 "vc.ml" 110 3584 3630
+)
+"vc.ml" 106 3379 3429 "vc.ml" 106 3379 3433
+type(
+  Ast.exp
+)
+ident(
+  def post "vc.ml" 109 3545 3547 "vc.ml" 110 3584 3630
+)
+"vc.ml" 109 3545 3551 "vc.ml" 109 3545 3555
+type(
+  Gcl.Ugcl.t
+)
+"vc.ml" 109 3545 3558 "vc.ml" 109 3545 3576
+type(
+  ?entry:Cfg.AST.G.V.t ->
+  ?exit:Cfg.AST.G.V.t -> ?mode:Type.formula_mode -> Cfg.SSA.G.t -> Gcl.Ugcl.t
+)
+ident(
+  ext_ref Gcl.Ugcl.of_ssacfg
+)
+"vc.ml" 109 3545 3577 "vc.ml" 109 3545 3580
+type(
+  Cfg.SSA.G.t
+)
+ident(
+  int_ref cfg "vc.ml" 106 3379 3425 "vc.ml" 106 3379 3428
+)
+"vc.ml" 109 3545 3558 "vc.ml" 109 3545 3580
+call(
+  stack
+)
+type(
+  Gcl.Ugcl.t
+)
+"vc.ml" 110 3584 3587 "vc.ml" 110 3584 3607
+type(
+  ?simp:(Ast.exp -> Ast.exp) ->
+  ?k:int -> ?cf:bool -> Type.formula_mode -> Gcl.Ugcl.t -> Ast.exp -> Ast.exp
+)
+ident(
+  ext_ref Fwp.fwp_lazyconc_uwp
+)
+"vc.ml" 110 3584 3609 "vc.ml" 110 3584 3610
+type(
+  int
+)
+ident(
+  int_ref k "vc.ml" 106 3379 3411 "vc.ml" 106 3379 3412
+)
+"vc.ml" 110 3584 3611 "vc.ml" 110 3584 3615
+type(
+  Type.formula_mode
+)
+ident(
+  int_ref mode "vc.ml" 106 3379 3419 "vc.ml" 106 3379 3423
+)
+"vc.ml" 110 3584 3616 "vc.ml" 110 3584 3620
+type(
+  Gcl.Ugcl.t
+)
+ident(
+  int_ref ugcl "vc.ml" 109 3545 3551 "vc.ml" 109 3545 3555
+)
+"vc.ml" 110 3584 3621 "vc.ml" 110 3584 3625
+type(
+  Ast.exp
+)
+ident(
+  int_ref post "vc.ml" 106 3379 3429 "vc.ml" 106 3379 3433
+)
+"vc.ml" 110 3584 3587 "vc.ml" 110 3584 3625
+call(
+  stack
+)
+type(
+  Ast.exp
+)
+"vc.ml" 110 3584 3627 "vc.ml" 110 3584 3629
+type(
+  'a list
+)
+"vc.ml" 110 3584 3586 "vc.ml" 110 3584 3630
+type(
+  Ast.exp * 'a list
+)
+"vc.ml" 109 3545 3547 "vc.ml" 110 3584 3630
+type(
+  Ast.exp * 'a list
+)
+"vc.ml" 111 3631 3635 "vc.ml" 111 3631 3663
+type(
+  t
+)
+ident(
+  def compute_fwp_lazyconc_uwp_gen "vc.ml" 113 3698 3698 --
+)
+"vc.ml" 111 3631 3672 "vc.ml" 111 3631 3696
+type(
+  ssa_vc
+)
+ident(
+  int_ref compute_fwp_lazyconc_uwp "vc.ml" 106 3379 3383 "vc.ml" 106 3379 3407
+)
+"vc.ml" 111 3631 3666 "vc.ml" 111 3631 3696
+type(
+  t
+)
+"vc.ml" 113 3698 3702 "vc.ml" 113 3698 3722
+type(
+  options -> Cfg.SSA.G.t -> Ast.exp -> Ast.exp * Ast.var list
+)
+ident(
+  def compute_flanagansaxe "vc.ml" 116 3852 3852 --
+)
+"vc.ml" 113 3698 3726 "vc.ml" 113 3698 3727
+type(
+  int
+)
+ident(
+  def k "vc.ml" 113 3698 3740 "vc.ml" 115 3806 3851
+)
+"vc.ml" 113 3698 3734 "vc.ml" 113 3698 3738
+type(
+  Type.formula_mode
+)
+ident(
+  def mode "vc.ml" 113 3698 3740 "vc.ml" 115 3806 3851
+)
+"vc.ml" 113 3698 3723 "vc.ml" 113 3698 3739
+type(
+  options
+)
+"vc.ml" 113 3698 3740 "vc.ml" 113 3698 3743
+type(
+  Cfg.SSA.G.t
+)
+ident(
+  def cfg "vc.ml" 113 3698 3744 "vc.ml" 115 3806 3851
+)
+"vc.ml" 113 3698 3744 "vc.ml" 113 3698 3748
+type(
+  Ast.exp
+)
+ident(
+  def post "vc.ml" 114 3751 3753 "vc.ml" 115 3806 3851
+)
+"vc.ml" 114 3751 3757 "vc.ml" 114 3751 3760
+type(
+  Gcl.t
+)
+"vc.ml" 114 3751 3762 "vc.ml" 114 3751 3769
+type(
+  Ast.var list
+)
+"vc.ml" 114 3751 3757 "vc.ml" 114 3751 3769
+type(
+  Gcl.t * Ast.var list
+)
+"vc.ml" 114 3751 3772 "vc.ml" 114 3751 3792
+type(
+  ?entry:Cfg.SSA.G.V.t ->
+  ?exit:Cfg.SSA.G.V.t ->
+  ?mode:Type.formula_mode -> Cfg.SSA.G.t -> Gcl.t * Ast.var list
+)
+ident(
+  ext_ref Gcl.passified_of_ssa
+)
+"vc.ml" 114 3751 3794 "vc.ml" 114 3751 3798
+type(
+  Type.formula_mode
+)
+ident(
+  int_ref mode "vc.ml" 113 3698 3734 "vc.ml" 113 3698 3738
+)
+"vc.ml" 114 3751 3799 "vc.ml" 114 3751 3802
+type(
+  Cfg.SSA.G.t
+)
+ident(
+  int_ref cfg "vc.ml" 113 3698 3740 "vc.ml" 113 3698 3743
+)
+"vc.ml" 114 3751 3772 "vc.ml" 114 3751 3802
+call(
+  stack
+)
+type(
+  Gcl.t * Ast.var list
+)
+"vc.ml" 115 3806 3809 "vc.ml" 115 3806 3824
+type(
+  ?simp:(Ast.exp -> Ast.exp) ->
+  ?less_duplication:bool ->
+  ?k:int -> Type.formula_mode -> Gcl.t -> Ast.exp -> Ast.exp
+)
+ident(
+  ext_ref Wp.flanagansaxe
+)
+"vc.ml" 115 3806 3826 "vc.ml" 115 3806 3827
+type(
+  int
+)
+ident(
+  int_ref k "vc.ml" 113 3698 3726 "vc.ml" 113 3698 3727
+)
+"vc.ml" 115 3806 3828 "vc.ml" 115 3806 3832
+type(
+  Type.formula_mode
+)
+ident(
+  int_ref mode "vc.ml" 113 3698 3734 "vc.ml" 113 3698 3738
+)
+"vc.ml" 115 3806 3833 "vc.ml" 115 3806 3836
+type(
+  Gcl.t
+)
+ident(
+  int_ref gcl "vc.ml" 114 3751 3757 "vc.ml" 114 3751 3760
+)
+"vc.ml" 115 3806 3837 "vc.ml" 115 3806 3841
+type(
+  Ast.exp
+)
+ident(
+  int_ref post "vc.ml" 113 3698 3744 "vc.ml" 113 3698 3748
+)
+"vc.ml" 115 3806 3809 "vc.ml" 115 3806 3841
+call(
+  stack
+)
+type(
+  Ast.exp
+)
+"vc.ml" 115 3806 3843 "vc.ml" 115 3806 3850
+type(
+  Ast.var list
+)
+ident(
+  int_ref foralls "vc.ml" 114 3751 3762 "vc.ml" 114 3751 3769
+)
+"vc.ml" 115 3806 3808 "vc.ml" 115 3806 3851
+type(
+  Ast.exp * Ast.var list
+)
+"vc.ml" 114 3751 3753 "vc.ml" 115 3806 3851
+type(
+  Ast.exp * Ast.var list
+)
+"vc.ml" 116 3852 3856 "vc.ml" 116 3852 3880
+type(
+  t
+)
+ident(
+  def compute_flanagansaxe_gen "vc.ml" 118 3911 3911 --
+)
+"vc.ml" 116 3852 3889 "vc.ml" 116 3852 3909
+type(
+  ssa_vc
+)
+ident(
+  int_ref compute_flanagansaxe "vc.ml" 113 3698 3702 "vc.ml" 113 3698 3722
+)
+"vc.ml" 116 3852 3883 "vc.ml" 116 3852 3909
+type(
+  t
+)
+"vc.ml" 118 3911 3915 "vc.ml" 118 3911 3930
+type(
+  options ->
+  Ast.stmt list -> Ast.exp -> Symbeval_search.FastSymb.Form.output * 'a list
+)
+ident(
+  def compute_fse_bfs "vc.ml" 123 4105 4105 --
+)
+"vc.ml" 118 3911 3943 "vc.ml" 118 3911 3953
+type(
+  bool
+)
+ident(
+  def full_subst "vc.ml" 118 3911 3955 "vc.ml" 122 4084 4104
+)
+"vc.ml" 118 3911 3931 "vc.ml" 118 3911 3954
+type(
+  options
+)
+"vc.ml" 118 3911 3955 "vc.ml" 118 3911 3958
+type(
+  Ast.stmt list
+)
+ident(
+  def ast "vc.ml" 118 3911 3959 "vc.ml" 122 4084 4104
+)
+"vc.ml" 118 3911 3959 "vc.ml" 118 3911 3963
+type(
+  Ast.exp
+)
+ident(
+  def post "vc.ml" 119 3966 3968 "vc.ml" 122 4084 4104
+)
+"vc.ml" 119 3966 3972 "vc.ml" 119 3966 3975
+type(
+  Ast.stmt list -> Ast.exp -> Symbeval_search.FastSymb.Form.output
+)
+"vc.ml" 119 3966 3981 "vc.ml" 119 3966 3984
+type(
+  bool -> bool
+)
+ident(
+  ext_ref Pervasives.not
+)
+"vc.ml" 119 3966 3985 "vc.ml" 119 3966 3995
+type(
+  bool
+)
+ident(
+  int_ref full_subst "vc.ml" 118 3911 3943 "vc.ml" 118 3911 3953
+)
+"vc.ml" 119 3966 3981 "vc.ml" 119 3966 3995
+type(
+  bool
+)
+"vc.ml" 119 3966 4001 "vc.ml" 119 3966 4037
+type(
+  Ast.stmt list -> Ast.exp -> Symbeval_search.FastSymb.Form.output
+)
+ident(
+  ext_ref Symbeval_search.bfs_ast_program_fast
+)
+"vc.ml" 120 4038 4047 "vc.ml" 120 4038 4078
+type(
+  Ast.stmt list -> Ast.exp -> Symbeval_search.FastSymb.Form.output
+)
+ident(
+  ext_ref Symbeval_search.bfs_ast_program
+)
+"vc.ml" 119 3966 3978 "vc.ml" 120 4038 4078
+type(
+  Ast.stmt list -> Ast.exp -> Symbeval_search.FastSymb.Form.output
+)
+"vc.ml" 122 4084 4087 "vc.ml" 122 4084 4090
+type(
+  Ast.stmt list -> Ast.exp -> Symbeval_search.FastSymb.Form.output
+)
+ident(
+  int_ref bfs "vc.ml" 119 3966 3972 "vc.ml" 119 3966 3975
+)
+"vc.ml" 122 4084 4091 "vc.ml" 122 4084 4094
+type(
+  Ast.stmt list
+)
+ident(
+  int_ref ast "vc.ml" 118 3911 3955 "vc.ml" 118 3911 3958
+)
+"vc.ml" 122 4084 4095 "vc.ml" 122 4084 4099
+type(
+  Ast.exp
+)
+ident(
+  int_ref post "vc.ml" 118 3911 3959 "vc.ml" 118 3911 3963
+)
+"vc.ml" 122 4084 4087 "vc.ml" 122 4084 4099
+call(
+  stack
+)
+type(
+  Symbeval_search.FastSymb.Form.output
+)
+"vc.ml" 122 4084 4101 "vc.ml" 122 4084 4103
+type(
+  'a list
+)
+"vc.ml" 122 4084 4086 "vc.ml" 122 4084 4104
+type(
+  Symbeval_search.FastSymb.Form.output * 'a list
+)
+"vc.ml" 119 3966 3968 "vc.ml" 122 4084 4104
+type(
+  Symbeval_search.FastSymb.Form.output * 'a list
+)
+"vc.ml" 123 4105 4109 "vc.ml" 123 4105 4128
+type(
+  t
+)
+ident(
+  def compute_fse_bfs_gen "vc.ml" 125 4154 4154 --
+)
+"vc.ml" 123 4105 4137 "vc.ml" 123 4105 4152
+type(
+  ast_vc
+)
+ident(
+  int_ref compute_fse_bfs "vc.ml" 118 3911 3915 "vc.ml" 118 3911 3930
+)
+"vc.ml" 123 4105 4131 "vc.ml" 123 4105 4152
+type(
+  t
+)
+"vc.ml" 125 4154 4158 "vc.ml" 125 4154 4182
+type(
+  Symbeval_search.MaxdepthBFSFast.S.initdata ->
+  options ->
+  Ast.stmt list -> Ast.exp -> Symbeval_search.FastSymb.Form.output * 'a list
+)
+ident(
+  def compute_fse_bfs_maxdepth "vc.ml" 130 4379 4379 --
+)
+"vc.ml" 125 4154 4183 "vc.ml" 125 4154 4184
+type(
+  Symbeval_search.MaxdepthBFSFast.S.initdata
+)
+ident(
+  def i "vc.ml" 125 4154 4185 "vc.ml" 129 4356 4378
+)
+"vc.ml" 125 4154 4197 "vc.ml" 125 4154 4207
+type(
+  bool
+)
+ident(
+  def full_subst "vc.ml" 125 4154 4209 "vc.ml" 129 4356 4378
+)
+"vc.ml" 125 4154 4185 "vc.ml" 125 4154 4208
+type(
+  options
+)
+"vc.ml" 125 4154 4209 "vc.ml" 125 4154 4212
+type(
+  Ast.stmt list
+)
+ident(
+  def ast "vc.ml" 125 4154 4213 "vc.ml" 129 4356 4378
+)
+"vc.ml" 125 4154 4213 "vc.ml" 125 4154 4217
+type(
+  Ast.exp
+)
+ident(
+  def post "vc.ml" 126 4220 4222 "vc.ml" 129 4356 4378
+)
+"vc.ml" 126 4220 4226 "vc.ml" 126 4220 4229
+type(
+  Symbeval_search.MaxdepthBFSFast.S.initdata ->
+  Ast.stmt list -> Ast.exp -> Symbeval_search.FastSymb.Form.output
+)
+"vc.ml" 126 4220 4235 "vc.ml" 126 4220 4238
+type(
+  bool -> bool
+)
+ident(
+  ext_ref Pervasives.not
+)
+"vc.ml" 126 4220 4239 "vc.ml" 126 4220 4249
+type(
+  bool
+)
+ident(
+  int_ref full_subst "vc.ml" 125 4154 4197 "vc.ml" 125 4154 4207
+)
+"vc.ml" 126 4220 4235 "vc.ml" 126 4220 4249
+type(
+  bool
+)
+"vc.ml" 126 4220 4255 "vc.ml" 126 4220 4300
+type(
+  Symbeval_search.MaxdepthBFSFast.S.initdata ->
+  Ast.stmt list -> Ast.exp -> Symbeval_search.FastSymb.Form.output
+)
+ident(
+  ext_ref Symbeval_search.bfs_maxdepth_ast_program_fast
+)
+"vc.ml" 127 4301 4310 "vc.ml" 127 4301 4350
+type(
+  Symbeval_search.MaxdepthBFSFast.S.initdata ->
+  Ast.stmt list -> Ast.exp -> Symbeval_search.FastSymb.Form.output
+)
+ident(
+  ext_ref Symbeval_search.bfs_maxdepth_ast_program
+)
+"vc.ml" 126 4220 4232 "vc.ml" 127 4301 4350
+type(
+  Symbeval_search.MaxdepthBFSFast.S.initdata ->
+  Ast.stmt list -> Ast.exp -> Symbeval_search.FastSymb.Form.output
+)
+"vc.ml" 129 4356 4359 "vc.ml" 129 4356 4362
+type(
+  Symbeval_search.MaxdepthBFSFast.S.initdata ->
+  Ast.stmt list -> Ast.exp -> Symbeval_search.FastSymb.Form.output
+)
+ident(
+  int_ref bfs "vc.ml" 126 4220 4226 "vc.ml" 126 4220 4229
+)
+"vc.ml" 129 4356 4363 "vc.ml" 129 4356 4364
+type(
+  Symbeval_search.MaxdepthBFSFast.S.initdata
+)
+ident(
+  int_ref i "vc.ml" 125 4154 4183 "vc.ml" 125 4154 4184
+)
+"vc.ml" 129 4356 4365 "vc.ml" 129 4356 4368
+type(
+  Ast.stmt list
+)
+ident(
+  int_ref ast "vc.ml" 125 4154 4209 "vc.ml" 125 4154 4212
+)
+"vc.ml" 129 4356 4369 "vc.ml" 129 4356 4373
+type(
+  Ast.exp
+)
+ident(
+  int_ref post "vc.ml" 125 4154 4213 "vc.ml" 125 4154 4217
+)
+"vc.ml" 129 4356 4359 "vc.ml" 129 4356 4373
+call(
+  stack
+)
+type(
+  Symbeval_search.FastSymb.Form.output
+)
+"vc.ml" 129 4356 4375 "vc.ml" 129 4356 4377
+type(
+  'a list
+)
+"vc.ml" 129 4356 4358 "vc.ml" 129 4356 4378
+type(
+  Symbeval_search.FastSymb.Form.output * 'a list
+)
+"vc.ml" 126 4220 4222 "vc.ml" 129 4356 4378
+type(
+  Symbeval_search.FastSymb.Form.output * 'a list
+)
+"vc.ml" 130 4379 4383 "vc.ml" 130 4379 4411
+type(
+  Symbeval_search.MaxdepthBFSFast.S.initdata -> t
+)
+ident(
+  def compute_fse_bfs_maxdepth_gen "vc.ml" 132 4452 4452 --
+)
+"vc.ml" 130 4379 4412 "vc.ml" 130 4379 4413
+type(
+  Symbeval_search.MaxdepthBFSFast.S.initdata
+)
+ident(
+  def i "vc.ml" 130 4379 4416 "vc.ml" 130 4379 4450
+)
+"vc.ml" 130 4379 4423 "vc.ml" 130 4379 4447
+type(
+  Symbeval_search.MaxdepthBFSFast.S.initdata -> ast_vc
+)
+ident(
+  int_ref compute_fse_bfs_maxdepth "vc.ml" 125 4154 4158 "vc.ml" 125 4154 4182
+)
+"vc.ml" 130 4379 4448 "vc.ml" 130 4379 4449
+type(
+  Symbeval_search.MaxdepthBFSFast.S.initdata
+)
+ident(
+  int_ref i "vc.ml" 130 4379 4412 "vc.ml" 130 4379 4413
+)
+"vc.ml" 130 4379 4422 "vc.ml" 130 4379 4450
+call(
+  stack
+)
+type(
+  ast_vc
+)
+"vc.ml" 130 4379 4416 "vc.ml" 130 4379 4450
+type(
+  t
+)
+"vc.ml" 132 4452 4456 "vc.ml" 132 4452 4477
+type(
+  Symbeval_search.MaxrepeatDFSFast.S.initdata ->
+  options ->
+  Ast.stmt list -> Ast.exp -> Symbeval_search.FastSymb.Form.output * 'a list
+)
+ident(
+  def compute_fse_maxrepeat "vc.ml" 137 4680 4680 --
+)
+"vc.ml" 132 4452 4478 "vc.ml" 132 4452 4479
+type(
+  Symbeval_search.MaxrepeatDFSFast.S.initdata
+)
+ident(
+  def i "vc.ml" 132 4452 4480 "vc.ml" 136 4651 4679
+)
+"vc.ml" 132 4452 4492 "vc.ml" 132 4452 4502
+type(
+  bool
+)
+ident(
+  def full_subst "vc.ml" 132 4452 4504 "vc.ml" 136 4651 4679
+)
+"vc.ml" 132 4452 4480 "vc.ml" 132 4452 4503
+type(
+  options
+)
+"vc.ml" 132 4452 4504 "vc.ml" 132 4452 4507
+type(
+  Ast.stmt list
+)
+ident(
+  def ast "vc.ml" 132 4452 4508 "vc.ml" 136 4651 4679
+)
+"vc.ml" 132 4452 4508 "vc.ml" 132 4452 4512
+type(
+  Ast.exp
+)
+ident(
+  def post "vc.ml" 133 4515 4517 "vc.ml" 136 4651 4679
+)
+"vc.ml" 133 4515 4521 "vc.ml" 133 4515 4530
+type(
+  Symbeval_search.MaxrepeatDFSFast.S.initdata ->
+  Ast.stmt list -> Ast.exp -> Symbeval_search.FastSymb.Form.output
+)
+"vc.ml" 133 4515 4536 "vc.ml" 133 4515 4539
+type(
+  bool -> bool
+)
+ident(
+  ext_ref Pervasives.not
+)
+"vc.ml" 133 4515 4540 "vc.ml" 133 4515 4550
+type(
+  bool
+)
+ident(
+  int_ref full_subst "vc.ml" 132 4452 4492 "vc.ml" 132 4452 4502
+)
+"vc.ml" 133 4515 4536 "vc.ml" 133 4515 4550
+type(
+  bool
+)
+"vc.ml" 133 4515 4556 "vc.ml" 133 4515 4598
+type(
+  Symbeval_search.MaxrepeatDFSFast.S.initdata ->
+  Ast.stmt list -> Ast.exp -> Symbeval_search.FastSymb.Form.output
+)
+ident(
+  ext_ref Symbeval_search.maxrepeat_ast_program_fast
+)
+"vc.ml" 134 4599 4608 "vc.ml" 134 4599 4645
+type(
+  Symbeval_search.MaxrepeatDFSFast.S.initdata ->
+  Ast.stmt list -> Ast.exp -> Symbeval_search.FastSymb.Form.output
+)
+ident(
+  ext_ref Symbeval_search.maxrepeat_ast_program
+)
+"vc.ml" 133 4515 4533 "vc.ml" 134 4599 4645
+type(
+  Symbeval_search.MaxrepeatDFSFast.S.initdata ->
+  Ast.stmt list -> Ast.exp -> Symbeval_search.FastSymb.Form.output
+)
+"vc.ml" 136 4651 4654 "vc.ml" 136 4651 4663
+type(
+  Symbeval_search.MaxrepeatDFSFast.S.initdata ->
+  Ast.stmt list -> Ast.exp -> Symbeval_search.FastSymb.Form.output
+)
+ident(
+  int_ref maxrepeat "vc.ml" 133 4515 4521 "vc.ml" 133 4515 4530
+)
+"vc.ml" 136 4651 4664 "vc.ml" 136 4651 4665
+type(
+  Symbeval_search.MaxrepeatDFSFast.S.initdata
+)
+ident(
+  int_ref i "vc.ml" 132 4452 4478 "vc.ml" 132 4452 4479
+)
+"vc.ml" 136 4651 4666 "vc.ml" 136 4651 4669
+type(
+  Ast.stmt list
+)
+ident(
+  int_ref ast "vc.ml" 132 4452 4504 "vc.ml" 132 4452 4507
+)
+"vc.ml" 136 4651 4670 "vc.ml" 136 4651 4674
+type(
+  Ast.exp
+)
+ident(
+  int_ref post "vc.ml" 132 4452 4508 "vc.ml" 132 4452 4512
+)
+"vc.ml" 136 4651 4654 "vc.ml" 136 4651 4674
+call(
+  stack
+)
+type(
+  Symbeval_search.FastSymb.Form.output
+)
+"vc.ml" 136 4651 4676 "vc.ml" 136 4651 4678
+type(
+  'a list
+)
+"vc.ml" 136 4651 4653 "vc.ml" 136 4651 4679
+type(
+  Symbeval_search.FastSymb.Form.output * 'a list
+)
+"vc.ml" 133 4515 4517 "vc.ml" 136 4651 4679
+type(
+  Symbeval_search.FastSymb.Form.output * 'a list
+)
+"vc.ml" 137 4680 4684 "vc.ml" 137 4680 4709
+type(
+  Symbeval_search.MaxrepeatDFSFast.S.initdata -> t
+)
+ident(
+  def compute_fse_maxrepeat_gen "vc.ml" 139 4747 4747 --
+)
+"vc.ml" 137 4680 4710 "vc.ml" 137 4680 4711
+type(
+  Symbeval_search.MaxrepeatDFSFast.S.initdata
+)
+ident(
+  def i "vc.ml" 137 4680 4714 "vc.ml" 137 4680 4745
+)
+"vc.ml" 137 4680 4721 "vc.ml" 137 4680 4742
+type(
+  Symbeval_search.MaxrepeatDFSFast.S.initdata -> ast_vc
+)
+ident(
+  int_ref compute_fse_maxrepeat "vc.ml" 132 4452 4456 "vc.ml" 132 4452 4477
+)
+"vc.ml" 137 4680 4743 "vc.ml" 137 4680 4744
+type(
+  Symbeval_search.MaxrepeatDFSFast.S.initdata
+)
+ident(
+  int_ref i "vc.ml" 137 4680 4710 "vc.ml" 137 4680 4711
+)
+"vc.ml" 137 4680 4720 "vc.ml" 137 4680 4745
+call(
+  stack
+)
+type(
+  ast_vc
+)
+"vc.ml" 137 4680 4714 "vc.ml" 137 4680 4745
+type(
+  t
+)
+"vc.ml" 139 4747 4751 "vc.ml" 139 4747 4757
+type(
+  (string * t) list
+)
+ident(
+  def vclist "vc.ml" 155 5261 5261 --
+)
+"vc.ml" 140 4760 4763 "vc.ml" 140 4760 4768
+type(
+  string
+)
+"vc.ml" 140 4760 4770 "vc.ml" 140 4760 4785
+type(
+  t
+)
+ident(
+  int_ref compute_dwp_gen "vc.ml" 82 2459 2463 "vc.ml" 82 2459 2478
+)
+"vc.ml" 140 4760 4762 "vc.ml" 140 4760 4786
+type(
+  string * t
+)
+"vc.ml" 141 4787 4793 "vc.ml" 141 4787 4798
+type(
+  string
+)
+"vc.ml" 141 4787 4800 "vc.ml" 141 4787 4815
+type(
+  t
+)
+ident(
+  int_ref compute_fwp_gen "vc.ml" 92 2830 2834 "vc.ml" 92 2830 2849
+)
+"vc.ml" 141 4787 4792 "vc.ml" 141 4787 4816
+type(
+  string * t
+)
+"vc.ml" 142 4817 4823 "vc.ml" 142 4817 4832
+type(
+  string
+)
+"vc.ml" 142 4817 4834 "vc.ml" 142 4817 4853
+type(
+  t
+)
+ident(
+  int_ref compute_fwp_uwp_gen "vc.ml" 97 3002 3006 "vc.ml" 97 3002 3025
+)
+"vc.ml" 142 4817 4822 "vc.ml" 142 4817 4854
+type(
+  string * t
+)
+"vc.ml" 143 4855 4861 "vc.ml" 143 4855 4875
+type(
+  string
+)
+"vc.ml" 143 4855 4877 "vc.ml" 143 4855 4901
+type(
+  t
+)
+ident(
+  int_ref compute_fwp_lazyconc_gen "vc.ml" 104 3320 3324 "vc.ml" 104 3320 3348
+)
+"vc.ml" 143 4855 4860 "vc.ml" 143 4855 4902
+type(
+  string * t
+)
+"vc.ml" 144 4903 4909 "vc.ml" 144 4903 4927
+type(
+  string
+)
+"vc.ml" 144 4903 4929 "vc.ml" 144 4903 4957
+type(
+  t
+)
+ident(
+  int_ref compute_fwp_lazyconc_uwp_gen "vc.ml" 111 3631 3635 "vc.ml" 111 3631 3663
+)
+"vc.ml" 144 4903 4908 "vc.ml" 144 4903 4958
+type(
+  string * t
+)
+"vc.ml" 145 4959 4965 "vc.ml" 145 4959 4973
+type(
+  string
+)
+"vc.ml" 145 4959 4975 "vc.ml" 145 4959 4994
+type(
+  t
+)
+ident(
+  int_ref compute_dwp_let_gen "vc.ml" 87 2644 2648 "vc.ml" 87 2644 2667
+)
+"vc.ml" 145 4959 4964 "vc.ml" 145 4959 4995
+type(
+  string * t
+)
+"vc.ml" 146 4996 5002 "vc.ml" 146 4996 5008
+type(
+  string
+)
+"vc.ml" 146 4996 5010 "vc.ml" 146 4996 5026
+type(
+  t
+)
+ident(
+  int_ref compute_dwp1_gen "vc.ml" 57 1624 1628 "vc.ml" 57 1624 1644
+)
+"vc.ml" 146 4996 5001 "vc.ml" 146 4996 5027
+type(
+  string * t
+)
+"vc.ml" 147 5028 5034 "vc.ml" 147 5028 5039
+type(
+  string
+)
+"vc.ml" 147 5028 5041 "vc.ml" 147 5028 5065
+type(
+  t
+)
+ident(
+  int_ref compute_passified_wp_gen "vc.ml" 67 1931 1935 "vc.ml" 67 1931 1959
+)
+"vc.ml" 147 5028 5033 "vc.ml" 147 5028 5066
+type(
+  string * t
+)
+"vc.ml" 148 5067 5073 "vc.ml" 148 5067 5087
+type(
+  string
+)
+"vc.ml" 148 5067 5089 "vc.ml" 148 5067 5113
+type(
+  t
+)
+ident(
+  int_ref compute_flanagansaxe_gen "vc.ml" 116 3852 3856 "vc.ml" 116 3852 3880
+)
+"vc.ml" 148 5067 5072 "vc.ml" 148 5067 5114
+type(
+  string * t
+)
+"vc.ml" 149 5115 5121 "vc.ml" 149 5115 5125
+type(
+  string
+)
+"vc.ml" 149 5115 5127 "vc.ml" 149 5115 5141
+type(
+  t
+)
+ident(
+  int_ref compute_wp_gen "vc.ml" 62 1751 1755 "vc.ml" 62 1751 1769
+)
+"vc.ml" 149 5115 5120 "vc.ml" 149 5115 5142
+type(
+  string * t
+)
+"vc.ml" 150 5143 5149 "vc.ml" 150 5143 5154
+type(
+  string
+)
+"vc.ml" 150 5143 5156 "vc.ml" 150 5143 5171
+type(
+  t
+)
+ident(
+  int_ref compute_uwp_gen "vc.ml" 72 2092 2096 "vc.ml" 72 2092 2111
+)
+"vc.ml" 150 5143 5148 "vc.ml" 150 5143 5172
+type(
+  string * t
+)
+"vc.ml" 151 5173 5179 "vc.ml" 151 5173 5185
+type(
+  string
+)
+"vc.ml" 151 5173 5187 "vc.ml" 151 5173 5212
+type(
+  t
+)
+ident(
+  int_ref compute_uwp_efficient_gen "vc.ml" 77 2262 2266 "vc.ml" 77 2262 2291
+)
+"vc.ml" 151 5173 5178 "vc.ml" 151 5173 5213
+type(
+  string * t
+)
+"vc.ml" 152 5214 5220 "vc.ml" 152 5214 5229
+type(
+  string
+)
+"vc.ml" 152 5214 5231 "vc.ml" 152 5214 5250
+type(
+  t
+)
+ident(
+  int_ref compute_fse_bfs_gen "vc.ml" 123 4105 4109 "vc.ml" 123 4105 4128
+)
+"vc.ml" 152 5214 5219 "vc.ml" 152 5214 5251
+type(
+  string * t
+)
+"vc.ml" 153 5252 5257 "vc.ml" 153 5252 5259
+type(
+  (string * t) list
+)
+"vc.ml" 152 5214 5219 "vc.ml" 153 5252 5259
+type(
+  (string * t) list
+)
+"vc.ml" 151 5173 5178 "vc.ml" 153 5252 5259
+type(
+  (string * t) list
+)
+"vc.ml" 150 5143 5148 "vc.ml" 153 5252 5259
+type(
+  (string * t) list
+)
+"vc.ml" 149 5115 5120 "vc.ml" 153 5252 5259
+type(
+  (string * t) list
+)
+"vc.ml" 148 5067 5072 "vc.ml" 153 5252 5259
+type(
+  (string * t) list
+)
+"vc.ml" 147 5028 5033 "vc.ml" 153 5252 5259
+type(
+  (string * t) list
+)
+"vc.ml" 146 4996 5001 "vc.ml" 153 5252 5259
+type(
+  (string * t) list
+)
+"vc.ml" 145 4959 4964 "vc.ml" 153 5252 5259
+type(
+  (string * t) list
+)
+"vc.ml" 144 4903 4908 "vc.ml" 153 5252 5259
+type(
+  (string * t) list
+)
+"vc.ml" 143 4855 4860 "vc.ml" 153 5252 5259
+type(
+  (string * t) list
+)
+"vc.ml" 142 4817 4822 "vc.ml" 153 5252 5259
+type(
+  (string * t) list
+)
+"vc.ml" 141 4787 4792 "vc.ml" 153 5252 5259
+type(
+  (string * t) list
+)
+"vc.ml" 140 4760 4762 "vc.ml" 153 5252 5259
+type(
+  (string * t) list
+)
+"vc.ml" 155 5261 5265 "vc.ml" 155 5261 5276
+type(
+  (string * t) list
+)
+ident(
+  def pred_vclist "vc.ml" 168 5739 5746 --
+)
+"vc.ml" 156 5279 5282 "vc.ml" 156 5279 5287
+type(
+  string
+)
+"vc.ml" 156 5279 5289 "vc.ml" 156 5279 5304
+type(
+  t
+)
+ident(
+  int_ref compute_dwp_gen "vc.ml" 82 2459 2463 "vc.ml" 82 2459 2478
+)
+"vc.ml" 156 5279 5281 "vc.ml" 156 5279 5305
+type(
+  string * t
+)
+"vc.ml" 157 5306 5312 "vc.ml" 157 5306 5317
+type(
+  string
+)
+"vc.ml" 157 5306 5319 "vc.ml" 157 5306 5334
+type(
+  t
+)
+ident(
+  int_ref compute_fwp_gen "vc.ml" 92 2830 2834 "vc.ml" 92 2830 2849
+)
+"vc.ml" 157 5306 5311 "vc.ml" 157 5306 5335
+type(
+  string * t
+)
+"vc.ml" 158 5336 5342 "vc.ml" 158 5336 5351
+type(
+  string
+)
+"vc.ml" 158 5336 5353 "vc.ml" 158 5336 5372
+type(
+  t
+)
+ident(
+  int_ref compute_fwp_uwp_gen "vc.ml" 97 3002 3006 "vc.ml" 97 3002 3025
+)
+"vc.ml" 158 5336 5341 "vc.ml" 158 5336 5373
+type(
+  string * t
+)
+"vc.ml" 159 5374 5380 "vc.ml" 159 5374 5394
+type(
+  string
+)
+"vc.ml" 159 5374 5396 "vc.ml" 159 5374 5420
+type(
+  t
+)
+ident(
+  int_ref compute_fwp_lazyconc_gen "vc.ml" 104 3320 3324 "vc.ml" 104 3320 3348
+)
+"vc.ml" 159 5374 5379 "vc.ml" 159 5374 5421
+type(
+  string * t
+)
+"vc.ml" 160 5422 5428 "vc.ml" 160 5422 5446
+type(
+  string
+)
+"vc.ml" 160 5422 5448 "vc.ml" 160 5422 5476
+type(
+  t
+)
+ident(
+  int_ref compute_fwp_lazyconc_uwp_gen "vc.ml" 111 3631 3635 "vc.ml" 111 3631 3663
+)
+"vc.ml" 160 5422 5427 "vc.ml" 160 5422 5477
+type(
+  string * t
+)
+"vc.ml" 161 5478 5484 "vc.ml" 161 5478 5492
+type(
+  string
+)
+"vc.ml" 161 5478 5494 "vc.ml" 161 5478 5513
+type(
+  t
+)
+ident(
+  int_ref compute_dwp_let_gen "vc.ml" 87 2644 2648 "vc.ml" 87 2644 2667
+)
+"vc.ml" 161 5478 5483 "vc.ml" 161 5478 5514
+type(
+  string * t
+)
+"vc.ml" 162 5515 5521 "vc.ml" 162 5515 5526
+type(
+  string
+)
+"vc.ml" 162 5515 5528 "vc.ml" 162 5515 5552
+type(
+  t
+)
+ident(
+  int_ref compute_passified_wp_gen "vc.ml" 67 1931 1935 "vc.ml" 67 1931 1959
+)
+"vc.ml" 162 5515 5520 "vc.ml" 162 5515 5553
+type(
+  string * t
+)
+"vc.ml" 163 5554 5560 "vc.ml" 163 5554 5574
+type(
+  string
+)
+"vc.ml" 163 5554 5576 "vc.ml" 163 5554 5600
+type(
+  t
+)
+ident(
+  int_ref compute_flanagansaxe_gen "vc.ml" 116 3852 3856 "vc.ml" 116 3852 3880
+)
+"vc.ml" 163 5554 5559 "vc.ml" 163 5554 5601
+type(
+  string * t
+)
+"vc.ml" 164 5602 5608 "vc.ml" 164 5602 5612
+type(
+  string
+)
+"vc.ml" 164 5602 5614 "vc.ml" 164 5602 5628
+type(
+  t
+)
+ident(
+  int_ref compute_wp_gen "vc.ml" 62 1751 1755 "vc.ml" 62 1751 1769
+)
+"vc.ml" 164 5602 5607 "vc.ml" 164 5602 5629
+type(
+  string * t
+)
+"vc.ml" 165 5630 5636 "vc.ml" 165 5630 5641
+type(
+  string
+)
+"vc.ml" 165 5630 5643 "vc.ml" 165 5630 5658
+type(
+  t
+)
+ident(
+  int_ref compute_uwp_gen "vc.ml" 72 2092 2096 "vc.ml" 72 2092 2111
+)
+"vc.ml" 165 5630 5635 "vc.ml" 165 5630 5659
+type(
+  string * t
+)
+"vc.ml" 166 5660 5666 "vc.ml" 166 5660 5672
+type(
+  string
+)
+"vc.ml" 166 5660 5674 "vc.ml" 166 5660 5699
+type(
+  t
+)
+ident(
+  int_ref compute_uwp_efficient_gen "vc.ml" 77 2262 2266 "vc.ml" 77 2262 2291
+)
+"vc.ml" 166 5660 5665 "vc.ml" 166 5660 5700
+type(
+  string * t
+)
+"vc.ml" 167 5701 5707 "vc.ml" 167 5701 5716
+type(
+  string
+)
+"vc.ml" 167 5701 5718 "vc.ml" 167 5701 5737
+type(
+  t
+)
+ident(
+  int_ref compute_fse_bfs_gen "vc.ml" 123 4105 4109 "vc.ml" 123 4105 4128
+)
+"vc.ml" 167 5701 5706 "vc.ml" 167 5701 5738
+type(
+  string * t
+)
+"vc.ml" 168 5739 5744 "vc.ml" 168 5739 5746
+type(
+  (string * t) list
+)
+"vc.ml" 167 5701 5706 "vc.ml" 168 5739 5746
+type(
+  (string * t) list
+)
+"vc.ml" 166 5660 5665 "vc.ml" 168 5739 5746
+type(
+  (string * t) list
+)
+"vc.ml" 165 5630 5635 "vc.ml" 168 5739 5746
+type(
+  (string * t) list
+)
+"vc.ml" 164 5602 5607 "vc.ml" 168 5739 5746
+type(
+  (string * t) list
+)
+"vc.ml" 163 5554 5559 "vc.ml" 168 5739 5746
+type(
+  (string * t) list
+)
+"vc.ml" 162 5515 5520 "vc.ml" 168 5739 5746
+type(
+  (string * t) list
+)
+"vc.ml" 161 5478 5483 "vc.ml" 168 5739 5746
+type(
+  (string * t) list
+)
+"vc.ml" 160 5422 5427 "vc.ml" 168 5739 5746
+type(
+  (string * t) list
+)
+"vc.ml" 159 5374 5379 "vc.ml" 168 5739 5746
+type(
+  (string * t) list
+)
+"vc.ml" 158 5336 5341 "vc.ml" 168 5739 5746
+type(
+  (string * t) list
+)
+"vc.ml" 157 5306 5311 "vc.ml" 168 5739 5746
+type(
+  (string * t) list
+)
+"vc.ml" 156 5279 5281 "vc.ml" 168 5739 5746
+type(
+  (string * t) list
+)

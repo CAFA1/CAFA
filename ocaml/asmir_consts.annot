@@ -1,0 +1,189 @@
+"asmir_consts.ml" 7 160 164 "asmir_consts.ml" 7 160 168
+type(
+  int -> int -> int
+)
+ident(
+  def << "asmir_consts.ml" 9 178 178 --
+)
+"asmir_consts.ml" 7 160 171 "asmir_consts.ml" 7 160 176
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( lsl )
+)
+"asmir_consts.ml" 9 178 182 "asmir_consts.ml" 9 178 192
+type(
+  int
+)
+ident(
+  def bsf_global "asmir_consts.ml" 10 202 202 --
+)
+"asmir_consts.ml" 9 178 195 "asmir_consts.ml" 9 178 196
+type(
+  int
+)
+"asmir_consts.ml" 9 178 197 "asmir_consts.ml" 9 178 199
+type(
+  int -> int -> int
+)
+ident(
+  int_ref << "asmir_consts.ml" 7 160 164 "asmir_consts.ml" 7 160 168
+)
+"asmir_consts.ml" 9 178 200 "asmir_consts.ml" 9 178 201
+type(
+  int
+)
+"asmir_consts.ml" 9 178 195 "asmir_consts.ml" 9 178 201
+call(
+  stack
+)
+type(
+  int
+)
+"asmir_consts.ml" 10 202 206 "asmir_consts.ml" 10 202 219
+type(
+  int
+)
+ident(
+  def bsf_debugging "asmir_consts.ml" 11 229 229 --
+)
+"asmir_consts.ml" 10 202 222 "asmir_consts.ml" 10 202 223
+type(
+  int
+)
+"asmir_consts.ml" 10 202 224 "asmir_consts.ml" 10 202 226
+type(
+  int -> int -> int
+)
+ident(
+  int_ref << "asmir_consts.ml" 7 160 164 "asmir_consts.ml" 7 160 168
+)
+"asmir_consts.ml" 10 202 227 "asmir_consts.ml" 10 202 228
+type(
+  int
+)
+"asmir_consts.ml" 10 202 222 "asmir_consts.ml" 10 202 228
+call(
+  stack
+)
+type(
+  int
+)
+"asmir_consts.ml" 11 229 233 "asmir_consts.ml" 11 229 245
+type(
+  int
+)
+ident(
+  def bsf_function "asmir_consts.ml" 14 272 272 --
+)
+"asmir_consts.ml" 11 229 248 "asmir_consts.ml" 11 229 249
+type(
+  int
+)
+"asmir_consts.ml" 11 229 250 "asmir_consts.ml" 11 229 252
+type(
+  int -> int -> int
+)
+ident(
+  int_ref << "asmir_consts.ml" 7 160 164 "asmir_consts.ml" 7 160 168
+)
+"asmir_consts.ml" 11 229 253 "asmir_consts.ml" 11 229 254
+type(
+  int
+)
+"asmir_consts.ml" 11 229 248 "asmir_consts.ml" 11 229 254
+call(
+  stack
+)
+type(
+  int
+)
+"asmir_consts.ml" 14 272 276 "asmir_consts.ml" 14 272 289
+type(
+  int
+)
+ident(
+  def bsec_no_flags "asmir_consts.ml" 16 333 333 --
+)
+"asmir_consts.ml" 14 272 292 "asmir_consts.ml" 14 272 297
+type(
+  int
+)
+"asmir_consts.ml" 16 333 337 "asmir_consts.ml" 16 333 347
+type(
+  int
+)
+ident(
+  def bsec_alloc "asmir_consts.ml" 18 395 395 --
+)
+"asmir_consts.ml" 16 333 350 "asmir_consts.ml" 16 333 355
+type(
+  int
+)
+"asmir_consts.ml" 18 395 399 "asmir_consts.ml" 18 395 408
+type(
+  int
+)
+ident(
+  def bsec_load "asmir_consts.ml" 20 447 447 --
+)
+"asmir_consts.ml" 18 395 411 "asmir_consts.ml" 18 395 416
+type(
+  int
+)
+"asmir_consts.ml" 20 447 451 "asmir_consts.ml" 20 447 461
+type(
+  int
+)
+ident(
+  def bsec_reloc "asmir_consts.ml" 22 487 487 --
+)
+"asmir_consts.ml" 20 447 464 "asmir_consts.ml" 20 447 469
+type(
+  int
+)
+"asmir_consts.ml" 22 487 491 "asmir_consts.ml" 22 487 504
+type(
+  int
+)
+ident(
+  def bsec_readonly "asmir_consts.ml" 24 525 525 --
+)
+"asmir_consts.ml" 22 487 507 "asmir_consts.ml" 22 487 512
+type(
+  int
+)
+"asmir_consts.ml" 24 525 529 "asmir_consts.ml" 24 525 538
+type(
+  int
+)
+ident(
+  def bsec_code "asmir_consts.ml" 26 559 559 --
+)
+"asmir_consts.ml" 24 525 541 "asmir_consts.ml" 24 525 546
+type(
+  int
+)
+"asmir_consts.ml" 26 559 563 "asmir_consts.ml" 26 559 572
+type(
+  int
+)
+ident(
+  def bsec_data "asmir_consts.ml" 28 592 592 --
+)
+"asmir_consts.ml" 26 559 575 "asmir_consts.ml" 26 559 580
+type(
+  int
+)
+"asmir_consts.ml" 28 592 596 "asmir_consts.ml" 28 592 604
+type(
+  int
+)
+ident(
+  def bsec_rom "asmir_consts.ml" 28 592 612 --
+)
+"asmir_consts.ml" 28 592 607 "asmir_consts.ml" 28 592 612
+type(
+  int
+)

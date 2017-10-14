@@ -1,0 +1,288 @@
+   0  $accept : %entry% $end
+
+   1  main : goodresult MODEL assertions DASHES EOF
+   2       | badresult EOF
+
+   3  assertions :
+   4             | assertion assertions
+
+   5  assertion : LBRACKET EQUAL VAR VAL RBRACKET
+   6            | LBRACKET EQUAL VAR VAR RBRACKET
+   7            | SDASHES VAR SDASHES
+   8            | DEFAULT VAL
+   9            | LBRACKET EQUAL LBRACKET VAR val_opt RBRACKET val_opt RBRACKET
+
+  10  val_opt : VAL
+  11          | QUESTIONMARKS
+
+  12  goodresult : INVALID
+
+  13  badresult : VALID
+
+  14  %entry% : '\001' main
+
+state 0
+	$accept : . %entry% $end  (0)
+
+	'\001'  shift 1
+	.  error
+
+	%entry%  goto 2
+
+
+state 1
+	%entry% : '\001' . main  (14)
+
+	INVALID  shift 3
+	VALID  shift 4
+	.  error
+
+	main  goto 5
+	goodresult  goto 6
+	badresult  goto 7
+
+
+state 2
+	$accept : %entry% . $end  (0)
+
+	$end  accept
+
+
+state 3
+	goodresult : INVALID .  (12)
+
+	.  reduce 12
+
+
+state 4
+	badresult : VALID .  (13)
+
+	.  reduce 13
+
+
+state 5
+	%entry% : '\001' main .  (14)
+
+	.  reduce 14
+
+
+state 6
+	main : goodresult . MODEL assertions DASHES EOF  (1)
+
+	MODEL  shift 8
+	.  error
+
+
+state 7
+	main : badresult . EOF  (2)
+
+	EOF  shift 9
+	.  error
+
+
+state 8
+	main : goodresult MODEL . assertions DASHES EOF  (1)
+	assertions : .  (3)
+
+	LBRACKET  shift 10
+	SDASHES  shift 11
+	DEFAULT  shift 12
+	DASHES  reduce 3
+
+	assertions  goto 13
+	assertion  goto 14
+
+
+state 9
+	main : badresult EOF .  (2)
+
+	.  reduce 2
+
+
+state 10
+	assertion : LBRACKET . EQUAL VAR VAL RBRACKET  (5)
+	assertion : LBRACKET . EQUAL VAR VAR RBRACKET  (6)
+	assertion : LBRACKET . EQUAL LBRACKET VAR val_opt RBRACKET val_opt RBRACKET  (9)
+
+	EQUAL  shift 15
+	.  error
+
+
+state 11
+	assertion : SDASHES . VAR SDASHES  (7)
+
+	VAR  shift 16
+	.  error
+
+
+state 12
+	assertion : DEFAULT . VAL  (8)
+
+	VAL  shift 17
+	.  error
+
+
+state 13
+	main : goodresult MODEL assertions . DASHES EOF  (1)
+
+	DASHES  shift 18
+	.  error
+
+
+state 14
+	assertions : assertion . assertions  (4)
+	assertions : .  (3)
+
+	LBRACKET  shift 10
+	SDASHES  shift 11
+	DEFAULT  shift 12
+	DASHES  reduce 3
+
+	assertions  goto 19
+	assertion  goto 14
+
+
+state 15
+	assertion : LBRACKET EQUAL . VAR VAL RBRACKET  (5)
+	assertion : LBRACKET EQUAL . VAR VAR RBRACKET  (6)
+	assertion : LBRACKET EQUAL . LBRACKET VAR val_opt RBRACKET val_opt RBRACKET  (9)
+
+	VAR  shift 20
+	LBRACKET  shift 21
+	.  error
+
+
+state 16
+	assertion : SDASHES VAR . SDASHES  (7)
+
+	SDASHES  shift 22
+	.  error
+
+
+state 17
+	assertion : DEFAULT VAL .  (8)
+
+	.  reduce 8
+
+
+state 18
+	main : goodresult MODEL assertions DASHES . EOF  (1)
+
+	EOF  shift 23
+	.  error
+
+
+state 19
+	assertions : assertion assertions .  (4)
+
+	.  reduce 4
+
+
+state 20
+	assertion : LBRACKET EQUAL VAR . VAL RBRACKET  (5)
+	assertion : LBRACKET EQUAL VAR . VAR RBRACKET  (6)
+
+	VAR  shift 24
+	VAL  shift 25
+	.  error
+
+
+state 21
+	assertion : LBRACKET EQUAL LBRACKET . VAR val_opt RBRACKET val_opt RBRACKET  (9)
+
+	VAR  shift 26
+	.  error
+
+
+state 22
+	assertion : SDASHES VAR SDASHES .  (7)
+
+	.  reduce 7
+
+
+state 23
+	main : goodresult MODEL assertions DASHES EOF .  (1)
+
+	.  reduce 1
+
+
+state 24
+	assertion : LBRACKET EQUAL VAR VAR . RBRACKET  (6)
+
+	RBRACKET  shift 27
+	.  error
+
+
+state 25
+	assertion : LBRACKET EQUAL VAR VAL . RBRACKET  (5)
+
+	RBRACKET  shift 28
+	.  error
+
+
+state 26
+	assertion : LBRACKET EQUAL LBRACKET VAR . val_opt RBRACKET val_opt RBRACKET  (9)
+
+	VAL  shift 29
+	QUESTIONMARKS  shift 30
+	.  error
+
+	val_opt  goto 31
+
+
+state 27
+	assertion : LBRACKET EQUAL VAR VAR RBRACKET .  (6)
+
+	.  reduce 6
+
+
+state 28
+	assertion : LBRACKET EQUAL VAR VAL RBRACKET .  (5)
+
+	.  reduce 5
+
+
+state 29
+	val_opt : VAL .  (10)
+
+	.  reduce 10
+
+
+state 30
+	val_opt : QUESTIONMARKS .  (11)
+
+	.  reduce 11
+
+
+state 31
+	assertion : LBRACKET EQUAL LBRACKET VAR val_opt . RBRACKET val_opt RBRACKET  (9)
+
+	RBRACKET  shift 32
+	.  error
+
+
+state 32
+	assertion : LBRACKET EQUAL LBRACKET VAR val_opt RBRACKET . val_opt RBRACKET  (9)
+
+	VAL  shift 29
+	QUESTIONMARKS  shift 30
+	.  error
+
+	val_opt  goto 33
+
+
+state 33
+	assertion : LBRACKET EQUAL LBRACKET VAR val_opt RBRACKET val_opt . RBRACKET  (9)
+
+	RBRACKET  shift 34
+	.  error
+
+
+state 34
+	assertion : LBRACKET EQUAL LBRACKET VAR val_opt RBRACKET val_opt RBRACKET .  (9)
+
+	.  reduce 9
+
+
+20 terminals, 8 nonterminals
+15 grammar rules, 35 states

@@ -1,0 +1,4320 @@
+"arithmetic.ml" 10 167 200 "arithmetic.ml" 10 167 204
+type(
+  string
+)
+ident(
+  def name "arithmetic.ml" 10 167 242 "arithmetic.ml" 10 167 246
+)
+"arithmetic.ml" 10 167 207 "arithmetic.ml" 10 167 219
+type(
+  string
+)
+"arithmetic.ml" 10 167 224 "arithmetic.ml" 10 167 231
+type(
+  [> `NoDebug ]
+)
+ident(
+  def default "arithmetic.ml" 10 167 242 "arithmetic.ml" 10 167 246
+)
+"arithmetic.ml" 10 167 234 "arithmetic.ml" 10 167 242
+type(
+  [> `NoDebug ] as 'a
+)
+"arithmetic.ml" 10 167 178 "arithmetic.ml" 10 167 247
+call(
+  stack
+)
+"arithmetic.ml" 18 340 344 "arithmetic.ml" 18 340 356
+type(
+  int -> Z.t
+)
+ident(
+  def power_of_two "arithmetic.ml" 19 397 397 --
+)
+"arithmetic.ml" 18 340 359 "arithmetic.ml" 18 340 371
+type(
+  ?size:int -> (int -> Z.t) -> int -> Z.t
+)
+ident(
+  ext_ref Util.memoize
+)
+"arithmetic.ml" 18 340 373 "arithmetic.ml" 18 340 391
+type(
+  Z.t -> int -> Z.t
+)
+ident(
+  ext_ref Big_int_Z.shift_left_big_int
+)
+"arithmetic.ml" 18 340 392 "arithmetic.ml" 18 340 395
+type(
+  Z.t
+)
+ident(
+  ext_ref Big_int_convenience.bi1
+)
+"arithmetic.ml" 18 340 372 "arithmetic.ml" 18 340 396
+call(
+  stack
+)
+type(
+  int -> Z.t
+)
+"arithmetic.ml" 18 340 359 "arithmetic.ml" 18 340 396
+call(
+  stack
+)
+type(
+  int -> Z.t
+)
+"arithmetic.ml" 19 397 401 "arithmetic.ml" 19 397 408
+type(
+  int -> Z.t
+)
+ident(
+  def bitmask "arithmetic.ml" 21 458 458 --
+)
+"arithmetic.ml" 19 397 411 "arithmetic.ml" 19 397 423
+type(
+  ?size:int -> (int -> Z.t) -> int -> Z.t
+)
+ident(
+  ext_ref Util.memoize
+)
+"arithmetic.ml" 19 397 429 "arithmetic.ml" 19 397 430
+type(
+  int
+)
+ident(
+  def i "arithmetic.ml" 19 397 434 "arithmetic.ml" 19 397 455
+)
+"arithmetic.ml" 19 397 434 "arithmetic.ml" 19 397 446
+type(
+  int -> Z.t
+)
+ident(
+  int_ref power_of_two "arithmetic.ml" 18 340 344 "arithmetic.ml" 18 340 356
+)
+"arithmetic.ml" 19 397 447 "arithmetic.ml" 19 397 448
+type(
+  int
+)
+ident(
+  int_ref i "arithmetic.ml" 19 397 429 "arithmetic.ml" 19 397 430
+)
+"arithmetic.ml" 19 397 434 "arithmetic.ml" 19 397 448
+call(
+  stack
+)
+type(
+  Z.t
+)
+"arithmetic.ml" 19 397 449 "arithmetic.ml" 19 397 451
+type(
+  Z.t -> Z.t -> Z.t
+)
+ident(
+  ext_ref Big_int_convenience.( -% )
+)
+"arithmetic.ml" 19 397 452 "arithmetic.ml" 19 397 455
+type(
+  Z.t
+)
+ident(
+  ext_ref Big_int_convenience.bi1
+)
+"arithmetic.ml" 19 397 434 "arithmetic.ml" 19 397 455
+call(
+  tail
+)
+type(
+  Z.t
+)
+"arithmetic.ml" 19 397 424 "arithmetic.ml" 19 397 456
+type(
+  int -> Z.t
+)
+"arithmetic.ml" 19 397 411 "arithmetic.ml" 19 397 456
+call(
+  stack
+)
+type(
+  int -> Z.t
+)
+"arithmetic.ml" 21 458 462 "arithmetic.ml" 21 458 475
+type(
+  Type.typ -> int
+)
+ident(
+  def bits_of_width "arithmetic.ml" 26 577 577 --
+)
+"arithmetic.ml" 22 487 495 "arithmetic.ml" 22 487 496
+type(
+  int
+)
+ident(
+  def n "arithmetic.ml" 22 487 500 "arithmetic.ml" 22 487 501
+)
+"arithmetic.ml" 22 487 491 "arithmetic.ml" 22 487 496
+type(
+  Type.typ
+)
+"arithmetic.ml" 22 487 500 "arithmetic.ml" 22 487 501
+type(
+  int
+)
+ident(
+  int_ref n "arithmetic.ml" 22 487 495 "arithmetic.ml" 22 487 496
+)
+"arithmetic.ml" 23 502 506 "arithmetic.ml" 23 502 507
+type(
+  Type.typ
+)
+"arithmetic.ml" 23 502 511 "arithmetic.ml" 23 502 519
+type(
+  string -> int
+)
+ident(
+  ext_ref Pervasives.failwith
+)
+"arithmetic.ml" 23 502 520 "arithmetic.ml" 23 502 544
+type(
+  string
+)
+"arithmetic.ml" 23 502 511 "arithmetic.ml" 23 502 544
+type(
+  int
+)
+"arithmetic.ml" 21 458 478 "arithmetic.ml" 23 502 544
+type(
+  Type.typ -> int
+)
+"arithmetic.ml" 26 577 581 "arithmetic.ml" 26 577 591
+type(
+  Z.t * Type.typ -> Z.t
+)
+ident(
+  def to_big_int "arithmetic.ml" 31 692 692 --
+)
+"arithmetic.ml" 26 577 593 "arithmetic.ml" 26 577 594
+type(
+  Z.t
+)
+ident(
+  def i "arithmetic.ml" 27 600 602 "arithmetic.ml" 28 632 662
+)
+"arithmetic.ml" 26 577 595 "arithmetic.ml" 26 577 596
+type(
+  Type.typ
+)
+ident(
+  def t "arithmetic.ml" 27 600 602 "arithmetic.ml" 28 632 662
+)
+"arithmetic.ml" 26 577 592 "arithmetic.ml" 26 577 597
+type(
+  Z.t * Type.typ
+)
+"arithmetic.ml" 27 600 606 "arithmetic.ml" 27 600 610
+type(
+  int
+)
+"arithmetic.ml" 27 600 613 "arithmetic.ml" 27 600 626
+type(
+  Type.typ -> int
+)
+ident(
+  int_ref bits_of_width "arithmetic.ml" 21 458 462 "arithmetic.ml" 21 458 475
+)
+"arithmetic.ml" 27 600 627 "arithmetic.ml" 27 600 628
+type(
+  Type.typ
+)
+ident(
+  int_ref t "arithmetic.ml" 26 577 595 "arithmetic.ml" 26 577 596
+)
+"arithmetic.ml" 27 600 613 "arithmetic.ml" 27 600 628
+call(
+  stack
+)
+type(
+  int
+)
+"arithmetic.ml" 28 632 634 "arithmetic.ml" 28 632 645
+type(
+  Z.t -> Z.t -> Z.t
+)
+ident(
+  ext_ref Big_int_Z.and_big_int
+)
+"arithmetic.ml" 28 632 646 "arithmetic.ml" 28 632 647
+type(
+  Z.t
+)
+ident(
+  int_ref i "arithmetic.ml" 26 577 593 "arithmetic.ml" 26 577 594
+)
+"arithmetic.ml" 28 632 649 "arithmetic.ml" 28 632 656
+type(
+  int -> Z.t
+)
+ident(
+  int_ref bitmask "arithmetic.ml" 19 397 401 "arithmetic.ml" 19 397 408
+)
+"arithmetic.ml" 28 632 657 "arithmetic.ml" 28 632 661
+type(
+  int
+)
+ident(
+  int_ref bits "arithmetic.ml" 27 600 606 "arithmetic.ml" 27 600 610
+)
+"arithmetic.ml" 28 632 648 "arithmetic.ml" 28 632 662
+call(
+  stack
+)
+type(
+  Z.t
+)
+"arithmetic.ml" 28 632 634 "arithmetic.ml" 28 632 662
+call(
+  tail
+)
+type(
+  Z.t
+)
+"arithmetic.ml" 27 600 602 "arithmetic.ml" 28 632 662
+type(
+  Z.t
+)
+"arithmetic.ml" 31 692 696 "arithmetic.ml" 31 692 707
+type(
+  Z.t * Type.typ -> Z.t
+)
+ident(
+  def to_sbig_int "arithmetic.ml" 43 1214 1214 --
+)
+"arithmetic.ml" 31 692 709 "arithmetic.ml" 31 692 710
+type(
+  Z.t
+)
+ident(
+  def i "arithmetic.ml" 32 716 718 "arithmetic.ml" 36 869 984
+)
+"arithmetic.ml" 31 692 711 "arithmetic.ml" 31 692 712
+type(
+  Type.typ
+)
+ident(
+  def t "arithmetic.ml" 32 716 718 "arithmetic.ml" 36 869 984
+)
+"arithmetic.ml" 31 692 708 "arithmetic.ml" 31 692 713
+type(
+  Z.t * Type.typ
+)
+"arithmetic.ml" 32 716 722 "arithmetic.ml" 32 716 726
+type(
+  int
+)
+"arithmetic.ml" 32 716 729 "arithmetic.ml" 32 716 742
+type(
+  Type.typ -> int
+)
+ident(
+  int_ref bits_of_width "arithmetic.ml" 21 458 462 "arithmetic.ml" 21 458 475
+)
+"arithmetic.ml" 32 716 743 "arithmetic.ml" 32 716 744
+type(
+  Type.typ
+)
+ident(
+  int_ref t "arithmetic.ml" 31 692 711 "arithmetic.ml" 31 692 712
+)
+"arithmetic.ml" 32 716 729 "arithmetic.ml" 32 716 744
+call(
+  stack
+)
+type(
+  int
+)
+"arithmetic.ml" 33 748 754 "arithmetic.ml" 33 748 759
+type(
+  Z.t
+)
+"arithmetic.ml" 33 748 762 "arithmetic.ml" 33 748 772
+type(
+  Z.t * Type.typ -> Z.t
+)
+ident(
+  int_ref to_big_int "arithmetic.ml" 26 577 581 "arithmetic.ml" 26 577 591
+)
+"arithmetic.ml" 33 748 774 "arithmetic.ml" 33 748 775
+type(
+  Z.t
+)
+ident(
+  int_ref i "arithmetic.ml" 31 692 709 "arithmetic.ml" 31 692 710
+)
+"arithmetic.ml" 33 748 781 "arithmetic.ml" 33 748 785
+type(
+  int
+)
+ident(
+  int_ref bits "arithmetic.ml" 32 716 722 "arithmetic.ml" 32 716 726
+)
+"arithmetic.ml" 33 748 785 "arithmetic.ml" 33 748 786
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( - )
+)
+"arithmetic.ml" 33 748 786 "arithmetic.ml" 33 748 787
+type(
+  int
+)
+"arithmetic.ml" 33 748 780 "arithmetic.ml" 33 748 788
+type(
+  int
+)
+"arithmetic.ml" 33 748 777 "arithmetic.ml" 33 748 788
+type(
+  Type.typ
+)
+"arithmetic.ml" 33 748 773 "arithmetic.ml" 33 748 789
+type(
+  Z.t * Type.typ
+)
+"arithmetic.ml" 33 748 762 "arithmetic.ml" 33 748 789
+call(
+  stack
+)
+type(
+  Z.t
+)
+"arithmetic.ml" 35 838 844 "arithmetic.ml" 35 838 848
+type(
+  Z.t
+)
+"arithmetic.ml" 35 838 851 "arithmetic.ml" 35 838 852
+type(
+  Z.t
+)
+ident(
+  int_ref i "arithmetic.ml" 31 692 709 "arithmetic.ml" 31 692 710
+)
+"arithmetic.ml" 35 838 853 "arithmetic.ml" 35 838 856
+type(
+  Z.t -> int -> Z.t
+)
+ident(
+  ext_ref Big_int_convenience.( >>% )
+)
+"arithmetic.ml" 35 838 858 "arithmetic.ml" 35 838 862
+type(
+  int
+)
+ident(
+  int_ref bits "arithmetic.ml" 32 716 722 "arithmetic.ml" 32 716 726
+)
+"arithmetic.ml" 35 838 862 "arithmetic.ml" 35 838 863
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( - )
+)
+"arithmetic.ml" 35 838 863 "arithmetic.ml" 35 838 864
+type(
+  int
+)
+"arithmetic.ml" 35 838 857 "arithmetic.ml" 35 838 865
+type(
+  int
+)
+"arithmetic.ml" 35 838 851 "arithmetic.ml" 35 838 865
+call(
+  stack
+)
+type(
+  Z.t
+)
+"arithmetic.ml" 36 869 874 "arithmetic.ml" 36 869 884
+type(
+  Z.t -> bool
+)
+ident(
+  ext_ref Big_int_convenience.bi_is_zero
+)
+"arithmetic.ml" 36 869 885 "arithmetic.ml" 36 869 889
+type(
+  Z.t
+)
+ident(
+  int_ref sign "arithmetic.ml" 35 838 844 "arithmetic.ml" 35 838 848
+)
+"arithmetic.ml" 36 869 874 "arithmetic.ml" 36 869 889
+call(
+  stack
+)
+type(
+  bool
+)
+"arithmetic.ml" 36 869 910 "arithmetic.ml" 36 869 915
+type(
+  Z.t
+)
+ident(
+  int_ref final "arithmetic.ml" 33 748 754 "arithmetic.ml" 33 748 759
+)
+"arithmetic.ml" 36 869 936 "arithmetic.ml" 36 869 949
+type(
+  Z.t -> Z.t
+)
+ident(
+  ext_ref Big_int_Z.minus_big_int
+)
+"arithmetic.ml" 36 869 952 "arithmetic.ml" 36 869 964
+type(
+  int -> Z.t
+)
+ident(
+  int_ref power_of_two "arithmetic.ml" 18 340 344 "arithmetic.ml" 18 340 356
+)
+"arithmetic.ml" 36 869 966 "arithmetic.ml" 36 869 970
+type(
+  int
+)
+ident(
+  int_ref bits "arithmetic.ml" 32 716 722 "arithmetic.ml" 32 716 726
+)
+"arithmetic.ml" 36 869 970 "arithmetic.ml" 36 869 971
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( - )
+)
+"arithmetic.ml" 36 869 971 "arithmetic.ml" 36 869 972
+type(
+  int
+)
+"arithmetic.ml" 36 869 965 "arithmetic.ml" 36 869 973
+type(
+  int
+)
+"arithmetic.ml" 36 869 952 "arithmetic.ml" 36 869 973
+call(
+  stack
+)
+type(
+  Z.t
+)
+"arithmetic.ml" 36 869 974 "arithmetic.ml" 36 869 976
+type(
+  Z.t -> Z.t -> Z.t
+)
+ident(
+  ext_ref Big_int_convenience.( -% )
+)
+"arithmetic.ml" 36 869 977 "arithmetic.ml" 36 869 982
+type(
+  Z.t
+)
+ident(
+  int_ref final "arithmetic.ml" 33 748 754 "arithmetic.ml" 33 748 759
+)
+"arithmetic.ml" 36 869 950 "arithmetic.ml" 36 869 984
+call(
+  stack
+)
+type(
+  Z.t
+)
+"arithmetic.ml" 36 869 936 "arithmetic.ml" 36 869 984
+call(
+  tail
+)
+type(
+  Z.t
+)
+"arithmetic.ml" 36 869 871 "arithmetic.ml" 36 869 984
+type(
+  Z.t
+)
+"arithmetic.ml" 35 838 840 "arithmetic.ml" 36 869 984
+type(
+  Z.t
+)
+"arithmetic.ml" 33 748 750 "arithmetic.ml" 36 869 984
+type(
+  Z.t
+)
+"arithmetic.ml" 32 716 718 "arithmetic.ml" 36 869 984
+type(
+  Z.t
+)
+"arithmetic.ml" 43 1214 1218 "arithmetic.ml" 43 1214 1223
+type(
+  Z.t -> Z.t -> Z.t
+)
+ident(
+  def t_div "arithmetic.ml" 63 2041 2041 --
+)
+"arithmetic.ml" 43 1214 1224 "arithmetic.ml" 43 1214 1232
+type(
+  Z.t
+)
+ident(
+  def dividend "arithmetic.ml" 43 1214 1233 "arithmetic.ml" 56 1726 1812
+)
+"arithmetic.ml" 43 1214 1233 "arithmetic.ml" 43 1214 1240
+type(
+  Z.t
+)
+ident(
+  def divisor "arithmetic.ml" 44 1243 1245 "arithmetic.ml" 56 1726 1812
+)
+"arithmetic.ml" 44 1243 1248 "arithmetic.ml" 44 1243 1256
+type(
+  Z.t
+)
+ident(
+  int_ref dividend "arithmetic.ml" 43 1214 1224 "arithmetic.ml" 43 1214 1232
+)
+"arithmetic.ml" 44 1243 1257 "arithmetic.ml" 44 1243 1260
+type(
+  Z.t -> Z.t -> bool
+)
+ident(
+  ext_ref Big_int_convenience.( >=% )
+)
+"arithmetic.ml" 44 1243 1261 "arithmetic.ml" 44 1243 1264
+type(
+  Z.t
+)
+ident(
+  ext_ref Big_int_convenience.bi0
+)
+"arithmetic.ml" 44 1243 1248 "arithmetic.ml" 44 1243 1264
+call(
+  stack
+)
+type(
+  bool
+)
+"arithmetic.ml" 46 1321 1325 "arithmetic.ml" 46 1321 1333
+type(
+  Z.t
+)
+ident(
+  int_ref dividend "arithmetic.ml" 43 1214 1224 "arithmetic.ml" 43 1214 1232
+)
+"arithmetic.ml" 46 1321 1334 "arithmetic.ml" 46 1321 1336
+type(
+  Z.t -> Z.t -> Z.t
+)
+ident(
+  ext_ref Big_int_convenience.( /% )
+)
+"arithmetic.ml" 46 1321 1337 "arithmetic.ml" 46 1321 1344
+type(
+  Z.t
+)
+ident(
+  int_ref divisor "arithmetic.ml" 43 1214 1233 "arithmetic.ml" 43 1214 1240
+)
+"arithmetic.ml" 46 1321 1325 "arithmetic.ml" 46 1321 1344
+call(
+  tail
+)
+type(
+  Z.t
+)
+"arithmetic.ml" 49 1438 1447 "arithmetic.ml" 49 1438 1448
+type(
+  Z.t
+)
+"arithmetic.ml" 49 1438 1449 "arithmetic.ml" 49 1438 1450
+type(
+  Z.t
+)
+"arithmetic.ml" 49 1438 1446 "arithmetic.ml" 49 1438 1451
+type(
+  Z.t * Z.t
+)
+"arithmetic.ml" 49 1438 1454 "arithmetic.ml" 49 1438 1468
+type(
+  Z.t -> Z.t -> Z.t * Z.t
+)
+ident(
+  ext_ref Big_int_Z.quomod_big_int
+)
+"arithmetic.ml" 49 1438 1469 "arithmetic.ml" 49 1438 1477
+type(
+  Z.t
+)
+ident(
+  int_ref dividend "arithmetic.ml" 43 1214 1224 "arithmetic.ml" 43 1214 1232
+)
+"arithmetic.ml" 49 1438 1478 "arithmetic.ml" 49 1438 1485
+type(
+  Z.t
+)
+ident(
+  int_ref divisor "arithmetic.ml" 43 1214 1233 "arithmetic.ml" 43 1214 1240
+)
+"arithmetic.ml" 49 1438 1454 "arithmetic.ml" 49 1438 1485
+call(
+  stack
+)
+type(
+  Z.t * Z.t
+)
+"arithmetic.ml" 50 1489 1496 "arithmetic.ml" 50 1489 1497
+type(
+  Z.t
+)
+ident(
+  int_ref r "arithmetic.ml" 49 1438 1449 "arithmetic.ml" 49 1438 1450
+)
+"arithmetic.ml" 50 1489 1498 "arithmetic.ml" 50 1489 1501
+type(
+  Z.t -> Z.t -> bool
+)
+ident(
+  ext_ref Big_int_convenience.( ==% )
+)
+"arithmetic.ml" 50 1489 1502 "arithmetic.ml" 50 1489 1505
+type(
+  Z.t
+)
+ident(
+  ext_ref Big_int_convenience.bi0
+)
+"arithmetic.ml" 50 1489 1496 "arithmetic.ml" 50 1489 1505
+call(
+  stack
+)
+type(
+  bool
+)
+"arithmetic.ml" 52 1576 1582 "arithmetic.ml" 52 1576 1583
+type(
+  Z.t
+)
+ident(
+  int_ref q "arithmetic.ml" 49 1438 1447 "arithmetic.ml" 49 1438 1448
+)
+"arithmetic.ml" 53 1584 1596 "arithmetic.ml" 53 1584 1597
+type(
+  Z.t
+)
+ident(
+  int_ref r "arithmetic.ml" 49 1438 1449 "arithmetic.ml" 49 1438 1450
+)
+"arithmetic.ml" 53 1584 1598 "arithmetic.ml" 53 1584 1601
+type(
+  Z.t -> Z.t -> bool
+)
+ident(
+  ext_ref Big_int_convenience.( >=% )
+)
+"arithmetic.ml" 53 1584 1602 "arithmetic.ml" 53 1584 1605
+type(
+  Z.t
+)
+ident(
+  ext_ref Big_int_convenience.bi0
+)
+"arithmetic.ml" 53 1584 1596 "arithmetic.ml" 53 1584 1605
+call(
+  stack
+)
+type(
+  bool
+)
+"arithmetic.ml" 55 1683 1689 "arithmetic.ml" 55 1683 1690
+type(
+  Z.t
+)
+ident(
+  int_ref q "arithmetic.ml" 49 1438 1447 "arithmetic.ml" 49 1438 1448
+)
+"arithmetic.ml" 55 1683 1691 "arithmetic.ml" 55 1683 1693
+type(
+  Z.t -> Z.t -> Z.t
+)
+ident(
+  ext_ref Big_int_convenience.( -% )
+)
+"arithmetic.ml" 55 1683 1694 "arithmetic.ml" 55 1683 1708
+type(
+  int -> Z.t
+)
+ident(
+  ext_ref Big_int_Z.big_int_of_int
+)
+"arithmetic.ml" 55 1683 1710 "arithmetic.ml" 55 1683 1722
+type(
+  Z.t -> int
+)
+ident(
+  ext_ref Big_int_Z.sign_big_int
+)
+"arithmetic.ml" 55 1683 1723 "arithmetic.ml" 55 1683 1724
+type(
+  Z.t
+)
+ident(
+  int_ref q "arithmetic.ml" 49 1438 1447 "arithmetic.ml" 49 1438 1448
+)
+"arithmetic.ml" 55 1683 1709 "arithmetic.ml" 55 1683 1725
+call(
+  stack
+)
+type(
+  int
+)
+"arithmetic.ml" 55 1683 1694 "arithmetic.ml" 55 1683 1725
+call(
+  stack
+)
+type(
+  Z.t
+)
+"arithmetic.ml" 55 1683 1689 "arithmetic.ml" 55 1683 1725
+call(
+  tail
+)
+type(
+  Z.t
+)
+"arithmetic.ml" 56 1726 1735 "arithmetic.ml" 56 1726 1740
+type(
+  exn -> Z.t
+)
+ident(
+  ext_ref Pervasives.raise
+)
+"arithmetic.ml" 56 1726 1755 "arithmetic.ml" 56 1726 1811
+type(
+  string
+)
+"arithmetic.ml" 56 1726 1741 "arithmetic.ml" 56 1726 1812
+type(
+  exn
+)
+"arithmetic.ml" 56 1726 1735 "arithmetic.ml" 56 1726 1812
+type(
+  Z.t
+)
+"arithmetic.ml" 53 1584 1593 "arithmetic.ml" 56 1726 1812
+type(
+  Z.t
+)
+"arithmetic.ml" 50 1489 1493 "arithmetic.ml" 56 1726 1812
+type(
+  Z.t
+)
+"arithmetic.ml" 49 1438 1442 "arithmetic.ml" 56 1726 1812
+type(
+  Z.t
+)
+"arithmetic.ml" 44 1243 1245 "arithmetic.ml" 56 1726 1812
+type(
+  Z.t
+)
+"arithmetic.ml" 63 2041 2045 "arithmetic.ml" 63 2041 2050
+type(
+  Z.t -> Z.t -> Z.t
+)
+ident(
+  def t_mod "arithmetic.ml" 78 2592 2592 --
+)
+"arithmetic.ml" 63 2041 2051 "arithmetic.ml" 63 2041 2059
+type(
+  Z.t
+)
+ident(
+  def dividend "arithmetic.ml" 63 2041 2060 "arithmetic.ml" 74 2376 2462
+)
+"arithmetic.ml" 63 2041 2060 "arithmetic.ml" 63 2041 2067
+type(
+  Z.t
+)
+ident(
+  def divisor "arithmetic.ml" 64 2070 2072 "arithmetic.ml" 74 2376 2462
+)
+"arithmetic.ml" 64 2070 2075 "arithmetic.ml" 64 2070 2083
+type(
+  Z.t
+)
+ident(
+  int_ref dividend "arithmetic.ml" 63 2041 2051 "arithmetic.ml" 63 2041 2059
+)
+"arithmetic.ml" 64 2070 2084 "arithmetic.ml" 64 2070 2087
+type(
+  Z.t -> Z.t -> bool
+)
+ident(
+  ext_ref Big_int_convenience.( >=% )
+)
+"arithmetic.ml" 64 2070 2088 "arithmetic.ml" 64 2070 2091
+type(
+  Z.t
+)
+ident(
+  ext_ref Big_int_convenience.bi0
+)
+"arithmetic.ml" 64 2070 2075 "arithmetic.ml" 64 2070 2091
+call(
+  stack
+)
+type(
+  bool
+)
+"arithmetic.ml" 66 2148 2153 "arithmetic.ml" 66 2148 2161
+type(
+  Z.t
+)
+ident(
+  int_ref dividend "arithmetic.ml" 63 2041 2051 "arithmetic.ml" 63 2041 2059
+)
+"arithmetic.ml" 66 2148 2162 "arithmetic.ml" 66 2148 2164
+type(
+  Z.t -> Z.t -> Z.t
+)
+ident(
+  ext_ref Big_int_convenience.( %% )
+)
+"arithmetic.ml" 66 2148 2165 "arithmetic.ml" 66 2148 2172
+type(
+  Z.t
+)
+ident(
+  int_ref divisor "arithmetic.ml" 63 2041 2060 "arithmetic.ml" 63 2041 2067
+)
+"arithmetic.ml" 66 2148 2153 "arithmetic.ml" 66 2148 2172
+call(
+  tail
+)
+type(
+  Z.t
+)
+"arithmetic.ml" 68 2181 2190 "arithmetic.ml" 68 2181 2191
+type(
+  Z.t
+)
+"arithmetic.ml" 68 2181 2194 "arithmetic.ml" 68 2181 2202
+type(
+  Z.t
+)
+ident(
+  int_ref dividend "arithmetic.ml" 63 2041 2051 "arithmetic.ml" 63 2041 2059
+)
+"arithmetic.ml" 68 2181 2203 "arithmetic.ml" 68 2181 2205
+type(
+  Z.t -> Z.t -> Z.t
+)
+ident(
+  ext_ref Big_int_convenience.( %% )
+)
+"arithmetic.ml" 68 2181 2206 "arithmetic.ml" 68 2181 2213
+type(
+  Z.t
+)
+ident(
+  int_ref divisor "arithmetic.ml" 63 2041 2060 "arithmetic.ml" 63 2041 2067
+)
+"arithmetic.ml" 68 2181 2194 "arithmetic.ml" 68 2181 2213
+call(
+  stack
+)
+type(
+  Z.t
+)
+"arithmetic.ml" 70 2252 2260 "arithmetic.ml" 70 2252 2261
+type(
+  Z.t
+)
+ident(
+  int_ref r "arithmetic.ml" 68 2181 2190 "arithmetic.ml" 68 2181 2191
+)
+"arithmetic.ml" 70 2252 2262 "arithmetic.ml" 70 2252 2265
+type(
+  Z.t -> Z.t -> bool
+)
+ident(
+  ext_ref Big_int_convenience.( ==% )
+)
+"arithmetic.ml" 70 2252 2266 "arithmetic.ml" 70 2252 2269
+type(
+  Z.t
+)
+ident(
+  ext_ref Big_int_convenience.bi0
+)
+"arithmetic.ml" 70 2252 2260 "arithmetic.ml" 70 2252 2269
+call(
+  stack
+)
+type(
+  bool
+)
+"arithmetic.ml" 70 2252 2275 "arithmetic.ml" 70 2252 2276
+type(
+  Z.t
+)
+ident(
+  int_ref r "arithmetic.ml" 68 2181 2190 "arithmetic.ml" 68 2181 2191
+)
+"arithmetic.ml" 71 2277 2290 "arithmetic.ml" 71 2277 2291
+type(
+  Z.t
+)
+ident(
+  int_ref r "arithmetic.ml" 68 2181 2190 "arithmetic.ml" 68 2181 2191
+)
+"arithmetic.ml" 71 2277 2292 "arithmetic.ml" 71 2277 2295
+type(
+  Z.t -> Z.t -> bool
+)
+ident(
+  ext_ref Big_int_convenience.( >=% )
+)
+"arithmetic.ml" 71 2277 2296 "arithmetic.ml" 71 2277 2299
+type(
+  Z.t
+)
+ident(
+  ext_ref Big_int_convenience.bi0
+)
+"arithmetic.ml" 71 2277 2290 "arithmetic.ml" 71 2277 2299
+call(
+  stack
+)
+type(
+  bool
+)
+"arithmetic.ml" 73 2342 2349 "arithmetic.ml" 73 2342 2350
+type(
+  Z.t
+)
+ident(
+  int_ref r "arithmetic.ml" 68 2181 2190 "arithmetic.ml" 68 2181 2191
+)
+"arithmetic.ml" 73 2342 2351 "arithmetic.ml" 73 2342 2353
+type(
+  Z.t -> Z.t -> Z.t
+)
+ident(
+  ext_ref Big_int_convenience.( -% )
+)
+"arithmetic.ml" 73 2342 2355 "arithmetic.ml" 73 2342 2366
+type(
+  Z.t -> Z.t
+)
+ident(
+  ext_ref Big_int_Z.abs_big_int
+)
+"arithmetic.ml" 73 2342 2367 "arithmetic.ml" 73 2342 2374
+type(
+  Z.t
+)
+ident(
+  int_ref divisor "arithmetic.ml" 63 2041 2060 "arithmetic.ml" 63 2041 2067
+)
+"arithmetic.ml" 73 2342 2354 "arithmetic.ml" 73 2342 2375
+call(
+  stack
+)
+type(
+  Z.t
+)
+"arithmetic.ml" 73 2342 2349 "arithmetic.ml" 73 2342 2375
+call(
+  tail
+)
+type(
+  Z.t
+)
+"arithmetic.ml" 74 2376 2385 "arithmetic.ml" 74 2376 2390
+type(
+  exn -> Z.t
+)
+ident(
+  ext_ref Pervasives.raise
+)
+"arithmetic.ml" 74 2376 2405 "arithmetic.ml" 74 2376 2461
+type(
+  string
+)
+"arithmetic.ml" 74 2376 2391 "arithmetic.ml" 74 2376 2462
+type(
+  exn
+)
+"arithmetic.ml" 74 2376 2385 "arithmetic.ml" 74 2376 2462
+type(
+  Z.t
+)
+"arithmetic.ml" 71 2277 2287 "arithmetic.ml" 74 2376 2462
+type(
+  Z.t
+)
+"arithmetic.ml" 70 2252 2257 "arithmetic.ml" 74 2376 2462
+type(
+  Z.t
+)
+"arithmetic.ml" 68 2181 2186 "arithmetic.ml" 74 2376 2462
+type(
+  Z.t
+)
+"arithmetic.ml" 64 2070 2072 "arithmetic.ml" 74 2376 2462
+type(
+  Z.t
+)
+"arithmetic.ml" 78 2592 2596 "arithmetic.ml" 78 2592 2603
+type(
+  Type.typ -> Z.t * Type.typ -> int
+)
+ident(
+  def toshift "arithmetic.ml" 90 2901 2901 --
+)
+"arithmetic.ml" 78 2592 2604 "arithmetic.ml" 78 2592 2612
+type(
+  Type.typ
+)
+ident(
+  def shiftedt "arithmetic.ml" 78 2592 2613 "arithmetic.ml" 87 2857 2866
+)
+"arithmetic.ml" 78 2592 2613 "arithmetic.ml" 78 2592 2614
+type(
+  Z.t * Type.typ
+)
+ident(
+  def v "arithmetic.ml" 79 2617 2619 "arithmetic.ml" 87 2857 2866
+)
+"arithmetic.ml" 79 2617 2623 "arithmetic.ml" 79 2617 2626
+type(
+  int
+)
+"arithmetic.ml" 79 2617 2629 "arithmetic.ml" 79 2617 2642
+type(
+  Type.typ -> int
+)
+ident(
+  int_ref bits_of_width "arithmetic.ml" 21 458 462 "arithmetic.ml" 21 458 475
+)
+"arithmetic.ml" 79 2617 2643 "arithmetic.ml" 79 2617 2651
+type(
+  Type.typ
+)
+ident(
+  int_ref shiftedt "arithmetic.ml" 78 2592 2604 "arithmetic.ml" 78 2592 2612
+)
+"arithmetic.ml" 79 2617 2629 "arithmetic.ml" 79 2617 2651
+call(
+  stack
+)
+type(
+  int
+)
+"arithmetic.ml" 80 2652 2658 "arithmetic.ml" 80 2652 2659
+type(
+  Z.t
+)
+"arithmetic.ml" 80 2652 2662 "arithmetic.ml" 80 2652 2672
+type(
+  Z.t * Type.typ -> Z.t
+)
+ident(
+  int_ref to_big_int "arithmetic.ml" 26 577 581 "arithmetic.ml" 26 577 591
+)
+"arithmetic.ml" 80 2652 2673 "arithmetic.ml" 80 2652 2674
+type(
+  Z.t * Type.typ
+)
+ident(
+  int_ref v "arithmetic.ml" 78 2592 2613 "arithmetic.ml" 78 2592 2614
+)
+"arithmetic.ml" 80 2652 2662 "arithmetic.ml" 80 2652 2674
+call(
+  stack
+)
+type(
+  Z.t
+)
+"arithmetic.ml" 81 2678 2688 "arithmetic.ml" 81 2678 2689
+type(
+  Z.t
+)
+ident(
+  int_ref i "arithmetic.ml" 80 2652 2658 "arithmetic.ml" 80 2652 2659
+)
+"arithmetic.ml" 81 2678 2690 "arithmetic.ml" 81 2678 2693
+type(
+  Z.t -> Z.t -> bool
+)
+ident(
+  ext_ref Big_int_convenience.( >=% )
+)
+"arithmetic.ml" 81 2678 2694 "arithmetic.ml" 81 2678 2697
+type(
+  Z.t
+)
+ident(
+  ext_ref Big_int_convenience.bi0
+)
+"arithmetic.ml" 81 2678 2687 "arithmetic.ml" 81 2678 2698
+call(
+  stack
+)
+type(
+  bool
+)
+"arithmetic.ml" 81 2678 2680 "arithmetic.ml" 81 2678 2698
+type(
+  unit
+)
+"arithmetic.ml" 82 2700 2705 "arithmetic.ml" 82 2700 2706
+type(
+  Z.t
+)
+ident(
+  int_ref i "arithmetic.ml" 80 2652 2658 "arithmetic.ml" 80 2652 2659
+)
+"arithmetic.ml" 82 2700 2707 "arithmetic.ml" 82 2700 2710
+type(
+  Z.t -> Z.t -> bool
+)
+ident(
+  ext_ref Big_int_convenience.( <=% )
+)
+"arithmetic.ml" 82 2700 2712 "arithmetic.ml" 82 2700 2726
+type(
+  int -> Z.t
+)
+ident(
+  ext_ref Big_int_Z.big_int_of_int
+)
+"arithmetic.ml" 82 2700 2727 "arithmetic.ml" 82 2700 2730
+type(
+  int
+)
+ident(
+  int_ref max "arithmetic.ml" 79 2617 2623 "arithmetic.ml" 79 2617 2626
+)
+"arithmetic.ml" 82 2700 2711 "arithmetic.ml" 82 2700 2731
+call(
+  stack
+)
+type(
+  Z.t
+)
+"arithmetic.ml" 82 2700 2705 "arithmetic.ml" 82 2700 2731
+call(
+  stack
+)
+type(
+  bool
+)
+"arithmetic.ml" 83 2732 2739 "arithmetic.ml" 83 2732 2753
+type(
+  Z.t -> int
+)
+ident(
+  ext_ref Big_int_Z.int_of_big_int
+)
+"arithmetic.ml" 83 2732 2754 "arithmetic.ml" 83 2732 2755
+type(
+  Z.t
+)
+ident(
+  int_ref i "arithmetic.ml" 80 2652 2658 "arithmetic.ml" 80 2652 2659
+)
+"arithmetic.ml" 83 2732 2739 "arithmetic.ml" 83 2732 2755
+call(
+  tail
+)
+type(
+  int
+)
+"arithmetic.ml" 85 2763 2768 "arithmetic.ml" 85 2763 2774
+type(
+  string -> unit
+)
+ident(
+  ext_ref D.pdebug
+)
+"arithmetic.ml" 85 2763 2775 "arithmetic.ml" 85 2763 2786
+type(
+  string
+)
+"arithmetic.ml" 85 2763 2786 "arithmetic.ml" 85 2763 2787
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"arithmetic.ml" 85 2763 2787 "arithmetic.ml" 85 2763 2800
+type(
+  int -> string
+)
+ident(
+  ext_ref Pervasives.string_of_int
+)
+"arithmetic.ml" 85 2763 2801 "arithmetic.ml" 85 2763 2804
+type(
+  int
+)
+ident(
+  int_ref max "arithmetic.ml" 79 2617 2623 "arithmetic.ml" 79 2617 2626
+)
+"arithmetic.ml" 85 2763 2787 "arithmetic.ml" 85 2763 2804
+call(
+  stack
+)
+type(
+  string
+)
+"arithmetic.ml" 85 2763 2804 "arithmetic.ml" 85 2763 2805
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"arithmetic.ml" 85 2763 2805 "arithmetic.ml" 85 2763 2821
+type(
+  string
+)
+"arithmetic.ml" 86 2822 2834 "arithmetic.ml" 86 2822 2835
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"arithmetic.ml" 86 2822 2835 "arithmetic.ml" 86 2822 2852
+type(
+  Z.t -> string
+)
+ident(
+  ext_ref Big_int_Z.string_of_big_int
+)
+"arithmetic.ml" 86 2822 2853 "arithmetic.ml" 86 2822 2854
+type(
+  Z.t
+)
+ident(
+  int_ref i "arithmetic.ml" 80 2652 2658 "arithmetic.ml" 80 2652 2659
+)
+"arithmetic.ml" 86 2822 2835 "arithmetic.ml" 86 2822 2854
+call(
+  stack
+)
+type(
+  string
+)
+"arithmetic.ml" 85 2763 2805 "arithmetic.ml" 86 2822 2854
+call(
+  stack
+)
+type(
+  string
+)
+"arithmetic.ml" 85 2763 2787 "arithmetic.ml" 86 2822 2854
+call(
+  stack
+)
+type(
+  string
+)
+"arithmetic.ml" 85 2763 2774 "arithmetic.ml" 86 2822 2855
+call(
+  stack
+)
+type(
+  string
+)
+"arithmetic.ml" 85 2763 2768 "arithmetic.ml" 86 2822 2855
+call(
+  stack
+)
+type(
+  unit
+)
+"arithmetic.ml" 87 2857 2862 "arithmetic.ml" 87 2857 2865
+type(
+  int
+)
+ident(
+  int_ref max "arithmetic.ml" 79 2617 2623 "arithmetic.ml" 79 2617 2626
+)
+"arithmetic.ml" 85 2763 2767 "arithmetic.ml" 87 2857 2866
+type(
+  int
+)
+"arithmetic.ml" 82 2700 2702 "arithmetic.ml" 87 2857 2866
+type(
+  int
+)
+"arithmetic.ml" 81 2678 2680 "arithmetic.ml" 87 2857 2866
+type(
+  int
+)
+"arithmetic.ml" 79 2617 2619 "arithmetic.ml" 87 2857 2866
+type(
+  int
+)
+"arithmetic.ml" 90 2901 2905 "arithmetic.ml" 90 2901 2911
+type(
+  Type.typ -> Z.t -> Z.t * Type.typ
+)
+ident(
+  def to_val "arithmetic.ml" 93 2943 2943 --
+)
+"arithmetic.ml" 90 2901 2912 "arithmetic.ml" 90 2901 2913
+type(
+  Type.typ
+)
+ident(
+  def t "arithmetic.ml" 90 2901 2914 "arithmetic.ml" 91 2918 2941
+)
+"arithmetic.ml" 90 2901 2914 "arithmetic.ml" 90 2901 2915
+type(
+  Z.t
+)
+ident(
+  def i "arithmetic.ml" 91 2918 2920 "arithmetic.ml" 91 2918 2941
+)
+"arithmetic.ml" 91 2918 2921 "arithmetic.ml" 91 2918 2931
+type(
+  Z.t * Type.typ -> Z.t
+)
+ident(
+  int_ref to_big_int "arithmetic.ml" 26 577 581 "arithmetic.ml" 26 577 591
+)
+"arithmetic.ml" 91 2918 2933 "arithmetic.ml" 91 2918 2934
+type(
+  Z.t
+)
+ident(
+  int_ref i "arithmetic.ml" 90 2901 2914 "arithmetic.ml" 90 2901 2915
+)
+"arithmetic.ml" 91 2918 2935 "arithmetic.ml" 91 2918 2936
+type(
+  Type.typ
+)
+ident(
+  int_ref t "arithmetic.ml" 90 2901 2912 "arithmetic.ml" 90 2901 2913
+)
+"arithmetic.ml" 91 2918 2932 "arithmetic.ml" 91 2918 2937
+type(
+  Z.t * Type.typ
+)
+"arithmetic.ml" 91 2918 2921 "arithmetic.ml" 91 2918 2937
+call(
+  stack
+)
+type(
+  Z.t
+)
+"arithmetic.ml" 91 2918 2939 "arithmetic.ml" 91 2918 2940
+type(
+  Type.typ
+)
+ident(
+  int_ref t "arithmetic.ml" 90 2901 2912 "arithmetic.ml" 90 2901 2913
+)
+"arithmetic.ml" 91 2918 2920 "arithmetic.ml" 91 2918 2941
+type(
+  Z.t * Type.typ
+)
+"arithmetic.ml" 93 2943 2947 "arithmetic.ml" 93 2943 2955
+type(
+  bool -> Z.t * Type.typ
+)
+ident(
+  def exp_bool "arithmetic.ml" 99 3101 3101 --
+)
+"arithmetic.ml" 94 2958 2964 "arithmetic.ml" 94 2958 2965
+type(
+  Z.t * Type.typ
+)
+"arithmetic.ml" 94 2958 2969 "arithmetic.ml" 94 2958 2981
+type(
+  Z.t
+)
+ident(
+  ext_ref Big_int_Z.unit_big_int
+)
+"arithmetic.ml" 94 2958 2986 "arithmetic.ml" 94 2958 2989
+type(
+  int
+)
+"arithmetic.ml" 94 2958 2983 "arithmetic.ml" 94 2958 2989
+type(
+  Type.typ
+)
+"arithmetic.ml" 94 2958 2968 "arithmetic.ml" 94 2958 2990
+type(
+  Z.t * Type.typ
+)
+"arithmetic.ml" 95 2991 2997 "arithmetic.ml" 95 2991 2998
+type(
+  Z.t * Type.typ
+)
+"arithmetic.ml" 95 2991 3002 "arithmetic.ml" 95 2991 3014
+type(
+  Z.t
+)
+ident(
+  ext_ref Big_int_Z.zero_big_int
+)
+"arithmetic.ml" 95 2991 3019 "arithmetic.ml" 95 2991 3022
+type(
+  int
+)
+"arithmetic.ml" 95 2991 3016 "arithmetic.ml" 95 2991 3022
+type(
+  Type.typ
+)
+"arithmetic.ml" 95 2991 3001 "arithmetic.ml" 95 2991 3023
+type(
+  Z.t * Type.typ
+)
+"arithmetic.ml" 96 3027 3034 "arithmetic.ml" 96 3027 3035
+type(
+  bool
+)
+ident(
+  def b "arithmetic.ml" 96 3027 3039 "arithmetic.ml" 96 3027 3057
+)
+"arithmetic.ml" 96 3027 3042 "arithmetic.ml" 96 3027 3043
+type(
+  bool
+)
+ident(
+  int_ref b "arithmetic.ml" 96 3027 3034 "arithmetic.ml" 96 3027 3035
+)
+"arithmetic.ml" 96 3027 3049 "arithmetic.ml" 96 3027 3050
+type(
+  Z.t * Type.typ
+)
+ident(
+  int_ref t "arithmetic.ml" 94 2958 2964 "arithmetic.ml" 94 2958 2965
+)
+"arithmetic.ml" 96 3027 3056 "arithmetic.ml" 96 3027 3057
+type(
+  Z.t * Type.typ
+)
+ident(
+  int_ref f "arithmetic.ml" 95 2991 2997 "arithmetic.ml" 95 2991 2998
+)
+"arithmetic.ml" 96 3027 3039 "arithmetic.ml" 96 3027 3057
+type(
+  Z.t * Type.typ
+)
+"arithmetic.ml" 96 3027 3029 "arithmetic.ml" 96 3027 3058
+type(
+  bool -> Z.t * Type.typ
+)
+"arithmetic.ml" 94 2958 2960 "arithmetic.ml" 96 3027 3058
+type(
+  bool -> Z.t * Type.typ
+)
+"arithmetic.ml" 99 3101 3105 "arithmetic.ml" 99 3101 3110
+type(
+  Type.binop_type -> Z.t * Type.typ -> Z.t * Type.typ -> Z.t * Type.typ
+)
+ident(
+  def binop "arithmetic.ml" 122 4435 4435 --
+)
+"arithmetic.ml" 99 3101 3111 "arithmetic.ml" 99 3101 3113
+type(
+  Type.binop_type
+)
+ident(
+  def op "arithmetic.ml" 99 3101 3114 "arithmetic.ml" 119 4370 4432
+)
+"arithmetic.ml" 99 3101 3116 "arithmetic.ml" 99 3101 3117
+type(
+  Z.t
+)
+"arithmetic.ml" 99 3101 3118 "arithmetic.ml" 99 3101 3119
+type(
+  Type.typ
+)
+ident(
+  def t "arithmetic.ml" 99 3101 3128 "arithmetic.ml" 119 4370 4432
+)
+"arithmetic.ml" 99 3101 3115 "arithmetic.ml" 99 3101 3120
+type(
+  Z.t * Type.typ
+)
+"arithmetic.ml" 99 3101 3114 "arithmetic.ml" 99 3101 3127
+type(
+  Z.t * Type.typ
+)
+ident(
+  def v1 "arithmetic.ml" 99 3101 3128 "arithmetic.ml" 119 4370 4432
+)
+"arithmetic.ml" 99 3101 3128 "arithmetic.ml" 99 3101 3130
+type(
+  Z.t * Type.typ
+)
+ident(
+  def v2 "arithmetic.ml" 100 3133 3135 "arithmetic.ml" 119 4370 4432
+)
+"arithmetic.ml" 100 3133 3141 "arithmetic.ml" 100 3133 3143
+type(
+  Type.binop_type
+)
+ident(
+  int_ref op "arithmetic.ml" 99 3101 3111 "arithmetic.ml" 99 3101 3113
+)
+"arithmetic.ml" 101 3149 3153 "arithmetic.ml" 101 3149 3157
+type(
+  Type.binop_type
+)
+"arithmetic.ml" 101 3149 3161 "arithmetic.ml" 101 3149 3167
+type(
+  Type.typ -> Z.t -> Z.t * Type.typ
+)
+ident(
+  int_ref to_val "arithmetic.ml" 90 2901 2905 "arithmetic.ml" 90 2901 2911
+)
+"arithmetic.ml" 101 3149 3168 "arithmetic.ml" 101 3149 3169
+type(
+  Type.typ
+)
+ident(
+  int_ref t "arithmetic.ml" 99 3101 3118 "arithmetic.ml" 99 3101 3119
+)
+"arithmetic.ml" 101 3149 3171 "arithmetic.ml" 101 3149 3182
+type(
+  Z.t -> Z.t -> Z.t
+)
+ident(
+  ext_ref Big_int_Z.add_big_int
+)
+"arithmetic.ml" 101 3149 3184 "arithmetic.ml" 101 3149 3194
+type(
+  Z.t * Type.typ -> Z.t
+)
+ident(
+  int_ref to_big_int "arithmetic.ml" 26 577 581 "arithmetic.ml" 26 577 591
+)
+"arithmetic.ml" 101 3149 3195 "arithmetic.ml" 101 3149 3197
+type(
+  Z.t * Type.typ
+)
+ident(
+  int_ref v1 "arithmetic.ml" 99 3101 3114 "arithmetic.ml" 99 3101 3127
+)
+"arithmetic.ml" 101 3149 3183 "arithmetic.ml" 101 3149 3198
+call(
+  stack
+)
+type(
+  Z.t
+)
+"arithmetic.ml" 101 3149 3200 "arithmetic.ml" 101 3149 3210
+type(
+  Z.t * Type.typ -> Z.t
+)
+ident(
+  int_ref to_big_int "arithmetic.ml" 26 577 581 "arithmetic.ml" 26 577 591
+)
+"arithmetic.ml" 101 3149 3211 "arithmetic.ml" 101 3149 3213
+type(
+  Z.t * Type.typ
+)
+ident(
+  int_ref v2 "arithmetic.ml" 99 3101 3128 "arithmetic.ml" 99 3101 3130
+)
+"arithmetic.ml" 101 3149 3199 "arithmetic.ml" 101 3149 3214
+call(
+  stack
+)
+type(
+  Z.t
+)
+"arithmetic.ml" 101 3149 3170 "arithmetic.ml" 101 3149 3215
+call(
+  stack
+)
+type(
+  Z.t
+)
+"arithmetic.ml" 101 3149 3161 "arithmetic.ml" 101 3149 3215
+call(
+  tail
+)
+type(
+  Z.t * Type.typ
+)
+"arithmetic.ml" 102 3216 3220 "arithmetic.ml" 102 3216 3225
+type(
+  Type.binop_type
+)
+"arithmetic.ml" 102 3216 3229 "arithmetic.ml" 102 3216 3235
+type(
+  Type.typ -> Z.t -> Z.t * Type.typ
+)
+ident(
+  int_ref to_val "arithmetic.ml" 90 2901 2905 "arithmetic.ml" 90 2901 2911
+)
+"arithmetic.ml" 102 3216 3236 "arithmetic.ml" 102 3216 3237
+type(
+  Type.typ
+)
+ident(
+  int_ref t "arithmetic.ml" 99 3101 3118 "arithmetic.ml" 99 3101 3119
+)
+"arithmetic.ml" 102 3216 3239 "arithmetic.ml" 102 3216 3250
+type(
+  Z.t -> Z.t -> Z.t
+)
+ident(
+  ext_ref Big_int_Z.sub_big_int
+)
+"arithmetic.ml" 102 3216 3252 "arithmetic.ml" 102 3216 3262
+type(
+  Z.t * Type.typ -> Z.t
+)
+ident(
+  int_ref to_big_int "arithmetic.ml" 26 577 581 "arithmetic.ml" 26 577 591
+)
+"arithmetic.ml" 102 3216 3263 "arithmetic.ml" 102 3216 3265
+type(
+  Z.t * Type.typ
+)
+ident(
+  int_ref v1 "arithmetic.ml" 99 3101 3114 "arithmetic.ml" 99 3101 3127
+)
+"arithmetic.ml" 102 3216 3251 "arithmetic.ml" 102 3216 3266
+call(
+  stack
+)
+type(
+  Z.t
+)
+"arithmetic.ml" 102 3216 3268 "arithmetic.ml" 102 3216 3278
+type(
+  Z.t * Type.typ -> Z.t
+)
+ident(
+  int_ref to_big_int "arithmetic.ml" 26 577 581 "arithmetic.ml" 26 577 591
+)
+"arithmetic.ml" 102 3216 3279 "arithmetic.ml" 102 3216 3281
+type(
+  Z.t * Type.typ
+)
+ident(
+  int_ref v2 "arithmetic.ml" 99 3101 3128 "arithmetic.ml" 99 3101 3130
+)
+"arithmetic.ml" 102 3216 3267 "arithmetic.ml" 102 3216 3282
+call(
+  stack
+)
+type(
+  Z.t
+)
+"arithmetic.ml" 102 3216 3238 "arithmetic.ml" 102 3216 3283
+call(
+  stack
+)
+type(
+  Z.t
+)
+"arithmetic.ml" 102 3216 3229 "arithmetic.ml" 102 3216 3283
+call(
+  tail
+)
+type(
+  Z.t * Type.typ
+)
+"arithmetic.ml" 103 3284 3288 "arithmetic.ml" 103 3284 3293
+type(
+  Type.binop_type
+)
+"arithmetic.ml" 103 3284 3297 "arithmetic.ml" 103 3284 3303
+type(
+  Type.typ -> Z.t -> Z.t * Type.typ
+)
+ident(
+  int_ref to_val "arithmetic.ml" 90 2901 2905 "arithmetic.ml" 90 2901 2911
+)
+"arithmetic.ml" 103 3284 3304 "arithmetic.ml" 103 3284 3305
+type(
+  Type.typ
+)
+ident(
+  int_ref t "arithmetic.ml" 99 3101 3118 "arithmetic.ml" 99 3101 3119
+)
+"arithmetic.ml" 103 3284 3307 "arithmetic.ml" 103 3284 3319
+type(
+  Z.t -> Z.t -> Z.t
+)
+ident(
+  ext_ref Big_int_Z.mult_big_int
+)
+"arithmetic.ml" 103 3284 3321 "arithmetic.ml" 103 3284 3331
+type(
+  Z.t * Type.typ -> Z.t
+)
+ident(
+  int_ref to_big_int "arithmetic.ml" 26 577 581 "arithmetic.ml" 26 577 591
+)
+"arithmetic.ml" 103 3284 3332 "arithmetic.ml" 103 3284 3334
+type(
+  Z.t * Type.typ
+)
+ident(
+  int_ref v1 "arithmetic.ml" 99 3101 3114 "arithmetic.ml" 99 3101 3127
+)
+"arithmetic.ml" 103 3284 3320 "arithmetic.ml" 103 3284 3335
+call(
+  stack
+)
+type(
+  Z.t
+)
+"arithmetic.ml" 103 3284 3337 "arithmetic.ml" 103 3284 3347
+type(
+  Z.t * Type.typ -> Z.t
+)
+ident(
+  int_ref to_big_int "arithmetic.ml" 26 577 581 "arithmetic.ml" 26 577 591
+)
+"arithmetic.ml" 103 3284 3348 "arithmetic.ml" 103 3284 3350
+type(
+  Z.t * Type.typ
+)
+ident(
+  int_ref v2 "arithmetic.ml" 99 3101 3128 "arithmetic.ml" 99 3101 3130
+)
+"arithmetic.ml" 103 3284 3336 "arithmetic.ml" 103 3284 3351
+call(
+  stack
+)
+type(
+  Z.t
+)
+"arithmetic.ml" 103 3284 3306 "arithmetic.ml" 103 3284 3352
+call(
+  stack
+)
+type(
+  Z.t
+)
+"arithmetic.ml" 103 3284 3297 "arithmetic.ml" 103 3284 3352
+call(
+  tail
+)
+type(
+  Z.t * Type.typ
+)
+"arithmetic.ml" 104 3353 3357 "arithmetic.ml" 104 3353 3360
+type(
+  Type.binop_type
+)
+"arithmetic.ml" 104 3353 3364 "arithmetic.ml" 104 3353 3370
+type(
+  Type.typ -> Z.t -> Z.t * Type.typ
+)
+ident(
+  int_ref to_val "arithmetic.ml" 90 2901 2905 "arithmetic.ml" 90 2901 2911
+)
+"arithmetic.ml" 104 3353 3371 "arithmetic.ml" 104 3353 3372
+type(
+  Type.typ
+)
+ident(
+  int_ref t "arithmetic.ml" 99 3101 3118 "arithmetic.ml" 99 3101 3119
+)
+"arithmetic.ml" 104 3353 3374 "arithmetic.ml" 104 3353 3385
+type(
+  Z.t -> Z.t -> Z.t
+)
+ident(
+  ext_ref Big_int_Z.and_big_int
+)
+"arithmetic.ml" 104 3353 3387 "arithmetic.ml" 104 3353 3397
+type(
+  Z.t * Type.typ -> Z.t
+)
+ident(
+  int_ref to_big_int "arithmetic.ml" 26 577 581 "arithmetic.ml" 26 577 591
+)
+"arithmetic.ml" 104 3353 3398 "arithmetic.ml" 104 3353 3400
+type(
+  Z.t * Type.typ
+)
+ident(
+  int_ref v1 "arithmetic.ml" 99 3101 3114 "arithmetic.ml" 99 3101 3127
+)
+"arithmetic.ml" 104 3353 3386 "arithmetic.ml" 104 3353 3401
+call(
+  stack
+)
+type(
+  Z.t
+)
+"arithmetic.ml" 104 3353 3403 "arithmetic.ml" 104 3353 3413
+type(
+  Z.t * Type.typ -> Z.t
+)
+ident(
+  int_ref to_big_int "arithmetic.ml" 26 577 581 "arithmetic.ml" 26 577 591
+)
+"arithmetic.ml" 104 3353 3414 "arithmetic.ml" 104 3353 3416
+type(
+  Z.t * Type.typ
+)
+ident(
+  int_ref v2 "arithmetic.ml" 99 3101 3128 "arithmetic.ml" 99 3101 3130
+)
+"arithmetic.ml" 104 3353 3402 "arithmetic.ml" 104 3353 3417
+call(
+  stack
+)
+type(
+  Z.t
+)
+"arithmetic.ml" 104 3353 3373 "arithmetic.ml" 104 3353 3418
+call(
+  stack
+)
+type(
+  Z.t
+)
+"arithmetic.ml" 104 3353 3364 "arithmetic.ml" 104 3353 3418
+call(
+  tail
+)
+type(
+  Z.t * Type.typ
+)
+"arithmetic.ml" 105 3419 3423 "arithmetic.ml" 105 3419 3425
+type(
+  Type.binop_type
+)
+"arithmetic.ml" 105 3419 3429 "arithmetic.ml" 105 3419 3435
+type(
+  Type.typ -> Z.t -> Z.t * Type.typ
+)
+ident(
+  int_ref to_val "arithmetic.ml" 90 2901 2905 "arithmetic.ml" 90 2901 2911
+)
+"arithmetic.ml" 105 3419 3436 "arithmetic.ml" 105 3419 3437
+type(
+  Type.typ
+)
+ident(
+  int_ref t "arithmetic.ml" 99 3101 3118 "arithmetic.ml" 99 3101 3119
+)
+"arithmetic.ml" 105 3419 3439 "arithmetic.ml" 105 3419 3449
+type(
+  Z.t -> Z.t -> Z.t
+)
+ident(
+  ext_ref Big_int_Z.or_big_int
+)
+"arithmetic.ml" 105 3419 3451 "arithmetic.ml" 105 3419 3461
+type(
+  Z.t * Type.typ -> Z.t
+)
+ident(
+  int_ref to_big_int "arithmetic.ml" 26 577 581 "arithmetic.ml" 26 577 591
+)
+"arithmetic.ml" 105 3419 3462 "arithmetic.ml" 105 3419 3464
+type(
+  Z.t * Type.typ
+)
+ident(
+  int_ref v1 "arithmetic.ml" 99 3101 3114 "arithmetic.ml" 99 3101 3127
+)
+"arithmetic.ml" 105 3419 3450 "arithmetic.ml" 105 3419 3465
+call(
+  stack
+)
+type(
+  Z.t
+)
+"arithmetic.ml" 105 3419 3467 "arithmetic.ml" 105 3419 3477
+type(
+  Z.t * Type.typ -> Z.t
+)
+ident(
+  int_ref to_big_int "arithmetic.ml" 26 577 581 "arithmetic.ml" 26 577 591
+)
+"arithmetic.ml" 105 3419 3478 "arithmetic.ml" 105 3419 3480
+type(
+  Z.t * Type.typ
+)
+ident(
+  int_ref v2 "arithmetic.ml" 99 3101 3128 "arithmetic.ml" 99 3101 3130
+)
+"arithmetic.ml" 105 3419 3466 "arithmetic.ml" 105 3419 3481
+call(
+  stack
+)
+type(
+  Z.t
+)
+"arithmetic.ml" 105 3419 3438 "arithmetic.ml" 105 3419 3482
+call(
+  stack
+)
+type(
+  Z.t
+)
+"arithmetic.ml" 105 3419 3429 "arithmetic.ml" 105 3419 3482
+call(
+  tail
+)
+type(
+  Z.t * Type.typ
+)
+"arithmetic.ml" 106 3483 3487 "arithmetic.ml" 106 3483 3490
+type(
+  Type.binop_type
+)
+"arithmetic.ml" 106 3483 3494 "arithmetic.ml" 106 3483 3500
+type(
+  Type.typ -> Z.t -> Z.t * Type.typ
+)
+ident(
+  int_ref to_val "arithmetic.ml" 90 2901 2905 "arithmetic.ml" 90 2901 2911
+)
+"arithmetic.ml" 106 3483 3501 "arithmetic.ml" 106 3483 3502
+type(
+  Type.typ
+)
+ident(
+  int_ref t "arithmetic.ml" 99 3101 3118 "arithmetic.ml" 99 3101 3119
+)
+"arithmetic.ml" 106 3483 3504 "arithmetic.ml" 106 3483 3515
+type(
+  Z.t -> Z.t -> Z.t
+)
+ident(
+  ext_ref Big_int_Z.xor_big_int
+)
+"arithmetic.ml" 106 3483 3517 "arithmetic.ml" 106 3483 3527
+type(
+  Z.t * Type.typ -> Z.t
+)
+ident(
+  int_ref to_big_int "arithmetic.ml" 26 577 581 "arithmetic.ml" 26 577 591
+)
+"arithmetic.ml" 106 3483 3528 "arithmetic.ml" 106 3483 3530
+type(
+  Z.t * Type.typ
+)
+ident(
+  int_ref v1 "arithmetic.ml" 99 3101 3114 "arithmetic.ml" 99 3101 3127
+)
+"arithmetic.ml" 106 3483 3516 "arithmetic.ml" 106 3483 3531
+call(
+  stack
+)
+type(
+  Z.t
+)
+"arithmetic.ml" 106 3483 3533 "arithmetic.ml" 106 3483 3543
+type(
+  Z.t * Type.typ -> Z.t
+)
+ident(
+  int_ref to_big_int "arithmetic.ml" 26 577 581 "arithmetic.ml" 26 577 591
+)
+"arithmetic.ml" 106 3483 3544 "arithmetic.ml" 106 3483 3546
+type(
+  Z.t * Type.typ
+)
+ident(
+  int_ref v2 "arithmetic.ml" 99 3101 3128 "arithmetic.ml" 99 3101 3130
+)
+"arithmetic.ml" 106 3483 3532 "arithmetic.ml" 106 3483 3547
+call(
+  stack
+)
+type(
+  Z.t
+)
+"arithmetic.ml" 106 3483 3503 "arithmetic.ml" 106 3483 3548
+call(
+  stack
+)
+type(
+  Z.t
+)
+"arithmetic.ml" 106 3483 3494 "arithmetic.ml" 106 3483 3548
+call(
+  tail
+)
+type(
+  Z.t * Type.typ
+)
+"arithmetic.ml" 107 3549 3553 "arithmetic.ml" 107 3549 3555
+type(
+  Type.binop_type
+)
+"arithmetic.ml" 107 3549 3559 "arithmetic.ml" 107 3549 3567
+type(
+  bool -> Z.t * Type.typ
+)
+ident(
+  int_ref exp_bool "arithmetic.ml" 93 2943 2947 "arithmetic.ml" 93 2943 2955
+)
+"arithmetic.ml" 107 3549 3568 "arithmetic.ml" 107 3549 3578
+type(
+  Z.t -> Z.t -> bool
+)
+ident(
+  ext_ref Big_int_Z.eq_big_int
+)
+"arithmetic.ml" 107 3549 3580 "arithmetic.ml" 107 3549 3590
+type(
+  Z.t * Type.typ -> Z.t
+)
+ident(
+  int_ref to_big_int "arithmetic.ml" 26 577 581 "arithmetic.ml" 26 577 591
+)
+"arithmetic.ml" 107 3549 3591 "arithmetic.ml" 107 3549 3593
+type(
+  Z.t * Type.typ
+)
+ident(
+  int_ref v1 "arithmetic.ml" 99 3101 3114 "arithmetic.ml" 99 3101 3127
+)
+"arithmetic.ml" 107 3549 3579 "arithmetic.ml" 107 3549 3594
+call(
+  stack
+)
+type(
+  Z.t
+)
+"arithmetic.ml" 107 3549 3596 "arithmetic.ml" 107 3549 3606
+type(
+  Z.t * Type.typ -> Z.t
+)
+ident(
+  int_ref to_big_int "arithmetic.ml" 26 577 581 "arithmetic.ml" 26 577 591
+)
+"arithmetic.ml" 107 3549 3607 "arithmetic.ml" 107 3549 3609
+type(
+  Z.t * Type.typ
+)
+ident(
+  int_ref v2 "arithmetic.ml" 99 3101 3128 "arithmetic.ml" 99 3101 3130
+)
+"arithmetic.ml" 107 3549 3595 "arithmetic.ml" 107 3549 3610
+call(
+  stack
+)
+type(
+  Z.t
+)
+"arithmetic.ml" 107 3549 3567 "arithmetic.ml" 107 3549 3611
+call(
+  stack
+)
+type(
+  bool
+)
+"arithmetic.ml" 107 3549 3559 "arithmetic.ml" 107 3549 3611
+call(
+  tail
+)
+type(
+  Z.t * Type.typ
+)
+"arithmetic.ml" 108 3612 3616 "arithmetic.ml" 108 3612 3619
+type(
+  Type.binop_type
+)
+"arithmetic.ml" 108 3612 3623 "arithmetic.ml" 108 3612 3631
+type(
+  bool -> Z.t * Type.typ
+)
+ident(
+  int_ref exp_bool "arithmetic.ml" 93 2943 2947 "arithmetic.ml" 93 2943 2955
+)
+"arithmetic.ml" 108 3612 3632 "arithmetic.ml" 108 3612 3635
+type(
+  bool -> bool
+)
+ident(
+  ext_ref Pervasives.not
+)
+"arithmetic.ml" 108 3612 3637 "arithmetic.ml" 108 3612 3647
+type(
+  Z.t -> Z.t -> bool
+)
+ident(
+  ext_ref Big_int_Z.eq_big_int
+)
+"arithmetic.ml" 108 3612 3649 "arithmetic.ml" 108 3612 3659
+type(
+  Z.t * Type.typ -> Z.t
+)
+ident(
+  int_ref to_big_int "arithmetic.ml" 26 577 581 "arithmetic.ml" 26 577 591
+)
+"arithmetic.ml" 108 3612 3660 "arithmetic.ml" 108 3612 3662
+type(
+  Z.t * Type.typ
+)
+ident(
+  int_ref v1 "arithmetic.ml" 99 3101 3114 "arithmetic.ml" 99 3101 3127
+)
+"arithmetic.ml" 108 3612 3648 "arithmetic.ml" 108 3612 3663
+call(
+  stack
+)
+type(
+  Z.t
+)
+"arithmetic.ml" 108 3612 3665 "arithmetic.ml" 108 3612 3675
+type(
+  Z.t * Type.typ -> Z.t
+)
+ident(
+  int_ref to_big_int "arithmetic.ml" 26 577 581 "arithmetic.ml" 26 577 591
+)
+"arithmetic.ml" 108 3612 3676 "arithmetic.ml" 108 3612 3678
+type(
+  Z.t * Type.typ
+)
+ident(
+  int_ref v2 "arithmetic.ml" 99 3101 3128 "arithmetic.ml" 99 3101 3130
+)
+"arithmetic.ml" 108 3612 3664 "arithmetic.ml" 108 3612 3679
+call(
+  stack
+)
+type(
+  Z.t
+)
+"arithmetic.ml" 108 3612 3636 "arithmetic.ml" 108 3612 3680
+call(
+  stack
+)
+type(
+  bool
+)
+"arithmetic.ml" 108 3612 3631 "arithmetic.ml" 108 3612 3681
+type(
+  bool
+)
+"arithmetic.ml" 108 3612 3623 "arithmetic.ml" 108 3612 3681
+call(
+  tail
+)
+type(
+  Z.t * Type.typ
+)
+"arithmetic.ml" 109 3682 3686 "arithmetic.ml" 109 3682 3692
+type(
+  Type.binop_type
+)
+"arithmetic.ml" 109 3682 3696 "arithmetic.ml" 109 3682 3702
+type(
+  Type.typ -> Z.t -> Z.t * Type.typ
+)
+ident(
+  int_ref to_val "arithmetic.ml" 90 2901 2905 "arithmetic.ml" 90 2901 2911
+)
+"arithmetic.ml" 109 3682 3703 "arithmetic.ml" 109 3682 3704
+type(
+  Type.typ
+)
+ident(
+  int_ref t "arithmetic.ml" 99 3101 3118 "arithmetic.ml" 99 3101 3119
+)
+"arithmetic.ml" 109 3682 3706 "arithmetic.ml" 109 3682 3724
+type(
+  Z.t -> int -> Z.t
+)
+ident(
+  ext_ref Big_int_Z.shift_left_big_int
+)
+"arithmetic.ml" 109 3682 3726 "arithmetic.ml" 109 3682 3736
+type(
+  Z.t * Type.typ -> Z.t
+)
+ident(
+  int_ref to_big_int "arithmetic.ml" 26 577 581 "arithmetic.ml" 26 577 591
+)
+"arithmetic.ml" 109 3682 3737 "arithmetic.ml" 109 3682 3739
+type(
+  Z.t * Type.typ
+)
+ident(
+  int_ref v1 "arithmetic.ml" 99 3101 3114 "arithmetic.ml" 99 3101 3127
+)
+"arithmetic.ml" 109 3682 3725 "arithmetic.ml" 109 3682 3740
+call(
+  stack
+)
+type(
+  Z.t
+)
+"arithmetic.ml" 109 3682 3742 "arithmetic.ml" 109 3682 3749
+type(
+  Type.typ -> Z.t * Type.typ -> int
+)
+ident(
+  int_ref toshift "arithmetic.ml" 78 2592 2596 "arithmetic.ml" 78 2592 2603
+)
+"arithmetic.ml" 109 3682 3750 "arithmetic.ml" 109 3682 3751
+type(
+  Type.typ
+)
+ident(
+  int_ref t "arithmetic.ml" 99 3101 3118 "arithmetic.ml" 99 3101 3119
+)
+"arithmetic.ml" 109 3682 3752 "arithmetic.ml" 109 3682 3754
+type(
+  Z.t * Type.typ
+)
+ident(
+  int_ref v2 "arithmetic.ml" 99 3101 3128 "arithmetic.ml" 99 3101 3130
+)
+"arithmetic.ml" 109 3682 3741 "arithmetic.ml" 109 3682 3755
+call(
+  stack
+)
+type(
+  int
+)
+"arithmetic.ml" 109 3682 3705 "arithmetic.ml" 109 3682 3756
+call(
+  stack
+)
+type(
+  Z.t
+)
+"arithmetic.ml" 109 3682 3696 "arithmetic.ml" 109 3682 3756
+call(
+  tail
+)
+type(
+  Z.t * Type.typ
+)
+"arithmetic.ml" 110 3757 3761 "arithmetic.ml" 110 3757 3767
+type(
+  Type.binop_type
+)
+"arithmetic.ml" 110 3757 3771 "arithmetic.ml" 110 3757 3777
+type(
+  Type.typ -> Z.t -> Z.t * Type.typ
+)
+ident(
+  int_ref to_val "arithmetic.ml" 90 2901 2905 "arithmetic.ml" 90 2901 2911
+)
+"arithmetic.ml" 110 3757 3778 "arithmetic.ml" 110 3757 3779
+type(
+  Type.typ
+)
+ident(
+  int_ref t "arithmetic.ml" 99 3101 3118 "arithmetic.ml" 99 3101 3119
+)
+"arithmetic.ml" 110 3757 3781 "arithmetic.ml" 110 3757 3800
+type(
+  Z.t -> int -> Z.t
+)
+ident(
+  ext_ref Big_int_Z.shift_right_big_int
+)
+"arithmetic.ml" 110 3757 3802 "arithmetic.ml" 110 3757 3812
+type(
+  Z.t * Type.typ -> Z.t
+)
+ident(
+  int_ref to_big_int "arithmetic.ml" 26 577 581 "arithmetic.ml" 26 577 591
+)
+"arithmetic.ml" 110 3757 3813 "arithmetic.ml" 110 3757 3815
+type(
+  Z.t * Type.typ
+)
+ident(
+  int_ref v1 "arithmetic.ml" 99 3101 3114 "arithmetic.ml" 99 3101 3127
+)
+"arithmetic.ml" 110 3757 3801 "arithmetic.ml" 110 3757 3816
+call(
+  stack
+)
+type(
+  Z.t
+)
+"arithmetic.ml" 110 3757 3818 "arithmetic.ml" 110 3757 3825
+type(
+  Type.typ -> Z.t * Type.typ -> int
+)
+ident(
+  int_ref toshift "arithmetic.ml" 78 2592 2596 "arithmetic.ml" 78 2592 2603
+)
+"arithmetic.ml" 110 3757 3826 "arithmetic.ml" 110 3757 3827
+type(
+  Type.typ
+)
+ident(
+  int_ref t "arithmetic.ml" 99 3101 3118 "arithmetic.ml" 99 3101 3119
+)
+"arithmetic.ml" 110 3757 3828 "arithmetic.ml" 110 3757 3830
+type(
+  Z.t * Type.typ
+)
+ident(
+  int_ref v2 "arithmetic.ml" 99 3101 3128 "arithmetic.ml" 99 3101 3130
+)
+"arithmetic.ml" 110 3757 3817 "arithmetic.ml" 110 3757 3831
+call(
+  stack
+)
+type(
+  int
+)
+"arithmetic.ml" 110 3757 3780 "arithmetic.ml" 110 3757 3832
+call(
+  stack
+)
+type(
+  Z.t
+)
+"arithmetic.ml" 110 3757 3771 "arithmetic.ml" 110 3757 3832
+call(
+  tail
+)
+type(
+  Z.t * Type.typ
+)
+"arithmetic.ml" 111 3833 3837 "arithmetic.ml" 111 3833 3844
+type(
+  Type.binop_type
+)
+"arithmetic.ml" 111 3833 3848 "arithmetic.ml" 111 3833 3854
+type(
+  Type.typ -> Z.t -> Z.t * Type.typ
+)
+ident(
+  int_ref to_val "arithmetic.ml" 90 2901 2905 "arithmetic.ml" 90 2901 2911
+)
+"arithmetic.ml" 111 3833 3855 "arithmetic.ml" 111 3833 3856
+type(
+  Type.typ
+)
+ident(
+  int_ref t "arithmetic.ml" 99 3101 3118 "arithmetic.ml" 99 3101 3119
+)
+"arithmetic.ml" 111 3833 3858 "arithmetic.ml" 111 3833 3877
+type(
+  Z.t -> int -> Z.t
+)
+ident(
+  ext_ref Big_int_Z.shift_right_big_int
+)
+"arithmetic.ml" 111 3833 3879 "arithmetic.ml" 111 3833 3890
+type(
+  Z.t * Type.typ -> Z.t
+)
+ident(
+  int_ref to_sbig_int "arithmetic.ml" 31 692 696 "arithmetic.ml" 31 692 707
+)
+"arithmetic.ml" 111 3833 3891 "arithmetic.ml" 111 3833 3893
+type(
+  Z.t * Type.typ
+)
+ident(
+  int_ref v1 "arithmetic.ml" 99 3101 3114 "arithmetic.ml" 99 3101 3127
+)
+"arithmetic.ml" 111 3833 3878 "arithmetic.ml" 111 3833 3894
+call(
+  stack
+)
+type(
+  Z.t
+)
+"arithmetic.ml" 111 3833 3896 "arithmetic.ml" 111 3833 3903
+type(
+  Type.typ -> Z.t * Type.typ -> int
+)
+ident(
+  int_ref toshift "arithmetic.ml" 78 2592 2596 "arithmetic.ml" 78 2592 2603
+)
+"arithmetic.ml" 111 3833 3904 "arithmetic.ml" 111 3833 3905
+type(
+  Type.typ
+)
+ident(
+  int_ref t "arithmetic.ml" 99 3101 3118 "arithmetic.ml" 99 3101 3119
+)
+"arithmetic.ml" 111 3833 3906 "arithmetic.ml" 111 3833 3908
+type(
+  Z.t * Type.typ
+)
+ident(
+  int_ref v2 "arithmetic.ml" 99 3101 3128 "arithmetic.ml" 99 3101 3130
+)
+"arithmetic.ml" 111 3833 3895 "arithmetic.ml" 111 3833 3909
+call(
+  stack
+)
+type(
+  int
+)
+"arithmetic.ml" 111 3833 3857 "arithmetic.ml" 111 3833 3910
+call(
+  stack
+)
+type(
+  Z.t
+)
+"arithmetic.ml" 111 3833 3848 "arithmetic.ml" 111 3833 3910
+call(
+  tail
+)
+type(
+  Z.t * Type.typ
+)
+"arithmetic.ml" 112 3911 3915 "arithmetic.ml" 112 3911 3921
+type(
+  Type.binop_type
+)
+"arithmetic.ml" 112 3911 3925 "arithmetic.ml" 112 3911 3931
+type(
+  Type.typ -> Z.t -> Z.t * Type.typ
+)
+ident(
+  int_ref to_val "arithmetic.ml" 90 2901 2905 "arithmetic.ml" 90 2901 2911
+)
+"arithmetic.ml" 112 3911 3932 "arithmetic.ml" 112 3911 3933
+type(
+  Type.typ
+)
+ident(
+  int_ref t "arithmetic.ml" 99 3101 3118 "arithmetic.ml" 99 3101 3119
+)
+"arithmetic.ml" 112 3911 3935 "arithmetic.ml" 112 3911 3946
+type(
+  Z.t -> Z.t -> Z.t
+)
+ident(
+  ext_ref Big_int_Z.div_big_int
+)
+"arithmetic.ml" 112 3911 3948 "arithmetic.ml" 112 3911 3958
+type(
+  Z.t * Type.typ -> Z.t
+)
+ident(
+  int_ref to_big_int "arithmetic.ml" 26 577 581 "arithmetic.ml" 26 577 591
+)
+"arithmetic.ml" 112 3911 3959 "arithmetic.ml" 112 3911 3961
+type(
+  Z.t * Type.typ
+)
+ident(
+  int_ref v1 "arithmetic.ml" 99 3101 3114 "arithmetic.ml" 99 3101 3127
+)
+"arithmetic.ml" 112 3911 3947 "arithmetic.ml" 112 3911 3962
+call(
+  stack
+)
+type(
+  Z.t
+)
+"arithmetic.ml" 112 3911 3964 "arithmetic.ml" 112 3911 3974
+type(
+  Z.t * Type.typ -> Z.t
+)
+ident(
+  int_ref to_big_int "arithmetic.ml" 26 577 581 "arithmetic.ml" 26 577 591
+)
+"arithmetic.ml" 112 3911 3975 "arithmetic.ml" 112 3911 3977
+type(
+  Z.t * Type.typ
+)
+ident(
+  int_ref v2 "arithmetic.ml" 99 3101 3128 "arithmetic.ml" 99 3101 3130
+)
+"arithmetic.ml" 112 3911 3963 "arithmetic.ml" 112 3911 3978
+call(
+  stack
+)
+type(
+  Z.t
+)
+"arithmetic.ml" 112 3911 3934 "arithmetic.ml" 112 3911 3979
+call(
+  stack
+)
+type(
+  Z.t
+)
+"arithmetic.ml" 112 3911 3925 "arithmetic.ml" 112 3911 3979
+call(
+  tail
+)
+type(
+  Z.t * Type.typ
+)
+"arithmetic.ml" 113 3980 3984 "arithmetic.ml" 113 3980 3991
+type(
+  Type.binop_type
+)
+"arithmetic.ml" 113 3980 3995 "arithmetic.ml" 113 3980 4001
+type(
+  Type.typ -> Z.t -> Z.t * Type.typ
+)
+ident(
+  int_ref to_val "arithmetic.ml" 90 2901 2905 "arithmetic.ml" 90 2901 2911
+)
+"arithmetic.ml" 113 3980 4002 "arithmetic.ml" 113 3980 4003
+type(
+  Type.typ
+)
+ident(
+  int_ref t "arithmetic.ml" 99 3101 3118 "arithmetic.ml" 99 3101 3119
+)
+"arithmetic.ml" 113 3980 4005 "arithmetic.ml" 113 3980 4010
+type(
+  Z.t -> Z.t -> Z.t
+)
+ident(
+  int_ref t_div "arithmetic.ml" 43 1214 1218 "arithmetic.ml" 43 1214 1223
+)
+"arithmetic.ml" 113 3980 4012 "arithmetic.ml" 113 3980 4023
+type(
+  Z.t * Type.typ -> Z.t
+)
+ident(
+  int_ref to_sbig_int "arithmetic.ml" 31 692 696 "arithmetic.ml" 31 692 707
+)
+"arithmetic.ml" 113 3980 4024 "arithmetic.ml" 113 3980 4026
+type(
+  Z.t * Type.typ
+)
+ident(
+  int_ref v1 "arithmetic.ml" 99 3101 3114 "arithmetic.ml" 99 3101 3127
+)
+"arithmetic.ml" 113 3980 4011 "arithmetic.ml" 113 3980 4027
+call(
+  stack
+)
+type(
+  Z.t
+)
+"arithmetic.ml" 113 3980 4029 "arithmetic.ml" 113 3980 4040
+type(
+  Z.t * Type.typ -> Z.t
+)
+ident(
+  int_ref to_sbig_int "arithmetic.ml" 31 692 696 "arithmetic.ml" 31 692 707
+)
+"arithmetic.ml" 113 3980 4041 "arithmetic.ml" 113 3980 4043
+type(
+  Z.t * Type.typ
+)
+ident(
+  int_ref v2 "arithmetic.ml" 99 3101 3128 "arithmetic.ml" 99 3101 3130
+)
+"arithmetic.ml" 113 3980 4028 "arithmetic.ml" 113 3980 4044
+call(
+  stack
+)
+type(
+  Z.t
+)
+"arithmetic.ml" 113 3980 4004 "arithmetic.ml" 113 3980 4045
+call(
+  stack
+)
+type(
+  Z.t
+)
+"arithmetic.ml" 113 3980 3995 "arithmetic.ml" 113 3980 4045
+call(
+  tail
+)
+type(
+  Z.t * Type.typ
+)
+"arithmetic.ml" 114 4046 4050 "arithmetic.ml" 114 4046 4053
+type(
+  Type.binop_type
+)
+"arithmetic.ml" 114 4046 4057 "arithmetic.ml" 114 4046 4063
+type(
+  Type.typ -> Z.t -> Z.t * Type.typ
+)
+ident(
+  int_ref to_val "arithmetic.ml" 90 2901 2905 "arithmetic.ml" 90 2901 2911
+)
+"arithmetic.ml" 114 4046 4064 "arithmetic.ml" 114 4046 4065
+type(
+  Type.typ
+)
+ident(
+  int_ref t "arithmetic.ml" 99 3101 3118 "arithmetic.ml" 99 3101 3119
+)
+"arithmetic.ml" 114 4046 4067 "arithmetic.ml" 114 4046 4078
+type(
+  Z.t -> Z.t -> Z.t
+)
+ident(
+  ext_ref Big_int_Z.mod_big_int
+)
+"arithmetic.ml" 114 4046 4080 "arithmetic.ml" 114 4046 4090
+type(
+  Z.t * Type.typ -> Z.t
+)
+ident(
+  int_ref to_big_int "arithmetic.ml" 26 577 581 "arithmetic.ml" 26 577 591
+)
+"arithmetic.ml" 114 4046 4091 "arithmetic.ml" 114 4046 4093
+type(
+  Z.t * Type.typ
+)
+ident(
+  int_ref v1 "arithmetic.ml" 99 3101 3114 "arithmetic.ml" 99 3101 3127
+)
+"arithmetic.ml" 114 4046 4079 "arithmetic.ml" 114 4046 4094
+call(
+  stack
+)
+type(
+  Z.t
+)
+"arithmetic.ml" 114 4046 4096 "arithmetic.ml" 114 4046 4106
+type(
+  Z.t * Type.typ -> Z.t
+)
+ident(
+  int_ref to_big_int "arithmetic.ml" 26 577 581 "arithmetic.ml" 26 577 591
+)
+"arithmetic.ml" 114 4046 4107 "arithmetic.ml" 114 4046 4109
+type(
+  Z.t * Type.typ
+)
+ident(
+  int_ref v2 "arithmetic.ml" 99 3101 3128 "arithmetic.ml" 99 3101 3130
+)
+"arithmetic.ml" 114 4046 4095 "arithmetic.ml" 114 4046 4110
+call(
+  stack
+)
+type(
+  Z.t
+)
+"arithmetic.ml" 114 4046 4066 "arithmetic.ml" 114 4046 4111
+call(
+  stack
+)
+type(
+  Z.t
+)
+"arithmetic.ml" 114 4046 4057 "arithmetic.ml" 114 4046 4111
+call(
+  tail
+)
+type(
+  Z.t * Type.typ
+)
+"arithmetic.ml" 115 4112 4116 "arithmetic.ml" 115 4112 4120
+type(
+  Type.binop_type
+)
+"arithmetic.ml" 115 4112 4124 "arithmetic.ml" 115 4112 4130
+type(
+  Type.typ -> Z.t -> Z.t * Type.typ
+)
+ident(
+  int_ref to_val "arithmetic.ml" 90 2901 2905 "arithmetic.ml" 90 2901 2911
+)
+"arithmetic.ml" 115 4112 4131 "arithmetic.ml" 115 4112 4132
+type(
+  Type.typ
+)
+ident(
+  int_ref t "arithmetic.ml" 99 3101 3118 "arithmetic.ml" 99 3101 3119
+)
+"arithmetic.ml" 115 4112 4134 "arithmetic.ml" 115 4112 4139
+type(
+  Z.t -> Z.t -> Z.t
+)
+ident(
+  int_ref t_mod "arithmetic.ml" 63 2041 2045 "arithmetic.ml" 63 2041 2050
+)
+"arithmetic.ml" 115 4112 4141 "arithmetic.ml" 115 4112 4152
+type(
+  Z.t * Type.typ -> Z.t
+)
+ident(
+  int_ref to_sbig_int "arithmetic.ml" 31 692 696 "arithmetic.ml" 31 692 707
+)
+"arithmetic.ml" 115 4112 4153 "arithmetic.ml" 115 4112 4155
+type(
+  Z.t * Type.typ
+)
+ident(
+  int_ref v1 "arithmetic.ml" 99 3101 3114 "arithmetic.ml" 99 3101 3127
+)
+"arithmetic.ml" 115 4112 4140 "arithmetic.ml" 115 4112 4156
+call(
+  stack
+)
+type(
+  Z.t
+)
+"arithmetic.ml" 115 4112 4158 "arithmetic.ml" 115 4112 4169
+type(
+  Z.t * Type.typ -> Z.t
+)
+ident(
+  int_ref to_sbig_int "arithmetic.ml" 31 692 696 "arithmetic.ml" 31 692 707
+)
+"arithmetic.ml" 115 4112 4170 "arithmetic.ml" 115 4112 4172
+type(
+  Z.t * Type.typ
+)
+ident(
+  int_ref v2 "arithmetic.ml" 99 3101 3128 "arithmetic.ml" 99 3101 3130
+)
+"arithmetic.ml" 115 4112 4157 "arithmetic.ml" 115 4112 4173
+call(
+  stack
+)
+type(
+  Z.t
+)
+"arithmetic.ml" 115 4112 4133 "arithmetic.ml" 115 4112 4174
+call(
+  stack
+)
+type(
+  Z.t
+)
+"arithmetic.ml" 115 4112 4124 "arithmetic.ml" 115 4112 4174
+call(
+  tail
+)
+type(
+  Z.t * Type.typ
+)
+"arithmetic.ml" 116 4175 4179 "arithmetic.ml" 116 4175 4182
+type(
+  Type.binop_type
+)
+"arithmetic.ml" 116 4175 4186 "arithmetic.ml" 116 4175 4194
+type(
+  bool -> Z.t * Type.typ
+)
+ident(
+  int_ref exp_bool "arithmetic.ml" 93 2943 2947 "arithmetic.ml" 93 2943 2955
+)
+"arithmetic.ml" 116 4175 4195 "arithmetic.ml" 116 4175 4205
+type(
+  Z.t -> Z.t -> bool
+)
+ident(
+  ext_ref Big_int_Z.lt_big_int
+)
+"arithmetic.ml" 116 4175 4207 "arithmetic.ml" 116 4175 4218
+type(
+  Z.t * Type.typ -> Z.t
+)
+ident(
+  int_ref to_sbig_int "arithmetic.ml" 31 692 696 "arithmetic.ml" 31 692 707
+)
+"arithmetic.ml" 116 4175 4219 "arithmetic.ml" 116 4175 4221
+type(
+  Z.t * Type.typ
+)
+ident(
+  int_ref v1 "arithmetic.ml" 99 3101 3114 "arithmetic.ml" 99 3101 3127
+)
+"arithmetic.ml" 116 4175 4206 "arithmetic.ml" 116 4175 4222
+call(
+  stack
+)
+type(
+  Z.t
+)
+"arithmetic.ml" 116 4175 4224 "arithmetic.ml" 116 4175 4235
+type(
+  Z.t * Type.typ -> Z.t
+)
+ident(
+  int_ref to_sbig_int "arithmetic.ml" 31 692 696 "arithmetic.ml" 31 692 707
+)
+"arithmetic.ml" 116 4175 4236 "arithmetic.ml" 116 4175 4238
+type(
+  Z.t * Type.typ
+)
+ident(
+  int_ref v2 "arithmetic.ml" 99 3101 3128 "arithmetic.ml" 99 3101 3130
+)
+"arithmetic.ml" 116 4175 4223 "arithmetic.ml" 116 4175 4239
+call(
+  stack
+)
+type(
+  Z.t
+)
+"arithmetic.ml" 116 4175 4194 "arithmetic.ml" 116 4175 4240
+call(
+  stack
+)
+type(
+  bool
+)
+"arithmetic.ml" 116 4175 4186 "arithmetic.ml" 116 4175 4240
+call(
+  tail
+)
+type(
+  Z.t * Type.typ
+)
+"arithmetic.ml" 117 4241 4245 "arithmetic.ml" 117 4241 4248
+type(
+  Type.binop_type
+)
+"arithmetic.ml" 117 4241 4252 "arithmetic.ml" 117 4241 4260
+type(
+  bool -> Z.t * Type.typ
+)
+ident(
+  int_ref exp_bool "arithmetic.ml" 93 2943 2947 "arithmetic.ml" 93 2943 2955
+)
+"arithmetic.ml" 117 4241 4261 "arithmetic.ml" 117 4241 4271
+type(
+  Z.t -> Z.t -> bool
+)
+ident(
+  ext_ref Big_int_Z.le_big_int
+)
+"arithmetic.ml" 117 4241 4273 "arithmetic.ml" 117 4241 4284
+type(
+  Z.t * Type.typ -> Z.t
+)
+ident(
+  int_ref to_sbig_int "arithmetic.ml" 31 692 696 "arithmetic.ml" 31 692 707
+)
+"arithmetic.ml" 117 4241 4285 "arithmetic.ml" 117 4241 4287
+type(
+  Z.t * Type.typ
+)
+ident(
+  int_ref v1 "arithmetic.ml" 99 3101 3114 "arithmetic.ml" 99 3101 3127
+)
+"arithmetic.ml" 117 4241 4272 "arithmetic.ml" 117 4241 4288
+call(
+  stack
+)
+type(
+  Z.t
+)
+"arithmetic.ml" 117 4241 4290 "arithmetic.ml" 117 4241 4301
+type(
+  Z.t * Type.typ -> Z.t
+)
+ident(
+  int_ref to_sbig_int "arithmetic.ml" 31 692 696 "arithmetic.ml" 31 692 707
+)
+"arithmetic.ml" 117 4241 4302 "arithmetic.ml" 117 4241 4304
+type(
+  Z.t * Type.typ
+)
+ident(
+  int_ref v2 "arithmetic.ml" 99 3101 3128 "arithmetic.ml" 99 3101 3130
+)
+"arithmetic.ml" 117 4241 4289 "arithmetic.ml" 117 4241 4305
+call(
+  stack
+)
+type(
+  Z.t
+)
+"arithmetic.ml" 117 4241 4260 "arithmetic.ml" 117 4241 4306
+call(
+  stack
+)
+type(
+  bool
+)
+"arithmetic.ml" 117 4241 4252 "arithmetic.ml" 117 4241 4306
+call(
+  tail
+)
+type(
+  Z.t * Type.typ
+)
+"arithmetic.ml" 118 4307 4311 "arithmetic.ml" 118 4307 4313
+type(
+  Type.binop_type
+)
+"arithmetic.ml" 118 4307 4317 "arithmetic.ml" 118 4307 4325
+type(
+  bool -> Z.t * Type.typ
+)
+ident(
+  int_ref exp_bool "arithmetic.ml" 93 2943 2947 "arithmetic.ml" 93 2943 2955
+)
+"arithmetic.ml" 118 4307 4326 "arithmetic.ml" 118 4307 4336
+type(
+  Z.t -> Z.t -> bool
+)
+ident(
+  ext_ref Big_int_Z.lt_big_int
+)
+"arithmetic.ml" 118 4307 4338 "arithmetic.ml" 118 4307 4348
+type(
+  Z.t * Type.typ -> Z.t
+)
+ident(
+  int_ref to_big_int "arithmetic.ml" 26 577 581 "arithmetic.ml" 26 577 591
+)
+"arithmetic.ml" 118 4307 4349 "arithmetic.ml" 118 4307 4351
+type(
+  Z.t * Type.typ
+)
+ident(
+  int_ref v1 "arithmetic.ml" 99 3101 3114 "arithmetic.ml" 99 3101 3127
+)
+"arithmetic.ml" 118 4307 4337 "arithmetic.ml" 118 4307 4352
+call(
+  stack
+)
+type(
+  Z.t
+)
+"arithmetic.ml" 118 4307 4354 "arithmetic.ml" 118 4307 4364
+type(
+  Z.t * Type.typ -> Z.t
+)
+ident(
+  int_ref to_big_int "arithmetic.ml" 26 577 581 "arithmetic.ml" 26 577 591
+)
+"arithmetic.ml" 118 4307 4365 "arithmetic.ml" 118 4307 4367
+type(
+  Z.t * Type.typ
+)
+ident(
+  int_ref v2 "arithmetic.ml" 99 3101 3128 "arithmetic.ml" 99 3101 3130
+)
+"arithmetic.ml" 118 4307 4353 "arithmetic.ml" 118 4307 4368
+call(
+  stack
+)
+type(
+  Z.t
+)
+"arithmetic.ml" 118 4307 4325 "arithmetic.ml" 118 4307 4369
+call(
+  stack
+)
+type(
+  bool
+)
+"arithmetic.ml" 118 4307 4317 "arithmetic.ml" 118 4307 4369
+call(
+  tail
+)
+type(
+  Z.t * Type.typ
+)
+"arithmetic.ml" 119 4370 4374 "arithmetic.ml" 119 4370 4376
+type(
+  Type.binop_type
+)
+"arithmetic.ml" 119 4370 4380 "arithmetic.ml" 119 4370 4388
+type(
+  bool -> Z.t * Type.typ
+)
+ident(
+  int_ref exp_bool "arithmetic.ml" 93 2943 2947 "arithmetic.ml" 93 2943 2955
+)
+"arithmetic.ml" 119 4370 4389 "arithmetic.ml" 119 4370 4399
+type(
+  Z.t -> Z.t -> bool
+)
+ident(
+  ext_ref Big_int_Z.le_big_int
+)
+"arithmetic.ml" 119 4370 4401 "arithmetic.ml" 119 4370 4411
+type(
+  Z.t * Type.typ -> Z.t
+)
+ident(
+  int_ref to_big_int "arithmetic.ml" 26 577 581 "arithmetic.ml" 26 577 591
+)
+"arithmetic.ml" 119 4370 4412 "arithmetic.ml" 119 4370 4414
+type(
+  Z.t * Type.typ
+)
+ident(
+  int_ref v1 "arithmetic.ml" 99 3101 3114 "arithmetic.ml" 99 3101 3127
+)
+"arithmetic.ml" 119 4370 4400 "arithmetic.ml" 119 4370 4415
+call(
+  stack
+)
+type(
+  Z.t
+)
+"arithmetic.ml" 119 4370 4417 "arithmetic.ml" 119 4370 4427
+type(
+  Z.t * Type.typ -> Z.t
+)
+ident(
+  int_ref to_big_int "arithmetic.ml" 26 577 581 "arithmetic.ml" 26 577 591
+)
+"arithmetic.ml" 119 4370 4428 "arithmetic.ml" 119 4370 4430
+type(
+  Z.t * Type.typ
+)
+ident(
+  int_ref v2 "arithmetic.ml" 99 3101 3128 "arithmetic.ml" 99 3101 3130
+)
+"arithmetic.ml" 119 4370 4416 "arithmetic.ml" 119 4370 4431
+call(
+  stack
+)
+type(
+  Z.t
+)
+"arithmetic.ml" 119 4370 4388 "arithmetic.ml" 119 4370 4432
+call(
+  stack
+)
+type(
+  bool
+)
+"arithmetic.ml" 119 4370 4380 "arithmetic.ml" 119 4370 4432
+call(
+  tail
+)
+type(
+  Z.t * Type.typ
+)
+"arithmetic.ml" 100 3133 3135 "arithmetic.ml" 119 4370 4432
+type(
+  Z.t * Type.typ
+)
+"arithmetic.ml" 122 4435 4439 "arithmetic.ml" 122 4435 4443
+type(
+  Type.unop_type -> Z.t * Type.typ -> Z.t * Type.typ
+)
+ident(
+  def unop "arithmetic.ml" 128 4638 4638 --
+)
+"arithmetic.ml" 122 4435 4444 "arithmetic.ml" 122 4435 4446
+type(
+  Type.unop_type
+)
+ident(
+  def op "arithmetic.ml" 122 4435 4447 "arithmetic.ml" 126 4573 4636
+)
+"arithmetic.ml" 122 4435 4449 "arithmetic.ml" 122 4435 4450
+type(
+  Z.t
+)
+"arithmetic.ml" 122 4435 4451 "arithmetic.ml" 122 4435 4452
+type(
+  Type.typ
+)
+ident(
+  def t "arithmetic.ml" 123 4462 4464 "arithmetic.ml" 126 4573 4636
+)
+"arithmetic.ml" 122 4435 4448 "arithmetic.ml" 122 4435 4453
+type(
+  Z.t * Type.typ
+)
+"arithmetic.ml" 122 4435 4447 "arithmetic.ml" 122 4435 4459
+type(
+  Z.t * Type.typ
+)
+ident(
+  def v "arithmetic.ml" 123 4462 4464 "arithmetic.ml" 126 4573 4636
+)
+"arithmetic.ml" 123 4462 4470 "arithmetic.ml" 123 4462 4472
+type(
+  Type.unop_type
+)
+ident(
+  int_ref op "arithmetic.ml" 122 4435 4444 "arithmetic.ml" 122 4435 4446
+)
+"arithmetic.ml" 124 4478 4482 "arithmetic.ml" 124 4478 4485
+type(
+  Type.unop_type
+)
+"arithmetic.ml" 124 4478 4489 "arithmetic.ml" 124 4478 4495
+type(
+  Type.typ -> Z.t -> Z.t * Type.typ
+)
+ident(
+  int_ref to_val "arithmetic.ml" 90 2901 2905 "arithmetic.ml" 90 2901 2911
+)
+"arithmetic.ml" 124 4478 4496 "arithmetic.ml" 124 4478 4497
+type(
+  Type.typ
+)
+ident(
+  int_ref t "arithmetic.ml" 122 4435 4451 "arithmetic.ml" 122 4435 4452
+)
+"arithmetic.ml" 124 4478 4499 "arithmetic.ml" 124 4478 4512
+type(
+  Z.t -> Z.t
+)
+ident(
+  ext_ref Big_int_Z.minus_big_int
+)
+"arithmetic.ml" 124 4478 4514 "arithmetic.ml" 124 4478 4524
+type(
+  Z.t * Type.typ -> Z.t
+)
+ident(
+  int_ref to_big_int "arithmetic.ml" 26 577 581 "arithmetic.ml" 26 577 591
+)
+"arithmetic.ml" 124 4478 4525 "arithmetic.ml" 124 4478 4526
+type(
+  Z.t * Type.typ
+)
+ident(
+  int_ref v "arithmetic.ml" 122 4435 4447 "arithmetic.ml" 122 4435 4459
+)
+"arithmetic.ml" 124 4478 4513 "arithmetic.ml" 124 4478 4527
+call(
+  stack
+)
+type(
+  Z.t
+)
+"arithmetic.ml" 124 4478 4498 "arithmetic.ml" 124 4478 4528
+call(
+  stack
+)
+type(
+  Z.t
+)
+"arithmetic.ml" 124 4478 4489 "arithmetic.ml" 124 4478 4528
+call(
+  tail
+)
+type(
+  Z.t * Type.typ
+)
+"arithmetic.ml" 125 4529 4533 "arithmetic.ml" 125 4529 4536
+type(
+  Type.unop_type
+)
+"arithmetic.ml" 126 4573 4577 "arithmetic.ml" 126 4573 4583
+type(
+  Type.typ -> Z.t -> Z.t * Type.typ
+)
+ident(
+  int_ref to_val "arithmetic.ml" 90 2901 2905 "arithmetic.ml" 90 2901 2911
+)
+"arithmetic.ml" 126 4573 4584 "arithmetic.ml" 126 4573 4585
+type(
+  Type.typ
+)
+ident(
+  int_ref t "arithmetic.ml" 122 4435 4451 "arithmetic.ml" 122 4435 4452
+)
+"arithmetic.ml" 126 4573 4587 "arithmetic.ml" 126 4573 4598
+type(
+  Z.t -> Z.t -> Z.t
+)
+ident(
+  ext_ref Big_int_Z.xor_big_int
+)
+"arithmetic.ml" 126 4573 4600 "arithmetic.ml" 126 4573 4610
+type(
+  Z.t * Type.typ -> Z.t
+)
+ident(
+  int_ref to_big_int "arithmetic.ml" 26 577 581 "arithmetic.ml" 26 577 591
+)
+"arithmetic.ml" 126 4573 4612 "arithmetic.ml" 126 4573 4616
+type(
+  Z.t
+)
+ident(
+  ext_ref Big_int_convenience.bim1
+)
+"arithmetic.ml" 126 4573 4617 "arithmetic.ml" 126 4573 4618
+type(
+  Type.typ
+)
+ident(
+  int_ref t "arithmetic.ml" 122 4435 4451 "arithmetic.ml" 122 4435 4452
+)
+"arithmetic.ml" 126 4573 4611 "arithmetic.ml" 126 4573 4619
+type(
+  Z.t * Type.typ
+)
+"arithmetic.ml" 126 4573 4599 "arithmetic.ml" 126 4573 4620
+call(
+  stack
+)
+type(
+  Z.t
+)
+"arithmetic.ml" 126 4573 4622 "arithmetic.ml" 126 4573 4632
+type(
+  Z.t * Type.typ -> Z.t
+)
+ident(
+  int_ref to_big_int "arithmetic.ml" 26 577 581 "arithmetic.ml" 26 577 591
+)
+"arithmetic.ml" 126 4573 4633 "arithmetic.ml" 126 4573 4634
+type(
+  Z.t * Type.typ
+)
+ident(
+  int_ref v "arithmetic.ml" 122 4435 4447 "arithmetic.ml" 122 4435 4459
+)
+"arithmetic.ml" 126 4573 4621 "arithmetic.ml" 126 4573 4635
+call(
+  stack
+)
+type(
+  Z.t
+)
+"arithmetic.ml" 126 4573 4586 "arithmetic.ml" 126 4573 4636
+call(
+  stack
+)
+type(
+  Z.t
+)
+"arithmetic.ml" 126 4573 4577 "arithmetic.ml" 126 4573 4636
+call(
+  tail
+)
+type(
+  Z.t * Type.typ
+)
+"arithmetic.ml" 123 4462 4464 "arithmetic.ml" 126 4573 4636
+type(
+  Z.t * Type.typ
+)
+"arithmetic.ml" 128 4638 4642 "arithmetic.ml" 128 4638 4646
+type(
+  Type.cast_type -> Z.t * Type.typ -> Type.typ -> Z.t * Type.typ
+)
+ident(
+  def cast "arithmetic.ml" 144 5001 5001 --
+)
+"arithmetic.ml" 128 4638 4647 "arithmetic.ml" 128 4638 4649
+type(
+  Type.cast_type
+)
+ident(
+  def ct "arithmetic.ml" 128 4638 4650 "arithmetic.ml" 141 4995 4998
+)
+"arithmetic.ml" 128 4638 4652 "arithmetic.ml" 128 4638 4653
+type(
+  Z.t
+)
+"arithmetic.ml" 128 4638 4654 "arithmetic.ml" 128 4638 4655
+type(
+  Type.typ
+)
+ident(
+  def t "arithmetic.ml" 128 4638 4663 "arithmetic.ml" 141 4995 4998
+)
+"arithmetic.ml" 128 4638 4651 "arithmetic.ml" 128 4638 4656
+type(
+  Z.t * Type.typ
+)
+"arithmetic.ml" 128 4638 4650 "arithmetic.ml" 128 4638 4662
+type(
+  Z.t * Type.typ
+)
+ident(
+  def v "arithmetic.ml" 128 4638 4663 "arithmetic.ml" 141 4995 4998
+)
+"arithmetic.ml" 128 4638 4663 "arithmetic.ml" 128 4638 4665
+type(
+  Type.typ
+)
+ident(
+  def t2 "arithmetic.ml" 129 4668 4670 "arithmetic.ml" 141 4995 4998
+)
+"arithmetic.ml" 129 4668 4674 "arithmetic.ml" 129 4668 4679
+type(
+  int
+)
+"arithmetic.ml" 129 4668 4682 "arithmetic.ml" 129 4668 4695
+type(
+  Type.typ -> int
+)
+ident(
+  int_ref bits_of_width "arithmetic.ml" 21 458 462 "arithmetic.ml" 21 458 475
+)
+"arithmetic.ml" 129 4668 4696 "arithmetic.ml" 129 4668 4697
+type(
+  Type.typ
+)
+ident(
+  int_ref t "arithmetic.ml" 128 4638 4654 "arithmetic.ml" 128 4638 4655
+)
+"arithmetic.ml" 129 4668 4682 "arithmetic.ml" 129 4668 4697
+call(
+  stack
+)
+type(
+  int
+)
+"arithmetic.ml" 130 4698 4704 "arithmetic.ml" 130 4698 4708
+type(
+  int
+)
+"arithmetic.ml" 130 4698 4711 "arithmetic.ml" 130 4698 4724
+type(
+  Type.typ -> int
+)
+ident(
+  int_ref bits_of_width "arithmetic.ml" 21 458 462 "arithmetic.ml" 21 458 475
+)
+"arithmetic.ml" 130 4698 4725 "arithmetic.ml" 130 4698 4727
+type(
+  Type.typ
+)
+ident(
+  int_ref t2 "arithmetic.ml" 128 4638 4663 "arithmetic.ml" 128 4638 4665
+)
+"arithmetic.ml" 130 4698 4711 "arithmetic.ml" 130 4698 4727
+call(
+  stack
+)
+type(
+  int
+)
+"arithmetic.ml" 131 4731 4740 "arithmetic.ml" 131 4731 4742
+type(
+  Type.cast_type
+)
+ident(
+  int_ref ct "arithmetic.ml" 128 4638 4647 "arithmetic.ml" 128 4638 4649
+)
+"arithmetic.ml" 132 4748 4753 "arithmetic.ml" 132 4748 4766
+type(
+  Type.cast_type
+)
+"arithmetic.ml" 133 4770 4777 "arithmetic.ml" 133 4770 4783
+type(
+  Type.typ -> Z.t -> Z.t * Type.typ
+)
+ident(
+  int_ref to_val "arithmetic.ml" 90 2901 2905 "arithmetic.ml" 90 2901 2911
+)
+"arithmetic.ml" 133 4770 4784 "arithmetic.ml" 133 4770 4786
+type(
+  Type.typ
+)
+ident(
+  int_ref t2 "arithmetic.ml" 128 4638 4663 "arithmetic.ml" 128 4638 4665
+)
+"arithmetic.ml" 133 4770 4788 "arithmetic.ml" 133 4770 4798
+type(
+  Z.t * Type.typ -> Z.t
+)
+ident(
+  int_ref to_big_int "arithmetic.ml" 26 577 581 "arithmetic.ml" 26 577 591
+)
+"arithmetic.ml" 133 4770 4799 "arithmetic.ml" 133 4770 4800
+type(
+  Z.t * Type.typ
+)
+ident(
+  int_ref v "arithmetic.ml" 128 4638 4650 "arithmetic.ml" 128 4638 4662
+)
+"arithmetic.ml" 133 4770 4787 "arithmetic.ml" 133 4770 4801
+call(
+  stack
+)
+type(
+  Z.t
+)
+"arithmetic.ml" 133 4770 4777 "arithmetic.ml" 133 4770 4801
+call(
+  tail
+)
+type(
+  Z.t * Type.typ
+)
+"arithmetic.ml" 134 4802 4807 "arithmetic.ml" 134 4802 4818
+type(
+  Type.cast_type
+)
+"arithmetic.ml" 135 4822 4829 "arithmetic.ml" 135 4822 4835
+type(
+  Type.typ -> Z.t -> Z.t * Type.typ
+)
+ident(
+  int_ref to_val "arithmetic.ml" 90 2901 2905 "arithmetic.ml" 90 2901 2911
+)
+"arithmetic.ml" 135 4822 4836 "arithmetic.ml" 135 4822 4838
+type(
+  Type.typ
+)
+ident(
+  int_ref t2 "arithmetic.ml" 128 4638 4663 "arithmetic.ml" 128 4638 4665
+)
+"arithmetic.ml" 135 4822 4840 "arithmetic.ml" 135 4822 4851
+type(
+  Z.t * Type.typ -> Z.t
+)
+ident(
+  int_ref to_sbig_int "arithmetic.ml" 31 692 696 "arithmetic.ml" 31 692 707
+)
+"arithmetic.ml" 135 4822 4852 "arithmetic.ml" 135 4822 4853
+type(
+  Z.t * Type.typ
+)
+ident(
+  int_ref v "arithmetic.ml" 128 4638 4650 "arithmetic.ml" 128 4638 4662
+)
+"arithmetic.ml" 135 4822 4839 "arithmetic.ml" 135 4822 4854
+call(
+  stack
+)
+type(
+  Z.t
+)
+"arithmetic.ml" 135 4822 4829 "arithmetic.ml" 135 4822 4854
+call(
+  tail
+)
+type(
+  Z.t * Type.typ
+)
+"arithmetic.ml" 136 4855 4860 "arithmetic.ml" 136 4855 4869
+type(
+  Type.cast_type
+)
+"arithmetic.ml" 137 4873 4880 "arithmetic.ml" 137 4873 4886
+type(
+  Type.typ -> Z.t -> Z.t * Type.typ
+)
+ident(
+  int_ref to_val "arithmetic.ml" 90 2901 2905 "arithmetic.ml" 90 2901 2911
+)
+"arithmetic.ml" 137 4873 4887 "arithmetic.ml" 137 4873 4889
+type(
+  Type.typ
+)
+ident(
+  int_ref t2 "arithmetic.ml" 128 4638 4663 "arithmetic.ml" 128 4638 4665
+)
+"arithmetic.ml" 138 4890 4897 "arithmetic.ml" 138 4890 4916
+type(
+  Z.t -> int -> Z.t
+)
+ident(
+  ext_ref Big_int_Z.shift_right_big_int
+)
+"arithmetic.ml" 138 4890 4918 "arithmetic.ml" 138 4890 4928
+type(
+  Z.t * Type.typ -> Z.t
+)
+ident(
+  int_ref to_big_int "arithmetic.ml" 26 577 581 "arithmetic.ml" 26 577 591
+)
+"arithmetic.ml" 138 4890 4929 "arithmetic.ml" 138 4890 4930
+type(
+  Z.t * Type.typ
+)
+ident(
+  int_ref v "arithmetic.ml" 128 4638 4650 "arithmetic.ml" 128 4638 4662
+)
+"arithmetic.ml" 138 4890 4917 "arithmetic.ml" 138 4890 4931
+call(
+  stack
+)
+type(
+  Z.t
+)
+"arithmetic.ml" 138 4890 4933 "arithmetic.ml" 138 4890 4938
+type(
+  int
+)
+ident(
+  int_ref bits1 "arithmetic.ml" 129 4668 4674 "arithmetic.ml" 129 4668 4679
+)
+"arithmetic.ml" 138 4890 4938 "arithmetic.ml" 138 4890 4939
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( - )
+)
+"arithmetic.ml" 138 4890 4939 "arithmetic.ml" 138 4890 4943
+type(
+  int
+)
+ident(
+  int_ref bits "arithmetic.ml" 130 4698 4704 "arithmetic.ml" 130 4698 4708
+)
+"arithmetic.ml" 138 4890 4932 "arithmetic.ml" 138 4890 4944
+type(
+  int
+)
+"arithmetic.ml" 138 4890 4896 "arithmetic.ml" 138 4890 4945
+call(
+  stack
+)
+type(
+  Z.t
+)
+"arithmetic.ml" 137 4873 4880 "arithmetic.ml" 138 4890 4945
+call(
+  tail
+)
+type(
+  Z.t * Type.typ
+)
+"arithmetic.ml" 139 4946 4951 "arithmetic.ml" 139 4946 4959
+type(
+  Type.cast_type
+)
+"arithmetic.ml" 140 4963 4970 "arithmetic.ml" 140 4963 4976
+type(
+  Type.typ -> Z.t -> Z.t * Type.typ
+)
+ident(
+  int_ref to_val "arithmetic.ml" 90 2901 2905 "arithmetic.ml" 90 2901 2911
+)
+"arithmetic.ml" 140 4963 4977 "arithmetic.ml" 140 4963 4979
+type(
+  Type.typ
+)
+ident(
+  int_ref t2 "arithmetic.ml" 128 4638 4663 "arithmetic.ml" 128 4638 4665
+)
+"arithmetic.ml" 140 4963 4981 "arithmetic.ml" 140 4963 4991
+type(
+  Z.t * Type.typ -> Z.t
+)
+ident(
+  int_ref to_big_int "arithmetic.ml" 26 577 581 "arithmetic.ml" 26 577 591
+)
+"arithmetic.ml" 140 4963 4992 "arithmetic.ml" 140 4963 4993
+type(
+  Z.t * Type.typ
+)
+ident(
+  int_ref v "arithmetic.ml" 128 4638 4650 "arithmetic.ml" 128 4638 4662
+)
+"arithmetic.ml" 140 4963 4980 "arithmetic.ml" 140 4963 4994
+call(
+  stack
+)
+type(
+  Z.t
+)
+"arithmetic.ml" 140 4963 4970 "arithmetic.ml" 140 4963 4994
+call(
+  tail
+)
+type(
+  Z.t * Type.typ
+)
+"arithmetic.ml" 131 4731 4733 "arithmetic.ml" 141 4995 4998
+type(
+  Z.t * Type.typ
+)
+"arithmetic.ml" 129 4668 4670 "arithmetic.ml" 141 4995 4998
+type(
+  Z.t * Type.typ
+)
+"arithmetic.ml" 144 5001 5005 "arithmetic.ml" 144 5001 5012
+type(
+  Z.t -> Z.t -> Z.t * Type.typ -> Z.t * Type.typ
+)
+ident(
+  def extract "arithmetic.ml" 151 5154 5154 --
+)
+"arithmetic.ml" 144 5001 5013 "arithmetic.ml" 144 5001 5014
+type(
+  Z.t
+)
+ident(
+  def h "arithmetic.ml" 144 5001 5015 "arithmetic.ml" 148 5131 5151
+)
+"arithmetic.ml" 144 5001 5015 "arithmetic.ml" 144 5001 5016
+type(
+  Z.t
+)
+ident(
+  def l "arithmetic.ml" 144 5001 5017 "arithmetic.ml" 148 5131 5151
+)
+"arithmetic.ml" 144 5001 5019 "arithmetic.ml" 144 5001 5020
+type(
+  Z.t
+)
+"arithmetic.ml" 144 5001 5021 "arithmetic.ml" 144 5001 5022
+type(
+  Type.typ
+)
+ident(
+  def t "arithmetic.ml" 145 5032 5034 "arithmetic.ml" 148 5131 5151
+)
+"arithmetic.ml" 144 5001 5018 "arithmetic.ml" 144 5001 5023
+type(
+  Z.t * Type.typ
+)
+"arithmetic.ml" 144 5001 5017 "arithmetic.ml" 144 5001 5029
+type(
+  Z.t * Type.typ
+)
+ident(
+  def v "arithmetic.ml" 145 5032 5034 "arithmetic.ml" 148 5131 5151
+)
+"arithmetic.ml" 145 5032 5038 "arithmetic.ml" 145 5032 5039
+type(
+  Z.t
+)
+"arithmetic.ml" 145 5032 5043 "arithmetic.ml" 145 5032 5044
+type(
+  Z.t
+)
+ident(
+  int_ref h "arithmetic.ml" 144 5001 5013 "arithmetic.ml" 144 5001 5014
+)
+"arithmetic.ml" 145 5032 5045 "arithmetic.ml" 145 5032 5047
+type(
+  Z.t -> Z.t -> Z.t
+)
+ident(
+  ext_ref Big_int_convenience.( -% )
+)
+"arithmetic.ml" 145 5032 5048 "arithmetic.ml" 145 5032 5049
+type(
+  Z.t
+)
+ident(
+  int_ref l "arithmetic.ml" 144 5001 5015 "arithmetic.ml" 144 5001 5016
+)
+"arithmetic.ml" 145 5032 5042 "arithmetic.ml" 145 5032 5050
+call(
+  stack
+)
+type(
+  Z.t
+)
+"arithmetic.ml" 145 5032 5051 "arithmetic.ml" 145 5032 5053
+type(
+  Z.t -> Z.t -> Z.t
+)
+ident(
+  ext_ref Big_int_convenience.( +% )
+)
+"arithmetic.ml" 145 5032 5054 "arithmetic.ml" 145 5032 5057
+type(
+  Z.t
+)
+ident(
+  ext_ref Big_int_convenience.bi1
+)
+"arithmetic.ml" 145 5032 5042 "arithmetic.ml" 145 5032 5057
+call(
+  stack
+)
+type(
+  Z.t
+)
+"arithmetic.ml" 146 5061 5067 "arithmetic.ml" 146 5061 5069
+type(
+  Type.typ
+)
+"arithmetic.ml" 146 5061 5076 "arithmetic.ml" 146 5061 5090
+type(
+  Z.t -> int
+)
+ident(
+  ext_ref Big_int_Z.int_of_big_int
+)
+"arithmetic.ml" 146 5061 5091 "arithmetic.ml" 146 5061 5092
+type(
+  Z.t
+)
+ident(
+  int_ref n "arithmetic.ml" 145 5032 5038 "arithmetic.ml" 145 5032 5039
+)
+"arithmetic.ml" 146 5061 5075 "arithmetic.ml" 146 5061 5093
+call(
+  stack
+)
+type(
+  int
+)
+"arithmetic.ml" 146 5061 5072 "arithmetic.ml" 146 5061 5093
+type(
+  Type.typ
+)
+"arithmetic.ml" 147 5097 5103 "arithmetic.ml" 147 5097 5104
+type(
+  Z.t * Type.typ
+)
+"arithmetic.ml" 147 5097 5107 "arithmetic.ml" 147 5097 5112
+type(
+  Type.binop_type -> Z.t * Type.typ -> Z.t * Type.typ -> Z.t * Type.typ
+)
+ident(
+  int_ref binop "arithmetic.ml" 99 3101 3105 "arithmetic.ml" 99 3101 3110
+)
+"arithmetic.ml" 147 5097 5113 "arithmetic.ml" 147 5097 5119
+type(
+  Type.binop_type
+)
+"arithmetic.ml" 147 5097 5120 "arithmetic.ml" 147 5097 5121
+type(
+  Z.t * Type.typ
+)
+ident(
+  int_ref v "arithmetic.ml" 144 5001 5017 "arithmetic.ml" 144 5001 5029
+)
+"arithmetic.ml" 147 5097 5123 "arithmetic.ml" 147 5097 5124
+type(
+  Z.t
+)
+ident(
+  int_ref l "arithmetic.ml" 144 5001 5015 "arithmetic.ml" 144 5001 5016
+)
+"arithmetic.ml" 147 5097 5125 "arithmetic.ml" 147 5097 5126
+type(
+  Type.typ
+)
+ident(
+  int_ref t "arithmetic.ml" 144 5001 5021 "arithmetic.ml" 144 5001 5022
+)
+"arithmetic.ml" 147 5097 5122 "arithmetic.ml" 147 5097 5127
+type(
+  Z.t * Type.typ
+)
+"arithmetic.ml" 147 5097 5107 "arithmetic.ml" 147 5097 5127
+call(
+  stack
+)
+type(
+  Z.t * Type.typ
+)
+"arithmetic.ml" 148 5131 5133 "arithmetic.ml" 148 5131 5137
+type(
+  Type.cast_type -> Z.t * Type.typ -> Type.typ -> Z.t * Type.typ
+)
+ident(
+  int_ref cast "arithmetic.ml" 128 4638 4642 "arithmetic.ml" 128 4638 4646
+)
+"arithmetic.ml" 148 5131 5138 "arithmetic.ml" 148 5131 5146
+type(
+  Type.cast_type
+)
+"arithmetic.ml" 148 5131 5147 "arithmetic.ml" 148 5131 5148
+type(
+  Z.t * Type.typ
+)
+ident(
+  int_ref s "arithmetic.ml" 147 5097 5103 "arithmetic.ml" 147 5097 5104
+)
+"arithmetic.ml" 148 5131 5149 "arithmetic.ml" 148 5131 5151
+type(
+  Type.typ
+)
+ident(
+  int_ref nt "arithmetic.ml" 146 5061 5067 "arithmetic.ml" 146 5061 5069
+)
+"arithmetic.ml" 148 5131 5133 "arithmetic.ml" 148 5131 5151
+call(
+  tail
+)
+type(
+  Z.t * Type.typ
+)
+"arithmetic.ml" 147 5097 5099 "arithmetic.ml" 148 5131 5151
+type(
+  Z.t * Type.typ
+)
+"arithmetic.ml" 146 5061 5063 "arithmetic.ml" 148 5131 5151
+type(
+  Z.t * Type.typ
+)
+"arithmetic.ml" 145 5032 5034 "arithmetic.ml" 148 5131 5151
+type(
+  Z.t * Type.typ
+)
+"arithmetic.ml" 151 5154 5158 "arithmetic.ml" 151 5154 5164
+type(
+  Z.t * Type.typ -> Z.t * Type.typ -> Z.t * Type.typ
+)
+ident(
+  def concat "arithmetic.ml" 164 5498 5498 --
+)
+"arithmetic.ml" 151 5154 5167 "arithmetic.ml" 151 5154 5168
+type(
+  Z.t
+)
+"arithmetic.ml" 151 5154 5169 "arithmetic.ml" 151 5154 5171
+type(
+  Type.typ
+)
+ident(
+  def lt "arithmetic.ml" 151 5154 5180 "arithmetic.ml" 161 5479 5495
+)
+"arithmetic.ml" 151 5154 5166 "arithmetic.ml" 151 5154 5172
+type(
+  Z.t * Type.typ
+)
+"arithmetic.ml" 151 5154 5165 "arithmetic.ml" 151 5154 5179
+type(
+  Z.t * Type.typ
+)
+ident(
+  def lv "arithmetic.ml" 151 5154 5180 "arithmetic.ml" 161 5479 5495
+)
+"arithmetic.ml" 151 5154 5182 "arithmetic.ml" 151 5154 5183
+type(
+  Z.t
+)
+"arithmetic.ml" 151 5154 5184 "arithmetic.ml" 151 5154 5186
+type(
+  Type.typ
+)
+ident(
+  def rt "arithmetic.ml" 152 5197 5199 "arithmetic.ml" 161 5479 5495
+)
+"arithmetic.ml" 151 5154 5181 "arithmetic.ml" 151 5154 5187
+type(
+  Z.t * Type.typ
+)
+"arithmetic.ml" 151 5154 5180 "arithmetic.ml" 151 5154 5194
+type(
+  Z.t * Type.typ
+)
+ident(
+  def rv "arithmetic.ml" 152 5197 5199 "arithmetic.ml" 161 5479 5495
+)
+"arithmetic.ml" 152 5197 5203 "arithmetic.ml" 152 5197 5208
+type(
+  int
+)
+"arithmetic.ml" 152 5197 5209 "arithmetic.ml" 152 5197 5214
+type(
+  int
+)
+"arithmetic.ml" 152 5197 5203 "arithmetic.ml" 152 5197 5214
+type(
+  int * int
+)
+"arithmetic.ml" 153 5217 5227 "arithmetic.ml" 153 5217 5229
+type(
+  Type.typ
+)
+ident(
+  int_ref lt "arithmetic.ml" 151 5154 5169 "arithmetic.ml" 151 5154 5171
+)
+"arithmetic.ml" 153 5217 5231 "arithmetic.ml" 153 5217 5233
+type(
+  Type.typ
+)
+ident(
+  int_ref rt "arithmetic.ml" 151 5154 5184 "arithmetic.ml" 151 5154 5186
+)
+"arithmetic.ml" 153 5217 5227 "arithmetic.ml" 153 5217 5233
+type(
+  Type.typ * Type.typ
+)
+"arithmetic.ml" 154 5239 5248 "arithmetic.ml" 154 5239 5255
+type(
+  int
+)
+ident(
+  def bitsl "arithmetic.ml" 154 5239 5271 "arithmetic.ml" 154 5239 5283
+)
+"arithmetic.ml" 154 5239 5245 "arithmetic.ml" 154 5239 5255
+type(
+  Type.typ
+)
+"arithmetic.ml" 154 5239 5260 "arithmetic.ml" 154 5239 5267
+type(
+  int
+)
+ident(
+  def bitsr "arithmetic.ml" 154 5239 5271 "arithmetic.ml" 154 5239 5283
+)
+"arithmetic.ml" 154 5239 5257 "arithmetic.ml" 154 5239 5267
+type(
+  Type.typ
+)
+"arithmetic.ml" 154 5239 5245 "arithmetic.ml" 154 5239 5267
+type(
+  Type.typ * Type.typ
+)
+"arithmetic.ml" 154 5239 5271 "arithmetic.ml" 154 5239 5276
+type(
+  int
+)
+ident(
+  int_ref bitsl "arithmetic.ml" 154 5239 5248 "arithmetic.ml" 154 5239 5255
+)
+"arithmetic.ml" 154 5239 5278 "arithmetic.ml" 154 5239 5283
+type(
+  int
+)
+ident(
+  int_ref bitsr "arithmetic.ml" 154 5239 5260 "arithmetic.ml" 154 5239 5267
+)
+"arithmetic.ml" 154 5239 5271 "arithmetic.ml" 154 5239 5283
+type(
+  int * int
+)
+"arithmetic.ml" 155 5284 5290 "arithmetic.ml" 155 5284 5291
+type(
+  Type.typ * Type.typ
+)
+"arithmetic.ml" 155 5284 5295 "arithmetic.ml" 155 5284 5303
+type(
+  string -> int * int
+)
+ident(
+  ext_ref Pervasives.failwith
+)
+"arithmetic.ml" 155 5284 5304 "arithmetic.ml" 155 5284 5312
+type(
+  string
+)
+"arithmetic.ml" 155 5284 5295 "arithmetic.ml" 155 5284 5312
+call(
+  stack
+)
+type(
+  int * int
+)
+"arithmetic.ml" 153 5217 5221 "arithmetic.ml" 155 5284 5312
+type(
+  int * int
+)
+"arithmetic.ml" 157 5318 5324 "arithmetic.ml" 157 5318 5326
+type(
+  Type.typ
+)
+"arithmetic.ml" 157 5318 5333 "arithmetic.ml" 157 5318 5338
+type(
+  int
+)
+ident(
+  int_ref bitsl "arithmetic.ml" 152 5197 5203 "arithmetic.ml" 152 5197 5208
+)
+"arithmetic.ml" 157 5318 5339 "arithmetic.ml" 157 5318 5340
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( + )
+)
+"arithmetic.ml" 157 5318 5341 "arithmetic.ml" 157 5318 5346
+type(
+  int
+)
+ident(
+  int_ref bitsr "arithmetic.ml" 152 5197 5209 "arithmetic.ml" 152 5197 5214
+)
+"arithmetic.ml" 157 5318 5332 "arithmetic.ml" 157 5318 5347
+type(
+  int
+)
+"arithmetic.ml" 157 5318 5329 "arithmetic.ml" 157 5318 5347
+type(
+  Type.typ
+)
+"arithmetic.ml" 158 5351 5357 "arithmetic.ml" 158 5351 5359
+type(
+  Z.t * Type.typ
+)
+"arithmetic.ml" 158 5351 5362 "arithmetic.ml" 158 5351 5366
+type(
+  Type.cast_type -> Z.t * Type.typ -> Type.typ -> Z.t * Type.typ
+)
+ident(
+  int_ref cast "arithmetic.ml" 128 4638 4642 "arithmetic.ml" 128 4638 4646
+)
+"arithmetic.ml" 158 5351 5367 "arithmetic.ml" 158 5351 5380
+type(
+  Type.cast_type
+)
+"arithmetic.ml" 158 5351 5381 "arithmetic.ml" 158 5351 5383
+type(
+  Z.t * Type.typ
+)
+ident(
+  int_ref lv "arithmetic.ml" 151 5154 5165 "arithmetic.ml" 151 5154 5179
+)
+"arithmetic.ml" 158 5351 5384 "arithmetic.ml" 158 5351 5386
+type(
+  Type.typ
+)
+ident(
+  int_ref nt "arithmetic.ml" 157 5318 5324 "arithmetic.ml" 157 5318 5326
+)
+"arithmetic.ml" 158 5351 5362 "arithmetic.ml" 158 5351 5386
+call(
+  stack
+)
+type(
+  Z.t * Type.typ
+)
+"arithmetic.ml" 159 5390 5396 "arithmetic.ml" 159 5390 5398
+type(
+  Z.t * Type.typ
+)
+"arithmetic.ml" 159 5390 5401 "arithmetic.ml" 159 5390 5405
+type(
+  Type.cast_type -> Z.t * Type.typ -> Type.typ -> Z.t * Type.typ
+)
+ident(
+  int_ref cast "arithmetic.ml" 128 4638 4642 "arithmetic.ml" 128 4638 4646
+)
+"arithmetic.ml" 159 5390 5406 "arithmetic.ml" 159 5390 5419
+type(
+  Type.cast_type
+)
+"arithmetic.ml" 159 5390 5420 "arithmetic.ml" 159 5390 5422
+type(
+  Z.t * Type.typ
+)
+ident(
+  int_ref rv "arithmetic.ml" 151 5154 5180 "arithmetic.ml" 151 5154 5194
+)
+"arithmetic.ml" 159 5390 5423 "arithmetic.ml" 159 5390 5425
+type(
+  Type.typ
+)
+ident(
+  int_ref nt "arithmetic.ml" 157 5318 5324 "arithmetic.ml" 157 5318 5326
+)
+"arithmetic.ml" 159 5390 5401 "arithmetic.ml" 159 5390 5425
+call(
+  stack
+)
+type(
+  Z.t * Type.typ
+)
+"arithmetic.ml" 160 5429 5435 "arithmetic.ml" 160 5429 5437
+type(
+  Z.t * Type.typ
+)
+"arithmetic.ml" 160 5429 5440 "arithmetic.ml" 160 5429 5445
+type(
+  Type.binop_type -> Z.t * Type.typ -> Z.t * Type.typ -> Z.t * Type.typ
+)
+ident(
+  int_ref binop "arithmetic.ml" 99 3101 3105 "arithmetic.ml" 99 3101 3110
+)
+"arithmetic.ml" 160 5429 5446 "arithmetic.ml" 160 5429 5452
+type(
+  Type.binop_type
+)
+"arithmetic.ml" 160 5429 5453 "arithmetic.ml" 160 5429 5455
+type(
+  Z.t * Type.typ
+)
+ident(
+  int_ref lv "arithmetic.ml" 158 5351 5357 "arithmetic.ml" 158 5351 5359
+)
+"arithmetic.ml" 160 5429 5457 "arithmetic.ml" 160 5429 5464
+type(
+  int -> Z.t
+)
+ident(
+  ext_ref Big_int_convenience.biconst
+)
+"arithmetic.ml" 160 5429 5465 "arithmetic.ml" 160 5429 5470
+type(
+  int
+)
+ident(
+  int_ref bitsr "arithmetic.ml" 152 5197 5209 "arithmetic.ml" 152 5197 5214
+)
+"arithmetic.ml" 160 5429 5457 "arithmetic.ml" 160 5429 5470
+call(
+  stack
+)
+type(
+  Z.t
+)
+"arithmetic.ml" 160 5429 5472 "arithmetic.ml" 160 5429 5474
+type(
+  Type.typ
+)
+ident(
+  int_ref nt "arithmetic.ml" 157 5318 5324 "arithmetic.ml" 157 5318 5326
+)
+"arithmetic.ml" 160 5429 5456 "arithmetic.ml" 160 5429 5475
+type(
+  Z.t * Type.typ
+)
+"arithmetic.ml" 160 5429 5440 "arithmetic.ml" 160 5429 5475
+call(
+  stack
+)
+type(
+  Z.t * Type.typ
+)
+"arithmetic.ml" 161 5479 5481 "arithmetic.ml" 161 5479 5486
+type(
+  Type.binop_type -> Z.t * Type.typ -> Z.t * Type.typ -> Z.t * Type.typ
+)
+ident(
+  int_ref binop "arithmetic.ml" 99 3101 3105 "arithmetic.ml" 99 3101 3110
+)
+"arithmetic.ml" 161 5479 5487 "arithmetic.ml" 161 5479 5489
+type(
+  Type.binop_type
+)
+"arithmetic.ml" 161 5479 5490 "arithmetic.ml" 161 5479 5492
+type(
+  Z.t * Type.typ
+)
+ident(
+  int_ref lv "arithmetic.ml" 160 5429 5435 "arithmetic.ml" 160 5429 5437
+)
+"arithmetic.ml" 161 5479 5493 "arithmetic.ml" 161 5479 5495
+type(
+  Z.t * Type.typ
+)
+ident(
+  int_ref rv "arithmetic.ml" 159 5390 5396 "arithmetic.ml" 159 5390 5398
+)
+"arithmetic.ml" 161 5479 5481 "arithmetic.ml" 161 5479 5495
+call(
+  tail
+)
+type(
+  Z.t * Type.typ
+)
+"arithmetic.ml" 160 5429 5431 "arithmetic.ml" 161 5479 5495
+type(
+  Z.t * Type.typ
+)
+"arithmetic.ml" 159 5390 5392 "arithmetic.ml" 161 5479 5495
+type(
+  Z.t * Type.typ
+)
+"arithmetic.ml" 158 5351 5353 "arithmetic.ml" 161 5479 5495
+type(
+  Z.t * Type.typ
+)
+"arithmetic.ml" 157 5318 5320 "arithmetic.ml" 161 5479 5495
+type(
+  Z.t * Type.typ
+)
+"arithmetic.ml" 152 5197 5199 "arithmetic.ml" 161 5479 5495
+type(
+  Z.t * Type.typ
+)
+"arithmetic.ml" 164 5498 5502 "arithmetic.ml" 164 5498 5509
+type(
+  Z.t * Type.typ -> bool
+)
+ident(
+  def is_zero "arithmetic.ml" 166 5551 5571 --
+)
+"arithmetic.ml" 164 5498 5512 "arithmetic.ml" 164 5498 5513
+type(
+  Z.t
+)
+ident(
+  def i "arithmetic.ml" 165 5525 5527 "arithmetic.ml" 166 5551 5571
+)
+"arithmetic.ml" 164 5498 5514 "arithmetic.ml" 164 5498 5515
+type(
+  Type.typ
+)
+ident(
+  def t "arithmetic.ml" 165 5525 5527 "arithmetic.ml" 166 5551 5571
+)
+"arithmetic.ml" 164 5498 5511 "arithmetic.ml" 164 5498 5516
+type(
+  Z.t * Type.typ
+)
+"arithmetic.ml" 164 5498 5510 "arithmetic.ml" 164 5498 5522
+type(
+  Z.t * Type.typ
+)
+ident(
+  def v "arithmetic.ml" 165 5525 5527 "arithmetic.ml" 166 5551 5571
+)
+"arithmetic.ml" 165 5525 5531 "arithmetic.ml" 165 5525 5532
+type(
+  Z.t
+)
+"arithmetic.ml" 165 5525 5535 "arithmetic.ml" 165 5525 5545
+type(
+  Z.t * Type.typ -> Z.t
+)
+ident(
+  int_ref to_big_int "arithmetic.ml" 26 577 581 "arithmetic.ml" 26 577 591
+)
+"arithmetic.ml" 165 5525 5546 "arithmetic.ml" 165 5525 5547
+type(
+  Z.t * Type.typ
+)
+ident(
+  int_ref v "arithmetic.ml" 164 5498 5510 "arithmetic.ml" 164 5498 5522
+)
+"arithmetic.ml" 165 5525 5535 "arithmetic.ml" 165 5525 5547
+call(
+  stack
+)
+type(
+  Z.t
+)
+"arithmetic.ml" 166 5551 5553 "arithmetic.ml" 166 5551 5565
+type(
+  Z.t -> int
+)
+ident(
+  ext_ref Big_int_Z.sign_big_int
+)
+"arithmetic.ml" 166 5551 5566 "arithmetic.ml" 166 5551 5567
+type(
+  Z.t
+)
+ident(
+  int_ref v "arithmetic.ml" 165 5525 5531 "arithmetic.ml" 165 5525 5532
+)
+"arithmetic.ml" 166 5551 5553 "arithmetic.ml" 166 5551 5567
+call(
+  stack
+)
+type(
+  int
+)
+"arithmetic.ml" 166 5551 5568 "arithmetic.ml" 166 5551 5569
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( = )
+)
+"arithmetic.ml" 166 5551 5570 "arithmetic.ml" 166 5551 5571
+type(
+  int
+)
+"arithmetic.ml" 166 5551 5553 "arithmetic.ml" 166 5551 5571
+type(
+  bool
+)
+"arithmetic.ml" 165 5525 5527 "arithmetic.ml" 166 5551 5571
+type(
+  bool
+)

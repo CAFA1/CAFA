@@ -1,0 +1,27 @@
+From e4ee274439d6bf538da00009d15b553fa2324bb8 Mon Sep 17 00:00:00 2001
+From: Cristy <urban-warrior@imagemagick.org>
+Date: Wed, 11 Jan 2017 10:10:16 -0500
+Subject: [PATCH] Detect write error in ReadGROUP4Image
+
+Fix CVE-2016-10062
+
+bug: https://github.com/ImageMagick/ImageMagick/issues/352
+bug-debian: https://bugs.debian.org/849439
+origin: https://github.com/ImageMagick/ImageMagick/commit/41e955984b034777903cfa61e500a0b922eb9cbd
+---
+ coders/tiff.c | 2 ++
+ 1 file changed, 2 insertions(+)
+
+Index: imagemagick-6.6.9.7/coders/tiff.c
+===================================================================
+--- imagemagick-6.6.9.7.orig/coders/tiff.c	2017-03-02 15:19:30.274175275 -0500
++++ imagemagick-6.6.9.7/coders/tiff.c	2017-03-02 15:19:30.258175086 -0500
+@@ -366,6 +366,8 @@
+       status=MagickFalse;
+   offset=(ssize_t) fseek(file,(ssize_t) offset,SEEK_SET);
+   length=WriteLSBLong(file,(unsigned int) length);
++  if (ferror(file) != 0)
++    ThrowImageException(FileOpenError,"UnableToCreateTemporaryFile");
+   (void) fclose(file);
+   (void) CloseBlob(image);
+   image=DestroyImage(image);

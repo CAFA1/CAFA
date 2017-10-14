@@ -1,0 +1,31 @@
+From b39c9da131beb613be12058243c03f05f15cd54a Mon Sep 17 00:00:00 2001
+From: Cristy <urban-warrior@imagemagick.org>
+Date: Sun, 24 Jul 2016 20:07:03 -0400
+Subject: [PATCH] Prevent buffer overflow in properties reading
+
+This fix CVE-2016-6491
+
+bug-debian: https://bug.debian.org/833099
+origin: upstream, https://github.com/ImageMagick/ImageMagick/commit/dd84447b63a71fa8c3f47071b09454efc667767b
+---
+ magick/property.c | 7 ++++++-
+ 1 file changed, 6 insertions(+), 1 deletion(-)
+
+Index: imagemagick-6.6.9.7/magick/property.c
+===================================================================
+--- imagemagick-6.6.9.7.orig/magick/property.c	2016-11-15 15:52:32.823961191 -0500
++++ imagemagick-6.6.9.7/magick/property.c	2016-11-15 15:52:32.819961142 -0500
+@@ -645,7 +645,12 @@
+       }
+     if ((count & 0x01) == 0)
+       (void) ReadPropertyByte(&info,&length);
+-    count=(ssize_t) ((int) ReadPropertyMSBLong(&info,&length));
++    count=(ssize_t) ReadPropertyMSBLong(&info,&length);
++    if ((count < 0) || ((size_t) count > length))
++      {
++        length=0; 
++        continue;
++      }
+     if ((*name != '\0') && (*name != '#'))
+       if ((resource == (char *) NULL) || (LocaleCompare(name,resource) != 0))
+         {

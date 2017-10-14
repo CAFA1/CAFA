@@ -1,0 +1,221 @@
+Backport of:
+
+From 734e325d773a327795547a50d1da85be12d65cfb Mon Sep 17 00:00:00 2001
+From: dirk <dirk@git.imagemagick.org>
+Date: Sat, 16 Jan 2016 00:07:51 +0100
+Subject: [PATCH] Rewrite reading pixel values for psd file
+
+It fix psd file handling for corrupted file. This is partial fix.
+
+Origin: upstream, https://github.com/ImageMagick/ImageMagick/commit/280215b9936d145dd5ee91403738ccce1333cab1
+Bug-ubuntu: https://bugs.launchpad.net/ubuntu/+source/imagemagick/+bug/1533442
+Bug: https://github.com/ImageMagick/ImageMagick/issues/83
+Bug-debian: https://bugs.debian.org/832457
+---
+ coders/psd.c | 171 +++++++++++++++++++++++++++++++----------------------------
+ 1 file changed, 90 insertions(+), 81 deletions(-)
+
+Index: imagemagick-6.6.9.7/coders/psd.c
+===================================================================
+--- imagemagick-6.6.9.7.orig/coders/psd.c	2016-11-15 16:33:42.866121162 -0500
++++ imagemagick-6.6.9.7/coders/psd.c	2016-11-15 16:35:22.475337421 -0500
+@@ -529,6 +529,81 @@
+   return(OverCompositeOp);
+ }
+ 
++static inline void SetPSDPixel(Image *image,const size_t channels,
++  const ssize_t type,const size_t packet_size,Quantum pixel,PixelPacket *q,
++  ExceptionInfo *exception,IndexPacket *indexes,ssize_t x)
++{
++  if (image->storage_class == PseudoClass)
++    {
++      if (packet_size == 1) {
++	SetIndexPixelComponent(indexes+x,ScaleQuantumToChar(pixel));
++      }
++      else {
++	SetIndexPixelComponent(indexes+x,ScaleQuantumToShort(pixel));
++      }
++      SetRedPixelComponent(q,image->colormap[(ssize_t)
++        GetIndexPixelComponent(indexes+x)].red);
++      SetGreenPixelComponent(q,image->colormap[(ssize_t)
++        GetIndexPixelComponent(indexes+x)].green);
++      SetBluePixelComponent(q,image->colormap[(ssize_t)
++        GetIndexPixelComponent(indexes+x)].blue);
++      return;
++    }
++  switch (type)
++  {
++    case -1:
++    {
++      SetOpacityPixelComponent(q, pixel);
++      break;
++    }
++    case -2:
++    case 0:
++    {
++      SetRedPixelComponent(q,pixel);
++      if (channels == 1 || type == -2)
++        {
++          SetGreenPixelComponent(q,GetRedPixelComponent(q));
++          SetBluePixelComponent(q,GetRedPixelComponent(q));
++        }
++      break;
++    }
++    case 1:
++    {
++      if (image->storage_class == PseudoClass)
++        SetOpacityPixelComponent(q,pixel);
++      else
++        SetGreenPixelComponent(q,pixel);
++      break;
++    }
++    case 2:
++    {
++      if (image->storage_class == PseudoClass)
++        SetOpacityPixelComponent(q,pixel);
++      else
++        SetBluePixelComponent(q,pixel);
++      break;
++    }
++    case 3:
++    {
++      if (image->colorspace == CMYKColorspace) {
++	SetIndexPixelComponent(indexes+x,pixel);
++      }
++      else
++	if (image->matte != MagickFalse)
++          SetOpacityPixelComponent(q,pixel);
++      break;
++    }
++    case 4:
++    {
++      if ((image->colorspace == RGBColorspace) && (channels > 3))
++        break;
++      if (image->matte != MagickFalse)
++          SetOpacityPixelComponent(q,pixel);
++        break;
++    }
++  }
++}
++
+ static MagickBooleanType ReadPSDLayer(Image *image,const size_t channels,
+   const ssize_t type,const MagickOffsetType *offsets,ExceptionInfo *exception)
+ {
+@@ -646,96 +721,31 @@
+           p=PushShortPixel(MSBEndian,p,&nibble);
+           pixel=ScaleShortToQuantum(nibble);
+         }
+-      switch (type)
+-      {
+-        case -1:
+-        {
+-          SetOpacityPixelComponent(q,QuantumRange-pixel);
+-          break;
+-        }
+-        case 0:
++    if (image->depth > 1)
+         {
+-          SetRedPixelComponent(q,pixel);
+-          if (channels == 1)
+-            {
+-              SetGreenPixelComponent(q,GetRedPixelComponent(q));
+-              SetBluePixelComponent(q,GetRedPixelComponent(q));
+-            }
+-          if (image->storage_class == PseudoClass)
+-            {
+-              if (packet_size == 1)
+-                SetIndexPixelComponent(indexes+x,ScaleQuantumToChar(pixel));
+-              else
+-                SetIndexPixelComponent(indexes+x,ScaleQuantumToShort(pixel));
+-              SetRedPixelComponent(q,image->colormap[(ssize_t)
+-                GetIndexPixelComponent(indexes+x)].red);
+-              SetGreenPixelComponent(q,image->colormap[(ssize_t)
+-                GetIndexPixelComponent(indexes+x)].green);
+-              SetBluePixelComponent(q,image->colormap[(ssize_t)
+-                GetIndexPixelComponent(indexes+x)].blue);
+-              if (image->depth == 1)
+-                {
+-                  ssize_t
+-                    bit,
+-                    number_bits;
+-
+-                  number_bits=image->columns-x;
+-                  if (number_bits > 8)
+-                    number_bits=8;
+-                  for (bit=0; bit < number_bits; bit++)
+-                  {
+-                    SetIndexPixelComponent(indexes+x,(((unsigned char) pixel) &
+-                      (0x01 << (7-bit))) != 0 ? 0 : 255);
+-                    SetRedPixelComponent(q,image->colormap[(ssize_t)
+-                      GetIndexPixelComponent(indexes+x)].red);
+-                    SetGreenPixelComponent(q,image->colormap[(ssize_t)
+-                      GetIndexPixelComponent(indexes+x)].green);
+-                    SetBluePixelComponent(q,image->colormap[(ssize_t)
+-                      GetIndexPixelComponent(indexes+x)].blue);
+-                    q++;
+-                    x++;
+-                  }
+-                  q--;
+-                  x--;
+-                }
+-            }
+-          break;
++        SetPSDPixel(image,channels,type,packet_size,pixel,q,exception,indexes,x);
++        q++;
+         }
+-        case 1:
+-        {
+-          if (image->storage_class == PseudoClass)
+-            SetOpacityPixelComponent(q,QuantumRange-pixel);
+-          else
+-            SetGreenPixelComponent(q,pixel);
+-          break;
+-        }
+-        case 2:
+-        {
+-          if (image->storage_class == PseudoClass)
+-            SetOpacityPixelComponent(q,QuantumRange-pixel);
+-          else
+-            SetBluePixelComponent(q,pixel);
+-          break;
+-        }
+-        case 3:
+-        {
+-          if (image->colorspace == CMYKColorspace)
+-            SetIndexPixelComponent(indexes+x,pixel);
+-          else
+-            SetOpacityPixelComponent(q,QuantumRange-pixel);
+-          break;
+-        }
+-        case 4:
++    else
+         {
+-          if ((image->colorspace == RGBColorspace) && (channels > 3))
+-            break;
+-          SetOpacityPixelComponent(q,QuantumRange-pixel);
+-          break;
++        ssize_t
++          bit,
++          number_bits;
++      
++        number_bits=image->columns-x;
++        if (number_bits > 8)
++          number_bits=8;
++        for (bit = 0; bit < number_bits; bit++)
++        {
++          SetPSDPixel(image,channels,type,packet_size,(((unsigned char) pixel)
++						       & (0x01 << (7-bit))) != 0 ? 0 : 255,q,exception,indexes,x);
++          q++;
++          x++;
++        }
++        if (x != image->columns)
++          x--;
++        continue;
+         }
+-        default:
+-          break;
+-      }
+-      q++;
+     }
+     if (SyncAuthenticPixels(image,exception) == MagickFalse)
+       break;

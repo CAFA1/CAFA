@@ -1,0 +1,54 @@
+From 027db576d762d74d625ac138276e4e6eb5c8e4fd Mon Sep 17 00:00:00 2001
+From: cristy <urban-warrior@git.imagemagick.org>
+Date: Tue, 13 Jan 2015 13:31:27 +0000
+Subject: [PATCH] Avoid a SIGABRT in sun file handling
+
+This is a partial fix for malformed sun file
+
+Bug: http://www.imagemagick.org/discourse-server/viewtopic.php?f=3&t=26857
+Bug-debian: https://bugs.debian.org/832465
+Origin: upstream, https://github.com/ImageMagick/ImageMagick/commit/8ea44b48a182dd46d018f4b4f09a5e2ee9638105
+---
+ coders/sun.c | 15 +--------------
+ 1 file changed, 1 insertion(+), 14 deletions(-)
+
+Index: imagemagick-6.6.9.7/coders/sun.c
+===================================================================
+--- imagemagick-6.6.9.7.orig/coders/sun.c	2016-11-15 15:13:47.899573153 -0500
++++ imagemagick-6.6.9.7/coders/sun.c	2016-11-15 15:13:47.895573103 -0500
+@@ -257,8 +257,7 @@
+   size_t
+     bytes_per_line,
+     extent,
+-    height,
+-    length;
++    height;
+ 
+   ssize_t
+     count,
+@@ -478,13 +477,6 @@
+     else
+       if (image->storage_class == PseudoClass)
+         {
+-          if (bytes_per_line == 0)
+-            bytes_per_line=image->columns;
+-          length=image->rows*(image->columns+image->columns % 2);
+-          if (((sun_info.type == RT_ENCODED) &&
+-               (length > (bytes_per_line*image->rows))) ||
+-              ((sun_info.type != RT_ENCODED) && (length > sun_info.length)))
+-            ThrowReaderException(CorruptImageError,"UnableToReadImageData");
+           for (y=0; y < (ssize_t) image->rows; y++)
+           {
+             q=QueueAuthenticPixels(image,0,y,image->columns,1,exception);
+@@ -516,11 +508,6 @@
+             bytes_per_pixel++;
+           if (bytes_per_line == 0)
+             bytes_per_line=bytes_per_pixel*image->columns;
+-          length=image->rows*(bytes_per_line+bytes_per_line % 2);
+-          if (((sun_info.type == RT_ENCODED) &&
+-               (length > (bytes_per_line*image->rows))) ||
+-              ((sun_info.type != RT_ENCODED) && (length > sun_info.length)))
+-            ThrowReaderException(CorruptImageError,"UnableToReadImageData");
+           for (y=0; y < (ssize_t) image->rows; y++)
+           {
+             q=QueueAuthenticPixels(image,0,y,image->columns,1,exception);

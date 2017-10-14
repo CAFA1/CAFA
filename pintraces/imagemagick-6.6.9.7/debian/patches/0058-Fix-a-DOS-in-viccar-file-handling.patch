@@ -1,0 +1,26 @@
+From aa2bed6c629866065a6e4ad47563e6152cc4bd41 Mon Sep 17 00:00:00 2001
+From: cristy <cristy@aa41f4f7-0bf4-0310-aa73-e5a19afd5a74>
+Date: Sun, 25 Jan 2015 17:31:57 +0000
+Subject: [PATCH] Fix a DOS in viccar file handling
+
+The current code does not check for EOF condition leading to infinite loop
+
+origin: http://www.imagemagick.org/discourse-server/viewtopic.php?f=3&t=26933
+git-svn-id: https://subversion.imagemagick.org/subversion/ImageMagick/branches/ImageMagick-6@17856 aa41f4f7-0bf4-0310-aa73-e5a19afd5a74
+---
+ coders/vicar.c | 2 ++
+ 1 file changed, 2 insertions(+)
+
+Index: imagemagick-6.6.9.7/coders/vicar.c
+===================================================================
+--- imagemagick-6.6.9.7.orig/coders/vicar.c	2016-11-15 13:45:53.603172379 -0500
++++ imagemagick-6.6.9.7/coders/vicar.c	2016-11-15 13:45:53.599172330 -0500
+@@ -274,6 +274,8 @@
+   while (count < (ssize_t) length)
+   {
+     c=ReadBlobByte(image);
++    if (c == EOF)
++      break;
+     count++;
+   }
+   if ((image->columns == 0) || (image->rows == 0))

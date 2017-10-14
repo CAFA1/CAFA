@@ -1,0 +1,69 @@
+From 75657e1145de7d6904fd67f4f235bbeec652ad3b Mon Sep 17 00:00:00 2001
+From: =?UTF-8?q?Bastien=20ROUCARI=C3=88S?= <roucaries.bastien@gmail.com>
+Date: Fri, 31 Jul 2015 19:08:37 +0200
+Subject: [PATCH] Fix a miff security bug
+
+Specially crafted MIFF file could lead to DOS by using excessive CPU.
+
+Fix TEMP-0000000-FDAC72
+
+origin: http://www.imagemagick.org/discourse-server/viewtopic.php?f=3&t=26931
+git-svn-id: https://subversion.imagemagick.org/subversion/ImageMagick/branches/ImageMagick-6@17854 aa41f4f7-0bf4-0310-aa73-e5a19afd5a74
+---
+ coders/miff.c | 22 ++++++++++++++++++++--
+ 1 file changed, 20 insertions(+), 2 deletions(-)
+
+Index: imagemagick-6.6.9.7/coders/miff.c
+===================================================================
+--- imagemagick-6.6.9.7.orig/coders/miff.c	2016-11-15 13:45:45.291070886 -0500
++++ imagemagick-6.6.9.7/coders/miff.c	2016-11-15 13:45:45.287070836 -0500
+@@ -1338,6 +1338,9 @@
+           bzip_info.avail_out=(unsigned int) (packet_size*image->columns);
+           do
+           {
++            int
++              code;
++
+             if (bzip_info.avail_in == 0)
+               {
+                 bzip_info.next_in=(char *) compress_pixels;
+@@ -1347,7 +1350,13 @@
+                 bzip_info.avail_in=(unsigned int) ReadBlob(image,length,
+                   (unsigned char *) bzip_info.next_in);
+               }
+-            if (BZ2_bzDecompress(&bzip_info) == BZ_STREAM_END)
++            code=BZ2_bzDecompress(&bzip_info);
++            if (code < 0)
++              {
++                status=MagickFalse;
++                break;
++              }
++            if (code == BZ_STREAM_END)
+               break;
+           } while (bzip_info.avail_out != 0);
+           (void) ImportQuantumPixels(image,(CacheView *) NULL,quantum_info,
+@@ -1391,6 +1400,9 @@
+           zip_info.avail_out=(uInt) (packet_size*image->columns);
+           do
+           {
++            int
++              code;
++
+             if (zip_info.avail_in == 0)
+               {
+                 zip_info.next_in=compress_pixels;
+@@ -1400,7 +1412,13 @@
+                 zip_info.avail_in=(unsigned int) ReadBlob(image,length,
+                   zip_info.next_in);
+               }
+-            if (inflate(&zip_info,Z_SYNC_FLUSH) == Z_STREAM_END)
++            code=inflate(&zip_info,Z_SYNC_FLUSH);
++            if (code < 0)
++              {
++                status=MagickFalse;
++                break;
++              }
++            if (code == Z_STREAM_END)
+               break;
+           } while (zip_info.avail_out != 0);
+           (void) ImportQuantumPixels(image,(CacheView *) NULL,quantum_info,

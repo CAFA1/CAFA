@@ -1,0 +1,1193 @@
+"cvc3_grammar.mly" 2 242 248 "cvc3_grammar.mly" 2 242 259
+type(
+  'a list -> 'a option -> 'a list
+)
+ident(
+  def cond_append "cvc3_grammar.ml" 24 335 335 --
+)
+"cvc3_grammar.mly" 2 242 260 "cvc3_grammar.mly" 2 242 261
+type(
+  'a list
+)
+ident(
+  def l "cvc3_grammar.mly" 2 242 264 "cvc3_grammar.mly" 4 289 311
+)
+"cvc3_grammar.mly" 3 273 279 "cvc3_grammar.mly" 3 273 283
+type(
+  'a option
+)
+"cvc3_grammar.mly" 3 273 287 "cvc3_grammar.mly" 3 273 288
+type(
+  'a list
+)
+ident(
+  int_ref l "cvc3_grammar.mly" 2 242 260 "cvc3_grammar.mly" 2 242 261
+)
+"cvc3_grammar.mly" 4 289 299 "cvc3_grammar.mly" 4 289 302
+type(
+  'a
+)
+ident(
+  def e "cvc3_grammar.mly" 4 289 306 "cvc3_grammar.mly" 4 289 311
+)
+"cvc3_grammar.mly" 4 289 295 "cvc3_grammar.mly" 4 289 302
+type(
+  'a option
+)
+"cvc3_grammar.mly" 4 289 306 "cvc3_grammar.mly" 4 289 307
+type(
+  'a
+)
+ident(
+  int_ref e "cvc3_grammar.mly" 4 289 299 "cvc3_grammar.mly" 4 289 302
+)
+"cvc3_grammar.mly" 4 289 310 "cvc3_grammar.mly" 4 289 311
+type(
+  'a list
+)
+ident(
+  int_ref l "cvc3_grammar.mly" 2 242 260 "cvc3_grammar.mly" 2 242 261
+)
+"cvc3_grammar.mly" 4 289 306 "cvc3_grammar.mly" 4 289 311
+type(
+  'a list
+)
+"cvc3_grammar.mly" 2 242 264 "cvc3_grammar.mly" 4 289 311
+type(
+  'a option -> 'a list
+)
+"cvc3_grammar.ml" 24 335 339 "cvc3_grammar.ml" 24 335 353
+type(
+  int array
+)
+ident(
+  def yytransl_const "cvc3_grammar.ml" 40 624 624 --
+)
+"cvc3_grammar.ml" 25 359 361 "cvc3_grammar.ml" 25 359 364
+type(
+  int
+)
+"cvc3_grammar.ml" 26 382 384 "cvc3_grammar.ml" 26 382 387
+type(
+  int
+)
+"cvc3_grammar.ml" 27 404 406 "cvc3_grammar.ml" 27 404 409
+type(
+  int
+)
+"cvc3_grammar.ml" 28 426 428 "cvc3_grammar.ml" 28 426 431
+type(
+  int
+)
+"cvc3_grammar.ml" 29 445 447 "cvc3_grammar.ml" 29 445 450
+type(
+  int
+)
+"cvc3_grammar.ml" 30 465 467 "cvc3_grammar.ml" 30 465 470
+type(
+  int
+)
+"cvc3_grammar.ml" 31 486 488 "cvc3_grammar.ml" 31 486 491
+type(
+  int
+)
+"cvc3_grammar.ml" 32 505 507 "cvc3_grammar.ml" 32 505 510
+type(
+  int
+)
+"cvc3_grammar.ml" 33 522 524 "cvc3_grammar.ml" 33 522 527
+type(
+  int
+)
+"cvc3_grammar.ml" 34 540 542 "cvc3_grammar.ml" 34 540 545
+type(
+  int
+)
+"cvc3_grammar.ml" 35 559 561 "cvc3_grammar.ml" 35 559 564
+type(
+  int
+)
+"cvc3_grammar.ml" 36 578 580 "cvc3_grammar.ml" 36 578 583
+type(
+  int
+)
+"cvc3_grammar.ml" 37 598 602 "cvc3_grammar.ml" 37 598 603
+type(
+  int
+)
+"cvc3_grammar.ml" 38 615 619 "cvc3_grammar.ml" 38 615 620
+type(
+  int
+)
+"cvc3_grammar.ml" 24 335 356 "cvc3_grammar.ml" 38 615 622
+type(
+  int array
+)
+"cvc3_grammar.ml" 40 624 628 "cvc3_grammar.ml" 40 624 642
+type(
+  int array
+)
+ident(
+  def yytransl_block "cvc3_grammar.ml" 45 691 691 --
+)
+"cvc3_grammar.ml" 41 648 650 "cvc3_grammar.ml" 41 648 653
+type(
+  int
+)
+"cvc3_grammar.ml" 42 665 667 "cvc3_grammar.ml" 42 665 670
+type(
+  int
+)
+"cvc3_grammar.ml" 43 682 686 "cvc3_grammar.ml" 43 682 687
+type(
+  int
+)
+"cvc3_grammar.ml" 40 624 645 "cvc3_grammar.ml" 43 682 689
+type(
+  int array
+)
+"cvc3_grammar.ml" 45 691 695 "cvc3_grammar.ml" 45 691 700
+type(
+  string
+)
+ident(
+  def yylhs "cvc3_grammar.ml" 49 799 799 --
+)
+"cvc3_grammar.ml" 45 691 703 "cvc3_grammar.ml" 47 780 797
+type(
+  string
+)
+"cvc3_grammar.ml" 49 799 803 "cvc3_grammar.ml" 49 799 808
+type(
+  string
+)
+ident(
+  def yylen "cvc3_grammar.ml" 53 907 907 --
+)
+"cvc3_grammar.ml" 49 799 811 "cvc3_grammar.ml" 51 888 905
+type(
+  string
+)
+"cvc3_grammar.ml" 53 907 911 "cvc3_grammar.ml" 53 907 919
+type(
+  string
+)
+ident(
+  def yydefred "cvc3_grammar.ml" 59 1150 1150 --
+)
+"cvc3_grammar.ml" 53 907 922 "cvc3_grammar.ml" 57 1131 1148
+type(
+  string
+)
+"cvc3_grammar.ml" 59 1150 1154 "cvc3_grammar.ml" 59 1150 1161
+type(
+  string
+)
+ident(
+  def yydgoto "cvc3_grammar.ml" 62 1218 1218 --
+)
+"cvc3_grammar.ml" 59 1150 1164 "cvc3_grammar.ml" 60 1175 1216
+type(
+  string
+)
+"cvc3_grammar.ml" 62 1218 1222 "cvc3_grammar.ml" 62 1218 1230
+type(
+  string
+)
+ident(
+  def yysindex "cvc3_grammar.ml" 68 1461 1461 --
+)
+"cvc3_grammar.ml" 62 1218 1233 "cvc3_grammar.ml" 66 1442 1459
+type(
+  string
+)
+"cvc3_grammar.ml" 68 1461 1465 "cvc3_grammar.ml" 68 1461 1473
+type(
+  string
+)
+ident(
+  def yyrindex "cvc3_grammar.ml" 74 1704 1704 --
+)
+"cvc3_grammar.ml" 68 1461 1476 "cvc3_grammar.ml" 72 1685 1702
+type(
+  string
+)
+"cvc3_grammar.ml" 74 1704 1708 "cvc3_grammar.ml" 74 1704 1716
+type(
+  string
+)
+ident(
+  def yygindex "cvc3_grammar.ml" 77 1773 1773 --
+)
+"cvc3_grammar.ml" 74 1704 1719 "cvc3_grammar.ml" 75 1730 1771
+type(
+  string
+)
+"cvc3_grammar.ml" 77 1773 1777 "cvc3_grammar.ml" 77 1773 1788
+type(
+  int
+)
+ident(
+  def yytablesize "cvc3_grammar.ml" 78 1794 1794 --
+)
+"cvc3_grammar.ml" 77 1773 1791 "cvc3_grammar.ml" 77 1773 1793
+type(
+  int
+)
+"cvc3_grammar.ml" 78 1794 1798 "cvc3_grammar.ml" 78 1794 1805
+type(
+  string
+)
+ident(
+  def yytable "cvc3_grammar.ml" 83 1986 1986 --
+)
+"cvc3_grammar.ml" 78 1794 1808 "cvc3_grammar.ml" 81 1951 1984
+type(
+  string
+)
+"cvc3_grammar.ml" 83 1986 1990 "cvc3_grammar.ml" 83 1986 1997
+type(
+  string
+)
+ident(
+  def yycheck "cvc3_grammar.ml" 88 2178 2178 --
+)
+"cvc3_grammar.ml" 83 1986 2000 "cvc3_grammar.ml" 86 2143 2176
+type(
+  string
+)
+"cvc3_grammar.ml" 88 2178 2182 "cvc3_grammar.ml" 88 2178 2195
+type(
+  string
+)
+ident(
+  def yynames_const "cvc3_grammar.ml" 104 2384 2384 --
+)
+"cvc3_grammar.ml" 88 2178 2198 "cvc3_grammar.ml" 102 2379 2382
+type(
+  string
+)
+"cvc3_grammar.ml" 104 2384 2388 "cvc3_grammar.ml" 104 2384 2401
+type(
+  string
+)
+ident(
+  def yynames_block "cvc3_grammar.ml" 109 2434 2434 --
+)
+"cvc3_grammar.ml" 104 2384 2404 "cvc3_grammar.ml" 107 2429 2432
+type(
+  string
+)
+"cvc3_grammar.ml" 109 2434 2438 "cvc3_grammar.ml" 109 2434 2443
+type(
+  (Parsing.parser_env -> Obj.t) array
+)
+ident(
+  def yyact "cvc3_grammar.ml" 177 4661 4661 --
+)
+"cvc3_grammar.ml" 110 2449 2456 "cvc3_grammar.ml" 110 2449 2457
+type(
+  Parsing.parser_env
+)
+"cvc3_grammar.ml" 110 2449 2461 "cvc3_grammar.ml" 110 2449 2469
+type(
+  string -> Obj.t
+)
+ident(
+  ext_ref Pervasives.failwith
+)
+"cvc3_grammar.ml" 110 2449 2470 "cvc3_grammar.ml" 110 2449 2478
+type(
+  string
+)
+"cvc3_grammar.ml" 110 2449 2461 "cvc3_grammar.ml" 110 2449 2478
+call(
+  tail
+)
+type(
+  Obj.t
+)
+"cvc3_grammar.ml" 110 2449 2451 "cvc3_grammar.ml" 110 2449 2479
+type(
+  Parsing.parser_env -> Obj.t
+)
+"cvc3_grammar.ml" 111 2480 2487 "cvc3_grammar.ml" 111 2480 2504
+type(
+  Parsing.parser_env
+)
+ident(
+  def __caml_parser_env "cvc3_grammar.ml" 112 2508 2512 "cvc3_grammar.ml" 118 2749 2807
+)
+"cvc3_grammar.ml" 112 2508 2516 "cvc3_grammar.ml" 112 2508 2518
+type(
+  unit
+)
+"cvc3_grammar.ml" 112 2508 2522 "cvc3_grammar.ml" 112 2508 2538
+type(
+  Parsing.parser_env -> int -> unit
+)
+ident(
+  ext_ref Parsing.peek_val
+)
+"cvc3_grammar.ml" 112 2508 2539 "cvc3_grammar.ml" 112 2508 2556
+type(
+  Parsing.parser_env
+)
+ident(
+  int_ref __caml_parser_env "cvc3_grammar.ml" 111 2480 2487 "cvc3_grammar.ml" 111 2480 2504
+)
+"cvc3_grammar.ml" 112 2508 2557 "cvc3_grammar.ml" 112 2508 2558
+type(
+  int
+)
+"cvc3_grammar.ml" 112 2508 2522 "cvc3_grammar.ml" 112 2508 2558
+call(
+  stack
+)
+type(
+  unit
+)
+type(
+  unit
+)
+"cvc3_grammar.ml" 113 2577 2585 "cvc3_grammar.ml" 113 2577 2587
+type(
+  (string * Big_int_Z.big_int) list
+)
+"cvc3_grammar.ml" 113 2577 2591 "cvc3_grammar.ml" 113 2577 2607
+type(
+  Parsing.parser_env -> int -> (string * Big_int_Z.big_int) list
+)
+ident(
+  ext_ref Parsing.peek_val
+)
+"cvc3_grammar.ml" 113 2577 2608 "cvc3_grammar.ml" 113 2577 2625
+type(
+  Parsing.parser_env
+)
+ident(
+  int_ref __caml_parser_env "cvc3_grammar.ml" 111 2480 2487 "cvc3_grammar.ml" 111 2480 2504
+)
+"cvc3_grammar.ml" 113 2577 2626 "cvc3_grammar.ml" 113 2577 2627
+type(
+  int
+)
+"cvc3_grammar.ml" 113 2577 2591 "cvc3_grammar.ml" 113 2577 2627
+call(
+  stack
+)
+type(
+  (string * Big_int_Z.big_int) list
+)
+type(
+  (string * Big_int_Z.big_int) list
+)
+"cvc3_grammar.ml" 114 2646 2650 "cvc3_grammar.ml" 114 2646 2658
+type(
+  (string * Big_int_Z.big_int) list option -> Obj.t
+)
+ident(
+  ext_ref Obj.repr
+)
+"cvc3_grammar.mly" 29 2684 2718 "cvc3_grammar.mly" 29 2684 2722
+type(
+  (string * Big_int_Z.big_int) list
+)
+ident(
+  int_ref _2 "cvc3_grammar.ml" 113 2577 2585 "cvc3_grammar.ml" 113 2577 2587
+)
+"cvc3_grammar.mly" 29 2684 2712 "cvc3_grammar.mly" 29 2684 2724
+type(
+  (string * Big_int_Z.big_int) list option
+)
+type(
+  (string * Big_int_Z.big_int) list option
+)
+"cvc3_grammar.ml" 114 2646 2650 "cvc3_grammar.ml" 118 2749 2807
+type(
+  Obj.t
+)
+"cvc3_grammar.ml" 113 2577 2581 "cvc3_grammar.ml" 118 2749 2807
+type(
+  Obj.t
+)
+"cvc3_grammar.ml" 112 2508 2512 "cvc3_grammar.ml" 118 2749 2807
+type(
+  Obj.t
+)
+"cvc3_grammar.ml" 111 2480 2482 "cvc3_grammar.ml" 118 2749 2808
+type(
+  Parsing.parser_env -> Obj.t
+)
+"cvc3_grammar.ml" 119 2809 2816 "cvc3_grammar.ml" 119 2809 2833
+type(
+  Parsing.parser_env
+)
+ident(
+  def __caml_parser_env "cvc3_grammar.ml" 120 2837 2841 "cvc3_grammar.ml" 125 2992 3050
+)
+"cvc3_grammar.ml" 120 2837 2845 "cvc3_grammar.ml" 120 2837 2847
+type(
+  unit
+)
+"cvc3_grammar.ml" 120 2837 2851 "cvc3_grammar.ml" 120 2837 2867
+type(
+  Parsing.parser_env -> int -> unit
+)
+ident(
+  ext_ref Parsing.peek_val
+)
+"cvc3_grammar.ml" 120 2837 2868 "cvc3_grammar.ml" 120 2837 2885
+type(
+  Parsing.parser_env
+)
+ident(
+  int_ref __caml_parser_env "cvc3_grammar.ml" 119 2809 2816 "cvc3_grammar.ml" 119 2809 2833
+)
+"cvc3_grammar.ml" 120 2837 2886 "cvc3_grammar.ml" 120 2837 2887
+type(
+  int
+)
+"cvc3_grammar.ml" 120 2837 2851 "cvc3_grammar.ml" 120 2837 2887
+call(
+  stack
+)
+type(
+  unit
+)
+type(
+  unit
+)
+"cvc3_grammar.ml" 121 2905 2909 "cvc3_grammar.ml" 121 2905 2917
+type(
+  (string * Big_int_Z.big_int) list option -> Obj.t
+)
+ident(
+  ext_ref Obj.repr
+)
+"cvc3_grammar.mly" 30 2943 2959 "cvc3_grammar.mly" 30 2943 2967
+type(
+  (string * Big_int_Z.big_int) list option
+)
+type(
+  (string * Big_int_Z.big_int) list option
+)
+"cvc3_grammar.ml" 121 2905 2909 "cvc3_grammar.ml" 125 2992 3050
+type(
+  Obj.t
+)
+"cvc3_grammar.ml" 120 2837 2841 "cvc3_grammar.ml" 125 2992 3050
+type(
+  Obj.t
+)
+"cvc3_grammar.ml" 119 2809 2811 "cvc3_grammar.ml" 125 2992 3051
+type(
+  Parsing.parser_env -> Obj.t
+)
+"cvc3_grammar.ml" 126 3052 3059 "cvc3_grammar.ml" 126 3052 3076
+type(
+  Parsing.parser_env
+)
+ident(
+  def __caml_parser_env "cvc3_grammar.ml" 127 3080 3084 "cvc3_grammar.ml" 131 3163 3192
+)
+"cvc3_grammar.ml" 127 3080 3084 "cvc3_grammar.ml" 127 3080 3092
+type(
+  (string * Big_int_Z.big_int) list -> Obj.t
+)
+ident(
+  ext_ref Obj.repr
+)
+"cvc3_grammar.mly" 34 3118 3132 "cvc3_grammar.mly" 34 3118 3138
+type(
+  (string * Big_int_Z.big_int) list
+)
+type(
+  (string * Big_int_Z.big_int) list
+)
+"cvc3_grammar.ml" 127 3080 3084 "cvc3_grammar.ml" 131 3163 3192
+type(
+  Obj.t
+)
+"cvc3_grammar.ml" 126 3052 3054 "cvc3_grammar.ml" 131 3163 3193
+type(
+  Parsing.parser_env -> Obj.t
+)
+"cvc3_grammar.ml" 132 3194 3201 "cvc3_grammar.ml" 132 3194 3218
+type(
+  Parsing.parser_env
+)
+ident(
+  def __caml_parser_env "cvc3_grammar.ml" 133 3222 3226 "cvc3_grammar.ml" 139 3466 3495
+)
+"cvc3_grammar.ml" 133 3222 3230 "cvc3_grammar.ml" 133 3222 3232
+type(
+  (string * Big_int_Z.big_int) option
+)
+"cvc3_grammar.ml" 133 3222 3236 "cvc3_grammar.ml" 133 3222 3252
+type(
+  Parsing.parser_env -> int -> (string * Big_int_Z.big_int) option
+)
+ident(
+  ext_ref Parsing.peek_val
+)
+"cvc3_grammar.ml" 133 3222 3253 "cvc3_grammar.ml" 133 3222 3270
+type(
+  Parsing.parser_env
+)
+ident(
+  int_ref __caml_parser_env "cvc3_grammar.ml" 132 3194 3201 "cvc3_grammar.ml" 132 3194 3218
+)
+"cvc3_grammar.ml" 133 3222 3271 "cvc3_grammar.ml" 133 3222 3272
+type(
+  int
+)
+"cvc3_grammar.ml" 133 3222 3236 "cvc3_grammar.ml" 133 3222 3272
+call(
+  stack
+)
+type(
+  (string * Big_int_Z.big_int) option
+)
+type(
+  (string * Big_int_Z.big_int) option
+)
+"cvc3_grammar.ml" 134 3290 3298 "cvc3_grammar.ml" 134 3290 3300
+type(
+  (string * Big_int_Z.big_int) list
+)
+"cvc3_grammar.ml" 134 3290 3304 "cvc3_grammar.ml" 134 3290 3320
+type(
+  Parsing.parser_env -> int -> (string * Big_int_Z.big_int) list
+)
+ident(
+  ext_ref Parsing.peek_val
+)
+"cvc3_grammar.ml" 134 3290 3321 "cvc3_grammar.ml" 134 3290 3338
+type(
+  Parsing.parser_env
+)
+ident(
+  int_ref __caml_parser_env "cvc3_grammar.ml" 132 3194 3201 "cvc3_grammar.ml" 132 3194 3218
+)
+"cvc3_grammar.ml" 134 3290 3339 "cvc3_grammar.ml" 134 3290 3340
+type(
+  int
+)
+"cvc3_grammar.ml" 134 3290 3304 "cvc3_grammar.ml" 134 3290 3340
+call(
+  stack
+)
+type(
+  (string * Big_int_Z.big_int) list
+)
+type(
+  (string * Big_int_Z.big_int) list
+)
+"cvc3_grammar.ml" 135 3359 3363 "cvc3_grammar.ml" 135 3359 3371
+type(
+  (string * Big_int_Z.big_int) list -> Obj.t
+)
+ident(
+  ext_ref Obj.repr
+)
+"cvc3_grammar.mly" 35 3397 3422 "cvc3_grammar.mly" 35 3397 3433
+type(
+  (string * Big_int_Z.big_int) list ->
+  (string * Big_int_Z.big_int) option -> (string * Big_int_Z.big_int) list
+)
+ident(
+  int_ref cond_append "cvc3_grammar.mly" 2 242 248 "cvc3_grammar.mly" 2 242 259
+)
+"cvc3_grammar.mly" 35 3397 3434 "cvc3_grammar.mly" 35 3397 3436
+type(
+  (string * Big_int_Z.big_int) list
+)
+ident(
+  int_ref _2 "cvc3_grammar.ml" 134 3290 3298 "cvc3_grammar.ml" 134 3290 3300
+)
+"cvc3_grammar.mly" 35 3397 3437 "cvc3_grammar.mly" 35 3397 3439
+type(
+  (string * Big_int_Z.big_int) option
+)
+ident(
+  int_ref _1 "cvc3_grammar.ml" 133 3222 3230 "cvc3_grammar.ml" 133 3222 3232
+)
+"cvc3_grammar.mly" 35 3397 3420 "cvc3_grammar.mly" 35 3397 3441
+call(
+  tail
+)
+type(
+  (string * Big_int_Z.big_int) list
+)
+type(
+  (string * Big_int_Z.big_int) list
+)
+"cvc3_grammar.ml" 135 3359 3363 "cvc3_grammar.ml" 139 3466 3495
+type(
+  Obj.t
+)
+"cvc3_grammar.ml" 134 3290 3294 "cvc3_grammar.ml" 139 3466 3495
+type(
+  Obj.t
+)
+"cvc3_grammar.ml" 133 3222 3226 "cvc3_grammar.ml" 139 3466 3495
+type(
+  Obj.t
+)
+"cvc3_grammar.ml" 132 3194 3196 "cvc3_grammar.ml" 139 3466 3496
+type(
+  Parsing.parser_env -> Obj.t
+)
+"cvc3_grammar.ml" 140 3497 3504 "cvc3_grammar.ml" 140 3497 3521
+type(
+  Parsing.parser_env
+)
+ident(
+  def __caml_parser_env "cvc3_grammar.ml" 141 3525 3529 "cvc3_grammar.ml" 147 3794 3822
+)
+"cvc3_grammar.ml" 141 3525 3533 "cvc3_grammar.ml" 141 3525 3535
+type(
+  string
+)
+"cvc3_grammar.ml" 141 3525 3539 "cvc3_grammar.ml" 141 3525 3555
+type(
+  Parsing.parser_env -> int -> string
+)
+ident(
+  ext_ref Parsing.peek_val
+)
+"cvc3_grammar.ml" 141 3525 3556 "cvc3_grammar.ml" 141 3525 3573
+type(
+  Parsing.parser_env
+)
+ident(
+  int_ref __caml_parser_env "cvc3_grammar.ml" 140 3497 3504 "cvc3_grammar.ml" 140 3497 3521
+)
+"cvc3_grammar.ml" 141 3525 3574 "cvc3_grammar.ml" 141 3525 3575
+type(
+  int
+)
+"cvc3_grammar.ml" 141 3525 3539 "cvc3_grammar.ml" 141 3525 3575
+call(
+  stack
+)
+type(
+  string
+)
+type(
+  string
+)
+"cvc3_grammar.ml" 142 3589 3597 "cvc3_grammar.ml" 142 3589 3599
+type(
+  Big_int_Z.big_int
+)
+"cvc3_grammar.ml" 142 3589 3603 "cvc3_grammar.ml" 142 3589 3619
+type(
+  Parsing.parser_env -> int -> Big_int_Z.big_int
+)
+ident(
+  ext_ref Parsing.peek_val
+)
+"cvc3_grammar.ml" 142 3589 3620 "cvc3_grammar.ml" 142 3589 3637
+type(
+  Parsing.parser_env
+)
+ident(
+  int_ref __caml_parser_env "cvc3_grammar.ml" 140 3497 3504 "cvc3_grammar.ml" 140 3497 3521
+)
+"cvc3_grammar.ml" 142 3589 3638 "cvc3_grammar.ml" 142 3589 3639
+type(
+  int
+)
+"cvc3_grammar.ml" 142 3589 3603 "cvc3_grammar.ml" 142 3589 3639
+call(
+  stack
+)
+type(
+  Big_int_Z.big_int
+)
+type(
+  Big_int_Z.big_int
+)
+"cvc3_grammar.ml" 143 3664 3668 "cvc3_grammar.ml" 143 3664 3676
+type(
+  (string * Big_int_Z.big_int) option -> Obj.t
+)
+ident(
+  ext_ref Obj.repr
+)
+"cvc3_grammar.mly" 39 3702 3760 "cvc3_grammar.mly" 39 3702 3762
+type(
+  string
+)
+ident(
+  int_ref _3 "cvc3_grammar.ml" 141 3525 3533 "cvc3_grammar.ml" 141 3525 3535
+)
+"cvc3_grammar.mly" 39 3702 3764 "cvc3_grammar.mly" 39 3702 3766
+type(
+  Big_int_Z.big_int
+)
+ident(
+  int_ref _5 "cvc3_grammar.ml" 142 3589 3597 "cvc3_grammar.ml" 142 3589 3599
+)
+"cvc3_grammar.mly" 39 3702 3759 "cvc3_grammar.mly" 39 3702 3767
+type(
+  string * Big_int_Z.big_int
+)
+"cvc3_grammar.mly" 39 3702 3753 "cvc3_grammar.mly" 39 3702 3769
+type(
+  (string * Big_int_Z.big_int) option
+)
+type(
+  (string * Big_int_Z.big_int) option
+)
+"cvc3_grammar.ml" 143 3664 3668 "cvc3_grammar.ml" 147 3794 3822
+type(
+  Obj.t
+)
+"cvc3_grammar.ml" 142 3589 3593 "cvc3_grammar.ml" 147 3794 3822
+type(
+  Obj.t
+)
+"cvc3_grammar.ml" 141 3525 3529 "cvc3_grammar.ml" 147 3794 3822
+type(
+  Obj.t
+)
+"cvc3_grammar.ml" 140 3497 3499 "cvc3_grammar.ml" 147 3794 3823
+type(
+  Parsing.parser_env -> Obj.t
+)
+"cvc3_grammar.ml" 148 3824 3831 "cvc3_grammar.ml" 148 3824 3848
+type(
+  Parsing.parser_env
+)
+ident(
+  def __caml_parser_env "cvc3_grammar.ml" 149 3852 3856 "cvc3_grammar.ml" 155 4102 4130
+)
+"cvc3_grammar.ml" 149 3852 3860 "cvc3_grammar.ml" 149 3852 3862
+type(
+  string
+)
+"cvc3_grammar.ml" 149 3852 3866 "cvc3_grammar.ml" 149 3852 3882
+type(
+  Parsing.parser_env -> int -> string
+)
+ident(
+  ext_ref Parsing.peek_val
+)
+"cvc3_grammar.ml" 149 3852 3883 "cvc3_grammar.ml" 149 3852 3900
+type(
+  Parsing.parser_env
+)
+ident(
+  int_ref __caml_parser_env "cvc3_grammar.ml" 148 3824 3831 "cvc3_grammar.ml" 148 3824 3848
+)
+"cvc3_grammar.ml" 149 3852 3901 "cvc3_grammar.ml" 149 3852 3902
+type(
+  int
+)
+"cvc3_grammar.ml" 149 3852 3866 "cvc3_grammar.ml" 149 3852 3902
+call(
+  stack
+)
+type(
+  string
+)
+type(
+  string
+)
+"cvc3_grammar.ml" 150 3916 3924 "cvc3_grammar.ml" 150 3916 3926
+type(
+  string
+)
+"cvc3_grammar.ml" 150 3916 3930 "cvc3_grammar.ml" 150 3916 3946
+type(
+  Parsing.parser_env -> int -> string
+)
+ident(
+  ext_ref Parsing.peek_val
+)
+"cvc3_grammar.ml" 150 3916 3947 "cvc3_grammar.ml" 150 3916 3964
+type(
+  Parsing.parser_env
+)
+ident(
+  int_ref __caml_parser_env "cvc3_grammar.ml" 148 3824 3831 "cvc3_grammar.ml" 148 3824 3848
+)
+"cvc3_grammar.ml" 150 3916 3965 "cvc3_grammar.ml" 150 3916 3966
+type(
+  int
+)
+"cvc3_grammar.ml" 150 3916 3930 "cvc3_grammar.ml" 150 3916 3966
+call(
+  stack
+)
+type(
+  string
+)
+type(
+  string
+)
+"cvc3_grammar.ml" 151 3980 3984 "cvc3_grammar.ml" 151 3980 3992
+type(
+  (string * Big_int_Z.big_int) option -> Obj.t
+)
+ident(
+  ext_ref Obj.repr
+)
+"cvc3_grammar.mly" 40 4018 4069 "cvc3_grammar.mly" 40 4018 4077
+type(
+  (string * Big_int_Z.big_int) option
+)
+type(
+  (string * Big_int_Z.big_int) option
+)
+"cvc3_grammar.ml" 151 3980 3984 "cvc3_grammar.ml" 155 4102 4130
+type(
+  Obj.t
+)
+"cvc3_grammar.ml" 150 3916 3920 "cvc3_grammar.ml" 155 4102 4130
+type(
+  Obj.t
+)
+"cvc3_grammar.ml" 149 3852 3856 "cvc3_grammar.ml" 155 4102 4130
+type(
+  Obj.t
+)
+"cvc3_grammar.ml" 148 3824 3826 "cvc3_grammar.ml" 155 4102 4131
+type(
+  Parsing.parser_env -> Obj.t
+)
+"cvc3_grammar.ml" 156 4132 4139 "cvc3_grammar.ml" 156 4132 4156
+type(
+  Parsing.parser_env
+)
+ident(
+  def __caml_parser_env "cvc3_grammar.ml" 157 4160 4164 "cvc3_grammar.ml" 161 4243 4272
+)
+"cvc3_grammar.ml" 157 4160 4164 "cvc3_grammar.ml" 157 4160 4172
+type(
+  unit -> Obj.t
+)
+ident(
+  ext_ref Obj.repr
+)
+"cvc3_grammar.mly" 44 4198 4215 "cvc3_grammar.mly" 44 4198 4218
+type(
+  unit
+)
+type(
+  unit
+)
+"cvc3_grammar.ml" 157 4160 4164 "cvc3_grammar.ml" 161 4243 4272
+type(
+  Obj.t
+)
+"cvc3_grammar.ml" 156 4132 4134 "cvc3_grammar.ml" 161 4243 4273
+type(
+  Parsing.parser_env -> Obj.t
+)
+"cvc3_grammar.ml" 162 4274 4281 "cvc3_grammar.ml" 162 4274 4298
+type(
+  Parsing.parser_env
+)
+ident(
+  def __caml_parser_env "cvc3_grammar.ml" 163 4302 4306 "cvc3_grammar.ml" 167 4380 4409
+)
+"cvc3_grammar.ml" 163 4302 4306 "cvc3_grammar.ml" 163 4302 4314
+type(
+  unit -> Obj.t
+)
+ident(
+  ext_ref Obj.repr
+)
+"cvc3_grammar.mly" 45 4340 4352 "cvc3_grammar.mly" 45 4340 4355
+type(
+  unit
+)
+type(
+  unit
+)
+"cvc3_grammar.ml" 163 4302 4306 "cvc3_grammar.ml" 167 4380 4409
+type(
+  Obj.t
+)
+"cvc3_grammar.ml" 162 4274 4276 "cvc3_grammar.ml" 167 4380 4410
+type(
+  Parsing.parser_env -> Obj.t
+)
+"cvc3_grammar.ml" 168 4411 4418 "cvc3_grammar.ml" 168 4411 4435
+type(
+  Parsing.parser_env
+)
+ident(
+  def __caml_parser_env "cvc3_grammar.ml" 169 4439 4443 "cvc3_grammar.ml" 173 4520 4548
+)
+"cvc3_grammar.ml" 169 4439 4443 "cvc3_grammar.ml" 169 4439 4451
+type(
+  unit -> Obj.t
+)
+ident(
+  ext_ref Obj.repr
+)
+"cvc3_grammar.mly" 49 4477 4492 "cvc3_grammar.mly" 49 4477 4495
+type(
+  unit
+)
+type(
+  unit
+)
+"cvc3_grammar.ml" 169 4439 4443 "cvc3_grammar.ml" 173 4520 4548
+type(
+  Obj.t
+)
+"cvc3_grammar.ml" 168 4411 4413 "cvc3_grammar.ml" 173 4520 4549
+type(
+  Parsing.parser_env -> Obj.t
+)
+"cvc3_grammar.ml" 175 4567 4574 "cvc3_grammar.ml" 175 4567 4591
+type(
+  Parsing.parser_env
+)
+ident(
+  def __caml_parser_env "cvc3_grammar.ml" 175 4567 4595 "cvc3_grammar.ml" 175 4567 4656
+)
+"cvc3_grammar.ml" 175 4567 4595 "cvc3_grammar.ml" 175 4567 4600
+type(
+  exn -> Obj.t
+)
+ident(
+  ext_ref Pervasives.raise
+)
+"cvc3_grammar.ml" 175 4567 4618 "cvc3_grammar.ml" 175 4567 4634
+type(
+  Parsing.parser_env -> int -> Obj.t
+)
+ident(
+  ext_ref Parsing.peek_val
+)
+"cvc3_grammar.ml" 175 4567 4635 "cvc3_grammar.ml" 175 4567 4652
+type(
+  Parsing.parser_env
+)
+ident(
+  int_ref __caml_parser_env "cvc3_grammar.ml" 175 4567 4574 "cvc3_grammar.ml" 175 4567 4591
+)
+"cvc3_grammar.ml" 175 4567 4653 "cvc3_grammar.ml" 175 4567 4654
+type(
+  int
+)
+"cvc3_grammar.ml" 175 4567 4617 "cvc3_grammar.ml" 175 4567 4655
+call(
+  stack
+)
+type(
+  Obj.t
+)
+"cvc3_grammar.ml" 175 4567 4601 "cvc3_grammar.ml" 175 4567 4656
+type(
+  exn
+)
+"cvc3_grammar.ml" 175 4567 4595 "cvc3_grammar.ml" 175 4567 4656
+type(
+  Obj.t
+)
+"cvc3_grammar.ml" 175 4567 4569 "cvc3_grammar.ml" 175 4567 4657
+type(
+  Parsing.parser_env -> Obj.t
+)
+"cvc3_grammar.ml" 109 2434 2446 "cvc3_grammar.ml" 176 4658 4660
+type(
+  (Parsing.parser_env -> Obj.t) array
+)
+"cvc3_grammar.ml" 177 4661 4665 "cvc3_grammar.ml" 177 4661 4673
+type(
+  Parsing.parse_tables
+)
+ident(
+  def yytables "cvc3_grammar.ml" 194 5182 5182 --
+)
+"cvc3_grammar.ml" 178 4676 4696 "cvc3_grammar.ml" 178 4676 4701
+type(
+  (Parsing.parser_env -> Obj.t) array
+)
+ident(
+  int_ref yyact "cvc3_grammar.ml" 109 2434 2438 "cvc3_grammar.ml" 109 2434 2443
+)
+"cvc3_grammar.ml" 179 4703 4728 "cvc3_grammar.ml" 179 4703 4742
+type(
+  int array
+)
+ident(
+  int_ref yytransl_const "cvc3_grammar.ml" 24 335 339 "cvc3_grammar.ml" 24 335 353
+)
+"cvc3_grammar.ml" 180 4744 4769 "cvc3_grammar.ml" 180 4744 4783
+type(
+  int array
+)
+ident(
+  int_ref yytransl_block "cvc3_grammar.ml" 40 624 628 "cvc3_grammar.ml" 40 624 642
+)
+"cvc3_grammar.ml" 181 4785 4801 "cvc3_grammar.ml" 181 4785 4806
+type(
+  string
+)
+ident(
+  int_ref yylhs "cvc3_grammar.ml" 45 691 695 "cvc3_grammar.ml" 45 691 700
+)
+"cvc3_grammar.ml" 182 4808 4824 "cvc3_grammar.ml" 182 4808 4829
+type(
+  string
+)
+ident(
+  int_ref yylen "cvc3_grammar.ml" 49 799 803 "cvc3_grammar.ml" 49 799 808
+)
+"cvc3_grammar.ml" 183 4831 4850 "cvc3_grammar.ml" 183 4831 4858
+type(
+  string
+)
+ident(
+  int_ref yydefred "cvc3_grammar.ml" 53 907 911 "cvc3_grammar.ml" 53 907 919
+)
+"cvc3_grammar.ml" 184 4860 4878 "cvc3_grammar.ml" 184 4860 4885
+type(
+  string
+)
+ident(
+  int_ref yydgoto "cvc3_grammar.ml" 59 1150 1154 "cvc3_grammar.ml" 59 1150 1161
+)
+"cvc3_grammar.ml" 185 4887 4906 "cvc3_grammar.ml" 185 4887 4914
+type(
+  string
+)
+ident(
+  int_ref yysindex "cvc3_grammar.ml" 62 1218 1222 "cvc3_grammar.ml" 62 1218 1230
+)
+"cvc3_grammar.ml" 186 4916 4935 "cvc3_grammar.ml" 186 4916 4943
+type(
+  string
+)
+ident(
+  int_ref yyrindex "cvc3_grammar.ml" 68 1461 1465 "cvc3_grammar.ml" 68 1461 1473
+)
+"cvc3_grammar.ml" 187 4945 4964 "cvc3_grammar.ml" 187 4945 4972
+type(
+  string
+)
+ident(
+  int_ref yygindex "cvc3_grammar.ml" 74 1704 1708 "cvc3_grammar.ml" 74 1704 1716
+)
+"cvc3_grammar.ml" 188 4974 4996 "cvc3_grammar.ml" 188 4974 5007
+type(
+  int
+)
+ident(
+  int_ref yytablesize "cvc3_grammar.ml" 77 1773 1777 "cvc3_grammar.ml" 77 1773 1788
+)
+"cvc3_grammar.ml" 189 5009 5027 "cvc3_grammar.ml" 189 5009 5034
+type(
+  string
+)
+ident(
+  int_ref yytable "cvc3_grammar.ml" 78 1794 1798 "cvc3_grammar.ml" 78 1794 1805
+)
+"cvc3_grammar.ml" 190 5036 5054 "cvc3_grammar.ml" 190 5036 5061
+type(
+  string
+)
+ident(
+  int_ref yycheck "cvc3_grammar.ml" 83 1986 1990 "cvc3_grammar.ml" 83 1986 1997
+)
+"cvc3_grammar.ml" 191 5063 5090 "cvc3_grammar.ml" 191 5063 5101
+type(
+  string -> unit
+)
+ident(
+  ext_ref Parsing.parse_error
+)
+"cvc3_grammar.ml" 192 5103 5127 "cvc3_grammar.ml" 192 5103 5140
+type(
+  string
+)
+ident(
+  int_ref yynames_const "cvc3_grammar.ml" 88 2178 2182 "cvc3_grammar.ml" 88 2178 2195
+)
+"cvc3_grammar.ml" 193 5142 5166 "cvc3_grammar.ml" 193 5142 5179
+type(
+  string
+)
+ident(
+  int_ref yynames_block "cvc3_grammar.ml" 104 2384 2388 "cvc3_grammar.ml" 104 2384 2401
+)
+"cvc3_grammar.ml" 178 4676 4678 "cvc3_grammar.ml" 193 5142 5181
+type(
+  Parsing.parse_tables
+)
+"cvc3_grammar.ml" 194 5182 5186 "cvc3_grammar.ml" 194 5182 5190
+type(
+  (Lexing.lexbuf -> token) ->
+  Lexing.lexbuf -> (string * Big_int_Z.big_int) list option
+)
+ident(
+  def main "cvc3_grammar.ml" 195 5252 5340 --
+)
+"cvc3_grammar.ml" 194 5182 5192 "cvc3_grammar.ml" 194 5182 5198
+type(
+  Lexing.lexbuf -> token
+)
+ident(
+  def lexfun "cvc3_grammar.ml" 194 5182 5225 "cvc3_grammar.ml" 195 5252 5340
+)
+"cvc3_grammar.ml" 194 5182 5226 "cvc3_grammar.ml" 194 5182 5232
+type(
+  Lexing.lexbuf
+)
+ident(
+  def lexbuf "cvc3_grammar.ml" 195 5252 5255 "cvc3_grammar.ml" 195 5252 5340
+)
+"cvc3_grammar.ml" 195 5252 5256 "cvc3_grammar.ml" 195 5252 5271
+type(
+  Parsing.parse_tables ->
+  int ->
+  (Lexing.lexbuf -> token) ->
+  Lexing.lexbuf -> (string * Big_int_Z.big_int) list option
+)
+ident(
+  ext_ref Parsing.yyparse
+)
+"cvc3_grammar.ml" 195 5252 5272 "cvc3_grammar.ml" 195 5252 5280
+type(
+  Parsing.parse_tables
+)
+ident(
+  int_ref yytables "cvc3_grammar.ml" 177 4661 4665 "cvc3_grammar.ml" 177 4661 4673
+)
+"cvc3_grammar.ml" 195 5252 5281 "cvc3_grammar.ml" 195 5252 5282
+type(
+  int
+)
+"cvc3_grammar.ml" 195 5252 5283 "cvc3_grammar.ml" 195 5252 5289
+type(
+  Lexing.lexbuf -> token
+)
+ident(
+  int_ref lexfun "cvc3_grammar.ml" 194 5182 5192 "cvc3_grammar.ml" 194 5182 5198
+)
+"cvc3_grammar.ml" 195 5252 5290 "cvc3_grammar.ml" 195 5252 5296
+type(
+  Lexing.lexbuf
+)
+ident(
+  int_ref lexbuf "cvc3_grammar.ml" 194 5182 5226 "cvc3_grammar.ml" 194 5182 5232
+)
+"cvc3_grammar.ml" 195 5252 5256 "cvc3_grammar.ml" 195 5252 5296
+call(
+  tail
+)
+type(
+  (string * Big_int_Z.big_int) list option
+)
+type(
+  (string * Big_int_Z.big_int) list option
+)

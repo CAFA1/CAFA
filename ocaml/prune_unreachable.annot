@@ -1,0 +1,132 @@
+"prune_unreachable.ml" 1 0 33 "prune_unreachable.ml" 1 0 37
+type(
+  string
+)
+ident(
+  def name "prune_unreachable.ml" 1 0 78 "prune_unreachable.ml" 1 0 82
+)
+"prune_unreachable.ml" 1 0 40 "prune_unreachable.ml" 1 0 59
+type(
+  string
+)
+"prune_unreachable.ml" 1 0 64 "prune_unreachable.ml" 1 0 71
+type(
+  [> `Debug ]
+)
+ident(
+  def default "prune_unreachable.ml" 1 0 78 "prune_unreachable.ml" 1 0 82
+)
+"prune_unreachable.ml" 1 0 72 "prune_unreachable.ml" 1 0 78
+type(
+  [> `Debug ] as 'a
+)
+"prune_unreachable.ml" 1 0 11 "prune_unreachable.ml" 1 0 83
+call(
+  stack
+)
+"prune_unreachable.ml" 4 106 110 "prune_unreachable.ml" 4 106 131
+type(
+  R.AST.gt -> R.AST.gt
+)
+ident(
+  def prune_unreachable_ast "prune_unreachable.ml" 7 200 200 --
+)
+"prune_unreachable.ml" 4 106 132 "prune_unreachable.ml" 4 106 133
+type(
+  R.AST.gt
+)
+ident(
+  def g "prune_unreachable.ml" 5 136 138 "prune_unreachable.ml" 5 136 198
+)
+"prune_unreachable.ml" 5 136 138 "prune_unreachable.ml" 5 136 162
+type(
+  R.AST.gt -> R.AST.vt -> R.AST.gt
+)
+ident(
+  ext_ref R.AST.remove_unreachable
+)
+"prune_unreachable.ml" 5 136 163 "prune_unreachable.ml" 5 136 164
+type(
+  R.AST.gt
+)
+ident(
+  int_ref g "prune_unreachable.ml" 4 106 132 "prune_unreachable.ml" 4 106 133
+)
+"prune_unreachable.ml" 5 136 166 "prune_unreachable.ml" 5 136 184
+type(
+  Cfg.AST.G.V.label -> R.AST.vt
+)
+ident(
+  ext_ref Cfg.AST.G.V.create
+)
+"prune_unreachable.ml" 5 136 185 "prune_unreachable.ml" 5 136 197
+type(
+  Cfg.AST.G.V.label
+)
+"prune_unreachable.ml" 5 136 165 "prune_unreachable.ml" 5 136 198
+call(
+  stack
+)
+type(
+  R.AST.vt
+)
+"prune_unreachable.ml" 5 136 138 "prune_unreachable.ml" 5 136 198
+call(
+  tail
+)
+type(
+  R.AST.gt
+)
+"prune_unreachable.ml" 7 200 204 "prune_unreachable.ml" 7 200 225
+type(
+  R.SSA.gt -> R.SSA.gt
+)
+ident(
+  def prune_unreachable_ssa "prune_unreachable.ml" 8 230 292 --
+)
+"prune_unreachable.ml" 7 200 226 "prune_unreachable.ml" 7 200 227
+type(
+  R.SSA.gt
+)
+ident(
+  def g "prune_unreachable.ml" 8 230 232 "prune_unreachable.ml" 8 230 292
+)
+"prune_unreachable.ml" 8 230 232 "prune_unreachable.ml" 8 230 256
+type(
+  R.SSA.gt -> R.SSA.vt -> R.SSA.gt
+)
+ident(
+  ext_ref R.SSA.remove_unreachable
+)
+"prune_unreachable.ml" 8 230 257 "prune_unreachable.ml" 8 230 258
+type(
+  R.SSA.gt
+)
+ident(
+  int_ref g "prune_unreachable.ml" 7 200 226 "prune_unreachable.ml" 7 200 227
+)
+"prune_unreachable.ml" 8 230 260 "prune_unreachable.ml" 8 230 278
+type(
+  Cfg.SSA.G.V.label -> R.SSA.vt
+)
+ident(
+  ext_ref Cfg.SSA.G.V.create
+)
+"prune_unreachable.ml" 8 230 279 "prune_unreachable.ml" 8 230 291
+type(
+  Cfg.SSA.G.V.label
+)
+"prune_unreachable.ml" 8 230 259 "prune_unreachable.ml" 8 230 292
+call(
+  stack
+)
+type(
+  R.SSA.vt
+)
+"prune_unreachable.ml" 8 230 232 "prune_unreachable.ml" 8 230 292
+call(
+  tail
+)
+type(
+  R.SSA.gt
+)

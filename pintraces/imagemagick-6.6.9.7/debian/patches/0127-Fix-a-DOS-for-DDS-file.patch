@@ -1,0 +1,33 @@
+Backport of:
+
+From c4cffe4a893ae62613c7aaff59461017ac3e92eb Mon Sep 17 00:00:00 2001
+From: cristy <urban-warrior@git.imagemagick.org>
+Date: Sun, 11 Jan 2015 19:18:02 +0000
+Subject: [PATCH] Fix a DOS for DDS file
+
+(cherry picked from commit 3ab016764c7f787829d9065440d86f5609765110)
+
+This is a partial fix
+
+bug: http://www.imagemagick.org/discourse-server/viewtopic.php?f=3&t=26861
+bug-debian: https://bugs.debian.org/832944
+origin: upstream, https://github.com/ImageMagick/ImageMagick/commit/93ab016764c7f787829d9065440d86f5609765110
+---
+ coders/dds.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+
+Index: imagemagick-6.7.7.10/coders/dds.c
+===================================================================
+--- imagemagick-6.7.7.10.orig/coders/dds.c	2016-11-14 09:55:38.641129351 -0500
++++ imagemagick-6.7.7.10/coders/dds.c	2016-11-14 09:56:07.533130698 -0500
+@@ -917,8 +917,8 @@
+       for (i=1; (i < (ssize_t) dds_info->mipmapcount) && w && h; i++)
+       {
+         offset = (MagickOffsetType) w * h * pixel_size;
+-        (void) SeekBlob(image, offset, SEEK_CUR);
+-        
++        if (SeekBlob(image,offset,SEEK_CUR) < 0)
++          break;
+         w = DIV2(w);
+         h = DIV2(h);
+       }

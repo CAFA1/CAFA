@@ -1,0 +1,27 @@
+From 9536cdff9a8ddec0d80cafa35e034bcb5a3f5bd7 Mon Sep 17 00:00:00 2001
+From: Cristy <urban-warrior@imagemagick.org>
+Date: Sat, 20 Feb 2016 09:52:34 -0500
+Subject: [PATCH] Fix an out of bound in mat file handling
+
+Release memory earlier in case of default, thus avoiding this bug
+
+bug: https://github.com/ImageMagick/ImageMagick/issues/131
+origin: https://github.com/ImageMagick/ImageMagick/commit/b173a352397877775c51c9a0e9d59eb6ce24c455
+bug-debian: https://bugs.Debian.org/845246
+bug-ubuntu: https://bugs.launchpad.net/ubuntu/+source/imagemagick/+bug/1545366
+---
+ coders/mat.c | 1 +
+ 1 file changed, 1 insertion(+)
+
+Index: imagemagick-6.6.9.7/coders/mat.c
+===================================================================
+--- imagemagick-6.6.9.7.orig/coders/mat.c	2016-11-29 14:11:43.370477507 -0500
++++ imagemagick-6.6.9.7/coders/mat.c	2016-11-29 14:11:43.366477461 -0500
+@@ -933,6 +933,7 @@
+   }
+       }
+     } while(z-- >= 2);
++    quantum_info=DestroyQuantumInfo(quantum_info);
+ ExitLoop:
+ 
+ 

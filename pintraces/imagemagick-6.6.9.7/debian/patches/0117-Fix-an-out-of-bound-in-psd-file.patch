@@ -1,0 +1,26 @@
+From 6947ccbe2c46fc2bff19f9a55e1647dfd3c785fa Mon Sep 17 00:00:00 2001
+From: Cristy <urban-warrior@imagemagick.org>
+Date: Fri, 12 Feb 2016 20:59:16 -0500
+Subject: [PATCH] Fix an out of bound in psd file
+
+Origin: upstream, https://github.com/ImageMagick/ImageMagick/commit/533ea3b9047c67f9af49703de672f6c2e443f747
+bug: https://github.com/ImageMagick/ImageMagick/issues/128
+bug-ubuntu: https://bugs.launchpad.net/ubuntu/+source/imagemagick/+bug/1545180
+bug-debian: https://bugs.debian.org/832787
+---
+ coders/psd.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+Index: imagemagick-6.6.9.7/coders/psd.c
+===================================================================
+--- imagemagick-6.6.9.7.orig/coders/psd.c	2016-11-16 07:38:48.189205780 -0500
++++ imagemagick-6.6.9.7/coders/psd.c	2016-11-16 07:38:48.185205732 -0500
+@@ -1823,7 +1823,7 @@
+   compact_pixels=(unsigned char *) NULL;
+   if (next_image->compression == RLECompression)
+     {
+-      compact_pixels=(unsigned char *) AcquireQuantumMemory((2*channels*
++      compact_pixels=(unsigned char *) AcquireQuantumMemory((9*channels*
+         next_image->columns)+1,packet_size*sizeof(*compact_pixels));
+       if (compact_pixels == (unsigned char *) NULL)
+         ThrowWriterException(ResourceLimitError,"MemoryAllocationFailed");

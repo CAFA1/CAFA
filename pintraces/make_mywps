@@ -1,0 +1,1 @@
+gcc -g -o mywps mywps.c -lz -pthread

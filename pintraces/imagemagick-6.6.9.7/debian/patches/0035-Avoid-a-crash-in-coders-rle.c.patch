@@ -1,0 +1,69 @@
+Backport of:
+
+From 74b6cb6000b678e3e7bac553177052cb15b02cb6 Mon Sep 17 00:00:00 2001
+From: cristy <cristy@aa41f4f7-0bf4-0310-aa73-e5a19afd5a74>
+Date: Mon, 15 Dec 2014 11:30:43 +0000
+Subject: [PATCH] Avoid a crash in coders/rle.c
+
+git-svn-id: https://subversion.imagemagick.org/subversion/ImageMagick/branches/ImageMagick-6@17255 aa41f4f7-0bf4-0310-aa73-e5a19afd5a74
+origin:  http://trac.imagemagick.org/changeset/17255
+---
+ coders/rle.c | 24 ++++++++++++++++++------
+ 1 file changed, 18 insertions(+), 6 deletions(-)
+
+Index: imagemagick-6.6.9.7/coders/rle.c
+===================================================================
+--- imagemagick-6.6.9.7.orig/coders/rle.c	2016-11-15 12:56:06.606700238 -0500
++++ imagemagick-6.6.9.7/coders/rle.c	2016-11-15 12:58:27.008414586 -0500
+@@ -40,11 +40,11 @@
+   Include declarations.
+ */
+ #include "magick/studio.h"
+-#include "magick/property.h"
+ #include "magick/blob.h"
+ #include "magick/blob-private.h"
+ #include "magick/cache.h"
+ #include "magick/colormap.h"
++#include "magick/colormap-private.h"
+ #include "magick/exception.h"
+ #include "magick/exception-private.h"
+ #include "magick/image.h"
+@@ -56,6 +56,7 @@
+ #include "magick/monitor-private.h"
+ #include "magick/quantum-private.h"
+ #include "magick/pixel.h"
++#include "magick/property.h"
+ #include "magick/static.h"
+ #include "magick/string_.h"
+ #include "magick/module.h"
+@@ -122,6 +123,14 @@
+ %
+ %
+ */
++
++static inline size_t MagickMax(const size_t x,const size_t y)
++{
++  if (x > y)
++    return(x);
++  return(y);
++}
++
+ static Image *ReadRLEImage(const ImageInfo *image_info,ExceptionInfo *exception)
+ {
+ #define SkipLinesOp  0x01
+@@ -529,9 +538,12 @@
+                 break;
+               for (x=0; x < (ssize_t) image->columns; x++)
+               {
+-                SetRedPixelComponent(q,image->colormap[*p++].red);
+-                SetGreenPixelComponent(q,image->colormap[*p++].green);
+-                SetBluePixelComponent(q,image->colormap[*p++].blue);
++                SetRedPixelComponent(q,image->colormap[(ssize_t)
++                  ConstrainColormapIndex(image,*p++)].red);
++                SetGreenPixelComponent(q,image->colormap[(ssize_t)
++                  ConstrainColormapIndex(image,*p++)].green);
++                SetBluePixelComponent(q,image->colormap[(ssize_t)
++                  ConstrainColormapIndex(image,*p++)].blue);
+                 SetOpacityPixelComponent(q,QuantumRange-
+                   ScaleCharToQuantum(*p++));
+                 q++;

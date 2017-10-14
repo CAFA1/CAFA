@@ -1,0 +1,9046 @@
+"gcl.ml" 9 111 144 "gcl.ml" 9 111 148
+type(
+  string
+)
+ident(
+  def name "gcl.ml" 9 111 175 "gcl.ml" 9 111 179
+)
+"gcl.ml" 9 111 151 "gcl.ml" 9 111 156
+type(
+  string
+)
+"gcl.ml" 9 111 161 "gcl.ml" 9 111 168
+type(
+  [> `Debug ]
+)
+ident(
+  def default "gcl.ml" 9 111 175 "gcl.ml" 9 111 179
+)
+"gcl.ml" 9 111 169 "gcl.ml" 9 111 175
+type(
+  [> `Debug ] as 'a
+)
+"gcl.ml" 9 111 122 "gcl.ml" 9 111 180
+call(
+  stack
+)
+"gcl.ml" 32 644 652 "gcl.ml" 32 644 661
+type(
+  t -> string
+)
+ident(
+  def to_string "gcl.ml" 32 644 644 --
+)
+"gcl.ml" 33 673 684 "gcl.ml" 33 673 685
+type(
+  exp
+)
+ident(
+  def e "gcl.ml" 33 673 689 "gcl.ml" 33 673 725
+)
+"gcl.ml" 33 673 677 "gcl.ml" 33 673 685
+type(
+  t
+)
+"gcl.ml" 33 673 689 "gcl.ml" 33 673 698
+type(
+  string
+)
+"gcl.ml" 33 673 698 "gcl.ml" 33 673 699
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"gcl.ml" 33 673 699 "gcl.ml" 33 673 719
+type(
+  exp -> string
+)
+ident(
+  ext_ref Pp.ast_exp_to_string
+)
+"gcl.ml" 33 673 720 "gcl.ml" 33 673 721
+type(
+  exp
+)
+ident(
+  int_ref e "gcl.ml" 33 673 684 "gcl.ml" 33 673 685
+)
+"gcl.ml" 33 673 699 "gcl.ml" 33 673 721
+call(
+  stack
+)
+type(
+  string
+)
+"gcl.ml" 33 673 721 "gcl.ml" 33 673 722
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"gcl.ml" 33 673 722 "gcl.ml" 33 673 725
+type(
+  string
+)
+"gcl.ml" 33 673 699 "gcl.ml" 33 673 725
+call(
+  stack
+)
+type(
+  string
+)
+"gcl.ml" 33 673 689 "gcl.ml" 33 673 725
+call(
+  tail
+)
+type(
+  string
+)
+"gcl.ml" 34 726 737 "gcl.ml" 34 726 738
+type(
+  var
+)
+ident(
+  def v "gcl.ml" 34 726 746 "gcl.ml" 34 726 806
+)
+"gcl.ml" 34 726 740 "gcl.ml" 34 726 741
+type(
+  exp
+)
+ident(
+  def e "gcl.ml" 34 726 746 "gcl.ml" 34 726 806
+)
+"gcl.ml" 34 726 730 "gcl.ml" 34 726 742
+type(
+  t
+)
+"gcl.ml" 34 726 746 "gcl.ml" 34 726 755
+type(
+  string
+)
+"gcl.ml" 34 726 755 "gcl.ml" 34 726 756
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"gcl.ml" 34 726 756 "gcl.ml" 34 726 772
+type(
+  ?ctx:string Pp.VH.t * (string, unit) Hashtbl.t -> Pp.VH.key -> string
+)
+ident(
+  ext_ref Pp.var_to_string
+)
+"gcl.ml" 34 726 773 "gcl.ml" 34 726 774
+type(
+  var
+)
+ident(
+  int_ref v "gcl.ml" 34 726 737 "gcl.ml" 34 726 738
+)
+"gcl.ml" 34 726 756 "gcl.ml" 34 726 774
+call(
+  stack
+)
+type(
+  string
+)
+"gcl.ml" 34 726 774 "gcl.ml" 34 726 775
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"gcl.ml" 34 726 775 "gcl.ml" 34 726 779
+type(
+  string
+)
+"gcl.ml" 34 726 779 "gcl.ml" 34 726 780
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"gcl.ml" 34 726 780 "gcl.ml" 34 726 800
+type(
+  exp -> string
+)
+ident(
+  ext_ref Pp.ast_exp_to_string
+)
+"gcl.ml" 34 726 801 "gcl.ml" 34 726 802
+type(
+  exp
+)
+ident(
+  int_ref e "gcl.ml" 34 726 740 "gcl.ml" 34 726 741
+)
+"gcl.ml" 34 726 780 "gcl.ml" 34 726 802
+call(
+  stack
+)
+type(
+  string
+)
+"gcl.ml" 34 726 802 "gcl.ml" 34 726 803
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"gcl.ml" 34 726 803 "gcl.ml" 34 726 806
+type(
+  string
+)
+"gcl.ml" 34 726 780 "gcl.ml" 34 726 806
+call(
+  stack
+)
+type(
+  string
+)
+"gcl.ml" 34 726 775 "gcl.ml" 34 726 806
+call(
+  stack
+)
+type(
+  string
+)
+"gcl.ml" 34 726 756 "gcl.ml" 34 726 806
+call(
+  stack
+)
+type(
+  string
+)
+"gcl.ml" 34 726 746 "gcl.ml" 34 726 806
+call(
+  tail
+)
+type(
+  string
+)
+"gcl.ml" 35 807 818 "gcl.ml" 35 807 819
+type(
+  exp
+)
+ident(
+  def e "gcl.ml" 35 807 823 "gcl.ml" 35 807 859
+)
+"gcl.ml" 35 807 811 "gcl.ml" 35 807 819
+type(
+  t
+)
+"gcl.ml" 35 807 823 "gcl.ml" 35 807 832
+type(
+  string
+)
+"gcl.ml" 35 807 832 "gcl.ml" 35 807 833
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"gcl.ml" 35 807 833 "gcl.ml" 35 807 853
+type(
+  exp -> string
+)
+ident(
+  ext_ref Pp.ast_exp_to_string
+)
+"gcl.ml" 35 807 854 "gcl.ml" 35 807 855
+type(
+  exp
+)
+ident(
+  int_ref e "gcl.ml" 35 807 818 "gcl.ml" 35 807 819
+)
+"gcl.ml" 35 807 833 "gcl.ml" 35 807 855
+call(
+  stack
+)
+type(
+  string
+)
+"gcl.ml" 35 807 855 "gcl.ml" 35 807 856
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"gcl.ml" 35 807 856 "gcl.ml" 35 807 859
+type(
+  string
+)
+"gcl.ml" 35 807 833 "gcl.ml" 35 807 859
+call(
+  stack
+)
+type(
+  string
+)
+"gcl.ml" 35 807 823 "gcl.ml" 35 807 859
+call(
+  tail
+)
+type(
+  string
+)
+"gcl.ml" 36 860 871 "gcl.ml" 36 860 873
+type(
+  t
+)
+ident(
+  def g1 "gcl.ml" 36 860 882 "gcl.ml" 36 860 927
+)
+"gcl.ml" 36 860 875 "gcl.ml" 36 860 877
+type(
+  t
+)
+ident(
+  def g2 "gcl.ml" 36 860 882 "gcl.ml" 36 860 927
+)
+"gcl.ml" 36 860 864 "gcl.ml" 36 860 878
+type(
+  t
+)
+"gcl.ml" 36 860 882 "gcl.ml" 36 860 892
+type(
+  string
+)
+"gcl.ml" 36 860 892 "gcl.ml" 36 860 893
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"gcl.ml" 36 860 893 "gcl.ml" 36 860 902
+type(
+  t -> string
+)
+ident(
+  int_ref to_string "gcl.ml" 32 644 652 "gcl.ml" 32 644 661
+)
+"gcl.ml" 36 860 903 "gcl.ml" 36 860 905
+type(
+  t
+)
+ident(
+  int_ref g1 "gcl.ml" 36 860 871 "gcl.ml" 36 860 873
+)
+"gcl.ml" 36 860 893 "gcl.ml" 36 860 905
+call(
+  stack
+)
+type(
+  string
+)
+"gcl.ml" 36 860 905 "gcl.ml" 36 860 906
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"gcl.ml" 36 860 906 "gcl.ml" 36 860 910
+type(
+  string
+)
+"gcl.ml" 36 860 910 "gcl.ml" 36 860 911
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"gcl.ml" 36 860 911 "gcl.ml" 36 860 920
+type(
+  t -> string
+)
+ident(
+  int_ref to_string "gcl.ml" 32 644 652 "gcl.ml" 32 644 661
+)
+"gcl.ml" 36 860 921 "gcl.ml" 36 860 923
+type(
+  t
+)
+ident(
+  int_ref g2 "gcl.ml" 36 860 875 "gcl.ml" 36 860 877
+)
+"gcl.ml" 36 860 911 "gcl.ml" 36 860 923
+call(
+  stack
+)
+type(
+  string
+)
+"gcl.ml" 36 860 923 "gcl.ml" 36 860 924
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"gcl.ml" 36 860 924 "gcl.ml" 36 860 927
+type(
+  string
+)
+"gcl.ml" 36 860 911 "gcl.ml" 36 860 927
+call(
+  stack
+)
+type(
+  string
+)
+"gcl.ml" 36 860 906 "gcl.ml" 36 860 927
+call(
+  stack
+)
+type(
+  string
+)
+"gcl.ml" 36 860 893 "gcl.ml" 36 860 927
+call(
+  stack
+)
+type(
+  string
+)
+"gcl.ml" 36 860 882 "gcl.ml" 36 860 927
+call(
+  tail
+)
+type(
+  string
+)
+"gcl.ml" 37 928 936 "gcl.ml" 37 928 938
+type(
+  t
+)
+ident(
+  def g1 "gcl.ml" 37 928 947 "gcl.ml" 37 928 988
+)
+"gcl.ml" 37 928 940 "gcl.ml" 37 928 942
+type(
+  t
+)
+ident(
+  def g2 "gcl.ml" 37 928 947 "gcl.ml" 37 928 988
+)
+"gcl.ml" 37 928 932 "gcl.ml" 37 928 943
+type(
+  t
+)
+"gcl.ml" 37 928 947 "gcl.ml" 37 928 953
+type(
+  string
+)
+"gcl.ml" 37 928 953 "gcl.ml" 37 928 954
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"gcl.ml" 37 928 954 "gcl.ml" 37 928 963
+type(
+  t -> string
+)
+ident(
+  int_ref to_string "gcl.ml" 32 644 652 "gcl.ml" 32 644 661
+)
+"gcl.ml" 37 928 964 "gcl.ml" 37 928 966
+type(
+  t
+)
+ident(
+  int_ref g1 "gcl.ml" 37 928 936 "gcl.ml" 37 928 938
+)
+"gcl.ml" 37 928 954 "gcl.ml" 37 928 966
+call(
+  stack
+)
+type(
+  string
+)
+"gcl.ml" 37 928 966 "gcl.ml" 37 928 967
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"gcl.ml" 37 928 967 "gcl.ml" 37 928 971
+type(
+  string
+)
+"gcl.ml" 37 928 971 "gcl.ml" 37 928 972
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"gcl.ml" 37 928 972 "gcl.ml" 37 928 981
+type(
+  t -> string
+)
+ident(
+  int_ref to_string "gcl.ml" 32 644 652 "gcl.ml" 32 644 661
+)
+"gcl.ml" 37 928 982 "gcl.ml" 37 928 984
+type(
+  t
+)
+ident(
+  int_ref g2 "gcl.ml" 37 928 940 "gcl.ml" 37 928 942
+)
+"gcl.ml" 37 928 972 "gcl.ml" 37 928 984
+call(
+  stack
+)
+type(
+  string
+)
+"gcl.ml" 37 928 984 "gcl.ml" 37 928 985
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"gcl.ml" 37 928 985 "gcl.ml" 37 928 988
+type(
+  string
+)
+"gcl.ml" 37 928 972 "gcl.ml" 37 928 988
+call(
+  stack
+)
+type(
+  string
+)
+"gcl.ml" 37 928 967 "gcl.ml" 37 928 988
+call(
+  stack
+)
+type(
+  string
+)
+"gcl.ml" 37 928 954 "gcl.ml" 37 928 988
+call(
+  stack
+)
+type(
+  string
+)
+"gcl.ml" 37 928 947 "gcl.ml" 37 928 988
+call(
+  tail
+)
+type(
+  string
+)
+"gcl.ml" 38 989 993 "gcl.ml" 38 989 997
+type(
+  t
+)
+"gcl.ml" 38 989 1001 "gcl.ml" 38 989 1007
+type(
+  string
+)
+"gcl.ml" 32 644 664 "gcl.ml" 38 989 1007
+type(
+  t -> string
+)
+"gcl.ml" 40 1009 1017 "gcl.ml" 40 1009 1021
+type(
+  t -> int
+)
+ident(
+  def size "gcl.ml" 40 1009 1009 --
+)
+"gcl.ml" 41 1033 1044 "gcl.ml" 41 1033 1045
+type(
+  exp
+)
+"gcl.ml" 41 1033 1037 "gcl.ml" 41 1033 1045
+type(
+  t
+)
+"gcl.ml" 41 1033 1055 "gcl.ml" 41 1033 1056
+type(
+  exp
+)
+type(
+  var
+)
+"gcl.ml" 41 1033 1048 "gcl.ml" 41 1033 1056
+type(
+  t
+)
+"gcl.ml" 41 1033 1037 "gcl.ml" 41 1033 1056
+type(
+  t
+)
+"gcl.ml" 41 1033 1066 "gcl.ml" 41 1033 1067
+type(
+  exp
+)
+"gcl.ml" 41 1033 1059 "gcl.ml" 41 1033 1067
+type(
+  t
+)
+"gcl.ml" 41 1033 1037 "gcl.ml" 41 1033 1067
+type(
+  t
+)
+"gcl.ml" 41 1033 1070 "gcl.ml" 41 1033 1074
+type(
+  t
+)
+"gcl.ml" 41 1033 1037 "gcl.ml" 41 1033 1074
+type(
+  t
+)
+"gcl.ml" 41 1033 1078 "gcl.ml" 41 1033 1079
+type(
+  int
+)
+"gcl.ml" 42 1080 1088 "gcl.ml" 42 1080 1090
+type(
+  t
+)
+ident(
+  def g1 "gcl.ml" 42 1080 1116 "gcl.ml" 42 1080 1137
+)
+"gcl.ml" 42 1080 1092 "gcl.ml" 42 1080 1094
+type(
+  t
+)
+ident(
+  def g2 "gcl.ml" 42 1080 1116 "gcl.ml" 42 1080 1137
+)
+"gcl.ml" 42 1080 1084 "gcl.ml" 42 1080 1095
+type(
+  t
+)
+"gcl.ml" 42 1080 1105 "gcl.ml" 42 1080 1107
+type(
+  t
+)
+ident(
+  def g1 "gcl.ml" 42 1080 1116 "gcl.ml" 42 1080 1137
+)
+"gcl.ml" 42 1080 1109 "gcl.ml" 42 1080 1111
+type(
+  t
+)
+ident(
+  def g2 "gcl.ml" 42 1080 1116 "gcl.ml" 42 1080 1137
+)
+"gcl.ml" 42 1080 1098 "gcl.ml" 42 1080 1112
+type(
+  t
+)
+"gcl.ml" 42 1080 1084 "gcl.ml" 42 1080 1112
+type(
+  t
+)
+"gcl.ml" 42 1080 1116 "gcl.ml" 42 1080 1120
+type(
+  t -> int
+)
+ident(
+  int_ref size "gcl.ml" 40 1009 1017 "gcl.ml" 40 1009 1021
+)
+"gcl.ml" 42 1080 1121 "gcl.ml" 42 1080 1123
+type(
+  t
+)
+ident(
+  int_ref g1 "gcl.ml" 42 1080 1088 "gcl.ml" 42 1080 1090
+)
+"gcl.ml" 42 1080 1116 "gcl.ml" 42 1080 1123
+call(
+  stack
+)
+type(
+  int
+)
+"gcl.ml" 42 1080 1124 "gcl.ml" 42 1080 1125
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( + )
+)
+"gcl.ml" 42 1080 1126 "gcl.ml" 42 1080 1130
+type(
+  t -> int
+)
+ident(
+  int_ref size "gcl.ml" 40 1009 1017 "gcl.ml" 40 1009 1021
+)
+"gcl.ml" 42 1080 1131 "gcl.ml" 42 1080 1133
+type(
+  t
+)
+ident(
+  int_ref g2 "gcl.ml" 42 1080 1092 "gcl.ml" 42 1080 1094
+)
+"gcl.ml" 42 1080 1126 "gcl.ml" 42 1080 1133
+call(
+  stack
+)
+type(
+  int
+)
+"gcl.ml" 42 1080 1116 "gcl.ml" 42 1080 1133
+type(
+  int
+)
+"gcl.ml" 42 1080 1134 "gcl.ml" 42 1080 1135
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( + )
+)
+"gcl.ml" 42 1080 1136 "gcl.ml" 42 1080 1137
+type(
+  int
+)
+"gcl.ml" 42 1080 1116 "gcl.ml" 42 1080 1137
+type(
+  int
+)
+"gcl.ml" 40 1009 1024 "gcl.ml" 42 1080 1137
+type(
+  t -> int
+)
+"gcl.ml" 44 1139 1143 "gcl.ml" 44 1139 1149
+type(
+  t -> t -> t
+)
+ident(
+  def concat "gcl.ml" 86 2389 2389 --
+)
+"gcl.ml" 44 1139 1150 "gcl.ml" 44 1139 1152
+type(
+  t
+)
+ident(
+  def s1 "gcl.ml" 44 1139 1153 "gcl.ml" 47 1210 1235
+)
+"gcl.ml" 44 1139 1153 "gcl.ml" 44 1139 1155
+type(
+  t
+)
+ident(
+  def s2 "gcl.ml" 44 1139 1158 "gcl.ml" 47 1210 1235
+)
+"gcl.ml" 44 1139 1164 "gcl.ml" 44 1139 1166
+type(
+  t
+)
+ident(
+  int_ref s1 "gcl.ml" 44 1139 1150 "gcl.ml" 44 1139 1152
+)
+"gcl.ml" 44 1139 1168 "gcl.ml" 44 1139 1170
+type(
+  t
+)
+ident(
+  int_ref s2 "gcl.ml" 44 1139 1153 "gcl.ml" 44 1139 1155
+)
+"gcl.ml" 44 1139 1164 "gcl.ml" 44 1139 1170
+type(
+  t * t
+)
+"gcl.ml" 45 1176 1180 "gcl.ml" 45 1176 1184
+type(
+  t
+)
+"gcl.ml" 45 1176 1186 "gcl.ml" 45 1176 1187
+type(
+  t
+)
+ident(
+  def x "gcl.ml" 45 1176 1191 "gcl.ml" 45 1176 1192
+)
+"gcl.ml" 45 1176 1180 "gcl.ml" 45 1176 1187
+type(
+  t * t
+)
+"gcl.ml" 45 1176 1191 "gcl.ml" 45 1176 1192
+type(
+  t
+)
+ident(
+  int_ref x "gcl.ml" 45 1176 1186 "gcl.ml" 45 1176 1187
+)
+"gcl.ml" 46 1193 1197 "gcl.ml" 46 1193 1198
+type(
+  t
+)
+ident(
+  def x "gcl.ml" 46 1193 1208 "gcl.ml" 46 1193 1209
+)
+"gcl.ml" 46 1193 1200 "gcl.ml" 46 1193 1204
+type(
+  t
+)
+"gcl.ml" 46 1193 1197 "gcl.ml" 46 1193 1204
+type(
+  t * t
+)
+"gcl.ml" 46 1193 1208 "gcl.ml" 46 1193 1209
+type(
+  t
+)
+ident(
+  int_ref x "gcl.ml" 46 1193 1197 "gcl.ml" 46 1193 1198
+)
+"gcl.ml" 47 1210 1214 "gcl.ml" 47 1210 1216
+type(
+  t
+)
+ident(
+  def s1 "gcl.ml" 47 1210 1224 "gcl.ml" 47 1210 1235
+)
+"gcl.ml" 47 1210 1218 "gcl.ml" 47 1210 1220
+type(
+  t
+)
+ident(
+  def s2 "gcl.ml" 47 1210 1224 "gcl.ml" 47 1210 1235
+)
+"gcl.ml" 47 1210 1214 "gcl.ml" 47 1210 1220
+type(
+  t * t
+)
+"gcl.ml" 47 1210 1228 "gcl.ml" 47 1210 1230
+type(
+  t
+)
+ident(
+  int_ref s1 "gcl.ml" 47 1210 1214 "gcl.ml" 47 1210 1216
+)
+"gcl.ml" 47 1210 1232 "gcl.ml" 47 1210 1234
+type(
+  t
+)
+ident(
+  int_ref s2 "gcl.ml" 47 1210 1218 "gcl.ml" 47 1210 1220
+)
+"gcl.ml" 47 1210 1224 "gcl.ml" 47 1210 1235
+type(
+  t
+)
+"gcl.ml" 44 1139 1158 "gcl.ml" 47 1210 1235
+type(
+  t
+)
+"gcl.ml" 86 2389 2397 "gcl.ml" 86 2389 2416
+type(
+  ?mode:Type.formula_mode -> ?acc:t -> Ast.program -> t
+)
+ident(
+  def of_rev_straightline "gcl.ml" 86 2389 2389 --
+)
+"gcl.ml" 86 2389 2418 "gcl.ml" 86 2389 2422
+type(
+  Type.formula_mode option
+)
+ident(
+  def mode "gcl.ml" 86 2389 2423 "gcl.ml" 114 3356 3367
+)
+"gcl.ml" 86 2389 2425 "gcl.ml" 86 2389 2428
+type(
+  t
+)
+"gcl.ml" 86 2389 2429 "gcl.ml" 86 2389 2433
+type(
+  t
+)
+type(
+  t
+)
+ident(
+  int_ref *sth* "gcl.ml" 86 2389 2429 "gcl.ml" 86 2389 2433
+)
+type(
+  t option
+)
+type(
+  t option
+)
+type(
+  t
+)
+ident(
+  def *sth* "gcl.ml" 86 2389 2429 "gcl.ml" 86 2389 2433
+)
+"gcl.ml" 86 2389 2435 "gcl.ml" 86 2389 2440
+type(
+  Ast.program
+)
+ident(
+  def trace "gcl.ml" 87 2443 2445 "gcl.ml" 114 3356 3367
+)
+"gcl.ml" 87 2443 2449 "gcl.ml" 87 2443 2456
+type(
+  t -> Ast.stmt -> t
+)
+"gcl.ml" 87 2443 2457 "gcl.ml" 87 2443 2458
+type(
+  t
+)
+ident(
+  def g "gcl.ml" 87 2443 2461 "gcl.ml" 106 3111 3153
+)
+"gcl.ml" 88 2470 2481 "gcl.ml" 88 2470 2482
+type(
+  Ast.var
+)
+ident(
+  def l "gcl.ml" 88 2470 2488 "gcl.ml" 93 2702 2780
+)
+"gcl.ml" 88 2470 2483 "gcl.ml" 88 2470 2484
+type(
+  Ast.exp
+)
+ident(
+  def e "gcl.ml" 88 2470 2488 "gcl.ml" 93 2702 2780
+)
+"gcl.ml" 88 2470 2485 "gcl.ml" 88 2470 2486
+type(
+  Ast.attrs
+)
+"gcl.ml" 88 2470 2480 "gcl.ml" 88 2470 2487
+type(
+  Ast.var * Ast.exp * Ast.attrs
+)
+"gcl.ml" 88 2470 2476 "gcl.ml" 88 2470 2487
+type(
+  Ast.stmt
+)
+"gcl.ml" 88 2470 2493 "gcl.ml" 88 2470 2497
+type(
+  Type.formula_mode option
+)
+ident(
+  int_ref mode "gcl.ml" 86 2389 2418 "gcl.ml" 86 2389 2422
+)
+"gcl.ml" 88 2470 2498 "gcl.ml" 88 2470 2500
+type(
+  Type.formula_mode option -> Type.formula_mode option -> bool
+)
+ident(
+  ext_ref Pervasives.( <> )
+)
+"gcl.ml" 88 2470 2501 "gcl.ml" 88 2470 2505
+type(
+  Type.formula_mode option
+)
+"gcl.ml" 88 2470 2493 "gcl.ml" 88 2470 2505
+type(
+  bool
+)
+"gcl.ml" 89 2509 2522 "gcl.ml" 89 2509 2526
+type(
+  Type.formula_mode option
+)
+ident(
+  int_ref mode "gcl.ml" 86 2389 2418 "gcl.ml" 86 2389 2422
+)
+"gcl.ml" 90 2532 2540 "gcl.ml" 90 2532 2544
+type(
+  Type.formula_mode option
+)
+"gcl.ml" 90 2532 2548 "gcl.ml" 90 2532 2556
+type(
+  string -> t
+)
+ident(
+  ext_ref Pervasives.failwith
+)
+"gcl.ml" 90 2532 2557 "gcl.ml" 90 2532 2590
+type(
+  string
+)
+"gcl.ml" 90 2532 2548 "gcl.ml" 90 2532 2590
+call(
+  tail
+)
+type(
+  t
+)
+"gcl.ml" 91 2591 2604 "gcl.ml" 91 2591 2607
+type(
+  Type.formula_mode
+)
+"gcl.ml" 91 2591 2599 "gcl.ml" 91 2591 2607
+type(
+  Type.formula_mode option
+)
+"gcl.ml" 91 2591 2622 "gcl.ml" 91 2591 2628
+type(
+  exp -> Ast.exp -> exp
+)
+ident(
+  ext_ref Ast_convenience.exp_eq
+)
+"gcl.ml" 91 2591 2634 "gcl.ml" 91 2591 2635
+type(
+  Ast.var
+)
+ident(
+  int_ref l "gcl.ml" 88 2470 2481 "gcl.ml" 88 2470 2482
+)
+"gcl.ml" 91 2591 2629 "gcl.ml" 91 2591 2636
+type(
+  exp
+)
+"gcl.ml" 91 2591 2637 "gcl.ml" 91 2591 2638
+type(
+  Ast.exp
+)
+ident(
+  int_ref e "gcl.ml" 88 2470 2483 "gcl.ml" 88 2470 2484
+)
+"gcl.ml" 91 2591 2621 "gcl.ml" 91 2591 2639
+call(
+  stack
+)
+type(
+  exp
+)
+"gcl.ml" 91 2591 2615 "gcl.ml" 91 2591 2639
+type(
+  t
+)
+"gcl.ml" 91 2591 2641 "gcl.ml" 91 2591 2642
+type(
+  t
+)
+ident(
+  int_ref g "gcl.ml" 87 2443 2457 "gcl.ml" 87 2443 2458
+)
+"gcl.ml" 91 2591 2611 "gcl.ml" 91 2591 2643
+type(
+  t
+)
+"gcl.ml" 92 2644 2657 "gcl.ml" 92 2644 2665
+type(
+  Type.formula_mode
+)
+"gcl.ml" 92 2644 2652 "gcl.ml" 92 2644 2665
+type(
+  Type.formula_mode option
+)
+"gcl.ml" 92 2644 2680 "gcl.ml" 92 2644 2686
+type(
+  exp -> Ast.exp -> exp
+)
+ident(
+  ext_ref Ast_convenience.exp_eq
+)
+"gcl.ml" 92 2644 2692 "gcl.ml" 92 2644 2693
+type(
+  Ast.var
+)
+ident(
+  int_ref l "gcl.ml" 88 2470 2481 "gcl.ml" 88 2470 2482
+)
+"gcl.ml" 92 2644 2687 "gcl.ml" 92 2644 2694
+type(
+  exp
+)
+"gcl.ml" 92 2644 2695 "gcl.ml" 92 2644 2696
+type(
+  Ast.exp
+)
+ident(
+  int_ref e "gcl.ml" 88 2470 2483 "gcl.ml" 88 2470 2484
+)
+"gcl.ml" 92 2644 2679 "gcl.ml" 92 2644 2697
+call(
+  stack
+)
+type(
+  exp
+)
+"gcl.ml" 92 2644 2673 "gcl.ml" 92 2644 2697
+type(
+  t
+)
+"gcl.ml" 92 2644 2699 "gcl.ml" 92 2644 2700
+type(
+  t
+)
+ident(
+  int_ref g "gcl.ml" 87 2443 2457 "gcl.ml" 87 2443 2458
+)
+"gcl.ml" 92 2644 2669 "gcl.ml" 92 2644 2701
+type(
+  t
+)
+"gcl.ml" 93 2702 2715 "gcl.ml" 93 2702 2722
+type(
+  Type.formula_mode
+)
+"gcl.ml" 93 2702 2710 "gcl.ml" 93 2702 2722
+type(
+  Type.formula_mode option
+)
+"gcl.ml" 93 2702 2726 "gcl.ml" 93 2702 2734
+type(
+  string -> t
+)
+ident(
+  ext_ref Pervasives.failwith
+)
+"gcl.ml" 93 2702 2735 "gcl.ml" 93 2702 2779
+type(
+  string
+)
+"gcl.ml" 93 2702 2726 "gcl.ml" 93 2702 2779
+call(
+  tail
+)
+type(
+  t
+)
+"gcl.ml" 89 2509 2515 "gcl.ml" 93 2702 2780
+type(
+  t
+)
+"gcl.ml" 88 2470 2488 "gcl.ml" 93 2702 2780
+type(
+  t
+)
+"gcl.ml" 94 2781 2792 "gcl.ml" 94 2781 2793
+type(
+  Ast.var
+)
+ident(
+  def l "gcl.ml" 94 2781 2802 "gcl.ml" 94 2781 2821
+)
+"gcl.ml" 94 2781 2794 "gcl.ml" 94 2781 2795
+type(
+  exp
+)
+ident(
+  def e "gcl.ml" 94 2781 2802 "gcl.ml" 94 2781 2821
+)
+"gcl.ml" 94 2781 2796 "gcl.ml" 94 2781 2797
+type(
+  Ast.attrs
+)
+"gcl.ml" 94 2781 2791 "gcl.ml" 94 2781 2798
+type(
+  Ast.var * exp * Ast.attrs
+)
+"gcl.ml" 94 2781 2787 "gcl.ml" 94 2781 2798
+type(
+  Ast.stmt
+)
+"gcl.ml" 94 2781 2813 "gcl.ml" 94 2781 2814
+type(
+  Ast.var
+)
+ident(
+  int_ref l "gcl.ml" 94 2781 2792 "gcl.ml" 94 2781 2793
+)
+"gcl.ml" 94 2781 2815 "gcl.ml" 94 2781 2816
+type(
+  exp
+)
+ident(
+  int_ref e "gcl.ml" 94 2781 2794 "gcl.ml" 94 2781 2795
+)
+"gcl.ml" 94 2781 2806 "gcl.ml" 94 2781 2817
+type(
+  t
+)
+"gcl.ml" 94 2781 2819 "gcl.ml" 94 2781 2820
+type(
+  t
+)
+ident(
+  int_ref g "gcl.ml" 87 2443 2457 "gcl.ml" 87 2443 2458
+)
+"gcl.ml" 94 2781 2802 "gcl.ml" 94 2781 2821
+type(
+  t
+)
+"gcl.ml" 95 2822 2833 "gcl.ml" 95 2822 2834
+type(
+  Ast.exp * Ast.exp * Ast.exp * Ast.attrs
+)
+"gcl.ml" 95 2822 2828 "gcl.ml" 95 2822 2834
+type(
+  Ast.stmt
+)
+"gcl.ml" 96 2835 2845 "gcl.ml" 96 2835 2846
+type(
+  Ast.exp * Ast.attrs
+)
+"gcl.ml" 96 2835 2841 "gcl.ml" 96 2835 2846
+type(
+  Ast.stmt
+)
+"gcl.ml" 95 2822 2828 "gcl.ml" 96 2835 2846
+type(
+  Ast.stmt
+)
+"gcl.ml" 97 2850 2851 "gcl.ml" 97 2850 2862
+type(
+  string -> t
+)
+ident(
+  ext_ref Pervasives.invalid_arg
+)
+"gcl.ml" 97 2850 2863 "gcl.ml" 97 2850 2894
+type(
+  string
+)
+"gcl.ml" 97 2850 2851 "gcl.ml" 97 2850 2894
+call(
+  tail
+)
+type(
+  t
+)
+"gcl.ml" 98 2895 2909 "gcl.ml" 98 2895 2910
+type(
+  string * Ast.attrs
+)
+"gcl.ml" 98 2895 2901 "gcl.ml" 98 2895 2910
+type(
+  Ast.stmt
+)
+"gcl.ml" 99 2911 2923 "gcl.ml" 99 2911 2924
+type(
+  Type.label * Ast.attrs
+)
+"gcl.ml" 99 2911 2917 "gcl.ml" 99 2911 2924
+type(
+  Ast.stmt
+)
+"gcl.ml" 98 2895 2901 "gcl.ml" 99 2911 2924
+type(
+  Ast.stmt
+)
+"gcl.ml" 100 2928 2929 "gcl.ml" 100 2928 2930
+type(
+  t
+)
+ident(
+  int_ref g "gcl.ml" 87 2443 2457 "gcl.ml" 87 2443 2458
+)
+"gcl.ml" 101 2931 2942 "gcl.ml" 101 2931 2943
+type(
+  Ast.exp * Ast.attrs
+)
+"gcl.ml" 101 2931 2937 "gcl.ml" 101 2931 2943
+type(
+  Ast.stmt
+)
+"gcl.ml" 102 2947 2953 "gcl.ml" 102 2947 2964
+type(
+  string -> t
+)
+ident(
+  ext_ref Pervasives.invalid_arg
+)
+"gcl.ml" 102 2947 2965 "gcl.ml" 102 2947 2998
+type(
+  string
+)
+"gcl.ml" 102 2947 2953 "gcl.ml" 102 2947 2998
+call(
+  tail
+)
+type(
+  t
+)
+"gcl.ml" 103 2999 3013 "gcl.ml" 103 2999 3014
+type(
+  string * Ast.attrs
+)
+"gcl.ml" 103 2999 3005 "gcl.ml" 103 2999 3014
+type(
+  Ast.stmt
+)
+"gcl.ml" 104 3018 3019 "gcl.ml" 104 3018 3030
+type(
+  string -> t
+)
+ident(
+  ext_ref Pervasives.invalid_arg
+)
+"gcl.ml" 104 3018 3031 "gcl.ml" 104 3018 3067
+type(
+  string
+)
+"gcl.ml" 104 3018 3019 "gcl.ml" 104 3018 3067
+call(
+  tail
+)
+type(
+  t
+)
+"gcl.ml" 105 3068 3085 "gcl.ml" 105 3068 3086
+type(
+  exp
+)
+ident(
+  def e "gcl.ml" 105 3068 3094 "gcl.ml" 105 3068 3110
+)
+"gcl.ml" 105 3068 3088 "gcl.ml" 105 3068 3089
+type(
+  Ast.attrs
+)
+"gcl.ml" 105 3068 3084 "gcl.ml" 105 3068 3090
+type(
+  exp * Ast.attrs
+)
+"gcl.ml" 105 3068 3074 "gcl.ml" 105 3068 3090
+type(
+  Ast.stmt
+)
+"gcl.ml" 105 3068 3105 "gcl.ml" 105 3068 3106
+type(
+  exp
+)
+ident(
+  int_ref e "gcl.ml" 105 3068 3085 "gcl.ml" 105 3068 3086
+)
+"gcl.ml" 105 3068 3098 "gcl.ml" 105 3068 3106
+type(
+  t
+)
+"gcl.ml" 105 3068 3108 "gcl.ml" 105 3068 3109
+type(
+  t
+)
+ident(
+  int_ref g "gcl.ml" 87 2443 2457 "gcl.ml" 87 2443 2458
+)
+"gcl.ml" 105 3068 3094 "gcl.ml" 105 3068 3110
+type(
+  t
+)
+"gcl.ml" 106 3111 3128 "gcl.ml" 106 3111 3129
+type(
+  exp
+)
+ident(
+  def e "gcl.ml" 106 3111 3137 "gcl.ml" 106 3111 3153
+)
+"gcl.ml" 106 3111 3131 "gcl.ml" 106 3111 3132
+type(
+  Ast.attrs
+)
+"gcl.ml" 106 3111 3127 "gcl.ml" 106 3111 3133
+type(
+  exp * Ast.attrs
+)
+"gcl.ml" 106 3111 3117 "gcl.ml" 106 3111 3133
+type(
+  Ast.stmt
+)
+"gcl.ml" 106 3111 3148 "gcl.ml" 106 3111 3149
+type(
+  exp
+)
+ident(
+  int_ref e "gcl.ml" 106 3111 3128 "gcl.ml" 106 3111 3129
+)
+"gcl.ml" 106 3111 3141 "gcl.ml" 106 3111 3149
+type(
+  t
+)
+"gcl.ml" 106 3111 3151 "gcl.ml" 106 3111 3152
+type(
+  t
+)
+ident(
+  int_ref g "gcl.ml" 87 2443 2457 "gcl.ml" 87 2443 2458
+)
+"gcl.ml" 106 3111 3137 "gcl.ml" 106 3111 3153
+type(
+  t
+)
+"gcl.ml" 87 2443 2461 "gcl.ml" 106 3111 3153
+type(
+  Ast.stmt -> t
+)
+"gcl.ml" 111 3271 3275 "gcl.ml" 111 3271 3289
+type(
+  (t -> Ast.stmt -> t) -> t -> Ast.program -> t
+)
+ident(
+  ext_ref BatListFull.List.fold_left
+)
+"gcl.ml" 111 3271 3290 "gcl.ml" 111 3271 3297
+type(
+  t -> Ast.stmt -> t
+)
+ident(
+  int_ref prepend "gcl.ml" 87 2443 2449 "gcl.ml" 87 2443 2456
+)
+"gcl.ml" 111 3271 3298 "gcl.ml" 111 3271 3301
+type(
+  t
+)
+ident(
+  int_ref acc "gcl.ml" 86 2389 2425 "gcl.ml" 86 2389 2428
+)
+"gcl.ml" 111 3271 3302 "gcl.ml" 111 3271 3307
+type(
+  Ast.program
+)
+ident(
+  int_ref trace "gcl.ml" 86 2389 2435 "gcl.ml" 86 2389 2440
+)
+"gcl.ml" 111 3271 3275 "gcl.ml" 111 3271 3307
+call(
+  stack
+)
+type(
+  t
+)
+"gcl.ml" 112 3308 3315 "gcl.ml" 112 3308 3316
+type(
+  exn
+)
+ident(
+  def e "gcl.ml" 113 3320 3324 "gcl.ml" 114 3356 3367
+)
+"gcl.ml" 113 3320 3324 "gcl.ml" 113 3320 3348
+type(
+  Ast.program -> unit
+)
+ident(
+  ext_ref Debug_snippets.print_ast
+)
+"gcl.ml" 113 3320 3349 "gcl.ml" 113 3320 3354
+type(
+  Ast.program
+)
+ident(
+  int_ref trace "gcl.ml" 86 2389 2435 "gcl.ml" 86 2389 2440
+)
+"gcl.ml" 113 3320 3324 "gcl.ml" 113 3320 3354
+call(
+  stack
+)
+type(
+  unit
+)
+"gcl.ml" 114 3356 3360 "gcl.ml" 114 3356 3365
+type(
+  exn -> t
+)
+ident(
+  ext_ref Pervasives.raise
+)
+"gcl.ml" 114 3356 3366 "gcl.ml" 114 3356 3367
+type(
+  exn
+)
+ident(
+  int_ref e "gcl.ml" 112 3308 3315 "gcl.ml" 112 3308 3316
+)
+"gcl.ml" 114 3356 3360 "gcl.ml" 114 3356 3367
+type(
+  t
+)
+"gcl.ml" 113 3320 3324 "gcl.ml" 114 3356 3367
+type(
+  t
+)
+"gcl.ml" 110 3265 3267 "gcl.ml" 114 3356 3367
+type(
+  t
+)
+"gcl.ml" 87 2443 2445 "gcl.ml" 114 3356 3367
+type(
+  t
+)
+"gcl.ml" 116 3369 3373 "gcl.ml" 116 3369 3388
+type(
+  ?mode:Type.formula_mode -> Ast.stmt list -> t
+)
+ident(
+  def of_straightline "gcl.ml" 120 3449 3449 --
+)
+"gcl.ml" 116 3369 3390 "gcl.ml" 116 3369 3394
+type(
+  Type.formula_mode option
+)
+ident(
+  def mode "gcl.ml" 116 3369 3395 "gcl.ml" 116 3369 3445
+)
+"gcl.ml" 116 3369 3395 "gcl.ml" 116 3369 3400
+type(
+  Ast.stmt list
+)
+ident(
+  def trace "gcl.ml" 116 3369 3403 "gcl.ml" 116 3369 3445
+)
+"gcl.ml" 116 3369 3403 "gcl.ml" 116 3369 3422
+type(
+  ?mode:Type.formula_mode -> ?acc:t -> Ast.program -> t
+)
+ident(
+  int_ref of_rev_straightline "gcl.ml" 86 2389 2397 "gcl.ml" 86 2389 2416
+)
+"gcl.ml" 116 3369 3424 "gcl.ml" 116 3369 3428
+type(
+  Type.formula_mode option
+)
+ident(
+  int_ref mode "gcl.ml" 116 3369 3390 "gcl.ml" 116 3369 3394
+)
+"gcl.ml" 116 3369 3430 "gcl.ml" 116 3369 3438
+type(
+  Ast.stmt list -> Ast.program
+)
+ident(
+  ext_ref BatListFull.List.rev
+)
+"gcl.ml" 116 3369 3439 "gcl.ml" 116 3369 3444
+type(
+  Ast.stmt list
+)
+ident(
+  int_ref trace "gcl.ml" 116 3369 3395 "gcl.ml" 116 3369 3400
+)
+"gcl.ml" 116 3369 3429 "gcl.ml" 116 3369 3445
+call(
+  stack
+)
+type(
+  Ast.program
+)
+"gcl.ml" 116 3369 3403 "gcl.ml" 116 3369 3445
+call(
+  tail
+)
+type(
+  t
+)
+"gcl.ml" 126 3531 3537 "gcl.ml" 126 3531 3548
+type(
+  (CA.G.vertex -> unit) -> CA.G.t -> unit
+)
+ident(
+  def iter_vertex "gcl.ml" 127 3568 3570 "gcl.ml" 129 3635 3638
+)
+"gcl.ml" 126 3531 3551 "gcl.ml" 126 3531 3567
+type(
+  (CA.G.vertex -> unit) -> CA.G.t -> unit
+)
+ident(
+  ext_ref CA.G.iter_vertex
+)
+"gcl.ml" 127 3568 3574 "gcl.ml" 127 3568 3583
+type(
+  (CA.G.vertex -> unit) -> CA.G.t -> CA.G.vertex -> unit
+)
+ident(
+  def iter_succ "gcl.ml" 128 3601 3603 "gcl.ml" 129 3635 3638
+)
+"gcl.ml" 127 3568 3586 "gcl.ml" 127 3568 3600
+type(
+  (CA.G.vertex -> unit) -> CA.G.t -> CA.G.vertex -> unit
+)
+ident(
+  ext_ref CA.G.iter_pred
+)
+"gcl.ml" 128 3601 3607 "gcl.ml" 128 3601 3616
+type(
+  CA.G.t -> CA.G.vertex -> int
+)
+ident(
+  def in_degree "gcl.ml" 128 3601 3634 "gcl.ml" 129 3635 3638
+)
+"gcl.ml" 128 3601 3619 "gcl.ml" 128 3601 3634
+type(
+  CA.G.t -> CA.G.vertex -> int
+)
+ident(
+  ext_ref CA.G.out_degree
+)
+"gcl.ml" 131 3640 3659 "gcl.ml" 131 3640 3689
+call(
+  stack
+)
+"gcl.ml" 140 3943 3951 "gcl.ml" 140 3943 3968
+type(
+  gclhelp -> string
+)
+ident(
+  def gclhelp_to_string "gcl.ml" 140 3943 3943 --
+)
+"gcl.ml" 141 3980 3992 "gcl.ml" 141 3980 3994
+type(
+  CA.G.V.t
+)
+ident(
+  def bb "gcl.ml" 141 3980 3998 "gcl.ml" 141 3980 4043
+)
+"gcl.ml" 141 3980 3984 "gcl.ml" 141 3980 3994
+type(
+  gclhelp
+)
+"gcl.ml" 141 3980 3998 "gcl.ml" 141 3980 4012
+type(
+  (string -> string, unit, string) format -> string -> string
+)
+ident(
+  ext_ref Printf.sprintf
+)
+"gcl.ml" 141 3980 4013 "gcl.ml" 141 3980 4026
+type(
+  (string -> string, unit, string) format
+)
+"gcl.ml" 141 3980 4028 "gcl.ml" 141 3980 4039
+type(
+  CA.G.V.t -> string
+)
+ident(
+  ext_ref Cfg_ast.v2s
+)
+"gcl.ml" 141 3980 4040 "gcl.ml" 141 3980 4042
+type(
+  CA.G.V.t
+)
+ident(
+  int_ref bb "gcl.ml" 141 3980 3992 "gcl.ml" 141 3980 3994
+)
+"gcl.ml" 141 3980 4027 "gcl.ml" 141 3980 4043
+call(
+  stack
+)
+type(
+  string
+)
+"gcl.ml" 141 3980 3998 "gcl.ml" 141 3980 4043
+call(
+  tail
+)
+type(
+  string
+)
+"gcl.ml" 142 4044 4056 "gcl.ml" 142 4044 4057
+type(
+  exp
+)
+ident(
+  def e "gcl.ml" 142 4044 4070 "gcl.ml" 142 4044 4181
+)
+"gcl.ml" 142 4044 4059 "gcl.ml" 142 4044 4061
+type(
+  gclhelp
+)
+ident(
+  def g1 "gcl.ml" 142 4044 4070 "gcl.ml" 142 4044 4181
+)
+"gcl.ml" 142 4044 4063 "gcl.ml" 142 4044 4065
+type(
+  gclhelp
+)
+ident(
+  def g2 "gcl.ml" 142 4044 4070 "gcl.ml" 142 4044 4181
+)
+"gcl.ml" 142 4044 4048 "gcl.ml" 142 4044 4066
+type(
+  gclhelp
+)
+"gcl.ml" 142 4044 4070 "gcl.ml" 142 4044 4084
+type(
+  (string -> string -> string -> string, unit, string) format ->
+  string -> string -> string -> string
+)
+ident(
+  ext_ref Printf.sprintf
+)
+"gcl.ml" 142 4044 4085 "gcl.ml" 142 4044 4110
+type(
+  (string -> string -> string -> string, unit, string) format
+)
+"gcl.ml" 142 4044 4112 "gcl.ml" 142 4044 4132
+type(
+  exp -> string
+)
+ident(
+  ext_ref Pp.ast_exp_to_string
+)
+"gcl.ml" 142 4044 4133 "gcl.ml" 142 4044 4134
+type(
+  exp
+)
+ident(
+  int_ref e "gcl.ml" 142 4044 4056 "gcl.ml" 142 4044 4057
+)
+"gcl.ml" 142 4044 4111 "gcl.ml" 142 4044 4135
+call(
+  stack
+)
+type(
+  string
+)
+"gcl.ml" 142 4044 4137 "gcl.ml" 142 4044 4154
+type(
+  gclhelp -> string
+)
+ident(
+  int_ref gclhelp_to_string "gcl.ml" 140 3943 3951 "gcl.ml" 140 3943 3968
+)
+"gcl.ml" 142 4044 4155 "gcl.ml" 142 4044 4157
+type(
+  gclhelp
+)
+ident(
+  int_ref g1 "gcl.ml" 142 4044 4059 "gcl.ml" 142 4044 4061
+)
+"gcl.ml" 142 4044 4136 "gcl.ml" 142 4044 4158
+call(
+  stack
+)
+type(
+  string
+)
+"gcl.ml" 142 4044 4160 "gcl.ml" 142 4044 4177
+type(
+  gclhelp -> string
+)
+ident(
+  int_ref gclhelp_to_string "gcl.ml" 140 3943 3951 "gcl.ml" 140 3943 3968
+)
+"gcl.ml" 142 4044 4178 "gcl.ml" 142 4044 4180
+type(
+  gclhelp
+)
+ident(
+  int_ref g2 "gcl.ml" 142 4044 4063 "gcl.ml" 142 4044 4065
+)
+"gcl.ml" 142 4044 4159 "gcl.ml" 142 4044 4181
+call(
+  stack
+)
+type(
+  string
+)
+"gcl.ml" 142 4044 4070 "gcl.ml" 142 4044 4181
+call(
+  tail
+)
+type(
+  string
+)
+"gcl.ml" 143 4182 4196 "gcl.ml" 143 4182 4198
+type(
+  gclhelp
+)
+ident(
+  def g1 "gcl.ml" 143 4182 4207 "gcl.ml" 143 4182 4291
+)
+"gcl.ml" 143 4182 4200 "gcl.ml" 143 4182 4202
+type(
+  gclhelp
+)
+ident(
+  def g2 "gcl.ml" 143 4182 4207 "gcl.ml" 143 4182 4291
+)
+"gcl.ml" 143 4182 4186 "gcl.ml" 143 4182 4203
+type(
+  gclhelp
+)
+"gcl.ml" 143 4182 4207 "gcl.ml" 143 4182 4221
+type(
+  (string -> string -> string, unit, string) format ->
+  string -> string -> string
+)
+ident(
+  ext_ref Printf.sprintf
+)
+"gcl.ml" 143 4182 4222 "gcl.ml" 143 4182 4245
+type(
+  (string -> string -> string, unit, string) format
+)
+"gcl.ml" 143 4182 4247 "gcl.ml" 143 4182 4264
+type(
+  gclhelp -> string
+)
+ident(
+  int_ref gclhelp_to_string "gcl.ml" 140 3943 3951 "gcl.ml" 140 3943 3968
+)
+"gcl.ml" 143 4182 4265 "gcl.ml" 143 4182 4267
+type(
+  gclhelp
+)
+ident(
+  int_ref g1 "gcl.ml" 143 4182 4196 "gcl.ml" 143 4182 4198
+)
+"gcl.ml" 143 4182 4246 "gcl.ml" 143 4182 4268
+call(
+  stack
+)
+type(
+  string
+)
+"gcl.ml" 143 4182 4270 "gcl.ml" 143 4182 4287
+type(
+  gclhelp -> string
+)
+ident(
+  int_ref gclhelp_to_string "gcl.ml" 140 3943 3951 "gcl.ml" 140 3943 3968
+)
+"gcl.ml" 143 4182 4288 "gcl.ml" 143 4182 4290
+type(
+  gclhelp
+)
+ident(
+  int_ref g2 "gcl.ml" 143 4182 4200 "gcl.ml" 143 4182 4202
+)
+"gcl.ml" 143 4182 4269 "gcl.ml" 143 4182 4291
+call(
+  stack
+)
+type(
+  string
+)
+"gcl.ml" 143 4182 4207 "gcl.ml" 143 4182 4291
+call(
+  tail
+)
+type(
+  string
+)
+"gcl.ml" 144 4292 4300 "gcl.ml" 144 4292 4304
+type(
+  gclhelp list
+)
+"gcl.ml" 144 4292 4296 "gcl.ml" 144 4292 4304
+type(
+  gclhelp
+)
+"gcl.ml" 144 4292 4308 "gcl.ml" 144 4292 4314
+type(
+  string
+)
+"gcl.ml" 145 4315 4324 "gcl.ml" 145 4315 4326
+type(
+  gclhelp
+)
+ident(
+  def hd "gcl.ml" 146 4335 4339 "gcl.ml" 148 4414 4450
+)
+"gcl.ml" 145 4315 4328 "gcl.ml" 145 4315 4330
+type(
+  gclhelp list
+)
+ident(
+  def tl "gcl.ml" 146 4335 4339 "gcl.ml" 148 4414 4450
+)
+"gcl.ml" 145 4315 4323 "gcl.ml" 145 4315 4331
+type(
+  gclhelp list
+)
+"gcl.ml" 145 4315 4319 "gcl.ml" 145 4315 4331
+type(
+  gclhelp
+)
+"gcl.ml" 146 4335 4339 "gcl.ml" 146 4335 4346
+type(
+  string
+)
+"gcl.ml" 146 4335 4346 "gcl.ml" 146 4335 4347
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"gcl.ml" 146 4335 4348 "gcl.ml" 146 4335 4362
+type(
+  (string -> gclhelp -> string) -> string -> gclhelp list -> string
+)
+ident(
+  ext_ref BatListFull.List.fold_left
+)
+"gcl.ml" 146 4335 4368 "gcl.ml" 146 4335 4371
+type(
+  string
+)
+ident(
+  def acc "gcl.ml" 146 4335 4372 "gcl.ml" 147 4377 4413
+)
+"gcl.ml" 146 4335 4372 "gcl.ml" 146 4335 4373
+type(
+  gclhelp
+)
+ident(
+  def s "gcl.ml" 147 4377 4383 "gcl.ml" 147 4377 4413
+)
+"gcl.ml" 147 4377 4383 "gcl.ml" 147 4377 4386
+type(
+  string
+)
+ident(
+  int_ref acc "gcl.ml" 146 4335 4368 "gcl.ml" 146 4335 4371
+)
+"gcl.ml" 147 4377 4386 "gcl.ml" 147 4377 4387
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"gcl.ml" 147 4377 4387 "gcl.ml" 147 4377 4391
+type(
+  string
+)
+"gcl.ml" 147 4377 4391 "gcl.ml" 147 4377 4392
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"gcl.ml" 147 4377 4393 "gcl.ml" 147 4377 4410
+type(
+  gclhelp -> string
+)
+ident(
+  int_ref gclhelp_to_string "gcl.ml" 140 3943 3951 "gcl.ml" 140 3943 3968
+)
+"gcl.ml" 147 4377 4411 "gcl.ml" 147 4377 4412
+type(
+  gclhelp
+)
+ident(
+  int_ref s "gcl.ml" 146 4335 4372 "gcl.ml" 146 4335 4373
+)
+"gcl.ml" 147 4377 4392 "gcl.ml" 147 4377 4413
+call(
+  stack
+)
+type(
+  string
+)
+"gcl.ml" 147 4377 4387 "gcl.ml" 147 4377 4413
+call(
+  stack
+)
+type(
+  string
+)
+"gcl.ml" 147 4377 4383 "gcl.ml" 147 4377 4413
+call(
+  tail
+)
+type(
+  string
+)
+"gcl.ml" 146 4335 4363 "gcl.ml" 148 4414 4419
+type(
+  string -> gclhelp -> string
+)
+"gcl.ml" 148 4414 4421 "gcl.ml" 148 4414 4438
+type(
+  gclhelp -> string
+)
+ident(
+  int_ref gclhelp_to_string "gcl.ml" 140 3943 3951 "gcl.ml" 140 3943 3968
+)
+"gcl.ml" 148 4414 4439 "gcl.ml" 148 4414 4441
+type(
+  gclhelp
+)
+ident(
+  int_ref hd "gcl.ml" 145 4315 4324 "gcl.ml" 145 4315 4326
+)
+"gcl.ml" 148 4414 4420 "gcl.ml" 148 4414 4442
+call(
+  stack
+)
+type(
+  string
+)
+"gcl.ml" 148 4414 4443 "gcl.ml" 148 4414 4445
+type(
+  gclhelp list
+)
+ident(
+  int_ref tl "gcl.ml" 145 4315 4328 "gcl.ml" 145 4315 4330
+)
+"gcl.ml" 146 4335 4347 "gcl.ml" 148 4414 4446
+call(
+  stack
+)
+type(
+  string
+)
+"gcl.ml" 148 4414 4446 "gcl.ml" 148 4414 4447
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"gcl.ml" 148 4414 4447 "gcl.ml" 148 4414 4450
+type(
+  string
+)
+"gcl.ml" 146 4335 4347 "gcl.ml" 148 4414 4450
+call(
+  stack
+)
+type(
+  string
+)
+"gcl.ml" 146 4335 4339 "gcl.ml" 148 4414 4450
+call(
+  tail
+)
+type(
+  string
+)
+"gcl.ml" 140 3943 3971 "gcl.ml" 148 4414 4450
+type(
+  gclhelp -> string
+)
+"gcl.ml" 150 4452 4460 "gcl.ml" 150 4452 4469
+type(
+  gclhelp -> int
+)
+ident(
+  def cgcl_size "gcl.ml" 150 4452 4452 --
+)
+"gcl.ml" 151 4481 4493 "gcl.ml" 151 4481 4494
+type(
+  CA.G.V.t
+)
+"gcl.ml" 151 4481 4485 "gcl.ml" 151 4481 4494
+type(
+  gclhelp
+)
+"gcl.ml" 151 4481 4498 "gcl.ml" 151 4481 4499
+type(
+  int
+)
+"gcl.ml" 152 4500 4512 "gcl.ml" 152 4500 4513
+type(
+  exp
+)
+"gcl.ml" 152 4500 4515 "gcl.ml" 152 4500 4517
+type(
+  gclhelp
+)
+ident(
+  def g1 "gcl.ml" 153 4523 4548 "gcl.ml" 153 4523 4579
+)
+"gcl.ml" 152 4500 4519 "gcl.ml" 152 4500 4521
+type(
+  gclhelp
+)
+ident(
+  def g2 "gcl.ml" 153 4523 4548 "gcl.ml" 153 4523 4579
+)
+"gcl.ml" 152 4500 4504 "gcl.ml" 152 4500 4522
+type(
+  gclhelp
+)
+"gcl.ml" 153 4523 4537 "gcl.ml" 153 4523 4539
+type(
+  gclhelp
+)
+ident(
+  def g1 "gcl.ml" 153 4523 4548 "gcl.ml" 153 4523 4579
+)
+"gcl.ml" 153 4523 4541 "gcl.ml" 153 4523 4543
+type(
+  gclhelp
+)
+ident(
+  def g2 "gcl.ml" 153 4523 4548 "gcl.ml" 153 4523 4579
+)
+"gcl.ml" 153 4523 4527 "gcl.ml" 153 4523 4544
+type(
+  gclhelp
+)
+"gcl.ml" 152 4500 4504 "gcl.ml" 153 4523 4544
+type(
+  gclhelp
+)
+"gcl.ml" 153 4523 4549 "gcl.ml" 153 4523 4558
+type(
+  gclhelp -> int
+)
+ident(
+  int_ref cgcl_size "gcl.ml" 150 4452 4460 "gcl.ml" 150 4452 4469
+)
+"gcl.ml" 153 4523 4559 "gcl.ml" 153 4523 4561
+type(
+  gclhelp
+)
+ident(
+  int_ref g1 "gcl.ml" 152 4500 4515 "gcl.ml" 152 4500 4517
+)
+"gcl.ml" 153 4523 4548 "gcl.ml" 153 4523 4562
+call(
+  stack
+)
+type(
+  int
+)
+"gcl.ml" 153 4523 4563 "gcl.ml" 153 4523 4564
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( + )
+)
+"gcl.ml" 153 4523 4566 "gcl.ml" 153 4523 4575
+type(
+  gclhelp -> int
+)
+ident(
+  int_ref cgcl_size "gcl.ml" 150 4452 4460 "gcl.ml" 150 4452 4469
+)
+"gcl.ml" 153 4523 4576 "gcl.ml" 153 4523 4578
+type(
+  gclhelp
+)
+ident(
+  int_ref g2 "gcl.ml" 152 4500 4519 "gcl.ml" 152 4500 4521
+)
+"gcl.ml" 153 4523 4565 "gcl.ml" 153 4523 4579
+call(
+  stack
+)
+type(
+  int
+)
+"gcl.ml" 153 4523 4548 "gcl.ml" 153 4523 4579
+type(
+  int
+)
+"gcl.ml" 154 4580 4588 "gcl.ml" 154 4580 4591
+type(
+  gclhelp list
+)
+ident(
+  def l "gcl.ml" 154 4580 4595 "gcl.ml" 154 4580 4644
+)
+"gcl.ml" 154 4580 4584 "gcl.ml" 154 4580 4591
+type(
+  gclhelp
+)
+"gcl.ml" 154 4580 4595 "gcl.ml" 154 4580 4609
+type(
+  (int -> gclhelp -> int) -> int -> gclhelp list -> int
+)
+ident(
+  ext_ref BatListFull.List.fold_left
+)
+"gcl.ml" 154 4580 4615 "gcl.ml" 154 4580 4616
+type(
+  int
+)
+ident(
+  def s "gcl.ml" 154 4580 4617 "gcl.ml" 154 4580 4639
+)
+"gcl.ml" 154 4580 4617 "gcl.ml" 154 4580 4618
+type(
+  gclhelp
+)
+ident(
+  def n "gcl.ml" 154 4580 4622 "gcl.ml" 154 4580 4639
+)
+"gcl.ml" 154 4580 4622 "gcl.ml" 154 4580 4623
+type(
+  int
+)
+ident(
+  int_ref s "gcl.ml" 154 4580 4615 "gcl.ml" 154 4580 4616
+)
+"gcl.ml" 154 4580 4624 "gcl.ml" 154 4580 4625
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( + )
+)
+"gcl.ml" 154 4580 4627 "gcl.ml" 154 4580 4636
+type(
+  gclhelp -> int
+)
+ident(
+  int_ref cgcl_size "gcl.ml" 150 4452 4460 "gcl.ml" 150 4452 4469
+)
+"gcl.ml" 154 4580 4637 "gcl.ml" 154 4580 4638
+type(
+  gclhelp
+)
+ident(
+  int_ref n "gcl.ml" 154 4580 4617 "gcl.ml" 154 4580 4618
+)
+"gcl.ml" 154 4580 4626 "gcl.ml" 154 4580 4639
+call(
+  stack
+)
+type(
+  int
+)
+"gcl.ml" 154 4580 4622 "gcl.ml" 154 4580 4639
+type(
+  int
+)
+"gcl.ml" 154 4580 4610 "gcl.ml" 154 4580 4640
+type(
+  int -> gclhelp -> int
+)
+"gcl.ml" 154 4580 4641 "gcl.ml" 154 4580 4642
+type(
+  int
+)
+"gcl.ml" 154 4580 4643 "gcl.ml" 154 4580 4644
+type(
+  gclhelp list
+)
+ident(
+  int_ref l "gcl.ml" 154 4580 4588 "gcl.ml" 154 4580 4591
+)
+"gcl.ml" 154 4580 4595 "gcl.ml" 154 4580 4644
+call(
+  tail
+)
+type(
+  int
+)
+"gcl.ml" 150 4452 4472 "gcl.ml" 154 4580 4644
+type(
+  gclhelp -> int
+)
+"gcl.ml" 156 4646 4654 "gcl.ml" 156 4646 4668
+type(
+  gclhelp -> string
+)
+ident(
+  def string_of_cgcl "gcl.ml" 156 4646 4646 --
+)
+"gcl.ml" 157 4680 4691 "gcl.ml" 157 4680 4694
+type(
+  CA.G.V.t
+)
+ident(
+  def v "gcl.ml" 157 4680 4698 "gcl.ml" 157 4680 4711
+)
+"gcl.ml" 157 4680 4684 "gcl.ml" 157 4680 4694
+type(
+  gclhelp
+)
+"gcl.ml" 157 4680 4698 "gcl.ml" 157 4680 4709
+type(
+  CA.G.V.t -> string
+)
+ident(
+  ext_ref Cfg_ast.v2s
+)
+"gcl.ml" 157 4680 4710 "gcl.ml" 157 4680 4711
+type(
+  CA.G.V.t
+)
+ident(
+  int_ref v "gcl.ml" 157 4680 4691 "gcl.ml" 157 4680 4694
+)
+"gcl.ml" 157 4680 4698 "gcl.ml" 157 4680 4711
+call(
+  tail
+)
+type(
+  string
+)
+"gcl.ml" 158 4712 4724 "gcl.ml" 158 4712 4725
+type(
+  exp
+)
+ident(
+  def e "gcl.ml" 158 4712 4738 "gcl.ml" 158 4712 4821
+)
+"gcl.ml" 158 4712 4727 "gcl.ml" 158 4712 4729
+type(
+  gclhelp
+)
+ident(
+  def g1 "gcl.ml" 158 4712 4738 "gcl.ml" 158 4712 4821
+)
+"gcl.ml" 158 4712 4731 "gcl.ml" 158 4712 4733
+type(
+  gclhelp
+)
+ident(
+  def g2 "gcl.ml" 158 4712 4738 "gcl.ml" 158 4712 4821
+)
+"gcl.ml" 158 4712 4716 "gcl.ml" 158 4712 4734
+type(
+  gclhelp
+)
+"gcl.ml" 158 4712 4738 "gcl.ml" 158 4712 4748
+type(
+  string
+)
+"gcl.ml" 158 4712 4748 "gcl.ml" 158 4712 4749
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"gcl.ml" 158 4712 4749 "gcl.ml" 158 4712 4769
+type(
+  exp -> string
+)
+ident(
+  ext_ref Pp.ast_exp_to_string
+)
+"gcl.ml" 158 4712 4770 "gcl.ml" 158 4712 4771
+type(
+  exp
+)
+ident(
+  int_ref e "gcl.ml" 158 4712 4724 "gcl.ml" 158 4712 4725
+)
+"gcl.ml" 158 4712 4749 "gcl.ml" 158 4712 4771
+call(
+  stack
+)
+type(
+  string
+)
+"gcl.ml" 158 4712 4771 "gcl.ml" 158 4712 4772
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"gcl.ml" 158 4712 4772 "gcl.ml" 158 4712 4776
+type(
+  string
+)
+"gcl.ml" 158 4712 4776 "gcl.ml" 158 4712 4777
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"gcl.ml" 158 4712 4777 "gcl.ml" 158 4712 4791
+type(
+  gclhelp -> string
+)
+ident(
+  int_ref string_of_cgcl "gcl.ml" 156 4646 4654 "gcl.ml" 156 4646 4668
+)
+"gcl.ml" 158 4712 4792 "gcl.ml" 158 4712 4794
+type(
+  gclhelp
+)
+ident(
+  int_ref g1 "gcl.ml" 158 4712 4727 "gcl.ml" 158 4712 4729
+)
+"gcl.ml" 158 4712 4777 "gcl.ml" 158 4712 4794
+call(
+  stack
+)
+type(
+  string
+)
+"gcl.ml" 158 4712 4794 "gcl.ml" 158 4712 4795
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"gcl.ml" 158 4712 4795 "gcl.ml" 158 4712 4799
+type(
+  string
+)
+"gcl.ml" 158 4712 4799 "gcl.ml" 158 4712 4800
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"gcl.ml" 158 4712 4800 "gcl.ml" 158 4712 4814
+type(
+  gclhelp -> string
+)
+ident(
+  int_ref string_of_cgcl "gcl.ml" 156 4646 4654 "gcl.ml" 156 4646 4668
+)
+"gcl.ml" 158 4712 4815 "gcl.ml" 158 4712 4817
+type(
+  gclhelp
+)
+ident(
+  int_ref g2 "gcl.ml" 158 4712 4731 "gcl.ml" 158 4712 4733
+)
+"gcl.ml" 158 4712 4800 "gcl.ml" 158 4712 4817
+call(
+  stack
+)
+type(
+  string
+)
+"gcl.ml" 158 4712 4817 "gcl.ml" 158 4712 4818
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"gcl.ml" 158 4712 4818 "gcl.ml" 158 4712 4821
+type(
+  string
+)
+"gcl.ml" 158 4712 4800 "gcl.ml" 158 4712 4821
+call(
+  stack
+)
+type(
+  string
+)
+"gcl.ml" 158 4712 4795 "gcl.ml" 158 4712 4821
+call(
+  stack
+)
+type(
+  string
+)
+"gcl.ml" 158 4712 4777 "gcl.ml" 158 4712 4821
+call(
+  stack
+)
+type(
+  string
+)
+"gcl.ml" 158 4712 4772 "gcl.ml" 158 4712 4821
+call(
+  stack
+)
+type(
+  string
+)
+"gcl.ml" 158 4712 4749 "gcl.ml" 158 4712 4821
+call(
+  stack
+)
+type(
+  string
+)
+"gcl.ml" 158 4712 4738 "gcl.ml" 158 4712 4821
+call(
+  tail
+)
+type(
+  string
+)
+"gcl.ml" 159 4822 4836 "gcl.ml" 159 4822 4838
+type(
+  gclhelp
+)
+ident(
+  def g1 "gcl.ml" 159 4822 4847 "gcl.ml" 159 4822 4904
+)
+"gcl.ml" 159 4822 4840 "gcl.ml" 159 4822 4842
+type(
+  gclhelp
+)
+ident(
+  def g2 "gcl.ml" 159 4822 4847 "gcl.ml" 159 4822 4904
+)
+"gcl.ml" 159 4822 4826 "gcl.ml" 159 4822 4843
+type(
+  gclhelp
+)
+"gcl.ml" 159 4822 4847 "gcl.ml" 159 4822 4859
+type(
+  string
+)
+"gcl.ml" 159 4822 4859 "gcl.ml" 159 4822 4860
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"gcl.ml" 159 4822 4860 "gcl.ml" 159 4822 4874
+type(
+  gclhelp -> string
+)
+ident(
+  int_ref string_of_cgcl "gcl.ml" 156 4646 4654 "gcl.ml" 156 4646 4668
+)
+"gcl.ml" 159 4822 4875 "gcl.ml" 159 4822 4877
+type(
+  gclhelp
+)
+ident(
+  int_ref g1 "gcl.ml" 159 4822 4836 "gcl.ml" 159 4822 4838
+)
+"gcl.ml" 159 4822 4860 "gcl.ml" 159 4822 4877
+call(
+  stack
+)
+type(
+  string
+)
+"gcl.ml" 159 4822 4877 "gcl.ml" 159 4822 4878
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"gcl.ml" 159 4822 4878 "gcl.ml" 159 4822 4882
+type(
+  string
+)
+"gcl.ml" 159 4822 4882 "gcl.ml" 159 4822 4883
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"gcl.ml" 159 4822 4883 "gcl.ml" 159 4822 4897
+type(
+  gclhelp -> string
+)
+ident(
+  int_ref string_of_cgcl "gcl.ml" 156 4646 4654 "gcl.ml" 156 4646 4668
+)
+"gcl.ml" 159 4822 4898 "gcl.ml" 159 4822 4900
+type(
+  gclhelp
+)
+ident(
+  int_ref g2 "gcl.ml" 159 4822 4840 "gcl.ml" 159 4822 4842
+)
+"gcl.ml" 159 4822 4883 "gcl.ml" 159 4822 4900
+call(
+  stack
+)
+type(
+  string
+)
+"gcl.ml" 159 4822 4900 "gcl.ml" 159 4822 4901
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"gcl.ml" 159 4822 4901 "gcl.ml" 159 4822 4904
+type(
+  string
+)
+"gcl.ml" 159 4822 4883 "gcl.ml" 159 4822 4904
+call(
+  stack
+)
+type(
+  string
+)
+"gcl.ml" 159 4822 4878 "gcl.ml" 159 4822 4904
+call(
+  stack
+)
+type(
+  string
+)
+"gcl.ml" 159 4822 4860 "gcl.ml" 159 4822 4904
+call(
+  stack
+)
+type(
+  string
+)
+"gcl.ml" 159 4822 4847 "gcl.ml" 159 4822 4904
+call(
+  tail
+)
+type(
+  string
+)
+"gcl.ml" 160 4905 4913 "gcl.ml" 160 4905 4916
+type(
+  gclhelp list
+)
+ident(
+  def l "gcl.ml" 160 4905 4920 "gcl.ml" 160 4905 4987
+)
+"gcl.ml" 160 4905 4909 "gcl.ml" 160 4905 4916
+type(
+  gclhelp
+)
+"gcl.ml" 160 4905 4921 "gcl.ml" 160 4905 4935
+type(
+  (string -> gclhelp -> string) -> string -> gclhelp list -> string
+)
+ident(
+  ext_ref BatListFull.List.fold_left
+)
+"gcl.ml" 160 4905 4941 "gcl.ml" 160 4905 4942
+type(
+  string
+)
+ident(
+  def s "gcl.ml" 160 4905 4943 "gcl.ml" 160 4905 4971
+)
+"gcl.ml" 160 4905 4943 "gcl.ml" 160 4905 4944
+type(
+  gclhelp
+)
+ident(
+  def g "gcl.ml" 160 4905 4948 "gcl.ml" 160 4905 4971
+)
+"gcl.ml" 160 4905 4948 "gcl.ml" 160 4905 4949
+type(
+  string
+)
+ident(
+  int_ref s "gcl.ml" 160 4905 4941 "gcl.ml" 160 4905 4942
+)
+"gcl.ml" 160 4905 4949 "gcl.ml" 160 4905 4950
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"gcl.ml" 160 4905 4950 "gcl.ml" 160 4905 4954
+type(
+  string
+)
+"gcl.ml" 160 4905 4954 "gcl.ml" 160 4905 4955
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"gcl.ml" 160 4905 4955 "gcl.ml" 160 4905 4969
+type(
+  gclhelp -> string
+)
+ident(
+  int_ref string_of_cgcl "gcl.ml" 156 4646 4654 "gcl.ml" 156 4646 4668
+)
+"gcl.ml" 160 4905 4970 "gcl.ml" 160 4905 4971
+type(
+  gclhelp
+)
+ident(
+  int_ref g "gcl.ml" 160 4905 4943 "gcl.ml" 160 4905 4944
+)
+"gcl.ml" 160 4905 4955 "gcl.ml" 160 4905 4971
+call(
+  stack
+)
+type(
+  string
+)
+"gcl.ml" 160 4905 4950 "gcl.ml" 160 4905 4971
+call(
+  stack
+)
+type(
+  string
+)
+"gcl.ml" 160 4905 4948 "gcl.ml" 160 4905 4971
+call(
+  tail
+)
+type(
+  string
+)
+"gcl.ml" 160 4905 4936 "gcl.ml" 160 4905 4972
+type(
+  string -> gclhelp -> string
+)
+"gcl.ml" 160 4905 4973 "gcl.ml" 160 4905 4980
+type(
+  string
+)
+"gcl.ml" 160 4905 4981 "gcl.ml" 160 4905 4982
+type(
+  gclhelp list
+)
+ident(
+  int_ref l "gcl.ml" 160 4905 4913 "gcl.ml" 160 4905 4916
+)
+"gcl.ml" 160 4905 4920 "gcl.ml" 160 4905 4983
+call(
+  stack
+)
+type(
+  string
+)
+"gcl.ml" 160 4905 4983 "gcl.ml" 160 4905 4984
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"gcl.ml" 160 4905 4984 "gcl.ml" 160 4905 4987
+type(
+  string
+)
+"gcl.ml" 160 4905 4920 "gcl.ml" 160 4905 4987
+call(
+  tail
+)
+type(
+  string
+)
+"gcl.ml" 156 4646 4671 "gcl.ml" 160 4905 4987
+type(
+  gclhelp -> string
+)
+"gcl.ml" 192 6009 6013 "gcl.ml" 192 6009 6030
+type(
+  ?entry:CA.G.V.t -> ?exit:CA.G.V.t -> CA.G.t -> gclhelp
+)
+ident(
+  def gclhelp_of_astcfg "gcl.ml" 319 11234 11234 --
+)
+"gcl.ml" 192 6009 6032 "gcl.ml" 192 6009 6037
+type(
+  CA.G.V.t option
+)
+ident(
+  def entry "gcl.ml" 192 6009 6038 "gcl.ml" 315 11054 11074
+)
+"gcl.ml" 192 6009 6039 "gcl.ml" 192 6009 6043
+type(
+  CA.G.V.t option
+)
+ident(
+  def exit "gcl.ml" 192 6009 6044 "gcl.ml" 315 11054 11074
+)
+"gcl.ml" 192 6009 6044 "gcl.ml" 192 6009 6047
+type(
+  CA.G.t
+)
+ident(
+  def cfg "gcl.ml" 193 6050 6052 "gcl.ml" 315 11054 11074
+)
+"gcl.ml" 193 6050 6052 "gcl.ml" 193 6050 6073
+type(
+  CA.G.t Checks.sanityf
+)
+ident(
+  ext_ref Checks.acyclic_astcfg
+)
+"gcl.ml" 193 6050 6074 "gcl.ml" 193 6050 6077
+type(
+  CA.G.t
+)
+ident(
+  int_ref cfg "gcl.ml" 192 6009 6044 "gcl.ml" 192 6009 6047
+)
+"gcl.ml" 193 6050 6078 "gcl.ml" 193 6050 6083
+type(
+  string
+)
+"gcl.ml" 193 6050 6052 "gcl.ml" 193 6050 6083
+call(
+  stack
+)
+type(
+  unit
+)
+"gcl.ml" 194 6085 6091 "gcl.ml" 194 6085 6095
+type(
+  CA.G.V.t
+)
+"gcl.ml" 194 6085 6104 "gcl.ml" 194 6085 6108
+type(
+  CA.G.V.t option
+)
+ident(
+  int_ref exit "gcl.ml" 192 6009 6039 "gcl.ml" 192 6009 6043
+)
+"gcl.ml" 195 6114 6120 "gcl.ml" 195 6114 6124
+type(
+  CA.G.V.t option
+)
+"gcl.ml" 195 6114 6128 "gcl.ml" 195 6114 6141
+type(
+  CA.G.V.label -> CA.G.V.t
+)
+ident(
+  ext_ref CA.G.V.create
+)
+"gcl.ml" 195 6114 6142 "gcl.ml" 195 6114 6153
+type(
+  CA.G.V.label
+)
+"gcl.ml" 195 6114 6128 "gcl.ml" 195 6114 6153
+call(
+  stack
+)
+type(
+  CA.G.V.t
+)
+"gcl.ml" 196 6154 6165 "gcl.ml" 196 6154 6166
+type(
+  CA.G.V.t
+)
+ident(
+  def x "gcl.ml" 196 6154 6170 "gcl.ml" 196 6154 6171
+)
+"gcl.ml" 196 6154 6160 "gcl.ml" 196 6154 6166
+type(
+  CA.G.V.t option
+)
+"gcl.ml" 196 6154 6170 "gcl.ml" 196 6154 6171
+type(
+  CA.G.V.t
+)
+ident(
+  int_ref x "gcl.ml" 196 6154 6165 "gcl.ml" 196 6154 6166
+)
+"gcl.ml" 194 6085 6098 "gcl.ml" 196 6154 6171
+type(
+  CA.G.V.t
+)
+"gcl.ml" 197 6172 6178 "gcl.ml" 197 6172 6183
+type(
+  CA.G.V.t
+)
+"gcl.ml" 197 6172 6192 "gcl.ml" 197 6172 6197
+type(
+  CA.G.V.t option
+)
+ident(
+  int_ref entry "gcl.ml" 192 6009 6032 "gcl.ml" 192 6009 6037
+)
+"gcl.ml" 198 6203 6209 "gcl.ml" 198 6203 6213
+type(
+  CA.G.V.t option
+)
+"gcl.ml" 198 6203 6217 "gcl.ml" 198 6203 6230
+type(
+  CA.G.V.label -> CA.G.V.t
+)
+ident(
+  ext_ref CA.G.V.create
+)
+"gcl.ml" 198 6203 6231 "gcl.ml" 198 6203 6243
+type(
+  CA.G.V.label
+)
+"gcl.ml" 198 6203 6217 "gcl.ml" 198 6203 6243
+call(
+  stack
+)
+type(
+  CA.G.V.t
+)
+"gcl.ml" 199 6244 6255 "gcl.ml" 199 6244 6256
+type(
+  CA.G.V.t
+)
+ident(
+  def x "gcl.ml" 199 6244 6260 "gcl.ml" 199 6244 6261
+)
+"gcl.ml" 199 6244 6250 "gcl.ml" 199 6244 6256
+type(
+  CA.G.V.t option
+)
+"gcl.ml" 199 6244 6260 "gcl.ml" 199 6244 6261
+type(
+  CA.G.V.t
+)
+ident(
+  int_ref x "gcl.ml" 199 6244 6255 "gcl.ml" 199 6244 6256
+)
+"gcl.ml" 197 6172 6186 "gcl.ml" 199 6244 6261
+type(
+  CA.G.V.t
+)
+"gcl.ml" 202 6344 6350 "gcl.ml" 202 6344 6354
+type(
+  gclhelp list -> gclhelp list -> gclhelp list
+)
+"gcl.ml" 202 6344 6355 "gcl.ml" 202 6344 6357
+type(
+  gclhelp list
+)
+ident(
+  def l1 "gcl.ml" 202 6344 6358 "gcl.ml" 210 6890 6928
+)
+"gcl.ml" 202 6344 6358 "gcl.ml" 202 6344 6360
+type(
+  gclhelp list
+)
+ident(
+  def l2 "gcl.ml" 206 6598 6602 "gcl.ml" 210 6890 6928
+)
+"gcl.ml" 206 6598 6607 "gcl.ml" 206 6598 6609
+type(
+  gclhelp list
+)
+"gcl.ml" 206 6598 6611 "gcl.ml" 206 6598 6613
+type(
+  gclhelp list
+)
+"gcl.ml" 206 6598 6615 "gcl.ml" 206 6598 6617
+type(
+  gclhelp list
+)
+"gcl.ml" 206 6598 6606 "gcl.ml" 206 6598 6618
+type(
+  gclhelp list * gclhelp list * gclhelp list
+)
+"gcl.ml" 206 6598 6621 "gcl.ml" 206 6598 6640
+type(
+  ?eq:(gclhelp -> gclhelp -> bool) ->
+  gclhelp list -> gclhelp list -> gclhelp list * gclhelp list * gclhelp list
+)
+ident(
+  ext_ref Util.split_common_suffix
+)
+"gcl.ml" 206 6598 6645 "gcl.ml" 206 6598 6649
+type(
+  gclhelp -> gclhelp -> bool
+)
+ident(
+  ext_ref Pervasives.( == )
+)
+"gcl.ml" 206 6598 6650 "gcl.ml" 206 6598 6652
+type(
+  gclhelp list
+)
+ident(
+  int_ref l1 "gcl.ml" 202 6344 6355 "gcl.ml" 202 6344 6357
+)
+"gcl.ml" 206 6598 6653 "gcl.ml" 206 6598 6655
+type(
+  gclhelp list
+)
+ident(
+  int_ref l2 "gcl.ml" 202 6344 6358 "gcl.ml" 202 6344 6360
+)
+"gcl.ml" 206 6598 6621 "gcl.ml" 206 6598 6655
+call(
+  stack
+)
+type(
+  gclhelp list * gclhelp list * gclhelp list
+)
+"gcl.ml" 210 6890 6909 "gcl.ml" 210 6890 6911
+type(
+  gclhelp list
+)
+ident(
+  int_ref g1 "gcl.ml" 206 6598 6611 "gcl.ml" 206 6598 6613
+)
+"gcl.ml" 210 6890 6904 "gcl.ml" 210 6890 6911
+type(
+  gclhelp
+)
+"gcl.ml" 210 6890 6918 "gcl.ml" 210 6890 6920
+type(
+  gclhelp list
+)
+ident(
+  int_ref g2 "gcl.ml" 206 6598 6615 "gcl.ml" 206 6598 6617
+)
+"gcl.ml" 210 6890 6913 "gcl.ml" 210 6890 6920
+type(
+  gclhelp
+)
+"gcl.ml" 210 6890 6894 "gcl.ml" 210 6890 6921
+type(
+  gclhelp
+)
+"gcl.ml" 210 6890 6926 "gcl.ml" 210 6890 6928
+type(
+  gclhelp list
+)
+ident(
+  int_ref su "gcl.ml" 206 6598 6607 "gcl.ml" 206 6598 6609
+)
+"gcl.ml" 210 6890 6894 "gcl.ml" 210 6890 6928
+type(
+  gclhelp list
+)
+"gcl.ml" 206 6598 6602 "gcl.ml" 210 6890 6928
+type(
+  gclhelp list
+)
+"gcl.ml" 237 8070 8076 "gcl.ml" 237 8070 8086
+type(
+  gclhelp -> CA.G.V.t
+)
+"gcl.ml" 237 8070 8087 "gcl.ml" 237 8070 8088
+type(
+  gclhelp
+)
+ident(
+  def s "gcl.ml" 238 8091 8095 "gcl.ml" 248 8472 8506
+)
+"gcl.ml" 238 8091 8103 "gcl.ml" 238 8091 8115
+type(
+  gclhelp -> CA.G.V.t option
+)
+"gcl.ml" 238 8091 8116 "gcl.ml" 238 8091 8117
+type(
+  gclhelp
+)
+ident(
+  def s "gcl.ml" 242 8229 8235 "gcl.ml" 246 8397 8464
+)
+"gcl.ml" 242 8229 8241 "gcl.ml" 242 8229 8242
+type(
+  gclhelp
+)
+ident(
+  int_ref s "gcl.ml" 238 8091 8116 "gcl.ml" 238 8091 8117
+)
+"gcl.ml" 243 8248 8264 "gcl.ml" 243 8248 8265
+type(
+  CA.G.V.t
+)
+ident(
+  def b "gcl.ml" 243 8248 8269 "gcl.ml" 243 8248 8275
+)
+"gcl.ml" 243 8248 8256 "gcl.ml" 243 8248 8265
+type(
+  gclhelp
+)
+"gcl.ml" 243 8248 8274 "gcl.ml" 243 8248 8275
+type(
+  CA.G.V.t
+)
+ident(
+  int_ref b "gcl.ml" 243 8248 8264 "gcl.ml" 243 8248 8265
+)
+"gcl.ml" 243 8248 8269 "gcl.ml" 243 8248 8275
+type(
+  CA.G.V.t option
+)
+"gcl.ml" 244 8276 8289 "gcl.ml" 244 8276 8290
+type(
+  gclhelp list
+)
+ident(
+  def l "gcl.ml" 244 8276 8294 "gcl.ml" 244 8276 8330
+)
+"gcl.ml" 244 8276 8284 "gcl.ml" 244 8276 8290
+type(
+  gclhelp
+)
+"gcl.ml" 244 8276 8294 "gcl.ml" 244 8276 8315
+type(
+  (gclhelp -> CA.G.V.t option) -> gclhelp list -> CA.G.V.t option
+)
+ident(
+  ext_ref Util.list_find_option
+)
+"gcl.ml" 244 8276 8316 "gcl.ml" 244 8276 8328
+type(
+  gclhelp -> CA.G.V.t option
+)
+ident(
+  int_ref find_first_h "gcl.ml" 238 8091 8103 "gcl.ml" 238 8091 8115
+)
+"gcl.ml" 244 8276 8329 "gcl.ml" 244 8276 8330
+type(
+  gclhelp list
+)
+ident(
+  int_ref l "gcl.ml" 244 8276 8289 "gcl.ml" 244 8276 8290
+)
+"gcl.ml" 244 8276 8294 "gcl.ml" 244 8276 8330
+call(
+  tail
+)
+type(
+  CA.G.V.t option
+)
+"gcl.ml" 245 8331 8347 "gcl.ml" 245 8331 8348
+type(
+  gclhelp
+)
+type(
+  gclhelp
+)
+type(
+  exp
+)
+"gcl.ml" 245 8331 8339 "gcl.ml" 245 8331 8348
+type(
+  gclhelp
+)
+"gcl.ml" 245 8331 8352 "gcl.ml" 245 8331 8360
+type(
+  string -> CA.G.V.t option
+)
+ident(
+  ext_ref Pervasives.failwith
+)
+"gcl.ml" 245 8331 8361 "gcl.ml" 245 8331 8396
+type(
+  string
+)
+"gcl.ml" 245 8331 8352 "gcl.ml" 245 8331 8396
+call(
+  tail
+)
+type(
+  CA.G.V.t option
+)
+"gcl.ml" 246 8397 8415 "gcl.ml" 246 8397 8416
+type(
+  gclhelp
+)
+type(
+  gclhelp
+)
+"gcl.ml" 246 8397 8405 "gcl.ml" 246 8397 8416
+type(
+  gclhelp
+)
+"gcl.ml" 246 8397 8420 "gcl.ml" 246 8397 8428
+type(
+  string -> CA.G.V.t option
+)
+ident(
+  ext_ref Pervasives.failwith
+)
+"gcl.ml" 246 8397 8429 "gcl.ml" 246 8397 8464
+type(
+  string
+)
+"gcl.ml" 246 8397 8420 "gcl.ml" 246 8397 8464
+call(
+  tail
+)
+type(
+  CA.G.V.t option
+)
+"gcl.ml" 242 8229 8235 "gcl.ml" 246 8397 8464
+type(
+  CA.G.V.t option
+)
+"gcl.ml" 248 8472 8476 "gcl.ml" 248 8472 8489
+type(
+  CA.G.V.t option -> CA.G.V.t
+)
+ident(
+  ext_ref BatOption.get
+)
+"gcl.ml" 248 8472 8491 "gcl.ml" 248 8472 8503
+type(
+  gclhelp -> CA.G.V.t option
+)
+ident(
+  int_ref find_first_h "gcl.ml" 238 8091 8103 "gcl.ml" 238 8091 8115
+)
+"gcl.ml" 248 8472 8504 "gcl.ml" 248 8472 8505
+type(
+  gclhelp
+)
+ident(
+  int_ref s "gcl.ml" 237 8070 8087 "gcl.ml" 237 8070 8088
+)
+"gcl.ml" 248 8472 8490 "gcl.ml" 248 8472 8506
+call(
+  stack
+)
+type(
+  CA.G.V.t option
+)
+"gcl.ml" 248 8472 8476 "gcl.ml" 248 8472 8506
+call(
+  tail
+)
+type(
+  CA.G.V.t
+)
+"gcl.ml" 238 8091 8095 "gcl.ml" 248 8472 8506
+type(
+  CA.G.V.t
+)
+"gcl.ml" 252 8597 8607 "gcl.ml" 252 8597 8616
+type(
+  Ast.stmt list -> (Ast.exp * Ast.exp * Ast.exp) option
+)
+"gcl.ml" 253 8628 8634 "gcl.ml" 253 8628 8636
+type(
+  Ast.stmt list
+)
+"gcl.ml" 253 8628 8640 "gcl.ml" 253 8628 8644
+type(
+  (Ast.exp * Ast.exp * Ast.exp) option
+)
+"gcl.ml" 254 8645 8651 "gcl.ml" 254 8645 8656
+type(
+  Ast.stmt list
+)
+ident(
+  def stmts "gcl.ml" 255 8660 8661 "gcl.ml" 257 8720 8732
+)
+"gcl.ml" 255 8660 8667 "gcl.ml" 255 8660 8676
+type(
+  Ast.stmt list -> Ast.stmt
+)
+ident(
+  ext_ref Util.list_last
+)
+"gcl.ml" 255 8660 8677 "gcl.ml" 255 8660 8682
+type(
+  Ast.stmt list
+)
+ident(
+  int_ref stmts "gcl.ml" 254 8645 8651 "gcl.ml" 254 8645 8656
+)
+"gcl.ml" 255 8660 8667 "gcl.ml" 255 8660 8682
+call(
+  stack
+)
+type(
+  Ast.stmt
+)
+"gcl.ml" 256 8688 8696 "gcl.ml" 256 8688 8697
+type(
+  Ast.exp
+)
+ident(
+  def c "gcl.ml" 256 8688 8708 "gcl.ml" 256 8688 8719
+)
+"gcl.ml" 256 8688 8698 "gcl.ml" 256 8688 8699
+type(
+  Ast.exp
+)
+ident(
+  def t "gcl.ml" 256 8688 8708 "gcl.ml" 256 8688 8719
+)
+"gcl.ml" 256 8688 8700 "gcl.ml" 256 8688 8701
+type(
+  Ast.exp
+)
+ident(
+  def f "gcl.ml" 256 8688 8708 "gcl.ml" 256 8688 8719
+)
+"gcl.ml" 256 8688 8702 "gcl.ml" 256 8688 8703
+type(
+  Ast.attrs
+)
+"gcl.ml" 256 8688 8695 "gcl.ml" 256 8688 8704
+type(
+  Ast.exp * Ast.exp * Ast.exp * Ast.attrs
+)
+"gcl.ml" 256 8688 8691 "gcl.ml" 256 8688 8704
+type(
+  Ast.stmt
+)
+"gcl.ml" 256 8688 8713 "gcl.ml" 256 8688 8714
+type(
+  Ast.exp
+)
+ident(
+  int_ref c "gcl.ml" 256 8688 8696 "gcl.ml" 256 8688 8697
+)
+"gcl.ml" 256 8688 8715 "gcl.ml" 256 8688 8716
+type(
+  Ast.exp
+)
+ident(
+  int_ref t "gcl.ml" 256 8688 8698 "gcl.ml" 256 8688 8699
+)
+"gcl.ml" 256 8688 8717 "gcl.ml" 256 8688 8718
+type(
+  Ast.exp
+)
+ident(
+  int_ref f "gcl.ml" 256 8688 8700 "gcl.ml" 256 8688 8701
+)
+"gcl.ml" 256 8688 8712 "gcl.ml" 256 8688 8719
+type(
+  Ast.exp * Ast.exp * Ast.exp
+)
+"gcl.ml" 256 8688 8708 "gcl.ml" 256 8688 8719
+type(
+  (Ast.exp * Ast.exp * Ast.exp) option
+)
+"gcl.ml" 257 8720 8723 "gcl.ml" 257 8720 8724
+type(
+  Ast.stmt
+)
+ident(
+  def s "gcl.ml" 257 8720 8728 "gcl.ml" 257 8720 8732
+)
+"gcl.ml" 257 8720 8728 "gcl.ml" 257 8720 8732
+type(
+  (Ast.exp * Ast.exp * Ast.exp) option
+)
+"gcl.ml" 255 8660 8661 "gcl.ml" 257 8720 8732
+type(
+  (Ast.exp * Ast.exp * Ast.exp) option
+)
+"gcl.ml" 252 8597 8619 "gcl.ml" 257 8720 8732
+type(
+  Ast.stmt list -> (Ast.exp * Ast.exp * Ast.exp) option
+)
+"gcl.ml" 259 8738 8744 "gcl.ml" 259 8738 8755
+type(
+  Ast.exp -> CA.G.V.t
+)
+"gcl.ml" 259 8738 8756 "gcl.ml" 259 8738 8757
+type(
+  Ast.exp
+)
+ident(
+  def e "gcl.ml" 260 8760 8764 "gcl.ml" 262 8824 8906
+)
+"gcl.ml" 260 8760 8770 "gcl.ml" 260 8760 8780
+type(
+  Ast.exp -> Type.label option
+)
+ident(
+  ext_ref Ast.lab_of_exp
+)
+"gcl.ml" 260 8760 8781 "gcl.ml" 260 8760 8782
+type(
+  Ast.exp
+)
+ident(
+  int_ref e "gcl.ml" 259 8738 8756 "gcl.ml" 259 8738 8757
+)
+"gcl.ml" 260 8760 8770 "gcl.ml" 260 8760 8782
+call(
+  stack
+)
+type(
+  Type.label option
+)
+"gcl.ml" 261 8788 8799 "gcl.ml" 261 8788 8800
+type(
+  Type.label
+)
+ident(
+  def l "gcl.ml" 261 8788 8804 "gcl.ml" 261 8788 8823
+)
+"gcl.ml" 261 8788 8794 "gcl.ml" 261 8788 8800
+type(
+  Type.label option
+)
+"gcl.ml" 261 8788 8804 "gcl.ml" 261 8788 8817
+type(
+  CA.G.t -> Type.label -> CA.G.V.t
+)
+ident(
+  ext_ref CA.find_label
+)
+"gcl.ml" 261 8788 8818 "gcl.ml" 261 8788 8821
+type(
+  CA.G.t
+)
+ident(
+  int_ref cfg "gcl.ml" 192 6009 6044 "gcl.ml" 192 6009 6047
+)
+"gcl.ml" 261 8788 8822 "gcl.ml" 261 8788 8823
+type(
+  Type.label
+)
+ident(
+  int_ref l "gcl.ml" 261 8788 8799 "gcl.ml" 261 8788 8800
+)
+"gcl.ml" 261 8788 8804 "gcl.ml" 261 8788 8823
+call(
+  tail
+)
+type(
+  CA.G.V.t
+)
+"gcl.ml" 262 8824 8830 "gcl.ml" 262 8824 8831
+type(
+  Type.label option
+)
+"gcl.ml" 262 8824 8835 "gcl.ml" 262 8824 8843
+type(
+  string -> CA.G.V.t
+)
+ident(
+  ext_ref Pervasives.failwith
+)
+"gcl.ml" 262 8824 8845 "gcl.ml" 262 8824 8880
+type(
+  string
+)
+"gcl.ml" 262 8824 8880 "gcl.ml" 262 8824 8881
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"gcl.ml" 262 8824 8882 "gcl.ml" 262 8824 8902
+type(
+  Ast.exp -> string
+)
+ident(
+  ext_ref Pp.ast_exp_to_string
+)
+"gcl.ml" 262 8824 8903 "gcl.ml" 262 8824 8904
+type(
+  Ast.exp
+)
+ident(
+  int_ref e "gcl.ml" 259 8738 8756 "gcl.ml" 259 8738 8757
+)
+"gcl.ml" 262 8824 8881 "gcl.ml" 262 8824 8905
+call(
+  stack
+)
+type(
+  string
+)
+"gcl.ml" 262 8824 8844 "gcl.ml" 262 8824 8906
+call(
+  stack
+)
+type(
+  string
+)
+"gcl.ml" 262 8824 8835 "gcl.ml" 262 8824 8906
+call(
+  tail
+)
+type(
+  CA.G.V.t
+)
+"gcl.ml" 260 8760 8764 "gcl.ml" 262 8824 8906
+type(
+  CA.G.V.t
+)
+"gcl.ml" 264 8912 8918 "gcl.ml" 264 8912 8929
+type(
+  CA.G.V.t -> string
+)
+"gcl.ml" 264 8912 8930 "gcl.ml" 264 8912 8931
+type(
+  CA.G.V.t
+)
+ident(
+  def b "gcl.ml" 264 8912 8934 "gcl.ml" 264 8912 8969
+)
+"gcl.ml" 264 8912 8934 "gcl.ml" 264 8912 8952
+type(
+  CA.G.V.label -> string
+)
+ident(
+  ext_ref Cfg.bbid_to_string
+)
+"gcl.ml" 264 8912 8954 "gcl.ml" 264 8912 8966
+type(
+  CA.G.V.t -> CA.G.V.label
+)
+ident(
+  ext_ref CA.G.V.label
+)
+"gcl.ml" 264 8912 8967 "gcl.ml" 264 8912 8968
+type(
+  CA.G.V.t
+)
+ident(
+  int_ref b "gcl.ml" 264 8912 8930 "gcl.ml" 264 8912 8931
+)
+"gcl.ml" 264 8912 8953 "gcl.ml" 264 8912 8969
+call(
+  stack
+)
+type(
+  CA.G.V.label
+)
+"gcl.ml" 264 8912 8934 "gcl.ml" 264 8912 8969
+call(
+  tail
+)
+type(
+  string
+)
+"gcl.ml" 266 8999 9005 "gcl.ml" 266 8999 9008
+type(
+  CA.G.V.t -> gclhelp list -> gclhelp list
+)
+"gcl.ml" 266 8999 9009 "gcl.ml" 266 8999 9010
+type(
+  CA.G.V.t
+)
+ident(
+  def n "gcl.ml" 266 8999 9013 "gcl.ml" 289 10105 10132
+)
+"gcl.ml" 267 9022 9038 "gcl.ml" 267 9022 9041
+type(
+  gclhelp
+)
+ident(
+  def bb1 "gcl.ml" 268 9064 9065 "gcl.ml" 288 10102 10104
+)
+"gcl.ml" 267 9022 9043 "gcl.ml" 267 9022 9046
+type(
+  gclhelp
+)
+ident(
+  def bb2 "gcl.ml" 268 9064 9065 "gcl.ml" 288 10102 10104
+)
+"gcl.ml" 267 9022 9028 "gcl.ml" 267 9022 9047
+type(
+  gclhelp
+)
+"gcl.ml" 267 9022 9049 "gcl.ml" 267 9022 9053
+type(
+  gclhelp list
+)
+ident(
+  def rest "gcl.ml" 268 9064 9065 "gcl.ml" 288 10102 10104
+)
+"gcl.ml" 267 9022 9028 "gcl.ml" 267 9022 9053
+type(
+  gclhelp list
+)
+"gcl.ml" 267 9022 9028 "gcl.ml" 267 9022 9060
+type(
+  gclhelp list
+)
+ident(
+  def exp "gcl.ml" 268 9064 9065 "gcl.ml" 288 10102 10104
+)
+"gcl.ml" 268 9064 9072 "gcl.ml" 268 9064 9081
+type(
+  CA.lang -> (exp * Ast.exp * Ast.exp) option
+)
+ident(
+  int_ref find_cjmp "gcl.ml" 252 8597 8607 "gcl.ml" 252 8597 8616
+)
+"gcl.ml" 268 9064 9083 "gcl.ml" 268 9064 9095
+type(
+  CA.G.t -> CA.G.V.t -> CA.lang
+)
+ident(
+  ext_ref CA.get_stmts
+)
+"gcl.ml" 268 9064 9096 "gcl.ml" 268 9064 9099
+type(
+  CA.G.t
+)
+ident(
+  int_ref cfg "gcl.ml" 192 6009 6044 "gcl.ml" 192 6009 6047
+)
+"gcl.ml" 268 9064 9100 "gcl.ml" 268 9064 9101
+type(
+  CA.G.V.t
+)
+ident(
+  int_ref n "gcl.ml" 266 8999 9009 "gcl.ml" 266 8999 9010
+)
+"gcl.ml" 268 9064 9082 "gcl.ml" 268 9064 9102
+call(
+  stack
+)
+type(
+  CA.lang
+)
+"gcl.ml" 268 9064 9072 "gcl.ml" 268 9064 9102
+call(
+  stack
+)
+type(
+  (exp * Ast.exp * Ast.exp) option
+)
+"gcl.ml" 269 9108 9117 "gcl.ml" 269 9108 9121
+type(
+  exp
+)
+ident(
+  def cond "gcl.ml" 270 9132 9138 "gcl.ml" 284 9918 9964
+)
+"gcl.ml" 269 9108 9122 "gcl.ml" 269 9108 9124
+type(
+  Ast.exp
+)
+ident(
+  def tt "gcl.ml" 270 9132 9138 "gcl.ml" 284 9918 9964
+)
+"gcl.ml" 269 9108 9125 "gcl.ml" 269 9108 9127
+type(
+  Ast.exp
+)
+ident(
+  def ft "gcl.ml" 270 9132 9138 "gcl.ml" 284 9918 9964
+)
+"gcl.ml" 269 9108 9116 "gcl.ml" 269 9108 9128
+type(
+  exp * Ast.exp * Ast.exp
+)
+"gcl.ml" 269 9108 9112 "gcl.ml" 269 9108 9128
+type(
+  (exp * Ast.exp * Ast.exp) option
+)
+"gcl.ml" 270 9132 9143 "gcl.ml" 270 9132 9146
+type(
+  gclhelp
+)
+"gcl.ml" 270 9132 9147 "gcl.ml" 270 9132 9150
+type(
+  gclhelp
+)
+"gcl.ml" 270 9132 9142 "gcl.ml" 270 9132 9151
+type(
+  gclhelp * gclhelp
+)
+"gcl.ml" 271 9154 9169 "gcl.ml" 271 9154 9179
+type(
+  gclhelp -> CA.G.V.t
+)
+ident(
+  int_ref find_first "gcl.ml" 237 8070 8076 "gcl.ml" 237 8070 8086
+)
+"gcl.ml" 271 9154 9186 "gcl.ml" 271 9154 9189
+type(
+  gclhelp
+)
+ident(
+  int_ref bb1 "gcl.ml" 267 9022 9038 "gcl.ml" 267 9022 9041
+)
+"gcl.ml" 271 9154 9191 "gcl.ml" 271 9154 9195
+type(
+  gclhelp list
+)
+ident(
+  int_ref rest "gcl.ml" 267 9022 9049 "gcl.ml" 267 9022 9053
+)
+"gcl.ml" 271 9154 9185 "gcl.ml" 271 9154 9196
+type(
+  gclhelp list
+)
+"gcl.ml" 271 9154 9180 "gcl.ml" 271 9154 9197
+type(
+  gclhelp
+)
+"gcl.ml" 271 9154 9169 "gcl.ml" 271 9154 9197
+call(
+  stack
+)
+type(
+  CA.G.V.t
+)
+"gcl.ml" 271 9154 9199 "gcl.ml" 271 9154 9209
+type(
+  gclhelp -> CA.G.V.t
+)
+ident(
+  int_ref find_first "gcl.ml" 237 8070 8076 "gcl.ml" 237 8070 8086
+)
+"gcl.ml" 271 9154 9216 "gcl.ml" 271 9154 9219
+type(
+  gclhelp
+)
+ident(
+  int_ref bb2 "gcl.ml" 267 9022 9043 "gcl.ml" 267 9022 9046
+)
+"gcl.ml" 271 9154 9221 "gcl.ml" 271 9154 9225
+type(
+  gclhelp list
+)
+ident(
+  int_ref rest "gcl.ml" 267 9022 9049 "gcl.ml" 267 9022 9053
+)
+"gcl.ml" 271 9154 9215 "gcl.ml" 271 9154 9226
+type(
+  gclhelp list
+)
+"gcl.ml" 271 9154 9210 "gcl.ml" 271 9154 9227
+type(
+  gclhelp
+)
+"gcl.ml" 271 9154 9199 "gcl.ml" 271 9154 9227
+call(
+  stack
+)
+type(
+  CA.G.V.t
+)
+"gcl.ml" 272 9229 9244 "gcl.ml" 272 9229 9255
+type(
+  Ast.exp -> CA.G.V.t
+)
+ident(
+  int_ref find_target "gcl.ml" 259 8738 8744 "gcl.ml" 259 8738 8755
+)
+"gcl.ml" 272 9229 9256 "gcl.ml" 272 9229 9258
+type(
+  Ast.exp
+)
+ident(
+  int_ref tt "gcl.ml" 269 9108 9122 "gcl.ml" 269 9108 9124
+)
+"gcl.ml" 272 9229 9244 "gcl.ml" 272 9229 9258
+call(
+  stack
+)
+type(
+  CA.G.V.t
+)
+"gcl.ml" 272 9229 9260 "gcl.ml" 272 9229 9271
+type(
+  Ast.exp -> CA.G.V.t
+)
+ident(
+  int_ref find_target "gcl.ml" 259 8738 8744 "gcl.ml" 259 8738 8755
+)
+"gcl.ml" 272 9229 9272 "gcl.ml" 272 9229 9274
+type(
+  Ast.exp
+)
+ident(
+  int_ref ft "gcl.ml" 269 9108 9125 "gcl.ml" 269 9108 9127
+)
+"gcl.ml" 272 9229 9260 "gcl.ml" 272 9229 9274
+call(
+  stack
+)
+type(
+  CA.G.V.t
+)
+"gcl.ml" 271 9154 9168 "gcl.ml" 272 9229 9275
+type(
+  CA.G.V.t * CA.G.V.t * CA.G.V.t * CA.G.V.t
+)
+"gcl.ml" 273 9281 9285 "gcl.ml" 273 9281 9287
+type(
+  CA.G.V.t
+)
+ident(
+  def b1 "gcl.ml" 273 9281 9298 "gcl.ml" 273 9281 9334
+)
+"gcl.ml" 273 9281 9288 "gcl.ml" 273 9281 9290
+type(
+  CA.G.V.t
+)
+ident(
+  def b2 "gcl.ml" 273 9281 9298 "gcl.ml" 273 9281 9334
+)
+"gcl.ml" 273 9281 9291 "gcl.ml" 273 9281 9293
+type(
+  CA.G.V.t
+)
+ident(
+  def bt "gcl.ml" 273 9281 9298 "gcl.ml" 273 9281 9334
+)
+"gcl.ml" 273 9281 9294 "gcl.ml" 273 9281 9296
+type(
+  CA.G.V.t
+)
+ident(
+  def bf "gcl.ml" 273 9281 9298 "gcl.ml" 273 9281 9334
+)
+"gcl.ml" 273 9281 9284 "gcl.ml" 273 9281 9297
+type(
+  CA.G.V.t * CA.G.V.t * CA.G.V.t * CA.G.V.t
+)
+"gcl.ml" 273 9281 9303 "gcl.ml" 273 9281 9305
+type(
+  CA.G.V.t
+)
+ident(
+  int_ref b1 "gcl.ml" 273 9281 9285 "gcl.ml" 273 9281 9287
+)
+"gcl.ml" 273 9281 9306 "gcl.ml" 273 9281 9307
+type(
+  CA.G.V.t -> CA.G.V.t -> bool
+)
+ident(
+  ext_ref Pervasives.( = )
+)
+"gcl.ml" 273 9281 9308 "gcl.ml" 273 9281 9310
+type(
+  CA.G.V.t
+)
+ident(
+  int_ref bt "gcl.ml" 273 9281 9291 "gcl.ml" 273 9281 9293
+)
+"gcl.ml" 273 9281 9303 "gcl.ml" 273 9281 9310
+type(
+  bool
+)
+"gcl.ml" 273 9281 9311 "gcl.ml" 273 9281 9313
+type(
+  bool -> bool -> bool
+)
+ident(
+  ext_ref Pervasives.( && )
+)
+"gcl.ml" 273 9281 9314 "gcl.ml" 273 9281 9316
+type(
+  CA.G.V.t
+)
+ident(
+  int_ref b2 "gcl.ml" 273 9281 9288 "gcl.ml" 273 9281 9290
+)
+"gcl.ml" 273 9281 9317 "gcl.ml" 273 9281 9318
+type(
+  CA.G.V.t -> CA.G.V.t -> bool
+)
+ident(
+  ext_ref Pervasives.( = )
+)
+"gcl.ml" 273 9281 9319 "gcl.ml" 273 9281 9321
+type(
+  CA.G.V.t
+)
+ident(
+  int_ref bf "gcl.ml" 273 9281 9294 "gcl.ml" 273 9281 9296
+)
+"gcl.ml" 273 9281 9314 "gcl.ml" 273 9281 9321
+type(
+  bool
+)
+"gcl.ml" 273 9281 9303 "gcl.ml" 273 9281 9321
+type(
+  bool
+)
+"gcl.ml" 273 9281 9326 "gcl.ml" 273 9281 9329
+type(
+  gclhelp
+)
+ident(
+  int_ref bb1 "gcl.ml" 267 9022 9038 "gcl.ml" 267 9022 9041
+)
+"gcl.ml" 273 9281 9330 "gcl.ml" 273 9281 9333
+type(
+  gclhelp
+)
+ident(
+  int_ref bb2 "gcl.ml" 267 9022 9043 "gcl.ml" 267 9022 9046
+)
+"gcl.ml" 273 9281 9325 "gcl.ml" 273 9281 9334
+type(
+  gclhelp * gclhelp
+)
+"gcl.ml" 273 9281 9298 "gcl.ml" 273 9281 9334
+type(
+  gclhelp * gclhelp
+)
+"gcl.ml" 274 9335 9346 "gcl.ml" 274 9335 9348
+type(
+  CA.G.V.t
+)
+ident(
+  def b1 "gcl.ml" 274 9335 9359 "gcl.ml" 274 9335 9395
+)
+"gcl.ml" 274 9335 9349 "gcl.ml" 274 9335 9351
+type(
+  CA.G.V.t
+)
+ident(
+  def b2 "gcl.ml" 274 9335 9359 "gcl.ml" 274 9335 9395
+)
+"gcl.ml" 274 9335 9352 "gcl.ml" 274 9335 9354
+type(
+  CA.G.V.t
+)
+ident(
+  def bt "gcl.ml" 274 9335 9359 "gcl.ml" 274 9335 9395
+)
+"gcl.ml" 274 9335 9355 "gcl.ml" 274 9335 9357
+type(
+  CA.G.V.t
+)
+ident(
+  def bf "gcl.ml" 274 9335 9359 "gcl.ml" 274 9335 9395
+)
+"gcl.ml" 274 9335 9345 "gcl.ml" 274 9335 9358
+type(
+  CA.G.V.t * CA.G.V.t * CA.G.V.t * CA.G.V.t
+)
+"gcl.ml" 274 9335 9364 "gcl.ml" 274 9335 9366
+type(
+  CA.G.V.t
+)
+ident(
+  int_ref b2 "gcl.ml" 274 9335 9349 "gcl.ml" 274 9335 9351
+)
+"gcl.ml" 274 9335 9367 "gcl.ml" 274 9335 9368
+type(
+  CA.G.V.t -> CA.G.V.t -> bool
+)
+ident(
+  ext_ref Pervasives.( = )
+)
+"gcl.ml" 274 9335 9369 "gcl.ml" 274 9335 9371
+type(
+  CA.G.V.t
+)
+ident(
+  int_ref bt "gcl.ml" 274 9335 9352 "gcl.ml" 274 9335 9354
+)
+"gcl.ml" 274 9335 9364 "gcl.ml" 274 9335 9371
+type(
+  bool
+)
+"gcl.ml" 274 9335 9372 "gcl.ml" 274 9335 9374
+type(
+  bool -> bool -> bool
+)
+ident(
+  ext_ref Pervasives.( && )
+)
+"gcl.ml" 274 9335 9375 "gcl.ml" 274 9335 9377
+type(
+  CA.G.V.t
+)
+ident(
+  int_ref b1 "gcl.ml" 274 9335 9346 "gcl.ml" 274 9335 9348
+)
+"gcl.ml" 274 9335 9378 "gcl.ml" 274 9335 9379
+type(
+  CA.G.V.t -> CA.G.V.t -> bool
+)
+ident(
+  ext_ref Pervasives.( = )
+)
+"gcl.ml" 274 9335 9380 "gcl.ml" 274 9335 9382
+type(
+  CA.G.V.t
+)
+ident(
+  int_ref bf "gcl.ml" 274 9335 9355 "gcl.ml" 274 9335 9357
+)
+"gcl.ml" 274 9335 9375 "gcl.ml" 274 9335 9382
+type(
+  bool
+)
+"gcl.ml" 274 9335 9364 "gcl.ml" 274 9335 9382
+type(
+  bool
+)
+"gcl.ml" 274 9335 9387 "gcl.ml" 274 9335 9390
+type(
+  gclhelp
+)
+ident(
+  int_ref bb2 "gcl.ml" 267 9022 9043 "gcl.ml" 267 9022 9046
+)
+"gcl.ml" 274 9335 9391 "gcl.ml" 274 9335 9394
+type(
+  gclhelp
+)
+ident(
+  int_ref bb1 "gcl.ml" 267 9022 9038 "gcl.ml" 267 9022 9041
+)
+"gcl.ml" 274 9335 9386 "gcl.ml" 274 9335 9395
+type(
+  gclhelp * gclhelp
+)
+"gcl.ml" 274 9335 9359 "gcl.ml" 274 9335 9395
+type(
+  gclhelp * gclhelp
+)
+"gcl.ml" 275 9396 9407 "gcl.ml" 275 9396 9409
+type(
+  CA.G.V.t
+)
+ident(
+  def b1 "gcl.ml" 276 9423 9428 "gcl.ml" 282 9812 9908
+)
+"gcl.ml" 275 9396 9410 "gcl.ml" 275 9396 9412
+type(
+  CA.G.V.t
+)
+ident(
+  def b2 "gcl.ml" 276 9423 9428 "gcl.ml" 282 9812 9908
+)
+"gcl.ml" 275 9396 9413 "gcl.ml" 275 9396 9415
+type(
+  CA.G.V.t
+)
+ident(
+  def bt "gcl.ml" 276 9423 9428 "gcl.ml" 282 9812 9908
+)
+"gcl.ml" 275 9396 9416 "gcl.ml" 275 9396 9418
+type(
+  CA.G.V.t
+)
+ident(
+  def bf "gcl.ml" 276 9423 9428 "gcl.ml" 282 9812 9908
+)
+"gcl.ml" 275 9396 9406 "gcl.ml" 275 9396 9419
+type(
+  CA.G.V.t * CA.G.V.t * CA.G.V.t * CA.G.V.t
+)
+"gcl.ml" 276 9423 9428 "gcl.ml" 276 9423 9436
+type(
+  string -> gclhelp * gclhelp
+)
+ident(
+  ext_ref Pervasives.failwith
+)
+"gcl.ml" 276 9423 9437 "gcl.ml" 276 9423 9451
+type(
+  (string ->
+   string ->
+   string ->
+   string ->
+   string -> string -> string -> string -> string -> string -> string, 
+   unit, string)
+  format ->
+  string ->
+  string ->
+  string ->
+  string ->
+  string -> string -> string -> string -> string -> string -> string
+)
+ident(
+  ext_ref Printf.sprintf
+)
+"gcl.ml" 276 9423 9452 "gcl.ml" 276 9423 9526
+type(
+  (string ->
+   string ->
+   string ->
+   string ->
+   string -> string -> string -> string -> string -> string -> string, 
+   unit, string)
+  format
+)
+"gcl.ml" 277 9527 9537 "gcl.ml" 277 9527 9548
+type(
+  CA.G.V.t -> string
+)
+ident(
+  int_ref b_to_string "gcl.ml" 264 8912 8918 "gcl.ml" 264 8912 8929
+)
+"gcl.ml" 277 9527 9549 "gcl.ml" 277 9527 9551
+type(
+  CA.G.V.t
+)
+ident(
+  int_ref b1 "gcl.ml" 275 9396 9407 "gcl.ml" 275 9396 9409
+)
+"gcl.ml" 277 9527 9536 "gcl.ml" 277 9527 9552
+call(
+  stack
+)
+type(
+  string
+)
+"gcl.ml" 277 9527 9554 "gcl.ml" 277 9527 9565
+type(
+  CA.G.V.t -> string
+)
+ident(
+  int_ref b_to_string "gcl.ml" 264 8912 8918 "gcl.ml" 264 8912 8929
+)
+"gcl.ml" 277 9527 9566 "gcl.ml" 277 9527 9568
+type(
+  CA.G.V.t
+)
+ident(
+  int_ref b2 "gcl.ml" 275 9396 9410 "gcl.ml" 275 9396 9412
+)
+"gcl.ml" 277 9527 9553 "gcl.ml" 277 9527 9569
+call(
+  stack
+)
+type(
+  string
+)
+"gcl.ml" 278 9570 9580 "gcl.ml" 278 9570 9591
+type(
+  CA.G.V.t -> string
+)
+ident(
+  int_ref b_to_string "gcl.ml" 264 8912 8918 "gcl.ml" 264 8912 8929
+)
+"gcl.ml" 278 9570 9592 "gcl.ml" 278 9570 9594
+type(
+  CA.G.V.t
+)
+ident(
+  int_ref bt "gcl.ml" 275 9396 9413 "gcl.ml" 275 9396 9415
+)
+"gcl.ml" 278 9570 9579 "gcl.ml" 278 9570 9595
+call(
+  stack
+)
+type(
+  string
+)
+"gcl.ml" 278 9570 9597 "gcl.ml" 278 9570 9608
+type(
+  CA.G.V.t -> string
+)
+ident(
+  int_ref b_to_string "gcl.ml" 264 8912 8918 "gcl.ml" 264 8912 8929
+)
+"gcl.ml" 278 9570 9609 "gcl.ml" 278 9570 9611
+type(
+  CA.G.V.t
+)
+ident(
+  int_ref bf "gcl.ml" 275 9396 9416 "gcl.ml" 275 9396 9418
+)
+"gcl.ml" 278 9570 9596 "gcl.ml" 278 9570 9612
+call(
+  stack
+)
+type(
+  string
+)
+"gcl.ml" 279 9613 9644 "gcl.ml" 279 9613 9664
+type(
+  Ast.exp -> string
+)
+ident(
+  ext_ref Pp.ast_exp_to_string
+)
+"gcl.ml" 279 9613 9665 "gcl.ml" 279 9613 9667
+type(
+  Ast.exp
+)
+ident(
+  int_ref tt "gcl.ml" 269 9108 9122 "gcl.ml" 269 9108 9124
+)
+"gcl.ml" 279 9613 9643 "gcl.ml" 279 9613 9668
+call(
+  stack
+)
+type(
+  string
+)
+"gcl.ml" 279 9613 9670 "gcl.ml" 279 9613 9681
+type(
+  CA.G.V.t -> string
+)
+ident(
+  ext_ref Cfg_ast.v2s
+)
+"gcl.ml" 279 9613 9683 "gcl.ml" 279 9613 9694
+type(
+  Ast.exp -> CA.G.V.t
+)
+ident(
+  int_ref find_target "gcl.ml" 259 8738 8744 "gcl.ml" 259 8738 8755
+)
+"gcl.ml" 279 9613 9695 "gcl.ml" 279 9613 9697
+type(
+  Ast.exp
+)
+ident(
+  int_ref tt "gcl.ml" 269 9108 9122 "gcl.ml" 269 9108 9124
+)
+"gcl.ml" 279 9613 9682 "gcl.ml" 279 9613 9698
+call(
+  stack
+)
+type(
+  CA.G.V.t
+)
+"gcl.ml" 279 9613 9669 "gcl.ml" 279 9613 9699
+call(
+  stack
+)
+type(
+  string
+)
+"gcl.ml" 280 9700 9731 "gcl.ml" 280 9700 9751
+type(
+  Ast.exp -> string
+)
+ident(
+  ext_ref Pp.ast_exp_to_string
+)
+"gcl.ml" 280 9700 9752 "gcl.ml" 280 9700 9754
+type(
+  Ast.exp
+)
+ident(
+  int_ref ft "gcl.ml" 269 9108 9125 "gcl.ml" 269 9108 9127
+)
+"gcl.ml" 280 9700 9730 "gcl.ml" 280 9700 9755
+call(
+  stack
+)
+type(
+  string
+)
+"gcl.ml" 280 9700 9757 "gcl.ml" 280 9700 9768
+type(
+  CA.G.V.t -> string
+)
+ident(
+  ext_ref Cfg_ast.v2s
+)
+"gcl.ml" 280 9700 9770 "gcl.ml" 280 9700 9781
+type(
+  Ast.exp -> CA.G.V.t
+)
+ident(
+  int_ref find_target "gcl.ml" 259 8738 8744 "gcl.ml" 259 8738 8755
+)
+"gcl.ml" 280 9700 9782 "gcl.ml" 280 9700 9784
+type(
+  Ast.exp
+)
+ident(
+  int_ref ft "gcl.ml" 269 9108 9125 "gcl.ml" 269 9108 9127
+)
+"gcl.ml" 280 9700 9769 "gcl.ml" 280 9700 9785
+call(
+  stack
+)
+type(
+  CA.G.V.t
+)
+"gcl.ml" 280 9700 9756 "gcl.ml" 280 9700 9786
+call(
+  stack
+)
+type(
+  string
+)
+"gcl.ml" 281 9787 9797 "gcl.ml" 281 9787 9808
+type(
+  CA.G.V.t -> string
+)
+ident(
+  int_ref b_to_string "gcl.ml" 264 8912 8918 "gcl.ml" 264 8912 8929
+)
+"gcl.ml" 281 9787 9809 "gcl.ml" 281 9787 9810
+type(
+  CA.G.V.t
+)
+ident(
+  int_ref n "gcl.ml" 266 8999 9009 "gcl.ml" 266 8999 9010
+)
+"gcl.ml" 281 9787 9796 "gcl.ml" 281 9787 9811
+call(
+  stack
+)
+type(
+  string
+)
+"gcl.ml" 282 9812 9843 "gcl.ml" 282 9812 9864
+type(
+  Ast.stmt -> string
+)
+ident(
+  ext_ref Pp.ast_stmt_to_string
+)
+"gcl.ml" 282 9812 9866 "gcl.ml" 282 9812 9873
+type(
+  Ast.stmt list -> Ast.stmt
+)
+ident(
+  ext_ref BatListFull.List.hd
+)
+"gcl.ml" 282 9812 9875 "gcl.ml" 282 9812 9883
+type(
+  CA.lang -> Ast.stmt list
+)
+ident(
+  ext_ref BatListFull.List.rev
+)
+"gcl.ml" 282 9812 9885 "gcl.ml" 282 9812 9897
+type(
+  CA.G.t -> CA.G.V.t -> CA.lang
+)
+ident(
+  ext_ref CA.get_stmts
+)
+"gcl.ml" 282 9812 9898 "gcl.ml" 282 9812 9901
+type(
+  CA.G.t
+)
+ident(
+  int_ref cfg "gcl.ml" 192 6009 6044 "gcl.ml" 192 6009 6047
+)
+"gcl.ml" 282 9812 9902 "gcl.ml" 282 9812 9903
+type(
+  CA.G.V.t
+)
+ident(
+  int_ref n "gcl.ml" 266 8999 9009 "gcl.ml" 266 8999 9010
+)
+"gcl.ml" 282 9812 9884 "gcl.ml" 282 9812 9904
+call(
+  stack
+)
+type(
+  CA.lang
+)
+"gcl.ml" 282 9812 9874 "gcl.ml" 282 9812 9905
+call(
+  stack
+)
+type(
+  Ast.stmt list
+)
+"gcl.ml" 282 9812 9865 "gcl.ml" 282 9812 9906
+call(
+  stack
+)
+type(
+  Ast.stmt
+)
+"gcl.ml" 282 9812 9842 "gcl.ml" 282 9812 9907
+call(
+  stack
+)
+type(
+  string
+)
+"gcl.ml" 276 9423 9436 "gcl.ml" 282 9812 9908
+call(
+  stack
+)
+type(
+  string
+)
+"gcl.ml" 276 9423 9428 "gcl.ml" 282 9812 9908
+call(
+  stack
+)
+type(
+  gclhelp * gclhelp
+)
+"gcl.ml" 271 9154 9162 "gcl.ml" 282 9812 9908
+type(
+  gclhelp * gclhelp
+)
+"gcl.ml" 284 9918 9932 "gcl.ml" 284 9918 9933
+type(
+  CA.G.V.t
+)
+ident(
+  int_ref n "gcl.ml" 266 8999 9009 "gcl.ml" 266 8999 9010
+)
+"gcl.ml" 284 9918 9924 "gcl.ml" 284 9918 9933
+type(
+  gclhelp
+)
+"gcl.ml" 284 9918 9943 "gcl.ml" 284 9918 9947
+type(
+  exp
+)
+ident(
+  int_ref cond "gcl.ml" 269 9108 9117 "gcl.ml" 269 9108 9121
+)
+"gcl.ml" 284 9918 9949 "gcl.ml" 284 9918 9952
+type(
+  gclhelp
+)
+ident(
+  int_ref bbt "gcl.ml" 270 9132 9143 "gcl.ml" 270 9132 9146
+)
+"gcl.ml" 284 9918 9954 "gcl.ml" 284 9918 9957
+type(
+  gclhelp
+)
+ident(
+  int_ref bbf "gcl.ml" 270 9132 9147 "gcl.ml" 270 9132 9150
+)
+"gcl.ml" 284 9918 9935 "gcl.ml" 284 9918 9958
+type(
+  gclhelp
+)
+"gcl.ml" 284 9918 9960 "gcl.ml" 284 9918 9964
+type(
+  gclhelp list
+)
+ident(
+  int_ref rest "gcl.ml" 267 9022 9049 "gcl.ml" 267 9022 9053
+)
+"gcl.ml" 284 9918 9935 "gcl.ml" 284 9918 9964
+type(
+  gclhelp list
+)
+"gcl.ml" 284 9918 9924 "gcl.ml" 284 9918 9964
+type(
+  gclhelp list
+)
+"gcl.ml" 270 9132 9138 "gcl.ml" 284 9918 9964
+type(
+  gclhelp list
+)
+"gcl.ml" 285 9965 9969 "gcl.ml" 285 9965 9973
+type(
+  (exp * Ast.exp * Ast.exp) option
+)
+"gcl.ml" 286 9997 10003 "gcl.ml" 286 9997 10010
+type(
+  (string -> unit, unit, string, unit) format4 -> string -> unit
+)
+ident(
+  ext_ref D.dprintf
+)
+"gcl.ml" 286 9997 10011 "gcl.ml" 286 9997 10063
+type(
+  (string -> unit, unit, string, unit) format4
+)
+"gcl.ml" 286 9997 10065 "gcl.ml" 286 9997 10076
+type(
+  CA.G.V.t -> string
+)
+ident(
+  int_ref b_to_string "gcl.ml" 264 8912 8918 "gcl.ml" 264 8912 8929
+)
+"gcl.ml" 286 9997 10077 "gcl.ml" 286 9997 10078
+type(
+  CA.G.V.t
+)
+ident(
+  int_ref n "gcl.ml" 266 8999 9009 "gcl.ml" 266 8999 9010
+)
+"gcl.ml" 286 9997 10064 "gcl.ml" 286 9997 10079
+call(
+  stack
+)
+type(
+  string
+)
+"gcl.ml" 286 9997 10003 "gcl.ml" 286 9997 10079
+call(
+  stack
+)
+type(
+  unit
+)
+"gcl.ml" 287 10081 10095 "gcl.ml" 287 10081 10096
+type(
+  CA.G.V.t
+)
+ident(
+  int_ref n "gcl.ml" 266 8999 9009 "gcl.ml" 266 8999 9010
+)
+"gcl.ml" 287 10081 10087 "gcl.ml" 287 10081 10096
+type(
+  gclhelp
+)
+"gcl.ml" 287 10081 10098 "gcl.ml" 287 10081 10101
+type(
+  gclhelp list
+)
+ident(
+  int_ref exp "gcl.ml" 267 9022 9028 "gcl.ml" 267 9022 9060
+)
+"gcl.ml" 287 10081 10087 "gcl.ml" 287 10081 10101
+type(
+  gclhelp list
+)
+"gcl.ml" 286 9997 10003 "gcl.ml" 287 10081 10101
+type(
+  gclhelp list
+)
+"gcl.ml" 268 9064 9065 "gcl.ml" 288 10102 10104
+type(
+  gclhelp list
+)
+"gcl.ml" 289 10105 10111 "gcl.ml" 289 10105 10114
+type(
+  gclhelp list
+)
+ident(
+  def exp "gcl.ml" 289 10105 10118 "gcl.ml" 289 10105 10132
+)
+"gcl.ml" 289 10105 10126 "gcl.ml" 289 10105 10127
+type(
+  CA.G.V.t
+)
+ident(
+  int_ref n "gcl.ml" 266 8999 9009 "gcl.ml" 266 8999 9010
+)
+"gcl.ml" 289 10105 10118 "gcl.ml" 289 10105 10127
+type(
+  gclhelp
+)
+"gcl.ml" 289 10105 10129 "gcl.ml" 289 10105 10132
+type(
+  gclhelp list
+)
+ident(
+  int_ref exp "gcl.ml" 289 10105 10111 "gcl.ml" 289 10105 10114
+)
+"gcl.ml" 289 10105 10118 "gcl.ml" 289 10105 10132
+type(
+  gclhelp list
+)
+"gcl.ml" 266 8999 9013 "gcl.ml" 289 10105 10132
+type(
+  gclhelp list -> gclhelp list
+)
+"gcl.ml" 291 10138 10156 "gcl.ml" 291 10138 10176
+call(
+  stack
+)
+"gcl.ml" 292 10180 10186 "gcl.ml" 292 10180 10187
+type(
+  gclhelp list BH.t
+)
+ident(
+  def h "gcl.ml" 293 10224 10226 "gcl.ml" 315 11054 11074
+)
+"gcl.ml" 292 10180 10190 "gcl.ml" 292 10180 10199
+type(
+  int -> gclhelp list BH.t
+)
+ident(
+  ext_ref BH.create
+)
+"gcl.ml" 292 10180 10201 "gcl.ml" 292 10180 10215
+type(
+  CA.G.t -> int
+)
+ident(
+  ext_ref CA.G.nb_vertex
+)
+"gcl.ml" 292 10180 10216 "gcl.ml" 292 10180 10219
+type(
+  CA.G.t
+)
+ident(
+  int_ref cfg "gcl.ml" 192 6009 6044 "gcl.ml" 192 6009 6047
+)
+"gcl.ml" 292 10180 10200 "gcl.ml" 292 10180 10220
+call(
+  stack
+)
+type(
+  int
+)
+"gcl.ml" 292 10180 10190 "gcl.ml" 292 10180 10220
+call(
+  stack
+)
+type(
+  gclhelp list BH.t
+)
+"gcl.ml" 293 10224 10230 "gcl.ml" 293 10224 10233
+type(
+  BH.key -> gclhelp list
+)
+ident(
+  def get "gcl.ml" 298 10347 10349 "gcl.ml" 315 11054 11074
+)
+"gcl.ml" 293 10224 10234 "gcl.ml" 293 10224 10235
+type(
+  BH.key
+)
+ident(
+  def b "gcl.ml" 294 10238 10242 "gcl.ml" 295 10258 10316
+)
+"gcl.ml" 294 10238 10246 "gcl.ml" 294 10238 10253
+type(
+  gclhelp list BH.t -> BH.key -> gclhelp list
+)
+ident(
+  ext_ref BH.find
+)
+"gcl.ml" 294 10238 10254 "gcl.ml" 294 10238 10255
+type(
+  gclhelp list BH.t
+)
+ident(
+  int_ref h "gcl.ml" 292 10180 10186 "gcl.ml" 292 10180 10187
+)
+"gcl.ml" 294 10238 10256 "gcl.ml" 294 10238 10257
+type(
+  BH.key
+)
+ident(
+  int_ref b "gcl.ml" 293 10224 10234 "gcl.ml" 293 10224 10235
+)
+"gcl.ml" 294 10238 10246 "gcl.ml" 294 10238 10257
+call(
+  stack
+)
+type(
+  gclhelp list
+)
+"gcl.ml" 295 10258 10267 "gcl.ml" 295 10258 10276
+type(
+  exn
+)
+"gcl.ml" 295 10258 10280 "gcl.ml" 295 10258 10288
+type(
+  string -> gclhelp list
+)
+ident(
+  ext_ref Pervasives.failwith
+)
+"gcl.ml" 295 10258 10289 "gcl.ml" 295 10258 10301
+type(
+  string
+)
+"gcl.ml" 295 10258 10301 "gcl.ml" 295 10258 10302
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"gcl.ml" 295 10258 10302 "gcl.ml" 295 10258 10313
+type(
+  CA.G.V.t -> string
+)
+ident(
+  int_ref b_to_string "gcl.ml" 264 8912 8918 "gcl.ml" 264 8912 8929
+)
+"gcl.ml" 295 10258 10314 "gcl.ml" 295 10258 10315
+type(
+  BH.key
+)
+ident(
+  int_ref b "gcl.ml" 293 10224 10234 "gcl.ml" 293 10224 10235
+)
+"gcl.ml" 295 10258 10302 "gcl.ml" 295 10258 10315
+call(
+  stack
+)
+type(
+  string
+)
+"gcl.ml" 295 10258 10288 "gcl.ml" 295 10258 10316
+call(
+  stack
+)
+type(
+  string
+)
+"gcl.ml" 295 10258 10280 "gcl.ml" 295 10258 10316
+call(
+  tail
+)
+type(
+  gclhelp list
+)
+"gcl.ml" 294 10238 10242 "gcl.ml" 295 10258 10316
+type(
+  gclhelp list
+)
+"gcl.ml" 298 10347 10353 "gcl.ml" 298 10347 10363
+type(
+  CA.G.vertex -> unit
+)
+ident(
+  def compute_at "gcl.ml" 314 11021 11023 "gcl.ml" 315 11054 11074
+)
+"gcl.ml" 298 10347 10364 "gcl.ml" 298 10347 10365
+type(
+  CA.G.vertex
+)
+ident(
+  def b "gcl.ml" 299 10368 10372 "gcl.ml" 312 10997 11015
+)
+"gcl.ml" 299 10368 10376 "gcl.ml" 299 10368 10384
+type(
+  gclhelp list
+)
+"gcl.ml" 299 10368 10393 "gcl.ml" 299 10368 10402
+type(
+  CA.G.t -> CA.G.vertex -> CA.G.vertex list
+)
+ident(
+  ext_ref CA.G.succ
+)
+"gcl.ml" 299 10368 10403 "gcl.ml" 299 10368 10406
+type(
+  CA.G.t
+)
+ident(
+  int_ref cfg "gcl.ml" 192 6009 6044 "gcl.ml" 192 6009 6047
+)
+"gcl.ml" 299 10368 10407 "gcl.ml" 299 10368 10408
+type(
+  CA.G.vertex
+)
+ident(
+  int_ref b "gcl.ml" 298 10347 10364 "gcl.ml" 298 10347 10365
+)
+"gcl.ml" 299 10368 10393 "gcl.ml" 299 10368 10408
+call(
+  stack
+)
+type(
+  CA.G.vertex list
+)
+"gcl.ml" 300 10414 10423 "gcl.ml" 300 10414 10424
+type(
+  CA.G.vertex
+)
+ident(
+  def p "gcl.ml" 300 10414 10429 "gcl.ml" 300 10414 10434
+)
+"gcl.ml" 300 10414 10422 "gcl.ml" 300 10414 10425
+type(
+  CA.G.vertex list
+)
+"gcl.ml" 300 10414 10429 "gcl.ml" 300 10414 10432
+type(
+  BH.key -> gclhelp list
+)
+ident(
+  int_ref get "gcl.ml" 293 10224 10230 "gcl.ml" 293 10224 10233
+)
+"gcl.ml" 300 10414 10433 "gcl.ml" 300 10414 10434
+type(
+  CA.G.vertex
+)
+ident(
+  int_ref p "gcl.ml" 300 10414 10423 "gcl.ml" 300 10414 10424
+)
+"gcl.ml" 300 10414 10429 "gcl.ml" 300 10414 10434
+call(
+  stack
+)
+type(
+  gclhelp list
+)
+"gcl.ml" 301 10435 10444 "gcl.ml" 301 10435 10445
+type(
+  CA.G.vertex
+)
+ident(
+  def x "gcl.ml" 306 10716 10724 "gcl.ml" 306 10716 10744
+)
+"gcl.ml" 301 10435 10446 "gcl.ml" 301 10435 10447
+type(
+  CA.G.vertex
+)
+ident(
+  def y "gcl.ml" 306 10716 10724 "gcl.ml" 306 10716 10744
+)
+"gcl.ml" 301 10435 10443 "gcl.ml" 301 10435 10448
+type(
+  CA.G.vertex list
+)
+"gcl.ml" 306 10716 10724 "gcl.ml" 306 10716 10728
+type(
+  gclhelp list -> gclhelp list -> gclhelp list
+)
+ident(
+  int_ref meet "gcl.ml" 202 6344 6350 "gcl.ml" 202 6344 6354
+)
+"gcl.ml" 306 10716 10730 "gcl.ml" 306 10716 10733
+type(
+  BH.key -> gclhelp list
+)
+ident(
+  int_ref get "gcl.ml" 293 10224 10230 "gcl.ml" 293 10224 10233
+)
+"gcl.ml" 306 10716 10734 "gcl.ml" 306 10716 10735
+type(
+  CA.G.vertex
+)
+ident(
+  int_ref x "gcl.ml" 301 10435 10444 "gcl.ml" 301 10435 10445
+)
+"gcl.ml" 306 10716 10729 "gcl.ml" 306 10716 10736
+call(
+  stack
+)
+type(
+  gclhelp list
+)
+"gcl.ml" 306 10716 10738 "gcl.ml" 306 10716 10741
+type(
+  BH.key -> gclhelp list
+)
+ident(
+  int_ref get "gcl.ml" 293 10224 10230 "gcl.ml" 293 10224 10233
+)
+"gcl.ml" 306 10716 10742 "gcl.ml" 306 10716 10743
+type(
+  CA.G.vertex
+)
+ident(
+  int_ref y "gcl.ml" 301 10435 10446 "gcl.ml" 301 10435 10447
+)
+"gcl.ml" 306 10716 10737 "gcl.ml" 306 10716 10744
+call(
+  stack
+)
+type(
+  gclhelp list
+)
+"gcl.ml" 306 10716 10724 "gcl.ml" 306 10716 10744
+call(
+  stack
+)
+type(
+  gclhelp list
+)
+"gcl.ml" 307 10745 10753 "gcl.ml" 307 10745 10754
+type(
+  CA.G.vertex list
+)
+ident(
+  def s "gcl.ml" 307 10745 10755 "gcl.ml" 307 10745 10799
+)
+"gcl.ml" 307 10745 10760 "gcl.ml" 307 10745 10772
+type(
+  CA.G.V.t -> CA.G.V.t -> bool
+)
+ident(
+  ext_ref CA.G.V.equal
+)
+"gcl.ml" 307 10745 10773 "gcl.ml" 307 10745 10774
+type(
+  CA.G.vertex
+)
+ident(
+  int_ref b "gcl.ml" 298 10347 10364 "gcl.ml" 298 10347 10365
+)
+"gcl.ml" 307 10745 10775 "gcl.ml" 307 10745 10779
+type(
+  CA.G.V.t
+)
+ident(
+  int_ref exit "gcl.ml" 194 6085 6091 "gcl.ml" 194 6085 6095
+)
+"gcl.ml" 307 10745 10760 "gcl.ml" 307 10745 10779
+call(
+  stack
+)
+type(
+  bool
+)
+"gcl.ml" 307 10745 10790 "gcl.ml" 307 10745 10791
+type(
+  CA.G.vertex list
+)
+ident(
+  int_ref s "gcl.ml" 307 10745 10753 "gcl.ml" 307 10745 10754
+)
+"gcl.ml" 307 10745 10791 "gcl.ml" 307 10745 10792
+type(
+  CA.G.vertex list -> CA.G.vertex list -> bool
+)
+ident(
+  ext_ref Pervasives.( = )
+)
+"gcl.ml" 307 10745 10792 "gcl.ml" 307 10745 10794
+type(
+  CA.G.vertex list
+)
+"gcl.ml" 307 10745 10789 "gcl.ml" 307 10745 10795
+type(
+  bool
+)
+"gcl.ml" 307 10745 10783 "gcl.ml" 307 10745 10795
+type(
+  unit
+)
+"gcl.ml" 307 10745 10797 "gcl.ml" 307 10745 10799
+type(
+  gclhelp list
+)
+"gcl.ml" 307 10745 10783 "gcl.ml" 307 10745 10799
+type(
+  gclhelp list
+)
+"gcl.ml" 307 10745 10755 "gcl.ml" 307 10745 10799
+type(
+  gclhelp list
+)
+"gcl.ml" 308 10800 10808 "gcl.ml" 308 10800 10809
+type(
+  CA.G.vertex list
+)
+ident(
+  def s "gcl.ml" 308 10800 10810 "gcl.ml" 308 10800 10864
+)
+"gcl.ml" 308 10800 10815 "gcl.ml" 308 10800 10827
+type(
+  CA.G.V.t -> CA.G.V.label
+)
+ident(
+  ext_ref CA.G.V.label
+)
+"gcl.ml" 308 10800 10828 "gcl.ml" 308 10800 10829
+type(
+  CA.G.vertex
+)
+ident(
+  int_ref b "gcl.ml" 298 10347 10364 "gcl.ml" 298 10347 10365
+)
+"gcl.ml" 308 10800 10815 "gcl.ml" 308 10800 10829
+call(
+  stack
+)
+type(
+  CA.G.V.label
+)
+"gcl.ml" 308 10800 10830 "gcl.ml" 308 10800 10831
+type(
+  CA.G.V.label -> CA.G.V.label -> bool
+)
+ident(
+  ext_ref Pervasives.( = )
+)
+"gcl.ml" 308 10800 10832 "gcl.ml" 308 10800 10844
+type(
+  CA.G.V.label
+)
+"gcl.ml" 308 10800 10815 "gcl.ml" 308 10800 10844
+type(
+  bool
+)
+"gcl.ml" 308 10800 10855 "gcl.ml" 308 10800 10856
+type(
+  CA.G.vertex list
+)
+ident(
+  int_ref s "gcl.ml" 308 10800 10808 "gcl.ml" 308 10800 10809
+)
+"gcl.ml" 308 10800 10856 "gcl.ml" 308 10800 10857
+type(
+  CA.G.vertex list -> CA.G.vertex list -> bool
+)
+ident(
+  ext_ref Pervasives.( = )
+)
+"gcl.ml" 308 10800 10857 "gcl.ml" 308 10800 10859
+type(
+  CA.G.vertex list
+)
+"gcl.ml" 308 10800 10854 "gcl.ml" 308 10800 10860
+type(
+  bool
+)
+"gcl.ml" 308 10800 10848 "gcl.ml" 308 10800 10860
+type(
+  unit
+)
+"gcl.ml" 308 10800 10862 "gcl.ml" 308 10800 10864
+type(
+  gclhelp list
+)
+"gcl.ml" 308 10800 10848 "gcl.ml" 308 10800 10864
+type(
+  gclhelp list
+)
+"gcl.ml" 308 10800 10810 "gcl.ml" 308 10800 10864
+type(
+  gclhelp list
+)
+"gcl.ml" 309 10865 10873 "gcl.ml" 309 10865 10874
+type(
+  CA.G.vertex list
+)
+"gcl.ml" 309 10865 10878 "gcl.ml" 309 10865 10886
+type(
+  string -> gclhelp list
+)
+ident(
+  ext_ref Pervasives.failwith
+)
+"gcl.ml" 309 10865 10887 "gcl.ml" 309 10865 10915
+type(
+  string
+)
+"gcl.ml" 309 10865 10915 "gcl.ml" 309 10865 10916
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"gcl.ml" 309 10865 10916 "gcl.ml" 309 10865 10927
+type(
+  CA.G.V.t -> string
+)
+ident(
+  int_ref b_to_string "gcl.ml" 264 8912 8918 "gcl.ml" 264 8912 8929
+)
+"gcl.ml" 309 10865 10928 "gcl.ml" 309 10865 10929
+type(
+  CA.G.vertex
+)
+ident(
+  int_ref b "gcl.ml" 298 10347 10364 "gcl.ml" 298 10347 10365
+)
+"gcl.ml" 309 10865 10916 "gcl.ml" 309 10865 10929
+call(
+  stack
+)
+type(
+  string
+)
+"gcl.ml" 309 10865 10929 "gcl.ml" 309 10865 10930
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"gcl.ml" 309 10865 10930 "gcl.ml" 309 10865 10956
+type(
+  string
+)
+"gcl.ml" 309 10865 10916 "gcl.ml" 309 10865 10956
+call(
+  stack
+)
+type(
+  string
+)
+"gcl.ml" 309 10865 10886 "gcl.ml" 309 10865 10957
+call(
+  stack
+)
+type(
+  string
+)
+"gcl.ml" 309 10865 10878 "gcl.ml" 309 10865 10957
+call(
+  stack
+)
+type(
+  gclhelp list
+)
+"gcl.ml" 299 10368 10387 "gcl.ml" 309 10865 10957
+type(
+  gclhelp list
+)
+"gcl.ml" 311 10965 10973 "gcl.ml" 311 10965 10976
+type(
+  gclhelp list
+)
+"gcl.ml" 311 10965 10979 "gcl.ml" 311 10965 10982
+type(
+  CA.G.V.t -> gclhelp list -> gclhelp list
+)
+ident(
+  int_ref f_t "gcl.ml" 266 8999 9005 "gcl.ml" 266 8999 9008
+)
+"gcl.ml" 311 10965 10983 "gcl.ml" 311 10965 10984
+type(
+  CA.G.vertex
+)
+ident(
+  int_ref b "gcl.ml" 298 10347 10364 "gcl.ml" 298 10347 10365
+)
+"gcl.ml" 311 10965 10985 "gcl.ml" 311 10965 10993
+type(
+  gclhelp list
+)
+ident(
+  int_ref last_gcl "gcl.ml" 299 10368 10376 "gcl.ml" 299 10368 10384
+)
+"gcl.ml" 311 10965 10979 "gcl.ml" 311 10965 10993
+call(
+  stack
+)
+type(
+  gclhelp list
+)
+"gcl.ml" 312 10997 11001 "gcl.ml" 312 10997 11007
+type(
+  gclhelp list BH.t -> BH.key -> gclhelp list -> unit
+)
+ident(
+  ext_ref BH.add
+)
+"gcl.ml" 312 10997 11008 "gcl.ml" 312 10997 11009
+type(
+  gclhelp list BH.t
+)
+ident(
+  int_ref h "gcl.ml" 292 10180 10186 "gcl.ml" 292 10180 10187
+)
+"gcl.ml" 312 10997 11010 "gcl.ml" 312 10997 11011
+type(
+  CA.G.vertex
+)
+ident(
+  int_ref b "gcl.ml" 298 10347 10364 "gcl.ml" 298 10347 10365
+)
+"gcl.ml" 312 10997 11012 "gcl.ml" 312 10997 11015
+type(
+  gclhelp list
+)
+ident(
+  int_ref gcl "gcl.ml" 311 10965 10973 "gcl.ml" 311 10965 10976
+)
+"gcl.ml" 312 10997 11001 "gcl.ml" 312 10997 11015
+call(
+  tail
+)
+type(
+  unit
+)
+"gcl.ml" 311 10965 10969 "gcl.ml" 312 10997 11015
+type(
+  unit
+)
+"gcl.ml" 299 10368 10372 "gcl.ml" 312 10997 11015
+type(
+  unit
+)
+"gcl.ml" 314 11021 11023 "gcl.ml" 314 11021 11037
+type(
+  (RevCFG.V.t -> unit) -> RevCFG.t -> unit
+)
+ident(
+  ext_ref RToposort.iter
+)
+"gcl.ml" 314 11021 11038 "gcl.ml" 314 11021 11048
+type(
+  RevCFG.V.t -> unit
+)
+ident(
+  int_ref compute_at "gcl.ml" 298 10347 10353 "gcl.ml" 298 10347 10363
+)
+"gcl.ml" 314 11021 11049 "gcl.ml" 314 11021 11052
+type(
+  CA.G.t
+)
+ident(
+  int_ref cfg "gcl.ml" 192 6009 6044 "gcl.ml" 192 6009 6047
+)
+"gcl.ml" 314 11021 11023 "gcl.ml" 314 11021 11052
+call(
+  stack
+)
+type(
+  unit
+)
+"gcl.ml" 315 11054 11063 "gcl.ml" 315 11054 11066
+type(
+  BH.key -> gclhelp list
+)
+ident(
+  int_ref get "gcl.ml" 293 10224 10230 "gcl.ml" 293 10224 10233
+)
+"gcl.ml" 315 11054 11067 "gcl.ml" 315 11054 11072
+type(
+  CA.G.V.t
+)
+ident(
+  int_ref entry "gcl.ml" 197 6172 6178 "gcl.ml" 197 6172 6183
+)
+"gcl.ml" 315 11054 11062 "gcl.ml" 315 11054 11073
+call(
+  stack
+)
+type(
+  gclhelp list
+)
+"gcl.ml" 315 11054 11056 "gcl.ml" 315 11054 11074
+type(
+  gclhelp
+)
+"gcl.ml" 314 11021 11023 "gcl.ml" 315 11054 11074
+type(
+  gclhelp
+)
+"gcl.ml" 298 10347 10349 "gcl.ml" 315 11054 11074
+type(
+  gclhelp
+)
+"gcl.ml" 293 10224 10226 "gcl.ml" 315 11054 11074
+type(
+  gclhelp
+)
+"gcl.ml" 292 10180 10182 "gcl.ml" 315 11054 11074
+type(
+  gclhelp
+)
+"gcl.ml" 291 10138 10140 "gcl.ml" 315 11054 11074
+type(
+  gclhelp
+)
+"gcl.ml" 266 8999 9001 "gcl.ml" 315 11054 11074
+type(
+  gclhelp
+)
+"gcl.ml" 264 8912 8914 "gcl.ml" 315 11054 11074
+type(
+  gclhelp
+)
+"gcl.ml" 259 8738 8740 "gcl.ml" 315 11054 11074
+type(
+  gclhelp
+)
+"gcl.ml" 252 8597 8599 "gcl.ml" 315 11054 11074
+type(
+  gclhelp
+)
+"gcl.ml" 237 8070 8072 "gcl.ml" 315 11054 11074
+type(
+  gclhelp
+)
+"gcl.ml" 202 6344 6346 "gcl.ml" 315 11054 11074
+type(
+  gclhelp
+)
+"gcl.ml" 194 6085 6087 "gcl.ml" 315 11054 11074
+type(
+  gclhelp
+)
+"gcl.ml" 193 6050 6052 "gcl.ml" 315 11054 11074
+type(
+  gclhelp
+)
+"gcl.ml" 319 11234 11238 "gcl.ml" 319 11234 11247
+type(
+  ?entry:CA.G.V.t -> ?exit:CA.G.V.t -> CA.G.t -> t
+)
+ident(
+  def of_astcfg "gcl.ml" 354 12314 12314 --
+)
+"gcl.ml" 319 11234 11249 "gcl.ml" 319 11234 11254
+type(
+  CA.G.V.t option
+)
+ident(
+  def entry "gcl.ml" 319 11234 11255 "gcl.ml" 352 12262 12312
+)
+"gcl.ml" 319 11234 11256 "gcl.ml" 319 11234 11260
+type(
+  CA.G.V.t option
+)
+ident(
+  def exit "gcl.ml" 319 11234 11261 "gcl.ml" 352 12262 12312
+)
+"gcl.ml" 319 11234 11261 "gcl.ml" 319 11234 11264
+type(
+  CA.G.t
+)
+ident(
+  def cfg "gcl.ml" 320 11267 11269 "gcl.ml" 352 12262 12312
+)
+"gcl.ml" 320 11267 11273 "gcl.ml" 320 11267 11284
+type(
+  gclhelp -> t
+)
+"gcl.ml" 320 11267 11285 "gcl.ml" 320 11267 11286
+type(
+  gclhelp
+)
+ident(
+  def s "gcl.ml" 322 11319 11323 "gcl.ml" 350 12241 12256
+)
+"gcl.ml" 322 11319 11331 "gcl.ml" 322 11319 11332
+type(
+  gclhelp -> (t -> 'a) -> 'a
+)
+"gcl.ml" 322 11319 11333 "gcl.ml" 322 11319 11334
+type(
+  gclhelp
+)
+ident(
+  def s "gcl.ml" 322 11319 11335 "gcl.ml" 348 12222 12233
+)
+"gcl.ml" 322 11319 11335 "gcl.ml" 322 11319 11336
+type(
+  t -> 'a
+)
+ident(
+  def k "gcl.ml" 322 11319 11339 "gcl.ml" 348 12222 12233
+)
+"gcl.ml" 322 11319 11345 "gcl.ml" 322 11319 11346
+type(
+  gclhelp
+)
+ident(
+  int_ref s "gcl.ml" 322 11319 11333 "gcl.ml" 322 11319 11334
+)
+"gcl.ml" 323 11352 11368 "gcl.ml" 323 11352 11372
+type(
+  exp
+)
+ident(
+  def cond "gcl.ml" 324 11385 11393 "gcl.ml" 327 11482 11538
+)
+"gcl.ml" 323 11352 11374 "gcl.ml" 323 11352 11376
+type(
+  gclhelp
+)
+ident(
+  def e1 "gcl.ml" 324 11385 11393 "gcl.ml" 327 11482 11538
+)
+"gcl.ml" 323 11352 11378 "gcl.ml" 323 11352 11380
+type(
+  gclhelp
+)
+ident(
+  def e2 "gcl.ml" 324 11385 11393 "gcl.ml" 327 11482 11538
+)
+"gcl.ml" 323 11352 11360 "gcl.ml" 323 11352 11381
+type(
+  gclhelp
+)
+"gcl.ml" 324 11385 11393 "gcl.ml" 324 11385 11394
+type(
+  gclhelp -> (t -> 'a) -> 'a
+)
+ident(
+  int_ref c "gcl.ml" 322 11319 11331 "gcl.ml" 322 11319 11332
+)
+"gcl.ml" 324 11385 11395 "gcl.ml" 324 11385 11397
+type(
+  gclhelp
+)
+ident(
+  int_ref e1 "gcl.ml" 323 11352 11374 "gcl.ml" 323 11352 11376
+)
+"gcl.ml" 324 11385 11403 "gcl.ml" 324 11385 11406
+type(
+  t
+)
+ident(
+  def ce1 "gcl.ml" 325 11410 11420 "gcl.ml" 327 11482 11537
+)
+"gcl.ml" 325 11410 11420 "gcl.ml" 325 11410 11421
+type(
+  gclhelp -> (t -> 'a) -> 'a
+)
+ident(
+  int_ref c "gcl.ml" 322 11319 11331 "gcl.ml" 322 11319 11332
+)
+"gcl.ml" 325 11410 11422 "gcl.ml" 325 11410 11424
+type(
+  gclhelp
+)
+ident(
+  int_ref e2 "gcl.ml" 323 11352 11378 "gcl.ml" 323 11352 11380
+)
+"gcl.ml" 325 11410 11430 "gcl.ml" 325 11410 11433
+type(
+  t
+)
+ident(
+  def ce2 "gcl.ml" 326 11437 11449 "gcl.ml" 327 11482 11536
+)
+"gcl.ml" 326 11437 11449 "gcl.ml" 326 11437 11450
+type(
+  t -> 'a
+)
+ident(
+  int_ref k "gcl.ml" 322 11319 11335 "gcl.ml" 322 11319 11336
+)
+"gcl.ml" 326 11437 11470 "gcl.ml" 326 11437 11474
+type(
+  exp
+)
+ident(
+  int_ref cond "gcl.ml" 323 11352 11368 "gcl.ml" 323 11352 11372
+)
+"gcl.ml" 326 11437 11463 "gcl.ml" 326 11437 11474
+type(
+  t
+)
+"gcl.ml" 326 11437 11476 "gcl.ml" 326 11437 11479
+type(
+  t
+)
+ident(
+  int_ref ce1 "gcl.ml" 324 11385 11403 "gcl.ml" 324 11385 11406
+)
+"gcl.ml" 326 11437 11459 "gcl.ml" 326 11437 11480
+type(
+  t
+)
+"gcl.ml" 327 11482 11515 "gcl.ml" 327 11482 11522
+type(
+  exp -> exp
+)
+ident(
+  ext_ref Ast_convenience.exp_not
+)
+"gcl.ml" 327 11482 11523 "gcl.ml" 327 11482 11527
+type(
+  exp
+)
+ident(
+  int_ref cond "gcl.ml" 323 11352 11368 "gcl.ml" 323 11352 11372
+)
+"gcl.ml" 327 11482 11514 "gcl.ml" 327 11482 11528
+call(
+  stack
+)
+type(
+  exp
+)
+"gcl.ml" 327 11482 11508 "gcl.ml" 327 11482 11528
+type(
+  t
+)
+"gcl.ml" 327 11482 11530 "gcl.ml" 327 11482 11533
+type(
+  t
+)
+ident(
+  int_ref ce2 "gcl.ml" 325 11410 11430 "gcl.ml" 325 11410 11433
+)
+"gcl.ml" 327 11482 11504 "gcl.ml" 327 11482 11534
+type(
+  t
+)
+"gcl.ml" 326 11437 11451 "gcl.ml" 327 11482 11536
+type(
+  t
+)
+"gcl.ml" 326 11437 11449 "gcl.ml" 327 11482 11536
+call(
+  tail
+)
+type(
+  'a
+)
+"gcl.ml" 325 11410 11425 "gcl.ml" 327 11482 11537
+type(
+  t -> 'a
+)
+"gcl.ml" 325 11410 11420 "gcl.ml" 327 11482 11537
+call(
+  tail
+)
+type(
+  'a
+)
+"gcl.ml" 324 11385 11398 "gcl.ml" 327 11482 11538
+type(
+  t -> 'a
+)
+"gcl.ml" 324 11385 11393 "gcl.ml" 327 11482 11538
+call(
+  tail
+)
+type(
+  'a
+)
+"gcl.ml" 328 11539 11557 "gcl.ml" 328 11539 11559
+type(
+  gclhelp
+)
+ident(
+  def e1 "gcl.ml" 329 11568 11576 "gcl.ml" 332 11668 11702
+)
+"gcl.ml" 328 11539 11561 "gcl.ml" 328 11539 11563
+type(
+  gclhelp
+)
+ident(
+  def e2 "gcl.ml" 329 11568 11576 "gcl.ml" 332 11668 11702
+)
+"gcl.ml" 328 11539 11547 "gcl.ml" 328 11539 11564
+type(
+  gclhelp
+)
+"gcl.ml" 329 11568 11576 "gcl.ml" 329 11568 11581
+type(
+  string -> unit
+)
+ident(
+  ext_ref D.pwarn
+)
+"gcl.ml" 329 11568 11582 "gcl.ml" 329 11568 11614
+type(
+  string
+)
+"gcl.ml" 329 11568 11576 "gcl.ml" 329 11568 11614
+call(
+  stack
+)
+type(
+  unit
+)
+"gcl.ml" 330 11616 11624 "gcl.ml" 330 11616 11625
+type(
+  gclhelp -> (t -> 'a) -> 'a
+)
+ident(
+  int_ref c "gcl.ml" 322 11319 11331 "gcl.ml" 322 11319 11332
+)
+"gcl.ml" 330 11616 11626 "gcl.ml" 330 11616 11628
+type(
+  gclhelp
+)
+ident(
+  int_ref e1 "gcl.ml" 328 11539 11557 "gcl.ml" 328 11539 11559
+)
+"gcl.ml" 330 11616 11634 "gcl.ml" 330 11616 11637
+type(
+  t
+)
+ident(
+  def ce1 "gcl.ml" 331 11641 11651 "gcl.ml" 332 11668 11701
+)
+"gcl.ml" 331 11641 11651 "gcl.ml" 331 11641 11652
+type(
+  gclhelp -> (t -> 'a) -> 'a
+)
+ident(
+  int_ref c "gcl.ml" 322 11319 11331 "gcl.ml" 322 11319 11332
+)
+"gcl.ml" 331 11641 11653 "gcl.ml" 331 11641 11655
+type(
+  gclhelp
+)
+ident(
+  int_ref e2 "gcl.ml" 328 11539 11561 "gcl.ml" 328 11539 11563
+)
+"gcl.ml" 331 11641 11661 "gcl.ml" 331 11641 11664
+type(
+  t
+)
+ident(
+  def ce2 "gcl.ml" 332 11668 11680 "gcl.ml" 332 11668 11700
+)
+"gcl.ml" 332 11668 11680 "gcl.ml" 332 11668 11681
+type(
+  t -> 'a
+)
+ident(
+  int_ref k "gcl.ml" 322 11319 11335 "gcl.ml" 322 11319 11336
+)
+"gcl.ml" 332 11668 11690 "gcl.ml" 332 11668 11693
+type(
+  t
+)
+ident(
+  int_ref ce1 "gcl.ml" 330 11616 11634 "gcl.ml" 330 11616 11637
+)
+"gcl.ml" 332 11668 11695 "gcl.ml" 332 11668 11698
+type(
+  t
+)
+ident(
+  int_ref ce2 "gcl.ml" 331 11641 11661 "gcl.ml" 331 11641 11664
+)
+"gcl.ml" 332 11668 11682 "gcl.ml" 332 11668 11700
+type(
+  t
+)
+"gcl.ml" 332 11668 11680 "gcl.ml" 332 11668 11700
+call(
+  tail
+)
+type(
+  'a
+)
+"gcl.ml" 331 11641 11656 "gcl.ml" 332 11668 11701
+type(
+  t -> 'a
+)
+"gcl.ml" 331 11641 11651 "gcl.ml" 332 11668 11701
+call(
+  tail
+)
+type(
+  'a
+)
+"gcl.ml" 330 11616 11629 "gcl.ml" 332 11668 11702
+type(
+  t -> 'a
+)
+"gcl.ml" 330 11616 11624 "gcl.ml" 332 11668 11702
+call(
+  tail
+)
+type(
+  'a
+)
+"gcl.ml" 329 11568 11576 "gcl.ml" 332 11668 11702
+type(
+  'a
+)
+"gcl.ml" 333 11703 11716 "gcl.ml" 333 11703 11718
+type(
+  gclhelp list
+)
+"gcl.ml" 333 11703 11711 "gcl.ml" 333 11703 11718
+type(
+  gclhelp
+)
+"gcl.ml" 334 11722 11730 "gcl.ml" 334 11722 11731
+type(
+  t -> 'a
+)
+ident(
+  int_ref k "gcl.ml" 322 11319 11335 "gcl.ml" 322 11319 11336
+)
+"gcl.ml" 334 11722 11732 "gcl.ml" 334 11722 11736
+type(
+  t
+)
+"gcl.ml" 334 11722 11730 "gcl.ml" 334 11722 11736
+call(
+  tail
+)
+type(
+  'a
+)
+"gcl.ml" 335 11737 11750 "gcl.ml" 335 11737 11751
+type(
+  gclhelp
+)
+ident(
+  def e "gcl.ml" 337 11804 11812 "gcl.ml" 337 11804 11832
+)
+"gcl.ml" 335 11737 11753 "gcl.ml" 335 11737 11755
+type(
+  gclhelp list
+)
+"gcl.ml" 335 11737 11749 "gcl.ml" 335 11737 11756
+type(
+  gclhelp list
+)
+"gcl.ml" 335 11737 11745 "gcl.ml" 335 11737 11756
+type(
+  gclhelp
+)
+"gcl.ml" 337 11804 11812 "gcl.ml" 337 11804 11813
+type(
+  gclhelp -> (t -> 'a) -> 'a
+)
+ident(
+  int_ref c "gcl.ml" 322 11319 11331 "gcl.ml" 322 11319 11332
+)
+"gcl.ml" 337 11804 11814 "gcl.ml" 337 11804 11815
+type(
+  gclhelp
+)
+ident(
+  int_ref e "gcl.ml" 335 11737 11750 "gcl.ml" 335 11737 11751
+)
+"gcl.ml" 337 11804 11821 "gcl.ml" 337 11804 11823
+type(
+  t
+)
+ident(
+  def ce "gcl.ml" 337 11804 11827 "gcl.ml" 337 11804 11831
+)
+"gcl.ml" 337 11804 11827 "gcl.ml" 337 11804 11828
+type(
+  t -> 'a
+)
+ident(
+  int_ref k "gcl.ml" 322 11319 11335 "gcl.ml" 322 11319 11336
+)
+"gcl.ml" 337 11804 11829 "gcl.ml" 337 11804 11831
+type(
+  t
+)
+ident(
+  int_ref ce "gcl.ml" 337 11804 11821 "gcl.ml" 337 11804 11823
+)
+"gcl.ml" 337 11804 11827 "gcl.ml" 337 11804 11831
+call(
+  tail
+)
+type(
+  'a
+)
+"gcl.ml" 337 11804 11816 "gcl.ml" 337 11804 11832
+type(
+  t -> 'a
+)
+"gcl.ml" 337 11804 11812 "gcl.ml" 337 11804 11832
+call(
+  tail
+)
+type(
+  'a
+)
+"gcl.ml" 338 11833 11846 "gcl.ml" 338 11833 11847
+type(
+  gclhelp
+)
+ident(
+  def e "gcl.ml" 340 11909 11917 "gcl.ml" 340 11909 11974
+)
+"gcl.ml" 338 11833 11849 "gcl.ml" 338 11833 11851
+type(
+  gclhelp list
+)
+ident(
+  def es "gcl.ml" 340 11909 11917 "gcl.ml" 340 11909 11974
+)
+"gcl.ml" 338 11833 11845 "gcl.ml" 338 11833 11852
+type(
+  gclhelp list
+)
+"gcl.ml" 338 11833 11841 "gcl.ml" 338 11833 11852
+type(
+  gclhelp
+)
+"gcl.ml" 340 11909 11917 "gcl.ml" 340 11909 11918
+type(
+  gclhelp -> (t -> 'a) -> 'a
+)
+ident(
+  int_ref c "gcl.ml" 322 11319 11331 "gcl.ml" 322 11319 11332
+)
+"gcl.ml" 340 11909 11919 "gcl.ml" 340 11909 11920
+type(
+  gclhelp
+)
+ident(
+  int_ref e "gcl.ml" 338 11833 11846 "gcl.ml" 338 11833 11847
+)
+"gcl.ml" 340 11909 11926 "gcl.ml" 340 11909 11928
+type(
+  t
+)
+ident(
+  def ce "gcl.ml" 340 11909 11932 "gcl.ml" 340 11909 11973
+)
+"gcl.ml" 340 11909 11932 "gcl.ml" 340 11909 11933
+type(
+  gclhelp -> (t -> 'a) -> 'a
+)
+ident(
+  int_ref c "gcl.ml" 322 11319 11331 "gcl.ml" 322 11319 11332
+)
+"gcl.ml" 340 11909 11940 "gcl.ml" 340 11909 11942
+type(
+  gclhelp list
+)
+ident(
+  int_ref es "gcl.ml" 338 11833 11849 "gcl.ml" 338 11833 11851
+)
+"gcl.ml" 340 11909 11934 "gcl.ml" 340 11909 11943
+type(
+  gclhelp
+)
+"gcl.ml" 340 11909 11949 "gcl.ml" 340 11909 11952
+type(
+  t
+)
+ident(
+  def ces "gcl.ml" 340 11909 11956 "gcl.ml" 340 11909 11972
+)
+"gcl.ml" 340 11909 11956 "gcl.ml" 340 11909 11957
+type(
+  t -> 'a
+)
+ident(
+  int_ref k "gcl.ml" 322 11319 11335 "gcl.ml" 322 11319 11336
+)
+"gcl.ml" 340 11909 11963 "gcl.ml" 340 11909 11965
+type(
+  t
+)
+ident(
+  int_ref ce "gcl.ml" 340 11909 11926 "gcl.ml" 340 11909 11928
+)
+"gcl.ml" 340 11909 11967 "gcl.ml" 340 11909 11970
+type(
+  t
+)
+ident(
+  int_ref ces "gcl.ml" 340 11909 11949 "gcl.ml" 340 11909 11952
+)
+"gcl.ml" 340 11909 11958 "gcl.ml" 340 11909 11972
+type(
+  t
+)
+"gcl.ml" 340 11909 11956 "gcl.ml" 340 11909 11972
+call(
+  tail
+)
+type(
+  'a
+)
+"gcl.ml" 340 11909 11944 "gcl.ml" 340 11909 11973
+type(
+  t -> 'a
+)
+"gcl.ml" 340 11909 11932 "gcl.ml" 340 11909 11973
+call(
+  tail
+)
+type(
+  'a
+)
+"gcl.ml" 340 11909 11921 "gcl.ml" 340 11909 11974
+type(
+  t -> 'a
+)
+"gcl.ml" 340 11909 11917 "gcl.ml" 340 11909 11974
+call(
+  tail
+)
+type(
+  'a
+)
+"gcl.ml" 341 11975 11991 "gcl.ml" 341 11975 11992
+type(
+  CA.G.V.t
+)
+ident(
+  def b "gcl.ml" 342 11996 12004 "gcl.ml" 348 12222 12233
+)
+"gcl.ml" 341 11975 11983 "gcl.ml" 341 11975 11992
+type(
+  gclhelp
+)
+"gcl.ml" 342 11996 12008 "gcl.ml" 342 11996 12012
+type(
+  CA.lang
+)
+"gcl.ml" 342 11996 12015 "gcl.ml" 342 11996 12027
+type(
+  CA.G.t -> CA.G.V.t -> CA.lang
+)
+ident(
+  ext_ref CA.get_stmts
+)
+"gcl.ml" 342 11996 12028 "gcl.ml" 342 11996 12031
+type(
+  CA.G.t
+)
+ident(
+  int_ref cfg "gcl.ml" 319 11234 11261 "gcl.ml" 319 11234 11264
+)
+"gcl.ml" 342 11996 12032 "gcl.ml" 342 11996 12033
+type(
+  CA.G.V.t
+)
+ident(
+  int_ref b "gcl.ml" 341 11975 11991 "gcl.ml" 341 11975 11992
+)
+"gcl.ml" 342 11996 12015 "gcl.ml" 342 11996 12033
+call(
+  stack
+)
+type(
+  CA.lang
+)
+"gcl.ml" 343 12037 12049 "gcl.ml" 343 12037 12050
+type(
+  t
+)
+"gcl.ml" 343 12037 12059 "gcl.ml" 343 12037 12067
+type(
+  CA.lang -> Ast.stmt list
+)
+ident(
+  ext_ref BatListFull.List.rev
+)
+"gcl.ml" 343 12037 12068 "gcl.ml" 343 12037 12072
+type(
+  CA.lang
+)
+ident(
+  int_ref bb_s "gcl.ml" 342 11996 12008 "gcl.ml" 342 11996 12012
+)
+"gcl.ml" 343 12037 12059 "gcl.ml" 343 12037 12072
+call(
+  stack
+)
+type(
+  Ast.stmt list
+)
+"gcl.ml" 344 12078 12090 "gcl.ml" 344 12078 12092
+type(
+  Ast.stmt list
+)
+"gcl.ml" 344 12078 12096 "gcl.ml" 344 12078 12100
+type(
+  t
+)
+"gcl.ml" 345 12101 12118 "gcl.ml" 345 12101 12119
+type(
+  Ast.exp * Ast.attrs
+)
+"gcl.ml" 345 12101 12114 "gcl.ml" 345 12101 12119
+type(
+  Ast.stmt
+)
+"gcl.ml" 345 12101 12127 "gcl.ml" 345 12101 12128
+type(
+  Ast.exp * Ast.exp * Ast.exp * Ast.attrs
+)
+"gcl.ml" 345 12101 12122 "gcl.ml" 345 12101 12128
+type(
+  Ast.stmt
+)
+"gcl.ml" 345 12101 12114 "gcl.ml" 345 12101 12128
+type(
+  Ast.stmt
+)
+"gcl.ml" 345 12101 12136 "gcl.ml" 345 12101 12137
+type(
+  Ast.exp * Ast.attrs
+)
+"gcl.ml" 345 12101 12131 "gcl.ml" 345 12101 12137
+type(
+  Ast.stmt
+)
+"gcl.ml" 345 12101 12113 "gcl.ml" 345 12101 12138
+type(
+  Ast.stmt
+)
+"gcl.ml" 345 12101 12140 "gcl.ml" 345 12101 12144
+type(
+  Ast.program
+)
+ident(
+  def rest "gcl.ml" 345 12101 12148 "gcl.ml" 345 12101 12172
+)
+"gcl.ml" 345 12101 12113 "gcl.ml" 345 12101 12144
+type(
+  Ast.stmt list
+)
+"gcl.ml" 345 12101 12148 "gcl.ml" 345 12101 12167
+type(
+  ?mode:Type.formula_mode -> ?acc:t -> Ast.program -> t
+)
+ident(
+  int_ref of_rev_straightline "gcl.ml" 86 2389 2397 "gcl.ml" 86 2389 2416
+)
+"gcl.ml" 345 12101 12168 "gcl.ml" 345 12101 12172
+type(
+  Ast.program
+)
+ident(
+  int_ref rest "gcl.ml" 345 12101 12140 "gcl.ml" 345 12101 12144
+)
+"gcl.ml" 345 12101 12148 "gcl.ml" 345 12101 12172
+call(
+  stack
+)
+type(
+  t
+)
+"gcl.ml" 346 12173 12185 "gcl.ml" 346 12173 12186
+type(
+  Ast.stmt list
+)
+"gcl.ml" 346 12173 12190 "gcl.ml" 346 12173 12205
+type(
+  ?mode:Type.formula_mode -> CA.lang -> t
+)
+ident(
+  int_ref of_straightline "gcl.ml" 116 3369 3373 "gcl.ml" 116 3369 3388
+)
+"gcl.ml" 346 12173 12206 "gcl.ml" 346 12173 12210
+type(
+  CA.lang
+)
+ident(
+  int_ref bb_s "gcl.ml" 342 11996 12008 "gcl.ml" 342 11996 12012
+)
+"gcl.ml" 346 12173 12190 "gcl.ml" 346 12173 12210
+type(
+  t
+)
+"gcl.ml" 343 12037 12053 "gcl.ml" 346 12173 12210
+type(
+  t
+)
+"gcl.ml" 348 12222 12230 "gcl.ml" 348 12222 12231
+type(
+  t -> 'a
+)
+ident(
+  int_ref k "gcl.ml" 322 11319 11335 "gcl.ml" 322 11319 11336
+)
+"gcl.ml" 348 12222 12232 "gcl.ml" 348 12222 12233
+type(
+  t
+)
+ident(
+  int_ref e "gcl.ml" 343 12037 12049 "gcl.ml" 343 12037 12050
+)
+"gcl.ml" 348 12222 12230 "gcl.ml" 348 12222 12233
+call(
+  tail
+)
+type(
+  'a
+)
+"gcl.ml" 343 12037 12045 "gcl.ml" 348 12222 12233
+type(
+  'a
+)
+"gcl.ml" 342 11996 12004 "gcl.ml" 348 12222 12233
+type(
+  'a
+)
+"gcl.ml" 322 11319 11339 "gcl.ml" 348 12222 12233
+type(
+  'a
+)
+"gcl.ml" 350 12241 12245 "gcl.ml" 350 12241 12246
+type(
+  gclhelp -> (t -> t) -> t
+)
+ident(
+  int_ref c "gcl.ml" 322 11319 11331 "gcl.ml" 322 11319 11332
+)
+"gcl.ml" 350 12241 12247 "gcl.ml" 350 12241 12248
+type(
+  gclhelp
+)
+ident(
+  int_ref s "gcl.ml" 320 11267 11285 "gcl.ml" 320 11267 11286
+)
+"gcl.ml" 350 12241 12249 "gcl.ml" 350 12241 12256
+type(
+  t -> t
+)
+ident(
+  ext_ref Util.id
+)
+"gcl.ml" 350 12241 12245 "gcl.ml" 350 12241 12256
+call(
+  tail
+)
+type(
+  t
+)
+"gcl.ml" 322 11319 11323 "gcl.ml" 350 12241 12256
+type(
+  t
+)
+"gcl.ml" 352 12262 12264 "gcl.ml" 352 12262 12275
+type(
+  gclhelp -> t
+)
+ident(
+  int_ref cgcl_to_gcl "gcl.ml" 320 11267 11273 "gcl.ml" 320 11267 11284
+)
+"gcl.ml" 352 12262 12277 "gcl.ml" 352 12262 12294
+type(
+  ?entry:CA.G.V.t -> ?exit:CA.G.V.t -> CA.G.t -> gclhelp
+)
+ident(
+  int_ref gclhelp_of_astcfg "gcl.ml" 192 6009 6013 "gcl.ml" 192 6009 6030
+)
+"gcl.ml" 352 12262 12296 "gcl.ml" 352 12262 12301
+type(
+  CA.G.V.t option
+)
+ident(
+  int_ref entry "gcl.ml" 319 11234 11249 "gcl.ml" 319 11234 11254
+)
+"gcl.ml" 352 12262 12303 "gcl.ml" 352 12262 12307
+type(
+  CA.G.V.t option
+)
+ident(
+  int_ref exit "gcl.ml" 319 11234 11256 "gcl.ml" 319 11234 11260
+)
+"gcl.ml" 352 12262 12308 "gcl.ml" 352 12262 12311
+type(
+  CA.G.t
+)
+ident(
+  int_ref cfg "gcl.ml" 319 11234 11261 "gcl.ml" 319 11234 11264
+)
+"gcl.ml" 352 12262 12276 "gcl.ml" 352 12262 12312
+call(
+  stack
+)
+type(
+  gclhelp
+)
+"gcl.ml" 352 12262 12264 "gcl.ml" 352 12262 12312
+call(
+  tail
+)
+type(
+  t
+)
+"gcl.ml" 320 11267 11269 "gcl.ml" 352 12262 12312
+type(
+  t
+)
+"gcl.ml" 354 12314 12318 "gcl.ml" 354 12314 12324
+type(
+  Ast.program -> t
+)
+ident(
+  def of_ast "gcl.ml" 358 12405 12405 --
+)
+"gcl.ml" 354 12314 12325 "gcl.ml" 354 12314 12326
+type(
+  Ast.program
+)
+ident(
+  def p "gcl.ml" 355 12329 12331 "gcl.ml" 355 12329 12402
+)
+"gcl.ml" 355 12329 12331 "gcl.ml" 355 12329 12340
+type(
+  ?entry:CA.G.V.t -> ?exit:CA.G.V.t -> CA.G.t -> t
+)
+ident(
+  int_ref of_astcfg "gcl.ml" 319 11234 11238 "gcl.ml" 319 11234 11247
+)
+"gcl.ml" 355 12329 12342 "gcl.ml" 355 12329 12381
+type(
+  Cfg.AST.G.t -> CA.G.t
+)
+ident(
+  ext_ref Prune_unreachable.prune_unreachable_ast
+)
+"gcl.ml" 355 12329 12383 "gcl.ml" 355 12329 12398
+type(
+  ?special_error:bool -> Ast.program -> Cfg.AST.G.t
+)
+ident(
+  ext_ref Cfg_ast.of_prog
+)
+"gcl.ml" 355 12329 12399 "gcl.ml" 355 12329 12400
+type(
+  Ast.program
+)
+ident(
+  int_ref p "gcl.ml" 354 12314 12325 "gcl.ml" 354 12314 12326
+)
+"gcl.ml" 355 12329 12382 "gcl.ml" 355 12329 12401
+call(
+  stack
+)
+type(
+  Cfg.AST.G.t
+)
+"gcl.ml" 355 12329 12341 "gcl.ml" 355 12329 12402
+call(
+  stack
+)
+type(
+  CA.G.t
+)
+"gcl.ml" 355 12329 12331 "gcl.ml" 355 12329 12402
+call(
+  tail
+)
+type(
+  t
+)
+"gcl.ml" 358 12405 12413 "gcl.ml" 358 12405 12425
+type(
+  t -> t
+)
+ident(
+  def remove_skips "gcl.ml" 358 12405 12405 --
+)
+"gcl.ml" 359 12437 12448 "gcl.ml" 359 12437 12449
+type(
+  exp
+)
+"gcl.ml" 359 12437 12441 "gcl.ml" 359 12437 12449
+type(
+  t
+)
+"gcl.ml" 360 12450 12461 "gcl.ml" 360 12450 12462
+type(
+  exp
+)
+"gcl.ml" 360 12450 12454 "gcl.ml" 360 12450 12462
+type(
+  t
+)
+"gcl.ml" 359 12437 12441 "gcl.ml" 360 12450 12462
+type(
+  t
+)
+"gcl.ml" 361 12463 12474 "gcl.ml" 361 12463 12475
+type(
+  exp
+)
+type(
+  var
+)
+"gcl.ml" 361 12463 12467 "gcl.ml" 361 12463 12475
+type(
+  t
+)
+"gcl.ml" 359 12437 12441 "gcl.ml" 361 12463 12475
+type(
+  t
+)
+"gcl.ml" 362 12476 12480 "gcl.ml" 362 12476 12484
+type(
+  t
+)
+"gcl.ml" 359 12437 12441 "gcl.ml" 362 12476 12484
+type(
+  t
+)
+"gcl.ml" 359 12437 12441 "gcl.ml" 362 12476 12491
+type(
+  t
+)
+ident(
+  def gcl "gcl.ml" 362 12476 12495 "gcl.ml" 362 12476 12498
+)
+"gcl.ml" 362 12476 12495 "gcl.ml" 362 12476 12498
+type(
+  t
+)
+ident(
+  int_ref gcl "gcl.ml" 359 12437 12441 "gcl.ml" 362 12476 12491
+)
+"gcl.ml" 363 12499 12510 "gcl.ml" 363 12499 12512
+type(
+  t
+)
+ident(
+  def g1 "gcl.ml" 363 12499 12520 "gcl.ml" 367 12634 12639
+)
+"gcl.ml" 363 12499 12513 "gcl.ml" 363 12499 12515
+type(
+  t
+)
+ident(
+  def g2 "gcl.ml" 363 12499 12520 "gcl.ml" 367 12634 12639
+)
+"gcl.ml" 363 12499 12503 "gcl.ml" 363 12499 12516
+type(
+  t
+)
+"gcl.ml" 364 12522 12535 "gcl.ml" 364 12522 12547
+type(
+  t -> t
+)
+ident(
+  int_ref remove_skips "gcl.ml" 358 12405 12413 "gcl.ml" 358 12405 12425
+)
+"gcl.ml" 364 12522 12548 "gcl.ml" 364 12522 12550
+type(
+  t
+)
+ident(
+  int_ref g1 "gcl.ml" 363 12499 12510 "gcl.ml" 363 12499 12512
+)
+"gcl.ml" 364 12522 12535 "gcl.ml" 364 12522 12550
+call(
+  stack
+)
+type(
+  t
+)
+"gcl.ml" 364 12522 12553 "gcl.ml" 364 12522 12565
+type(
+  t -> t
+)
+ident(
+  int_ref remove_skips "gcl.ml" 358 12405 12413 "gcl.ml" 358 12405 12425
+)
+"gcl.ml" 364 12522 12566 "gcl.ml" 364 12522 12568
+type(
+  t
+)
+ident(
+  int_ref g2 "gcl.ml" 363 12499 12513 "gcl.ml" 363 12499 12515
+)
+"gcl.ml" 364 12522 12553 "gcl.ml" 364 12522 12568
+call(
+  stack
+)
+type(
+  t
+)
+"gcl.ml" 364 12522 12534 "gcl.ml" 364 12522 12569
+type(
+  t * t
+)
+"gcl.ml" 365 12575 12584 "gcl.ml" 365 12575 12588
+type(
+  t
+)
+"gcl.ml" 365 12575 12590 "gcl.ml" 365 12575 12594
+type(
+  t
+)
+"gcl.ml" 365 12575 12583 "gcl.ml" 365 12575 12595
+type(
+  t * t
+)
+"gcl.ml" 365 12575 12599 "gcl.ml" 365 12575 12603
+type(
+  t
+)
+"gcl.ml" 366 12604 12613 "gcl.ml" 366 12604 12614
+type(
+  t
+)
+ident(
+  def a "gcl.ml" 366 12604 12622 "gcl.ml" 366 12604 12633
+)
+"gcl.ml" 366 12604 12616 "gcl.ml" 366 12604 12617
+type(
+  t
+)
+ident(
+  def b "gcl.ml" 366 12604 12622 "gcl.ml" 366 12604 12633
+)
+"gcl.ml" 366 12604 12612 "gcl.ml" 366 12604 12618
+type(
+  t * t
+)
+"gcl.ml" 366 12604 12629 "gcl.ml" 366 12604 12630
+type(
+  t
+)
+ident(
+  int_ref a "gcl.ml" 366 12604 12613 "gcl.ml" 366 12604 12614
+)
+"gcl.ml" 366 12604 12631 "gcl.ml" 366 12604 12632
+type(
+  t
+)
+ident(
+  int_ref b "gcl.ml" 366 12604 12616 "gcl.ml" 366 12604 12617
+)
+"gcl.ml" 366 12604 12622 "gcl.ml" 366 12604 12633
+type(
+  t
+)
+"gcl.ml" 363 12499 12520 "gcl.ml" 367 12634 12639
+type(
+  t
+)
+"gcl.ml" 368 12640 12648 "gcl.ml" 368 12640 12650
+type(
+  t
+)
+ident(
+  def g1 "gcl.ml" 368 12640 12658 "gcl.ml" 374 12807 12812
+)
+"gcl.ml" 368 12640 12651 "gcl.ml" 368 12640 12653
+type(
+  t
+)
+ident(
+  def g2 "gcl.ml" 368 12640 12658 "gcl.ml" 374 12807 12812
+)
+"gcl.ml" 368 12640 12644 "gcl.ml" 368 12640 12654
+type(
+  t
+)
+"gcl.ml" 369 12660 12673 "gcl.ml" 369 12660 12685
+type(
+  t -> t
+)
+ident(
+  int_ref remove_skips "gcl.ml" 358 12405 12413 "gcl.ml" 358 12405 12425
+)
+"gcl.ml" 369 12660 12686 "gcl.ml" 369 12660 12688
+type(
+  t
+)
+ident(
+  int_ref g1 "gcl.ml" 368 12640 12648 "gcl.ml" 368 12640 12650
+)
+"gcl.ml" 369 12660 12673 "gcl.ml" 369 12660 12688
+call(
+  stack
+)
+type(
+  t
+)
+"gcl.ml" 369 12660 12691 "gcl.ml" 369 12660 12703
+type(
+  t -> t
+)
+ident(
+  int_ref remove_skips "gcl.ml" 358 12405 12413 "gcl.ml" 358 12405 12425
+)
+"gcl.ml" 369 12660 12704 "gcl.ml" 369 12660 12706
+type(
+  t
+)
+ident(
+  int_ref g2 "gcl.ml" 368 12640 12651 "gcl.ml" 368 12640 12653
+)
+"gcl.ml" 369 12660 12691 "gcl.ml" 369 12660 12706
+call(
+  stack
+)
+type(
+  t
+)
+"gcl.ml" 369 12660 12672 "gcl.ml" 369 12660 12707
+type(
+  t * t
+)
+"gcl.ml" 370 12713 12721 "gcl.ml" 370 12713 12725
+type(
+  t
+)
+"gcl.ml" 370 12713 12727 "gcl.ml" 370 12713 12731
+type(
+  t
+)
+"gcl.ml" 370 12713 12721 "gcl.ml" 370 12713 12731
+type(
+  t * t
+)
+"gcl.ml" 370 12713 12735 "gcl.ml" 370 12713 12739
+type(
+  t
+)
+"gcl.ml" 371 12740 12748 "gcl.ml" 371 12740 12752
+type(
+  t
+)
+"gcl.ml" 371 12740 12754 "gcl.ml" 371 12740 12755
+type(
+  t
+)
+ident(
+  def x "gcl.ml" 371 12740 12759 "gcl.ml" 371 12740 12760
+)
+"gcl.ml" 371 12740 12748 "gcl.ml" 371 12740 12755
+type(
+  t * t
+)
+"gcl.ml" 371 12740 12759 "gcl.ml" 371 12740 12760
+type(
+  t
+)
+ident(
+  int_ref x "gcl.ml" 371 12740 12754 "gcl.ml" 371 12740 12755
+)
+"gcl.ml" 372 12761 12769 "gcl.ml" 372 12761 12770
+type(
+  t
+)
+ident(
+  def x "gcl.ml" 372 12761 12780 "gcl.ml" 372 12761 12781
+)
+"gcl.ml" 372 12761 12772 "gcl.ml" 372 12761 12776
+type(
+  t
+)
+"gcl.ml" 372 12761 12769 "gcl.ml" 372 12761 12776
+type(
+  t * t
+)
+"gcl.ml" 372 12761 12780 "gcl.ml" 372 12761 12781
+type(
+  t
+)
+ident(
+  int_ref x "gcl.ml" 372 12761 12769 "gcl.ml" 372 12761 12770
+)
+"gcl.ml" 373 12782 12790 "gcl.ml" 373 12782 12791
+type(
+  t
+)
+ident(
+  def x "gcl.ml" 373 12782 12798 "gcl.ml" 373 12782 12806
+)
+"gcl.ml" 373 12782 12793 "gcl.ml" 373 12782 12794
+type(
+  t
+)
+ident(
+  def y "gcl.ml" 373 12782 12798 "gcl.ml" 373 12782 12806
+)
+"gcl.ml" 373 12782 12790 "gcl.ml" 373 12782 12794
+type(
+  t * t
+)
+"gcl.ml" 373 12782 12802 "gcl.ml" 373 12782 12803
+type(
+  t
+)
+ident(
+  int_ref x "gcl.ml" 373 12782 12790 "gcl.ml" 373 12782 12791
+)
+"gcl.ml" 373 12782 12804 "gcl.ml" 373 12782 12805
+type(
+  t
+)
+ident(
+  int_ref y "gcl.ml" 373 12782 12793 "gcl.ml" 373 12782 12794
+)
+"gcl.ml" 373 12782 12798 "gcl.ml" 373 12782 12806
+type(
+  t
+)
+"gcl.ml" 368 12640 12658 "gcl.ml" 374 12807 12812
+type(
+  t
+)
+"gcl.ml" 358 12405 12428 "gcl.ml" 374 12807 12812
+type(
+  t -> t
+)
+"gcl.ml" 379 12835 12839 "gcl.ml" 379 12835 12855
+type(
+  ?entry:C.G.V.t ->
+  ?exit:C.G.V.t -> ?mode:Type.formula_mode -> Cfg.SSA.G.t -> t * var list
+)
+ident(
+  def passified_of_ssa "gcl.ml" 409 13744 13744 --
+)
+"gcl.ml" 379 12835 12857 "gcl.ml" 379 12835 12862
+type(
+  C.G.V.t option
+)
+ident(
+  def entry "gcl.ml" 379 12835 12863 "gcl.ml" 406 13714 13741
+)
+"gcl.ml" 379 12835 12864 "gcl.ml" 379 12835 12868
+type(
+  C.G.V.t option
+)
+ident(
+  def exit "gcl.ml" 379 12835 12869 "gcl.ml" 406 13714 13741
+)
+"gcl.ml" 379 12835 12870 "gcl.ml" 379 12835 12874
+type(
+  Type.formula_mode option
+)
+ident(
+  def mode "gcl.ml" 379 12835 12875 "gcl.ml" 406 13714 13741
+)
+"gcl.ml" 379 12835 12875 "gcl.ml" 379 12835 12878
+type(
+  Cfg.SSA.G.t
+)
+ident(
+  def cfg "gcl.ml" 380 12881 12883 "gcl.ml" 406 13714 13741
+)
+"gcl.ml" 380 12881 12887 "gcl.ml" 380 12881 12890
+type(
+  Cfg.AST.G.t
+)
+"gcl.ml" 380 12881 12893 "gcl.ml" 380 12881 12910
+type(
+  ?remove_temps:bool -> ?dsa:bool -> Cfg.SSA.G.t -> Cfg.AST.G.t
+)
+ident(
+  ext_ref Cfg_ssa.to_astcfg
+)
+"gcl.ml" 380 12881 12916 "gcl.ml" 380 12881 12920
+type(
+  bool
+)
+"gcl.ml" 380 12881 12921 "gcl.ml" 380 12881 12924
+type(
+  Cfg.SSA.G.t
+)
+ident(
+  int_ref cfg "gcl.ml" 379 12835 12875 "gcl.ml" 379 12835 12878
+)
+"gcl.ml" 380 12881 12893 "gcl.ml" 380 12881 12924
+call(
+  stack
+)
+type(
+  Cfg.AST.G.t
+)
+"gcl.ml" 381 12928 12934 "gcl.ml" 381 12928 12941
+type(
+  C.G.V.t option -> CA.G.V.t option
+)
+"gcl.ml" 382 12953 12964 "gcl.ml" 382 12953 12965
+type(
+  C.G.V.t
+)
+ident(
+  def v "gcl.ml" 382 12953 12969 "gcl.ml" 382 12953 13009
+)
+"gcl.ml" 382 12953 12959 "gcl.ml" 382 12953 12965
+type(
+  C.G.V.t option
+)
+"gcl.ml" 382 12953 12974 "gcl.ml" 382 12953 12988
+type(
+  CA.G.t -> CA.G.V.label -> CA.G.V.t
+)
+ident(
+  ext_ref CA.find_vertex
+)
+"gcl.ml" 382 12953 12989 "gcl.ml" 382 12953 12992
+type(
+  CA.G.t
+)
+ident(
+  int_ref ast "gcl.ml" 380 12881 12887 "gcl.ml" 380 12881 12890
+)
+"gcl.ml" 382 12953 12994 "gcl.ml" 382 12953 13005
+type(
+  C.G.V.t -> C.G.V.label
+)
+ident(
+  ext_ref C.G.V.label
+)
+"gcl.ml" 382 12953 13006 "gcl.ml" 382 12953 13007
+type(
+  C.G.V.t
+)
+ident(
+  int_ref v "gcl.ml" 382 12953 12964 "gcl.ml" 382 12953 12965
+)
+"gcl.ml" 382 12953 12993 "gcl.ml" 382 12953 13008
+call(
+  stack
+)
+type(
+  C.G.V.label
+)
+"gcl.ml" 382 12953 12973 "gcl.ml" 382 12953 13009
+call(
+  stack
+)
+type(
+  CA.G.V.t
+)
+"gcl.ml" 382 12953 12969 "gcl.ml" 382 12953 13009
+type(
+  CA.G.V.t option
+)
+"gcl.ml" 383 13010 13016 "gcl.ml" 383 13010 13020
+type(
+  C.G.V.t option
+)
+"gcl.ml" 383 13010 13024 "gcl.ml" 383 13010 13028
+type(
+  CA.G.V.t option
+)
+"gcl.ml" 381 12928 12944 "gcl.ml" 383 13010 13028
+type(
+  C.G.V.t option -> CA.G.V.t option
+)
+"gcl.ml" 385 13034 13040 "gcl.ml" 385 13034 13045
+type(
+  CA.G.V.t option
+)
+"gcl.ml" 385 13034 13048 "gcl.ml" 385 13034 13055
+type(
+  C.G.V.t option -> CA.G.V.t option
+)
+ident(
+  int_ref convert "gcl.ml" 381 12928 12934 "gcl.ml" 381 12928 12941
+)
+"gcl.ml" 385 13034 13056 "gcl.ml" 385 13034 13061
+type(
+  C.G.V.t option
+)
+ident(
+  int_ref entry "gcl.ml" 379 12835 12857 "gcl.ml" 379 12835 12862
+)
+"gcl.ml" 385 13034 13048 "gcl.ml" 385 13034 13061
+call(
+  stack
+)
+type(
+  CA.G.V.t option
+)
+"gcl.ml" 385 13034 13066 "gcl.ml" 385 13034 13070
+type(
+  CA.G.V.t option
+)
+"gcl.ml" 385 13034 13073 "gcl.ml" 385 13034 13080
+type(
+  C.G.V.t option -> CA.G.V.t option
+)
+ident(
+  int_ref convert "gcl.ml" 381 12928 12934 "gcl.ml" 381 12928 12941
+)
+"gcl.ml" 385 13034 13081 "gcl.ml" 385 13034 13085
+type(
+  C.G.V.t option
+)
+ident(
+  int_ref exit "gcl.ml" 379 12835 12864 "gcl.ml" 379 12835 12868
+)
+"gcl.ml" 385 13034 13073 "gcl.ml" 385 13034 13085
+call(
+  stack
+)
+type(
+  CA.G.V.t option
+)
+"gcl.ml" 386 13089 13095 "gcl.ml" 386 13089 13098
+type(
+  t
+)
+"gcl.ml" 386 13089 13101 "gcl.ml" 386 13089 13110
+type(
+  ?entry:CA.G.V.t -> ?exit:CA.G.V.t -> CA.G.t -> t
+)
+ident(
+  int_ref of_astcfg "gcl.ml" 319 11234 11238 "gcl.ml" 319 11234 11247
+)
+"gcl.ml" 386 13089 13112 "gcl.ml" 386 13089 13117
+type(
+  CA.G.V.t option
+)
+ident(
+  int_ref entry "gcl.ml" 385 13034 13040 "gcl.ml" 385 13034 13045
+)
+"gcl.ml" 386 13089 13119 "gcl.ml" 386 13089 13123
+type(
+  CA.G.V.t option
+)
+ident(
+  int_ref exit "gcl.ml" 385 13034 13066 "gcl.ml" 385 13034 13070
+)
+"gcl.ml" 386 13089 13124 "gcl.ml" 386 13089 13127
+type(
+  CA.G.t
+)
+ident(
+  int_ref ast "gcl.ml" 380 12881 12887 "gcl.ml" 380 12881 12890
+)
+"gcl.ml" 386 13089 13101 "gcl.ml" 386 13089 13127
+call(
+  stack
+)
+type(
+  t
+)
+"gcl.ml" 387 13131 13137 "gcl.ml" 387 13131 13141
+type(
+  var list ref
+)
+"gcl.ml" 387 13131 13144 "gcl.ml" 387 13131 13147
+type(
+  var list -> var list ref
+)
+ident(
+  ext_ref Pervasives.ref
+)
+"gcl.ml" 387 13131 13148 "gcl.ml" 387 13131 13150
+type(
+  var list
+)
+"gcl.ml" 387 13131 13144 "gcl.ml" 387 13131 13150
+type(
+  var list ref
+)
+"gcl.ml" 388 13154 13164 "gcl.ml" 388 13154 13175
+type(
+  t -> t
+)
+"gcl.ml" 388 13154 13176 "gcl.ml" 388 13154 13177
+type(
+  t
+)
+ident(
+  def g "gcl.ml" 389 13180 13184 "gcl.ml" 403 13669 13676
+)
+"gcl.ml" 389 13180 13190 "gcl.ml" 389 13180 13191
+type(
+  t
+)
+ident(
+  int_ref g "gcl.ml" 388 13154 13176 "gcl.ml" 388 13154 13177
+)
+"gcl.ml" 390 13197 13210 "gcl.ml" 390 13197 13211
+type(
+  var
+)
+ident(
+  def v "gcl.ml" 390 13197 13215 "gcl.ml" 396 13431 13487
+)
+"gcl.ml" 390 13197 13212 "gcl.ml" 390 13197 13213
+type(
+  exp
+)
+ident(
+  def e "gcl.ml" 390 13197 13215 "gcl.ml" 396 13431 13487
+)
+"gcl.ml" 390 13197 13203 "gcl.ml" 390 13197 13214
+type(
+  t
+)
+"gcl.ml" 390 13197 13220 "gcl.ml" 390 13197 13224
+type(
+  Type.formula_mode option
+)
+ident(
+  int_ref mode "gcl.ml" 379 12835 12870 "gcl.ml" 379 12835 12874
+)
+"gcl.ml" 390 13197 13225 "gcl.ml" 390 13197 13227
+type(
+  Type.formula_mode option -> Type.formula_mode option -> bool
+)
+ident(
+  ext_ref Pervasives.( <> )
+)
+"gcl.ml" 390 13197 13228 "gcl.ml" 390 13197 13232
+type(
+  Type.formula_mode option
+)
+"gcl.ml" 390 13197 13220 "gcl.ml" 390 13197 13232
+type(
+  bool
+)
+"gcl.ml" 391 13236 13249 "gcl.ml" 391 13236 13253
+type(
+  Type.formula_mode option
+)
+ident(
+  int_ref mode "gcl.ml" 379 12835 12870 "gcl.ml" 379 12835 12874
+)
+"gcl.ml" 392 13259 13272 "gcl.ml" 392 13259 13279
+type(
+  Type.formula_mode
+)
+"gcl.ml" 392 13259 13267 "gcl.ml" 392 13259 13279
+type(
+  Type.formula_mode option
+)
+"gcl.ml" 392 13259 13283 "gcl.ml" 392 13259 13287
+type(
+  var list ref
+)
+ident(
+  int_ref vars "gcl.ml" 387 13131 13137 "gcl.ml" 387 13131 13141
+)
+"gcl.ml" 392 13259 13288 "gcl.ml" 392 13259 13290
+type(
+  var list ref -> var list -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"gcl.ml" 392 13259 13291 "gcl.ml" 392 13259 13292
+type(
+  var
+)
+ident(
+  int_ref v "gcl.ml" 390 13197 13210 "gcl.ml" 390 13197 13211
+)
+"gcl.ml" 392 13259 13296 "gcl.ml" 392 13259 13297
+type(
+  var list ref -> var list
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"gcl.ml" 392 13259 13297 "gcl.ml" 392 13259 13301
+type(
+  var list ref
+)
+ident(
+  int_ref vars "gcl.ml" 387 13131 13137 "gcl.ml" 387 13131 13141
+)
+"gcl.ml" 392 13259 13296 "gcl.ml" 392 13259 13301
+type(
+  var list
+)
+"gcl.ml" 392 13259 13291 "gcl.ml" 392 13259 13301
+type(
+  var list
+)
+"gcl.ml" 392 13259 13283 "gcl.ml" 392 13259 13301
+type(
+  unit
+)
+"gcl.ml" 393 13303 13318 "gcl.ml" 393 13303 13324
+type(
+  exp -> exp -> exp
+)
+ident(
+  ext_ref Ast_convenience.exp_eq
+)
+"gcl.ml" 393 13303 13330 "gcl.ml" 393 13303 13331
+type(
+  var
+)
+ident(
+  int_ref v "gcl.ml" 390 13197 13210 "gcl.ml" 390 13197 13211
+)
+"gcl.ml" 393 13303 13325 "gcl.ml" 393 13303 13332
+type(
+  exp
+)
+"gcl.ml" 393 13303 13333 "gcl.ml" 393 13303 13334
+type(
+  exp
+)
+ident(
+  int_ref e "gcl.ml" 390 13197 13212 "gcl.ml" 390 13197 13213
+)
+"gcl.ml" 393 13303 13317 "gcl.ml" 393 13303 13335
+call(
+  stack
+)
+type(
+  exp
+)
+"gcl.ml" 393 13303 13311 "gcl.ml" 393 13303 13335
+type(
+  t
+)
+"gcl.ml" 392 13259 13283 "gcl.ml" 393 13303 13335
+type(
+  t
+)
+"gcl.ml" 394 13336 13349 "gcl.ml" 394 13336 13357
+type(
+  Type.formula_mode
+)
+"gcl.ml" 394 13336 13344 "gcl.ml" 394 13336 13357
+type(
+  Type.formula_mode option
+)
+"gcl.ml" 394 13336 13368 "gcl.ml" 394 13336 13374
+type(
+  exp -> exp -> exp
+)
+ident(
+  ext_ref Ast_convenience.exp_eq
+)
+"gcl.ml" 394 13336 13380 "gcl.ml" 394 13336 13381
+type(
+  var
+)
+ident(
+  int_ref v "gcl.ml" 390 13197 13210 "gcl.ml" 390 13197 13211
+)
+"gcl.ml" 394 13336 13375 "gcl.ml" 394 13336 13382
+type(
+  exp
+)
+"gcl.ml" 394 13336 13383 "gcl.ml" 394 13336 13384
+type(
+  exp
+)
+ident(
+  int_ref e "gcl.ml" 390 13197 13212 "gcl.ml" 390 13197 13213
+)
+"gcl.ml" 394 13336 13367 "gcl.ml" 394 13336 13385
+call(
+  stack
+)
+type(
+  exp
+)
+"gcl.ml" 394 13336 13361 "gcl.ml" 394 13336 13385
+type(
+  t
+)
+"gcl.ml" 395 13386 13399 "gcl.ml" 395 13386 13402
+type(
+  Type.formula_mode
+)
+"gcl.ml" 395 13386 13394 "gcl.ml" 395 13386 13402
+type(
+  Type.formula_mode option
+)
+"gcl.ml" 395 13386 13413 "gcl.ml" 395 13386 13419
+type(
+  exp -> exp -> exp
+)
+ident(
+  ext_ref Ast_convenience.exp_eq
+)
+"gcl.ml" 395 13386 13425 "gcl.ml" 395 13386 13426
+type(
+  var
+)
+ident(
+  int_ref v "gcl.ml" 390 13197 13210 "gcl.ml" 390 13197 13211
+)
+"gcl.ml" 395 13386 13420 "gcl.ml" 395 13386 13427
+type(
+  exp
+)
+"gcl.ml" 395 13386 13428 "gcl.ml" 395 13386 13429
+type(
+  exp
+)
+ident(
+  int_ref e "gcl.ml" 390 13197 13212 "gcl.ml" 390 13197 13213
+)
+"gcl.ml" 395 13386 13412 "gcl.ml" 395 13386 13430
+call(
+  stack
+)
+type(
+  exp
+)
+"gcl.ml" 395 13386 13406 "gcl.ml" 395 13386 13430
+type(
+  t
+)
+"gcl.ml" 396 13431 13439 "gcl.ml" 396 13431 13443
+type(
+  Type.formula_mode option
+)
+"gcl.ml" 396 13431 13447 "gcl.ml" 396 13431 13455
+type(
+  string -> t
+)
+ident(
+  ext_ref Pervasives.failwith
+)
+"gcl.ml" 396 13431 13456 "gcl.ml" 396 13431 13486
+type(
+  string
+)
+"gcl.ml" 396 13431 13447 "gcl.ml" 396 13431 13486
+call(
+  tail
+)
+type(
+  t
+)
+"gcl.ml" 391 13236 13242 "gcl.ml" 396 13431 13487
+type(
+  t
+)
+"gcl.ml" 390 13197 13215 "gcl.ml" 396 13431 13487
+type(
+  t
+)
+"gcl.ml" 397 13488 13501 "gcl.ml" 397 13488 13502
+type(
+  var
+)
+ident(
+  def v "gcl.ml" 397 13488 13509 "gcl.ml" 397 13488 13510
+)
+"gcl.ml" 397 13488 13503 "gcl.ml" 397 13488 13504
+type(
+  exp
+)
+ident(
+  def e "gcl.ml" 397 13488 13509 "gcl.ml" 397 13488 13510
+)
+"gcl.ml" 397 13488 13494 "gcl.ml" 397 13488 13505
+type(
+  t
+)
+"gcl.ml" 397 13488 13509 "gcl.ml" 397 13488 13510
+type(
+  t
+)
+ident(
+  int_ref g "gcl.ml" 388 13154 13176 "gcl.ml" 388 13154 13177
+)
+"gcl.ml" 398 13511 13524 "gcl.ml" 398 13511 13525
+type(
+  t
+)
+ident(
+  def a "gcl.ml" 399 13532 13538 "gcl.ml" 399 13532 13574
+)
+"gcl.ml" 398 13511 13526 "gcl.ml" 398 13511 13527
+type(
+  t
+)
+ident(
+  def b "gcl.ml" 399 13532 13538 "gcl.ml" 399 13532 13574
+)
+"gcl.ml" 398 13511 13517 "gcl.ml" 398 13511 13528
+type(
+  t
+)
+"gcl.ml" 399 13532 13545 "gcl.ml" 399 13532 13556
+type(
+  t -> t
+)
+ident(
+  int_ref convert_gcl "gcl.ml" 388 13154 13164 "gcl.ml" 388 13154 13175
+)
+"gcl.ml" 399 13532 13557 "gcl.ml" 399 13532 13558
+type(
+  t
+)
+ident(
+  int_ref a "gcl.ml" 398 13511 13524 "gcl.ml" 398 13511 13525
+)
+"gcl.ml" 399 13532 13545 "gcl.ml" 399 13532 13558
+call(
+  stack
+)
+type(
+  t
+)
+"gcl.ml" 399 13532 13560 "gcl.ml" 399 13532 13571
+type(
+  t -> t
+)
+ident(
+  int_ref convert_gcl "gcl.ml" 388 13154 13164 "gcl.ml" 388 13154 13175
+)
+"gcl.ml" 399 13532 13572 "gcl.ml" 399 13532 13573
+type(
+  t
+)
+ident(
+  int_ref b "gcl.ml" 398 13511 13526 "gcl.ml" 398 13511 13527
+)
+"gcl.ml" 399 13532 13560 "gcl.ml" 399 13532 13573
+call(
+  stack
+)
+type(
+  t
+)
+"gcl.ml" 399 13532 13538 "gcl.ml" 399 13532 13574
+type(
+  t
+)
+"gcl.ml" 400 13575 13585 "gcl.ml" 400 13575 13586
+type(
+  t
+)
+ident(
+  def a "gcl.ml" 401 13593 13599 "gcl.ml" 401 13593 13632
+)
+"gcl.ml" 400 13575 13587 "gcl.ml" 400 13575 13588
+type(
+  t
+)
+ident(
+  def b "gcl.ml" 401 13593 13599 "gcl.ml" 401 13593 13632
+)
+"gcl.ml" 400 13575 13581 "gcl.ml" 400 13575 13589
+type(
+  t
+)
+"gcl.ml" 401 13593 13603 "gcl.ml" 401 13593 13614
+type(
+  t -> t
+)
+ident(
+  int_ref convert_gcl "gcl.ml" 388 13154 13164 "gcl.ml" 388 13154 13175
+)
+"gcl.ml" 401 13593 13615 "gcl.ml" 401 13593 13616
+type(
+  t
+)
+ident(
+  int_ref a "gcl.ml" 400 13575 13585 "gcl.ml" 400 13575 13586
+)
+"gcl.ml" 401 13593 13603 "gcl.ml" 401 13593 13616
+call(
+  stack
+)
+type(
+  t
+)
+"gcl.ml" 401 13593 13618 "gcl.ml" 401 13593 13629
+type(
+  t -> t
+)
+ident(
+  int_ref convert_gcl "gcl.ml" 388 13154 13164 "gcl.ml" 388 13154 13175
+)
+"gcl.ml" 401 13593 13630 "gcl.ml" 401 13593 13631
+type(
+  t
+)
+ident(
+  int_ref b "gcl.ml" 400 13575 13587 "gcl.ml" 400 13575 13588
+)
+"gcl.ml" 401 13593 13618 "gcl.ml" 401 13593 13631
+call(
+  stack
+)
+type(
+  t
+)
+"gcl.ml" 401 13593 13599 "gcl.ml" 401 13593 13632
+type(
+  t
+)
+"gcl.ml" 402 13633 13646 "gcl.ml" 402 13633 13647
+type(
+  exp
+)
+"gcl.ml" 402 13633 13639 "gcl.ml" 402 13633 13647
+type(
+  t
+)
+"gcl.ml" 402 13633 13657 "gcl.ml" 402 13633 13658
+type(
+  exp
+)
+"gcl.ml" 402 13633 13650 "gcl.ml" 402 13633 13658
+type(
+  t
+)
+"gcl.ml" 402 13633 13639 "gcl.ml" 402 13633 13658
+type(
+  t
+)
+"gcl.ml" 402 13633 13661 "gcl.ml" 402 13633 13665
+type(
+  t
+)
+"gcl.ml" 402 13633 13639 "gcl.ml" 402 13633 13665
+type(
+  t
+)
+"gcl.ml" 403 13669 13675 "gcl.ml" 403 13669 13676
+type(
+  t
+)
+ident(
+  int_ref g "gcl.ml" 388 13154 13176 "gcl.ml" 388 13154 13177
+)
+"gcl.ml" 389 13180 13184 "gcl.ml" 403 13669 13676
+type(
+  t
+)
+"gcl.ml" 405 13682 13688 "gcl.ml" 405 13682 13692
+type(
+  t
+)
+"gcl.ml" 405 13682 13695 "gcl.ml" 405 13682 13706
+type(
+  t -> t
+)
+ident(
+  int_ref convert_gcl "gcl.ml" 388 13154 13164 "gcl.ml" 388 13154 13175
+)
+"gcl.ml" 405 13682 13707 "gcl.ml" 405 13682 13710
+type(
+  t
+)
+ident(
+  int_ref gcl "gcl.ml" 386 13089 13095 "gcl.ml" 386 13089 13098
+)
+"gcl.ml" 405 13682 13695 "gcl.ml" 405 13682 13710
+call(
+  stack
+)
+type(
+  t
+)
+"gcl.ml" 406 13714 13717 "gcl.ml" 406 13714 13721
+type(
+  t
+)
+ident(
+  int_ref pgcl "gcl.ml" 405 13682 13688 "gcl.ml" 405 13682 13692
+)
+"gcl.ml" 406 13714 13723 "gcl.ml" 406 13714 13734
+type(
+  var list -> var list
+)
+ident(
+  ext_ref Util.list_unique
+)
+"gcl.ml" 406 13714 13735 "gcl.ml" 406 13714 13736
+type(
+  var list ref -> var list
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"gcl.ml" 406 13714 13736 "gcl.ml" 406 13714 13740
+type(
+  var list ref
+)
+ident(
+  int_ref vars "gcl.ml" 387 13131 13137 "gcl.ml" 387 13131 13141
+)
+"gcl.ml" 406 13714 13735 "gcl.ml" 406 13714 13740
+type(
+  var list
+)
+"gcl.ml" 406 13714 13723 "gcl.ml" 406 13714 13740
+call(
+  stack
+)
+type(
+  var list
+)
+"gcl.ml" 406 13714 13716 "gcl.ml" 406 13714 13741
+type(
+  t * var list
+)
+"gcl.ml" 405 13682 13684 "gcl.ml" 406 13714 13741
+type(
+  t * var list
+)
+"gcl.ml" 388 13154 13156 "gcl.ml" 406 13714 13741
+type(
+  t * var list
+)
+"gcl.ml" 387 13131 13133 "gcl.ml" 406 13714 13741
+type(
+  t * var list
+)
+"gcl.ml" 386 13089 13091 "gcl.ml" 406 13714 13741
+type(
+  t * var list
+)
+"gcl.ml" 385 13034 13036 "gcl.ml" 406 13714 13741
+type(
+  t * var list
+)
+"gcl.ml" 381 12928 12930 "gcl.ml" 406 13714 13741
+type(
+  t * var list
+)
+"gcl.ml" 380 12881 12883 "gcl.ml" 406 13714 13741
+type(
+  t * var list
+)
+"gcl.ml" 409 13744 13748 "gcl.ml" 409 13744 13767
+type(
+  ?entry:CA.G.V.t ->
+  ?exit:CA.G.V.t ->
+  ?mode:Type.formula_mode -> Cfg.AST.G.t -> t * var list * (Var.t -> Var.t)
+)
+ident(
+  def passified_of_astcfg "gcl.ml" 419 14094 14094 --
+)
+"gcl.ml" 409 13744 13769 "gcl.ml" 409 13744 13774
+type(
+  CA.G.V.t option
+)
+ident(
+  def entry "gcl.ml" 409 13744 13775 "gcl.ml" 417 14079 14092
+)
+"gcl.ml" 409 13744 13776 "gcl.ml" 409 13744 13780
+type(
+  CA.G.V.t option
+)
+ident(
+  def exit "gcl.ml" 409 13744 13781 "gcl.ml" 417 14079 14092
+)
+"gcl.ml" 409 13744 13782 "gcl.ml" 409 13744 13786
+type(
+  Type.formula_mode option
+)
+ident(
+  def mode "gcl.ml" 409 13744 13787 "gcl.ml" 417 14079 14092
+)
+"gcl.ml" 409 13744 13787 "gcl.ml" 409 13744 13790
+type(
+  Cfg.AST.G.t
+)
+ident(
+  def cfg "gcl.ml" 410 13793 13795 "gcl.ml" 417 14079 14092
+)
+"gcl.ml" 410 13793 13812 "gcl.ml" 410 13793 13815
+type(
+  Cfg.SSA.G.t
+)
+"gcl.ml" 410 13793 13827 "gcl.ml" 410 13793 13832
+type(
+  Var.t -> Var.t
+)
+"gcl.ml" 410 13793 13799 "gcl.ml" 410 13793 13833
+type(
+  Cfg_ssa.translation_results
+)
+"gcl.ml" 410 13793 13836 "gcl.ml" 410 13793 13853
+type(
+  Cfg.AST.G.t -> Cfg_ssa.translation_results
+)
+ident(
+  ext_ref Cfg_ssa.trans_cfg
+)
+"gcl.ml" 410 13793 13854 "gcl.ml" 410 13793 13857
+type(
+  Cfg.AST.G.t
+)
+ident(
+  int_ref cfg "gcl.ml" 409 13744 13787 "gcl.ml" 409 13744 13790
+)
+"gcl.ml" 410 13793 13836 "gcl.ml" 410 13793 13857
+call(
+  stack
+)
+type(
+  Cfg_ssa.translation_results
+)
+"gcl.ml" 411 13861 13867 "gcl.ml" 411 13861 13874
+type(
+  CA.G.V.t option -> C.G.V.t option
+)
+"gcl.ml" 412 13886 13897 "gcl.ml" 412 13886 13898
+type(
+  CA.G.V.t
+)
+ident(
+  def v "gcl.ml" 412 13886 13902 "gcl.ml" 412 13886 13942
+)
+"gcl.ml" 412 13886 13892 "gcl.ml" 412 13886 13898
+type(
+  CA.G.V.t option
+)
+"gcl.ml" 412 13886 13907 "gcl.ml" 412 13886 13920
+type(
+  C.G.t -> C.G.V.label -> C.G.V.t
+)
+ident(
+  ext_ref C.find_vertex
+)
+"gcl.ml" 412 13886 13921 "gcl.ml" 412 13886 13924
+type(
+  C.G.t
+)
+ident(
+  int_ref ssa "gcl.ml" 410 13793 13812 "gcl.ml" 410 13793 13815
+)
+"gcl.ml" 412 13886 13926 "gcl.ml" 412 13886 13938
+type(
+  CA.G.V.t -> CA.G.V.label
+)
+ident(
+  ext_ref CA.G.V.label
+)
+"gcl.ml" 412 13886 13939 "gcl.ml" 412 13886 13940
+type(
+  CA.G.V.t
+)
+ident(
+  int_ref v "gcl.ml" 412 13886 13897 "gcl.ml" 412 13886 13898
+)
+"gcl.ml" 412 13886 13925 "gcl.ml" 412 13886 13941
+call(
+  stack
+)
+type(
+  CA.G.V.label
+)
+"gcl.ml" 412 13886 13906 "gcl.ml" 412 13886 13942
+call(
+  stack
+)
+type(
+  C.G.V.t
+)
+"gcl.ml" 412 13886 13902 "gcl.ml" 412 13886 13942
+type(
+  C.G.V.t option
+)
+"gcl.ml" 413 13943 13949 "gcl.ml" 413 13943 13953
+type(
+  CA.G.V.t option
+)
+"gcl.ml" 413 13943 13957 "gcl.ml" 413 13943 13961
+type(
+  C.G.V.t option
+)
+"gcl.ml" 411 13861 13877 "gcl.ml" 413 13943 13961
+type(
+  CA.G.V.t option -> C.G.V.t option
+)
+"gcl.ml" 415 13967 13973 "gcl.ml" 415 13967 13978
+type(
+  C.G.V.t option
+)
+"gcl.ml" 415 13967 13981 "gcl.ml" 415 13967 13988
+type(
+  CA.G.V.t option -> C.G.V.t option
+)
+ident(
+  int_ref convert "gcl.ml" 411 13861 13867 "gcl.ml" 411 13861 13874
+)
+"gcl.ml" 415 13967 13989 "gcl.ml" 415 13967 13994
+type(
+  CA.G.V.t option
+)
+ident(
+  int_ref entry "gcl.ml" 409 13744 13769 "gcl.ml" 409 13744 13774
+)
+"gcl.ml" 415 13967 13981 "gcl.ml" 415 13967 13994
+call(
+  stack
+)
+type(
+  C.G.V.t option
+)
+"gcl.ml" 415 13967 13999 "gcl.ml" 415 13967 14003
+type(
+  C.G.V.t option
+)
+"gcl.ml" 415 13967 14006 "gcl.ml" 415 13967 14013
+type(
+  CA.G.V.t option -> C.G.V.t option
+)
+ident(
+  int_ref convert "gcl.ml" 411 13861 13867 "gcl.ml" 411 13861 13874
+)
+"gcl.ml" 415 13967 14014 "gcl.ml" 415 13967 14018
+type(
+  CA.G.V.t option
+)
+ident(
+  int_ref exit "gcl.ml" 409 13744 13776 "gcl.ml" 409 13744 13780
+)
+"gcl.ml" 415 13967 14006 "gcl.ml" 415 13967 14018
+call(
+  stack
+)
+type(
+  C.G.V.t option
+)
+"gcl.ml" 416 14022 14029 "gcl.ml" 416 14022 14030
+type(
+  t
+)
+"gcl.ml" 416 14022 14031 "gcl.ml" 416 14022 14032
+type(
+  var list
+)
+"gcl.ml" 416 14022 14028 "gcl.ml" 416 14022 14033
+type(
+  t * var list
+)
+"gcl.ml" 416 14022 14036 "gcl.ml" 416 14022 14052
+type(
+  ?entry:C.G.V.t ->
+  ?exit:C.G.V.t -> ?mode:Type.formula_mode -> Cfg.SSA.G.t -> t * var list
+)
+ident(
+  int_ref passified_of_ssa "gcl.ml" 379 12835 12839 "gcl.ml" 379 12835 12855
+)
+"gcl.ml" 416 14022 14054 "gcl.ml" 416 14022 14059
+type(
+  C.G.V.t option
+)
+ident(
+  int_ref entry "gcl.ml" 415 13967 13973 "gcl.ml" 415 13967 13978
+)
+"gcl.ml" 416 14022 14061 "gcl.ml" 416 14022 14065
+type(
+  C.G.V.t option
+)
+ident(
+  int_ref exit "gcl.ml" 415 13967 13999 "gcl.ml" 415 13967 14003
+)
+"gcl.ml" 416 14022 14067 "gcl.ml" 416 14022 14071
+type(
+  Type.formula_mode option
+)
+ident(
+  int_ref mode "gcl.ml" 409 13744 13782 "gcl.ml" 409 13744 13786
+)
+"gcl.ml" 416 14022 14072 "gcl.ml" 416 14022 14075
+type(
+  Cfg.SSA.G.t
+)
+ident(
+  int_ref ssa "gcl.ml" 410 13793 13812 "gcl.ml" 410 13793 13815
+)
+"gcl.ml" 416 14022 14036 "gcl.ml" 416 14022 14075
+call(
+  stack
+)
+type(
+  t * var list
+)
+"gcl.ml" 417 14079 14082 "gcl.ml" 417 14079 14083
+type(
+  t
+)
+ident(
+  int_ref g "gcl.ml" 416 14022 14029 "gcl.ml" 416 14022 14030
+)
+"gcl.ml" 417 14079 14084 "gcl.ml" 417 14079 14085
+type(
+  var list
+)
+ident(
+  int_ref v "gcl.ml" 416 14022 14031 "gcl.ml" 416 14022 14032
+)
+"gcl.ml" 417 14079 14086 "gcl.ml" 417 14079 14091
+type(
+  Var.t -> Var.t
+)
+ident(
+  int_ref tossa "gcl.ml" 410 13793 13827 "gcl.ml" 410 13793 13832
+)
+"gcl.ml" 417 14079 14081 "gcl.ml" 417 14079 14092
+type(
+  t * var list * (Var.t -> Var.t)
+)
+"gcl.ml" 416 14022 14024 "gcl.ml" 417 14079 14092
+type(
+  t * var list * (Var.t -> Var.t)
+)
+"gcl.ml" 415 13967 13969 "gcl.ml" 417 14079 14092
+type(
+  t * var list * (Var.t -> Var.t)
+)
+"gcl.ml" 411 13861 13863 "gcl.ml" 417 14079 14092
+type(
+  t * var list * (Var.t -> Var.t)
+)
+"gcl.ml" 410 13793 13795 "gcl.ml" 417 14079 14092
+type(
+  t * var list * (Var.t -> Var.t)
+)
+"gcl.ml" 424 14178 14182 "gcl.ml" 424 14178 14191
+type(
+  ?entry:'a ->
+  ?exit:'b ->
+  ?mode:Type.formula_mode -> Cfg.SSA.G.t -> Cfg.AST.G.t * (Cfg.BBid.t -> t)
+)
+ident(
+  def of_ssacfg "gcl.ml" 490 16539 16559 "gcl.ml" 492 16561 16564
+)
+"gcl.ml" 424 14178 14193 "gcl.ml" 424 14178 14198
+type(
+  'a option
+)
+ident(
+  def entry "gcl.ml" 424 14178 14199 "gcl.ml" 490 16539 16559
+)
+"gcl.ml" 424 14178 14200 "gcl.ml" 424 14178 14204
+type(
+  'b option
+)
+ident(
+  def exit "gcl.ml" 424 14178 14205 "gcl.ml" 490 16539 16559
+)
+"gcl.ml" 424 14178 14206 "gcl.ml" 424 14178 14210
+type(
+  Type.formula_mode option
+)
+ident(
+  def mode "gcl.ml" 424 14178 14211 "gcl.ml" 490 16539 16559
+)
+"gcl.ml" 424 14178 14211 "gcl.ml" 424 14178 14214
+type(
+  Cfg.SSA.G.t
+)
+ident(
+  def cfg "gcl.ml" 425 14217 14219 "gcl.ml" 490 16539 16559
+)
+"gcl.ml" 425 14217 14219 "gcl.ml" 425 14217 14240
+type(
+  Cfg.SSA.G.t Checks.sanityf
+)
+ident(
+  ext_ref Checks.acyclic_ssacfg
+)
+"gcl.ml" 425 14217 14241 "gcl.ml" 425 14217 14244
+type(
+  Cfg.SSA.G.t
+)
+ident(
+  int_ref cfg "gcl.ml" 424 14178 14211 "gcl.ml" 424 14178 14214
+)
+"gcl.ml" 425 14217 14245 "gcl.ml" 425 14217 14251
+type(
+  string
+)
+"gcl.ml" 425 14217 14219 "gcl.ml" 425 14217 14251
+call(
+  stack
+)
+type(
+  unit
+)
+"gcl.ml" 429 14389 14395 "gcl.ml" 429 14389 14398
+type(
+  Cfg.AST.G.t
+)
+ident(
+  def cfg "gcl.ml" 431 14466 14468 "gcl.ml" 490 16539 16559
+)
+"gcl.ml" 429 14389 14401 "gcl.ml" 429 14389 14418
+type(
+  ?remove_temps:bool -> ?dsa:bool -> Cfg.SSA.G.t -> Cfg.AST.G.t
+)
+ident(
+  ext_ref Cfg_ssa.to_astcfg
+)
+"gcl.ml" 429 14389 14424 "gcl.ml" 429 14389 14428
+type(
+  bool
+)
+"gcl.ml" 429 14389 14429 "gcl.ml" 429 14389 14432
+type(
+  Cfg.SSA.G.t
+)
+ident(
+  int_ref cfg "gcl.ml" 424 14178 14211 "gcl.ml" 424 14178 14214
+)
+"gcl.ml" 429 14389 14401 "gcl.ml" 429 14389 14432
+call(
+  stack
+)
+type(
+  Cfg.AST.G.t
+)
+"gcl.ml" 431 14466 14472 "gcl.ml" 431 14466 14477
+type(
+  t BH.t
+)
+ident(
+  def ugclh "gcl.ml" 448 15027 15029 "gcl.ml" 490 16539 16559
+)
+"gcl.ml" 431 14466 14480 "gcl.ml" 431 14466 14489
+type(
+  int -> t BH.t
+)
+ident(
+  ext_ref BH.create
+)
+"gcl.ml" 431 14466 14491 "gcl.ml" 431 14466 14505
+type(
+  CA.G.t -> int
+)
+ident(
+  ext_ref CA.G.nb_vertex
+)
+"gcl.ml" 431 14466 14506 "gcl.ml" 431 14466 14509
+type(
+  CA.G.t
+)
+ident(
+  int_ref cfg "gcl.ml" 429 14389 14395 "gcl.ml" 429 14389 14398
+)
+"gcl.ml" 431 14466 14490 "gcl.ml" 431 14466 14510
+call(
+  stack
+)
+type(
+  int
+)
+"gcl.ml" 431 14466 14480 "gcl.ml" 431 14466 14510
+call(
+  stack
+)
+type(
+  t BH.t
+)
+"gcl.ml" 448 15027 15033 "gcl.ml" 448 15027 15041
+type(
+  BH.key -> t -> unit
+)
+ident(
+  def save_gcl "gcl.ml" 452 15116 15118 "gcl.ml" 490 16539 16559
+)
+"gcl.ml" 448 15027 15042 "gcl.ml" 448 15027 15044
+type(
+  BH.key
+)
+ident(
+  def bb "gcl.ml" 448 15027 15045 "gcl.ml" 450 15087 15110
+)
+"gcl.ml" 448 15027 15045 "gcl.ml" 448 15027 15048
+type(
+  t
+)
+ident(
+  def gcl "gcl.ml" 449 15051 15055 "gcl.ml" 450 15087 15110
+)
+"gcl.ml" 449 15051 15063 "gcl.ml" 449 15051 15066
+type(
+  bool -> bool
+)
+ident(
+  ext_ref Pervasives.not
+)
+"gcl.ml" 449 15051 15068 "gcl.ml" 449 15051 15074
+type(
+  t BH.t -> BH.key -> bool
+)
+ident(
+  ext_ref BH.mem
+)
+"gcl.ml" 449 15051 15075 "gcl.ml" 449 15051 15080
+type(
+  t BH.t
+)
+ident(
+  int_ref ugclh "gcl.ml" 431 14466 14472 "gcl.ml" 431 14466 14477
+)
+"gcl.ml" 449 15051 15081 "gcl.ml" 449 15051 15083
+type(
+  BH.key
+)
+ident(
+  int_ref bb "gcl.ml" 448 15027 15042 "gcl.ml" 448 15027 15044
+)
+"gcl.ml" 449 15051 15067 "gcl.ml" 449 15051 15084
+call(
+  stack
+)
+type(
+  bool
+)
+"gcl.ml" 449 15051 15062 "gcl.ml" 449 15051 15085
+type(
+  bool
+)
+"gcl.ml" 449 15051 15055 "gcl.ml" 449 15051 15085
+type(
+  unit
+)
+"gcl.ml" 450 15087 15091 "gcl.ml" 450 15087 15097
+type(
+  t BH.t -> BH.key -> t -> unit
+)
+ident(
+  ext_ref BH.add
+)
+"gcl.ml" 450 15087 15098 "gcl.ml" 450 15087 15103
+type(
+  t BH.t
+)
+ident(
+  int_ref ugclh "gcl.ml" 431 14466 14472 "gcl.ml" 431 14466 14477
+)
+"gcl.ml" 450 15087 15104 "gcl.ml" 450 15087 15106
+type(
+  BH.key
+)
+ident(
+  int_ref bb "gcl.ml" 448 15027 15042 "gcl.ml" 448 15027 15044
+)
+"gcl.ml" 450 15087 15107 "gcl.ml" 450 15087 15110
+type(
+  t
+)
+ident(
+  int_ref gcl "gcl.ml" 448 15027 15045 "gcl.ml" 448 15027 15048
+)
+"gcl.ml" 450 15087 15091 "gcl.ml" 450 15087 15110
+call(
+  tail
+)
+type(
+  unit
+)
+"gcl.ml" 449 15051 15055 "gcl.ml" 450 15087 15110
+type(
+  unit
+)
+"gcl.ml" 452 15116 15122 "gcl.ml" 452 15116 15129
+type(
+  t -> BH.key -> unit
+)
+ident(
+  def prepend "gcl.ml" 455 15196 15198 "gcl.ml" 490 16539 16559
+)
+"gcl.ml" 452 15116 15130 "gcl.ml" 452 15116 15131
+type(
+  t
+)
+ident(
+  def s "gcl.ml" 452 15116 15132 "gcl.ml" 453 15137 15190
+)
+"gcl.ml" 452 15116 15132 "gcl.ml" 452 15116 15134
+type(
+  BH.key
+)
+ident(
+  def bb "gcl.ml" 453 15137 15141 "gcl.ml" 453 15137 15190
+)
+"gcl.ml" 453 15137 15141 "gcl.ml" 453 15137 15151
+type(
+  t BH.t -> BH.key -> t -> unit
+)
+ident(
+  ext_ref BH.replace
+)
+"gcl.ml" 453 15137 15152 "gcl.ml" 453 15137 15157
+type(
+  t BH.t
+)
+ident(
+  int_ref ugclh "gcl.ml" 431 14466 14472 "gcl.ml" 431 14466 14477
+)
+"gcl.ml" 453 15137 15158 "gcl.ml" 453 15137 15160
+type(
+  BH.key
+)
+ident(
+  int_ref bb "gcl.ml" 452 15116 15132 "gcl.ml" 452 15116 15134
+)
+"gcl.ml" 453 15137 15162 "gcl.ml" 453 15137 15168
+type(
+  t -> t -> t
+)
+ident(
+  int_ref concat "gcl.ml" 44 1139 1143 "gcl.ml" 44 1139 1149
+)
+"gcl.ml" 453 15137 15169 "gcl.ml" 453 15137 15170
+type(
+  t
+)
+ident(
+  int_ref s "gcl.ml" 452 15116 15130 "gcl.ml" 452 15116 15131
+)
+"gcl.ml" 453 15137 15172 "gcl.ml" 453 15137 15179
+type(
+  t BH.t -> BH.key -> t
+)
+ident(
+  ext_ref BH.find
+)
+"gcl.ml" 453 15137 15180 "gcl.ml" 453 15137 15185
+type(
+  t BH.t
+)
+ident(
+  int_ref ugclh "gcl.ml" 431 14466 14472 "gcl.ml" 431 14466 14477
+)
+"gcl.ml" 453 15137 15186 "gcl.ml" 453 15137 15188
+type(
+  BH.key
+)
+ident(
+  int_ref bb "gcl.ml" 452 15116 15132 "gcl.ml" 452 15116 15134
+)
+"gcl.ml" 453 15137 15171 "gcl.ml" 453 15137 15189
+call(
+  stack
+)
+type(
+  t
+)
+"gcl.ml" 453 15137 15161 "gcl.ml" 453 15137 15190
+call(
+  stack
+)
+type(
+  t
+)
+"gcl.ml" 453 15137 15141 "gcl.ml" 453 15137 15190
+call(
+  tail
+)
+type(
+  unit
+)
+"gcl.ml" 455 15196 15202 "gcl.ml" 455 15196 15216
+type(
+  exp -> CA.G.vertex -> unit
+)
+ident(
+  def prepend_assume "gcl.ml" 471 15841 15843 "gcl.ml" 490 16539 16559
+)
+"gcl.ml" 455 15196 15217 "gcl.ml" 455 15196 15218
+type(
+  exp
+)
+ident(
+  def e "gcl.ml" 455 15196 15219 "gcl.ml" 469 15791 15835
+)
+"gcl.ml" 455 15196 15219 "gcl.ml" 455 15196 15221
+type(
+  CA.G.vertex
+)
+ident(
+  def bb "gcl.ml" 456 15224 15228 "gcl.ml" 469 15791 15835
+)
+"gcl.ml" 456 15224 15232 "gcl.ml" 456 15224 15233
+type(
+  CA.G.edge
+)
+"gcl.ml" 456 15224 15234 "gcl.ml" 456 15224 15235
+type(
+  CA.G.edge
+)
+"gcl.ml" 456 15224 15232 "gcl.ml" 456 15224 15235
+type(
+  CA.G.edge * CA.G.edge
+)
+"gcl.ml" 456 15224 15244 "gcl.ml" 456 15224 15255
+type(
+  CA.G.t -> CA.G.vertex -> CA.G.edge list
+)
+ident(
+  ext_ref CA.G.succ_e
+)
+"gcl.ml" 456 15224 15256 "gcl.ml" 456 15224 15259
+type(
+  CA.G.t
+)
+ident(
+  int_ref cfg "gcl.ml" 429 14389 14395 "gcl.ml" 429 14389 14398
+)
+"gcl.ml" 456 15224 15260 "gcl.ml" 456 15224 15262
+type(
+  CA.G.vertex
+)
+ident(
+  int_ref bb "gcl.ml" 455 15196 15219 "gcl.ml" 455 15196 15221
+)
+"gcl.ml" 456 15224 15244 "gcl.ml" 456 15224 15262
+call(
+  stack
+)
+type(
+  CA.G.edge list
+)
+"gcl.ml" 457 15268 15275 "gcl.ml" 457 15268 15276
+type(
+  CA.G.edge
+)
+ident(
+  def f "gcl.ml" 457 15268 15280 "gcl.ml" 458 15352 15362
+)
+"gcl.ml" 457 15268 15277 "gcl.ml" 457 15268 15278
+type(
+  CA.G.edge
+)
+ident(
+  def t "gcl.ml" 457 15268 15280 "gcl.ml" 458 15352 15362
+)
+"gcl.ml" 457 15268 15274 "gcl.ml" 457 15268 15279
+type(
+  CA.G.edge list
+)
+"gcl.ml" 457 15268 15286 "gcl.ml" 457 15268 15298
+type(
+  CA.G.E.t -> CA.G.E.label
+)
+ident(
+  ext_ref CA.G.E.label
+)
+"gcl.ml" 457 15268 15299 "gcl.ml" 457 15268 15300
+type(
+  CA.G.edge
+)
+ident(
+  int_ref t "gcl.ml" 457 15268 15277 "gcl.ml" 457 15268 15278
+)
+"gcl.ml" 457 15268 15285 "gcl.ml" 457 15268 15301
+call(
+  stack
+)
+type(
+  CA.G.E.label
+)
+"gcl.ml" 457 15268 15302 "gcl.ml" 457 15268 15303
+type(
+  CA.G.E.label -> CA.G.E.label -> bool
+)
+ident(
+  ext_ref Pervasives.( = )
+)
+"gcl.ml" 457 15268 15308 "gcl.ml" 457 15268 15314
+type(
+  bool
+)
+"gcl.ml" 457 15268 15304 "gcl.ml" 457 15268 15314
+type(
+  CA.G.E.label
+)
+"gcl.ml" 457 15268 15285 "gcl.ml" 457 15268 15314
+type(
+  bool
+)
+"gcl.ml" 457 15268 15315 "gcl.ml" 457 15268 15317
+type(
+  bool -> bool -> bool
+)
+ident(
+  ext_ref Pervasives.( && )
+)
+"gcl.ml" 457 15268 15319 "gcl.ml" 457 15268 15331
+type(
+  CA.G.E.t -> CA.G.E.label
+)
+ident(
+  ext_ref CA.G.E.label
+)
+"gcl.ml" 457 15268 15332 "gcl.ml" 457 15268 15333
+type(
+  CA.G.edge
+)
+ident(
+  int_ref f "gcl.ml" 457 15268 15275 "gcl.ml" 457 15268 15276
+)
+"gcl.ml" 457 15268 15318 "gcl.ml" 457 15268 15334
+call(
+  stack
+)
+type(
+  CA.G.E.label
+)
+"gcl.ml" 457 15268 15335 "gcl.ml" 457 15268 15336
+type(
+  CA.G.E.label -> CA.G.E.label -> bool
+)
+ident(
+  ext_ref Pervasives.( = )
+)
+"gcl.ml" 457 15268 15341 "gcl.ml" 457 15268 15348
+type(
+  bool
+)
+"gcl.ml" 457 15268 15337 "gcl.ml" 457 15268 15348
+type(
+  CA.G.E.label
+)
+"gcl.ml" 457 15268 15318 "gcl.ml" 457 15268 15348
+type(
+  bool
+)
+"gcl.ml" 457 15268 15285 "gcl.ml" 457 15268 15348
+type(
+  bool
+)
+"gcl.ml" 458 15352 15358 "gcl.ml" 458 15352 15359
+type(
+  CA.G.edge
+)
+ident(
+  int_ref t "gcl.ml" 457 15268 15277 "gcl.ml" 457 15268 15278
+)
+"gcl.ml" 458 15352 15361 "gcl.ml" 458 15352 15362
+type(
+  CA.G.edge
+)
+ident(
+  int_ref f "gcl.ml" 457 15268 15275 "gcl.ml" 457 15268 15276
+)
+"gcl.ml" 458 15352 15358 "gcl.ml" 458 15352 15362
+type(
+  CA.G.edge * CA.G.edge
+)
+"gcl.ml" 457 15268 15280 "gcl.ml" 458 15352 15362
+type(
+  CA.G.edge * CA.G.edge
+)
+"gcl.ml" 459 15363 15370 "gcl.ml" 459 15363 15371
+type(
+  CA.G.edge
+)
+ident(
+  def t "gcl.ml" 459 15363 15375 "gcl.ml" 460 15447 15457
+)
+"gcl.ml" 459 15363 15372 "gcl.ml" 459 15363 15373
+type(
+  CA.G.edge
+)
+ident(
+  def f "gcl.ml" 459 15363 15375 "gcl.ml" 460 15447 15457
+)
+"gcl.ml" 459 15363 15369 "gcl.ml" 459 15363 15374
+type(
+  CA.G.edge list
+)
+"gcl.ml" 459 15363 15381 "gcl.ml" 459 15363 15393
+type(
+  CA.G.E.t -> CA.G.E.label
+)
+ident(
+  ext_ref CA.G.E.label
+)
+"gcl.ml" 459 15363 15394 "gcl.ml" 459 15363 15395
+type(
+  CA.G.edge
+)
+ident(
+  int_ref t "gcl.ml" 459 15363 15370 "gcl.ml" 459 15363 15371
+)
+"gcl.ml" 459 15363 15380 "gcl.ml" 459 15363 15396
+call(
+  stack
+)
+type(
+  CA.G.E.label
+)
+"gcl.ml" 459 15363 15397 "gcl.ml" 459 15363 15398
+type(
+  CA.G.E.label -> CA.G.E.label -> bool
+)
+ident(
+  ext_ref Pervasives.( = )
+)
+"gcl.ml" 459 15363 15403 "gcl.ml" 459 15363 15409
+type(
+  bool
+)
+"gcl.ml" 459 15363 15399 "gcl.ml" 459 15363 15409
+type(
+  CA.G.E.label
+)
+"gcl.ml" 459 15363 15380 "gcl.ml" 459 15363 15409
+type(
+  bool
+)
+"gcl.ml" 459 15363 15410 "gcl.ml" 459 15363 15412
+type(
+  bool -> bool -> bool
+)
+ident(
+  ext_ref Pervasives.( && )
+)
+"gcl.ml" 459 15363 15414 "gcl.ml" 459 15363 15426
+type(
+  CA.G.E.t -> CA.G.E.label
+)
+ident(
+  ext_ref CA.G.E.label
+)
+"gcl.ml" 459 15363 15427 "gcl.ml" 459 15363 15428
+type(
+  CA.G.edge
+)
+ident(
+  int_ref f "gcl.ml" 459 15363 15372 "gcl.ml" 459 15363 15373
+)
+"gcl.ml" 459 15363 15413 "gcl.ml" 459 15363 15429
+call(
+  stack
+)
+type(
+  CA.G.E.label
+)
+"gcl.ml" 459 15363 15430 "gcl.ml" 459 15363 15431
+type(
+  CA.G.E.label -> CA.G.E.label -> bool
+)
+ident(
+  ext_ref Pervasives.( = )
+)
+"gcl.ml" 459 15363 15436 "gcl.ml" 459 15363 15443
+type(
+  bool
+)
+"gcl.ml" 459 15363 15432 "gcl.ml" 459 15363 15443
+type(
+  CA.G.E.label
+)
+"gcl.ml" 459 15363 15413 "gcl.ml" 459 15363 15443
+type(
+  bool
+)
+"gcl.ml" 459 15363 15380 "gcl.ml" 459 15363 15443
+type(
+  bool
+)
+"gcl.ml" 460 15447 15453 "gcl.ml" 460 15447 15454
+type(
+  CA.G.edge
+)
+ident(
+  int_ref t "gcl.ml" 459 15363 15370 "gcl.ml" 459 15363 15371
+)
+"gcl.ml" 460 15447 15456 "gcl.ml" 460 15447 15457
+type(
+  CA.G.edge
+)
+ident(
+  int_ref f "gcl.ml" 459 15363 15372 "gcl.ml" 459 15363 15373
+)
+"gcl.ml" 460 15447 15453 "gcl.ml" 460 15447 15457
+type(
+  CA.G.edge * CA.G.edge
+)
+"gcl.ml" 459 15363 15375 "gcl.ml" 460 15447 15457
+type(
+  CA.G.edge * CA.G.edge
+)
+"gcl.ml" 461 15458 15464 "gcl.ml" 461 15458 15465
+type(
+  CA.G.edge list
+)
+"gcl.ml" 461 15458 15469 "gcl.ml" 461 15458 15477
+type(
+  string -> CA.G.edge * CA.G.edge
+)
+ident(
+  ext_ref Pervasives.failwith
+)
+"gcl.ml" 461 15458 15478 "gcl.ml" 461 15458 15513
+type(
+  string
+)
+"gcl.ml" 461 15458 15469 "gcl.ml" 461 15458 15513
+call(
+  stack
+)
+type(
+  CA.G.edge * CA.G.edge
+)
+"gcl.ml" 456 15224 15238 "gcl.ml" 461 15458 15513
+type(
+  CA.G.edge * CA.G.edge
+)
+"gcl.ml" 464 15582 15590 "gcl.ml" 464 15582 15596
+type(
+  CA.G.E.t -> CA.G.V.label
+)
+"gcl.ml" 464 15582 15597 "gcl.ml" 464 15582 15598
+type(
+  CA.G.E.t
+)
+ident(
+  def e "gcl.ml" 464 15582 15601 "gcl.ml" 464 15582 15628
+)
+"gcl.ml" 464 15582 15601 "gcl.ml" 464 15582 15613
+type(
+  CA.G.V.t -> CA.G.V.label
+)
+ident(
+  ext_ref CA.G.V.label
+)
+"gcl.ml" 464 15582 15615 "gcl.ml" 464 15582 15625
+type(
+  CA.G.E.t -> CA.G.E.vertex
+)
+ident(
+  ext_ref CA.G.E.dst
+)
+"gcl.ml" 464 15582 15626 "gcl.ml" 464 15582 15627
+type(
+  CA.G.E.t
+)
+ident(
+  int_ref e "gcl.ml" 464 15582 15597 "gcl.ml" 464 15582 15598
+)
+"gcl.ml" 464 15582 15614 "gcl.ml" 464 15582 15628
+call(
+  stack
+)
+type(
+  CA.G.E.vertex
+)
+"gcl.ml" 464 15582 15601 "gcl.ml" 464 15582 15628
+call(
+  tail
+)
+type(
+  CA.G.V.label
+)
+"gcl.ml" 465 15632 15650 "gcl.ml" 465 15632 15659
+type(
+  CA.G.t -> CA.G.vertex -> CA.G.vertex list
+)
+ident(
+  ext_ref CA.G.pred
+)
+"gcl.ml" 465 15632 15660 "gcl.ml" 465 15632 15663
+type(
+  CA.G.t
+)
+ident(
+  int_ref cfg "gcl.ml" 429 14389 14395 "gcl.ml" 429 14389 14398
+)
+"gcl.ml" 465 15632 15665 "gcl.ml" 465 15632 15675
+type(
+  CA.G.E.t -> CA.G.E.vertex
+)
+ident(
+  ext_ref CA.G.E.dst
+)
+"gcl.ml" 465 15632 15676 "gcl.ml" 465 15632 15677
+type(
+  CA.G.edge
+)
+ident(
+  int_ref t "gcl.ml" 456 15224 15232 "gcl.ml" 456 15224 15233
+)
+"gcl.ml" 465 15632 15664 "gcl.ml" 465 15632 15678
+call(
+  stack
+)
+type(
+  CA.G.E.vertex
+)
+"gcl.ml" 465 15632 15650 "gcl.ml" 465 15632 15678
+call(
+  stack
+)
+type(
+  CA.G.vertex list
+)
+"gcl.ml" 465 15632 15680 "gcl.ml" 465 15632 15689
+type(
+  CA.G.t -> CA.G.vertex -> CA.G.vertex list
+)
+ident(
+  ext_ref CA.G.pred
+)
+"gcl.ml" 465 15632 15690 "gcl.ml" 465 15632 15693
+type(
+  CA.G.t
+)
+ident(
+  int_ref cfg "gcl.ml" 429 14389 14395 "gcl.ml" 429 14389 14398
+)
+"gcl.ml" 465 15632 15695 "gcl.ml" 465 15632 15705
+type(
+  CA.G.E.t -> CA.G.E.vertex
+)
+ident(
+  ext_ref CA.G.E.dst
+)
+"gcl.ml" 465 15632 15706 "gcl.ml" 465 15632 15707
+type(
+  CA.G.edge
+)
+ident(
+  int_ref f "gcl.ml" 456 15224 15234 "gcl.ml" 456 15224 15235
+)
+"gcl.ml" 465 15632 15694 "gcl.ml" 465 15632 15708
+call(
+  stack
+)
+type(
+  CA.G.E.vertex
+)
+"gcl.ml" 465 15632 15680 "gcl.ml" 465 15632 15708
+call(
+  stack
+)
+type(
+  CA.G.vertex list
+)
+"gcl.ml" 465 15632 15650 "gcl.ml" 465 15632 15708
+type(
+  CA.G.vertex list * CA.G.vertex list
+)
+"gcl.ml" 466 15714 15721 "gcl.ml" 466 15714 15722
+type(
+  CA.G.vertex
+)
+ident(
+  def x "gcl.ml" 466 15714 15732 "gcl.ml" 466 15714 15736
+)
+"gcl.ml" 466 15714 15720 "gcl.ml" 466 15714 15723
+type(
+  CA.G.vertex list
+)
+"gcl.ml" 466 15714 15726 "gcl.ml" 466 15714 15727
+type(
+  CA.G.vertex
+)
+ident(
+  def y "gcl.ml" 466 15714 15732 "gcl.ml" 466 15714 15736
+)
+"gcl.ml" 466 15714 15725 "gcl.ml" 466 15714 15728
+type(
+  CA.G.vertex list
+)
+"gcl.ml" 466 15714 15720 "gcl.ml" 466 15714 15728
+type(
+  CA.G.vertex list * CA.G.vertex list
+)
+"gcl.ml" 466 15714 15732 "gcl.ml" 466 15714 15736
+type(
+  bool
+)
+"gcl.ml" 467 15737 15743 "gcl.ml" 467 15737 15744
+type(
+  CA.G.vertex list * CA.G.vertex list
+)
+"gcl.ml" 467 15737 15748 "gcl.ml" 467 15737 15753
+type(
+  bool
+)
+"gcl.ml" 465 15632 15643 "gcl.ml" 467 15737 15754
+type(
+  bool
+)
+"gcl.ml" 465 15632 15636 "gcl.ml" 467 15737 15754
+type(
+  unit
+)
+"gcl.ml" 468 15756 15760 "gcl.ml" 468 15756 15767
+type(
+  t -> BH.key -> unit
+)
+ident(
+  int_ref prepend "gcl.ml" 452 15116 15122 "gcl.ml" 452 15116 15129
+)
+"gcl.ml" 468 15756 15776 "gcl.ml" 468 15756 15777
+type(
+  exp
+)
+ident(
+  int_ref e "gcl.ml" 455 15196 15217 "gcl.ml" 455 15196 15218
+)
+"gcl.ml" 468 15756 15768 "gcl.ml" 468 15756 15778
+type(
+  t
+)
+"gcl.ml" 468 15756 15780 "gcl.ml" 468 15756 15786
+type(
+  CA.G.E.t -> CA.G.V.label
+)
+ident(
+  int_ref e2bbid "gcl.ml" 464 15582 15590 "gcl.ml" 464 15582 15596
+)
+"gcl.ml" 468 15756 15787 "gcl.ml" 468 15756 15788
+type(
+  CA.G.edge
+)
+ident(
+  int_ref t "gcl.ml" 456 15224 15232 "gcl.ml" 456 15224 15233
+)
+"gcl.ml" 468 15756 15779 "gcl.ml" 468 15756 15789
+call(
+  stack
+)
+type(
+  CA.G.V.label
+)
+"gcl.ml" 468 15756 15760 "gcl.ml" 468 15756 15789
+call(
+  stack
+)
+type(
+  unit
+)
+"gcl.ml" 469 15791 15795 "gcl.ml" 469 15791 15802
+type(
+  t -> BH.key -> unit
+)
+ident(
+  int_ref prepend "gcl.ml" 452 15116 15122 "gcl.ml" 452 15116 15129
+)
+"gcl.ml" 469 15791 15812 "gcl.ml" 469 15791 15816
+type(
+  Type.unop_type -> exp -> exp
+)
+ident(
+  ext_ref Ast_convenience.unop
+)
+"gcl.ml" 469 15791 15817 "gcl.ml" 469 15791 15820
+type(
+  Type.unop_type
+)
+"gcl.ml" 469 15791 15821 "gcl.ml" 469 15791 15822
+type(
+  exp
+)
+ident(
+  int_ref e "gcl.ml" 455 15196 15217 "gcl.ml" 455 15196 15218
+)
+"gcl.ml" 469 15791 15811 "gcl.ml" 469 15791 15823
+call(
+  stack
+)
+type(
+  exp
+)
+"gcl.ml" 469 15791 15803 "gcl.ml" 469 15791 15824
+type(
+  t
+)
+"gcl.ml" 469 15791 15826 "gcl.ml" 469 15791 15832
+type(
+  CA.G.E.t -> CA.G.V.label
+)
+ident(
+  int_ref e2bbid "gcl.ml" 464 15582 15590 "gcl.ml" 464 15582 15596
+)
+"gcl.ml" 469 15791 15833 "gcl.ml" 469 15791 15834
+type(
+  CA.G.edge
+)
+ident(
+  int_ref f "gcl.ml" 456 15224 15234 "gcl.ml" 456 15224 15235
+)
+"gcl.ml" 469 15791 15825 "gcl.ml" 469 15791 15835
+call(
+  stack
+)
+type(
+  CA.G.V.label
+)
+"gcl.ml" 469 15791 15795 "gcl.ml" 469 15791 15835
+call(
+  tail
+)
+type(
+  unit
+)
+"gcl.ml" 468 15756 15760 "gcl.ml" 469 15791 15835
+type(
+  unit
+)
+"gcl.ml" 465 15632 15636 "gcl.ml" 469 15791 15835
+type(
+  unit
+)
+"gcl.ml" 464 15582 15586 "gcl.ml" 469 15791 15835
+type(
+  unit
+)
+"gcl.ml" 456 15224 15228 "gcl.ml" 469 15791 15835
+type(
+  unit
+)
+"gcl.ml" 471 15841 15847 "gcl.ml" 471 15841 15857
+type(
+  CA.G.V.t -> unit
+)
+ident(
+  def compute_at "gcl.ml" 485 16340 16342 "gcl.ml" 490 16539 16559
+)
+"gcl.ml" 471 15841 15858 "gcl.ml" 471 15841 15859
+type(
+  CA.G.V.t
+)
+ident(
+  def b "gcl.ml" 472 15862 15866 "gcl.ml" 483 16300 16334
+)
+"gcl.ml" 472 15862 15870 "gcl.ml" 472 15862 15874
+type(
+  CA.lang
+)
+"gcl.ml" 472 15862 15877 "gcl.ml" 472 15862 15889
+type(
+  CA.G.t -> CA.G.V.t -> CA.lang
+)
+ident(
+  ext_ref CA.get_stmts
+)
+"gcl.ml" 472 15862 15890 "gcl.ml" 472 15862 15893
+type(
+  CA.G.t
+)
+ident(
+  int_ref cfg "gcl.ml" 429 14389 14395 "gcl.ml" 429 14389 14398
+)
+"gcl.ml" 472 15862 15894 "gcl.ml" 472 15862 15895
+type(
+  CA.G.V.t
+)
+ident(
+  int_ref b "gcl.ml" 471 15841 15858 "gcl.ml" 471 15841 15859
+)
+"gcl.ml" 472 15862 15877 "gcl.ml" 472 15862 15895
+call(
+  stack
+)
+type(
+  CA.lang
+)
+"gcl.ml" 474 15940 15948 "gcl.ml" 474 15940 15952
+type(
+  t
+)
+"gcl.ml" 474 15940 15961 "gcl.ml" 474 15940 15969
+type(
+  CA.lang -> Ast.stmt list
+)
+ident(
+  ext_ref BatListFull.List.rev
+)
+"gcl.ml" 474 15940 15970 "gcl.ml" 474 15940 15974
+type(
+  CA.lang
+)
+ident(
+  int_ref bb_s "gcl.ml" 472 15862 15870 "gcl.ml" 472 15862 15874
+)
+"gcl.ml" 474 15940 15961 "gcl.ml" 474 15940 15974
+call(
+  stack
+)
+type(
+  Ast.stmt list
+)
+"gcl.ml" 475 15980 15988 "gcl.ml" 475 15980 15990
+type(
+  Ast.stmt list
+)
+"gcl.ml" 475 15980 15994 "gcl.ml" 475 15980 15998
+type(
+  t
+)
+"gcl.ml" 476 15999 16016 "gcl.ml" 476 15999 16017
+type(
+  Ast.exp * Ast.attrs
+)
+"gcl.ml" 476 15999 16008 "gcl.ml" 476 15999 16017
+type(
+  Ast.stmt
+)
+"gcl.ml" 476 15999 16029 "gcl.ml" 476 15999 16030
+type(
+  Ast.exp * Ast.attrs
+)
+"gcl.ml" 476 15999 16020 "gcl.ml" 476 15999 16030
+type(
+  Ast.stmt
+)
+"gcl.ml" 476 15999 16007 "gcl.ml" 476 15999 16031
+type(
+  Ast.stmt
+)
+"gcl.ml" 476 15999 16033 "gcl.ml" 476 15999 16037
+type(
+  Ast.stmt list
+)
+ident(
+  def rest "gcl.ml" 476 15999 16041 "gcl.ml" 476 15999 16078
+)
+"gcl.ml" 476 15999 16007 "gcl.ml" 476 15999 16037
+type(
+  Ast.stmt list
+)
+"gcl.ml" 476 15999 16041 "gcl.ml" 476 15999 16056
+type(
+  ?mode:Type.formula_mode -> Ast.stmt list -> t
+)
+ident(
+  int_ref of_straightline "gcl.ml" 116 3369 3373 "gcl.ml" 116 3369 3388
+)
+"gcl.ml" 476 15999 16058 "gcl.ml" 476 15999 16062
+type(
+  Type.formula_mode option
+)
+ident(
+  int_ref mode "gcl.ml" 424 14178 14206 "gcl.ml" 424 14178 14210
+)
+"gcl.ml" 476 15999 16064 "gcl.ml" 476 15999 16072
+type(
+  Ast.stmt list -> Ast.stmt list
+)
+ident(
+  ext_ref BatListFull.List.rev
+)
+"gcl.ml" 476 15999 16073 "gcl.ml" 476 15999 16077
+type(
+  Ast.stmt list
+)
+ident(
+  int_ref rest "gcl.ml" 476 15999 16033 "gcl.ml" 476 15999 16037
+)
+"gcl.ml" 476 15999 16063 "gcl.ml" 476 15999 16078
+call(
+  stack
+)
+type(
+  Ast.stmt list
+)
+"gcl.ml" 476 15999 16041 "gcl.ml" 476 15999 16078
+call(
+  stack
+)
+type(
+  t
+)
+"gcl.ml" 477 16079 16096 "gcl.ml" 477 16079 16097
+type(
+  exp
+)
+ident(
+  def e "gcl.ml" 479 16179 16187 "gcl.ml" 480 16207 16252
+)
+"gcl.ml" 477 16079 16099 "gcl.ml" 477 16079 16100
+type(
+  Ast.exp
+)
+"gcl.ml" 477 16079 16102 "gcl.ml" 477 16079 16103
+type(
+  Ast.exp
+)
+"gcl.ml" 477 16079 16105 "gcl.ml" 477 16079 16106
+type(
+  Ast.attrs
+)
+"gcl.ml" 477 16079 16095 "gcl.ml" 477 16079 16107
+type(
+  exp * Ast.exp * Ast.exp * Ast.attrs
+)
+"gcl.ml" 477 16079 16087 "gcl.ml" 477 16079 16107
+type(
+  Ast.stmt
+)
+"gcl.ml" 477 16079 16109 "gcl.ml" 477 16079 16113
+type(
+  Ast.stmt list
+)
+ident(
+  def rest "gcl.ml" 479 16179 16187 "gcl.ml" 480 16207 16252
+)
+"gcl.ml" 477 16079 16087 "gcl.ml" 477 16079 16113
+type(
+  Ast.stmt list
+)
+"gcl.ml" 479 16179 16187 "gcl.ml" 479 16179 16201
+type(
+  exp -> CA.G.vertex -> unit
+)
+ident(
+  int_ref prepend_assume "gcl.ml" 455 15196 15202 "gcl.ml" 455 15196 15216
+)
+"gcl.ml" 479 16179 16202 "gcl.ml" 479 16179 16203
+type(
+  exp
+)
+ident(
+  int_ref e "gcl.ml" 477 16079 16096 "gcl.ml" 477 16079 16097
+)
+"gcl.ml" 479 16179 16204 "gcl.ml" 479 16179 16205
+type(
+  CA.G.V.t
+)
+ident(
+  int_ref b "gcl.ml" 471 15841 15858 "gcl.ml" 471 15841 15859
+)
+"gcl.ml" 479 16179 16187 "gcl.ml" 479 16179 16205
+call(
+  stack
+)
+type(
+  unit
+)
+"gcl.ml" 480 16207 16215 "gcl.ml" 480 16207 16230
+type(
+  ?mode:Type.formula_mode -> Ast.stmt list -> t
+)
+ident(
+  int_ref of_straightline "gcl.ml" 116 3369 3373 "gcl.ml" 116 3369 3388
+)
+"gcl.ml" 480 16207 16232 "gcl.ml" 480 16207 16236
+type(
+  Type.formula_mode option
+)
+ident(
+  int_ref mode "gcl.ml" 424 14178 14206 "gcl.ml" 424 14178 14210
+)
+"gcl.ml" 480 16207 16238 "gcl.ml" 480 16207 16246
+type(
+  Ast.stmt list -> Ast.stmt list
+)
+ident(
+  ext_ref BatListFull.List.rev
+)
+"gcl.ml" 480 16207 16247 "gcl.ml" 480 16207 16251
+type(
+  Ast.stmt list
+)
+ident(
+  int_ref rest "gcl.ml" 477 16079 16109 "gcl.ml" 477 16079 16113
+)
+"gcl.ml" 480 16207 16237 "gcl.ml" 480 16207 16252
+call(
+  stack
+)
+type(
+  Ast.stmt list
+)
+"gcl.ml" 480 16207 16215 "gcl.ml" 480 16207 16252
+call(
+  stack
+)
+type(
+  t
+)
+"gcl.ml" 479 16179 16187 "gcl.ml" 480 16207 16252
+type(
+  t
+)
+"gcl.ml" 481 16253 16261 "gcl.ml" 481 16253 16262
+type(
+  Ast.stmt list
+)
+"gcl.ml" 481 16253 16266 "gcl.ml" 481 16253 16281
+type(
+  ?mode:Type.formula_mode -> CA.lang -> t
+)
+ident(
+  int_ref of_straightline "gcl.ml" 116 3369 3373 "gcl.ml" 116 3369 3388
+)
+"gcl.ml" 481 16253 16283 "gcl.ml" 481 16253 16287
+type(
+  Type.formula_mode option
+)
+ident(
+  int_ref mode "gcl.ml" 424 14178 14206 "gcl.ml" 424 14178 14210
+)
+"gcl.ml" 481 16253 16288 "gcl.ml" 481 16253 16292
+type(
+  CA.lang
+)
+ident(
+  int_ref bb_s "gcl.ml" 472 15862 15870 "gcl.ml" 472 15862 15874
+)
+"gcl.ml" 481 16253 16266 "gcl.ml" 481 16253 16292
+type(
+  t
+)
+"gcl.ml" 474 15940 15955 "gcl.ml" 481 16253 16292
+type(
+  t
+)
+"gcl.ml" 483 16300 16304 "gcl.ml" 483 16300 16312
+type(
+  BH.key -> t -> unit
+)
+ident(
+  int_ref save_gcl "gcl.ml" 448 15027 15033 "gcl.ml" 448 15027 15041
+)
+"gcl.ml" 483 16300 16314 "gcl.ml" 483 16300 16326
+type(
+  CA.G.V.t -> CA.G.V.label
+)
+ident(
+  ext_ref CA.G.V.label
+)
+"gcl.ml" 483 16300 16327 "gcl.ml" 483 16300 16328
+type(
+  CA.G.V.t
+)
+ident(
+  int_ref b "gcl.ml" 471 15841 15858 "gcl.ml" 471 15841 15859
+)
+"gcl.ml" 483 16300 16313 "gcl.ml" 483 16300 16329
+call(
+  stack
+)
+type(
+  CA.G.V.label
+)
+"gcl.ml" 483 16300 16330 "gcl.ml" 483 16300 16334
+type(
+  t
+)
+ident(
+  int_ref ugcl "gcl.ml" 474 15940 15948 "gcl.ml" 474 15940 15952
+)
+"gcl.ml" 483 16300 16304 "gcl.ml" 483 16300 16334
+call(
+  tail
+)
+type(
+  unit
+)
+"gcl.ml" 474 15940 15944 "gcl.ml" 483 16300 16334
+type(
+  unit
+)
+"gcl.ml" 472 15862 15866 "gcl.ml" 483 16300 16334
+type(
+  unit
+)
+"gcl.ml" 485 16340 16342 "gcl.ml" 485 16340 16356
+type(
+  (RevCFG.V.t -> unit) -> RevCFG.t -> unit
+)
+ident(
+  ext_ref RToposort.iter
+)
+"gcl.ml" 485 16340 16357 "gcl.ml" 485 16340 16367
+type(
+  RevCFG.V.t -> unit
+)
+ident(
+  int_ref compute_at "gcl.ml" 471 15841 15847 "gcl.ml" 471 15841 15857
+)
+"gcl.ml" 485 16340 16368 "gcl.ml" 485 16340 16371
+type(
+  RevCFG.t
+)
+ident(
+  int_ref cfg "gcl.ml" 429 14389 14395 "gcl.ml" 429 14389 14398
+)
+"gcl.ml" 485 16340 16342 "gcl.ml" 485 16340 16371
+call(
+  stack
+)
+type(
+  unit
+)
+"gcl.ml" 490 16539 16541 "gcl.ml" 490 16539 16544
+type(
+  Cfg.AST.G.t
+)
+ident(
+  int_ref cfg "gcl.ml" 429 14389 14395 "gcl.ml" 429 14389 14398
+)
+"gcl.ml" 490 16539 16546 "gcl.ml" 490 16539 16553
+type(
+  t BH.t -> Cfg.BBid.t -> t
+)
+ident(
+  ext_ref BH.find
+)
+"gcl.ml" 490 16539 16554 "gcl.ml" 490 16539 16559
+type(
+  t BH.t
+)
+ident(
+  int_ref ugclh "gcl.ml" 431 14466 14472 "gcl.ml" 431 14466 14477
+)
+"gcl.ml" 490 16539 16546 "gcl.ml" 490 16539 16559
+call(
+  stack
+)
+type(
+  Cfg.BBid.t -> t
+)
+"gcl.ml" 490 16539 16541 "gcl.ml" 490 16539 16559
+type(
+  Cfg.AST.G.t * (Cfg.BBid.t -> t)
+)
+"gcl.ml" 485 16340 16342 "gcl.ml" 490 16539 16559
+type(
+  Cfg.AST.G.t * (Cfg.BBid.t -> t)
+)
+"gcl.ml" 471 15841 15843 "gcl.ml" 490 16539 16559
+type(
+  Cfg.AST.G.t * (Cfg.BBid.t -> t)
+)
+"gcl.ml" 455 15196 15198 "gcl.ml" 490 16539 16559
+type(
+  Cfg.AST.G.t * (Cfg.BBid.t -> t)
+)
+"gcl.ml" 452 15116 15118 "gcl.ml" 490 16539 16559
+type(
+  Cfg.AST.G.t * (Cfg.BBid.t -> t)
+)
+"gcl.ml" 448 15027 15029 "gcl.ml" 490 16539 16559
+type(
+  Cfg.AST.G.t * (Cfg.BBid.t -> t)
+)
+"gcl.ml" 431 14466 14468 "gcl.ml" 490 16539 16559
+type(
+  Cfg.AST.G.t * (Cfg.BBid.t -> t)
+)
+"gcl.ml" 429 14389 14391 "gcl.ml" 490 16539 16559
+type(
+  Cfg.AST.G.t * (Cfg.BBid.t -> t)
+)
+"gcl.ml" 426 14253 14255 "gcl.ml" 490 16539 16559
+type(
+  Cfg.AST.G.t * (Cfg.BBid.t -> t)
+)
+"gcl.ml" 425 14217 14219 "gcl.ml" 490 16539 16559
+type(
+  Cfg.AST.G.t * (Cfg.BBid.t -> t)
+)

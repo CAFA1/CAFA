@@ -1,0 +1,30 @@
+From 920148a28ce9383fa4985d483d4bfd8bc93c0ef1 Mon Sep 17 00:00:00 2001
+From: dirk <dirk@git.imagemagick.org>
+Date: Fri, 15 Jan 2016 01:13:19 +0100
+Subject: [PATCH] Fixed overflow in psd file handling
+
+It fix psd file handling for corrupted file. This is partial fix.
+
+Origin: upstream, https://github.com/ImageMagick/ImageMagick/commit/6f1879d498bcc5cce12fe0c5decb8dbc0f608e5d
+Bug-ubuntu: https://bugs.launchpad.net/ubuntu/+source/imagemagick/+bug/1533442
+Bug: https://github.com/ImageMagick/ImageMagick/issues/83
+Bug-debian: https://bugs.debian.org/832457
+---
+ coders/psd.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+
+Index: imagemagick-6.6.9.7/coders/psd.c
+===================================================================
+--- imagemagick-6.6.9.7.orig/coders/psd.c	2016-11-15 14:51:05.882942513 -0500
++++ imagemagick-6.6.9.7/coders/psd.c	2016-11-15 14:51:05.882942513 -0500
+@@ -1813,8 +1813,8 @@
+   compact_pixels=(unsigned char *) NULL;
+   if (next_image->compression == RLECompression)
+     {
+-      compact_pixels=(unsigned char *) AcquireQuantumMemory(2*channels*
+-        next_image->columns,packet_size*sizeof(*compact_pixels));
++      compact_pixels=(unsigned char *) AcquireQuantumMemory((2*channels*
++        next_image->columns)+1,packet_size*sizeof(*compact_pixels));
+       if (compact_pixels == (unsigned char *) NULL)
+         ThrowWriterException(ResourceLimitError,"MemoryAllocationFailed");
+     }

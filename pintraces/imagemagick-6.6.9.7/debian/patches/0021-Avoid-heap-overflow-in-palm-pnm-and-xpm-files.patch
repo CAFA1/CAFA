@@ -1,0 +1,233 @@
+Backport of:
+
+From 0a89a1ccca6e7ee059b73f5cc924513383e8a330 Mon Sep 17 00:00:00 2001
+From: cristy <cristy@aa41f4f7-0bf4-0310-aa73-e5a19afd5a74>
+Date: Sun, 30 Nov 2014 21:54:05 +0000
+Subject: [PATCH] Avoid heap overflow in palm, pnm and xpm files
+
+git-svn-id: https://subversion.imagemagick.org/subversion/ImageMagick/branches/ImageMagick-6@17140 aa41f4f7-0bf4-0310-aa73-e5a19afd5a74
+origin: http://trac.imagemagick.org/changeset/17140
+---
+ coders/palm.c | 63 ++++++++++++++++++++++++++++-------------------------------
+ coders/pnm.c  |  2 +-
+ coders/xpm.c  | 51 +++++++++++++++++++++++++----------------------
+ 3 files changed, 59 insertions(+), 57 deletions(-)
+
+Index: imagemagick-6.6.9.7/coders/palm.c
+===================================================================
+--- imagemagick-6.6.9.7.orig/coders/palm.c	2016-11-15 12:36:16.220165254 -0500
++++ imagemagick-6.6.9.7/coders/palm.c	2016-11-15 12:36:16.216165205 -0500
+@@ -186,7 +186,7 @@
+ %    o pixel: a pointer to the PixelPacket to be matched.
+ %
+ */
+-static int FindColor(PixelPacket *pixel)
++static ssize_t FindColor(PixelPacket *pixel)
+ {
+   register ssize_t
+     i;
+@@ -371,26 +371,26 @@
+             for (i=0; i < (ssize_t) count; i++)
+             {
+               ReadBlobByte(image);
+-              index=ConstrainColormapIndex(image,255-i);
+-              image->colormap[(int) index].red=
+-                ScaleCharToQuantum((unsigned char) ReadBlobByte(image));
+-              image->colormap[(int) index].green=
+-                ScaleCharToQuantum((unsigned char) ReadBlobByte(image));
+-              image->colormap[(int) index].blue=
+-                ScaleCharToQuantum((unsigned char) ReadBlobByte(image));
++              index=ConstrainColormapIndex(image,(size_t) (255-i));
++              image->colormap[(int) index].red=ScaleCharToQuantum(
++                (unsigned char) ReadBlobByte(image));
++              image->colormap[(int) index].green=ScaleCharToQuantum(
++                (unsigned char) ReadBlobByte(image));
++              image->colormap[(int) index].blue=ScaleCharToQuantum(
++                (unsigned char) ReadBlobByte(image));
+           }
+         }
+       else
+         {
+           for (i=0; i < (ssize_t) (1L << bits_per_pixel); i++)
+           {
+-            index=ConstrainColormapIndex(image,255-i);
+-            image->colormap[(int) index].red=
+-              ScaleCharToQuantum(PalmPalette[i][0]);
+-            image->colormap[(int) index].green=
+-              ScaleCharToQuantum(PalmPalette[i][1]);
+-            image->colormap[(int) index].blue=
+-              ScaleCharToQuantum(PalmPalette[i][2]);
++            index=ConstrainColormapIndex(image,(size_t) (255-i));
++            image->colormap[(int) index].red=ScaleCharToQuantum(
++              PalmPalette[i][0]);
++            image->colormap[(int) index].green=ScaleCharToQuantum(
++              PalmPalette[i][1]);
++            image->colormap[(int) index].blue=ScaleCharToQuantum(
++              PalmPalette[i][2]);
+           }
+         }
+       }
+@@ -403,18 +403,18 @@
+         image->storage_class=PseudoClass;
+         image->depth=8;
+       }
+-    one_row=(unsigned char *) AcquireQuantumMemory(bytes_per_row,
+-      sizeof(*one_row));
++    one_row=(unsigned char *) AcquireQuantumMemory(MagickMax(bytes_per_row,
++      2*image->columns),sizeof(*one_row));
+     if (one_row == (unsigned char *) NULL)
+       ThrowReaderException(ResourceLimitError,"MemoryAllocationFailed");
+     lastrow=(unsigned char *) NULL;
+     if (compressionType == PALM_COMPRESSION_SCANLINE) {
+-      lastrow=(unsigned char *) AcquireQuantumMemory(bytes_per_row,
+-        sizeof(*lastrow));
++      lastrow=(unsigned char *) AcquireQuantumMemory(MagickMax(bytes_per_row,
++        2*image->columns),sizeof(*lastrow));
+     if (lastrow == (unsigned char *) NULL)
+       ThrowReaderException(ResourceLimitError,"MemoryAllocationFailed");
+     }
+-    mask=(1l << bits_per_pixel)-1;
++    mask=(size_t) (1U << bits_per_pixel)-1;
+     for (y = 0; y < (ssize_t) image->rows; y++)
+     {
+       if ((flags & PALM_IS_COMPRESSED_FLAG) == 0)
+@@ -450,7 +450,7 @@
+               for (i=0; i < (ssize_t) bytes_per_row; i+=8)
+               {
+                 count=(ssize_t) ReadBlobByte(image);
+-                byte=1UL*MagickMin((ssize_t) bytes_per_row-i,8);
++                byte=(size_t) MagickMin((ssize_t) bytes_per_row-i,8);
+                 for (bit=0; bit < byte; bit++)
+                 {
+                   if ((y == 0) || (count & (one << (7 - bit))))
+@@ -659,9 +659,6 @@
+ static MagickBooleanType WritePALMImage(const ImageInfo *image_info,
+   Image *image)
+ {
+-  int
+-    y;
+-
+   ExceptionInfo
+     exception;
+ 
+@@ -691,6 +688,9 @@
+   register PixelPacket
+     *p;
+ 
++  ssize_t
++    y;
++
+   size_t
+     count,
+     bits_per_pixel,
+@@ -848,7 +848,7 @@
+       sizeof(*one_row));
+     if (one_row == (unsigned char *) NULL)
+       ThrowWriterException(ResourceLimitError,"MemoryAllocationFailed");
+-    for (y=0; y < (int) image->rows; y++)
++    for (y=0; y < (ssize_t) image->rows; y++)
+     {
+       ptr=one_row;
+       (void) ResetMagickMemory(ptr,0,bytes_per_row);
+@@ -858,7 +858,7 @@
+       indexes=GetAuthenticIndexQueue(image);
+       if (bits_per_pixel == 16)
+         {
+-          for (x=0; x < (int) image->columns; x++)
++          for (x=0; x < (ssize_t) image->columns; x++)
+           {
+             color16=(unsigned short) ((((31*(size_t) GetRedPixelComponent(p))/
+               (size_t) QuantumRange) << 11) |
+@@ -881,7 +881,7 @@
+         {
+           byte=0x00;
+           bit=(unsigned char) (8-bits_per_pixel);
+-          for (x=0; x < (int) image->columns; x++)
++          for (x=0; x < (ssize_t) image->columns; x++)
+           {
+             if (bits_per_pixel >= 8)
+               color=(unsigned char) GetIndexPixelComponent(indexes+x);
+Index: imagemagick-6.6.9.7/coders/xpm.c
+===================================================================
+--- imagemagick-6.6.9.7.orig/coders/xpm.c	2016-11-15 12:36:16.220165254 -0500
++++ imagemagick-6.6.9.7/coders/xpm.c	2016-11-15 12:39:11.306303109 -0500
+@@ -149,12 +149,16 @@
+   return(strcmp(p,q));
+ }
+ 
+-static char *CopyXPMColor(char *destination,const char *source,size_t length)
++static size_t CopyXPMColor(char *destination,const char *source,size_t length)
+ {
+-  while (length-- && (*source != '\0'))
+-    *destination++=(*source++);
++  register char
++    *p;
++
++  p=source;
++  while (length-- && (*p != '\0'))
++    *destination++=(*p++);
+   *destination='\0';
+-  return(destination-length);
++  return((size_t) (p-source));
+ }
+ 
+ static char *NextXPMLine(char *p)
+@@ -282,24 +286,26 @@
+   */
+   length=MaxTextExtent;
+   xpm_buffer=(char *) AcquireQuantumMemory((size_t) length,sizeof(*xpm_buffer));
++  if (xpm_buffer == (char *) NULL)
++    ThrowReaderException(ResourceLimitError,"MemoryAllocationFailed");
++  *xpm_buffer='\0';
+   p=xpm_buffer;
+-  if (xpm_buffer != (char *) NULL)
+-    while (ReadBlobString(image,p) != (char *) NULL)
+-    {
+-      if ((*p == '#') && ((p == xpm_buffer) || (*(p-1) == '\n')))
+-        continue;
+-      if ((*p == '}') && (*(p+1) == ';'))
+-        break;
+-      p+=strlen(p);
+-      if ((size_t) (p-xpm_buffer+MaxTextExtent) < length)
+-        continue;
+-      length<<=1;
+-      xpm_buffer=(char *) ResizeQuantumMemory(xpm_buffer,length+MaxTextExtent,
+-        sizeof(*xpm_buffer));
+-      if (xpm_buffer == (char *) NULL)
+-        break;
+-      p=xpm_buffer+strlen(xpm_buffer);
+-    }
++  while (ReadBlobString(image,p) != (char *) NULL)
++  {
++    if ((*p == '#') && ((p == xpm_buffer) || (*(p-1) == '\n')))
++      continue;
++    if ((*p == '}') && (*(p+1) == ';'))
++      break;
++    p+=strlen(p);
++    if ((size_t) (p-xpm_buffer+MaxTextExtent) < length)
++      continue;
++    length<<=1;
++    xpm_buffer=(char *) ResizeQuantumMemory(xpm_buffer,length+MaxTextExtent,
++      sizeof(*xpm_buffer));
++    if (xpm_buffer == (char *) NULL)
++      break;
++    p=xpm_buffer+strlen(xpm_buffer);
++  }
+   if (xpm_buffer == (char *) NULL)
+     ThrowReaderException(ResourceLimitError,"MemoryAllocationFailed");
+   /*
+@@ -403,13 +409,12 @@
+         indexes=GetAuthenticIndexQueue(image);
+         for (x=0; x < (ssize_t) image->columns; x++)
+         {
+-          (void) CopyXPMColor(key,p,(size_t) width);
++          p+=CopyXPMColor(key,p,MagickMin(width,MaxTextExtent));
+           j=(ssize_t) GetValueFromSplayTree(xpm_colors,key);
+           if (image->storage_class == PseudoClass)
+             SetIndexPixelComponent(indexes+x,j);
+           *r=image->colormap[j];
+           r++;
+-          p+=width;
+         }
+         if (SyncAuthenticPixels(image,exception) == MagickFalse)
+           break;

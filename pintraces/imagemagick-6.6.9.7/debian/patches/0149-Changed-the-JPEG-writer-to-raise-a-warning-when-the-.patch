@@ -1,0 +1,53 @@
+From cd322a425149887b597d805b651ea99c18d2b1cf Mon Sep 17 00:00:00 2001
+From: dirk <dirk@git.imagemagick.org>
+Date: Sat, 13 Aug 2016 09:06:23 +0200
+Subject: [PATCH] Changed the JPEG writer to raise a warning when the exif
+ profile exceeds 65533 bytes and truncate it.
+
+Avoid out of bound for malformed jpeg files
+
+(cherry picked from commit 9e187b73a8a1290bb0e1a1c878f8be1917aa8742)
+origin: upstream, https://github.com/ImageMagick/ImageMagick/commit/9e187b73a8a1290bb0e1a1c878f8be1917aa8742
+bug-debian: https://bugs.debian.org/834501
+---
+ coders/jpeg.c      | 11 ++++++++---
+ config/english.xml |  3 +++
+ 2 files changed, 11 insertions(+), 3 deletions(-)
+
+Index: imagemagick-6.6.9.7/coders/jpeg.c
+===================================================================
+--- imagemagick-6.6.9.7.orig/coders/jpeg.c	2016-11-15 15:59:19.616928258 -0500
++++ imagemagick-6.6.9.7/coders/jpeg.c	2016-11-15 15:59:19.608928160 -0500
+@@ -1532,10 +1532,15 @@
+     profile=GetImageProfile(image,name);
+     p=GetStringInfoDatum(custom_profile);
+     if (LocaleCompare(name,"EXIF") == 0)
+-      for (i=0; i < (ssize_t) GetStringInfoLength(profile); i+=65533L)
+       {
+-        length=MagickMin(GetStringInfoLength(profile)-i,65533L);
+-        jpeg_write_marker(jpeg_info,XML_MARKER,GetStringInfoDatum(profile)+i,
++        length=GetStringInfoLength(profile);
++        if (length > 65533L)
++          {
++            (void) ThrowMagickException(&image->exception,GetMagickModule(),
++	       CoderWarning,"ExifProfileSizeExceedsLimit","`%s'",image->filename);
++            length=65533L;
++          }
++        jpeg_write_marker(jpeg_info,XML_MARKER,GetStringInfoDatum(profile),
+           (unsigned int) length);
+       }
+     if (LocaleCompare(name,"ICC") == 0)
+Index: imagemagick-6.6.9.7/config/english.xml
+===================================================================
+--- imagemagick-6.6.9.7.orig/config/english.xml	2016-11-15 15:59:19.616928258 -0500
++++ imagemagick-6.6.9.7/config/english.xml	2016-11-15 15:59:19.612928209 -0500
+@@ -199,6 +199,9 @@
+         </message>
+       </error>
+       <warning>
++        <message name="ExifProfileSizeExceedsLimit">
++          exif profile size exceeds limit and will be truncated
++        </message>
+         <message name="LosslessToLossyJPEGConversion">
+           lossless to lossy JPEG conversion
+         </message>

@@ -1,0 +1,35 @@
+From dd1abfc84713f262fcae41185312b0592424c403 Mon Sep 17 00:00:00 2001
+From: Cristy <urban-warrior@imagemagick.org>
+Date: Thu, 18 Aug 2016 18:24:24 -0400
+Subject: [PATCH] Prevent buffer overflow in SGI coders (bug report from
+ pwchen&rayzhong of tencent)
+
+(cherry picked from commit 6230c69b475f049f4e7113f4fcf7f48a37caace2)
+bug-debian: https://bugs.debian.org/836776
+origin: upstream, https://github.com/ImageMagick/ImageMagick/commit/6230c69b475f049f4e7113f4fcf7f48a37caace2
+---
+ coders/sgi.c | 6 ++++--
+ 1 file changed, 4 insertions(+), 2 deletions(-)
+
+Index: imagemagick-6.6.9.7/coders/sgi.c
+===================================================================
+--- imagemagick-6.6.9.7.orig/coders/sgi.c	2016-11-15 15:59:48.953286464 -0500
++++ imagemagick-6.6.9.7/coders/sgi.c	2016-11-15 15:59:48.949286415 -0500
+@@ -358,13 +358,15 @@
+     image->rows=iris_info.rows;
+     image->depth=(size_t) MagickMin(iris_info.depth,MAGICKCORE_QUANTUM_DEPTH);
+     if (iris_info.pixel_format == 0)
+-      image->depth=(size_t) MagickMin((size_t) 8*
+-        iris_info.bytes_per_pixel,MAGICKCORE_QUANTUM_DEPTH);
++      image->depth=(size_t) MagickMin((size_t) 8*iris_info.bytes_per_pixel,
++        MAGICKCORE_QUANTUM_DEPTH);
+     if (iris_info.depth < 3)
+       {
+         image->storage_class=PseudoClass;
+         image->colors=iris_info.bytes_per_pixel > 1 ? 65535 : 256;
+       }
++    if (EOFBlob(image) != MagickFalse)
++      ThrowReaderException(CorruptImageError,"ImproperImageHeader");
+     if ((image_info->ping != MagickFalse)  && (image_info->number_scenes != 0))
+       if (image->scene >= (image_info->scene+image_info->number_scenes-1))
+         break;

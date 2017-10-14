@@ -1,0 +1,2252 @@
+"graphDataflowW.ml" 8 117 150 "graphDataflowW.ml" 8 117 154
+type(
+  string
+)
+ident(
+  def name "graphDataflowW.ml" 8 117 192 "graphDataflowW.ml" 8 117 196
+)
+"graphDataflowW.ml" 8 117 157 "graphDataflowW.ml" 8 117 173
+type(
+  string
+)
+"graphDataflowW.ml" 8 117 178 "graphDataflowW.ml" 8 117 185
+type(
+  [> `Debug ]
+)
+ident(
+  def default "graphDataflowW.ml" 8 117 192 "graphDataflowW.ml" 8 117 196
+)
+"graphDataflowW.ml" 8 117 186 "graphDataflowW.ml" 8 117 192
+type(
+  [> `Debug ] as 'a
+)
+"graphDataflowW.ml" 8 117 128 "graphDataflowW.ml" 8 117 197
+call(
+  stack
+)
+"graphDataflowW.ml" 98 2066 2079 "graphDataflowW.ml" 98 2066 2098
+call(
+  stack
+)
+"graphDataflowW.ml" 102 2141 2146 "graphDataflowW.ml" 102 2141 2173
+type(
+  ?init:D.L.t ->
+  ?s0:D.G.V.t ->
+  ?loop_heads:D.G.V.label list option ->
+  D.G.t -> (H.key -> D.L.t) * (H.key -> D.L.t)
+)
+ident(
+  def worklist_iterate_w_widening "graphDataflowW.ml" 200 4771 4788 "graphDataflowW.ml" 201 4789 4792
+)
+"graphDataflowW.ml" 102 2141 2176 "graphDataflowW.ml" 102 2141 2180
+type(
+  D.L.t
+)
+"graphDataflowW.ml" 102 2141 2183 "graphDataflowW.ml" 102 2141 2189
+type(
+  D.L.t
+)
+ident(
+  ext_ref D.init
+)
+type(
+  D.L.t
+)
+ident(
+  int_ref *sth* "graphDataflowW.ml" 102 2141 2183 "graphDataflowW.ml" 102 2141 2189
+)
+type(
+  D.L.t option
+)
+type(
+  D.L.t option
+)
+type(
+  D.L.t
+)
+ident(
+  def *sth* "graphDataflowW.ml" 102 2141 2183 "graphDataflowW.ml" 102 2141 2189
+)
+"graphDataflowW.ml" 102 2141 2193 "graphDataflowW.ml" 102 2141 2195
+type(
+  D.G.V.t
+)
+"graphDataflowW.ml" 102 2141 2198 "graphDataflowW.ml" 102 2141 2202
+type(
+  D.G.V.t
+)
+ident(
+  ext_ref D.s0
+)
+type(
+  D.G.V.t
+)
+ident(
+  int_ref *sth* "graphDataflowW.ml" 102 2141 2198 "graphDataflowW.ml" 102 2141 2202
+)
+type(
+  D.G.V.t option
+)
+type(
+  D.G.V.t option
+)
+type(
+  D.G.V.t
+)
+ident(
+  def *sth* "graphDataflowW.ml" 102 2141 2198 "graphDataflowW.ml" 102 2141 2202
+)
+"graphDataflowW.ml" 102 2141 2206 "graphDataflowW.ml" 102 2141 2216
+type(
+  D.G.V.label list option
+)
+"graphDataflowW.ml" 102 2141 2244 "graphDataflowW.ml" 102 2141 2248
+type(
+  D.G.V.label list option
+)
+type(
+  D.G.V.label list option
+)
+ident(
+  int_ref *sth* "graphDataflowW.ml" 102 2141 2244 "graphDataflowW.ml" 102 2141 2248
+)
+type(
+  D.G.V.label list option option
+)
+type(
+  D.G.V.label list option option
+)
+type(
+  D.G.V.label list option
+)
+ident(
+  def *sth* "graphDataflowW.ml" 102 2141 2244 "graphDataflowW.ml" 102 2141 2248
+)
+"graphDataflowW.ml" 102 2141 2250 "graphDataflowW.ml" 102 2141 2251
+type(
+  D.G.t
+)
+ident(
+  def g "graphDataflowW.ml" 103 2255 2259 "graphDataflowW.ml" 200 4771 4788
+)
+"graphDataflowW.ml" 103 2255 2263 "graphDataflowW.ml" 103 2255 2268
+type(
+  D.G.V.t list
+)
+"graphDataflowW.ml" 103 2255 2271 "graphDataflowW.ml" 103 2255 2286
+type(
+  (D.G.V.t -> D.G.V.t list -> D.G.V.t list) ->
+  D.G.t -> D.G.V.t list -> D.G.V.t list
+)
+ident(
+  ext_ref D.G.fold_vertex
+)
+"graphDataflowW.ml" 103 2255 2292 "graphDataflowW.ml" 103 2255 2293
+type(
+  D.G.V.t
+)
+ident(
+  def x "graphDataflowW.ml" 103 2255 2294 "graphDataflowW.ml" 103 2255 2307
+)
+"graphDataflowW.ml" 103 2255 2294 "graphDataflowW.ml" 103 2255 2297
+type(
+  D.G.V.t list
+)
+ident(
+  def acc "graphDataflowW.ml" 103 2255 2301 "graphDataflowW.ml" 103 2255 2307
+)
+"graphDataflowW.ml" 103 2255 2301 "graphDataflowW.ml" 103 2255 2302
+type(
+  D.G.V.t
+)
+ident(
+  int_ref x "graphDataflowW.ml" 103 2255 2292 "graphDataflowW.ml" 103 2255 2293
+)
+"graphDataflowW.ml" 103 2255 2304 "graphDataflowW.ml" 103 2255 2307
+type(
+  D.G.V.t list
+)
+ident(
+  int_ref acc "graphDataflowW.ml" 103 2255 2294 "graphDataflowW.ml" 103 2255 2297
+)
+"graphDataflowW.ml" 103 2255 2301 "graphDataflowW.ml" 103 2255 2307
+type(
+  D.G.V.t list
+)
+"graphDataflowW.ml" 103 2255 2287 "graphDataflowW.ml" 103 2255 2308
+type(
+  D.G.V.t -> D.G.V.t list -> D.G.V.t list
+)
+"graphDataflowW.ml" 103 2255 2309 "graphDataflowW.ml" 103 2255 2310
+type(
+  D.G.t
+)
+ident(
+  int_ref g "graphDataflowW.ml" 102 2141 2250 "graphDataflowW.ml" 102 2141 2251
+)
+"graphDataflowW.ml" 103 2255 2311 "graphDataflowW.ml" 103 2255 2313
+type(
+  D.G.V.t list
+)
+"graphDataflowW.ml" 103 2255 2271 "graphDataflowW.ml" 103 2255 2313
+call(
+  stack
+)
+type(
+  D.G.V.t list
+)
+"graphDataflowW.ml" 104 2317 2325 "graphDataflowW.ml" 104 2317 2328
+type(
+  D.G.V.t -> D.L.t -> D.L.t
+)
+"graphDataflowW.ml" 104 2317 2331 "graphDataflowW.ml" 104 2317 2350
+type(
+  ?cond:outset_cond_t -> D.G.t -> D.G.V.t -> D.L.t -> D.L.t
+)
+ident(
+  ext_ref D.transfer_function
+)
+"graphDataflowW.ml" 104 2317 2357 "graphDataflowW.ml" 104 2317 2364
+type(
+  outset_cond_t
+)
+"graphDataflowW.ml" 104 2317 2365 "graphDataflowW.ml" 104 2317 2366
+type(
+  D.G.t
+)
+ident(
+  int_ref g "graphDataflowW.ml" 102 2141 2250 "graphDataflowW.ml" 102 2141 2251
+)
+"graphDataflowW.ml" 104 2317 2331 "graphDataflowW.ml" 104 2317 2366
+call(
+  stack
+)
+type(
+  D.G.V.t -> D.L.t -> D.L.t
+)
+"graphDataflowW.ml" 105 2371 2379 "graphDataflowW.ml" 105 2371 2383
+type(
+  D.G.V.t -> D.G.V.t list
+)
+"graphDataflowW.ml" 105 2371 2384 "graphDataflowW.ml" 105 2371 2388
+type(
+  D.G.V.t -> D.G.V.t list
+)
+"graphDataflowW.ml" 105 2371 2379 "graphDataflowW.ml" 105 2371 2388
+type(
+  (D.G.V.t -> D.G.V.t list) * (D.G.V.t -> D.G.V.t list)
+)
+"graphDataflowW.ml" 105 2371 2397 "graphDataflowW.ml" 105 2371 2402
+type(
+  direction
+)
+ident(
+  ext_ref D.dir
+)
+"graphDataflowW.ml" 106 2408 2416 "graphDataflowW.ml" 106 2408 2423
+type(
+  direction
+)
+"graphDataflowW.ml" 107 2427 2431 "graphDataflowW.ml" 107 2427 2439
+type(
+  D.G.t -> D.G.V.t -> D.G.V.t list
+)
+ident(
+  ext_ref D.G.succ
+)
+"graphDataflowW.ml" 107 2427 2440 "graphDataflowW.ml" 107 2427 2441
+type(
+  D.G.t
+)
+ident(
+  int_ref g "graphDataflowW.ml" 102 2141 2250 "graphDataflowW.ml" 102 2141 2251
+)
+"graphDataflowW.ml" 107 2427 2431 "graphDataflowW.ml" 107 2427 2441
+call(
+  stack
+)
+type(
+  D.G.V.t -> D.G.V.t list
+)
+"graphDataflowW.ml" 107 2427 2443 "graphDataflowW.ml" 107 2427 2451
+type(
+  D.G.t -> D.G.V.t -> D.G.V.t list
+)
+ident(
+  ext_ref D.G.pred
+)
+"graphDataflowW.ml" 107 2427 2452 "graphDataflowW.ml" 107 2427 2453
+type(
+  D.G.t
+)
+ident(
+  int_ref g "graphDataflowW.ml" 102 2141 2250 "graphDataflowW.ml" 102 2141 2251
+)
+"graphDataflowW.ml" 107 2427 2443 "graphDataflowW.ml" 107 2427 2453
+call(
+  stack
+)
+type(
+  D.G.V.t -> D.G.V.t list
+)
+"graphDataflowW.ml" 107 2427 2430 "graphDataflowW.ml" 107 2427 2454
+type(
+  (D.G.V.t -> D.G.V.t list) * (D.G.V.t -> D.G.V.t list)
+)
+"graphDataflowW.ml" 108 2456 2464 "graphDataflowW.ml" 108 2456 2472
+type(
+  direction
+)
+"graphDataflowW.ml" 109 2476 2480 "graphDataflowW.ml" 109 2476 2488
+type(
+  D.G.t -> D.G.V.t -> D.G.V.t list
+)
+ident(
+  ext_ref D.G.pred
+)
+"graphDataflowW.ml" 109 2476 2489 "graphDataflowW.ml" 109 2476 2490
+type(
+  D.G.t
+)
+ident(
+  int_ref g "graphDataflowW.ml" 102 2141 2250 "graphDataflowW.ml" 102 2141 2251
+)
+"graphDataflowW.ml" 109 2476 2480 "graphDataflowW.ml" 109 2476 2490
+call(
+  stack
+)
+type(
+  D.G.V.t -> D.G.V.t list
+)
+"graphDataflowW.ml" 109 2476 2492 "graphDataflowW.ml" 109 2476 2500
+type(
+  D.G.t -> D.G.V.t -> D.G.V.t list
+)
+ident(
+  ext_ref D.G.succ
+)
+"graphDataflowW.ml" 109 2476 2501 "graphDataflowW.ml" 109 2476 2502
+type(
+  D.G.t
+)
+ident(
+  int_ref g "graphDataflowW.ml" 102 2141 2250 "graphDataflowW.ml" 102 2141 2251
+)
+"graphDataflowW.ml" 109 2476 2492 "graphDataflowW.ml" 109 2476 2502
+call(
+  stack
+)
+type(
+  D.G.V.t -> D.G.V.t list
+)
+"graphDataflowW.ml" 109 2476 2479 "graphDataflowW.ml" 109 2476 2503
+type(
+  (D.G.V.t -> D.G.V.t list) * (D.G.V.t -> D.G.V.t list)
+)
+"graphDataflowW.ml" 105 2371 2391 "graphDataflowW.ml" 109 2476 2503
+type(
+  (D.G.V.t -> D.G.V.t list) * (D.G.V.t -> D.G.V.t list)
+)
+"graphDataflowW.ml" 111 2511 2519 "graphDataflowW.ml" 111 2511 2523
+type(
+  D.L.t H.t
+)
+"graphDataflowW.ml" 111 2511 2526 "graphDataflowW.ml" 111 2511 2534
+type(
+  int -> D.L.t H.t
+)
+ident(
+  ext_ref H.create
+)
+"graphDataflowW.ml" 111 2511 2536 "graphDataflowW.ml" 111 2511 2547
+type(
+  D.G.V.t list -> int
+)
+ident(
+  ext_ref List.length
+)
+"graphDataflowW.ml" 111 2511 2548 "graphDataflowW.ml" 111 2511 2553
+type(
+  D.G.V.t list
+)
+ident(
+  int_ref nodes "graphDataflowW.ml" 103 2255 2263 "graphDataflowW.ml" 103 2255 2268
+)
+"graphDataflowW.ml" 111 2511 2535 "graphDataflowW.ml" 111 2511 2554
+call(
+  stack
+)
+type(
+  int
+)
+"graphDataflowW.ml" 111 2511 2526 "graphDataflowW.ml" 111 2511 2554
+call(
+  stack
+)
+type(
+  D.L.t H.t
+)
+"graphDataflowW.ml" 112 2558 2566 "graphDataflowW.ml" 112 2558 2570
+type(
+  H.key -> D.L.t
+)
+"graphDataflowW.ml" 112 2558 2573 "graphDataflowW.ml" 112 2558 2579
+type(
+  D.L.t H.t -> H.key -> D.L.t
+)
+ident(
+  ext_ref H.find
+)
+"graphDataflowW.ml" 112 2558 2580 "graphDataflowW.ml" 112 2558 2584
+type(
+  D.L.t H.t
+)
+ident(
+  int_ref htin "graphDataflowW.ml" 111 2511 2519 "graphDataflowW.ml" 111 2511 2523
+)
+"graphDataflowW.ml" 112 2558 2573 "graphDataflowW.ml" 112 2558 2584
+call(
+  stack
+)
+type(
+  H.key -> D.L.t
+)
+"graphDataflowW.ml" 113 2618 2626 "graphDataflowW.ml" 113 2618 2631
+type(
+  D.L.t H.t
+)
+"graphDataflowW.ml" 113 2618 2634 "graphDataflowW.ml" 113 2618 2642
+type(
+  int -> D.L.t H.t
+)
+ident(
+  ext_ref H.create
+)
+"graphDataflowW.ml" 113 2618 2644 "graphDataflowW.ml" 113 2618 2655
+type(
+  D.G.V.t list -> int
+)
+ident(
+  ext_ref List.length
+)
+"graphDataflowW.ml" 113 2618 2656 "graphDataflowW.ml" 113 2618 2661
+type(
+  D.G.V.t list
+)
+ident(
+  int_ref nodes "graphDataflowW.ml" 103 2255 2263 "graphDataflowW.ml" 103 2255 2268
+)
+"graphDataflowW.ml" 113 2618 2643 "graphDataflowW.ml" 113 2618 2662
+call(
+  stack
+)
+type(
+  int
+)
+"graphDataflowW.ml" 113 2618 2634 "graphDataflowW.ml" 113 2618 2662
+call(
+  stack
+)
+type(
+  D.L.t H.t
+)
+"graphDataflowW.ml" 114 2666 2674 "graphDataflowW.ml" 114 2666 2679
+type(
+  int H.t
+)
+"graphDataflowW.ml" 114 2666 2682 "graphDataflowW.ml" 114 2666 2690
+type(
+  int -> int H.t
+)
+ident(
+  ext_ref H.create
+)
+"graphDataflowW.ml" 114 2666 2692 "graphDataflowW.ml" 114 2666 2703
+type(
+  D.G.V.t list -> int
+)
+ident(
+  ext_ref List.length
+)
+"graphDataflowW.ml" 114 2666 2704 "graphDataflowW.ml" 114 2666 2709
+type(
+  D.G.V.t list
+)
+ident(
+  int_ref nodes "graphDataflowW.ml" 103 2255 2263 "graphDataflowW.ml" 103 2255 2268
+)
+"graphDataflowW.ml" 114 2666 2691 "graphDataflowW.ml" 114 2666 2710
+call(
+  stack
+)
+type(
+  int
+)
+"graphDataflowW.ml" 114 2666 2682 "graphDataflowW.ml" 114 2666 2710
+call(
+  stack
+)
+type(
+  int H.t
+)
+"graphDataflowW.ml" 115 2714 2722 "graphDataflowW.ml" 115 2714 2727
+type(
+  H.key -> D.L.t
+)
+"graphDataflowW.ml" 115 2714 2728 "graphDataflowW.ml" 115 2714 2729
+type(
+  H.key
+)
+ident(
+  def n "graphDataflowW.ml" 116 2732 2738 "graphDataflowW.ml" 121 2833 2837
+)
+"graphDataflowW.ml" 117 2742 2743 "graphDataflowW.ml" 117 2742 2749
+type(
+  D.L.t H.t -> H.key -> D.L.t
+)
+ident(
+  ext_ref H.find
+)
+"graphDataflowW.ml" 117 2742 2750 "graphDataflowW.ml" 117 2742 2755
+type(
+  D.L.t H.t
+)
+ident(
+  int_ref htout "graphDataflowW.ml" 113 2618 2626 "graphDataflowW.ml" 113 2618 2631
+)
+"graphDataflowW.ml" 117 2742 2756 "graphDataflowW.ml" 117 2742 2757
+type(
+  H.key
+)
+ident(
+  int_ref n "graphDataflowW.ml" 115 2714 2728 "graphDataflowW.ml" 115 2714 2729
+)
+"graphDataflowW.ml" 117 2742 2743 "graphDataflowW.ml" 117 2742 2757
+call(
+  stack
+)
+type(
+  D.L.t
+)
+"graphDataflowW.ml" 118 2758 2769 "graphDataflowW.ml" 118 2758 2778
+type(
+  exn
+)
+"graphDataflowW.ml" 119 2782 2787 "graphDataflowW.ml" 119 2782 2790
+type(
+  D.L.t
+)
+"graphDataflowW.ml" 119 2782 2794 "graphDataflowW.ml" 119 2782 2797
+type(
+  D.G.V.t -> D.L.t -> D.L.t
+)
+ident(
+  int_ref f_t "graphDataflowW.ml" 104 2317 2325 "graphDataflowW.ml" 104 2317 2328
+)
+"graphDataflowW.ml" 119 2782 2798 "graphDataflowW.ml" 119 2782 2799
+type(
+  H.key
+)
+ident(
+  int_ref n "graphDataflowW.ml" 115 2714 2728 "graphDataflowW.ml" 115 2714 2729
+)
+"graphDataflowW.ml" 119 2782 2801 "graphDataflowW.ml" 119 2782 2805
+type(
+  H.key -> D.L.t
+)
+ident(
+  int_ref dfin "graphDataflowW.ml" 112 2558 2566 "graphDataflowW.ml" 112 2558 2570
+)
+"graphDataflowW.ml" 119 2782 2806 "graphDataflowW.ml" 119 2782 2807
+type(
+  H.key
+)
+ident(
+  int_ref n "graphDataflowW.ml" 115 2714 2728 "graphDataflowW.ml" 115 2714 2729
+)
+"graphDataflowW.ml" 119 2782 2800 "graphDataflowW.ml" 119 2782 2808
+call(
+  stack
+)
+type(
+  D.L.t
+)
+"graphDataflowW.ml" 119 2782 2793 "graphDataflowW.ml" 119 2782 2809
+call(
+  stack
+)
+type(
+  D.L.t
+)
+"graphDataflowW.ml" 120 2813 2814 "graphDataflowW.ml" 120 2813 2819
+type(
+  D.L.t H.t -> H.key -> D.L.t -> unit
+)
+ident(
+  ext_ref H.add
+)
+"graphDataflowW.ml" 120 2813 2820 "graphDataflowW.ml" 120 2813 2825
+type(
+  D.L.t H.t
+)
+ident(
+  int_ref htout "graphDataflowW.ml" 113 2618 2626 "graphDataflowW.ml" 113 2618 2631
+)
+"graphDataflowW.ml" 120 2813 2826 "graphDataflowW.ml" 120 2813 2827
+type(
+  H.key
+)
+ident(
+  int_ref n "graphDataflowW.ml" 115 2714 2728 "graphDataflowW.ml" 115 2714 2729
+)
+"graphDataflowW.ml" 120 2813 2828 "graphDataflowW.ml" 120 2813 2831
+type(
+  D.L.t
+)
+ident(
+  int_ref out "graphDataflowW.ml" 119 2782 2787 "graphDataflowW.ml" 119 2782 2790
+)
+"graphDataflowW.ml" 120 2813 2814 "graphDataflowW.ml" 120 2813 2831
+call(
+  stack
+)
+type(
+  unit
+)
+"graphDataflowW.ml" 121 2833 2834 "graphDataflowW.ml" 121 2833 2837
+type(
+  D.L.t
+)
+ident(
+  int_ref out "graphDataflowW.ml" 119 2782 2787 "graphDataflowW.ml" 119 2782 2790
+)
+"graphDataflowW.ml" 120 2813 2814 "graphDataflowW.ml" 121 2833 2837
+type(
+  D.L.t
+)
+"graphDataflowW.ml" 119 2782 2783 "graphDataflowW.ml" 121 2833 2837
+type(
+  D.L.t
+)
+"graphDataflowW.ml" 116 2732 2738 "graphDataflowW.ml" 121 2833 2837
+type(
+  D.L.t
+)
+"graphDataflowW.ml" 123 2845 2853 "graphDataflowW.ml" 123 2845 2862
+type(
+  H.key -> D.L.t
+)
+"graphDataflowW.ml" 123 2845 2863 "graphDataflowW.ml" 123 2845 2864
+type(
+  H.key
+)
+ident(
+  def b "graphDataflowW.ml" 124 2867 2873 "graphDataflowW.ml" 124 2867 2881
+)
+"graphDataflowW.ml" 124 2867 2874 "graphDataflowW.ml" 124 2867 2878
+type(
+  H.key -> D.L.t
+)
+ident(
+  int_ref dfin "graphDataflowW.ml" 112 2558 2566 "graphDataflowW.ml" 112 2558 2570
+)
+"graphDataflowW.ml" 124 2867 2879 "graphDataflowW.ml" 124 2867 2880
+type(
+  H.key
+)
+ident(
+  int_ref b "graphDataflowW.ml" 123 2845 2863 "graphDataflowW.ml" 123 2845 2864
+)
+"graphDataflowW.ml" 124 2867 2873 "graphDataflowW.ml" 124 2867 2881
+call(
+  tail
+)
+type(
+  D.L.t
+)
+"graphDataflowW.ml" 127 2950 2958 "graphDataflowW.ml" 127 2950 2966
+type(
+  (D.G.V.label, unit) LH.t
+)
+"graphDataflowW.ml" 127 2950 2969 "graphDataflowW.ml" 127 2950 2978
+type(
+  int -> (D.G.V.label, unit) LH.t
+)
+ident(
+  ext_ref LH.create
+)
+"graphDataflowW.ml" 127 2950 2980 "graphDataflowW.ml" 127 2950 2991
+type(
+  D.G.V.t list -> int
+)
+ident(
+  ext_ref List.length
+)
+"graphDataflowW.ml" 127 2950 2992 "graphDataflowW.ml" 127 2950 2997
+type(
+  D.G.V.t list
+)
+ident(
+  int_ref nodes "graphDataflowW.ml" 103 2255 2263 "graphDataflowW.ml" 103 2255 2268
+)
+"graphDataflowW.ml" 127 2950 2979 "graphDataflowW.ml" 127 2950 2998
+call(
+  stack
+)
+type(
+  int
+)
+"graphDataflowW.ml" 127 2950 2969 "graphDataflowW.ml" 127 2950 2998
+call(
+  stack
+)
+type(
+  (D.G.V.label, unit) LH.t
+)
+"graphDataflowW.ml" 129 3003 3011 "graphDataflowW.ml" 129 3003 3025
+type(
+  D.G.t -> unit
+)
+"graphDataflowW.ml" 129 3003 3026 "graphDataflowW.ml" 129 3003 3027
+type(
+  D.G.t
+)
+ident(
+  def g "graphDataflowW.ml" 130 3031 3037 "graphDataflowW.ml" 148 3555 3567
+)
+"graphDataflowW.ml" 130 3031 3054 "graphDataflowW.ml" 130 3031 3077
+call(
+  stack
+)
+"graphDataflowW.ml" 131 3081 3091 "graphDataflowW.ml" 131 3081 3096
+type(
+  int ref
+)
+ident(
+  def count "graphDataflowW.ml" 132 3129 3135 "graphDataflowW.ml" 148 3555 3567
+)
+"graphDataflowW.ml" 131 3081 3099 "graphDataflowW.ml" 131 3081 3102
+type(
+  int -> int ref
+)
+ident(
+  ext_ref Pervasives.ref
+)
+"graphDataflowW.ml" 131 3081 3105 "graphDataflowW.ml" 131 3081 3116
+type(
+  D.G.V.t list -> int
+)
+ident(
+  ext_ref List.length
+)
+"graphDataflowW.ml" 131 3081 3117 "graphDataflowW.ml" 131 3081 3122
+type(
+  D.G.V.t list
+)
+ident(
+  int_ref nodes "graphDataflowW.ml" 103 2255 2263 "graphDataflowW.ml" 103 2255 2268
+)
+"graphDataflowW.ml" 131 3081 3102 "graphDataflowW.ml" 131 3081 3125
+call(
+  stack
+)
+type(
+  int
+)
+"graphDataflowW.ml" 131 3081 3099 "graphDataflowW.ml" 131 3081 3125
+type(
+  int ref
+)
+"graphDataflowW.ml" 132 3129 3139 "graphDataflowW.ml" 132 3129 3147
+type(
+  int H.t
+)
+ident(
+  def post_num "graphDataflowW.ml" 133 3182 3188 "graphDataflowW.ml" 148 3555 3567
+)
+"graphDataflowW.ml" 132 3129 3150 "graphDataflowW.ml" 132 3129 3158
+type(
+  int -> int H.t
+)
+ident(
+  ext_ref H.create
+)
+"graphDataflowW.ml" 132 3129 3160 "graphDataflowW.ml" 132 3129 3171
+type(
+  D.G.V.t list -> int
+)
+ident(
+  ext_ref List.length
+)
+"graphDataflowW.ml" 132 3129 3172 "graphDataflowW.ml" 132 3129 3177
+type(
+  D.G.V.t list
+)
+ident(
+  int_ref nodes "graphDataflowW.ml" 103 2255 2263 "graphDataflowW.ml" 103 2255 2268
+)
+"graphDataflowW.ml" 132 3129 3159 "graphDataflowW.ml" 132 3129 3178
+call(
+  stack
+)
+type(
+  int
+)
+"graphDataflowW.ml" 132 3129 3150 "graphDataflowW.ml" 132 3129 3178
+call(
+  stack
+)
+type(
+  int H.t
+)
+"graphDataflowW.ml" 133 3182 3192 "graphDataflowW.ml" 133 3182 3193
+type(
+  unit
+)
+"graphDataflowW.ml" 133 3182 3196 "graphDataflowW.ml" 133 3182 3217
+type(
+  (D.G.V.t -> unit) -> D.G.t -> D.G.V.t -> unit
+)
+ident(
+  ext_ref DFS.postfix_component
+)
+"graphDataflowW.ml" 133 3182 3223 "graphDataflowW.ml" 133 3182 3224
+type(
+  D.G.V.t
+)
+ident(
+  def v "graphDataflowW.ml" 134 3228 3229 "graphDataflowW.ml" 137 3304 3314
+)
+"graphDataflowW.ml" 134 3228 3232 "graphDataflowW.ml" 134 3228 3235
+type(
+  bool -> bool
+)
+ident(
+  ext_ref Pervasives.not
+)
+"graphDataflowW.ml" 134 3228 3237 "graphDataflowW.ml" 134 3228 3242
+type(
+  int H.t -> H.key -> bool
+)
+ident(
+  ext_ref H.mem
+)
+"graphDataflowW.ml" 134 3228 3243 "graphDataflowW.ml" 134 3228 3251
+type(
+  int H.t
+)
+ident(
+  int_ref post_num "graphDataflowW.ml" 132 3129 3139 "graphDataflowW.ml" 132 3129 3147
+)
+"graphDataflowW.ml" 134 3228 3252 "graphDataflowW.ml" 134 3228 3253
+type(
+  D.G.V.t
+)
+ident(
+  int_ref v "graphDataflowW.ml" 133 3182 3223 "graphDataflowW.ml" 133 3182 3224
+)
+"graphDataflowW.ml" 134 3228 3236 "graphDataflowW.ml" 134 3228 3254
+call(
+  stack
+)
+type(
+  bool
+)
+"graphDataflowW.ml" 134 3228 3232 "graphDataflowW.ml" 134 3228 3254
+type(
+  bool
+)
+"graphDataflowW.ml" 135 3262 3265 "graphDataflowW.ml" 135 3262 3270
+type(
+  int H.t -> H.key -> int -> unit
+)
+ident(
+  ext_ref H.add
+)
+"graphDataflowW.ml" 135 3262 3271 "graphDataflowW.ml" 135 3262 3279
+type(
+  int H.t
+)
+ident(
+  int_ref post_num "graphDataflowW.ml" 132 3129 3139 "graphDataflowW.ml" 132 3129 3147
+)
+"graphDataflowW.ml" 135 3262 3280 "graphDataflowW.ml" 135 3262 3281
+type(
+  D.G.V.t
+)
+ident(
+  int_ref v "graphDataflowW.ml" 133 3182 3223 "graphDataflowW.ml" 133 3182 3224
+)
+"graphDataflowW.ml" 135 3262 3282 "graphDataflowW.ml" 135 3262 3283
+type(
+  int ref -> int
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"graphDataflowW.ml" 135 3262 3283 "graphDataflowW.ml" 135 3262 3288
+type(
+  int ref
+)
+ident(
+  int_ref count "graphDataflowW.ml" 131 3081 3091 "graphDataflowW.ml" 131 3081 3096
+)
+"graphDataflowW.ml" 135 3262 3282 "graphDataflowW.ml" 135 3262 3288
+type(
+  int
+)
+"graphDataflowW.ml" 135 3262 3265 "graphDataflowW.ml" 135 3262 3288
+call(
+  stack
+)
+type(
+  unit
+)
+"graphDataflowW.ml" 136 3290 3293 "graphDataflowW.ml" 136 3290 3297
+type(
+  int ref -> unit
+)
+ident(
+  ext_ref Pervasives.decr
+)
+"graphDataflowW.ml" 136 3290 3298 "graphDataflowW.ml" 136 3290 3303
+type(
+  int ref
+)
+ident(
+  int_ref count "graphDataflowW.ml" 131 3081 3091 "graphDataflowW.ml" 131 3081 3096
+)
+"graphDataflowW.ml" 136 3290 3293 "graphDataflowW.ml" 136 3290 3303
+type(
+  unit
+)
+"graphDataflowW.ml" 134 3228 3260 "graphDataflowW.ml" 137 3304 3306
+type(
+  unit
+)
+"graphDataflowW.ml" 137 3304 3312 "graphDataflowW.ml" 137 3304 3314
+type(
+  unit
+)
+"graphDataflowW.ml" 134 3228 3229 "graphDataflowW.ml" 137 3304 3314
+type(
+  unit
+)
+"graphDataflowW.ml" 133 3182 3218 "graphDataflowW.ml" 138 3316 3323
+type(
+  D.G.V.t -> unit
+)
+"graphDataflowW.ml" 138 3316 3324 "graphDataflowW.ml" 138 3316 3325
+type(
+  D.G.t
+)
+ident(
+  int_ref g "graphDataflowW.ml" 129 3003 3026 "graphDataflowW.ml" 129 3003 3027
+)
+"graphDataflowW.ml" 138 3316 3326 "graphDataflowW.ml" 138 3316 3328
+type(
+  D.G.V.t
+)
+ident(
+  int_ref s0 "graphDataflowW.ml" 102 2141 2193 "graphDataflowW.ml" 102 2141 2195
+)
+"graphDataflowW.ml" 133 3182 3196 "graphDataflowW.ml" 138 3316 3328
+call(
+  stack
+)
+type(
+  unit
+)
+"graphDataflowW.ml" 140 3338 3344 "graphDataflowW.ml" 140 3338 3364
+type(
+  (D.G.V.t -> unit) -> D.G.t -> D.G.V.t -> unit
+)
+ident(
+  ext_ref DFS.prefix_component
+)
+"graphDataflowW.ml" 140 3338 3370 "graphDataflowW.ml" 140 3338 3371
+type(
+  D.G.V.t
+)
+ident(
+  def p "graphDataflowW.ml" 141 3375 3376 "graphDataflowW.ml" 147 3547 3553
+)
+"graphDataflowW.ml" 141 3375 3376 "graphDataflowW.ml" 141 3375 3389
+type(
+  (D.G.V.t -> unit) -> D.G.t -> D.G.V.t -> unit
+)
+ident(
+  ext_ref D.G.iter_succ
+)
+"graphDataflowW.ml" 141 3375 3395 "graphDataflowW.ml" 141 3375 3396
+type(
+  D.G.V.t
+)
+ident(
+  def v "graphDataflowW.ml" 142 3400 3403 "graphDataflowW.ml" 146 3534 3546
+)
+"graphDataflowW.ml" 142 3400 3407 "graphDataflowW.ml" 142 3400 3410
+type(
+  int
+)
+"graphDataflowW.ml" 142 3400 3413 "graphDataflowW.ml" 142 3400 3419
+type(
+  int H.t -> H.key -> int
+)
+ident(
+  ext_ref H.find
+)
+"graphDataflowW.ml" 142 3400 3420 "graphDataflowW.ml" 142 3400 3428
+type(
+  int H.t
+)
+ident(
+  int_ref post_num "graphDataflowW.ml" 132 3129 3139 "graphDataflowW.ml" 132 3129 3147
+)
+"graphDataflowW.ml" 142 3400 3429 "graphDataflowW.ml" 142 3400 3430
+type(
+  D.G.V.t
+)
+ident(
+  int_ref p "graphDataflowW.ml" 140 3338 3370 "graphDataflowW.ml" 140 3338 3371
+)
+"graphDataflowW.ml" 142 3400 3413 "graphDataflowW.ml" 142 3400 3430
+call(
+  stack
+)
+type(
+  int
+)
+"graphDataflowW.ml" 143 3434 3441 "graphDataflowW.ml" 143 3434 3444
+type(
+  int
+)
+"graphDataflowW.ml" 143 3434 3447 "graphDataflowW.ml" 143 3434 3453
+type(
+  int H.t -> H.key -> int
+)
+ident(
+  ext_ref H.find
+)
+"graphDataflowW.ml" 143 3434 3454 "graphDataflowW.ml" 143 3434 3462
+type(
+  int H.t
+)
+ident(
+  int_ref post_num "graphDataflowW.ml" 132 3129 3139 "graphDataflowW.ml" 132 3129 3147
+)
+"graphDataflowW.ml" 143 3434 3463 "graphDataflowW.ml" 143 3434 3464
+type(
+  D.G.V.t
+)
+ident(
+  int_ref v "graphDataflowW.ml" 141 3375 3395 "graphDataflowW.ml" 141 3375 3396
+)
+"graphDataflowW.ml" 143 3434 3447 "graphDataflowW.ml" 143 3434 3464
+call(
+  stack
+)
+type(
+  int
+)
+"graphDataflowW.ml" 144 3469 3475 "graphDataflowW.ml" 144 3469 3478
+type(
+  int
+)
+ident(
+  int_ref n_v "graphDataflowW.ml" 143 3434 3441 "graphDataflowW.ml" 143 3434 3444
+)
+"graphDataflowW.ml" 144 3469 3479 "graphDataflowW.ml" 144 3469 3481
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( <= )
+)
+"graphDataflowW.ml" 144 3469 3482 "graphDataflowW.ml" 144 3469 3485
+type(
+  int
+)
+ident(
+  int_ref n_p "graphDataflowW.ml" 142 3400 3407 "graphDataflowW.ml" 142 3400 3410
+)
+"graphDataflowW.ml" 144 3469 3475 "graphDataflowW.ml" 144 3469 3485
+type(
+  bool
+)
+"graphDataflowW.ml" 145 3493 3498 "graphDataflowW.ml" 145 3493 3504
+type(
+  (D.G.V.label, unit) LH.t -> D.G.V.label -> unit -> unit
+)
+ident(
+  ext_ref LH.add
+)
+"graphDataflowW.ml" 145 3493 3505 "graphDataflowW.ml" 145 3493 3513
+type(
+  (D.G.V.label, unit) LH.t
+)
+ident(
+  int_ref loophead "graphDataflowW.ml" 127 2950 2958 "graphDataflowW.ml" 127 2950 2966
+)
+"graphDataflowW.ml" 145 3493 3515 "graphDataflowW.ml" 145 3493 3526
+type(
+  D.G.V.t -> D.G.V.label
+)
+ident(
+  ext_ref D.G.V.label
+)
+"graphDataflowW.ml" 145 3493 3527 "graphDataflowW.ml" 145 3493 3528
+type(
+  D.G.V.t
+)
+ident(
+  int_ref v "graphDataflowW.ml" 141 3375 3395 "graphDataflowW.ml" 141 3375 3396
+)
+"graphDataflowW.ml" 145 3493 3514 "graphDataflowW.ml" 145 3493 3529
+call(
+  stack
+)
+type(
+  D.G.V.label
+)
+"graphDataflowW.ml" 145 3493 3530 "graphDataflowW.ml" 145 3493 3532
+type(
+  unit
+)
+"graphDataflowW.ml" 144 3469 3491 "graphDataflowW.ml" 146 3534 3538
+call(
+  tail
+)
+type(
+  unit
+)
+"graphDataflowW.ml" 146 3534 3544 "graphDataflowW.ml" 146 3534 3546
+type(
+  unit
+)
+"graphDataflowW.ml" 144 3469 3472 "graphDataflowW.ml" 146 3534 3546
+type(
+  unit
+)
+"graphDataflowW.ml" 143 3434 3437 "graphDataflowW.ml" 146 3534 3546
+type(
+  unit
+)
+"graphDataflowW.ml" 142 3400 3403 "graphDataflowW.ml" 146 3534 3546
+type(
+  unit
+)
+"graphDataflowW.ml" 141 3375 3390 "graphDataflowW.ml" 147 3547 3549
+type(
+  D.G.V.t -> unit
+)
+"graphDataflowW.ml" 147 3547 3550 "graphDataflowW.ml" 147 3547 3551
+type(
+  D.G.t
+)
+ident(
+  int_ref g "graphDataflowW.ml" 129 3003 3026 "graphDataflowW.ml" 129 3003 3027
+)
+"graphDataflowW.ml" 147 3547 3552 "graphDataflowW.ml" 147 3547 3553
+type(
+  D.G.V.t
+)
+ident(
+  int_ref p "graphDataflowW.ml" 140 3338 3370 "graphDataflowW.ml" 140 3338 3371
+)
+"graphDataflowW.ml" 141 3375 3376 "graphDataflowW.ml" 147 3547 3553
+call(
+  tail
+)
+type(
+  unit
+)
+"graphDataflowW.ml" 140 3338 3365 "graphDataflowW.ml" 148 3555 3562
+type(
+  D.G.V.t -> unit
+)
+"graphDataflowW.ml" 148 3555 3563 "graphDataflowW.ml" 148 3555 3564
+type(
+  D.G.t
+)
+ident(
+  int_ref g "graphDataflowW.ml" 129 3003 3026 "graphDataflowW.ml" 129 3003 3027
+)
+"graphDataflowW.ml" 148 3555 3565 "graphDataflowW.ml" 148 3555 3567
+type(
+  D.G.V.t
+)
+ident(
+  int_ref s0 "graphDataflowW.ml" 102 2141 2193 "graphDataflowW.ml" 102 2141 2195
+)
+"graphDataflowW.ml" 140 3338 3344 "graphDataflowW.ml" 148 3555 3567
+call(
+  tail
+)
+type(
+  unit
+)
+"graphDataflowW.ml" 133 3182 3188 "graphDataflowW.ml" 148 3555 3567
+type(
+  unit
+)
+"graphDataflowW.ml" 132 3129 3135 "graphDataflowW.ml" 148 3555 3567
+type(
+  unit
+)
+"graphDataflowW.ml" 131 3081 3087 "graphDataflowW.ml" 148 3555 3567
+type(
+  unit
+)
+"graphDataflowW.ml" 130 3031 3037 "graphDataflowW.ml" 148 3555 3567
+type(
+  unit
+)
+"graphDataflowW.ml" 151 3576 3584 "graphDataflowW.ml" 151 3576 3585
+type(
+  unit
+)
+"graphDataflowW.ml" 152 3588 3600 "graphDataflowW.ml" 152 3588 3610
+type(
+  D.G.V.label list option
+)
+ident(
+  int_ref loop_heads "graphDataflowW.ml" 102 2141 2206 "graphDataflowW.ml" 102 2141 2216
+)
+"graphDataflowW.ml" 153 3616 3629 "graphDataflowW.ml" 153 3616 3631
+type(
+  D.G.V.label list
+)
+ident(
+  def lh "graphDataflowW.ml" 154 3635 3640 "graphDataflowW.ml" 155 3688 3691
+)
+"graphDataflowW.ml" 153 3616 3624 "graphDataflowW.ml" 153 3616 3631
+type(
+  D.G.V.label list option
+)
+"graphDataflowW.ml" 154 3635 3640 "graphDataflowW.ml" 154 3635 3649
+type(
+  (D.G.V.label -> unit) -> D.G.V.label list -> unit
+)
+ident(
+  ext_ref List.iter
+)
+"graphDataflowW.ml" 154 3635 3655 "graphDataflowW.ml" 154 3635 3656
+type(
+  D.G.V.label
+)
+ident(
+  def x "graphDataflowW.ml" 154 3635 3660 "graphDataflowW.ml" 154 3635 3680
+)
+"graphDataflowW.ml" 154 3635 3660 "graphDataflowW.ml" 154 3635 3666
+type(
+  (D.G.V.label, unit) LH.t -> D.G.V.label -> unit -> unit
+)
+ident(
+  ext_ref LH.add
+)
+"graphDataflowW.ml" 154 3635 3667 "graphDataflowW.ml" 154 3635 3675
+type(
+  (D.G.V.label, unit) LH.t
+)
+ident(
+  int_ref loophead "graphDataflowW.ml" 127 2950 2958 "graphDataflowW.ml" 127 2950 2966
+)
+"graphDataflowW.ml" 154 3635 3676 "graphDataflowW.ml" 154 3635 3677
+type(
+  D.G.V.label
+)
+ident(
+  int_ref x "graphDataflowW.ml" 154 3635 3655 "graphDataflowW.ml" 154 3635 3656
+)
+"graphDataflowW.ml" 154 3635 3678 "graphDataflowW.ml" 154 3635 3680
+type(
+  unit
+)
+"graphDataflowW.ml" 154 3635 3660 "graphDataflowW.ml" 154 3635 3680
+call(
+  tail
+)
+type(
+  unit
+)
+"graphDataflowW.ml" 154 3635 3650 "graphDataflowW.ml" 154 3635 3682
+type(
+  D.G.V.label -> unit
+)
+"graphDataflowW.ml" 154 3635 3683 "graphDataflowW.ml" 154 3635 3685
+type(
+  D.G.V.label list
+)
+ident(
+  int_ref lh "graphDataflowW.ml" 153 3616 3629 "graphDataflowW.ml" 153 3616 3631
+)
+"graphDataflowW.ml" 154 3635 3640 "graphDataflowW.ml" 154 3635 3685
+call(
+  stack
+)
+type(
+  unit
+)
+"graphDataflowW.ml" 155 3688 3689 "graphDataflowW.ml" 155 3688 3691
+type(
+  unit
+)
+"graphDataflowW.ml" 154 3635 3640 "graphDataflowW.ml" 155 3688 3691
+type(
+  unit
+)
+"graphDataflowW.ml" 156 3692 3700 "graphDataflowW.ml" 156 3692 3704
+type(
+  D.G.V.label list option
+)
+"graphDataflowW.ml" 157 3708 3715 "graphDataflowW.ml" 157 3708 3729
+type(
+  D.G.t -> unit
+)
+ident(
+  int_ref find_loopheads "graphDataflowW.ml" 129 3003 3011 "graphDataflowW.ml" 129 3003 3025
+)
+"graphDataflowW.ml" 157 3708 3730 "graphDataflowW.ml" 157 3708 3731
+type(
+  D.G.t
+)
+ident(
+  int_ref g "graphDataflowW.ml" 102 2141 2250 "graphDataflowW.ml" 102 2141 2251
+)
+"graphDataflowW.ml" 157 3708 3715 "graphDataflowW.ml" 157 3708 3731
+call(
+  stack
+)
+type(
+  unit
+)
+"graphDataflowW.ml" 152 3588 3594 "graphDataflowW.ml" 157 3708 3731
+type(
+  unit
+)
+"graphDataflowW.ml" 160 3741 3749 "graphDataflowW.ml" 160 3741 3759
+type(
+  H.key -> D.L.t -> D.L.t -> D.L.t
+)
+"graphDataflowW.ml" 160 3741 3760 "graphDataflowW.ml" 160 3741 3761
+type(
+  H.key
+)
+ident(
+  def b "graphDataflowW.ml" 160 3741 3762 "graphDataflowW.ml" 171 4024 4050
+)
+"graphDataflowW.ml" 160 3741 3762 "graphDataflowW.ml" 160 3741 3769
+type(
+  D.L.t
+)
+ident(
+  def c_oldin "graphDataflowW.ml" 160 3741 3770 "graphDataflowW.ml" 171 4024 4050
+)
+"graphDataflowW.ml" 160 3741 3770 "graphDataflowW.ml" 160 3741 3778
+type(
+  D.L.t
+)
+ident(
+  def c_outset "graphDataflowW.ml" 161 3781 3787 "graphDataflowW.ml" 171 4024 4050
+)
+"graphDataflowW.ml" 161 3781 3791 "graphDataflowW.ml" 161 3781 3802
+type(
+  int
+)
+"graphDataflowW.ml" 163 3816 3825 "graphDataflowW.ml" 163 3816 3831
+type(
+  int H.t -> H.key -> int
+)
+ident(
+  ext_ref H.find
+)
+"graphDataflowW.ml" 163 3816 3832 "graphDataflowW.ml" 163 3816 3837
+type(
+  int H.t
+)
+ident(
+  int_ref count "graphDataflowW.ml" 114 2666 2674 "graphDataflowW.ml" 114 2666 2679
+)
+"graphDataflowW.ml" 163 3816 3838 "graphDataflowW.ml" 163 3816 3839
+type(
+  H.key
+)
+ident(
+  int_ref b "graphDataflowW.ml" 160 3741 3760 "graphDataflowW.ml" 160 3741 3761
+)
+"graphDataflowW.ml" 163 3816 3825 "graphDataflowW.ml" 163 3816 3839
+call(
+  stack
+)
+type(
+  int
+)
+"graphDataflowW.ml" 164 3840 3852 "graphDataflowW.ml" 164 3840 3861
+type(
+  exn
+)
+"graphDataflowW.ml" 165 3865 3874 "graphDataflowW.ml" 165 3865 3875
+type(
+  int
+)
+"graphDataflowW.ml" 162 3805 3812 "graphDataflowW.ml" 165 3865 3875
+type(
+  int
+)
+"graphDataflowW.ml" 167 3885 3895 "graphDataflowW.ml" 167 3885 3897
+type(
+  unit
+)
+"graphDataflowW.ml" 167 3885 3900 "graphDataflowW.ml" 167 3885 3909
+type(
+  int H.t -> H.key -> int -> unit
+)
+ident(
+  ext_ref H.replace
+)
+"graphDataflowW.ml" 167 3885 3910 "graphDataflowW.ml" 167 3885 3915
+type(
+  int H.t
+)
+ident(
+  int_ref count "graphDataflowW.ml" 114 2666 2674 "graphDataflowW.ml" 114 2666 2679
+)
+"graphDataflowW.ml" 167 3885 3916 "graphDataflowW.ml" 167 3885 3917
+type(
+  H.key
+)
+ident(
+  int_ref b "graphDataflowW.ml" 160 3741 3760 "graphDataflowW.ml" 160 3741 3761
+)
+"graphDataflowW.ml" 167 3885 3919 "graphDataflowW.ml" 167 3885 3930
+type(
+  int
+)
+ident(
+  int_ref visit_count "graphDataflowW.ml" 161 3781 3791 "graphDataflowW.ml" 161 3781 3802
+)
+"graphDataflowW.ml" 167 3885 3931 "graphDataflowW.ml" 167 3885 3932
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( + )
+)
+"graphDataflowW.ml" 167 3885 3933 "graphDataflowW.ml" 167 3885 3934
+type(
+  int
+)
+"graphDataflowW.ml" 167 3885 3918 "graphDataflowW.ml" 167 3885 3935
+type(
+  int
+)
+"graphDataflowW.ml" 167 3885 3900 "graphDataflowW.ml" 167 3885 3935
+call(
+  stack
+)
+type(
+  unit
+)
+"graphDataflowW.ml" 168 3939 3948 "graphDataflowW.ml" 168 3939 3954
+type(
+  (D.G.V.label, unit) LH.t -> D.G.V.label -> bool
+)
+ident(
+  ext_ref LH.mem
+)
+"graphDataflowW.ml" 168 3939 3955 "graphDataflowW.ml" 168 3939 3963
+type(
+  (D.G.V.label, unit) LH.t
+)
+ident(
+  int_ref loophead "graphDataflowW.ml" 127 2950 2958 "graphDataflowW.ml" 127 2950 2966
+)
+"graphDataflowW.ml" 168 3939 3965 "graphDataflowW.ml" 168 3939 3976
+type(
+  D.G.V.t -> D.G.V.label
+)
+ident(
+  ext_ref D.G.V.label
+)
+"graphDataflowW.ml" 168 3939 3977 "graphDataflowW.ml" 168 3939 3978
+type(
+  H.key
+)
+ident(
+  int_ref b "graphDataflowW.ml" 160 3741 3760 "graphDataflowW.ml" 160 3741 3761
+)
+"graphDataflowW.ml" 168 3939 3964 "graphDataflowW.ml" 168 3939 3979
+call(
+  stack
+)
+type(
+  D.G.V.label
+)
+"graphDataflowW.ml" 168 3939 3948 "graphDataflowW.ml" 168 3939 3979
+call(
+  stack
+)
+type(
+  bool
+)
+"graphDataflowW.ml" 169 3985 3986 "graphDataflowW.ml" 169 3985 3995
+type(
+  D.L.t -> D.L.t -> D.L.t
+)
+ident(
+  ext_ref D.L.widen
+)
+"graphDataflowW.ml" 169 3985 3996 "graphDataflowW.ml" 169 3985 4003
+type(
+  D.L.t
+)
+ident(
+  int_ref c_oldin "graphDataflowW.ml" 160 3741 3762 "graphDataflowW.ml" 160 3741 3769
+)
+"graphDataflowW.ml" 169 3985 4004 "graphDataflowW.ml" 169 3985 4012
+type(
+  D.L.t
+)
+ident(
+  int_ref c_outset "graphDataflowW.ml" 160 3741 3770 "graphDataflowW.ml" 160 3741 3778
+)
+"graphDataflowW.ml" 169 3985 3986 "graphDataflowW.ml" 169 3985 4012
+call(
+  tail
+)
+type(
+  D.L.t
+)
+"graphDataflowW.ml" 171 4024 4025 "graphDataflowW.ml" 171 4024 4033
+type(
+  D.L.t -> D.L.t -> D.L.t
+)
+ident(
+  ext_ref D.L.meet
+)
+"graphDataflowW.ml" 171 4024 4034 "graphDataflowW.ml" 171 4024 4041
+type(
+  D.L.t
+)
+ident(
+  int_ref c_oldin "graphDataflowW.ml" 160 3741 3762 "graphDataflowW.ml" 160 3741 3769
+)
+"graphDataflowW.ml" 171 4024 4042 "graphDataflowW.ml" 171 4024 4050
+type(
+  D.L.t
+)
+ident(
+  int_ref c_outset "graphDataflowW.ml" 160 3741 3770 "graphDataflowW.ml" 160 3741 3778
+)
+"graphDataflowW.ml" 171 4024 4025 "graphDataflowW.ml" 171 4024 4050
+call(
+  tail
+)
+type(
+  D.L.t
+)
+"graphDataflowW.ml" 168 3939 3945 "graphDataflowW.ml" 171 4024 4050
+type(
+  D.L.t
+)
+"graphDataflowW.ml" 167 3885 3891 "graphDataflowW.ml" 171 4024 4050
+type(
+  D.L.t
+)
+"graphDataflowW.ml" 161 3781 3787 "graphDataflowW.ml" 171 4024 4050
+type(
+  D.L.t
+)
+"graphDataflowW.ml" 173 4058 4062 "graphDataflowW.ml" 173 4058 4071
+type(
+  (H.key -> unit) -> H.key list -> unit
+)
+ident(
+  ext_ref List.iter
+)
+"graphDataflowW.ml" 173 4058 4077 "graphDataflowW.ml" 173 4058 4078
+type(
+  H.key
+)
+ident(
+  def n "graphDataflowW.ml" 173 4058 4082 "graphDataflowW.ml" 173 4058 4102
+)
+"graphDataflowW.ml" 173 4058 4082 "graphDataflowW.ml" 173 4058 4087
+type(
+  D.L.t H.t -> H.key -> D.L.t -> unit
+)
+ident(
+  ext_ref H.add
+)
+"graphDataflowW.ml" 173 4058 4088 "graphDataflowW.ml" 173 4058 4092
+type(
+  D.L.t H.t
+)
+ident(
+  int_ref htin "graphDataflowW.ml" 111 2511 2519 "graphDataflowW.ml" 111 2511 2523
+)
+"graphDataflowW.ml" 173 4058 4093 "graphDataflowW.ml" 173 4058 4094
+type(
+  H.key
+)
+ident(
+  int_ref n "graphDataflowW.ml" 173 4058 4077 "graphDataflowW.ml" 173 4058 4078
+)
+"graphDataflowW.ml" 173 4058 4095 "graphDataflowW.ml" 173 4058 4102
+type(
+  D.L.t
+)
+ident(
+  ext_ref D.L.top
+)
+"graphDataflowW.ml" 173 4058 4082 "graphDataflowW.ml" 173 4058 4102
+call(
+  tail
+)
+type(
+  unit
+)
+"graphDataflowW.ml" 173 4058 4072 "graphDataflowW.ml" 173 4058 4103
+type(
+  H.key -> unit
+)
+"graphDataflowW.ml" 173 4058 4104 "graphDataflowW.ml" 173 4058 4109
+type(
+  H.key list
+)
+ident(
+  int_ref nodes "graphDataflowW.ml" 103 2255 2263 "graphDataflowW.ml" 103 2255 2268
+)
+"graphDataflowW.ml" 173 4058 4062 "graphDataflowW.ml" 173 4058 4109
+call(
+  stack
+)
+type(
+  unit
+)
+"graphDataflowW.ml" 174 4111 4115 "graphDataflowW.ml" 174 4111 4124
+type(
+  D.L.t H.t -> H.key -> D.L.t -> unit
+)
+ident(
+  ext_ref H.replace
+)
+"graphDataflowW.ml" 174 4111 4125 "graphDataflowW.ml" 174 4111 4129
+type(
+  D.L.t H.t
+)
+ident(
+  int_ref htin "graphDataflowW.ml" 111 2511 2519 "graphDataflowW.ml" 111 2511 2523
+)
+"graphDataflowW.ml" 174 4111 4130 "graphDataflowW.ml" 174 4111 4132
+type(
+  D.G.V.t
+)
+ident(
+  int_ref s0 "graphDataflowW.ml" 102 2141 2193 "graphDataflowW.ml" 102 2141 2195
+)
+"graphDataflowW.ml" 174 4111 4133 "graphDataflowW.ml" 174 4111 4137
+type(
+  D.L.t
+)
+ident(
+  int_ref init "graphDataflowW.ml" 102 2141 2176 "graphDataflowW.ml" 102 2141 2180
+)
+"graphDataflowW.ml" 174 4111 4115 "graphDataflowW.ml" 174 4111 4137
+call(
+  stack
+)
+type(
+  unit
+)
+"graphDataflowW.ml" 175 4139 4151 "graphDataflowW.ml" 175 4139 4158
+type(
+  H.key list -> unit
+)
+"graphDataflowW.ml" 176 4170 4178 "graphDataflowW.ml" 176 4170 4180
+type(
+  H.key list
+)
+"graphDataflowW.ml" 176 4170 4184 "graphDataflowW.ml" 176 4170 4186
+type(
+  unit
+)
+"graphDataflowW.ml" 177 4187 4195 "graphDataflowW.ml" 177 4187 4196
+type(
+  H.key
+)
+ident(
+  def b "graphDataflowW.ml" 178 4212 4215 "graphDataflowW.ml" 197 4725 4745
+)
+"graphDataflowW.ml" 177 4187 4198 "graphDataflowW.ml" 177 4187 4206
+type(
+  H.key list
+)
+ident(
+  def worklist "graphDataflowW.ml" 178 4212 4215 "graphDataflowW.ml" 197 4725 4745
+)
+"graphDataflowW.ml" 177 4187 4195 "graphDataflowW.ml" 177 4187 4206
+type(
+  H.key list
+)
+"graphDataflowW.ml" 178 4212 4219 "graphDataflowW.ml" 178 4212 4224
+type(
+  D.L.t
+)
+"graphDataflowW.ml" 178 4212 4228 "graphDataflowW.ml" 178 4212 4237
+type(
+  H.key -> D.L.t
+)
+ident(
+  int_ref get_inset "graphDataflowW.ml" 123 2845 2853 "graphDataflowW.ml" 123 2845 2862
+)
+"graphDataflowW.ml" 178 4212 4238 "graphDataflowW.ml" 178 4212 4239
+type(
+  H.key
+)
+ident(
+  int_ref b "graphDataflowW.ml" 177 4187 4195 "graphDataflowW.ml" 177 4187 4196
+)
+"graphDataflowW.ml" 178 4212 4227 "graphDataflowW.ml" 178 4212 4240
+call(
+  stack
+)
+type(
+  D.L.t
+)
+"graphDataflowW.ml" 179 4244 4251 "graphDataflowW.ml" 179 4244 4265
+type(
+  H.key list
+)
+"graphDataflowW.ml" 180 4268 4277 "graphDataflowW.ml" 180 4268 4285
+type(
+  H.key -> D.L.t -> bool
+)
+"graphDataflowW.ml" 180 4268 4286 "graphDataflowW.ml" 180 4268 4287
+type(
+  H.key
+)
+ident(
+  def s "graphDataflowW.ml" 180 4268 4288 "graphDataflowW.ml" 185 4425 4477
+)
+"graphDataflowW.ml" 180 4268 4288 "graphDataflowW.ml" 180 4268 4291
+type(
+  D.L.t
+)
+ident(
+  def out "graphDataflowW.ml" 181 4295 4303 "graphDataflowW.ml" 185 4425 4477
+)
+"graphDataflowW.ml" 181 4295 4307 "graphDataflowW.ml" 181 4295 4312
+type(
+  D.L.t
+)
+"graphDataflowW.ml" 181 4295 4315 "graphDataflowW.ml" 181 4295 4319
+type(
+  H.key -> D.L.t
+)
+ident(
+  int_ref dfin "graphDataflowW.ml" 112 2558 2566 "graphDataflowW.ml" 112 2558 2570
+)
+"graphDataflowW.ml" 181 4295 4320 "graphDataflowW.ml" 181 4295 4321
+type(
+  H.key
+)
+ident(
+  int_ref s "graphDataflowW.ml" 180 4268 4286 "graphDataflowW.ml" 180 4268 4287
+)
+"graphDataflowW.ml" 181 4295 4315 "graphDataflowW.ml" 181 4295 4321
+call(
+  stack
+)
+type(
+  D.L.t
+)
+"graphDataflowW.ml" 182 4325 4337 "graphDataflowW.ml" 182 4325 4342
+type(
+  D.L.t
+)
+"graphDataflowW.ml" 182 4325 4345 "graphDataflowW.ml" 182 4325 4355
+type(
+  H.key -> D.L.t -> D.L.t -> D.L.t
+)
+ident(
+  int_ref confluence "graphDataflowW.ml" 160 3741 3749 "graphDataflowW.ml" 160 3741 3759
+)
+"graphDataflowW.ml" 182 4325 4356 "graphDataflowW.ml" 182 4325 4357
+type(
+  H.key
+)
+ident(
+  int_ref s "graphDataflowW.ml" 180 4268 4286 "graphDataflowW.ml" 180 4268 4287
+)
+"graphDataflowW.ml" 182 4325 4358 "graphDataflowW.ml" 182 4325 4363
+type(
+  D.L.t
+)
+ident(
+  int_ref oldin "graphDataflowW.ml" 181 4295 4307 "graphDataflowW.ml" 181 4295 4312
+)
+"graphDataflowW.ml" 182 4325 4364 "graphDataflowW.ml" 182 4325 4369
+type(
+  D.L.t
+)
+ident(
+  int_ref out "graphDataflowW.ml" 180 4268 4288 "graphDataflowW.ml" 180 4268 4291
+)
+"graphDataflowW.ml" 182 4325 4345 "graphDataflowW.ml" 182 4325 4369
+call(
+  stack
+)
+type(
+  D.L.t
+)
+"graphDataflowW.ml" 183 4373 4384 "graphDataflowW.ml" 183 4373 4393
+type(
+  D.L.t -> D.L.t -> bool
+)
+ident(
+  ext_ref D.L.equal
+)
+"graphDataflowW.ml" 183 4373 4394 "graphDataflowW.ml" 183 4373 4399
+type(
+  D.L.t
+)
+ident(
+  int_ref oldin "graphDataflowW.ml" 181 4295 4307 "graphDataflowW.ml" 181 4295 4312
+)
+"graphDataflowW.ml" 183 4373 4400 "graphDataflowW.ml" 183 4373 4405
+type(
+  D.L.t
+)
+ident(
+  int_ref newin "graphDataflowW.ml" 182 4325 4337 "graphDataflowW.ml" 182 4325 4342
+)
+"graphDataflowW.ml" 183 4373 4384 "graphDataflowW.ml" 183 4373 4405
+call(
+  stack
+)
+type(
+  bool
+)
+"graphDataflowW.ml" 184 4406 4419 "graphDataflowW.ml" 184 4406 4424
+type(
+  bool
+)
+"graphDataflowW.ml" 185 4425 4442 "graphDataflowW.ml" 185 4425 4444
+type(
+  unit
+)
+"graphDataflowW.ml" 185 4425 4447 "graphDataflowW.ml" 185 4425 4456
+type(
+  D.L.t H.t -> H.key -> D.L.t -> unit
+)
+ident(
+  ext_ref H.replace
+)
+"graphDataflowW.ml" 185 4425 4457 "graphDataflowW.ml" 185 4425 4461
+type(
+  D.L.t H.t
+)
+ident(
+  int_ref htin "graphDataflowW.ml" 111 2511 2519 "graphDataflowW.ml" 111 2511 2523
+)
+"graphDataflowW.ml" 185 4425 4462 "graphDataflowW.ml" 185 4425 4463
+type(
+  H.key
+)
+ident(
+  int_ref s "graphDataflowW.ml" 180 4268 4286 "graphDataflowW.ml" 180 4268 4287
+)
+"graphDataflowW.ml" 185 4425 4464 "graphDataflowW.ml" 185 4425 4469
+type(
+  D.L.t
+)
+ident(
+  int_ref newin "graphDataflowW.ml" 182 4325 4337 "graphDataflowW.ml" 182 4325 4342
+)
+"graphDataflowW.ml" 185 4425 4447 "graphDataflowW.ml" 185 4425 4469
+call(
+  stack
+)
+type(
+  unit
+)
+"graphDataflowW.ml" 185 4425 4473 "graphDataflowW.ml" 185 4425 4477
+type(
+  bool
+)
+"graphDataflowW.ml" 185 4425 4438 "graphDataflowW.ml" 185 4425 4477
+type(
+  bool
+)
+"graphDataflowW.ml" 183 4373 4381 "graphDataflowW.ml" 185 4425 4477
+type(
+  bool
+)
+"graphDataflowW.ml" 182 4325 4333 "graphDataflowW.ml" 185 4425 4477
+type(
+  bool
+)
+"graphDataflowW.ml" 181 4295 4303 "graphDataflowW.ml" 185 4425 4477
+type(
+  bool
+)
+"graphDataflowW.ml" 187 4486 4495 "graphDataflowW.ml" 187 4486 4501
+type(
+  D.L.t
+)
+"graphDataflowW.ml" 187 4486 4505 "graphDataflowW.ml" 187 4486 4508
+type(
+  D.G.V.t -> D.L.t -> D.L.t
+)
+ident(
+  int_ref f_t "graphDataflowW.ml" 104 2317 2325 "graphDataflowW.ml" 104 2317 2328
+)
+"graphDataflowW.ml" 187 4486 4509 "graphDataflowW.ml" 187 4486 4510
+type(
+  H.key
+)
+ident(
+  int_ref b "graphDataflowW.ml" 177 4187 4195 "graphDataflowW.ml" 177 4187 4196
+)
+"graphDataflowW.ml" 187 4486 4511 "graphDataflowW.ml" 187 4486 4516
+type(
+  D.L.t
+)
+ident(
+  int_ref inset "graphDataflowW.ml" 178 4212 4219 "graphDataflowW.ml" 178 4212 4224
+)
+"graphDataflowW.ml" 187 4486 4504 "graphDataflowW.ml" 187 4486 4517
+call(
+  stack
+)
+type(
+  D.L.t
+)
+"graphDataflowW.ml" 188 4522 4531 "graphDataflowW.ml" 188 4522 4533
+type(
+  unit
+)
+"graphDataflowW.ml" 188 4522 4536 "graphDataflowW.ml" 188 4522 4545
+type(
+  D.L.t H.t -> H.key -> D.L.t -> unit
+)
+ident(
+  ext_ref H.replace
+)
+"graphDataflowW.ml" 188 4522 4546 "graphDataflowW.ml" 188 4522 4551
+type(
+  D.L.t H.t
+)
+ident(
+  int_ref htout "graphDataflowW.ml" 113 2618 2626 "graphDataflowW.ml" 113 2618 2631
+)
+"graphDataflowW.ml" 188 4522 4552 "graphDataflowW.ml" 188 4522 4553
+type(
+  H.key
+)
+ident(
+  int_ref b "graphDataflowW.ml" 177 4187 4195 "graphDataflowW.ml" 177 4187 4196
+)
+"graphDataflowW.ml" 188 4522 4554 "graphDataflowW.ml" 188 4522 4560
+type(
+  D.L.t
+)
+ident(
+  int_ref outset "graphDataflowW.ml" 187 4486 4495 "graphDataflowW.ml" 187 4486 4501
+)
+"graphDataflowW.ml" 188 4522 4536 "graphDataflowW.ml" 188 4522 4560
+call(
+  stack
+)
+type(
+  unit
+)
+"graphDataflowW.ml" 189 4564 4569 "graphDataflowW.ml" 189 4564 4580
+type(
+  (H.key -> bool) -> H.key list -> H.key list
+)
+ident(
+  ext_ref List.filter
+)
+"graphDataflowW.ml" 190 4582 4594 "graphDataflowW.ml" 190 4582 4595
+type(
+  H.key
+)
+ident(
+  def s "graphDataflowW.ml" 191 4599 4601 "graphDataflowW.ml" 191 4599 4618
+)
+"graphDataflowW.ml" 191 4599 4601 "graphDataflowW.ml" 191 4599 4609
+type(
+  H.key -> D.L.t -> bool
+)
+ident(
+  int_ref check_bb "graphDataflowW.ml" 180 4268 4277 "graphDataflowW.ml" 180 4268 4285
+)
+"graphDataflowW.ml" 191 4599 4610 "graphDataflowW.ml" 191 4599 4611
+type(
+  H.key
+)
+ident(
+  int_ref s "graphDataflowW.ml" 190 4582 4594 "graphDataflowW.ml" 190 4582 4595
+)
+"graphDataflowW.ml" 191 4599 4612 "graphDataflowW.ml" 191 4599 4618
+type(
+  D.L.t
+)
+ident(
+  int_ref outset "graphDataflowW.ml" 187 4486 4495 "graphDataflowW.ml" 187 4486 4501
+)
+"graphDataflowW.ml" 191 4599 4601 "graphDataflowW.ml" 191 4599 4618
+call(
+  tail
+)
+type(
+  bool
+)
+"graphDataflowW.ml" 190 4582 4589 "graphDataflowW.ml" 192 4620 4628
+type(
+  H.key -> bool
+)
+"graphDataflowW.ml" 193 4629 4637 "graphDataflowW.ml" 193 4629 4641
+type(
+  D.G.V.t -> H.key list
+)
+ident(
+  int_ref succ "graphDataflowW.ml" 105 2371 2379 "graphDataflowW.ml" 105 2371 2383
+)
+"graphDataflowW.ml" 193 4629 4642 "graphDataflowW.ml" 193 4629 4643
+type(
+  H.key
+)
+ident(
+  int_ref b "graphDataflowW.ml" 177 4187 4195 "graphDataflowW.ml" 177 4187 4196
+)
+"graphDataflowW.ml" 193 4629 4636 "graphDataflowW.ml" 193 4629 4644
+call(
+  stack
+)
+type(
+  H.key list
+)
+"graphDataflowW.ml" 189 4564 4569 "graphDataflowW.ml" 193 4629 4644
+call(
+  stack
+)
+type(
+  H.key list
+)
+"graphDataflowW.ml" 188 4522 4527 "graphDataflowW.ml" 193 4629 4644
+type(
+  H.key list
+)
+"graphDataflowW.ml" 187 4486 4491 "graphDataflowW.ml" 193 4629 4644
+type(
+  H.key list
+)
+"graphDataflowW.ml" 180 4268 4273 "graphDataflowW.ml" 193 4629 4644
+type(
+  H.key list
+)
+"graphDataflowW.ml" 195 4651 4658 "graphDataflowW.ml" 195 4651 4667
+type(
+  H.key list
+)
+"graphDataflowW.ml" 195 4651 4670 "graphDataflowW.ml" 195 4651 4678
+type(
+  H.key list
+)
+ident(
+  int_ref worklist "graphDataflowW.ml" 177 4187 4198 "graphDataflowW.ml" 177 4187 4206
+)
+"graphDataflowW.ml" 195 4651 4678 "graphDataflowW.ml" 195 4651 4679
+type(
+  H.key list -> H.key list -> H.key list
+)
+ident(
+  ext_ref Pervasives.( @ )
+)
+"graphDataflowW.ml" 195 4651 4679 "graphDataflowW.ml" 195 4651 4694
+type(
+  H.key list -> H.key list -> H.key list
+)
+ident(
+  ext_ref Util.list_difference
+)
+"graphDataflowW.ml" 195 4651 4695 "graphDataflowW.ml" 195 4651 4709
+type(
+  H.key list
+)
+ident(
+  int_ref affected_elems "graphDataflowW.ml" 179 4244 4251 "graphDataflowW.ml" 179 4244 4265
+)
+"graphDataflowW.ml" 195 4651 4710 "graphDataflowW.ml" 195 4651 4718
+type(
+  H.key list
+)
+ident(
+  int_ref worklist "graphDataflowW.ml" 177 4187 4198 "graphDataflowW.ml" 177 4187 4206
+)
+"graphDataflowW.ml" 195 4651 4679 "graphDataflowW.ml" 195 4651 4718
+call(
+  stack
+)
+type(
+  H.key list
+)
+"graphDataflowW.ml" 195 4651 4670 "graphDataflowW.ml" 195 4651 4718
+call(
+  stack
+)
+type(
+  H.key list
+)
+"graphDataflowW.ml" 197 4725 4728 "graphDataflowW.ml" 197 4725 4735
+type(
+  H.key list -> unit
+)
+ident(
+  int_ref do_work "graphDataflowW.ml" 175 4139 4151 "graphDataflowW.ml" 175 4139 4158
+)
+"graphDataflowW.ml" 197 4725 4736 "graphDataflowW.ml" 197 4725 4745
+type(
+  H.key list
+)
+ident(
+  int_ref newwklist "graphDataflowW.ml" 195 4651 4658 "graphDataflowW.ml" 195 4651 4667
+)
+"graphDataflowW.ml" 197 4725 4728 "graphDataflowW.ml" 197 4725 4745
+call(
+  tail
+)
+type(
+  unit
+)
+"graphDataflowW.ml" 195 4651 4654 "graphDataflowW.ml" 197 4725 4745
+type(
+  unit
+)
+"graphDataflowW.ml" 179 4244 4247 "graphDataflowW.ml" 197 4725 4745
+type(
+  unit
+)
+"graphDataflowW.ml" 178 4212 4215 "graphDataflowW.ml" 197 4725 4745
+type(
+  unit
+)
+"graphDataflowW.ml" 175 4139 4161 "graphDataflowW.ml" 197 4725 4745
+type(
+  H.key list -> unit
+)
+"graphDataflowW.ml" 199 4753 4757 "graphDataflowW.ml" 199 4753 4764
+type(
+  H.key list -> unit
+)
+ident(
+  int_ref do_work "graphDataflowW.ml" 175 4139 4151 "graphDataflowW.ml" 175 4139 4158
+)
+"graphDataflowW.ml" 199 4753 4766 "graphDataflowW.ml" 199 4753 4768
+type(
+  D.G.V.t
+)
+ident(
+  int_ref s0 "graphDataflowW.ml" 102 2141 2193 "graphDataflowW.ml" 102 2141 2195
+)
+"graphDataflowW.ml" 199 4753 4765 "graphDataflowW.ml" 199 4753 4769
+type(
+  H.key list
+)
+"graphDataflowW.ml" 199 4753 4757 "graphDataflowW.ml" 199 4753 4769
+call(
+  stack
+)
+type(
+  unit
+)
+"graphDataflowW.ml" 200 4771 4776 "graphDataflowW.ml" 200 4771 4780
+type(
+  H.key -> D.L.t
+)
+ident(
+  int_ref dfin "graphDataflowW.ml" 112 2558 2566 "graphDataflowW.ml" 112 2558 2570
+)
+"graphDataflowW.ml" 200 4771 4782 "graphDataflowW.ml" 200 4771 4787
+type(
+  H.key -> D.L.t
+)
+ident(
+  int_ref dfout "graphDataflowW.ml" 115 2714 2722 "graphDataflowW.ml" 115 2714 2727
+)
+"graphDataflowW.ml" 200 4771 4775 "graphDataflowW.ml" 200 4771 4788
+type(
+  (H.key -> D.L.t) * (H.key -> D.L.t)
+)
+"graphDataflowW.ml" 199 4753 4757 "graphDataflowW.ml" 200 4771 4788
+type(
+  (H.key -> D.L.t) * (H.key -> D.L.t)
+)
+"graphDataflowW.ml" 175 4139 4143 "graphDataflowW.ml" 200 4771 4788
+type(
+  (H.key -> D.L.t) * (H.key -> D.L.t)
+)
+"graphDataflowW.ml" 174 4111 4115 "graphDataflowW.ml" 200 4771 4788
+type(
+  (H.key -> D.L.t) * (H.key -> D.L.t)
+)
+"graphDataflowW.ml" 173 4058 4062 "graphDataflowW.ml" 200 4771 4788
+type(
+  (H.key -> D.L.t) * (H.key -> D.L.t)
+)
+"graphDataflowW.ml" 160 3741 3745 "graphDataflowW.ml" 200 4771 4788
+type(
+  (H.key -> D.L.t) * (H.key -> D.L.t)
+)
+"graphDataflowW.ml" 151 3576 3580 "graphDataflowW.ml" 200 4771 4788
+type(
+  (H.key -> D.L.t) * (H.key -> D.L.t)
+)
+"graphDataflowW.ml" 129 3003 3007 "graphDataflowW.ml" 200 4771 4788
+type(
+  (H.key -> D.L.t) * (H.key -> D.L.t)
+)
+"graphDataflowW.ml" 127 2950 2954 "graphDataflowW.ml" 200 4771 4788
+type(
+  (H.key -> D.L.t) * (H.key -> D.L.t)
+)
+"graphDataflowW.ml" 123 2845 2849 "graphDataflowW.ml" 200 4771 4788
+type(
+  (H.key -> D.L.t) * (H.key -> D.L.t)
+)
+"graphDataflowW.ml" 115 2714 2718 "graphDataflowW.ml" 200 4771 4788
+type(
+  (H.key -> D.L.t) * (H.key -> D.L.t)
+)
+"graphDataflowW.ml" 114 2666 2670 "graphDataflowW.ml" 200 4771 4788
+type(
+  (H.key -> D.L.t) * (H.key -> D.L.t)
+)
+"graphDataflowW.ml" 113 2618 2622 "graphDataflowW.ml" 200 4771 4788
+type(
+  (H.key -> D.L.t) * (H.key -> D.L.t)
+)
+"graphDataflowW.ml" 112 2558 2562 "graphDataflowW.ml" 200 4771 4788
+type(
+  (H.key -> D.L.t) * (H.key -> D.L.t)
+)
+"graphDataflowW.ml" 111 2511 2515 "graphDataflowW.ml" 200 4771 4788
+type(
+  (H.key -> D.L.t) * (H.key -> D.L.t)
+)
+"graphDataflowW.ml" 105 2371 2375 "graphDataflowW.ml" 200 4771 4788
+type(
+  (H.key -> D.L.t) * (H.key -> D.L.t)
+)
+"graphDataflowW.ml" 104 2317 2321 "graphDataflowW.ml" 200 4771 4788
+type(
+  (H.key -> D.L.t) * (H.key -> D.L.t)
+)
+"graphDataflowW.ml" 103 2255 2259 "graphDataflowW.ml" 200 4771 4788
+type(
+  (H.key -> D.L.t) * (H.key -> D.L.t)
+)

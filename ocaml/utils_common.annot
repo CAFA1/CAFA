@@ -1,0 +1,1456 @@
+"utils_common.ml" 6 94 125 "utils_common.ml" 6 94 129
+type(
+  string
+)
+ident(
+  def name "utils_common.ml" 6 94 167 "utils_common.ml" 6 94 171
+)
+"utils_common.ml" 6 94 132 "utils_common.ml" 6 94 146
+type(
+  string
+)
+"utils_common.ml" 6 94 151 "utils_common.ml" 6 94 158
+type(
+  [> `NoDebug ]
+)
+ident(
+  def default "utils_common.ml" 6 94 167 "utils_common.ml" 6 94 171
+)
+"utils_common.ml" 6 94 159 "utils_common.ml" 6 94 167
+type(
+  [> `NoDebug ] as 'a
+)
+"utils_common.ml" 6 94 103 "utils_common.ml" 6 94 172
+call(
+  stack
+)
+"utils_common.ml" 12 237 241 "utils_common.ml" 12 237 254
+type(
+  (Ast.var -> Ast.var) -> Ast.exp -> Ast.exp
+)
+ident(
+  def rename_astexp "utils_common.ml" 22 433 433 --
+)
+"utils_common.ml" 12 237 255 "utils_common.ml" 12 237 256
+type(
+  Ast.var -> Ast.var
+)
+ident(
+  def f "utils_common.ml" 13 259 261 "utils_common.ml" 19 400 428
+)
+"utils_common.ml" 13 259 265 "utils_common.ml" 13 259 268
+type(
+  Ast_visitor.nop
+)
+"utils_common.ml" 15 306 328 "utils_common.ml" 15 306 329
+type(
+  Ast.var
+)
+ident(
+  def v "utils_common.ml" 16 332 338 "utils_common.ml" 17 356 390
+)
+"utils_common.ml" 16 332 351 "utils_common.ml" 16 332 352
+type(
+  Ast.var -> Ast.var
+)
+ident(
+  int_ref f "utils_common.ml" 12 237 255 "utils_common.ml" 12 237 256
+)
+"utils_common.ml" 16 332 353 "utils_common.ml" 16 332 354
+type(
+  Ast.var
+)
+ident(
+  int_ref v "utils_common.ml" 15 306 328 "utils_common.ml" 15 306 329
+)
+"utils_common.ml" 16 332 351 "utils_common.ml" 16 332 354
+call(
+  stack
+)
+type(
+  Ast.var
+)
+"utils_common.ml" 16 332 342 "utils_common.ml" 16 332 355
+type(
+  Ast.var Type.visit_action
+)
+"utils_common.ml" 17 356 367 "utils_common.ml" 17 356 376
+type(
+  exn
+)
+"utils_common.ml" 17 356 380 "utils_common.ml" 17 356 390
+type(
+  Ast.var Type.visit_action
+)
+"utils_common.ml" 16 332 338 "utils_common.ml" 17 356 390
+type(
+  Ast.var Type.visit_action
+)
+"utils_common.ml" 15 306 328 "utils_common.ml" 17 356 390
+type(
+  Ast.var -> Ast.var Type.visit_action
+)
+type(
+  Ast.var -> Ast.var Type.visit_action
+)
+"utils_common.ml" 15 306 310 "utils_common.ml" 17 356 390
+type(
+  Ast_visitor.nop -> Ast.var -> Ast.var Type.visit_action
+)
+"utils_common.ml" 13 259 271 "utils_common.ml" 18 391 396
+type(
+  Ast_visitor.nop
+)
+type(
+  Ast_visitor.nop
+)
+"utils_common.ml" 19 400 402 "utils_common.ml" 19 400 424
+type(
+  Ast_visitor.t -> Ast.exp -> Ast.exp
+)
+ident(
+  ext_ref Ast_visitor.exp_accept
+)
+"utils_common.ml" 19 400 425 "utils_common.ml" 19 400 428
+type(
+  Ast_visitor.t
+)
+ident(
+  int_ref vis "utils_common.ml" 13 259 265 "utils_common.ml" 13 259 268
+)
+"utils_common.ml" 19 400 402 "utils_common.ml" 19 400 428
+call(
+  tail
+)
+type(
+  Ast.exp -> Ast.exp
+)
+"utils_common.ml" 13 259 261 "utils_common.ml" 19 400 428
+type(
+  Ast.exp -> Ast.exp
+)
+"utils_common.ml" 12 237 255 "utils_common.ml" 19 400 428
+type(
+  (Ast.var -> Ast.var) -> Ast.exp -> Ast.exp
+)
+"utils_common.ml" 22 433 437 "utils_common.ml" 22 433 449
+type(
+  ?usedc:bool ->
+  ?usesccvn:bool -> Cfg.AST.G.t -> Ast.exp -> Cfg.AST.G.t * Ast.exp
+)
+ident(
+  def optimize_cfg "utils_common.ml" 35 900 900 --
+)
+"utils_common.ml" 22 433 458 "utils_common.ml" 22 433 462
+type(
+  bool
+)
+type(
+  bool
+)
+ident(
+  int_ref *sth* "utils_common.ml" 22 433 458 "utils_common.ml" 22 433 462
+)
+type(
+  bool option
+)
+type(
+  bool option
+)
+type(
+  bool
+)
+ident(
+  def *sth* "utils_common.ml" 22 433 458 "utils_common.ml" 22 433 462
+)
+"utils_common.ml" 22 433 450 "utils_common.ml" 22 433 463
+type(
+  bool
+)
+"utils_common.ml" 22 433 475 "utils_common.ml" 22 433 479
+type(
+  bool
+)
+type(
+  bool
+)
+ident(
+  int_ref *sth* "utils_common.ml" 22 433 475 "utils_common.ml" 22 433 479
+)
+type(
+  bool option
+)
+type(
+  bool option
+)
+type(
+  bool
+)
+ident(
+  def *sth* "utils_common.ml" 22 433 475 "utils_common.ml" 22 433 479
+)
+"utils_common.ml" 22 433 464 "utils_common.ml" 22 433 480
+type(
+  bool
+)
+"utils_common.ml" 22 433 481 "utils_common.ml" 22 433 484
+type(
+  Cfg.AST.G.t
+)
+ident(
+  def cfg "utils_common.ml" 22 433 485 "utils_common.ml" 33 886 896
+)
+"utils_common.ml" 22 433 485 "utils_common.ml" 22 433 489
+type(
+  Ast.exp
+)
+ident(
+  def post "utils_common.ml" 23 492 494 "utils_common.ml" 33 886 896
+)
+"utils_common.ml" 23 492 498 "utils_common.ml" 23 492 501
+type(
+  Cfg.AST.G.t
+)
+"utils_common.ml" 23 492 504 "utils_common.ml" 23 492 523
+type(
+  Cfg.AST.G.t -> Cfg.AST.G.t
+)
+ident(
+  ext_ref Hacks.remove_cycles
+)
+"utils_common.ml" 23 492 524 "utils_common.ml" 23 492 527
+type(
+  Cfg.AST.G.t
+)
+ident(
+  int_ref cfg "utils_common.ml" 22 433 481 "utils_common.ml" 22 433 484
+)
+"utils_common.ml" 23 492 504 "utils_common.ml" 23 492 527
+call(
+  stack
+)
+type(
+  Cfg.AST.G.t
+)
+"utils_common.ml" 24 531 537 "utils_common.ml" 24 531 540
+type(
+  Cfg.AST.G.t
+)
+"utils_common.ml" 24 531 543 "utils_common.ml" 24 531 582
+type(
+  Cfg.AST.G.t -> Cfg.AST.G.t
+)
+ident(
+  ext_ref Prune_unreachable.prune_unreachable_ast
+)
+"utils_common.ml" 24 531 583 "utils_common.ml" 24 531 586
+type(
+  Cfg.AST.G.t
+)
+ident(
+  int_ref cfg "utils_common.ml" 23 492 498 "utils_common.ml" 23 492 501
+)
+"utils_common.ml" 24 531 543 "utils_common.ml" 24 531 586
+call(
+  stack
+)
+type(
+  Cfg.AST.G.t
+)
+"utils_common.ml" 25 590 596 "utils_common.ml" 25 590 599
+type(
+  Cfg.AST.G.t
+)
+"utils_common.ml" 25 590 602 "utils_common.ml" 25 590 623
+type(
+  Cfg.AST.G.t -> Cfg.AST.G.t
+)
+ident(
+  ext_ref Coalesce.coalesce_ast
+)
+"utils_common.ml" 25 590 624 "utils_common.ml" 25 590 627
+type(
+  Cfg.AST.G.t
+)
+ident(
+  int_ref cfg "utils_common.ml" 24 531 537 "utils_common.ml" 24 531 540
+)
+"utils_common.ml" 25 590 602 "utils_common.ml" 25 590 627
+call(
+  stack
+)
+type(
+  Cfg.AST.G.t
+)
+"utils_common.ml" 26 631 650 "utils_common.ml" 26 631 653
+type(
+  Cfg.SSA.G.t
+)
+"utils_common.ml" 26 631 665 "utils_common.ml" 26 631 670
+type(
+  Ast.var -> Var.t
+)
+"utils_common.ml" 26 631 637 "utils_common.ml" 26 631 671
+type(
+  Cfg_ssa.translation_results
+)
+"utils_common.ml" 26 631 674 "utils_common.ml" 26 631 691
+type(
+  Cfg.AST.G.t -> Cfg_ssa.translation_results
+)
+ident(
+  ext_ref Cfg_ssa.trans_cfg
+)
+"utils_common.ml" 26 631 692 "utils_common.ml" 26 631 695
+type(
+  Cfg.AST.G.t
+)
+ident(
+  int_ref cfg "utils_common.ml" 25 590 596 "utils_common.ml" 25 590 599
+)
+"utils_common.ml" 26 631 674 "utils_common.ml" 26 631 695
+call(
+  stack
+)
+type(
+  Cfg_ssa.translation_results
+)
+"utils_common.ml" 27 699 705 "utils_common.ml" 27 699 706
+type(
+  Ast.exp
+)
+"utils_common.ml" 27 699 709 "utils_common.ml" 27 699 722
+type(
+  (Ast.var -> Ast.var) -> Ast.exp -> Ast.exp
+)
+ident(
+  int_ref rename_astexp "utils_common.ml" 12 237 241 "utils_common.ml" 12 237 254
+)
+"utils_common.ml" 27 699 723 "utils_common.ml" 27 699 728
+type(
+  Ast.var -> Ast.var
+)
+ident(
+  int_ref tossa "utils_common.ml" 26 631 665 "utils_common.ml" 26 631 670
+)
+"utils_common.ml" 27 699 729 "utils_common.ml" 27 699 733
+type(
+  Ast.exp
+)
+ident(
+  int_ref post "utils_common.ml" 22 433 485 "utils_common.ml" 22 433 489
+)
+"utils_common.ml" 27 699 709 "utils_common.ml" 27 699 733
+call(
+  stack
+)
+type(
+  Ast.exp
+)
+"utils_common.ml" 28 737 743 "utils_common.ml" 28 737 746
+type(
+  Ssa_simp_misc.C.G.t
+)
+"utils_common.ml" 29 749 757 "utils_common.ml" 29 749 761
+type(
+  Formulap.VH.key list
+)
+"utils_common.ml" 29 749 764 "utils_common.ml" 29 749 781
+type(
+  Ast.exp -> Formulap.VH.key list
+)
+ident(
+  ext_ref Formulap.freevars
+)
+"utils_common.ml" 29 749 782 "utils_common.ml" 29 749 783
+type(
+  Ast.exp
+)
+ident(
+  int_ref p "utils_common.ml" 27 699 705 "utils_common.ml" 27 699 706
+)
+"utils_common.ml" 29 749 764 "utils_common.ml" 29 749 783
+call(
+  stack
+)
+type(
+  Formulap.VH.key list
+)
+"utils_common.ml" 30 787 791 "utils_common.ml" 30 787 808
+type(
+  ?liveout:Formulap.VH.key list ->
+  ?usedc:bool ->
+  ?usesccvn:bool ->
+  ?usemisc:bool -> Ssa_simp_misc.C.G.t -> Ssa_simp_misc.C.G.t
+)
+ident(
+  ext_ref Ssa_simp.simp_cfg
+)
+"utils_common.ml" 30 787 818 "utils_common.ml" 30 787 822
+type(
+  Formulap.VH.key list
+)
+ident(
+  int_ref vars "utils_common.ml" 29 749 757 "utils_common.ml" 29 749 761
+)
+"utils_common.ml" 30 787 823 "utils_common.ml" 30 787 829
+type(
+  bool
+)
+ident(
+  int_ref usedc "utils_common.ml" 22 433 450 "utils_common.ml" 22 433 463
+)
+"utils_common.ml" 30 787 830 "utils_common.ml" 30 787 839
+type(
+  bool
+)
+ident(
+  int_ref usesccvn "utils_common.ml" 22 433 464 "utils_common.ml" 22 433 480
+)
+"utils_common.ml" 30 787 840 "utils_common.ml" 30 787 843
+type(
+  Ssa_simp_misc.C.G.t
+)
+ident(
+  int_ref cfg "utils_common.ml" 26 631 650 "utils_common.ml" 26 631 653
+)
+"utils_common.ml" 30 787 791 "utils_common.ml" 30 787 843
+call(
+  stack
+)
+type(
+  Ssa_simp_misc.C.G.t
+)
+"utils_common.ml" 29 749 753 "utils_common.ml" 30 787 843
+type(
+  Ssa_simp_misc.C.G.t
+)
+"utils_common.ml" 32 849 855 "utils_common.ml" 32 849 858
+type(
+  Cfg.AST.G.t
+)
+"utils_common.ml" 32 849 861 "utils_common.ml" 32 849 878
+type(
+  ?remove_temps:bool -> ?dsa:bool -> Ssa_simp_misc.C.G.t -> Cfg.AST.G.t
+)
+ident(
+  ext_ref Cfg_ssa.to_astcfg
+)
+"utils_common.ml" 32 849 879 "utils_common.ml" 32 849 882
+type(
+  Ssa_simp_misc.C.G.t
+)
+ident(
+  int_ref cfg "utils_common.ml" 28 737 743 "utils_common.ml" 28 737 746
+)
+"utils_common.ml" 32 849 861 "utils_common.ml" 32 849 882
+call(
+  stack
+)
+type(
+  Cfg.AST.G.t
+)
+"utils_common.ml" 33 886 889 "utils_common.ml" 33 886 892
+type(
+  Cfg.AST.G.t
+)
+ident(
+  int_ref cfg "utils_common.ml" 32 849 855 "utils_common.ml" 32 849 858
+)
+"utils_common.ml" 33 886 894 "utils_common.ml" 33 886 895
+type(
+  Ast.exp
+)
+ident(
+  int_ref p "utils_common.ml" 27 699 705 "utils_common.ml" 27 699 706
+)
+"utils_common.ml" 33 886 889 "utils_common.ml" 33 886 895
+type(
+  Cfg.AST.G.t * Ast.exp
+)
+"utils_common.ml" 32 849 851 "utils_common.ml" 33 886 896
+type(
+  Cfg.AST.G.t * Ast.exp
+)
+"utils_common.ml" 28 737 739 "utils_common.ml" 33 886 896
+type(
+  Cfg.AST.G.t * Ast.exp
+)
+"utils_common.ml" 27 699 701 "utils_common.ml" 33 886 896
+type(
+  Cfg.AST.G.t * Ast.exp
+)
+"utils_common.ml" 26 631 633 "utils_common.ml" 33 886 896
+type(
+  Cfg.AST.G.t * Ast.exp
+)
+"utils_common.ml" 25 590 592 "utils_common.ml" 33 886 896
+type(
+  Cfg.AST.G.t * Ast.exp
+)
+"utils_common.ml" 24 531 533 "utils_common.ml" 33 886 896
+type(
+  Cfg.AST.G.t * Ast.exp
+)
+"utils_common.ml" 23 492 494 "utils_common.ml" 33 886 896
+type(
+  Cfg.AST.G.t * Ast.exp
+)
+"utils_common.ml" 22 433 485 "utils_common.ml" 33 886 896
+type(
+  Ast.exp -> Cfg.AST.G.t * Ast.exp
+)
+"utils_common.ml" 22 433 481 "utils_common.ml" 33 886 896
+type(
+  Cfg.AST.G.t -> Ast.exp -> Cfg.AST.G.t * Ast.exp
+)
+"utils_common.ml" 22 433 464 "utils_common.ml" 33 886 896
+type(
+  ?usesccvn:bool -> Cfg.AST.G.t -> Ast.exp -> Cfg.AST.G.t * Ast.exp
+)
+type(
+  Cfg.AST.G.t -> Ast.exp -> Cfg.AST.G.t * Ast.exp
+)
+type(
+  bool
+)
+type(
+  bool option
+)
+ident(
+  int_ref *opt* "utils_common.ml" 22 433 464 "utils_common.ml" 33 886 896
+)
+type(
+  bool option
+)
+ident(
+  def *opt* "utils_common.ml" 22 433 464 "utils_common.ml" 33 886 896
+)
+"utils_common.ml" 22 433 450 "utils_common.ml" 33 886 896
+type(
+  ?usedc:bool ->
+  ?usesccvn:bool -> Cfg.AST.G.t -> Ast.exp -> Cfg.AST.G.t * Ast.exp
+)
+type(
+  ?usesccvn:bool -> Cfg.AST.G.t -> Ast.exp -> Cfg.AST.G.t * Ast.exp
+)
+type(
+  bool
+)
+type(
+  bool option
+)
+ident(
+  int_ref *opt* "utils_common.ml" 22 433 450 "utils_common.ml" 33 886 896
+)
+type(
+  bool option
+)
+ident(
+  def *opt* "utils_common.ml" 22 433 450 "utils_common.ml" 33 886 896
+)
+"utils_common.ml" 35 900 904 "utils_common.ml" 35 900 917
+type(
+  ?unroll:int ->
+  ?names:string list ->
+  Asmir.asmprogram -> (string * Ast.program * Cfg.AST.G.t option) list
+)
+ident(
+  def get_functions "utils_common.ml" 62 1853 1853 --
+)
+"utils_common.ml" 35 900 933 "utils_common.ml" 35 900 934
+type(
+  Asmir.asmprogram
+)
+ident(
+  def p "utils_common.ml" 36 937 939 "utils_common.ml" 60 1812 1851
+)
+"utils_common.ml" 36 937 943 "utils_common.ml" 36 937 949
+type(
+  (string * Type.addr * Type.addr) list
+)
+"utils_common.ml" 36 937 952 "utils_common.ml" 36 937 985
+type(
+  Asmir.asmprogram -> (string * Type.addr * Type.addr) list
+)
+ident(
+  ext_ref Func_boundary.get_function_ranges
+)
+"utils_common.ml" 36 937 986 "utils_common.ml" 36 937 987
+type(
+  Asmir.asmprogram
+)
+ident(
+  int_ref p "utils_common.ml" 35 900 933 "utils_common.ml" 35 900 934
+)
+"utils_common.ml" 36 937 952 "utils_common.ml" 36 937 987
+call(
+  stack
+)
+type(
+  (string * Type.addr * Type.addr) list
+)
+"utils_common.ml" 37 991 997 "utils_common.ml" 37 991 1008
+type(
+  string * Libbfd.address_t * Libbfd.address_t ->
+  (string * Ast.program * Cfg.AST.G.t option) option
+)
+"utils_common.ml" 37 991 1010 "utils_common.ml" 37 991 1011
+type(
+  string
+)
+ident(
+  def n "utils_common.ml" 38 1019 1023 "utils_common.ml" 58 1796 1806
+)
+"utils_common.ml" 37 991 1012 "utils_common.ml" 37 991 1013
+type(
+  Libbfd.address_t
+)
+ident(
+  def s "utils_common.ml" 38 1019 1023 "utils_common.ml" 58 1796 1806
+)
+"utils_common.ml" 37 991 1014 "utils_common.ml" 37 991 1015
+type(
+  Libbfd.address_t
+)
+ident(
+  def e "utils_common.ml" 38 1019 1023 "utils_common.ml" 58 1796 1806
+)
+"utils_common.ml" 37 991 1010 "utils_common.ml" 37 991 1015
+type(
+  string * Libbfd.address_t * Libbfd.address_t
+)
+"utils_common.ml" 38 1019 1027 "utils_common.ml" 38 1019 1030
+type(
+  bool
+)
+"utils_common.ml" 38 1019 1039 "utils_common.ml" 38 1019 1044
+type(
+  string list option
+)
+ident(
+  int_ref names "utils_common.ml" 35 900 926 "utils_common.ml" 60 1812 1851
+)
+"utils_common.ml" 39 1050 1063 "utils_common.ml" 39 1050 1064
+type(
+  string list
+)
+ident(
+  def l "utils_common.ml" 39 1050 1068 "utils_common.ml" 39 1050 1080
+)
+"utils_common.ml" 39 1050 1058 "utils_common.ml" 39 1050 1064
+type(
+  string list option
+)
+"utils_common.ml" 39 1050 1068 "utils_common.ml" 39 1050 1076
+type(
+  string -> string list -> bool
+)
+ident(
+  ext_ref BatListFull.List.mem
+)
+"utils_common.ml" 39 1050 1077 "utils_common.ml" 39 1050 1078
+type(
+  string
+)
+ident(
+  int_ref n "utils_common.ml" 37 991 1010 "utils_common.ml" 37 991 1011
+)
+"utils_common.ml" 39 1050 1079 "utils_common.ml" 39 1050 1080
+type(
+  string list
+)
+ident(
+  int_ref l "utils_common.ml" 39 1050 1063 "utils_common.ml" 39 1050 1064
+)
+"utils_common.ml" 39 1050 1068 "utils_common.ml" 39 1050 1080
+call(
+  stack
+)
+type(
+  bool
+)
+"utils_common.ml" 40 1081 1089 "utils_common.ml" 40 1081 1093
+type(
+  string list option
+)
+"utils_common.ml" 40 1081 1097 "utils_common.ml" 40 1081 1101
+type(
+  bool
+)
+"utils_common.ml" 38 1019 1033 "utils_common.ml" 40 1081 1101
+type(
+  bool
+)
+"utils_common.ml" 43 1117 1126 "utils_common.ml" 43 1117 1129
+type(
+  bool
+)
+ident(
+  int_ref inc "utils_common.ml" 38 1019 1027 "utils_common.ml" 38 1019 1030
+)
+"utils_common.ml" 44 1137 1149 "utils_common.ml" 44 1137 1151
+type(
+  Ast.program
+)
+ident(
+  def ir "utils_common.ml" 45 1193 1201 "utils_common.ml" 54 1626 1664
+)
+"utils_common.ml" 44 1137 1154 "utils_common.ml" 44 1137 1183
+type(
+  ?init_ro:bool ->
+  Asmir.asmprogram -> Libbfd.address_t -> Libbfd.address_t -> Ast.program
+)
+ident(
+  ext_ref Asmir.asmprogram_to_bap_range
+)
+"utils_common.ml" 44 1137 1184 "utils_common.ml" 44 1137 1185
+type(
+  Asmir.asmprogram
+)
+ident(
+  int_ref p "utils_common.ml" 35 900 933 "utils_common.ml" 35 900 934
+)
+"utils_common.ml" 44 1137 1186 "utils_common.ml" 44 1137 1187
+type(
+  Libbfd.address_t
+)
+ident(
+  int_ref s "utils_common.ml" 37 991 1012 "utils_common.ml" 37 991 1013
+)
+"utils_common.ml" 44 1137 1188 "utils_common.ml" 44 1137 1189
+type(
+  Libbfd.address_t
+)
+ident(
+  int_ref e "utils_common.ml" 37 991 1014 "utils_common.ml" 37 991 1015
+)
+"utils_common.ml" 44 1137 1154 "utils_common.ml" 44 1137 1189
+call(
+  stack
+)
+type(
+  Ast.program
+)
+"utils_common.ml" 45 1193 1205 "utils_common.ml" 45 1193 1207
+type(
+  Ast.stmt list
+)
+ident(
+  def ir "utils_common.ml" 46 1233 1241 "utils_common.ml" 54 1626 1664
+)
+"utils_common.ml" 45 1193 1210 "utils_common.ml" 45 1193 1226
+type(
+  ?ra:Ast.var -> Ast.program -> Ast.stmt list
+)
+ident(
+  ext_ref Hacks.ret_to_jmp
+)
+"utils_common.ml" 45 1193 1227 "utils_common.ml" 45 1193 1229
+type(
+  Ast.program
+)
+ident(
+  int_ref ir "utils_common.ml" 44 1137 1149 "utils_common.ml" 44 1137 1151
+)
+"utils_common.ml" 45 1193 1210 "utils_common.ml" 45 1193 1229
+call(
+  stack
+)
+type(
+  Ast.stmt list
+)
+"utils_common.ml" 46 1233 1247 "utils_common.ml" 46 1233 1253
+type(
+  int option
+)
+ident(
+  int_ref unroll "utils_common.ml" 35 900 918 "utils_common.ml" 60 1812 1851
+)
+"utils_common.ml" 47 1259 1276 "utils_common.ml" 47 1259 1279
+type(
+  int
+)
+ident(
+  def num "utils_common.ml" 48 1283 1295 "utils_common.ml" 53 1574 1625
+)
+"utils_common.ml" 47 1259 1271 "utils_common.ml" 47 1259 1279
+type(
+  int option
+)
+"utils_common.ml" 48 1283 1299 "utils_common.ml" 48 1283 1302
+type(
+  Cfg.AST.G.t
+)
+"utils_common.ml" 48 1283 1305 "utils_common.ml" 48 1283 1320
+type(
+  ?special_error:bool -> Ast.program -> Cfg.AST.G.t
+)
+ident(
+  ext_ref Cfg_ast.of_prog
+)
+"utils_common.ml" 48 1283 1321 "utils_common.ml" 48 1283 1323
+type(
+  Ast.program
+)
+ident(
+  int_ref ir "utils_common.ml" 45 1193 1205 "utils_common.ml" 45 1193 1207
+)
+"utils_common.ml" 48 1283 1305 "utils_common.ml" 48 1283 1323
+call(
+  stack
+)
+type(
+  Cfg.AST.G.t
+)
+"utils_common.ml" 49 1327 1343 "utils_common.ml" 49 1327 1346
+type(
+  Cfg.AST.G.t
+)
+"utils_common.ml" 49 1327 1349 "utils_common.ml" 49 1327 1388
+type(
+  Cfg.AST.G.t -> Cfg.AST.G.t
+)
+ident(
+  ext_ref Prune_unreachable.prune_unreachable_ast
+)
+"utils_common.ml" 49 1327 1389 "utils_common.ml" 49 1327 1392
+type(
+  Cfg.AST.G.t
+)
+ident(
+  int_ref cfg "utils_common.ml" 48 1283 1299 "utils_common.ml" 48 1283 1302
+)
+"utils_common.ml" 49 1327 1349 "utils_common.ml" 49 1327 1392
+call(
+  stack
+)
+type(
+  Cfg.AST.G.t
+)
+"utils_common.ml" 50 1396 1412 "utils_common.ml" 50 1396 1415
+type(
+  Cfg.AST.G.t
+)
+"utils_common.ml" 50 1396 1418 "utils_common.ml" 50 1396 1437
+type(
+  Unroll.unrollf
+)
+ident(
+  ext_ref Unroll.unroll_loops
+)
+"utils_common.ml" 50 1396 1445 "utils_common.ml" 50 1396 1448
+type(
+  int
+)
+ident(
+  int_ref num "utils_common.ml" 47 1259 1276 "utils_common.ml" 47 1259 1279
+)
+"utils_common.ml" 50 1396 1449 "utils_common.ml" 50 1396 1452
+type(
+  Cfg.AST.G.t
+)
+ident(
+  int_ref cfg "utils_common.ml" 49 1327 1343 "utils_common.ml" 49 1327 1346
+)
+"utils_common.ml" 50 1396 1418 "utils_common.ml" 50 1396 1452
+call(
+  stack
+)
+type(
+  Cfg.AST.G.t
+)
+"utils_common.ml" 51 1456 1472 "utils_common.ml" 51 1456 1475
+type(
+  Cfg.AST.G.t
+)
+"utils_common.ml" 51 1456 1478 "utils_common.ml" 51 1456 1497
+type(
+  Cfg.AST.G.t -> Cfg.AST.G.t
+)
+ident(
+  ext_ref Hacks.remove_cycles
+)
+"utils_common.ml" 51 1456 1498 "utils_common.ml" 51 1456 1501
+type(
+  Cfg.AST.G.t
+)
+ident(
+  int_ref cfg "utils_common.ml" 50 1396 1412 "utils_common.ml" 50 1396 1415
+)
+"utils_common.ml" 51 1456 1478 "utils_common.ml" 51 1456 1501
+call(
+  stack
+)
+type(
+  Cfg.AST.G.t
+)
+"utils_common.ml" 52 1505 1521 "utils_common.ml" 52 1505 1524
+type(
+  Cfg.AST.G.t
+)
+"utils_common.ml" 52 1505 1527 "utils_common.ml" 52 1505 1566
+type(
+  Cfg.AST.G.t -> Cfg.AST.G.t
+)
+ident(
+  ext_ref Prune_unreachable.prune_unreachable_ast
+)
+"utils_common.ml" 52 1505 1567 "utils_common.ml" 52 1505 1570
+type(
+  Cfg.AST.G.t
+)
+ident(
+  int_ref cfg "utils_common.ml" 51 1456 1472 "utils_common.ml" 51 1456 1475
+)
+"utils_common.ml" 52 1505 1527 "utils_common.ml" 52 1505 1570
+call(
+  stack
+)
+type(
+  Cfg.AST.G.t
+)
+"utils_common.ml" 53 1574 1592 "utils_common.ml" 53 1574 1593
+type(
+  string
+)
+ident(
+  int_ref n "utils_common.ml" 37 991 1010 "utils_common.ml" 37 991 1011
+)
+"utils_common.ml" 53 1574 1595 "utils_common.ml" 53 1574 1610
+type(
+  Cfg.AST.G.t -> Ast.program
+)
+ident(
+  ext_ref Cfg_ast.to_prog
+)
+"utils_common.ml" 53 1574 1611 "utils_common.ml" 53 1574 1614
+type(
+  Cfg.AST.G.t
+)
+ident(
+  int_ref cfg "utils_common.ml" 52 1505 1521 "utils_common.ml" 52 1505 1524
+)
+"utils_common.ml" 53 1574 1595 "utils_common.ml" 53 1574 1614
+call(
+  stack
+)
+type(
+  Ast.program
+)
+"utils_common.ml" 53 1574 1621 "utils_common.ml" 53 1574 1624
+type(
+  Cfg.AST.G.t
+)
+ident(
+  int_ref cfg "utils_common.ml" 52 1505 1521 "utils_common.ml" 52 1505 1524
+)
+"utils_common.ml" 53 1574 1616 "utils_common.ml" 53 1574 1624
+type(
+  Cfg.AST.G.t option
+)
+"utils_common.ml" 53 1574 1586 "utils_common.ml" 53 1574 1625
+type(
+  string * Ast.program * Cfg.AST.G.t option
+)
+type(
+  (string * Ast.program * Cfg.AST.G.t option) option
+)
+"utils_common.ml" 52 1505 1517 "utils_common.ml" 53 1574 1625
+type(
+  (string * Ast.program * Cfg.AST.G.t option) option
+)
+"utils_common.ml" 51 1456 1468 "utils_common.ml" 53 1574 1625
+type(
+  (string * Ast.program * Cfg.AST.G.t option) option
+)
+"utils_common.ml" 50 1396 1408 "utils_common.ml" 53 1574 1625
+type(
+  (string * Ast.program * Cfg.AST.G.t option) option
+)
+"utils_common.ml" 49 1327 1339 "utils_common.ml" 53 1574 1625
+type(
+  (string * Ast.program * Cfg.AST.G.t option) option
+)
+"utils_common.ml" 48 1283 1295 "utils_common.ml" 53 1574 1625
+type(
+  (string * Ast.program * Cfg.AST.G.t option) option
+)
+"utils_common.ml" 54 1626 1638 "utils_common.ml" 54 1626 1642
+type(
+  int option
+)
+"utils_common.ml" 54 1626 1652 "utils_common.ml" 54 1626 1653
+type(
+  string
+)
+ident(
+  int_ref n "utils_common.ml" 37 991 1010 "utils_common.ml" 37 991 1011
+)
+"utils_common.ml" 54 1626 1655 "utils_common.ml" 54 1626 1657
+type(
+  Ast.program
+)
+ident(
+  int_ref ir "utils_common.ml" 45 1193 1205 "utils_common.ml" 45 1193 1207
+)
+"utils_common.ml" 54 1626 1659 "utils_common.ml" 54 1626 1663
+type(
+  Cfg.AST.G.t option
+)
+"utils_common.ml" 54 1626 1646 "utils_common.ml" 54 1626 1664
+type(
+  string * Ast.program * Cfg.AST.G.t option
+)
+type(
+  (string * Ast.program * Cfg.AST.G.t option) option
+)
+"utils_common.ml" 46 1233 1241 "utils_common.ml" 54 1626 1664
+type(
+  (string * Ast.program * Cfg.AST.G.t option) option
+)
+"utils_common.ml" 45 1193 1201 "utils_common.ml" 54 1626 1664
+type(
+  (string * Ast.program * Cfg.AST.G.t option) option
+)
+"utils_common.ml" 44 1137 1145 "utils_common.ml" 54 1626 1664
+type(
+  (string * Ast.program * Cfg.AST.G.t option) option
+)
+"utils_common.ml" 55 1666 1677 "utils_common.ml" 55 1666 1681
+type(
+  (string * Ast.program * Cfg.AST.G.t option) option
+)
+"utils_common.ml" 43 1117 1123 "utils_common.ml" 55 1666 1681
+type(
+  (string * Ast.program * Cfg.AST.G.t option) option
+)
+"utils_common.ml" 56 1682 1691 "utils_common.ml" 56 1682 1693
+type(
+  exn
+)
+ident(
+  def ex "utils_common.ml" 57 1697 1703 "utils_common.ml" 58 1796 1806
+)
+"utils_common.ml" 57 1697 1703 "utils_common.ml" 57 1697 1717
+type(
+  (string -> Libbfd.address_t -> Libbfd.address_t -> string -> unit,
+   out_channel, unit)
+  format -> string -> Libbfd.address_t -> Libbfd.address_t -> string -> unit
+)
+ident(
+  ext_ref Printf.eprintf
+)
+"utils_common.ml" 57 1697 1718 "utils_common.ml" 57 1697 1764
+type(
+  (string -> Libbfd.address_t -> Libbfd.address_t -> string -> unit,
+   out_channel, unit)
+  format
+)
+"utils_common.ml" 57 1697 1765 "utils_common.ml" 57 1697 1766
+type(
+  string
+)
+ident(
+  int_ref n "utils_common.ml" 37 991 1010 "utils_common.ml" 37 991 1011
+)
+"utils_common.ml" 57 1697 1767 "utils_common.ml" 57 1697 1768
+type(
+  Libbfd.address_t
+)
+ident(
+  int_ref s "utils_common.ml" 37 991 1012 "utils_common.ml" 37 991 1013
+)
+"utils_common.ml" 57 1697 1769 "utils_common.ml" 57 1697 1770
+type(
+  Libbfd.address_t
+)
+ident(
+  int_ref e "utils_common.ml" 37 991 1014 "utils_common.ml" 37 991 1015
+)
+"utils_common.ml" 57 1697 1772 "utils_common.ml" 57 1697 1790
+type(
+  exn -> string
+)
+ident(
+  ext_ref Printexc.to_string
+)
+"utils_common.ml" 57 1697 1791 "utils_common.ml" 57 1697 1793
+type(
+  exn
+)
+ident(
+  int_ref ex "utils_common.ml" 56 1682 1691 "utils_common.ml" 56 1682 1693
+)
+"utils_common.ml" 57 1697 1772 "utils_common.ml" 57 1697 1793
+call(
+  stack
+)
+type(
+  string
+)
+"utils_common.ml" 57 1697 1703 "utils_common.ml" 57 1697 1794
+call(
+  stack
+)
+type(
+  unit
+)
+"utils_common.ml" 58 1796 1802 "utils_common.ml" 58 1796 1806
+type(
+  (string * Ast.program * Cfg.AST.G.t option) option
+)
+"utils_common.ml" 57 1697 1703 "utils_common.ml" 58 1796 1806
+type(
+  (string * Ast.program * Cfg.AST.G.t option) option
+)
+"utils_common.ml" 42 1109 1113 "utils_common.ml" 58 1796 1806
+type(
+  (string * Ast.program * Cfg.AST.G.t option) option
+)
+"utils_common.ml" 38 1019 1023 "utils_common.ml" 58 1796 1806
+type(
+  (string * Ast.program * Cfg.AST.G.t option) option
+)
+"utils_common.ml" 37 991 1009 "utils_common.ml" 58 1796 1806
+type(
+  string * Libbfd.address_t * Libbfd.address_t ->
+  (string * Ast.program * Cfg.AST.G.t option) option
+)
+"utils_common.ml" 60 1812 1814 "utils_common.ml" 60 1812 1832
+type(
+  (string * Libbfd.address_t * Libbfd.address_t ->
+   (string * Ast.program * Cfg.AST.G.t option) option) ->
+  (string * Libbfd.address_t * Libbfd.address_t) list ->
+  (string * Ast.program * Cfg.AST.G.t option) list
+)
+ident(
+  ext_ref BatList.filter_map
+)
+"utils_common.ml" 60 1812 1833 "utils_common.ml" 60 1812 1844
+type(
+  string * Libbfd.address_t * Libbfd.address_t ->
+  (string * Ast.program * Cfg.AST.G.t option) option
+)
+ident(
+  int_ref do_function "utils_common.ml" 37 991 997 "utils_common.ml" 37 991 1008
+)
+"utils_common.ml" 60 1812 1845 "utils_common.ml" 60 1812 1851
+type(
+  (string * Libbfd.address_t * Libbfd.address_t) list
+)
+ident(
+  int_ref ranges "utils_common.ml" 36 937 943 "utils_common.ml" 36 937 949
+)
+"utils_common.ml" 60 1812 1814 "utils_common.ml" 60 1812 1851
+call(
+  tail
+)
+type(
+  (string * Ast.program * Cfg.AST.G.t option) list
+)
+"utils_common.ml" 37 991 993 "utils_common.ml" 60 1812 1851
+type(
+  (string * Ast.program * Cfg.AST.G.t option) list
+)
+"utils_common.ml" 36 937 939 "utils_common.ml" 60 1812 1851
+type(
+  (string * Ast.program * Cfg.AST.G.t option) list
+)
+"utils_common.ml" 35 900 933 "utils_common.ml" 60 1812 1851
+type(
+  Asmir.asmprogram -> (string * Ast.program * Cfg.AST.G.t option) list
+)
+"utils_common.ml" 35 900 926 "utils_common.ml" 60 1812 1851
+type(
+  ?names:string list ->
+  Asmir.asmprogram -> (string * Ast.program * Cfg.AST.G.t option) list
+)
+type(
+  string list option
+)
+ident(
+  def names "utils_common.ml" 35 900 933 "utils_common.ml" 60 1812 1851
+)
+"utils_common.ml" 35 900 918 "utils_common.ml" 60 1812 1851
+type(
+  ?unroll:int ->
+  ?names:string list ->
+  Asmir.asmprogram -> (string * Ast.program * Cfg.AST.G.t option) list
+)
+type(
+  int option
+)
+ident(
+  def unroll "utils_common.ml" 35 900 926 "utils_common.ml" 60 1812 1851
+)
+"utils_common.ml" 64 1911 1917 "utils_common.ml" 64 1911 1923
+type(
+  Smtexec.smtexec ref
+)
+ident(
+  def solver "utils_common.ml" 66 1950 1952 "utils_common.ml" 72 2154 2157
+)
+"utils_common.ml" 64 1911 1926 "utils_common.ml" 64 1911 1929
+type(
+  Smtexec.smtexec -> Smtexec.smtexec ref
+)
+ident(
+  ext_ref Pervasives.ref
+)
+"utils_common.ml" 64 1911 1931 "utils_common.ml" 64 1911 1945
+type(
+  Smtexec.smtexec
+)
+ident(
+  ext_ref Smtexec.STP.si
+)
+"utils_common.ml" 64 1911 1926 "utils_common.ml" 64 1911 1946
+type(
+  Smtexec.smtexec ref
+)
+"utils_common.ml" 66 1950 1956 "utils_common.ml" 66 1950 1966
+type(
+  string -> unit
+)
+ident(
+  def set_solver "utils_common.ml" 71 2079 2081 "utils_common.ml" 72 2154 2157
+)
+"utils_common.ml" 66 1950 1967 "utils_common.ml" 66 1950 1968
+type(
+  string
+)
+ident(
+  def s "utils_common.ml" 67 1971 1975 "utils_common.ml" 69 2044 2077
+)
+"utils_common.ml" 67 1971 1975 "utils_common.ml" 67 1971 1981
+type(
+  Smtexec.smtexec ref
+)
+ident(
+  int_ref solver "utils_common.ml" 64 1911 1917 "utils_common.ml" 64 1911 1923
+)
+"utils_common.ml" 67 1971 1989 "utils_common.ml" 67 1971 2001
+type(
+  (string, Smtexec.smtexec) Hashtbl.t -> string -> Smtexec.smtexec
+)
+ident(
+  ext_ref Hashtbl.find
+)
+"utils_common.ml" 67 1971 2002 "utils_common.ml" 67 1971 2017
+type(
+  (string, Smtexec.smtexec) Hashtbl.t
+)
+ident(
+  ext_ref Smtexec.solvers
+)
+"utils_common.ml" 67 1971 2018 "utils_common.ml" 67 1971 2019
+type(
+  string
+)
+ident(
+  int_ref s "utils_common.ml" 66 1950 1967 "utils_common.ml" 66 1950 1968
+)
+"utils_common.ml" 67 1971 1989 "utils_common.ml" 67 1971 2019
+call(
+  stack
+)
+type(
+  Smtexec.smtexec
+)
+"utils_common.ml" 68 2020 2031 "utils_common.ml" 68 2020 2040
+type(
+  exn
+)
+"utils_common.ml" 69 2044 2052 "utils_common.ml" 69 2044 2060
+type(
+  string -> Smtexec.smtexec
+)
+ident(
+  ext_ref Pervasives.failwith
+)
+"utils_common.ml" 69 2044 2061 "utils_common.ml" 69 2044 2077
+type(
+  string
+)
+"utils_common.ml" 69 2044 2052 "utils_common.ml" 69 2044 2077
+call(
+  stack
+)
+type(
+  Smtexec.smtexec
+)
+"utils_common.ml" 67 1971 1985 "utils_common.ml" 69 2044 2077
+type(
+  Smtexec.smtexec
+)
+"utils_common.ml" 67 1971 1975 "utils_common.ml" 69 2044 2077
+type(
+  unit
+)
+type(
+  Smtexec.smtexec ref -> Smtexec.smtexec -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"utils_common.ml" 66 1950 1967 "utils_common.ml" 69 2044 2077
+type(
+  string -> unit
+)
+"utils_common.ml" 71 2079 2085 "utils_common.ml" 71 2079 2092
+type(
+  string
+)
+ident(
+  def solvers "utils_common.ml" 71 2079 2153 "utils_common.ml" 72 2154 2157
+)
+"utils_common.ml" 71 2079 2095 "utils_common.ml" 71 2079 2107
+type(
+  (string -> Smtexec.smtexec -> string -> string) ->
+  (string, Smtexec.smtexec) Hashtbl.t -> string -> string
+)
+ident(
+  ext_ref Hashtbl.fold
+)
+"utils_common.ml" 71 2079 2113 "utils_common.ml" 71 2079 2114
+type(
+  string
+)
+ident(
+  def k "utils_common.ml" 71 2079 2115 "utils_common.ml" 71 2079 2133
+)
+"utils_common.ml" 71 2079 2115 "utils_common.ml" 71 2079 2116
+type(
+  Smtexec.smtexec
+)
+"utils_common.ml" 71 2079 2117 "utils_common.ml" 71 2079 2118
+type(
+  string
+)
+ident(
+  def s "utils_common.ml" 71 2079 2122 "utils_common.ml" 71 2079 2133
+)
+"utils_common.ml" 71 2079 2122 "utils_common.ml" 71 2079 2123
+type(
+  string
+)
+ident(
+  int_ref k "utils_common.ml" 71 2079 2113 "utils_common.ml" 71 2079 2114
+)
+"utils_common.ml" 71 2079 2124 "utils_common.ml" 71 2079 2125
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"utils_common.ml" 71 2079 2126 "utils_common.ml" 71 2079 2129
+type(
+  string
+)
+"utils_common.ml" 71 2079 2130 "utils_common.ml" 71 2079 2131
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"utils_common.ml" 71 2079 2132 "utils_common.ml" 71 2079 2133
+type(
+  string
+)
+ident(
+  int_ref s "utils_common.ml" 71 2079 2117 "utils_common.ml" 71 2079 2118
+)
+"utils_common.ml" 71 2079 2126 "utils_common.ml" 71 2079 2133
+call(
+  stack
+)
+type(
+  string
+)
+"utils_common.ml" 71 2079 2122 "utils_common.ml" 71 2079 2133
+call(
+  tail
+)
+type(
+  string
+)
+"utils_common.ml" 71 2079 2117 "utils_common.ml" 71 2079 2133
+type(
+  string -> string
+)
+"utils_common.ml" 71 2079 2115 "utils_common.ml" 71 2079 2133
+type(
+  Smtexec.smtexec -> string -> string
+)
+"utils_common.ml" 71 2079 2113 "utils_common.ml" 71 2079 2133
+type(
+  string -> Smtexec.smtexec -> string -> string
+)
+"utils_common.ml" 71 2079 2135 "utils_common.ml" 71 2079 2150
+type(
+  (string, Smtexec.smtexec) Hashtbl.t
+)
+ident(
+  ext_ref Smtexec.solvers
+)
+"utils_common.ml" 71 2079 2151 "utils_common.ml" 71 2079 2153
+type(
+  string
+)
+"utils_common.ml" 71 2079 2095 "utils_common.ml" 71 2079 2153
+call(
+  stack
+)
+type(
+  string
+)
+"utils_common.ml" 74 2159 2163 "utils_common.ml" 74 2159 2173
+type(
+  'a -> 'b -> 'c
+)
+ident(
+  def jitexecute "utils_common.ml" 84 2539 2542 --
+)
+"utils_common.ml" 74 2159 2174 "utils_common.ml" 74 2159 2179
+type(
+  'a
+)
+ident(
+  def inits "utils_common.ml" 74 2159 2180 "utils_common.ml" 84 2539 2542
+)
+"utils_common.ml" 74 2159 2180 "utils_common.ml" 74 2159 2181
+type(
+  'b
+)
+ident(
+  def p "utils_common.ml" 83 2509 2511 "utils_common.ml" 83 2509 2538
+)
+"utils_common.ml" 83 2509 2511 "utils_common.ml" 83 2509 2519
+type(
+  string -> 'c
+)
+ident(
+  ext_ref Pervasives.failwith
+)
+"utils_common.ml" 83 2509 2520 "utils_common.ml" 83 2509 2538
+type(
+  string
+)
+"utils_common.ml" 83 2509 2511 "utils_common.ml" 83 2509 2538
+call(
+  tail
+)
+type(
+  'c
+)
+"utils_common.ml" 74 2159 2180 "utils_common.ml" 84 2539 2542
+type(
+  'b -> 'c
+)
+"utils_common.ml" 74 2159 2174 "utils_common.ml" 84 2539 2542
+type(
+  'a -> 'b -> 'c
+)

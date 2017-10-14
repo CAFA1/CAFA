@@ -1,0 +1,32 @@
+Backport of:
+
+From ae438bd14872682237d2780db2d16f39a74f3d7d Mon Sep 17 00:00:00 2001
+From: Cristy <urban-warrior@imagemagick.org>
+Date: Fri, 5 Feb 2016 21:07:12 -0500
+Subject: [PATCH] Out of bound in wpg file
+
+This is a partial fix
+
+bug: https://github.com/ImageMagick/ImageMagick/issues/102
+bug: https://github.com/ImageMagick/ImageMagick/issues/122
+origin: upstream, https://github.com/ImageMagick/ImageMagick/commit/a251039393f423c7858e63cab6aa98d17b8b7a41
+bug-ubuntu: https://bugs.launchpad.net/ubuntu/+source/imagemagick/+bug/1539050
+bug-ubuntu: https://bugs.launchpad.net/ubuntu/+source/imagemagick/+bug/1542115
+bug-debian: https://bugs.debian.org/832482
+---
+ coders/wpg.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+Index: imagemagick-6.6.9.7/coders/wpg.c
+===================================================================
+--- imagemagick-6.6.9.7.orig/coders/wpg.c	2016-11-15 15:18:04.558707039 -0500
++++ imagemagick-6.6.9.7/coders/wpg.c	2016-11-15 15:18:04.554706991 -0500
+@@ -800,7 +800,7 @@
+   if(exception->severity != UndefinedException) goto FINISH_UNL;     
+   if(magic_info->name == (char *) NULL) goto FINISH_UNL;
+     
+-  (void) CopyMagickMemory(clone_info->magick,magic_info->name,MaxTextExtent);
++  (void) strncpy(clone_info->magick,magic_info->name,MaxTextExtent);
+   
+     /* Read nested image */
+   /*FormatString(clone_info->filename,"%s:%s",magic_info->name,postscript_file);*/

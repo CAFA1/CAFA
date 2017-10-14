@@ -1,0 +1,806 @@
+"stp_lexer.ml" 10 150 154 "stp_lexer.ml" 10 150 172
+type(
+  Lexing.lex_tables
+)
+ident(
+  def __ocaml_lex_tables "stp_lexer.ml" 493 32829 32829 --
+)
+"stp_lexer.ml" 12 198 201 "stp_lexer.ml" 16 478 531
+type(
+  string
+)
+"stp_lexer.ml" 18 557 560 "stp_lexer.ml" 22 837 890
+type(
+  string
+)
+"stp_lexer.ml" 24 916 919 "stp_lexer.ml" 28 1196 1249
+type(
+  string
+)
+"stp_lexer.ml" 30 1273 1276 "stp_lexer.ml" 253 16883 16936
+type(
+  string
+)
+"stp_lexer.ml" 255 16960 16963 "stp_lexer.ml" 478 32570 32623
+type(
+  string
+)
+"stp_lexer.ml" 480 32651 32654 "stp_lexer.ml" 480 32651 32656
+type(
+  string
+)
+"stp_lexer.ml" 482 32687 32690 "stp_lexer.ml" 482 32687 32692
+type(
+  string
+)
+"stp_lexer.ml" 484 32723 32726 "stp_lexer.ml" 484 32723 32728
+type(
+  string
+)
+"stp_lexer.ml" 486 32757 32760 "stp_lexer.ml" 486 32757 32762
+type(
+  string
+)
+"stp_lexer.ml" 488 32791 32794 "stp_lexer.ml" 488 32791 32796
+type(
+  string
+)
+"stp_lexer.ml" 490 32819 32822 "stp_lexer.ml" 490 32819 32824
+type(
+  string
+)
+"stp_lexer.ml" 10 150 175 "stp_lexer.ml" 491 32826 32827
+type(
+  Lexing.lex_tables
+)
+"stp_lexer.ml" 493 32829 32837 "stp_lexer.ml" 493 32829 32842
+type(
+  Lexing.lexbuf -> Stp_grammar.token
+)
+ident(
+  def token "stp_lexer.ml" 493 32829 32829 --
+)
+"stp_lexer.ml" 493 32829 32843 "stp_lexer.ml" 493 32829 32849
+type(
+  Lexing.lexbuf
+)
+ident(
+  def lexbuf "stp_lexer.ml" 494 32852 32856 "stp_lexer.ml" 494 32852 32886
+)
+"stp_lexer.ml" 494 32852 32856 "stp_lexer.ml" 494 32852 32877
+type(
+  Lexing.lexbuf -> int -> Stp_grammar.token
+)
+ident(
+  int_ref __ocaml_lex_token_rec "stp_lexer.ml" 495 32887 32891 "stp_lexer.ml" 495 32887 32912
+)
+"stp_lexer.ml" 494 32852 32878 "stp_lexer.ml" 494 32852 32884
+type(
+  Lexing.lexbuf
+)
+ident(
+  int_ref lexbuf "stp_lexer.ml" 493 32829 32843 "stp_lexer.ml" 493 32829 32849
+)
+"stp_lexer.ml" 494 32852 32885 "stp_lexer.ml" 494 32852 32886
+type(
+  int
+)
+"stp_lexer.ml" 494 32852 32856 "stp_lexer.ml" 494 32852 32886
+call(
+  tail
+)
+type(
+  Stp_grammar.token
+)
+"stp_lexer.ml" 495 32887 32891 "stp_lexer.ml" 495 32887 32912
+type(
+  Lexing.lexbuf -> int -> Stp_grammar.token
+)
+ident(
+  def __ocaml_lex_token_rec "stp_lexer.ml" 493 32829 32829 --
+)
+"stp_lexer.ml" 495 32887 32913 "stp_lexer.ml" 495 32887 32919
+type(
+  Lexing.lexbuf
+)
+ident(
+  def lexbuf "stp_lexer.ml" 495 32887 32920 "stp_lexer.ml" 582 34557 34662
+)
+"stp_lexer.ml" 495 32887 32920 "stp_lexer.ml" 495 32887 32937
+type(
+  int
+)
+ident(
+  def __ocaml_lex_state "stp_lexer.ml" 496 32940 32942 "stp_lexer.ml" 582 34557 34662
+)
+"stp_lexer.ml" 496 32940 32948 "stp_lexer.ml" 496 32940 32961
+type(
+  Lexing.lex_tables -> int -> Lexing.lexbuf -> int
+)
+ident(
+  ext_ref Lexing.engine
+)
+"stp_lexer.ml" 496 32940 32962 "stp_lexer.ml" 496 32940 32980
+type(
+  Lexing.lex_tables
+)
+ident(
+  int_ref __ocaml_lex_tables "stp_lexer.ml" 10 150 154 "stp_lexer.ml" 10 150 172
+)
+"stp_lexer.ml" 496 32940 32981 "stp_lexer.ml" 496 32940 32998
+type(
+  int
+)
+ident(
+  int_ref __ocaml_lex_state "stp_lexer.ml" 495 32887 32920 "stp_lexer.ml" 495 32887 32937
+)
+"stp_lexer.ml" 496 32940 32999 "stp_lexer.ml" 496 32940 33005
+type(
+  Lexing.lexbuf
+)
+ident(
+  int_ref lexbuf "stp_lexer.ml" 495 32887 32913 "stp_lexer.ml" 495 32887 32919
+)
+"stp_lexer.ml" 496 32940 32948 "stp_lexer.ml" 496 32940 33005
+call(
+  stack
+)
+type(
+  int
+)
+"stp_lexer.ml" 497 33011 33019 "stp_lexer.ml" 497 33011 33020
+type(
+  int
+)
+"stp_lexer.mll" 13 33045 33068 "stp_lexer.mll" 13 33045 33073
+type(
+  Lexing.lexbuf -> Stp_grammar.token
+)
+ident(
+  int_ref token "stp_lexer.ml" 493 32829 32837 "stp_lexer.ml" 493 32829 32842
+)
+"stp_lexer.mll" 13 33045 33074 "stp_lexer.mll" 13 33045 33080
+type(
+  Lexing.lexbuf
+)
+ident(
+  int_ref lexbuf "stp_lexer.ml" 495 32887 32913 "stp_lexer.ml" 495 32887 32919
+)
+"stp_lexer.mll" 13 33045 33066 "stp_lexer.mll" 13 33045 33082
+call(
+  tail
+)
+type(
+  Stp_grammar.token
+)
+"stp_lexer.ml" 502 33105 33109 "stp_lexer.ml" 502 33105 33110
+type(
+  int
+)
+"stp_lexer.mll" 14 33135 33156 "stp_lexer.mll" 14 33135 33165
+type(
+  Stp_grammar.token
+)
+"stp_lexer.ml" 507 33188 33192 "stp_lexer.ml" 507 33188 33193
+type(
+  int
+)
+"stp_lexer.mll" 15 33218 33239 "stp_lexer.mll" 15 33218 33248
+type(
+  Stp_grammar.token
+)
+"stp_lexer.ml" 512 33271 33275 "stp_lexer.ml" 512 33271 33276
+type(
+  int
+)
+"stp_lexer.mll" 16 33301 33322 "stp_lexer.mll" 16 33301 33332
+type(
+  Stp_grammar.token
+)
+"stp_lexer.ml" 517 33355 33359 "stp_lexer.ml" 517 33355 33360
+type(
+  int
+)
+"stp_lexer.mll" 17 33385 33406 "stp_lexer.mll" 17 33385 33419
+type(
+  Stp_grammar.token
+)
+"stp_lexer.ml" 522 33442 33446 "stp_lexer.ml" 522 33442 33447
+type(
+  int
+)
+"stp_lexer.mll" 18 33472 33493 "stp_lexer.mll" 18 33472 33505
+type(
+  Stp_grammar.token
+)
+"stp_lexer.ml" 527 33528 33532 "stp_lexer.ml" 527 33528 33533
+type(
+  int
+)
+"stp_lexer.mll" 19 33558 33579 "stp_lexer.mll" 19 33558 33591
+type(
+  Stp_grammar.token
+)
+"stp_lexer.ml" 532 33614 33618 "stp_lexer.ml" 532 33614 33619
+type(
+  int
+)
+"stp_lexer.mll" 20 33644 33665 "stp_lexer.mll" 20 33644 33675
+type(
+  Stp_grammar.token
+)
+"stp_lexer.ml" 537 33698 33702 "stp_lexer.ml" 537 33698 33703
+type(
+  int
+)
+"stp_lexer.mll" 21 33728 33749 "stp_lexer.mll" 21 33728 33760
+type(
+  Stp_grammar.token
+)
+"stp_lexer.ml" 542 33783 33787 "stp_lexer.ml" 542 33783 33788
+type(
+  int
+)
+"stp_lexer.mll" 22 33813 33834 "stp_lexer.mll" 22 33813 33843
+type(
+  Stp_grammar.token
+)
+"stp_lexer.ml" 547 33866 33870 "stp_lexer.ml" 547 33866 33872
+type(
+  int
+)
+"stp_lexer.mll" 23 33897 33920 "stp_lexer.mll" 23 33897 33928
+type(
+  Lexing.lexbuf -> Stp_grammar.token
+)
+ident(
+  int_ref read_num "stp_lexer.ml" 584 34664 34668 "stp_lexer.ml" 584 34664 34676
+)
+"stp_lexer.mll" 23 33897 33929 "stp_lexer.mll" 23 33897 33935
+type(
+  Lexing.lexbuf
+)
+ident(
+  int_ref lexbuf "stp_lexer.ml" 495 32887 32913 "stp_lexer.ml" 495 32887 32919
+)
+"stp_lexer.mll" 23 33897 33918 "stp_lexer.mll" 23 33897 33937
+call(
+  tail
+)
+type(
+  Stp_grammar.token
+)
+"stp_lexer.ml" 552 33960 33964 "stp_lexer.ml" 552 33960 33966
+type(
+  int
+)
+"stp_lexer.mll" 24 33991 34014 "stp_lexer.mll" 24 33991 34022
+type(
+  Lexing.lexbuf -> Stp_grammar.token
+)
+ident(
+  int_ref read_num "stp_lexer.ml" 584 34664 34668 "stp_lexer.ml" 584 34664 34676
+)
+"stp_lexer.mll" 24 33991 34023 "stp_lexer.mll" 24 33991 34029
+type(
+  Lexing.lexbuf
+)
+ident(
+  int_ref lexbuf "stp_lexer.ml" 495 32887 32913 "stp_lexer.ml" 495 32887 32919
+)
+"stp_lexer.mll" 24 33991 34012 "stp_lexer.mll" 24 33991 34031
+call(
+  tail
+)
+type(
+  Stp_grammar.token
+)
+"stp_lexer.ml" 557 34054 34058 "stp_lexer.ml" 557 34054 34060
+type(
+  int
+)
+"stp_lexer.mll" 25 34085 34108 "stp_lexer.mll" 25 34085 34116
+type(
+  Lexing.lexbuf -> Stp_grammar.token
+)
+ident(
+  int_ref read_num "stp_lexer.ml" 584 34664 34668 "stp_lexer.ml" 584 34664 34676
+)
+"stp_lexer.mll" 25 34085 34117 "stp_lexer.mll" 25 34085 34123
+type(
+  Lexing.lexbuf
+)
+ident(
+  int_ref lexbuf "stp_lexer.ml" 495 32887 32913 "stp_lexer.ml" 495 32887 32919
+)
+"stp_lexer.mll" 25 34085 34106 "stp_lexer.mll" 25 34085 34125
+call(
+  tail
+)
+type(
+  Stp_grammar.token
+)
+"stp_lexer.ml" 562 34148 34152 "stp_lexer.ml" 562 34148 34154
+type(
+  int
+)
+"stp_lexer.mll" 26 34183 34198 "stp_lexer.mll" 26 34183 34201
+type(
+  string
+)
+"stp_lexer.ml" 567 34223 34225 "stp_lexer.ml" 567 34223 34242
+type(
+  Lexing.lexbuf -> int -> int -> string
+)
+ident(
+  ext_ref Lexing.sub_lexeme
+)
+"stp_lexer.ml" 567 34223 34243 "stp_lexer.ml" 567 34223 34249
+type(
+  Lexing.lexbuf
+)
+ident(
+  int_ref lexbuf "stp_lexer.ml" 495 32887 32913 "stp_lexer.ml" 495 32887 32919
+)
+"stp_lexer.ml" 567 34223 34250 "stp_lexer.ml" 567 34223 34256
+type(
+  Lexing.lexbuf
+)
+ident(
+  int_ref lexbuf "stp_lexer.ml" 495 32887 32913 "stp_lexer.ml" 495 32887 32919
+)
+"stp_lexer.ml" 567 34223 34250 "stp_lexer.ml" 567 34223 34277
+type(
+  int
+)
+"stp_lexer.ml" 567 34223 34278 "stp_lexer.ml" 567 34223 34284
+type(
+  Lexing.lexbuf
+)
+ident(
+  int_ref lexbuf "stp_lexer.ml" 495 32887 32913 "stp_lexer.ml" 495 32887 32919
+)
+"stp_lexer.ml" 567 34223 34278 "stp_lexer.ml" 567 34223 34304
+type(
+  int
+)
+"stp_lexer.ml" 567 34223 34225 "stp_lexer.ml" 567 34223 34304
+call(
+  stack
+)
+type(
+  string
+)
+"stp_lexer.mll" 26 34329 34356 "stp_lexer.mll" 26 34329 34359
+type(
+  string
+)
+ident(
+  int_ref var "stp_lexer.mll" 26 34183 34198 "stp_lexer.mll" 26 34183 34201
+)
+"stp_lexer.mll" 26 34329 34350 "stp_lexer.mll" 26 34329 34361
+type(
+  Stp_grammar.token
+)
+"stp_lexer.ml" 563 34158 34158 "stp_lexer.mll" 26 34329 34361
+type(
+  Stp_grammar.token
+)
+"stp_lexer.ml" 572 34384 34388 "stp_lexer.ml" 572 34384 34390
+type(
+  int
+)
+"stp_lexer.mll" 27 34415 34436 "stp_lexer.mll" 27 34415 34443
+type(
+  Stp_grammar.token
+)
+"stp_lexer.ml" 577 34466 34470 "stp_lexer.ml" 577 34466 34472
+type(
+  int
+)
+"stp_lexer.mll" 28 34497 34520 "stp_lexer.mll" 28 34497 34525
+type(
+  Lexing.lexbuf -> Stp_grammar.token
+)
+ident(
+  int_ref token "stp_lexer.ml" 493 32829 32837 "stp_lexer.ml" 493 32829 32842
+)
+"stp_lexer.mll" 28 34497 34526 "stp_lexer.mll" 28 34497 34532
+type(
+  Lexing.lexbuf
+)
+ident(
+  int_ref lexbuf "stp_lexer.ml" 495 32887 32913 "stp_lexer.ml" 495 32887 32919
+)
+"stp_lexer.mll" 28 34497 34518 "stp_lexer.mll" 28 34497 34534
+call(
+  tail
+)
+type(
+  Stp_grammar.token
+)
+"stp_lexer.ml" 582 34557 34561 "stp_lexer.ml" 582 34557 34578
+type(
+  int
+)
+ident(
+  def __ocaml_lex_state "stp_lexer.ml" 582 34557 34582 "stp_lexer.ml" 582 34557 34662
+)
+"stp_lexer.ml" 582 34557 34582 "stp_lexer.ml" 582 34557 34588
+type(
+  Lexing.lexbuf
+)
+ident(
+  int_ref lexbuf "stp_lexer.ml" 495 32887 32913 "stp_lexer.ml" 495 32887 32919
+)
+"stp_lexer.ml" 582 34557 34582 "stp_lexer.ml" 582 34557 34607
+type(
+  Lexing.lexbuf -> unit
+)
+"stp_lexer.ml" 582 34557 34608 "stp_lexer.ml" 582 34557 34614
+type(
+  Lexing.lexbuf
+)
+ident(
+  int_ref lexbuf "stp_lexer.ml" 495 32887 32913 "stp_lexer.ml" 495 32887 32919
+)
+"stp_lexer.ml" 582 34557 34582 "stp_lexer.ml" 582 34557 34614
+call(
+  stack
+)
+type(
+  unit
+)
+"stp_lexer.ml" 582 34557 34616 "stp_lexer.ml" 582 34557 34637
+type(
+  Lexing.lexbuf -> int -> Stp_grammar.token
+)
+ident(
+  int_ref __ocaml_lex_token_rec "stp_lexer.ml" 495 32887 32891 "stp_lexer.ml" 495 32887 32912
+)
+"stp_lexer.ml" 582 34557 34638 "stp_lexer.ml" 582 34557 34644
+type(
+  Lexing.lexbuf
+)
+ident(
+  int_ref lexbuf "stp_lexer.ml" 495 32887 32913 "stp_lexer.ml" 495 32887 32919
+)
+"stp_lexer.ml" 582 34557 34645 "stp_lexer.ml" 582 34557 34662
+type(
+  int
+)
+ident(
+  int_ref __ocaml_lex_state "stp_lexer.ml" 582 34557 34561 "stp_lexer.ml" 582 34557 34578
+)
+"stp_lexer.ml" 582 34557 34616 "stp_lexer.ml" 582 34557 34662
+call(
+  tail
+)
+type(
+  Stp_grammar.token
+)
+"stp_lexer.ml" 582 34557 34582 "stp_lexer.ml" 582 34557 34662
+type(
+  Stp_grammar.token
+)
+"stp_lexer.ml" 496 32940 32942 "stp_lexer.ml" 582 34557 34662
+type(
+  Stp_grammar.token
+)
+"stp_lexer.ml" 584 34664 34668 "stp_lexer.ml" 584 34664 34676
+type(
+  Lexing.lexbuf -> Stp_grammar.token
+)
+ident(
+  def read_num "stp_lexer.ml" 493 32829 32829 --
+)
+"stp_lexer.ml" 584 34664 34677 "stp_lexer.ml" 584 34664 34683
+type(
+  Lexing.lexbuf
+)
+ident(
+  def lexbuf "stp_lexer.ml" 585 34686 34690 "stp_lexer.ml" 585 34686 34724
+)
+"stp_lexer.ml" 585 34686 34690 "stp_lexer.ml" 585 34686 34714
+type(
+  Lexing.lexbuf -> int -> Stp_grammar.token
+)
+ident(
+  int_ref __ocaml_lex_read_num_rec "stp_lexer.ml" 586 34725 34729 "stp_lexer.ml" 586 34725 34753
+)
+"stp_lexer.ml" 585 34686 34715 "stp_lexer.ml" 585 34686 34721
+type(
+  Lexing.lexbuf
+)
+ident(
+  int_ref lexbuf "stp_lexer.ml" 584 34664 34677 "stp_lexer.ml" 584 34664 34683
+)
+"stp_lexer.ml" 585 34686 34722 "stp_lexer.ml" 585 34686 34724
+type(
+  int
+)
+"stp_lexer.ml" 585 34686 34690 "stp_lexer.ml" 585 34686 34724
+call(
+  tail
+)
+type(
+  Stp_grammar.token
+)
+"stp_lexer.ml" 586 34725 34729 "stp_lexer.ml" 586 34725 34753
+type(
+  Lexing.lexbuf -> int -> Stp_grammar.token
+)
+ident(
+  def __ocaml_lex_read_num_rec "stp_lexer.ml" 493 32829 32829 --
+)
+"stp_lexer.ml" 586 34725 34754 "stp_lexer.ml" 586 34725 34760
+type(
+  Lexing.lexbuf
+)
+ident(
+  def lexbuf "stp_lexer.ml" 586 34725 34761 "stp_lexer.ml" 607 35305 35413
+)
+"stp_lexer.ml" 586 34725 34761 "stp_lexer.ml" 586 34725 34778
+type(
+  int
+)
+ident(
+  def __ocaml_lex_state "stp_lexer.ml" 587 34781 34783 "stp_lexer.ml" 607 35305 35413
+)
+"stp_lexer.ml" 587 34781 34789 "stp_lexer.ml" 587 34781 34802
+type(
+  Lexing.lex_tables -> int -> Lexing.lexbuf -> int
+)
+ident(
+  ext_ref Lexing.engine
+)
+"stp_lexer.ml" 587 34781 34803 "stp_lexer.ml" 587 34781 34821
+type(
+  Lexing.lex_tables
+)
+ident(
+  int_ref __ocaml_lex_tables "stp_lexer.ml" 10 150 154 "stp_lexer.ml" 10 150 172
+)
+"stp_lexer.ml" 587 34781 34822 "stp_lexer.ml" 587 34781 34839
+type(
+  int
+)
+ident(
+  int_ref __ocaml_lex_state "stp_lexer.ml" 586 34725 34761 "stp_lexer.ml" 586 34725 34778
+)
+"stp_lexer.ml" 587 34781 34840 "stp_lexer.ml" 587 34781 34846
+type(
+  Lexing.lexbuf
+)
+ident(
+  int_ref lexbuf "stp_lexer.ml" 586 34725 34754 "stp_lexer.ml" 586 34725 34760
+)
+"stp_lexer.ml" 587 34781 34789 "stp_lexer.ml" 587 34781 34846
+call(
+  stack
+)
+type(
+  int
+)
+"stp_lexer.ml" 588 34852 34860 "stp_lexer.ml" 588 34852 34861
+type(
+  int
+)
+"stp_lexer.mll" 31 34890 34904 "stp_lexer.mll" 31 34890 34905
+type(
+  string
+)
+"stp_lexer.ml" 593 34927 34929 "stp_lexer.ml" 593 34927 34946
+type(
+  Lexing.lexbuf -> int -> int -> string
+)
+ident(
+  ext_ref Lexing.sub_lexeme
+)
+"stp_lexer.ml" 593 34927 34947 "stp_lexer.ml" 593 34927 34953
+type(
+  Lexing.lexbuf
+)
+ident(
+  int_ref lexbuf "stp_lexer.ml" 586 34725 34754 "stp_lexer.ml" 586 34725 34760
+)
+"stp_lexer.ml" 593 34927 34954 "stp_lexer.ml" 593 34927 34960
+type(
+  Lexing.lexbuf
+)
+ident(
+  int_ref lexbuf "stp_lexer.ml" 586 34725 34754 "stp_lexer.ml" 586 34725 34760
+)
+"stp_lexer.ml" 593 34927 34954 "stp_lexer.ml" 593 34927 34981
+type(
+  int
+)
+"stp_lexer.ml" 593 34927 34982 "stp_lexer.ml" 593 34927 34988
+type(
+  Lexing.lexbuf
+)
+ident(
+  int_ref lexbuf "stp_lexer.ml" 586 34725 34754 "stp_lexer.ml" 586 34725 34760
+)
+"stp_lexer.ml" 593 34927 34982 "stp_lexer.ml" 593 34927 35008
+type(
+  int
+)
+"stp_lexer.ml" 593 34927 34929 "stp_lexer.ml" 593 34927 35008
+call(
+  stack
+)
+type(
+  string
+)
+"stp_lexer.mll" 32 35056 35068 "stp_lexer.mll" 32 35056 35090
+type(
+  string -> Big_int_Z.big_int
+)
+ident(
+  ext_ref Util.big_int_of_string
+)
+"stp_lexer.mll" 32 35056 35092 "stp_lexer.mll" 32 35056 35096
+type(
+  string
+)
+"stp_lexer.mll" 32 35056 35096 "stp_lexer.mll" 32 35056 35097
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"stp_lexer.mll" 32 35056 35097 "stp_lexer.mll" 32 35056 35098
+type(
+  string
+)
+ident(
+  int_ref n "stp_lexer.mll" 31 34890 34904 "stp_lexer.mll" 31 34890 34905
+)
+"stp_lexer.mll" 32 35056 35091 "stp_lexer.mll" 32 35056 35099
+call(
+  stack
+)
+type(
+  string
+)
+"stp_lexer.mll" 32 35056 35067 "stp_lexer.mll" 32 35056 35100
+call(
+  stack
+)
+type(
+  Big_int_Z.big_int
+)
+"stp_lexer.mll" 32 35056 35064 "stp_lexer.mll" 32 35056 35100
+type(
+  Stp_grammar.token
+)
+"stp_lexer.mll" 33 35101 35118 "stp_lexer.mll" 33 35101 35133
+type(
+  string
+)
+"stp_lexer.mll" 33 35101 35110 "stp_lexer.mll" 33 35101 35133
+type(
+  exn
+)
+"stp_lexer.mll" 34 35137 35143 "stp_lexer.mll" 34 35137 35148
+type(
+  exn -> Stp_grammar.token
+)
+ident(
+  ext_ref Pervasives.raise
+)
+"stp_lexer.mll" 34 35137 35158 "stp_lexer.mll" 34 35137 35184
+type(
+  string
+)
+"stp_lexer.mll" 34 35137 35148 "stp_lexer.mll" 34 35137 35185
+type(
+  exn
+)
+"stp_lexer.mll" 34 35137 35143 "stp_lexer.mll" 34 35137 35186
+type(
+  Stp_grammar.token
+)
+"stp_lexer.mll" 31 35033 35054 "stp_lexer.mll" 35 35187 35192
+type(
+  Stp_grammar.token
+)
+"stp_lexer.ml" 589 34865 34865 "stp_lexer.mll" 35 35187 35192
+type(
+  Stp_grammar.token
+)
+"stp_lexer.ml" 602 35215 35219 "stp_lexer.ml" 602 35215 35220
+type(
+  int
+)
+"stp_lexer.mll" 36 35245 35268 "stp_lexer.mll" 36 35245 35273
+type(
+  Lexing.lexbuf -> Stp_grammar.token
+)
+ident(
+  int_ref token "stp_lexer.ml" 493 32829 32837 "stp_lexer.ml" 493 32829 32842
+)
+"stp_lexer.mll" 36 35245 35274 "stp_lexer.mll" 36 35245 35280
+type(
+  Lexing.lexbuf
+)
+ident(
+  int_ref lexbuf "stp_lexer.ml" 586 34725 34754 "stp_lexer.ml" 586 34725 34760
+)
+"stp_lexer.mll" 36 35245 35266 "stp_lexer.mll" 36 35245 35282
+call(
+  tail
+)
+type(
+  Stp_grammar.token
+)
+"stp_lexer.ml" 607 35305 35309 "stp_lexer.ml" 607 35305 35326
+type(
+  int
+)
+ident(
+  def __ocaml_lex_state "stp_lexer.ml" 607 35305 35330 "stp_lexer.ml" 607 35305 35413
+)
+"stp_lexer.ml" 607 35305 35330 "stp_lexer.ml" 607 35305 35336
+type(
+  Lexing.lexbuf
+)
+ident(
+  int_ref lexbuf "stp_lexer.ml" 586 34725 34754 "stp_lexer.ml" 586 34725 34760
+)
+"stp_lexer.ml" 607 35305 35330 "stp_lexer.ml" 607 35305 35355
+type(
+  Lexing.lexbuf -> unit
+)
+"stp_lexer.ml" 607 35305 35356 "stp_lexer.ml" 607 35305 35362
+type(
+  Lexing.lexbuf
+)
+ident(
+  int_ref lexbuf "stp_lexer.ml" 586 34725 34754 "stp_lexer.ml" 586 34725 34760
+)
+"stp_lexer.ml" 607 35305 35330 "stp_lexer.ml" 607 35305 35362
+call(
+  stack
+)
+type(
+  unit
+)
+"stp_lexer.ml" 607 35305 35364 "stp_lexer.ml" 607 35305 35388
+type(
+  Lexing.lexbuf -> int -> Stp_grammar.token
+)
+ident(
+  int_ref __ocaml_lex_read_num_rec "stp_lexer.ml" 586 34725 34729 "stp_lexer.ml" 586 34725 34753
+)
+"stp_lexer.ml" 607 35305 35389 "stp_lexer.ml" 607 35305 35395
+type(
+  Lexing.lexbuf
+)
+ident(
+  int_ref lexbuf "stp_lexer.ml" 586 34725 34754 "stp_lexer.ml" 586 34725 34760
+)
+"stp_lexer.ml" 607 35305 35396 "stp_lexer.ml" 607 35305 35413
+type(
+  int
+)
+ident(
+  int_ref __ocaml_lex_state "stp_lexer.ml" 607 35305 35309 "stp_lexer.ml" 607 35305 35326
+)
+"stp_lexer.ml" 607 35305 35364 "stp_lexer.ml" 607 35305 35413
+call(
+  tail
+)
+type(
+  Stp_grammar.token
+)
+"stp_lexer.ml" 607 35305 35330 "stp_lexer.ml" 607 35305 35413
+type(
+  Stp_grammar.token
+)
+"stp_lexer.ml" 587 34781 34783 "stp_lexer.ml" 607 35305 35413
+type(
+  Stp_grammar.token
+)

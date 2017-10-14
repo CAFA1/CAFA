@@ -1,0 +1,828 @@
+   0  $accept : %entry% $end
+
+   1  file : strict_opt graph_or_digraph id_opt LBRA stmt_list RBRA EOF
+
+   2  strict_opt :
+   3             | STRICT
+
+   4  graph_or_digraph : GRAPH
+   5                   | DIGRAPH
+
+   6  stmt_list :
+   7            | list1_stmt
+
+   8  list1_stmt : stmt semicolon_opt
+   9             | stmt semicolon_opt list1_stmt
+
+  10  semicolon_opt :
+  11                | SEMICOLON
+
+  12  stmt : node_stmt
+  13       | edge_stmt
+  14       | attr_stmt
+  15       | ID EQUAL ID
+  16       | subgraph
+
+  17  node_stmt : node_id attr_list_opt
+
+  18  edge_stmt : node edge_rhs attr_list_opt
+
+  19  attr_stmt : GRAPH attr_list
+  20            | NODE attr_list
+  21            | EDGE attr_list
+
+  22  edge_rhs : EDGEOP node edge_rhs_opt
+
+  23  edge_rhs_opt :
+  24               | EDGEOP node edge_rhs_opt
+
+  25  node : node_id
+  26       | subgraph
+
+  27  node_id : ID port_opt
+
+  28  port_opt :
+  29           | port
+
+  30  port : COLON ID
+  31       | COLON ID COLON ID
+
+  32  attr_list_opt :
+  33                | attr_list
+
+  34  attr_list : LSQ a_list RSQ
+  35            | LSQ a_list RSQ attr_list
+
+  36  id_opt :
+  37         | ID
+
+  38  a_list : equality comma_opt
+  39         | equality comma_opt a_list
+
+  40  equality : ID
+  41           | ID EQUAL ID
+
+  42  comma_opt :
+  43            | COMMA
+
+  44  subgraph : SUBGRAPH ID
+  45           | SUBGRAPH ID LBRA stmt_list RBRA
+  46           | SUBGRAPH LBRA stmt_list RBRA
+  47           | LBRA stmt_list RBRA
+
+  48  %entry% : '\001' file
+
+state 0
+	$accept : . %entry% $end  (0)
+
+	'\001'  shift 1
+	.  error
+
+	%entry%  goto 2
+
+
+state 1
+	%entry% : '\001' . file  (48)
+	strict_opt : .  (2)
+
+	STRICT  shift 3
+	GRAPH  reduce 2
+	DIGRAPH  reduce 2
+
+	file  goto 4
+	strict_opt  goto 5
+
+
+state 2
+	$accept : %entry% . $end  (0)
+
+	$end  accept
+
+
+state 3
+	strict_opt : STRICT .  (3)
+
+	.  reduce 3
+
+
+state 4
+	%entry% : '\001' file .  (48)
+
+	.  reduce 48
+
+
+state 5
+	file : strict_opt . graph_or_digraph id_opt LBRA stmt_list RBRA EOF  (1)
+
+	GRAPH  shift 6
+	DIGRAPH  shift 7
+	.  error
+
+	graph_or_digraph  goto 8
+
+
+state 6
+	graph_or_digraph : GRAPH .  (4)
+
+	.  reduce 4
+
+
+state 7
+	graph_or_digraph : DIGRAPH .  (5)
+
+	.  reduce 5
+
+
+state 8
+	file : strict_opt graph_or_digraph . id_opt LBRA stmt_list RBRA EOF  (1)
+	id_opt : .  (36)
+
+	ID  shift 9
+	LBRA  reduce 36
+
+	id_opt  goto 10
+
+
+state 9
+	id_opt : ID .  (37)
+
+	.  reduce 37
+
+
+state 10
+	file : strict_opt graph_or_digraph id_opt . LBRA stmt_list RBRA EOF  (1)
+
+	LBRA  shift 11
+	.  error
+
+
+state 11
+	file : strict_opt graph_or_digraph id_opt LBRA . stmt_list RBRA EOF  (1)
+	stmt_list : .  (6)
+
+	ID  shift 12
+	GRAPH  shift 13
+	LBRA  shift 14
+	NODE  shift 15
+	EDGE  shift 16
+	SUBGRAPH  shift 17
+	RBRA  reduce 6
+
+	stmt_list  goto 18
+	list1_stmt  goto 19
+	stmt  goto 20
+	node_stmt  goto 21
+	edge_stmt  goto 22
+	attr_stmt  goto 23
+	subgraph  goto 24
+	node_id  goto 25
+	node  goto 26
+
+
+state 12
+	stmt : ID . EQUAL ID  (15)
+	node_id : ID . port_opt  (27)
+	port_opt : .  (28)
+
+	COLON  shift 27
+	EQUAL  shift 28
+	ID  reduce 28
+	SEMICOLON  reduce 28
+	EDGEOP  reduce 28
+	GRAPH  reduce 28
+	LBRA  reduce 28
+	RBRA  reduce 28
+	LSQ  reduce 28
+	NODE  reduce 28
+	EDGE  reduce 28
+	SUBGRAPH  reduce 28
+
+	port_opt  goto 29
+	port  goto 30
+
+
+state 13
+	attr_stmt : GRAPH . attr_list  (19)
+
+	LSQ  shift 31
+	.  error
+
+	attr_list  goto 32
+
+
+state 14
+	subgraph : LBRA . stmt_list RBRA  (47)
+	stmt_list : .  (6)
+
+	ID  shift 12
+	GRAPH  shift 13
+	LBRA  shift 14
+	NODE  shift 15
+	EDGE  shift 16
+	SUBGRAPH  shift 17
+	RBRA  reduce 6
+
+	stmt_list  goto 33
+	list1_stmt  goto 19
+	stmt  goto 20
+	node_stmt  goto 21
+	edge_stmt  goto 22
+	attr_stmt  goto 23
+	subgraph  goto 24
+	node_id  goto 25
+	node  goto 26
+
+
+state 15
+	attr_stmt : NODE . attr_list  (20)
+
+	LSQ  shift 31
+	.  error
+
+	attr_list  goto 34
+
+
+state 16
+	attr_stmt : EDGE . attr_list  (21)
+
+	LSQ  shift 31
+	.  error
+
+	attr_list  goto 35
+
+
+state 17
+	subgraph : SUBGRAPH . ID  (44)
+	subgraph : SUBGRAPH . ID LBRA stmt_list RBRA  (45)
+	subgraph : SUBGRAPH . LBRA stmt_list RBRA  (46)
+
+	ID  shift 36
+	LBRA  shift 37
+	.  error
+
+
+state 18
+	file : strict_opt graph_or_digraph id_opt LBRA stmt_list . RBRA EOF  (1)
+
+	RBRA  shift 38
+	.  error
+
+
+state 19
+	stmt_list : list1_stmt .  (7)
+
+	.  reduce 7
+
+
+state 20
+	list1_stmt : stmt . semicolon_opt  (8)
+	list1_stmt : stmt . semicolon_opt list1_stmt  (9)
+	semicolon_opt : .  (10)
+
+	SEMICOLON  shift 39
+	ID  reduce 10
+	GRAPH  reduce 10
+	LBRA  reduce 10
+	RBRA  reduce 10
+	NODE  reduce 10
+	EDGE  reduce 10
+	SUBGRAPH  reduce 10
+
+	semicolon_opt  goto 40
+
+
+state 21
+	stmt : node_stmt .  (12)
+
+	.  reduce 12
+
+
+state 22
+	stmt : edge_stmt .  (13)
+
+	.  reduce 13
+
+
+state 23
+	stmt : attr_stmt .  (14)
+
+	.  reduce 14
+
+
+state 24
+	stmt : subgraph .  (16)
+	node : subgraph .  (26)
+
+	ID  reduce 16
+	SEMICOLON  reduce 16
+	EDGEOP  reduce 26
+	GRAPH  reduce 16
+	LBRA  reduce 16
+	RBRA  reduce 16
+	NODE  reduce 16
+	EDGE  reduce 16
+	SUBGRAPH  reduce 16
+
+
+state 25
+	node_stmt : node_id . attr_list_opt  (17)
+	node : node_id .  (25)
+	attr_list_opt : .  (32)
+
+	LSQ  shift 31
+	ID  reduce 32
+	SEMICOLON  reduce 32
+	EDGEOP  reduce 25
+	GRAPH  reduce 32
+	LBRA  reduce 32
+	RBRA  reduce 32
+	NODE  reduce 32
+	EDGE  reduce 32
+	SUBGRAPH  reduce 32
+
+	attr_list_opt  goto 41
+	attr_list  goto 42
+
+
+state 26
+	edge_stmt : node . edge_rhs attr_list_opt  (18)
+
+	EDGEOP  shift 43
+	.  error
+
+	edge_rhs  goto 44
+
+
+state 27
+	port : COLON . ID  (30)
+	port : COLON . ID COLON ID  (31)
+
+	ID  shift 45
+	.  error
+
+
+state 28
+	stmt : ID EQUAL . ID  (15)
+
+	ID  shift 46
+	.  error
+
+
+state 29
+	node_id : ID port_opt .  (27)
+
+	.  reduce 27
+
+
+state 30
+	port_opt : port .  (29)
+
+	.  reduce 29
+
+
+state 31
+	attr_list : LSQ . a_list RSQ  (34)
+	attr_list : LSQ . a_list RSQ attr_list  (35)
+
+	ID  shift 47
+	.  error
+
+	a_list  goto 48
+	equality  goto 49
+
+
+state 32
+	attr_stmt : GRAPH attr_list .  (19)
+
+	.  reduce 19
+
+
+state 33
+	subgraph : LBRA stmt_list . RBRA  (47)
+
+	RBRA  shift 50
+	.  error
+
+
+state 34
+	attr_stmt : NODE attr_list .  (20)
+
+	.  reduce 20
+
+
+state 35
+	attr_stmt : EDGE attr_list .  (21)
+
+	.  reduce 21
+
+
+state 36
+	subgraph : SUBGRAPH ID .  (44)
+	subgraph : SUBGRAPH ID . LBRA stmt_list RBRA  (45)
+
+	LBRA  shift 51
+	ID  reduce 44
+	SEMICOLON  reduce 44
+	EDGEOP  reduce 44
+	GRAPH  reduce 44
+	RBRA  reduce 44
+	LSQ  reduce 44
+	NODE  reduce 44
+	EDGE  reduce 44
+	SUBGRAPH  reduce 44
+
+
+state 37
+	subgraph : SUBGRAPH LBRA . stmt_list RBRA  (46)
+	stmt_list : .  (6)
+
+	ID  shift 12
+	GRAPH  shift 13
+	LBRA  shift 14
+	NODE  shift 15
+	EDGE  shift 16
+	SUBGRAPH  shift 17
+	RBRA  reduce 6
+
+	stmt_list  goto 52
+	list1_stmt  goto 19
+	stmt  goto 20
+	node_stmt  goto 21
+	edge_stmt  goto 22
+	attr_stmt  goto 23
+	subgraph  goto 24
+	node_id  goto 25
+	node  goto 26
+
+
+state 38
+	file : strict_opt graph_or_digraph id_opt LBRA stmt_list RBRA . EOF  (1)
+
+	EOF  shift 53
+	.  error
+
+
+state 39
+	semicolon_opt : SEMICOLON .  (11)
+
+	.  reduce 11
+
+
+state 40
+	list1_stmt : stmt semicolon_opt .  (8)
+	list1_stmt : stmt semicolon_opt . list1_stmt  (9)
+
+	ID  shift 12
+	GRAPH  shift 13
+	LBRA  shift 14
+	NODE  shift 15
+	EDGE  shift 16
+	SUBGRAPH  shift 17
+	RBRA  reduce 8
+
+	list1_stmt  goto 54
+	stmt  goto 20
+	node_stmt  goto 21
+	edge_stmt  goto 22
+	attr_stmt  goto 23
+	subgraph  goto 24
+	node_id  goto 25
+	node  goto 26
+
+
+state 41
+	node_stmt : node_id attr_list_opt .  (17)
+
+	.  reduce 17
+
+
+state 42
+	attr_list_opt : attr_list .  (33)
+
+	.  reduce 33
+
+
+state 43
+	edge_rhs : EDGEOP . node edge_rhs_opt  (22)
+
+	ID  shift 55
+	LBRA  shift 14
+	SUBGRAPH  shift 17
+	.  error
+
+	subgraph  goto 56
+	node_id  goto 57
+	node  goto 58
+
+
+state 44
+	edge_stmt : node edge_rhs . attr_list_opt  (18)
+	attr_list_opt : .  (32)
+
+	LSQ  shift 31
+	ID  reduce 32
+	SEMICOLON  reduce 32
+	GRAPH  reduce 32
+	LBRA  reduce 32
+	RBRA  reduce 32
+	NODE  reduce 32
+	EDGE  reduce 32
+	SUBGRAPH  reduce 32
+
+	attr_list_opt  goto 59
+	attr_list  goto 42
+
+
+state 45
+	port : COLON ID .  (30)
+	port : COLON ID . COLON ID  (31)
+
+	COLON  shift 60
+	ID  reduce 30
+	SEMICOLON  reduce 30
+	EDGEOP  reduce 30
+	GRAPH  reduce 30
+	LBRA  reduce 30
+	RBRA  reduce 30
+	LSQ  reduce 30
+	NODE  reduce 30
+	EDGE  reduce 30
+	SUBGRAPH  reduce 30
+
+
+state 46
+	stmt : ID EQUAL ID .  (15)
+
+	.  reduce 15
+
+
+state 47
+	equality : ID .  (40)
+	equality : ID . EQUAL ID  (41)
+
+	EQUAL  shift 61
+	ID  reduce 40
+	COMMA  reduce 40
+	RSQ  reduce 40
+
+
+state 48
+	attr_list : LSQ a_list . RSQ  (34)
+	attr_list : LSQ a_list . RSQ attr_list  (35)
+
+	RSQ  shift 62
+	.  error
+
+
+state 49
+	a_list : equality . comma_opt  (38)
+	a_list : equality . comma_opt a_list  (39)
+	comma_opt : .  (42)
+
+	COMMA  shift 63
+	ID  reduce 42
+	RSQ  reduce 42
+
+	comma_opt  goto 64
+
+
+state 50
+	subgraph : LBRA stmt_list RBRA .  (47)
+
+	.  reduce 47
+
+
+state 51
+	subgraph : SUBGRAPH ID LBRA . stmt_list RBRA  (45)
+	stmt_list : .  (6)
+
+	ID  shift 12
+	GRAPH  shift 13
+	LBRA  shift 14
+	NODE  shift 15
+	EDGE  shift 16
+	SUBGRAPH  shift 17
+	RBRA  reduce 6
+
+	stmt_list  goto 65
+	list1_stmt  goto 19
+	stmt  goto 20
+	node_stmt  goto 21
+	edge_stmt  goto 22
+	attr_stmt  goto 23
+	subgraph  goto 24
+	node_id  goto 25
+	node  goto 26
+
+
+state 52
+	subgraph : SUBGRAPH LBRA stmt_list . RBRA  (46)
+
+	RBRA  shift 66
+	.  error
+
+
+state 53
+	file : strict_opt graph_or_digraph id_opt LBRA stmt_list RBRA EOF .  (1)
+
+	.  reduce 1
+
+
+state 54
+	list1_stmt : stmt semicolon_opt list1_stmt .  (9)
+
+	.  reduce 9
+
+
+state 55
+	node_id : ID . port_opt  (27)
+	port_opt : .  (28)
+
+	COLON  shift 27
+	ID  reduce 28
+	SEMICOLON  reduce 28
+	EDGEOP  reduce 28
+	GRAPH  reduce 28
+	LBRA  reduce 28
+	RBRA  reduce 28
+	LSQ  reduce 28
+	NODE  reduce 28
+	EDGE  reduce 28
+	SUBGRAPH  reduce 28
+
+	port_opt  goto 29
+	port  goto 30
+
+
+state 56
+	node : subgraph .  (26)
+
+	.  reduce 26
+
+
+state 57
+	node : node_id .  (25)
+
+	.  reduce 25
+
+
+state 58
+	edge_rhs : EDGEOP node . edge_rhs_opt  (22)
+	edge_rhs_opt : .  (23)
+
+	EDGEOP  shift 67
+	ID  reduce 23
+	SEMICOLON  reduce 23
+	GRAPH  reduce 23
+	LBRA  reduce 23
+	RBRA  reduce 23
+	LSQ  reduce 23
+	NODE  reduce 23
+	EDGE  reduce 23
+	SUBGRAPH  reduce 23
+
+	edge_rhs_opt  goto 68
+
+
+state 59
+	edge_stmt : node edge_rhs attr_list_opt .  (18)
+
+	.  reduce 18
+
+
+state 60
+	port : COLON ID COLON . ID  (31)
+
+	ID  shift 69
+	.  error
+
+
+state 61
+	equality : ID EQUAL . ID  (41)
+
+	ID  shift 70
+	.  error
+
+
+state 62
+	attr_list : LSQ a_list RSQ .  (34)
+	attr_list : LSQ a_list RSQ . attr_list  (35)
+
+	LSQ  shift 31
+	ID  reduce 34
+	SEMICOLON  reduce 34
+	GRAPH  reduce 34
+	LBRA  reduce 34
+	RBRA  reduce 34
+	NODE  reduce 34
+	EDGE  reduce 34
+	SUBGRAPH  reduce 34
+
+	attr_list  goto 71
+
+
+state 63
+	comma_opt : COMMA .  (43)
+
+	.  reduce 43
+
+
+state 64
+	a_list : equality comma_opt .  (38)
+	a_list : equality comma_opt . a_list  (39)
+
+	ID  shift 47
+	RSQ  reduce 38
+
+	a_list  goto 72
+	equality  goto 49
+
+
+state 65
+	subgraph : SUBGRAPH ID LBRA stmt_list . RBRA  (45)
+
+	RBRA  shift 73
+	.  error
+
+
+state 66
+	subgraph : SUBGRAPH LBRA stmt_list RBRA .  (46)
+
+	.  reduce 46
+
+
+state 67
+	edge_rhs_opt : EDGEOP . node edge_rhs_opt  (24)
+
+	ID  shift 55
+	LBRA  shift 14
+	SUBGRAPH  shift 17
+	.  error
+
+	subgraph  goto 56
+	node_id  goto 57
+	node  goto 74
+
+
+state 68
+	edge_rhs : EDGEOP node edge_rhs_opt .  (22)
+
+	.  reduce 22
+
+
+state 69
+	port : COLON ID COLON ID .  (31)
+
+	.  reduce 31
+
+
+state 70
+	equality : ID EQUAL ID .  (41)
+
+	.  reduce 41
+
+
+state 71
+	attr_list : LSQ a_list RSQ attr_list .  (35)
+
+	.  reduce 35
+
+
+state 72
+	a_list : equality comma_opt a_list .  (39)
+
+	.  reduce 39
+
+
+state 73
+	subgraph : SUBGRAPH ID LBRA stmt_list RBRA .  (45)
+
+	.  reduce 45
+
+
+state 74
+	edge_rhs_opt : EDGEOP node . edge_rhs_opt  (24)
+	edge_rhs_opt : .  (23)
+
+	EDGEOP  shift 67
+	ID  reduce 23
+	SEMICOLON  reduce 23
+	GRAPH  reduce 23
+	LBRA  reduce 23
+	RBRA  reduce 23
+	LSQ  reduce 23
+	NODE  reduce 23
+	EDGE  reduce 23
+	SUBGRAPH  reduce 23
+
+	edge_rhs_opt  goto 75
+
+
+state 75
+	edge_rhs_opt : EDGEOP node edge_rhs_opt .  (24)
+
+	.  reduce 24
+
+
+20 terminals, 25 nonterminals
+49 grammar rules, 76 states

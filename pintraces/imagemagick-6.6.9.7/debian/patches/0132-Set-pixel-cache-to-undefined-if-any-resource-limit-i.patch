@@ -1,0 +1,96 @@
+Backport of:
+
+From de3aad2fe794aa544211038988106113c0640475 Mon Sep 17 00:00:00 2001
+From: Cristy <urban-warrior@imagemagick.org>
+Date: Mon, 16 May 2016 16:05:02 -0400
+Subject: [PATCH] Set pixel cache to undefined if any resource limit is
+ exceeded
+
+This is a partial fix for CVE-2016-5688
+
+origin: upstream, https://github.com/ImageMagick/ImageMagick/commit/aecd0ada163a4d6c769cec178955d5f3e9316f2f
+bug-debian: https://bugs.debian.org/833003
+---
+ coders/wpg.c   |  1 -
+ magick/cache.c | 11 +++++++++--
+ magick/image.c |  5 ++++-
+ 3 files changed, 13 insertions(+), 4 deletions(-)
+
+Index: imagemagick-6.6.9.7/coders/wpg.c
+===================================================================
+--- imagemagick-6.6.9.7.orig/coders/wpg.c	2016-11-15 15:44:23.813990229 -0500
++++ imagemagick-6.6.9.7/coders/wpg.c	2016-11-15 15:44:23.805990132 -0500
+@@ -1323,7 +1323,6 @@
+               status=SetImageExtent(image,image->columns,image->rows);
+               if (status == MagickFalse)
+                 break;
+-
+               if ((image->colors == 0) && (bpp != 24))
+                 {
+                   size_t
+Index: imagemagick-6.6.9.7/magick/cache.c
+===================================================================
+--- imagemagick-6.6.9.7.orig/magick/cache.c	2016-11-15 15:44:23.813990229 -0500
++++ imagemagick-6.6.9.7/magick/cache.c	2016-11-15 15:44:23.805990132 -0500
+@@ -4158,6 +4158,7 @@
+   status=AcquireMagickResource(DiskResource,cache_info->length);
+   if (status == MagickFalse)
+     {
++      cache_info->type=UndefinedCache;
+       (void) ThrowMagickException(exception,GetMagickModule(),CacheError,
+         "CacheResourcesExhausted","`%s'",image->filename);
+       return(MagickFalse);
+@@ -4165,6 +4166,7 @@
+   if (OpenPixelCacheOnDisk(cache_info,mode) == MagickFalse)
+     {
+       RelinquishMagickResource(DiskResource,cache_info->length);
++      cache_info->type=UndefinedCache;
+       ThrowFileException(exception,CacheError,"UnableToOpenPixelCache",
+         image->filename);
+       return(MagickFalse);
+@@ -4173,6 +4175,7 @@
+     cache_info->length);
+   if (status == MagickFalse)
+     {
++      cache_info->type=UndefinedCache;
+       ThrowFileException(exception,CacheError,"UnableToExtendCache",
+         image->filename);
+       return(MagickFalse);
+@@ -4228,7 +4231,9 @@
+                   (void) LogMagickEvent(CacheEvent,GetMagickModule(),"%s",
+                     message);
+                 }
+-              return(MagickTrue);
++              if (status == MagickFalse)
++                cache_info->type=UndefinedCache;
++              return(status);
+             }
+         }
+       RelinquishMagickResource(MapResource,cache_info->length);
+@@ -4247,7 +4252,9 @@
+         cache_info->columns,(double) cache_info->rows,format);
+       (void) LogMagickEvent(CacheEvent,GetMagickModule(),"%s",message);
+     }
+-  return(MagickTrue);
++  if (status == MagickFalse)
++    cache_info->type=UndefinedCache;
++  return(status);
+ }
+ 
+ /*
+Index: imagemagick-6.6.9.7/magick/image.c
+===================================================================
+--- imagemagick-6.6.9.7.orig/magick/image.c	2016-11-15 15:44:23.813990229 -0500
++++ imagemagick-6.6.9.7/magick/image.c	2016-11-15 15:44:23.809990181 -0500
+@@ -797,7 +797,10 @@
+       clone_image->colormap=(PixelPacket *) AcquireQuantumMemory(length,
+         sizeof(*clone_image->colormap));
+       if (clone_image->colormap == (PixelPacket *) NULL)
+-        ThrowImageException(ResourceLimitError,"MemoryAllocationFailed");
++        {
++          clone_image=DestroyImage(clone_image);
++          ThrowImageException(ResourceLimitError,"MemoryAllocationFailed");
++        }
+       (void) CopyMagickMemory(clone_image->colormap,image->colormap,length*
+         sizeof(*clone_image->colormap));
+     }

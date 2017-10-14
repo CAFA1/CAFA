@@ -1,0 +1,19 @@
+Description: Disarm CVE-2016-3717 by preventing indirect reads with label:@
+ This policy prevents indirect reads with labels:@
+Origin: upstream, https://www.imagemagick.org/discourse-server/viewtopic.php?f=4&t=29588
+Bug: https://www.imagemagick.org/discourse-server/viewtopic.php?f=4&t=29588
+Bug-CVE: CVE-2016-3717
+Bug-Debian: https://bugs.debian.org/823542
+Last-Update: 2016-05-16
+---
+This patch header follows DEP-3: http://dep.debian.net/deps/dep3/
+Index: imagemagick-6.6.9.7/config/policy.xml
+===================================================================
+--- imagemagick-6.6.9.7.orig/config/policy.xml	2016-06-01 13:28:56.967631476 -0400
++++ imagemagick-6.6.9.7/config/policy.xml	2016-06-01 13:28:56.967631476 -0400
+@@ -63,4 +63,5 @@
+   <policy domain="coder" rights="none" pattern="SHOW" />
+   <policy domain="coder" rights="none" pattern="WIN" />
+   <policy domain="coder" rights="none" pattern="PLT" />
++  <policy domain="path" rights="none" pattern="@*" />
+ </policymap>

@@ -1,0 +1,75 @@
+Backport of:
+
+From 35aa01dd5511a2616a6427f7d5d49de0132aeb5f Mon Sep 17 00:00:00 2001
+From: cristy <cristy@aa41f4f7-0bf4-0310-aa73-e5a19afd5a74>
+Date: Sat, 29 Nov 2014 15:28:37 +0000
+Subject: [PATCH] Avoid a out of bound acess in viff image
+
+git-svn-id: https://subversion.imagemagick.org/subversion/ImageMagick/branches/ImageMagick-6@17131 aa41f4f7-0bf4-0310-aa73-e5a19afd5a74
+origin: http://trac.imagemagick.org/changeset/17131
+---
+ coders/viff.c | 36 +++++++++++++++++++++---------------
+ 1 file changed, 21 insertions(+), 15 deletions(-)
+
+Index: imagemagick-6.6.9.7/coders/viff.c
+===================================================================
+--- imagemagick-6.6.9.7.orig/coders/viff.c	2016-11-14 14:21:31.257873242 -0500
++++ imagemagick-6.6.9.7/coders/viff.c	2016-11-14 14:23:06.949877704 -0500
+@@ -46,6 +46,7 @@
+ #include "magick/color.h"
+ #include "magick/color-private.h"
+ #include "magick/colormap.h"
++#include "magick/colormap-private.h"
+ #include "magick/colorspace.h"
+ #include "magick/exception.h"
+ #include "magick/exception-private.h"
+@@ -440,18 +441,18 @@
+           if (i < (ssize_t) image->colors)
+             {
+               image->colormap[i].red=ScaleCharToQuantum((unsigned char) value);
+-              image->colormap[i].green=
+-                ScaleCharToQuantum((unsigned char) value);
++              image->colormap[i].green=ScaleCharToQuantum((unsigned char)
++                value);
+               image->colormap[i].blue=ScaleCharToQuantum((unsigned char) value);
+             }
+           else
+             if (i < (ssize_t) (2*image->colors))
+-              image->colormap[i % image->colors].green=
+-                ScaleCharToQuantum((unsigned char) value);
++              image->colormap[i % image->colors].green=ScaleCharToQuantum(
++                (unsigned char) value);
+             else
+               if (i < (ssize_t) (3*image->colors))
+-                image->colormap[i % image->colors].blue=
+-                  ScaleCharToQuantum((unsigned char) value);
++                image->colormap[i % image->colors].blue=ScaleCharToQuantum(
++                  (unsigned char) value);
+         }
+         viff_colormap=(unsigned char *) RelinquishMagickMemory(viff_colormap);
+         break;
+@@ -671,12 +672,18 @@
+               SetBluePixelComponent(q,ScaleCharToQuantum(*(p+2*number_pixels)));
+               if (image->colors != 0)
+                 {
+-                  SetRedPixelComponent(q,image->colormap[(ssize_t)
+-                    GetRedPixelComponent(q)].red);
+-                  SetGreenPixelComponent(q,image->colormap[(ssize_t)
+-                    GetGreenPixelComponent(q)].green);
+-                  SetBluePixelComponent(q,image->colormap[(ssize_t)
+-                    GetBluePixelComponent(q)].blue);
++                  ssize_t
++                    index;
++
++                  index=(ssize_t) GetRedPixelComponent(q);
++                  SetRedPixelComponent(q,image->colormap[
++                    ConstrainColormapIndex(image,index)].red);
++                  index=(ssize_t) GetGreenPixelComponent(q);
++                  SetGreenPixelComponent(q,image->colormap[
++                    ConstrainColormapIndex(image,index)].green);
++                  index=(ssize_t) GetRedPixelComponent(q);
++                  SetBluePixelComponent(q,image->colormap[
++                    ConstrainColormapIndex(image,index)].blue);
+                 }
+               SetOpacityPixelComponent(q,image->matte != MagickFalse ?
+                 QuantumRange-ScaleCharToQuantum(*(p+number_pixels*3)) :

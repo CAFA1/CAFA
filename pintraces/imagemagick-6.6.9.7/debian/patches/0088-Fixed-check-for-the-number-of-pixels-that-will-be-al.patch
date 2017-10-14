@@ -1,0 +1,44 @@
+Backport of:
+
+From ead0c3bf2b6ddfb22ea9f2af27e7fc47ddf1b1d7 Mon Sep 17 00:00:00 2001
+From: =?UTF-8?q?Bastien=20ROUCARI=C3=88S?= <roucaries.bastien@gmail.com>
+Date: Mon, 25 Jul 2016 21:57:16 +0200
+Subject: [PATCH] Fixed check for the number of pixels that will be allocated.
+
+Fix rle file handling for corrupted file.
+
+Origin: upstream, https://github.com/ImageMagick/ImageMagick/commit/2ad6d33493750a28a5a655d319a8e0b16c392de1
+Bug-ubuntu: https://bugs.launchpad.net/ubuntu/+source/imagemagick/+bug/1533445
+Bug: https://github.com/ImageMagick/ImageMagick/issues/82
+Bug-debian: https://bugs.debian.org/832461
+---
+ coders/rle.c | 8 ++++++--
+ 1 file changed, 6 insertions(+), 2 deletions(-)
+
+Index: imagemagick-6.7.7.10/coders/rle.c
+===================================================================
+--- imagemagick-6.7.7.10.orig/coders/rle.c	2016-11-11 14:42:12.172175215 -0500
++++ imagemagick-6.7.7.10/coders/rle.c	2016-11-11 14:42:51.004556389 -0500
+@@ -180,6 +180,7 @@
+     map_length,
+     number_colormaps,
+     number_planes,
++    number_planes_filled,
+     one,
+     offset,
+     pixel_info_length;
+@@ -309,9 +310,12 @@
+     if (image->matte != MagickFalse)
+       number_planes++;
+     number_pixels=(MagickSizeType) image->columns*image->rows;
+-    if ((number_pixels*number_planes) != (size_t) (number_pixels*number_planes))
++    number_planes_filled=(number_planes % 2 == 0) ? number_planes :
++      number_planes+1;
++    if ((number_pixels*number_planes_filled) != (size_t) (number_pixels*
++         number_planes_filled))
+       ThrowReaderException(ResourceLimitError,"MemoryAllocationFailed");
+-    pixel_info_length=image->columns*image->rows*number_planes;
++    pixel_info_length=image->columns*image->rows*number_planes_filled;
+     rle_pixels=AcquireQuantumMemory(pixel_info_length,sizeof(*rle_pixels));
+ 
+     if (rle_pixels == (unsigned char *) NULL)

@@ -1,0 +1,147 @@
+Backport of:
+
+From 06f37dd08f8367c043a28be1d8d1020af33bd18a Mon Sep 17 00:00:00 2001
+From: Cristy <urban-warrior@imagemagick.org>
+Date: Thu, 1 Dec 2016 20:05:59 -0500
+Subject: [PATCH] Fix possible buffer overflow when writing compressed TIFFS
+
+This a partial fix for CVE-2016-8707
+
+bug-debian: https://bugs.debian.org/848139
+bug: http://www.talosintelligence.com/reports/TALOS-2016-0216/
+origin: https://github.com/ImageMagick/ImageMagick/commit/fde5f55af94f189f16958535a9c22b439d71ac93
+---
+ coders/tiff.c | 33 +++++++++++++++++++--------------
+ 1 file changed, 19 insertions(+), 14 deletions(-)
+
+Index: imagemagick-6.6.9.7/coders/tiff.c
+===================================================================
+--- imagemagick-6.6.9.7.orig/coders/tiff.c	2017-03-02 15:14:38.914712710 -0500
++++ imagemagick-6.6.9.7/coders/tiff.c	2017-03-02 15:15:46.987521736 -0500
+@@ -834,7 +834,7 @@
+     width;
+ 
+   unsigned char
+-    *pixels;
++    *tiff_pixels;
+ 
+   /*
+     Open image.
+@@ -1200,7 +1200,13 @@
+     if (TIFFIsTiled(tiff) != MagickFalse)
+       method=ReadTileMethod;
+     quantum_type=RGBQuantum;
+-    pixels=GetQuantumPixels(quantum_info);
++    tiff_pixels=(unsigned char *) AcquireMagickMemory(TIFFScanlineSize(tiff)+
++      sizeof(uint32));
++    if (tiff_pixels == (unsigned char *) NULL)
++      {
++        TIFFClose(tiff);
++        ThrowReaderException(ResourceLimitError,"MemoryAllocationFailed");
++      }
+     switch (method)
+     {
+       case ReadSingleSampleMethod:
+@@ -1271,7 +1277,6 @@
+             TIFFClose(tiff);
+             ThrowReaderException(ResourceLimitError,"MemoryAllocationFailed");
+           }
+-        pixels=GetQuantumPixels(quantum_info);
+         for (y=0; y < (ssize_t) image->rows; y++)
+         {
+           int
+@@ -1280,14 +1285,14 @@
+           register PixelPacket
+             *restrict q;
+ 
+-          status=TIFFReadPixels(tiff,bits_per_sample,0,y,(char *) pixels);
++          status=TIFFReadPixels(tiff,bits_per_sample,0,y,(char *) tiff_pixels);
+           if (status == -1)
+             break;
+           q=QueueAuthenticPixels(image,0,y,image->columns,1,exception);
+           if (q == (PixelPacket *) NULL)
+             break;
+           length=ImportQuantumPixels(image,(CacheView *) NULL,quantum_info,
+-            quantum_type,pixels,exception);
++            quantum_type,tiff_pixels,exception);
+           (void) length;
+           if (SyncAuthenticPixels(image,exception) == MagickFalse)
+             break;
+@@ -1329,7 +1334,6 @@
+             TIFFClose(tiff);
+             ThrowReaderException(ResourceLimitError,"MemoryAllocationFailed");
+           }
+-        pixels=GetQuantumPixels(quantum_info);
+         for (y=0; y < (ssize_t) image->rows; y++)
+         {
+           int
+@@ -1338,14 +1342,14 @@
+           register PixelPacket
+             *restrict q;
+ 
+-          status=TIFFReadPixels(tiff,bits_per_sample,0,y,(char *) pixels);
++          status=TIFFReadPixels(tiff,bits_per_sample,0,y,(char *) tiff_pixels);
+           if (status == -1)
+             break;
+           q=QueueAuthenticPixels(image,0,y,image->columns,1,exception);
+           if (q == (PixelPacket *) NULL)
+             break;
+           length=ImportQuantumPixels(image,(CacheView *) NULL,quantum_info,
+-            quantum_type,pixels,exception);
++            quantum_type,tiff_pixels,exception);
+           if (SyncAuthenticPixels(image,exception) == MagickFalse)
+             break;
+           if (image->previous == (Image *) NULL)
+@@ -1374,7 +1378,7 @@
+               status;
+ 
+             status=TIFFReadPixels(tiff,bits_per_sample,(tsample_t) i,y,(char *)
+-              pixels);
++              tiff_pixels);
+             if (status == -1)
+               break;
+             q=GetAuthenticPixels(image,0,y,image->columns,1,exception);
+@@ -1400,7 +1404,7 @@
+                 default: quantum_type=UndefinedQuantum; break;
+               }
+             length=ImportQuantumPixels(image,(CacheView *) NULL,quantum_info,
+-              quantum_type,pixels,exception);
++              quantum_type,tiff_pixels,exception);
+             if (SyncAuthenticPixels(image,exception) == MagickFalse)
+               break;
+           }
+@@ -1437,13 +1441,13 @@
+             break;
+           if (i == 0)
+             {
+-              if (TIFFReadRGBAStrip(tiff,(tstrip_t) y,(uint32 *) pixels) == 0)
++              if (TIFFReadRGBAStrip(tiff,(tstrip_t) y,(uint32 *) tiff_pixels) == 0)
+                 break;
+               i=(ssize_t) MagickMin((ssize_t) rows_per_strip,(ssize_t)
+                 image->rows-y);
+             }
+           i--;
+-          p=(unsigned char *) (((uint32 *) pixels)+image->columns*i);
++          p=(unsigned char *) (((uint32 *) tiff_pixels)+image->columns*i);
+           for (x=0; x < (ssize_t) image->columns; x++)
+           {
+             SetRedPixelComponent(q,ScaleCharToQuantum((unsigned char)
+@@ -1496,8 +1500,8 @@
+             TIFFClose(tiff);
+             ThrowReaderException(ResourceLimitError,"MemoryAllocationFailed");
+           }
+-        tile_pixels=(uint32 *) AcquireQuantumMemory(columns,
+-          rows*sizeof(*tile_pixels));
++        tile_pixels=(uint32 *) AcquireQuantumMemory(columns,rows*
++           sizeof(*tile_pixels));
+         if (tile_pixels == (uint32 *) NULL)
+           {
+             TIFFClose(tiff);
+@@ -1654,6 +1658,7 @@
+         break;
+       }
+     }
++    tiff_pixels=(unsigned char *) RelinquishMagickMemory(tiff_pixels);
+     SetQuantumImageType(image,quantum_type);
+   next_tiff_frame:
+     if ((photometric == PHOTOMETRIC_LOGL) ||

@@ -1,0 +1,846 @@
+"yices_lexer.ml" 9 138 142 "yices_lexer.ml" 9 138 160
+type(
+  Lexing.lex_tables
+)
+ident(
+  def __ocaml_lex_tables "yices_lexer.ml" 648 43737 43737 --
+)
+"yices_lexer.ml" 11 186 189 "yices_lexer.ml" 17 606 659
+type(
+  string
+)
+"yices_lexer.ml" 19 685 688 "yices_lexer.ml" 25 1105 1158
+type(
+  string
+)
+"yices_lexer.ml" 27 1184 1187 "yices_lexer.ml" 33 1604 1657
+type(
+  string
+)
+"yices_lexer.ml" 35 1681 1684 "yices_lexer.ml" 333 22541 22594
+type(
+  string
+)
+"yices_lexer.ml" 335 22618 22621 "yices_lexer.ml" 633 43478 43531
+type(
+  string
+)
+"yices_lexer.ml" 635 43559 43562 "yices_lexer.ml" 635 43559 43564
+type(
+  string
+)
+"yices_lexer.ml" 637 43595 43598 "yices_lexer.ml" 637 43595 43600
+type(
+  string
+)
+"yices_lexer.ml" 639 43631 43634 "yices_lexer.ml" 639 43631 43636
+type(
+  string
+)
+"yices_lexer.ml" 641 43665 43668 "yices_lexer.ml" 641 43665 43670
+type(
+  string
+)
+"yices_lexer.ml" 643 43699 43702 "yices_lexer.ml" 643 43699 43704
+type(
+  string
+)
+"yices_lexer.ml" 645 43727 43730 "yices_lexer.ml" 645 43727 43732
+type(
+  string
+)
+"yices_lexer.ml" 9 138 163 "yices_lexer.ml" 646 43734 43735
+type(
+  Lexing.lex_tables
+)
+"yices_lexer.ml" 648 43737 43745 "yices_lexer.ml" 648 43737 43750
+type(
+  Lexing.lexbuf -> Yices_grammar.token
+)
+ident(
+  def token "yices_lexer.ml" 648 43737 43737 --
+)
+"yices_lexer.ml" 648 43737 43751 "yices_lexer.ml" 648 43737 43757
+type(
+  Lexing.lexbuf
+)
+ident(
+  def lexbuf "yices_lexer.ml" 649 43760 43764 "yices_lexer.ml" 649 43760 43794
+)
+"yices_lexer.ml" 649 43760 43764 "yices_lexer.ml" 649 43760 43785
+type(
+  Lexing.lexbuf -> int -> Yices_grammar.token
+)
+ident(
+  int_ref __ocaml_lex_token_rec "yices_lexer.ml" 650 43795 43799 "yices_lexer.ml" 650 43795 43820
+)
+"yices_lexer.ml" 649 43760 43786 "yices_lexer.ml" 649 43760 43792
+type(
+  Lexing.lexbuf
+)
+ident(
+  int_ref lexbuf "yices_lexer.ml" 648 43737 43751 "yices_lexer.ml" 648 43737 43757
+)
+"yices_lexer.ml" 649 43760 43793 "yices_lexer.ml" 649 43760 43794
+type(
+  int
+)
+"yices_lexer.ml" 649 43760 43764 "yices_lexer.ml" 649 43760 43794
+call(
+  tail
+)
+type(
+  Yices_grammar.token
+)
+"yices_lexer.ml" 650 43795 43799 "yices_lexer.ml" 650 43795 43820
+type(
+  Lexing.lexbuf -> int -> Yices_grammar.token
+)
+ident(
+  def __ocaml_lex_token_rec "yices_lexer.ml" 648 43737 43737 --
+)
+"yices_lexer.ml" 650 43795 43821 "yices_lexer.ml" 650 43795 43827
+type(
+  Lexing.lexbuf
+)
+ident(
+  def lexbuf "yices_lexer.ml" 650 43795 43828 "yices_lexer.ml" 762 45986 46091
+)
+"yices_lexer.ml" 650 43795 43828 "yices_lexer.ml" 650 43795 43845
+type(
+  int
+)
+ident(
+  def __ocaml_lex_state "yices_lexer.ml" 651 43848 43850 "yices_lexer.ml" 762 45986 46091
+)
+"yices_lexer.ml" 651 43848 43856 "yices_lexer.ml" 651 43848 43869
+type(
+  Lexing.lex_tables -> int -> Lexing.lexbuf -> int
+)
+ident(
+  ext_ref Lexing.engine
+)
+"yices_lexer.ml" 651 43848 43870 "yices_lexer.ml" 651 43848 43888
+type(
+  Lexing.lex_tables
+)
+ident(
+  int_ref __ocaml_lex_tables "yices_lexer.ml" 9 138 142 "yices_lexer.ml" 9 138 160
+)
+"yices_lexer.ml" 651 43848 43889 "yices_lexer.ml" 651 43848 43906
+type(
+  int
+)
+ident(
+  int_ref __ocaml_lex_state "yices_lexer.ml" 650 43795 43828 "yices_lexer.ml" 650 43795 43845
+)
+"yices_lexer.ml" 651 43848 43907 "yices_lexer.ml" 651 43848 43913
+type(
+  Lexing.lexbuf
+)
+ident(
+  int_ref lexbuf "yices_lexer.ml" 650 43795 43821 "yices_lexer.ml" 650 43795 43827
+)
+"yices_lexer.ml" 651 43848 43856 "yices_lexer.ml" 651 43848 43913
+call(
+  stack
+)
+type(
+  int
+)
+"yices_lexer.ml" 652 43919 43927 "yices_lexer.ml" 652 43919 43928
+type(
+  int
+)
+"yices_lexer.mll" 12 43955 43978 "yices_lexer.mll" 12 43955 43983
+type(
+  Lexing.lexbuf -> Yices_grammar.token
+)
+ident(
+  int_ref token "yices_lexer.ml" 648 43737 43745 "yices_lexer.ml" 648 43737 43750
+)
+"yices_lexer.mll" 12 43955 43984 "yices_lexer.mll" 12 43955 43990
+type(
+  Lexing.lexbuf
+)
+ident(
+  int_ref lexbuf "yices_lexer.ml" 650 43795 43821 "yices_lexer.ml" 650 43795 43827
+)
+"yices_lexer.mll" 12 43955 43976 "yices_lexer.mll" 12 43955 43992
+call(
+  tail
+)
+type(
+  Yices_grammar.token
+)
+"yices_lexer.ml" 657 44017 44021 "yices_lexer.ml" 657 44017 44022
+type(
+  int
+)
+"yices_lexer.mll" 13 44049 44070 "yices_lexer.mll" 13 44049 44079
+type(
+  Yices_grammar.token
+)
+"yices_lexer.ml" 662 44104 44108 "yices_lexer.ml" 662 44104 44109
+type(
+  int
+)
+"yices_lexer.mll" 14 44136 44157 "yices_lexer.mll" 14 44136 44166
+type(
+  Yices_grammar.token
+)
+"yices_lexer.ml" 667 44191 44195 "yices_lexer.ml" 667 44191 44196
+type(
+  int
+)
+"yices_lexer.mll" 15 44223 44244 "yices_lexer.mll" 15 44223 44254
+type(
+  Yices_grammar.token
+)
+"yices_lexer.ml" 672 44279 44283 "yices_lexer.ml" 672 44279 44284
+type(
+  int
+)
+"yices_lexer.mll" 16 44311 44332 "yices_lexer.mll" 16 44311 44345
+type(
+  Yices_grammar.token
+)
+"yices_lexer.ml" 677 44370 44374 "yices_lexer.ml" 677 44370 44375
+type(
+  int
+)
+"yices_lexer.mll" 17 44402 44423 "yices_lexer.mll" 17 44402 44435
+type(
+  Yices_grammar.token
+)
+"yices_lexer.ml" 682 44460 44464 "yices_lexer.ml" 682 44460 44465
+type(
+  int
+)
+"yices_lexer.mll" 18 44492 44513 "yices_lexer.mll" 18 44492 44525
+type(
+  Yices_grammar.token
+)
+"yices_lexer.ml" 687 44550 44554 "yices_lexer.ml" 687 44550 44555
+type(
+  int
+)
+"yices_lexer.mll" 19 44582 44603 "yices_lexer.mll" 19 44582 44614
+type(
+  Yices_grammar.token
+)
+"yices_lexer.ml" 692 44639 44643 "yices_lexer.ml" 692 44639 44644
+type(
+  int
+)
+"yices_lexer.mll" 20 44671 44692 "yices_lexer.mll" 20 44671 44702
+type(
+  Yices_grammar.token
+)
+"yices_lexer.ml" 697 44727 44731 "yices_lexer.ml" 697 44727 44732
+type(
+  int
+)
+"yices_lexer.mll" 21 44759 44780 "yices_lexer.mll" 21 44759 44797
+type(
+  Yices_grammar.token
+)
+"yices_lexer.ml" 702 44822 44826 "yices_lexer.ml" 702 44822 44828
+type(
+  int
+)
+"yices_lexer.mll" 22 44855 44876 "yices_lexer.mll" 22 44855 44885
+type(
+  Yices_grammar.token
+)
+"yices_lexer.ml" 707 44910 44914 "yices_lexer.ml" 707 44910 44916
+type(
+  int
+)
+"yices_lexer.mll" 23 44943 44964 "yices_lexer.mll" 23 44943 44974
+type(
+  Yices_grammar.token
+)
+"yices_lexer.ml" 712 44999 45003 "yices_lexer.ml" 712 44999 45005
+type(
+  int
+)
+"yices_lexer.mll" 24 45032 45053 "yices_lexer.mll" 24 45032 45064
+type(
+  Yices_grammar.token
+)
+"yices_lexer.ml" 717 45089 45093 "yices_lexer.ml" 717 45089 45095
+type(
+  int
+)
+"yices_lexer.mll" 25 45122 45143 "yices_lexer.mll" 25 45122 45152
+type(
+  Yices_grammar.token
+)
+"yices_lexer.ml" 722 45177 45181 "yices_lexer.ml" 722 45177 45183
+type(
+  int
+)
+"yices_lexer.mll" 26 45210 45231 "yices_lexer.mll" 26 45210 45242
+type(
+  Yices_grammar.token
+)
+"yices_lexer.ml" 727 45267 45271 "yices_lexer.ml" 727 45267 45273
+type(
+  int
+)
+"yices_lexer.mll" 27 45300 45323 "yices_lexer.mll" 27 45300 45331
+type(
+  Lexing.lexbuf -> Yices_grammar.token
+)
+ident(
+  int_ref read_num "yices_lexer.ml" 764 46093 46097 "yices_lexer.ml" 764 46093 46105
+)
+"yices_lexer.mll" 27 45300 45332 "yices_lexer.mll" 27 45300 45338
+type(
+  Lexing.lexbuf
+)
+ident(
+  int_ref lexbuf "yices_lexer.ml" 650 43795 43821 "yices_lexer.ml" 650 43795 43827
+)
+"yices_lexer.mll" 27 45300 45321 "yices_lexer.mll" 27 45300 45340
+call(
+  tail
+)
+type(
+  Yices_grammar.token
+)
+"yices_lexer.ml" 732 45365 45369 "yices_lexer.ml" 732 45365 45371
+type(
+  int
+)
+"yices_lexer.mll" 28 45398 45421 "yices_lexer.mll" 28 45398 45429
+type(
+  Lexing.lexbuf -> Yices_grammar.token
+)
+ident(
+  int_ref read_num "yices_lexer.ml" 764 46093 46097 "yices_lexer.ml" 764 46093 46105
+)
+"yices_lexer.mll" 28 45398 45430 "yices_lexer.mll" 28 45398 45436
+type(
+  Lexing.lexbuf
+)
+ident(
+  int_ref lexbuf "yices_lexer.ml" 650 43795 43821 "yices_lexer.ml" 650 43795 43827
+)
+"yices_lexer.mll" 28 45398 45419 "yices_lexer.mll" 28 45398 45438
+call(
+  tail
+)
+type(
+  Yices_grammar.token
+)
+"yices_lexer.ml" 737 45463 45467 "yices_lexer.ml" 737 45463 45469
+type(
+  int
+)
+"yices_lexer.mll" 29 45496 45519 "yices_lexer.mll" 29 45496 45527
+type(
+  Lexing.lexbuf -> Yices_grammar.token
+)
+ident(
+  int_ref read_num "yices_lexer.ml" 764 46093 46097 "yices_lexer.ml" 764 46093 46105
+)
+"yices_lexer.mll" 29 45496 45528 "yices_lexer.mll" 29 45496 45534
+type(
+  Lexing.lexbuf
+)
+ident(
+  int_ref lexbuf "yices_lexer.ml" 650 43795 43821 "yices_lexer.ml" 650 43795 43827
+)
+"yices_lexer.mll" 29 45496 45517 "yices_lexer.mll" 29 45496 45536
+call(
+  tail
+)
+type(
+  Yices_grammar.token
+)
+"yices_lexer.ml" 742 45561 45565 "yices_lexer.ml" 742 45561 45567
+type(
+  int
+)
+"yices_lexer.mll" 30 45598 45613 "yices_lexer.mll" 30 45598 45616
+type(
+  string
+)
+"yices_lexer.ml" 747 45640 45642 "yices_lexer.ml" 747 45640 45659
+type(
+  Lexing.lexbuf -> int -> int -> string
+)
+ident(
+  ext_ref Lexing.sub_lexeme
+)
+"yices_lexer.ml" 747 45640 45660 "yices_lexer.ml" 747 45640 45666
+type(
+  Lexing.lexbuf
+)
+ident(
+  int_ref lexbuf "yices_lexer.ml" 650 43795 43821 "yices_lexer.ml" 650 43795 43827
+)
+"yices_lexer.ml" 747 45640 45667 "yices_lexer.ml" 747 45640 45673
+type(
+  Lexing.lexbuf
+)
+ident(
+  int_ref lexbuf "yices_lexer.ml" 650 43795 43821 "yices_lexer.ml" 650 43795 43827
+)
+"yices_lexer.ml" 747 45640 45667 "yices_lexer.ml" 747 45640 45694
+type(
+  int
+)
+"yices_lexer.ml" 747 45640 45695 "yices_lexer.ml" 747 45640 45701
+type(
+  Lexing.lexbuf
+)
+ident(
+  int_ref lexbuf "yices_lexer.ml" 650 43795 43821 "yices_lexer.ml" 650 43795 43827
+)
+"yices_lexer.ml" 747 45640 45695 "yices_lexer.ml" 747 45640 45721
+type(
+  int
+)
+"yices_lexer.ml" 747 45640 45642 "yices_lexer.ml" 747 45640 45721
+call(
+  stack
+)
+type(
+  string
+)
+"yices_lexer.mll" 30 45748 45775 "yices_lexer.mll" 30 45748 45778
+type(
+  string
+)
+ident(
+  int_ref var "yices_lexer.mll" 30 45598 45613 "yices_lexer.mll" 30 45598 45616
+)
+"yices_lexer.mll" 30 45748 45769 "yices_lexer.mll" 30 45748 45780
+type(
+  Yices_grammar.token
+)
+"yices_lexer.ml" 743 45571 45571 "yices_lexer.mll" 30 45748 45780
+type(
+  Yices_grammar.token
+)
+"yices_lexer.ml" 752 45805 45809 "yices_lexer.ml" 752 45805 45811
+type(
+  int
+)
+"yices_lexer.mll" 31 45838 45859 "yices_lexer.mll" 31 45838 45866
+type(
+  Yices_grammar.token
+)
+"yices_lexer.ml" 757 45891 45895 "yices_lexer.ml" 757 45891 45897
+type(
+  int
+)
+"yices_lexer.mll" 32 45924 45947 "yices_lexer.mll" 32 45924 45952
+type(
+  Lexing.lexbuf -> Yices_grammar.token
+)
+ident(
+  int_ref token "yices_lexer.ml" 648 43737 43745 "yices_lexer.ml" 648 43737 43750
+)
+"yices_lexer.mll" 32 45924 45953 "yices_lexer.mll" 32 45924 45959
+type(
+  Lexing.lexbuf
+)
+ident(
+  int_ref lexbuf "yices_lexer.ml" 650 43795 43821 "yices_lexer.ml" 650 43795 43827
+)
+"yices_lexer.mll" 32 45924 45945 "yices_lexer.mll" 32 45924 45961
+call(
+  tail
+)
+type(
+  Yices_grammar.token
+)
+"yices_lexer.ml" 762 45986 45990 "yices_lexer.ml" 762 45986 46007
+type(
+  int
+)
+ident(
+  def __ocaml_lex_state "yices_lexer.ml" 762 45986 46011 "yices_lexer.ml" 762 45986 46091
+)
+"yices_lexer.ml" 762 45986 46011 "yices_lexer.ml" 762 45986 46017
+type(
+  Lexing.lexbuf
+)
+ident(
+  int_ref lexbuf "yices_lexer.ml" 650 43795 43821 "yices_lexer.ml" 650 43795 43827
+)
+"yices_lexer.ml" 762 45986 46011 "yices_lexer.ml" 762 45986 46036
+type(
+  Lexing.lexbuf -> unit
+)
+"yices_lexer.ml" 762 45986 46037 "yices_lexer.ml" 762 45986 46043
+type(
+  Lexing.lexbuf
+)
+ident(
+  int_ref lexbuf "yices_lexer.ml" 650 43795 43821 "yices_lexer.ml" 650 43795 43827
+)
+"yices_lexer.ml" 762 45986 46011 "yices_lexer.ml" 762 45986 46043
+call(
+  stack
+)
+type(
+  unit
+)
+"yices_lexer.ml" 762 45986 46045 "yices_lexer.ml" 762 45986 46066
+type(
+  Lexing.lexbuf -> int -> Yices_grammar.token
+)
+ident(
+  int_ref __ocaml_lex_token_rec "yices_lexer.ml" 650 43795 43799 "yices_lexer.ml" 650 43795 43820
+)
+"yices_lexer.ml" 762 45986 46067 "yices_lexer.ml" 762 45986 46073
+type(
+  Lexing.lexbuf
+)
+ident(
+  int_ref lexbuf "yices_lexer.ml" 650 43795 43821 "yices_lexer.ml" 650 43795 43827
+)
+"yices_lexer.ml" 762 45986 46074 "yices_lexer.ml" 762 45986 46091
+type(
+  int
+)
+ident(
+  int_ref __ocaml_lex_state "yices_lexer.ml" 762 45986 45990 "yices_lexer.ml" 762 45986 46007
+)
+"yices_lexer.ml" 762 45986 46045 "yices_lexer.ml" 762 45986 46091
+call(
+  tail
+)
+type(
+  Yices_grammar.token
+)
+"yices_lexer.ml" 762 45986 46011 "yices_lexer.ml" 762 45986 46091
+type(
+  Yices_grammar.token
+)
+"yices_lexer.ml" 651 43848 43850 "yices_lexer.ml" 762 45986 46091
+type(
+  Yices_grammar.token
+)
+"yices_lexer.ml" 764 46093 46097 "yices_lexer.ml" 764 46093 46105
+type(
+  Lexing.lexbuf -> Yices_grammar.token
+)
+ident(
+  def read_num "yices_lexer.ml" 648 43737 43737 --
+)
+"yices_lexer.ml" 764 46093 46106 "yices_lexer.ml" 764 46093 46112
+type(
+  Lexing.lexbuf
+)
+ident(
+  def lexbuf "yices_lexer.ml" 765 46115 46119 "yices_lexer.ml" 765 46115 46153
+)
+"yices_lexer.ml" 765 46115 46119 "yices_lexer.ml" 765 46115 46143
+type(
+  Lexing.lexbuf -> int -> Yices_grammar.token
+)
+ident(
+  int_ref __ocaml_lex_read_num_rec "yices_lexer.ml" 766 46154 46158 "yices_lexer.ml" 766 46154 46182
+)
+"yices_lexer.ml" 765 46115 46144 "yices_lexer.ml" 765 46115 46150
+type(
+  Lexing.lexbuf
+)
+ident(
+  int_ref lexbuf "yices_lexer.ml" 764 46093 46106 "yices_lexer.ml" 764 46093 46112
+)
+"yices_lexer.ml" 765 46115 46151 "yices_lexer.ml" 765 46115 46153
+type(
+  int
+)
+"yices_lexer.ml" 765 46115 46119 "yices_lexer.ml" 765 46115 46153
+call(
+  tail
+)
+type(
+  Yices_grammar.token
+)
+"yices_lexer.ml" 766 46154 46158 "yices_lexer.ml" 766 46154 46182
+type(
+  Lexing.lexbuf -> int -> Yices_grammar.token
+)
+ident(
+  def __ocaml_lex_read_num_rec "yices_lexer.ml" 648 43737 43737 --
+)
+"yices_lexer.ml" 766 46154 46183 "yices_lexer.ml" 766 46154 46189
+type(
+  Lexing.lexbuf
+)
+ident(
+  def lexbuf "yices_lexer.ml" 766 46154 46190 "yices_lexer.ml" 787 46746 46854
+)
+"yices_lexer.ml" 766 46154 46190 "yices_lexer.ml" 766 46154 46207
+type(
+  int
+)
+ident(
+  def __ocaml_lex_state "yices_lexer.ml" 767 46210 46212 "yices_lexer.ml" 787 46746 46854
+)
+"yices_lexer.ml" 767 46210 46218 "yices_lexer.ml" 767 46210 46231
+type(
+  Lexing.lex_tables -> int -> Lexing.lexbuf -> int
+)
+ident(
+  ext_ref Lexing.engine
+)
+"yices_lexer.ml" 767 46210 46232 "yices_lexer.ml" 767 46210 46250
+type(
+  Lexing.lex_tables
+)
+ident(
+  int_ref __ocaml_lex_tables "yices_lexer.ml" 9 138 142 "yices_lexer.ml" 9 138 160
+)
+"yices_lexer.ml" 767 46210 46251 "yices_lexer.ml" 767 46210 46268
+type(
+  int
+)
+ident(
+  int_ref __ocaml_lex_state "yices_lexer.ml" 766 46154 46190 "yices_lexer.ml" 766 46154 46207
+)
+"yices_lexer.ml" 767 46210 46269 "yices_lexer.ml" 767 46210 46275
+type(
+  Lexing.lexbuf
+)
+ident(
+  int_ref lexbuf "yices_lexer.ml" 766 46154 46183 "yices_lexer.ml" 766 46154 46189
+)
+"yices_lexer.ml" 767 46210 46218 "yices_lexer.ml" 767 46210 46275
+call(
+  stack
+)
+type(
+  int
+)
+"yices_lexer.ml" 768 46281 46289 "yices_lexer.ml" 768 46281 46290
+type(
+  int
+)
+"yices_lexer.mll" 35 46321 46335 "yices_lexer.mll" 35 46321 46336
+type(
+  string
+)
+"yices_lexer.ml" 773 46360 46362 "yices_lexer.ml" 773 46360 46379
+type(
+  Lexing.lexbuf -> int -> int -> string
+)
+ident(
+  ext_ref Lexing.sub_lexeme
+)
+"yices_lexer.ml" 773 46360 46380 "yices_lexer.ml" 773 46360 46386
+type(
+  Lexing.lexbuf
+)
+ident(
+  int_ref lexbuf "yices_lexer.ml" 766 46154 46183 "yices_lexer.ml" 766 46154 46189
+)
+"yices_lexer.ml" 773 46360 46387 "yices_lexer.ml" 773 46360 46393
+type(
+  Lexing.lexbuf
+)
+ident(
+  int_ref lexbuf "yices_lexer.ml" 766 46154 46183 "yices_lexer.ml" 766 46154 46189
+)
+"yices_lexer.ml" 773 46360 46387 "yices_lexer.ml" 773 46360 46414
+type(
+  int
+)
+"yices_lexer.ml" 773 46360 46415 "yices_lexer.ml" 773 46360 46421
+type(
+  Lexing.lexbuf
+)
+ident(
+  int_ref lexbuf "yices_lexer.ml" 766 46154 46183 "yices_lexer.ml" 766 46154 46189
+)
+"yices_lexer.ml" 773 46360 46415 "yices_lexer.ml" 773 46360 46441
+type(
+  int
+)
+"yices_lexer.ml" 773 46360 46362 "yices_lexer.ml" 773 46360 46441
+call(
+  stack
+)
+type(
+  string
+)
+"yices_lexer.mll" 36 46491 46503 "yices_lexer.mll" 36 46491 46525
+type(
+  string -> Big_int_Z.big_int
+)
+ident(
+  ext_ref Util.big_int_of_string
+)
+"yices_lexer.mll" 36 46491 46527 "yices_lexer.mll" 36 46491 46531
+type(
+  string
+)
+"yices_lexer.mll" 36 46491 46531 "yices_lexer.mll" 36 46491 46532
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"yices_lexer.mll" 36 46491 46532 "yices_lexer.mll" 36 46491 46533
+type(
+  string
+)
+ident(
+  int_ref n "yices_lexer.mll" 35 46321 46335 "yices_lexer.mll" 35 46321 46336
+)
+"yices_lexer.mll" 36 46491 46526 "yices_lexer.mll" 36 46491 46534
+call(
+  stack
+)
+type(
+  string
+)
+"yices_lexer.mll" 36 46491 46502 "yices_lexer.mll" 36 46491 46535
+call(
+  stack
+)
+type(
+  Big_int_Z.big_int
+)
+"yices_lexer.mll" 36 46491 46499 "yices_lexer.mll" 36 46491 46535
+type(
+  Yices_grammar.token
+)
+"yices_lexer.mll" 37 46536 46553 "yices_lexer.mll" 37 46536 46568
+type(
+  string
+)
+"yices_lexer.mll" 37 46536 46545 "yices_lexer.mll" 37 46536 46568
+type(
+  exn
+)
+"yices_lexer.mll" 38 46572 46578 "yices_lexer.mll" 38 46572 46583
+type(
+  exn -> Yices_grammar.token
+)
+ident(
+  ext_ref Pervasives.raise
+)
+"yices_lexer.mll" 38 46572 46593 "yices_lexer.mll" 38 46572 46619
+type(
+  string
+)
+"yices_lexer.mll" 38 46572 46583 "yices_lexer.mll" 38 46572 46620
+type(
+  exn
+)
+"yices_lexer.mll" 38 46572 46578 "yices_lexer.mll" 38 46572 46621
+type(
+  Yices_grammar.token
+)
+"yices_lexer.mll" 35 46468 46489 "yices_lexer.mll" 39 46622 46627
+type(
+  Yices_grammar.token
+)
+"yices_lexer.ml" 769 46294 46294 "yices_lexer.mll" 39 46622 46627
+type(
+  Yices_grammar.token
+)
+"yices_lexer.ml" 782 46652 46656 "yices_lexer.ml" 782 46652 46657
+type(
+  int
+)
+"yices_lexer.mll" 40 46684 46707 "yices_lexer.mll" 40 46684 46712
+type(
+  Lexing.lexbuf -> Yices_grammar.token
+)
+ident(
+  int_ref token "yices_lexer.ml" 648 43737 43745 "yices_lexer.ml" 648 43737 43750
+)
+"yices_lexer.mll" 40 46684 46713 "yices_lexer.mll" 40 46684 46719
+type(
+  Lexing.lexbuf
+)
+ident(
+  int_ref lexbuf "yices_lexer.ml" 766 46154 46183 "yices_lexer.ml" 766 46154 46189
+)
+"yices_lexer.mll" 40 46684 46705 "yices_lexer.mll" 40 46684 46721
+call(
+  tail
+)
+type(
+  Yices_grammar.token
+)
+"yices_lexer.ml" 787 46746 46750 "yices_lexer.ml" 787 46746 46767
+type(
+  int
+)
+ident(
+  def __ocaml_lex_state "yices_lexer.ml" 787 46746 46771 "yices_lexer.ml" 787 46746 46854
+)
+"yices_lexer.ml" 787 46746 46771 "yices_lexer.ml" 787 46746 46777
+type(
+  Lexing.lexbuf
+)
+ident(
+  int_ref lexbuf "yices_lexer.ml" 766 46154 46183 "yices_lexer.ml" 766 46154 46189
+)
+"yices_lexer.ml" 787 46746 46771 "yices_lexer.ml" 787 46746 46796
+type(
+  Lexing.lexbuf -> unit
+)
+"yices_lexer.ml" 787 46746 46797 "yices_lexer.ml" 787 46746 46803
+type(
+  Lexing.lexbuf
+)
+ident(
+  int_ref lexbuf "yices_lexer.ml" 766 46154 46183 "yices_lexer.ml" 766 46154 46189
+)
+"yices_lexer.ml" 787 46746 46771 "yices_lexer.ml" 787 46746 46803
+call(
+  stack
+)
+type(
+  unit
+)
+"yices_lexer.ml" 787 46746 46805 "yices_lexer.ml" 787 46746 46829
+type(
+  Lexing.lexbuf -> int -> Yices_grammar.token
+)
+ident(
+  int_ref __ocaml_lex_read_num_rec "yices_lexer.ml" 766 46154 46158 "yices_lexer.ml" 766 46154 46182
+)
+"yices_lexer.ml" 787 46746 46830 "yices_lexer.ml" 787 46746 46836
+type(
+  Lexing.lexbuf
+)
+ident(
+  int_ref lexbuf "yices_lexer.ml" 766 46154 46183 "yices_lexer.ml" 766 46154 46189
+)
+"yices_lexer.ml" 787 46746 46837 "yices_lexer.ml" 787 46746 46854
+type(
+  int
+)
+ident(
+  int_ref __ocaml_lex_state "yices_lexer.ml" 787 46746 46750 "yices_lexer.ml" 787 46746 46767
+)
+"yices_lexer.ml" 787 46746 46805 "yices_lexer.ml" 787 46746 46854
+call(
+  tail
+)
+type(
+  Yices_grammar.token
+)
+"yices_lexer.ml" 787 46746 46771 "yices_lexer.ml" 787 46746 46854
+type(
+  Yices_grammar.token
+)
+"yices_lexer.ml" 767 46210 46212 "yices_lexer.ml" 787 46746 46854
+type(
+  Yices_grammar.token
+)

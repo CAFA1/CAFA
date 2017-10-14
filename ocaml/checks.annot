@@ -1,0 +1,2195 @@
+"checks.ml" 4 30 61 "checks.ml" 4 30 65
+type(
+  string
+)
+ident(
+  def name "checks.ml" 4 30 95 "checks.ml" 4 30 99
+)
+"checks.ml" 4 30 68 "checks.ml" 4 30 76
+type(
+  string
+)
+"checks.ml" 4 30 81 "checks.ml" 4 30 88
+type(
+  [> `Debug ]
+)
+ident(
+  def default "checks.ml" 4 30 95 "checks.ml" 4 30 99
+)
+"checks.ml" 4 30 89 "checks.ml" 4 30 95
+type(
+  [> `Debug ] as 'a
+)
+"checks.ml" 4 30 39 "checks.ml" 4 30 100
+call(
+  stack
+)
+"checks.ml" 11 177 181 "checks.ml" 11 177 187
+type(
+  string -> 'a
+)
+ident(
+  def insane "checks.ml" 13 210 210 --
+)
+"checks.ml" 11 177 188 "checks.ml" 11 177 189
+type(
+  string
+)
+ident(
+  def s "checks.ml" 11 177 192 "checks.ml" 11 177 208
+)
+"checks.ml" 11 177 192 "checks.ml" 11 177 197
+type(
+  exn -> 'a
+)
+ident(
+  ext_ref Pervasives.raise
+)
+"checks.ml" 11 177 206 "checks.ml" 11 177 207
+type(
+  string
+)
+ident(
+  int_ref s "checks.ml" 11 177 188 "checks.ml" 11 177 189
+)
+"checks.ml" 11 177 198 "checks.ml" 11 177 208
+type(
+  exn
+)
+"checks.ml" 11 177 192 "checks.ml" 11 177 208
+type(
+  'a
+)
+"checks.ml" 13 210 214 "checks.ml" 13 210 223
+type(
+  ('a -> 'b -> unit) -> 'a -> 'b -> unit
+)
+ident(
+  def wrapdebug "checks.ml" 16 267 267 --
+)
+"checks.ml" 13 210 224 "checks.ml" 13 210 225
+type(
+  'a -> 'b -> unit
+)
+ident(
+  def f "checks.ml" 13 210 226 "checks.ml" 15 257 266
+)
+"checks.ml" 13 210 226 "checks.ml" 13 210 227
+type(
+  'a
+)
+ident(
+  def x "checks.ml" 13 210 228 "checks.ml" 15 257 266
+)
+"checks.ml" 13 210 228 "checks.ml" 13 210 229
+type(
+  'b
+)
+ident(
+  def y "checks.ml" 14 232 234 "checks.ml" 15 257 266
+)
+"checks.ml" 14 232 237 "checks.ml" 14 232 242
+type(
+  unit -> bool
+)
+ident(
+  ext_ref D.debug
+)
+"checks.ml" 14 232 243 "checks.ml" 14 232 245
+type(
+  unit
+)
+"checks.ml" 14 232 237 "checks.ml" 14 232 245
+call(
+  stack
+)
+type(
+  bool
+)
+"checks.ml" 14 232 251 "checks.ml" 14 232 252
+type(
+  'a -> 'b -> unit
+)
+ident(
+  int_ref f "checks.ml" 13 210 224 "checks.ml" 13 210 225
+)
+"checks.ml" 14 232 253 "checks.ml" 14 232 254
+type(
+  'a
+)
+ident(
+  int_ref x "checks.ml" 13 210 226 "checks.ml" 13 210 227
+)
+"checks.ml" 14 232 255 "checks.ml" 14 232 256
+type(
+  'b
+)
+ident(
+  int_ref y "checks.ml" 13 210 228 "checks.ml" 13 210 229
+)
+"checks.ml" 14 232 251 "checks.ml" 14 232 256
+call(
+  tail
+)
+type(
+  unit
+)
+"checks.ml" 15 257 264 "checks.ml" 15 257 266
+type(
+  unit
+)
+"checks.ml" 14 232 234 "checks.ml" 15 257 266
+type(
+  unit
+)
+"checks.ml" 16 267 271 "checks.ml" 16 267 281
+type(
+  ('a -> 'b -> 'c -> unit) -> 'a -> 'b -> 'c -> unit
+)
+ident(
+  def wrapdebug2 "checks.ml" 20 330 330 --
+)
+"checks.ml" 16 267 282 "checks.ml" 16 267 283
+type(
+  'a -> 'b -> 'c -> unit
+)
+ident(
+  def f "checks.ml" 16 267 284 "checks.ml" 18 319 328
+)
+"checks.ml" 16 267 284 "checks.ml" 16 267 285
+type(
+  'a
+)
+ident(
+  def x "checks.ml" 16 267 286 "checks.ml" 18 319 328
+)
+"checks.ml" 16 267 286 "checks.ml" 16 267 287
+type(
+  'b
+)
+ident(
+  def y "checks.ml" 16 267 288 "checks.ml" 18 319 328
+)
+"checks.ml" 16 267 288 "checks.ml" 16 267 289
+type(
+  'c
+)
+ident(
+  def z "checks.ml" 17 292 294 "checks.ml" 18 319 328
+)
+"checks.ml" 17 292 297 "checks.ml" 17 292 302
+type(
+  unit -> bool
+)
+ident(
+  ext_ref D.debug
+)
+"checks.ml" 17 292 303 "checks.ml" 17 292 305
+type(
+  unit
+)
+"checks.ml" 17 292 297 "checks.ml" 17 292 305
+call(
+  stack
+)
+type(
+  bool
+)
+"checks.ml" 17 292 311 "checks.ml" 17 292 312
+type(
+  'a -> 'b -> 'c -> unit
+)
+ident(
+  int_ref f "checks.ml" 16 267 282 "checks.ml" 16 267 283
+)
+"checks.ml" 17 292 313 "checks.ml" 17 292 314
+type(
+  'a
+)
+ident(
+  int_ref x "checks.ml" 16 267 284 "checks.ml" 16 267 285
+)
+"checks.ml" 17 292 315 "checks.ml" 17 292 316
+type(
+  'b
+)
+ident(
+  int_ref y "checks.ml" 16 267 286 "checks.ml" 16 267 287
+)
+"checks.ml" 17 292 317 "checks.ml" 17 292 318
+type(
+  'c
+)
+ident(
+  int_ref z "checks.ml" 16 267 288 "checks.ml" 16 267 289
+)
+"checks.ml" 17 292 311 "checks.ml" 17 292 318
+call(
+  tail
+)
+type(
+  unit
+)
+"checks.ml" 18 319 326 "checks.ml" 18 319 328
+type(
+  unit
+)
+"checks.ml" 17 292 294 "checks.ml" 18 319 328
+type(
+  unit
+)
+"checks.ml" 21 376 389 "checks.ml" 21 376 406
+call(
+  stack
+)
+"checks.ml" 23 408 414 "checks.ml" 23 408 429
+type(
+  R.gt -> string -> unit
+)
+ident(
+  def connected_check "checks.ml" 30 886 888 "checks.ml" 32 937 940
+)
+"checks.ml" 23 408 430 "checks.ml" 23 408 431
+type(
+  R.gt
+)
+ident(
+  def g "checks.ml" 23 408 432 "checks.ml" 29 708 885
+)
+"checks.ml" 23 408 432 "checks.ml" 23 408 433
+type(
+  string
+)
+ident(
+  def s "checks.ml" 24 436 440 "checks.ml" 29 708 885
+)
+"checks.ml" 24 436 444 "checks.ml" 24 436 455
+type(
+  R.vt list
+)
+"checks.ml" 24 436 458 "checks.ml" 24 436 471
+type(
+  R.gt -> R.vt -> R.vt list
+)
+ident(
+  ext_ref R.unreachable
+)
+"checks.ml" 24 436 472 "checks.ml" 24 436 473
+type(
+  R.gt
+)
+ident(
+  int_ref g "checks.ml" 23 408 430 "checks.ml" 23 408 431
+)
+"checks.ml" 24 436 475 "checks.ml" 24 436 487
+type(
+  C.G.V.label -> R.vt
+)
+ident(
+  ext_ref C.G.V.create
+)
+"checks.ml" 24 436 488 "checks.ml" 24 436 496
+type(
+  C.G.V.label
+)
+"checks.ml" 24 436 474 "checks.ml" 24 436 497
+call(
+  stack
+)
+type(
+  R.vt
+)
+"checks.ml" 24 436 458 "checks.ml" 24 436 497
+call(
+  stack
+)
+type(
+  R.vt list
+)
+"checks.ml" 25 501 511 "checks.ml" 25 501 522
+type(
+  R.vt list
+)
+ident(
+  int_ref unreachable "checks.ml" 24 436 444 "checks.ml" 24 436 455
+)
+"checks.ml" 26 528 534 "checks.ml" 26 528 536
+type(
+  R.vt list
+)
+"checks.ml" 26 528 540 "checks.ml" 26 528 542
+type(
+  unit
+)
+"checks.ml" 27 543 549 "checks.ml" 27 543 550
+type(
+  R.vt
+)
+ident(
+  def x "checks.ml" 27 543 558 "checks.ml" 27 543 693
+)
+"checks.ml" 27 543 552 "checks.ml" 27 543 554
+type(
+  R.vt list
+)
+"checks.ml" 27 543 549 "checks.ml" 27 543 554
+type(
+  R.vt list
+)
+"checks.ml" 27 543 558 "checks.ml" 27 543 564
+type(
+  string -> unit
+)
+ident(
+  int_ref insane "checks.ml" 11 177 181 "checks.ml" 11 177 187
+)
+"checks.ml" 27 543 566 "checks.ml" 27 543 580
+type(
+  (string -> string -> string, unit, string) format ->
+  string -> string -> string
+)
+ident(
+  ext_ref Printf.sprintf
+)
+"checks.ml" 27 543 581 "checks.ml" 27 543 680
+type(
+  (string -> string -> string, unit, string) format
+)
+"checks.ml" 27 543 681 "checks.ml" 27 543 682
+type(
+  string
+)
+ident(
+  int_ref s "checks.ml" 23 408 432 "checks.ml" 23 408 433
+)
+"checks.ml" 27 543 684 "checks.ml" 27 543 689
+type(
+  R.vt -> string
+)
+ident(
+  ext_ref C.v2s
+)
+"checks.ml" 27 543 690 "checks.ml" 27 543 691
+type(
+  R.vt
+)
+ident(
+  int_ref x "checks.ml" 27 543 549 "checks.ml" 27 543 550
+)
+"checks.ml" 27 543 683 "checks.ml" 27 543 692
+call(
+  stack
+)
+type(
+  string
+)
+"checks.ml" 27 543 565 "checks.ml" 27 543 693
+call(
+  stack
+)
+type(
+  string
+)
+"checks.ml" 27 543 558 "checks.ml" 27 543 693
+call(
+  tail
+)
+type(
+  unit
+)
+"checks.ml" 28 694 700 "checks.ml" 28 694 701
+type(
+  R.vt
+)
+ident(
+  def x "checks.ml" 29 708 714 "checks.ml" 29 708 885
+)
+"checks.ml" 28 694 703 "checks.ml" 28 694 704
+type(
+  R.vt list
+)
+ident(
+  def y "checks.ml" 29 708 714 "checks.ml" 29 708 885
+)
+"checks.ml" 28 694 700 "checks.ml" 28 694 704
+type(
+  R.vt list
+)
+"checks.ml" 29 708 714 "checks.ml" 29 708 720
+type(
+  string -> unit
+)
+ident(
+  int_ref insane "checks.ml" 11 177 181 "checks.ml" 11 177 187
+)
+"checks.ml" 29 708 722 "checks.ml" 29 708 736
+type(
+  (string -> string -> int -> string, unit, string) format ->
+  string -> string -> int -> string
+)
+ident(
+  ext_ref Printf.sprintf
+)
+"checks.ml" 29 708 737 "checks.ml" 29 708 856
+type(
+  (string -> string -> int -> string, unit, string) format
+)
+"checks.ml" 29 708 857 "checks.ml" 29 708 858
+type(
+  string
+)
+ident(
+  int_ref s "checks.ml" 23 408 432 "checks.ml" 23 408 433
+)
+"checks.ml" 29 708 860 "checks.ml" 29 708 865
+type(
+  R.vt -> string
+)
+ident(
+  ext_ref C.v2s
+)
+"checks.ml" 29 708 866 "checks.ml" 29 708 867
+type(
+  R.vt
+)
+ident(
+  int_ref x "checks.ml" 28 694 700 "checks.ml" 28 694 701
+)
+"checks.ml" 29 708 859 "checks.ml" 29 708 868
+call(
+  stack
+)
+type(
+  string
+)
+"checks.ml" 29 708 870 "checks.ml" 29 708 881
+type(
+  R.vt list -> int
+)
+ident(
+  ext_ref List.length
+)
+"checks.ml" 29 708 882 "checks.ml" 29 708 883
+type(
+  R.vt list
+)
+ident(
+  int_ref y "checks.ml" 28 694 703 "checks.ml" 28 694 704
+)
+"checks.ml" 29 708 869 "checks.ml" 29 708 884
+call(
+  stack
+)
+type(
+  int
+)
+"checks.ml" 29 708 721 "checks.ml" 29 708 885
+call(
+  stack
+)
+type(
+  string
+)
+"checks.ml" 29 708 714 "checks.ml" 29 708 885
+call(
+  tail
+)
+type(
+  unit
+)
+"checks.ml" 25 501 505 "checks.ml" 29 708 885
+type(
+  unit
+)
+"checks.ml" 24 436 440 "checks.ml" 29 708 885
+type(
+  unit
+)
+"checks.ml" 30 886 892 "checks.ml" 30 886 907
+type(
+  R.gt -> string -> unit
+)
+ident(
+  def connected_check "checks.ml" 30 886 935 "checks.ml" 32 937 940
+)
+"checks.ml" 30 886 910 "checks.ml" 30 886 919
+type(
+  (R.gt -> string -> unit) -> R.gt -> string -> unit
+)
+ident(
+  int_ref wrapdebug "checks.ml" 13 210 214 "checks.ml" 13 210 223
+)
+"checks.ml" 30 886 920 "checks.ml" 30 886 935
+type(
+  R.gt -> string -> unit
+)
+ident(
+  int_ref connected_check "checks.ml" 23 408 414 "checks.ml" 23 408 429
+)
+"checks.ml" 30 886 910 "checks.ml" 30 886 935
+call(
+  stack
+)
+type(
+  R.gt -> string -> unit
+)
+"checks.ml" 34 942 946 "checks.ml" 34 942 962
+type(
+  Cfg.AST.G.t -> string -> unit
+)
+ident(
+  def connected_astcfg "checks.ml" 35 1031 1031 --
+)
+"checks.ml" 34 942 981 "checks.ml" 34 942 1008
+call(
+  stack
+)
+"checks.ml" 34 942 1012 "checks.ml" 34 942 1030
+type(
+  Cfg.AST.G.t -> string -> unit
+)
+ident(
+  ext_ref CC.connected_check
+)
+"checks.ml" 34 942 965 "checks.ml" 34 942 1030
+type(
+  Cfg.AST.G.t -> string -> unit
+)
+"checks.ml" 35 1031 1035 "checks.ml" 35 1031 1051
+type(
+  Cfg.SSA.G.t -> string -> unit
+)
+ident(
+  def connected_ssacfg "checks.ml" 37 1121 1121 --
+)
+"checks.ml" 35 1031 1070 "checks.ml" 35 1031 1097
+call(
+  stack
+)
+"checks.ml" 35 1031 1101 "checks.ml" 35 1031 1119
+type(
+  Cfg.SSA.G.t -> string -> unit
+)
+ident(
+  ext_ref CC.connected_check
+)
+"checks.ml" 35 1031 1054 "checks.ml" 35 1031 1119
+type(
+  Cfg.SSA.G.t -> string -> unit
+)
+"checks.ml" 38 1165 1171 "checks.ml" 38 1165 1184
+type(
+  C.G.t -> string -> unit
+)
+ident(
+  def acyclic_check "checks.ml" 64 2372 2374 "checks.ml" 65 2418 2421
+)
+"checks.ml" 38 1165 1185 "checks.ml" 38 1165 1186
+type(
+  C.G.t
+)
+ident(
+  def g "checks.ml" 38 1165 1187 "checks.ml" 63 2108 2371
+)
+"checks.ml" 38 1165 1187 "checks.ml" 38 1165 1188
+type(
+  string
+)
+ident(
+  def s "checks.ml" 39 1191 1195 "checks.ml" 63 2108 2371
+)
+"checks.ml" 39 1191 1199 "checks.ml" 39 1191 1213
+type(
+  C.G.t -> C.G.edge list
+)
+"checks.ml" 39 1191 1214 "checks.ml" 39 1191 1217
+type(
+  C.G.t
+)
+ident(
+  def cfg "checks.ml" 40 1220 1226 "checks.ml" 57 1800 1819
+)
+"checks.ml" 40 1220 1241 "checks.ml" 40 1220 1260
+call(
+  stack
+)
+"checks.ml" 41 1264 1274 "checks.ml" 41 1264 1275
+type(
+  _[> `Black | `Gray | `White ] H.t
+)
+ident(
+  def h "checks.ml" 43 1359 1365 "checks.ml" 57 1800 1819
+)
+"checks.ml" 41 1264 1278 "checks.ml" 41 1264 1286
+type(
+  int -> (_[> `Black | `Gray | `White ] as 'a) H.t
+)
+ident(
+  ext_ref H.create
+)
+"checks.ml" 41 1264 1288 "checks.ml" 41 1264 1301
+type(
+  C.G.t -> int
+)
+ident(
+  ext_ref C.G.nb_vertex
+)
+"checks.ml" 41 1264 1302 "checks.ml" 41 1264 1305
+type(
+  C.G.t
+)
+ident(
+  int_ref cfg "checks.ml" 39 1191 1214 "checks.ml" 39 1191 1217
+)
+"checks.ml" 41 1264 1287 "checks.ml" 41 1264 1306
+call(
+  stack
+)
+type(
+  int
+)
+"checks.ml" 41 1264 1278 "checks.ml" 41 1264 1306
+call(
+  stack
+)
+type(
+  'a H.t
+)
+"checks.ml" 42 1307 1317 "checks.ml" 42 1307 1322
+type(
+  C.G.V.t
+)
+ident(
+  def entry "checks.ml" 43 1359 1365 "checks.ml" 57 1800 1819
+)
+"checks.ml" 42 1307 1325 "checks.ml" 42 1307 1338
+type(
+  C.G.t -> C.G.V.label -> C.G.V.t
+)
+ident(
+  ext_ref C.find_vertex
+)
+"checks.ml" 42 1307 1339 "checks.ml" 42 1307 1342
+type(
+  C.G.t
+)
+ident(
+  int_ref cfg "checks.ml" 39 1191 1214 "checks.ml" 39 1191 1217
+)
+"checks.ml" 42 1307 1343 "checks.ml" 42 1307 1355
+type(
+  C.G.V.label
+)
+"checks.ml" 42 1307 1325 "checks.ml" 42 1307 1355
+call(
+  stack
+)
+type(
+  C.G.V.t
+)
+"checks.ml" 43 1359 1369 "checks.ml" 43 1359 1374
+type(
+  H.key -> 'a
+)
+ident(
+  def color "checks.ml" 45 1463 1469 "checks.ml" 57 1800 1819
+)
+"checks.ml" 43 1359 1375 "checks.ml" 43 1359 1376
+type(
+  H.key
+)
+ident(
+  def v "checks.ml" 43 1359 1379 "checks.ml" 43 1359 1418
+)
+"checks.ml" 43 1359 1383 "checks.ml" 43 1359 1389
+type(
+  'a H.t -> H.key -> 'a
+)
+ident(
+  ext_ref H.find
+)
+"checks.ml" 43 1359 1390 "checks.ml" 43 1359 1391
+type(
+  'a H.t
+)
+ident(
+  int_ref h "checks.ml" 41 1264 1274 "checks.ml" 41 1264 1275
+)
+"checks.ml" 43 1359 1392 "checks.ml" 43 1359 1393
+type(
+  H.key
+)
+ident(
+  int_ref v "checks.ml" 43 1359 1375 "checks.ml" 43 1359 1376
+)
+"checks.ml" 43 1359 1383 "checks.ml" 43 1359 1393
+call(
+  stack
+)
+type(
+  'a
+)
+"checks.ml" 43 1359 1399 "checks.ml" 43 1359 1408
+type(
+  exn
+)
+"checks.ml" 43 1359 1412 "checks.ml" 43 1359 1418
+type(
+  'a
+)
+"checks.ml" 43 1359 1379 "checks.ml" 43 1359 1418
+type(
+  'a
+)
+"checks.ml" 44 1419 1429 "checks.ml" 44 1419 1437
+type(
+  H.key -> 'a -> unit
+)
+ident(
+  def setcolor "checks.ml" 45 1463 1469 "checks.ml" 57 1800 1819
+)
+"checks.ml" 44 1419 1438 "checks.ml" 44 1419 1439
+type(
+  H.key
+)
+ident(
+  def v "checks.ml" 44 1419 1440 "checks.ml" 44 1419 1459
+)
+"checks.ml" 44 1419 1440 "checks.ml" 44 1419 1441
+type(
+  'a
+)
+ident(
+  def c "checks.ml" 44 1419 1444 "checks.ml" 44 1419 1459
+)
+"checks.ml" 44 1419 1444 "checks.ml" 44 1419 1453
+type(
+  'a H.t -> H.key -> 'a -> unit
+)
+ident(
+  ext_ref H.replace
+)
+"checks.ml" 44 1419 1454 "checks.ml" 44 1419 1455
+type(
+  'a H.t
+)
+ident(
+  int_ref h "checks.ml" 41 1264 1274 "checks.ml" 41 1264 1275
+)
+"checks.ml" 44 1419 1456 "checks.ml" 44 1419 1457
+type(
+  H.key
+)
+ident(
+  int_ref v "checks.ml" 44 1419 1438 "checks.ml" 44 1419 1439
+)
+"checks.ml" 44 1419 1458 "checks.ml" 44 1419 1459
+type(
+  'a
+)
+ident(
+  int_ref c "checks.ml" 44 1419 1440 "checks.ml" 44 1419 1441
+)
+"checks.ml" 44 1419 1444 "checks.ml" 44 1419 1459
+call(
+  tail
+)
+type(
+  unit
+)
+"checks.ml" 45 1463 1477 "checks.ml" 45 1463 1481
+type(
+  C.G.E.vertex -> C.G.edge list -> C.G.edge list
+)
+ident(
+  def walk "checks.ml" 45 1463 1469 "checks.ml" 57 1800 1819
+)
+"checks.ml" 45 1463 1482 "checks.ml" 45 1463 1483
+type(
+  C.G.E.vertex
+)
+ident(
+  def v "checks.ml" 45 1463 1484 "checks.ml" 55 1777 1790
+)
+"checks.ml" 45 1463 1484 "checks.ml" 45 1463 1489
+type(
+  C.G.edge list
+)
+ident(
+  def edges "checks.ml" 46 1491 1499 "checks.ml" 55 1777 1790
+)
+"checks.ml" 46 1491 1503 "checks.ml" 46 1491 1512
+type(
+  C.G.edge -> C.G.edge list -> C.G.edge list
+)
+"checks.ml" 46 1491 1513 "checks.ml" 46 1491 1514
+type(
+  C.G.edge
+)
+ident(
+  def e "checks.ml" 46 1491 1515 "checks.ml" 50 1631 1651
+)
+"checks.ml" 46 1491 1515 "checks.ml" 46 1491 1520
+type(
+  C.G.edge list
+)
+ident(
+  def edges "checks.ml" 47 1523 1526 "checks.ml" 50 1631 1651
+)
+"checks.ml" 47 1523 1530 "checks.ml" 47 1523 1531
+type(
+  C.G.E.vertex
+)
+"checks.ml" 47 1523 1534 "checks.ml" 47 1523 1543
+type(
+  C.G.edge -> C.G.E.vertex
+)
+ident(
+  ext_ref C.G.E.dst
+)
+"checks.ml" 47 1523 1544 "checks.ml" 47 1523 1545
+type(
+  C.G.edge
+)
+ident(
+  int_ref e "checks.ml" 46 1491 1513 "checks.ml" 46 1491 1514
+)
+"checks.ml" 47 1523 1534 "checks.ml" 47 1523 1545
+call(
+  stack
+)
+type(
+  C.G.E.vertex
+)
+"checks.ml" 48 1549 1555 "checks.ml" 48 1549 1560
+type(
+  H.key -> 'a
+)
+ident(
+  int_ref color "checks.ml" 43 1359 1369 "checks.ml" 43 1359 1374
+)
+"checks.ml" 48 1549 1561 "checks.ml" 48 1549 1562
+type(
+  C.G.E.vertex
+)
+ident(
+  int_ref d "checks.ml" 47 1523 1530 "checks.ml" 47 1523 1531
+)
+"checks.ml" 48 1549 1555 "checks.ml" 48 1549 1562
+call(
+  stack
+)
+type(
+  'a
+)
+"checks.ml" 48 1549 1563 "checks.ml" 48 1549 1564
+type(
+  'a -> 'a -> bool
+)
+ident(
+  ext_ref Pervasives.( = )
+)
+"checks.ml" 48 1549 1565 "checks.ml" 48 1549 1571
+type(
+  'a
+)
+"checks.ml" 48 1549 1555 "checks.ml" 48 1549 1571
+type(
+  bool
+)
+"checks.ml" 48 1549 1577 "checks.ml" 48 1549 1581
+type(
+  C.G.E.vertex -> C.G.edge list -> C.G.edge list
+)
+ident(
+  int_ref walk "checks.ml" 45 1463 1477 "checks.ml" 45 1463 1481
+)
+"checks.ml" 48 1549 1582 "checks.ml" 48 1549 1583
+type(
+  C.G.E.vertex
+)
+ident(
+  int_ref d "checks.ml" 47 1523 1530 "checks.ml" 47 1523 1531
+)
+"checks.ml" 48 1549 1584 "checks.ml" 48 1549 1589
+type(
+  C.G.edge list
+)
+ident(
+  int_ref edges "checks.ml" 46 1491 1515 "checks.ml" 46 1491 1520
+)
+"checks.ml" 48 1549 1577 "checks.ml" 48 1549 1589
+call(
+  tail
+)
+type(
+  C.G.edge list
+)
+"checks.ml" 49 1590 1601 "checks.ml" 49 1590 1606
+type(
+  H.key -> 'a
+)
+ident(
+  int_ref color "checks.ml" 43 1359 1369 "checks.ml" 43 1359 1374
+)
+"checks.ml" 49 1590 1607 "checks.ml" 49 1590 1608
+type(
+  C.G.E.vertex
+)
+ident(
+  int_ref d "checks.ml" 47 1523 1530 "checks.ml" 47 1523 1531
+)
+"checks.ml" 49 1590 1601 "checks.ml" 49 1590 1608
+call(
+  stack
+)
+type(
+  'a
+)
+"checks.ml" 49 1590 1609 "checks.ml" 49 1590 1610
+type(
+  'a -> 'a -> bool
+)
+ident(
+  ext_ref Pervasives.( = )
+)
+"checks.ml" 49 1590 1611 "checks.ml" 49 1590 1616
+type(
+  'a
+)
+"checks.ml" 49 1590 1601 "checks.ml" 49 1590 1616
+type(
+  bool
+)
+"checks.ml" 49 1590 1622 "checks.ml" 49 1590 1623
+type(
+  C.G.edge
+)
+ident(
+  int_ref e "checks.ml" 46 1491 1513 "checks.ml" 46 1491 1514
+)
+"checks.ml" 49 1590 1625 "checks.ml" 49 1590 1630
+type(
+  C.G.edge list
+)
+ident(
+  int_ref edges "checks.ml" 46 1491 1515 "checks.ml" 46 1491 1520
+)
+"checks.ml" 49 1590 1622 "checks.ml" 49 1590 1630
+type(
+  C.G.edge list
+)
+"checks.ml" 50 1631 1646 "checks.ml" 50 1631 1651
+type(
+  C.G.edge list
+)
+ident(
+  int_ref edges "checks.ml" 46 1491 1515 "checks.ml" 46 1491 1520
+)
+"checks.ml" 49 1590 1598 "checks.ml" 50 1631 1651
+type(
+  C.G.edge list
+)
+"checks.ml" 48 1549 1552 "checks.ml" 50 1631 1651
+type(
+  C.G.edge list
+)
+"checks.ml" 47 1523 1526 "checks.ml" 50 1631 1651
+type(
+  C.G.edge list
+)
+"checks.ml" 52 1663 1671 "checks.ml" 52 1663 1679
+type(
+  H.key -> 'a -> unit
+)
+ident(
+  int_ref setcolor "checks.ml" 44 1419 1429 "checks.ml" 44 1419 1437
+)
+"checks.ml" 52 1663 1680 "checks.ml" 52 1663 1681
+type(
+  C.G.E.vertex
+)
+ident(
+  int_ref v "checks.ml" 45 1463 1482 "checks.ml" 45 1463 1483
+)
+"checks.ml" 52 1663 1682 "checks.ml" 52 1663 1687
+type(
+  'a
+)
+"checks.ml" 52 1663 1671 "checks.ml" 52 1663 1687
+call(
+  stack
+)
+type(
+  unit
+)
+"checks.ml" 53 1689 1701 "checks.ml" 53 1689 1706
+type(
+  C.G.edge list
+)
+"checks.ml" 53 1689 1709 "checks.ml" 53 1689 1724
+type(
+  (C.G.edge -> C.G.edge list -> C.G.edge list) ->
+  C.G.t -> C.G.vertex -> C.G.edge list -> C.G.edge list
+)
+ident(
+  ext_ref C.G.fold_succ_e
+)
+"checks.ml" 53 1689 1725 "checks.ml" 53 1689 1734
+type(
+  C.G.edge -> C.G.edge list -> C.G.edge list
+)
+ident(
+  int_ref walk_edge "checks.ml" 46 1491 1503 "checks.ml" 46 1491 1512
+)
+"checks.ml" 53 1689 1735 "checks.ml" 53 1689 1738
+type(
+  C.G.t
+)
+ident(
+  int_ref cfg "checks.ml" 39 1191 1214 "checks.ml" 39 1191 1217
+)
+"checks.ml" 53 1689 1739 "checks.ml" 53 1689 1740
+type(
+  C.G.E.vertex
+)
+ident(
+  int_ref v "checks.ml" 45 1463 1482 "checks.ml" 45 1463 1483
+)
+"checks.ml" 53 1689 1741 "checks.ml" 53 1689 1746
+type(
+  C.G.edge list
+)
+ident(
+  int_ref edges "checks.ml" 45 1463 1484 "checks.ml" 45 1463 1489
+)
+"checks.ml" 53 1689 1709 "checks.ml" 53 1689 1746
+call(
+  stack
+)
+type(
+  C.G.edge list
+)
+"checks.ml" 54 1750 1758 "checks.ml" 54 1750 1766
+type(
+  H.key -> 'a -> unit
+)
+ident(
+  int_ref setcolor "checks.ml" 44 1419 1429 "checks.ml" 44 1419 1437
+)
+"checks.ml" 54 1750 1767 "checks.ml" 54 1750 1768
+type(
+  C.G.E.vertex
+)
+ident(
+  int_ref v "checks.ml" 45 1463 1482 "checks.ml" 45 1463 1483
+)
+"checks.ml" 54 1750 1769 "checks.ml" 54 1750 1775
+type(
+  'a
+)
+"checks.ml" 54 1750 1758 "checks.ml" 54 1750 1775
+call(
+  stack
+)
+type(
+  unit
+)
+"checks.ml" 55 1777 1785 "checks.ml" 55 1777 1790
+type(
+  C.G.edge list
+)
+ident(
+  int_ref edges "checks.ml" 53 1689 1701 "checks.ml" 53 1689 1706
+)
+"checks.ml" 54 1750 1758 "checks.ml" 55 1777 1790
+type(
+  C.G.edge list
+)
+"checks.ml" 53 1689 1697 "checks.ml" 55 1777 1790
+type(
+  C.G.edge list
+)
+"checks.ml" 52 1663 1671 "checks.ml" 55 1777 1790
+type(
+  C.G.edge list
+)
+"checks.ml" 46 1491 1499 "checks.ml" 55 1777 1790
+type(
+  C.G.edge list
+)
+"checks.ml" 57 1800 1806 "checks.ml" 57 1800 1810
+type(
+  C.G.E.vertex -> C.G.edge list -> C.G.edge list
+)
+ident(
+  int_ref walk "checks.ml" 45 1463 1477 "checks.ml" 45 1463 1481
+)
+"checks.ml" 57 1800 1811 "checks.ml" 57 1800 1816
+type(
+  C.G.E.vertex
+)
+ident(
+  int_ref entry "checks.ml" 42 1307 1317 "checks.ml" 42 1307 1322
+)
+"checks.ml" 57 1800 1817 "checks.ml" 57 1800 1819
+type(
+  C.G.edge list
+)
+"checks.ml" 57 1800 1806 "checks.ml" 57 1800 1819
+call(
+  tail
+)
+type(
+  C.G.edge list
+)
+"checks.ml" 45 1463 1469 "checks.ml" 57 1800 1819
+type(
+  C.G.edge list
+)
+"checks.ml" 43 1359 1365 "checks.ml" 57 1800 1819
+type(
+  C.G.edge list
+)
+"checks.ml" 41 1264 1270 "checks.ml" 57 1800 1819
+type(
+  C.G.edge list
+)
+"checks.ml" 40 1220 1226 "checks.ml" 57 1800 1819
+type(
+  C.G.edge list
+)
+"checks.ml" 59 1827 1837 "checks.ml" 59 1827 1851
+type(
+  C.G.t -> C.G.edge list
+)
+ident(
+  int_ref find_backedges "checks.ml" 39 1191 1199 "checks.ml" 39 1191 1213
+)
+"checks.ml" 59 1827 1852 "checks.ml" 59 1827 1853
+type(
+  C.G.t
+)
+ident(
+  int_ref g "checks.ml" 38 1165 1185 "checks.ml" 38 1165 1186
+)
+"checks.ml" 59 1827 1837 "checks.ml" 59 1827 1853
+call(
+  stack
+)
+type(
+  C.G.edge list
+)
+"checks.ml" 60 1859 1865 "checks.ml" 60 1859 1867
+type(
+  C.G.edge list
+)
+"checks.ml" 60 1859 1871 "checks.ml" 60 1859 1873
+type(
+  unit
+)
+"checks.ml" 61 1874 1880 "checks.ml" 61 1874 1881
+type(
+  C.G.edge
+)
+ident(
+  def x "checks.ml" 61 1874 1889 "checks.ml" 61 1874 2093
+)
+"checks.ml" 61 1874 1883 "checks.ml" 61 1874 1885
+type(
+  C.G.edge list
+)
+"checks.ml" 61 1874 1880 "checks.ml" 61 1874 1885
+type(
+  C.G.edge list
+)
+"checks.ml" 61 1874 1889 "checks.ml" 61 1874 1895
+type(
+  string -> unit
+)
+ident(
+  int_ref insane "checks.ml" 11 177 181 "checks.ml" 11 177 187
+)
+"checks.ml" 61 1874 1897 "checks.ml" 61 1874 1911
+type(
+  (string -> string -> string -> string -> string, unit, string) format ->
+  string -> string -> string -> string -> string
+)
+ident(
+  ext_ref Printf.sprintf
+)
+"checks.ml" 61 1874 1912 "checks.ml" 61 1874 2044
+type(
+  (string -> string -> string -> string -> string, unit, string) format
+)
+"checks.ml" 61 1874 2045 "checks.ml" 61 1874 2046
+type(
+  string
+)
+ident(
+  int_ref s "checks.ml" 38 1165 1187 "checks.ml" 38 1165 1188
+)
+"checks.ml" 61 1874 2048 "checks.ml" 61 1874 2053
+type(
+  C.G.E.vertex -> string
+)
+ident(
+  ext_ref C.v2s
+)
+"checks.ml" 61 1874 2055 "checks.ml" 61 1874 2064
+type(
+  C.G.edge -> C.G.E.vertex
+)
+ident(
+  ext_ref C.G.E.src
+)
+"checks.ml" 61 1874 2065 "checks.ml" 61 1874 2066
+type(
+  C.G.edge
+)
+ident(
+  int_ref x "checks.ml" 61 1874 1880 "checks.ml" 61 1874 1881
+)
+"checks.ml" 61 1874 2054 "checks.ml" 61 1874 2067
+call(
+  stack
+)
+type(
+  C.G.E.vertex
+)
+"checks.ml" 61 1874 2047 "checks.ml" 61 1874 2068
+call(
+  stack
+)
+type(
+  string
+)
+"checks.ml" 61 1874 2070 "checks.ml" 61 1874 2075
+type(
+  C.G.E.vertex -> string
+)
+ident(
+  ext_ref C.v2s
+)
+"checks.ml" 61 1874 2077 "checks.ml" 61 1874 2086
+type(
+  C.G.edge -> C.G.E.vertex
+)
+ident(
+  ext_ref C.G.E.dst
+)
+"checks.ml" 61 1874 2087 "checks.ml" 61 1874 2088
+type(
+  C.G.edge
+)
+ident(
+  int_ref x "checks.ml" 61 1874 1880 "checks.ml" 61 1874 1881
+)
+"checks.ml" 61 1874 2076 "checks.ml" 61 1874 2089
+call(
+  stack
+)
+type(
+  C.G.E.vertex
+)
+"checks.ml" 61 1874 2069 "checks.ml" 61 1874 2090
+call(
+  stack
+)
+type(
+  string
+)
+"checks.ml" 61 1874 2091 "checks.ml" 61 1874 2092
+type(
+  string
+)
+ident(
+  int_ref s "checks.ml" 38 1165 1187 "checks.ml" 38 1165 1188
+)
+"checks.ml" 61 1874 1896 "checks.ml" 61 1874 2093
+call(
+  stack
+)
+type(
+  string
+)
+"checks.ml" 61 1874 1889 "checks.ml" 61 1874 2093
+call(
+  tail
+)
+type(
+  unit
+)
+"checks.ml" 62 2094 2100 "checks.ml" 62 2094 2101
+type(
+  C.G.edge
+)
+ident(
+  def x "checks.ml" 63 2108 2114 "checks.ml" 63 2108 2371
+)
+"checks.ml" 62 2094 2103 "checks.ml" 62 2094 2104
+type(
+  C.G.edge list
+)
+ident(
+  def y "checks.ml" 63 2108 2114 "checks.ml" 63 2108 2371
+)
+"checks.ml" 62 2094 2100 "checks.ml" 62 2094 2104
+type(
+  C.G.edge list
+)
+"checks.ml" 63 2108 2114 "checks.ml" 63 2108 2120
+type(
+  string -> unit
+)
+ident(
+  int_ref insane "checks.ml" 11 177 181 "checks.ml" 11 177 187
+)
+"checks.ml" 63 2108 2122 "checks.ml" 63 2108 2136
+type(
+  (string -> string -> string -> int -> string -> string, unit, string)
+  format -> string -> string -> string -> int -> string -> string
+)
+ident(
+  ext_ref Printf.sprintf
+)
+"checks.ml" 63 2108 2137 "checks.ml" 63 2108 2306
+type(
+  (string -> string -> string -> int -> string -> string, unit, string)
+  format
+)
+"checks.ml" 63 2108 2307 "checks.ml" 63 2108 2308
+type(
+  string
+)
+ident(
+  int_ref s "checks.ml" 38 1165 1187 "checks.ml" 38 1165 1188
+)
+"checks.ml" 63 2108 2310 "checks.ml" 63 2108 2315
+type(
+  C.G.E.vertex -> string
+)
+ident(
+  ext_ref C.v2s
+)
+"checks.ml" 63 2108 2317 "checks.ml" 63 2108 2326
+type(
+  C.G.edge -> C.G.E.vertex
+)
+ident(
+  ext_ref C.G.E.src
+)
+"checks.ml" 63 2108 2327 "checks.ml" 63 2108 2328
+type(
+  C.G.edge
+)
+ident(
+  int_ref x "checks.ml" 62 2094 2100 "checks.ml" 62 2094 2101
+)
+"checks.ml" 63 2108 2316 "checks.ml" 63 2108 2329
+call(
+  stack
+)
+type(
+  C.G.E.vertex
+)
+"checks.ml" 63 2108 2309 "checks.ml" 63 2108 2330
+call(
+  stack
+)
+type(
+  string
+)
+"checks.ml" 63 2108 2332 "checks.ml" 63 2108 2337
+type(
+  C.G.E.vertex -> string
+)
+ident(
+  ext_ref C.v2s
+)
+"checks.ml" 63 2108 2339 "checks.ml" 63 2108 2348
+type(
+  C.G.edge -> C.G.E.vertex
+)
+ident(
+  ext_ref C.G.E.dst
+)
+"checks.ml" 63 2108 2349 "checks.ml" 63 2108 2350
+type(
+  C.G.edge
+)
+ident(
+  int_ref x "checks.ml" 62 2094 2100 "checks.ml" 62 2094 2101
+)
+"checks.ml" 63 2108 2338 "checks.ml" 63 2108 2351
+call(
+  stack
+)
+type(
+  C.G.E.vertex
+)
+"checks.ml" 63 2108 2331 "checks.ml" 63 2108 2352
+call(
+  stack
+)
+type(
+  string
+)
+"checks.ml" 63 2108 2354 "checks.ml" 63 2108 2365
+type(
+  C.G.edge list -> int
+)
+ident(
+  ext_ref List.length
+)
+"checks.ml" 63 2108 2366 "checks.ml" 63 2108 2367
+type(
+  C.G.edge list
+)
+ident(
+  int_ref y "checks.ml" 62 2094 2103 "checks.ml" 62 2094 2104
+)
+"checks.ml" 63 2108 2353 "checks.ml" 63 2108 2368
+call(
+  stack
+)
+type(
+  int
+)
+"checks.ml" 63 2108 2369 "checks.ml" 63 2108 2370
+type(
+  string
+)
+ident(
+  int_ref s "checks.ml" 38 1165 1187 "checks.ml" 38 1165 1188
+)
+"checks.ml" 63 2108 2121 "checks.ml" 63 2108 2371
+call(
+  stack
+)
+type(
+  string
+)
+"checks.ml" 63 2108 2114 "checks.ml" 63 2108 2371
+call(
+  tail
+)
+type(
+  unit
+)
+"checks.ml" 59 1827 1831 "checks.ml" 63 2108 2371
+type(
+  unit
+)
+"checks.ml" 39 1191 1195 "checks.ml" 63 2108 2371
+type(
+  unit
+)
+"checks.ml" 64 2372 2378 "checks.ml" 64 2372 2391
+type(
+  C.G.t -> string -> unit
+)
+ident(
+  def acyclic_check "checks.ml" 64 2372 2417 "checks.ml" 65 2418 2421
+)
+"checks.ml" 64 2372 2394 "checks.ml" 64 2372 2403
+type(
+  (C.G.t -> string -> unit) -> C.G.t -> string -> unit
+)
+ident(
+  int_ref wrapdebug "checks.ml" 13 210 214 "checks.ml" 13 210 223
+)
+"checks.ml" 64 2372 2404 "checks.ml" 64 2372 2417
+type(
+  C.G.t -> string -> unit
+)
+ident(
+  int_ref acyclic_check "checks.ml" 38 1165 1171 "checks.ml" 38 1165 1184
+)
+"checks.ml" 64 2372 2394 "checks.ml" 64 2372 2417
+call(
+  stack
+)
+type(
+  C.G.t -> string -> unit
+)
+"checks.ml" 67 2423 2427 "checks.ml" 67 2423 2441
+type(
+  Cfg.AST.G.t -> string -> unit
+)
+ident(
+  def acyclic_astcfg "checks.ml" 68 2506 2506 --
+)
+"checks.ml" 67 2423 2460 "checks.ml" 67 2423 2485
+call(
+  stack
+)
+"checks.ml" 67 2423 2489 "checks.ml" 67 2423 2505
+type(
+  Cfg.AST.G.t -> string -> unit
+)
+ident(
+  ext_ref AC.acyclic_check
+)
+"checks.ml" 67 2423 2444 "checks.ml" 67 2423 2505
+type(
+  Cfg.AST.G.t -> string -> unit
+)
+"checks.ml" 68 2506 2510 "checks.ml" 68 2506 2524
+type(
+  Cfg.SSA.G.t -> string -> unit
+)
+ident(
+  def acyclic_ssacfg "checks.ml" 70 2590 2590 --
+)
+"checks.ml" 68 2506 2543 "checks.ml" 68 2506 2568
+call(
+  stack
+)
+"checks.ml" 68 2506 2572 "checks.ml" 68 2506 2588
+type(
+  Cfg.SSA.G.t -> string -> unit
+)
+ident(
+  ext_ref AC.acyclic_check
+)
+"checks.ml" 68 2506 2527 "checks.ml" 68 2506 2588
+type(
+  Cfg.SSA.G.t -> string -> unit
+)
+"checks.ml" 72 2632 2638 "checks.ml" 72 2632 2648
+type(
+  ?allowed_exits:C.G.V.label list ->
+  ?expected_exits:C.G.V.label list -> C.G.t -> string -> unit
+)
+ident(
+  def exit_check "checks.ml" 78 3225 3227 "checks.ml" 79 3329 3332
+)
+"checks.ml" 72 2632 2651 "checks.ml" 72 2632 2664
+type(
+  C.G.V.label list
+)
+"checks.ml" 72 2632 2666 "checks.ml" 72 2632 2677
+type(
+  C.G.V.label
+)
+"checks.ml" 72 2632 2679 "checks.ml" 72 2632 2691
+type(
+  C.G.V.label
+)
+"checks.ml" 72 2632 2665 "checks.ml" 72 2632 2692
+type(
+  C.G.V.label list
+)
+type(
+  C.G.V.label list
+)
+ident(
+  int_ref *sth* "checks.ml" 72 2632 2665 "checks.ml" 72 2632 2692
+)
+type(
+  C.G.V.label list option
+)
+type(
+  C.G.V.label list option
+)
+type(
+  C.G.V.label list
+)
+ident(
+  def *sth* "checks.ml" 72 2632 2665 "checks.ml" 72 2632 2692
+)
+"checks.ml" 72 2632 2696 "checks.ml" 72 2632 2710
+type(
+  C.G.V.label list
+)
+"checks.ml" 72 2632 2712 "checks.ml" 72 2632 2723
+type(
+  C.G.V.label
+)
+"checks.ml" 72 2632 2711 "checks.ml" 72 2632 2724
+type(
+  C.G.V.label list
+)
+type(
+  C.G.V.label list
+)
+ident(
+  int_ref *sth* "checks.ml" 72 2632 2711 "checks.ml" 72 2632 2724
+)
+type(
+  C.G.V.label list option
+)
+type(
+  C.G.V.label list option
+)
+type(
+  C.G.V.label list
+)
+ident(
+  def *sth* "checks.ml" 72 2632 2711 "checks.ml" 72 2632 2724
+)
+"checks.ml" 72 2632 2726 "checks.ml" 72 2632 2727
+type(
+  C.G.t
+)
+ident(
+  def g "checks.ml" 72 2632 2728 "checks.ml" 77 3083 3224
+)
+"checks.ml" 72 2632 2728 "checks.ml" 72 2632 2729
+type(
+  string
+)
+ident(
+  def s "checks.ml" 73 2732 2736 "checks.ml" 77 3083 3224
+)
+"checks.ml" 73 2732 2736 "checks.ml" 73 2732 2751
+type(
+  (C.G.vertex -> unit) -> C.G.t -> unit
+)
+ident(
+  ext_ref C.G.iter_vertex
+)
+"checks.ml" 73 2732 2757 "checks.ml" 73 2732 2758
+type(
+  C.G.vertex
+)
+ident(
+  def v "checks.ml" 74 2762 2768 "checks.ml" 75 2849 2966
+)
+"checks.ml" 74 2762 2771 "checks.ml" 74 2762 2785
+type(
+  C.G.t -> C.G.vertex -> int
+)
+ident(
+  ext_ref C.G.out_degree
+)
+"checks.ml" 74 2762 2786 "checks.ml" 74 2762 2787
+type(
+  C.G.t
+)
+ident(
+  int_ref g "checks.ml" 72 2632 2726 "checks.ml" 72 2632 2727
+)
+"checks.ml" 74 2762 2788 "checks.ml" 74 2762 2789
+type(
+  C.G.vertex
+)
+ident(
+  int_ref v "checks.ml" 73 2732 2757 "checks.ml" 73 2732 2758
+)
+"checks.ml" 74 2762 2771 "checks.ml" 74 2762 2789
+call(
+  stack
+)
+type(
+  int
+)
+"checks.ml" 74 2762 2790 "checks.ml" 74 2762 2791
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( = )
+)
+"checks.ml" 74 2762 2792 "checks.ml" 74 2762 2793
+type(
+  int
+)
+"checks.ml" 74 2762 2771 "checks.ml" 74 2762 2793
+type(
+  bool
+)
+"checks.ml" 74 2762 2794 "checks.ml" 74 2762 2796
+type(
+  bool -> bool -> bool
+)
+ident(
+  ext_ref Pervasives.( && )
+)
+"checks.ml" 74 2762 2797 "checks.ml" 74 2762 2805
+type(
+  C.G.V.label -> C.G.V.label list -> bool
+)
+ident(
+  ext_ref List.mem
+)
+"checks.ml" 74 2762 2807 "checks.ml" 74 2762 2818
+type(
+  C.G.vertex -> C.G.V.label
+)
+ident(
+  ext_ref C.G.V.label
+)
+"checks.ml" 74 2762 2819 "checks.ml" 74 2762 2820
+type(
+  C.G.vertex
+)
+ident(
+  int_ref v "checks.ml" 73 2732 2757 "checks.ml" 73 2732 2758
+)
+"checks.ml" 74 2762 2806 "checks.ml" 74 2762 2821
+call(
+  stack
+)
+type(
+  C.G.V.label
+)
+"checks.ml" 74 2762 2822 "checks.ml" 74 2762 2835
+type(
+  C.G.V.label list
+)
+ident(
+  int_ref allowed_exits "checks.ml" 72 2632 2651 "checks.ml" 72 2632 2664
+)
+"checks.ml" 74 2762 2797 "checks.ml" 74 2762 2835
+call(
+  stack
+)
+type(
+  bool
+)
+"checks.ml" 74 2762 2836 "checks.ml" 74 2762 2837
+type(
+  bool -> bool -> bool
+)
+ident(
+  ext_ref Pervasives.( = )
+)
+"checks.ml" 74 2762 2838 "checks.ml" 74 2762 2843
+type(
+  bool
+)
+"checks.ml" 74 2762 2797 "checks.ml" 74 2762 2843
+type(
+  bool
+)
+"checks.ml" 74 2762 2771 "checks.ml" 74 2762 2843
+type(
+  bool
+)
+"checks.ml" 75 2849 2857 "checks.ml" 75 2849 2863
+type(
+  string -> unit
+)
+ident(
+  int_ref insane "checks.ml" 11 177 181 "checks.ml" 11 177 187
+)
+"checks.ml" 75 2849 2865 "checks.ml" 75 2849 2879
+type(
+  (string -> string -> string, unit, string) format ->
+  string -> string -> string
+)
+ident(
+  ext_ref Printf.sprintf
+)
+"checks.ml" 75 2849 2880 "checks.ml" 75 2849 2953
+type(
+  (string -> string -> string, unit, string) format
+)
+"checks.ml" 75 2849 2954 "checks.ml" 75 2849 2955
+type(
+  string
+)
+ident(
+  int_ref s "checks.ml" 72 2632 2728 "checks.ml" 72 2632 2729
+)
+"checks.ml" 75 2849 2957 "checks.ml" 75 2849 2962
+type(
+  C.G.vertex -> string
+)
+ident(
+  ext_ref C.v2s
+)
+"checks.ml" 75 2849 2963 "checks.ml" 75 2849 2964
+type(
+  C.G.vertex
+)
+ident(
+  int_ref v "checks.ml" 73 2732 2757 "checks.ml" 73 2732 2758
+)
+"checks.ml" 75 2849 2956 "checks.ml" 75 2849 2965
+call(
+  stack
+)
+type(
+  string
+)
+"checks.ml" 75 2849 2864 "checks.ml" 75 2849 2966
+call(
+  stack
+)
+type(
+  string
+)
+"checks.ml" 75 2849 2857 "checks.ml" 75 2849 2966
+call(
+  tail
+)
+type(
+  unit
+)
+"checks.ml" 74 2762 2768 "checks.ml" 75 2849 2966
+type(
+  unit
+)
+"checks.ml" 73 2732 2752 "checks.ml" 75 2849 2967
+type(
+  C.G.vertex -> unit
+)
+"checks.ml" 75 2849 2968 "checks.ml" 75 2849 2969
+type(
+  C.G.t
+)
+ident(
+  int_ref g "checks.ml" 72 2632 2726 "checks.ml" 72 2632 2727
+)
+"checks.ml" 73 2732 2736 "checks.ml" 75 2849 2969
+call(
+  stack
+)
+type(
+  unit
+)
+"checks.ml" 76 2971 2975 "checks.ml" 76 2971 2984
+type(
+  (C.G.V.label -> unit) -> C.G.V.label list -> unit
+)
+ident(
+  ext_ref List.iter
+)
+"checks.ml" 76 2971 2990 "checks.ml" 76 2971 2991
+type(
+  C.G.V.label
+)
+ident(
+  def v "checks.ml" 76 2971 2995 "checks.ml" 77 3083 3208
+)
+"checks.ml" 76 2971 2999 "checks.ml" 76 2971 3000
+type(
+  C.G.V.t
+)
+"checks.ml" 76 2971 3003 "checks.ml" 76 2971 3015
+type(
+  C.G.V.label -> C.G.V.t
+)
+ident(
+  ext_ref C.G.V.create
+)
+"checks.ml" 76 2971 3016 "checks.ml" 76 2971 3017
+type(
+  C.G.V.label
+)
+ident(
+  int_ref v "checks.ml" 76 2971 2990 "checks.ml" 76 2971 2991
+)
+"checks.ml" 76 2971 3003 "checks.ml" 76 2971 3017
+call(
+  stack
+)
+type(
+  C.G.V.t
+)
+"checks.ml" 76 2971 3024 "checks.ml" 76 2971 3038
+type(
+  C.G.t -> C.G.vertex -> bool
+)
+ident(
+  ext_ref C.G.mem_vertex
+)
+"checks.ml" 76 2971 3039 "checks.ml" 76 2971 3040
+type(
+  C.G.t
+)
+ident(
+  int_ref g "checks.ml" 72 2632 2726 "checks.ml" 72 2632 2727
+)
+"checks.ml" 76 2971 3041 "checks.ml" 76 2971 3042
+type(
+  C.G.vertex
+)
+ident(
+  int_ref v "checks.ml" 76 2971 2999 "checks.ml" 76 2971 3000
+)
+"checks.ml" 76 2971 3024 "checks.ml" 76 2971 3042
+call(
+  stack
+)
+type(
+  bool
+)
+"checks.ml" 76 2971 3043 "checks.ml" 76 2971 3044
+type(
+  bool -> bool -> bool
+)
+ident(
+  ext_ref Pervasives.( = )
+)
+"checks.ml" 76 2971 3045 "checks.ml" 76 2971 3050
+type(
+  bool
+)
+"checks.ml" 76 2971 3024 "checks.ml" 76 2971 3050
+type(
+  bool
+)
+"checks.ml" 76 2971 3051 "checks.ml" 76 2971 3053
+type(
+  bool -> bool -> bool
+)
+ident(
+  ext_ref Pervasives.( || )
+)
+"checks.ml" 76 2971 3054 "checks.ml" 76 2971 3068
+type(
+  C.G.t -> C.G.vertex -> int
+)
+ident(
+  ext_ref C.G.out_degree
+)
+"checks.ml" 76 2971 3069 "checks.ml" 76 2971 3070
+type(
+  C.G.t
+)
+ident(
+  int_ref g "checks.ml" 72 2632 2726 "checks.ml" 72 2632 2727
+)
+"checks.ml" 76 2971 3071 "checks.ml" 76 2971 3072
+type(
+  C.G.vertex
+)
+ident(
+  int_ref v "checks.ml" 76 2971 2999 "checks.ml" 76 2971 3000
+)
+"checks.ml" 76 2971 3054 "checks.ml" 76 2971 3072
+call(
+  stack
+)
+type(
+  int
+)
+"checks.ml" 76 2971 3073 "checks.ml" 76 2971 3075
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( <> )
+)
+"checks.ml" 76 2971 3076 "checks.ml" 76 2971 3077
+type(
+  int
+)
+"checks.ml" 76 2971 3054 "checks.ml" 76 2971 3077
+type(
+  bool
+)
+"checks.ml" 76 2971 3024 "checks.ml" 76 2971 3077
+type(
+  bool
+)
+"checks.ml" 77 3083 3091 "checks.ml" 77 3083 3097
+type(
+  string -> unit
+)
+ident(
+  int_ref insane "checks.ml" 11 177 181 "checks.ml" 11 177 187
+)
+"checks.ml" 77 3083 3099 "checks.ml" 77 3083 3113
+type(
+  (string -> string -> string, unit, string) format ->
+  string -> string -> string
+)
+ident(
+  ext_ref Printf.sprintf
+)
+"checks.ml" 77 3083 3114 "checks.ml" 77 3083 3195
+type(
+  (string -> string -> string, unit, string) format
+)
+"checks.ml" 77 3083 3196 "checks.ml" 77 3083 3197
+type(
+  string
+)
+ident(
+  int_ref s "checks.ml" 72 2632 2728 "checks.ml" 72 2632 2729
+)
+"checks.ml" 77 3083 3199 "checks.ml" 77 3083 3204
+type(
+  C.G.V.t -> string
+)
+ident(
+  ext_ref C.v2s
+)
+"checks.ml" 77 3083 3205 "checks.ml" 77 3083 3206
+type(
+  C.G.V.t
+)
+ident(
+  int_ref v "checks.ml" 76 2971 2999 "checks.ml" 76 2971 3000
+)
+"checks.ml" 77 3083 3198 "checks.ml" 77 3083 3207
+call(
+  stack
+)
+type(
+  string
+)
+"checks.ml" 77 3083 3098 "checks.ml" 77 3083 3208
+call(
+  stack
+)
+type(
+  string
+)
+"checks.ml" 77 3083 3091 "checks.ml" 77 3083 3208
+call(
+  tail
+)
+type(
+  unit
+)
+"checks.ml" 76 2971 3021 "checks.ml" 77 3083 3208
+type(
+  unit
+)
+"checks.ml" 76 2971 2995 "checks.ml" 77 3083 3208
+type(
+  unit
+)
+"checks.ml" 76 2971 2985 "checks.ml" 77 3083 3209
+type(
+  C.G.V.label -> unit
+)
+"checks.ml" 77 3083 3210 "checks.ml" 77 3083 3224
+type(
+  C.G.V.label list
+)
+ident(
+  int_ref expected_exits "checks.ml" 72 2632 2696 "checks.ml" 72 2632 2710
+)
+"checks.ml" 76 2971 2975 "checks.ml" 77 3083 3224
+call(
+  tail
+)
+type(
+  unit
+)
+"checks.ml" 73 2732 2736 "checks.ml" 77 3083 3224
+type(
+  unit
+)
+"checks.ml" 78 3225 3231 "checks.ml" 78 3225 3241
+type(
+  ?allowed_exits:C.G.V.label list ->
+  ?expected_exits:C.G.V.label list -> C.G.t -> string -> unit
+)
+ident(
+  def exit_check "checks.ml" 78 3225 3328 "checks.ml" 79 3329 3332
+)
+"checks.ml" 78 3225 3243 "checks.ml" 78 3225 3256
+type(
+  C.G.V.label list option
+)
+ident(
+  def allowed_exits "checks.ml" 78 3225 3257 "checks.ml" 78 3225 3328
+)
+"checks.ml" 78 3225 3258 "checks.ml" 78 3225 3272
+type(
+  C.G.V.label list option
+)
+ident(
+  def expected_exits "checks.ml" 78 3225 3275 "checks.ml" 78 3225 3328
+)
+"checks.ml" 78 3225 3275 "checks.ml" 78 3225 3284
+type(
+  (C.G.t -> string -> unit) -> C.G.t -> string -> unit
+)
+ident(
+  int_ref wrapdebug "checks.ml" 13 210 214 "checks.ml" 13 210 223
+)
+"checks.ml" 78 3225 3286 "checks.ml" 78 3225 3296
+type(
+  ?allowed_exits:C.G.V.label list ->
+  ?expected_exits:C.G.V.label list -> C.G.t -> string -> unit
+)
+ident(
+  int_ref exit_check "checks.ml" 72 2632 2638 "checks.ml" 72 2632 2648
+)
+"checks.ml" 78 3225 3298 "checks.ml" 78 3225 3311
+type(
+  C.G.V.label list option
+)
+ident(
+  int_ref allowed_exits "checks.ml" 78 3225 3243 "checks.ml" 78 3225 3256
+)
+"checks.ml" 78 3225 3313 "checks.ml" 78 3225 3327
+type(
+  C.G.V.label list option
+)
+ident(
+  int_ref expected_exits "checks.ml" 78 3225 3258 "checks.ml" 78 3225 3272
+)
+"checks.ml" 78 3225 3285 "checks.ml" 78 3225 3328
+call(
+  stack
+)
+type(
+  C.G.t -> string -> unit
+)
+"checks.ml" 78 3225 3275 "checks.ml" 78 3225 3328
+call(
+  tail
+)
+type(
+  C.G.t -> string -> unit
+)
+"checks.ml" 81 3334 3338 "checks.ml" 81 3334 3355
+type(
+  ?allowed_exits:Cfg.AST.G.V.label list ->
+  ?expected_exits:Cfg.AST.G.V.label list -> Cfg.AST.G.t -> string -> unit
+)
+ident(
+  def exit_check_astcfg "checks.ml" 82 3414 3414 --
+)
+"checks.ml" 81 3334 3374 "checks.ml" 81 3334 3396
+call(
+  stack
+)
+"checks.ml" 81 3334 3400 "checks.ml" 81 3334 3413
+type(
+  ?allowed_exits:Cfg.AST.G.V.label list ->
+  ?expected_exits:Cfg.AST.G.V.label list -> Cfg.AST.G.t -> string -> unit
+)
+ident(
+  ext_ref EC.exit_check
+)
+"checks.ml" 81 3334 3358 "checks.ml" 81 3334 3413
+type(
+  ?allowed_exits:Cfg.AST.G.V.label list ->
+  ?expected_exits:Cfg.AST.G.V.label list -> Cfg.AST.G.t -> string -> unit
+)
+"checks.ml" 82 3414 3418 "checks.ml" 82 3414 3435
+type(
+  ?allowed_exits:Cfg.SSA.G.V.label list ->
+  ?expected_exits:Cfg.SSA.G.V.label list -> Cfg.SSA.G.t -> string -> unit
+)
+ident(
+  def exit_check_ssacfg "checks.ml" 82 3414 3493 --
+)
+"checks.ml" 82 3414 3454 "checks.ml" 82 3414 3476
+call(
+  stack
+)
+"checks.ml" 82 3414 3480 "checks.ml" 82 3414 3493
+type(
+  ?allowed_exits:Cfg.SSA.G.V.label list ->
+  ?expected_exits:Cfg.SSA.G.V.label list -> Cfg.SSA.G.t -> string -> unit
+)
+ident(
+  ext_ref EC.exit_check
+)
+"checks.ml" 82 3414 3438 "checks.ml" 82 3414 3493
+type(
+  ?allowed_exits:Cfg.SSA.G.V.label list ->
+  ?expected_exits:Cfg.SSA.G.V.label list -> Cfg.SSA.G.t -> string -> unit
+)

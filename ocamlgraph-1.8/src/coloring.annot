@@ -1,0 +1,1405 @@
+"src/coloring.ml" 40 1823 1838 "src/coloring.ml" 40 1823 1853
+call(
+  stack
+)
+"src/coloring.ml" 42 1857 1863 "src/coloring.ml" 42 1857 1871
+type(
+  G.t -> int -> unit
+)
+ident(
+  def coloring "src/coloring.ml" 89 3337 3348 "src/coloring.ml" 91 3350 3353
+)
+"src/coloring.ml" 42 1857 1872 "src/coloring.ml" 42 1857 1873
+type(
+  G.t
+)
+ident(
+  def g "src/coloring.ml" 42 1857 1874 "src/coloring.ml" 89 3337 3348
+)
+"src/coloring.ml" 42 1857 1874 "src/coloring.ml" 42 1857 1875
+type(
+  int
+)
+ident(
+  def k "src/coloring.ml" 44 1952 1956 "src/coloring.ml" 89 3337 3348
+)
+"src/coloring.ml" 44 1952 1960 "src/coloring.ml" 44 1952 1965
+type(
+  G.V.t Stack.t
+)
+"src/coloring.ml" 44 1952 1968 "src/coloring.ml" 44 1952 1980
+type(
+  unit -> G.V.t Stack.t
+)
+ident(
+  ext_ref Stack.create
+)
+"src/coloring.ml" 44 1952 1981 "src/coloring.ml" 44 1952 1983
+type(
+  unit
+)
+"src/coloring.ml" 44 1952 1968 "src/coloring.ml" 44 1952 1983
+call(
+  stack
+)
+type(
+  G.V.t Stack.t
+)
+"src/coloring.ml" 45 1987 1995 "src/coloring.ml" 45 1987 2006
+type(
+  int ref
+)
+"src/coloring.ml" 45 1987 2009 "src/coloring.ml" 45 1987 2012
+type(
+  int -> int ref
+)
+ident(
+  ext_ref Pervasives.ref
+)
+"src/coloring.ml" 45 1987 2014 "src/coloring.ml" 45 1987 2025
+type(
+  G.t -> int
+)
+ident(
+  ext_ref G.nb_vertex
+)
+"src/coloring.ml" 45 1987 2026 "src/coloring.ml" 45 1987 2027
+type(
+  G.t
+)
+ident(
+  int_ref g "src/coloring.ml" 42 1857 1872 "src/coloring.ml" 42 1857 1873
+)
+"src/coloring.ml" 45 1987 2013 "src/coloring.ml" 45 1987 2028
+call(
+  stack
+)
+type(
+  int
+)
+"src/coloring.ml" 45 1987 2009 "src/coloring.ml" 45 1987 2028
+type(
+  int ref
+)
+"src/coloring.ml" 46 2032 2040 "src/coloring.ml" 46 2032 2045
+type(
+  int ref
+)
+"src/coloring.ml" 46 2032 2048 "src/coloring.ml" 46 2032 2051
+type(
+  int -> int ref
+)
+ident(
+  ext_ref Pervasives.ref
+)
+"src/coloring.ml" 46 2032 2052 "src/coloring.ml" 46 2032 2053
+type(
+  int
+)
+"src/coloring.ml" 46 2032 2048 "src/coloring.ml" 46 2032 2053
+type(
+  int ref
+)
+"src/coloring.ml" 47 2057 2067 "src/coloring.ml" 47 2057 2068
+type(
+  int ref -> int
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"src/coloring.ml" 47 2057 2068 "src/coloring.ml" 47 2057 2073
+type(
+  int ref
+)
+ident(
+  int_ref count "src/coloring.ml" 46 2032 2040 "src/coloring.ml" 46 2032 2045
+)
+"src/coloring.ml" 47 2057 2067 "src/coloring.ml" 47 2057 2073
+type(
+  int
+)
+"src/coloring.ml" 47 2057 2074 "src/coloring.ml" 47 2057 2075
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( > )
+)
+"src/coloring.ml" 47 2057 2076 "src/coloring.ml" 47 2057 2077
+type(
+  int
+)
+"src/coloring.ml" 47 2057 2067 "src/coloring.ml" 47 2057 2077
+type(
+  bool
+)
+"src/coloring.ml" 48 2082 2088 "src/coloring.ml" 48 2082 2093
+type(
+  int ref
+)
+ident(
+  int_ref count "src/coloring.ml" 46 2032 2040 "src/coloring.ml" 46 2032 2045
+)
+"src/coloring.ml" 48 2082 2094 "src/coloring.ml" 48 2082 2096
+type(
+  int ref -> int -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"src/coloring.ml" 48 2082 2097 "src/coloring.ml" 48 2082 2098
+type(
+  int
+)
+"src/coloring.ml" 48 2082 2088 "src/coloring.ml" 48 2082 2098
+type(
+  unit
+)
+"src/coloring.ml" 49 2100 2110 "src/coloring.ml" 49 2100 2115
+type(
+  G.V.t -> unit
+)
+ident(
+  def erase "src/coloring.ml" 50 2174 2180 "src/coloring.ml" 54 2326 2368
+)
+"src/coloring.ml" 49 2100 2116 "src/coloring.ml" 49 2100 2117
+type(
+  G.V.t
+)
+ident(
+  def v "src/coloring.ml" 49 2100 2120 "src/coloring.ml" 49 2100 2170
+)
+"src/coloring.ml" 49 2100 2120 "src/coloring.ml" 49 2100 2124
+type(
+  int ref -> unit
+)
+ident(
+  ext_ref Pervasives.incr
+)
+"src/coloring.ml" 49 2100 2125 "src/coloring.ml" 49 2100 2130
+type(
+  int ref
+)
+ident(
+  int_ref count "src/coloring.ml" 46 2032 2040 "src/coloring.ml" 46 2032 2045
+)
+"src/coloring.ml" 49 2100 2120 "src/coloring.ml" 49 2100 2130
+type(
+  unit
+)
+"src/coloring.ml" 49 2100 2132 "src/coloring.ml" 49 2100 2142
+type(
+  G.V.t -> int -> unit
+)
+ident(
+  ext_ref G.Mark.set
+)
+"src/coloring.ml" 49 2100 2143 "src/coloring.ml" 49 2100 2144
+type(
+  G.V.t
+)
+ident(
+  int_ref v "src/coloring.ml" 49 2100 2116 "src/coloring.ml" 49 2100 2117
+)
+"src/coloring.ml" 49 2100 2146 "src/coloring.ml" 49 2100 2147
+type(
+  int
+)
+ident(
+  int_ref k "src/coloring.ml" 42 1857 1874 "src/coloring.ml" 42 1857 1875
+)
+"src/coloring.ml" 49 2100 2147 "src/coloring.ml" 49 2100 2148
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( + )
+)
+"src/coloring.ml" 49 2100 2148 "src/coloring.ml" 49 2100 2149
+type(
+  int
+)
+"src/coloring.ml" 49 2100 2145 "src/coloring.ml" 49 2100 2150
+type(
+  int
+)
+"src/coloring.ml" 49 2100 2132 "src/coloring.ml" 49 2100 2150
+call(
+  stack
+)
+type(
+  unit
+)
+"src/coloring.ml" 49 2100 2152 "src/coloring.ml" 49 2100 2162
+type(
+  G.V.t -> G.V.t Stack.t -> unit
+)
+ident(
+  ext_ref Stack.push
+)
+"src/coloring.ml" 49 2100 2163 "src/coloring.ml" 49 2100 2164
+type(
+  G.V.t
+)
+ident(
+  int_ref v "src/coloring.ml" 49 2100 2116 "src/coloring.ml" 49 2100 2117
+)
+"src/coloring.ml" 49 2100 2165 "src/coloring.ml" 49 2100 2170
+type(
+  G.V.t Stack.t
+)
+ident(
+  int_ref stack "src/coloring.ml" 44 1952 1960 "src/coloring.ml" 44 1952 1965
+)
+"src/coloring.ml" 49 2100 2152 "src/coloring.ml" 49 2100 2170
+call(
+  tail
+)
+type(
+  unit
+)
+"src/coloring.ml" 49 2100 2132 "src/coloring.ml" 49 2100 2170
+type(
+  unit
+)
+"src/coloring.ml" 49 2100 2120 "src/coloring.ml" 49 2100 2170
+type(
+  unit
+)
+"src/coloring.ml" 50 2174 2180 "src/coloring.ml" 50 2174 2193
+type(
+  (G.V.t -> unit) -> G.t -> unit
+)
+ident(
+  ext_ref G.iter_vertex
+)
+"src/coloring.ml" 51 2195 2201 "src/coloring.ml" 51 2195 2202
+type(
+  G.V.t
+)
+ident(
+  def v "src/coloring.ml" 51 2195 2206 "src/coloring.ml" 51 2195 2262
+)
+"src/coloring.ml" 51 2195 2209 "src/coloring.ml" 51 2195 2219
+type(
+  G.V.t -> int
+)
+ident(
+  ext_ref G.Mark.get
+)
+"src/coloring.ml" 51 2195 2220 "src/coloring.ml" 51 2195 2221
+type(
+  G.V.t
+)
+ident(
+  int_ref v "src/coloring.ml" 51 2195 2201 "src/coloring.ml" 51 2195 2202
+)
+"src/coloring.ml" 51 2195 2209 "src/coloring.ml" 51 2195 2221
+call(
+  stack
+)
+type(
+  int
+)
+"src/coloring.ml" 51 2195 2222 "src/coloring.ml" 51 2195 2223
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( = )
+)
+"src/coloring.ml" 51 2195 2224 "src/coloring.ml" 51 2195 2225
+type(
+  int
+)
+"src/coloring.ml" 51 2195 2209 "src/coloring.ml" 51 2195 2225
+type(
+  bool
+)
+"src/coloring.ml" 51 2195 2226 "src/coloring.ml" 51 2195 2228
+type(
+  bool -> bool -> bool
+)
+ident(
+  ext_ref Pervasives.( && )
+)
+"src/coloring.ml" 51 2195 2229 "src/coloring.ml" 51 2195 2241
+type(
+  G.t -> G.V.t -> int
+)
+ident(
+  ext_ref G.out_degree
+)
+"src/coloring.ml" 51 2195 2242 "src/coloring.ml" 51 2195 2243
+type(
+  G.t
+)
+ident(
+  int_ref g "src/coloring.ml" 42 1857 1872 "src/coloring.ml" 42 1857 1873
+)
+"src/coloring.ml" 51 2195 2244 "src/coloring.ml" 51 2195 2245
+type(
+  G.V.t
+)
+ident(
+  int_ref v "src/coloring.ml" 51 2195 2201 "src/coloring.ml" 51 2195 2202
+)
+"src/coloring.ml" 51 2195 2229 "src/coloring.ml" 51 2195 2245
+call(
+  stack
+)
+type(
+  int
+)
+"src/coloring.ml" 51 2195 2246 "src/coloring.ml" 51 2195 2247
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( < )
+)
+"src/coloring.ml" 51 2195 2248 "src/coloring.ml" 51 2195 2249
+type(
+  int
+)
+ident(
+  int_ref k "src/coloring.ml" 42 1857 1874 "src/coloring.ml" 42 1857 1875
+)
+"src/coloring.ml" 51 2195 2229 "src/coloring.ml" 51 2195 2249
+type(
+  bool
+)
+"src/coloring.ml" 51 2195 2209 "src/coloring.ml" 51 2195 2249
+type(
+  bool
+)
+"src/coloring.ml" 51 2195 2255 "src/coloring.ml" 51 2195 2260
+type(
+  G.V.t -> unit
+)
+ident(
+  int_ref erase "src/coloring.ml" 49 2100 2110 "src/coloring.ml" 49 2100 2115
+)
+"src/coloring.ml" 51 2195 2261 "src/coloring.ml" 51 2195 2262
+type(
+  G.V.t
+)
+ident(
+  int_ref v "src/coloring.ml" 51 2195 2201 "src/coloring.ml" 51 2195 2202
+)
+"src/coloring.ml" 51 2195 2255 "src/coloring.ml" 51 2195 2262
+call(
+  tail
+)
+type(
+  unit
+)
+"src/coloring.ml" 51 2195 2206 "src/coloring.ml" 51 2195 2262
+type(
+  unit
+)
+"src/coloring.ml" 51 2195 2196 "src/coloring.ml" 51 2195 2263
+type(
+  G.V.t -> unit
+)
+"src/coloring.ml" 52 2265 2266 "src/coloring.ml" 52 2265 2267
+type(
+  G.t
+)
+ident(
+  int_ref g "src/coloring.ml" 42 1857 1872 "src/coloring.ml" 42 1857 1873
+)
+"src/coloring.ml" 50 2174 2180 "src/coloring.ml" 52 2265 2267
+call(
+  stack
+)
+type(
+  unit
+)
+"src/coloring.ml" 54 2326 2332 "src/coloring.ml" 54 2326 2343
+type(
+  int ref
+)
+ident(
+  int_ref nb_to_color "src/coloring.ml" 45 1987 1995 "src/coloring.ml" 45 1987 2006
+)
+"src/coloring.ml" 54 2326 2344 "src/coloring.ml" 54 2326 2346
+type(
+  int ref -> int -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"src/coloring.ml" 54 2326 2347 "src/coloring.ml" 54 2326 2348
+type(
+  int ref -> int
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"src/coloring.ml" 54 2326 2348 "src/coloring.ml" 54 2326 2359
+type(
+  int ref
+)
+ident(
+  int_ref nb_to_color "src/coloring.ml" 45 1987 1995 "src/coloring.ml" 45 1987 2006
+)
+"src/coloring.ml" 54 2326 2347 "src/coloring.ml" 54 2326 2359
+type(
+  int
+)
+"src/coloring.ml" 54 2326 2360 "src/coloring.ml" 54 2326 2361
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( - )
+)
+"src/coloring.ml" 54 2326 2362 "src/coloring.ml" 54 2326 2363
+type(
+  int ref -> int
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"src/coloring.ml" 54 2326 2363 "src/coloring.ml" 54 2326 2368
+type(
+  int ref
+)
+ident(
+  int_ref count "src/coloring.ml" 46 2032 2040 "src/coloring.ml" 46 2032 2045
+)
+"src/coloring.ml" 54 2326 2362 "src/coloring.ml" 54 2326 2368
+type(
+  int
+)
+"src/coloring.ml" 54 2326 2347 "src/coloring.ml" 54 2326 2368
+type(
+  int
+)
+"src/coloring.ml" 54 2326 2332 "src/coloring.ml" 54 2326 2368
+type(
+  unit
+)
+"src/coloring.ml" 50 2174 2180 "src/coloring.ml" 54 2326 2368
+type(
+  unit
+)
+"src/coloring.ml" 49 2100 2106 "src/coloring.ml" 54 2326 2368
+type(
+  unit
+)
+"src/coloring.ml" 48 2082 2088 "src/coloring.ml" 54 2326 2368
+type(
+  unit
+)
+"src/coloring.ml" 47 2057 2061 "src/coloring.ml" 55 2369 2377
+type(
+  unit
+)
+"src/coloring.ml" 58 2506 2514 "src/coloring.ml" 58 2506 2523
+type(
+  G.V.t -> int -> unit
+)
+"src/coloring.ml" 58 2506 2524 "src/coloring.ml" 58 2506 2525
+type(
+  G.V.t
+)
+ident(
+  def v "src/coloring.ml" 58 2506 2526 "src/coloring.ml" 60 2552 2626
+)
+"src/coloring.ml" 58 2506 2526 "src/coloring.ml" 58 2506 2527
+type(
+  int
+)
+ident(
+  def i "src/coloring.ml" 59 2530 2536 "src/coloring.ml" 60 2552 2626
+)
+"src/coloring.ml" 59 2530 2536 "src/coloring.ml" 59 2530 2546
+type(
+  G.V.t -> int -> unit
+)
+ident(
+  ext_ref G.Mark.set
+)
+"src/coloring.ml" 59 2530 2547 "src/coloring.ml" 59 2530 2548
+type(
+  G.V.t
+)
+ident(
+  int_ref v "src/coloring.ml" 58 2506 2524 "src/coloring.ml" 58 2506 2525
+)
+"src/coloring.ml" 59 2530 2549 "src/coloring.ml" 59 2530 2550
+type(
+  int
+)
+ident(
+  int_ref i "src/coloring.ml" 58 2506 2526 "src/coloring.ml" 58 2506 2527
+)
+"src/coloring.ml" 59 2530 2536 "src/coloring.ml" 59 2530 2550
+call(
+  stack
+)
+type(
+  unit
+)
+"src/coloring.ml" 60 2552 2558 "src/coloring.ml" 60 2552 2569
+type(
+  (G.V.t -> unit) -> G.t -> G.V.t -> unit
+)
+ident(
+  ext_ref G.iter_succ
+)
+"src/coloring.ml" 60 2552 2575 "src/coloring.ml" 60 2552 2576
+type(
+  G.V.t
+)
+ident(
+  def w "src/coloring.ml" 60 2552 2580 "src/coloring.ml" 60 2552 2621
+)
+"src/coloring.ml" 60 2552 2583 "src/coloring.ml" 60 2552 2593
+type(
+  G.V.t -> int
+)
+ident(
+  ext_ref G.Mark.get
+)
+"src/coloring.ml" 60 2552 2594 "src/coloring.ml" 60 2552 2595
+type(
+  G.V.t
+)
+ident(
+  int_ref w "src/coloring.ml" 60 2552 2575 "src/coloring.ml" 60 2552 2576
+)
+"src/coloring.ml" 60 2552 2583 "src/coloring.ml" 60 2552 2595
+call(
+  stack
+)
+type(
+  int
+)
+"src/coloring.ml" 60 2552 2596 "src/coloring.ml" 60 2552 2597
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( = )
+)
+"src/coloring.ml" 60 2552 2598 "src/coloring.ml" 60 2552 2599
+type(
+  int
+)
+ident(
+  int_ref i "src/coloring.ml" 58 2506 2526 "src/coloring.ml" 58 2506 2527
+)
+"src/coloring.ml" 60 2552 2583 "src/coloring.ml" 60 2552 2599
+type(
+  bool
+)
+"src/coloring.ml" 60 2552 2605 "src/coloring.ml" 60 2552 2610
+type(
+  exn -> unit
+)
+ident(
+  ext_ref Pervasives.raise
+)
+"src/coloring.ml" 60 2552 2611 "src/coloring.ml" 60 2552 2621
+type(
+  exn
+)
+"src/coloring.ml" 60 2552 2605 "src/coloring.ml" 60 2552 2621
+type(
+  unit
+)
+"src/coloring.ml" 60 2552 2580 "src/coloring.ml" 60 2552 2621
+type(
+  unit
+)
+"src/coloring.ml" 60 2552 2570 "src/coloring.ml" 60 2552 2622
+type(
+  G.V.t -> unit
+)
+"src/coloring.ml" 60 2552 2623 "src/coloring.ml" 60 2552 2624
+type(
+  G.t
+)
+ident(
+  int_ref g "src/coloring.ml" 42 1857 1872 "src/coloring.ml" 42 1857 1873
+)
+"src/coloring.ml" 60 2552 2625 "src/coloring.ml" 60 2552 2626
+type(
+  G.V.t
+)
+ident(
+  int_ref v "src/coloring.ml" 58 2506 2524 "src/coloring.ml" 58 2506 2525
+)
+"src/coloring.ml" 60 2552 2558 "src/coloring.ml" 60 2552 2626
+call(
+  tail
+)
+type(
+  unit
+)
+"src/coloring.ml" 59 2530 2536 "src/coloring.ml" 60 2552 2626
+type(
+  unit
+)
+"src/coloring.ml" 62 2634 2642 "src/coloring.ml" 62 2634 2649
+type(
+  G.V.t -> unit
+)
+"src/coloring.ml" 62 2634 2650 "src/coloring.ml" 62 2634 2651
+type(
+  G.V.t
+)
+ident(
+  def v "src/coloring.ml" 62 2634 2654 "src/coloring.ml" 62 2634 2668
+)
+"src/coloring.ml" 62 2634 2654 "src/coloring.ml" 62 2634 2664
+type(
+  G.V.t -> int -> unit
+)
+ident(
+  ext_ref G.Mark.set
+)
+"src/coloring.ml" 62 2634 2665 "src/coloring.ml" 62 2634 2666
+type(
+  G.V.t
+)
+ident(
+  int_ref v "src/coloring.ml" 62 2634 2650 "src/coloring.ml" 62 2634 2651
+)
+"src/coloring.ml" 62 2634 2667 "src/coloring.ml" 62 2634 2668
+type(
+  int
+)
+"src/coloring.ml" 62 2634 2654 "src/coloring.ml" 62 2634 2668
+call(
+  tail
+)
+type(
+  unit
+)
+"src/coloring.ml" 63 2672 2679 "src/coloring.ml" 63 2672 2680
+type(
+  int ref -> int
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"src/coloring.ml" 63 2672 2680 "src/coloring.ml" 63 2672 2691
+type(
+  int ref
+)
+ident(
+  int_ref nb_to_color "src/coloring.ml" 45 1987 1995 "src/coloring.ml" 45 1987 2006
+)
+"src/coloring.ml" 63 2672 2679 "src/coloring.ml" 63 2672 2691
+type(
+  int
+)
+"src/coloring.ml" 63 2672 2692 "src/coloring.ml" 63 2672 2693
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( > )
+)
+"src/coloring.ml" 63 2672 2694 "src/coloring.ml" 63 2672 2695
+type(
+  int
+)
+"src/coloring.ml" 63 2672 2679 "src/coloring.ml" 63 2672 2695
+type(
+  bool
+)
+"src/coloring.ml" 64 2707 2721 "src/coloring.ml" 64 2707 2728
+type(
+  Bfs.iterator -> unit
+)
+"src/coloring.ml" 64 2707 2729 "src/coloring.ml" 64 2707 2733
+type(
+  Bfs.iterator
+)
+ident(
+  def iter "src/coloring.ml" 65 2736 2737 "src/coloring.ml" 76 2979 2983
+)
+"src/coloring.ml" 65 2736 2741 "src/coloring.ml" 65 2736 2742
+type(
+  G.V.t
+)
+"src/coloring.ml" 65 2736 2745 "src/coloring.ml" 65 2736 2752
+type(
+  Bfs.iterator -> G.V.t
+)
+ident(
+  ext_ref Bfs.get
+)
+"src/coloring.ml" 65 2736 2753 "src/coloring.ml" 65 2736 2757
+type(
+  Bfs.iterator
+)
+ident(
+  int_ref iter "src/coloring.ml" 64 2707 2729 "src/coloring.ml" 64 2707 2733
+)
+"src/coloring.ml" 65 2736 2745 "src/coloring.ml" 65 2736 2757
+call(
+  stack
+)
+type(
+  G.V.t
+)
+"src/coloring.ml" 66 2761 2766 "src/coloring.ml" 66 2761 2767
+type(
+  int
+)
+"src/coloring.ml" 66 2761 2770 "src/coloring.ml" 66 2761 2780
+type(
+  G.V.t -> int
+)
+ident(
+  ext_ref G.Mark.get
+)
+"src/coloring.ml" 66 2761 2781 "src/coloring.ml" 66 2761 2782
+type(
+  G.V.t
+)
+ident(
+  int_ref v "src/coloring.ml" 65 2736 2741 "src/coloring.ml" 65 2736 2742
+)
+"src/coloring.ml" 66 2761 2770 "src/coloring.ml" 66 2761 2782
+call(
+  stack
+)
+type(
+  int
+)
+"src/coloring.ml" 67 2786 2790 "src/coloring.ml" 67 2786 2791
+type(
+  int
+)
+ident(
+  int_ref m "src/coloring.ml" 66 2761 2766 "src/coloring.ml" 66 2761 2767
+)
+"src/coloring.ml" 67 2786 2792 "src/coloring.ml" 67 2786 2793
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( > )
+)
+"src/coloring.ml" 67 2786 2794 "src/coloring.ml" 67 2786 2795
+type(
+  int
+)
+"src/coloring.ml" 67 2786 2790 "src/coloring.ml" 67 2786 2795
+type(
+  bool
+)
+"src/coloring.ml" 68 2801 2804 "src/coloring.ml" 68 2801 2811
+type(
+  Bfs.iterator -> unit
+)
+ident(
+  int_ref iterate "src/coloring.ml" 64 2707 2721 "src/coloring.ml" 64 2707 2728
+)
+"src/coloring.ml" 68 2801 2813 "src/coloring.ml" 68 2801 2821
+type(
+  Bfs.iterator -> Bfs.iterator
+)
+ident(
+  ext_ref Bfs.step
+)
+"src/coloring.ml" 68 2801 2822 "src/coloring.ml" 68 2801 2826
+type(
+  Bfs.iterator
+)
+ident(
+  int_ref iter "src/coloring.ml" 64 2707 2729 "src/coloring.ml" 64 2707 2733
+)
+"src/coloring.ml" 68 2801 2812 "src/coloring.ml" 68 2801 2827
+call(
+  stack
+)
+type(
+  Bfs.iterator
+)
+"src/coloring.ml" 68 2801 2804 "src/coloring.ml" 68 2801 2827
+call(
+  tail
+)
+type(
+  unit
+)
+"src/coloring.ml" 70 2840 2851 "src/coloring.ml" 70 2840 2852
+type(
+  int
+)
+"src/coloring.ml" 70 2840 2856 "src/coloring.ml" 70 2840 2857
+type(
+  int
+)
+ident(
+  int_ref k "src/coloring.ml" 42 1857 1874 "src/coloring.ml" 42 1857 1875
+)
+"src/coloring.ml" 71 2861 2870 "src/coloring.ml" 71 2861 2879
+type(
+  G.V.t -> int -> unit
+)
+ident(
+  int_ref try_color "src/coloring.ml" 58 2506 2514 "src/coloring.ml" 58 2506 2523
+)
+"src/coloring.ml" 71 2861 2880 "src/coloring.ml" 71 2861 2881
+type(
+  G.V.t
+)
+ident(
+  int_ref v "src/coloring.ml" 65 2736 2741 "src/coloring.ml" 65 2736 2742
+)
+"src/coloring.ml" 71 2861 2882 "src/coloring.ml" 71 2861 2883
+type(
+  int
+)
+"src/coloring.ml" 71 2861 2870 "src/coloring.ml" 71 2861 2883
+call(
+  stack
+)
+type(
+  unit
+)
+"src/coloring.ml" 71 2861 2885 "src/coloring.ml" 71 2861 2892
+type(
+  Bfs.iterator -> unit
+)
+ident(
+  int_ref iterate "src/coloring.ml" 64 2707 2721 "src/coloring.ml" 64 2707 2728
+)
+"src/coloring.ml" 71 2861 2894 "src/coloring.ml" 71 2861 2902
+type(
+  Bfs.iterator -> Bfs.iterator
+)
+ident(
+  ext_ref Bfs.step
+)
+"src/coloring.ml" 71 2861 2903 "src/coloring.ml" 71 2861 2907
+type(
+  Bfs.iterator
+)
+ident(
+  int_ref iter "src/coloring.ml" 64 2707 2729 "src/coloring.ml" 64 2707 2733
+)
+"src/coloring.ml" 71 2861 2893 "src/coloring.ml" 71 2861 2908
+call(
+  stack
+)
+type(
+  Bfs.iterator
+)
+"src/coloring.ml" 71 2861 2885 "src/coloring.ml" 71 2861 2908
+call(
+  stack
+)
+type(
+  unit
+)
+"src/coloring.ml" 71 2861 2870 "src/coloring.ml" 71 2861 2908
+type(
+  unit
+)
+"src/coloring.ml" 72 2909 2919 "src/coloring.ml" 72 2909 2929
+type(
+  exn
+)
+"src/coloring.ml" 72 2909 2933 "src/coloring.ml" 72 2909 2935
+type(
+  unit
+)
+"src/coloring.ml" 71 2861 2866 "src/coloring.ml" 72 2909 2935
+type(
+  unit
+)
+"src/coloring.ml" 70 2840 2843 "src/coloring.ml" 73 2936 2943
+type(
+  unit
+)
+"src/coloring.ml" 74 2945 2948 "src/coloring.ml" 74 2945 2955
+type(
+  G.V.t -> unit
+)
+ident(
+  int_ref uncolor "src/coloring.ml" 62 2634 2642 "src/coloring.ml" 62 2634 2649
+)
+"src/coloring.ml" 74 2945 2956 "src/coloring.ml" 74 2945 2957
+type(
+  G.V.t
+)
+ident(
+  int_ref v "src/coloring.ml" 65 2736 2741 "src/coloring.ml" 65 2736 2742
+)
+"src/coloring.ml" 74 2945 2948 "src/coloring.ml" 74 2945 2957
+call(
+  stack
+)
+type(
+  unit
+)
+"src/coloring.ml" 75 2959 2962 "src/coloring.ml" 75 2959 2967
+type(
+  exn -> unit
+)
+ident(
+  ext_ref Pervasives.raise
+)
+"src/coloring.ml" 75 2959 2968 "src/coloring.ml" 75 2959 2978
+type(
+  exn
+)
+"src/coloring.ml" 75 2959 2962 "src/coloring.ml" 75 2959 2978
+type(
+  unit
+)
+"src/coloring.ml" 74 2945 2948 "src/coloring.ml" 75 2959 2978
+type(
+  unit
+)
+"src/coloring.ml" 69 2828 2834 "src/coloring.ml" 76 2979 2983
+type(
+  unit
+)
+"src/coloring.ml" 67 2786 2787 "src/coloring.ml" 76 2979 2983
+type(
+  unit
+)
+"src/coloring.ml" 66 2761 2762 "src/coloring.ml" 76 2979 2983
+type(
+  unit
+)
+"src/coloring.ml" 65 2736 2737 "src/coloring.ml" 76 2979 2983
+type(
+  unit
+)
+"src/coloring.ml" 78 2993 3003 "src/coloring.ml" 78 2993 3010
+type(
+  Bfs.iterator -> unit
+)
+ident(
+  int_ref iterate "src/coloring.ml" 64 2707 2721 "src/coloring.ml" 64 2707 2728
+)
+"src/coloring.ml" 78 2993 3012 "src/coloring.ml" 78 2993 3021
+type(
+  G.t -> Bfs.iterator
+)
+ident(
+  ext_ref Bfs.start
+)
+"src/coloring.ml" 78 2993 3022 "src/coloring.ml" 78 2993 3023
+type(
+  G.t
+)
+ident(
+  int_ref g "src/coloring.ml" 42 1857 1872 "src/coloring.ml" 42 1857 1873
+)
+"src/coloring.ml" 78 2993 3011 "src/coloring.ml" 78 2993 3024
+call(
+  stack
+)
+type(
+  Bfs.iterator
+)
+"src/coloring.ml" 78 2993 3003 "src/coloring.ml" 78 2993 3024
+call(
+  stack
+)
+type(
+  unit
+)
+"src/coloring.ml" 78 2993 3030 "src/coloring.ml" 78 2993 3034
+type(
+  exn
+)
+"src/coloring.ml" 78 2993 3038 "src/coloring.ml" 78 2993 3040
+type(
+  unit
+)
+"src/coloring.ml" 78 2993 2999 "src/coloring.ml" 78 2993 3040
+type(
+  unit
+)
+"src/coloring.ml" 63 2672 2701 "src/coloring.ml" 79 3041 3048
+type(
+  unit
+)
+"src/coloring.ml" 63 2672 2676 "src/coloring.ml" 79 3041 3048
+type(
+  unit
+)
+"src/coloring.ml" 81 3123 3127 "src/coloring.ml" 81 3123 3137
+type(
+  (G.V.t -> unit) -> G.V.t Stack.t -> unit
+)
+ident(
+  ext_ref Stack.iter
+)
+"src/coloring.ml" 82 3138 3149 "src/coloring.ml" 82 3138 3150
+type(
+  G.V.t
+)
+ident(
+  def v "src/coloring.ml" 83 3155 3157 "src/coloring.ml" 88 3318 3335
+)
+"src/coloring.ml" 84 3162 3174 "src/coloring.ml" 84 3162 3175
+type(
+  int
+)
+"src/coloring.ml" 84 3162 3179 "src/coloring.ml" 84 3162 3180
+type(
+  int
+)
+ident(
+  int_ref k "src/coloring.ml" 42 1857 1874 "src/coloring.ml" 42 1857 1875
+)
+"src/coloring.ml" 85 3185 3195 "src/coloring.ml" 85 3185 3204
+type(
+  G.V.t -> int -> unit
+)
+ident(
+  int_ref try_color "src/coloring.ml" 58 2506 2514 "src/coloring.ml" 58 2506 2523
+)
+"src/coloring.ml" 85 3185 3205 "src/coloring.ml" 85 3185 3206
+type(
+  G.V.t
+)
+ident(
+  int_ref v "src/coloring.ml" 82 3138 3149 "src/coloring.ml" 82 3138 3150
+)
+"src/coloring.ml" 85 3185 3207 "src/coloring.ml" 85 3185 3208
+type(
+  int
+)
+"src/coloring.ml" 85 3185 3195 "src/coloring.ml" 85 3185 3208
+call(
+  stack
+)
+type(
+  unit
+)
+"src/coloring.ml" 85 3185 3210 "src/coloring.ml" 85 3185 3215
+type(
+  exn -> unit
+)
+ident(
+  ext_ref Pervasives.raise
+)
+"src/coloring.ml" 85 3185 3216 "src/coloring.ml" 85 3185 3220
+type(
+  exn
+)
+"src/coloring.ml" 85 3185 3210 "src/coloring.ml" 85 3185 3220
+type(
+  unit
+)
+"src/coloring.ml" 85 3185 3195 "src/coloring.ml" 85 3185 3220
+type(
+  unit
+)
+"src/coloring.ml" 85 3185 3226 "src/coloring.ml" 85 3185 3236
+type(
+  exn
+)
+"src/coloring.ml" 85 3185 3240 "src/coloring.ml" 85 3185 3242
+type(
+  unit
+)
+"src/coloring.ml" 85 3185 3191 "src/coloring.ml" 85 3185 3242
+type(
+  unit
+)
+"src/coloring.ml" 84 3162 3166 "src/coloring.ml" 86 3243 3251
+type(
+  unit
+)
+"src/coloring.ml" 87 3253 3257 "src/coloring.ml" 87 3253 3262
+type(
+  exn -> unit
+)
+ident(
+  ext_ref Pervasives.raise
+)
+"src/coloring.ml" 87 3253 3263 "src/coloring.ml" 87 3253 3273
+type(
+  exn
+)
+"src/coloring.ml" 87 3253 3257 "src/coloring.ml" 87 3253 3273
+type(
+  unit
+)
+"src/coloring.ml" 84 3162 3166 "src/coloring.ml" 87 3253 3273
+type(
+  unit
+)
+"src/coloring.ml" 88 3318 3325 "src/coloring.ml" 88 3318 3329
+type(
+  exn
+)
+"src/coloring.ml" 88 3318 3333 "src/coloring.ml" 88 3318 3335
+type(
+  unit
+)
+"src/coloring.ml" 83 3155 3157 "src/coloring.ml" 88 3318 3335
+type(
+  unit
+)
+"src/coloring.ml" 82 3138 3144 "src/coloring.ml" 88 3318 3336
+type(
+  G.V.t -> unit
+)
+"src/coloring.ml" 89 3337 3343 "src/coloring.ml" 89 3337 3348
+type(
+  G.V.t Stack.t
+)
+ident(
+  int_ref stack "src/coloring.ml" 44 1952 1960 "src/coloring.ml" 44 1952 1965
+)
+"src/coloring.ml" 81 3123 3127 "src/coloring.ml" 89 3337 3348
+call(
+  tail
+)
+type(
+  unit
+)
+"src/coloring.ml" 63 2672 2676 "src/coloring.ml" 89 3337 3348
+type(
+  unit
+)
+"src/coloring.ml" 62 2634 2638 "src/coloring.ml" 89 3337 3348
+type(
+  unit
+)
+"src/coloring.ml" 58 2506 2510 "src/coloring.ml" 89 3337 3348
+type(
+  unit
+)
+"src/coloring.ml" 47 2057 2061 "src/coloring.ml" 89 3337 3348
+type(
+  unit
+)
+"src/coloring.ml" 46 2032 2036 "src/coloring.ml" 89 3337 3348
+type(
+  unit
+)
+"src/coloring.ml" 45 1987 1991 "src/coloring.ml" 89 3337 3348
+type(
+  unit
+)
+"src/coloring.ml" 44 1952 1956 "src/coloring.ml" 89 3337 3348
+type(
+  unit
+)
+"src/coloring.ml" 109 3823 3836 "src/coloring.ml" 109 3823 3853
+call(
+  stack
+)
+"src/coloring.ml" 111 3855 3861 "src/coloring.ml" 111 3855 3869
+type(
+  G.t -> int -> int H.t
+)
+ident(
+  def coloring "src/coloring.ml" 123 4124 4129 "src/coloring.ml" 125 4131 4134
+)
+"src/coloring.ml" 111 3855 3870 "src/coloring.ml" 111 3855 3871
+type(
+  G.t
+)
+ident(
+  def g "src/coloring.ml" 111 3855 3872 "src/coloring.ml" 123 4124 4129
+)
+"src/coloring.ml" 111 3855 3872 "src/coloring.ml" 111 3855 3873
+type(
+  int
+)
+ident(
+  def k "src/coloring.ml" 112 3876 3880 "src/coloring.ml" 123 4124 4129
+)
+"src/coloring.ml" 112 3876 3884 "src/coloring.ml" 112 3876 3885
+type(
+  int H.t
+)
+"src/coloring.ml" 112 3876 3888 "src/coloring.ml" 112 3876 3896
+type(
+  int -> int H.t
+)
+ident(
+  ext_ref H.create
+)
+"src/coloring.ml" 112 3876 3897 "src/coloring.ml" 112 3876 3899
+type(
+  int
+)
+"src/coloring.ml" 112 3876 3888 "src/coloring.ml" 112 3876 3899
+call(
+  stack
+)
+type(
+  int H.t
+)
+"src/coloring.ml" 117 3984 3996 "src/coloring.ml" 117 3984 3999
+type(
+  H.key -> int
+)
+ident(
+  def get "src/coloring.ml" 118 4039 4047 "src/coloring.ml" 119 4077 4086
+)
+"src/coloring.ml" 117 3984 4000 "src/coloring.ml" 117 3984 4001
+type(
+  H.key
+)
+ident(
+  def v "src/coloring.ml" 117 3984 4004 "src/coloring.ml" 117 3984 4038
+)
+"src/coloring.ml" 117 3984 4008 "src/coloring.ml" 117 3984 4014
+type(
+  int H.t -> H.key -> int
+)
+ident(
+  ext_ref H.find
+)
+"src/coloring.ml" 117 3984 4015 "src/coloring.ml" 117 3984 4016
+type(
+  int H.t
+)
+ident(
+  int_ref h "src/coloring.ml" 112 3876 3884 "src/coloring.ml" 112 3876 3885
+)
+"src/coloring.ml" 117 3984 4017 "src/coloring.ml" 117 3984 4018
+type(
+  H.key
+)
+ident(
+  int_ref v "src/coloring.ml" 117 3984 4000 "src/coloring.ml" 117 3984 4001
+)
+"src/coloring.ml" 117 3984 4008 "src/coloring.ml" 117 3984 4018
+call(
+  stack
+)
+type(
+  int
+)
+"src/coloring.ml" 117 3984 4024 "src/coloring.ml" 117 3984 4033
+type(
+  exn
+)
+"src/coloring.ml" 117 3984 4037 "src/coloring.ml" 117 3984 4038
+type(
+  int
+)
+"src/coloring.ml" 117 3984 4004 "src/coloring.ml" 117 3984 4038
+type(
+  int
+)
+"src/coloring.ml" 118 4039 4051 "src/coloring.ml" 118 4039 4054
+type(
+  H.key -> int -> unit
+)
+ident(
+  def set "src/coloring.ml" 118 4039 4076 "src/coloring.ml" 119 4077 4086
+)
+"src/coloring.ml" 118 4039 4055 "src/coloring.ml" 118 4039 4056
+type(
+  H.key
+)
+ident(
+  def v "src/coloring.ml" 118 4039 4057 "src/coloring.ml" 118 4039 4076
+)
+"src/coloring.ml" 118 4039 4057 "src/coloring.ml" 118 4039 4058
+type(
+  int
+)
+ident(
+  def n "src/coloring.ml" 118 4039 4061 "src/coloring.ml" 118 4039 4076
+)
+"src/coloring.ml" 118 4039 4061 "src/coloring.ml" 118 4039 4070
+type(
+  int H.t -> H.key -> int -> unit
+)
+ident(
+  ext_ref H.replace
+)
+"src/coloring.ml" 118 4039 4071 "src/coloring.ml" 118 4039 4072
+type(
+  int H.t
+)
+ident(
+  int_ref h "src/coloring.ml" 112 3876 3884 "src/coloring.ml" 112 3876 3885
+)
+"src/coloring.ml" 118 4039 4073 "src/coloring.ml" 118 4039 4074
+type(
+  H.key
+)
+ident(
+  int_ref v "src/coloring.ml" 118 4039 4055 "src/coloring.ml" 118 4039 4056
+)
+"src/coloring.ml" 118 4039 4075 "src/coloring.ml" 118 4039 4076
+type(
+  int
+)
+ident(
+  int_ref n "src/coloring.ml" 118 4039 4057 "src/coloring.ml" 118 4039 4058
+)
+"src/coloring.ml" 118 4039 4061 "src/coloring.ml" 118 4039 4076
+call(
+  tail
+)
+type(
+  unit
+)
+"src/coloring.ml" 114 3923 3929 "src/coloring.ml" 120 4087 4096
+call(
+  stack
+)
+"src/coloring.ml" 122 4104 4108 "src/coloring.ml" 122 4104 4118
+type(
+  G.t -> int -> unit
+)
+ident(
+  ext_ref M.coloring
+)
+"src/coloring.ml" 122 4104 4119 "src/coloring.ml" 122 4104 4120
+type(
+  G.t
+)
+ident(
+  int_ref g "src/coloring.ml" 111 3855 3870 "src/coloring.ml" 111 3855 3871
+)
+"src/coloring.ml" 122 4104 4121 "src/coloring.ml" 122 4104 4122
+type(
+  int
+)
+ident(
+  int_ref k "src/coloring.ml" 111 3855 3872 "src/coloring.ml" 111 3855 3873
+)
+"src/coloring.ml" 122 4104 4108 "src/coloring.ml" 122 4104 4122
+call(
+  stack
+)
+type(
+  unit
+)
+"src/coloring.ml" 123 4124 4128 "src/coloring.ml" 123 4124 4129
+type(
+  int H.t
+)
+ident(
+  int_ref h "src/coloring.ml" 112 3876 3884 "src/coloring.ml" 112 3876 3885
+)
+"src/coloring.ml" 122 4104 4108 "src/coloring.ml" 123 4124 4129
+type(
+  int H.t
+)
+"src/coloring.ml" 113 3903 3907 "src/coloring.ml" 123 4124 4129
+type(
+  int H.t
+)
+"src/coloring.ml" 112 3876 3880 "src/coloring.ml" 123 4124 4129
+type(
+  int H.t
+)

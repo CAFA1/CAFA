@@ -1,0 +1,28 @@
+From f2803e0e155cdd85a89fe7f04926616c048fbd62 Mon Sep 17 00:00:00 2001
+From: Cristy <urban-warrior@imagemagick.org>
+Date: Sat, 20 Feb 2016 09:26:04 -0500
+Subject: [PATCH] Fix a pbd file out of bound access
+
+This is a partial bug fix
+
+origin: upstream, https://github.com/ImageMagick/ImageMagick/commit/7b93db1807ef8abf0c81df8b0fd047e5fb3f1c3f
+bug-debian: https://bugs.debian.org/832633
+Bug: https://github.com/ImageMagick/ImageMagick/issues/121
+bug-ubuntu: https://bugs.launchpad.net/ubuntu/+source/imagemagick/+bug/1542112
+---
+ coders/pdb.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+Index: imagemagick-6.7.7.10/coders/pdb.c
+===================================================================
+--- imagemagick-6.7.7.10.orig/coders/pdb.c	2016-11-14 07:39:24.144748164 -0500
++++ imagemagick-6.7.7.10/coders/pdb.c	2016-11-14 07:39:24.140748163 -0500
+@@ -804,7 +804,7 @@
+     pdb_image.width=(short) (16*(image->columns/16+1));
+   pdb_image.height=(short) image->rows;
+   packets=((bits_per_pixel*image->columns+7)/8);
+-  runlength=(unsigned char *) AcquireQuantumMemory(4UL*packets,
++  runlength=(unsigned char *) AcquireQuantumMemory(9UL*packets,
+     image->rows*sizeof(*runlength));
+   if (runlength == (unsigned char *) NULL)
+     ThrowWriterException(ResourceLimitError,"MemoryAllocationFailed");

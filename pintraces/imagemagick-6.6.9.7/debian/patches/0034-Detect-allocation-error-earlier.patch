@@ -1,0 +1,27 @@
+From 18d9fc3af3a8d10a03c8f0b3caadc1bfa77f86dc Mon Sep 17 00:00:00 2001
+From: cristy <cristy@aa41f4f7-0bf4-0310-aa73-e5a19afd5a74>
+Date: Mon, 15 Dec 2014 02:50:44 +0000
+Subject: [PATCH] Detect allocation error earlier
+
+Avoid a segv due to NULL pointer dereference
+
+git-svn-id: https://subversion.imagemagick.org/subversion/ImageMagick/branches/ImageMagick-6@17243 aa41f4f7-0bf4-0310-aa73-e5a19afd5a74
+origin:  http://trac.imagemagick.org/changeset/17243
+---
+ magick/cache.c | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+Index: imagemagick-6.6.9.7/magick/cache.c
+===================================================================
+--- imagemagick-6.6.9.7.orig/magick/cache.c	2016-11-15 12:55:53.954545751 -0500
++++ imagemagick-6.6.9.7/magick/cache.c	2016-11-15 12:55:53.950545702 -0500
+@@ -4065,7 +4065,8 @@
+     packet_size+=sizeof(IndexPacket);
+   length=number_pixels*packet_size;
+   columns=(size_t) (length/cache_info->rows/packet_size);
+-  if (cache_info->columns != columns)
++  if ((cache_info->columns != columns) || ((ssize_t) cache_info->columns < 0) ||
++      ((ssize_t) cache_info->rows < 0))
+     ThrowBinaryException(ResourceLimitError,"PixelCacheAllocationFailed",
+       image->filename);
+   cache_info->length=length;

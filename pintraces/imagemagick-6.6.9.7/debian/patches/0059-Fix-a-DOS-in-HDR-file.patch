@@ -1,0 +1,76 @@
+Backport of:
+
+From 36132fa46fc18445f48a36be50473921d1aa7f93 Mon Sep 17 00:00:00 2001
+From: dirk <dirk@aa41f4f7-0bf4-0310-aa73-e5a19afd5a74>
+Date: Sun, 25 Jan 2015 07:32:56 +0000
+Subject: [PATCH] Fix a DOS in HDR file
+
+Fixed infinite loop and added checks for the sscanf result.
+
+git-svn-id: https://subversion.imagemagick.org/subversion/ImageMagick/branches/ImageMagick-6@17846 aa41f4f7-0bf4-0310-aa73-e5a19afd5a74
+origin: http://trac.imagemagick.org/changeset/17846
+---
+ coders/hdr.c | 36 ++++++++++++++++++++----------------
+ 1 file changed, 20 insertions(+), 16 deletions(-)
+
+Index: imagemagick-6.6.9.7/coders/hdr.c
+===================================================================
+--- imagemagick-6.6.9.7.orig/coders/hdr.c	2016-11-15 13:46:00.987262541 -0500
++++ imagemagick-6.6.9.7/coders/hdr.c	2016-11-15 13:46:00.987262541 -0500
+@@ -272,7 +272,7 @@
+           if (value_expected == MagickFalse)
+             continue;
+           p=value;
+-          while ((c != '\n') && (c != '\0'))
++          while ((c != '\n') && (c != '\0') && (c != EOF))
+           {
+             if ((size_t) (p-value) < (MaxTextExtent-1))
+               *p++=c;
+@@ -317,18 +317,20 @@
+                     chromaticity[6],
+                     white_point[2];
+ 
+-                  (void) sscanf(value,"%g %g %g %g %g %g %g %g",
+-                    &chromaticity[0],&chromaticity[1],&chromaticity[2],
+-                    &chromaticity[3],&chromaticity[4],&chromaticity[5],
+-                    &white_point[0],&white_point[1]);
+-                  image->chromaticity.red_primary.x=chromaticity[0];
+-                  image->chromaticity.red_primary.y=chromaticity[1];
+-                  image->chromaticity.green_primary.x=chromaticity[2];
+-                  image->chromaticity.green_primary.y=chromaticity[3];
+-                  image->chromaticity.blue_primary.x=chromaticity[4];
+-                  image->chromaticity.blue_primary.y=chromaticity[5];
+-                  image->chromaticity.white_point.x=white_point[0],
+-                  image->chromaticity.white_point.y=white_point[1];
++                  if (sscanf(value,"%g %g %g %g %g %g %g %g",&chromaticity[0],
++                      &chromaticity[1],&chromaticity[2],&chromaticity[3],
++                      &chromaticity[4],&chromaticity[5],&white_point[0],
++                      &white_point[1]) == 8)
++                    {
++                      image->chromaticity.red_primary.x=chromaticity[0];
++                      image->chromaticity.red_primary.y=chromaticity[1];
++                      image->chromaticity.green_primary.x=chromaticity[2];
++                      image->chromaticity.green_primary.y=chromaticity[3];
++                      image->chromaticity.blue_primary.x=chromaticity[4];
++                      image->chromaticity.blue_primary.y=chromaticity[5];
++                      image->chromaticity.white_point.x=white_point[0],
++                      image->chromaticity.white_point.y=white_point[1];
++                    }
+                   break;
+                 }
+               (void) FormatMagickString(tag,MaxTextExtent,"hdr:%s",keyword);
+@@ -344,9 +346,11 @@
+                     height,
+                     width;
+ 
+-                  (void) sscanf(value,"%d +X %d",&height,&width);
+-                  image->columns=(size_t) width;
+-                  image->rows=(size_t) height;
++                  if (sscanf(value,"%d +X %d",&height,&width) == 2)
++                    {
++                      image->columns=(size_t) width;
++                      image->rows=(size_t) height;
++                    }
+                   break;
+                 }
+               (void) FormatMagickString(tag,MaxTextExtent,"hdr:%s",keyword);

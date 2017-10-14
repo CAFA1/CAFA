@@ -1,0 +1,71 @@
+Description: fix text coder issue
+Origin: upstream, https://github.com/ImageMagick/ImageMagick/commit/c523f32d199fa81add29130947bc77fb2c09de6c
+Origin: upstream, https://github.com/ImageMagick/ImageMagick/commit/c30fa61aae45dee69118c5032ec47b9a853bac37
+Bug-Ubuntu: https://bugs.launchpad.net/ubuntu/+source/imagemagick/+bug/1589580
+
+Index: imagemagick-6.7.7.10/coders/mvg.c
+===================================================================
+--- imagemagick-6.7.7.10.orig/coders/mvg.c	2017-02-22 12:32:00.382873598 -0500
++++ imagemagick-6.7.7.10/coders/mvg.c	2017-02-22 12:32:00.382873598 -0500
+@@ -216,6 +216,8 @@
+           draw_info->primitive[GetBlobSize(image)]='\0';
+         }
+      }
++  if (draw_info->primitive == (char *) NULL)
++    ThrowReaderException(ResourceLimitError,"MemoryAllocationFailed");
+   (void) DrawImage(image,draw_info);
+   draw_info=DestroyDrawInfo(draw_info);
+   (void) CloseBlob(image);
+Index: imagemagick-6.7.7.10/coders/txt.c
+===================================================================
+--- imagemagick-6.7.7.10.orig/coders/txt.c	2017-02-22 12:32:00.382873598 -0500
++++ imagemagick-6.7.7.10/coders/txt.c	2017-02-22 12:32:00.382873598 -0500
+@@ -156,18 +156,20 @@
+ %    o exception: return any errors or warnings in this structure.
+ %
+ */
+-static Image *ReadTEXTImage(const ImageInfo *image_info,Image *image,
+-  char *text,ExceptionInfo *exception)
++static Image *ReadTEXTImage(const ImageInfo *image_info,
++  ExceptionInfo *exception)
+ {
+   char
+     filename[MaxTextExtent],
+     geometry[MaxTextExtent],
+-    *p;
++    *p,
++    text[MaxTextExtent];
+ 
+   DrawInfo
+     *draw_info;
+ 
+   Image
++    *image,
+     *texture;
+ 
+   MagickBooleanType
+@@ -195,6 +197,15 @@
+       image_info->filename);
+   assert(exception != (ExceptionInfo *) NULL);
+   assert(exception->signature == MagickSignature);
++  image=AcquireImage(image_info);
++  status=OpenBlob(image_info,image,ReadBinaryBlobMode,exception);
++  if (status == MagickFalse)
++    {
++      image=DestroyImageList(image);
++      return((Image *) NULL);
++    }
++  (void) ResetMagickMemory(text,0,sizeof(text));
++  (void) ReadBlobString(image,text);
+   /*
+     Set the page geometry.
+   */
+@@ -426,6 +437,8 @@
+     }
+   (void) ResetMagickMemory(text,0,sizeof(text));
+   (void) ReadBlobString(image,text);
++  if (LocaleNCompare((char *) text,MagickID,strlen(MagickID)) != 0)
++    ThrowReaderException(CorruptImageError,"ImproperImageHeader");
+   do
+   {
+     *colorspace='\0';

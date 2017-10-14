@@ -1,0 +1,51 @@
+g++ -DHAVE_CONFIG_H -I. -I../../libasmir    -I/home/bap/workspace/bap-0.7/VEX/pub -I../include -Itraces -fPIC -DGET_OPERANDS -g -O2 -MT stmt.o -MD -MP -MF .deps/stmt.Tpo -c -o stmt.o `test -f './old_ir/stmt.cpp' || echo './'`./old_ir/stmt.cpp
+mv -f .deps/stmt.Tpo .deps/stmt.Po
+g++ -DHAVE_CONFIG_H -I. -I../../libasmir    -I/home/bap/workspace/bap-0.7/VEX/pub -I../include -Itraces -fPIC -DGET_OPERANDS -g -O2 -MT stmt_c.o -MD -MP -MF .deps/stmt_c.Tpo -c -o stmt_c.o `test -f './old_ir/stmt_c.cpp' || echo './'`./old_ir/stmt_c.cpp
+mv -f .deps/stmt_c.Tpo .deps/stmt_c.Po
+g++ -DHAVE_CONFIG_H -I. -I../../libasmir    -I/home/bap/workspace/bap-0.7/VEX/pub -I../include -Itraces -fPIC -DGET_OPERANDS -g -O2 -MT exp.o -MD -MP -MF .deps/exp.Tpo -c -o exp.o `test -f './old_ir/exp.cpp' || echo './'`./old_ir/exp.cpp
+mv -f .deps/exp.Tpo .deps/exp.Po
+g++ -DHAVE_CONFIG_H -I. -I../../libasmir    -I/home/bap/workspace/bap-0.7/VEX/pub -I../include -Itraces -fPIC -DGET_OPERANDS -g -O2 -MT exp_c.o -MD -MP -MF .deps/exp_c.Tpo -c -o exp_c.o `test -f './old_ir/exp_c.cpp' || echo './'`./old_ir/exp_c.cpp
+mv -f .deps/exp_c.Tpo .deps/exp_c.Po
+gcc -DHAVE_CONFIG_H -I. -I../../libasmir    -I/home/bap/workspace/bap-0.7/VEX/pub -I../include -Itraces -fPIC -DGET_OPERANDS -g -O2 -MT asm_program.o -MD -MP -MF .deps/asm_program.Tpo -c -o asm_program.o asm_program.c
+mv -f .deps/asm_program.Tpo .deps/asm_program.Po
+gcc -DHAVE_CONFIG_H -I. -I../../libasmir    -I/home/bap/workspace/bap-0.7/VEX/pub -I../include -Itraces -fPIC -DGET_OPERANDS -g -O2 -MT symbols.o -MD -MP -MF .deps/symbols.Tpo -c -o symbols.o symbols.c
+mv -f .deps/symbols.Tpo .deps/symbols.Po
+g++ -DHAVE_CONFIG_H -I. -I../../libasmir    -I/home/bap/workspace/bap-0.7/VEX/pub -I../include -Itraces -fPIC -DGET_OPERANDS -g -O2 -MT memory_data.o -MD -MP -MF .deps/memory_data.Tpo -c -o memory_data.o memory_data.cpp
+mv -f .deps/memory_data.Tpo .deps/memory_data.Po
+g++ -DHAVE_CONFIG_H -I. -I../../libasmir    -I/home/bap/workspace/bap-0.7/VEX/pub -I../include -Itraces -fPIC -DGET_OPERANDS -g -O2 -MT irtoir_c.o -MD -MP -MF .deps/irtoir_c.Tpo -c -o irtoir_c.o irtoir_c.cpp
+mv -f .deps/irtoir_c.Tpo .deps/irtoir_c.Po
+g++ -DHAVE_CONFIG_H -I. -I../../libasmir    -I/home/bap/workspace/bap-0.7/VEX/pub -I../include -Itraces -fPIC -DGET_OPERANDS -g -O2 -MT irtoir.o -MD -MP -MF .deps/irtoir.Tpo -c -o irtoir.o irtoir.cpp
+mv -f .deps/irtoir.Tpo .deps/irtoir.Po
+g++ -DHAVE_CONFIG_H -I. -I../../libasmir    -I/home/bap/workspace/bap-0.7/VEX/pub -I../include -Itraces -fPIC -DGET_OPERANDS -g -O2 -MT irtoir-i386.o -MD -MP -MF .deps/irtoir-i386.Tpo -c -o irtoir-i386.o irtoir-i386.cpp
+mv -f .deps/irtoir-i386.Tpo .deps/irtoir-i386.Po
+g++ -DHAVE_CONFIG_H -I. -I../../libasmir    -I/home/bap/workspace/bap-0.7/VEX/pub -I../include -Itraces -fPIC -DGET_OPERANDS -g -O2 -MT irtoir-arm.o -MD -MP -MF .deps/irtoir-arm.Tpo -c -o irtoir-arm.o irtoir-arm.cpp
+mv -f .deps/irtoir-arm.Tpo .deps/irtoir-arm.Po
+gcc -DHAVE_CONFIG_H -I. -I../../libasmir    -I/home/bap/workspace/bap-0.7/VEX/pub -I../include -Itraces -fPIC -DGET_OPERANDS -g -O2 -MT vexir.o -MD -MP -MF .deps/vexir.Tpo -c -o vexir.o vexir.c
+mv -f .deps/vexir.Tpo .deps/vexir.Po
+gcc -DHAVE_CONFIG_H -I. -I../../libasmir    -I/home/bap/workspace/bap-0.7/VEX/pub -I../include -Itraces -fPIC -DGET_OPERANDS -g -O2 -MT vexmem.o -MD -MP -MF .deps/vexmem.Tpo -c -o vexmem.o vexmem.c
+mv -f .deps/vexmem.Tpo .deps/vexmem.Po
+gcc -DHAVE_CONFIG_H -I. -I../../libasmir    -I/home/bap/workspace/bap-0.7/VEX/pub -I../include -Itraces -fPIC -DGET_OPERANDS -g -O2 -MT ocaml_helpers.o -MD -MP -MF .deps/ocaml_helpers.Tpo -c -o ocaml_helpers.o ocaml_helpers.c
+mv -f .deps/ocaml_helpers.Tpo .deps/ocaml_helpers.Po
+g++ -DHAVE_CONFIG_H -I. -I../../libasmir    -I/home/bap/workspace/bap-0.7/VEX/pub -I../include -Itraces -fPIC -DGET_OPERANDS -g -O2 -MT llvm.o -MD -MP -MF .deps/llvm.Tpo -c -o llvm.o llvm.cpp
+mv -f .deps/llvm.Tpo .deps/llvm.Po
+g++ -DHAVE_CONFIG_H -I. -I../../libasmir    -I/home/bap/workspace/bap-0.7/VEX/pub -I../include -Itraces -fPIC -DGET_OPERANDS -g -O2 -MT readtrace.o -MD -MP -MF .deps/readtrace.Tpo -c -o readtrace.o `test -f './traces/readtrace.cpp' || echo './'`./traces/readtrace.cpp
+mv -f .deps/readtrace.Tpo .deps/readtrace.Po
+g++ -DHAVE_CONFIG_H -I. -I../../libasmir    -I/home/bap/workspace/bap-0.7/VEX/pub -I../include -Itraces -fPIC -DGET_OPERANDS -g -O2 -MT trace.o -MD -MP -MF .deps/trace.Tpo -c -o trace.o `test -f './traces/trace.cpp' || echo './'`./traces/trace.cpp
+mv -f .deps/trace.Tpo .deps/trace.Po
+g++ -DHAVE_CONFIG_H -I. -I../../libasmir    -I/home/bap/workspace/bap-0.7/VEX/pub -I../include -Itraces -fPIC -DGET_OPERANDS -g -O2 -MT trace_v40.o -MD -MP -MF .deps/trace_v40.Tpo -c -o trace_v40.o `test -f './traces/trace_v40.cpp' || echo './'`./traces/trace_v40.cpp
+mv -f .deps/trace_v40.Tpo .deps/trace_v40.Po
+g++ -DHAVE_CONFIG_H -I. -I../../libasmir    -I/home/bap/workspace/bap-0.7/VEX/pub -I../include -Itraces -fPIC -DGET_OPERANDS -g -O2 -MT trace_v41.o -MD -MP -MF .deps/trace_v41.Tpo -c -o trace_v41.o `test -f './traces/trace_v41.cpp' || echo './'`./traces/trace_v41.cpp
+mv -f .deps/trace_v41.Tpo .deps/trace_v41.Po
+g++ -DHAVE_CONFIG_H -I. -I../../libasmir    -I/home/bap/workspace/bap-0.7/VEX/pub -I../include -Itraces -fPIC -DGET_OPERANDS -g -O2 -MT trace_v50.o -MD -MP -MF .deps/trace_v50.Tpo -c -o trace_v50.o `test -f './traces/trace_v50.cpp' || echo './'`./traces/trace_v50.cpp
+mv -f .deps/trace_v50.Tpo .deps/trace_v50.Po
+g++ -DHAVE_CONFIG_H -I. -I../../libasmir    -I/home/bap/workspace/bap-0.7/VEX/pub -I../include -Itraces -fPIC -DGET_OPERANDS -g -O2 -MT reg_mapping.o -MD -MP -MF .deps/reg_mapping.Tpo -c -o reg_mapping.o `test -f './traces/reg_mapping.cpp' || echo './'`./traces/reg_mapping.cpp
+mv -f .deps/reg_mapping.Tpo .deps/reg_mapping.Po
+g++ -DHAVE_CONFIG_H -I. -I../../libasmir    -I/home/bap/workspace/bap-0.7/VEX/pub -I../include -Itraces -fPIC -DGET_OPERANDS -g -O2 -MT reg_mapping_pin.o -MD -MP -MF .deps/reg_mapping_pin.Tpo -c -o reg_mapping_pin.o `test -f './traces/reg_mapping_pin.cpp' || echo './'`./traces/reg_mapping_pin.cpp
+mv -f .deps/reg_mapping_pin.Tpo .deps/reg_mapping_pin.Po
+g++ -DHAVE_CONFIG_H -I. -I../../libasmir    -I/home/bap/workspace/bap-0.7/VEX/pub -I../include -Itraces -fPIC -DGET_OPERANDS -g -O2 -MT pin_frame.o -MD -MP -MF .deps/pin_frame.Tpo -c -o pin_frame.o `test -f './traces/pin_frame.cpp' || echo './'`./traces/pin_frame.cpp
+mv -f .deps/pin_frame.Tpo .deps/pin_frame.Po
+g++ -DHAVE_CONFIG_H -I. -I../../libasmir    -I/home/bap/workspace/bap-0.7/VEX/pub -I../include -Itraces -fPIC -DGET_OPERANDS -g -O2 -MT pin_trace.o -MD -MP -MF .deps/pin_trace.Tpo -c -o pin_trace.o `test -f './traces/pin_trace.cpp' || echo './'`./traces/pin_trace.cpp
+mv -f .deps/pin_trace.Tpo .deps/pin_trace.Po
+rm -f libasmir.a
+ar cru libasmir.a stmt.o stmt_c.o exp.o exp_c.o asm_program.o symbols.o memory_data.o irtoir_c.o irtoir.o irtoir-i386.o irtoir-arm.o vexir.o vexmem.o ocaml_helpers.o llvm.o readtrace.o trace.o trace_v40.o trace_v41.o trace_v50.o reg_mapping.o reg_mapping_pin.o pin_frame.o pin_trace.o /home/bap/workspace/bap-0.7/VEX/libvex.a /home/bap/workspace/bap-0.7/libtracewrap/libtrace/src/cpp/libtrace.a
+ranlib libasmir.a

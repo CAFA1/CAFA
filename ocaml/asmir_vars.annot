@@ -1,0 +1,223 @@
+"asmir_vars.ml" 5 35 39 "asmir_vars.ml" 5 35 47
+type(
+  Ast.var list
+)
+ident(
+  def x86_regs "asmir_vars.ml" 6 67 67 --
+)
+"asmir_vars.ml" 5 35 50 "asmir_vars.ml" 5 35 66
+type(
+  Ast.var list
+)
+ident(
+  ext_ref Disasm_i386.regs
+)
+"asmir_vars.ml" 6 67 71 "asmir_vars.ml" 6 67 78
+type(
+  Var.t
+)
+ident(
+  def x86_mem "asmir_vars.ml" 8 98 98 --
+)
+"asmir_vars.ml" 6 67 81 "asmir_vars.ml" 6 67 96
+type(
+  Var.t
+)
+ident(
+  ext_ref Disasm_i386.mem
+)
+"asmir_vars.ml" 8 98 102 "asmir_vars.ml" 8 98 110
+type(
+  Var.t list
+)
+ident(
+  def arm_regs "asmir_vars.ml" 33 441 441 --
+)
+"asmir_vars.ml" 9 113 115 "asmir_vars.ml" 9 113 123
+type(
+  (string -> Var.t) -> string list -> Var.t list
+)
+ident(
+  ext_ref List.map
+)
+"asmir_vars.ml" 9 113 129 "asmir_vars.ml" 9 113 130
+type(
+  string
+)
+ident(
+  def n "asmir_vars.ml" 9 113 134 "asmir_vars.ml" 9 113 155
+)
+"asmir_vars.ml" 9 113 134 "asmir_vars.ml" 9 113 144
+type(
+  string -> Type.typ -> Var.t
+)
+ident(
+  ext_ref Var.newvar
+)
+"asmir_vars.ml" 9 113 145 "asmir_vars.ml" 9 113 146
+type(
+  string
+)
+ident(
+  int_ref n "asmir_vars.ml" 9 113 129 "asmir_vars.ml" 9 113 130
+)
+"asmir_vars.ml" 9 113 152 "asmir_vars.ml" 9 113 154
+type(
+  int
+)
+"asmir_vars.ml" 9 113 147 "asmir_vars.ml" 9 113 155
+type(
+  Type.typ
+)
+"asmir_vars.ml" 9 113 134 "asmir_vars.ml" 9 113 155
+call(
+  tail
+)
+type(
+  Var.t
+)
+"asmir_vars.ml" 9 113 124 "asmir_vars.ml" 9 113 156
+type(
+  string -> Var.t
+)
+"asmir_vars.ml" 10 157 163 "asmir_vars.ml" 10 157 167
+type(
+  string
+)
+"asmir_vars.ml" 11 169 175 "asmir_vars.ml" 11 169 179
+type(
+  string
+)
+"asmir_vars.ml" 12 181 187 "asmir_vars.ml" 12 181 191
+type(
+  string
+)
+"asmir_vars.ml" 13 193 199 "asmir_vars.ml" 13 193 203
+type(
+  string
+)
+"asmir_vars.ml" 14 205 211 "asmir_vars.ml" 14 205 215
+type(
+  string
+)
+"asmir_vars.ml" 15 217 223 "asmir_vars.ml" 15 217 227
+type(
+  string
+)
+"asmir_vars.ml" 16 229 235 "asmir_vars.ml" 16 229 239
+type(
+  string
+)
+"asmir_vars.ml" 17 241 247 "asmir_vars.ml" 17 241 251
+type(
+  string
+)
+"asmir_vars.ml" 18 253 259 "asmir_vars.ml" 18 253 263
+type(
+  string
+)
+"asmir_vars.ml" 19 265 271 "asmir_vars.ml" 19 265 275
+type(
+  string
+)
+"asmir_vars.ml" 20 277 283 "asmir_vars.ml" 20 277 288
+type(
+  string
+)
+"asmir_vars.ml" 21 290 296 "asmir_vars.ml" 21 290 301
+type(
+  string
+)
+"asmir_vars.ml" 22 303 309 "asmir_vars.ml" 22 303 314
+type(
+  string
+)
+"asmir_vars.ml" 23 316 322 "asmir_vars.ml" 23 316 327
+type(
+  string
+)
+"asmir_vars.ml" 24 329 335 "asmir_vars.ml" 24 329 340
+type(
+  string
+)
+"asmir_vars.ml" 25 342 348 "asmir_vars.ml" 25 342 354
+type(
+  string
+)
+"asmir_vars.ml" 26 356 362 "asmir_vars.ml" 26 356 366
+type(
+  string
+)
+"asmir_vars.ml" 27 368 374 "asmir_vars.ml" 27 368 381
+type(
+  string
+)
+"asmir_vars.ml" 28 383 389 "asmir_vars.ml" 28 383 398
+type(
+  string
+)
+"asmir_vars.ml" 29 400 406 "asmir_vars.ml" 29 400 415
+type(
+  string
+)
+"asmir_vars.ml" 30 417 423 "asmir_vars.ml" 30 417 432
+type(
+  string
+)
+"asmir_vars.ml" 10 157 161 "asmir_vars.ml" 31 434 439
+type(
+  string list
+)
+"asmir_vars.ml" 9 113 115 "asmir_vars.ml" 31 434 439
+call(
+  stack
+)
+type(
+  Var.t list
+)
+"asmir_vars.ml" 33 441 445 "asmir_vars.ml" 33 441 453
+type(
+  Ast.var list
+)
+ident(
+  def all_regs "asmir_vars.ml" 33 441 486 --
+)
+"asmir_vars.ml" 33 441 456 "asmir_vars.ml" 33 441 463
+type(
+  Ast.var
+)
+ident(
+  int_ref x86_mem "asmir_vars.ml" 6 67 71 "asmir_vars.ml" 6 67 78
+)
+"asmir_vars.ml" 33 441 467 "asmir_vars.ml" 33 441 475
+type(
+  Ast.var list
+)
+ident(
+  int_ref x86_regs "asmir_vars.ml" 5 35 39 "asmir_vars.ml" 5 35 47
+)
+"asmir_vars.ml" 33 441 456 "asmir_vars.ml" 33 441 475
+type(
+  Ast.var list
+)
+"asmir_vars.ml" 33 441 476 "asmir_vars.ml" 33 441 477
+type(
+  Ast.var list -> Ast.var list -> Ast.var list
+)
+ident(
+  ext_ref Pervasives.( @ )
+)
+"asmir_vars.ml" 33 441 478 "asmir_vars.ml" 33 441 486
+type(
+  Ast.var list
+)
+ident(
+  int_ref arm_regs "asmir_vars.ml" 8 98 102 "asmir_vars.ml" 8 98 110
+)
+"asmir_vars.ml" 33 441 456 "asmir_vars.ml" 33 441 486
+call(
+  stack
+)
+type(
+  Ast.var list
+)

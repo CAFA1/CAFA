@@ -1,0 +1,26 @@
+From 52f6d868f1c37bb5cc3a9226efc0e95acc2ab2a3 Mon Sep 17 00:00:00 2001
+From: cristy <cristy@aa41f4f7-0bf4-0310-aa73-e5a19afd5a74>
+Date: Thu, 4 Dec 2014 00:19:57 +0000
+Subject: [PATCH] Fix out of bound access in sun image handling
+
+It the merge of rev 17153 and rev 17155
+
+Origin: http://trac.imagemagick.org/changeset/17153 and  http://trac.imagemagick.org/changeset/17155
+---
+ coders/sun.c | 3 +--
+ 1 file changed, 1 insertion(+), 2 deletions(-)
+
+Index: imagemagick-6.7.7.10/coders/sun.c
+===================================================================
+--- imagemagick-6.7.7.10.orig/coders/sun.c	2016-11-11 10:17:23.441337176 -0500
++++ imagemagick-6.7.7.10/coders/sun.c	2016-11-11 10:17:23.441337176 -0500
+@@ -525,8 +525,7 @@
+             bytes_per_pixel++;
+           if (bytes_per_line == 0)
+             bytes_per_line=bytes_per_pixel*image->columns;
+-          length=image->rows*((bytes_per_line*image->columns)+image->columns %
+-            2);
++          length=image->rows*(bytes_per_line+image->columns % 2);
+           if (((sun_info.type == RT_ENCODED) &&
+                (length > (bytes_per_line*image->rows))) ||
+               ((sun_info.type != RT_ENCODED) && (length > sun_info.length)))

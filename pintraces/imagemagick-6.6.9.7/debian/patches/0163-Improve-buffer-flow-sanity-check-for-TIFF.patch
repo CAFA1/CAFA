@@ -1,0 +1,76 @@
+Backport of:
+
+From 125df0f631a922cf2b3cafd6980883a580dc3c75 Mon Sep 17 00:00:00 2001
+From: Cristy <urban-warrior@imagemagick.org>
+Date: Wed, 6 Jul 2016 08:15:57 -0400
+Subject: [PATCH] Improve buffer flow sanity check for TIFF
+
+origin: upstream, https://github.com/ImageMagick/ImageMagick/commit/f8877abac8e568b2f339cca70c2c3c1b6eaec288
+bug-debian: bugs.debian.org/845202
+
+(cherry picked from commit f8877abac8e568b2f339cca70c2c3c1b6eaec288)
+---
+ coders/tiff.c | 13 ++++++-------
+ 1 file changed, 6 insertions(+), 7 deletions(-)
+
+Index: imagemagick-6.6.9.7/coders/tiff.c
+===================================================================
+--- imagemagick-6.6.9.7.orig/coders/tiff.c	2016-11-29 14:47:42.211428278 -0500
++++ imagemagick-6.6.9.7/coders/tiff.c	2016-11-29 14:48:40.336091814 -0500
+@@ -725,6 +725,21 @@
+ }
+ #endif
+ 
++static MagickBooleanType HeapOverflowSanityCheck(const size_t count,
++  const size_t quantum)
++{
++  size_t
++    size;
++
++  size=count*quantum;
++  if ((count == 0) || (quantum != (size/count)))
++    {
++      errno=ENOMEM;
++      return(MagickTrue);
++    }
++  return(MagickFalse);
++}
++
+ static Image *ReadTIFFImage(const ImageInfo *image_info,
+   ExceptionInfo *exception)
+ {
+@@ -1465,14 +1480,13 @@
+           }
+         (void) SetImageStorageClass(image,DirectClass);
+         number_pixels=(MagickSizeType) columns*rows;
+-        if ((number_pixels*sizeof(uint32)) != (MagickSizeType) ((size_t)
+-            (number_pixels*sizeof(uint32))))
++        if (HeapOverflowSanityCheck(rows,sizeof(*tile_pixels)) != MagickFalse)
+           {
+             TIFFClose(tiff);
+             ThrowReaderException(ResourceLimitError,"MemoryAllocationFailed");
+           }
+-        tile_pixels=(uint32 *) AcquireQuantumMemory(number_pixels,
+-          sizeof(*tile_pixels));
++        tile_pixels=(uint32 *) AcquireQuantumMemory(columns,
++          rows*sizeof(*tile_pixels));
+         if (tile_pixels == (uint32 *) NULL)
+           {
+             TIFFClose(tiff);
+@@ -1571,14 +1585,13 @@
+           Convert TIFF image to DirectClass MIFF image.
+         */
+         number_pixels=(MagickSizeType) image->columns*image->rows;
+-        if ((number_pixels*sizeof(uint32)) != (MagickSizeType) ((size_t)
+-            (number_pixels*sizeof(uint32))))
++        if (HeapOverflowSanityCheck(image->rows,sizeof(*pixels)) != MagickFalse)
+           {
+             TIFFClose(tiff);
+             ThrowReaderException(ResourceLimitError,"MemoryAllocationFailed");
+           }
+         pixels=(uint32 *) AcquireQuantumMemory(image->columns,image->rows*
+-          sizeof(uint32));
++          sizeof(*pixels));
+         if (pixels == (uint32 *) NULL)
+           {
+             TIFFClose(tiff);

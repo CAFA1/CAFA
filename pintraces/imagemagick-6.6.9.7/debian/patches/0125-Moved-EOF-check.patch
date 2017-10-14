@@ -1,0 +1,67 @@
+Backport of:
+
+From f67d055d6c580b8f82b54cd6dc035a71cdc6905a Mon Sep 17 00:00:00 2001
+From: dirk <dirk@git.imagemagick.org>
+Date: Mon, 29 Dec 2014 22:23:41 +0000
+Subject: [PATCH] Moved EOF check.
+
+(cherry picked from commit 21eae25a8db5fdcd112dbcfcd9e5c37e32d32e2f)
+
+This a partial fix for corrupted file
+
+bug-debian: https://bugs.debian.org/832942
+Origin: upstream, https://github.com/ImageMagick/ImageMagick/commit/21eae25a8db5fdcd112dbcfcd9e5c37e32d32e2f
+---
+ coders/dds.c | 24 ++++++++++++------------
+ 1 file changed, 12 insertions(+), 12 deletions(-)
+
+Index: imagemagick-6.7.7.10/coders/dds.c
+===================================================================
+--- imagemagick-6.7.7.10.orig/coders/dds.c	2016-11-14 09:51:28.041117665 -0500
++++ imagemagick-6.7.7.10/coders/dds.c	2016-11-14 09:52:03.545119321 -0500
+@@ -851,16 +851,16 @@
+   /*
+     Only skip mipmaps for textures and cube maps
+   */
++  if (EOFBlob(image) != MagickFalse)
++    {
++      ThrowFileException(exception,CorruptImageError,"UnexpectedEndOfFile",
++        image->filename);
++      return(MagickFalse);
++    }
+   if (dds_info->ddscaps1 & DDSCAPS_MIPMAP
+       && (dds_info->ddscaps1 & DDSCAPS_TEXTURE
+           || dds_info->ddscaps2 & DDSCAPS2_CUBEMAP))
+     {
+-      if (EOFBlob(image) != MagickFalse)
+-        {
+-          ThrowFileException(exception,CorruptImageError,"UnexpectedEndOfFile",
+-            image->filename);
+-          return(MagickFalse);
+-        }
+       w = DIV2(dds_info->width);
+       h = DIV2(dds_info->height);
+       
+@@ -898,16 +898,16 @@
+   /*
+     Only skip mipmaps for textures and cube maps
+   */
++  if (EOFBlob(image) != MagickFalse)
++    {
++      ThrowFileException(exception,CorruptImageError,"UnexpectedEndOfFile",
++        image->filename);
++      return(MagickFalse);
++    }
+   if (dds_info->ddscaps1 & DDSCAPS_MIPMAP
+       && (dds_info->ddscaps1 & DDSCAPS_TEXTURE
+           || dds_info->ddscaps2 & DDSCAPS2_CUBEMAP))
+     {
+-      if (EOFBlob(image) != MagickFalse)
+-        {
+-          ThrowFileException(exception,CorruptImageError,"UnexpectedEndOfFile",
+-            image->filename);
+-          return(MagickFalse);
+-        }
+       w = DIV2(dds_info->width);
+       h = DIV2(dds_info->height);
+       

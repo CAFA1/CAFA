@@ -1,0 +1,2428 @@
+"src/oper.ml" 38 1614 1620 "src/oper.ml" 38 1614 1642
+type(
+  ?reflexive:bool -> B.G.t -> B.G.t
+)
+ident(
+  def add_transitive_closure "src/oper.ml" 47 1871 1873 "src/oper.ml" 104 3079 3082
+)
+"src/oper.ml" 38 1614 1645 "src/oper.ml" 38 1614 1654
+type(
+  bool
+)
+"src/oper.ml" 38 1614 1655 "src/oper.ml" 38 1614 1660
+type(
+  bool
+)
+type(
+  bool
+)
+ident(
+  int_ref *sth* "src/oper.ml" 38 1614 1655 "src/oper.ml" 38 1614 1660
+)
+type(
+  bool option
+)
+type(
+  bool option
+)
+type(
+  bool
+)
+ident(
+  def *sth* "src/oper.ml" 38 1614 1655 "src/oper.ml" 38 1614 1660
+)
+"src/oper.ml" 38 1614 1662 "src/oper.ml" 38 1614 1664
+type(
+  B.G.t
+)
+ident(
+  def g0 "src/oper.ml" 39 1667 1671 "src/oper.ml" 45 1842 1869
+)
+"src/oper.ml" 39 1667 1675 "src/oper.ml" 39 1667 1678
+type(
+  B.G.vertex -> B.G.t -> B.G.t
+)
+"src/oper.ml" 39 1667 1679 "src/oper.ml" 39 1667 1680
+type(
+  B.G.vertex
+)
+ident(
+  def v "src/oper.ml" 39 1667 1681 "src/oper.ml" 43 1828 1834
+)
+"src/oper.ml" 39 1667 1681 "src/oper.ml" 39 1667 1682
+type(
+  B.G.t
+)
+ident(
+  def g "src/oper.ml" 40 1685 1691 "src/oper.ml" 43 1828 1834
+)
+"src/oper.ml" 40 1685 1695 "src/oper.ml" 40 1685 1696
+type(
+  B.G.t
+)
+"src/oper.ml" 40 1685 1702 "src/oper.ml" 40 1685 1711
+type(
+  bool
+)
+ident(
+  int_ref reflexive "src/oper.ml" 38 1614 1645 "src/oper.ml" 38 1614 1654
+)
+"src/oper.ml" 40 1685 1717 "src/oper.ml" 40 1685 1727
+type(
+  B.G.t -> B.G.vertex -> B.G.vertex -> B.G.t
+)
+ident(
+  ext_ref B.add_edge
+)
+"src/oper.ml" 40 1685 1728 "src/oper.ml" 40 1685 1729
+type(
+  B.G.t
+)
+ident(
+  int_ref g "src/oper.ml" 39 1667 1681 "src/oper.ml" 39 1667 1682
+)
+"src/oper.ml" 40 1685 1730 "src/oper.ml" 40 1685 1731
+type(
+  B.G.vertex
+)
+ident(
+  int_ref v "src/oper.ml" 39 1667 1679 "src/oper.ml" 39 1667 1680
+)
+"src/oper.ml" 40 1685 1732 "src/oper.ml" 40 1685 1733
+type(
+  B.G.vertex
+)
+ident(
+  int_ref v "src/oper.ml" 39 1667 1679 "src/oper.ml" 39 1667 1680
+)
+"src/oper.ml" 40 1685 1717 "src/oper.ml" 40 1685 1733
+call(
+  stack
+)
+type(
+  B.G.t
+)
+"src/oper.ml" 40 1685 1739 "src/oper.ml" 40 1685 1740
+type(
+  B.G.t
+)
+ident(
+  int_ref g "src/oper.ml" 39 1667 1681 "src/oper.ml" 39 1667 1682
+)
+"src/oper.ml" 40 1685 1699 "src/oper.ml" 40 1685 1740
+type(
+  B.G.t
+)
+"src/oper.ml" 41 1744 1750 "src/oper.ml" 41 1744 1761
+type(
+  (B.G.vertex -> B.G.t -> B.G.t) -> B.G.t -> B.G.vertex -> B.G.t -> B.G.t
+)
+ident(
+  ext_ref B.G.fold_succ
+)
+"src/oper.ml" 42 1762 1768 "src/oper.ml" 42 1762 1770
+type(
+  B.G.vertex
+)
+ident(
+  def sv "src/oper.ml" 42 1762 1771 "src/oper.ml" 42 1762 1826
+)
+"src/oper.ml" 42 1762 1771 "src/oper.ml" 42 1762 1772
+type(
+  B.G.t
+)
+ident(
+  def g "src/oper.ml" 42 1762 1776 "src/oper.ml" 42 1762 1826
+)
+"src/oper.ml" 42 1762 1776 "src/oper.ml" 42 1762 1787
+type(
+  (B.G.vertex -> B.G.t -> B.G.t) -> B.G.t -> B.G.vertex -> B.G.t -> B.G.t
+)
+ident(
+  ext_ref B.G.fold_pred
+)
+"src/oper.ml" 42 1762 1793 "src/oper.ml" 42 1762 1795
+type(
+  B.G.vertex
+)
+ident(
+  def pv "src/oper.ml" 42 1762 1796 "src/oper.ml" 42 1762 1819
+)
+"src/oper.ml" 42 1762 1796 "src/oper.ml" 42 1762 1797
+type(
+  B.G.t
+)
+ident(
+  def g "src/oper.ml" 42 1762 1801 "src/oper.ml" 42 1762 1819
+)
+"src/oper.ml" 42 1762 1801 "src/oper.ml" 42 1762 1811
+type(
+  B.G.t -> B.G.vertex -> B.G.vertex -> B.G.t
+)
+ident(
+  ext_ref B.add_edge
+)
+"src/oper.ml" 42 1762 1812 "src/oper.ml" 42 1762 1813
+type(
+  B.G.t
+)
+ident(
+  int_ref g "src/oper.ml" 42 1762 1796 "src/oper.ml" 42 1762 1797
+)
+"src/oper.ml" 42 1762 1814 "src/oper.ml" 42 1762 1816
+type(
+  B.G.vertex
+)
+ident(
+  int_ref pv "src/oper.ml" 42 1762 1793 "src/oper.ml" 42 1762 1795
+)
+"src/oper.ml" 42 1762 1817 "src/oper.ml" 42 1762 1819
+type(
+  B.G.vertex
+)
+ident(
+  int_ref sv "src/oper.ml" 42 1762 1768 "src/oper.ml" 42 1762 1770
+)
+"src/oper.ml" 42 1762 1801 "src/oper.ml" 42 1762 1819
+call(
+  tail
+)
+type(
+  B.G.t
+)
+"src/oper.ml" 42 1762 1788 "src/oper.ml" 42 1762 1820
+type(
+  B.G.vertex -> B.G.t -> B.G.t
+)
+"src/oper.ml" 42 1762 1821 "src/oper.ml" 42 1762 1822
+type(
+  B.G.t
+)
+ident(
+  int_ref g "src/oper.ml" 42 1762 1771 "src/oper.ml" 42 1762 1772
+)
+"src/oper.ml" 42 1762 1823 "src/oper.ml" 42 1762 1824
+type(
+  B.G.vertex
+)
+ident(
+  int_ref v "src/oper.ml" 39 1667 1679 "src/oper.ml" 39 1667 1680
+)
+"src/oper.ml" 42 1762 1825 "src/oper.ml" 42 1762 1826
+type(
+  B.G.t
+)
+ident(
+  int_ref g "src/oper.ml" 42 1762 1771 "src/oper.ml" 42 1762 1772
+)
+"src/oper.ml" 42 1762 1776 "src/oper.ml" 42 1762 1826
+call(
+  tail
+)
+type(
+  B.G.t
+)
+"src/oper.ml" 42 1762 1763 "src/oper.ml" 42 1762 1827
+type(
+  B.G.vertex -> B.G.t -> B.G.t
+)
+"src/oper.ml" 43 1828 1829 "src/oper.ml" 43 1828 1830
+type(
+  B.G.t
+)
+ident(
+  int_ref g "src/oper.ml" 40 1685 1695 "src/oper.ml" 40 1685 1696
+)
+"src/oper.ml" 43 1828 1831 "src/oper.ml" 43 1828 1832
+type(
+  B.G.vertex
+)
+ident(
+  int_ref v "src/oper.ml" 39 1667 1679 "src/oper.ml" 39 1667 1680
+)
+"src/oper.ml" 43 1828 1833 "src/oper.ml" 43 1828 1834
+type(
+  B.G.t
+)
+ident(
+  int_ref g "src/oper.ml" 40 1685 1695 "src/oper.ml" 40 1685 1696
+)
+"src/oper.ml" 41 1744 1750 "src/oper.ml" 43 1828 1834
+call(
+  tail
+)
+type(
+  B.G.t
+)
+"src/oper.ml" 40 1685 1691 "src/oper.ml" 43 1828 1834
+type(
+  B.G.t
+)
+"src/oper.ml" 45 1842 1846 "src/oper.ml" 45 1842 1859
+type(
+  (B.G.vertex -> B.G.t -> B.G.t) -> B.G.t -> B.G.t -> B.G.t
+)
+ident(
+  ext_ref B.G.fold_vertex
+)
+"src/oper.ml" 45 1842 1860 "src/oper.ml" 45 1842 1863
+type(
+  B.G.vertex -> B.G.t -> B.G.t
+)
+ident(
+  int_ref phi "src/oper.ml" 39 1667 1675 "src/oper.ml" 39 1667 1678
+)
+"src/oper.ml" 45 1842 1864 "src/oper.ml" 45 1842 1866
+type(
+  B.G.t
+)
+ident(
+  int_ref g0 "src/oper.ml" 38 1614 1662 "src/oper.ml" 38 1614 1664
+)
+"src/oper.ml" 45 1842 1867 "src/oper.ml" 45 1842 1869
+type(
+  B.G.t
+)
+ident(
+  int_ref g0 "src/oper.ml" 38 1614 1662 "src/oper.ml" 38 1614 1664
+)
+"src/oper.ml" 45 1842 1846 "src/oper.ml" 45 1842 1869
+call(
+  tail
+)
+type(
+  B.G.t
+)
+"src/oper.ml" 39 1667 1671 "src/oper.ml" 45 1842 1869
+type(
+  B.G.t
+)
+"src/oper.ml" 47 1871 1877 "src/oper.ml" 47 1871 1895
+type(
+  ?reflexive:bool -> B.G.t -> B.G.t
+)
+ident(
+  def transitive_closure "src/oper.ml" 50 1971 1973 "src/oper.ml" 104 3079 3082
+)
+"src/oper.ml" 47 1871 1898 "src/oper.ml" 47 1871 1907
+type(
+  bool
+)
+"src/oper.ml" 47 1871 1908 "src/oper.ml" 47 1871 1913
+type(
+  bool
+)
+type(
+  bool
+)
+ident(
+  int_ref *sth* "src/oper.ml" 47 1871 1908 "src/oper.ml" 47 1871 1913
+)
+type(
+  bool option
+)
+type(
+  bool option
+)
+type(
+  bool
+)
+ident(
+  def *sth* "src/oper.ml" 47 1871 1908 "src/oper.ml" 47 1871 1913
+)
+"src/oper.ml" 47 1871 1915 "src/oper.ml" 47 1871 1917
+type(
+  B.G.t
+)
+ident(
+  def g0 "src/oper.ml" 48 1920 1924 "src/oper.ml" 48 1920 1969
+)
+"src/oper.ml" 48 1920 1924 "src/oper.ml" 48 1920 1946
+type(
+  ?reflexive:bool -> B.G.t -> B.G.t
+)
+ident(
+  int_ref add_transitive_closure "src/oper.ml" 38 1614 1620 "src/oper.ml" 38 1614 1642
+)
+"src/oper.ml" 48 1920 1948 "src/oper.ml" 48 1920 1957
+type(
+  bool
+)
+ident(
+  int_ref reflexive "src/oper.ml" 47 1871 1898 "src/oper.ml" 47 1871 1907
+)
+"src/oper.ml" 48 1920 1959 "src/oper.ml" 48 1920 1965
+type(
+  B.G.t -> B.G.t
+)
+ident(
+  ext_ref B.copy
+)
+"src/oper.ml" 48 1920 1966 "src/oper.ml" 48 1920 1968
+type(
+  B.G.t
+)
+ident(
+  int_ref g0 "src/oper.ml" 47 1871 1915 "src/oper.ml" 47 1871 1917
+)
+"src/oper.ml" 48 1920 1958 "src/oper.ml" 48 1920 1969
+call(
+  stack
+)
+type(
+  B.G.t
+)
+"src/oper.ml" 48 1920 1924 "src/oper.ml" 48 1920 1969
+call(
+  tail
+)
+type(
+  B.G.t
+)
+"src/oper.ml" 50 1971 1984 "src/oper.ml" 50 1971 2001
+call(
+  stack
+)
+"src/oper.ml" 52 2003 2009 "src/oper.ml" 52 2003 2015
+type(
+  B.G.t -> B.G.t
+)
+ident(
+  def mirror "src/oper.ml" 68 2313 2315 "src/oper.ml" 104 3079 3082
+)
+"src/oper.ml" 52 2003 2016 "src/oper.ml" 52 2003 2017
+type(
+  B.G.t
+)
+ident(
+  def g "src/oper.ml" 53 2020 2024 "src/oper.ml" 66 2304 2311
+)
+"src/oper.ml" 53 2020 2027 "src/oper.ml" 53 2020 2040
+type(
+  bool
+)
+ident(
+  ext_ref B.G.is_directed
+)
+"src/oper.ml" 54 2052 2062 "src/oper.ml" 54 2052 2064
+type(
+  B.G.t
+)
+ident(
+  def g' "src/oper.ml" 59 2144 2150 "src/oper.ml" 64 2285 2290
+)
+"src/oper.ml" 55 2067 2068 "src/oper.ml" 55 2067 2081
+type(
+  (B.G.vertex -> B.G.t -> B.G.t) -> B.G.t -> B.G.t -> B.G.t
+)
+ident(
+  ext_ref B.G.fold_vertex
+)
+"src/oper.ml" 56 2082 2090 "src/oper.ml" 56 2082 2091
+type(
+  B.G.vertex
+)
+ident(
+  def v "src/oper.ml" 56 2082 2092 "src/oper.ml" 56 2082 2115
+)
+"src/oper.ml" 56 2082 2092 "src/oper.ml" 56 2082 2094
+type(
+  B.G.t
+)
+ident(
+  def g' "src/oper.ml" 56 2082 2098 "src/oper.ml" 56 2082 2115
+)
+"src/oper.ml" 56 2082 2098 "src/oper.ml" 56 2082 2110
+type(
+  B.G.t -> B.G.vertex -> B.G.t
+)
+ident(
+  ext_ref B.add_vertex
+)
+"src/oper.ml" 56 2082 2111 "src/oper.ml" 56 2082 2113
+type(
+  B.G.t
+)
+ident(
+  int_ref g' "src/oper.ml" 56 2082 2092 "src/oper.ml" 56 2082 2094
+)
+"src/oper.ml" 56 2082 2114 "src/oper.ml" 56 2082 2115
+type(
+  B.G.vertex
+)
+ident(
+  int_ref v "src/oper.ml" 56 2082 2090 "src/oper.ml" 56 2082 2091
+)
+"src/oper.ml" 56 2082 2098 "src/oper.ml" 56 2082 2115
+call(
+  tail
+)
+type(
+  B.G.t
+)
+"src/oper.ml" 56 2082 2085 "src/oper.ml" 56 2082 2116
+type(
+  B.G.vertex -> B.G.t -> B.G.t
+)
+"src/oper.ml" 57 2117 2120 "src/oper.ml" 57 2117 2121
+type(
+  B.G.t
+)
+ident(
+  int_ref g "src/oper.ml" 52 2003 2016 "src/oper.ml" 52 2003 2017
+)
+"src/oper.ml" 57 2117 2123 "src/oper.ml" 57 2117 2130
+type(
+  unit -> B.G.t
+)
+ident(
+  ext_ref B.empty
+)
+"src/oper.ml" 57 2117 2131 "src/oper.ml" 57 2117 2133
+type(
+  unit
+)
+"src/oper.ml" 57 2117 2122 "src/oper.ml" 57 2117 2134
+call(
+  stack
+)
+type(
+  B.G.t
+)
+"src/oper.ml" 55 2067 2068 "src/oper.ml" 57 2117 2134
+call(
+  stack
+)
+type(
+  B.G.t
+)
+"src/oper.ml" 59 2144 2150 "src/oper.ml" 59 2144 2164
+type(
+  (B.G.edge -> B.G.t -> B.G.t) -> B.G.t -> B.G.t -> B.G.t
+)
+ident(
+  ext_ref B.G.fold_edges_e
+)
+"src/oper.ml" 60 2165 2171 "src/oper.ml" 60 2165 2172
+type(
+  B.G.edge
+)
+ident(
+  def e "src/oper.ml" 60 2165 2173 "src/oper.ml" 63 2231 2283
+)
+"src/oper.ml" 60 2165 2173 "src/oper.ml" 60 2165 2175
+type(
+  B.G.t
+)
+ident(
+  def g' "src/oper.ml" 61 2179 2183 "src/oper.ml" 63 2231 2283
+)
+"src/oper.ml" 61 2179 2187 "src/oper.ml" 61 2179 2189
+type(
+  B.G.E.vertex
+)
+"src/oper.ml" 61 2179 2192 "src/oper.ml" 61 2179 2199
+type(
+  B.G.edge -> B.G.E.vertex
+)
+ident(
+  ext_ref B.G.E.src
+)
+"src/oper.ml" 61 2179 2200 "src/oper.ml" 61 2179 2201
+type(
+  B.G.edge
+)
+ident(
+  int_ref e "src/oper.ml" 60 2165 2171 "src/oper.ml" 60 2165 2172
+)
+"src/oper.ml" 61 2179 2192 "src/oper.ml" 61 2179 2201
+call(
+  stack
+)
+type(
+  B.G.E.vertex
+)
+"src/oper.ml" 62 2205 2213 "src/oper.ml" 62 2205 2215
+type(
+  B.G.E.vertex
+)
+"src/oper.ml" 62 2205 2218 "src/oper.ml" 62 2205 2225
+type(
+  B.G.edge -> B.G.E.vertex
+)
+ident(
+  ext_ref B.G.E.dst
+)
+"src/oper.ml" 62 2205 2226 "src/oper.ml" 62 2205 2227
+type(
+  B.G.edge
+)
+ident(
+  int_ref e "src/oper.ml" 60 2165 2171 "src/oper.ml" 60 2165 2172
+)
+"src/oper.ml" 62 2205 2218 "src/oper.ml" 62 2205 2227
+call(
+  stack
+)
+type(
+  B.G.E.vertex
+)
+"src/oper.ml" 63 2231 2235 "src/oper.ml" 63 2231 2247
+type(
+  B.G.t -> B.G.E.t -> B.G.t
+)
+ident(
+  ext_ref B.add_edge_e
+)
+"src/oper.ml" 63 2231 2248 "src/oper.ml" 63 2231 2250
+type(
+  B.G.t
+)
+ident(
+  int_ref g' "src/oper.ml" 60 2165 2173 "src/oper.ml" 60 2165 2175
+)
+"src/oper.ml" 63 2231 2252 "src/oper.ml" 63 2231 2262
+type(
+  B.G.E.vertex -> B.G.E.label -> B.G.E.vertex -> B.G.E.t
+)
+ident(
+  ext_ref B.G.E.create
+)
+"src/oper.ml" 63 2231 2263 "src/oper.ml" 63 2231 2265
+type(
+  B.G.E.vertex
+)
+ident(
+  int_ref v2 "src/oper.ml" 62 2205 2213 "src/oper.ml" 62 2205 2215
+)
+"src/oper.ml" 63 2231 2267 "src/oper.ml" 63 2231 2276
+type(
+  B.G.edge -> B.G.E.label
+)
+ident(
+  ext_ref B.G.E.label
+)
+"src/oper.ml" 63 2231 2277 "src/oper.ml" 63 2231 2278
+type(
+  B.G.edge
+)
+ident(
+  int_ref e "src/oper.ml" 60 2165 2171 "src/oper.ml" 60 2165 2172
+)
+"src/oper.ml" 63 2231 2266 "src/oper.ml" 63 2231 2279
+call(
+  stack
+)
+type(
+  B.G.E.label
+)
+"src/oper.ml" 63 2231 2280 "src/oper.ml" 63 2231 2282
+type(
+  B.G.E.vertex
+)
+ident(
+  int_ref v1 "src/oper.ml" 61 2179 2187 "src/oper.ml" 61 2179 2189
+)
+"src/oper.ml" 63 2231 2251 "src/oper.ml" 63 2231 2283
+call(
+  stack
+)
+type(
+  B.G.E.t
+)
+"src/oper.ml" 63 2231 2235 "src/oper.ml" 63 2231 2283
+call(
+  tail
+)
+type(
+  B.G.t
+)
+"src/oper.ml" 62 2205 2209 "src/oper.ml" 63 2231 2283
+type(
+  B.G.t
+)
+"src/oper.ml" 61 2179 2183 "src/oper.ml" 63 2231 2283
+type(
+  B.G.t
+)
+"src/oper.ml" 60 2165 2166 "src/oper.ml" 63 2231 2284
+type(
+  B.G.edge -> B.G.t -> B.G.t
+)
+"src/oper.ml" 64 2285 2286 "src/oper.ml" 64 2285 2287
+type(
+  B.G.t
+)
+ident(
+  int_ref g "src/oper.ml" 52 2003 2016 "src/oper.ml" 52 2003 2017
+)
+"src/oper.ml" 64 2285 2288 "src/oper.ml" 64 2285 2290
+type(
+  B.G.t
+)
+ident(
+  int_ref g' "src/oper.ml" 54 2052 2062 "src/oper.ml" 54 2052 2064
+)
+"src/oper.ml" 59 2144 2150 "src/oper.ml" 64 2285 2290
+call(
+  tail
+)
+type(
+  B.G.t
+)
+"src/oper.ml" 53 2020 2046 "src/oper.ml" 65 2291 2298
+type(
+  B.G.t
+)
+"src/oper.ml" 66 2304 2310 "src/oper.ml" 66 2304 2311
+type(
+  B.G.t
+)
+ident(
+  int_ref g "src/oper.ml" 52 2003 2016 "src/oper.ml" 52 2003 2017
+)
+"src/oper.ml" 53 2020 2024 "src/oper.ml" 66 2304 2311
+type(
+  B.G.t
+)
+"src/oper.ml" 68 2313 2319 "src/oper.ml" 68 2313 2329
+type(
+  B.G.t -> B.G.t
+)
+ident(
+  def complement "src/oper.ml" 78 2500 2502 "src/oper.ml" 104 3079 3082
+)
+"src/oper.ml" 68 2313 2330 "src/oper.ml" 68 2313 2331
+type(
+  B.G.t
+)
+ident(
+  def g "src/oper.ml" 69 2334 2338 "src/oper.ml" 76 2478 2498
+)
+"src/oper.ml" 69 2334 2338 "src/oper.ml" 69 2334 2351
+type(
+  (B.G.vertex -> B.G.t -> B.G.t) -> B.G.t -> B.G.t -> B.G.t
+)
+ident(
+  ext_ref B.G.fold_vertex
+)
+"src/oper.ml" 70 2352 2363 "src/oper.ml" 70 2352 2364
+type(
+  B.G.vertex
+)
+ident(
+  def v "src/oper.ml" 70 2352 2365 "src/oper.ml" 75 2470 2476
+)
+"src/oper.ml" 70 2352 2365 "src/oper.ml" 70 2352 2367
+type(
+  B.G.t
+)
+ident(
+  def g' "src/oper.ml" 71 2371 2373 "src/oper.ml" 75 2470 2476
+)
+"src/oper.ml" 71 2371 2373 "src/oper.ml" 71 2371 2386
+type(
+  (B.G.vertex -> B.G.t -> B.G.t) -> B.G.t -> B.G.t -> B.G.t
+)
+ident(
+  ext_ref B.G.fold_vertex
+)
+"src/oper.ml" 72 2387 2396 "src/oper.ml" 72 2387 2397
+type(
+  B.G.vertex
+)
+ident(
+  def w "src/oper.ml" 72 2387 2398 "src/oper.ml" 74 2439 2468
+)
+"src/oper.ml" 72 2387 2398 "src/oper.ml" 72 2387 2400
+type(
+  B.G.t
+)
+ident(
+  def g' "src/oper.ml" 73 2404 2411 "src/oper.ml" 74 2439 2468
+)
+"src/oper.ml" 73 2404 2414 "src/oper.ml" 73 2404 2424
+type(
+  B.G.t -> B.G.vertex -> B.G.vertex -> bool
+)
+ident(
+  ext_ref B.G.mem_edge
+)
+"src/oper.ml" 73 2404 2425 "src/oper.ml" 73 2404 2426
+type(
+  B.G.t
+)
+ident(
+  int_ref g "src/oper.ml" 68 2313 2330 "src/oper.ml" 68 2313 2331
+)
+"src/oper.ml" 73 2404 2427 "src/oper.ml" 73 2404 2428
+type(
+  B.G.vertex
+)
+ident(
+  int_ref v "src/oper.ml" 70 2352 2363 "src/oper.ml" 70 2352 2364
+)
+"src/oper.ml" 73 2404 2429 "src/oper.ml" 73 2404 2430
+type(
+  B.G.vertex
+)
+ident(
+  int_ref w "src/oper.ml" 72 2387 2396 "src/oper.ml" 72 2387 2397
+)
+"src/oper.ml" 73 2404 2414 "src/oper.ml" 73 2404 2430
+call(
+  stack
+)
+type(
+  bool
+)
+"src/oper.ml" 73 2404 2436 "src/oper.ml" 73 2404 2438
+type(
+  B.G.t
+)
+ident(
+  int_ref g' "src/oper.ml" 72 2387 2398 "src/oper.ml" 72 2387 2400
+)
+"src/oper.ml" 74 2439 2451 "src/oper.ml" 74 2439 2461
+type(
+  B.G.t -> B.G.vertex -> B.G.vertex -> B.G.t
+)
+ident(
+  ext_ref B.add_edge
+)
+"src/oper.ml" 74 2439 2462 "src/oper.ml" 74 2439 2464
+type(
+  B.G.t
+)
+ident(
+  int_ref g' "src/oper.ml" 72 2387 2398 "src/oper.ml" 72 2387 2400
+)
+"src/oper.ml" 74 2439 2465 "src/oper.ml" 74 2439 2466
+type(
+  B.G.vertex
+)
+ident(
+  int_ref v "src/oper.ml" 70 2352 2363 "src/oper.ml" 70 2352 2364
+)
+"src/oper.ml" 74 2439 2467 "src/oper.ml" 74 2439 2468
+type(
+  B.G.vertex
+)
+ident(
+  int_ref w "src/oper.ml" 72 2387 2396 "src/oper.ml" 72 2387 2397
+)
+"src/oper.ml" 74 2439 2451 "src/oper.ml" 74 2439 2468
+call(
+  tail
+)
+type(
+  B.G.t
+)
+"src/oper.ml" 73 2404 2411 "src/oper.ml" 74 2439 2468
+type(
+  B.G.t
+)
+"src/oper.ml" 72 2387 2391 "src/oper.ml" 74 2439 2469
+type(
+  B.G.vertex -> B.G.t -> B.G.t
+)
+"src/oper.ml" 75 2470 2472 "src/oper.ml" 75 2470 2473
+type(
+  B.G.t
+)
+ident(
+  int_ref g "src/oper.ml" 68 2313 2330 "src/oper.ml" 68 2313 2331
+)
+"src/oper.ml" 75 2470 2474 "src/oper.ml" 75 2470 2476
+type(
+  B.G.t
+)
+ident(
+  int_ref g' "src/oper.ml" 70 2352 2365 "src/oper.ml" 70 2352 2367
+)
+"src/oper.ml" 71 2371 2373 "src/oper.ml" 75 2470 2476
+call(
+  tail
+)
+type(
+  B.G.t
+)
+"src/oper.ml" 70 2352 2358 "src/oper.ml" 75 2470 2477
+type(
+  B.G.vertex -> B.G.t -> B.G.t
+)
+"src/oper.ml" 76 2478 2484 "src/oper.ml" 76 2478 2485
+type(
+  B.G.t
+)
+ident(
+  int_ref g "src/oper.ml" 68 2313 2330 "src/oper.ml" 68 2313 2331
+)
+"src/oper.ml" 76 2478 2487 "src/oper.ml" 76 2478 2494
+type(
+  unit -> B.G.t
+)
+ident(
+  ext_ref B.empty
+)
+"src/oper.ml" 76 2478 2495 "src/oper.ml" 76 2478 2497
+type(
+  unit
+)
+"src/oper.ml" 76 2478 2486 "src/oper.ml" 76 2478 2498
+call(
+  stack
+)
+type(
+  B.G.t
+)
+"src/oper.ml" 69 2334 2338 "src/oper.ml" 76 2478 2498
+call(
+  tail
+)
+type(
+  B.G.t
+)
+"src/oper.ml" 78 2500 2506 "src/oper.ml" 78 2500 2515
+type(
+  B.G.t -> B.G.t -> B.G.t
+)
+ident(
+  def intersect "src/oper.ml" 94 2856 2858 "src/oper.ml" 104 3079 3082
+)
+"src/oper.ml" 78 2500 2516 "src/oper.ml" 78 2500 2518
+type(
+  B.G.t
+)
+ident(
+  def g1 "src/oper.ml" 78 2500 2519 "src/oper.ml" 92 2833 2854
+)
+"src/oper.ml" 78 2500 2519 "src/oper.ml" 78 2500 2521
+type(
+  B.G.t
+)
+ident(
+  def g2 "src/oper.ml" 79 2524 2528 "src/oper.ml" 92 2833 2854
+)
+"src/oper.ml" 79 2524 2528 "src/oper.ml" 79 2524 2541
+type(
+  (B.G.vertex -> B.G.t -> B.G.t) -> B.G.t -> B.G.t -> B.G.t
+)
+ident(
+  ext_ref B.G.fold_vertex
+)
+"src/oper.ml" 80 2542 2553 "src/oper.ml" 80 2542 2554
+type(
+  B.G.vertex
+)
+ident(
+  def v "src/oper.ml" 80 2542 2555 "src/oper.ml" 91 2826 2831
+)
+"src/oper.ml" 80 2542 2555 "src/oper.ml" 80 2542 2556
+type(
+  B.G.t
+)
+ident(
+  def g "src/oper.ml" 81 2560 2562 "src/oper.ml" 91 2826 2831
+)
+"src/oper.ml" 82 2566 2574 "src/oper.ml" 82 2566 2578
+type(
+  B.G.edge list
+)
+ident(
+  def succ "src/oper.ml" 83 2598 2602 "src/oper.ml" 88 2741 2770
+)
+"src/oper.ml" 82 2566 2581 "src/oper.ml" 82 2566 2589
+type(
+  B.G.t -> B.G.vertex -> B.G.edge list
+)
+ident(
+  ext_ref B.G.succ_e
+)
+"src/oper.ml" 82 2566 2590 "src/oper.ml" 82 2566 2592
+type(
+  B.G.t
+)
+ident(
+  int_ref g2 "src/oper.ml" 78 2500 2519 "src/oper.ml" 78 2500 2521
+)
+"src/oper.ml" 82 2566 2593 "src/oper.ml" 82 2566 2594
+type(
+  B.G.vertex
+)
+ident(
+  int_ref v "src/oper.ml" 80 2542 2553 "src/oper.ml" 80 2542 2554
+)
+"src/oper.ml" 82 2566 2581 "src/oper.ml" 82 2566 2594
+call(
+  stack
+)
+type(
+  B.G.edge list
+)
+"src/oper.ml" 83 2598 2602 "src/oper.ml" 83 2598 2615
+type(
+  (B.G.edge -> B.G.t -> B.G.t) -> B.G.t -> B.G.vertex -> B.G.t -> B.G.t
+)
+ident(
+  ext_ref B.G.fold_succ_e
+)
+"src/oper.ml" 84 2616 2627 "src/oper.ml" 84 2616 2628
+type(
+  B.G.edge
+)
+ident(
+  def e "src/oper.ml" 84 2616 2629 "src/oper.ml" 87 2725 2739
+)
+"src/oper.ml" 84 2616 2629 "src/oper.ml" 84 2616 2630
+type(
+  B.G.t
+)
+ident(
+  def g "src/oper.ml" 85 2634 2642 "src/oper.ml" 87 2725 2739
+)
+"src/oper.ml" 85 2634 2645 "src/oper.ml" 85 2634 2656
+type(
+  (B.G.edge -> bool) -> B.G.edge list -> bool
+)
+ident(
+  ext_ref List.exists
+)
+"src/oper.ml" 85 2634 2662 "src/oper.ml" 85 2634 2664
+type(
+  B.G.edge
+)
+ident(
+  def e' "src/oper.ml" 85 2634 2668 "src/oper.ml" 85 2634 2688
+)
+"src/oper.ml" 85 2634 2668 "src/oper.ml" 85 2634 2679
+type(
+  B.G.edge -> B.G.edge -> int
+)
+ident(
+  ext_ref B.G.E.compare
+)
+"src/oper.ml" 85 2634 2680 "src/oper.ml" 85 2634 2681
+type(
+  B.G.edge
+)
+ident(
+  int_ref e "src/oper.ml" 84 2616 2627 "src/oper.ml" 84 2616 2628
+)
+"src/oper.ml" 85 2634 2682 "src/oper.ml" 85 2634 2684
+type(
+  B.G.edge
+)
+ident(
+  int_ref e' "src/oper.ml" 85 2634 2662 "src/oper.ml" 85 2634 2664
+)
+"src/oper.ml" 85 2634 2668 "src/oper.ml" 85 2634 2684
+call(
+  stack
+)
+type(
+  int
+)
+"src/oper.ml" 85 2634 2685 "src/oper.ml" 85 2634 2686
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( = )
+)
+"src/oper.ml" 85 2634 2687 "src/oper.ml" 85 2634 2688
+type(
+  int
+)
+"src/oper.ml" 85 2634 2668 "src/oper.ml" 85 2634 2688
+type(
+  bool
+)
+"src/oper.ml" 85 2634 2657 "src/oper.ml" 85 2634 2689
+type(
+  B.G.edge -> bool
+)
+"src/oper.ml" 85 2634 2690 "src/oper.ml" 85 2634 2694
+type(
+  B.G.edge list
+)
+ident(
+  int_ref succ "src/oper.ml" 82 2566 2574 "src/oper.ml" 82 2566 2578
+)
+"src/oper.ml" 85 2634 2645 "src/oper.ml" 85 2634 2694
+call(
+  stack
+)
+type(
+  bool
+)
+"src/oper.ml" 86 2695 2708 "src/oper.ml" 86 2695 2720
+type(
+  B.G.t -> B.G.edge -> B.G.t
+)
+ident(
+  ext_ref B.add_edge_e
+)
+"src/oper.ml" 86 2695 2721 "src/oper.ml" 86 2695 2722
+type(
+  B.G.t
+)
+ident(
+  int_ref g "src/oper.ml" 84 2616 2629 "src/oper.ml" 84 2616 2630
+)
+"src/oper.ml" 86 2695 2723 "src/oper.ml" 86 2695 2724
+type(
+  B.G.edge
+)
+ident(
+  int_ref e "src/oper.ml" 84 2616 2627 "src/oper.ml" 84 2616 2628
+)
+"src/oper.ml" 86 2695 2708 "src/oper.ml" 86 2695 2724
+call(
+  tail
+)
+type(
+  B.G.t
+)
+"src/oper.ml" 87 2725 2738 "src/oper.ml" 87 2725 2739
+type(
+  B.G.t
+)
+ident(
+  int_ref g "src/oper.ml" 84 2616 2629 "src/oper.ml" 84 2616 2630
+)
+"src/oper.ml" 85 2634 2642 "src/oper.ml" 87 2725 2739
+type(
+  B.G.t
+)
+"src/oper.ml" 84 2616 2622 "src/oper.ml" 87 2725 2740
+type(
+  B.G.edge -> B.G.t -> B.G.t
+)
+"src/oper.ml" 88 2741 2747 "src/oper.ml" 88 2741 2749
+type(
+  B.G.t
+)
+ident(
+  int_ref g1 "src/oper.ml" 78 2500 2516 "src/oper.ml" 78 2500 2518
+)
+"src/oper.ml" 88 2741 2750 "src/oper.ml" 88 2741 2751
+type(
+  B.G.vertex
+)
+ident(
+  int_ref v "src/oper.ml" 80 2542 2553 "src/oper.ml" 80 2542 2554
+)
+"src/oper.ml" 88 2741 2753 "src/oper.ml" 88 2741 2765
+type(
+  B.G.t -> B.G.vertex -> B.G.t
+)
+ident(
+  ext_ref B.add_vertex
+)
+"src/oper.ml" 88 2741 2766 "src/oper.ml" 88 2741 2767
+type(
+  B.G.t
+)
+ident(
+  int_ref g "src/oper.ml" 80 2542 2555 "src/oper.ml" 80 2542 2556
+)
+"src/oper.ml" 88 2741 2768 "src/oper.ml" 88 2741 2769
+type(
+  B.G.vertex
+)
+ident(
+  int_ref v "src/oper.ml" 80 2542 2553 "src/oper.ml" 80 2542 2554
+)
+"src/oper.ml" 88 2741 2752 "src/oper.ml" 88 2741 2770
+call(
+  stack
+)
+type(
+  B.G.t
+)
+"src/oper.ml" 83 2598 2602 "src/oper.ml" 88 2741 2770
+call(
+  stack
+)
+type(
+  B.G.t
+)
+"src/oper.ml" 82 2566 2570 "src/oper.ml" 88 2741 2770
+type(
+  B.G.t
+)
+"src/oper.ml" 89 2771 2795 "src/oper.ml" 89 2771 2796
+type(
+  string
+)
+"src/oper.ml" 89 2771 2778 "src/oper.ml" 89 2771 2796
+type(
+  exn
+)
+"src/oper.ml" 91 2826 2830 "src/oper.ml" 91 2826 2831
+type(
+  B.G.t
+)
+ident(
+  int_ref g "src/oper.ml" 80 2542 2555 "src/oper.ml" 80 2542 2556
+)
+"src/oper.ml" 81 2560 2562 "src/oper.ml" 91 2826 2831
+type(
+  B.G.t
+)
+"src/oper.ml" 80 2542 2548 "src/oper.ml" 91 2826 2832
+type(
+  B.G.vertex -> B.G.t -> B.G.t
+)
+"src/oper.ml" 92 2833 2839 "src/oper.ml" 92 2833 2841
+type(
+  B.G.t
+)
+ident(
+  int_ref g1 "src/oper.ml" 78 2500 2516 "src/oper.ml" 78 2500 2518
+)
+"src/oper.ml" 92 2833 2843 "src/oper.ml" 92 2833 2850
+type(
+  unit -> B.G.t
+)
+ident(
+  ext_ref B.empty
+)
+"src/oper.ml" 92 2833 2851 "src/oper.ml" 92 2833 2853
+type(
+  unit
+)
+"src/oper.ml" 92 2833 2842 "src/oper.ml" 92 2833 2854
+call(
+  stack
+)
+type(
+  B.G.t
+)
+"src/oper.ml" 79 2524 2528 "src/oper.ml" 92 2833 2854
+call(
+  tail
+)
+type(
+  B.G.t
+)
+"src/oper.ml" 94 2856 2862 "src/oper.ml" 94 2856 2867
+type(
+  B.G.t -> B.G.t -> B.G.t
+)
+ident(
+  def union "src/oper.ml" 102 3055 3077 "src/oper.ml" 104 3079 3082
+)
+"src/oper.ml" 94 2856 2868 "src/oper.ml" 94 2856 2870
+type(
+  B.G.t
+)
+ident(
+  def g1 "src/oper.ml" 94 2856 2871 "src/oper.ml" 102 3055 3077
+)
+"src/oper.ml" 94 2856 2871 "src/oper.ml" 94 2856 2873
+type(
+  B.G.t
+)
+ident(
+  def g2 "src/oper.ml" 95 2876 2880 "src/oper.ml" 102 3055 3077
+)
+"src/oper.ml" 95 2876 2884 "src/oper.ml" 95 2876 2887
+type(
+  B.G.t -> B.G.t -> B.G.t
+)
+"src/oper.ml" 95 2876 2888 "src/oper.ml" 95 2876 2890
+type(
+  B.G.t
+)
+ident(
+  def g1 "src/oper.ml" 95 2876 2891 "src/oper.ml" 100 3041 3047
+)
+"src/oper.ml" 95 2876 2891 "src/oper.ml" 95 2876 2893
+type(
+  B.G.t
+)
+ident(
+  def g2 "src/oper.ml" 97 2935 2941 "src/oper.ml" 100 3041 3047
+)
+"src/oper.ml" 97 2935 2941 "src/oper.ml" 97 2935 2954
+type(
+  (B.G.vertex -> B.G.t -> B.G.t) -> B.G.t -> B.G.t -> B.G.t
+)
+ident(
+  ext_ref B.G.fold_vertex
+)
+"src/oper.ml" 98 2955 2961 "src/oper.ml" 98 2955 2962
+type(
+  B.G.vertex
+)
+ident(
+  def v "src/oper.ml" 98 2955 2963 "src/oper.ml" 99 2968 3039
+)
+"src/oper.ml" 98 2955 2963 "src/oper.ml" 98 2955 2964
+type(
+  B.G.t
+)
+ident(
+  def g "src/oper.ml" 99 2968 2972 "src/oper.ml" 99 2968 3039
+)
+"src/oper.ml" 99 2968 2972 "src/oper.ml" 99 2968 2985
+type(
+  (B.G.edge -> B.G.t -> B.G.t) -> B.G.t -> B.G.vertex -> B.G.t -> B.G.t
+)
+ident(
+  ext_ref B.G.fold_succ_e
+)
+"src/oper.ml" 99 2968 2991 "src/oper.ml" 99 2968 2992
+type(
+  B.G.edge
+)
+ident(
+  def e "src/oper.ml" 99 2968 2993 "src/oper.ml" 99 2968 3014
+)
+"src/oper.ml" 99 2968 2993 "src/oper.ml" 99 2968 2994
+type(
+  B.G.t
+)
+ident(
+  def g "src/oper.ml" 99 2968 2998 "src/oper.ml" 99 2968 3014
+)
+"src/oper.ml" 99 2968 2998 "src/oper.ml" 99 2968 3010
+type(
+  B.G.t -> B.G.edge -> B.G.t
+)
+ident(
+  ext_ref B.add_edge_e
+)
+"src/oper.ml" 99 2968 3011 "src/oper.ml" 99 2968 3012
+type(
+  B.G.t
+)
+ident(
+  int_ref g "src/oper.ml" 99 2968 2993 "src/oper.ml" 99 2968 2994
+)
+"src/oper.ml" 99 2968 3013 "src/oper.ml" 99 2968 3014
+type(
+  B.G.edge
+)
+ident(
+  int_ref e "src/oper.ml" 99 2968 2991 "src/oper.ml" 99 2968 2992
+)
+"src/oper.ml" 99 2968 2998 "src/oper.ml" 99 2968 3014
+call(
+  tail
+)
+type(
+  B.G.t
+)
+"src/oper.ml" 99 2968 2986 "src/oper.ml" 99 2968 3015
+type(
+  B.G.edge -> B.G.t -> B.G.t
+)
+"src/oper.ml" 99 2968 3016 "src/oper.ml" 99 2968 3018
+type(
+  B.G.t
+)
+ident(
+  int_ref g1 "src/oper.ml" 95 2876 2888 "src/oper.ml" 95 2876 2890
+)
+"src/oper.ml" 99 2968 3019 "src/oper.ml" 99 2968 3020
+type(
+  B.G.vertex
+)
+ident(
+  int_ref v "src/oper.ml" 98 2955 2961 "src/oper.ml" 98 2955 2962
+)
+"src/oper.ml" 99 2968 3022 "src/oper.ml" 99 2968 3034
+type(
+  B.G.t -> B.G.vertex -> B.G.t
+)
+ident(
+  ext_ref B.add_vertex
+)
+"src/oper.ml" 99 2968 3035 "src/oper.ml" 99 2968 3036
+type(
+  B.G.t
+)
+ident(
+  int_ref g "src/oper.ml" 98 2955 2963 "src/oper.ml" 98 2955 2964
+)
+"src/oper.ml" 99 2968 3037 "src/oper.ml" 99 2968 3038
+type(
+  B.G.vertex
+)
+ident(
+  int_ref v "src/oper.ml" 98 2955 2961 "src/oper.ml" 98 2955 2962
+)
+"src/oper.ml" 99 2968 3021 "src/oper.ml" 99 2968 3039
+call(
+  stack
+)
+type(
+  B.G.t
+)
+"src/oper.ml" 99 2968 2972 "src/oper.ml" 99 2968 3039
+call(
+  tail
+)
+type(
+  B.G.t
+)
+"src/oper.ml" 98 2955 2956 "src/oper.ml" 99 2968 3040
+type(
+  B.G.vertex -> B.G.t -> B.G.t
+)
+"src/oper.ml" 100 3041 3042 "src/oper.ml" 100 3041 3044
+type(
+  B.G.t
+)
+ident(
+  int_ref g1 "src/oper.ml" 95 2876 2888 "src/oper.ml" 95 2876 2890
+)
+"src/oper.ml" 100 3041 3045 "src/oper.ml" 100 3041 3047
+type(
+  B.G.t
+)
+ident(
+  int_ref g2 "src/oper.ml" 95 2876 2891 "src/oper.ml" 95 2876 2893
+)
+"src/oper.ml" 97 2935 2941 "src/oper.ml" 100 3041 3047
+call(
+  tail
+)
+type(
+  B.G.t
+)
+"src/oper.ml" 102 3055 3059 "src/oper.ml" 102 3055 3062
+type(
+  B.G.t -> B.G.t -> B.G.t
+)
+ident(
+  int_ref add "src/oper.ml" 95 2876 2884 "src/oper.ml" 95 2876 2887
+)
+"src/oper.ml" 102 3055 3063 "src/oper.ml" 102 3055 3065
+type(
+  B.G.t
+)
+ident(
+  int_ref g1 "src/oper.ml" 94 2856 2868 "src/oper.ml" 94 2856 2870
+)
+"src/oper.ml" 102 3055 3067 "src/oper.ml" 102 3055 3073
+type(
+  B.G.t -> B.G.t
+)
+ident(
+  ext_ref B.copy
+)
+"src/oper.ml" 102 3055 3074 "src/oper.ml" 102 3055 3076
+type(
+  B.G.t
+)
+ident(
+  int_ref g2 "src/oper.ml" 94 2856 2871 "src/oper.ml" 94 2856 2873
+)
+"src/oper.ml" 102 3055 3066 "src/oper.ml" 102 3055 3077
+call(
+  stack
+)
+type(
+  B.G.t
+)
+"src/oper.ml" 102 3055 3059 "src/oper.ml" 102 3055 3077
+call(
+  tail
+)
+type(
+  B.G.t
+)
+"src/oper.ml" 95 2876 2880 "src/oper.ml" 102 3055 3077
+type(
+  B.G.t
+)
+"src/oper.ml" 106 3084 3111 "src/oper.ml" 106 3084 3123
+call(
+  stack
+)
+"src/oper.ml" 106 3084 3106 "src/oper.ml" 106 3084 3124
+call(
+  tail
+)
+"src/oper.ml" 107 3125 3152 "src/oper.ml" 107 3125 3164
+call(
+  stack
+)
+"src/oper.ml" 107 3125 3147 "src/oper.ml" 107 3125 3165
+call(
+  tail
+)
+"src/oper.ml" 119 3382 3388 "src/oper.ml" 119 3382 3401
+type(
+  G.t -> G.vertex
+)
+ident(
+  def choose_vertex "src/oper.ml" 126 3541 3543 "src/oper.ml" 134 3728 3731
+)
+"src/oper.ml" 119 3382 3402 "src/oper.ml" 119 3382 3403
+type(
+  G.t
+)
+ident(
+  def g "src/oper.ml" 120 3406 3410 "src/oper.ml" 124 3532 3539
+)
+"src/oper.ml" 121 3414 3420 "src/oper.ml" 121 3414 3433
+type(
+  (G.vertex -> unit) -> G.t -> unit
+)
+ident(
+  ext_ref G.iter_vertex
+)
+"src/oper.ml" 121 3414 3439 "src/oper.ml" 121 3414 3440
+type(
+  G.vertex
+)
+ident(
+  def v "src/oper.ml" 121 3414 3444 "src/oper.ml" 121 3414 3466
+)
+"src/oper.ml" 121 3414 3444 "src/oper.ml" 121 3414 3449
+type(
+  exn -> unit
+)
+ident(
+  ext_ref Pervasives.raise
+)
+"src/oper.ml" 121 3414 3464 "src/oper.ml" 121 3414 3465
+type(
+  G.vertex
+)
+ident(
+  int_ref v "src/oper.ml" 121 3414 3439 "src/oper.ml" 121 3414 3440
+)
+"src/oper.ml" 121 3414 3450 "src/oper.ml" 121 3414 3466
+type(
+  exn
+)
+"src/oper.ml" 121 3414 3444 "src/oper.ml" 121 3414 3466
+type(
+  unit
+)
+"src/oper.ml" 121 3414 3434 "src/oper.ml" 121 3414 3467
+type(
+  G.vertex -> unit
+)
+"src/oper.ml" 121 3414 3468 "src/oper.ml" 121 3414 3469
+type(
+  G.t
+)
+ident(
+  int_ref g "src/oper.ml" 119 3382 3402 "src/oper.ml" 119 3382 3403
+)
+"src/oper.ml" 121 3414 3420 "src/oper.ml" 121 3414 3469
+call(
+  stack
+)
+type(
+  unit
+)
+"src/oper.ml" 122 3471 3477 "src/oper.ml" 122 3471 3488
+type(
+  string -> G.vertex
+)
+ident(
+  ext_ref Pervasives.invalid_arg
+)
+"src/oper.ml" 122 3471 3489 "src/oper.ml" 122 3471 3504
+type(
+  string
+)
+"src/oper.ml" 122 3471 3477 "src/oper.ml" 122 3471 3504
+call(
+  stack
+)
+type(
+  G.vertex
+)
+"src/oper.ml" 121 3414 3420 "src/oper.ml" 122 3471 3504
+type(
+  G.vertex
+)
+"src/oper.ml" 123 3505 3527 "src/oper.ml" 123 3505 3528
+type(
+  G.vertex
+)
+ident(
+  def v "src/oper.ml" 124 3532 3538 "src/oper.ml" 124 3532 3539
+)
+"src/oper.ml" 123 3505 3514 "src/oper.ml" 123 3505 3528
+type(
+  exn
+)
+"src/oper.ml" 124 3532 3538 "src/oper.ml" 124 3532 3539
+type(
+  G.vertex
+)
+ident(
+  int_ref v "src/oper.ml" 123 3505 3527 "src/oper.ml" 123 3505 3528
+)
+"src/oper.ml" 120 3406 3410 "src/oper.ml" 124 3532 3539
+type(
+  G.vertex
+)
+"src/oper.ml" 127 3574 3580 "src/oper.ml" 127 3574 3591
+type(
+  G.t -> G.edge
+)
+ident(
+  def choose_edge "src/oper.ml" 132 3719 3726 "src/oper.ml" 134 3728 3731
+)
+"src/oper.ml" 127 3574 3592 "src/oper.ml" 127 3574 3593
+type(
+  G.t
+)
+ident(
+  def g "src/oper.ml" 128 3596 3600 "src/oper.ml" 132 3719 3726
+)
+"src/oper.ml" 129 3604 3610 "src/oper.ml" 129 3604 3624
+type(
+  (G.edge -> unit) -> G.t -> unit
+)
+ident(
+  ext_ref G.iter_edges_e
+)
+"src/oper.ml" 129 3604 3630 "src/oper.ml" 129 3604 3631
+type(
+  G.edge
+)
+ident(
+  def v "src/oper.ml" 129 3604 3635 "src/oper.ml" 129 3604 3655
+)
+"src/oper.ml" 129 3604 3635 "src/oper.ml" 129 3604 3640
+type(
+  exn -> unit
+)
+ident(
+  ext_ref Pervasives.raise
+)
+"src/oper.ml" 129 3604 3653 "src/oper.ml" 129 3604 3654
+type(
+  G.edge
+)
+ident(
+  int_ref v "src/oper.ml" 129 3604 3630 "src/oper.ml" 129 3604 3631
+)
+"src/oper.ml" 129 3604 3641 "src/oper.ml" 129 3604 3655
+type(
+  exn
+)
+"src/oper.ml" 129 3604 3635 "src/oper.ml" 129 3604 3655
+type(
+  unit
+)
+"src/oper.ml" 129 3604 3625 "src/oper.ml" 129 3604 3656
+type(
+  G.edge -> unit
+)
+"src/oper.ml" 129 3604 3657 "src/oper.ml" 129 3604 3658
+type(
+  G.t
+)
+ident(
+  int_ref g "src/oper.ml" 127 3574 3592 "src/oper.ml" 127 3574 3593
+)
+"src/oper.ml" 129 3604 3610 "src/oper.ml" 129 3604 3658
+call(
+  stack
+)
+type(
+  unit
+)
+"src/oper.ml" 130 3660 3666 "src/oper.ml" 130 3660 3677
+type(
+  string -> G.edge
+)
+ident(
+  ext_ref Pervasives.invalid_arg
+)
+"src/oper.ml" 130 3660 3678 "src/oper.ml" 130 3660 3693
+type(
+  string
+)
+"src/oper.ml" 130 3660 3666 "src/oper.ml" 130 3660 3693
+call(
+  stack
+)
+type(
+  G.edge
+)
+"src/oper.ml" 129 3604 3610 "src/oper.ml" 130 3660 3693
+type(
+  G.edge
+)
+"src/oper.ml" 131 3694 3714 "src/oper.ml" 131 3694 3715
+type(
+  G.edge
+)
+ident(
+  def v "src/oper.ml" 132 3719 3725 "src/oper.ml" 132 3719 3726
+)
+"src/oper.ml" 131 3694 3703 "src/oper.ml" 131 3694 3715
+type(
+  exn
+)
+"src/oper.ml" 132 3719 3725 "src/oper.ml" 132 3719 3726
+type(
+  G.edge
+)
+ident(
+  int_ref v "src/oper.ml" 131 3694 3714 "src/oper.ml" 131 3694 3715
+)
+"src/oper.ml" 128 3596 3600 "src/oper.ml" 132 3719 3726
+type(
+  G.edge
+)
+"src/oper.ml" 144 3936 3958 "src/oper.ml" 144 3936 3971
+call(
+  stack
+)
+"src/oper.ml" 146 3973 3979 "src/oper.ml" 146 3973 3994
+type(
+  G.t -> G.V.t -> Vertex_Set.t
+)
+ident(
+  def set_from_vertex "src/oper.ml" 151 4115 4117 "src/oper.ml" 173 4725 4728
+)
+"src/oper.ml" 146 3973 3995 "src/oper.ml" 146 3973 3996
+type(
+  G.t
+)
+ident(
+  def g "src/oper.ml" 146 3973 3997 "src/oper.ml" 149 4087 4113
+)
+"src/oper.ml" 146 3973 3997 "src/oper.ml" 146 3973 3998
+type(
+  G.V.t
+)
+ident(
+  def v "src/oper.ml" 147 4001 4005 "src/oper.ml" 149 4087 4113
+)
+"src/oper.ml" 147 4001 4005 "src/oper.ml" 147 4001 4016
+type(
+  (Vertex_Set.elt -> Vertex_Set.t -> Vertex_Set.t) ->
+  G.t -> G.V.t -> Vertex_Set.t -> Vertex_Set.t
+)
+ident(
+  ext_ref G.fold_succ
+)
+"src/oper.ml" 148 4017 4028 "src/oper.ml" 148 4017 4030
+type(
+  Vertex_Set.elt
+)
+ident(
+  def v' "src/oper.ml" 148 4017 4031 "src/oper.ml" 148 4017 4085
+)
+"src/oper.ml" 148 4017 4031 "src/oper.ml" 148 4017 4032
+type(
+  Vertex_Set.t
+)
+ident(
+  def s "src/oper.ml" 148 4017 4036 "src/oper.ml" 148 4017 4085
+)
+"src/oper.ml" 148 4017 4039 "src/oper.ml" 148 4017 4048
+type(
+  G.V.t -> Vertex_Set.elt -> bool
+)
+ident(
+  ext_ref G.V.equal
+)
+"src/oper.ml" 148 4017 4049 "src/oper.ml" 148 4017 4050
+type(
+  G.V.t
+)
+ident(
+  int_ref v "src/oper.ml" 146 3973 3997 "src/oper.ml" 146 3973 3998
+)
+"src/oper.ml" 148 4017 4051 "src/oper.ml" 148 4017 4053
+type(
+  Vertex_Set.elt
+)
+ident(
+  int_ref v' "src/oper.ml" 148 4017 4028 "src/oper.ml" 148 4017 4030
+)
+"src/oper.ml" 148 4017 4039 "src/oper.ml" 148 4017 4053
+call(
+  stack
+)
+type(
+  bool
+)
+"src/oper.ml" 148 4017 4059 "src/oper.ml" 148 4017 4060
+type(
+  Vertex_Set.t
+)
+ident(
+  int_ref s "src/oper.ml" 148 4017 4031 "src/oper.ml" 148 4017 4032
+)
+"src/oper.ml" 148 4017 4066 "src/oper.ml" 148 4017 4080
+type(
+  Vertex_Set.elt -> Vertex_Set.t -> Vertex_Set.t
+)
+ident(
+  ext_ref Vertex_Set.add
+)
+"src/oper.ml" 148 4017 4081 "src/oper.ml" 148 4017 4083
+type(
+  Vertex_Set.elt
+)
+ident(
+  int_ref v' "src/oper.ml" 148 4017 4028 "src/oper.ml" 148 4017 4030
+)
+"src/oper.ml" 148 4017 4084 "src/oper.ml" 148 4017 4085
+type(
+  Vertex_Set.t
+)
+ident(
+  int_ref s "src/oper.ml" 148 4017 4031 "src/oper.ml" 148 4017 4032
+)
+"src/oper.ml" 148 4017 4066 "src/oper.ml" 148 4017 4085
+call(
+  tail
+)
+type(
+  Vertex_Set.t
+)
+"src/oper.ml" 148 4017 4036 "src/oper.ml" 148 4017 4085
+type(
+  Vertex_Set.t
+)
+"src/oper.ml" 148 4017 4023 "src/oper.ml" 148 4017 4086
+type(
+  Vertex_Set.elt -> Vertex_Set.t -> Vertex_Set.t
+)
+"src/oper.ml" 149 4087 4093 "src/oper.ml" 149 4087 4094
+type(
+  G.t
+)
+ident(
+  int_ref g "src/oper.ml" 146 3973 3995 "src/oper.ml" 146 3973 3996
+)
+"src/oper.ml" 149 4087 4095 "src/oper.ml" 149 4087 4096
+type(
+  G.V.t
+)
+ident(
+  int_ref v "src/oper.ml" 146 3973 3997 "src/oper.ml" 146 3973 3998
+)
+"src/oper.ml" 149 4087 4097 "src/oper.ml" 149 4087 4113
+type(
+  Vertex_Set.t
+)
+ident(
+  ext_ref Vertex_Set.empty
+)
+"src/oper.ml" 147 4001 4005 "src/oper.ml" 149 4087 4113
+call(
+  tail
+)
+type(
+  Vertex_Set.t
+)
+"src/oper.ml" 151 4115 4121 "src/oper.ml" 151 4115 4137
+type(
+  G.t -> G.V.t -> G.V.t list
+)
+ident(
+  def list_from_vertex "src/oper.ml" 163 4353 4355 "src/oper.ml" 173 4725 4728
+)
+"src/oper.ml" 151 4115 4138 "src/oper.ml" 151 4115 4139
+type(
+  G.t
+)
+ident(
+  def g "src/oper.ml" 151 4115 4140 "src/oper.ml" 161 4331 4351
+)
+"src/oper.ml" 151 4115 4140 "src/oper.ml" 151 4115 4141
+type(
+  G.V.t
+)
+ident(
+  def v "src/oper.ml" 152 4144 4148 "src/oper.ml" 161 4331 4351
+)
+"src/oper.ml" 152 4144 4156 "src/oper.ml" 152 4144 4159
+type(
+  G.V.t list -> G.V.t list
+)
+"src/oper.ml" 153 4171 4179 "src/oper.ml" 153 4171 4181
+type(
+  G.V.t list
+)
+"src/oper.ml" 153 4171 4185 "src/oper.ml" 153 4171 4187
+type(
+  G.V.t list
+)
+"src/oper.ml" 154 4188 4196 "src/oper.ml" 154 4188 4198
+type(
+  G.V.t
+)
+ident(
+  def v' "src/oper.ml" 155 4207 4210 "src/oper.ml" 159 4307 4323
+)
+"src/oper.ml" 154 4188 4202 "src/oper.ml" 154 4188 4203
+type(
+  G.V.t list
+)
+ident(
+  def l "src/oper.ml" 155 4207 4210 "src/oper.ml" 159 4307 4323
+)
+"src/oper.ml" 154 4188 4196 "src/oper.ml" 154 4188 4203
+type(
+  G.V.t list
+)
+"src/oper.ml" 155 4207 4213 "src/oper.ml" 155 4207 4222
+type(
+  G.V.t -> G.V.t -> bool
+)
+ident(
+  ext_ref G.V.equal
+)
+"src/oper.ml" 155 4207 4223 "src/oper.ml" 155 4207 4224
+type(
+  G.V.t
+)
+ident(
+  int_ref v "src/oper.ml" 151 4115 4140 "src/oper.ml" 151 4115 4141
+)
+"src/oper.ml" 155 4207 4225 "src/oper.ml" 155 4207 4227
+type(
+  G.V.t
+)
+ident(
+  int_ref v' "src/oper.ml" 154 4188 4196 "src/oper.ml" 154 4188 4198
+)
+"src/oper.ml" 155 4207 4213 "src/oper.ml" 155 4207 4227
+call(
+  stack
+)
+type(
+  bool
+)
+"src/oper.ml" 156 4239 4252 "src/oper.ml" 156 4239 4255
+type(
+  bool -> bool
+)
+ident(
+  ext_ref Pervasives.not
+)
+"src/oper.ml" 156 4239 4257 "src/oper.ml" 156 4239 4268
+type(
+  (G.V.t -> bool) -> G.V.t list -> bool
+)
+ident(
+  ext_ref List.exists
+)
+"src/oper.ml" 156 4239 4270 "src/oper.ml" 156 4239 4279
+type(
+  G.V.t -> G.V.t -> bool
+)
+ident(
+  ext_ref G.V.equal
+)
+"src/oper.ml" 156 4239 4280 "src/oper.ml" 156 4239 4281
+type(
+  G.V.t
+)
+ident(
+  int_ref v "src/oper.ml" 151 4115 4140 "src/oper.ml" 151 4115 4141
+)
+"src/oper.ml" 156 4239 4269 "src/oper.ml" 156 4239 4282
+call(
+  stack
+)
+type(
+  G.V.t -> bool
+)
+"src/oper.ml" 156 4239 4283 "src/oper.ml" 156 4239 4284
+type(
+  G.V.t list
+)
+ident(
+  int_ref l "src/oper.ml" 154 4188 4202 "src/oper.ml" 154 4188 4203
+)
+"src/oper.ml" 156 4239 4256 "src/oper.ml" 156 4239 4285
+call(
+  stack
+)
+type(
+  bool
+)
+"src/oper.ml" 156 4239 4251 "src/oper.ml" 156 4239 4286
+type(
+  bool
+)
+"src/oper.ml" 156 4239 4244 "src/oper.ml" 156 4239 4286
+type(
+  unit
+)
+"src/oper.ml" 157 4288 4293 "src/oper.ml" 157 4288 4294
+type(
+  G.V.t list
+)
+ident(
+  int_ref l "src/oper.ml" 154 4188 4202 "src/oper.ml" 154 4188 4203
+)
+"src/oper.ml" 155 4207 4233 "src/oper.ml" 158 4295 4301
+type(
+  G.V.t list
+)
+"src/oper.ml" 159 4307 4312 "src/oper.ml" 159 4307 4314
+type(
+  G.V.t
+)
+ident(
+  int_ref v' "src/oper.ml" 154 4188 4196 "src/oper.ml" 154 4188 4198
+)
+"src/oper.ml" 159 4307 4318 "src/oper.ml" 159 4307 4321
+type(
+  G.V.t list -> G.V.t list
+)
+ident(
+  int_ref aux "src/oper.ml" 152 4144 4156 "src/oper.ml" 152 4144 4159
+)
+"src/oper.ml" 159 4307 4322 "src/oper.ml" 159 4307 4323
+type(
+  G.V.t list
+)
+ident(
+  int_ref l "src/oper.ml" 154 4188 4202 "src/oper.ml" 154 4188 4203
+)
+"src/oper.ml" 159 4307 4318 "src/oper.ml" 159 4307 4323
+call(
+  stack
+)
+type(
+  G.V.t list
+)
+"src/oper.ml" 159 4307 4312 "src/oper.ml" 159 4307 4323
+type(
+  G.V.t list
+)
+"src/oper.ml" 155 4207 4210 "src/oper.ml" 159 4307 4323
+type(
+  G.V.t list
+)
+"src/oper.ml" 152 4144 4162 "src/oper.ml" 159 4307 4323
+type(
+  G.V.t list -> G.V.t list
+)
+"src/oper.ml" 161 4331 4335 "src/oper.ml" 161 4331 4338
+type(
+  G.V.t list -> G.V.t list
+)
+ident(
+  int_ref aux "src/oper.ml" 152 4144 4156 "src/oper.ml" 152 4144 4159
+)
+"src/oper.ml" 161 4331 4340 "src/oper.ml" 161 4331 4346
+type(
+  G.t -> G.V.t -> G.V.t list
+)
+ident(
+  ext_ref G.succ
+)
+"src/oper.ml" 161 4331 4347 "src/oper.ml" 161 4331 4348
+type(
+  G.t
+)
+ident(
+  int_ref g "src/oper.ml" 151 4115 4138 "src/oper.ml" 151 4115 4139
+)
+"src/oper.ml" 161 4331 4349 "src/oper.ml" 161 4331 4350
+type(
+  G.V.t
+)
+ident(
+  int_ref v "src/oper.ml" 151 4115 4140 "src/oper.ml" 151 4115 4141
+)
+"src/oper.ml" 161 4331 4339 "src/oper.ml" 161 4331 4351
+call(
+  stack
+)
+type(
+  G.V.t list
+)
+"src/oper.ml" 161 4331 4335 "src/oper.ml" 161 4331 4351
+call(
+  tail
+)
+type(
+  G.V.t list
+)
+"src/oper.ml" 152 4144 4148 "src/oper.ml" 161 4331 4351
+type(
+  G.V.t list
+)
+"src/oper.ml" 163 4353 4359 "src/oper.ml" 163 4353 4376
+type(
+  G.t -> Vertex_Set.elt list -> Vertex_Set.t
+)
+ident(
+  def set_from_vertices "src/oper.ml" 171 4649 4651 "src/oper.ml" 173 4725 4728
+)
+"src/oper.ml" 163 4353 4377 "src/oper.ml" 163 4353 4378
+type(
+  G.t
+)
+ident(
+  def g "src/oper.ml" 163 4353 4379 "src/oper.ml" 169 4599 4647
+)
+"src/oper.ml" 163 4353 4379 "src/oper.ml" 163 4353 4380
+type(
+  Vertex_Set.elt list
+)
+ident(
+  def l "src/oper.ml" 164 4383 4387 "src/oper.ml" 169 4599 4647
+)
+"src/oper.ml" 164 4383 4391 "src/oper.ml" 164 4383 4400
+type(
+  (Vertex_Set.t -> Vertex_Set.elt -> Vertex_Set.t) -> Vertex_Set.t
+)
+"src/oper.ml" 164 4383 4401 "src/oper.ml" 164 4383 4402
+type(
+  Vertex_Set.t -> Vertex_Set.elt -> Vertex_Set.t
+)
+ident(
+  def f "src/oper.ml" 164 4383 4405 "src/oper.ml" 164 4383 4440
+)
+"src/oper.ml" 164 4383 4405 "src/oper.ml" 164 4383 4419
+type(
+  (Vertex_Set.t -> Vertex_Set.elt -> Vertex_Set.t) ->
+  Vertex_Set.t -> Vertex_Set.elt list -> Vertex_Set.t
+)
+ident(
+  ext_ref List.fold_left
+)
+"src/oper.ml" 164 4383 4420 "src/oper.ml" 164 4383 4421
+type(
+  Vertex_Set.t -> Vertex_Set.elt -> Vertex_Set.t
+)
+ident(
+  int_ref f "src/oper.ml" 164 4383 4401 "src/oper.ml" 164 4383 4402
+)
+"src/oper.ml" 164 4383 4422 "src/oper.ml" 164 4383 4438
+type(
+  Vertex_Set.t
+)
+ident(
+  ext_ref Vertex_Set.empty
+)
+"src/oper.ml" 164 4383 4439 "src/oper.ml" 164 4383 4440
+type(
+  Vertex_Set.elt list
+)
+ident(
+  int_ref l "src/oper.ml" 163 4353 4379 "src/oper.ml" 163 4353 4380
+)
+"src/oper.ml" 164 4383 4405 "src/oper.ml" 164 4383 4440
+call(
+  tail
+)
+type(
+  Vertex_Set.t
+)
+"src/oper.ml" 165 4444 4452 "src/oper.ml" 165 4444 4460
+type(
+  Vertex_Set.t
+)
+"src/oper.ml" 165 4444 4463 "src/oper.ml" 165 4444 4472
+type(
+  (Vertex_Set.t -> Vertex_Set.elt -> Vertex_Set.t) -> Vertex_Set.t
+)
+ident(
+  int_ref fold_left "src/oper.ml" 164 4383 4391 "src/oper.ml" 164 4383 4400
+)
+"src/oper.ml" 165 4444 4478 "src/oper.ml" 165 4444 4479
+type(
+  Vertex_Set.t
+)
+ident(
+  def s "src/oper.ml" 165 4444 4480 "src/oper.ml" 165 4444 4503
+)
+"src/oper.ml" 165 4444 4480 "src/oper.ml" 165 4444 4481
+type(
+  Vertex_Set.elt
+)
+ident(
+  def v "src/oper.ml" 165 4444 4485 "src/oper.ml" 165 4444 4503
+)
+"src/oper.ml" 165 4444 4485 "src/oper.ml" 165 4444 4499
+type(
+  Vertex_Set.elt -> Vertex_Set.t -> Vertex_Set.t
+)
+ident(
+  ext_ref Vertex_Set.add
+)
+"src/oper.ml" 165 4444 4500 "src/oper.ml" 165 4444 4501
+type(
+  Vertex_Set.elt
+)
+ident(
+  int_ref v "src/oper.ml" 165 4444 4480 "src/oper.ml" 165 4444 4481
+)
+"src/oper.ml" 165 4444 4502 "src/oper.ml" 165 4444 4503
+type(
+  Vertex_Set.t
+)
+ident(
+  int_ref s "src/oper.ml" 165 4444 4478 "src/oper.ml" 165 4444 4479
+)
+"src/oper.ml" 165 4444 4485 "src/oper.ml" 165 4444 4503
+call(
+  tail
+)
+type(
+  Vertex_Set.t
+)
+"src/oper.ml" 165 4444 4473 "src/oper.ml" 165 4444 4504
+type(
+  Vertex_Set.t -> Vertex_Set.elt -> Vertex_Set.t
+)
+"src/oper.ml" 165 4444 4463 "src/oper.ml" 165 4444 4504
+call(
+  stack
+)
+type(
+  Vertex_Set.t
+)
+"src/oper.ml" 166 4508 4516 "src/oper.ml" 166 4508 4519
+type(
+  Vertex_Set.elt -> Vertex_Set.t -> Vertex_Set.t
+)
+"src/oper.ml" 166 4508 4520 "src/oper.ml" 166 4508 4521
+type(
+  Vertex_Set.elt
+)
+ident(
+  def x "src/oper.ml" 166 4508 4522 "src/oper.ml" 167 4526 4591
+)
+"src/oper.ml" 166 4508 4522 "src/oper.ml" 166 4508 4523
+type(
+  Vertex_Set.t
+)
+ident(
+  def s "src/oper.ml" 167 4526 4532 "src/oper.ml" 167 4526 4591
+)
+"src/oper.ml" 167 4526 4535 "src/oper.ml" 167 4526 4549
+type(
+  Vertex_Set.elt -> Vertex_Set.t -> bool
+)
+ident(
+  ext_ref Vertex_Set.mem
+)
+"src/oper.ml" 167 4526 4550 "src/oper.ml" 167 4526 4551
+type(
+  Vertex_Set.elt
+)
+ident(
+  int_ref x "src/oper.ml" 166 4508 4520 "src/oper.ml" 166 4508 4521
+)
+"src/oper.ml" 167 4526 4552 "src/oper.ml" 167 4526 4560
+type(
+  Vertex_Set.t
+)
+ident(
+  int_ref env_init "src/oper.ml" 165 4444 4452 "src/oper.ml" 165 4444 4460
+)
+"src/oper.ml" 167 4526 4535 "src/oper.ml" 167 4526 4560
+call(
+  stack
+)
+type(
+  bool
+)
+"src/oper.ml" 167 4526 4566 "src/oper.ml" 167 4526 4567
+type(
+  Vertex_Set.t
+)
+ident(
+  int_ref s "src/oper.ml" 166 4508 4522 "src/oper.ml" 166 4508 4523
+)
+"src/oper.ml" 167 4526 4573 "src/oper.ml" 167 4526 4587
+type(
+  Vertex_Set.elt -> Vertex_Set.t -> Vertex_Set.t
+)
+ident(
+  ext_ref Vertex_Set.add
+)
+"src/oper.ml" 167 4526 4588 "src/oper.ml" 167 4526 4589
+type(
+  Vertex_Set.elt
+)
+ident(
+  int_ref x "src/oper.ml" 166 4508 4520 "src/oper.ml" 166 4508 4521
+)
+"src/oper.ml" 167 4526 4590 "src/oper.ml" 167 4526 4591
+type(
+  Vertex_Set.t
+)
+ident(
+  int_ref s "src/oper.ml" 166 4508 4522 "src/oper.ml" 166 4508 4523
+)
+"src/oper.ml" 167 4526 4573 "src/oper.ml" 167 4526 4591
+call(
+  tail
+)
+type(
+  Vertex_Set.t
+)
+"src/oper.ml" 167 4526 4532 "src/oper.ml" 167 4526 4591
+type(
+  Vertex_Set.t
+)
+"src/oper.ml" 169 4599 4603 "src/oper.ml" 169 4599 4612
+type(
+  (Vertex_Set.t -> Vertex_Set.elt -> Vertex_Set.t) -> Vertex_Set.t
+)
+ident(
+  int_ref fold_left "src/oper.ml" 164 4383 4391 "src/oper.ml" 164 4383 4400
+)
+"src/oper.ml" 169 4599 4618 "src/oper.ml" 169 4599 4619
+type(
+  Vertex_Set.t
+)
+ident(
+  def s "src/oper.ml" 169 4599 4620 "src/oper.ml" 169 4599 4646
+)
+"src/oper.ml" 169 4599 4620 "src/oper.ml" 169 4599 4621
+type(
+  Vertex_Set.elt
+)
+ident(
+  def v "src/oper.ml" 169 4599 4625 "src/oper.ml" 169 4599 4646
+)
+"src/oper.ml" 169 4599 4625 "src/oper.ml" 169 4599 4636
+type(
+  (Vertex_Set.elt -> Vertex_Set.t -> Vertex_Set.t) ->
+  G.t -> Vertex_Set.elt -> Vertex_Set.t -> Vertex_Set.t
+)
+ident(
+  ext_ref G.fold_succ
+)
+"src/oper.ml" 169 4599 4637 "src/oper.ml" 169 4599 4640
+type(
+  Vertex_Set.elt -> Vertex_Set.t -> Vertex_Set.t
+)
+ident(
+  int_ref add "src/oper.ml" 166 4508 4516 "src/oper.ml" 166 4508 4519
+)
+"src/oper.ml" 169 4599 4641 "src/oper.ml" 169 4599 4642
+type(
+  G.t
+)
+ident(
+  int_ref g "src/oper.ml" 163 4353 4377 "src/oper.ml" 163 4353 4378
+)
+"src/oper.ml" 169 4599 4643 "src/oper.ml" 169 4599 4644
+type(
+  Vertex_Set.elt
+)
+ident(
+  int_ref v "src/oper.ml" 169 4599 4620 "src/oper.ml" 169 4599 4621
+)
+"src/oper.ml" 169 4599 4645 "src/oper.ml" 169 4599 4646
+type(
+  Vertex_Set.t
+)
+ident(
+  int_ref s "src/oper.ml" 169 4599 4618 "src/oper.ml" 169 4599 4619
+)
+"src/oper.ml" 169 4599 4625 "src/oper.ml" 169 4599 4646
+call(
+  tail
+)
+type(
+  Vertex_Set.t
+)
+"src/oper.ml" 169 4599 4613 "src/oper.ml" 169 4599 4647
+type(
+  Vertex_Set.t -> Vertex_Set.elt -> Vertex_Set.t
+)
+"src/oper.ml" 169 4599 4603 "src/oper.ml" 169 4599 4647
+call(
+  tail
+)
+type(
+  Vertex_Set.t
+)
+"src/oper.ml" 166 4508 4512 "src/oper.ml" 169 4599 4647
+type(
+  Vertex_Set.t
+)
+"src/oper.ml" 165 4444 4448 "src/oper.ml" 169 4599 4647
+type(
+  Vertex_Set.t
+)
+"src/oper.ml" 164 4383 4387 "src/oper.ml" 169 4599 4647
+type(
+  Vertex_Set.t
+)
+"src/oper.ml" 171 4649 4655 "src/oper.ml" 171 4649 4673
+type(
+  G.t -> Vertex_Set.elt list -> Vertex_Set.elt list
+)
+ident(
+  def list_from_vertices "src/oper.ml" 171 4649 4723 "src/oper.ml" 173 4725 4728
+)
+"src/oper.ml" 171 4649 4674 "src/oper.ml" 171 4649 4675
+type(
+  G.t
+)
+ident(
+  def g "src/oper.ml" 171 4649 4676 "src/oper.ml" 171 4649 4723
+)
+"src/oper.ml" 171 4649 4676 "src/oper.ml" 171 4649 4677
+type(
+  Vertex_Set.elt list
+)
+ident(
+  def l "src/oper.ml" 171 4649 4680 "src/oper.ml" 171 4649 4723
+)
+"src/oper.ml" 171 4649 4680 "src/oper.ml" 171 4649 4699
+type(
+  Vertex_Set.t -> Vertex_Set.elt list
+)
+ident(
+  ext_ref Vertex_Set.elements
+)
+"src/oper.ml" 171 4649 4701 "src/oper.ml" 171 4649 4718
+type(
+  G.t -> Vertex_Set.elt list -> Vertex_Set.t
+)
+ident(
+  int_ref set_from_vertices "src/oper.ml" 163 4353 4359 "src/oper.ml" 163 4353 4376
+)
+"src/oper.ml" 171 4649 4719 "src/oper.ml" 171 4649 4720
+type(
+  G.t
+)
+ident(
+  int_ref g "src/oper.ml" 171 4649 4674 "src/oper.ml" 171 4649 4675
+)
+"src/oper.ml" 171 4649 4721 "src/oper.ml" 171 4649 4722
+type(
+  Vertex_Set.elt list
+)
+ident(
+  int_ref l "src/oper.ml" 171 4649 4676 "src/oper.ml" 171 4649 4677
+)
+"src/oper.ml" 171 4649 4700 "src/oper.ml" 171 4649 4723
+call(
+  stack
+)
+type(
+  Vertex_Set.t
+)
+"src/oper.ml" 171 4649 4680 "src/oper.ml" 171 4649 4723
+call(
+  tail
+)
+type(
+  Vertex_Set.elt list
+)

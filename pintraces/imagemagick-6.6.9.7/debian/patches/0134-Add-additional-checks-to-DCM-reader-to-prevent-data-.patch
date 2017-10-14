@@ -1,0 +1,70 @@
+Backport of:
+
+From 94ec5c6dedba5566d032fb8dd1d28dc620c2c2fe Mon Sep 17 00:00:00 2001
+From: Cristy <urban-warrior@imagemagick.org>
+Date: Mon, 30 May 2016 07:51:39 -0400
+Subject: [PATCH] Add additional checks to DCM reader to prevent data-driven
+ faults
+MIME-Version: 1.0
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 8bit
+
+bug report from Hanno Böck
+
+This fix CVE-2016-5689, CVE-2016-5690, CVE-2016-5691
+
+bug-debian: https://bug.debian.org/833044
+bug-debian: https://bug.debian.org/833043
+bug-debian: https://bug.debian.org/833042
+origin; upstream, https://github.com/ImageMagick/ImageMagick/commit/dd84447b63a71fa8c3f47071b09454efc667767b
+---
+ coders/dcm.c | 15 +++++++++++----
+ 1 file changed, 11 insertions(+), 4 deletions(-)
+
+Index: imagemagick-6.6.9.7/coders/dcm.c
+===================================================================
+--- imagemagick-6.6.9.7.orig/coders/dcm.c	2016-11-15 15:44:47.934284745 -0500
++++ imagemagick-6.6.9.7/coders/dcm.c	2016-11-15 15:44:47.930284697 -0500
+@@ -3166,6 +3166,8 @@
+             /*
+               Photometric interpretation.
+             */
++            if (data == (unsigned char *) NULL)
++              break;
+             for (i=0; i < (ssize_t) MagickMin(length,MaxTextExtent-1); i++)
+               photometric[i]=(char) data[i];
+             photometric[i]='\0';
+@@ -3187,6 +3189,8 @@
+             /*
+               Number of frames.
+             */
++            if (data == (unsigned char *) NULL)
++              break;
+             number_scenes=StringToUnsignedLong((char *) data);
+             break;
+           }
+@@ -3604,7 +3608,7 @@
+       if (scale == (Quantum *) NULL)
+         ThrowReaderException(ResourceLimitError,"MemoryAllocationFailed");
+       range=GetQuantumRange(depth);
+-      for (i=0; i < (ssize_t) (GetQuantumRange(depth)+1); i++)
++      for (i=0; i <= (ssize_t) GetQuantumRange(depth); i++)
+         scale[i]=ScaleAnyToQuantum((size_t) i,range);
+     }
+   if (image->compression == RLECompression)
+@@ -3910,9 +3914,12 @@
+                 pixel.blue&=mask;
+                 if (scale != (Quantum *) NULL)
+                   {
+-                    pixel.red=scale[pixel.red];
+-                    pixel.green=scale[pixel.green];
+-                    pixel.blue=scale[pixel.blue];
++                    if (pixel.red <= GetQuantumRange(depth))
++                      pixel.red=scale[pixel.red];
++                    if (pixel.green <= GetQuantumRange(depth))
++                      pixel.green=scale[pixel.green];
++                    if (pixel.blue <= GetQuantumRange(depth))
++                      pixel.blue=scale[pixel.blue];
+                   }
+               }
+             SetRedPixelComponent(q,pixel.red);

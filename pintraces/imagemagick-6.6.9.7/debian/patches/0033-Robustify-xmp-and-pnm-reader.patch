@@ -1,0 +1,172 @@
+Backport of:
+
+From 7f7b0f8e5eb8f4180e31ed93c65f0e1dd20050cb Mon Sep 17 00:00:00 2001
+From: cristy <cristy@aa41f4f7-0bf4-0310-aa73-e5a19afd5a74>
+Date: Mon, 15 Dec 2014 01:32:48 +0000
+Subject: [PATCH] Robustify xmp and pnm reader
+
+git-svn-id: https://subversion.imagemagick.org/subversion/ImageMagick/branches/ImageMagick-6@17240 aa41f4f7-0bf4-0310-aa73-e5a19afd5a74
+origin: http://trac.imagemagick.org/changeset/17245 and http://trac.imagemagick.org/changeset/17240 and  http://trac.imagemagick.org/changeset/17248
+---
+ coders/pnm.c |  8 +++----
+ coders/xbm.c | 73 +++++++++++++++++++++++++++++++-----------------------------
+ 2 files changed, 41 insertions(+), 40 deletions(-)
+
+Index: imagemagick-6.6.9.7/coders/pnm.c
+===================================================================
+--- imagemagick-6.6.9.7.orig/coders/pnm.c	2016-11-15 12:55:42.534406308 -0500
++++ imagemagick-6.6.9.7/coders/pnm.c	2016-11-15 12:55:42.530406258 -0500
+@@ -201,7 +201,7 @@
+           return(0);
+         continue;
+       }
+-  } while (isdigit(c) == MagickFalse);
++  } while (isdigit(c) == 0);
+   if (comment != (char *) NULL)
+     {
+       (void) SetImageProperty(image,"comment",comment);
+@@ -218,13 +218,11 @@
+     if (value > (unsigned int) (INT_MAX/10))
+       break;
+     value*=10;
+-    if (value > (INT_MAX-c))
++    if (value > (INT_MAX-(c-(int) '0')))
+       break;
+     value+=c-(int) '0';
+     c=ReadBlobByte(image);
+-    if (c == EOF)
+-      return(value);
+-  } while (isdigit(c) != MagickFalse);
++  } while (isdigit(c) != 0);
+   return(value);
+ }
+ 
+Index: imagemagick-6.6.9.7/coders/xbm.c
+===================================================================
+--- imagemagick-6.6.9.7.orig/coders/xbm.c	2016-11-15 12:55:42.534406308 -0500
++++ imagemagick-6.6.9.7/coders/xbm.c	2016-11-15 12:55:42.530406258 -0500
+@@ -128,33 +128,38 @@
+ %
+ */
+ 
+-static int XBMInteger(Image *image,short int *hex_digits)
+-{
++static unsigned int XBMInteger(Image *image,short int *hex_digits)
++{ 
+   int
+-    c,
+-    flag,
++    c;
++  
++  unsigned int
+     value;
+-
+-  value=0;
+-  flag=0;
+-  for ( ; ; )
+-  {
++  
++  /*
++    Skip any leading whitespace.
++  */
++  do
++  { 
+     c=ReadBlobByte(image);
+     if (c == EOF)
+-      {
+-        value=(-1);
+-        break;
+-      }
++      return(0);
++  } while (hex_digits[c] < 0);
++  /*
++    Evaluate number.
++  */
++  value=0;
++  do
++  { 
++    if (value > (unsigned int) (INT_MAX/10))
++      break;
++    value*=16;
+     c&=0xff;
+-    if (isxdigit(c) != MagickFalse)
+-      {
+-        value=(int) ((size_t) value << 4)+hex_digits[c];
+-        flag++;
+-        continue;
+-      }
+-    if ((hex_digits[c]) < 0 && (flag != 0))
++    if (value > (INT_MAX-hex_digits[c]))
+       break;
+-  }
++    value+=hex_digits[c];
++    c=ReadBlobByte(image);
++  } while (hex_digits[c] >= 0);
+   return(value);
+ }
+ 
+@@ -186,23 +191,21 @@
+   short int
+     hex_digits[256];
+ 
+-  size_t
+-    bit,
+-    byte,
+-    bytes_per_line,
+-    length,
+-    padding,
+-    value,
+-    version;
+-
+   ssize_t
+     y;
+ 
+   unsigned char
+     *data;
+ 
+-  unsigned long
++  unsigned int
++    bit,
++    byte,
++    bytes_per_line,
+     height,
++    length,
++    padding,
++    value,
++    version,
+     width;
+ 
+   /*
+@@ -228,12 +231,12 @@
+   width=0;
+   height=0;
+   while (ReadBlobString(image,buffer) != (char *) NULL)
+-    if (sscanf(buffer,"#define %s %lu",name,&width) == 2)
++    if (sscanf(buffer,"#define %s %u",name,&width) == 2)
+       if ((strlen(name) >= 6) &&
+           (LocaleCompare(name+strlen(name)-6,"_width") == 0))
+         break;
+   while (ReadBlobString(image,buffer) != (char *) NULL)
+-    if (sscanf(buffer,"#define %s %lu",name,&height) == 2)
++    if (sscanf(buffer,"#define %s %u",name,&height) == 2)
+       if ((strlen(name) >= 7) &&
+           (LocaleCompare(name+strlen(name)-7,"_height") == 0))
+         break;
+@@ -336,7 +339,7 @@
+   if (version == 10)
+     for (i=0; i < (ssize_t) (bytes_per_line*image->rows); (i+=2))
+     {
+-      value=(size_t) XBMInteger(image,hex_digits);
++      value=XBMInteger(image,hex_digits);
+       *p++=(unsigned char) value;
+       if ((padding == 0) || (((i+2) % bytes_per_line) != 0))
+         *p++=(unsigned char) (value >> 8);
+@@ -344,7 +347,7 @@
+   else
+     for (i=0; i < (ssize_t) (bytes_per_line*image->rows); i++)
+     {
+-      value=(size_t) XBMInteger(image,hex_digits);
++      value=XBMInteger(image,hex_digits);
+       *p++=(unsigned char) value;
+     }
+   /*

@@ -1,0 +1,4139 @@
+"lib/heap.ml" 41 1912 1918 "lib/heap.ml" 41 1912 1924
+type(
+  int -> t
+)
+ident(
+  def create "lib/heap.ml" 45 2003 2005 "lib/heap.ml" 121 3662 3665
+)
+"lib/heap.ml" 41 1912 1925 "lib/heap.ml" 41 1912 1926
+type(
+  int
+)
+ident(
+  def n "lib/heap.ml" 42 1930 1934 "lib/heap.ml" 43 1971 2001
+)
+"lib/heap.ml" 42 1930 1937 "lib/heap.ml" 42 1930 1938
+type(
+  int
+)
+ident(
+  int_ref n "lib/heap.ml" 41 1912 1925 "lib/heap.ml" 41 1912 1926
+)
+"lib/heap.ml" 42 1930 1939 "lib/heap.ml" 42 1930 1941
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( <= )
+)
+"lib/heap.ml" 42 1930 1942 "lib/heap.ml" 42 1930 1943
+type(
+  int
+)
+"lib/heap.ml" 42 1930 1937 "lib/heap.ml" 42 1930 1943
+type(
+  bool
+)
+"lib/heap.ml" 42 1930 1949 "lib/heap.ml" 42 1930 1960
+type(
+  string -> unit
+)
+ident(
+  ext_ref Pervasives.invalid_arg
+)
+"lib/heap.ml" 42 1930 1961 "lib/heap.ml" 42 1930 1969
+type(
+  string
+)
+"lib/heap.ml" 42 1930 1949 "lib/heap.ml" 42 1930 1969
+call(
+  stack
+)
+type(
+  unit
+)
+"lib/heap.ml" 42 1930 1934 "lib/heap.ml" 42 1930 1969
+type(
+  unit
+)
+"lib/heap.ml" 43 1971 1984 "lib/heap.ml" 43 1971 1985
+type(
+  int -> int
+)
+ident(
+  ext_ref Pervasives.( ~- )
+)
+"lib/heap.ml" 43 1971 1985 "lib/heap.ml" 43 1971 1986
+type(
+  int
+)
+ident(
+  int_ref n "lib/heap.ml" 41 1912 1925 "lib/heap.ml" 41 1912 1926
+)
+"lib/heap.ml" 43 1971 1984 "lib/heap.ml" 43 1971 1986
+type(
+  int
+)
+"lib/heap.ml" 43 1971 1995 "lib/heap.ml" 43 1971 1999
+type(
+  X.t array
+)
+"lib/heap.ml" 43 1971 1975 "lib/heap.ml" 43 1971 2001
+type(
+  t
+)
+"lib/heap.ml" 42 1930 1934 "lib/heap.ml" 43 1971 2001
+type(
+  t
+)
+"lib/heap.ml" 45 2003 2009 "lib/heap.ml" 45 2003 2017
+type(
+  t -> bool
+)
+ident(
+  def is_empty "lib/heap.ml" 49 2080 2082 "lib/heap.ml" 121 3662 3665
+)
+"lib/heap.ml" 45 2003 2018 "lib/heap.ml" 45 2003 2019
+type(
+  t
+)
+ident(
+  def h "lib/heap.ml" 45 2003 2022 "lib/heap.ml" 45 2003 2033
+)
+"lib/heap.ml" 45 2003 2022 "lib/heap.ml" 45 2003 2023
+type(
+  t
+)
+ident(
+  int_ref h "lib/heap.ml" 45 2003 2018 "lib/heap.ml" 45 2003 2019
+)
+"lib/heap.ml" 45 2003 2022 "lib/heap.ml" 45 2003 2028
+type(
+  int
+)
+"lib/heap.ml" 45 2003 2029 "lib/heap.ml" 45 2003 2031
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( <= )
+)
+"lib/heap.ml" 45 2003 2032 "lib/heap.ml" 45 2003 2033
+type(
+  int
+)
+"lib/heap.ml" 45 2003 2022 "lib/heap.ml" 45 2003 2033
+type(
+  bool
+)
+"lib/heap.ml" 49 2080 2086 "lib/heap.ml" 49 2080 2092
+type(
+  t -> unit
+)
+ident(
+  def resize "lib/heap.ml" 58 2266 2268 "lib/heap.ml" 121 3662 3665
+)
+"lib/heap.ml" 49 2080 2093 "lib/heap.ml" 49 2080 2094
+type(
+  t
+)
+ident(
+  def h "lib/heap.ml" 50 2097 2101 "lib/heap.ml" 56 2248 2264
+)
+"lib/heap.ml" 50 2097 2105 "lib/heap.ml" 50 2097 2106
+type(
+  int
+)
+"lib/heap.ml" 50 2097 2109 "lib/heap.ml" 50 2097 2110
+type(
+  t
+)
+ident(
+  int_ref h "lib/heap.ml" 49 2080 2093 "lib/heap.ml" 49 2080 2094
+)
+"lib/heap.ml" 50 2097 2109 "lib/heap.ml" 50 2097 2115
+type(
+  int
+)
+"lib/heap.ml" 51 2119 2131 "lib/heap.ml" 51 2119 2132
+type(
+  int
+)
+ident(
+  int_ref n "lib/heap.ml" 50 2097 2105 "lib/heap.ml" 50 2097 2106
+)
+"lib/heap.ml" 51 2119 2133 "lib/heap.ml" 51 2119 2134
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( > )
+)
+"lib/heap.ml" 51 2119 2135 "lib/heap.ml" 51 2119 2136
+type(
+  int
+)
+"lib/heap.ml" 51 2119 2130 "lib/heap.ml" 51 2119 2137
+type(
+  bool
+)
+"lib/heap.ml" 51 2119 2123 "lib/heap.ml" 51 2119 2137
+type(
+  unit
+)
+"lib/heap.ml" 52 2139 2147 "lib/heap.ml" 52 2139 2149
+type(
+  int
+)
+"lib/heap.ml" 52 2139 2152 "lib/heap.ml" 52 2139 2153
+type(
+  int
+)
+"lib/heap.ml" 52 2139 2154 "lib/heap.ml" 52 2139 2155
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( * )
+)
+"lib/heap.ml" 52 2139 2156 "lib/heap.ml" 52 2139 2157
+type(
+  int
+)
+ident(
+  int_ref n "lib/heap.ml" 50 2097 2105 "lib/heap.ml" 50 2097 2106
+)
+"lib/heap.ml" 52 2139 2152 "lib/heap.ml" 52 2139 2157
+type(
+  int
+)
+"lib/heap.ml" 53 2161 2169 "lib/heap.ml" 53 2161 2170
+type(
+  X.t array
+)
+"lib/heap.ml" 53 2161 2173 "lib/heap.ml" 53 2161 2174
+type(
+  t
+)
+ident(
+  int_ref h "lib/heap.ml" 49 2080 2093 "lib/heap.ml" 49 2080 2094
+)
+"lib/heap.ml" 53 2161 2173 "lib/heap.ml" 53 2161 2179
+type(
+  X.t array
+)
+"lib/heap.ml" 54 2183 2191 "lib/heap.ml" 54 2183 2193
+type(
+  X.t array
+)
+"lib/heap.ml" 54 2183 2196 "lib/heap.ml" 54 2183 2208
+type(
+  int -> X.t -> X.t array
+)
+ident(
+  ext_ref Array.create
+)
+"lib/heap.ml" 54 2183 2209 "lib/heap.ml" 54 2183 2211
+type(
+  int
+)
+ident(
+  int_ref n' "lib/heap.ml" 52 2139 2147 "lib/heap.ml" 52 2139 2149
+)
+"lib/heap.ml" 54 2183 2212 "lib/heap.ml" 54 2183 2213
+type(
+  X.t array
+)
+ident(
+  int_ref d "lib/heap.ml" 53 2161 2169 "lib/heap.ml" 53 2161 2170
+)
+"lib/heap.ml" 54 2183 2215 "lib/heap.ml" 54 2183 2216
+type(
+  int
+)
+"lib/heap.ml" 54 2183 2212 "lib/heap.ml" 54 2183 2217
+type(
+  X.t
+)
+"lib/heap.ml" 54 2183 2196 "lib/heap.ml" 54 2183 2217
+type(
+  X.t array
+)
+"lib/heap.ml" 55 2221 2225 "lib/heap.ml" 55 2221 2235
+type(
+  X.t array -> int -> X.t array -> int -> int -> unit
+)
+ident(
+  ext_ref Array.blit
+)
+"lib/heap.ml" 55 2221 2236 "lib/heap.ml" 55 2221 2237
+type(
+  X.t array
+)
+ident(
+  int_ref d "lib/heap.ml" 53 2161 2169 "lib/heap.ml" 53 2161 2170
+)
+"lib/heap.ml" 55 2221 2238 "lib/heap.ml" 55 2221 2239
+type(
+  int
+)
+"lib/heap.ml" 55 2221 2240 "lib/heap.ml" 55 2221 2242
+type(
+  X.t array
+)
+ident(
+  int_ref d' "lib/heap.ml" 54 2183 2191 "lib/heap.ml" 54 2183 2193
+)
+"lib/heap.ml" 55 2221 2243 "lib/heap.ml" 55 2221 2244
+type(
+  int
+)
+"lib/heap.ml" 55 2221 2245 "lib/heap.ml" 55 2221 2246
+type(
+  int
+)
+ident(
+  int_ref n "lib/heap.ml" 50 2097 2105 "lib/heap.ml" 50 2097 2106
+)
+"lib/heap.ml" 55 2221 2225 "lib/heap.ml" 55 2221 2246
+call(
+  stack
+)
+type(
+  unit
+)
+"lib/heap.ml" 56 2248 2252 "lib/heap.ml" 56 2248 2253
+type(
+  t
+)
+ident(
+  int_ref h "lib/heap.ml" 49 2080 2093 "lib/heap.ml" 49 2080 2094
+)
+"lib/heap.ml" 56 2248 2262 "lib/heap.ml" 56 2248 2264
+type(
+  X.t array
+)
+ident(
+  int_ref d' "lib/heap.ml" 54 2183 2191 "lib/heap.ml" 54 2183 2193
+)
+"lib/heap.ml" 56 2248 2252 "lib/heap.ml" 56 2248 2264
+type(
+  unit
+)
+"lib/heap.ml" 55 2221 2225 "lib/heap.ml" 56 2248 2264
+type(
+  unit
+)
+"lib/heap.ml" 54 2183 2187 "lib/heap.ml" 56 2248 2264
+type(
+  unit
+)
+"lib/heap.ml" 53 2161 2165 "lib/heap.ml" 56 2248 2264
+type(
+  unit
+)
+"lib/heap.ml" 52 2139 2143 "lib/heap.ml" 56 2248 2264
+type(
+  unit
+)
+"lib/heap.ml" 51 2119 2123 "lib/heap.ml" 56 2248 2264
+type(
+  unit
+)
+"lib/heap.ml" 50 2097 2101 "lib/heap.ml" 56 2248 2264
+type(
+  unit
+)
+"lib/heap.ml" 58 2266 2272 "lib/heap.ml" 58 2266 2275
+type(
+  t -> X.t -> unit
+)
+ident(
+  def add "lib/heap.ml" 79 2782 2784 "lib/heap.ml" 121 3662 3665
+)
+"lib/heap.ml" 58 2266 2276 "lib/heap.ml" 58 2266 2277
+type(
+  t
+)
+ident(
+  def h "lib/heap.ml" 58 2266 2278 "lib/heap.ml" 77 2761 2780
+)
+"lib/heap.ml" 58 2266 2278 "lib/heap.ml" 58 2266 2279
+type(
+  X.t
+)
+ident(
+  def x "lib/heap.ml" 60 2330 2334 "lib/heap.ml" 77 2761 2780
+)
+"lib/heap.ml" 60 2330 2337 "lib/heap.ml" 60 2330 2338
+type(
+  t
+)
+ident(
+  int_ref h "lib/heap.ml" 58 2266 2276 "lib/heap.ml" 58 2266 2277
+)
+"lib/heap.ml" 60 2330 2337 "lib/heap.ml" 60 2330 2343
+type(
+  int
+)
+"lib/heap.ml" 60 2330 2344 "lib/heap.ml" 60 2330 2345
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( < )
+)
+"lib/heap.ml" 60 2330 2346 "lib/heap.ml" 60 2330 2347
+type(
+  int
+)
+"lib/heap.ml" 60 2330 2337 "lib/heap.ml" 60 2330 2347
+type(
+  bool
+)
+"lib/heap.ml" 61 2359 2365 "lib/heap.ml" 61 2359 2366
+type(
+  t
+)
+ident(
+  int_ref h "lib/heap.ml" 58 2266 2276 "lib/heap.ml" 58 2266 2277
+)
+"lib/heap.ml" 61 2359 2375 "lib/heap.ml" 61 2359 2387
+type(
+  int -> X.t -> X.t array
+)
+ident(
+  ext_ref Array.create
+)
+"lib/heap.ml" 61 2359 2389 "lib/heap.ml" 61 2359 2390
+type(
+  int -> int
+)
+ident(
+  ext_ref Pervasives.( ~- )
+)
+"lib/heap.ml" 61 2359 2391 "lib/heap.ml" 61 2359 2392
+type(
+  t
+)
+ident(
+  int_ref h "lib/heap.ml" 58 2266 2276 "lib/heap.ml" 58 2266 2277
+)
+"lib/heap.ml" 61 2359 2391 "lib/heap.ml" 61 2359 2397
+type(
+  int
+)
+"lib/heap.ml" 61 2359 2388 "lib/heap.ml" 61 2359 2398
+type(
+  int
+)
+"lib/heap.ml" 61 2359 2399 "lib/heap.ml" 61 2359 2400
+type(
+  X.t
+)
+ident(
+  int_ref x "lib/heap.ml" 58 2266 2278 "lib/heap.ml" 58 2266 2279
+)
+"lib/heap.ml" 61 2359 2375 "lib/heap.ml" 61 2359 2400
+type(
+  X.t array
+)
+"lib/heap.ml" 61 2359 2365 "lib/heap.ml" 61 2359 2400
+type(
+  unit
+)
+"lib/heap.ml" 61 2359 2402 "lib/heap.ml" 61 2359 2403
+type(
+  t
+)
+ident(
+  int_ref h "lib/heap.ml" 58 2266 2276 "lib/heap.ml" 58 2266 2277
+)
+"lib/heap.ml" 61 2359 2412 "lib/heap.ml" 61 2359 2413
+type(
+  int
+)
+"lib/heap.ml" 61 2359 2402 "lib/heap.ml" 61 2359 2413
+type(
+  unit
+)
+"lib/heap.ml" 60 2330 2353 "lib/heap.ml" 62 2414 2421
+type(
+  unit
+)
+"lib/heap.ml" 60 2330 2334 "lib/heap.ml" 62 2414 2421
+type(
+  unit
+)
+"lib/heap.ml" 63 2423 2431 "lib/heap.ml" 63 2423 2432
+type(
+  int
+)
+"lib/heap.ml" 63 2423 2435 "lib/heap.ml" 63 2423 2436
+type(
+  t
+)
+ident(
+  int_ref h "lib/heap.ml" 58 2266 2276 "lib/heap.ml" 58 2266 2277
+)
+"lib/heap.ml" 63 2423 2435 "lib/heap.ml" 63 2423 2441
+type(
+  int
+)
+"lib/heap.ml" 65 2474 2481 "lib/heap.ml" 65 2474 2482
+type(
+  int
+)
+ident(
+  int_ref n "lib/heap.ml" 63 2423 2431 "lib/heap.ml" 63 2423 2432
+)
+"lib/heap.ml" 65 2474 2483 "lib/heap.ml" 65 2474 2485
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( == )
+)
+"lib/heap.ml" 65 2474 2486 "lib/heap.ml" 65 2474 2498
+type(
+  X.t array -> int
+)
+ident(
+  ext_ref Array.length
+)
+"lib/heap.ml" 65 2474 2499 "lib/heap.ml" 65 2474 2500
+type(
+  t
+)
+ident(
+  int_ref h "lib/heap.ml" 58 2266 2276 "lib/heap.ml" 58 2266 2277
+)
+"lib/heap.ml" 65 2474 2499 "lib/heap.ml" 65 2474 2505
+type(
+  X.t array
+)
+"lib/heap.ml" 65 2474 2486 "lib/heap.ml" 65 2474 2505
+type(
+  int
+)
+"lib/heap.ml" 65 2474 2481 "lib/heap.ml" 65 2474 2505
+type(
+  bool
+)
+"lib/heap.ml" 65 2474 2511 "lib/heap.ml" 65 2474 2517
+type(
+  t -> unit
+)
+ident(
+  int_ref resize "lib/heap.ml" 49 2080 2086 "lib/heap.ml" 49 2080 2092
+)
+"lib/heap.ml" 65 2474 2518 "lib/heap.ml" 65 2474 2519
+type(
+  t
+)
+ident(
+  int_ref h "lib/heap.ml" 58 2266 2276 "lib/heap.ml" 58 2266 2277
+)
+"lib/heap.ml" 65 2474 2511 "lib/heap.ml" 65 2474 2519
+call(
+  stack
+)
+type(
+  unit
+)
+"lib/heap.ml" 65 2474 2478 "lib/heap.ml" 65 2474 2519
+type(
+  unit
+)
+"lib/heap.ml" 66 2521 2529 "lib/heap.ml" 66 2521 2530
+type(
+  X.t array
+)
+"lib/heap.ml" 66 2521 2533 "lib/heap.ml" 66 2521 2534
+type(
+  t
+)
+ident(
+  int_ref h "lib/heap.ml" 58 2266 2276 "lib/heap.ml" 58 2266 2277
+)
+"lib/heap.ml" 66 2521 2533 "lib/heap.ml" 66 2521 2539
+type(
+  X.t array
+)
+"lib/heap.ml" 68 2579 2591 "lib/heap.ml" 68 2579 2597
+type(
+  int -> unit
+)
+"lib/heap.ml" 68 2579 2598 "lib/heap.ml" 68 2579 2599
+type(
+  int
+)
+ident(
+  def i "lib/heap.ml" 69 2602 2608 "lib/heap.ml" 74 2728 2739
+)
+"lib/heap.ml" 69 2602 2612 "lib/heap.ml" 69 2602 2614
+type(
+  int
+)
+"lib/heap.ml" 69 2602 2618 "lib/heap.ml" 69 2602 2619
+type(
+  int
+)
+ident(
+  int_ref i "lib/heap.ml" 68 2579 2598 "lib/heap.ml" 68 2579 2599
+)
+"lib/heap.ml" 69 2602 2620 "lib/heap.ml" 69 2602 2621
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( - )
+)
+"lib/heap.ml" 69 2602 2622 "lib/heap.ml" 69 2602 2623
+type(
+  int
+)
+"lib/heap.ml" 69 2602 2617 "lib/heap.ml" 69 2602 2624
+type(
+  int
+)
+"lib/heap.ml" 69 2602 2625 "lib/heap.ml" 69 2602 2626
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( / )
+)
+"lib/heap.ml" 69 2602 2627 "lib/heap.ml" 69 2602 2628
+type(
+  int
+)
+"lib/heap.ml" 69 2602 2617 "lib/heap.ml" 69 2602 2628
+type(
+  int
+)
+"lib/heap.ml" 70 2632 2641 "lib/heap.ml" 70 2632 2642
+type(
+  int
+)
+ident(
+  int_ref i "lib/heap.ml" 68 2579 2598 "lib/heap.ml" 68 2579 2599
+)
+"lib/heap.ml" 70 2632 2643 "lib/heap.ml" 70 2632 2644
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( > )
+)
+"lib/heap.ml" 70 2632 2645 "lib/heap.ml" 70 2632 2646
+type(
+  int
+)
+"lib/heap.ml" 70 2632 2641 "lib/heap.ml" 70 2632 2646
+type(
+  bool
+)
+"lib/heap.ml" 70 2632 2647 "lib/heap.ml" 70 2632 2649
+type(
+  bool -> bool -> bool
+)
+ident(
+  ext_ref Pervasives.( && )
+)
+"lib/heap.ml" 70 2632 2650 "lib/heap.ml" 70 2632 2659
+type(
+  X.t -> X.t -> int
+)
+ident(
+  ext_ref X.compare
+)
+"lib/heap.ml" 70 2632 2660 "lib/heap.ml" 70 2632 2661
+type(
+  X.t array
+)
+ident(
+  int_ref d "lib/heap.ml" 66 2521 2529 "lib/heap.ml" 66 2521 2530
+)
+"lib/heap.ml" 70 2632 2663 "lib/heap.ml" 70 2632 2665
+type(
+  int
+)
+ident(
+  int_ref fi "lib/heap.ml" 69 2602 2612 "lib/heap.ml" 69 2602 2614
+)
+"lib/heap.ml" 70 2632 2660 "lib/heap.ml" 70 2632 2666
+type(
+  X.t
+)
+"lib/heap.ml" 70 2632 2667 "lib/heap.ml" 70 2632 2668
+type(
+  X.t
+)
+ident(
+  int_ref x "lib/heap.ml" 58 2266 2278 "lib/heap.ml" 58 2266 2279
+)
+"lib/heap.ml" 70 2632 2650 "lib/heap.ml" 70 2632 2668
+call(
+  stack
+)
+type(
+  int
+)
+"lib/heap.ml" 70 2632 2669 "lib/heap.ml" 70 2632 2670
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( < )
+)
+"lib/heap.ml" 70 2632 2671 "lib/heap.ml" 70 2632 2672
+type(
+  int
+)
+"lib/heap.ml" 70 2632 2650 "lib/heap.ml" 70 2632 2672
+type(
+  bool
+)
+"lib/heap.ml" 70 2632 2641 "lib/heap.ml" 70 2632 2672
+type(
+  bool
+)
+"lib/heap.ml" 71 2684 2685 "lib/heap.ml" 71 2684 2686
+type(
+  X.t array
+)
+ident(
+  int_ref d "lib/heap.ml" 66 2521 2529 "lib/heap.ml" 66 2521 2530
+)
+"lib/heap.ml" 71 2684 2688 "lib/heap.ml" 71 2684 2689
+type(
+  int
+)
+ident(
+  int_ref i "lib/heap.ml" 68 2579 2598 "lib/heap.ml" 68 2579 2599
+)
+"lib/heap.ml" 71 2684 2694 "lib/heap.ml" 71 2684 2695
+type(
+  X.t array
+)
+ident(
+  int_ref d "lib/heap.ml" 66 2521 2529 "lib/heap.ml" 66 2521 2530
+)
+"lib/heap.ml" 71 2684 2697 "lib/heap.ml" 71 2684 2699
+type(
+  int
+)
+ident(
+  int_ref fi "lib/heap.ml" 69 2602 2612 "lib/heap.ml" 69 2602 2614
+)
+"lib/heap.ml" 71 2684 2694 "lib/heap.ml" 71 2684 2700
+type(
+  X.t
+)
+"lib/heap.ml" 71 2684 2685 "lib/heap.ml" 71 2684 2700
+type(
+  unit
+)
+"lib/heap.ml" 72 2702 2703 "lib/heap.ml" 72 2702 2709
+type(
+  int -> unit
+)
+ident(
+  int_ref moveup "lib/heap.ml" 68 2579 2591 "lib/heap.ml" 68 2579 2597
+)
+"lib/heap.ml" 72 2702 2710 "lib/heap.ml" 72 2702 2712
+type(
+  int
+)
+ident(
+  int_ref fi "lib/heap.ml" 69 2602 2612 "lib/heap.ml" 69 2602 2614
+)
+"lib/heap.ml" 72 2702 2703 "lib/heap.ml" 72 2702 2712
+call(
+  tail
+)
+type(
+  unit
+)
+"lib/heap.ml" 70 2632 2678 "lib/heap.ml" 73 2713 2722
+type(
+  unit
+)
+"lib/heap.ml" 74 2728 2729 "lib/heap.ml" 74 2728 2730
+type(
+  X.t array
+)
+ident(
+  int_ref d "lib/heap.ml" 66 2521 2529 "lib/heap.ml" 66 2521 2530
+)
+"lib/heap.ml" 74 2728 2732 "lib/heap.ml" 74 2728 2733
+type(
+  int
+)
+ident(
+  int_ref i "lib/heap.ml" 68 2579 2598 "lib/heap.ml" 68 2579 2599
+)
+"lib/heap.ml" 74 2728 2738 "lib/heap.ml" 74 2728 2739
+type(
+  X.t
+)
+ident(
+  int_ref x "lib/heap.ml" 58 2266 2278 "lib/heap.ml" 58 2266 2279
+)
+"lib/heap.ml" 74 2728 2729 "lib/heap.ml" 74 2728 2739
+type(
+  unit
+)
+"lib/heap.ml" 70 2632 2638 "lib/heap.ml" 74 2728 2739
+type(
+  unit
+)
+"lib/heap.ml" 69 2602 2608 "lib/heap.ml" 74 2728 2739
+type(
+  unit
+)
+"lib/heap.ml" 76 2747 2751 "lib/heap.ml" 76 2747 2757
+type(
+  int -> unit
+)
+ident(
+  int_ref moveup "lib/heap.ml" 68 2579 2591 "lib/heap.ml" 68 2579 2597
+)
+"lib/heap.ml" 76 2747 2758 "lib/heap.ml" 76 2747 2759
+type(
+  int
+)
+ident(
+  int_ref n "lib/heap.ml" 63 2423 2431 "lib/heap.ml" 63 2423 2432
+)
+"lib/heap.ml" 76 2747 2751 "lib/heap.ml" 76 2747 2759
+call(
+  stack
+)
+type(
+  unit
+)
+"lib/heap.ml" 77 2761 2765 "lib/heap.ml" 77 2761 2766
+type(
+  t
+)
+ident(
+  int_ref h "lib/heap.ml" 58 2266 2276 "lib/heap.ml" 58 2266 2277
+)
+"lib/heap.ml" 77 2761 2775 "lib/heap.ml" 77 2761 2776
+type(
+  int
+)
+ident(
+  int_ref n "lib/heap.ml" 63 2423 2431 "lib/heap.ml" 63 2423 2432
+)
+"lib/heap.ml" 77 2761 2777 "lib/heap.ml" 77 2761 2778
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( + )
+)
+"lib/heap.ml" 77 2761 2779 "lib/heap.ml" 77 2761 2780
+type(
+  int
+)
+"lib/heap.ml" 77 2761 2775 "lib/heap.ml" 77 2761 2780
+type(
+  int
+)
+"lib/heap.ml" 77 2761 2765 "lib/heap.ml" 77 2761 2780
+type(
+  unit
+)
+"lib/heap.ml" 76 2747 2751 "lib/heap.ml" 77 2761 2780
+type(
+  unit
+)
+"lib/heap.ml" 68 2579 2583 "lib/heap.ml" 77 2761 2780
+type(
+  unit
+)
+"lib/heap.ml" 66 2521 2525 "lib/heap.ml" 77 2761 2780
+type(
+  unit
+)
+"lib/heap.ml" 65 2474 2478 "lib/heap.ml" 77 2761 2780
+type(
+  unit
+)
+"lib/heap.ml" 63 2423 2427 "lib/heap.ml" 77 2761 2780
+type(
+  unit
+)
+"lib/heap.ml" 60 2330 2334 "lib/heap.ml" 77 2761 2780
+type(
+  unit
+)
+"lib/heap.ml" 79 2782 2788 "lib/heap.ml" 79 2782 2795
+type(
+  t -> X.t
+)
+ident(
+  def maximum "lib/heap.ml" 83 2857 2859 "lib/heap.ml" 121 3662 3665
+)
+"lib/heap.ml" 79 2782 2796 "lib/heap.ml" 79 2782 2797
+type(
+  t
+)
+ident(
+  def h "lib/heap.ml" 80 2800 2804 "lib/heap.ml" 81 2841 2855
+)
+"lib/heap.ml" 80 2800 2807 "lib/heap.ml" 80 2800 2808
+type(
+  t
+)
+ident(
+  int_ref h "lib/heap.ml" 79 2782 2796 "lib/heap.ml" 79 2782 2797
+)
+"lib/heap.ml" 80 2800 2807 "lib/heap.ml" 80 2800 2813
+type(
+  int
+)
+"lib/heap.ml" 80 2800 2814 "lib/heap.ml" 80 2800 2816
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( <= )
+)
+"lib/heap.ml" 80 2800 2817 "lib/heap.ml" 80 2800 2818
+type(
+  int
+)
+"lib/heap.ml" 80 2800 2807 "lib/heap.ml" 80 2800 2818
+type(
+  bool
+)
+"lib/heap.ml" 80 2800 2824 "lib/heap.ml" 80 2800 2829
+type(
+  exn -> unit
+)
+ident(
+  ext_ref Pervasives.raise
+)
+"lib/heap.ml" 80 2800 2830 "lib/heap.ml" 80 2800 2839
+type(
+  exn
+)
+"lib/heap.ml" 80 2800 2824 "lib/heap.ml" 80 2800 2839
+type(
+  unit
+)
+"lib/heap.ml" 80 2800 2804 "lib/heap.ml" 80 2800 2839
+type(
+  unit
+)
+"lib/heap.ml" 81 2841 2845 "lib/heap.ml" 81 2841 2846
+type(
+  t
+)
+ident(
+  int_ref h "lib/heap.ml" 79 2782 2796 "lib/heap.ml" 79 2782 2797
+)
+"lib/heap.ml" 81 2841 2845 "lib/heap.ml" 81 2841 2851
+type(
+  X.t array
+)
+"lib/heap.ml" 81 2841 2853 "lib/heap.ml" 81 2841 2854
+type(
+  int
+)
+"lib/heap.ml" 81 2841 2845 "lib/heap.ml" 81 2841 2855
+type(
+  X.t
+)
+"lib/heap.ml" 80 2800 2804 "lib/heap.ml" 81 2841 2855
+type(
+  X.t
+)
+"lib/heap.ml" 83 2857 2863 "lib/heap.ml" 83 2857 2869
+type(
+  t -> unit
+)
+ident(
+  def remove "lib/heap.ml" 107 3349 3351 "lib/heap.ml" 121 3662 3665
+)
+"lib/heap.ml" 83 2857 2870 "lib/heap.ml" 83 2857 2871
+type(
+  t
+)
+ident(
+  def h "lib/heap.ml" 84 2874 2878 "lib/heap.ml" 105 3333 3347
+)
+"lib/heap.ml" 84 2874 2881 "lib/heap.ml" 84 2874 2882
+type(
+  t
+)
+ident(
+  int_ref h "lib/heap.ml" 83 2857 2870 "lib/heap.ml" 83 2857 2871
+)
+"lib/heap.ml" 84 2874 2881 "lib/heap.ml" 84 2874 2887
+type(
+  int
+)
+"lib/heap.ml" 84 2874 2888 "lib/heap.ml" 84 2874 2890
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( <= )
+)
+"lib/heap.ml" 84 2874 2891 "lib/heap.ml" 84 2874 2892
+type(
+  int
+)
+"lib/heap.ml" 84 2874 2881 "lib/heap.ml" 84 2874 2892
+type(
+  bool
+)
+"lib/heap.ml" 84 2874 2898 "lib/heap.ml" 84 2874 2903
+type(
+  exn -> unit
+)
+ident(
+  ext_ref Pervasives.raise
+)
+"lib/heap.ml" 84 2874 2904 "lib/heap.ml" 84 2874 2913
+type(
+  exn
+)
+"lib/heap.ml" 84 2874 2898 "lib/heap.ml" 84 2874 2913
+type(
+  unit
+)
+"lib/heap.ml" 84 2874 2878 "lib/heap.ml" 84 2874 2913
+type(
+  unit
+)
+"lib/heap.ml" 85 2915 2923 "lib/heap.ml" 85 2915 2924
+type(
+  int
+)
+"lib/heap.ml" 85 2915 2927 "lib/heap.ml" 85 2915 2928
+type(
+  t
+)
+ident(
+  int_ref h "lib/heap.ml" 83 2857 2870 "lib/heap.ml" 83 2857 2871
+)
+"lib/heap.ml" 85 2915 2927 "lib/heap.ml" 85 2915 2933
+type(
+  int
+)
+"lib/heap.ml" 85 2915 2934 "lib/heap.ml" 85 2915 2935
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( - )
+)
+"lib/heap.ml" 85 2915 2936 "lib/heap.ml" 85 2915 2937
+type(
+  int
+)
+"lib/heap.ml" 85 2915 2927 "lib/heap.ml" 85 2915 2937
+type(
+  int
+)
+"lib/heap.ml" 86 2941 2945 "lib/heap.ml" 86 2941 2946
+type(
+  t
+)
+ident(
+  int_ref h "lib/heap.ml" 83 2857 2870 "lib/heap.ml" 83 2857 2871
+)
+"lib/heap.ml" 86 2941 2955 "lib/heap.ml" 86 2941 2956
+type(
+  int
+)
+ident(
+  int_ref n "lib/heap.ml" 85 2915 2923 "lib/heap.ml" 85 2915 2924
+)
+"lib/heap.ml" 86 2941 2945 "lib/heap.ml" 86 2941 2956
+type(
+  unit
+)
+"lib/heap.ml" 87 2958 2966 "lib/heap.ml" 87 2958 2967
+type(
+  X.t array
+)
+"lib/heap.ml" 87 2958 2970 "lib/heap.ml" 87 2958 2971
+type(
+  t
+)
+ident(
+  int_ref h "lib/heap.ml" 83 2857 2870 "lib/heap.ml" 83 2857 2871
+)
+"lib/heap.ml" 87 2958 2970 "lib/heap.ml" 87 2958 2976
+type(
+  X.t array
+)
+"lib/heap.ml" 88 2980 2988 "lib/heap.ml" 88 2980 2989
+type(
+  X.t
+)
+"lib/heap.ml" 88 2980 2992 "lib/heap.ml" 88 2980 2993
+type(
+  X.t array
+)
+ident(
+  int_ref d "lib/heap.ml" 87 2958 2966 "lib/heap.ml" 87 2958 2967
+)
+"lib/heap.ml" 88 2980 2995 "lib/heap.ml" 88 2980 2996
+type(
+  int
+)
+ident(
+  int_ref n "lib/heap.ml" 85 2915 2923 "lib/heap.ml" 85 2915 2924
+)
+"lib/heap.ml" 88 2980 2992 "lib/heap.ml" 88 2980 2997
+type(
+  X.t
+)
+"lib/heap.ml" 90 3039 3051 "lib/heap.ml" 90 3039 3059
+type(
+  int -> unit
+)
+"lib/heap.ml" 90 3039 3060 "lib/heap.ml" 90 3039 3061
+type(
+  int
+)
+ident(
+  def i "lib/heap.ml" 91 3064 3070 "lib/heap.ml" 103 3314 3325
+)
+"lib/heap.ml" 91 3064 3074 "lib/heap.ml" 91 3064 3075
+type(
+  int
+)
+"lib/heap.ml" 91 3064 3078 "lib/heap.ml" 91 3064 3079
+type(
+  int
+)
+"lib/heap.ml" 91 3064 3080 "lib/heap.ml" 91 3064 3081
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( * )
+)
+"lib/heap.ml" 91 3064 3082 "lib/heap.ml" 91 3064 3083
+type(
+  int
+)
+ident(
+  int_ref i "lib/heap.ml" 90 3039 3060 "lib/heap.ml" 90 3039 3061
+)
+"lib/heap.ml" 91 3064 3078 "lib/heap.ml" 91 3064 3083
+type(
+  int
+)
+"lib/heap.ml" 91 3064 3084 "lib/heap.ml" 91 3064 3085
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( + )
+)
+"lib/heap.ml" 91 3064 3086 "lib/heap.ml" 91 3064 3087
+type(
+  int
+)
+"lib/heap.ml" 91 3064 3078 "lib/heap.ml" 91 3064 3087
+type(
+  int
+)
+"lib/heap.ml" 92 3091 3100 "lib/heap.ml" 92 3091 3101
+type(
+  int
+)
+ident(
+  int_ref j "lib/heap.ml" 91 3064 3074 "lib/heap.ml" 91 3064 3075
+)
+"lib/heap.ml" 92 3091 3102 "lib/heap.ml" 92 3091 3103
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( < )
+)
+"lib/heap.ml" 92 3091 3104 "lib/heap.ml" 92 3091 3105
+type(
+  int
+)
+ident(
+  int_ref n "lib/heap.ml" 85 2915 2923 "lib/heap.ml" 85 2915 2924
+)
+"lib/heap.ml" 92 3091 3100 "lib/heap.ml" 92 3091 3105
+type(
+  bool
+)
+"lib/heap.ml" 93 3111 3116 "lib/heap.ml" 93 3111 3117
+type(
+  int
+)
+ident(
+  def j "lib/heap.ml" 97 3206 3207 "lib/heap.ml" 101 3289 3302
+)
+"lib/heap.ml" 94 3121 3128 "lib/heap.ml" 94 3121 3130
+type(
+  int
+)
+"lib/heap.ml" 94 3121 3133 "lib/heap.ml" 94 3121 3134
+type(
+  int
+)
+ident(
+  int_ref j "lib/heap.ml" 91 3064 3074 "lib/heap.ml" 91 3064 3075
+)
+"lib/heap.ml" 94 3121 3135 "lib/heap.ml" 94 3121 3136
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( + )
+)
+"lib/heap.ml" 94 3121 3137 "lib/heap.ml" 94 3121 3138
+type(
+  int
+)
+"lib/heap.ml" 94 3121 3133 "lib/heap.ml" 94 3121 3138
+type(
+  int
+)
+"lib/heap.ml" 95 3143 3149 "lib/heap.ml" 95 3143 3151
+type(
+  int
+)
+ident(
+  int_ref j' "lib/heap.ml" 94 3121 3128 "lib/heap.ml" 94 3121 3130
+)
+"lib/heap.ml" 95 3143 3152 "lib/heap.ml" 95 3143 3153
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( < )
+)
+"lib/heap.ml" 95 3143 3154 "lib/heap.ml" 95 3143 3155
+type(
+  int
+)
+ident(
+  int_ref n "lib/heap.ml" 85 2915 2923 "lib/heap.ml" 85 2915 2924
+)
+"lib/heap.ml" 95 3143 3149 "lib/heap.ml" 95 3143 3155
+type(
+  bool
+)
+"lib/heap.ml" 95 3143 3156 "lib/heap.ml" 95 3143 3158
+type(
+  bool -> bool -> bool
+)
+ident(
+  ext_ref Pervasives.( && )
+)
+"lib/heap.ml" 95 3143 3159 "lib/heap.ml" 95 3143 3168
+type(
+  X.t -> X.t -> int
+)
+ident(
+  ext_ref X.compare
+)
+"lib/heap.ml" 95 3143 3169 "lib/heap.ml" 95 3143 3170
+type(
+  X.t array
+)
+ident(
+  int_ref d "lib/heap.ml" 87 2958 2966 "lib/heap.ml" 87 2958 2967
+)
+"lib/heap.ml" 95 3143 3172 "lib/heap.ml" 95 3143 3174
+type(
+  int
+)
+ident(
+  int_ref j' "lib/heap.ml" 94 3121 3128 "lib/heap.ml" 94 3121 3130
+)
+"lib/heap.ml" 95 3143 3169 "lib/heap.ml" 95 3143 3175
+type(
+  X.t
+)
+"lib/heap.ml" 95 3143 3176 "lib/heap.ml" 95 3143 3177
+type(
+  X.t array
+)
+ident(
+  int_ref d "lib/heap.ml" 87 2958 2966 "lib/heap.ml" 87 2958 2967
+)
+"lib/heap.ml" 95 3143 3179 "lib/heap.ml" 95 3143 3180
+type(
+  int
+)
+ident(
+  int_ref j "lib/heap.ml" 91 3064 3074 "lib/heap.ml" 91 3064 3075
+)
+"lib/heap.ml" 95 3143 3176 "lib/heap.ml" 95 3143 3181
+type(
+  X.t
+)
+"lib/heap.ml" 95 3143 3159 "lib/heap.ml" 95 3143 3181
+call(
+  stack
+)
+type(
+  int
+)
+"lib/heap.ml" 95 3143 3182 "lib/heap.ml" 95 3143 3183
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( > )
+)
+"lib/heap.ml" 95 3143 3184 "lib/heap.ml" 95 3143 3185
+type(
+  int
+)
+"lib/heap.ml" 95 3143 3159 "lib/heap.ml" 95 3143 3185
+type(
+  bool
+)
+"lib/heap.ml" 95 3143 3149 "lib/heap.ml" 95 3143 3185
+type(
+  bool
+)
+"lib/heap.ml" 95 3143 3191 "lib/heap.ml" 95 3143 3193
+type(
+  int
+)
+ident(
+  int_ref j' "lib/heap.ml" 94 3121 3128 "lib/heap.ml" 94 3121 3130
+)
+"lib/heap.ml" 95 3143 3199 "lib/heap.ml" 95 3143 3200
+type(
+  int
+)
+ident(
+  int_ref j "lib/heap.ml" 91 3064 3074 "lib/heap.ml" 91 3064 3075
+)
+"lib/heap.ml" 95 3143 3146 "lib/heap.ml" 95 3143 3200
+type(
+  int
+)
+"lib/heap.ml" 94 3121 3124 "lib/heap.ml" 95 3143 3200
+type(
+  int
+)
+"lib/heap.ml" 97 3206 3210 "lib/heap.ml" 97 3206 3219
+type(
+  X.t -> X.t -> int
+)
+ident(
+  ext_ref X.compare
+)
+"lib/heap.ml" 97 3206 3220 "lib/heap.ml" 97 3206 3221
+type(
+  X.t array
+)
+ident(
+  int_ref d "lib/heap.ml" 87 2958 2966 "lib/heap.ml" 87 2958 2967
+)
+"lib/heap.ml" 97 3206 3223 "lib/heap.ml" 97 3206 3224
+type(
+  int
+)
+ident(
+  int_ref j "lib/heap.ml" 93 3111 3116 "lib/heap.ml" 93 3111 3117
+)
+"lib/heap.ml" 97 3206 3220 "lib/heap.ml" 97 3206 3225
+type(
+  X.t
+)
+"lib/heap.ml" 97 3206 3226 "lib/heap.ml" 97 3206 3227
+type(
+  X.t
+)
+ident(
+  int_ref x "lib/heap.ml" 88 2980 2988 "lib/heap.ml" 88 2980 2989
+)
+"lib/heap.ml" 97 3206 3210 "lib/heap.ml" 97 3206 3227
+call(
+  stack
+)
+type(
+  int
+)
+"lib/heap.ml" 97 3206 3228 "lib/heap.ml" 97 3206 3229
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( > )
+)
+"lib/heap.ml" 97 3206 3230 "lib/heap.ml" 97 3206 3231
+type(
+  int
+)
+"lib/heap.ml" 97 3206 3210 "lib/heap.ml" 97 3206 3231
+type(
+  bool
+)
+"lib/heap.ml" 98 3244 3247 "lib/heap.ml" 98 3244 3248
+type(
+  X.t array
+)
+ident(
+  int_ref d "lib/heap.ml" 87 2958 2966 "lib/heap.ml" 87 2958 2967
+)
+"lib/heap.ml" 98 3244 3250 "lib/heap.ml" 98 3244 3251
+type(
+  int
+)
+ident(
+  int_ref i "lib/heap.ml" 90 3039 3060 "lib/heap.ml" 90 3039 3061
+)
+"lib/heap.ml" 98 3244 3256 "lib/heap.ml" 98 3244 3257
+type(
+  X.t array
+)
+ident(
+  int_ref d "lib/heap.ml" 87 2958 2966 "lib/heap.ml" 87 2958 2967
+)
+"lib/heap.ml" 98 3244 3259 "lib/heap.ml" 98 3244 3260
+type(
+  int
+)
+ident(
+  int_ref j "lib/heap.ml" 93 3111 3116 "lib/heap.ml" 93 3111 3117
+)
+"lib/heap.ml" 98 3244 3256 "lib/heap.ml" 98 3244 3261
+type(
+  X.t
+)
+"lib/heap.ml" 98 3244 3247 "lib/heap.ml" 98 3244 3261
+type(
+  unit
+)
+"lib/heap.ml" 99 3264 3267 "lib/heap.ml" 99 3264 3275
+type(
+  int -> unit
+)
+ident(
+  int_ref movedown "lib/heap.ml" 90 3039 3051 "lib/heap.ml" 90 3039 3059
+)
+"lib/heap.ml" 99 3264 3276 "lib/heap.ml" 99 3264 3277
+type(
+  int
+)
+ident(
+  int_ref j "lib/heap.ml" 93 3111 3116 "lib/heap.ml" 93 3111 3117
+)
+"lib/heap.ml" 99 3264 3267 "lib/heap.ml" 99 3264 3277
+call(
+  tail
+)
+type(
+  unit
+)
+"lib/heap.ml" 97 3206 3237 "lib/heap.ml" 100 3279 3283
+type(
+  unit
+)
+"lib/heap.ml" 101 3289 3292 "lib/heap.ml" 101 3289 3293
+type(
+  X.t array
+)
+ident(
+  int_ref d "lib/heap.ml" 87 2958 2966 "lib/heap.ml" 87 2958 2967
+)
+"lib/heap.ml" 101 3289 3295 "lib/heap.ml" 101 3289 3296
+type(
+  int
+)
+ident(
+  int_ref i "lib/heap.ml" 90 3039 3060 "lib/heap.ml" 90 3039 3061
+)
+"lib/heap.ml" 101 3289 3301 "lib/heap.ml" 101 3289 3302
+type(
+  X.t
+)
+ident(
+  int_ref x "lib/heap.ml" 88 2980 2988 "lib/heap.ml" 88 2980 2989
+)
+"lib/heap.ml" 101 3289 3292 "lib/heap.ml" 101 3289 3302
+type(
+  unit
+)
+"lib/heap.ml" 97 3206 3207 "lib/heap.ml" 101 3289 3302
+type(
+  unit
+)
+"lib/heap.ml" 93 3111 3112 "lib/heap.ml" 101 3289 3302
+type(
+  unit
+)
+"lib/heap.ml" 103 3314 3315 "lib/heap.ml" 103 3314 3316
+type(
+  X.t array
+)
+ident(
+  int_ref d "lib/heap.ml" 87 2958 2966 "lib/heap.ml" 87 2958 2967
+)
+"lib/heap.ml" 103 3314 3318 "lib/heap.ml" 103 3314 3319
+type(
+  int
+)
+ident(
+  int_ref i "lib/heap.ml" 90 3039 3060 "lib/heap.ml" 90 3039 3061
+)
+"lib/heap.ml" 103 3314 3324 "lib/heap.ml" 103 3314 3325
+type(
+  X.t
+)
+ident(
+  int_ref x "lib/heap.ml" 88 2980 2988 "lib/heap.ml" 88 2980 2989
+)
+"lib/heap.ml" 103 3314 3315 "lib/heap.ml" 103 3314 3325
+type(
+  unit
+)
+"lib/heap.ml" 92 3091 3097 "lib/heap.ml" 103 3314 3325
+type(
+  unit
+)
+"lib/heap.ml" 91 3064 3070 "lib/heap.ml" 103 3314 3325
+type(
+  unit
+)
+"lib/heap.ml" 105 3333 3337 "lib/heap.ml" 105 3333 3345
+type(
+  int -> unit
+)
+ident(
+  int_ref movedown "lib/heap.ml" 90 3039 3051 "lib/heap.ml" 90 3039 3059
+)
+"lib/heap.ml" 105 3333 3346 "lib/heap.ml" 105 3333 3347
+type(
+  int
+)
+"lib/heap.ml" 105 3333 3337 "lib/heap.ml" 105 3333 3347
+call(
+  tail
+)
+type(
+  unit
+)
+"lib/heap.ml" 90 3039 3043 "lib/heap.ml" 105 3333 3347
+type(
+  unit
+)
+"lib/heap.ml" 88 2980 2984 "lib/heap.ml" 105 3333 3347
+type(
+  unit
+)
+"lib/heap.ml" 87 2958 2962 "lib/heap.ml" 105 3333 3347
+type(
+  unit
+)
+"lib/heap.ml" 86 2941 2945 "lib/heap.ml" 105 3333 3347
+type(
+  unit
+)
+"lib/heap.ml" 85 2915 2919 "lib/heap.ml" 105 3333 3347
+type(
+  unit
+)
+"lib/heap.ml" 84 2874 2878 "lib/heap.ml" 105 3333 3347
+type(
+  unit
+)
+"lib/heap.ml" 107 3349 3355 "lib/heap.ml" 107 3349 3366
+type(
+  t -> X.t
+)
+ident(
+  def pop_maximum "lib/heap.ml" 109 3405 3407 "lib/heap.ml" 121 3662 3665
+)
+"lib/heap.ml" 107 3349 3367 "lib/heap.ml" 107 3349 3368
+type(
+  t
+)
+ident(
+  def h "lib/heap.ml" 107 3349 3371 "lib/heap.ml" 107 3349 3403
+)
+"lib/heap.ml" 107 3349 3375 "lib/heap.ml" 107 3349 3376
+type(
+  X.t
+)
+"lib/heap.ml" 107 3349 3379 "lib/heap.ml" 107 3349 3386
+type(
+  t -> X.t
+)
+ident(
+  int_ref maximum "lib/heap.ml" 79 2782 2788 "lib/heap.ml" 79 2782 2795
+)
+"lib/heap.ml" 107 3349 3387 "lib/heap.ml" 107 3349 3388
+type(
+  t
+)
+ident(
+  int_ref h "lib/heap.ml" 107 3349 3367 "lib/heap.ml" 107 3349 3368
+)
+"lib/heap.ml" 107 3349 3379 "lib/heap.ml" 107 3349 3388
+call(
+  stack
+)
+type(
+  X.t
+)
+"lib/heap.ml" 107 3349 3392 "lib/heap.ml" 107 3349 3398
+type(
+  t -> unit
+)
+ident(
+  int_ref remove "lib/heap.ml" 83 2857 2863 "lib/heap.ml" 83 2857 2869
+)
+"lib/heap.ml" 107 3349 3399 "lib/heap.ml" 107 3349 3400
+type(
+  t
+)
+ident(
+  int_ref h "lib/heap.ml" 107 3349 3367 "lib/heap.ml" 107 3349 3368
+)
+"lib/heap.ml" 107 3349 3392 "lib/heap.ml" 107 3349 3400
+call(
+  stack
+)
+type(
+  unit
+)
+"lib/heap.ml" 107 3349 3402 "lib/heap.ml" 107 3349 3403
+type(
+  X.t
+)
+ident(
+  int_ref m "lib/heap.ml" 107 3349 3375 "lib/heap.ml" 107 3349 3376
+)
+"lib/heap.ml" 107 3349 3392 "lib/heap.ml" 107 3349 3403
+type(
+  X.t
+)
+"lib/heap.ml" 107 3349 3371 "lib/heap.ml" 107 3349 3403
+type(
+  X.t
+)
+"lib/heap.ml" 109 3405 3411 "lib/heap.ml" 109 3405 3415
+type(
+  (X.t -> 'a) -> t -> unit
+)
+ident(
+  def iter "lib/heap.ml" 113 3490 3492 "lib/heap.ml" 121 3662 3665
+)
+"lib/heap.ml" 109 3405 3416 "lib/heap.ml" 109 3405 3417
+type(
+  X.t -> 'a
+)
+ident(
+  def f "lib/heap.ml" 109 3405 3418 "lib/heap.ml" 111 3445 3488
+)
+"lib/heap.ml" 109 3405 3418 "lib/heap.ml" 109 3405 3419
+type(
+  t
+)
+ident(
+  def h "lib/heap.ml" 110 3423 3427 "lib/heap.ml" 111 3445 3488
+)
+"lib/heap.ml" 110 3423 3431 "lib/heap.ml" 110 3423 3432
+type(
+  X.t array
+)
+"lib/heap.ml" 110 3423 3435 "lib/heap.ml" 110 3423 3436
+type(
+  t
+)
+ident(
+  int_ref h "lib/heap.ml" 109 3405 3418 "lib/heap.ml" 109 3405 3419
+)
+"lib/heap.ml" 110 3423 3435 "lib/heap.ml" 110 3423 3441
+type(
+  X.t array
+)
+"lib/heap.ml" 111 3445 3457 "lib/heap.ml" 111 3445 3458
+type(
+  int
+)
+"lib/heap.ml" 111 3445 3462 "lib/heap.ml" 111 3445 3463
+type(
+  t
+)
+ident(
+  int_ref h "lib/heap.ml" 109 3405 3418 "lib/heap.ml" 109 3405 3419
+)
+"lib/heap.ml" 111 3445 3462 "lib/heap.ml" 111 3445 3468
+type(
+  int
+)
+"lib/heap.ml" 111 3445 3469 "lib/heap.ml" 111 3445 3470
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( - )
+)
+"lib/heap.ml" 111 3445 3471 "lib/heap.ml" 111 3445 3472
+type(
+  int
+)
+"lib/heap.ml" 111 3445 3462 "lib/heap.ml" 111 3445 3472
+type(
+  int
+)
+"lib/heap.ml" 111 3445 3476 "lib/heap.ml" 111 3445 3477
+type(
+  X.t -> 'a
+)
+ident(
+  int_ref f "lib/heap.ml" 109 3405 3416 "lib/heap.ml" 109 3405 3417
+)
+"lib/heap.ml" 111 3445 3478 "lib/heap.ml" 111 3445 3479
+type(
+  X.t array
+)
+ident(
+  int_ref d "lib/heap.ml" 110 3423 3431 "lib/heap.ml" 110 3423 3432
+)
+"lib/heap.ml" 111 3445 3481 "lib/heap.ml" 111 3445 3482
+type(
+  int
+)
+"lib/heap.ml" 111 3445 3478 "lib/heap.ml" 111 3445 3483
+type(
+  X.t
+)
+"lib/heap.ml" 111 3445 3476 "lib/heap.ml" 111 3445 3483
+call(
+  stack
+)
+type(
+  'a
+)
+"lib/heap.ml" 111 3445 3449 "lib/heap.ml" 111 3445 3488
+type(
+  unit
+)
+"lib/heap.ml" 110 3423 3427 "lib/heap.ml" 111 3445 3488
+type(
+  unit
+)
+"lib/heap.ml" 113 3490 3496 "lib/heap.ml" 113 3490 3500
+type(
+  (X.t -> 'b -> 'b) -> t -> 'b -> 'b
+)
+ident(
+  def fold "lib/heap.ml" 119 3644 3660 "lib/heap.ml" 121 3662 3665
+)
+"lib/heap.ml" 113 3490 3501 "lib/heap.ml" 113 3490 3502
+type(
+  X.t -> 'b -> 'b
+)
+ident(
+  def f "lib/heap.ml" 113 3490 3503 "lib/heap.ml" 119 3644 3660
+)
+"lib/heap.ml" 113 3490 3503 "lib/heap.ml" 113 3490 3504
+type(
+  t
+)
+ident(
+  def h "lib/heap.ml" 113 3490 3505 "lib/heap.ml" 119 3644 3660
+)
+"lib/heap.ml" 113 3490 3505 "lib/heap.ml" 113 3490 3507
+type(
+  'b
+)
+ident(
+  def x0 "lib/heap.ml" 114 3510 3514 "lib/heap.ml" 119 3644 3660
+)
+"lib/heap.ml" 114 3510 3518 "lib/heap.ml" 114 3510 3519
+type(
+  int
+)
+"lib/heap.ml" 114 3510 3522 "lib/heap.ml" 114 3510 3523
+type(
+  t
+)
+ident(
+  int_ref h "lib/heap.ml" 113 3490 3503 "lib/heap.ml" 113 3490 3504
+)
+"lib/heap.ml" 114 3510 3522 "lib/heap.ml" 114 3510 3528
+type(
+  int
+)
+"lib/heap.ml" 115 3532 3540 "lib/heap.ml" 115 3532 3541
+type(
+  X.t array
+)
+"lib/heap.ml" 115 3532 3544 "lib/heap.ml" 115 3532 3545
+type(
+  t
+)
+ident(
+  int_ref h "lib/heap.ml" 113 3490 3503 "lib/heap.ml" 113 3490 3504
+)
+"lib/heap.ml" 115 3532 3544 "lib/heap.ml" 115 3532 3550
+type(
+  X.t array
+)
+"lib/heap.ml" 116 3554 3566 "lib/heap.ml" 116 3554 3573
+type(
+  'b -> int -> 'b
+)
+"lib/heap.ml" 116 3554 3574 "lib/heap.ml" 116 3554 3575
+type(
+  'b
+)
+ident(
+  def x "lib/heap.ml" 116 3554 3576 "lib/heap.ml" 117 3580 3636
+)
+"lib/heap.ml" 116 3554 3576 "lib/heap.ml" 116 3554 3577
+type(
+  int
+)
+ident(
+  def i "lib/heap.ml" 117 3580 3586 "lib/heap.ml" 117 3580 3636
+)
+"lib/heap.ml" 117 3580 3589 "lib/heap.ml" 117 3580 3590
+type(
+  int
+)
+ident(
+  int_ref i "lib/heap.ml" 116 3554 3576 "lib/heap.ml" 116 3554 3577
+)
+"lib/heap.ml" 117 3580 3591 "lib/heap.ml" 117 3580 3593
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( >= )
+)
+"lib/heap.ml" 117 3580 3594 "lib/heap.ml" 117 3580 3595
+type(
+  int
+)
+ident(
+  int_ref n "lib/heap.ml" 114 3510 3518 "lib/heap.ml" 114 3510 3519
+)
+"lib/heap.ml" 117 3580 3589 "lib/heap.ml" 117 3580 3595
+type(
+  bool
+)
+"lib/heap.ml" 117 3580 3601 "lib/heap.ml" 117 3580 3602
+type(
+  'b
+)
+ident(
+  int_ref x "lib/heap.ml" 116 3554 3574 "lib/heap.ml" 116 3554 3575
+)
+"lib/heap.ml" 117 3580 3608 "lib/heap.ml" 117 3580 3615
+type(
+  'b -> int -> 'b
+)
+ident(
+  int_ref foldrec "lib/heap.ml" 116 3554 3566 "lib/heap.ml" 116 3554 3573
+)
+"lib/heap.ml" 117 3580 3617 "lib/heap.ml" 117 3580 3618
+type(
+  X.t -> 'b -> 'b
+)
+ident(
+  int_ref f "lib/heap.ml" 113 3490 3501 "lib/heap.ml" 113 3490 3502
+)
+"lib/heap.ml" 117 3580 3619 "lib/heap.ml" 117 3580 3620
+type(
+  X.t array
+)
+ident(
+  int_ref d "lib/heap.ml" 115 3532 3540 "lib/heap.ml" 115 3532 3541
+)
+"lib/heap.ml" 117 3580 3622 "lib/heap.ml" 117 3580 3623
+type(
+  int
+)
+ident(
+  int_ref i "lib/heap.ml" 116 3554 3576 "lib/heap.ml" 116 3554 3577
+)
+"lib/heap.ml" 117 3580 3619 "lib/heap.ml" 117 3580 3624
+type(
+  X.t
+)
+"lib/heap.ml" 117 3580 3625 "lib/heap.ml" 117 3580 3626
+type(
+  'b
+)
+ident(
+  int_ref x "lib/heap.ml" 116 3554 3574 "lib/heap.ml" 116 3554 3575
+)
+"lib/heap.ml" 117 3580 3616 "lib/heap.ml" 117 3580 3627
+call(
+  stack
+)
+type(
+  'b
+)
+"lib/heap.ml" 117 3580 3629 "lib/heap.ml" 117 3580 3633
+type(
+  int -> int
+)
+ident(
+  ext_ref Pervasives.succ
+)
+"lib/heap.ml" 117 3580 3634 "lib/heap.ml" 117 3580 3635
+type(
+  int
+)
+ident(
+  int_ref i "lib/heap.ml" 116 3554 3576 "lib/heap.ml" 116 3554 3577
+)
+"lib/heap.ml" 117 3580 3628 "lib/heap.ml" 117 3580 3636
+type(
+  int
+)
+"lib/heap.ml" 117 3580 3608 "lib/heap.ml" 117 3580 3636
+call(
+  tail
+)
+type(
+  'b
+)
+"lib/heap.ml" 117 3580 3586 "lib/heap.ml" 117 3580 3636
+type(
+  'b
+)
+"lib/heap.ml" 119 3644 3648 "lib/heap.ml" 119 3644 3655
+type(
+  'b -> int -> 'b
+)
+ident(
+  int_ref foldrec "lib/heap.ml" 116 3554 3566 "lib/heap.ml" 116 3554 3573
+)
+"lib/heap.ml" 119 3644 3656 "lib/heap.ml" 119 3644 3658
+type(
+  'b
+)
+ident(
+  int_ref x0 "lib/heap.ml" 113 3490 3505 "lib/heap.ml" 113 3490 3507
+)
+"lib/heap.ml" 119 3644 3659 "lib/heap.ml" 119 3644 3660
+type(
+  int
+)
+"lib/heap.ml" 119 3644 3648 "lib/heap.ml" 119 3644 3660
+call(
+  tail
+)
+type(
+  'b
+)
+"lib/heap.ml" 116 3554 3558 "lib/heap.ml" 119 3644 3660
+type(
+  'b
+)
+"lib/heap.ml" 115 3532 3536 "lib/heap.ml" 119 3644 3660
+type(
+  'b
+)
+"lib/heap.ml" 114 3510 3514 "lib/heap.ml" 119 3644 3660
+type(
+  'b
+)
+"lib/heap.ml" 163 4991 4997 "lib/heap.ml" 163 4991 5002
+type(
+  t
+)
+ident(
+  def empty "lib/heap.ml" 166 5054 5056 "lib/heap.ml" 236 6903 6906
+)
+"lib/heap.ml" 163 4991 5005 "lib/heap.ml" 163 4991 5010
+type(
+  t
+)
+"lib/heap.ml" 166 5054 5060 "lib/heap.ml" 166 5054 5063
+type(
+  t -> X.t -> t -> t
+)
+ident(
+  def p_f "lib/heap.ml" 170 5148 5150 "lib/heap.ml" 236 6903 6906
+)
+"lib/heap.ml" 166 5054 5064 "lib/heap.ml" 166 5054 5065
+type(
+  t
+)
+ident(
+  def l "lib/heap.ml" 166 5054 5066 "lib/heap.ml" 168 5122 5146
+)
+"lib/heap.ml" 166 5054 5066 "lib/heap.ml" 166 5054 5067
+type(
+  X.t
+)
+ident(
+  def x "lib/heap.ml" 166 5054 5068 "lib/heap.ml" 168 5122 5146
+)
+"lib/heap.ml" 166 5054 5068 "lib/heap.ml" 166 5054 5069
+type(
+  t
+)
+ident(
+  def r "lib/heap.ml" 166 5054 5072 "lib/heap.ml" 168 5122 5146
+)
+"lib/heap.ml" 166 5054 5078 "lib/heap.ml" 166 5054 5079
+type(
+  t
+)
+ident(
+  int_ref l "lib/heap.ml" 166 5054 5064 "lib/heap.ml" 166 5054 5065
+)
+"lib/heap.ml" 167 5085 5091 "lib/heap.ml" 167 5085 5096
+type(
+  t
+)
+"lib/heap.ml" 167 5085 5103 "lib/heap.ml" 167 5085 5104
+type(
+  t
+)
+type(
+  X.t
+)
+type(
+  t
+)
+"lib/heap.ml" 167 5085 5099 "lib/heap.ml" 167 5085 5104
+type(
+  t
+)
+"lib/heap.ml" 167 5085 5091 "lib/heap.ml" 167 5085 5104
+type(
+  t
+)
+"lib/heap.ml" 167 5085 5113 "lib/heap.ml" 167 5085 5114
+type(
+  t
+)
+ident(
+  int_ref l "lib/heap.ml" 166 5054 5064 "lib/heap.ml" 166 5054 5065
+)
+"lib/heap.ml" 167 5085 5116 "lib/heap.ml" 167 5085 5117
+type(
+  X.t
+)
+ident(
+  int_ref x "lib/heap.ml" 166 5054 5066 "lib/heap.ml" 166 5054 5067
+)
+"lib/heap.ml" 167 5085 5119 "lib/heap.ml" 167 5085 5120
+type(
+  t
+)
+ident(
+  int_ref r "lib/heap.ml" 166 5054 5068 "lib/heap.ml" 166 5054 5069
+)
+"lib/heap.ml" 167 5085 5108 "lib/heap.ml" 167 5085 5121
+type(
+  t
+)
+"lib/heap.ml" 168 5122 5128 "lib/heap.ml" 168 5122 5129
+type(
+  t
+)
+"lib/heap.ml" 168 5122 5138 "lib/heap.ml" 168 5122 5139
+type(
+  t
+)
+ident(
+  int_ref l "lib/heap.ml" 166 5054 5064 "lib/heap.ml" 166 5054 5065
+)
+"lib/heap.ml" 168 5122 5141 "lib/heap.ml" 168 5122 5142
+type(
+  X.t
+)
+ident(
+  int_ref x "lib/heap.ml" 166 5054 5066 "lib/heap.ml" 166 5054 5067
+)
+"lib/heap.ml" 168 5122 5144 "lib/heap.ml" 168 5122 5145
+type(
+  t
+)
+ident(
+  int_ref r "lib/heap.ml" 166 5054 5068 "lib/heap.ml" 166 5054 5069
+)
+"lib/heap.ml" 168 5122 5133 "lib/heap.ml" 168 5122 5146
+type(
+  t
+)
+"lib/heap.ml" 166 5054 5072 "lib/heap.ml" 168 5122 5146
+type(
+  t
+)
+"lib/heap.ml" 170 5148 5154 "lib/heap.ml" 170 5148 5157
+type(
+  t -> X.t -> t -> t
+)
+ident(
+  def pf_ "lib/heap.ml" 174 5241 5243 "lib/heap.ml" 236 6903 6906
+)
+"lib/heap.ml" 170 5148 5158 "lib/heap.ml" 170 5148 5159
+type(
+  t
+)
+ident(
+  def l "lib/heap.ml" 170 5148 5160 "lib/heap.ml" 172 5215 5239
+)
+"lib/heap.ml" 170 5148 5160 "lib/heap.ml" 170 5148 5161
+type(
+  X.t
+)
+ident(
+  def x "lib/heap.ml" 170 5148 5164 "lib/heap.ml" 172 5215 5239
+)
+"lib/heap.ml" 171 5173 5179 "lib/heap.ml" 171 5173 5184
+type(
+  t
+)
+"lib/heap.ml" 171 5173 5191 "lib/heap.ml" 171 5173 5192
+type(
+  t
+)
+type(
+  X.t
+)
+type(
+  t
+)
+"lib/heap.ml" 171 5173 5187 "lib/heap.ml" 171 5173 5192
+type(
+  t
+)
+"lib/heap.ml" 171 5173 5179 "lib/heap.ml" 171 5173 5192
+type(
+  t
+)
+"lib/heap.ml" 171 5173 5179 "lib/heap.ml" 171 5173 5197
+type(
+  t
+)
+ident(
+  def r "lib/heap.ml" 171 5173 5201 "lib/heap.ml" 171 5173 5214
+)
+"lib/heap.ml" 171 5173 5206 "lib/heap.ml" 171 5173 5207
+type(
+  t
+)
+ident(
+  int_ref l "lib/heap.ml" 170 5148 5158 "lib/heap.ml" 170 5148 5159
+)
+"lib/heap.ml" 171 5173 5209 "lib/heap.ml" 171 5173 5210
+type(
+  X.t
+)
+ident(
+  int_ref x "lib/heap.ml" 170 5148 5160 "lib/heap.ml" 170 5148 5161
+)
+"lib/heap.ml" 171 5173 5212 "lib/heap.ml" 171 5173 5213
+type(
+  t
+)
+ident(
+  int_ref r "lib/heap.ml" 171 5173 5179 "lib/heap.ml" 171 5173 5197
+)
+"lib/heap.ml" 171 5173 5201 "lib/heap.ml" 171 5173 5214
+type(
+  t
+)
+"lib/heap.ml" 172 5215 5221 "lib/heap.ml" 172 5215 5222
+type(
+  t
+)
+ident(
+  def r "lib/heap.ml" 172 5215 5226 "lib/heap.ml" 172 5215 5239
+)
+"lib/heap.ml" 172 5215 5231 "lib/heap.ml" 172 5215 5232
+type(
+  t
+)
+ident(
+  int_ref l "lib/heap.ml" 170 5148 5158 "lib/heap.ml" 170 5148 5159
+)
+"lib/heap.ml" 172 5215 5234 "lib/heap.ml" 172 5215 5235
+type(
+  X.t
+)
+ident(
+  int_ref x "lib/heap.ml" 170 5148 5160 "lib/heap.ml" 170 5148 5161
+)
+"lib/heap.ml" 172 5215 5237 "lib/heap.ml" 172 5215 5238
+type(
+  t
+)
+ident(
+  int_ref r "lib/heap.ml" 172 5215 5221 "lib/heap.ml" 172 5215 5222
+)
+"lib/heap.ml" 172 5215 5226 "lib/heap.ml" 172 5215 5239
+type(
+  t
+)
+"lib/heap.ml" 170 5148 5164 "lib/heap.ml" 172 5215 5239
+type(
+  t -> t
+)
+"lib/heap.ml" 174 5241 5251 "lib/heap.ml" 174 5241 5254
+type(
+  X.t -> t -> t
+)
+ident(
+  def add "lib/heap.ml" 174 5241 5243 "lib/heap.ml" 236 6903 6906
+)
+"lib/heap.ml" 174 5241 5255 "lib/heap.ml" 174 5241 5256
+type(
+  X.t
+)
+ident(
+  def x "lib/heap.ml" 174 5241 5259 "lib/heap.ml" 182 5518 5585
+)
+"lib/heap.ml" 175 5268 5274 "lib/heap.ml" 175 5268 5279
+type(
+  t
+)
+"lib/heap.ml" 176 5284 5290 "lib/heap.ml" 176 5284 5295
+type(
+  t
+)
+"lib/heap.ml" 176 5284 5297 "lib/heap.ml" 176 5284 5298
+type(
+  X.t
+)
+ident(
+  int_ref x "lib/heap.ml" 174 5241 5255 "lib/heap.ml" 174 5241 5256
+)
+"lib/heap.ml" 176 5284 5300 "lib/heap.ml" 176 5284 5305
+type(
+  t
+)
+"lib/heap.ml" 176 5284 5285 "lib/heap.ml" 176 5284 5306
+type(
+  t
+)
+"lib/heap.ml" 178 5339 5350 "lib/heap.ml" 178 5339 5351
+type(
+  t
+)
+ident(
+  def l "lib/heap.ml" 179 5378 5379 "lib/heap.ml" 179 5378 5445
+)
+"lib/heap.ml" 178 5339 5353 "lib/heap.ml" 178 5339 5354
+type(
+  X.t
+)
+ident(
+  def y "lib/heap.ml" 179 5378 5379 "lib/heap.ml" 179 5378 5445
+)
+"lib/heap.ml" 178 5339 5356 "lib/heap.ml" 178 5339 5357
+type(
+  t
+)
+ident(
+  def r "lib/heap.ml" 179 5378 5379 "lib/heap.ml" 179 5378 5445
+)
+"lib/heap.ml" 178 5339 5345 "lib/heap.ml" 178 5339 5358
+type(
+  t
+)
+"lib/heap.ml" 178 5339 5366 "lib/heap.ml" 178 5339 5367
+type(
+  t
+)
+ident(
+  def l "lib/heap.ml" 179 5378 5379 "lib/heap.ml" 179 5378 5445
+)
+"lib/heap.ml" 178 5339 5369 "lib/heap.ml" 178 5339 5370
+type(
+  X.t
+)
+ident(
+  def y "lib/heap.ml" 179 5378 5379 "lib/heap.ml" 179 5378 5445
+)
+"lib/heap.ml" 178 5339 5372 "lib/heap.ml" 178 5339 5373
+type(
+  t
+)
+ident(
+  def r "lib/heap.ml" 179 5378 5379 "lib/heap.ml" 179 5378 5445
+)
+"lib/heap.ml" 178 5339 5361 "lib/heap.ml" 178 5339 5374
+type(
+  t
+)
+"lib/heap.ml" 178 5339 5345 "lib/heap.ml" 178 5339 5374
+type(
+  t
+)
+"lib/heap.ml" 179 5378 5382 "lib/heap.ml" 179 5378 5391
+type(
+  X.t -> X.t -> int
+)
+ident(
+  ext_ref X.compare
+)
+"lib/heap.ml" 179 5378 5392 "lib/heap.ml" 179 5378 5393
+type(
+  X.t
+)
+ident(
+  int_ref x "lib/heap.ml" 174 5241 5255 "lib/heap.ml" 174 5241 5256
+)
+"lib/heap.ml" 179 5378 5394 "lib/heap.ml" 179 5378 5395
+type(
+  X.t
+)
+ident(
+  int_ref y "lib/heap.ml" 178 5339 5353 "lib/heap.ml" 178 5339 5354
+)
+"lib/heap.ml" 179 5378 5382 "lib/heap.ml" 179 5378 5395
+call(
+  stack
+)
+type(
+  int
+)
+"lib/heap.ml" 179 5378 5396 "lib/heap.ml" 179 5378 5397
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( > )
+)
+"lib/heap.ml" 179 5378 5398 "lib/heap.ml" 179 5378 5399
+type(
+  int
+)
+"lib/heap.ml" 179 5378 5382 "lib/heap.ml" 179 5378 5399
+type(
+  bool
+)
+"lib/heap.ml" 179 5378 5405 "lib/heap.ml" 179 5378 5408
+type(
+  t -> X.t -> t -> t
+)
+ident(
+  int_ref p_f "lib/heap.ml" 166 5054 5060 "lib/heap.ml" 166 5054 5063
+)
+"lib/heap.ml" 179 5378 5410 "lib/heap.ml" 179 5378 5413
+type(
+  X.t -> t -> t
+)
+ident(
+  int_ref add "lib/heap.ml" 174 5241 5251 "lib/heap.ml" 174 5241 5254
+)
+"lib/heap.ml" 179 5378 5414 "lib/heap.ml" 179 5378 5415
+type(
+  X.t
+)
+ident(
+  int_ref y "lib/heap.ml" 178 5339 5353 "lib/heap.ml" 178 5339 5354
+)
+"lib/heap.ml" 179 5378 5416 "lib/heap.ml" 179 5378 5417
+type(
+  t
+)
+ident(
+  int_ref l "lib/heap.ml" 178 5339 5350 "lib/heap.ml" 178 5339 5351
+)
+"lib/heap.ml" 179 5378 5409 "lib/heap.ml" 179 5378 5418
+call(
+  stack
+)
+type(
+  t
+)
+"lib/heap.ml" 179 5378 5419 "lib/heap.ml" 179 5378 5420
+type(
+  X.t
+)
+ident(
+  int_ref x "lib/heap.ml" 174 5241 5255 "lib/heap.ml" 174 5241 5256
+)
+"lib/heap.ml" 179 5378 5421 "lib/heap.ml" 179 5378 5422
+type(
+  t
+)
+ident(
+  int_ref r "lib/heap.ml" 178 5339 5356 "lib/heap.ml" 178 5339 5357
+)
+"lib/heap.ml" 179 5378 5405 "lib/heap.ml" 179 5378 5422
+call(
+  tail
+)
+type(
+  t
+)
+"lib/heap.ml" 179 5378 5428 "lib/heap.ml" 179 5378 5431
+type(
+  t -> X.t -> t -> t
+)
+ident(
+  int_ref p_f "lib/heap.ml" 166 5054 5060 "lib/heap.ml" 166 5054 5063
+)
+"lib/heap.ml" 179 5378 5433 "lib/heap.ml" 179 5378 5436
+type(
+  X.t -> t -> t
+)
+ident(
+  int_ref add "lib/heap.ml" 174 5241 5251 "lib/heap.ml" 174 5241 5254
+)
+"lib/heap.ml" 179 5378 5437 "lib/heap.ml" 179 5378 5438
+type(
+  X.t
+)
+ident(
+  int_ref x "lib/heap.ml" 174 5241 5255 "lib/heap.ml" 174 5241 5256
+)
+"lib/heap.ml" 179 5378 5439 "lib/heap.ml" 179 5378 5440
+type(
+  t
+)
+ident(
+  int_ref l "lib/heap.ml" 178 5339 5350 "lib/heap.ml" 178 5339 5351
+)
+"lib/heap.ml" 179 5378 5432 "lib/heap.ml" 179 5378 5441
+call(
+  stack
+)
+type(
+  t
+)
+"lib/heap.ml" 179 5378 5442 "lib/heap.ml" 179 5378 5443
+type(
+  X.t
+)
+ident(
+  int_ref y "lib/heap.ml" 178 5339 5353 "lib/heap.ml" 178 5339 5354
+)
+"lib/heap.ml" 179 5378 5444 "lib/heap.ml" 179 5378 5445
+type(
+  t
+)
+ident(
+  int_ref r "lib/heap.ml" 178 5339 5356 "lib/heap.ml" 178 5339 5357
+)
+"lib/heap.ml" 179 5378 5428 "lib/heap.ml" 179 5378 5445
+call(
+  tail
+)
+type(
+  t
+)
+"lib/heap.ml" 179 5378 5379 "lib/heap.ml" 179 5378 5445
+type(
+  t
+)
+"lib/heap.ml" 181 5479 5490 "lib/heap.ml" 181 5479 5491
+type(
+  t
+)
+ident(
+  def l "lib/heap.ml" 182 5518 5519 "lib/heap.ml" 182 5518 5585
+)
+"lib/heap.ml" 181 5479 5493 "lib/heap.ml" 181 5479 5494
+type(
+  X.t
+)
+ident(
+  def y "lib/heap.ml" 182 5518 5519 "lib/heap.ml" 182 5518 5585
+)
+"lib/heap.ml" 181 5479 5496 "lib/heap.ml" 181 5479 5497
+type(
+  t
+)
+ident(
+  def r "lib/heap.ml" 182 5518 5519 "lib/heap.ml" 182 5518 5585
+)
+"lib/heap.ml" 181 5479 5485 "lib/heap.ml" 181 5479 5498
+type(
+  t
+)
+"lib/heap.ml" 181 5479 5506 "lib/heap.ml" 181 5479 5507
+type(
+  t
+)
+ident(
+  def l "lib/heap.ml" 182 5518 5519 "lib/heap.ml" 182 5518 5585
+)
+"lib/heap.ml" 181 5479 5509 "lib/heap.ml" 181 5479 5510
+type(
+  X.t
+)
+ident(
+  def y "lib/heap.ml" 182 5518 5519 "lib/heap.ml" 182 5518 5585
+)
+"lib/heap.ml" 181 5479 5512 "lib/heap.ml" 181 5479 5513
+type(
+  t
+)
+ident(
+  def r "lib/heap.ml" 182 5518 5519 "lib/heap.ml" 182 5518 5585
+)
+"lib/heap.ml" 181 5479 5501 "lib/heap.ml" 181 5479 5514
+type(
+  t
+)
+"lib/heap.ml" 181 5479 5485 "lib/heap.ml" 181 5479 5514
+type(
+  t
+)
+"lib/heap.ml" 182 5518 5522 "lib/heap.ml" 182 5518 5531
+type(
+  X.t -> X.t -> int
+)
+ident(
+  ext_ref X.compare
+)
+"lib/heap.ml" 182 5518 5532 "lib/heap.ml" 182 5518 5533
+type(
+  X.t
+)
+ident(
+  int_ref x "lib/heap.ml" 174 5241 5255 "lib/heap.ml" 174 5241 5256
+)
+"lib/heap.ml" 182 5518 5534 "lib/heap.ml" 182 5518 5535
+type(
+  X.t
+)
+ident(
+  int_ref y "lib/heap.ml" 181 5479 5493 "lib/heap.ml" 181 5479 5494
+)
+"lib/heap.ml" 182 5518 5522 "lib/heap.ml" 182 5518 5535
+call(
+  stack
+)
+type(
+  int
+)
+"lib/heap.ml" 182 5518 5536 "lib/heap.ml" 182 5518 5537
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( > )
+)
+"lib/heap.ml" 182 5518 5538 "lib/heap.ml" 182 5518 5539
+type(
+  int
+)
+"lib/heap.ml" 182 5518 5522 "lib/heap.ml" 182 5518 5539
+type(
+  bool
+)
+"lib/heap.ml" 182 5518 5545 "lib/heap.ml" 182 5518 5548
+type(
+  t -> X.t -> t -> t
+)
+ident(
+  int_ref pf_ "lib/heap.ml" 170 5148 5154 "lib/heap.ml" 170 5148 5157
+)
+"lib/heap.ml" 182 5518 5549 "lib/heap.ml" 182 5518 5550
+type(
+  t
+)
+ident(
+  int_ref l "lib/heap.ml" 181 5479 5490 "lib/heap.ml" 181 5479 5491
+)
+"lib/heap.ml" 182 5518 5551 "lib/heap.ml" 182 5518 5552
+type(
+  X.t
+)
+ident(
+  int_ref x "lib/heap.ml" 174 5241 5255 "lib/heap.ml" 174 5241 5256
+)
+"lib/heap.ml" 182 5518 5554 "lib/heap.ml" 182 5518 5557
+type(
+  X.t -> t -> t
+)
+ident(
+  int_ref add "lib/heap.ml" 174 5241 5251 "lib/heap.ml" 174 5241 5254
+)
+"lib/heap.ml" 182 5518 5558 "lib/heap.ml" 182 5518 5559
+type(
+  X.t
+)
+ident(
+  int_ref y "lib/heap.ml" 181 5479 5493 "lib/heap.ml" 181 5479 5494
+)
+"lib/heap.ml" 182 5518 5560 "lib/heap.ml" 182 5518 5561
+type(
+  t
+)
+ident(
+  int_ref r "lib/heap.ml" 181 5479 5496 "lib/heap.ml" 181 5479 5497
+)
+"lib/heap.ml" 182 5518 5553 "lib/heap.ml" 182 5518 5562
+call(
+  stack
+)
+type(
+  t
+)
+"lib/heap.ml" 182 5518 5545 "lib/heap.ml" 182 5518 5562
+call(
+  tail
+)
+type(
+  t
+)
+"lib/heap.ml" 182 5518 5568 "lib/heap.ml" 182 5518 5571
+type(
+  t -> X.t -> t -> t
+)
+ident(
+  int_ref pf_ "lib/heap.ml" 170 5148 5154 "lib/heap.ml" 170 5148 5157
+)
+"lib/heap.ml" 182 5518 5572 "lib/heap.ml" 182 5518 5573
+type(
+  t
+)
+ident(
+  int_ref l "lib/heap.ml" 181 5479 5490 "lib/heap.ml" 181 5479 5491
+)
+"lib/heap.ml" 182 5518 5574 "lib/heap.ml" 182 5518 5575
+type(
+  X.t
+)
+ident(
+  int_ref y "lib/heap.ml" 181 5479 5493 "lib/heap.ml" 181 5479 5494
+)
+"lib/heap.ml" 182 5518 5577 "lib/heap.ml" 182 5518 5580
+type(
+  X.t -> t -> t
+)
+ident(
+  int_ref add "lib/heap.ml" 174 5241 5251 "lib/heap.ml" 174 5241 5254
+)
+"lib/heap.ml" 182 5518 5581 "lib/heap.ml" 182 5518 5582
+type(
+  X.t
+)
+ident(
+  int_ref x "lib/heap.ml" 174 5241 5255 "lib/heap.ml" 174 5241 5256
+)
+"lib/heap.ml" 182 5518 5583 "lib/heap.ml" 182 5518 5584
+type(
+  t
+)
+ident(
+  int_ref r "lib/heap.ml" 181 5479 5496 "lib/heap.ml" 181 5479 5497
+)
+"lib/heap.ml" 182 5518 5576 "lib/heap.ml" 182 5518 5585
+call(
+  stack
+)
+type(
+  t
+)
+"lib/heap.ml" 182 5518 5568 "lib/heap.ml" 182 5518 5585
+call(
+  tail
+)
+type(
+  t
+)
+"lib/heap.ml" 182 5518 5519 "lib/heap.ml" 182 5518 5585
+type(
+  t
+)
+"lib/heap.ml" 174 5241 5259 "lib/heap.ml" 182 5518 5585
+type(
+  t -> t
+)
+"lib/heap.ml" 184 5587 5593 "lib/heap.ml" 184 5587 5600
+type(
+  t -> X.t
+)
+ident(
+  def maximum "lib/heap.ml" 190 5820 5822 "lib/heap.ml" 236 6903 6906
+)
+"lib/heap.ml" 185 5612 5618 "lib/heap.ml" 185 5612 5623
+type(
+  t
+)
+"lib/heap.ml" 185 5612 5627 "lib/heap.ml" 185 5612 5632
+type(
+  exn -> X.t
+)
+ident(
+  ext_ref Pervasives.raise
+)
+"lib/heap.ml" 185 5612 5633 "lib/heap.ml" 185 5612 5642
+type(
+  exn
+)
+"lib/heap.ml" 185 5612 5627 "lib/heap.ml" 185 5612 5642
+type(
+  X.t
+)
+"lib/heap.ml" 186 5643 5654 "lib/heap.ml" 186 5643 5655
+type(
+  t
+)
+"lib/heap.ml" 186 5643 5657 "lib/heap.ml" 186 5643 5658
+type(
+  X.t
+)
+ident(
+  def x "lib/heap.ml" 186 5643 5714 "lib/heap.ml" 186 5643 5715
+)
+"lib/heap.ml" 186 5643 5660 "lib/heap.ml" 186 5643 5661
+type(
+  t
+)
+"lib/heap.ml" 186 5643 5649 "lib/heap.ml" 186 5643 5662
+type(
+  t
+)
+"lib/heap.ml" 186 5643 5670 "lib/heap.ml" 186 5643 5671
+type(
+  t
+)
+"lib/heap.ml" 186 5643 5673 "lib/heap.ml" 186 5643 5674
+type(
+  X.t
+)
+ident(
+  def x "lib/heap.ml" 186 5643 5714 "lib/heap.ml" 186 5643 5715
+)
+"lib/heap.ml" 186 5643 5676 "lib/heap.ml" 186 5643 5677
+type(
+  t
+)
+"lib/heap.ml" 186 5643 5665 "lib/heap.ml" 186 5643 5678
+type(
+  t
+)
+"lib/heap.ml" 186 5643 5649 "lib/heap.ml" 186 5643 5678
+type(
+  t
+)
+"lib/heap.ml" 186 5643 5686 "lib/heap.ml" 186 5643 5687
+type(
+  t
+)
+"lib/heap.ml" 186 5643 5689 "lib/heap.ml" 186 5643 5690
+type(
+  X.t
+)
+ident(
+  def x "lib/heap.ml" 186 5643 5714 "lib/heap.ml" 186 5643 5715
+)
+"lib/heap.ml" 186 5643 5692 "lib/heap.ml" 186 5643 5693
+type(
+  t
+)
+"lib/heap.ml" 186 5643 5681 "lib/heap.ml" 186 5643 5694
+type(
+  t
+)
+"lib/heap.ml" 186 5643 5649 "lib/heap.ml" 186 5643 5694
+type(
+  t
+)
+"lib/heap.ml" 186 5643 5702 "lib/heap.ml" 186 5643 5703
+type(
+  t
+)
+"lib/heap.ml" 186 5643 5705 "lib/heap.ml" 186 5643 5706
+type(
+  X.t
+)
+ident(
+  def x "lib/heap.ml" 186 5643 5714 "lib/heap.ml" 186 5643 5715
+)
+"lib/heap.ml" 186 5643 5708 "lib/heap.ml" 186 5643 5709
+type(
+  t
+)
+"lib/heap.ml" 186 5643 5697 "lib/heap.ml" 186 5643 5710
+type(
+  t
+)
+"lib/heap.ml" 186 5643 5649 "lib/heap.ml" 186 5643 5710
+type(
+  t
+)
+"lib/heap.ml" 186 5643 5714 "lib/heap.ml" 186 5643 5715
+type(
+  X.t
+)
+ident(
+  int_ref x "lib/heap.ml" 186 5643 5657 "lib/heap.ml" 186 5643 5658
+)
+"lib/heap.ml" 184 5587 5603 "lib/heap.ml" 186 5643 5715
+type(
+  t -> X.t
+)
+"lib/heap.ml" 190 5820 5826 "lib/heap.ml" 190 5820 5829
+type(
+  t -> X.t -> t -> t
+)
+ident(
+  def p_f "lib/heap.ml" 194 5914 5916 "lib/heap.ml" 236 6903 6906
+)
+"lib/heap.ml" 190 5820 5830 "lib/heap.ml" 190 5820 5831
+type(
+  t
+)
+ident(
+  def l "lib/heap.ml" 190 5820 5832 "lib/heap.ml" 192 5888 5912
+)
+"lib/heap.ml" 190 5820 5832 "lib/heap.ml" 190 5820 5833
+type(
+  X.t
+)
+ident(
+  def x "lib/heap.ml" 190 5820 5834 "lib/heap.ml" 192 5888 5912
+)
+"lib/heap.ml" 190 5820 5834 "lib/heap.ml" 190 5820 5835
+type(
+  t
+)
+ident(
+  def r "lib/heap.ml" 190 5820 5838 "lib/heap.ml" 192 5888 5912
+)
+"lib/heap.ml" 190 5820 5844 "lib/heap.ml" 190 5820 5845
+type(
+  t
+)
+ident(
+  int_ref l "lib/heap.ml" 190 5820 5830 "lib/heap.ml" 190 5820 5831
+)
+"lib/heap.ml" 191 5851 5857 "lib/heap.ml" 191 5851 5862
+type(
+  t
+)
+"lib/heap.ml" 191 5851 5869 "lib/heap.ml" 191 5851 5870
+type(
+  t
+)
+type(
+  X.t
+)
+type(
+  t
+)
+"lib/heap.ml" 191 5851 5865 "lib/heap.ml" 191 5851 5870
+type(
+  t
+)
+"lib/heap.ml" 191 5851 5857 "lib/heap.ml" 191 5851 5870
+type(
+  t
+)
+"lib/heap.ml" 191 5851 5879 "lib/heap.ml" 191 5851 5880
+type(
+  t
+)
+ident(
+  int_ref l "lib/heap.ml" 190 5820 5830 "lib/heap.ml" 190 5820 5831
+)
+"lib/heap.ml" 191 5851 5882 "lib/heap.ml" 191 5851 5883
+type(
+  X.t
+)
+ident(
+  int_ref x "lib/heap.ml" 190 5820 5832 "lib/heap.ml" 190 5820 5833
+)
+"lib/heap.ml" 191 5851 5885 "lib/heap.ml" 191 5851 5886
+type(
+  t
+)
+ident(
+  int_ref r "lib/heap.ml" 190 5820 5834 "lib/heap.ml" 190 5820 5835
+)
+"lib/heap.ml" 191 5851 5874 "lib/heap.ml" 191 5851 5887
+type(
+  t
+)
+"lib/heap.ml" 192 5888 5894 "lib/heap.ml" 192 5888 5895
+type(
+  t
+)
+"lib/heap.ml" 192 5888 5904 "lib/heap.ml" 192 5888 5905
+type(
+  t
+)
+ident(
+  int_ref l "lib/heap.ml" 190 5820 5830 "lib/heap.ml" 190 5820 5831
+)
+"lib/heap.ml" 192 5888 5907 "lib/heap.ml" 192 5888 5908
+type(
+  X.t
+)
+ident(
+  int_ref x "lib/heap.ml" 190 5820 5832 "lib/heap.ml" 190 5820 5833
+)
+"lib/heap.ml" 192 5888 5910 "lib/heap.ml" 192 5888 5911
+type(
+  t
+)
+ident(
+  int_ref r "lib/heap.ml" 190 5820 5834 "lib/heap.ml" 190 5820 5835
+)
+"lib/heap.ml" 192 5888 5899 "lib/heap.ml" 192 5888 5912
+type(
+  t
+)
+"lib/heap.ml" 190 5820 5838 "lib/heap.ml" 192 5888 5912
+type(
+  t
+)
+"lib/heap.ml" 194 5914 5920 "lib/heap.ml" 194 5914 5923
+type(
+  t -> X.t -> t -> t
+)
+ident(
+  def pf_ "lib/heap.ml" 198 6007 6009 "lib/heap.ml" 236 6903 6906
+)
+"lib/heap.ml" 194 5914 5924 "lib/heap.ml" 194 5914 5925
+type(
+  t
+)
+ident(
+  def l "lib/heap.ml" 194 5914 5926 "lib/heap.ml" 196 5981 6005
+)
+"lib/heap.ml" 194 5914 5926 "lib/heap.ml" 194 5914 5927
+type(
+  X.t
+)
+ident(
+  def x "lib/heap.ml" 194 5914 5930 "lib/heap.ml" 196 5981 6005
+)
+"lib/heap.ml" 195 5939 5945 "lib/heap.ml" 195 5939 5950
+type(
+  t
+)
+"lib/heap.ml" 195 5939 5957 "lib/heap.ml" 195 5939 5958
+type(
+  t
+)
+type(
+  X.t
+)
+type(
+  t
+)
+"lib/heap.ml" 195 5939 5953 "lib/heap.ml" 195 5939 5958
+type(
+  t
+)
+"lib/heap.ml" 195 5939 5945 "lib/heap.ml" 195 5939 5958
+type(
+  t
+)
+"lib/heap.ml" 195 5939 5945 "lib/heap.ml" 195 5939 5963
+type(
+  t
+)
+ident(
+  def r "lib/heap.ml" 195 5939 5967 "lib/heap.ml" 195 5939 5980
+)
+"lib/heap.ml" 195 5939 5972 "lib/heap.ml" 195 5939 5973
+type(
+  t
+)
+ident(
+  int_ref l "lib/heap.ml" 194 5914 5924 "lib/heap.ml" 194 5914 5925
+)
+"lib/heap.ml" 195 5939 5975 "lib/heap.ml" 195 5939 5976
+type(
+  X.t
+)
+ident(
+  int_ref x "lib/heap.ml" 194 5914 5926 "lib/heap.ml" 194 5914 5927
+)
+"lib/heap.ml" 195 5939 5978 "lib/heap.ml" 195 5939 5979
+type(
+  t
+)
+ident(
+  int_ref r "lib/heap.ml" 195 5939 5945 "lib/heap.ml" 195 5939 5963
+)
+"lib/heap.ml" 195 5939 5967 "lib/heap.ml" 195 5939 5980
+type(
+  t
+)
+"lib/heap.ml" 196 5981 5987 "lib/heap.ml" 196 5981 5988
+type(
+  t
+)
+ident(
+  def r "lib/heap.ml" 196 5981 5992 "lib/heap.ml" 196 5981 6005
+)
+"lib/heap.ml" 196 5981 5997 "lib/heap.ml" 196 5981 5998
+type(
+  t
+)
+ident(
+  int_ref l "lib/heap.ml" 194 5914 5924 "lib/heap.ml" 194 5914 5925
+)
+"lib/heap.ml" 196 5981 6000 "lib/heap.ml" 196 5981 6001
+type(
+  X.t
+)
+ident(
+  int_ref x "lib/heap.ml" 194 5914 5926 "lib/heap.ml" 194 5914 5927
+)
+"lib/heap.ml" 196 5981 6003 "lib/heap.ml" 196 5981 6004
+type(
+  t
+)
+ident(
+  int_ref r "lib/heap.ml" 196 5981 5987 "lib/heap.ml" 196 5981 5988
+)
+"lib/heap.ml" 196 5981 5992 "lib/heap.ml" 196 5981 6005
+type(
+  t
+)
+"lib/heap.ml" 194 5914 5930 "lib/heap.ml" 196 5981 6005
+type(
+  t -> t
+)
+"lib/heap.ml" 198 6007 6017 "lib/heap.ml" 198 6007 6023
+type(
+  t -> t
+)
+ident(
+  def remove "lib/heap.ml" 198 6007 6009 "lib/heap.ml" 236 6903 6906
+)
+"lib/heap.ml" 199 6035 6041 "lib/heap.ml" 199 6035 6046
+type(
+  t
+)
+"lib/heap.ml" 200 6051 6052 "lib/heap.ml" 200 6051 6057
+type(
+  exn -> t
+)
+ident(
+  ext_ref Pervasives.raise
+)
+"lib/heap.ml" 200 6051 6058 "lib/heap.ml" 200 6051 6067
+type(
+  exn
+)
+"lib/heap.ml" 200 6051 6052 "lib/heap.ml" 200 6051 6067
+type(
+  t
+)
+"lib/heap.ml" 201 6068 6079 "lib/heap.ml" 201 6068 6084
+type(
+  t
+)
+"lib/heap.ml" 201 6068 6086 "lib/heap.ml" 201 6068 6087
+type(
+  X.t
+)
+"lib/heap.ml" 201 6068 6089 "lib/heap.ml" 201 6068 6094
+type(
+  t
+)
+"lib/heap.ml" 201 6068 6074 "lib/heap.ml" 201 6068 6095
+type(
+  t
+)
+"lib/heap.ml" 202 6100 6101 "lib/heap.ml" 202 6100 6106
+type(
+  t
+)
+"lib/heap.ml" 203 6107 6118 "lib/heap.ml" 203 6107 6119
+type(
+  t
+)
+ident(
+  def l "lib/heap.ml" 204 6134 6135 "lib/heap.ml" 204 6134 6136
+)
+"lib/heap.ml" 203 6107 6121 "lib/heap.ml" 203 6107 6122
+type(
+  X.t
+)
+"lib/heap.ml" 203 6107 6124 "lib/heap.ml" 203 6107 6129
+type(
+  t
+)
+"lib/heap.ml" 203 6107 6113 "lib/heap.ml" 203 6107 6130
+type(
+  t
+)
+"lib/heap.ml" 204 6134 6135 "lib/heap.ml" 204 6134 6136
+type(
+  t
+)
+ident(
+  int_ref l "lib/heap.ml" 203 6107 6118 "lib/heap.ml" 203 6107 6119
+)
+"lib/heap.ml" 206 6166 6177 "lib/heap.ml" 206 6166 6178
+type(
+  t
+)
+ident(
+  def l "lib/heap.ml" 207 6205 6213 "lib/heap.ml" 213 6334 6366
+)
+"lib/heap.ml" 206 6166 6180 "lib/heap.ml" 206 6166 6181
+type(
+  X.t
+)
+ident(
+  def x "lib/heap.ml" 207 6205 6213 "lib/heap.ml" 213 6334 6366
+)
+"lib/heap.ml" 206 6166 6183 "lib/heap.ml" 206 6166 6184
+type(
+  t
+)
+ident(
+  def r "lib/heap.ml" 207 6205 6213 "lib/heap.ml" 213 6334 6366
+)
+"lib/heap.ml" 206 6166 6172 "lib/heap.ml" 206 6166 6185
+type(
+  t
+)
+"lib/heap.ml" 206 6166 6193 "lib/heap.ml" 206 6166 6194
+type(
+  t
+)
+ident(
+  def l "lib/heap.ml" 207 6205 6213 "lib/heap.ml" 213 6334 6366
+)
+"lib/heap.ml" 206 6166 6196 "lib/heap.ml" 206 6166 6197
+type(
+  X.t
+)
+ident(
+  def x "lib/heap.ml" 207 6205 6213 "lib/heap.ml" 213 6334 6366
+)
+"lib/heap.ml" 206 6166 6199 "lib/heap.ml" 206 6166 6200
+type(
+  t
+)
+ident(
+  def r "lib/heap.ml" 207 6205 6213 "lib/heap.ml" 213 6334 6366
+)
+"lib/heap.ml" 206 6166 6188 "lib/heap.ml" 206 6166 6201
+type(
+  t
+)
+"lib/heap.ml" 206 6166 6172 "lib/heap.ml" 206 6166 6201
+type(
+  t
+)
+"lib/heap.ml" 207 6205 6217 "lib/heap.ml" 207 6205 6219
+type(
+  X.t
+)
+"lib/heap.ml" 207 6205 6222 "lib/heap.ml" 207 6205 6229
+type(
+  t -> X.t
+)
+ident(
+  int_ref maximum "lib/heap.ml" 184 5587 5593 "lib/heap.ml" 184 5587 5600
+)
+"lib/heap.ml" 207 6205 6230 "lib/heap.ml" 207 6205 6231
+type(
+  t
+)
+ident(
+  int_ref l "lib/heap.ml" 206 6166 6177 "lib/heap.ml" 206 6166 6178
+)
+"lib/heap.ml" 207 6205 6222 "lib/heap.ml" 207 6205 6231
+call(
+  stack
+)
+type(
+  X.t
+)
+"lib/heap.ml" 208 6235 6240 "lib/heap.ml" 208 6235 6242
+type(
+  X.t
+)
+"lib/heap.ml" 208 6235 6245 "lib/heap.ml" 208 6235 6252
+type(
+  t -> X.t
+)
+ident(
+  int_ref maximum "lib/heap.ml" 184 5587 5593 "lib/heap.ml" 184 5587 5600
+)
+"lib/heap.ml" 208 6235 6253 "lib/heap.ml" 208 6235 6254
+type(
+  t
+)
+ident(
+  int_ref r "lib/heap.ml" 206 6166 6183 "lib/heap.ml" 206 6166 6184
+)
+"lib/heap.ml" 208 6235 6245 "lib/heap.ml" 208 6235 6254
+call(
+  stack
+)
+type(
+  X.t
+)
+"lib/heap.ml" 209 6258 6263 "lib/heap.ml" 209 6258 6265
+type(
+  t
+)
+"lib/heap.ml" 209 6258 6268 "lib/heap.ml" 209 6258 6274
+type(
+  t -> t
+)
+ident(
+  int_ref remove "lib/heap.ml" 198 6007 6017 "lib/heap.ml" 198 6007 6023
+)
+"lib/heap.ml" 209 6258 6275 "lib/heap.ml" 209 6258 6276
+type(
+  t
+)
+ident(
+  int_ref l "lib/heap.ml" 206 6166 6177 "lib/heap.ml" 206 6166 6178
+)
+"lib/heap.ml" 209 6258 6268 "lib/heap.ml" 209 6258 6276
+call(
+  stack
+)
+type(
+  t
+)
+"lib/heap.ml" 210 6280 6284 "lib/heap.ml" 210 6280 6293
+type(
+  X.t -> X.t -> int
+)
+ident(
+  ext_ref X.compare
+)
+"lib/heap.ml" 210 6280 6294 "lib/heap.ml" 210 6280 6296
+type(
+  X.t
+)
+ident(
+  int_ref xl "lib/heap.ml" 207 6205 6217 "lib/heap.ml" 207 6205 6219
+)
+"lib/heap.ml" 210 6280 6297 "lib/heap.ml" 210 6280 6299
+type(
+  X.t
+)
+ident(
+  int_ref xr "lib/heap.ml" 208 6235 6240 "lib/heap.ml" 208 6235 6242
+)
+"lib/heap.ml" 210 6280 6284 "lib/heap.ml" 210 6280 6299
+call(
+  stack
+)
+type(
+  int
+)
+"lib/heap.ml" 210 6280 6300 "lib/heap.ml" 210 6280 6302
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( >= )
+)
+"lib/heap.ml" 210 6280 6303 "lib/heap.ml" 210 6280 6304
+type(
+  int
+)
+"lib/heap.ml" 210 6280 6284 "lib/heap.ml" 210 6280 6304
+type(
+  bool
+)
+"lib/heap.ml" 211 6311 6314 "lib/heap.ml" 211 6311 6317
+type(
+  t -> X.t -> t -> t
+)
+ident(
+  int_ref p_f "lib/heap.ml" 190 5820 5826 "lib/heap.ml" 190 5820 5829
+)
+"lib/heap.ml" 211 6311 6318 "lib/heap.ml" 211 6311 6320
+type(
+  t
+)
+ident(
+  int_ref l' "lib/heap.ml" 209 6258 6263 "lib/heap.ml" 209 6258 6265
+)
+"lib/heap.ml" 211 6311 6321 "lib/heap.ml" 211 6311 6323
+type(
+  X.t
+)
+ident(
+  int_ref xl "lib/heap.ml" 207 6205 6217 "lib/heap.ml" 207 6205 6219
+)
+"lib/heap.ml" 211 6311 6324 "lib/heap.ml" 211 6311 6325
+type(
+  t
+)
+ident(
+  int_ref r "lib/heap.ml" 206 6166 6183 "lib/heap.ml" 206 6166 6184
+)
+"lib/heap.ml" 211 6311 6314 "lib/heap.ml" 211 6311 6325
+call(
+  tail
+)
+type(
+  t
+)
+"lib/heap.ml" 213 6334 6337 "lib/heap.ml" 213 6334 6340
+type(
+  t -> X.t -> t -> t
+)
+ident(
+  int_ref p_f "lib/heap.ml" 190 5820 5826 "lib/heap.ml" 190 5820 5829
+)
+"lib/heap.ml" 213 6334 6341 "lib/heap.ml" 213 6334 6343
+type(
+  t
+)
+ident(
+  int_ref l' "lib/heap.ml" 209 6258 6263 "lib/heap.ml" 209 6258 6265
+)
+"lib/heap.ml" 213 6334 6344 "lib/heap.ml" 213 6334 6346
+type(
+  X.t
+)
+ident(
+  int_ref xr "lib/heap.ml" 208 6235 6240 "lib/heap.ml" 208 6235 6242
+)
+"lib/heap.ml" 213 6334 6348 "lib/heap.ml" 213 6334 6351
+type(
+  X.t -> t -> t
+)
+ident(
+  int_ref add "lib/heap.ml" 174 5241 5251 "lib/heap.ml" 174 5241 5254
+)
+"lib/heap.ml" 213 6334 6352 "lib/heap.ml" 213 6334 6354
+type(
+  X.t
+)
+ident(
+  int_ref xl "lib/heap.ml" 207 6205 6217 "lib/heap.ml" 207 6205 6219
+)
+"lib/heap.ml" 213 6334 6356 "lib/heap.ml" 213 6334 6362
+type(
+  t -> t
+)
+ident(
+  int_ref remove "lib/heap.ml" 198 6007 6017 "lib/heap.ml" 198 6007 6023
+)
+"lib/heap.ml" 213 6334 6363 "lib/heap.ml" 213 6334 6364
+type(
+  t
+)
+ident(
+  int_ref r "lib/heap.ml" 206 6166 6183 "lib/heap.ml" 206 6166 6184
+)
+"lib/heap.ml" 213 6334 6355 "lib/heap.ml" 213 6334 6365
+call(
+  stack
+)
+type(
+  t
+)
+"lib/heap.ml" 213 6334 6347 "lib/heap.ml" 213 6334 6366
+call(
+  stack
+)
+type(
+  t
+)
+"lib/heap.ml" 213 6334 6337 "lib/heap.ml" 213 6334 6366
+call(
+  tail
+)
+type(
+  t
+)
+"lib/heap.ml" 210 6280 6281 "lib/heap.ml" 213 6334 6366
+type(
+  t
+)
+"lib/heap.ml" 209 6258 6259 "lib/heap.ml" 213 6334 6366
+type(
+  t
+)
+"lib/heap.ml" 208 6235 6236 "lib/heap.ml" 213 6334 6366
+type(
+  t
+)
+"lib/heap.ml" 207 6205 6213 "lib/heap.ml" 213 6334 6366
+type(
+  t
+)
+"lib/heap.ml" 215 6397 6408 "lib/heap.ml" 215 6397 6409
+type(
+  t
+)
+ident(
+  def l "lib/heap.ml" 216 6436 6444 "lib/heap.ml" 222 6581 6595
+)
+"lib/heap.ml" 215 6397 6411 "lib/heap.ml" 215 6397 6412
+type(
+  X.t
+)
+ident(
+  def x "lib/heap.ml" 216 6436 6444 "lib/heap.ml" 222 6581 6595
+)
+"lib/heap.ml" 215 6397 6414 "lib/heap.ml" 215 6397 6415
+type(
+  t
+)
+ident(
+  def r "lib/heap.ml" 216 6436 6444 "lib/heap.ml" 222 6581 6595
+)
+"lib/heap.ml" 215 6397 6403 "lib/heap.ml" 215 6397 6416
+type(
+  t
+)
+"lib/heap.ml" 215 6397 6424 "lib/heap.ml" 215 6397 6425
+type(
+  t
+)
+ident(
+  def l "lib/heap.ml" 216 6436 6444 "lib/heap.ml" 222 6581 6595
+)
+"lib/heap.ml" 215 6397 6427 "lib/heap.ml" 215 6397 6428
+type(
+  X.t
+)
+ident(
+  def x "lib/heap.ml" 216 6436 6444 "lib/heap.ml" 222 6581 6595
+)
+"lib/heap.ml" 215 6397 6430 "lib/heap.ml" 215 6397 6431
+type(
+  t
+)
+ident(
+  def r "lib/heap.ml" 216 6436 6444 "lib/heap.ml" 222 6581 6595
+)
+"lib/heap.ml" 215 6397 6419 "lib/heap.ml" 215 6397 6432
+type(
+  t
+)
+"lib/heap.ml" 215 6397 6403 "lib/heap.ml" 215 6397 6432
+type(
+  t
+)
+"lib/heap.ml" 216 6436 6448 "lib/heap.ml" 216 6436 6450
+type(
+  X.t
+)
+"lib/heap.ml" 216 6436 6453 "lib/heap.ml" 216 6436 6460
+type(
+  t -> X.t
+)
+ident(
+  int_ref maximum "lib/heap.ml" 184 5587 5593 "lib/heap.ml" 184 5587 5600
+)
+"lib/heap.ml" 216 6436 6461 "lib/heap.ml" 216 6436 6462
+type(
+  t
+)
+ident(
+  int_ref l "lib/heap.ml" 215 6397 6408 "lib/heap.ml" 215 6397 6409
+)
+"lib/heap.ml" 216 6436 6453 "lib/heap.ml" 216 6436 6462
+call(
+  stack
+)
+type(
+  X.t
+)
+"lib/heap.ml" 217 6466 6471 "lib/heap.ml" 217 6466 6473
+type(
+  X.t
+)
+"lib/heap.ml" 217 6466 6476 "lib/heap.ml" 217 6466 6483
+type(
+  t -> X.t
+)
+ident(
+  int_ref maximum "lib/heap.ml" 184 5587 5593 "lib/heap.ml" 184 5587 5600
+)
+"lib/heap.ml" 217 6466 6484 "lib/heap.ml" 217 6466 6485
+type(
+  t
+)
+ident(
+  int_ref r "lib/heap.ml" 215 6397 6414 "lib/heap.ml" 215 6397 6415
+)
+"lib/heap.ml" 217 6466 6476 "lib/heap.ml" 217 6466 6485
+call(
+  stack
+)
+type(
+  X.t
+)
+"lib/heap.ml" 218 6489 6494 "lib/heap.ml" 218 6489 6496
+type(
+  t
+)
+"lib/heap.ml" 218 6489 6499 "lib/heap.ml" 218 6489 6505
+type(
+  t -> t
+)
+ident(
+  int_ref remove "lib/heap.ml" 198 6007 6017 "lib/heap.ml" 198 6007 6023
+)
+"lib/heap.ml" 218 6489 6506 "lib/heap.ml" 218 6489 6507
+type(
+  t
+)
+ident(
+  int_ref r "lib/heap.ml" 215 6397 6414 "lib/heap.ml" 215 6397 6415
+)
+"lib/heap.ml" 218 6489 6499 "lib/heap.ml" 218 6489 6507
+call(
+  stack
+)
+type(
+  t
+)
+"lib/heap.ml" 219 6511 6515 "lib/heap.ml" 219 6511 6524
+type(
+  X.t -> X.t -> int
+)
+ident(
+  ext_ref X.compare
+)
+"lib/heap.ml" 219 6511 6525 "lib/heap.ml" 219 6511 6527
+type(
+  X.t
+)
+ident(
+  int_ref xl "lib/heap.ml" 216 6436 6448 "lib/heap.ml" 216 6436 6450
+)
+"lib/heap.ml" 219 6511 6528 "lib/heap.ml" 219 6511 6530
+type(
+  X.t
+)
+ident(
+  int_ref xr "lib/heap.ml" 217 6466 6471 "lib/heap.ml" 217 6466 6473
+)
+"lib/heap.ml" 219 6511 6515 "lib/heap.ml" 219 6511 6530
+call(
+  stack
+)
+type(
+  int
+)
+"lib/heap.ml" 219 6511 6531 "lib/heap.ml" 219 6511 6532
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( > )
+)
+"lib/heap.ml" 219 6511 6533 "lib/heap.ml" 219 6511 6534
+type(
+  int
+)
+"lib/heap.ml" 219 6511 6515 "lib/heap.ml" 219 6511 6534
+type(
+  bool
+)
+"lib/heap.ml" 220 6541 6544 "lib/heap.ml" 220 6541 6547
+type(
+  t -> X.t -> t -> t
+)
+ident(
+  int_ref pf_ "lib/heap.ml" 194 5914 5920 "lib/heap.ml" 194 5914 5923
+)
+"lib/heap.ml" 220 6541 6549 "lib/heap.ml" 220 6541 6552
+type(
+  X.t -> t -> t
+)
+ident(
+  int_ref add "lib/heap.ml" 174 5241 5251 "lib/heap.ml" 174 5241 5254
+)
+"lib/heap.ml" 220 6541 6553 "lib/heap.ml" 220 6541 6555
+type(
+  X.t
+)
+ident(
+  int_ref xr "lib/heap.ml" 217 6466 6471 "lib/heap.ml" 217 6466 6473
+)
+"lib/heap.ml" 220 6541 6557 "lib/heap.ml" 220 6541 6563
+type(
+  t -> t
+)
+ident(
+  int_ref remove "lib/heap.ml" 198 6007 6017 "lib/heap.ml" 198 6007 6023
+)
+"lib/heap.ml" 220 6541 6564 "lib/heap.ml" 220 6541 6565
+type(
+  t
+)
+ident(
+  int_ref l "lib/heap.ml" 215 6397 6408 "lib/heap.ml" 215 6397 6409
+)
+"lib/heap.ml" 220 6541 6556 "lib/heap.ml" 220 6541 6566
+call(
+  stack
+)
+type(
+  t
+)
+"lib/heap.ml" 220 6541 6548 "lib/heap.ml" 220 6541 6567
+call(
+  stack
+)
+type(
+  t
+)
+"lib/heap.ml" 220 6541 6568 "lib/heap.ml" 220 6541 6570
+type(
+  X.t
+)
+ident(
+  int_ref xl "lib/heap.ml" 216 6436 6448 "lib/heap.ml" 216 6436 6450
+)
+"lib/heap.ml" 220 6541 6571 "lib/heap.ml" 220 6541 6573
+type(
+  t
+)
+ident(
+  int_ref r' "lib/heap.ml" 218 6489 6494 "lib/heap.ml" 218 6489 6496
+)
+"lib/heap.ml" 220 6541 6544 "lib/heap.ml" 220 6541 6573
+call(
+  tail
+)
+type(
+  t
+)
+"lib/heap.ml" 222 6581 6584 "lib/heap.ml" 222 6581 6587
+type(
+  t -> X.t -> t -> t
+)
+ident(
+  int_ref pf_ "lib/heap.ml" 194 5914 5920 "lib/heap.ml" 194 5914 5923
+)
+"lib/heap.ml" 222 6581 6588 "lib/heap.ml" 222 6581 6589
+type(
+  t
+)
+ident(
+  int_ref l "lib/heap.ml" 215 6397 6408 "lib/heap.ml" 215 6397 6409
+)
+"lib/heap.ml" 222 6581 6590 "lib/heap.ml" 222 6581 6592
+type(
+  X.t
+)
+ident(
+  int_ref xr "lib/heap.ml" 217 6466 6471 "lib/heap.ml" 217 6466 6473
+)
+"lib/heap.ml" 222 6581 6593 "lib/heap.ml" 222 6581 6595
+type(
+  t
+)
+ident(
+  int_ref r' "lib/heap.ml" 218 6489 6494 "lib/heap.ml" 218 6489 6496
+)
+"lib/heap.ml" 222 6581 6584 "lib/heap.ml" 222 6581 6595
+call(
+  tail
+)
+type(
+  t
+)
+"lib/heap.ml" 219 6511 6512 "lib/heap.ml" 222 6581 6595
+type(
+  t
+)
+"lib/heap.ml" 218 6489 6490 "lib/heap.ml" 222 6581 6595
+type(
+  t
+)
+"lib/heap.ml" 217 6466 6467 "lib/heap.ml" 222 6581 6595
+type(
+  t
+)
+"lib/heap.ml" 216 6436 6444 "lib/heap.ml" 222 6581 6595
+type(
+  t
+)
+"lib/heap.ml" 198 6007 6026 "lib/heap.ml" 222 6581 6595
+type(
+  t -> t
+)
+"lib/heap.ml" 224 6597 6607 "lib/heap.ml" 224 6597 6611
+type(
+  (X.t -> 'a) -> t -> unit
+)
+ident(
+  def iter "lib/heap.ml" 224 6597 6599 "lib/heap.ml" 236 6903 6906
+)
+"lib/heap.ml" 224 6597 6612 "lib/heap.ml" 224 6597 6613
+type(
+  X.t -> 'a
+)
+ident(
+  def f "lib/heap.ml" 224 6597 6616 "lib/heap.ml" 228 6717 6741
+)
+"lib/heap.ml" 225 6625 6631 "lib/heap.ml" 225 6625 6636
+type(
+  t
+)
+"lib/heap.ml" 226 6641 6642 "lib/heap.ml" 226 6641 6644
+type(
+  unit
+)
+"lib/heap.ml" 227 6645 6656 "lib/heap.ml" 227 6645 6657
+type(
+  t
+)
+ident(
+  def l "lib/heap.ml" 228 6717 6718 "lib/heap.ml" 228 6717 6741
+)
+"lib/heap.ml" 227 6645 6659 "lib/heap.ml" 227 6645 6660
+type(
+  X.t
+)
+ident(
+  def x "lib/heap.ml" 228 6717 6718 "lib/heap.ml" 228 6717 6741
+)
+"lib/heap.ml" 227 6645 6662 "lib/heap.ml" 227 6645 6663
+type(
+  t
+)
+ident(
+  def r "lib/heap.ml" 228 6717 6718 "lib/heap.ml" 228 6717 6741
+)
+"lib/heap.ml" 227 6645 6651 "lib/heap.ml" 227 6645 6664
+type(
+  t
+)
+"lib/heap.ml" 227 6645 6672 "lib/heap.ml" 227 6645 6673
+type(
+  t
+)
+ident(
+  def l "lib/heap.ml" 228 6717 6718 "lib/heap.ml" 228 6717 6741
+)
+"lib/heap.ml" 227 6645 6675 "lib/heap.ml" 227 6645 6676
+type(
+  X.t
+)
+ident(
+  def x "lib/heap.ml" 228 6717 6718 "lib/heap.ml" 228 6717 6741
+)
+"lib/heap.ml" 227 6645 6678 "lib/heap.ml" 227 6645 6679
+type(
+  t
+)
+ident(
+  def r "lib/heap.ml" 228 6717 6718 "lib/heap.ml" 228 6717 6741
+)
+"lib/heap.ml" 227 6645 6667 "lib/heap.ml" 227 6645 6680
+type(
+  t
+)
+"lib/heap.ml" 227 6645 6651 "lib/heap.ml" 227 6645 6680
+type(
+  t
+)
+"lib/heap.ml" 227 6645 6688 "lib/heap.ml" 227 6645 6689
+type(
+  t
+)
+ident(
+  def l "lib/heap.ml" 228 6717 6718 "lib/heap.ml" 228 6717 6741
+)
+"lib/heap.ml" 227 6645 6691 "lib/heap.ml" 227 6645 6692
+type(
+  X.t
+)
+ident(
+  def x "lib/heap.ml" 228 6717 6718 "lib/heap.ml" 228 6717 6741
+)
+"lib/heap.ml" 227 6645 6694 "lib/heap.ml" 227 6645 6695
+type(
+  t
+)
+ident(
+  def r "lib/heap.ml" 228 6717 6718 "lib/heap.ml" 228 6717 6741
+)
+"lib/heap.ml" 227 6645 6683 "lib/heap.ml" 227 6645 6696
+type(
+  t
+)
+"lib/heap.ml" 227 6645 6651 "lib/heap.ml" 227 6645 6696
+type(
+  t
+)
+"lib/heap.ml" 227 6645 6704 "lib/heap.ml" 227 6645 6705
+type(
+  t
+)
+ident(
+  def l "lib/heap.ml" 228 6717 6718 "lib/heap.ml" 228 6717 6741
+)
+"lib/heap.ml" 227 6645 6707 "lib/heap.ml" 227 6645 6708
+type(
+  X.t
+)
+ident(
+  def x "lib/heap.ml" 228 6717 6718 "lib/heap.ml" 228 6717 6741
+)
+"lib/heap.ml" 227 6645 6710 "lib/heap.ml" 227 6645 6711
+type(
+  t
+)
+ident(
+  def r "lib/heap.ml" 228 6717 6718 "lib/heap.ml" 228 6717 6741
+)
+"lib/heap.ml" 227 6645 6699 "lib/heap.ml" 227 6645 6712
+type(
+  t
+)
+"lib/heap.ml" 227 6645 6651 "lib/heap.ml" 227 6645 6712
+type(
+  t
+)
+"lib/heap.ml" 228 6717 6718 "lib/heap.ml" 228 6717 6722
+type(
+  (X.t -> 'a) -> t -> unit
+)
+ident(
+  int_ref iter "lib/heap.ml" 224 6597 6607 "lib/heap.ml" 224 6597 6611
+)
+"lib/heap.ml" 228 6717 6723 "lib/heap.ml" 228 6717 6724
+type(
+  X.t -> 'a
+)
+ident(
+  int_ref f "lib/heap.ml" 224 6597 6612 "lib/heap.ml" 224 6597 6613
+)
+"lib/heap.ml" 228 6717 6725 "lib/heap.ml" 228 6717 6726
+type(
+  t
+)
+ident(
+  int_ref l "lib/heap.ml" 227 6645 6656 "lib/heap.ml" 227 6645 6657
+)
+"lib/heap.ml" 228 6717 6718 "lib/heap.ml" 228 6717 6726
+call(
+  stack
+)
+type(
+  unit
+)
+"lib/heap.ml" 228 6717 6728 "lib/heap.ml" 228 6717 6729
+type(
+  X.t -> 'a
+)
+ident(
+  int_ref f "lib/heap.ml" 224 6597 6612 "lib/heap.ml" 224 6597 6613
+)
+"lib/heap.ml" 228 6717 6730 "lib/heap.ml" 228 6717 6731
+type(
+  X.t
+)
+ident(
+  int_ref x "lib/heap.ml" 227 6645 6659 "lib/heap.ml" 227 6645 6660
+)
+"lib/heap.ml" 228 6717 6728 "lib/heap.ml" 228 6717 6731
+call(
+  stack
+)
+type(
+  'a
+)
+"lib/heap.ml" 228 6717 6733 "lib/heap.ml" 228 6717 6737
+type(
+  (X.t -> 'a) -> t -> unit
+)
+ident(
+  int_ref iter "lib/heap.ml" 224 6597 6607 "lib/heap.ml" 224 6597 6611
+)
+"lib/heap.ml" 228 6717 6738 "lib/heap.ml" 228 6717 6739
+type(
+  X.t -> 'a
+)
+ident(
+  int_ref f "lib/heap.ml" 224 6597 6612 "lib/heap.ml" 224 6597 6613
+)
+"lib/heap.ml" 228 6717 6740 "lib/heap.ml" 228 6717 6741
+type(
+  t
+)
+ident(
+  int_ref r "lib/heap.ml" 227 6645 6662 "lib/heap.ml" 227 6645 6663
+)
+"lib/heap.ml" 228 6717 6733 "lib/heap.ml" 228 6717 6741
+call(
+  tail
+)
+type(
+  unit
+)
+"lib/heap.ml" 228 6717 6728 "lib/heap.ml" 228 6717 6741
+type(
+  unit
+)
+"lib/heap.ml" 228 6717 6718 "lib/heap.ml" 228 6717 6741
+type(
+  unit
+)
+"lib/heap.ml" 224 6597 6616 "lib/heap.ml" 228 6717 6741
+type(
+  t -> unit
+)
+"lib/heap.ml" 230 6743 6753 "lib/heap.ml" 230 6743 6757
+type(
+  (X.t -> 'b -> 'b) -> t -> 'b -> 'b
+)
+ident(
+  def fold "lib/heap.ml" 230 6743 6745 "lib/heap.ml" 236 6903 6906
+)
+"lib/heap.ml" 230 6743 6758 "lib/heap.ml" 230 6743 6759
+type(
+  X.t -> 'b -> 'b
+)
+ident(
+  def f "lib/heap.ml" 230 6743 6760 "lib/heap.ml" 234 6872 6901
+)
+"lib/heap.ml" 230 6743 6760 "lib/heap.ml" 230 6743 6761
+type(
+  t
+)
+ident(
+  def h "lib/heap.ml" 230 6743 6762 "lib/heap.ml" 234 6872 6901
+)
+"lib/heap.ml" 230 6743 6762 "lib/heap.ml" 230 6743 6764
+type(
+  'b
+)
+ident(
+  def x0 "lib/heap.ml" 230 6743 6767 "lib/heap.ml" 234 6872 6901
+)
+"lib/heap.ml" 230 6743 6773 "lib/heap.ml" 230 6743 6774
+type(
+  t
+)
+ident(
+  int_ref h "lib/heap.ml" 230 6743 6760 "lib/heap.ml" 230 6743 6761
+)
+"lib/heap.ml" 231 6780 6786 "lib/heap.ml" 231 6780 6791
+type(
+  t
+)
+"lib/heap.ml" 232 6796 6797 "lib/heap.ml" 232 6796 6799
+type(
+  'b
+)
+ident(
+  int_ref x0 "lib/heap.ml" 230 6743 6762 "lib/heap.ml" 230 6743 6764
+)
+"lib/heap.ml" 233 6800 6811 "lib/heap.ml" 233 6800 6812
+type(
+  t
+)
+ident(
+  def l "lib/heap.ml" 234 6872 6873 "lib/heap.ml" 234 6872 6901
+)
+"lib/heap.ml" 233 6800 6814 "lib/heap.ml" 233 6800 6815
+type(
+  X.t
+)
+ident(
+  def x "lib/heap.ml" 234 6872 6873 "lib/heap.ml" 234 6872 6901
+)
+"lib/heap.ml" 233 6800 6817 "lib/heap.ml" 233 6800 6818
+type(
+  t
+)
+ident(
+  def r "lib/heap.ml" 234 6872 6873 "lib/heap.ml" 234 6872 6901
+)
+"lib/heap.ml" 233 6800 6806 "lib/heap.ml" 233 6800 6819
+type(
+  t
+)
+"lib/heap.ml" 233 6800 6827 "lib/heap.ml" 233 6800 6828
+type(
+  t
+)
+ident(
+  def l "lib/heap.ml" 234 6872 6873 "lib/heap.ml" 234 6872 6901
+)
+"lib/heap.ml" 233 6800 6830 "lib/heap.ml" 233 6800 6831
+type(
+  X.t
+)
+ident(
+  def x "lib/heap.ml" 234 6872 6873 "lib/heap.ml" 234 6872 6901
+)
+"lib/heap.ml" 233 6800 6833 "lib/heap.ml" 233 6800 6834
+type(
+  t
+)
+ident(
+  def r "lib/heap.ml" 234 6872 6873 "lib/heap.ml" 234 6872 6901
+)
+"lib/heap.ml" 233 6800 6822 "lib/heap.ml" 233 6800 6835
+type(
+  t
+)
+"lib/heap.ml" 233 6800 6806 "lib/heap.ml" 233 6800 6835
+type(
+  t
+)
+"lib/heap.ml" 233 6800 6843 "lib/heap.ml" 233 6800 6844
+type(
+  t
+)
+ident(
+  def l "lib/heap.ml" 234 6872 6873 "lib/heap.ml" 234 6872 6901
+)
+"lib/heap.ml" 233 6800 6846 "lib/heap.ml" 233 6800 6847
+type(
+  X.t
+)
+ident(
+  def x "lib/heap.ml" 234 6872 6873 "lib/heap.ml" 234 6872 6901
+)
+"lib/heap.ml" 233 6800 6849 "lib/heap.ml" 233 6800 6850
+type(
+  t
+)
+ident(
+  def r "lib/heap.ml" 234 6872 6873 "lib/heap.ml" 234 6872 6901
+)
+"lib/heap.ml" 233 6800 6838 "lib/heap.ml" 233 6800 6851
+type(
+  t
+)
+"lib/heap.ml" 233 6800 6806 "lib/heap.ml" 233 6800 6851
+type(
+  t
+)
+"lib/heap.ml" 233 6800 6859 "lib/heap.ml" 233 6800 6860
+type(
+  t
+)
+ident(
+  def l "lib/heap.ml" 234 6872 6873 "lib/heap.ml" 234 6872 6901
+)
+"lib/heap.ml" 233 6800 6862 "lib/heap.ml" 233 6800 6863
+type(
+  X.t
+)
+ident(
+  def x "lib/heap.ml" 234 6872 6873 "lib/heap.ml" 234 6872 6901
+)
+"lib/heap.ml" 233 6800 6865 "lib/heap.ml" 233 6800 6866
+type(
+  t
+)
+ident(
+  def r "lib/heap.ml" 234 6872 6873 "lib/heap.ml" 234 6872 6901
+)
+"lib/heap.ml" 233 6800 6854 "lib/heap.ml" 233 6800 6867
+type(
+  t
+)
+"lib/heap.ml" 233 6800 6806 "lib/heap.ml" 233 6800 6867
+type(
+  t
+)
+"lib/heap.ml" 234 6872 6873 "lib/heap.ml" 234 6872 6877
+type(
+  (X.t -> 'b -> 'b) -> t -> 'b -> 'b
+)
+ident(
+  int_ref fold "lib/heap.ml" 230 6743 6753 "lib/heap.ml" 230 6743 6757
+)
+"lib/heap.ml" 234 6872 6878 "lib/heap.ml" 234 6872 6879
+type(
+  X.t -> 'b -> 'b
+)
+ident(
+  int_ref f "lib/heap.ml" 230 6743 6758 "lib/heap.ml" 230 6743 6759
+)
+"lib/heap.ml" 234 6872 6880 "lib/heap.ml" 234 6872 6881
+type(
+  t
+)
+ident(
+  int_ref l "lib/heap.ml" 233 6800 6811 "lib/heap.ml" 233 6800 6812
+)
+"lib/heap.ml" 234 6872 6883 "lib/heap.ml" 234 6872 6887
+type(
+  (X.t -> 'b -> 'b) -> t -> 'b -> 'b
+)
+ident(
+  int_ref fold "lib/heap.ml" 230 6743 6753 "lib/heap.ml" 230 6743 6757
+)
+"lib/heap.ml" 234 6872 6888 "lib/heap.ml" 234 6872 6889
+type(
+  X.t -> 'b -> 'b
+)
+ident(
+  int_ref f "lib/heap.ml" 230 6743 6758 "lib/heap.ml" 230 6743 6759
+)
+"lib/heap.ml" 234 6872 6890 "lib/heap.ml" 234 6872 6891
+type(
+  t
+)
+ident(
+  int_ref r "lib/heap.ml" 233 6800 6817 "lib/heap.ml" 233 6800 6818
+)
+"lib/heap.ml" 234 6872 6893 "lib/heap.ml" 234 6872 6894
+type(
+  X.t -> 'b -> 'b
+)
+ident(
+  int_ref f "lib/heap.ml" 230 6743 6758 "lib/heap.ml" 230 6743 6759
+)
+"lib/heap.ml" 234 6872 6895 "lib/heap.ml" 234 6872 6896
+type(
+  X.t
+)
+ident(
+  int_ref x "lib/heap.ml" 233 6800 6814 "lib/heap.ml" 233 6800 6815
+)
+"lib/heap.ml" 234 6872 6897 "lib/heap.ml" 234 6872 6899
+type(
+  'b
+)
+ident(
+  int_ref x0 "lib/heap.ml" 230 6743 6762 "lib/heap.ml" 230 6743 6764
+)
+"lib/heap.ml" 234 6872 6892 "lib/heap.ml" 234 6872 6900
+call(
+  stack
+)
+type(
+  'b
+)
+"lib/heap.ml" 234 6872 6882 "lib/heap.ml" 234 6872 6901
+call(
+  stack
+)
+type(
+  'b
+)
+"lib/heap.ml" 234 6872 6873 "lib/heap.ml" 234 6872 6901
+call(
+  tail
+)
+type(
+  'b
+)
+"lib/heap.ml" 230 6743 6767 "lib/heap.ml" 234 6872 6901
+type(
+  'b
+)

@@ -1,0 +1,28 @@
+From 9724d437a7b1781b719e7935adb2cd68e73f8b7d Mon Sep 17 00:00:00 2001
+From: Cristy <urban-warrior@imagemagick.org>
+Date: Wed, 16 Nov 2016 15:49:07 -0500
+Subject: [PATCH] Prevent heap buffer overflow in heap-buffer-overflow in
+ IsPixelGray
+
+bug: https://github.com/ImageMagick/ImageMagick/issues/301
+bug-debian: https://bugs.debian.org/845242
+origin: upstream,  https://github.com/ImageMagick/ImageMagick/commit/174de08d7c81ce147689f3b1c73fadd6bf1c023c
+
+(cherry picked from commit 174de08d7c81ce147689f3b1c73fadd6bf1c023c)
+---
+ coders/sgi.c | 2 ++
+ 1 file changed, 2 insertions(+)
+
+Index: imagemagick-6.6.9.7/coders/sgi.c
+===================================================================
+--- imagemagick-6.6.9.7.orig/coders/sgi.c	2016-11-29 14:01:39.387531130 -0500
++++ imagemagick-6.6.9.7/coders/sgi.c	2016-11-29 14:01:39.383531085 -0500
+@@ -336,6 +336,8 @@
+     if ((iris_info.bytes_per_pixel == 0) || (iris_info.bytes_per_pixel > 2))
+       ThrowReaderException(CorruptImageError,"ImproperImageHeader");
+     iris_info.dimension=ReadBlobMSBShort(image);
++    if ((iris_info.dimension == 0) || (iris_info.dimension > 3)) 
++      ThrowReaderException(CorruptImageError,"ImproperImageHeader");
+     iris_info.columns=ReadBlobMSBShort(image);
+     iris_info.rows=ReadBlobMSBShort(image);
+     iris_info.depth=ReadBlobMSBShort(image);

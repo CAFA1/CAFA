@@ -1,0 +1,32 @@
+Backport of:
+
+From 485a43cb1eeb6634f872eafcad55ba80cabc68bf Mon Sep 17 00:00:00 2001
+From: Cristy <urban-warrior@imagemagick.org>
+Date: Sun, 14 Feb 2016 09:24:32 -0500
+Subject: [PATCH] Partial fix for out of bound access of mat file
+
+Fix an out of bound read in mat file due to insuffisant allocation
+
+bug: https://github.com/ImageMagick/ImageMagick/issues/131
+origin: https://github.com/ImageMagick/ImageMagick/commit/f3b483e8b054c50149912523b4773687e18afe25
+bug-debian: https://bugs.Debian.org/845246
+bug-ubuntu: https://bugs.launchpad.net/ubuntu/+source/imagemagick/+bug/1545366
+
+(cherry picked from commit f3b483e8b054c50149912523b4773687e18afe25)
+---
+ coders/mat.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+Index: imagemagick-6.6.9.7/coders/mat.c
+===================================================================
+--- imagemagick-6.6.9.7.orig/coders/mat.c	2016-11-29 14:11:35.098382515 -0500
++++ imagemagick-6.6.9.7/coders/mat.c	2016-11-29 14:11:35.098382515 -0500
+@@ -872,7 +872,7 @@
+     }  
+ 
+   /* ----- Load raster data ----- */
+-    BImgBuff = (unsigned char *) AcquireQuantumMemory((size_t) (ldblk),sizeof(unsigned char *));    /* Ldblk was set in the check phase */
++    BImgBuff = (unsigned char *) AcquireQuantumMemory((size_t) (ldblk),sizeof(double *));    /* Ldblk was set in the check phase */
+     if (BImgBuff == NULL)
+       goto NoMemory;
+ 

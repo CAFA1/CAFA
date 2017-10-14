@@ -1,0 +1,40 @@
+From 44675e8e48977bbeb1cafade861db2d777a5c7ae Mon Sep 17 00:00:00 2001
+From: cristy <cristy@aa41f4f7-0bf4-0310-aa73-e5a19afd5a74>
+Date: Sun, 14 Dec 2014 15:28:26 +0000
+Subject: [PATCH] Avoid a memory leak in quantum management
+
+Note that upstream magick/colormap-private.h patch is buggy and already applied in the patch queue.
+
+git-svn-id: https://subversion.imagemagick.org/subversion/ImageMagick/branches/ImageMagick-6@17207 aa41f4f7-0bf4-0310-aa73-e5a19afd5a74
+origin:  http://trac.imagemagick.org/changeset/17207 and  http://trac.imagemagick.org/changeset/17228
+---
+ magick/quantum.c | 12 ++++++++++--
+ 1 file changed, 10 insertions(+), 2 deletions(-)
+
+Index: imagemagick-6.6.9.7/magick/quantum.c
+===================================================================
+--- imagemagick-6.6.9.7.orig/magick/quantum.c	2016-11-15 13:24:29.659495033 -0500
++++ imagemagick-6.6.9.7/magick/quantum.c	2016-11-15 13:32:06.025067397 -0500
+@@ -144,7 +144,7 @@
+ %                                                                             %
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+ %
+-%  AcquireQuantumPixels() allocates the unsigned char structure.
++%  AcquireQuantumPixels() allocates the pixel staging area.
+ %
+ %  The format of the AcquireQuantumPixels method is:
+ %
+@@ -179,7 +179,12 @@
+     quantum_info->pixels[i]=(unsigned char *) AcquireQuantumMemory(extent+1,
+       sizeof(**quantum_info->pixels));
+     if (quantum_info->pixels[i] == (unsigned char *) NULL)
+-      return(MagickFalse);
++      {
++        while (--i >= 0)
++          quantum_info->pixels[i]=(unsigned char *) RelinquishMagickMemory(
++            quantum_info->pixels[i]);
++        return(MagickFalse);
++      }
+     (void) ResetMagickMemory(quantum_info->pixels[i],0,(extent+1)*
+       sizeof(**quantum_info->pixels));
+     quantum_info->pixels[i][extent]=QuantumSignature;

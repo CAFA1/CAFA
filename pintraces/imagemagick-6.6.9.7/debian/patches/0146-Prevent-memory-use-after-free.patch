@@ -1,0 +1,26 @@
+From 9473ebf34fe9056066213195b7cb3bd23cf8a8e8 Mon Sep 17 00:00:00 2001
+From: Cristy <urban-warrior@imagemagick.org>
+Date: Fri, 5 Aug 2016 16:33:16 -0400
+Subject: [PATCH] Prevent memory use after free
+
+(cherry picked from commit ecc03a2518c2b7dd375fde3a040fdae0bdf6a521)
+bug: https://www.imagemagick.org/discourse-server/viewtopic.php?f=3&t=30245
+upstream, https://github.com/ImageMagick/ImageMagick/commit/ecc03a2518c2b7dd375fde3a040fdae0bdf6a521
+bug-debian: https://bugs.debian.org/834183
+---
+ coders/pwp.c | 2 --
+ 1 file changed, 2 deletions(-)
+
+Index: imagemagick-6.7.7.10/coders/pwp.c
+===================================================================
+--- imagemagick-6.7.7.10.orig/coders/pwp.c	2016-11-14 11:16:00.997354223 -0500
++++ imagemagick-6.7.7.10/coders/pwp.c	2016-11-14 11:16:00.993354223 -0500
+@@ -245,8 +245,6 @@
+   }
+   (void) RelinquishUniqueFileResource(read_info->filename);
+   read_info=DestroyImageInfo(read_info);
+-  (void) CloseBlob(pwp_image);
+-  pwp_image=DestroyImage(pwp_image);
+   if (EOFBlob(image) != MagickFalse)
+     {
+       char

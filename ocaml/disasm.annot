@@ -1,0 +1,109 @@
+"disasm.ml" 5 59 63 "disasm.ml" 5 59 75
+type(
+  Libbfd.bfd_architecture ->
+  (Type.addr -> char) -> Type.addr -> Ast.stmt list * int64
+)
+ident(
+  def disasm_instr "disasm.ml" 10 184 184 --
+)
+"disasm.ml" 5 59 76 "disasm.ml" 5 59 80
+type(
+  Libbfd.bfd_architecture
+)
+ident(
+  def arch "disasm.ml" 6 83 85 "disasm.ml" 8 154 182
+)
+"disasm.ml" 6 83 91 "disasm.ml" 6 83 95
+type(
+  Libbfd.bfd_architecture
+)
+ident(
+  int_ref arch "disasm.ml" 5 59 76 "disasm.ml" 5 59 80
+)
+"disasm.ml" 7 101 105 "disasm.ml" 7 101 125
+type(
+  Libbfd.bfd_architecture
+)
+"disasm.ml" 7 101 129 "disasm.ml" 7 101 153
+type(
+  (Type.addr -> char) -> Type.addr -> Ast.stmt list * int64
+)
+ident(
+  ext_ref Disasm_i386.disasm_instr
+)
+"disasm.ml" 8 154 158 "disasm.ml" 8 154 159
+type(
+  Libbfd.bfd_architecture
+)
+"disasm.ml" 8 154 163 "disasm.ml" 8 154 168
+type(
+  exn -> (Type.addr -> char) -> Type.addr -> Ast.stmt list * int64
+)
+ident(
+  ext_ref Pervasives.raise
+)
+"disasm.ml" 8 154 169 "disasm.ml" 8 154 182
+type(
+  exn
+)
+"disasm.ml" 8 154 163 "disasm.ml" 8 154 182
+type(
+  (Type.addr -> char) -> Type.addr -> Ast.stmt list * int64
+)
+"disasm.ml" 6 83 85 "disasm.ml" 8 154 182
+type(
+  (Type.addr -> char) -> Type.addr -> Ast.stmt list * int64
+)
+"disasm.ml" 10 184 188 "disasm.ml" 10 184 195
+type(
+  Var.t -> bool
+)
+ident(
+  def is_temp "disasm.ml" 12 216 216 --
+)
+"disasm.ml" 10 184 198 "disasm.ml" 10 184 214
+type(
+  Var.t -> bool
+)
+ident(
+  ext_ref Var_temp.is_temp
+)
+"disasm.ml" 12 216 220 "disasm.ml" 12 216 235
+type(
+  Ast.stmt -> bool
+)
+ident(
+  def is_decode_error "disasm.ml" 14 295 309 --
+)
+"disasm.ml" 13 247 263 "disasm.ml" 13 247 281
+type(
+  string
+)
+"disasm.ml" 13 247 283 "disasm.ml" 13 247 285
+type(
+  Ast.attrs
+)
+"disasm.ml" 13 247 262 "disasm.ml" 13 247 286
+type(
+  string * Ast.attrs
+)
+"disasm.ml" 13 247 251 "disasm.ml" 13 247 286
+type(
+  Ast.stmt
+)
+"disasm.ml" 13 247 290 "disasm.ml" 13 247 294
+type(
+  bool
+)
+"disasm.ml" 14 295 299 "disasm.ml" 14 295 300
+type(
+  Ast.stmt
+)
+"disasm.ml" 14 295 304 "disasm.ml" 14 295 309
+type(
+  bool
+)
+"disasm.ml" 12 216 238 "disasm.ml" 14 295 309
+type(
+  Ast.stmt -> bool
+)

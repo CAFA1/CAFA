@@ -1,0 +1,42 @@
+Backport of:
+
+From 82f779cbc24045af2eaecb95d0842ca7b97c71f4 Mon Sep 17 00:00:00 2001
+From: cristy <cristy@aa41f4f7-0bf4-0310-aa73-e5a19afd5a74>
+Date: Sun, 23 Nov 2014 16:36:18 +0000
+Subject: [PATCH] Fix handling of corrupted dpc and xwd image
+
+Avoid a segv thus a DOS.
+
+git-svn-id: https://subversion.imagemagick.org/subversion/ImageMagick/branches/ImageMagick-6@17092 aa41f4f7-0bf4-0310-aa73-e5a19afd5a74
+origin: http://trac.imagemagick.org/changeset/17092
+---
+ coders/dpx.c |  2 ++
+ coders/xwd.c | 17 +++++++----------
+ 2 files changed, 9 insertions(+), 10 deletions(-)
+
+Index: imagemagick-6.6.9.7/coders/dpx.c
+===================================================================
+--- imagemagick-6.6.9.7.orig/coders/dpx.c	2016-11-14 14:13:56.541852038 -0500
++++ imagemagick-6.6.9.7/coders/dpx.c	2016-11-14 14:13:56.537852038 -0500
+@@ -687,6 +687,8 @@
+     case 7: image->orientation=RightBottomOrientation; break;
+   }
+   dpx.image.number_elements=ReadBlobShort(image);
++  if (dpx.image.number_elements > 8)
++    ThrowReaderException(CorruptImageError,"ImproperImageHeader");
+   offset+=2;
+   dpx.image.pixels_per_line=ReadBlobLong(image);
+   offset+=4;
+Index: imagemagick-6.6.9.7/coders/xwd.c
+===================================================================
+--- imagemagick-6.6.9.7.orig/coders/xwd.c	2016-11-14 14:13:56.541852038 -0500
++++ imagemagick-6.6.9.7/coders/xwd.c	2016-11-14 14:13:56.541852038 -0500
+@@ -273,6 +273,8 @@
+   if ((ximage->depth < 0) || (ximage->width < 0) || (ximage->height < 0) ||
+       (ximage->bitmap_pad < 0) || (ximage->bytes_per_line < 0))
+     ThrowReaderException(CorruptImageError,"ImproperImageHeader");
++  if ((ximage->width > 65535) || (ximage->height > 65535))
++    ThrowReaderException(CorruptImageError,"ImproperImageHeader");
+   if ((ximage->bits_per_pixel > 32) || (ximage->bitmap_unit > 32))
+     ThrowReaderException(CorruptImageError,"ImproperImageHeader");
+   x_status=XInitImage(ximage);

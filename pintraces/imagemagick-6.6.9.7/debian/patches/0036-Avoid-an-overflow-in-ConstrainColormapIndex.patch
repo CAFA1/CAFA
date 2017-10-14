@@ -1,0 +1,25 @@
+From 5482197c8fd23e8545ed53c6088523c58702fcb3 Mon Sep 17 00:00:00 2001
+From: =?UTF-8?q?Bastien=20ROUCARI=C3=88S?= <roucaries.bastien@gmail.com>
+Date: Tue, 23 Dec 2014 15:39:55 +0100
+Subject: [PATCH] Avoid an overflow in ConstrainColormapIndex
+
+ConstrainColormapIndex is used like array[ConstrainColormapIndex]. Test if cast to ssize_t render it negative and thus crash later
+
+Origin:  http://trac.imagemagick.org/changeset/17291
+---
+ magick/colormap-private.h | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/magick/colormap-private.h b/magick/colormap-private.h
+index 0e96157..03c0b67 100644
+--- a/magick/colormap-private.h
++++ b/magick/colormap-private.h
+@@ -29,7 +29,7 @@ extern "C" {
+ static inline IndexPacket ConstrainColormapIndex(Image *image,
+   const size_t index)
+ {
+-  if (index < image->colors)
++  if ((index < image->colors) && ((ssize_t) index >= 0))
+     return((IndexPacket) index);
+   (void) ThrowMagickException(&image->exception,GetMagickModule(),
+     CorruptImageError,"InvalidColormapIndex","`%s'",image->filename);

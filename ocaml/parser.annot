@@ -1,0 +1,1212 @@
+"parser.ml" 11 350 354 "parser.ml" 11 350 370
+type(
+  Lexing.lexbuf -> exn -> 'a
+)
+ident(
+  def handle_exception "parser.ml" 21 775 775 --
+)
+"parser.ml" 11 350 371 "parser.ml" 11 350 377
+type(
+  Lexing.lexbuf
+)
+ident(
+  def lexbuf "parser.ml" 11 350 378 "parser.ml" 19 762 773
+)
+"parser.ml" 11 350 378 "parser.ml" 11 350 381
+type(
+  exn
+)
+ident(
+  def exn "parser.ml" 12 384 386 "parser.ml" 19 762 773
+)
+"parser.ml" 12 384 390 "parser.ml" 12 384 394
+type(
+  Lexing.position
+)
+"parser.ml" 12 384 397 "parser.ml" 12 384 403
+type(
+  Lexing.lexbuf
+)
+ident(
+  int_ref lexbuf "parser.ml" 11 350 371 "parser.ml" 11 350 377
+)
+"parser.ml" 12 384 397 "parser.ml" 12 384 421
+type(
+  Lexing.position
+)
+"parser.ml" 13 425 431 "parser.ml" 13 425 435
+type(
+  int
+)
+"parser.ml" 13 425 438 "parser.ml" 13 425 442
+type(
+  Lexing.position
+)
+ident(
+  int_ref curr "parser.ml" 12 384 390 "parser.ml" 12 384 394
+)
+"parser.ml" 13 425 438 "parser.ml" 13 425 458
+type(
+  int
+)
+"parser.ml" 14 462 468 "parser.ml" 14 462 472
+type(
+  int
+)
+"parser.ml" 14 462 475 "parser.ml" 14 462 479
+type(
+  Lexing.position
+)
+ident(
+  int_ref curr "parser.ml" 12 384 390 "parser.ml" 12 384 394
+)
+"parser.ml" 14 462 475 "parser.ml" 14 462 495
+type(
+  int
+)
+"parser.ml" 14 462 496 "parser.ml" 14 462 497
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( - )
+)
+"parser.ml" 14 462 498 "parser.ml" 14 462 502
+type(
+  Lexing.position
+)
+ident(
+  int_ref curr "parser.ml" 12 384 390 "parser.ml" 12 384 394
+)
+"parser.ml" 14 462 498 "parser.ml" 14 462 517
+type(
+  int
+)
+"parser.ml" 14 462 475 "parser.ml" 14 462 517
+type(
+  int
+)
+"parser.ml" 15 521 527 "parser.ml" 15 521 530
+type(
+  string
+)
+"parser.ml" 15 521 533 "parser.ml" 15 521 546
+type(
+  Lexing.lexbuf -> string
+)
+ident(
+  ext_ref Lexing.lexeme
+)
+"parser.ml" 15 521 547 "parser.ml" 15 521 553
+type(
+  Lexing.lexbuf
+)
+ident(
+  int_ref lexbuf "parser.ml" 11 350 371 "parser.ml" 11 350 377
+)
+"parser.ml" 15 521 533 "parser.ml" 15 521 553
+call(
+  stack
+)
+type(
+  string
+)
+"parser.ml" 16 557 563 "parser.ml" 16 557 567
+type(
+  string
+)
+"parser.ml" 16 557 570 "parser.ml" 16 557 584
+type(
+  string -> Lexing.lexbuf -> string
+)
+ident(
+  ext_ref Lexer.ruleTail
+)
+"parser.ml" 16 557 585 "parser.ml" 16 557 587
+type(
+  string
+)
+"parser.ml" 16 557 588 "parser.ml" 16 557 594
+type(
+  Lexing.lexbuf
+)
+ident(
+  int_ref lexbuf "parser.ml" 11 350 371 "parser.ml" 11 350 377
+)
+"parser.ml" 16 557 570 "parser.ml" 16 557 594
+call(
+  stack
+)
+type(
+  string
+)
+"parser.ml" 17 598 600 "parser.ml" 17 598 614
+type(
+  out_channel ->
+  (string -> int -> int -> string -> unit, out_channel, unit) format ->
+  string -> int -> int -> string -> unit
+)
+ident(
+  ext_ref Printf.fprintf
+)
+"parser.ml" 17 598 615 "parser.ml" 17 598 621
+type(
+  out_channel
+)
+ident(
+  ext_ref Pervasives.stderr
+)
+"parser.ml" 17 598 622 "parser.ml" 17 598 731
+type(
+  (string -> int -> int -> string -> unit, out_channel, unit) format
+)
+"parser.ml" 18 732 736 "parser.ml" 18 732 739
+type(
+  string
+)
+ident(
+  int_ref tok "parser.ml" 15 521 527 "parser.ml" 15 521 530
+)
+"parser.ml" 18 732 740 "parser.ml" 18 732 744
+type(
+  int
+)
+ident(
+  int_ref line "parser.ml" 13 425 431 "parser.ml" 13 425 435
+)
+"parser.ml" 18 732 745 "parser.ml" 18 732 749
+type(
+  int
+)
+ident(
+  int_ref cnum "parser.ml" 14 462 468 "parser.ml" 14 462 472
+)
+"parser.ml" 18 732 751 "parser.ml" 18 732 754
+type(
+  string
+)
+ident(
+  int_ref tok "parser.ml" 15 521 527 "parser.ml" 15 521 530
+)
+"parser.ml" 18 732 754 "parser.ml" 18 732 755
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"parser.ml" 18 732 755 "parser.ml" 18 732 759
+type(
+  string
+)
+ident(
+  int_ref tail "parser.ml" 16 557 563 "parser.ml" 16 557 567
+)
+"parser.ml" 18 732 750 "parser.ml" 18 732 760
+call(
+  stack
+)
+type(
+  string
+)
+"parser.ml" 17 598 600 "parser.ml" 18 732 760
+call(
+  stack
+)
+type(
+  unit
+)
+"parser.ml" 19 762 764 "parser.ml" 19 762 769
+type(
+  exn -> 'a
+)
+ident(
+  ext_ref Pervasives.raise
+)
+"parser.ml" 19 762 770 "parser.ml" 19 762 773
+type(
+  exn
+)
+ident(
+  int_ref exn "parser.ml" 11 350 378 "parser.ml" 11 350 381
+)
+"parser.ml" 19 762 764 "parser.ml" 19 762 773
+type(
+  'a
+)
+"parser.ml" 17 598 600 "parser.ml" 19 762 773
+type(
+  'a
+)
+"parser.ml" 16 557 559 "parser.ml" 19 762 773
+type(
+  'a
+)
+"parser.ml" 15 521 523 "parser.ml" 19 762 773
+type(
+  'a
+)
+"parser.ml" 14 462 464 "parser.ml" 19 762 773
+type(
+  'a
+)
+"parser.ml" 13 425 427 "parser.ml" 19 762 773
+type(
+  'a
+)
+"parser.ml" 12 384 386 "parser.ml" 19 762 773
+type(
+  'a
+)
+"parser.ml" 21 775 779 "parser.ml" 21 775 798
+type(
+  ?scope:Grammar_scope.Scope.t ->
+  Lexing.lexbuf -> Ast.program * Grammar_scope.Scope.t
+)
+ident(
+  def program_from_lexbuf "parser.ml" 29 986 986 --
+)
+"parser.ml" 21 775 801 "parser.ml" 21 775 806
+type(
+  Grammar_scope.Scope.t
+)
+"parser.ml" 21 775 807 "parser.ml" 21 775 820
+type(
+  unit -> Grammar_scope.Scope.t
+)
+ident(
+  ext_ref Grammar_private_scope.default_scope
+)
+"parser.ml" 21 775 821 "parser.ml" 21 775 823
+type(
+  unit
+)
+"parser.ml" 21 775 807 "parser.ml" 21 775 823
+call(
+  stack
+)
+type(
+  Grammar_scope.Scope.t
+)
+type(
+  Grammar_scope.Scope.t
+)
+ident(
+  int_ref *sth* "parser.ml" 21 775 807 "parser.ml" 21 775 823
+)
+type(
+  Grammar_scope.Scope.t option
+)
+type(
+  Grammar_scope.Scope.t option
+)
+type(
+  Grammar_scope.Scope.t
+)
+ident(
+  def *sth* "parser.ml" 21 775 807 "parser.ml" 21 775 823
+)
+"parser.ml" 21 775 825 "parser.ml" 21 775 826
+type(
+  Lexing.lexbuf
+)
+ident(
+  def l "parser.ml" 22 829 831 "parser.ml" 27 948 984
+)
+"parser.ml" 23 835 839 "parser.ml" 23 835 848
+type(
+  Grammar_scope.Scope.t -> unit
+)
+ident(
+  ext_ref Grammar_private_scope.set_scope
+)
+"parser.ml" 23 835 849 "parser.ml" 23 835 854
+type(
+  Grammar_scope.Scope.t
+)
+ident(
+  int_ref scope "parser.ml" 21 775 801 "parser.ml" 21 775 806
+)
+"parser.ml" 23 835 839 "parser.ml" 23 835 854
+call(
+  stack
+)
+type(
+  unit
+)
+"parser.ml" 24 856 864 "parser.ml" 24 856 865
+type(
+  Ast.program
+)
+ident(
+  def p "parser.ml" 25 901 905 "parser.ml" 26 929 947
+)
+"parser.ml" 24 856 868 "parser.ml" 24 856 883
+type(
+  (Lexing.lexbuf -> Grammar.token) -> Lexing.lexbuf -> Ast.program
+)
+ident(
+  ext_ref Grammar.program
+)
+"parser.ml" 24 856 884 "parser.ml" 24 856 895
+type(
+  Lexing.lexbuf -> Grammar.token
+)
+ident(
+  ext_ref Lexer.token
+)
+"parser.ml" 24 856 896 "parser.ml" 24 856 897
+type(
+  Lexing.lexbuf
+)
+ident(
+  int_ref l "parser.ml" 21 775 825 "parser.ml" 21 775 826
+)
+"parser.ml" 24 856 868 "parser.ml" 24 856 897
+call(
+  stack
+)
+type(
+  Ast.program
+)
+"parser.ml" 25 901 905 "parser.ml" 25 901 925
+type(
+  unit -> unit
+)
+ident(
+  ext_ref Parsing.clear_parser
+)
+"parser.ml" 25 901 925 "parser.ml" 25 901 927
+type(
+  unit
+)
+"parser.ml" 25 901 905 "parser.ml" 25 901 927
+call(
+  stack
+)
+type(
+  unit
+)
+"parser.ml" 26 929 933 "parser.ml" 26 929 934
+type(
+  Ast.program
+)
+ident(
+  int_ref p "parser.ml" 24 856 864 "parser.ml" 24 856 865
+)
+"parser.ml" 26 929 936 "parser.ml" 26 929 945
+type(
+  unit -> Grammar_scope.Scope.t
+)
+ident(
+  ext_ref Grammar_private_scope.get_scope
+)
+"parser.ml" 26 929 945 "parser.ml" 26 929 947
+type(
+  unit
+)
+"parser.ml" 26 929 936 "parser.ml" 26 929 947
+call(
+  stack
+)
+type(
+  Grammar_scope.Scope.t
+)
+"parser.ml" 26 929 933 "parser.ml" 26 929 947
+type(
+  Ast.program * Grammar_scope.Scope.t
+)
+"parser.ml" 25 901 905 "parser.ml" 26 929 947
+type(
+  Ast.program * Grammar_scope.Scope.t
+)
+"parser.ml" 24 856 860 "parser.ml" 26 929 947
+type(
+  Ast.program * Grammar_scope.Scope.t
+)
+"parser.ml" 23 835 839 "parser.ml" 26 929 947
+type(
+  Ast.program * Grammar_scope.Scope.t
+)
+"parser.ml" 27 948 955 "parser.ml" 27 948 958
+type(
+  exn
+)
+ident(
+  def exn "parser.ml" 27 948 962 "parser.ml" 27 948 984
+)
+"parser.ml" 27 948 962 "parser.ml" 27 948 978
+type(
+  Lexing.lexbuf -> exn -> Ast.program * Grammar_scope.Scope.t
+)
+ident(
+  int_ref handle_exception "parser.ml" 11 350 354 "parser.ml" 11 350 370
+)
+"parser.ml" 27 948 979 "parser.ml" 27 948 980
+type(
+  Lexing.lexbuf
+)
+ident(
+  int_ref l "parser.ml" 21 775 825 "parser.ml" 21 775 826
+)
+"parser.ml" 27 948 981 "parser.ml" 27 948 984
+type(
+  exn
+)
+ident(
+  int_ref exn "parser.ml" 27 948 955 "parser.ml" 27 948 958
+)
+"parser.ml" 27 948 962 "parser.ml" 27 948 984
+call(
+  tail
+)
+type(
+  Ast.program * Grammar_scope.Scope.t
+)
+"parser.ml" 22 829 831 "parser.ml" 27 948 984
+type(
+  Ast.program * Grammar_scope.Scope.t
+)
+"parser.ml" 29 986 990 "parser.ml" 29 986 1007
+type(
+  ?scope:Grammar_scope.Scope.t ->
+  string -> Ast.program * Grammar_scope.Scope.t
+)
+ident(
+  def program_from_file "parser.ml" 37 1240 1240 --
+)
+"parser.ml" 29 986 1010 "parser.ml" 29 986 1015
+type(
+  Grammar_scope.Scope.t
+)
+"parser.ml" 29 986 1016 "parser.ml" 29 986 1029
+type(
+  unit -> Grammar_scope.Scope.t
+)
+ident(
+  ext_ref Grammar_private_scope.default_scope
+)
+"parser.ml" 29 986 1030 "parser.ml" 29 986 1032
+type(
+  unit
+)
+"parser.ml" 29 986 1016 "parser.ml" 29 986 1032
+call(
+  stack
+)
+type(
+  Grammar_scope.Scope.t
+)
+type(
+  Grammar_scope.Scope.t
+)
+ident(
+  int_ref *sth* "parser.ml" 29 986 1016 "parser.ml" 29 986 1032
+)
+type(
+  Grammar_scope.Scope.t option
+)
+type(
+  Grammar_scope.Scope.t option
+)
+type(
+  Grammar_scope.Scope.t
+)
+ident(
+  def *sth* "parser.ml" 29 986 1016 "parser.ml" 29 986 1032
+)
+"parser.ml" 29 986 1034 "parser.ml" 29 986 1035
+type(
+  string
+)
+ident(
+  def f "parser.ml" 30 1038 1040 "parser.ml" 35 1235 1238
+)
+"parser.ml" 30 1038 1044 "parser.ml" 30 1038 1046
+type(
+  in_channel
+)
+"parser.ml" 30 1038 1049 "parser.ml" 30 1038 1056
+type(
+  string -> in_channel
+)
+ident(
+  ext_ref Pervasives.open_in
+)
+"parser.ml" 30 1038 1057 "parser.ml" 30 1038 1058
+type(
+  string
+)
+ident(
+  int_ref f "parser.ml" 29 986 1034 "parser.ml" 29 986 1035
+)
+"parser.ml" 30 1038 1049 "parser.ml" 30 1038 1058
+call(
+  stack
+)
+type(
+  in_channel
+)
+"parser.ml" 31 1062 1068 "parser.ml" 31 1062 1070
+type(
+  Lexing.lexbuf
+)
+"parser.ml" 31 1062 1073 "parser.ml" 31 1062 1092
+type(
+  in_channel -> Lexing.lexbuf
+)
+ident(
+  ext_ref Lexing.from_channel
+)
+"parser.ml" 31 1062 1093 "parser.ml" 31 1062 1095
+type(
+  in_channel
+)
+ident(
+  int_ref ic "parser.ml" 30 1038 1044 "parser.ml" 30 1038 1046
+)
+"parser.ml" 31 1062 1073 "parser.ml" 31 1062 1095
+call(
+  stack
+)
+type(
+  Lexing.lexbuf
+)
+"parser.ml" 32 1099 1101 "parser.ml" 32 1099 1103
+type(
+  Lexing.lexbuf
+)
+ident(
+  int_ref lb "parser.ml" 31 1062 1068 "parser.ml" 31 1062 1070
+)
+"parser.ml" 32 1099 1127 "parser.ml" 32 1099 1129
+type(
+  Lexing.lexbuf
+)
+ident(
+  int_ref lb "parser.ml" 31 1062 1068 "parser.ml" 31 1062 1070
+)
+"parser.ml" 32 1099 1127 "parser.ml" 32 1099 1147
+type(
+  Lexing.position
+)
+"parser.ml" 32 1099 1172 "parser.ml" 32 1099 1173
+type(
+  string
+)
+ident(
+  int_ref f "parser.ml" 29 986 1034 "parser.ml" 29 986 1035
+)
+"parser.ml" 32 1099 1125 "parser.ml" 32 1099 1175
+type(
+  Lexing.position
+)
+"parser.ml" 32 1099 1101 "parser.ml" 32 1099 1175
+type(
+  unit
+)
+"parser.ml" 33 1177 1183 "parser.ml" 33 1177 1184
+type(
+  Ast.program * Grammar_scope.Scope.t
+)
+"parser.ml" 33 1177 1187 "parser.ml" 33 1177 1206
+type(
+  ?scope:Grammar_scope.Scope.t ->
+  Lexing.lexbuf -> Ast.program * Grammar_scope.Scope.t
+)
+ident(
+  int_ref program_from_lexbuf "parser.ml" 21 775 779 "parser.ml" 21 775 798
+)
+"parser.ml" 33 1177 1207 "parser.ml" 33 1177 1209
+type(
+  Lexing.lexbuf
+)
+ident(
+  int_ref lb "parser.ml" 31 1062 1068 "parser.ml" 31 1062 1070
+)
+"parser.ml" 33 1177 1211 "parser.ml" 33 1177 1216
+type(
+  Grammar_scope.Scope.t
+)
+ident(
+  int_ref scope "parser.ml" 29 986 1010 "parser.ml" 29 986 1015
+)
+"parser.ml" 33 1177 1187 "parser.ml" 33 1177 1216
+call(
+  stack
+)
+type(
+  Ast.program * Grammar_scope.Scope.t
+)
+"parser.ml" 34 1220 1222 "parser.ml" 34 1220 1230
+type(
+  in_channel -> unit
+)
+ident(
+  ext_ref Pervasives.close_in
+)
+"parser.ml" 34 1220 1231 "parser.ml" 34 1220 1233
+type(
+  in_channel
+)
+ident(
+  int_ref ic "parser.ml" 30 1038 1044 "parser.ml" 30 1038 1046
+)
+"parser.ml" 34 1220 1222 "parser.ml" 34 1220 1233
+call(
+  stack
+)
+type(
+  unit
+)
+"parser.ml" 35 1235 1237 "parser.ml" 35 1235 1238
+type(
+  Ast.program * Grammar_scope.Scope.t
+)
+ident(
+  int_ref p "parser.ml" 33 1177 1183 "parser.ml" 33 1177 1184
+)
+"parser.ml" 34 1220 1222 "parser.ml" 35 1235 1238
+type(
+  Ast.program * Grammar_scope.Scope.t
+)
+"parser.ml" 33 1177 1179 "parser.ml" 35 1235 1238
+type(
+  Ast.program * Grammar_scope.Scope.t
+)
+"parser.ml" 32 1099 1101 "parser.ml" 35 1235 1238
+type(
+  Ast.program * Grammar_scope.Scope.t
+)
+"parser.ml" 31 1062 1064 "parser.ml" 35 1235 1238
+type(
+  Ast.program * Grammar_scope.Scope.t
+)
+"parser.ml" 30 1038 1040 "parser.ml" 35 1235 1238
+type(
+  Ast.program * Grammar_scope.Scope.t
+)
+"parser.ml" 37 1240 1244 "parser.ml" 37 1240 1259
+type(
+  ?scope:Grammar_scope.Scope.t ->
+  Lexing.lexbuf -> Ast.exp * Grammar_scope.Scope.t
+)
+ident(
+  def exp_from_lexbuf "parser.ml" 45 1444 1444 --
+)
+"parser.ml" 37 1240 1262 "parser.ml" 37 1240 1267
+type(
+  Grammar_scope.Scope.t
+)
+"parser.ml" 37 1240 1268 "parser.ml" 37 1240 1281
+type(
+  unit -> Grammar_scope.Scope.t
+)
+ident(
+  ext_ref Grammar_private_scope.default_scope
+)
+"parser.ml" 37 1240 1282 "parser.ml" 37 1240 1284
+type(
+  unit
+)
+"parser.ml" 37 1240 1268 "parser.ml" 37 1240 1284
+call(
+  stack
+)
+type(
+  Grammar_scope.Scope.t
+)
+type(
+  Grammar_scope.Scope.t
+)
+ident(
+  int_ref *sth* "parser.ml" 37 1240 1268 "parser.ml" 37 1240 1284
+)
+type(
+  Grammar_scope.Scope.t option
+)
+type(
+  Grammar_scope.Scope.t option
+)
+type(
+  Grammar_scope.Scope.t
+)
+ident(
+  def *sth* "parser.ml" 37 1240 1268 "parser.ml" 37 1240 1284
+)
+"parser.ml" 37 1240 1286 "parser.ml" 37 1240 1287
+type(
+  Lexing.lexbuf
+)
+ident(
+  def l "parser.ml" 38 1290 1292 "parser.ml" 43 1406 1442
+)
+"parser.ml" 39 1296 1300 "parser.ml" 39 1296 1309
+type(
+  Grammar_scope.Scope.t -> unit
+)
+ident(
+  ext_ref Grammar_private_scope.set_scope
+)
+"parser.ml" 39 1296 1310 "parser.ml" 39 1296 1315
+type(
+  Grammar_scope.Scope.t
+)
+ident(
+  int_ref scope "parser.ml" 37 1240 1262 "parser.ml" 37 1240 1267
+)
+"parser.ml" 39 1296 1300 "parser.ml" 39 1296 1315
+call(
+  stack
+)
+type(
+  unit
+)
+"parser.ml" 40 1317 1325 "parser.ml" 40 1317 1326
+type(
+  Ast.exp
+)
+ident(
+  def e "parser.ml" 41 1359 1363 "parser.ml" 42 1387 1405
+)
+"parser.ml" 40 1317 1329 "parser.ml" 40 1317 1341
+type(
+  (Lexing.lexbuf -> Grammar.token) -> Lexing.lexbuf -> Ast.exp
+)
+ident(
+  ext_ref Grammar.expr
+)
+"parser.ml" 40 1317 1342 "parser.ml" 40 1317 1353
+type(
+  Lexing.lexbuf -> Grammar.token
+)
+ident(
+  ext_ref Lexer.token
+)
+"parser.ml" 40 1317 1354 "parser.ml" 40 1317 1355
+type(
+  Lexing.lexbuf
+)
+ident(
+  int_ref l "parser.ml" 37 1240 1286 "parser.ml" 37 1240 1287
+)
+"parser.ml" 40 1317 1329 "parser.ml" 40 1317 1355
+call(
+  stack
+)
+type(
+  Ast.exp
+)
+"parser.ml" 41 1359 1363 "parser.ml" 41 1359 1383
+type(
+  unit -> unit
+)
+ident(
+  ext_ref Parsing.clear_parser
+)
+"parser.ml" 41 1359 1383 "parser.ml" 41 1359 1385
+type(
+  unit
+)
+"parser.ml" 41 1359 1363 "parser.ml" 41 1359 1385
+call(
+  stack
+)
+type(
+  unit
+)
+"parser.ml" 42 1387 1391 "parser.ml" 42 1387 1392
+type(
+  Ast.exp
+)
+ident(
+  int_ref e "parser.ml" 40 1317 1325 "parser.ml" 40 1317 1326
+)
+"parser.ml" 42 1387 1394 "parser.ml" 42 1387 1403
+type(
+  unit -> Grammar_scope.Scope.t
+)
+ident(
+  ext_ref Grammar_private_scope.get_scope
+)
+"parser.ml" 42 1387 1403 "parser.ml" 42 1387 1405
+type(
+  unit
+)
+"parser.ml" 42 1387 1394 "parser.ml" 42 1387 1405
+call(
+  stack
+)
+type(
+  Grammar_scope.Scope.t
+)
+"parser.ml" 42 1387 1391 "parser.ml" 42 1387 1405
+type(
+  Ast.exp * Grammar_scope.Scope.t
+)
+"parser.ml" 41 1359 1363 "parser.ml" 42 1387 1405
+type(
+  Ast.exp * Grammar_scope.Scope.t
+)
+"parser.ml" 40 1317 1321 "parser.ml" 42 1387 1405
+type(
+  Ast.exp * Grammar_scope.Scope.t
+)
+"parser.ml" 39 1296 1300 "parser.ml" 42 1387 1405
+type(
+  Ast.exp * Grammar_scope.Scope.t
+)
+"parser.ml" 43 1406 1413 "parser.ml" 43 1406 1416
+type(
+  exn
+)
+ident(
+  def exn "parser.ml" 43 1406 1420 "parser.ml" 43 1406 1442
+)
+"parser.ml" 43 1406 1420 "parser.ml" 43 1406 1436
+type(
+  Lexing.lexbuf -> exn -> Ast.exp * Grammar_scope.Scope.t
+)
+ident(
+  int_ref handle_exception "parser.ml" 11 350 354 "parser.ml" 11 350 370
+)
+"parser.ml" 43 1406 1437 "parser.ml" 43 1406 1438
+type(
+  Lexing.lexbuf
+)
+ident(
+  int_ref l "parser.ml" 37 1240 1286 "parser.ml" 37 1240 1287
+)
+"parser.ml" 43 1406 1439 "parser.ml" 43 1406 1442
+type(
+  exn
+)
+ident(
+  int_ref exn "parser.ml" 43 1406 1413 "parser.ml" 43 1406 1416
+)
+"parser.ml" 43 1406 1420 "parser.ml" 43 1406 1442
+call(
+  tail
+)
+type(
+  Ast.exp * Grammar_scope.Scope.t
+)
+"parser.ml" 38 1290 1292 "parser.ml" 43 1406 1442
+type(
+  Ast.exp * Grammar_scope.Scope.t
+)
+"parser.ml" 45 1444 1448 "parser.ml" 45 1444 1463
+type(
+  ?scope:Grammar_scope.Scope.t -> string -> Ast.exp * Grammar_scope.Scope.t
+)
+ident(
+  def exp_from_string "parser.ml" 48 1543 1543 --
+)
+"parser.ml" 45 1444 1466 "parser.ml" 45 1444 1471
+type(
+  Grammar_scope.Scope.t
+)
+"parser.ml" 45 1444 1472 "parser.ml" 45 1444 1485
+type(
+  unit -> Grammar_scope.Scope.t
+)
+ident(
+  ext_ref Grammar_private_scope.default_scope
+)
+"parser.ml" 45 1444 1486 "parser.ml" 45 1444 1488
+type(
+  unit
+)
+"parser.ml" 45 1444 1472 "parser.ml" 45 1444 1488
+call(
+  stack
+)
+type(
+  Grammar_scope.Scope.t
+)
+type(
+  Grammar_scope.Scope.t
+)
+ident(
+  int_ref *sth* "parser.ml" 45 1444 1472 "parser.ml" 45 1444 1488
+)
+type(
+  Grammar_scope.Scope.t option
+)
+type(
+  Grammar_scope.Scope.t option
+)
+type(
+  Grammar_scope.Scope.t
+)
+ident(
+  def *sth* "parser.ml" 45 1444 1472 "parser.ml" 45 1444 1488
+)
+"parser.ml" 45 1444 1490 "parser.ml" 45 1444 1491
+type(
+  string
+)
+ident(
+  def s "parser.ml" 46 1494 1496 "parser.ml" 46 1494 1541
+)
+"parser.ml" 46 1494 1496 "parser.ml" 46 1494 1511
+type(
+  ?scope:Grammar_scope.Scope.t ->
+  Lexing.lexbuf -> Ast.exp * Grammar_scope.Scope.t
+)
+ident(
+  int_ref exp_from_lexbuf "parser.ml" 37 1240 1244 "parser.ml" 37 1240 1259
+)
+"parser.ml" 46 1494 1513 "parser.ml" 46 1494 1531
+type(
+  string -> Lexing.lexbuf
+)
+ident(
+  ext_ref Lexing.from_string
+)
+"parser.ml" 46 1494 1532 "parser.ml" 46 1494 1533
+type(
+  string
+)
+ident(
+  int_ref s "parser.ml" 45 1444 1490 "parser.ml" 45 1444 1491
+)
+"parser.ml" 46 1494 1512 "parser.ml" 46 1494 1534
+call(
+  stack
+)
+type(
+  Lexing.lexbuf
+)
+"parser.ml" 46 1494 1536 "parser.ml" 46 1494 1541
+type(
+  Grammar_scope.Scope.t
+)
+ident(
+  int_ref scope "parser.ml" 45 1444 1466 "parser.ml" 45 1444 1471
+)
+"parser.ml" 46 1494 1496 "parser.ml" 46 1494 1541
+call(
+  tail
+)
+type(
+  Ast.exp * Grammar_scope.Scope.t
+)
+"parser.ml" 48 1543 1547 "parser.ml" 48 1543 1560
+type(
+  ?scope:Grammar_scope.Scope.t -> string -> Ast.exp * Grammar_scope.Scope.t
+)
+ident(
+  def exp_from_file "parser.ml" 54 1784 1787 --
+)
+"parser.ml" 48 1543 1563 "parser.ml" 48 1543 1568
+type(
+  Grammar_scope.Scope.t
+)
+"parser.ml" 48 1543 1569 "parser.ml" 48 1543 1582
+type(
+  unit -> Grammar_scope.Scope.t
+)
+ident(
+  ext_ref Grammar_private_scope.default_scope
+)
+"parser.ml" 48 1543 1583 "parser.ml" 48 1543 1585
+type(
+  unit
+)
+"parser.ml" 48 1543 1569 "parser.ml" 48 1543 1585
+call(
+  stack
+)
+type(
+  Grammar_scope.Scope.t
+)
+type(
+  Grammar_scope.Scope.t
+)
+ident(
+  int_ref *sth* "parser.ml" 48 1543 1569 "parser.ml" 48 1543 1585
+)
+type(
+  Grammar_scope.Scope.t option
+)
+type(
+  Grammar_scope.Scope.t option
+)
+type(
+  Grammar_scope.Scope.t
+)
+ident(
+  def *sth* "parser.ml" 48 1543 1569 "parser.ml" 48 1543 1585
+)
+"parser.ml" 48 1543 1587 "parser.ml" 48 1543 1588
+type(
+  string
+)
+ident(
+  def f "parser.ml" 49 1591 1593 "parser.ml" 54 1784 1787
+)
+"parser.ml" 49 1591 1597 "parser.ml" 49 1591 1599
+type(
+  in_channel
+)
+"parser.ml" 49 1591 1602 "parser.ml" 49 1591 1609
+type(
+  string -> in_channel
+)
+ident(
+  ext_ref Pervasives.open_in
+)
+"parser.ml" 49 1591 1610 "parser.ml" 49 1591 1611
+type(
+  string
+)
+ident(
+  int_ref f "parser.ml" 48 1543 1587 "parser.ml" 48 1543 1588
+)
+"parser.ml" 49 1591 1602 "parser.ml" 49 1591 1611
+call(
+  stack
+)
+type(
+  in_channel
+)
+"parser.ml" 50 1615 1621 "parser.ml" 50 1615 1623
+type(
+  Lexing.lexbuf
+)
+"parser.ml" 50 1615 1626 "parser.ml" 50 1615 1645
+type(
+  in_channel -> Lexing.lexbuf
+)
+ident(
+  ext_ref Lexing.from_channel
+)
+"parser.ml" 50 1615 1646 "parser.ml" 50 1615 1648
+type(
+  in_channel
+)
+ident(
+  int_ref ic "parser.ml" 49 1591 1597 "parser.ml" 49 1591 1599
+)
+"parser.ml" 50 1615 1626 "parser.ml" 50 1615 1648
+call(
+  stack
+)
+type(
+  Lexing.lexbuf
+)
+"parser.ml" 51 1652 1654 "parser.ml" 51 1652 1656
+type(
+  Lexing.lexbuf
+)
+ident(
+  int_ref lb "parser.ml" 50 1615 1621 "parser.ml" 50 1615 1623
+)
+"parser.ml" 51 1652 1680 "parser.ml" 51 1652 1682
+type(
+  Lexing.lexbuf
+)
+ident(
+  int_ref lb "parser.ml" 50 1615 1621 "parser.ml" 50 1615 1623
+)
+"parser.ml" 51 1652 1680 "parser.ml" 51 1652 1700
+type(
+  Lexing.position
+)
+"parser.ml" 51 1652 1725 "parser.ml" 51 1652 1726
+type(
+  string
+)
+ident(
+  int_ref f "parser.ml" 48 1543 1587 "parser.ml" 48 1543 1588
+)
+"parser.ml" 51 1652 1678 "parser.ml" 51 1652 1728
+type(
+  Lexing.position
+)
+"parser.ml" 51 1652 1654 "parser.ml" 51 1652 1728
+type(
+  unit
+)
+"parser.ml" 52 1730 1736 "parser.ml" 52 1730 1737
+type(
+  Ast.exp * Grammar_scope.Scope.t
+)
+"parser.ml" 52 1730 1740 "parser.ml" 52 1730 1755
+type(
+  ?scope:Grammar_scope.Scope.t ->
+  Lexing.lexbuf -> Ast.exp * Grammar_scope.Scope.t
+)
+ident(
+  int_ref exp_from_lexbuf "parser.ml" 37 1240 1244 "parser.ml" 37 1240 1259
+)
+"parser.ml" 52 1730 1756 "parser.ml" 52 1730 1758
+type(
+  Lexing.lexbuf
+)
+ident(
+  int_ref lb "parser.ml" 50 1615 1621 "parser.ml" 50 1615 1623
+)
+"parser.ml" 52 1730 1760 "parser.ml" 52 1730 1765
+type(
+  Grammar_scope.Scope.t
+)
+ident(
+  int_ref scope "parser.ml" 48 1543 1563 "parser.ml" 48 1543 1568
+)
+"parser.ml" 52 1730 1740 "parser.ml" 52 1730 1765
+call(
+  stack
+)
+type(
+  Ast.exp * Grammar_scope.Scope.t
+)
+"parser.ml" 53 1769 1771 "parser.ml" 53 1769 1779
+type(
+  in_channel -> unit
+)
+ident(
+  ext_ref Pervasives.close_in
+)
+"parser.ml" 53 1769 1780 "parser.ml" 53 1769 1782
+type(
+  in_channel
+)
+ident(
+  int_ref ic "parser.ml" 49 1591 1597 "parser.ml" 49 1591 1599
+)
+"parser.ml" 53 1769 1771 "parser.ml" 53 1769 1782
+call(
+  stack
+)
+type(
+  unit
+)
+"parser.ml" 54 1784 1786 "parser.ml" 54 1784 1787
+type(
+  Ast.exp * Grammar_scope.Scope.t
+)
+ident(
+  int_ref e "parser.ml" 52 1730 1736 "parser.ml" 52 1730 1737
+)
+"parser.ml" 53 1769 1771 "parser.ml" 54 1784 1787
+type(
+  Ast.exp * Grammar_scope.Scope.t
+)
+"parser.ml" 52 1730 1732 "parser.ml" 54 1784 1787
+type(
+  Ast.exp * Grammar_scope.Scope.t
+)
+"parser.ml" 51 1652 1654 "parser.ml" 54 1784 1787
+type(
+  Ast.exp * Grammar_scope.Scope.t
+)
+"parser.ml" 50 1615 1617 "parser.ml" 54 1784 1787
+type(
+  Ast.exp * Grammar_scope.Scope.t
+)
+"parser.ml" 49 1591 1593 "parser.ml" 54 1784 1787
+type(
+  Ast.exp * Grammar_scope.Scope.t
+)

@@ -1,0 +1,36 @@
+From 13fe49da6e584b8ae8a06095b2d1db0af5a81b13 Mon Sep 17 00:00:00 2001
+From: cristy <cristy@aa41f4f7-0bf4-0310-aa73-e5a19afd5a74>
+Date: Sun, 25 Jan 2015 17:29:48 +0000
+Subject: [PATCH] Fix a DOS in PDB file handling
+
+Avoid an infinite loop by checking EOF.
+
+http://www.imagemagick.org/discourse-server/viewtopic.php?f=3&t=26932
+
+origin: http://trac.imagemagick.org/changeset/17855
+git-svn-id: https://subversion.imagemagick.org/subversion/ImageMagick/branches/ImageMagick-6@17855 aa41f4f7-0bf4-0310-aa73-e5a19afd5a74
+---
+ coders/pdb.c | 10 +++++++++-
+ 1 file changed, 9 insertions(+), 1 deletion(-)
+
+Index: imagemagick-6.6.9.7/coders/pdb.c
+===================================================================
+--- imagemagick-6.6.9.7.orig/coders/pdb.c	2016-11-15 13:46:30.823626852 -0500
++++ imagemagick-6.6.9.7/coders/pdb.c	2016-11-15 13:46:30.823626852 -0500
+@@ -364,7 +364,15 @@
+         ThrowReaderException(CorruptImageError,"CorruptImage");
+     }
+   num_pad_bytes = (size_t) (img_offset - TellBlob( image ));
+-  while (num_pad_bytes--) ReadBlobByte( image );
++  while (num_pad_bytes-- != 0)
++  {
++    int
++      c;
++
++    c=ReadBlobByte(image);
++    if (c == EOF)
++      break;
++  }
+   /*
+     Read image header.
+   */

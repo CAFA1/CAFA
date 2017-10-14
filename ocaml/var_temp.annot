@@ -1,0 +1,362 @@
+"var_temp.ml" 1 0 4 "var_temp.ml" 1 0 15
+type(
+  string
+)
+ident(
+  def temp_prefix "var_temp.ml" 2 23 23 --
+)
+"var_temp.ml" 1 0 18 "var_temp.ml" 1 0 22
+type(
+  string
+)
+"var_temp.ml" 2 23 27 "var_temp.ml" 2 23 42
+type(
+  int
+)
+ident(
+  def temp_prefix_len "var_temp.ml" 4 72 72 --
+)
+"var_temp.ml" 2 23 45 "var_temp.ml" 2 23 58
+type(
+  string -> int
+)
+ident(
+  ext_ref String.length
+)
+"var_temp.ml" 2 23 59 "var_temp.ml" 2 23 70
+type(
+  string
+)
+ident(
+  int_ref temp_prefix "var_temp.ml" 1 0 4 "var_temp.ml" 1 0 15
+)
+"var_temp.ml" 2 23 45 "var_temp.ml" 2 23 70
+type(
+  int
+)
+"var_temp.ml" 4 72 76 "var_temp.ml" 4 72 88
+type(
+  string -> bool
+)
+ident(
+  def is_temp_name "var_temp.ml" 8 201 201 --
+)
+"var_temp.ml" 4 72 89 "var_temp.ml" 4 72 90
+type(
+  string
+)
+ident(
+  def s "var_temp.ml" 6 126 128 "var_temp.ml" 6 126 199
+)
+"var_temp.ml" 6 126 129 "var_temp.ml" 6 126 142
+type(
+  string -> int
+)
+ident(
+  ext_ref String.length
+)
+"var_temp.ml" 6 126 143 "var_temp.ml" 6 126 144
+type(
+  string
+)
+ident(
+  int_ref s "var_temp.ml" 4 72 89 "var_temp.ml" 4 72 90
+)
+"var_temp.ml" 6 126 129 "var_temp.ml" 6 126 144
+type(
+  int
+)
+"var_temp.ml" 6 126 145 "var_temp.ml" 6 126 146
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( > )
+)
+"var_temp.ml" 6 126 147 "var_temp.ml" 6 126 162
+type(
+  int
+)
+ident(
+  int_ref temp_prefix_len "var_temp.ml" 2 23 27 "var_temp.ml" 2 23 42
+)
+"var_temp.ml" 6 126 128 "var_temp.ml" 6 126 163
+type(
+  bool
+)
+"var_temp.ml" 6 126 164 "var_temp.ml" 6 126 166
+type(
+  bool -> bool -> bool
+)
+ident(
+  ext_ref Pervasives.( && )
+)
+"var_temp.ml" 6 126 168 "var_temp.ml" 6 126 178
+type(
+  string -> int -> int -> string
+)
+ident(
+  ext_ref String.sub
+)
+"var_temp.ml" 6 126 179 "var_temp.ml" 6 126 180
+type(
+  string
+)
+ident(
+  int_ref s "var_temp.ml" 4 72 89 "var_temp.ml" 4 72 90
+)
+"var_temp.ml" 6 126 181 "var_temp.ml" 6 126 182
+type(
+  int
+)
+"var_temp.ml" 6 126 183 "var_temp.ml" 6 126 184
+type(
+  int
+)
+"var_temp.ml" 6 126 168 "var_temp.ml" 6 126 184
+call(
+  stack
+)
+type(
+  string
+)
+"var_temp.ml" 6 126 185 "var_temp.ml" 6 126 186
+type(
+  string -> string -> bool
+)
+ident(
+  ext_ref Pervasives.( = )
+)
+"var_temp.ml" 6 126 187 "var_temp.ml" 6 126 198
+type(
+  string
+)
+ident(
+  int_ref temp_prefix "var_temp.ml" 1 0 4 "var_temp.ml" 1 0 15
+)
+"var_temp.ml" 6 126 167 "var_temp.ml" 6 126 199
+type(
+  bool
+)
+"var_temp.ml" 6 126 128 "var_temp.ml" 6 126 199
+type(
+  bool
+)
+"var_temp.ml" 8 201 205 "var_temp.ml" 8 201 212
+type(
+  Var.t -> bool
+)
+ident(
+  def is_temp "var_temp.ml" 11 250 250 --
+)
+"var_temp.ml" 8 201 220 "var_temp.ml" 8 201 221
+type(
+  int
+)
+"var_temp.ml" 8 201 223 "var_temp.ml" 8 201 224
+type(
+  string
+)
+ident(
+  def s "var_temp.ml" 9 232 234 "var_temp.ml" 9 232 248
+)
+"var_temp.ml" 8 201 226 "var_temp.ml" 8 201 227
+type(
+  Type.typ
+)
+"var_temp.ml" 8 201 213 "var_temp.ml" 8 201 229
+type(
+  Var.t
+)
+"var_temp.ml" 9 232 234 "var_temp.ml" 9 232 246
+type(
+  string -> bool
+)
+ident(
+  int_ref is_temp_name "var_temp.ml" 4 72 76 "var_temp.ml" 4 72 88
+)
+"var_temp.ml" 9 232 247 "var_temp.ml" 9 232 248
+type(
+  string
+)
+ident(
+  int_ref s "var_temp.ml" 8 201 223 "var_temp.ml" 8 201 224
+)
+"var_temp.ml" 9 232 234 "var_temp.ml" 9 232 248
+call(
+  tail
+)
+type(
+  bool
+)
+"var_temp.ml" 11 250 254 "var_temp.ml" 11 250 256
+type(
+  string -> Type.typ -> Var.t
+)
+ident(
+  def nt "var_temp.ml" 17 397 423 --
+)
+"var_temp.ml" 11 250 257 "var_temp.ml" 11 250 258
+type(
+  string
+)
+ident(
+  def s "var_temp.ml" 11 250 259 "var_temp.ml" 17 397 423
+)
+"var_temp.ml" 11 250 259 "var_temp.ml" 11 250 260
+type(
+  Type.typ
+)
+ident(
+  def t "var_temp.ml" 12 263 265 "var_temp.ml" 17 397 423
+)
+"var_temp.ml" 12 263 269 "var_temp.ml" 12 263 281
+type(
+  string -> bool
+)
+ident(
+  int_ref is_temp_name "var_temp.ml" 4 72 76 "var_temp.ml" 4 72 88
+)
+"var_temp.ml" 12 263 282 "var_temp.ml" 12 263 283
+type(
+  string
+)
+ident(
+  int_ref s "var_temp.ml" 11 250 257 "var_temp.ml" 11 250 258
+)
+"var_temp.ml" 12 263 268 "var_temp.ml" 12 263 284
+call(
+  stack
+)
+type(
+  bool
+)
+"var_temp.ml" 13 290 294 "var_temp.ml" 13 290 304
+type(
+  string -> Type.typ -> Var.t
+)
+ident(
+  ext_ref Var.newvar
+)
+"var_temp.ml" 13 290 305 "var_temp.ml" 13 290 306
+type(
+  string
+)
+ident(
+  int_ref s "var_temp.ml" 11 250 257 "var_temp.ml" 11 250 258
+)
+"var_temp.ml" 13 290 307 "var_temp.ml" 13 290 308
+type(
+  Type.typ
+)
+ident(
+  int_ref t "var_temp.ml" 11 250 259 "var_temp.ml" 11 250 260
+)
+"var_temp.ml" 13 290 294 "var_temp.ml" 13 290 308
+call(
+  tail
+)
+type(
+  Var.t
+)
+"var_temp.ml" 15 316 324 "var_temp.ml" 15 316 331
+type(
+  string
+)
+"var_temp.ml" 15 316 334 "var_temp.ml" 15 316 345
+type(
+  string
+)
+ident(
+  int_ref temp_prefix "var_temp.ml" 1 0 4 "var_temp.ml" 1 0 15
+)
+"var_temp.ml" 15 316 345 "var_temp.ml" 15 316 346
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"var_temp.ml" 15 316 346 "var_temp.ml" 15 316 347
+type(
+  string
+)
+ident(
+  int_ref s "var_temp.ml" 11 250 257 "var_temp.ml" 11 250 258
+)
+"var_temp.ml" 15 316 334 "var_temp.ml" 15 316 347
+call(
+  stack
+)
+type(
+  string
+)
+"var_temp.ml" 16 351 359 "var_temp.ml" 16 351 361
+type(
+  unit
+)
+"var_temp.ml" 16 351 372 "var_temp.ml" 16 351 384
+type(
+  string -> bool
+)
+ident(
+  int_ref is_temp_name "var_temp.ml" 4 72 76 "var_temp.ml" 4 72 88
+)
+"var_temp.ml" 16 351 385 "var_temp.ml" 16 351 392
+type(
+  string
+)
+ident(
+  int_ref newname "var_temp.ml" 15 316 324 "var_temp.ml" 15 316 331
+)
+"var_temp.ml" 16 351 371 "var_temp.ml" 16 351 393
+call(
+  stack
+)
+type(
+  bool
+)
+"var_temp.ml" 16 351 364 "var_temp.ml" 16 351 393
+type(
+  unit
+)
+"var_temp.ml" 17 397 401 "var_temp.ml" 17 397 411
+type(
+  string -> Type.typ -> Var.t
+)
+ident(
+  ext_ref Var.newvar
+)
+"var_temp.ml" 17 397 412 "var_temp.ml" 17 397 421
+type(
+  string
+)
+ident(
+  int_ref newname "var_temp.ml" 15 316 324 "var_temp.ml" 15 316 331
+)
+"var_temp.ml" 17 397 422 "var_temp.ml" 17 397 423
+type(
+  Type.typ
+)
+ident(
+  int_ref t "var_temp.ml" 11 250 259 "var_temp.ml" 11 250 260
+)
+"var_temp.ml" 17 397 401 "var_temp.ml" 17 397 423
+call(
+  tail
+)
+type(
+  Var.t
+)
+"var_temp.ml" 16 351 355 "var_temp.ml" 17 397 423
+type(
+  Var.t
+)
+"var_temp.ml" 15 316 320 "var_temp.ml" 17 397 423
+type(
+  Var.t
+)
+"var_temp.ml" 12 263 265 "var_temp.ml" 17 397 423
+type(
+  Var.t
+)

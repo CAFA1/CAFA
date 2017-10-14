@@ -1,0 +1,144 @@
+Backport of:
+
+From 1eb3064a9e4a81d0b8cd414e3dcd7fe9b158f241 Mon Sep 17 00:00:00 2001
+From: cristy <cristy@aa41f4f7-0bf4-0310-aa73-e5a19afd5a74>
+Date: Sat, 29 Nov 2014 00:47:19 +0000
+Subject: [PATCH] Do not continue on corrupted wpg file
+
+git-svn-id: https://subversion.imagemagick.org/subversion/ImageMagick/branches/ImageMagick-6@17127 aa41f4f7-0bf4-0310-aa73-e5a19afd5a74
+origin: http://trac.imagemagick.org/changeset/17127
+---
+ coders/wpg.c | 29 +++++++++++++++--------------
+ 1 file changed, 15 insertions(+), 14 deletions(-)
+
+Index: imagemagick-6.6.9.7/coders/wpg.c
+===================================================================
+--- imagemagick-6.6.9.7.orig/coders/wpg.c	2016-11-14 14:21:18.485872646 -0500
++++ imagemagick-6.6.9.7/coders/wpg.c	2016-11-14 14:21:18.481872646 -0500
+@@ -902,7 +902,7 @@
+   typedef struct
+   {
+     unsigned int Width;
+-    unsigned int Heigth;
++    unsigned int Height;
+     unsigned int Depth;
+     unsigned int HorzRes;
+     unsigned int VertRes;
+@@ -911,7 +911,7 @@
+   typedef struct
+   {
+     unsigned int Width;
+-    unsigned int Heigth;
++    unsigned int Height;
+     unsigned char Depth;
+     unsigned char Compression;
+   } WPG2BitmapType1;
+@@ -924,7 +924,7 @@
+     unsigned int UpRightX;
+     unsigned int UpRightY;
+     unsigned int Width;
+-    unsigned int Heigth;
++    unsigned int Height;
+     unsigned int Depth;
+     unsigned int HorzRes;
+     unsigned int VertRes;
+@@ -1048,7 +1048,9 @@
+             {
+             case 0x0B: /* bitmap type 1 */
+               BitmapHeader1.Width=ReadBlobLSBShort(image);
+-              BitmapHeader1.Heigth=ReadBlobLSBShort(image);
++              BitmapHeader1.Height=ReadBlobLSBShort(image);
++              if ((BitmapHeader1.Width == 0) || (BitmapHeader1.Height == 0))
++                ThrowReaderException(CorruptImageError,"ImproperImageHeader");
+               BitmapHeader1.Depth=ReadBlobLSBShort(image);
+               BitmapHeader1.HorzRes=ReadBlobLSBShort(image);
+               BitmapHeader1.VertRes=ReadBlobLSBShort(image);
+@@ -1060,7 +1062,7 @@
+                   image->y_resolution=BitmapHeader1.VertRes/470.0;
+                 }
+               image->columns=BitmapHeader1.Width;
+-              image->rows=BitmapHeader1.Heigth;
++              image->rows=BitmapHeader1.Height;
+               bpp=BitmapHeader1.Depth;
+ 
+               goto UnpackRaster;
+@@ -1098,7 +1100,9 @@
+               BitmapHeader2.UpRightX=ReadBlobLSBShort(image);
+               BitmapHeader2.UpRightY=ReadBlobLSBShort(image);
+               BitmapHeader2.Width=ReadBlobLSBShort(image);
+-              BitmapHeader2.Heigth=ReadBlobLSBShort(image);
++              BitmapHeader2.Height=ReadBlobLSBShort(image);
++              if ((BitmapHeader2.Width == 0) || (BitmapHeader2.Height == 0))
++                ThrowReaderException(CorruptImageError,"ImproperImageHeader");
+               BitmapHeader2.Depth=ReadBlobLSBShort(image);
+               BitmapHeader2.HorzRes=ReadBlobLSBShort(image);
+               BitmapHeader2.VertRes=ReadBlobLSBShort(image);
+@@ -1116,7 +1120,7 @@
+                   image->y_resolution=BitmapHeader2.VertRes/470.0;
+                 }
+               image->columns=BitmapHeader2.Width;
+-              image->rows=BitmapHeader2.Heigth;
++              image->rows=BitmapHeader2.Height;
+               bpp=BitmapHeader2.Depth;
+ 
+             UnpackRaster:      
+@@ -1178,7 +1182,6 @@
+ 
+                       flop_image = FlopImage(image, exception);
+                       if (flop_image != (Image *) NULL) {
+-                        flop_image->blob = image->blob;
+                         DuplicateBlob(flop_image,image);
+                         (void) RemoveLastImageFromList(&image);
+                         AppendImageToList(&image,flop_image);
+@@ -1192,7 +1195,6 @@
+ 
+                       flip_image = FlipImage(image, exception);
+                       if (flip_image != (Image *) NULL) {
+-                        flip_image->blob = image->blob;
+                         DuplicateBlob(flip_image,image);
+                         (void) RemoveLastImageFromList(&image);
+                         AppendImageToList(&image,flip_image);
+@@ -1208,7 +1210,6 @@
+                       rotate_image=RotateImage(image,(BitmapHeader2.RotAngle &
+                         0x0FFF), exception);
+                       if (rotate_image != (Image *) NULL) {
+-                        rotate_image->blob = image->blob;
+                         DuplicateBlob(rotate_image,image);
+                         (void) RemoveLastImageFromList(&image);
+                         AppendImageToList(&image,rotate_image);
+@@ -1287,7 +1288,9 @@
+               break;
+             case 0x0E:
+               Bitmap2Header1.Width=ReadBlobLSBShort(image);
+-              Bitmap2Header1.Heigth=ReadBlobLSBShort(image);
++              Bitmap2Header1.Height=ReadBlobLSBShort(image);
++              if ((Bitmap2Header1.Width == 0) || (Bitmap2Header1.Height == 0))
++                ThrowReaderException(CorruptImageError,"ImproperImageHeader");
+               Bitmap2Header1.Depth=ReadBlobByte(image);
+               Bitmap2Header1.Compression=ReadBlobByte(image);
+ 
+@@ -1314,7 +1317,7 @@
+                   continue;  /*Ignore raster with unknown depth*/
+                 }
+               image->columns=Bitmap2Header1.Width;
+-              image->rows=Bitmap2Header1.Heigth;  
++              image->rows=Bitmap2Header1.Height;
+ 
+               if ((image->colors == 0) && (bpp != 24))
+                 {
+@@ -1371,7 +1374,6 @@
+ 
+                   flop_image = FlopImage(image, exception);
+                   if (flop_image != (Image *) NULL) {
+-                    flop_image->blob = image->blob;
+                     DuplicateBlob(flop_image,image);
+                     (void) RemoveLastImageFromList(&image);
+                     AppendImageToList(&image,flop_image);
+@@ -1389,7 +1391,6 @@
+ 
+                   flip_image = FlipImage(image, exception);
+                   if (flip_image != (Image *) NULL) {
+-                    flip_image->blob = image->blob;
+                     DuplicateBlob(flip_image,image);
+                     (void) RemoveLastImageFromList(&image);
+                     AppendImageToList(&image,flip_image);

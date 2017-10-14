@@ -1,0 +1,1951 @@
+"big_int_convenience.ml" 8 118 124 "big_int_convenience.ml" 8 118 129
+type(
+  Z.t -> Z.t -> bool
+)
+ident(
+  def equal "big_int_convenience.ml" 9 143 145 "big_int_convenience.ml" 10 169 172
+)
+"big_int_convenience.ml" 8 118 132 "big_int_convenience.ml" 8 118 142
+type(
+  Z.t -> Z.t -> bool
+)
+ident(
+  ext_ref Big_int_Z.eq_big_int
+)
+"big_int_convenience.ml" 9 143 149 "big_int_convenience.ml" 9 143 153
+type(
+  'a -> int
+)
+ident(
+  def hash "big_int_convenience.ml" 9 143 168 "big_int_convenience.ml" 10 169 172
+)
+"big_int_convenience.ml" 9 143 156 "big_int_convenience.ml" 9 143 168
+type(
+  'a -> int
+)
+ident(
+  ext_ref Hashtbl.hash
+)
+"big_int_convenience.ml" 13 220 226 "big_int_convenience.ml" 13 220 233
+type(
+  Z.t -> Z.t -> int
+)
+ident(
+  def compare "big_int_convenience.ml" 13 220 251 "big_int_convenience.ml" 14 252 255
+)
+"big_int_convenience.ml" 13 220 236 "big_int_convenience.ml" 13 220 251
+type(
+  Z.t -> Z.t -> int
+)
+ident(
+  ext_ref Big_int_Z.compare_big_int
+)
+"big_int_convenience.ml" 15 256 269 "big_int_convenience.ml" 15 256 291
+call(
+  stack
+)
+"big_int_convenience.ml" 16 292 305 "big_int_convenience.ml" 16 292 326
+call(
+  stack
+)
+"big_int_convenience.ml" 17 327 340 "big_int_convenience.ml" 17 327 361
+call(
+  stack
+)
+"big_int_convenience.ml" 19 363 367 "big_int_convenience.ml" 19 363 370
+type(
+  Z.t
+)
+ident(
+  def bi0 "big_int_convenience.ml" 20 392 392 --
+)
+"big_int_convenience.ml" 19 363 373 "big_int_convenience.ml" 19 363 387
+type(
+  int -> Z.t
+)
+ident(
+  ext_ref Big_int_Z.big_int_of_int
+)
+"big_int_convenience.ml" 19 363 388 "big_int_convenience.ml" 19 363 391
+type(
+  int
+)
+"big_int_convenience.ml" 19 363 373 "big_int_convenience.ml" 19 363 391
+call(
+  stack
+)
+type(
+  Z.t
+)
+"big_int_convenience.ml" 20 392 396 "big_int_convenience.ml" 20 392 399
+type(
+  Z.t
+)
+ident(
+  def bi1 "big_int_convenience.ml" 21 421 421 --
+)
+"big_int_convenience.ml" 20 392 402 "big_int_convenience.ml" 20 392 416
+type(
+  int -> Z.t
+)
+ident(
+  ext_ref Big_int_Z.big_int_of_int
+)
+"big_int_convenience.ml" 20 392 417 "big_int_convenience.ml" 20 392 420
+type(
+  int
+)
+"big_int_convenience.ml" 20 392 402 "big_int_convenience.ml" 20 392 420
+call(
+  stack
+)
+type(
+  Z.t
+)
+"big_int_convenience.ml" 21 421 425 "big_int_convenience.ml" 21 421 428
+type(
+  Z.t
+)
+ident(
+  def bi2 "big_int_convenience.ml" 22 450 450 --
+)
+"big_int_convenience.ml" 21 421 431 "big_int_convenience.ml" 21 421 445
+type(
+  int -> Z.t
+)
+ident(
+  ext_ref Big_int_Z.big_int_of_int
+)
+"big_int_convenience.ml" 21 421 446 "big_int_convenience.ml" 21 421 449
+type(
+  int
+)
+"big_int_convenience.ml" 21 421 431 "big_int_convenience.ml" 21 421 449
+call(
+  stack
+)
+type(
+  Z.t
+)
+"big_int_convenience.ml" 22 450 454 "big_int_convenience.ml" 22 450 457
+type(
+  Z.t
+)
+ident(
+  def bi3 "big_int_convenience.ml" 23 479 479 --
+)
+"big_int_convenience.ml" 22 450 460 "big_int_convenience.ml" 22 450 474
+type(
+  int -> Z.t
+)
+ident(
+  ext_ref Big_int_Z.big_int_of_int
+)
+"big_int_convenience.ml" 22 450 475 "big_int_convenience.ml" 22 450 478
+type(
+  int
+)
+"big_int_convenience.ml" 22 450 460 "big_int_convenience.ml" 22 450 478
+call(
+  stack
+)
+type(
+  Z.t
+)
+"big_int_convenience.ml" 23 479 483 "big_int_convenience.ml" 23 479 486
+type(
+  Z.t
+)
+ident(
+  def bi4 "big_int_convenience.ml" 24 508 508 --
+)
+"big_int_convenience.ml" 23 479 489 "big_int_convenience.ml" 23 479 503
+type(
+  int -> Z.t
+)
+ident(
+  ext_ref Big_int_Z.big_int_of_int
+)
+"big_int_convenience.ml" 23 479 504 "big_int_convenience.ml" 23 479 507
+type(
+  int
+)
+"big_int_convenience.ml" 23 479 489 "big_int_convenience.ml" 23 479 507
+call(
+  stack
+)
+type(
+  Z.t
+)
+"big_int_convenience.ml" 24 508 512 "big_int_convenience.ml" 24 508 515
+type(
+  Z.t
+)
+ident(
+  def bi5 "big_int_convenience.ml" 25 537 537 --
+)
+"big_int_convenience.ml" 24 508 518 "big_int_convenience.ml" 24 508 532
+type(
+  int -> Z.t
+)
+ident(
+  ext_ref Big_int_Z.big_int_of_int
+)
+"big_int_convenience.ml" 24 508 533 "big_int_convenience.ml" 24 508 536
+type(
+  int
+)
+"big_int_convenience.ml" 24 508 518 "big_int_convenience.ml" 24 508 536
+call(
+  stack
+)
+type(
+  Z.t
+)
+"big_int_convenience.ml" 25 537 541 "big_int_convenience.ml" 25 537 544
+type(
+  Z.t
+)
+ident(
+  def bi6 "big_int_convenience.ml" 26 566 566 --
+)
+"big_int_convenience.ml" 25 537 547 "big_int_convenience.ml" 25 537 561
+type(
+  int -> Z.t
+)
+ident(
+  ext_ref Big_int_Z.big_int_of_int
+)
+"big_int_convenience.ml" 25 537 562 "big_int_convenience.ml" 25 537 565
+type(
+  int
+)
+"big_int_convenience.ml" 25 537 547 "big_int_convenience.ml" 25 537 565
+call(
+  stack
+)
+type(
+  Z.t
+)
+"big_int_convenience.ml" 26 566 570 "big_int_convenience.ml" 26 566 573
+type(
+  Z.t
+)
+ident(
+  def bi7 "big_int_convenience.ml" 27 595 595 --
+)
+"big_int_convenience.ml" 26 566 576 "big_int_convenience.ml" 26 566 590
+type(
+  int -> Z.t
+)
+ident(
+  ext_ref Big_int_Z.big_int_of_int
+)
+"big_int_convenience.ml" 26 566 591 "big_int_convenience.ml" 26 566 594
+type(
+  int
+)
+"big_int_convenience.ml" 26 566 576 "big_int_convenience.ml" 26 566 594
+call(
+  stack
+)
+type(
+  Z.t
+)
+"big_int_convenience.ml" 27 595 599 "big_int_convenience.ml" 27 595 602
+type(
+  Z.t
+)
+ident(
+  def bi8 "big_int_convenience.ml" 28 624 624 --
+)
+"big_int_convenience.ml" 27 595 605 "big_int_convenience.ml" 27 595 619
+type(
+  int -> Z.t
+)
+ident(
+  ext_ref Big_int_Z.big_int_of_int
+)
+"big_int_convenience.ml" 27 595 620 "big_int_convenience.ml" 27 595 623
+type(
+  int
+)
+"big_int_convenience.ml" 27 595 605 "big_int_convenience.ml" 27 595 623
+call(
+  stack
+)
+type(
+  Z.t
+)
+"big_int_convenience.ml" 28 624 628 "big_int_convenience.ml" 28 624 631
+type(
+  Z.t
+)
+ident(
+  def bi9 "big_int_convenience.ml" 29 653 653 --
+)
+"big_int_convenience.ml" 28 624 634 "big_int_convenience.ml" 28 624 648
+type(
+  int -> Z.t
+)
+ident(
+  ext_ref Big_int_Z.big_int_of_int
+)
+"big_int_convenience.ml" 28 624 649 "big_int_convenience.ml" 28 624 652
+type(
+  int
+)
+"big_int_convenience.ml" 28 624 634 "big_int_convenience.ml" 28 624 652
+call(
+  stack
+)
+type(
+  Z.t
+)
+"big_int_convenience.ml" 29 653 657 "big_int_convenience.ml" 29 653 660
+type(
+  Z.t
+)
+ident(
+  def bia "big_int_convenience.ml" 30 682 682 --
+)
+"big_int_convenience.ml" 29 653 663 "big_int_convenience.ml" 29 653 677
+type(
+  int -> Z.t
+)
+ident(
+  ext_ref Big_int_Z.big_int_of_int
+)
+"big_int_convenience.ml" 29 653 678 "big_int_convenience.ml" 29 653 681
+type(
+  int
+)
+"big_int_convenience.ml" 29 653 663 "big_int_convenience.ml" 29 653 681
+call(
+  stack
+)
+type(
+  Z.t
+)
+"big_int_convenience.ml" 30 682 686 "big_int_convenience.ml" 30 682 689
+type(
+  Z.t
+)
+ident(
+  def bib "big_int_convenience.ml" 31 711 711 --
+)
+"big_int_convenience.ml" 30 682 692 "big_int_convenience.ml" 30 682 706
+type(
+  int -> Z.t
+)
+ident(
+  ext_ref Big_int_Z.big_int_of_int
+)
+"big_int_convenience.ml" 30 682 707 "big_int_convenience.ml" 30 682 710
+type(
+  int
+)
+"big_int_convenience.ml" 30 682 692 "big_int_convenience.ml" 30 682 710
+call(
+  stack
+)
+type(
+  Z.t
+)
+"big_int_convenience.ml" 31 711 715 "big_int_convenience.ml" 31 711 718
+type(
+  Z.t
+)
+ident(
+  def bic "big_int_convenience.ml" 32 740 740 --
+)
+"big_int_convenience.ml" 31 711 721 "big_int_convenience.ml" 31 711 735
+type(
+  int -> Z.t
+)
+ident(
+  ext_ref Big_int_Z.big_int_of_int
+)
+"big_int_convenience.ml" 31 711 736 "big_int_convenience.ml" 31 711 739
+type(
+  int
+)
+"big_int_convenience.ml" 31 711 721 "big_int_convenience.ml" 31 711 739
+call(
+  stack
+)
+type(
+  Z.t
+)
+"big_int_convenience.ml" 32 740 744 "big_int_convenience.ml" 32 740 747
+type(
+  Z.t
+)
+ident(
+  def bid "big_int_convenience.ml" 33 769 769 --
+)
+"big_int_convenience.ml" 32 740 750 "big_int_convenience.ml" 32 740 764
+type(
+  int -> Z.t
+)
+ident(
+  ext_ref Big_int_Z.big_int_of_int
+)
+"big_int_convenience.ml" 32 740 765 "big_int_convenience.ml" 32 740 768
+type(
+  int
+)
+"big_int_convenience.ml" 32 740 750 "big_int_convenience.ml" 32 740 768
+call(
+  stack
+)
+type(
+  Z.t
+)
+"big_int_convenience.ml" 33 769 773 "big_int_convenience.ml" 33 769 776
+type(
+  Z.t
+)
+ident(
+  def bie "big_int_convenience.ml" 34 798 798 --
+)
+"big_int_convenience.ml" 33 769 779 "big_int_convenience.ml" 33 769 793
+type(
+  int -> Z.t
+)
+ident(
+  ext_ref Big_int_Z.big_int_of_int
+)
+"big_int_convenience.ml" 33 769 794 "big_int_convenience.ml" 33 769 797
+type(
+  int
+)
+"big_int_convenience.ml" 33 769 779 "big_int_convenience.ml" 33 769 797
+call(
+  stack
+)
+type(
+  Z.t
+)
+"big_int_convenience.ml" 34 798 802 "big_int_convenience.ml" 34 798 805
+type(
+  Z.t
+)
+ident(
+  def bif "big_int_convenience.ml" 35 827 827 --
+)
+"big_int_convenience.ml" 34 798 808 "big_int_convenience.ml" 34 798 822
+type(
+  int -> Z.t
+)
+ident(
+  ext_ref Big_int_Z.big_int_of_int
+)
+"big_int_convenience.ml" 34 798 823 "big_int_convenience.ml" 34 798 826
+type(
+  int
+)
+"big_int_convenience.ml" 34 798 808 "big_int_convenience.ml" 34 798 826
+call(
+  stack
+)
+type(
+  Z.t
+)
+"big_int_convenience.ml" 35 827 831 "big_int_convenience.ml" 35 827 835
+type(
+  Z.t
+)
+ident(
+  def bim1 "big_int_convenience.ml" 36 860 860 --
+)
+"big_int_convenience.ml" 35 827 838 "big_int_convenience.ml" 35 827 852
+type(
+  int -> Z.t
+)
+ident(
+  ext_ref Big_int_Z.big_int_of_int
+)
+"big_int_convenience.ml" 35 827 853 "big_int_convenience.ml" 35 827 859
+type(
+  int
+)
+"big_int_convenience.ml" 35 827 838 "big_int_convenience.ml" 35 827 859
+call(
+  stack
+)
+type(
+  Z.t
+)
+"big_int_convenience.ml" 36 860 864 "big_int_convenience.ml" 36 860 868
+type(
+  Z.t
+)
+ident(
+  def bim2 "big_int_convenience.ml" 37 893 893 --
+)
+"big_int_convenience.ml" 36 860 871 "big_int_convenience.ml" 36 860 885
+type(
+  int -> Z.t
+)
+ident(
+  ext_ref Big_int_Z.big_int_of_int
+)
+"big_int_convenience.ml" 36 860 886 "big_int_convenience.ml" 36 860 892
+type(
+  int
+)
+"big_int_convenience.ml" 36 860 871 "big_int_convenience.ml" 36 860 892
+call(
+  stack
+)
+type(
+  Z.t
+)
+"big_int_convenience.ml" 37 893 897 "big_int_convenience.ml" 37 893 901
+type(
+  Z.t
+)
+ident(
+  def bim3 "big_int_convenience.ml" 38 926 926 --
+)
+"big_int_convenience.ml" 37 893 904 "big_int_convenience.ml" 37 893 918
+type(
+  int -> Z.t
+)
+ident(
+  ext_ref Big_int_Z.big_int_of_int
+)
+"big_int_convenience.ml" 37 893 919 "big_int_convenience.ml" 37 893 925
+type(
+  int
+)
+"big_int_convenience.ml" 37 893 904 "big_int_convenience.ml" 37 893 925
+call(
+  stack
+)
+type(
+  Z.t
+)
+"big_int_convenience.ml" 38 926 930 "big_int_convenience.ml" 38 926 934
+type(
+  Z.t
+)
+ident(
+  def bim4 "big_int_convenience.ml" 39 959 959 --
+)
+"big_int_convenience.ml" 38 926 937 "big_int_convenience.ml" 38 926 951
+type(
+  int -> Z.t
+)
+ident(
+  ext_ref Big_int_Z.big_int_of_int
+)
+"big_int_convenience.ml" 38 926 952 "big_int_convenience.ml" 38 926 958
+type(
+  int
+)
+"big_int_convenience.ml" 38 926 937 "big_int_convenience.ml" 38 926 958
+call(
+  stack
+)
+type(
+  Z.t
+)
+"big_int_convenience.ml" 39 959 963 "big_int_convenience.ml" 39 959 967
+type(
+  Z.t
+)
+ident(
+  def bim5 "big_int_convenience.ml" 40 992 992 --
+)
+"big_int_convenience.ml" 39 959 970 "big_int_convenience.ml" 39 959 984
+type(
+  int -> Z.t
+)
+ident(
+  ext_ref Big_int_Z.big_int_of_int
+)
+"big_int_convenience.ml" 39 959 985 "big_int_convenience.ml" 39 959 991
+type(
+  int
+)
+"big_int_convenience.ml" 39 959 970 "big_int_convenience.ml" 39 959 991
+call(
+  stack
+)
+type(
+  Z.t
+)
+"big_int_convenience.ml" 40 992 996 "big_int_convenience.ml" 40 992 1000
+type(
+  Z.t
+)
+ident(
+  def bim6 "big_int_convenience.ml" 41 1025 1025 --
+)
+"big_int_convenience.ml" 40 992 1003 "big_int_convenience.ml" 40 992 1017
+type(
+  int -> Z.t
+)
+ident(
+  ext_ref Big_int_Z.big_int_of_int
+)
+"big_int_convenience.ml" 40 992 1018 "big_int_convenience.ml" 40 992 1024
+type(
+  int
+)
+"big_int_convenience.ml" 40 992 1003 "big_int_convenience.ml" 40 992 1024
+call(
+  stack
+)
+type(
+  Z.t
+)
+"big_int_convenience.ml" 41 1025 1029 "big_int_convenience.ml" 41 1025 1033
+type(
+  Z.t
+)
+ident(
+  def bim7 "big_int_convenience.ml" 42 1058 1058 --
+)
+"big_int_convenience.ml" 41 1025 1036 "big_int_convenience.ml" 41 1025 1050
+type(
+  int -> Z.t
+)
+ident(
+  ext_ref Big_int_Z.big_int_of_int
+)
+"big_int_convenience.ml" 41 1025 1051 "big_int_convenience.ml" 41 1025 1057
+type(
+  int
+)
+"big_int_convenience.ml" 41 1025 1036 "big_int_convenience.ml" 41 1025 1057
+call(
+  stack
+)
+type(
+  Z.t
+)
+"big_int_convenience.ml" 42 1058 1062 "big_int_convenience.ml" 42 1058 1066
+type(
+  Z.t
+)
+ident(
+  def bim8 "big_int_convenience.ml" 43 1091 1091 --
+)
+"big_int_convenience.ml" 42 1058 1069 "big_int_convenience.ml" 42 1058 1083
+type(
+  int -> Z.t
+)
+ident(
+  ext_ref Big_int_Z.big_int_of_int
+)
+"big_int_convenience.ml" 42 1058 1084 "big_int_convenience.ml" 42 1058 1090
+type(
+  int
+)
+"big_int_convenience.ml" 42 1058 1069 "big_int_convenience.ml" 42 1058 1090
+call(
+  stack
+)
+type(
+  Z.t
+)
+"big_int_convenience.ml" 43 1091 1095 "big_int_convenience.ml" 43 1091 1099
+type(
+  Z.t
+)
+ident(
+  def bim9 "big_int_convenience.ml" 44 1124 1124 --
+)
+"big_int_convenience.ml" 43 1091 1102 "big_int_convenience.ml" 43 1091 1116
+type(
+  int -> Z.t
+)
+ident(
+  ext_ref Big_int_Z.big_int_of_int
+)
+"big_int_convenience.ml" 43 1091 1117 "big_int_convenience.ml" 43 1091 1123
+type(
+  int
+)
+"big_int_convenience.ml" 43 1091 1102 "big_int_convenience.ml" 43 1091 1123
+call(
+  stack
+)
+type(
+  Z.t
+)
+"big_int_convenience.ml" 44 1124 1128 "big_int_convenience.ml" 44 1124 1132
+type(
+  Z.t
+)
+ident(
+  def bima "big_int_convenience.ml" 45 1157 1157 --
+)
+"big_int_convenience.ml" 44 1124 1135 "big_int_convenience.ml" 44 1124 1149
+type(
+  int -> Z.t
+)
+ident(
+  ext_ref Big_int_Z.big_int_of_int
+)
+"big_int_convenience.ml" 44 1124 1150 "big_int_convenience.ml" 44 1124 1156
+type(
+  int
+)
+"big_int_convenience.ml" 44 1124 1135 "big_int_convenience.ml" 44 1124 1156
+call(
+  stack
+)
+type(
+  Z.t
+)
+"big_int_convenience.ml" 45 1157 1161 "big_int_convenience.ml" 45 1157 1165
+type(
+  Z.t
+)
+ident(
+  def bimb "big_int_convenience.ml" 46 1190 1190 --
+)
+"big_int_convenience.ml" 45 1157 1168 "big_int_convenience.ml" 45 1157 1182
+type(
+  int -> Z.t
+)
+ident(
+  ext_ref Big_int_Z.big_int_of_int
+)
+"big_int_convenience.ml" 45 1157 1183 "big_int_convenience.ml" 45 1157 1189
+type(
+  int
+)
+"big_int_convenience.ml" 45 1157 1168 "big_int_convenience.ml" 45 1157 1189
+call(
+  stack
+)
+type(
+  Z.t
+)
+"big_int_convenience.ml" 46 1190 1194 "big_int_convenience.ml" 46 1190 1198
+type(
+  Z.t
+)
+ident(
+  def bimc "big_int_convenience.ml" 47 1223 1223 --
+)
+"big_int_convenience.ml" 46 1190 1201 "big_int_convenience.ml" 46 1190 1215
+type(
+  int -> Z.t
+)
+ident(
+  ext_ref Big_int_Z.big_int_of_int
+)
+"big_int_convenience.ml" 46 1190 1216 "big_int_convenience.ml" 46 1190 1222
+type(
+  int
+)
+"big_int_convenience.ml" 46 1190 1201 "big_int_convenience.ml" 46 1190 1222
+call(
+  stack
+)
+type(
+  Z.t
+)
+"big_int_convenience.ml" 47 1223 1227 "big_int_convenience.ml" 47 1223 1231
+type(
+  Z.t
+)
+ident(
+  def bimd "big_int_convenience.ml" 48 1256 1256 --
+)
+"big_int_convenience.ml" 47 1223 1234 "big_int_convenience.ml" 47 1223 1248
+type(
+  int -> Z.t
+)
+ident(
+  ext_ref Big_int_Z.big_int_of_int
+)
+"big_int_convenience.ml" 47 1223 1249 "big_int_convenience.ml" 47 1223 1255
+type(
+  int
+)
+"big_int_convenience.ml" 47 1223 1234 "big_int_convenience.ml" 47 1223 1255
+call(
+  stack
+)
+type(
+  Z.t
+)
+"big_int_convenience.ml" 48 1256 1260 "big_int_convenience.ml" 48 1256 1264
+type(
+  Z.t
+)
+ident(
+  def bime "big_int_convenience.ml" 49 1289 1289 --
+)
+"big_int_convenience.ml" 48 1256 1267 "big_int_convenience.ml" 48 1256 1281
+type(
+  int -> Z.t
+)
+ident(
+  ext_ref Big_int_Z.big_int_of_int
+)
+"big_int_convenience.ml" 48 1256 1282 "big_int_convenience.ml" 48 1256 1288
+type(
+  int
+)
+"big_int_convenience.ml" 48 1256 1267 "big_int_convenience.ml" 48 1256 1288
+call(
+  stack
+)
+type(
+  Z.t
+)
+"big_int_convenience.ml" 49 1289 1293 "big_int_convenience.ml" 49 1289 1297
+type(
+  Z.t
+)
+ident(
+  def bimf "big_int_convenience.ml" 51 1323 1323 --
+)
+"big_int_convenience.ml" 49 1289 1300 "big_int_convenience.ml" 49 1289 1314
+type(
+  int -> Z.t
+)
+ident(
+  ext_ref Big_int_Z.big_int_of_int
+)
+"big_int_convenience.ml" 49 1289 1315 "big_int_convenience.ml" 49 1289 1321
+type(
+  int
+)
+"big_int_convenience.ml" 49 1289 1300 "big_int_convenience.ml" 49 1289 1321
+call(
+  stack
+)
+type(
+  Z.t
+)
+"big_int_convenience.ml" 51 1323 1327 "big_int_convenience.ml" 51 1323 1334
+type(
+  int -> Z.t
+)
+ident(
+  def biconst "big_int_convenience.ml" 52 1356 1356 --
+)
+"big_int_convenience.ml" 51 1323 1335 "big_int_convenience.ml" 51 1323 1336
+type(
+  int
+)
+ident(
+  def i "big_int_convenience.ml" 51 1323 1339 "big_int_convenience.ml" 51 1323 1355
+)
+"big_int_convenience.ml" 51 1323 1339 "big_int_convenience.ml" 51 1323 1353
+type(
+  int -> Z.t
+)
+ident(
+  ext_ref Big_int_Z.big_int_of_int
+)
+"big_int_convenience.ml" 51 1323 1354 "big_int_convenience.ml" 51 1323 1355
+type(
+  int
+)
+ident(
+  int_ref i "big_int_convenience.ml" 51 1323 1335 "big_int_convenience.ml" 51 1323 1336
+)
+"big_int_convenience.ml" 51 1323 1339 "big_int_convenience.ml" 51 1323 1355
+call(
+  tail
+)
+type(
+  Z.t
+)
+"big_int_convenience.ml" 52 1356 1360 "big_int_convenience.ml" 52 1356 1362
+type(
+  int -> Z.t
+)
+ident(
+  def bi "big_int_convenience.ml" 53 1373 1373 --
+)
+"big_int_convenience.ml" 52 1356 1365 "big_int_convenience.ml" 52 1356 1372
+type(
+  int -> Z.t
+)
+ident(
+  int_ref biconst "big_int_convenience.ml" 51 1323 1327 "big_int_convenience.ml" 51 1323 1334
+)
+"big_int_convenience.ml" 53 1373 1377 "big_int_convenience.ml" 53 1373 1386
+type(
+  int32 -> Z.t
+)
+ident(
+  def biconst32 "big_int_convenience.ml" 54 1410 1410 --
+)
+"big_int_convenience.ml" 53 1373 1387 "big_int_convenience.ml" 53 1373 1388
+type(
+  int32
+)
+ident(
+  def i "big_int_convenience.ml" 53 1373 1391 "big_int_convenience.ml" 53 1373 1409
+)
+"big_int_convenience.ml" 53 1373 1391 "big_int_convenience.ml" 53 1373 1407
+type(
+  int32 -> Z.t
+)
+ident(
+  ext_ref Big_int_Z.big_int_of_int32
+)
+"big_int_convenience.ml" 53 1373 1408 "big_int_convenience.ml" 53 1373 1409
+type(
+  int32
+)
+ident(
+  int_ref i "big_int_convenience.ml" 53 1373 1387 "big_int_convenience.ml" 53 1373 1388
+)
+"big_int_convenience.ml" 53 1373 1391 "big_int_convenience.ml" 53 1373 1409
+call(
+  tail
+)
+type(
+  Z.t
+)
+"big_int_convenience.ml" 54 1410 1414 "big_int_convenience.ml" 54 1410 1423
+type(
+  int64 -> Z.t
+)
+ident(
+  def biconst64 "big_int_convenience.ml" 56 1448 1448 --
+)
+"big_int_convenience.ml" 54 1410 1424 "big_int_convenience.ml" 54 1410 1425
+type(
+  int64
+)
+ident(
+  def i "big_int_convenience.ml" 54 1410 1428 "big_int_convenience.ml" 54 1410 1446
+)
+"big_int_convenience.ml" 54 1410 1428 "big_int_convenience.ml" 54 1410 1444
+type(
+  int64 -> Z.t
+)
+ident(
+  ext_ref Big_int_Z.big_int_of_int64
+)
+"big_int_convenience.ml" 54 1410 1445 "big_int_convenience.ml" 54 1410 1446
+type(
+  int64
+)
+ident(
+  int_ref i "big_int_convenience.ml" 54 1410 1424 "big_int_convenience.ml" 54 1410 1425
+)
+"big_int_convenience.ml" 54 1410 1428 "big_int_convenience.ml" 54 1410 1446
+call(
+  tail
+)
+type(
+  Z.t
+)
+"big_int_convenience.ml" 56 1448 1452 "big_int_convenience.ml" 56 1448 1467
+type(
+  bool -> Z.t
+)
+ident(
+  def big_int_of_bool "big_int_convenience.ml" 61 1570 1570 --
+)
+"big_int_convenience.ml" 57 1479 1483 "big_int_convenience.ml" 57 1479 1487
+type(
+  bool
+)
+"big_int_convenience.ml" 57 1479 1491 "big_int_convenience.ml" 57 1479 1494
+type(
+  Z.t
+)
+ident(
+  int_ref bi1 "big_int_convenience.ml" 20 392 396 "big_int_convenience.ml" 20 392 399
+)
+"big_int_convenience.ml" 58 1495 1499 "big_int_convenience.ml" 58 1495 1504
+type(
+  bool
+)
+"big_int_convenience.ml" 58 1495 1508 "big_int_convenience.ml" 58 1495 1511
+type(
+  Z.t
+)
+ident(
+  int_ref bi0 "big_int_convenience.ml" 19 363 367 "big_int_convenience.ml" 19 363 370
+)
+"big_int_convenience.ml" 56 1448 1470 "big_int_convenience.ml" 58 1495 1511
+type(
+  bool -> Z.t
+)
+"big_int_convenience.ml" 61 1570 1574 "big_int_convenience.ml" 61 1570 1579
+type(
+  Z.t -> Z.t -> bool
+)
+ident(
+  def ==% "big_int_convenience.ml" 64 1657 1657 --
+)
+"big_int_convenience.ml" 61 1570 1580 "big_int_convenience.ml" 61 1570 1583
+type(
+  Z.t
+)
+ident(
+  def bi1 "big_int_convenience.ml" 61 1570 1584 "big_int_convenience.ml" 61 1570 1608
+)
+"big_int_convenience.ml" 61 1570 1584 "big_int_convenience.ml" 61 1570 1587
+type(
+  Z.t
+)
+ident(
+  def bi2 "big_int_convenience.ml" 61 1570 1590 "big_int_convenience.ml" 61 1570 1608
+)
+"big_int_convenience.ml" 61 1570 1590 "big_int_convenience.ml" 61 1570 1600
+type(
+  Z.t -> Z.t -> bool
+)
+ident(
+  ext_ref Big_int_Z.eq_big_int
+)
+"big_int_convenience.ml" 61 1570 1601 "big_int_convenience.ml" 61 1570 1604
+type(
+  Z.t
+)
+ident(
+  int_ref bi1 "big_int_convenience.ml" 61 1570 1580 "big_int_convenience.ml" 61 1570 1583
+)
+"big_int_convenience.ml" 61 1570 1605 "big_int_convenience.ml" 61 1570 1608
+type(
+  Z.t
+)
+ident(
+  int_ref bi2 "big_int_convenience.ml" 61 1570 1584 "big_int_convenience.ml" 61 1570 1587
+)
+"big_int_convenience.ml" 61 1570 1590 "big_int_convenience.ml" 61 1570 1608
+call(
+  tail
+)
+type(
+  bool
+)
+"big_int_convenience.ml" 64 1657 1661 "big_int_convenience.ml" 64 1657 1666
+type(
+  Z.t -> Z.t -> bool
+)
+ident(
+  def <>% "big_int_convenience.ml" 67 1724 1724 --
+)
+"big_int_convenience.ml" 64 1657 1667 "big_int_convenience.ml" 64 1657 1670
+type(
+  Z.t
+)
+ident(
+  def bi1 "big_int_convenience.ml" 64 1657 1671 "big_int_convenience.ml" 64 1657 1694
+)
+"big_int_convenience.ml" 64 1657 1671 "big_int_convenience.ml" 64 1657 1674
+type(
+  Z.t
+)
+ident(
+  def bi2 "big_int_convenience.ml" 64 1657 1677 "big_int_convenience.ml" 64 1657 1694
+)
+"big_int_convenience.ml" 64 1657 1677 "big_int_convenience.ml" 64 1657 1680
+type(
+  bool -> bool
+)
+ident(
+  ext_ref Pervasives.not
+)
+"big_int_convenience.ml" 64 1657 1682 "big_int_convenience.ml" 64 1657 1685
+type(
+  Z.t
+)
+ident(
+  int_ref bi1 "big_int_convenience.ml" 64 1657 1667 "big_int_convenience.ml" 64 1657 1670
+)
+"big_int_convenience.ml" 64 1657 1686 "big_int_convenience.ml" 64 1657 1689
+type(
+  Z.t -> Z.t -> bool
+)
+ident(
+  int_ref ==% "big_int_convenience.ml" 61 1570 1574 "big_int_convenience.ml" 61 1570 1579
+)
+"big_int_convenience.ml" 64 1657 1690 "big_int_convenience.ml" 64 1657 1693
+type(
+  Z.t
+)
+ident(
+  int_ref bi2 "big_int_convenience.ml" 64 1657 1671 "big_int_convenience.ml" 64 1657 1674
+)
+"big_int_convenience.ml" 64 1657 1681 "big_int_convenience.ml" 64 1657 1694
+call(
+  stack
+)
+type(
+  bool
+)
+"big_int_convenience.ml" 64 1657 1677 "big_int_convenience.ml" 64 1657 1694
+type(
+  bool
+)
+"big_int_convenience.ml" 67 1724 1728 "big_int_convenience.ml" 67 1724 1732
+type(
+  Z.t -> Z.t -> bool
+)
+ident(
+  def <% "big_int_convenience.ml" 70 1792 1792 --
+)
+"big_int_convenience.ml" 67 1724 1733 "big_int_convenience.ml" 67 1724 1736
+type(
+  Z.t
+)
+ident(
+  def bi1 "big_int_convenience.ml" 67 1724 1737 "big_int_convenience.ml" 67 1724 1761
+)
+"big_int_convenience.ml" 67 1724 1737 "big_int_convenience.ml" 67 1724 1740
+type(
+  Z.t
+)
+ident(
+  def bi2 "big_int_convenience.ml" 67 1724 1743 "big_int_convenience.ml" 67 1724 1761
+)
+"big_int_convenience.ml" 67 1724 1743 "big_int_convenience.ml" 67 1724 1753
+type(
+  Z.t -> Z.t -> bool
+)
+ident(
+  ext_ref Big_int_Z.lt_big_int
+)
+"big_int_convenience.ml" 67 1724 1754 "big_int_convenience.ml" 67 1724 1757
+type(
+  Z.t
+)
+ident(
+  int_ref bi1 "big_int_convenience.ml" 67 1724 1733 "big_int_convenience.ml" 67 1724 1736
+)
+"big_int_convenience.ml" 67 1724 1758 "big_int_convenience.ml" 67 1724 1761
+type(
+  Z.t
+)
+ident(
+  int_ref bi2 "big_int_convenience.ml" 67 1724 1737 "big_int_convenience.ml" 67 1724 1740
+)
+"big_int_convenience.ml" 67 1724 1743 "big_int_convenience.ml" 67 1724 1761
+call(
+  tail
+)
+type(
+  bool
+)
+"big_int_convenience.ml" 70 1792 1796 "big_int_convenience.ml" 70 1792 1801
+type(
+  Z.t -> Z.t -> bool
+)
+ident(
+  def <=% "big_int_convenience.ml" 73 1860 1860 --
+)
+"big_int_convenience.ml" 70 1792 1802 "big_int_convenience.ml" 70 1792 1805
+type(
+  Z.t
+)
+ident(
+  def bi1 "big_int_convenience.ml" 70 1792 1806 "big_int_convenience.ml" 70 1792 1830
+)
+"big_int_convenience.ml" 70 1792 1806 "big_int_convenience.ml" 70 1792 1809
+type(
+  Z.t
+)
+ident(
+  def bi2 "big_int_convenience.ml" 70 1792 1812 "big_int_convenience.ml" 70 1792 1830
+)
+"big_int_convenience.ml" 70 1792 1812 "big_int_convenience.ml" 70 1792 1822
+type(
+  Z.t -> Z.t -> bool
+)
+ident(
+  ext_ref Big_int_Z.le_big_int
+)
+"big_int_convenience.ml" 70 1792 1823 "big_int_convenience.ml" 70 1792 1826
+type(
+  Z.t
+)
+ident(
+  int_ref bi1 "big_int_convenience.ml" 70 1792 1802 "big_int_convenience.ml" 70 1792 1805
+)
+"big_int_convenience.ml" 70 1792 1827 "big_int_convenience.ml" 70 1792 1830
+type(
+  Z.t
+)
+ident(
+  int_ref bi2 "big_int_convenience.ml" 70 1792 1806 "big_int_convenience.ml" 70 1792 1809
+)
+"big_int_convenience.ml" 70 1792 1812 "big_int_convenience.ml" 70 1792 1830
+call(
+  tail
+)
+type(
+  bool
+)
+"big_int_convenience.ml" 73 1860 1864 "big_int_convenience.ml" 73 1860 1868
+type(
+  Z.t -> Z.t -> bool
+)
+ident(
+  def >% "big_int_convenience.ml" 76 1928 1928 --
+)
+"big_int_convenience.ml" 73 1860 1869 "big_int_convenience.ml" 73 1860 1872
+type(
+  Z.t
+)
+ident(
+  def bi1 "big_int_convenience.ml" 73 1860 1873 "big_int_convenience.ml" 73 1860 1897
+)
+"big_int_convenience.ml" 73 1860 1873 "big_int_convenience.ml" 73 1860 1876
+type(
+  Z.t
+)
+ident(
+  def bi2 "big_int_convenience.ml" 73 1860 1879 "big_int_convenience.ml" 73 1860 1897
+)
+"big_int_convenience.ml" 73 1860 1879 "big_int_convenience.ml" 73 1860 1889
+type(
+  Z.t -> Z.t -> bool
+)
+ident(
+  ext_ref Big_int_Z.gt_big_int
+)
+"big_int_convenience.ml" 73 1860 1890 "big_int_convenience.ml" 73 1860 1893
+type(
+  Z.t
+)
+ident(
+  int_ref bi1 "big_int_convenience.ml" 73 1860 1869 "big_int_convenience.ml" 73 1860 1872
+)
+"big_int_convenience.ml" 73 1860 1894 "big_int_convenience.ml" 73 1860 1897
+type(
+  Z.t
+)
+ident(
+  int_ref bi2 "big_int_convenience.ml" 73 1860 1873 "big_int_convenience.ml" 73 1860 1876
+)
+"big_int_convenience.ml" 73 1860 1879 "big_int_convenience.ml" 73 1860 1897
+call(
+  tail
+)
+type(
+  bool
+)
+"big_int_convenience.ml" 76 1928 1932 "big_int_convenience.ml" 76 1928 1937
+type(
+  Z.t -> Z.t -> bool
+)
+ident(
+  def >=% "big_int_convenience.ml" 79 1997 1997 --
+)
+"big_int_convenience.ml" 76 1928 1938 "big_int_convenience.ml" 76 1928 1941
+type(
+  Z.t
+)
+ident(
+  def bi1 "big_int_convenience.ml" 76 1928 1942 "big_int_convenience.ml" 76 1928 1966
+)
+"big_int_convenience.ml" 76 1928 1942 "big_int_convenience.ml" 76 1928 1945
+type(
+  Z.t
+)
+ident(
+  def bi2 "big_int_convenience.ml" 76 1928 1948 "big_int_convenience.ml" 76 1928 1966
+)
+"big_int_convenience.ml" 76 1928 1948 "big_int_convenience.ml" 76 1928 1958
+type(
+  Z.t -> Z.t -> bool
+)
+ident(
+  ext_ref Big_int_Z.ge_big_int
+)
+"big_int_convenience.ml" 76 1928 1959 "big_int_convenience.ml" 76 1928 1962
+type(
+  Z.t
+)
+ident(
+  int_ref bi1 "big_int_convenience.ml" 76 1928 1938 "big_int_convenience.ml" 76 1928 1941
+)
+"big_int_convenience.ml" 76 1928 1963 "big_int_convenience.ml" 76 1928 1966
+type(
+  Z.t
+)
+ident(
+  int_ref bi2 "big_int_convenience.ml" 76 1928 1942 "big_int_convenience.ml" 76 1928 1945
+)
+"big_int_convenience.ml" 76 1928 1948 "big_int_convenience.ml" 76 1928 1966
+call(
+  tail
+)
+type(
+  bool
+)
+"big_int_convenience.ml" 79 1997 2001 "big_int_convenience.ml" 79 1997 2006
+type(
+  Z.t -> int -> Z.t
+)
+ident(
+  def <<% "big_int_convenience.ml" 82 2072 2072 --
+)
+"big_int_convenience.ml" 79 1997 2007 "big_int_convenience.ml" 79 1997 2010
+type(
+  Z.t
+)
+ident(
+  def bi1 "big_int_convenience.ml" 79 1997 2011 "big_int_convenience.ml" 79 1997 2041
+)
+"big_int_convenience.ml" 79 1997 2011 "big_int_convenience.ml" 79 1997 2013
+type(
+  int
+)
+ident(
+  def i2 "big_int_convenience.ml" 79 1997 2016 "big_int_convenience.ml" 79 1997 2041
+)
+"big_int_convenience.ml" 79 1997 2016 "big_int_convenience.ml" 79 1997 2034
+type(
+  Z.t -> int -> Z.t
+)
+ident(
+  ext_ref Big_int_Z.shift_left_big_int
+)
+"big_int_convenience.ml" 79 1997 2035 "big_int_convenience.ml" 79 1997 2038
+type(
+  Z.t
+)
+ident(
+  int_ref bi1 "big_int_convenience.ml" 79 1997 2007 "big_int_convenience.ml" 79 1997 2010
+)
+"big_int_convenience.ml" 79 1997 2039 "big_int_convenience.ml" 79 1997 2041
+type(
+  int
+)
+ident(
+  int_ref i2 "big_int_convenience.ml" 79 1997 2011 "big_int_convenience.ml" 79 1997 2013
+)
+"big_int_convenience.ml" 79 1997 2016 "big_int_convenience.ml" 79 1997 2041
+call(
+  tail
+)
+type(
+  Z.t
+)
+"big_int_convenience.ml" 82 2072 2076 "big_int_convenience.ml" 82 2072 2081
+type(
+  Z.t -> int -> Z.t
+)
+ident(
+  def >>% "big_int_convenience.ml" 85 2149 2149 --
+)
+"big_int_convenience.ml" 82 2072 2082 "big_int_convenience.ml" 82 2072 2085
+type(
+  Z.t
+)
+ident(
+  def bi1 "big_int_convenience.ml" 82 2072 2086 "big_int_convenience.ml" 82 2072 2117
+)
+"big_int_convenience.ml" 82 2072 2086 "big_int_convenience.ml" 82 2072 2088
+type(
+  int
+)
+ident(
+  def i2 "big_int_convenience.ml" 82 2072 2091 "big_int_convenience.ml" 82 2072 2117
+)
+"big_int_convenience.ml" 82 2072 2091 "big_int_convenience.ml" 82 2072 2110
+type(
+  Z.t -> int -> Z.t
+)
+ident(
+  ext_ref Big_int_Z.shift_right_big_int
+)
+"big_int_convenience.ml" 82 2072 2111 "big_int_convenience.ml" 82 2072 2114
+type(
+  Z.t
+)
+ident(
+  int_ref bi1 "big_int_convenience.ml" 82 2072 2082 "big_int_convenience.ml" 82 2072 2085
+)
+"big_int_convenience.ml" 82 2072 2115 "big_int_convenience.ml" 82 2072 2117
+type(
+  int
+)
+ident(
+  int_ref i2 "big_int_convenience.ml" 82 2072 2086 "big_int_convenience.ml" 82 2072 2088
+)
+"big_int_convenience.ml" 82 2072 2091 "big_int_convenience.ml" 82 2072 2117
+call(
+  tail
+)
+type(
+  Z.t
+)
+"big_int_convenience.ml" 85 2149 2153 "big_int_convenience.ml" 85 2149 2159
+type(
+  Z.t -> int -> Z.t
+)
+ident(
+  def $>>% "big_int_convenience.ml" 88 2238 2238 --
+)
+"big_int_convenience.ml" 85 2149 2160 "big_int_convenience.ml" 85 2149 2163
+type(
+  Z.t
+)
+ident(
+  def bi1 "big_int_convenience.ml" 85 2149 2164 "big_int_convenience.ml" 85 2149 2208
+)
+"big_int_convenience.ml" 85 2149 2164 "big_int_convenience.ml" 85 2149 2166
+type(
+  int
+)
+ident(
+  def i2 "big_int_convenience.ml" 85 2149 2169 "big_int_convenience.ml" 85 2149 2208
+)
+"big_int_convenience.ml" 85 2149 2169 "big_int_convenience.ml" 85 2149 2201
+type(
+  Z.t -> int -> Z.t
+)
+ident(
+  ext_ref Big_int_Z.shift_right_towards_zero_big_int
+)
+"big_int_convenience.ml" 85 2149 2202 "big_int_convenience.ml" 85 2149 2205
+type(
+  Z.t
+)
+ident(
+  int_ref bi1 "big_int_convenience.ml" 85 2149 2160 "big_int_convenience.ml" 85 2149 2163
+)
+"big_int_convenience.ml" 85 2149 2206 "big_int_convenience.ml" 85 2149 2208
+type(
+  int
+)
+ident(
+  int_ref i2 "big_int_convenience.ml" 85 2149 2164 "big_int_convenience.ml" 85 2149 2166
+)
+"big_int_convenience.ml" 85 2149 2169 "big_int_convenience.ml" 85 2149 2208
+call(
+  tail
+)
+type(
+  Z.t
+)
+"big_int_convenience.ml" 88 2238 2242 "big_int_convenience.ml" 88 2238 2246
+type(
+  Z.t -> Z.t -> Z.t
+)
+ident(
+  def +% "big_int_convenience.ml" 91 2306 2306 --
+)
+"big_int_convenience.ml" 88 2238 2247 "big_int_convenience.ml" 88 2238 2250
+type(
+  Z.t
+)
+ident(
+  def bi1 "big_int_convenience.ml" 88 2238 2251 "big_int_convenience.ml" 88 2238 2276
+)
+"big_int_convenience.ml" 88 2238 2251 "big_int_convenience.ml" 88 2238 2254
+type(
+  Z.t
+)
+ident(
+  def bi2 "big_int_convenience.ml" 88 2238 2257 "big_int_convenience.ml" 88 2238 2276
+)
+"big_int_convenience.ml" 88 2238 2257 "big_int_convenience.ml" 88 2238 2268
+type(
+  Z.t -> Z.t -> Z.t
+)
+ident(
+  ext_ref Big_int_Z.add_big_int
+)
+"big_int_convenience.ml" 88 2238 2269 "big_int_convenience.ml" 88 2238 2272
+type(
+  Z.t
+)
+ident(
+  int_ref bi1 "big_int_convenience.ml" 88 2238 2247 "big_int_convenience.ml" 88 2238 2250
+)
+"big_int_convenience.ml" 88 2238 2273 "big_int_convenience.ml" 88 2238 2276
+type(
+  Z.t
+)
+ident(
+  int_ref bi2 "big_int_convenience.ml" 88 2238 2251 "big_int_convenience.ml" 88 2238 2254
+)
+"big_int_convenience.ml" 88 2238 2257 "big_int_convenience.ml" 88 2238 2276
+call(
+  tail
+)
+type(
+  Z.t
+)
+"big_int_convenience.ml" 91 2306 2310 "big_int_convenience.ml" 91 2306 2315
+type(
+  Z.t -> Z.t -> Z.t
+)
+ident(
+  def *% "big_int_convenience.ml" 94 2382 2382 --
+)
+"big_int_convenience.ml" 91 2306 2316 "big_int_convenience.ml" 91 2306 2319
+type(
+  Z.t
+)
+ident(
+  def bi1 "big_int_convenience.ml" 91 2306 2320 "big_int_convenience.ml" 91 2306 2346
+)
+"big_int_convenience.ml" 91 2306 2320 "big_int_convenience.ml" 91 2306 2323
+type(
+  Z.t
+)
+ident(
+  def bi2 "big_int_convenience.ml" 91 2306 2326 "big_int_convenience.ml" 91 2306 2346
+)
+"big_int_convenience.ml" 91 2306 2326 "big_int_convenience.ml" 91 2306 2338
+type(
+  Z.t -> Z.t -> Z.t
+)
+ident(
+  ext_ref Big_int_Z.mult_big_int
+)
+"big_int_convenience.ml" 91 2306 2339 "big_int_convenience.ml" 91 2306 2342
+type(
+  Z.t
+)
+ident(
+  int_ref bi1 "big_int_convenience.ml" 91 2306 2316 "big_int_convenience.ml" 91 2306 2319
+)
+"big_int_convenience.ml" 91 2306 2343 "big_int_convenience.ml" 91 2306 2346
+type(
+  Z.t
+)
+ident(
+  int_ref bi2 "big_int_convenience.ml" 91 2306 2320 "big_int_convenience.ml" 91 2306 2323
+)
+"big_int_convenience.ml" 91 2306 2326 "big_int_convenience.ml" 91 2306 2346
+call(
+  tail
+)
+type(
+  Z.t
+)
+"big_int_convenience.ml" 94 2382 2386 "big_int_convenience.ml" 94 2382 2391
+type(
+  Z.t -> Z.t
+)
+ident(
+  def ++% "big_int_convenience.ml" 97 2442 2442 --
+)
+"big_int_convenience.ml" 94 2382 2392 "big_int_convenience.ml" 94 2382 2394
+type(
+  Z.t
+)
+ident(
+  def bi "big_int_convenience.ml" 94 2382 2397 "big_int_convenience.ml" 94 2382 2412
+)
+"big_int_convenience.ml" 94 2382 2397 "big_int_convenience.ml" 94 2382 2409
+type(
+  Z.t -> Z.t
+)
+ident(
+  ext_ref Big_int_Z.succ_big_int
+)
+"big_int_convenience.ml" 94 2382 2410 "big_int_convenience.ml" 94 2382 2412
+type(
+  Z.t
+)
+ident(
+  int_ref bi "big_int_convenience.ml" 94 2382 2392 "big_int_convenience.ml" 94 2382 2394
+)
+"big_int_convenience.ml" 94 2382 2397 "big_int_convenience.ml" 94 2382 2412
+call(
+  tail
+)
+type(
+  Z.t
+)
+"big_int_convenience.ml" 97 2442 2446 "big_int_convenience.ml" 97 2442 2450
+type(
+  Z.t -> Z.t -> Z.t
+)
+ident(
+  def -% "big_int_convenience.ml" 100 2510 2510 --
+)
+"big_int_convenience.ml" 97 2442 2451 "big_int_convenience.ml" 97 2442 2454
+type(
+  Z.t
+)
+ident(
+  def bi1 "big_int_convenience.ml" 97 2442 2455 "big_int_convenience.ml" 97 2442 2480
+)
+"big_int_convenience.ml" 97 2442 2455 "big_int_convenience.ml" 97 2442 2458
+type(
+  Z.t
+)
+ident(
+  def bi2 "big_int_convenience.ml" 97 2442 2461 "big_int_convenience.ml" 97 2442 2480
+)
+"big_int_convenience.ml" 97 2442 2461 "big_int_convenience.ml" 97 2442 2472
+type(
+  Z.t -> Z.t -> Z.t
+)
+ident(
+  ext_ref Big_int_Z.sub_big_int
+)
+"big_int_convenience.ml" 97 2442 2473 "big_int_convenience.ml" 97 2442 2476
+type(
+  Z.t
+)
+ident(
+  int_ref bi1 "big_int_convenience.ml" 97 2442 2451 "big_int_convenience.ml" 97 2442 2454
+)
+"big_int_convenience.ml" 97 2442 2477 "big_int_convenience.ml" 97 2442 2480
+type(
+  Z.t
+)
+ident(
+  int_ref bi2 "big_int_convenience.ml" 97 2442 2455 "big_int_convenience.ml" 97 2442 2458
+)
+"big_int_convenience.ml" 97 2442 2461 "big_int_convenience.ml" 97 2442 2480
+call(
+  tail
+)
+type(
+  Z.t
+)
+"big_int_convenience.ml" 100 2510 2514 "big_int_convenience.ml" 100 2510 2518
+type(
+  Z.t -> Z.t -> Z.t
+)
+ident(
+  def |% "big_int_convenience.ml" 103 2577 2577 --
+)
+"big_int_convenience.ml" 100 2510 2519 "big_int_convenience.ml" 100 2510 2522
+type(
+  Z.t
+)
+ident(
+  def bi1 "big_int_convenience.ml" 100 2510 2523 "big_int_convenience.ml" 100 2510 2547
+)
+"big_int_convenience.ml" 100 2510 2523 "big_int_convenience.ml" 100 2510 2526
+type(
+  Z.t
+)
+ident(
+  def bi2 "big_int_convenience.ml" 100 2510 2529 "big_int_convenience.ml" 100 2510 2547
+)
+"big_int_convenience.ml" 100 2510 2529 "big_int_convenience.ml" 100 2510 2539
+type(
+  Z.t -> Z.t -> Z.t
+)
+ident(
+  ext_ref Big_int_Z.or_big_int
+)
+"big_int_convenience.ml" 100 2510 2540 "big_int_convenience.ml" 100 2510 2543
+type(
+  Z.t
+)
+ident(
+  int_ref bi1 "big_int_convenience.ml" 100 2510 2519 "big_int_convenience.ml" 100 2510 2522
+)
+"big_int_convenience.ml" 100 2510 2544 "big_int_convenience.ml" 100 2510 2547
+type(
+  Z.t
+)
+ident(
+  int_ref bi2 "big_int_convenience.ml" 100 2510 2523 "big_int_convenience.ml" 100 2510 2526
+)
+"big_int_convenience.ml" 100 2510 2529 "big_int_convenience.ml" 100 2510 2547
+call(
+  tail
+)
+type(
+  Z.t
+)
+"big_int_convenience.ml" 103 2577 2581 "big_int_convenience.ml" 103 2577 2585
+type(
+  Z.t -> Z.t -> Z.t
+)
+ident(
+  def &% "big_int_convenience.ml" 106 2650 2650 --
+)
+"big_int_convenience.ml" 103 2577 2586 "big_int_convenience.ml" 103 2577 2589
+type(
+  Z.t
+)
+ident(
+  def bi1 "big_int_convenience.ml" 103 2577 2590 "big_int_convenience.ml" 103 2577 2615
+)
+"big_int_convenience.ml" 103 2577 2590 "big_int_convenience.ml" 103 2577 2593
+type(
+  Z.t
+)
+ident(
+  def bi2 "big_int_convenience.ml" 103 2577 2596 "big_int_convenience.ml" 103 2577 2615
+)
+"big_int_convenience.ml" 103 2577 2596 "big_int_convenience.ml" 103 2577 2607
+type(
+  Z.t -> Z.t -> Z.t
+)
+ident(
+  ext_ref Big_int_Z.and_big_int
+)
+"big_int_convenience.ml" 103 2577 2608 "big_int_convenience.ml" 103 2577 2611
+type(
+  Z.t
+)
+ident(
+  int_ref bi1 "big_int_convenience.ml" 103 2577 2586 "big_int_convenience.ml" 103 2577 2589
+)
+"big_int_convenience.ml" 103 2577 2612 "big_int_convenience.ml" 103 2577 2615
+type(
+  Z.t
+)
+ident(
+  int_ref bi2 "big_int_convenience.ml" 103 2577 2590 "big_int_convenience.ml" 103 2577 2593
+)
+"big_int_convenience.ml" 103 2577 2596 "big_int_convenience.ml" 103 2577 2615
+call(
+  tail
+)
+type(
+  Z.t
+)
+"big_int_convenience.ml" 106 2650 2654 "big_int_convenience.ml" 106 2650 2658
+type(
+  Z.t -> Z.t -> Z.t
+)
+ident(
+  def /% "big_int_convenience.ml" 109 2724 2724 --
+)
+"big_int_convenience.ml" 106 2650 2659 "big_int_convenience.ml" 106 2650 2662
+type(
+  Z.t
+)
+ident(
+  def bi1 "big_int_convenience.ml" 106 2650 2663 "big_int_convenience.ml" 106 2650 2688
+)
+"big_int_convenience.ml" 106 2650 2663 "big_int_convenience.ml" 106 2650 2666
+type(
+  Z.t
+)
+ident(
+  def bi2 "big_int_convenience.ml" 106 2650 2669 "big_int_convenience.ml" 106 2650 2688
+)
+"big_int_convenience.ml" 106 2650 2669 "big_int_convenience.ml" 106 2650 2680
+type(
+  Z.t -> Z.t -> Z.t
+)
+ident(
+  ext_ref Big_int_Z.div_big_int
+)
+"big_int_convenience.ml" 106 2650 2681 "big_int_convenience.ml" 106 2650 2684
+type(
+  Z.t
+)
+ident(
+  int_ref bi1 "big_int_convenience.ml" 106 2650 2659 "big_int_convenience.ml" 106 2650 2662
+)
+"big_int_convenience.ml" 106 2650 2685 "big_int_convenience.ml" 106 2650 2688
+type(
+  Z.t
+)
+ident(
+  int_ref bi2 "big_int_convenience.ml" 106 2650 2663 "big_int_convenience.ml" 106 2650 2666
+)
+"big_int_convenience.ml" 106 2650 2669 "big_int_convenience.ml" 106 2650 2688
+call(
+  tail
+)
+type(
+  Z.t
+)
+"big_int_convenience.ml" 109 2724 2728 "big_int_convenience.ml" 109 2724 2732
+type(
+  Z.t -> Z.t -> Z.t
+)
+ident(
+  def %% "big_int_convenience.ml" 112 2800 2800 --
+)
+"big_int_convenience.ml" 109 2724 2733 "big_int_convenience.ml" 109 2724 2736
+type(
+  Z.t
+)
+ident(
+  def bi1 "big_int_convenience.ml" 109 2724 2737 "big_int_convenience.ml" 109 2724 2762
+)
+"big_int_convenience.ml" 109 2724 2737 "big_int_convenience.ml" 109 2724 2740
+type(
+  Z.t
+)
+ident(
+  def bi2 "big_int_convenience.ml" 109 2724 2743 "big_int_convenience.ml" 109 2724 2762
+)
+"big_int_convenience.ml" 109 2724 2743 "big_int_convenience.ml" 109 2724 2754
+type(
+  Z.t -> Z.t -> Z.t
+)
+ident(
+  ext_ref Big_int_Z.mod_big_int
+)
+"big_int_convenience.ml" 109 2724 2755 "big_int_convenience.ml" 109 2724 2758
+type(
+  Z.t
+)
+ident(
+  int_ref bi1 "big_int_convenience.ml" 109 2724 2733 "big_int_convenience.ml" 109 2724 2736
+)
+"big_int_convenience.ml" 109 2724 2759 "big_int_convenience.ml" 109 2724 2762
+type(
+  Z.t
+)
+ident(
+  int_ref bi2 "big_int_convenience.ml" 109 2724 2737 "big_int_convenience.ml" 109 2724 2740
+)
+"big_int_convenience.ml" 109 2724 2743 "big_int_convenience.ml" 109 2724 2762
+call(
+  tail
+)
+type(
+  Z.t
+)
+"big_int_convenience.ml" 112 2800 2804 "big_int_convenience.ml" 112 2800 2808
+type(
+  ?pad:int -> Big_int_Z.big_int -> string
+)
+ident(
+  def ~% "big_int_convenience.ml" 115 2877 2877 --
+)
+"big_int_convenience.ml" 112 2800 2811 "big_int_convenience.ml" 112 2800 2830
+type(
+  ?pad:int -> Big_int_Z.big_int -> string
+)
+ident(
+  ext_ref Util.big_int_to_hex
+)
+"big_int_convenience.ml" 115 2877 2881 "big_int_convenience.ml" 115 2877 2891
+type(
+  Z.t -> bool
+)
+ident(
+  def bi_is_zero "big_int_convenience.ml" 118 2953 2953 --
+)
+"big_int_convenience.ml" 115 2877 2892 "big_int_convenience.ml" 115 2877 2894
+type(
+  Z.t
+)
+ident(
+  def bi "big_int_convenience.ml" 115 2877 2897 "big_int_convenience.ml" 115 2877 2907
+)
+"big_int_convenience.ml" 115 2877 2897 "big_int_convenience.ml" 115 2877 2900
+type(
+  Z.t
+)
+ident(
+  int_ref bi0 "big_int_convenience.ml" 19 363 367 "big_int_convenience.ml" 19 363 370
+)
+"big_int_convenience.ml" 115 2877 2901 "big_int_convenience.ml" 115 2877 2904
+type(
+  Z.t -> Z.t -> bool
+)
+ident(
+  int_ref ==% "big_int_convenience.ml" 61 1570 1574 "big_int_convenience.ml" 61 1570 1579
+)
+"big_int_convenience.ml" 115 2877 2905 "big_int_convenience.ml" 115 2877 2907
+type(
+  Z.t
+)
+ident(
+  int_ref bi "big_int_convenience.ml" 115 2877 2892 "big_int_convenience.ml" 115 2877 2894
+)
+"big_int_convenience.ml" 115 2877 2897 "big_int_convenience.ml" 115 2877 2907
+call(
+  tail
+)
+type(
+  bool
+)
+"big_int_convenience.ml" 118 2953 2957 "big_int_convenience.ml" 118 2953 2966
+type(
+  Z.t -> bool
+)
+ident(
+  def bi_is_one "big_int_convenience.ml" 121 3034 3034 --
+)
+"big_int_convenience.ml" 118 2953 2967 "big_int_convenience.ml" 118 2953 2969
+type(
+  Z.t
+)
+ident(
+  def bi "big_int_convenience.ml" 118 2953 2972 "big_int_convenience.ml" 118 2953 2982
+)
+"big_int_convenience.ml" 118 2953 2972 "big_int_convenience.ml" 118 2953 2975
+type(
+  Z.t
+)
+ident(
+  int_ref bi1 "big_int_convenience.ml" 20 392 396 "big_int_convenience.ml" 20 392 399
+)
+"big_int_convenience.ml" 118 2953 2976 "big_int_convenience.ml" 118 2953 2979
+type(
+  Z.t -> Z.t -> bool
+)
+ident(
+  int_ref ==% "big_int_convenience.ml" 61 1570 1574 "big_int_convenience.ml" 61 1570 1579
+)
+"big_int_convenience.ml" 118 2953 2980 "big_int_convenience.ml" 118 2953 2982
+type(
+  Z.t
+)
+ident(
+  int_ref bi "big_int_convenience.ml" 118 2953 2967 "big_int_convenience.ml" 118 2953 2969
+)
+"big_int_convenience.ml" 118 2953 2972 "big_int_convenience.ml" 118 2953 2982
+call(
+  tail
+)
+type(
+  bool
+)
+"big_int_convenience.ml" 121 3034 3038 "big_int_convenience.ml" 121 3034 3052
+type(
+  Z.t -> bool
+)
+ident(
+  def bi_is_minusone "big_int_convenience.ml" 121 3034 3069 --
+)
+"big_int_convenience.ml" 121 3034 3053 "big_int_convenience.ml" 121 3034 3055
+type(
+  Z.t
+)
+ident(
+  def bi "big_int_convenience.ml" 121 3034 3058 "big_int_convenience.ml" 121 3034 3069
+)
+"big_int_convenience.ml" 121 3034 3058 "big_int_convenience.ml" 121 3034 3062
+type(
+  Z.t
+)
+ident(
+  int_ref bim1 "big_int_convenience.ml" 35 827 831 "big_int_convenience.ml" 35 827 835
+)
+"big_int_convenience.ml" 121 3034 3063 "big_int_convenience.ml" 121 3034 3066
+type(
+  Z.t -> Z.t -> bool
+)
+ident(
+  int_ref ==% "big_int_convenience.ml" 61 1570 1574 "big_int_convenience.ml" 61 1570 1579
+)
+"big_int_convenience.ml" 121 3034 3067 "big_int_convenience.ml" 121 3034 3069
+type(
+  Z.t
+)
+ident(
+  int_ref bi "big_int_convenience.ml" 121 3034 3053 "big_int_convenience.ml" 121 3034 3055
+)
+"big_int_convenience.ml" 121 3034 3058 "big_int_convenience.ml" 121 3034 3069
+call(
+  tail
+)
+type(
+  bool
+)

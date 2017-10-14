@@ -1,0 +1,1652 @@
+"flatten_mem.ml" 2 9 42 "flatten_mem.ml" 2 9 46
+type(
+  string
+)
+ident(
+  def name "flatten_mem.ml" 2 9 81 "flatten_mem.ml" 2 9 85
+)
+"flatten_mem.ml" 2 9 49 "flatten_mem.ml" 2 9 62
+type(
+  string
+)
+"flatten_mem.ml" 2 9 67 "flatten_mem.ml" 2 9 74
+type(
+  [> `Debug ]
+)
+ident(
+  def default "flatten_mem.ml" 2 9 81 "flatten_mem.ml" 2 9 85
+)
+"flatten_mem.ml" 2 9 75 "flatten_mem.ml" 2 9 81
+type(
+  [> `Debug ] as 'a
+)
+"flatten_mem.ml" 2 9 20 "flatten_mem.ml" 2 9 86
+call(
+  stack
+)
+"flatten_mem.ml" 11 287 291 "flatten_mem.ml" 11 287 306
+type(
+  (Ast.exp -> bool) -> Ast.exp -> Ast.exp
+)
+ident(
+  def explode_mem_let "flatten_mem.ml" 42 1184 1184 --
+)
+"flatten_mem.ml" 11 287 307 "flatten_mem.ml" 11 287 308
+type(
+  Ast.exp -> bool
+)
+ident(
+  def f "flatten_mem.ml" 11 287 309 "flatten_mem.ml" 40 1154 1182
+)
+"flatten_mem.ml" 11 287 309 "flatten_mem.ml" 11 287 310
+type(
+  Ast.exp
+)
+ident(
+  def e "flatten_mem.ml" 12 313 315 "flatten_mem.ml" 40 1154 1182
+)
+"flatten_mem.ml" 12 313 319 "flatten_mem.ml" 12 313 320
+type(
+  (Ast.var, Ast.exp) Hashtbl.t
+)
+"flatten_mem.ml" 12 313 323 "flatten_mem.ml" 12 313 337
+type(
+  int -> (Ast.var, Ast.exp) Hashtbl.t
+)
+ident(
+  ext_ref Hashtbl.create
+)
+"flatten_mem.ml" 12 313 338 "flatten_mem.ml" 12 313 342
+type(
+  int
+)
+"flatten_mem.ml" 12 313 323 "flatten_mem.ml" 12 313 342
+call(
+  stack
+)
+type(
+  (Ast.var, Ast.exp) Hashtbl.t
+)
+"flatten_mem.ml" 13 346 352 "flatten_mem.ml" 13 346 353
+type(
+  < pop_assign : Ast.var -> unit; push_assign : Ast.var -> Ast.exp -> unit;
+    visit_avar : Ast.var -> Ast.var Type.visit_action;
+    visit_exp : Ast.exp -> Ast.exp Type.visit_action;
+    visit_label : Type.label -> Type.label Type.visit_action;
+    visit_lbinding : Ast.var * Ast.exp ->
+                     (Ast.var * Ast.exp) Type.visit_action;
+    visit_rvar : Ast.var -> Ast.var Type.visit_action;
+    visit_stmt : Ast.stmt -> Ast.stmt Type.visit_action;
+    visit_ulbinding : Ast.var -> Ast.var Type.visit_action >
+)
+"flatten_mem.ml" 13 346 362 "flatten_mem.ml" 13 346 368
+type(
+  < pop_assign : Ast.var -> unit; push_assign : Ast.var -> Ast.exp -> unit;
+    visit_avar : Ast.var -> Ast.var Type.visit_action;
+    visit_exp : Ast.exp -> Ast.exp Type.visit_action;
+    visit_label : Type.label -> Type.label Type.visit_action;
+    visit_lbinding : Ast.var * Ast.exp ->
+                     (Ast.var * Ast.exp) Type.visit_action;
+    visit_rvar : Ast.var -> Ast.var Type.visit_action;
+    visit_stmt : Ast.stmt -> Ast.stmt Type.visit_action;
+    visit_ulbinding : Ast.var -> Ast.var Type.visit_action >
+)
+"flatten_mem.ml" 16 398 421 "flatten_mem.ml" 16 398 422
+type(
+  Ast.var
+)
+ident(
+  def v "flatten_mem.ml" 16 398 423 "flatten_mem.ml" 17 427 450
+)
+"flatten_mem.ml" 16 398 423 "flatten_mem.ml" 16 398 424
+type(
+  Ast.exp
+)
+ident(
+  def e "flatten_mem.ml" 17 427 433 "flatten_mem.ml" 17 427 450
+)
+"flatten_mem.ml" 17 427 433 "flatten_mem.ml" 17 427 444
+type(
+  (Ast.var, Ast.exp) Hashtbl.t -> Ast.var -> Ast.exp -> unit
+)
+ident(
+  ext_ref Hashtbl.add
+)
+"flatten_mem.ml" 17 427 445 "flatten_mem.ml" 17 427 446
+type(
+  (Ast.var, Ast.exp) Hashtbl.t
+)
+ident(
+  int_ref h "flatten_mem.ml" 12 313 319 "flatten_mem.ml" 12 313 320
+)
+"flatten_mem.ml" 17 427 447 "flatten_mem.ml" 17 427 448
+type(
+  Ast.var
+)
+ident(
+  int_ref v "flatten_mem.ml" 16 398 421 "flatten_mem.ml" 16 398 422
+)
+"flatten_mem.ml" 17 427 449 "flatten_mem.ml" 17 427 450
+type(
+  Ast.exp
+)
+ident(
+  int_ref e "flatten_mem.ml" 16 398 423 "flatten_mem.ml" 16 398 424
+)
+"flatten_mem.ml" 17 427 433 "flatten_mem.ml" 17 427 450
+call(
+  tail
+)
+type(
+  unit
+)
+"flatten_mem.ml" 19 452 474 "flatten_mem.ml" 19 452 475
+type(
+  Ast.var
+)
+ident(
+  def v "flatten_mem.ml" 20 478 484 "flatten_mem.ml" 20 478 502
+)
+"flatten_mem.ml" 20 478 484 "flatten_mem.ml" 20 478 498
+type(
+  (Ast.var, Ast.exp) Hashtbl.t -> Ast.var -> unit
+)
+ident(
+  ext_ref Hashtbl.remove
+)
+"flatten_mem.ml" 20 478 499 "flatten_mem.ml" 20 478 500
+type(
+  (Ast.var, Ast.exp) Hashtbl.t
+)
+ident(
+  int_ref h "flatten_mem.ml" 12 313 319 "flatten_mem.ml" 12 313 320
+)
+"flatten_mem.ml" 20 478 501 "flatten_mem.ml" 20 478 502
+type(
+  Ast.var
+)
+ident(
+  int_ref v "flatten_mem.ml" 19 452 474 "flatten_mem.ml" 19 452 475
+)
+"flatten_mem.ml" 20 478 484 "flatten_mem.ml" 20 478 502
+call(
+  tail
+)
+type(
+  unit
+)
+"flatten_mem.ml" 23 536 547 "flatten_mem.ml" 23 536 550
+type(
+  Ast.var
+)
+ident(
+  def v "flatten_mem.ml" 25 617 625 "flatten_mem.ml" 28 722 744
+)
+"flatten_mem.ml" 23 536 544 "flatten_mem.ml" 23 536 550
+type(
+  Ast.exp
+)
+"flatten_mem.ml" 25 617 639 "flatten_mem.ml" 25 617 651
+type(
+  (Ast.var, Ast.exp) Hashtbl.t -> Ast.var -> Ast.exp
+)
+ident(
+  ext_ref Hashtbl.find
+)
+"flatten_mem.ml" 25 617 652 "flatten_mem.ml" 25 617 653
+type(
+  (Ast.var, Ast.exp) Hashtbl.t
+)
+ident(
+  int_ref h "flatten_mem.ml" 12 313 319 "flatten_mem.ml" 12 313 320
+)
+"flatten_mem.ml" 25 617 654 "flatten_mem.ml" 25 617 655
+type(
+  Ast.var
+)
+ident(
+  int_ref v "flatten_mem.ml" 23 536 547 "flatten_mem.ml" 23 536 550
+)
+"flatten_mem.ml" 25 617 638 "flatten_mem.ml" 25 617 656
+call(
+  stack
+)
+type(
+  Ast.exp
+)
+"flatten_mem.ml" 25 617 630 "flatten_mem.ml" 25 617 656
+type(
+  Ast.exp Type.visit_action
+)
+"flatten_mem.ml" 26 657 671 "flatten_mem.ml" 26 657 680
+type(
+  exn
+)
+"flatten_mem.ml" 28 722 733 "flatten_mem.ml" 28 722 743
+type(
+  Ast.exp Type.visit_action
+)
+"flatten_mem.ml" 25 617 625 "flatten_mem.ml" 28 722 744
+type(
+  Ast.exp Type.visit_action
+)
+"flatten_mem.ml" 29 745 757 "flatten_mem.ml" 29 745 758
+type(
+  Ast.var
+)
+ident(
+  def v "flatten_mem.ml" 29 745 773 "flatten_mem.ml" 36 1096 1118
+)
+"flatten_mem.ml" 29 745 759 "flatten_mem.ml" 29 745 760
+type(
+  Ast.exp
+)
+ident(
+  def e "flatten_mem.ml" 29 745 773 "flatten_mem.ml" 36 1096 1118
+)
+"flatten_mem.ml" 29 745 761 "flatten_mem.ml" 29 745 763
+type(
+  Ast.exp
+)
+ident(
+  def e' "flatten_mem.ml" 29 745 773 "flatten_mem.ml" 36 1096 1118
+)
+"flatten_mem.ml" 29 745 756 "flatten_mem.ml" 29 745 764
+type(
+  Ast.var * Ast.exp * Ast.exp
+)
+"flatten_mem.ml" 29 745 753 "flatten_mem.ml" 29 745 764
+type(
+  Ast.exp
+)
+"flatten_mem.ml" 29 745 753 "flatten_mem.ml" 29 745 772
+type(
+  Ast.exp
+)
+ident(
+  def bige "flatten_mem.ml" 29 745 773 "flatten_mem.ml" 36 1096 1118
+)
+"flatten_mem.ml" 29 745 778 "flatten_mem.ml" 29 745 779
+type(
+  Ast.exp -> bool
+)
+ident(
+  int_ref f "flatten_mem.ml" 11 287 307 "flatten_mem.ml" 11 287 308
+)
+"flatten_mem.ml" 29 745 780 "flatten_mem.ml" 29 745 784
+type(
+  Ast.exp
+)
+ident(
+  int_ref bige "flatten_mem.ml" 29 745 753 "flatten_mem.ml" 29 745 772
+)
+"flatten_mem.ml" 29 745 778 "flatten_mem.ml" 29 745 784
+call(
+  stack
+)
+type(
+  bool
+)
+"flatten_mem.ml" 31 834 846 "flatten_mem.ml" 31 834 847
+type(
+  Ast.exp
+)
+"flatten_mem.ml" 31 834 850 "flatten_mem.ml" 31 834 872
+type(
+  < pop_assign : Ast.var -> unit; push_assign : Ast.var -> Ast.exp -> unit;
+    visit_avar : Ast.var -> Ast.var Type.visit_action;
+    visit_exp : Ast.exp -> Ast.exp Type.visit_action;
+    visit_label : Type.label -> Type.label Type.visit_action;
+    visit_lbinding : Ast.var * Ast.exp ->
+                     (Ast.var * Ast.exp) Type.visit_action;
+    visit_rvar : Ast.var -> Ast.var Type.visit_action;
+    visit_stmt : Ast.stmt -> Ast.stmt Type.visit_action;
+    visit_ulbinding : Ast.var -> Ast.var Type.visit_action > ->
+  Ast.exp -> Ast.exp
+)
+ident(
+  ext_ref Ast_visitor.exp_accept
+)
+"flatten_mem.ml" 31 834 873 "flatten_mem.ml" 31 834 877
+type(
+  < pop_assign : Ast.var -> unit; push_assign : Ast.var -> Ast.exp -> unit;
+    visit_avar : Ast.var -> Ast.var Type.visit_action;
+    visit_exp : Ast.exp -> Ast.exp Type.visit_action;
+    visit_label : Type.label -> Type.label Type.visit_action;
+    visit_lbinding : Ast.var * Ast.exp ->
+                     (Ast.var * Ast.exp) Type.visit_action;
+    visit_rvar : Ast.var -> Ast.var Type.visit_action;
+    visit_stmt : Ast.stmt -> Ast.stmt Type.visit_action;
+    visit_ulbinding : Ast.var -> Ast.var Type.visit_action >
+)
+"flatten_mem.ml" 31 834 878 "flatten_mem.ml" 31 834 879
+type(
+  Ast.exp
+)
+ident(
+  int_ref e "flatten_mem.ml" 29 745 759 "flatten_mem.ml" 29 745 760
+)
+"flatten_mem.ml" 31 834 850 "flatten_mem.ml" 31 834 879
+call(
+  stack
+)
+type(
+  Ast.exp
+)
+"flatten_mem.ml" 32 883 895 "flatten_mem.ml" 32 883 897
+type(
+  unit
+)
+"flatten_mem.ml" 32 883 900 "flatten_mem.ml" 32 883 904
+type(
+  < pop_assign : Ast.var -> unit; push_assign : Ast.var -> Ast.exp -> unit;
+    visit_avar : Ast.var -> Ast.var Type.visit_action;
+    visit_exp : Ast.exp -> Ast.exp Type.visit_action;
+    visit_label : Type.label -> Type.label Type.visit_action;
+    visit_lbinding : Ast.var * Ast.exp ->
+                     (Ast.var * Ast.exp) Type.visit_action;
+    visit_rvar : Ast.var -> Ast.var Type.visit_action;
+    visit_stmt : Ast.stmt -> Ast.stmt Type.visit_action;
+    visit_ulbinding : Ast.var -> Ast.var Type.visit_action >
+)
+"flatten_mem.ml" 32 883 900 "flatten_mem.ml" 32 883 916
+call(
+  stack
+)
+type(
+  Ast.var -> Ast.exp -> unit
+)
+"flatten_mem.ml" 32 883 917 "flatten_mem.ml" 32 883 918
+type(
+  Ast.var
+)
+ident(
+  int_ref v "flatten_mem.ml" 29 745 757 "flatten_mem.ml" 29 745 758
+)
+"flatten_mem.ml" 32 883 919 "flatten_mem.ml" 32 883 920
+type(
+  Ast.exp
+)
+ident(
+  int_ref e "flatten_mem.ml" 31 834 846 "flatten_mem.ml" 31 834 847
+)
+"flatten_mem.ml" 32 883 900 "flatten_mem.ml" 32 883 920
+type(
+  unit
+)
+"flatten_mem.ml" 33 924 936 "flatten_mem.ml" 33 924 941
+type(
+  Ast.exp
+)
+"flatten_mem.ml" 33 924 944 "flatten_mem.ml" 33 924 966
+type(
+  < pop_assign : Ast.var -> unit; push_assign : Ast.var -> Ast.exp -> unit;
+    visit_avar : Ast.var -> Ast.var Type.visit_action;
+    visit_exp : Ast.exp -> Ast.exp Type.visit_action;
+    visit_label : Type.label -> Type.label Type.visit_action;
+    visit_lbinding : Ast.var * Ast.exp ->
+                     (Ast.var * Ast.exp) Type.visit_action;
+    visit_rvar : Ast.var -> Ast.var Type.visit_action;
+    visit_stmt : Ast.stmt -> Ast.stmt Type.visit_action;
+    visit_ulbinding : Ast.var -> Ast.var Type.visit_action > ->
+  Ast.exp -> Ast.exp
+)
+ident(
+  ext_ref Ast_visitor.exp_accept
+)
+"flatten_mem.ml" 33 924 967 "flatten_mem.ml" 33 924 971
+type(
+  < pop_assign : Ast.var -> unit; push_assign : Ast.var -> Ast.exp -> unit;
+    visit_avar : Ast.var -> Ast.var Type.visit_action;
+    visit_exp : Ast.exp -> Ast.exp Type.visit_action;
+    visit_label : Type.label -> Type.label Type.visit_action;
+    visit_lbinding : Ast.var * Ast.exp ->
+                     (Ast.var * Ast.exp) Type.visit_action;
+    visit_rvar : Ast.var -> Ast.var Type.visit_action;
+    visit_stmt : Ast.stmt -> Ast.stmt Type.visit_action;
+    visit_ulbinding : Ast.var -> Ast.var Type.visit_action >
+)
+"flatten_mem.ml" 33 924 972 "flatten_mem.ml" 33 924 974
+type(
+  Ast.exp
+)
+ident(
+  int_ref e' "flatten_mem.ml" 29 745 761 "flatten_mem.ml" 29 745 763
+)
+"flatten_mem.ml" 33 924 944 "flatten_mem.ml" 33 924 974
+call(
+  stack
+)
+type(
+  Ast.exp
+)
+"flatten_mem.ml" 34 978 990 "flatten_mem.ml" 34 978 992
+type(
+  unit
+)
+"flatten_mem.ml" 34 978 995 "flatten_mem.ml" 34 978 999
+type(
+  < pop_assign : Ast.var -> unit; push_assign : Ast.var -> Ast.exp -> unit;
+    visit_avar : Ast.var -> Ast.var Type.visit_action;
+    visit_exp : Ast.exp -> Ast.exp Type.visit_action;
+    visit_label : Type.label -> Type.label Type.visit_action;
+    visit_lbinding : Ast.var * Ast.exp ->
+                     (Ast.var * Ast.exp) Type.visit_action;
+    visit_rvar : Ast.var -> Ast.var Type.visit_action;
+    visit_stmt : Ast.stmt -> Ast.stmt Type.visit_action;
+    visit_ulbinding : Ast.var -> Ast.var Type.visit_action >
+)
+"flatten_mem.ml" 34 978 995 "flatten_mem.ml" 34 978 1010
+call(
+  stack
+)
+type(
+  Ast.var -> unit
+)
+"flatten_mem.ml" 34 978 1011 "flatten_mem.ml" 34 978 1012
+type(
+  Ast.var
+)
+ident(
+  int_ref v "flatten_mem.ml" 29 745 757 "flatten_mem.ml" 29 745 758
+)
+"flatten_mem.ml" 34 978 995 "flatten_mem.ml" 34 978 1012
+type(
+  unit
+)
+"flatten_mem.ml" 36 1096 1113 "flatten_mem.ml" 36 1096 1118
+type(
+  Ast.exp
+)
+ident(
+  int_ref newe' "flatten_mem.ml" 33 924 936 "flatten_mem.ml" 33 924 941
+)
+"flatten_mem.ml" 36 1096 1104 "flatten_mem.ml" 36 1096 1118
+type(
+  Ast.exp Type.visit_action
+)
+"flatten_mem.ml" 34 978 986 "flatten_mem.ml" 36 1096 1118
+type(
+  Ast.exp Type.visit_action
+)
+"flatten_mem.ml" 33 924 932 "flatten_mem.ml" 36 1096 1118
+type(
+  Ast.exp Type.visit_action
+)
+"flatten_mem.ml" 32 883 891 "flatten_mem.ml" 36 1096 1118
+type(
+  Ast.exp Type.visit_action
+)
+"flatten_mem.ml" 31 834 842 "flatten_mem.ml" 36 1096 1118
+type(
+  Ast.exp Type.visit_action
+)
+"flatten_mem.ml" 29 745 773 "flatten_mem.ml" 36 1096 1118
+type(
+  Ast.exp Type.visit_action
+)
+"flatten_mem.ml" 37 1119 1127 "flatten_mem.ml" 37 1119 1128
+type(
+  Ast.exp
+)
+ident(
+  def e "flatten_mem.ml" 37 1119 1132 "flatten_mem.ml" 37 1119 1142
+)
+"flatten_mem.ml" 37 1119 1132 "flatten_mem.ml" 37 1119 1142
+type(
+  Ast.exp Type.visit_action
+)
+"flatten_mem.ml" 22 504 527 "flatten_mem.ml" 37 1119 1142
+type(
+  Ast.exp -> Ast.exp Type.visit_action
+)
+type(
+  Ast.exp -> Ast.exp Type.visit_action
+)
+"flatten_mem.ml" 13 346 356 "flatten_mem.ml" 38 1143 1148
+type(
+  < pop_assign : Ast.var -> unit; push_assign : Ast.var -> Ast.exp -> unit;
+    visit_avar : Ast.var -> Ast.var Type.visit_action;
+    visit_exp : Ast.exp -> Ast.exp Type.visit_action;
+    visit_label : Type.label -> Type.label Type.visit_action;
+    visit_lbinding : Ast.var * Ast.exp ->
+                     (Ast.var * Ast.exp) Type.visit_action;
+    visit_rvar : Ast.var -> Ast.var Type.visit_action;
+    visit_stmt : Ast.stmt -> Ast.stmt Type.visit_action;
+    visit_ulbinding : Ast.var -> Ast.var Type.visit_action >
+)
+"flatten_mem.ml" 40 1154 1156 "flatten_mem.ml" 40 1154 1178
+type(
+  < pop_assign : Ast.var -> unit; push_assign : Ast.var -> Ast.exp -> unit;
+    visit_avar : Ast.var -> Ast.var Type.visit_action;
+    visit_exp : Ast.exp -> Ast.exp Type.visit_action;
+    visit_label : Type.label -> Type.label Type.visit_action;
+    visit_lbinding : Ast.var * Ast.exp ->
+                     (Ast.var * Ast.exp) Type.visit_action;
+    visit_rvar : Ast.var -> Ast.var Type.visit_action;
+    visit_stmt : Ast.stmt -> Ast.stmt Type.visit_action;
+    visit_ulbinding : Ast.var -> Ast.var Type.visit_action > ->
+  Ast.exp -> Ast.exp
+)
+ident(
+  ext_ref Ast_visitor.exp_accept
+)
+"flatten_mem.ml" 40 1154 1179 "flatten_mem.ml" 40 1154 1180
+type(
+  < pop_assign : Ast.var -> unit; push_assign : Ast.var -> Ast.exp -> unit;
+    visit_avar : Ast.var -> Ast.var Type.visit_action;
+    visit_exp : Ast.exp -> Ast.exp Type.visit_action;
+    visit_label : Type.label -> Type.label Type.visit_action;
+    visit_lbinding : Ast.var * Ast.exp ->
+                     (Ast.var * Ast.exp) Type.visit_action;
+    visit_rvar : Ast.var -> Ast.var Type.visit_action;
+    visit_stmt : Ast.stmt -> Ast.stmt Type.visit_action;
+    visit_ulbinding : Ast.var -> Ast.var Type.visit_action >
+)
+ident(
+  int_ref v "flatten_mem.ml" 13 346 352 "flatten_mem.ml" 13 346 353
+)
+"flatten_mem.ml" 40 1154 1181 "flatten_mem.ml" 40 1154 1182
+type(
+  Ast.exp
+)
+ident(
+  int_ref e "flatten_mem.ml" 11 287 309 "flatten_mem.ml" 11 287 310
+)
+"flatten_mem.ml" 40 1154 1156 "flatten_mem.ml" 40 1154 1182
+call(
+  tail
+)
+type(
+  Ast.exp
+)
+"flatten_mem.ml" 13 346 348 "flatten_mem.ml" 40 1154 1182
+type(
+  Ast.exp
+)
+"flatten_mem.ml" 12 313 315 "flatten_mem.ml" 40 1154 1182
+type(
+  Ast.exp
+)
+"flatten_mem.ml" 42 1184 1188 "flatten_mem.ml" 42 1184 1206
+type(
+  Ast.var -> Ast.attrs -> Ast.exp -> Ast.exp * Ast.stmt list
+)
+ident(
+  def flatten_memexp_rev "flatten_mem.ml" 57 1850 1850 --
+)
+"flatten_mem.ml" 42 1184 1207 "flatten_mem.ml" 42 1184 1212
+type(
+  Ast.var
+)
+ident(
+  def memvl "flatten_mem.ml" 42 1184 1213 "flatten_mem.ml" 55 1815 1848
+)
+"flatten_mem.ml" 42 1184 1213 "flatten_mem.ml" 42 1184 1217
+type(
+  Ast.attrs
+)
+ident(
+  def atts "flatten_mem.ml" 42 1184 1218 "flatten_mem.ml" 55 1815 1848
+)
+"flatten_mem.ml" 42 1184 1218 "flatten_mem.ml" 42 1184 1219
+type(
+  Ast.exp
+)
+ident(
+  def e "flatten_mem.ml" 44 1268 1270 "flatten_mem.ml" 55 1815 1848
+)
+"flatten_mem.ml" 44 1268 1274 "flatten_mem.ml" 44 1268 1275
+type(
+  Ast.exp
+)
+"flatten_mem.ml" 44 1268 1278 "flatten_mem.ml" 44 1268 1293
+type(
+  (Ast.exp -> bool) -> Ast.exp -> Ast.exp
+)
+ident(
+  int_ref explode_mem_let "flatten_mem.ml" 11 287 291 "flatten_mem.ml" 11 287 306
+)
+"flatten_mem.ml" 44 1268 1299 "flatten_mem.ml" 44 1268 1300
+type(
+  Ast.exp
+)
+"flatten_mem.ml" 44 1268 1304 "flatten_mem.ml" 44 1268 1308
+type(
+  bool
+)
+"flatten_mem.ml" 44 1268 1294 "flatten_mem.ml" 44 1268 1309
+type(
+  Ast.exp -> bool
+)
+"flatten_mem.ml" 44 1268 1310 "flatten_mem.ml" 44 1268 1311
+type(
+  Ast.exp
+)
+ident(
+  int_ref e "flatten_mem.ml" 42 1184 1218 "flatten_mem.ml" 42 1184 1219
+)
+"flatten_mem.ml" 44 1268 1278 "flatten_mem.ml" 44 1268 1311
+call(
+  stack
+)
+type(
+  Ast.exp
+)
+"flatten_mem.ml" 45 1315 1325 "flatten_mem.ml" 45 1315 1343
+type(
+  Ast.var -> Ast.attrs -> Ast.exp -> Ast.exp * Ast.stmt list
+)
+"flatten_mem.ml" 45 1315 1344 "flatten_mem.ml" 45 1315 1349
+type(
+  Ast.var
+)
+ident(
+  def memvl "flatten_mem.ml" 45 1315 1350 "flatten_mem.ml" 53 1675 1809
+)
+"flatten_mem.ml" 45 1315 1350 "flatten_mem.ml" 45 1315 1354
+type(
+  Ast.attrs
+)
+ident(
+  def atts "flatten_mem.ml" 45 1315 1357 "flatten_mem.ml" 53 1675 1809
+)
+"flatten_mem.ml" 46 1366 1376 "flatten_mem.ml" 46 1366 1377
+type(
+  Ast.var
+)
+"flatten_mem.ml" 46 1366 1372 "flatten_mem.ml" 46 1366 1377
+type(
+  Ast.exp
+)
+"flatten_mem.ml" 46 1366 1372 "flatten_mem.ml" 46 1366 1382
+type(
+  Ast.exp
+)
+ident(
+  def e "flatten_mem.ml" 46 1366 1386 "flatten_mem.ml" 46 1366 1391
+)
+"flatten_mem.ml" 46 1366 1386 "flatten_mem.ml" 46 1366 1387
+type(
+  Ast.exp
+)
+ident(
+  int_ref e "flatten_mem.ml" 46 1366 1372 "flatten_mem.ml" 46 1366 1382
+)
+"flatten_mem.ml" 46 1366 1389 "flatten_mem.ml" 46 1366 1391
+type(
+  Ast.stmt list
+)
+"flatten_mem.ml" 46 1366 1386 "flatten_mem.ml" 46 1366 1391
+type(
+  Ast.exp * Ast.stmt list
+)
+"flatten_mem.ml" 47 1392 1408 "flatten_mem.ml" 47 1392 1409
+type(
+  Ast.var
+)
+"flatten_mem.ml" 47 1392 1404 "flatten_mem.ml" 47 1392 1409
+type(
+  Ast.exp
+)
+"flatten_mem.ml" 47 1392 1410 "flatten_mem.ml" 47 1392 1411
+type(
+  Ast.exp
+)
+"flatten_mem.ml" 47 1392 1412 "flatten_mem.ml" 47 1392 1413
+type(
+  Ast.exp
+)
+"flatten_mem.ml" 47 1392 1414 "flatten_mem.ml" 47 1392 1415
+type(
+  Ast.exp
+)
+"flatten_mem.ml" 47 1392 1416 "flatten_mem.ml" 47 1392 1417
+type(
+  Type.typ
+)
+"flatten_mem.ml" 47 1392 1403 "flatten_mem.ml" 47 1392 1418
+type(
+  Ast.exp * Ast.exp * Ast.exp * Ast.exp * Type.typ
+)
+"flatten_mem.ml" 47 1392 1398 "flatten_mem.ml" 47 1392 1418
+type(
+  Ast.exp
+)
+"flatten_mem.ml" 47 1392 1398 "flatten_mem.ml" 47 1392 1423
+type(
+  Ast.exp
+)
+ident(
+  def e "flatten_mem.ml" 47 1392 1427 "flatten_mem.ml" 47 1392 1432
+)
+"flatten_mem.ml" 47 1392 1427 "flatten_mem.ml" 47 1392 1428
+type(
+  Ast.exp
+)
+ident(
+  int_ref e "flatten_mem.ml" 47 1392 1398 "flatten_mem.ml" 47 1392 1423
+)
+"flatten_mem.ml" 47 1392 1430 "flatten_mem.ml" 47 1392 1432
+type(
+  Ast.stmt list
+)
+"flatten_mem.ml" 47 1392 1427 "flatten_mem.ml" 47 1392 1432
+type(
+  Ast.exp * Ast.stmt list
+)
+"flatten_mem.ml" 48 1433 1445 "flatten_mem.ml" 48 1433 1446
+type(
+  Ast.exp
+)
+ident(
+  def a "flatten_mem.ml" 49 1459 1465 "flatten_mem.ml" 52 1609 1674
+)
+"flatten_mem.ml" 48 1433 1447 "flatten_mem.ml" 48 1433 1448
+type(
+  Ast.exp
+)
+ident(
+  def i "flatten_mem.ml" 49 1459 1465 "flatten_mem.ml" 52 1609 1674
+)
+"flatten_mem.ml" 48 1433 1449 "flatten_mem.ml" 48 1433 1450
+type(
+  Ast.exp
+)
+ident(
+  def v "flatten_mem.ml" 49 1459 1465 "flatten_mem.ml" 52 1609 1674
+)
+"flatten_mem.ml" 48 1433 1451 "flatten_mem.ml" 48 1433 1452
+type(
+  Ast.exp
+)
+ident(
+  def e "flatten_mem.ml" 49 1459 1465 "flatten_mem.ml" 52 1609 1674
+)
+"flatten_mem.ml" 48 1433 1453 "flatten_mem.ml" 48 1433 1454
+type(
+  Type.typ
+)
+ident(
+  def t "flatten_mem.ml" 49 1459 1465 "flatten_mem.ml" 52 1609 1674
+)
+"flatten_mem.ml" 48 1433 1444 "flatten_mem.ml" 48 1433 1455
+type(
+  Ast.exp * Ast.exp * Ast.exp * Ast.exp * Type.typ
+)
+"flatten_mem.ml" 48 1433 1439 "flatten_mem.ml" 48 1433 1455
+type(
+  Ast.exp
+)
+"flatten_mem.ml" 49 1459 1469 "flatten_mem.ml" 49 1459 1476
+type(
+  Ast.exp
+)
+"flatten_mem.ml" 49 1459 1478 "flatten_mem.ml" 49 1459 1483
+type(
+  Ast.stmt list
+)
+"flatten_mem.ml" 49 1459 1469 "flatten_mem.ml" 49 1459 1483
+type(
+  Ast.exp * Ast.stmt list
+)
+"flatten_mem.ml" 49 1459 1486 "flatten_mem.ml" 49 1459 1504
+type(
+  Ast.var -> Ast.attrs -> Ast.exp -> Ast.exp * Ast.stmt list
+)
+ident(
+  int_ref flatten_memexp_rev "flatten_mem.ml" 45 1315 1325 "flatten_mem.ml" 45 1315 1343
+)
+"flatten_mem.ml" 49 1459 1505 "flatten_mem.ml" 49 1459 1510
+type(
+  Ast.var
+)
+ident(
+  int_ref memvl "flatten_mem.ml" 45 1315 1344 "flatten_mem.ml" 45 1315 1349
+)
+"flatten_mem.ml" 49 1459 1511 "flatten_mem.ml" 49 1459 1515
+type(
+  Ast.attrs
+)
+ident(
+  int_ref atts "flatten_mem.ml" 45 1315 1350 "flatten_mem.ml" 45 1315 1354
+)
+"flatten_mem.ml" 49 1459 1516 "flatten_mem.ml" 49 1459 1517
+type(
+  Ast.exp
+)
+ident(
+  int_ref a "flatten_mem.ml" 48 1433 1445 "flatten_mem.ml" 48 1433 1446
+)
+"flatten_mem.ml" 49 1459 1486 "flatten_mem.ml" 49 1459 1517
+type(
+  Ast.exp * Ast.stmt list
+)
+"flatten_mem.ml" 52 1609 1615 "flatten_mem.ml" 52 1609 1622
+type(
+  Ast.exp
+)
+ident(
+  int_ref flatmem "flatten_mem.ml" 49 1459 1469 "flatten_mem.ml" 49 1459 1476
+)
+"flatten_mem.ml" 52 1609 1629 "flatten_mem.ml" 52 1609 1634
+type(
+  Ast.var
+)
+ident(
+  int_ref memvl "flatten_mem.ml" 45 1315 1344 "flatten_mem.ml" 45 1315 1349
+)
+"flatten_mem.ml" 52 1609 1646 "flatten_mem.ml" 52 1609 1651
+type(
+  Ast.var
+)
+ident(
+  int_ref memvl "flatten_mem.ml" 45 1315 1344 "flatten_mem.ml" 45 1315 1349
+)
+"flatten_mem.ml" 52 1609 1642 "flatten_mem.ml" 52 1609 1651
+type(
+  Ast.exp
+)
+"flatten_mem.ml" 52 1609 1652 "flatten_mem.ml" 52 1609 1653
+type(
+  Ast.exp
+)
+ident(
+  int_ref i "flatten_mem.ml" 48 1433 1447 "flatten_mem.ml" 48 1433 1448
+)
+"flatten_mem.ml" 52 1609 1654 "flatten_mem.ml" 52 1609 1655
+type(
+  Ast.exp
+)
+ident(
+  int_ref v "flatten_mem.ml" 48 1433 1449 "flatten_mem.ml" 48 1433 1450
+)
+"flatten_mem.ml" 52 1609 1656 "flatten_mem.ml" 52 1609 1657
+type(
+  Ast.exp
+)
+ident(
+  int_ref e "flatten_mem.ml" 48 1433 1451 "flatten_mem.ml" 48 1433 1452
+)
+"flatten_mem.ml" 52 1609 1658 "flatten_mem.ml" 52 1609 1659
+type(
+  Type.typ
+)
+ident(
+  int_ref t "flatten_mem.ml" 48 1433 1453 "flatten_mem.ml" 48 1433 1454
+)
+"flatten_mem.ml" 52 1609 1641 "flatten_mem.ml" 52 1609 1660
+type(
+  Ast.exp * Ast.exp * Ast.exp * Ast.exp * Type.typ
+)
+"flatten_mem.ml" 52 1609 1636 "flatten_mem.ml" 52 1609 1660
+type(
+  Ast.exp
+)
+"flatten_mem.ml" 52 1609 1662 "flatten_mem.ml" 52 1609 1666
+type(
+  Ast.attrs
+)
+ident(
+  int_ref atts "flatten_mem.ml" 45 1315 1350 "flatten_mem.ml" 45 1315 1354
+)
+"flatten_mem.ml" 52 1609 1628 "flatten_mem.ml" 52 1609 1667
+type(
+  Ast.var * Ast.exp * Ast.attrs
+)
+"flatten_mem.ml" 52 1609 1624 "flatten_mem.ml" 52 1609 1667
+type(
+  Ast.stmt
+)
+"flatten_mem.ml" 52 1609 1669 "flatten_mem.ml" 52 1609 1674
+type(
+  Ast.stmt list
+)
+ident(
+  int_ref stmts "flatten_mem.ml" 49 1459 1478 "flatten_mem.ml" 49 1459 1483
+)
+"flatten_mem.ml" 52 1609 1624 "flatten_mem.ml" 52 1609 1674
+type(
+  Ast.stmt list
+)
+"flatten_mem.ml" 52 1609 1615 "flatten_mem.ml" 52 1609 1674
+type(
+  Ast.exp * Ast.stmt list
+)
+"flatten_mem.ml" 49 1459 1465 "flatten_mem.ml" 52 1609 1674
+type(
+  Ast.exp * Ast.stmt list
+)
+"flatten_mem.ml" 53 1675 1681 "flatten_mem.ml" 53 1675 1682
+type(
+  Ast.exp
+)
+ident(
+  def e "flatten_mem.ml" 53 1675 1686 "flatten_mem.ml" 53 1675 1809
+)
+"flatten_mem.ml" 53 1675 1686 "flatten_mem.ml" 53 1675 1694
+type(
+  string -> Ast.exp * Ast.stmt list
+)
+ident(
+  ext_ref Pervasives.failwith
+)
+"flatten_mem.ml" 53 1675 1696 "flatten_mem.ml" 53 1675 1710
+type(
+  (string -> string, unit, string) format -> string -> string
+)
+ident(
+  ext_ref Printf.sprintf
+)
+"flatten_mem.ml" 53 1675 1711 "flatten_mem.ml" 53 1675 1783
+type(
+  (string -> string, unit, string) format
+)
+"flatten_mem.ml" 53 1675 1785 "flatten_mem.ml" 53 1675 1805
+type(
+  Ast.exp -> string
+)
+ident(
+  ext_ref Pp.ast_exp_to_string
+)
+"flatten_mem.ml" 53 1675 1806 "flatten_mem.ml" 53 1675 1807
+type(
+  Ast.exp
+)
+ident(
+  int_ref e "flatten_mem.ml" 53 1675 1681 "flatten_mem.ml" 53 1675 1682
+)
+"flatten_mem.ml" 53 1675 1784 "flatten_mem.ml" 53 1675 1808
+type(
+  string
+)
+"flatten_mem.ml" 53 1675 1695 "flatten_mem.ml" 53 1675 1809
+type(
+  string
+)
+"flatten_mem.ml" 53 1675 1686 "flatten_mem.ml" 53 1675 1809
+type(
+  Ast.exp * Ast.stmt list
+)
+"flatten_mem.ml" 45 1315 1357 "flatten_mem.ml" 53 1675 1809
+type(
+  Ast.exp -> Ast.exp * Ast.stmt list
+)
+"flatten_mem.ml" 55 1815 1817 "flatten_mem.ml" 55 1815 1835
+type(
+  Ast.var -> Ast.attrs -> Ast.exp -> Ast.exp * Ast.stmt list
+)
+ident(
+  int_ref flatten_memexp_rev "flatten_mem.ml" 45 1315 1325 "flatten_mem.ml" 45 1315 1343
+)
+"flatten_mem.ml" 55 1815 1836 "flatten_mem.ml" 55 1815 1841
+type(
+  Ast.var
+)
+ident(
+  int_ref memvl "flatten_mem.ml" 42 1184 1207 "flatten_mem.ml" 42 1184 1212
+)
+"flatten_mem.ml" 55 1815 1842 "flatten_mem.ml" 55 1815 1846
+type(
+  Ast.attrs
+)
+ident(
+  int_ref atts "flatten_mem.ml" 42 1184 1213 "flatten_mem.ml" 42 1184 1217
+)
+"flatten_mem.ml" 55 1815 1847 "flatten_mem.ml" 55 1815 1848
+type(
+  Ast.exp
+)
+ident(
+  int_ref e "flatten_mem.ml" 44 1268 1274 "flatten_mem.ml" 44 1268 1275
+)
+"flatten_mem.ml" 55 1815 1817 "flatten_mem.ml" 55 1815 1848
+call(
+  tail
+)
+type(
+  Ast.exp * Ast.stmt list
+)
+"flatten_mem.ml" 45 1315 1317 "flatten_mem.ml" 55 1815 1848
+type(
+  Ast.exp * Ast.stmt list
+)
+"flatten_mem.ml" 44 1268 1270 "flatten_mem.ml" 55 1815 1848
+type(
+  Ast.exp * Ast.stmt list
+)
+"flatten_mem.ml" 57 1850 1854 "flatten_mem.ml" 57 1850 1868
+type(
+  Ast.var -> Ast.attrs -> Ast.exp -> Ast.exp * Ast.stmt list
+)
+ident(
+  def flatten_memexp "flatten_mem.ml" 61 1957 1957 --
+)
+"flatten_mem.ml" 57 1850 1869 "flatten_mem.ml" 57 1850 1874
+type(
+  Ast.var
+)
+ident(
+  def memvl "flatten_mem.ml" 57 1850 1875 "flatten_mem.ml" 59 1936 1955
+)
+"flatten_mem.ml" 57 1850 1875 "flatten_mem.ml" 57 1850 1879
+type(
+  Ast.attrs
+)
+ident(
+  def atts "flatten_mem.ml" 57 1850 1880 "flatten_mem.ml" 59 1936 1955
+)
+"flatten_mem.ml" 57 1850 1880 "flatten_mem.ml" 57 1850 1881
+type(
+  Ast.exp
+)
+ident(
+  def e "flatten_mem.ml" 58 1884 1886 "flatten_mem.ml" 59 1936 1955
+)
+"flatten_mem.ml" 58 1884 1890 "flatten_mem.ml" 58 1884 1891
+type(
+  Ast.exp
+)
+"flatten_mem.ml" 58 1884 1893 "flatten_mem.ml" 58 1884 1898
+type(
+  Ast.stmt list
+)
+"flatten_mem.ml" 58 1884 1890 "flatten_mem.ml" 58 1884 1898
+type(
+  Ast.exp * Ast.stmt list
+)
+"flatten_mem.ml" 58 1884 1901 "flatten_mem.ml" 58 1884 1919
+type(
+  Ast.var -> Ast.attrs -> Ast.exp -> Ast.exp * Ast.stmt list
+)
+ident(
+  int_ref flatten_memexp_rev "flatten_mem.ml" 42 1184 1188 "flatten_mem.ml" 42 1184 1206
+)
+"flatten_mem.ml" 58 1884 1920 "flatten_mem.ml" 58 1884 1925
+type(
+  Ast.var
+)
+ident(
+  int_ref memvl "flatten_mem.ml" 57 1850 1869 "flatten_mem.ml" 57 1850 1874
+)
+"flatten_mem.ml" 58 1884 1926 "flatten_mem.ml" 58 1884 1930
+type(
+  Ast.attrs
+)
+ident(
+  int_ref atts "flatten_mem.ml" 57 1850 1875 "flatten_mem.ml" 57 1850 1879
+)
+"flatten_mem.ml" 58 1884 1931 "flatten_mem.ml" 58 1884 1932
+type(
+  Ast.exp
+)
+ident(
+  int_ref e "flatten_mem.ml" 57 1850 1880 "flatten_mem.ml" 57 1850 1881
+)
+"flatten_mem.ml" 58 1884 1901 "flatten_mem.ml" 58 1884 1932
+call(
+  stack
+)
+type(
+  Ast.exp * Ast.stmt list
+)
+"flatten_mem.ml" 59 1936 1938 "flatten_mem.ml" 59 1936 1939
+type(
+  Ast.exp
+)
+ident(
+  int_ref e "flatten_mem.ml" 58 1884 1890 "flatten_mem.ml" 58 1884 1891
+)
+"flatten_mem.ml" 59 1936 1941 "flatten_mem.ml" 59 1936 1949
+type(
+  Ast.stmt list -> Ast.stmt list
+)
+ident(
+  ext_ref List.rev
+)
+"flatten_mem.ml" 59 1936 1950 "flatten_mem.ml" 59 1936 1955
+type(
+  Ast.stmt list
+)
+ident(
+  int_ref stmts "flatten_mem.ml" 58 1884 1893 "flatten_mem.ml" 58 1884 1898
+)
+"flatten_mem.ml" 59 1936 1941 "flatten_mem.ml" 59 1936 1955
+call(
+  stack
+)
+type(
+  Ast.stmt list
+)
+"flatten_mem.ml" 59 1936 1938 "flatten_mem.ml" 59 1936 1955
+type(
+  Ast.exp * Ast.stmt list
+)
+"flatten_mem.ml" 58 1884 1886 "flatten_mem.ml" 59 1936 1955
+type(
+  Ast.exp * Ast.stmt list
+)
+"flatten_mem.ml" 61 1957 1961 "flatten_mem.ml" 61 1957 1975
+type(
+  Ast.stmt -> Ast.stmt list
+)
+ident(
+  def flatten_stores "flatten_mem.ml" 68 2201 2201 --
+)
+"flatten_mem.ml" 62 1987 1996 "flatten_mem.ml" 62 1987 2001
+type(
+  Ast.var
+)
+ident(
+  def memvl "flatten_mem.ml" 62 1987 2011 "flatten_mem.ml" 65 2165 2186
+)
+"flatten_mem.ml" 62 1987 2003 "flatten_mem.ml" 62 1987 2004
+type(
+  Ast.exp
+)
+ident(
+  def e "flatten_mem.ml" 62 1987 2011 "flatten_mem.ml" 65 2165 2186
+)
+"flatten_mem.ml" 62 1987 2006 "flatten_mem.ml" 62 1987 2009
+type(
+  Ast.attrs
+)
+ident(
+  def att "flatten_mem.ml" 62 1987 2011 "flatten_mem.ml" 65 2165 2186
+)
+"flatten_mem.ml" 62 1987 1995 "flatten_mem.ml" 62 1987 2010
+type(
+  Ast.var * Ast.exp * Ast.attrs
+)
+"flatten_mem.ml" 62 1987 1991 "flatten_mem.ml" 62 1987 2010
+type(
+  Ast.stmt
+)
+"flatten_mem.ml" 62 1987 2016 "flatten_mem.ml" 62 1987 2037
+type(
+  Type.typ -> bool
+)
+ident(
+  ext_ref Typecheck.is_mem_type
+)
+"flatten_mem.ml" 62 1987 2039 "flatten_mem.ml" 62 1987 2046
+type(
+  Ast.var -> Type.typ
+)
+ident(
+  ext_ref Var.typ
+)
+"flatten_mem.ml" 62 1987 2047 "flatten_mem.ml" 62 1987 2052
+type(
+  Ast.var
+)
+ident(
+  int_ref memvl "flatten_mem.ml" 62 1987 1996 "flatten_mem.ml" 62 1987 2001
+)
+"flatten_mem.ml" 62 1987 2038 "flatten_mem.ml" 62 1987 2053
+call(
+  stack
+)
+type(
+  Type.typ
+)
+"flatten_mem.ml" 62 1987 2016 "flatten_mem.ml" 62 1987 2053
+call(
+  stack
+)
+type(
+  bool
+)
+"flatten_mem.ml" 63 2057 2065 "flatten_mem.ml" 63 2057 2067
+type(
+  Ast.exp
+)
+"flatten_mem.ml" 63 2057 2069 "flatten_mem.ml" 63 2057 2077
+type(
+  Ast.stmt list
+)
+"flatten_mem.ml" 63 2057 2065 "flatten_mem.ml" 63 2057 2077
+type(
+  Ast.exp * Ast.stmt list
+)
+"flatten_mem.ml" 63 2057 2080 "flatten_mem.ml" 63 2057 2094
+type(
+  Ast.var -> Ast.attrs -> Ast.exp -> Ast.exp * Ast.stmt list
+)
+ident(
+  int_ref flatten_memexp "flatten_mem.ml" 57 1850 1854 "flatten_mem.ml" 57 1850 1868
+)
+"flatten_mem.ml" 63 2057 2095 "flatten_mem.ml" 63 2057 2100
+type(
+  Ast.var
+)
+ident(
+  int_ref memvl "flatten_mem.ml" 62 1987 1996 "flatten_mem.ml" 62 1987 2001
+)
+"flatten_mem.ml" 63 2057 2101 "flatten_mem.ml" 63 2057 2104
+type(
+  Ast.attrs
+)
+ident(
+  int_ref att "flatten_mem.ml" 62 1987 2006 "flatten_mem.ml" 62 1987 2009
+)
+"flatten_mem.ml" 63 2057 2105 "flatten_mem.ml" 63 2057 2106
+type(
+  Ast.exp
+)
+ident(
+  int_ref e "flatten_mem.ml" 62 1987 2003 "flatten_mem.ml" 62 1987 2004
+)
+"flatten_mem.ml" 63 2057 2080 "flatten_mem.ml" 63 2057 2106
+call(
+  stack
+)
+type(
+  Ast.exp * Ast.stmt list
+)
+"flatten_mem.ml" 64 2110 2118 "flatten_mem.ml" 64 2110 2126
+type(
+  Ast.stmt list
+)
+"flatten_mem.ml" 64 2110 2134 "flatten_mem.ml" 64 2110 2139
+type(
+  Ast.var
+)
+ident(
+  int_ref memvl "flatten_mem.ml" 62 1987 1996 "flatten_mem.ml" 62 1987 2001
+)
+"flatten_mem.ml" 64 2110 2141 "flatten_mem.ml" 64 2110 2143
+type(
+  Ast.exp
+)
+ident(
+  int_ref e' "flatten_mem.ml" 63 2057 2065 "flatten_mem.ml" 63 2057 2067
+)
+"flatten_mem.ml" 64 2110 2145 "flatten_mem.ml" 64 2110 2148
+type(
+  Ast.attrs
+)
+ident(
+  int_ref att "flatten_mem.ml" 62 1987 2006 "flatten_mem.ml" 62 1987 2009
+)
+"flatten_mem.ml" 64 2110 2133 "flatten_mem.ml" 64 2110 2149
+type(
+  Ast.var * Ast.exp * Ast.attrs
+)
+"flatten_mem.ml" 64 2110 2129 "flatten_mem.ml" 64 2110 2149
+type(
+  Ast.stmt
+)
+"flatten_mem.ml" 64 2110 2153 "flatten_mem.ml" 64 2110 2161
+type(
+  Ast.stmt list
+)
+ident(
+  int_ref revstmts "flatten_mem.ml" 63 2057 2069 "flatten_mem.ml" 63 2057 2077
+)
+"flatten_mem.ml" 64 2110 2129 "flatten_mem.ml" 64 2110 2161
+type(
+  Ast.stmt list
+)
+"flatten_mem.ml" 65 2165 2169 "flatten_mem.ml" 65 2165 2177
+type(
+  Ast.stmt list -> Ast.stmt list
+)
+ident(
+  ext_ref List.rev
+)
+"flatten_mem.ml" 65 2165 2178 "flatten_mem.ml" 65 2165 2186
+type(
+  Ast.stmt list
+)
+ident(
+  int_ref revstmts "flatten_mem.ml" 64 2110 2118 "flatten_mem.ml" 64 2110 2126
+)
+"flatten_mem.ml" 65 2165 2169 "flatten_mem.ml" 65 2165 2186
+call(
+  tail
+)
+type(
+  Ast.stmt list
+)
+"flatten_mem.ml" 64 2110 2114 "flatten_mem.ml" 65 2165 2186
+type(
+  Ast.stmt list
+)
+"flatten_mem.ml" 63 2057 2061 "flatten_mem.ml" 65 2165 2186
+type(
+  Ast.stmt list
+)
+"flatten_mem.ml" 62 1987 2011 "flatten_mem.ml" 65 2165 2186
+type(
+  Ast.stmt list
+)
+"flatten_mem.ml" 66 2187 2191 "flatten_mem.ml" 66 2187 2192
+type(
+  Ast.stmt
+)
+ident(
+  def s "flatten_mem.ml" 66 2187 2196 "flatten_mem.ml" 66 2187 2199
+)
+"flatten_mem.ml" 66 2187 2197 "flatten_mem.ml" 66 2187 2198
+type(
+  Ast.stmt
+)
+ident(
+  int_ref s "flatten_mem.ml" 66 2187 2191 "flatten_mem.ml" 66 2187 2192
+)
+"flatten_mem.ml" 66 2187 2196 "flatten_mem.ml" 66 2187 2199
+type(
+  Ast.stmt list
+)
+"flatten_mem.ml" 61 1957 1978 "flatten_mem.ml" 66 2187 2199
+type(
+  Ast.stmt -> Ast.stmt list
+)
+"flatten_mem.ml" 68 2201 2205 "flatten_mem.ml" 68 2201 2218
+type(
+  Ast.exp -> Ast.exp
+)
+ident(
+  def flatten_loads "flatten_mem.ml" 76 2406 2406 --
+)
+"flatten_mem.ml" 68 2201 2219 "flatten_mem.ml" 68 2201 2220
+type(
+  Ast.exp
+)
+ident(
+  def e "flatten_mem.ml" 69 2223 2225 "flatten_mem.ml" 73 2343 2364
+)
+"flatten_mem.ml" 69 2223 2225 "flatten_mem.ml" 69 2223 2240
+type(
+  (Ast.exp -> bool) -> Ast.exp -> Ast.exp
+)
+ident(
+  int_ref explode_mem_let "flatten_mem.ml" 11 287 291 "flatten_mem.ml" 11 287 306
+)
+"flatten_mem.ml" 71 2255 2267 "flatten_mem.ml" 71 2255 2268
+type(
+  Ast.var
+)
+ident(
+  def v "flatten_mem.ml" 71 2255 2274 "flatten_mem.ml" 71 2255 2320
+)
+"flatten_mem.ml" 71 2255 2269 "flatten_mem.ml" 71 2255 2270
+type(
+  Ast.exp
+)
+"flatten_mem.ml" 71 2255 2271 "flatten_mem.ml" 71 2255 2272
+type(
+  Ast.exp
+)
+"flatten_mem.ml" 71 2255 2266 "flatten_mem.ml" 71 2255 2273
+type(
+  Ast.var * Ast.exp * Ast.exp
+)
+"flatten_mem.ml" 71 2255 2263 "flatten_mem.ml" 71 2255 2273
+type(
+  Ast.exp
+)
+"flatten_mem.ml" 71 2255 2279 "flatten_mem.ml" 71 2255 2300
+type(
+  Type.typ -> bool
+)
+ident(
+  ext_ref Typecheck.is_mem_type
+)
+"flatten_mem.ml" 71 2255 2302 "flatten_mem.ml" 71 2255 2309
+type(
+  Ast.var -> Type.typ
+)
+ident(
+  ext_ref Var.typ
+)
+"flatten_mem.ml" 71 2255 2310 "flatten_mem.ml" 71 2255 2311
+type(
+  Ast.var
+)
+ident(
+  int_ref v "flatten_mem.ml" 71 2255 2267 "flatten_mem.ml" 71 2255 2268
+)
+"flatten_mem.ml" 71 2255 2301 "flatten_mem.ml" 71 2255 2312
+call(
+  stack
+)
+type(
+  Type.typ
+)
+"flatten_mem.ml" 71 2255 2279 "flatten_mem.ml" 71 2255 2312
+call(
+  stack
+)
+type(
+  bool
+)
+"flatten_mem.ml" 71 2255 2316 "flatten_mem.ml" 71 2255 2320
+type(
+  bool
+)
+"flatten_mem.ml" 71 2255 2274 "flatten_mem.ml" 71 2255 2320
+type(
+  bool
+)
+"flatten_mem.ml" 72 2321 2333 "flatten_mem.ml" 72 2321 2334
+type(
+  Ast.var * Ast.exp * Ast.exp
+)
+"flatten_mem.ml" 72 2321 2329 "flatten_mem.ml" 72 2321 2334
+type(
+  Ast.exp
+)
+"flatten_mem.ml" 72 2321 2338 "flatten_mem.ml" 72 2321 2342
+type(
+  bool
+)
+"flatten_mem.ml" 73 2343 2351 "flatten_mem.ml" 73 2343 2352
+type(
+  Ast.exp
+)
+"flatten_mem.ml" 73 2343 2356 "flatten_mem.ml" 73 2343 2361
+type(
+  bool
+)
+"flatten_mem.ml" 70 2241 2245 "flatten_mem.ml" 73 2343 2362
+type(
+  Ast.exp -> bool
+)
+"flatten_mem.ml" 73 2343 2363 "flatten_mem.ml" 73 2343 2364
+type(
+  Ast.exp
+)
+ident(
+  int_ref e "flatten_mem.ml" 68 2201 2219 "flatten_mem.ml" 68 2201 2220
+)
+"flatten_mem.ml" 69 2223 2225 "flatten_mem.ml" 73 2343 2364
+call(
+  tail
+)
+type(
+  Ast.exp
+)
+"flatten_mem.ml" 76 2406 2410 "flatten_mem.ml" 76 2406 2428
+type(
+  Ast.stmt -> Ast.stmt
+)
+ident(
+  def flatten_loads_stmt "flatten_mem.ml" 84 2582 2582 --
+)
+"flatten_mem.ml" 76 2406 2429 "flatten_mem.ml" 76 2406 2430
+type(
+  Ast.stmt
+)
+ident(
+  def s "flatten_mem.ml" 77 2433 2435 "flatten_mem.ml" 82 2551 2580
+)
+"flatten_mem.ml" 77 2433 2439 "flatten_mem.ml" 77 2433 2440
+type(
+  Ast_visitor.nop
+)
+"flatten_mem.ml" 77 2433 2449 "flatten_mem.ml" 77 2433 2455
+type(
+  Ast_visitor.nop
+)
+"flatten_mem.ml" 79 2484 2505 "flatten_mem.ml" 79 2484 2506
+type(
+  Ast.exp
+)
+ident(
+  def e "flatten_mem.ml" 80 2509 2515 "flatten_mem.ml" 80 2509 2541
+)
+"flatten_mem.ml" 80 2509 2525 "flatten_mem.ml" 80 2509 2538
+type(
+  Ast.exp -> Ast.exp
+)
+ident(
+  int_ref flatten_loads "flatten_mem.ml" 68 2201 2205 "flatten_mem.ml" 68 2201 2218
+)
+"flatten_mem.ml" 80 2509 2539 "flatten_mem.ml" 80 2509 2540
+type(
+  Ast.exp
+)
+ident(
+  int_ref e "flatten_mem.ml" 79 2484 2505 "flatten_mem.ml" 79 2484 2506
+)
+"flatten_mem.ml" 80 2509 2524 "flatten_mem.ml" 80 2509 2541
+call(
+  stack
+)
+type(
+  Ast.exp
+)
+"flatten_mem.ml" 80 2509 2515 "flatten_mem.ml" 80 2509 2541
+type(
+  Ast.exp Type.visit_action
+)
+"flatten_mem.ml" 77 2433 2443 "flatten_mem.ml" 81 2542 2547
+type(
+  Ast_visitor.nop
+)
+"flatten_mem.ml" 82 2551 2553 "flatten_mem.ml" 82 2551 2576
+type(
+  Ast_visitor.t -> Ast.stmt -> Ast.stmt
+)
+ident(
+  ext_ref Ast_visitor.stmt_accept
+)
+"flatten_mem.ml" 82 2551 2577 "flatten_mem.ml" 82 2551 2578
+type(
+  Ast_visitor.t
+)
+ident(
+  int_ref v "flatten_mem.ml" 77 2433 2439 "flatten_mem.ml" 77 2433 2440
+)
+"flatten_mem.ml" 82 2551 2579 "flatten_mem.ml" 82 2551 2580
+type(
+  Ast.stmt
+)
+ident(
+  int_ref s "flatten_mem.ml" 76 2406 2429 "flatten_mem.ml" 76 2406 2430
+)
+"flatten_mem.ml" 82 2551 2553 "flatten_mem.ml" 82 2551 2580
+call(
+  tail
+)
+type(
+  Ast.stmt
+)
+"flatten_mem.ml" 77 2433 2435 "flatten_mem.ml" 82 2551 2580
+type(
+  Ast.stmt
+)
+"flatten_mem.ml" 84 2582 2586 "flatten_mem.ml" 84 2582 2605
+type(
+  Ast.stmt list -> Ast.stmt list
+)
+ident(
+  def flatten_mem_program "flatten_mem.ml" 88 2703 2748 --
+)
+"flatten_mem.ml" 84 2582 2606 "flatten_mem.ml" 84 2582 2607
+type(
+  Ast.stmt list
+)
+ident(
+  def p "flatten_mem.ml" 86 2632 2634 "flatten_mem.ml" 88 2703 2748
+)
+"flatten_mem.ml" 86 2632 2638 "flatten_mem.ml" 86 2632 2639
+type(
+  Ast.stmt list
+)
+"flatten_mem.ml" 86 2632 2642 "flatten_mem.ml" 86 2632 2650
+type(
+  (Ast.stmt -> Ast.stmt) -> Ast.stmt list -> Ast.stmt list
+)
+ident(
+  ext_ref List.map
+)
+"flatten_mem.ml" 86 2632 2651 "flatten_mem.ml" 86 2632 2669
+type(
+  Ast.stmt -> Ast.stmt
+)
+ident(
+  int_ref flatten_loads_stmt "flatten_mem.ml" 76 2406 2410 "flatten_mem.ml" 76 2406 2428
+)
+"flatten_mem.ml" 86 2632 2670 "flatten_mem.ml" 86 2632 2671
+type(
+  Ast.stmt list
+)
+ident(
+  int_ref p "flatten_mem.ml" 84 2582 2606 "flatten_mem.ml" 84 2582 2607
+)
+"flatten_mem.ml" 86 2632 2642 "flatten_mem.ml" 86 2632 2671
+call(
+  stack
+)
+type(
+  Ast.stmt list
+)
+"flatten_mem.ml" 88 2703 2705 "flatten_mem.ml" 88 2703 2720
+type(
+  Ast.stmt list list -> Ast.stmt list
+)
+ident(
+  ext_ref BatList.flatten
+)
+"flatten_mem.ml" 88 2703 2722 "flatten_mem.ml" 88 2703 2730
+type(
+  (Ast.stmt -> Ast.stmt list) -> Ast.stmt list -> Ast.stmt list list
+)
+ident(
+  ext_ref List.map
+)
+"flatten_mem.ml" 88 2703 2731 "flatten_mem.ml" 88 2703 2745
+type(
+  Ast.stmt -> Ast.stmt list
+)
+ident(
+  int_ref flatten_stores "flatten_mem.ml" 61 1957 1961 "flatten_mem.ml" 61 1957 1975
+)
+"flatten_mem.ml" 88 2703 2746 "flatten_mem.ml" 88 2703 2747
+type(
+  Ast.stmt list
+)
+ident(
+  int_ref p "flatten_mem.ml" 86 2632 2638 "flatten_mem.ml" 86 2632 2639
+)
+"flatten_mem.ml" 88 2703 2721 "flatten_mem.ml" 88 2703 2748
+call(
+  stack
+)
+type(
+  Ast.stmt list list
+)
+"flatten_mem.ml" 88 2703 2705 "flatten_mem.ml" 88 2703 2748
+call(
+  tail
+)
+type(
+  Ast.stmt list
+)
+"flatten_mem.ml" 86 2632 2634 "flatten_mem.ml" 88 2703 2748
+type(
+  Ast.stmt list
+)

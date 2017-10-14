@@ -1,0 +1,90 @@
+Backport of:
+
+From c264f9c466f22736c9fd9f8a7051f6b71ecb2c0d Mon Sep 17 00:00:00 2001
+From: =?UTF-8?q?Bastien=20ROUCARI=C3=88S?= <roucaries.bastien@gmail.com>
+Date: Tue, 23 Dec 2014 14:53:08 +0100
+Subject: [PATCH] Fix heap overflow in pcx file, psd, pict and wpf files and
+ DOS in xpm file
+
+The rest of the upstream patch is only whitespace change. Do not commit it.
+
+git-svn-id: https://subversion.imagemagick.org/subversion/ImageMagick/branches/ImageMagick-6@17166 aa41f4f7-0bf4-0310-aa73-e5a19afd5a74
+origin:  http://trac.imagemagick.org/changeset/17166
+---
+ coders/pcx.c  |  2 +-
+ coders/pict.c |  3 ++-
+ coders/psd.c  | 10 ++++++----
+ coders/wpg.c  |  2 +-
+ coders/xpm.c  |  4 +++-
+ 5 files changed, 13 insertions(+), 8 deletions(-)
+
+Index: imagemagick-6.6.9.7/coders/pict.c
+===================================================================
+--- imagemagick-6.6.9.7.orig/coders/pict.c	2016-11-15 12:41:37.224084810 -0500
++++ imagemagick-6.6.9.7/coders/pict.c	2016-11-15 12:41:37.216084713 -0500
+@@ -482,7 +482,8 @@
+     return((unsigned char *) NULL);
+   *extent=row_bytes*image->rows*sizeof(*pixels);
+   (void) ResetMagickMemory(pixels,0,*extent);
+-  scanline=(unsigned char *) AcquireQuantumMemory(row_bytes,sizeof(*scanline));
++  scanline=(unsigned char *) AcquireQuantumMemory(row_bytes,2*
++    sizeof(*scanline));
+   if (scanline == (unsigned char *) NULL)
+     return((unsigned char *) NULL);
+   if (bytes_per_line < 8)
+Index: imagemagick-6.6.9.7/coders/psd.c
+===================================================================
+--- imagemagick-6.6.9.7.orig/coders/psd.c	2016-11-15 12:41:37.224084810 -0500
++++ imagemagick-6.6.9.7/coders/psd.c	2016-11-15 12:41:37.220084761 -0500
+@@ -46,6 +46,7 @@
+ #include "magick/blob-private.h"
+ #include "magick/cache.h"
+ #include "magick/colormap.h"
++#include "magick/colormap-private.h"
+ #include "magick/colorspace.h"
+ #include "magick/constitute.h"
+ #include "magick/enhance.h"
+@@ -583,7 +584,7 @@
+         if ((MagickOffsetType) length < offsets[y])
+           length=(size_t) offsets[y];
+       compact_pixels=(unsigned char *) AcquireQuantumMemory(length,
+-        sizeof(*pixels));
++        8*sizeof(*pixels));
+       if (compact_pixels == (unsigned char *) NULL)
+         ThrowBinaryException(ResourceLimitError,"MemoryAllocationFailed",
+           image->filename);
+Index: imagemagick-6.6.9.7/coders/wpg.c
+===================================================================
+--- imagemagick-6.6.9.7.orig/coders/wpg.c	2016-11-15 12:41:37.224084810 -0500
++++ imagemagick-6.6.9.7/coders/wpg.c	2016-11-15 12:41:37.220084761 -0500
+@@ -502,7 +502,7 @@
+ 
+   ldblk=(ssize_t) ((bpp*image->columns+7)/8);
+   BImgBuff=(unsigned char *) AcquireQuantumMemory((size_t) ldblk,
+-    4*sizeof(*BImgBuff));
++    8*sizeof(*BImgBuff));
+   if(BImgBuff==NULL) return(-2);
+ 
+   while(y<(ssize_t) image->rows)
+Index: imagemagick-6.6.9.7/coders/xpm.c
+===================================================================
+--- imagemagick-6.6.9.7.orig/coders/xpm.c	2016-11-15 12:41:37.224084810 -0500
++++ imagemagick-6.6.9.7/coders/xpm.c	2016-11-15 12:41:37.220084761 -0500
+@@ -163,7 +163,7 @@
+ 
+ static char *NextXPMLine(char *p)
+ {
+-  assert(p != (char*)NULL);
++  assert(p != (char*) NULL);
+   p=strchr(p,'\n');
+   if (p != (char *) NULL)
+     p++;
+@@ -370,6 +370,8 @@
+       {
+         while ((isspace((int) ((unsigned char) *q)) == 0) && (*q != '\0'))
+           q++;
++        if ((next-q) < 0)
++          break;
+         if (next != (char *) NULL)
+           (void) CopyXPMColor(target,q,MagickMin((size_t) (next-q),
+             MaxTextExtent));

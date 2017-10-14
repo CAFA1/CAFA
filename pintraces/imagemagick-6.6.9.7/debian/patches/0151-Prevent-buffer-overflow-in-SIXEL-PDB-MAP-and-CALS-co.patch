@@ -1,0 +1,90 @@
+Backport of:
+
+From 40f5d26ce8a9798caf401365a5bc5ecfa89c212c Mon Sep 17 00:00:00 2001
+From: Cristy <urban-warrior@imagemagick.org>
+Date: Tue, 23 Aug 2016 17:41:17 -0400
+Subject: [PATCH] Prevent buffer overflow in SIXEL, PDB, MAP, and CALS coders
+ (bug report from Donghai Zhu)
+
+(cherry picked from commit 10b3823a7619ed22d42764733eb052c4159bc8c1)
+bug-debian: https://bugs.debian.org/836172
+origin: upstream, https://github.com/ImageMagick/ImageMagick/commit/10b3823a7619ed22d42764733eb052c4159bc8c1
+---
+ coders/map.c   | 21 +++++++++++----------
+ coders/pdb.c   |  3 ++-
+ coders/sixel.c | 22 +++++++++++-----------
+ coders/tiff.c  |  2 ++
+ 4 files changed, 26 insertions(+), 22 deletions(-)
+
+Index: imagemagick-6.6.9.7/coders/map.c
+===================================================================
+--- imagemagick-6.6.9.7.orig/coders/map.c	2016-11-15 15:59:39.861175446 -0500
++++ imagemagick-6.6.9.7/coders/map.c	2016-11-15 15:59:39.857175398 -0500
+@@ -396,22 +396,23 @@
+     Write colormap to file.
+   */
+   q=colormap;
+-  if (image->depth <= 8)
++  q=colormap;
++  if (image->colors <= 256)
+     for (i=0; i < (ssize_t) image->colors; i++)
+     {
+-      *q++=(unsigned char) image->colormap[i].red;
+-      *q++=(unsigned char) image->colormap[i].green;
+-      *q++=(unsigned char) image->colormap[i].blue;
++      *q++=(unsigned char) ScaleQuantumToChar(image->colormap[i].red);
++      *q++=(unsigned char) ScaleQuantumToChar(image->colormap[i].green);
++      *q++=(unsigned char) ScaleQuantumToChar(image->colormap[i].blue);
+     }
+   else
+     for (i=0; i < (ssize_t) image->colors; i++)
+     {
+-      *q++=(unsigned char) ((size_t) image->colormap[i].red >> 8);
+-      *q++=(unsigned char) image->colormap[i].red;
+-      *q++=(unsigned char) ((size_t) image->colormap[i].green >> 8);
+-      *q++=(unsigned char) image->colormap[i].green;
+-      *q++=(unsigned char) ((size_t) image->colormap[i].blue >> 8);
+-      *q++=(unsigned char) image->colormap[i].blue;
++      *q++=(unsigned char) (ScaleQuantumToShort(image->colormap[i].red) >> 8);
++      *q++=(unsigned char) (ScaleQuantumToShort(image->colormap[i].red) & 0xff);
++      *q++=(unsigned char) (ScaleQuantumToShort(image->colormap[i].green) >> 8);
++      *q++=(unsigned char) (ScaleQuantumToShort(image->colormap[i].green) & 0xff);;
++      *q++=(unsigned char) (ScaleQuantumToShort(image->colormap[i].blue) >> 8);
++      *q++=(unsigned char) (ScaleQuantumToShort(image->colormap[i].blue) & 0xff);
+     }
+   (void) WriteBlob(image,packet_size*image->colors,colormap);
+   colormap=(unsigned char *) RelinquishMagickMemory(colormap);
+Index: imagemagick-6.6.9.7/coders/pdb.c
+===================================================================
+--- imagemagick-6.6.9.7.orig/coders/pdb.c	2016-11-15 15:59:39.861175446 -0500
++++ imagemagick-6.6.9.7/coders/pdb.c	2016-11-15 15:59:39.857175398 -0500
+@@ -811,7 +811,7 @@
+   buffer=(unsigned char *) AcquireQuantumMemory(512,sizeof(*buffer));
+   if (buffer == (unsigned char *) NULL)
+     ThrowWriterException(ResourceLimitError,"MemoryAllocationFailed");
+-  packet_size=(size_t) (image->depth > 8 ? 2: 1);
++  packet_size=(size_t) (image->depth > 8 ? 2 : 1);
+   scanline=(unsigned char *) AcquireQuantumMemory(image->columns,packet_size*
+     sizeof(*scanline));
+   if (scanline == (unsigned char *) NULL)
+@@ -824,6 +824,7 @@
+   quantum_info=AcquireQuantumInfo(image_info,image);
+   if (quantum_info == (QuantumInfo *) NULL)
+     ThrowWriterException(ResourceLimitError,"MemoryAllocationFailed");
++  status=SetQuantumDepth(image,quantum_info,image->depth > 8 ? 16 : 8);
+   bits=8/(int) bits_per_pixel-1;  /* start at most significant bits */
+   literal=0;
+   repeat=0;
+Index: imagemagick-6.6.9.7/coders/tiff.c
+===================================================================
+--- imagemagick-6.6.9.7.orig/coders/tiff.c	2016-11-15 15:59:39.861175446 -0500
++++ imagemagick-6.6.9.7/coders/tiff.c	2016-11-15 15:59:39.857175398 -0500
+@@ -1933,6 +1933,8 @@
+   (void) SetImageType(huffman_image,BilevelType);
+   write_info=CloneImageInfo((ImageInfo *) NULL);
+   SetImageInfoFile(write_info,file);
++  (void) SetImageDepth(image,1);
++  (void) SetImageType(image,BilevelType);
+   write_info->compression=Group4Compression;
+   write_info->type=BilevelType;
+   (void) SetImageOption(write_info,"quantum:polarity","min-is-white");

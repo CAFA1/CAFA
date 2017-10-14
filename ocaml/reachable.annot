@@ -1,0 +1,1466 @@
+"reachable.ml" 3 68 101 "reachable.ml" 3 68 105
+type(
+  string
+)
+ident(
+  def name "reachable.ml" 3 68 140 "reachable.ml" 3 68 144
+)
+"reachable.ml" 3 68 108 "reachable.ml" 3 68 119
+type(
+  string
+)
+"reachable.ml" 3 68 124 "reachable.ml" 3 68 131
+type(
+  [> `NoDebug ]
+)
+ident(
+  def default "reachable.ml" 3 68 140 "reachable.ml" 3 68 144
+)
+"reachable.ml" 3 68 132 "reachable.ml" 3 68 140
+type(
+  [> `NoDebug ] as 'a
+)
+"reachable.ml" 3 68 79 "reachable.ml" 3 68 145
+call(
+  stack
+)
+"reachable.ml" 42 1039 1053 "reachable.ml" 42 1039 1069
+call(
+  stack
+)
+"reachable.ml" 44 1071 1076 "reachable.ml" 44 1071 1090
+type(
+  (BI.G.V.t -> unit) -> BI.G.t -> BI.G.V.t -> unit
+)
+ident(
+  def iter_reachable "reachable.ml" 48 1174 1175 "reachable.ml" 100 2818 2821
+)
+"reachable.ml" 44 1071 1091 "reachable.ml" 44 1071 1092
+type(
+  BI.G.V.t -> unit
+)
+ident(
+  def f "reachable.ml" 44 1071 1093 "reachable.ml" 46 1145 1172
+)
+"reachable.ml" 44 1071 1093 "reachable.ml" 44 1071 1094
+type(
+  BI.G.t
+)
+ident(
+  def g "reachable.ml" 44 1071 1095 "reachable.ml" 46 1145 1172
+)
+"reachable.ml" 44 1071 1095 "reachable.ml" 44 1071 1096
+type(
+  BI.G.V.t
+)
+ident(
+  def v "reachable.ml" 45 1099 1102 "reachable.ml" 46 1145 1172
+)
+"reachable.ml" 45 1099 1117 "reachable.ml" 45 1099 1141
+call(
+  stack
+)
+"reachable.ml" 46 1145 1148 "reachable.ml" 46 1145 1166
+type(
+  (BI.G.V.t -> unit) -> BI.G.t -> BI.G.V.t -> unit
+)
+ident(
+  ext_ref D.prefix_component
+)
+"reachable.ml" 46 1145 1167 "reachable.ml" 46 1145 1168
+type(
+  BI.G.V.t -> unit
+)
+ident(
+  int_ref f "reachable.ml" 44 1071 1091 "reachable.ml" 44 1071 1092
+)
+"reachable.ml" 46 1145 1169 "reachable.ml" 46 1145 1170
+type(
+  BI.G.t
+)
+ident(
+  int_ref g "reachable.ml" 44 1071 1093 "reachable.ml" 44 1071 1094
+)
+"reachable.ml" 46 1145 1171 "reachable.ml" 46 1145 1172
+type(
+  BI.G.V.t
+)
+ident(
+  int_ref v "reachable.ml" 44 1071 1095 "reachable.ml" 44 1071 1096
+)
+"reachable.ml" 46 1145 1148 "reachable.ml" 46 1145 1172
+call(
+  tail
+)
+type(
+  unit
+)
+"reachable.ml" 45 1099 1102 "reachable.ml" 46 1145 1172
+type(
+  unit
+)
+"reachable.ml" 48 1174 1179 "reachable.ml" 48 1174 1193
+type(
+  (BI.G.V.t -> 'a -> 'a) -> BI.G.t -> BI.G.V.t -> 'a -> 'a
+)
+ident(
+  def fold_reachable "reachable.ml" 53 1277 1278 "reachable.ml" 100 2818 2821
+)
+"reachable.ml" 48 1174 1194 "reachable.ml" 48 1174 1195
+type(
+  BI.G.V.t -> 'a -> 'a
+)
+ident(
+  def f "reachable.ml" 48 1174 1196 "reachable.ml" 51 1270 1275
+)
+"reachable.ml" 48 1174 1196 "reachable.ml" 48 1174 1197
+type(
+  BI.G.t
+)
+ident(
+  def g "reachable.ml" 48 1174 1198 "reachable.ml" 51 1270 1275
+)
+"reachable.ml" 48 1174 1198 "reachable.ml" 48 1174 1199
+type(
+  BI.G.V.t
+)
+ident(
+  def v "reachable.ml" 48 1174 1200 "reachable.ml" 51 1270 1275
+)
+"reachable.ml" 48 1174 1200 "reachable.ml" 48 1174 1201
+type(
+  'a
+)
+ident(
+  def a "reachable.ml" 49 1204 1207 "reachable.ml" 51 1270 1275
+)
+"reachable.ml" 49 1204 1211 "reachable.ml" 49 1204 1212
+type(
+  'a ref
+)
+"reachable.ml" 49 1204 1215 "reachable.ml" 49 1204 1218
+type(
+  'a -> 'a ref
+)
+ident(
+  ext_ref Pervasives.ref
+)
+"reachable.ml" 49 1204 1219 "reachable.ml" 49 1204 1220
+type(
+  'a
+)
+ident(
+  int_ref a "reachable.ml" 48 1174 1200 "reachable.ml" 48 1174 1201
+)
+"reachable.ml" 49 1204 1215 "reachable.ml" 49 1204 1220
+type(
+  'a ref
+)
+"reachable.ml" 50 1224 1227 "reachable.ml" 50 1224 1241
+type(
+  (BI.G.V.t -> unit) -> BI.G.t -> BI.G.V.t -> unit
+)
+ident(
+  int_ref iter_reachable "reachable.ml" 44 1071 1076 "reachable.ml" 44 1071 1090
+)
+"reachable.ml" 50 1224 1247 "reachable.ml" 50 1224 1248
+type(
+  BI.G.V.t
+)
+ident(
+  def v "reachable.ml" 50 1224 1252 "reachable.ml" 50 1224 1263
+)
+"reachable.ml" 50 1224 1252 "reachable.ml" 50 1224 1253
+type(
+  'a ref
+)
+ident(
+  int_ref r "reachable.ml" 49 1204 1211 "reachable.ml" 49 1204 1212
+)
+"reachable.ml" 50 1224 1254 "reachable.ml" 50 1224 1256
+type(
+  'a ref -> 'a -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"reachable.ml" 50 1224 1257 "reachable.ml" 50 1224 1258
+type(
+  BI.G.V.t -> 'a -> 'a
+)
+ident(
+  int_ref f "reachable.ml" 48 1174 1194 "reachable.ml" 48 1174 1195
+)
+"reachable.ml" 50 1224 1259 "reachable.ml" 50 1224 1260
+type(
+  BI.G.V.t
+)
+ident(
+  int_ref v "reachable.ml" 50 1224 1247 "reachable.ml" 50 1224 1248
+)
+"reachable.ml" 50 1224 1261 "reachable.ml" 50 1224 1262
+type(
+  'a ref -> 'a
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"reachable.ml" 50 1224 1262 "reachable.ml" 50 1224 1263
+type(
+  'a ref
+)
+ident(
+  int_ref r "reachable.ml" 49 1204 1211 "reachable.ml" 49 1204 1212
+)
+"reachable.ml" 50 1224 1261 "reachable.ml" 50 1224 1263
+type(
+  'a
+)
+"reachable.ml" 50 1224 1257 "reachable.ml" 50 1224 1263
+call(
+  stack
+)
+type(
+  'a
+)
+"reachable.ml" 50 1224 1252 "reachable.ml" 50 1224 1263
+type(
+  unit
+)
+"reachable.ml" 50 1224 1242 "reachable.ml" 50 1224 1264
+type(
+  BI.G.V.t -> unit
+)
+"reachable.ml" 50 1224 1265 "reachable.ml" 50 1224 1266
+type(
+  BI.G.t
+)
+ident(
+  int_ref g "reachable.ml" 48 1174 1196 "reachable.ml" 48 1174 1197
+)
+"reachable.ml" 50 1224 1267 "reachable.ml" 50 1224 1268
+type(
+  BI.G.V.t
+)
+ident(
+  int_ref v "reachable.ml" 48 1174 1198 "reachable.ml" 48 1174 1199
+)
+"reachable.ml" 50 1224 1227 "reachable.ml" 50 1224 1268
+call(
+  stack
+)
+type(
+  unit
+)
+"reachable.ml" 51 1270 1273 "reachable.ml" 51 1270 1274
+type(
+  'a ref -> 'a
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"reachable.ml" 51 1270 1274 "reachable.ml" 51 1270 1275
+type(
+  'a ref
+)
+ident(
+  int_ref r "reachable.ml" 49 1204 1211 "reachable.ml" 49 1204 1212
+)
+"reachable.ml" 51 1270 1273 "reachable.ml" 51 1270 1275
+type(
+  'a
+)
+"reachable.ml" 50 1224 1227 "reachable.ml" 51 1270 1275
+type(
+  'a
+)
+"reachable.ml" 49 1204 1207 "reachable.ml" 51 1270 1275
+type(
+  'a
+)
+"reachable.ml" 53 1277 1282 "reachable.ml" 53 1277 1298
+type(
+  (BI.G.vertex -> 'b -> 'b) -> BI.G.t -> BI.G.V.t -> 'b -> 'b
+)
+ident(
+  def fold_unreachable "reachable.ml" 58 1469 1470 "reachable.ml" 100 2818 2821
+)
+"reachable.ml" 53 1277 1299 "reachable.ml" 53 1277 1300
+type(
+  BI.G.vertex -> 'b -> 'b
+)
+ident(
+  def f "reachable.ml" 53 1277 1301 "reachable.ml" 56 1394 1467
+)
+"reachable.ml" 53 1277 1301 "reachable.ml" 53 1277 1302
+type(
+  BI.G.t
+)
+ident(
+  def g "reachable.ml" 53 1277 1303 "reachable.ml" 56 1394 1467
+)
+"reachable.ml" 53 1277 1303 "reachable.ml" 53 1277 1304
+type(
+  BI.G.V.t
+)
+ident(
+  def v "reachable.ml" 53 1277 1305 "reachable.ml" 56 1394 1467
+)
+"reachable.ml" 53 1277 1305 "reachable.ml" 53 1277 1306
+type(
+  'b
+)
+ident(
+  def a "reachable.ml" 54 1309 1312 "reachable.ml" 56 1394 1467
+)
+"reachable.ml" 54 1309 1316 "reachable.ml" 54 1309 1317
+type(
+  (BI.G.vertex, unit) Hashtbl.t
+)
+"reachable.ml" 54 1309 1320 "reachable.ml" 54 1309 1334
+type(
+  int -> (BI.G.vertex, unit) Hashtbl.t
+)
+ident(
+  ext_ref Hashtbl.create
+)
+"reachable.ml" 54 1309 1335 "reachable.ml" 54 1309 1337
+type(
+  int
+)
+"reachable.ml" 54 1309 1320 "reachable.ml" 54 1309 1337
+call(
+  stack
+)
+type(
+  (BI.G.vertex, unit) Hashtbl.t
+)
+"reachable.ml" 55 1341 1344 "reachable.ml" 55 1341 1358
+type(
+  (BI.G.vertex -> unit) -> BI.G.t -> BI.G.V.t -> unit
+)
+ident(
+  int_ref iter_reachable "reachable.ml" 44 1071 1076 "reachable.ml" 44 1071 1090
+)
+"reachable.ml" 55 1341 1364 "reachable.ml" 55 1341 1365
+type(
+  BI.G.vertex
+)
+ident(
+  def v "reachable.ml" 55 1341 1369 "reachable.ml" 55 1341 1387
+)
+"reachable.ml" 55 1341 1369 "reachable.ml" 55 1341 1380
+type(
+  (BI.G.vertex, unit) Hashtbl.t -> BI.G.vertex -> unit -> unit
+)
+ident(
+  ext_ref Hashtbl.add
+)
+"reachable.ml" 55 1341 1381 "reachable.ml" 55 1341 1382
+type(
+  (BI.G.vertex, unit) Hashtbl.t
+)
+ident(
+  int_ref h "reachable.ml" 54 1309 1316 "reachable.ml" 54 1309 1317
+)
+"reachable.ml" 55 1341 1383 "reachable.ml" 55 1341 1384
+type(
+  BI.G.vertex
+)
+ident(
+  int_ref v "reachable.ml" 55 1341 1364 "reachable.ml" 55 1341 1365
+)
+"reachable.ml" 55 1341 1385 "reachable.ml" 55 1341 1387
+type(
+  unit
+)
+"reachable.ml" 55 1341 1369 "reachable.ml" 55 1341 1387
+call(
+  tail
+)
+type(
+  unit
+)
+"reachable.ml" 55 1341 1359 "reachable.ml" 55 1341 1388
+type(
+  BI.G.vertex -> unit
+)
+"reachable.ml" 55 1341 1389 "reachable.ml" 55 1341 1390
+type(
+  BI.G.t
+)
+ident(
+  int_ref g "reachable.ml" 53 1277 1301 "reachable.ml" 53 1277 1302
+)
+"reachable.ml" 55 1341 1391 "reachable.ml" 55 1341 1392
+type(
+  BI.G.V.t
+)
+ident(
+  int_ref v "reachable.ml" 53 1277 1303 "reachable.ml" 53 1277 1304
+)
+"reachable.ml" 55 1341 1344 "reachable.ml" 55 1341 1392
+call(
+  stack
+)
+type(
+  unit
+)
+"reachable.ml" 56 1394 1397 "reachable.ml" 56 1394 1413
+type(
+  (BI.G.vertex -> 'b -> 'b) -> BI.G.t -> 'b -> 'b
+)
+ident(
+  ext_ref BI.G.fold_vertex
+)
+"reachable.ml" 56 1394 1419 "reachable.ml" 56 1394 1420
+type(
+  BI.G.vertex
+)
+ident(
+  def v "reachable.ml" 56 1394 1421 "reachable.ml" 56 1394 1462
+)
+"reachable.ml" 56 1394 1421 "reachable.ml" 56 1394 1422
+type(
+  'b
+)
+ident(
+  def a "reachable.ml" 56 1394 1426 "reachable.ml" 56 1394 1462
+)
+"reachable.ml" 56 1394 1429 "reachable.ml" 56 1394 1440
+type(
+  (BI.G.vertex, unit) Hashtbl.t -> BI.G.vertex -> bool
+)
+ident(
+  ext_ref Hashtbl.mem
+)
+"reachable.ml" 56 1394 1441 "reachable.ml" 56 1394 1442
+type(
+  (BI.G.vertex, unit) Hashtbl.t
+)
+ident(
+  int_ref h "reachable.ml" 54 1309 1316 "reachable.ml" 54 1309 1317
+)
+"reachable.ml" 56 1394 1443 "reachable.ml" 56 1394 1444
+type(
+  BI.G.vertex
+)
+ident(
+  int_ref v "reachable.ml" 56 1394 1419 "reachable.ml" 56 1394 1420
+)
+"reachable.ml" 56 1394 1429 "reachable.ml" 56 1394 1444
+call(
+  stack
+)
+type(
+  bool
+)
+"reachable.ml" 56 1394 1450 "reachable.ml" 56 1394 1451
+type(
+  'b
+)
+ident(
+  int_ref a "reachable.ml" 56 1394 1421 "reachable.ml" 56 1394 1422
+)
+"reachable.ml" 56 1394 1457 "reachable.ml" 56 1394 1458
+type(
+  BI.G.vertex -> 'b -> 'b
+)
+ident(
+  int_ref f "reachable.ml" 53 1277 1299 "reachable.ml" 53 1277 1300
+)
+"reachable.ml" 56 1394 1459 "reachable.ml" 56 1394 1460
+type(
+  BI.G.vertex
+)
+ident(
+  int_ref v "reachable.ml" 56 1394 1419 "reachable.ml" 56 1394 1420
+)
+"reachable.ml" 56 1394 1461 "reachable.ml" 56 1394 1462
+type(
+  'b
+)
+ident(
+  int_ref a "reachable.ml" 56 1394 1421 "reachable.ml" 56 1394 1422
+)
+"reachable.ml" 56 1394 1457 "reachable.ml" 56 1394 1462
+call(
+  tail
+)
+type(
+  'b
+)
+"reachable.ml" 56 1394 1426 "reachable.ml" 56 1394 1462
+type(
+  'b
+)
+"reachable.ml" 56 1394 1414 "reachable.ml" 56 1394 1463
+type(
+  BI.G.vertex -> 'b -> 'b
+)
+"reachable.ml" 56 1394 1464 "reachable.ml" 56 1394 1465
+type(
+  BI.G.t
+)
+ident(
+  int_ref g "reachable.ml" 53 1277 1301 "reachable.ml" 53 1277 1302
+)
+"reachable.ml" 56 1394 1466 "reachable.ml" 56 1394 1467
+type(
+  'b
+)
+ident(
+  int_ref a "reachable.ml" 53 1277 1305 "reachable.ml" 53 1277 1306
+)
+"reachable.ml" 56 1394 1397 "reachable.ml" 56 1394 1467
+call(
+  tail
+)
+type(
+  'b
+)
+"reachable.ml" 55 1341 1344 "reachable.ml" 56 1394 1467
+type(
+  'b
+)
+"reachable.ml" 54 1309 1312 "reachable.ml" 56 1394 1467
+type(
+  'b
+)
+"reachable.ml" 58 1469 1474 "reachable.ml" 58 1469 1490
+type(
+  (BI.G.vertex -> unit) -> BI.G.t -> BI.G.V.t -> unit
+)
+ident(
+  def iter_unreachable "reachable.ml" 61 1545 1546 "reachable.ml" 100 2818 2821
+)
+"reachable.ml" 58 1469 1491 "reachable.ml" 58 1469 1492
+type(
+  BI.G.vertex -> unit
+)
+ident(
+  def f "reachable.ml" 58 1469 1493 "reachable.ml" 59 1499 1543
+)
+"reachable.ml" 58 1469 1493 "reachable.ml" 58 1469 1494
+type(
+  BI.G.t
+)
+ident(
+  def g "reachable.ml" 58 1469 1495 "reachable.ml" 59 1499 1543
+)
+"reachable.ml" 58 1469 1495 "reachable.ml" 58 1469 1496
+type(
+  BI.G.V.t
+)
+ident(
+  def v "reachable.ml" 59 1499 1502 "reachable.ml" 59 1499 1543
+)
+"reachable.ml" 59 1499 1502 "reachable.ml" 59 1499 1518
+type(
+  (BI.G.vertex -> unit -> unit) -> BI.G.t -> BI.G.V.t -> unit -> unit
+)
+ident(
+  int_ref fold_unreachable "reachable.ml" 53 1277 1282 "reachable.ml" 53 1277 1298
+)
+"reachable.ml" 59 1499 1524 "reachable.ml" 59 1499 1525
+type(
+  BI.G.vertex
+)
+ident(
+  def v "reachable.ml" 59 1499 1526 "reachable.ml" 59 1499 1535
+)
+"reachable.ml" 59 1499 1526 "reachable.ml" 59 1499 1528
+type(
+  unit
+)
+"reachable.ml" 59 1499 1532 "reachable.ml" 59 1499 1533
+type(
+  BI.G.vertex -> unit
+)
+ident(
+  int_ref f "reachable.ml" 58 1469 1491 "reachable.ml" 58 1469 1492
+)
+"reachable.ml" 59 1499 1534 "reachable.ml" 59 1499 1535
+type(
+  BI.G.vertex
+)
+ident(
+  int_ref v "reachable.ml" 59 1499 1524 "reachable.ml" 59 1499 1525
+)
+"reachable.ml" 59 1499 1532 "reachable.ml" 59 1499 1535
+call(
+  tail
+)
+type(
+  unit
+)
+"reachable.ml" 59 1499 1519 "reachable.ml" 59 1499 1536
+type(
+  BI.G.vertex -> unit -> unit
+)
+"reachable.ml" 59 1499 1537 "reachable.ml" 59 1499 1538
+type(
+  BI.G.t
+)
+ident(
+  int_ref g "reachable.ml" 58 1469 1493 "reachable.ml" 58 1469 1494
+)
+"reachable.ml" 59 1499 1539 "reachable.ml" 59 1499 1540
+type(
+  BI.G.V.t
+)
+ident(
+  int_ref v "reachable.ml" 58 1469 1495 "reachable.ml" 58 1469 1496
+)
+"reachable.ml" 59 1499 1541 "reachable.ml" 59 1499 1543
+type(
+  unit
+)
+"reachable.ml" 59 1499 1502 "reachable.ml" 59 1499 1543
+call(
+  tail
+)
+type(
+  unit
+)
+"reachable.ml" 61 1545 1550 "reachable.ml" 61 1545 1559
+type(
+  BI.G.t -> BI.G.V.t -> BI.G.V.t list
+)
+ident(
+  def reachable "reachable.ml" 64 1612 1613 "reachable.ml" 100 2818 2821
+)
+"reachable.ml" 61 1545 1560 "reachable.ml" 61 1545 1561
+type(
+  BI.G.t
+)
+ident(
+  def g "reachable.ml" 61 1545 1562 "reachable.ml" 62 1566 1610
+)
+"reachable.ml" 61 1545 1562 "reachable.ml" 61 1545 1563
+type(
+  BI.G.V.t
+)
+ident(
+  def v "reachable.ml" 62 1566 1569 "reachable.ml" 62 1566 1610
+)
+"reachable.ml" 62 1566 1569 "reachable.ml" 62 1566 1583
+type(
+  (BI.G.V.t -> BI.G.V.t list -> BI.G.V.t list) ->
+  BI.G.t -> BI.G.V.t -> BI.G.V.t list -> BI.G.V.t list
+)
+ident(
+  int_ref fold_reachable "reachable.ml" 48 1174 1179 "reachable.ml" 48 1174 1193
+)
+"reachable.ml" 62 1566 1589 "reachable.ml" 62 1566 1590
+type(
+  BI.G.V.t
+)
+ident(
+  def v "reachable.ml" 62 1566 1591 "reachable.ml" 62 1566 1602
+)
+"reachable.ml" 62 1566 1591 "reachable.ml" 62 1566 1593
+type(
+  BI.G.V.t list
+)
+ident(
+  def vs "reachable.ml" 62 1566 1597 "reachable.ml" 62 1566 1602
+)
+"reachable.ml" 62 1566 1597 "reachable.ml" 62 1566 1598
+type(
+  BI.G.V.t
+)
+ident(
+  int_ref v "reachable.ml" 62 1566 1589 "reachable.ml" 62 1566 1590
+)
+"reachable.ml" 62 1566 1600 "reachable.ml" 62 1566 1602
+type(
+  BI.G.V.t list
+)
+ident(
+  int_ref vs "reachable.ml" 62 1566 1591 "reachable.ml" 62 1566 1593
+)
+"reachable.ml" 62 1566 1597 "reachable.ml" 62 1566 1602
+type(
+  BI.G.V.t list
+)
+"reachable.ml" 62 1566 1584 "reachable.ml" 62 1566 1603
+type(
+  BI.G.V.t -> BI.G.V.t list -> BI.G.V.t list
+)
+"reachable.ml" 62 1566 1604 "reachable.ml" 62 1566 1605
+type(
+  BI.G.t
+)
+ident(
+  int_ref g "reachable.ml" 61 1545 1560 "reachable.ml" 61 1545 1561
+)
+"reachable.ml" 62 1566 1606 "reachable.ml" 62 1566 1607
+type(
+  BI.G.V.t
+)
+ident(
+  int_ref v "reachable.ml" 61 1545 1562 "reachable.ml" 61 1545 1563
+)
+"reachable.ml" 62 1566 1608 "reachable.ml" 62 1566 1610
+type(
+  BI.G.V.t list
+)
+"reachable.ml" 62 1566 1569 "reachable.ml" 62 1566 1610
+call(
+  tail
+)
+type(
+  BI.G.V.t list
+)
+"reachable.ml" 64 1612 1617 "reachable.ml" 64 1612 1628
+type(
+  BI.G.t -> BI.G.V.t -> BI.G.vertex list
+)
+ident(
+  def unreachable "reachable.ml" 68 1756 1757 "reachable.ml" 100 2818 2821
+)
+"reachable.ml" 64 1612 1629 "reachable.ml" 64 1612 1630
+type(
+  BI.G.t
+)
+ident(
+  def g "reachable.ml" 64 1612 1631 "reachable.ml" 65 1635 1681
+)
+"reachable.ml" 64 1612 1631 "reachable.ml" 64 1612 1632
+type(
+  BI.G.V.t
+)
+ident(
+  def v "reachable.ml" 65 1635 1638 "reachable.ml" 65 1635 1681
+)
+"reachable.ml" 65 1635 1638 "reachable.ml" 65 1635 1654
+type(
+  (BI.G.vertex -> BI.G.vertex list -> BI.G.vertex list) ->
+  BI.G.t -> BI.G.V.t -> BI.G.vertex list -> BI.G.vertex list
+)
+ident(
+  int_ref fold_unreachable "reachable.ml" 53 1277 1282 "reachable.ml" 53 1277 1298
+)
+"reachable.ml" 65 1635 1660 "reachable.ml" 65 1635 1661
+type(
+  BI.G.vertex
+)
+ident(
+  def v "reachable.ml" 65 1635 1662 "reachable.ml" 65 1635 1673
+)
+"reachable.ml" 65 1635 1662 "reachable.ml" 65 1635 1664
+type(
+  BI.G.vertex list
+)
+ident(
+  def vs "reachable.ml" 65 1635 1668 "reachable.ml" 65 1635 1673
+)
+"reachable.ml" 65 1635 1668 "reachable.ml" 65 1635 1669
+type(
+  BI.G.vertex
+)
+ident(
+  int_ref v "reachable.ml" 65 1635 1660 "reachable.ml" 65 1635 1661
+)
+"reachable.ml" 65 1635 1671 "reachable.ml" 65 1635 1673
+type(
+  BI.G.vertex list
+)
+ident(
+  int_ref vs "reachable.ml" 65 1635 1662 "reachable.ml" 65 1635 1664
+)
+"reachable.ml" 65 1635 1668 "reachable.ml" 65 1635 1673
+type(
+  BI.G.vertex list
+)
+"reachable.ml" 65 1635 1655 "reachable.ml" 65 1635 1674
+type(
+  BI.G.vertex -> BI.G.vertex list -> BI.G.vertex list
+)
+"reachable.ml" 65 1635 1675 "reachable.ml" 65 1635 1676
+type(
+  BI.G.t
+)
+ident(
+  int_ref g "reachable.ml" 64 1612 1629 "reachable.ml" 64 1612 1630
+)
+"reachable.ml" 65 1635 1677 "reachable.ml" 65 1635 1678
+type(
+  BI.G.V.t
+)
+ident(
+  int_ref v "reachable.ml" 64 1612 1631 "reachable.ml" 64 1612 1632
+)
+"reachable.ml" 65 1635 1679 "reachable.ml" 65 1635 1681
+type(
+  BI.G.vertex list
+)
+"reachable.ml" 65 1635 1638 "reachable.ml" 65 1635 1681
+call(
+  tail
+)
+type(
+  BI.G.vertex list
+)
+"reachable.ml" 68 1756 1761 "reachable.ml" 68 1756 1786
+type(
+  BI.G.t -> BI.G.V.t -> BI.G.t
+)
+ident(
+  def remove_unreachable_remove "reachable.ml" 77 2142 2143 "reachable.ml" 100 2818 2821
+)
+"reachable.ml" 68 1756 1787 "reachable.ml" 68 1756 1788
+type(
+  BI.G.t
+)
+ident(
+  def g "reachable.ml" 68 1756 1789 "reachable.ml" 74 2075 2079
+)
+"reachable.ml" 68 1756 1789 "reachable.ml" 68 1756 1790
+type(
+  BI.G.V.t
+)
+ident(
+  def v "reachable.ml" 69 1793 1796 "reachable.ml" 74 2075 2079
+)
+"reachable.ml" 69 1793 1800 "reachable.ml" 69 1793 1801
+type(
+  BI.G.vertex list
+)
+"reachable.ml" 69 1793 1804 "reachable.ml" 69 1793 1815
+type(
+  BI.G.t -> BI.G.V.t -> BI.G.vertex list
+)
+ident(
+  int_ref unreachable "reachable.ml" 64 1612 1617 "reachable.ml" 64 1612 1628
+)
+"reachable.ml" 69 1793 1816 "reachable.ml" 69 1793 1817
+type(
+  BI.G.t
+)
+ident(
+  int_ref g "reachable.ml" 68 1756 1787 "reachable.ml" 68 1756 1788
+)
+"reachable.ml" 69 1793 1818 "reachable.ml" 69 1793 1819
+type(
+  BI.G.V.t
+)
+ident(
+  int_ref v "reachable.ml" 68 1756 1789 "reachable.ml" 68 1756 1790
+)
+"reachable.ml" 69 1793 1804 "reachable.ml" 69 1793 1819
+call(
+  stack
+)
+type(
+  BI.G.vertex list
+)
+"reachable.ml" 70 1823 1830 "reachable.ml" 70 1823 1835
+type(
+  int ref
+)
+"reachable.ml" 70 1823 1838 "reachable.ml" 70 1823 1841
+type(
+  int -> int ref
+)
+ident(
+  ext_ref Pervasives.ref
+)
+"reachable.ml" 70 1823 1842 "reachable.ml" 70 1823 1843
+type(
+  int
+)
+"reachable.ml" 70 1823 1838 "reachable.ml" 70 1823 1843
+type(
+  int ref
+)
+"reachable.ml" 71 1847 1850 "reachable.ml" 71 1847 1859
+type(
+  (int -> unit, unit, string, unit) format4 -> int -> unit
+)
+ident(
+  ext_ref D.dprintf
+)
+"reachable.ml" 71 1847 1860 "reachable.ml" 71 1847 1873
+type(
+  (int -> unit, unit, string, unit) format4
+)
+"reachable.ml" 71 1847 1875 "reachable.ml" 71 1847 1886
+type(
+  BI.G.vertex list -> int
+)
+ident(
+  ext_ref List.length
+)
+"reachable.ml" 71 1847 1887 "reachable.ml" 71 1847 1888
+type(
+  BI.G.vertex list
+)
+ident(
+  int_ref u "reachable.ml" 69 1793 1800 "reachable.ml" 69 1793 1801
+)
+"reachable.ml" 71 1847 1874 "reachable.ml" 71 1847 1889
+call(
+  stack
+)
+type(
+  int
+)
+"reachable.ml" 71 1847 1850 "reachable.ml" 71 1847 1889
+call(
+  stack
+)
+type(
+  unit
+)
+"reachable.ml" 72 1891 1898 "reachable.ml" 72 1891 1899
+type(
+  BI.G.t
+)
+"reachable.ml" 72 1891 1902 "reachable.ml" 72 1891 1916
+type(
+  (BI.G.t -> BI.G.vertex -> BI.G.t) -> BI.G.t -> BI.G.vertex list -> BI.G.t
+)
+ident(
+  ext_ref List.fold_left
+)
+"reachable.ml" 72 1891 1922 "reachable.ml" 72 1891 1923
+type(
+  BI.G.t
+)
+ident(
+  def a "reachable.ml" 72 1891 1924 "reachable.ml" 72 1891 2032
+)
+"reachable.ml" 72 1891 1924 "reachable.ml" 72 1891 1925
+type(
+  BI.G.vertex
+)
+ident(
+  def v "reachable.ml" 72 1891 1929 "reachable.ml" 72 1891 2032
+)
+"reachable.ml" 72 1891 1929 "reachable.ml" 72 1891 1933
+type(
+  int ref -> unit
+)
+ident(
+  ext_ref Pervasives.incr
+)
+"reachable.ml" 72 1891 1934 "reachable.ml" 72 1891 1939
+type(
+  int ref
+)
+ident(
+  int_ref count "reachable.ml" 70 1823 1830 "reachable.ml" 70 1823 1835
+)
+"reachable.ml" 72 1891 1929 "reachable.ml" 72 1891 1939
+type(
+  unit
+)
+"reachable.ml" 72 1891 1941 "reachable.ml" 72 1891 1950
+type(
+  (string -> unit, unit, string, unit) format4 -> string -> unit
+)
+ident(
+  ext_ref D.dprintf
+)
+"reachable.ml" 72 1891 1951 "reachable.ml" 72 1891 1964
+type(
+  (string -> unit, unit, string, unit) format4
+)
+"reachable.ml" 72 1891 1966 "reachable.ml" 72 1891 1972
+type(
+  BI.G.vertex -> string
+)
+ident(
+  ext_ref BI.v2s
+)
+"reachable.ml" 72 1891 1973 "reachable.ml" 72 1891 1974
+type(
+  BI.G.vertex
+)
+ident(
+  int_ref v "reachable.ml" 72 1891 1924 "reachable.ml" 72 1891 1925
+)
+"reachable.ml" 72 1891 1965 "reachable.ml" 72 1891 1975
+call(
+  stack
+)
+type(
+  string
+)
+"reachable.ml" 72 1891 1941 "reachable.ml" 72 1891 1975
+call(
+  stack
+)
+type(
+  unit
+)
+"reachable.ml" 72 1891 2012 "reachable.ml" 72 1891 2028
+type(
+  BI.G.t -> BI.G.vertex -> BI.G.t
+)
+ident(
+  ext_ref BI.remove_vertex
+)
+"reachable.ml" 72 1891 2029 "reachable.ml" 72 1891 2030
+type(
+  BI.G.t
+)
+ident(
+  int_ref a "reachable.ml" 72 1891 1922 "reachable.ml" 72 1891 1923
+)
+"reachable.ml" 72 1891 2031 "reachable.ml" 72 1891 2032
+type(
+  BI.G.vertex
+)
+ident(
+  int_ref v "reachable.ml" 72 1891 1924 "reachable.ml" 72 1891 1925
+)
+"reachable.ml" 72 1891 2012 "reachable.ml" 72 1891 2032
+call(
+  tail
+)
+type(
+  BI.G.t
+)
+"reachable.ml" 72 1891 1941 "reachable.ml" 72 1891 2032
+type(
+  BI.G.t
+)
+"reachable.ml" 72 1891 1929 "reachable.ml" 72 1891 2032
+type(
+  BI.G.t
+)
+"reachable.ml" 72 1891 1917 "reachable.ml" 72 1891 2033
+type(
+  BI.G.t -> BI.G.vertex -> BI.G.t
+)
+"reachable.ml" 72 1891 2034 "reachable.ml" 72 1891 2035
+type(
+  BI.G.t
+)
+ident(
+  int_ref g "reachable.ml" 68 1756 1787 "reachable.ml" 68 1756 1788
+)
+"reachable.ml" 72 1891 2036 "reachable.ml" 72 1891 2037
+type(
+  BI.G.vertex list
+)
+ident(
+  int_ref u "reachable.ml" 69 1793 1800 "reachable.ml" 69 1793 1801
+)
+"reachable.ml" 72 1891 1902 "reachable.ml" 72 1891 2037
+call(
+  stack
+)
+type(
+  BI.G.t
+)
+"reachable.ml" 73 2041 2044 "reachable.ml" 73 2041 2053
+type(
+  (int -> unit, unit, string, unit) format4 -> int -> unit
+)
+ident(
+  ext_ref D.dprintf
+)
+"reachable.ml" 73 2041 2054 "reachable.ml" 73 2041 2066
+type(
+  (int -> unit, unit, string, unit) format4
+)
+"reachable.ml" 73 2041 2067 "reachable.ml" 73 2041 2068
+type(
+  int ref -> int
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"reachable.ml" 73 2041 2068 "reachable.ml" 73 2041 2073
+type(
+  int ref
+)
+ident(
+  int_ref count "reachable.ml" 70 1823 1830 "reachable.ml" 70 1823 1835
+)
+"reachable.ml" 73 2041 2067 "reachable.ml" 73 2041 2073
+type(
+  int
+)
+"reachable.ml" 73 2041 2044 "reachable.ml" 73 2041 2073
+call(
+  stack
+)
+type(
+  unit
+)
+"reachable.ml" 74 2075 2078 "reachable.ml" 74 2075 2079
+type(
+  BI.G.t
+)
+ident(
+  int_ref g "reachable.ml" 72 1891 1898 "reachable.ml" 72 1891 1899
+)
+"reachable.ml" 73 2041 2044 "reachable.ml" 74 2075 2079
+type(
+  BI.G.t
+)
+"reachable.ml" 72 1891 1894 "reachable.ml" 74 2075 2079
+type(
+  BI.G.t
+)
+"reachable.ml" 71 1847 1850 "reachable.ml" 74 2075 2079
+type(
+  BI.G.t
+)
+"reachable.ml" 70 1823 1826 "reachable.ml" 74 2075 2079
+type(
+  BI.G.t
+)
+"reachable.ml" 69 1793 1796 "reachable.ml" 74 2075 2079
+type(
+  BI.G.t
+)
+"reachable.ml" 77 2142 2147 "reachable.ml" 77 2142 2170
+type(
+  BI.G.t -> BI.G.V.t -> BI.G.t
+)
+ident(
+  def remove_unreachable_copy "reachable.ml" 98 2765 2766 "reachable.ml" 100 2818 2821
+)
+"reachable.ml" 77 2142 2171 "reachable.ml" 77 2142 2172
+type(
+  BI.G.t
+)
+ident(
+  def g "reachable.ml" 77 2142 2173 "reachable.ml" 96 2756 2763
+)
+"reachable.ml" 77 2142 2173 "reachable.ml" 77 2142 2174
+type(
+  BI.G.V.t
+)
+ident(
+  def v "reachable.ml" 80 2284 2287 "reachable.ml" 96 2756 2763
+)
+"reachable.ml" 80 2284 2291 "reachable.ml" 80 2284 2295
+type(
+  BI.G.t
+)
+"reachable.ml" 80 2284 2298 "reachable.ml" 80 2284 2309
+type(
+  BI.G.t -> BI.G.t
+)
+ident(
+  ext_ref BI.copy_map
+)
+"reachable.ml" 80 2284 2310 "reachable.ml" 80 2284 2311
+type(
+  BI.G.t
+)
+ident(
+  int_ref g "reachable.ml" 77 2142 2171 "reachable.ml" 77 2142 2172
+)
+"reachable.ml" 80 2284 2298 "reachable.ml" 80 2284 2311
+call(
+  stack
+)
+type(
+  BI.G.t
+)
+"reachable.ml" 83 2363 2370 "reachable.ml" 83 2363 2378
+type(
+  BI.G.V.t -> BI.G.t -> BI.G.t
+)
+"reachable.ml" 83 2363 2379 "reachable.ml" 83 2363 2380
+type(
+  BI.G.V.t
+)
+ident(
+  def n "reachable.ml" 83 2363 2381 "reachable.ml" 85 2423 2445
+)
+"reachable.ml" 83 2363 2381 "reachable.ml" 83 2363 2382
+type(
+  BI.G.t
+)
+ident(
+  def g "reachable.ml" 85 2423 2428 "reachable.ml" 85 2423 2445
+)
+"reachable.ml" 85 2423 2428 "reachable.ml" 85 2423 2441
+type(
+  BI.G.t -> BI.G.V.t -> BI.G.t
+)
+ident(
+  ext_ref BI.add_vertex
+)
+"reachable.ml" 85 2423 2442 "reachable.ml" 85 2423 2443
+type(
+  BI.G.t
+)
+ident(
+  int_ref g "reachable.ml" 83 2363 2381 "reachable.ml" 83 2363 2382
+)
+"reachable.ml" 85 2423 2444 "reachable.ml" 85 2423 2445
+type(
+  BI.G.V.t
+)
+ident(
+  int_ref n "reachable.ml" 83 2363 2379 "reachable.ml" 83 2363 2380
+)
+"reachable.ml" 85 2423 2428 "reachable.ml" 85 2423 2445
+call(
+  tail
+)
+type(
+  BI.G.t
+)
+"reachable.ml" 87 2452 2459 "reachable.ml" 87 2452 2463
+type(
+  BI.G.t
+)
+"reachable.ml" 87 2452 2466 "reachable.ml" 87 2452 2480
+type(
+  (BI.G.V.t -> BI.G.t -> BI.G.t) -> BI.G.t -> BI.G.V.t -> BI.G.t -> BI.G.t
+)
+ident(
+  int_ref fold_reachable "reachable.ml" 48 1174 1179 "reachable.ml" 48 1174 1193
+)
+"reachable.ml" 87 2452 2481 "reachable.ml" 87 2452 2489
+type(
+  BI.G.V.t -> BI.G.t -> BI.G.t
+)
+ident(
+  int_ref add_node "reachable.ml" 83 2363 2370 "reachable.ml" 83 2363 2378
+)
+"reachable.ml" 87 2452 2490 "reachable.ml" 87 2452 2491
+type(
+  BI.G.t
+)
+ident(
+  int_ref g "reachable.ml" 77 2142 2171 "reachable.ml" 77 2142 2172
+)
+"reachable.ml" 87 2452 2492 "reachable.ml" 87 2452 2493
+type(
+  BI.G.V.t
+)
+ident(
+  int_ref v "reachable.ml" 77 2142 2173 "reachable.ml" 77 2142 2174
+)
+"reachable.ml" 87 2452 2494 "reachable.ml" 87 2452 2498
+type(
+  BI.G.t
+)
+ident(
+  int_ref newg "reachable.ml" 80 2284 2291 "reachable.ml" 80 2284 2295
+)
+"reachable.ml" 87 2452 2466 "reachable.ml" 87 2452 2498
+call(
+  stack
+)
+type(
+  BI.G.t
+)
+"reachable.ml" 90 2545 2552 "reachable.ml" 90 2545 2561
+type(
+  BI.G.vertex -> BI.G.t -> BI.G.t
+)
+"reachable.ml" 90 2545 2562 "reachable.ml" 90 2545 2563
+type(
+  BI.G.vertex
+)
+ident(
+  def n "reachable.ml" 90 2545 2564 "reachable.ml" 93 2659 2698
+)
+"reachable.ml" 90 2545 2564 "reachable.ml" 90 2545 2568
+type(
+  BI.G.t
+)
+ident(
+  def newg "reachable.ml" 92 2608 2613 "reachable.ml" 93 2659 2698
+)
+"reachable.ml" 92 2608 2617 "reachable.ml" 92 2608 2625
+type(
+  BI.G.E.t -> BI.G.t -> BI.G.t
+)
+"reachable.ml" 92 2608 2626 "reachable.ml" 92 2608 2627
+type(
+  BI.G.E.t
+)
+ident(
+  def e "reachable.ml" 92 2608 2628 "reachable.ml" 92 2608 2655
+)
+"reachable.ml" 92 2608 2628 "reachable.ml" 92 2608 2632
+type(
+  BI.G.t
+)
+ident(
+  def newg "reachable.ml" 92 2608 2635 "reachable.ml" 92 2608 2655
+)
+"reachable.ml" 92 2608 2635 "reachable.ml" 92 2608 2648
+type(
+  BI.G.t -> BI.G.E.t -> BI.G.t
+)
+ident(
+  ext_ref BI.add_edge_e
+)
+"reachable.ml" 92 2608 2649 "reachable.ml" 92 2608 2653
+type(
+  BI.G.t
+)
+ident(
+  int_ref newg "reachable.ml" 92 2608 2628 "reachable.ml" 92 2608 2632
+)
+"reachable.ml" 92 2608 2654 "reachable.ml" 92 2608 2655
+type(
+  BI.G.E.t
+)
+ident(
+  int_ref e "reachable.ml" 92 2608 2626 "reachable.ml" 92 2608 2627
+)
+"reachable.ml" 92 2608 2635 "reachable.ml" 92 2608 2655
+call(
+  tail
+)
+type(
+  BI.G.t
+)
+"reachable.ml" 93 2659 2664 "reachable.ml" 93 2659 2680
+type(
+  (BI.G.edge -> BI.G.t -> BI.G.t) ->
+  BI.G.t -> BI.G.vertex -> BI.G.t -> BI.G.t
+)
+ident(
+  ext_ref BI.G.fold_succ_e
+)
+"reachable.ml" 93 2659 2681 "reachable.ml" 93 2659 2689
+type(
+  BI.G.edge -> BI.G.t -> BI.G.t
+)
+ident(
+  int_ref add_edge "reachable.ml" 92 2608 2617 "reachable.ml" 92 2608 2625
+)
+"reachable.ml" 93 2659 2690 "reachable.ml" 93 2659 2691
+type(
+  BI.G.t
+)
+ident(
+  int_ref g "reachable.ml" 77 2142 2171 "reachable.ml" 77 2142 2172
+)
+"reachable.ml" 93 2659 2692 "reachable.ml" 93 2659 2693
+type(
+  BI.G.vertex
+)
+ident(
+  int_ref n "reachable.ml" 90 2545 2562 "reachable.ml" 90 2545 2563
+)
+"reachable.ml" 93 2659 2694 "reachable.ml" 93 2659 2698
+type(
+  BI.G.t
+)
+ident(
+  int_ref newg "reachable.ml" 90 2545 2564 "reachable.ml" 90 2545 2568
+)
+"reachable.ml" 93 2659 2664 "reachable.ml" 93 2659 2698
+call(
+  tail
+)
+type(
+  BI.G.t
+)
+"reachable.ml" 92 2608 2613 "reachable.ml" 93 2659 2698
+type(
+  BI.G.t
+)
+"reachable.ml" 95 2705 2712 "reachable.ml" 95 2705 2716
+type(
+  BI.G.t
+)
+"reachable.ml" 95 2705 2719 "reachable.ml" 95 2705 2733
+type(
+  (BI.G.vertex -> BI.G.t -> BI.G.t) -> BI.G.t -> BI.G.V.t -> BI.G.t -> BI.G.t
+)
+ident(
+  int_ref fold_reachable "reachable.ml" 48 1174 1179 "reachable.ml" 48 1174 1193
+)
+"reachable.ml" 95 2705 2734 "reachable.ml" 95 2705 2743
+type(
+  BI.G.vertex -> BI.G.t -> BI.G.t
+)
+ident(
+  int_ref add_edges "reachable.ml" 90 2545 2552 "reachable.ml" 90 2545 2561
+)
+"reachable.ml" 95 2705 2744 "reachable.ml" 95 2705 2745
+type(
+  BI.G.t
+)
+ident(
+  int_ref g "reachable.ml" 77 2142 2171 "reachable.ml" 77 2142 2172
+)
+"reachable.ml" 95 2705 2746 "reachable.ml" 95 2705 2747
+type(
+  BI.G.V.t
+)
+ident(
+  int_ref v "reachable.ml" 77 2142 2173 "reachable.ml" 77 2142 2174
+)
+"reachable.ml" 95 2705 2748 "reachable.ml" 95 2705 2752
+type(
+  BI.G.t
+)
+ident(
+  int_ref newg "reachable.ml" 87 2452 2459 "reachable.ml" 87 2452 2463
+)
+"reachable.ml" 95 2705 2719 "reachable.ml" 95 2705 2752
+call(
+  stack
+)
+type(
+  BI.G.t
+)
+"reachable.ml" 96 2756 2759 "reachable.ml" 96 2756 2763
+type(
+  BI.G.t
+)
+ident(
+  int_ref newg "reachable.ml" 95 2705 2712 "reachable.ml" 95 2705 2716
+)
+"reachable.ml" 95 2705 2708 "reachable.ml" 96 2756 2763
+type(
+  BI.G.t
+)
+"reachable.ml" 90 2545 2548 "reachable.ml" 96 2756 2763
+type(
+  BI.G.t
+)
+"reachable.ml" 87 2452 2455 "reachable.ml" 96 2756 2763
+type(
+  BI.G.t
+)
+"reachable.ml" 83 2363 2366 "reachable.ml" 96 2756 2763
+type(
+  BI.G.t
+)
+"reachable.ml" 80 2284 2287 "reachable.ml" 96 2756 2763
+type(
+  BI.G.t
+)
+"reachable.ml" 98 2765 2770 "reachable.ml" 98 2765 2788
+type(
+  BI.G.t -> BI.G.V.t -> BI.G.t
+)
+ident(
+  def remove_unreachable "reachable.ml" 98 2765 2816 "reachable.ml" 100 2818 2821
+)
+"reachable.ml" 98 2765 2791 "reachable.ml" 98 2765 2816
+type(
+  BI.G.t -> BI.G.V.t -> BI.G.t
+)
+ident(
+  int_ref remove_unreachable_remove "reachable.ml" 68 1756 1761 "reachable.ml" 68 1756 1786
+)
+"reachable.ml" 104 2825 2838 "reachable.ml" 104 2825 2851
+call(
+  stack
+)
+"reachable.ml" 105 2852 2865 "reachable.ml" 105 2852 2878
+call(
+  stack
+)

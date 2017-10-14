@@ -1,0 +1,1497 @@
+"yices_grammar.ml" 21 255 259 "yices_grammar.ml" 21 255 273
+type(
+  int array
+)
+ident(
+  def yytransl_const "yices_grammar.ml" 39 598 598 --
+)
+"yices_grammar.ml" 22 279 281 "yices_grammar.ml" 22 279 284
+type(
+  int
+)
+"yices_grammar.ml" 23 302 304 "yices_grammar.ml" 23 302 307
+type(
+  int
+)
+"yices_grammar.ml" 24 324 326 "yices_grammar.ml" 24 324 329
+type(
+  int
+)
+"yices_grammar.ml" 25 346 348 "yices_grammar.ml" 25 346 351
+type(
+  int
+)
+"yices_grammar.ml" 26 365 367 "yices_grammar.ml" 26 365 370
+type(
+  int
+)
+"yices_grammar.ml" 27 384 386 "yices_grammar.ml" 27 384 389
+type(
+  int
+)
+"yices_grammar.ml" 28 404 406 "yices_grammar.ml" 28 404 409
+type(
+  int
+)
+"yices_grammar.ml" 29 425 427 "yices_grammar.ml" 29 425 430
+type(
+  int
+)
+"yices_grammar.ml" 30 445 447 "yices_grammar.ml" 30 445 450
+type(
+  int
+)
+"yices_grammar.ml" 31 472 474 "yices_grammar.ml" 31 472 477
+type(
+  int
+)
+"yices_grammar.ml" 32 493 495 "yices_grammar.ml" 32 493 498
+type(
+  int
+)
+"yices_grammar.ml" 33 512 514 "yices_grammar.ml" 33 512 517
+type(
+  int
+)
+"yices_grammar.ml" 34 533 535 "yices_grammar.ml" 34 533 538
+type(
+  int
+)
+"yices_grammar.ml" 35 552 554 "yices_grammar.ml" 35 552 557
+type(
+  int
+)
+"yices_grammar.ml" 36 572 576 "yices_grammar.ml" 36 572 577
+type(
+  int
+)
+"yices_grammar.ml" 37 589 593 "yices_grammar.ml" 37 589 594
+type(
+  int
+)
+"yices_grammar.ml" 21 255 276 "yices_grammar.ml" 37 589 596
+type(
+  int array
+)
+"yices_grammar.ml" 39 598 602 "yices_grammar.ml" 39 598 616
+type(
+  int array
+)
+ident(
+  def yytransl_block "yices_grammar.ml" 44 665 665 --
+)
+"yices_grammar.ml" 40 622 624 "yices_grammar.ml" 40 622 627
+type(
+  int
+)
+"yices_grammar.ml" 41 639 641 "yices_grammar.ml" 41 639 644
+type(
+  int
+)
+"yices_grammar.ml" 42 656 660 "yices_grammar.ml" 42 656 661
+type(
+  int
+)
+"yices_grammar.ml" 39 598 619 "yices_grammar.ml" 42 656 663
+type(
+  int array
+)
+"yices_grammar.ml" 44 665 669 "yices_grammar.ml" 44 665 674
+type(
+  string
+)
+ident(
+  def yylhs "yices_grammar.ml" 48 805 805 --
+)
+"yices_grammar.ml" 44 665 677 "yices_grammar.ml" 46 754 803
+type(
+  string
+)
+"yices_grammar.ml" 48 805 809 "yices_grammar.ml" 48 805 814
+type(
+  string
+)
+ident(
+  def yylen "yices_grammar.ml" 52 945 945 --
+)
+"yices_grammar.ml" 48 805 817 "yices_grammar.ml" 50 894 943
+type(
+  string
+)
+"yices_grammar.ml" 52 945 949 "yices_grammar.ml" 52 945 957
+type(
+  string
+)
+ident(
+  def yydefred "yices_grammar.ml" 59 1254 1254 --
+)
+"yices_grammar.ml" 52 945 960 "yices_grammar.ml" 57 1235 1252
+type(
+  string
+)
+"yices_grammar.ml" 59 1254 1258 "yices_grammar.ml" 59 1254 1265
+type(
+  string
+)
+ident(
+  def yydgoto "yices_grammar.ml" 62 1330 1330 --
+)
+"yices_grammar.ml" 59 1254 1268 "yices_grammar.ml" 60 1279 1328
+type(
+  string
+)
+"yices_grammar.ml" 62 1330 1334 "yices_grammar.ml" 62 1330 1342
+type(
+  string
+)
+ident(
+  def yysindex "yices_grammar.ml" 69 1639 1639 --
+)
+"yices_grammar.ml" 62 1330 1345 "yices_grammar.ml" 67 1620 1637
+type(
+  string
+)
+"yices_grammar.ml" 69 1639 1643 "yices_grammar.ml" 69 1639 1651
+type(
+  string
+)
+ident(
+  def yyrindex "yices_grammar.ml" 76 1948 1948 --
+)
+"yices_grammar.ml" 69 1639 1654 "yices_grammar.ml" 74 1929 1946
+type(
+  string
+)
+"yices_grammar.ml" 76 1948 1952 "yices_grammar.ml" 76 1948 1960
+type(
+  string
+)
+ident(
+  def yygindex "yices_grammar.ml" 79 2025 2025 --
+)
+"yices_grammar.ml" 76 1948 1963 "yices_grammar.ml" 77 1974 2023
+type(
+  string
+)
+"yices_grammar.ml" 79 2025 2029 "yices_grammar.ml" 79 2025 2040
+type(
+  int
+)
+ident(
+  def yytablesize "yices_grammar.ml" 80 2046 2046 --
+)
+"yices_grammar.ml" 79 2025 2043 "yices_grammar.ml" 79 2025 2045
+type(
+  int
+)
+"yices_grammar.ml" 80 2046 2050 "yices_grammar.ml" 80 2046 2057
+type(
+  string
+)
+ident(
+  def yytable "yices_grammar.ml" 86 2328 2328 --
+)
+"yices_grammar.ml" 80 2046 2060 "yices_grammar.ml" 84 2269 2326
+type(
+  string
+)
+"yices_grammar.ml" 86 2328 2332 "yices_grammar.ml" 86 2328 2339
+type(
+  string
+)
+ident(
+  def yycheck "yices_grammar.ml" 92 2610 2610 --
+)
+"yices_grammar.ml" 86 2328 2342 "yices_grammar.ml" 90 2551 2608
+type(
+  string
+)
+"yices_grammar.ml" 92 2610 2614 "yices_grammar.ml" 92 2610 2627
+type(
+  string
+)
+ident(
+  def yynames_const "yices_grammar.ml" 110 2858 2858 --
+)
+"yices_grammar.ml" 92 2610 2630 "yices_grammar.ml" 108 2853 2856
+type(
+  string
+)
+"yices_grammar.ml" 110 2858 2862 "yices_grammar.ml" 110 2858 2875
+type(
+  string
+)
+ident(
+  def yynames_block "yices_grammar.ml" 115 2908 2908 --
+)
+"yices_grammar.ml" 110 2858 2878 "yices_grammar.ml" 113 2903 2906
+type(
+  string
+)
+"yices_grammar.ml" 115 2908 2912 "yices_grammar.ml" 115 2908 2917
+type(
+  (Parsing.parser_env -> Obj.t) array
+)
+ident(
+  def yyact "yices_grammar.ml" 213 6192 6192 --
+)
+"yices_grammar.ml" 116 2923 2930 "yices_grammar.ml" 116 2923 2931
+type(
+  Parsing.parser_env
+)
+"yices_grammar.ml" 116 2923 2935 "yices_grammar.ml" 116 2923 2943
+type(
+  string -> Obj.t
+)
+ident(
+  ext_ref Pervasives.failwith
+)
+"yices_grammar.ml" 116 2923 2944 "yices_grammar.ml" 116 2923 2952
+type(
+  string
+)
+"yices_grammar.ml" 116 2923 2935 "yices_grammar.ml" 116 2923 2952
+call(
+  tail
+)
+type(
+  Obj.t
+)
+"yices_grammar.ml" 116 2923 2925 "yices_grammar.ml" 116 2923 2953
+type(
+  Parsing.parser_env -> Obj.t
+)
+"yices_grammar.ml" 117 2954 2961 "yices_grammar.ml" 117 2954 2978
+type(
+  Parsing.parser_env
+)
+ident(
+  def __caml_parser_env "yices_grammar.ml" 118 2982 2986 "yices_grammar.ml" 124 3238 3296
+)
+"yices_grammar.ml" 118 2982 2990 "yices_grammar.ml" 118 2982 2992
+type(
+  unit
+)
+"yices_grammar.ml" 118 2982 2996 "yices_grammar.ml" 118 2982 3012
+type(
+  Parsing.parser_env -> int -> unit
+)
+ident(
+  ext_ref Parsing.peek_val
+)
+"yices_grammar.ml" 118 2982 3013 "yices_grammar.ml" 118 2982 3030
+type(
+  Parsing.parser_env
+)
+ident(
+  int_ref __caml_parser_env "yices_grammar.ml" 117 2954 2961 "yices_grammar.ml" 117 2954 2978
+)
+"yices_grammar.ml" 118 2982 3031 "yices_grammar.ml" 118 2982 3032
+type(
+  int
+)
+"yices_grammar.ml" 118 2982 2996 "yices_grammar.ml" 118 2982 3032
+call(
+  stack
+)
+type(
+  unit
+)
+type(
+  unit
+)
+"yices_grammar.ml" 119 3051 3059 "yices_grammar.ml" 119 3051 3061
+type(
+  (string * Big_int_Z.big_int) list
+)
+"yices_grammar.ml" 119 3051 3065 "yices_grammar.ml" 119 3051 3081
+type(
+  Parsing.parser_env -> int -> (string * Big_int_Z.big_int) list
+)
+ident(
+  ext_ref Parsing.peek_val
+)
+"yices_grammar.ml" 119 3051 3082 "yices_grammar.ml" 119 3051 3099
+type(
+  Parsing.parser_env
+)
+ident(
+  int_ref __caml_parser_env "yices_grammar.ml" 117 2954 2961 "yices_grammar.ml" 117 2954 2978
+)
+"yices_grammar.ml" 119 3051 3100 "yices_grammar.ml" 119 3051 3101
+type(
+  int
+)
+"yices_grammar.ml" 119 3051 3065 "yices_grammar.ml" 119 3051 3101
+call(
+  stack
+)
+type(
+  (string * Big_int_Z.big_int) list
+)
+type(
+  (string * Big_int_Z.big_int) list
+)
+"yices_grammar.ml" 120 3120 3124 "yices_grammar.ml" 120 3120 3132
+type(
+  (string * Big_int_Z.big_int) list option -> Obj.t
+)
+ident(
+  ext_ref Obj.repr
+)
+"yices_grammar.mly" 27 3159 3206 "yices_grammar.mly" 27 3159 3210
+type(
+  (string * Big_int_Z.big_int) list
+)
+ident(
+  int_ref _3 "yices_grammar.ml" 119 3051 3059 "yices_grammar.ml" 119 3051 3061
+)
+"yices_grammar.mly" 27 3159 3200 "yices_grammar.mly" 27 3159 3212
+type(
+  (string * Big_int_Z.big_int) list option
+)
+type(
+  (string * Big_int_Z.big_int) list option
+)
+"yices_grammar.ml" 120 3120 3124 "yices_grammar.ml" 124 3238 3296
+type(
+  Obj.t
+)
+"yices_grammar.ml" 119 3051 3055 "yices_grammar.ml" 124 3238 3296
+type(
+  Obj.t
+)
+"yices_grammar.ml" 118 2982 2986 "yices_grammar.ml" 124 3238 3296
+type(
+  Obj.t
+)
+"yices_grammar.ml" 117 2954 2956 "yices_grammar.ml" 124 3238 3297
+type(
+  Parsing.parser_env -> Obj.t
+)
+"yices_grammar.ml" 125 3298 3305 "yices_grammar.ml" 125 3298 3322
+type(
+  Parsing.parser_env
+)
+ident(
+  def __caml_parser_env "yices_grammar.ml" 126 3326 3330 "yices_grammar.ml" 131 3483 3541
+)
+"yices_grammar.ml" 126 3326 3334 "yices_grammar.ml" 126 3326 3336
+type(
+  unit
+)
+"yices_grammar.ml" 126 3326 3340 "yices_grammar.ml" 126 3326 3356
+type(
+  Parsing.parser_env -> int -> unit
+)
+ident(
+  ext_ref Parsing.peek_val
+)
+"yices_grammar.ml" 126 3326 3357 "yices_grammar.ml" 126 3326 3374
+type(
+  Parsing.parser_env
+)
+ident(
+  int_ref __caml_parser_env "yices_grammar.ml" 125 3298 3305 "yices_grammar.ml" 125 3298 3322
+)
+"yices_grammar.ml" 126 3326 3375 "yices_grammar.ml" 126 3326 3376
+type(
+  int
+)
+"yices_grammar.ml" 126 3326 3340 "yices_grammar.ml" 126 3326 3376
+call(
+  stack
+)
+type(
+  unit
+)
+type(
+  unit
+)
+"yices_grammar.ml" 127 3394 3398 "yices_grammar.ml" 127 3394 3406
+type(
+  (string * Big_int_Z.big_int) list option -> Obj.t
+)
+ident(
+  ext_ref Obj.repr
+)
+"yices_grammar.mly" 28 3433 3449 "yices_grammar.mly" 28 3433 3457
+type(
+  (string * Big_int_Z.big_int) list option
+)
+type(
+  (string * Big_int_Z.big_int) list option
+)
+"yices_grammar.ml" 127 3394 3398 "yices_grammar.ml" 131 3483 3541
+type(
+  Obj.t
+)
+"yices_grammar.ml" 126 3326 3330 "yices_grammar.ml" 131 3483 3541
+type(
+  Obj.t
+)
+"yices_grammar.ml" 125 3298 3300 "yices_grammar.ml" 131 3483 3542
+type(
+  Parsing.parser_env -> Obj.t
+)
+"yices_grammar.ml" 132 3543 3550 "yices_grammar.ml" 132 3543 3567
+type(
+  Parsing.parser_env
+)
+ident(
+  def __caml_parser_env "yices_grammar.ml" 133 3571 3575 "yices_grammar.ml" 137 3656 3685
+)
+"yices_grammar.ml" 133 3571 3575 "yices_grammar.ml" 133 3571 3583
+type(
+  (string * Big_int_Z.big_int) list -> Obj.t
+)
+ident(
+  ext_ref Obj.repr
+)
+"yices_grammar.mly" 32 3610 3624 "yices_grammar.mly" 32 3610 3630
+type(
+  (string * Big_int_Z.big_int) list
+)
+type(
+  (string * Big_int_Z.big_int) list
+)
+"yices_grammar.ml" 133 3571 3575 "yices_grammar.ml" 137 3656 3685
+type(
+  Obj.t
+)
+"yices_grammar.ml" 132 3543 3545 "yices_grammar.ml" 137 3656 3686
+type(
+  Parsing.parser_env -> Obj.t
+)
+"yices_grammar.ml" 138 3687 3694 "yices_grammar.ml" 138 3687 3711
+type(
+  Parsing.parser_env
+)
+ident(
+  def __caml_parser_env "yices_grammar.ml" 139 3715 3719 "yices_grammar.ml" 145 3991 4020
+)
+"yices_grammar.ml" 139 3715 3723 "yices_grammar.ml" 139 3715 3725
+type(
+  (string * Big_int_Z.big_int) option
+)
+"yices_grammar.ml" 139 3715 3729 "yices_grammar.ml" 139 3715 3745
+type(
+  Parsing.parser_env -> int -> (string * Big_int_Z.big_int) option
+)
+ident(
+  ext_ref Parsing.peek_val
+)
+"yices_grammar.ml" 139 3715 3746 "yices_grammar.ml" 139 3715 3763
+type(
+  Parsing.parser_env
+)
+ident(
+  int_ref __caml_parser_env "yices_grammar.ml" 138 3687 3694 "yices_grammar.ml" 138 3687 3711
+)
+"yices_grammar.ml" 139 3715 3764 "yices_grammar.ml" 139 3715 3765
+type(
+  int
+)
+"yices_grammar.ml" 139 3715 3729 "yices_grammar.ml" 139 3715 3765
+call(
+  stack
+)
+type(
+  (string * Big_int_Z.big_int) option
+)
+type(
+  (string * Big_int_Z.big_int) option
+)
+"yices_grammar.ml" 140 3783 3791 "yices_grammar.ml" 140 3783 3793
+type(
+  (string * Big_int_Z.big_int) list
+)
+"yices_grammar.ml" 140 3783 3797 "yices_grammar.ml" 140 3783 3813
+type(
+  Parsing.parser_env -> int -> (string * Big_int_Z.big_int) list
+)
+ident(
+  ext_ref Parsing.peek_val
+)
+"yices_grammar.ml" 140 3783 3814 "yices_grammar.ml" 140 3783 3831
+type(
+  Parsing.parser_env
+)
+ident(
+  int_ref __caml_parser_env "yices_grammar.ml" 138 3687 3694 "yices_grammar.ml" 138 3687 3711
+)
+"yices_grammar.ml" 140 3783 3832 "yices_grammar.ml" 140 3783 3833
+type(
+  int
+)
+"yices_grammar.ml" 140 3783 3797 "yices_grammar.ml" 140 3783 3833
+call(
+  stack
+)
+type(
+  (string * Big_int_Z.big_int) list
+)
+type(
+  (string * Big_int_Z.big_int) list
+)
+"yices_grammar.ml" 141 3852 3856 "yices_grammar.ml" 141 3852 3864
+type(
+  (string * Big_int_Z.big_int) list -> Obj.t
+)
+ident(
+  ext_ref Obj.repr
+)
+"yices_grammar.mly" 33 3891 3924 "yices_grammar.mly" 33 3891 3926
+type(
+  (string * Big_int_Z.big_int) option
+)
+ident(
+  int_ref _1 "yices_grammar.ml" 139 3715 3723 "yices_grammar.ml" 139 3715 3725
+)
+"yices_grammar.mly" 33 3891 3934 "yices_grammar.mly" 33 3891 3938
+type(
+  (string * Big_int_Z.big_int) option
+)
+"yices_grammar.mly" 33 3891 3942 "yices_grammar.mly" 33 3891 3944
+type(
+  (string * Big_int_Z.big_int) list
+)
+ident(
+  int_ref _2 "yices_grammar.ml" 140 3783 3791 "yices_grammar.ml" 140 3783 3793
+)
+"yices_grammar.mly" 33 3891 3951 "yices_grammar.mly" 33 3891 3954
+type(
+  string * Big_int_Z.big_int
+)
+ident(
+  def x "yices_grammar.mly" 33 3891 3958 "yices_grammar.mly" 33 3891 3963
+)
+"yices_grammar.mly" 33 3891 3947 "yices_grammar.mly" 33 3891 3954
+type(
+  (string * Big_int_Z.big_int) option
+)
+"yices_grammar.mly" 33 3891 3958 "yices_grammar.mly" 33 3891 3959
+type(
+  string * Big_int_Z.big_int
+)
+ident(
+  int_ref x "yices_grammar.mly" 33 3891 3951 "yices_grammar.mly" 33 3891 3954
+)
+"yices_grammar.mly" 33 3891 3961 "yices_grammar.mly" 33 3891 3963
+type(
+  (string * Big_int_Z.big_int) list
+)
+ident(
+  int_ref _2 "yices_grammar.ml" 140 3783 3791 "yices_grammar.ml" 140 3783 3793
+)
+"yices_grammar.mly" 33 3891 3958 "yices_grammar.mly" 33 3891 3963
+type(
+  (string * Big_int_Z.big_int) list
+)
+"yices_grammar.mly" 33 3891 3916 "yices_grammar.mly" 33 3891 3965
+type(
+  (string * Big_int_Z.big_int) list
+)
+type(
+  (string * Big_int_Z.big_int) list
+)
+"yices_grammar.ml" 141 3852 3856 "yices_grammar.ml" 145 3991 4020
+type(
+  Obj.t
+)
+"yices_grammar.ml" 140 3783 3787 "yices_grammar.ml" 145 3991 4020
+type(
+  Obj.t
+)
+"yices_grammar.ml" 139 3715 3719 "yices_grammar.ml" 145 3991 4020
+type(
+  Obj.t
+)
+"yices_grammar.ml" 138 3687 3689 "yices_grammar.ml" 145 3991 4021
+type(
+  Parsing.parser_env -> Obj.t
+)
+"yices_grammar.ml" 146 4022 4029 "yices_grammar.ml" 146 4022 4046
+type(
+  Parsing.parser_env
+)
+ident(
+  def __caml_parser_env "yices_grammar.ml" 147 4050 4054 "yices_grammar.ml" 153 4304 4332
+)
+"yices_grammar.ml" 147 4050 4058 "yices_grammar.ml" 147 4050 4060
+type(
+  string
+)
+"yices_grammar.ml" 147 4050 4064 "yices_grammar.ml" 147 4050 4080
+type(
+  Parsing.parser_env -> int -> string
+)
+ident(
+  ext_ref Parsing.peek_val
+)
+"yices_grammar.ml" 147 4050 4081 "yices_grammar.ml" 147 4050 4098
+type(
+  Parsing.parser_env
+)
+ident(
+  int_ref __caml_parser_env "yices_grammar.ml" 146 4022 4029 "yices_grammar.ml" 146 4022 4046
+)
+"yices_grammar.ml" 147 4050 4099 "yices_grammar.ml" 147 4050 4100
+type(
+  int
+)
+"yices_grammar.ml" 147 4050 4064 "yices_grammar.ml" 147 4050 4100
+call(
+  stack
+)
+type(
+  string
+)
+type(
+  string
+)
+"yices_grammar.ml" 148 4114 4122 "yices_grammar.ml" 148 4114 4124
+type(
+  Big_int_Z.big_int
+)
+"yices_grammar.ml" 148 4114 4128 "yices_grammar.ml" 148 4114 4144
+type(
+  Parsing.parser_env -> int -> Big_int_Z.big_int
+)
+ident(
+  ext_ref Parsing.peek_val
+)
+"yices_grammar.ml" 148 4114 4145 "yices_grammar.ml" 148 4114 4162
+type(
+  Parsing.parser_env
+)
+ident(
+  int_ref __caml_parser_env "yices_grammar.ml" 146 4022 4029 "yices_grammar.ml" 146 4022 4046
+)
+"yices_grammar.ml" 148 4114 4163 "yices_grammar.ml" 148 4114 4164
+type(
+  int
+)
+"yices_grammar.ml" 148 4114 4128 "yices_grammar.ml" 148 4114 4164
+call(
+  stack
+)
+type(
+  Big_int_Z.big_int
+)
+type(
+  Big_int_Z.big_int
+)
+"yices_grammar.ml" 149 4189 4193 "yices_grammar.ml" 149 4189 4201
+type(
+  (string * Big_int_Z.big_int) option -> Obj.t
+)
+ident(
+  ext_ref Obj.repr
+)
+"yices_grammar.mly" 38 4228 4269 "yices_grammar.mly" 38 4228 4271
+type(
+  string
+)
+ident(
+  int_ref _3 "yices_grammar.ml" 147 4050 4058 "yices_grammar.ml" 147 4050 4060
+)
+"yices_grammar.mly" 38 4228 4273 "yices_grammar.mly" 38 4228 4275
+type(
+  Big_int_Z.big_int
+)
+ident(
+  int_ref _4 "yices_grammar.ml" 148 4114 4122 "yices_grammar.ml" 148 4114 4124
+)
+"yices_grammar.mly" 38 4228 4268 "yices_grammar.mly" 38 4228 4276
+type(
+  string * Big_int_Z.big_int
+)
+"yices_grammar.mly" 38 4228 4262 "yices_grammar.mly" 38 4228 4278
+type(
+  (string * Big_int_Z.big_int) option
+)
+type(
+  (string * Big_int_Z.big_int) option
+)
+"yices_grammar.ml" 149 4189 4193 "yices_grammar.ml" 153 4304 4332
+type(
+  Obj.t
+)
+"yices_grammar.ml" 148 4114 4118 "yices_grammar.ml" 153 4304 4332
+type(
+  Obj.t
+)
+"yices_grammar.ml" 147 4050 4054 "yices_grammar.ml" 153 4304 4332
+type(
+  Obj.t
+)
+"yices_grammar.ml" 146 4022 4024 "yices_grammar.ml" 153 4304 4333
+type(
+  Parsing.parser_env -> Obj.t
+)
+"yices_grammar.ml" 154 4334 4341 "yices_grammar.ml" 154 4334 4358
+type(
+  Parsing.parser_env
+)
+ident(
+  def __caml_parser_env "yices_grammar.ml" 155 4362 4366 "yices_grammar.ml" 161 4599 4627
+)
+"yices_grammar.ml" 155 4362 4370 "yices_grammar.ml" 155 4362 4372
+type(
+  string
+)
+"yices_grammar.ml" 155 4362 4376 "yices_grammar.ml" 155 4362 4392
+type(
+  Parsing.parser_env -> int -> string
+)
+ident(
+  ext_ref Parsing.peek_val
+)
+"yices_grammar.ml" 155 4362 4393 "yices_grammar.ml" 155 4362 4410
+type(
+  Parsing.parser_env
+)
+ident(
+  int_ref __caml_parser_env "yices_grammar.ml" 154 4334 4341 "yices_grammar.ml" 154 4334 4358
+)
+"yices_grammar.ml" 155 4362 4411 "yices_grammar.ml" 155 4362 4412
+type(
+  int
+)
+"yices_grammar.ml" 155 4362 4376 "yices_grammar.ml" 155 4362 4412
+call(
+  stack
+)
+type(
+  string
+)
+type(
+  string
+)
+"yices_grammar.ml" 156 4426 4434 "yices_grammar.ml" 156 4426 4436
+type(
+  string
+)
+"yices_grammar.ml" 156 4426 4440 "yices_grammar.ml" 156 4426 4456
+type(
+  Parsing.parser_env -> int -> string
+)
+ident(
+  ext_ref Parsing.peek_val
+)
+"yices_grammar.ml" 156 4426 4457 "yices_grammar.ml" 156 4426 4474
+type(
+  Parsing.parser_env
+)
+ident(
+  int_ref __caml_parser_env "yices_grammar.ml" 154 4334 4341 "yices_grammar.ml" 154 4334 4358
+)
+"yices_grammar.ml" 156 4426 4475 "yices_grammar.ml" 156 4426 4476
+type(
+  int
+)
+"yices_grammar.ml" 156 4426 4440 "yices_grammar.ml" 156 4426 4476
+call(
+  stack
+)
+type(
+  string
+)
+type(
+  string
+)
+"yices_grammar.ml" 157 4490 4494 "yices_grammar.ml" 157 4490 4502
+type(
+  (string * Big_int_Z.big_int) option -> Obj.t
+)
+ident(
+  ext_ref Obj.repr
+)
+"yices_grammar.mly" 40 4529 4565 "yices_grammar.mly" 40 4529 4573
+type(
+  (string * Big_int_Z.big_int) option
+)
+type(
+  (string * Big_int_Z.big_int) option
+)
+"yices_grammar.ml" 157 4490 4494 "yices_grammar.ml" 161 4599 4627
+type(
+  Obj.t
+)
+"yices_grammar.ml" 156 4426 4430 "yices_grammar.ml" 161 4599 4627
+type(
+  Obj.t
+)
+"yices_grammar.ml" 155 4362 4366 "yices_grammar.ml" 161 4599 4627
+type(
+  Obj.t
+)
+"yices_grammar.ml" 154 4334 4336 "yices_grammar.ml" 161 4599 4628
+type(
+  Parsing.parser_env -> Obj.t
+)
+"yices_grammar.ml" 162 4629 4636 "yices_grammar.ml" 162 4629 4653
+type(
+  Parsing.parser_env
+)
+ident(
+  def __caml_parser_env "yices_grammar.ml" 163 4657 4661 "yices_grammar.ml" 168 4818 4846
+)
+"yices_grammar.ml" 163 4657 4665 "yices_grammar.ml" 163 4657 4667
+type(
+  string
+)
+"yices_grammar.ml" 163 4657 4671 "yices_grammar.ml" 163 4657 4687
+type(
+  Parsing.parser_env -> int -> string
+)
+ident(
+  ext_ref Parsing.peek_val
+)
+"yices_grammar.ml" 163 4657 4688 "yices_grammar.ml" 163 4657 4705
+type(
+  Parsing.parser_env
+)
+ident(
+  int_ref __caml_parser_env "yices_grammar.ml" 162 4629 4636 "yices_grammar.ml" 162 4629 4653
+)
+"yices_grammar.ml" 163 4657 4706 "yices_grammar.ml" 163 4657 4707
+type(
+  int
+)
+"yices_grammar.ml" 163 4657 4671 "yices_grammar.ml" 163 4657 4707
+call(
+  stack
+)
+type(
+  string
+)
+type(
+  string
+)
+"yices_grammar.ml" 164 4721 4725 "yices_grammar.ml" 164 4721 4733
+type(
+  (string * Big_int_Z.big_int) option -> Obj.t
+)
+ident(
+  ext_ref Obj.repr
+)
+"yices_grammar.mly" 42 4760 4784 "yices_grammar.mly" 42 4760 4792
+type(
+  (string * Big_int_Z.big_int) option
+)
+type(
+  (string * Big_int_Z.big_int) option
+)
+"yices_grammar.ml" 164 4721 4725 "yices_grammar.ml" 168 4818 4846
+type(
+  Obj.t
+)
+"yices_grammar.ml" 163 4657 4661 "yices_grammar.ml" 168 4818 4846
+type(
+  Obj.t
+)
+"yices_grammar.ml" 162 4629 4631 "yices_grammar.ml" 168 4818 4847
+type(
+  Parsing.parser_env -> Obj.t
+)
+"yices_grammar.ml" 169 4848 4855 "yices_grammar.ml" 169 4848 4872
+type(
+  Parsing.parser_env
+)
+ident(
+  def __caml_parser_env "yices_grammar.ml" 170 4876 4880 "yices_grammar.ml" 175 5040 5068
+)
+"yices_grammar.ml" 170 4876 4884 "yices_grammar.ml" 170 4876 4886
+type(
+  Big_int_Z.big_int
+)
+"yices_grammar.ml" 170 4876 4890 "yices_grammar.ml" 170 4876 4906
+type(
+  Parsing.parser_env -> int -> Big_int_Z.big_int
+)
+ident(
+  ext_ref Parsing.peek_val
+)
+"yices_grammar.ml" 170 4876 4907 "yices_grammar.ml" 170 4876 4924
+type(
+  Parsing.parser_env
+)
+ident(
+  int_ref __caml_parser_env "yices_grammar.ml" 169 4848 4855 "yices_grammar.ml" 169 4848 4872
+)
+"yices_grammar.ml" 170 4876 4925 "yices_grammar.ml" 170 4876 4926
+type(
+  int
+)
+"yices_grammar.ml" 170 4876 4890 "yices_grammar.ml" 170 4876 4926
+call(
+  stack
+)
+type(
+  Big_int_Z.big_int
+)
+type(
+  Big_int_Z.big_int
+)
+"yices_grammar.ml" 171 4951 4955 "yices_grammar.ml" 171 4951 4963
+type(
+  (string * Big_int_Z.big_int) option -> Obj.t
+)
+ident(
+  ext_ref Obj.repr
+)
+"yices_grammar.mly" 44 4990 5006 "yices_grammar.mly" 44 4990 5014
+type(
+  (string * Big_int_Z.big_int) option
+)
+type(
+  (string * Big_int_Z.big_int) option
+)
+"yices_grammar.ml" 171 4951 4955 "yices_grammar.ml" 175 5040 5068
+type(
+  Obj.t
+)
+"yices_grammar.ml" 170 4876 4880 "yices_grammar.ml" 175 5040 5068
+type(
+  Obj.t
+)
+"yices_grammar.ml" 169 4848 4850 "yices_grammar.ml" 175 5040 5069
+type(
+  Parsing.parser_env -> Obj.t
+)
+"yices_grammar.ml" 176 5070 5077 "yices_grammar.ml" 176 5070 5094
+type(
+  Parsing.parser_env
+)
+ident(
+  def __caml_parser_env "yices_grammar.ml" 177 5098 5102 "yices_grammar.ml" 184 5433 5461
+)
+"yices_grammar.ml" 177 5098 5106 "yices_grammar.ml" 177 5098 5108
+type(
+  string
+)
+"yices_grammar.ml" 177 5098 5112 "yices_grammar.ml" 177 5098 5128
+type(
+  Parsing.parser_env -> int -> string
+)
+ident(
+  ext_ref Parsing.peek_val
+)
+"yices_grammar.ml" 177 5098 5129 "yices_grammar.ml" 177 5098 5146
+type(
+  Parsing.parser_env
+)
+ident(
+  int_ref __caml_parser_env "yices_grammar.ml" 176 5070 5077 "yices_grammar.ml" 176 5070 5094
+)
+"yices_grammar.ml" 177 5098 5147 "yices_grammar.ml" 177 5098 5148
+type(
+  int
+)
+"yices_grammar.ml" 177 5098 5112 "yices_grammar.ml" 177 5098 5148
+call(
+  stack
+)
+type(
+  string
+)
+type(
+  string
+)
+"yices_grammar.ml" 178 5162 5170 "yices_grammar.ml" 178 5162 5172
+type(
+  unit
+)
+"yices_grammar.ml" 178 5162 5176 "yices_grammar.ml" 178 5162 5192
+type(
+  Parsing.parser_env -> int -> unit
+)
+ident(
+  ext_ref Parsing.peek_val
+)
+"yices_grammar.ml" 178 5162 5193 "yices_grammar.ml" 178 5162 5210
+type(
+  Parsing.parser_env
+)
+ident(
+  int_ref __caml_parser_env "yices_grammar.ml" 176 5070 5077 "yices_grammar.ml" 176 5070 5094
+)
+"yices_grammar.ml" 178 5162 5211 "yices_grammar.ml" 178 5162 5212
+type(
+  int
+)
+"yices_grammar.ml" 178 5162 5176 "yices_grammar.ml" 178 5162 5212
+call(
+  stack
+)
+type(
+  unit
+)
+type(
+  unit
+)
+"yices_grammar.ml" 179 5228 5236 "yices_grammar.ml" 179 5228 5238
+type(
+  unit
+)
+"yices_grammar.ml" 179 5228 5242 "yices_grammar.ml" 179 5228 5258
+type(
+  Parsing.parser_env -> int -> unit
+)
+ident(
+  ext_ref Parsing.peek_val
+)
+"yices_grammar.ml" 179 5228 5259 "yices_grammar.ml" 179 5228 5276
+type(
+  Parsing.parser_env
+)
+ident(
+  int_ref __caml_parser_env "yices_grammar.ml" 176 5070 5077 "yices_grammar.ml" 176 5070 5094
+)
+"yices_grammar.ml" 179 5228 5277 "yices_grammar.ml" 179 5228 5278
+type(
+  int
+)
+"yices_grammar.ml" 179 5228 5242 "yices_grammar.ml" 179 5228 5278
+call(
+  stack
+)
+type(
+  unit
+)
+type(
+  unit
+)
+"yices_grammar.ml" 180 5294 5298 "yices_grammar.ml" 180 5294 5306
+type(
+  (string * Big_int_Z.big_int) option -> Obj.t
+)
+ident(
+  ext_ref Obj.repr
+)
+"yices_grammar.mly" 46 5333 5399 "yices_grammar.mly" 46 5333 5407
+type(
+  (string * Big_int_Z.big_int) option
+)
+type(
+  (string * Big_int_Z.big_int) option
+)
+"yices_grammar.ml" 180 5294 5298 "yices_grammar.ml" 184 5433 5461
+type(
+  Obj.t
+)
+"yices_grammar.ml" 179 5228 5232 "yices_grammar.ml" 184 5433 5461
+type(
+  Obj.t
+)
+"yices_grammar.ml" 178 5162 5166 "yices_grammar.ml" 184 5433 5461
+type(
+  Obj.t
+)
+"yices_grammar.ml" 177 5098 5102 "yices_grammar.ml" 184 5433 5461
+type(
+  Obj.t
+)
+"yices_grammar.ml" 176 5070 5072 "yices_grammar.ml" 184 5433 5462
+type(
+  Parsing.parser_env -> Obj.t
+)
+"yices_grammar.ml" 185 5463 5470 "yices_grammar.ml" 185 5463 5487
+type(
+  Parsing.parser_env
+)
+ident(
+  def __caml_parser_env "yices_grammar.ml" 186 5491 5495 "yices_grammar.ml" 191 5640 5666
+)
+"yices_grammar.ml" 186 5491 5499 "yices_grammar.ml" 186 5491 5501
+type(
+  Big_int_Z.big_int
+)
+"yices_grammar.ml" 186 5491 5505 "yices_grammar.ml" 186 5491 5521
+type(
+  Parsing.parser_env -> int -> Big_int_Z.big_int
+)
+ident(
+  ext_ref Parsing.peek_val
+)
+"yices_grammar.ml" 186 5491 5522 "yices_grammar.ml" 186 5491 5539
+type(
+  Parsing.parser_env
+)
+ident(
+  int_ref __caml_parser_env "yices_grammar.ml" 185 5463 5470 "yices_grammar.ml" 185 5463 5487
+)
+"yices_grammar.ml" 186 5491 5540 "yices_grammar.ml" 186 5491 5541
+type(
+  int
+)
+"yices_grammar.ml" 186 5491 5505 "yices_grammar.ml" 186 5491 5541
+call(
+  stack
+)
+type(
+  Big_int_Z.big_int
+)
+type(
+  Big_int_Z.big_int
+)
+"yices_grammar.ml" 187 5566 5570 "yices_grammar.ml" 187 5566 5578
+type(
+  unit -> Obj.t
+)
+ident(
+  ext_ref Obj.repr
+)
+"yices_grammar.mly" 50 5605 5611 "yices_grammar.mly" 50 5605 5614
+type(
+  unit
+)
+type(
+  unit
+)
+"yices_grammar.ml" 187 5566 5570 "yices_grammar.ml" 191 5640 5666
+type(
+  Obj.t
+)
+"yices_grammar.ml" 186 5491 5495 "yices_grammar.ml" 191 5640 5666
+type(
+  Obj.t
+)
+"yices_grammar.ml" 185 5463 5465 "yices_grammar.ml" 191 5640 5667
+type(
+  Parsing.parser_env -> Obj.t
+)
+"yices_grammar.ml" 192 5668 5675 "yices_grammar.ml" 192 5668 5692
+type(
+  Parsing.parser_env
+)
+ident(
+  def __caml_parser_env "yices_grammar.ml" 193 5696 5700 "yices_grammar.ml" 197 5782 5808
+)
+"yices_grammar.ml" 193 5696 5700 "yices_grammar.ml" 193 5696 5708
+type(
+  unit -> Obj.t
+)
+ident(
+  ext_ref Obj.repr
+)
+"yices_grammar.mly" 51 5735 5753 "yices_grammar.mly" 51 5735 5756
+type(
+  unit
+)
+type(
+  unit
+)
+"yices_grammar.ml" 193 5696 5700 "yices_grammar.ml" 197 5782 5808
+type(
+  Obj.t
+)
+"yices_grammar.ml" 192 5668 5670 "yices_grammar.ml" 197 5782 5809
+type(
+  Parsing.parser_env -> Obj.t
+)
+"yices_grammar.ml" 198 5810 5817 "yices_grammar.ml" 198 5810 5834
+type(
+  Parsing.parser_env
+)
+ident(
+  def __caml_parser_env "yices_grammar.ml" 199 5838 5842 "yices_grammar.ml" 203 5916 5945
+)
+"yices_grammar.ml" 199 5838 5842 "yices_grammar.ml" 199 5838 5850
+type(
+  unit -> Obj.t
+)
+ident(
+  ext_ref Obj.repr
+)
+"yices_grammar.mly" 55 5877 5887 "yices_grammar.mly" 55 5877 5890
+type(
+  unit
+)
+type(
+  unit
+)
+"yices_grammar.ml" 199 5838 5842 "yices_grammar.ml" 203 5916 5945
+type(
+  Obj.t
+)
+"yices_grammar.ml" 198 5810 5812 "yices_grammar.ml" 203 5916 5946
+type(
+  Parsing.parser_env -> Obj.t
+)
+"yices_grammar.ml" 204 5947 5954 "yices_grammar.ml" 204 5947 5971
+type(
+  Parsing.parser_env
+)
+ident(
+  def __caml_parser_env "yices_grammar.ml" 205 5975 5979 "yices_grammar.ml" 209 6051 6079
+)
+"yices_grammar.ml" 205 5975 5979 "yices_grammar.ml" 205 5975 5987
+type(
+  unit -> Obj.t
+)
+ident(
+  ext_ref Obj.repr
+)
+"yices_grammar.mly" 59 6014 6022 "yices_grammar.mly" 59 6014 6025
+type(
+  unit
+)
+type(
+  unit
+)
+"yices_grammar.ml" 205 5975 5979 "yices_grammar.ml" 209 6051 6079
+type(
+  Obj.t
+)
+"yices_grammar.ml" 204 5947 5949 "yices_grammar.ml" 209 6051 6080
+type(
+  Parsing.parser_env -> Obj.t
+)
+"yices_grammar.ml" 211 6098 6105 "yices_grammar.ml" 211 6098 6122
+type(
+  Parsing.parser_env
+)
+ident(
+  def __caml_parser_env "yices_grammar.ml" 211 6098 6126 "yices_grammar.ml" 211 6098 6187
+)
+"yices_grammar.ml" 211 6098 6126 "yices_grammar.ml" 211 6098 6131
+type(
+  exn -> Obj.t
+)
+ident(
+  ext_ref Pervasives.raise
+)
+"yices_grammar.ml" 211 6098 6149 "yices_grammar.ml" 211 6098 6165
+type(
+  Parsing.parser_env -> int -> Obj.t
+)
+ident(
+  ext_ref Parsing.peek_val
+)
+"yices_grammar.ml" 211 6098 6166 "yices_grammar.ml" 211 6098 6183
+type(
+  Parsing.parser_env
+)
+ident(
+  int_ref __caml_parser_env "yices_grammar.ml" 211 6098 6105 "yices_grammar.ml" 211 6098 6122
+)
+"yices_grammar.ml" 211 6098 6184 "yices_grammar.ml" 211 6098 6185
+type(
+  int
+)
+"yices_grammar.ml" 211 6098 6148 "yices_grammar.ml" 211 6098 6186
+call(
+  stack
+)
+type(
+  Obj.t
+)
+"yices_grammar.ml" 211 6098 6132 "yices_grammar.ml" 211 6098 6187
+type(
+  exn
+)
+"yices_grammar.ml" 211 6098 6126 "yices_grammar.ml" 211 6098 6187
+type(
+  Obj.t
+)
+"yices_grammar.ml" 211 6098 6100 "yices_grammar.ml" 211 6098 6188
+type(
+  Parsing.parser_env -> Obj.t
+)
+"yices_grammar.ml" 115 2908 2920 "yices_grammar.ml" 212 6189 6191
+type(
+  (Parsing.parser_env -> Obj.t) array
+)
+"yices_grammar.ml" 213 6192 6196 "yices_grammar.ml" 213 6192 6204
+type(
+  Parsing.parse_tables
+)
+ident(
+  def yytables "yices_grammar.ml" 230 6713 6713 --
+)
+"yices_grammar.ml" 214 6207 6227 "yices_grammar.ml" 214 6207 6232
+type(
+  (Parsing.parser_env -> Obj.t) array
+)
+ident(
+  int_ref yyact "yices_grammar.ml" 115 2908 2912 "yices_grammar.ml" 115 2908 2917
+)
+"yices_grammar.ml" 215 6234 6259 "yices_grammar.ml" 215 6234 6273
+type(
+  int array
+)
+ident(
+  int_ref yytransl_const "yices_grammar.ml" 21 255 259 "yices_grammar.ml" 21 255 273
+)
+"yices_grammar.ml" 216 6275 6300 "yices_grammar.ml" 216 6275 6314
+type(
+  int array
+)
+ident(
+  int_ref yytransl_block "yices_grammar.ml" 39 598 602 "yices_grammar.ml" 39 598 616
+)
+"yices_grammar.ml" 217 6316 6332 "yices_grammar.ml" 217 6316 6337
+type(
+  string
+)
+ident(
+  int_ref yylhs "yices_grammar.ml" 44 665 669 "yices_grammar.ml" 44 665 674
+)
+"yices_grammar.ml" 218 6339 6355 "yices_grammar.ml" 218 6339 6360
+type(
+  string
+)
+ident(
+  int_ref yylen "yices_grammar.ml" 48 805 809 "yices_grammar.ml" 48 805 814
+)
+"yices_grammar.ml" 219 6362 6381 "yices_grammar.ml" 219 6362 6389
+type(
+  string
+)
+ident(
+  int_ref yydefred "yices_grammar.ml" 52 945 949 "yices_grammar.ml" 52 945 957
+)
+"yices_grammar.ml" 220 6391 6409 "yices_grammar.ml" 220 6391 6416
+type(
+  string
+)
+ident(
+  int_ref yydgoto "yices_grammar.ml" 59 1254 1258 "yices_grammar.ml" 59 1254 1265
+)
+"yices_grammar.ml" 221 6418 6437 "yices_grammar.ml" 221 6418 6445
+type(
+  string
+)
+ident(
+  int_ref yysindex "yices_grammar.ml" 62 1330 1334 "yices_grammar.ml" 62 1330 1342
+)
+"yices_grammar.ml" 222 6447 6466 "yices_grammar.ml" 222 6447 6474
+type(
+  string
+)
+ident(
+  int_ref yyrindex "yices_grammar.ml" 69 1639 1643 "yices_grammar.ml" 69 1639 1651
+)
+"yices_grammar.ml" 223 6476 6495 "yices_grammar.ml" 223 6476 6503
+type(
+  string
+)
+ident(
+  int_ref yygindex "yices_grammar.ml" 76 1948 1952 "yices_grammar.ml" 76 1948 1960
+)
+"yices_grammar.ml" 224 6505 6527 "yices_grammar.ml" 224 6505 6538
+type(
+  int
+)
+ident(
+  int_ref yytablesize "yices_grammar.ml" 79 2025 2029 "yices_grammar.ml" 79 2025 2040
+)
+"yices_grammar.ml" 225 6540 6558 "yices_grammar.ml" 225 6540 6565
+type(
+  string
+)
+ident(
+  int_ref yytable "yices_grammar.ml" 80 2046 2050 "yices_grammar.ml" 80 2046 2057
+)
+"yices_grammar.ml" 226 6567 6585 "yices_grammar.ml" 226 6567 6592
+type(
+  string
+)
+ident(
+  int_ref yycheck "yices_grammar.ml" 86 2328 2332 "yices_grammar.ml" 86 2328 2339
+)
+"yices_grammar.ml" 227 6594 6621 "yices_grammar.ml" 227 6594 6632
+type(
+  string -> unit
+)
+ident(
+  ext_ref Parsing.parse_error
+)
+"yices_grammar.ml" 228 6634 6658 "yices_grammar.ml" 228 6634 6671
+type(
+  string
+)
+ident(
+  int_ref yynames_const "yices_grammar.ml" 92 2610 2614 "yices_grammar.ml" 92 2610 2627
+)
+"yices_grammar.ml" 229 6673 6697 "yices_grammar.ml" 229 6673 6710
+type(
+  string
+)
+ident(
+  int_ref yynames_block "yices_grammar.ml" 110 2858 2862 "yices_grammar.ml" 110 2858 2875
+)
+"yices_grammar.ml" 214 6207 6209 "yices_grammar.ml" 229 6673 6712
+type(
+  Parsing.parse_tables
+)
+"yices_grammar.ml" 230 6713 6717 "yices_grammar.ml" 230 6713 6721
+type(
+  (Lexing.lexbuf -> token) ->
+  Lexing.lexbuf -> (string * Big_int_Z.big_int) list option
+)
+ident(
+  def main "yices_grammar.ml" 231 6783 6871 --
+)
+"yices_grammar.ml" 230 6713 6723 "yices_grammar.ml" 230 6713 6729
+type(
+  Lexing.lexbuf -> token
+)
+ident(
+  def lexfun "yices_grammar.ml" 230 6713 6756 "yices_grammar.ml" 231 6783 6871
+)
+"yices_grammar.ml" 230 6713 6757 "yices_grammar.ml" 230 6713 6763
+type(
+  Lexing.lexbuf
+)
+ident(
+  def lexbuf "yices_grammar.ml" 231 6783 6786 "yices_grammar.ml" 231 6783 6871
+)
+"yices_grammar.ml" 231 6783 6787 "yices_grammar.ml" 231 6783 6802
+type(
+  Parsing.parse_tables ->
+  int ->
+  (Lexing.lexbuf -> token) ->
+  Lexing.lexbuf -> (string * Big_int_Z.big_int) list option
+)
+ident(
+  ext_ref Parsing.yyparse
+)
+"yices_grammar.ml" 231 6783 6803 "yices_grammar.ml" 231 6783 6811
+type(
+  Parsing.parse_tables
+)
+ident(
+  int_ref yytables "yices_grammar.ml" 213 6192 6196 "yices_grammar.ml" 213 6192 6204
+)
+"yices_grammar.ml" 231 6783 6812 "yices_grammar.ml" 231 6783 6813
+type(
+  int
+)
+"yices_grammar.ml" 231 6783 6814 "yices_grammar.ml" 231 6783 6820
+type(
+  Lexing.lexbuf -> token
+)
+ident(
+  int_ref lexfun "yices_grammar.ml" 230 6713 6723 "yices_grammar.ml" 230 6713 6729
+)
+"yices_grammar.ml" 231 6783 6821 "yices_grammar.ml" 231 6783 6827
+type(
+  Lexing.lexbuf
+)
+ident(
+  int_ref lexbuf "yices_grammar.ml" 230 6713 6757 "yices_grammar.ml" 230 6713 6763
+)
+"yices_grammar.ml" 231 6783 6787 "yices_grammar.ml" 231 6783 6827
+call(
+  tail
+)
+type(
+  (string * Big_int_Z.big_int) list option
+)
+type(
+  (string * Big_int_Z.big_int) list option
+)

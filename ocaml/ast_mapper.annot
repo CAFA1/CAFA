@@ -1,0 +1,166 @@
+"ast_mapper.ml" 16 266 270 "ast_mapper.ml" 16 266 275
+type(
+  (Ast.exp -> Ast.exp Type.visit_action) -> map
+)
+ident(
+  def map_e "ast_mapper.ml" 30 562 579 --
+)
+"ast_mapper.ml" 16 266 276 "ast_mapper.ml" 16 266 277
+type(
+  Ast.exp -> Ast.exp Type.visit_action
+)
+ident(
+  def f "ast_mapper.ml" 17 280 282 "ast_mapper.ml" 30 562 579
+)
+"ast_mapper.ml" 17 280 286 "ast_mapper.ml" 17 280 293
+type(
+  Ast_visitor.nop
+)
+"ast_mapper.ml" 17 280 302 "ast_mapper.ml" 17 280 308
+type(
+  Ast_visitor.nop
+)
+"ast_mapper.ml" 19 325 348 "ast_mapper.ml" 19 325 349
+type(
+  Ast.exp -> Ast.exp Type.visit_action
+)
+type(
+  Ast.exp -> Ast.exp Type.visit_action
+)
+ident(
+  int_ref f "ast_mapper.ml" 16 266 276 "ast_mapper.ml" 16 266 277
+)
+"ast_mapper.ml" 17 280 296 "ast_mapper.ml" 20 350 355
+type(
+  Ast_visitor.nop
+)
+"ast_mapper.ml" 22 361 367 "ast_mapper.ml" 22 361 373
+type(
+  < cfg : Cfg.AST.G.t -> Cfg.AST.G.t; exp : Ast.exp -> Ast.exp;
+    prog : Ast.program -> Ast.program; stmt : Ast.stmt -> Ast.stmt >
+)
+"ast_mapper.ml" 23 376 386 "ast_mapper.ml" 23 376 392
+type(
+  < cfg : Cfg.AST.G.t -> Cfg.AST.G.t; exp : Ast.exp -> Ast.exp;
+    prog : Ast.program -> Ast.program; stmt : Ast.stmt -> Ast.stmt >
+)
+"ast_mapper.ml" 24 393 412 "ast_mapper.ml" 24 393 422
+type(
+  Ast_visitor.t -> Ast.exp -> Ast.exp
+)
+ident(
+  ext_ref Ast_visitor.exp_accept
+)
+"ast_mapper.ml" 24 393 423 "ast_mapper.ml" 24 393 430
+type(
+  Ast_visitor.t
+)
+ident(
+  int_ref visitor "ast_mapper.ml" 17 280 286 "ast_mapper.ml" 17 280 293
+)
+"ast_mapper.ml" 24 393 412 "ast_mapper.ml" 24 393 430
+call(
+  tail
+)
+type(
+  Ast.exp -> Ast.exp
+)
+type(
+  Ast.exp -> Ast.exp
+)
+"ast_mapper.ml" 25 431 451 "ast_mapper.ml" 25 431 462
+type(
+  Ast_visitor.t -> Ast.stmt -> Ast.stmt
+)
+ident(
+  ext_ref Ast_visitor.stmt_accept
+)
+"ast_mapper.ml" 25 431 463 "ast_mapper.ml" 25 431 470
+type(
+  Ast_visitor.t
+)
+ident(
+  int_ref visitor "ast_mapper.ml" 17 280 286 "ast_mapper.ml" 17 280 293
+)
+"ast_mapper.ml" 25 431 451 "ast_mapper.ml" 25 431 470
+call(
+  tail
+)
+type(
+  Ast.stmt -> Ast.stmt
+)
+type(
+  Ast.stmt -> Ast.stmt
+)
+"ast_mapper.ml" 26 471 491 "ast_mapper.ml" 26 471 502
+type(
+  Ast_visitor.t -> Ast.program -> Ast.program
+)
+ident(
+  ext_ref Ast_visitor.prog_accept
+)
+"ast_mapper.ml" 26 471 503 "ast_mapper.ml" 26 471 510
+type(
+  Ast_visitor.t
+)
+ident(
+  int_ref visitor "ast_mapper.ml" 17 280 286 "ast_mapper.ml" 17 280 293
+)
+"ast_mapper.ml" 26 471 491 "ast_mapper.ml" 26 471 510
+call(
+  tail
+)
+type(
+  Ast.program -> Ast.program
+)
+type(
+  Ast.program -> Ast.program
+)
+"ast_mapper.ml" 27 511 530 "ast_mapper.ml" 27 511 540
+type(
+  Ast_visitor.t -> Cfg.AST.G.t -> Cfg.AST.G.t
+)
+ident(
+  ext_ref Ast_visitor.cfg_accept
+)
+"ast_mapper.ml" 27 511 541 "ast_mapper.ml" 27 511 548
+type(
+  Ast_visitor.t
+)
+ident(
+  int_ref visitor "ast_mapper.ml" 17 280 286 "ast_mapper.ml" 17 280 293
+)
+"ast_mapper.ml" 27 511 530 "ast_mapper.ml" 27 511 548
+call(
+  tail
+)
+type(
+  Cfg.AST.G.t -> Cfg.AST.G.t
+)
+type(
+  Cfg.AST.G.t -> Cfg.AST.G.t
+)
+"ast_mapper.ml" 23 376 380 "ast_mapper.ml" 28 549 556
+type(
+  < cfg : Cfg.AST.G.t -> Cfg.AST.G.t; exp : Ast.exp -> Ast.exp;
+    prog : Ast.program -> Ast.program; stmt : Ast.stmt -> Ast.stmt >
+)
+"ast_mapper.ml" 30 562 565 "ast_mapper.ml" 30 562 571
+type(
+  map
+)
+type(
+  < cfg : Cfg.AST.G.t -> Cfg.AST.G.t; exp : Ast.exp -> Ast.exp;
+    prog : Ast.program -> Ast.program; stmt : Ast.stmt -> Ast.stmt >
+)
+ident(
+  int_ref mapper "ast_mapper.ml" 22 361 367 "ast_mapper.ml" 22 361 373
+)
+"ast_mapper.ml" 22 361 363 "ast_mapper.ml" 30 562 579
+type(
+  map
+)
+"ast_mapper.ml" 17 280 282 "ast_mapper.ml" 30 562 579
+type(
+  map
+)

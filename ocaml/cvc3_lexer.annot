@@ -1,0 +1,1360 @@
+"cvc3_lexer.ml" 9 135 139 "cvc3_lexer.ml" 9 135 157
+type(
+  Lexing.lex_tables
+)
+ident(
+  def __ocaml_lex_tables "cvc3_lexer.ml" 799 54208 54208 --
+)
+"cvc3_lexer.ml" 11 183 186 "cvc3_lexer.ml" 18 673 726
+type(
+  string
+)
+"cvc3_lexer.ml" 20 752 755 "cvc3_lexer.ml" 27 1242 1295
+type(
+  string
+)
+"cvc3_lexer.ml" 29 1321 1324 "cvc3_lexer.ml" 36 1811 1864
+type(
+  string
+)
+"cvc3_lexer.ml" 38 1888 1891 "cvc3_lexer.ml" 410 27928 27933
+type(
+  string
+)
+"cvc3_lexer.ml" 412 27957 27960 "cvc3_lexer.ml" 784 53997 54002
+type(
+  string
+)
+"cvc3_lexer.ml" 786 54030 54033 "cvc3_lexer.ml" 786 54030 54035
+type(
+  string
+)
+"cvc3_lexer.ml" 788 54066 54069 "cvc3_lexer.ml" 788 54066 54071
+type(
+  string
+)
+"cvc3_lexer.ml" 790 54102 54105 "cvc3_lexer.ml" 790 54102 54107
+type(
+  string
+)
+"cvc3_lexer.ml" 792 54136 54139 "cvc3_lexer.ml" 792 54136 54141
+type(
+  string
+)
+"cvc3_lexer.ml" 794 54170 54173 "cvc3_lexer.ml" 794 54170 54175
+type(
+  string
+)
+"cvc3_lexer.ml" 796 54198 54201 "cvc3_lexer.ml" 796 54198 54203
+type(
+  string
+)
+"cvc3_lexer.ml" 9 135 160 "cvc3_lexer.ml" 797 54205 54206
+type(
+  Lexing.lex_tables
+)
+"cvc3_lexer.ml" 799 54208 54216 "cvc3_lexer.ml" 799 54208 54221
+type(
+  Lexing.lexbuf -> Cvc3_grammar.token
+)
+ident(
+  def token "cvc3_lexer.ml" 799 54208 54208 --
+)
+"cvc3_lexer.ml" 799 54208 54222 "cvc3_lexer.ml" 799 54208 54228
+type(
+  Lexing.lexbuf
+)
+ident(
+  def lexbuf "cvc3_lexer.ml" 800 54231 54235 "cvc3_lexer.ml" 800 54231 54265
+)
+"cvc3_lexer.ml" 800 54231 54235 "cvc3_lexer.ml" 800 54231 54256
+type(
+  Lexing.lexbuf -> int -> Cvc3_grammar.token
+)
+ident(
+  int_ref __ocaml_lex_token_rec "cvc3_lexer.ml" 801 54266 54270 "cvc3_lexer.ml" 801 54266 54291
+)
+"cvc3_lexer.ml" 800 54231 54257 "cvc3_lexer.ml" 800 54231 54263
+type(
+  Lexing.lexbuf
+)
+ident(
+  int_ref lexbuf "cvc3_lexer.ml" 799 54208 54222 "cvc3_lexer.ml" 799 54208 54228
+)
+"cvc3_lexer.ml" 800 54231 54264 "cvc3_lexer.ml" 800 54231 54265
+type(
+  int
+)
+"cvc3_lexer.ml" 800 54231 54235 "cvc3_lexer.ml" 800 54231 54265
+call(
+  tail
+)
+type(
+  Cvc3_grammar.token
+)
+"cvc3_lexer.ml" 801 54266 54270 "cvc3_lexer.ml" 801 54266 54291
+type(
+  Lexing.lexbuf -> int -> Cvc3_grammar.token
+)
+ident(
+  def __ocaml_lex_token_rec "cvc3_lexer.ml" 799 54208 54208 --
+)
+"cvc3_lexer.ml" 801 54266 54292 "cvc3_lexer.ml" 801 54266 54298
+type(
+  Lexing.lexbuf
+)
+ident(
+  def lexbuf "cvc3_lexer.ml" 801 54266 54299 "cvc3_lexer.ml" 903 56234 56339
+)
+"cvc3_lexer.ml" 801 54266 54299 "cvc3_lexer.ml" 801 54266 54316
+type(
+  int
+)
+ident(
+  def __ocaml_lex_state "cvc3_lexer.ml" 802 54319 54321 "cvc3_lexer.ml" 903 56234 56339
+)
+"cvc3_lexer.ml" 802 54319 54327 "cvc3_lexer.ml" 802 54319 54340
+type(
+  Lexing.lex_tables -> int -> Lexing.lexbuf -> int
+)
+ident(
+  ext_ref Lexing.engine
+)
+"cvc3_lexer.ml" 802 54319 54341 "cvc3_lexer.ml" 802 54319 54359
+type(
+  Lexing.lex_tables
+)
+ident(
+  int_ref __ocaml_lex_tables "cvc3_lexer.ml" 9 135 139 "cvc3_lexer.ml" 9 135 157
+)
+"cvc3_lexer.ml" 802 54319 54360 "cvc3_lexer.ml" 802 54319 54377
+type(
+  int
+)
+ident(
+  int_ref __ocaml_lex_state "cvc3_lexer.ml" 801 54266 54299 "cvc3_lexer.ml" 801 54266 54316
+)
+"cvc3_lexer.ml" 802 54319 54378 "cvc3_lexer.ml" 802 54319 54384
+type(
+  Lexing.lexbuf
+)
+ident(
+  int_ref lexbuf "cvc3_lexer.ml" 801 54266 54292 "cvc3_lexer.ml" 801 54266 54298
+)
+"cvc3_lexer.ml" 802 54319 54327 "cvc3_lexer.ml" 802 54319 54384
+call(
+  stack
+)
+type(
+  int
+)
+"cvc3_lexer.ml" 803 54390 54398 "cvc3_lexer.ml" 803 54390 54399
+type(
+  int
+)
+"cvc3_lexer.mll" 13 54425 54448 "cvc3_lexer.mll" 13 54425 54453
+type(
+  Lexing.lexbuf -> Cvc3_grammar.token
+)
+ident(
+  int_ref token "cvc3_lexer.ml" 799 54208 54216 "cvc3_lexer.ml" 799 54208 54221
+)
+"cvc3_lexer.mll" 13 54425 54454 "cvc3_lexer.mll" 13 54425 54460
+type(
+  Lexing.lexbuf
+)
+ident(
+  int_ref lexbuf "cvc3_lexer.ml" 801 54266 54292 "cvc3_lexer.ml" 801 54266 54298
+)
+"cvc3_lexer.mll" 13 54425 54446 "cvc3_lexer.mll" 13 54425 54462
+call(
+  tail
+)
+type(
+  Cvc3_grammar.token
+)
+"cvc3_lexer.ml" 808 54486 54490 "cvc3_lexer.ml" 808 54486 54491
+type(
+  int
+)
+"cvc3_lexer.mll" 14 54517 54538 "cvc3_lexer.mll" 14 54517 54547
+type(
+  Cvc3_grammar.token
+)
+"cvc3_lexer.ml" 813 54571 54575 "cvc3_lexer.ml" 813 54571 54576
+type(
+  int
+)
+"cvc3_lexer.mll" 15 54602 54623 "cvc3_lexer.mll" 15 54602 54632
+type(
+  Cvc3_grammar.token
+)
+"cvc3_lexer.ml" 818 54656 54660 "cvc3_lexer.ml" 818 54656 54661
+type(
+  int
+)
+"cvc3_lexer.mll" 16 54687 54708 "cvc3_lexer.mll" 16 54687 54718
+type(
+  Cvc3_grammar.token
+)
+"cvc3_lexer.ml" 823 54742 54746 "cvc3_lexer.ml" 823 54742 54747
+type(
+  int
+)
+"cvc3_lexer.mll" 17 54773 54794 "cvc3_lexer.mll" 17 54773 54807
+type(
+  Cvc3_grammar.token
+)
+"cvc3_lexer.ml" 828 54831 54835 "cvc3_lexer.ml" 828 54831 54836
+type(
+  int
+)
+"cvc3_lexer.mll" 18 54862 54883 "cvc3_lexer.mll" 18 54862 54895
+type(
+  Cvc3_grammar.token
+)
+"cvc3_lexer.ml" 833 54919 54923 "cvc3_lexer.ml" 833 54919 54924
+type(
+  int
+)
+"cvc3_lexer.mll" 19 54950 54971 "cvc3_lexer.mll" 19 54950 54983
+type(
+  Cvc3_grammar.token
+)
+"cvc3_lexer.ml" 838 55007 55011 "cvc3_lexer.ml" 838 55007 55012
+type(
+  int
+)
+"cvc3_lexer.mll" 20 55038 55061 "cvc3_lexer.mll" 20 55038 55073
+type(
+  Lexing.lexbuf -> Cvc3_grammar.token
+)
+ident(
+  int_ref read_comment "cvc3_lexer.ml" 955 57867 57871 "cvc3_lexer.ml" 955 57867 57883
+)
+"cvc3_lexer.mll" 20 55038 55074 "cvc3_lexer.mll" 20 55038 55080
+type(
+  Lexing.lexbuf
+)
+ident(
+  int_ref lexbuf "cvc3_lexer.ml" 801 54266 54292 "cvc3_lexer.ml" 801 54266 54298
+)
+"cvc3_lexer.mll" 20 55038 55059 "cvc3_lexer.mll" 20 55038 55082
+call(
+  tail
+)
+type(
+  Cvc3_grammar.token
+)
+"cvc3_lexer.ml" 843 55106 55110 "cvc3_lexer.ml" 843 55106 55111
+type(
+  int
+)
+"cvc3_lexer.mll" 21 55137 55158 "cvc3_lexer.mll" 21 55137 55168
+type(
+  Cvc3_grammar.token
+)
+"cvc3_lexer.ml" 848 55192 55196 "cvc3_lexer.ml" 848 55192 55197
+type(
+  int
+)
+"cvc3_lexer.mll" 22 55223 55244 "cvc3_lexer.mll" 22 55223 55255
+type(
+  Cvc3_grammar.token
+)
+"cvc3_lexer.ml" 853 55279 55283 "cvc3_lexer.ml" 853 55279 55285
+type(
+  int
+)
+"cvc3_lexer.mll" 23 55311 55332 "cvc3_lexer.mll" 23 55311 55341
+type(
+  Cvc3_grammar.token
+)
+"cvc3_lexer.ml" 858 55365 55369 "cvc3_lexer.ml" 858 55365 55371
+type(
+  int
+)
+"cvc3_lexer.mll" 24 55397 55418 "cvc3_lexer.mll" 24 55397 55425
+type(
+  Cvc3_grammar.token
+)
+"cvc3_lexer.ml" 863 55449 55453 "cvc3_lexer.ml" 863 55449 55455
+type(
+  int
+)
+"cvc3_lexer.mll" 25 55481 55502 "cvc3_lexer.mll" 25 55481 55511
+type(
+  Cvc3_grammar.token
+)
+"cvc3_lexer.ml" 868 55535 55539 "cvc3_lexer.ml" 868 55535 55541
+type(
+  int
+)
+"cvc3_lexer.mll" 26 55567 55588 "cvc3_lexer.mll" 26 55567 55596
+type(
+  Cvc3_grammar.token
+)
+"cvc3_lexer.ml" 873 55620 55624 "cvc3_lexer.ml" 873 55620 55626
+type(
+  int
+)
+"cvc3_lexer.mll" 27 55652 55675 "cvc3_lexer.mll" 27 55652 55683
+type(
+  Lexing.lexbuf -> Cvc3_grammar.token
+)
+ident(
+  int_ref read_num "cvc3_lexer.ml" 905 56341 56345 "cvc3_lexer.ml" 905 56341 56353
+)
+"cvc3_lexer.mll" 27 55652 55684 "cvc3_lexer.mll" 27 55652 55690
+type(
+  Lexing.lexbuf
+)
+ident(
+  int_ref lexbuf "cvc3_lexer.ml" 801 54266 54292 "cvc3_lexer.ml" 801 54266 54298
+)
+"cvc3_lexer.mll" 27 55652 55673 "cvc3_lexer.mll" 27 55652 55692
+call(
+  tail
+)
+type(
+  Cvc3_grammar.token
+)
+"cvc3_lexer.ml" 878 55716 55720 "cvc3_lexer.ml" 878 55716 55722
+type(
+  int
+)
+"cvc3_lexer.mll" 28 55748 55773 "cvc3_lexer.mll" 28 55748 55784
+type(
+  Lexing.lexbuf -> Cvc3_grammar.token
+)
+ident(
+  int_ref read_numbin "cvc3_lexer.ml" 930 57098 57102 "cvc3_lexer.ml" 930 57098 57113
+)
+"cvc3_lexer.mll" 28 55748 55785 "cvc3_lexer.mll" 28 55748 55791
+type(
+  Lexing.lexbuf
+)
+ident(
+  int_ref lexbuf "cvc3_lexer.ml" 801 54266 54292 "cvc3_lexer.ml" 801 54266 54298
+)
+"cvc3_lexer.mll" 28 55748 55771 "cvc3_lexer.mll" 28 55748 55793
+call(
+  tail
+)
+type(
+  Cvc3_grammar.token
+)
+"cvc3_lexer.ml" 883 55817 55821 "cvc3_lexer.ml" 883 55817 55823
+type(
+  int
+)
+"cvc3_lexer.mll" 29 55853 55868 "cvc3_lexer.mll" 29 55853 55871
+type(
+  string
+)
+"cvc3_lexer.ml" 888 55894 55896 "cvc3_lexer.ml" 888 55894 55913
+type(
+  Lexing.lexbuf -> int -> int -> string
+)
+ident(
+  ext_ref Lexing.sub_lexeme
+)
+"cvc3_lexer.ml" 888 55894 55914 "cvc3_lexer.ml" 888 55894 55920
+type(
+  Lexing.lexbuf
+)
+ident(
+  int_ref lexbuf "cvc3_lexer.ml" 801 54266 54292 "cvc3_lexer.ml" 801 54266 54298
+)
+"cvc3_lexer.ml" 888 55894 55921 "cvc3_lexer.ml" 888 55894 55927
+type(
+  Lexing.lexbuf
+)
+ident(
+  int_ref lexbuf "cvc3_lexer.ml" 801 54266 54292 "cvc3_lexer.ml" 801 54266 54298
+)
+"cvc3_lexer.ml" 888 55894 55921 "cvc3_lexer.ml" 888 55894 55948
+type(
+  int
+)
+"cvc3_lexer.ml" 888 55894 55949 "cvc3_lexer.ml" 888 55894 55955
+type(
+  Lexing.lexbuf
+)
+ident(
+  int_ref lexbuf "cvc3_lexer.ml" 801 54266 54292 "cvc3_lexer.ml" 801 54266 54298
+)
+"cvc3_lexer.ml" 888 55894 55949 "cvc3_lexer.ml" 888 55894 55975
+type(
+  int
+)
+"cvc3_lexer.ml" 888 55894 55896 "cvc3_lexer.ml" 888 55894 55975
+call(
+  stack
+)
+type(
+  string
+)
+"cvc3_lexer.mll" 29 56001 56028 "cvc3_lexer.mll" 29 56001 56031
+type(
+  string
+)
+ident(
+  int_ref var "cvc3_lexer.mll" 29 55853 55868 "cvc3_lexer.mll" 29 55853 55871
+)
+"cvc3_lexer.mll" 29 56001 56022 "cvc3_lexer.mll" 29 56001 56033
+type(
+  Cvc3_grammar.token
+)
+"cvc3_lexer.ml" 884 55827 55827 "cvc3_lexer.mll" 29 56001 56033
+type(
+  Cvc3_grammar.token
+)
+"cvc3_lexer.ml" 893 56057 56061 "cvc3_lexer.ml" 893 56057 56063
+type(
+  int
+)
+"cvc3_lexer.mll" 30 56089 56110 "cvc3_lexer.mll" 30 56089 56117
+type(
+  Cvc3_grammar.token
+)
+"cvc3_lexer.ml" 898 56141 56145 "cvc3_lexer.ml" 898 56141 56147
+type(
+  int
+)
+"cvc3_lexer.mll" 31 56173 56196 "cvc3_lexer.mll" 31 56173 56201
+type(
+  Lexing.lexbuf -> Cvc3_grammar.token
+)
+ident(
+  int_ref token "cvc3_lexer.ml" 799 54208 54216 "cvc3_lexer.ml" 799 54208 54221
+)
+"cvc3_lexer.mll" 31 56173 56202 "cvc3_lexer.mll" 31 56173 56208
+type(
+  Lexing.lexbuf
+)
+ident(
+  int_ref lexbuf "cvc3_lexer.ml" 801 54266 54292 "cvc3_lexer.ml" 801 54266 54298
+)
+"cvc3_lexer.mll" 31 56173 56194 "cvc3_lexer.mll" 31 56173 56210
+call(
+  tail
+)
+type(
+  Cvc3_grammar.token
+)
+"cvc3_lexer.ml" 903 56234 56238 "cvc3_lexer.ml" 903 56234 56255
+type(
+  int
+)
+ident(
+  def __ocaml_lex_state "cvc3_lexer.ml" 903 56234 56259 "cvc3_lexer.ml" 903 56234 56339
+)
+"cvc3_lexer.ml" 903 56234 56259 "cvc3_lexer.ml" 903 56234 56265
+type(
+  Lexing.lexbuf
+)
+ident(
+  int_ref lexbuf "cvc3_lexer.ml" 801 54266 54292 "cvc3_lexer.ml" 801 54266 54298
+)
+"cvc3_lexer.ml" 903 56234 56259 "cvc3_lexer.ml" 903 56234 56284
+type(
+  Lexing.lexbuf -> unit
+)
+"cvc3_lexer.ml" 903 56234 56285 "cvc3_lexer.ml" 903 56234 56291
+type(
+  Lexing.lexbuf
+)
+ident(
+  int_ref lexbuf "cvc3_lexer.ml" 801 54266 54292 "cvc3_lexer.ml" 801 54266 54298
+)
+"cvc3_lexer.ml" 903 56234 56259 "cvc3_lexer.ml" 903 56234 56291
+call(
+  stack
+)
+type(
+  unit
+)
+"cvc3_lexer.ml" 903 56234 56293 "cvc3_lexer.ml" 903 56234 56314
+type(
+  Lexing.lexbuf -> int -> Cvc3_grammar.token
+)
+ident(
+  int_ref __ocaml_lex_token_rec "cvc3_lexer.ml" 801 54266 54270 "cvc3_lexer.ml" 801 54266 54291
+)
+"cvc3_lexer.ml" 903 56234 56315 "cvc3_lexer.ml" 903 56234 56321
+type(
+  Lexing.lexbuf
+)
+ident(
+  int_ref lexbuf "cvc3_lexer.ml" 801 54266 54292 "cvc3_lexer.ml" 801 54266 54298
+)
+"cvc3_lexer.ml" 903 56234 56322 "cvc3_lexer.ml" 903 56234 56339
+type(
+  int
+)
+ident(
+  int_ref __ocaml_lex_state "cvc3_lexer.ml" 903 56234 56238 "cvc3_lexer.ml" 903 56234 56255
+)
+"cvc3_lexer.ml" 903 56234 56293 "cvc3_lexer.ml" 903 56234 56339
+call(
+  tail
+)
+type(
+  Cvc3_grammar.token
+)
+"cvc3_lexer.ml" 903 56234 56259 "cvc3_lexer.ml" 903 56234 56339
+type(
+  Cvc3_grammar.token
+)
+"cvc3_lexer.ml" 802 54319 54321 "cvc3_lexer.ml" 903 56234 56339
+type(
+  Cvc3_grammar.token
+)
+"cvc3_lexer.ml" 905 56341 56345 "cvc3_lexer.ml" 905 56341 56353
+type(
+  Lexing.lexbuf -> Cvc3_grammar.token
+)
+ident(
+  def read_num "cvc3_lexer.ml" 799 54208 54208 --
+)
+"cvc3_lexer.ml" 905 56341 56354 "cvc3_lexer.ml" 905 56341 56360
+type(
+  Lexing.lexbuf
+)
+ident(
+  def lexbuf "cvc3_lexer.ml" 906 56363 56367 "cvc3_lexer.ml" 906 56363 56401
+)
+"cvc3_lexer.ml" 906 56363 56367 "cvc3_lexer.ml" 906 56363 56391
+type(
+  Lexing.lexbuf -> int -> Cvc3_grammar.token
+)
+ident(
+  int_ref __ocaml_lex_read_num_rec "cvc3_lexer.ml" 907 56402 56406 "cvc3_lexer.ml" 907 56402 56430
+)
+"cvc3_lexer.ml" 906 56363 56392 "cvc3_lexer.ml" 906 56363 56398
+type(
+  Lexing.lexbuf
+)
+ident(
+  int_ref lexbuf "cvc3_lexer.ml" 905 56341 56354 "cvc3_lexer.ml" 905 56341 56360
+)
+"cvc3_lexer.ml" 906 56363 56399 "cvc3_lexer.ml" 906 56363 56401
+type(
+  int
+)
+"cvc3_lexer.ml" 906 56363 56367 "cvc3_lexer.ml" 906 56363 56401
+call(
+  tail
+)
+type(
+  Cvc3_grammar.token
+)
+"cvc3_lexer.ml" 907 56402 56406 "cvc3_lexer.ml" 907 56402 56430
+type(
+  Lexing.lexbuf -> int -> Cvc3_grammar.token
+)
+ident(
+  def __ocaml_lex_read_num_rec "cvc3_lexer.ml" 799 54208 54208 --
+)
+"cvc3_lexer.ml" 907 56402 56431 "cvc3_lexer.ml" 907 56402 56437
+type(
+  Lexing.lexbuf
+)
+ident(
+  def lexbuf "cvc3_lexer.ml" 907 56402 56438 "cvc3_lexer.ml" 928 56988 57096
+)
+"cvc3_lexer.ml" 907 56402 56438 "cvc3_lexer.ml" 907 56402 56455
+type(
+  int
+)
+ident(
+  def __ocaml_lex_state "cvc3_lexer.ml" 908 56458 56460 "cvc3_lexer.ml" 928 56988 57096
+)
+"cvc3_lexer.ml" 908 56458 56466 "cvc3_lexer.ml" 908 56458 56479
+type(
+  Lexing.lex_tables -> int -> Lexing.lexbuf -> int
+)
+ident(
+  ext_ref Lexing.engine
+)
+"cvc3_lexer.ml" 908 56458 56480 "cvc3_lexer.ml" 908 56458 56498
+type(
+  Lexing.lex_tables
+)
+ident(
+  int_ref __ocaml_lex_tables "cvc3_lexer.ml" 9 135 139 "cvc3_lexer.ml" 9 135 157
+)
+"cvc3_lexer.ml" 908 56458 56499 "cvc3_lexer.ml" 908 56458 56516
+type(
+  int
+)
+ident(
+  int_ref __ocaml_lex_state "cvc3_lexer.ml" 907 56402 56438 "cvc3_lexer.ml" 907 56402 56455
+)
+"cvc3_lexer.ml" 908 56458 56517 "cvc3_lexer.ml" 908 56458 56523
+type(
+  Lexing.lexbuf
+)
+ident(
+  int_ref lexbuf "cvc3_lexer.ml" 907 56402 56431 "cvc3_lexer.ml" 907 56402 56437
+)
+"cvc3_lexer.ml" 908 56458 56466 "cvc3_lexer.ml" 908 56458 56523
+call(
+  stack
+)
+type(
+  int
+)
+"cvc3_lexer.ml" 909 56529 56537 "cvc3_lexer.ml" 909 56529 56538
+type(
+  int
+)
+"cvc3_lexer.mll" 34 56568 56582 "cvc3_lexer.mll" 34 56568 56583
+type(
+  string
+)
+"cvc3_lexer.ml" 914 56606 56608 "cvc3_lexer.ml" 914 56606 56625
+type(
+  Lexing.lexbuf -> int -> int -> string
+)
+ident(
+  ext_ref Lexing.sub_lexeme
+)
+"cvc3_lexer.ml" 914 56606 56626 "cvc3_lexer.ml" 914 56606 56632
+type(
+  Lexing.lexbuf
+)
+ident(
+  int_ref lexbuf "cvc3_lexer.ml" 907 56402 56431 "cvc3_lexer.ml" 907 56402 56437
+)
+"cvc3_lexer.ml" 914 56606 56633 "cvc3_lexer.ml" 914 56606 56639
+type(
+  Lexing.lexbuf
+)
+ident(
+  int_ref lexbuf "cvc3_lexer.ml" 907 56402 56431 "cvc3_lexer.ml" 907 56402 56437
+)
+"cvc3_lexer.ml" 914 56606 56633 "cvc3_lexer.ml" 914 56606 56660
+type(
+  int
+)
+"cvc3_lexer.ml" 914 56606 56661 "cvc3_lexer.ml" 914 56606 56667
+type(
+  Lexing.lexbuf
+)
+ident(
+  int_ref lexbuf "cvc3_lexer.ml" 907 56402 56431 "cvc3_lexer.ml" 907 56402 56437
+)
+"cvc3_lexer.ml" 914 56606 56661 "cvc3_lexer.ml" 914 56606 56687
+type(
+  int
+)
+"cvc3_lexer.ml" 914 56606 56608 "cvc3_lexer.ml" 914 56606 56687
+call(
+  stack
+)
+type(
+  string
+)
+"cvc3_lexer.mll" 35 56736 56748 "cvc3_lexer.mll" 35 56736 56770
+type(
+  string -> Big_int_Z.big_int
+)
+ident(
+  ext_ref Util.big_int_of_string
+)
+"cvc3_lexer.mll" 35 56736 56772 "cvc3_lexer.mll" 35 56736 56776
+type(
+  string
+)
+"cvc3_lexer.mll" 35 56736 56776 "cvc3_lexer.mll" 35 56736 56777
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"cvc3_lexer.mll" 35 56736 56777 "cvc3_lexer.mll" 35 56736 56778
+type(
+  string
+)
+ident(
+  int_ref n "cvc3_lexer.mll" 34 56568 56582 "cvc3_lexer.mll" 34 56568 56583
+)
+"cvc3_lexer.mll" 35 56736 56771 "cvc3_lexer.mll" 35 56736 56779
+call(
+  stack
+)
+type(
+  string
+)
+"cvc3_lexer.mll" 35 56736 56747 "cvc3_lexer.mll" 35 56736 56780
+call(
+  stack
+)
+type(
+  Big_int_Z.big_int
+)
+"cvc3_lexer.mll" 35 56736 56744 "cvc3_lexer.mll" 35 56736 56780
+type(
+  Cvc3_grammar.token
+)
+"cvc3_lexer.mll" 36 56781 56798 "cvc3_lexer.mll" 36 56781 56813
+type(
+  string
+)
+"cvc3_lexer.mll" 36 56781 56790 "cvc3_lexer.mll" 36 56781 56813
+type(
+  exn
+)
+"cvc3_lexer.mll" 37 56817 56823 "cvc3_lexer.mll" 37 56817 56828
+type(
+  exn -> Cvc3_grammar.token
+)
+ident(
+  ext_ref Pervasives.raise
+)
+"cvc3_lexer.mll" 37 56817 56838 "cvc3_lexer.mll" 37 56817 56864
+type(
+  string
+)
+"cvc3_lexer.mll" 37 56817 56828 "cvc3_lexer.mll" 37 56817 56865
+type(
+  exn
+)
+"cvc3_lexer.mll" 37 56817 56823 "cvc3_lexer.mll" 37 56817 56866
+type(
+  Cvc3_grammar.token
+)
+"cvc3_lexer.mll" 34 56713 56734 "cvc3_lexer.mll" 38 56867 56872
+type(
+  Cvc3_grammar.token
+)
+"cvc3_lexer.ml" 910 56542 56542 "cvc3_lexer.mll" 38 56867 56872
+type(
+  Cvc3_grammar.token
+)
+"cvc3_lexer.ml" 923 56896 56900 "cvc3_lexer.ml" 923 56896 56901
+type(
+  int
+)
+"cvc3_lexer.mll" 39 56927 56950 "cvc3_lexer.mll" 39 56927 56955
+type(
+  Lexing.lexbuf -> Cvc3_grammar.token
+)
+ident(
+  int_ref token "cvc3_lexer.ml" 799 54208 54216 "cvc3_lexer.ml" 799 54208 54221
+)
+"cvc3_lexer.mll" 39 56927 56956 "cvc3_lexer.mll" 39 56927 56962
+type(
+  Lexing.lexbuf
+)
+ident(
+  int_ref lexbuf "cvc3_lexer.ml" 907 56402 56431 "cvc3_lexer.ml" 907 56402 56437
+)
+"cvc3_lexer.mll" 39 56927 56948 "cvc3_lexer.mll" 39 56927 56964
+call(
+  tail
+)
+type(
+  Cvc3_grammar.token
+)
+"cvc3_lexer.ml" 928 56988 56992 "cvc3_lexer.ml" 928 56988 57009
+type(
+  int
+)
+ident(
+  def __ocaml_lex_state "cvc3_lexer.ml" 928 56988 57013 "cvc3_lexer.ml" 928 56988 57096
+)
+"cvc3_lexer.ml" 928 56988 57013 "cvc3_lexer.ml" 928 56988 57019
+type(
+  Lexing.lexbuf
+)
+ident(
+  int_ref lexbuf "cvc3_lexer.ml" 907 56402 56431 "cvc3_lexer.ml" 907 56402 56437
+)
+"cvc3_lexer.ml" 928 56988 57013 "cvc3_lexer.ml" 928 56988 57038
+type(
+  Lexing.lexbuf -> unit
+)
+"cvc3_lexer.ml" 928 56988 57039 "cvc3_lexer.ml" 928 56988 57045
+type(
+  Lexing.lexbuf
+)
+ident(
+  int_ref lexbuf "cvc3_lexer.ml" 907 56402 56431 "cvc3_lexer.ml" 907 56402 56437
+)
+"cvc3_lexer.ml" 928 56988 57013 "cvc3_lexer.ml" 928 56988 57045
+call(
+  stack
+)
+type(
+  unit
+)
+"cvc3_lexer.ml" 928 56988 57047 "cvc3_lexer.ml" 928 56988 57071
+type(
+  Lexing.lexbuf -> int -> Cvc3_grammar.token
+)
+ident(
+  int_ref __ocaml_lex_read_num_rec "cvc3_lexer.ml" 907 56402 56406 "cvc3_lexer.ml" 907 56402 56430
+)
+"cvc3_lexer.ml" 928 56988 57072 "cvc3_lexer.ml" 928 56988 57078
+type(
+  Lexing.lexbuf
+)
+ident(
+  int_ref lexbuf "cvc3_lexer.ml" 907 56402 56431 "cvc3_lexer.ml" 907 56402 56437
+)
+"cvc3_lexer.ml" 928 56988 57079 "cvc3_lexer.ml" 928 56988 57096
+type(
+  int
+)
+ident(
+  int_ref __ocaml_lex_state "cvc3_lexer.ml" 928 56988 56992 "cvc3_lexer.ml" 928 56988 57009
+)
+"cvc3_lexer.ml" 928 56988 57047 "cvc3_lexer.ml" 928 56988 57096
+call(
+  tail
+)
+type(
+  Cvc3_grammar.token
+)
+"cvc3_lexer.ml" 928 56988 57013 "cvc3_lexer.ml" 928 56988 57096
+type(
+  Cvc3_grammar.token
+)
+"cvc3_lexer.ml" 908 56458 56460 "cvc3_lexer.ml" 928 56988 57096
+type(
+  Cvc3_grammar.token
+)
+"cvc3_lexer.ml" 930 57098 57102 "cvc3_lexer.ml" 930 57098 57113
+type(
+  Lexing.lexbuf -> Cvc3_grammar.token
+)
+ident(
+  def read_numbin "cvc3_lexer.ml" 799 54208 54208 --
+)
+"cvc3_lexer.ml" 930 57098 57114 "cvc3_lexer.ml" 930 57098 57120
+type(
+  Lexing.lexbuf
+)
+ident(
+  def lexbuf "cvc3_lexer.ml" 931 57123 57127 "cvc3_lexer.ml" 931 57123 57164
+)
+"cvc3_lexer.ml" 931 57123 57127 "cvc3_lexer.ml" 931 57123 57154
+type(
+  Lexing.lexbuf -> int -> Cvc3_grammar.token
+)
+ident(
+  int_ref __ocaml_lex_read_numbin_rec "cvc3_lexer.ml" 932 57165 57169 "cvc3_lexer.ml" 932 57165 57196
+)
+"cvc3_lexer.ml" 931 57123 57155 "cvc3_lexer.ml" 931 57123 57161
+type(
+  Lexing.lexbuf
+)
+ident(
+  int_ref lexbuf "cvc3_lexer.ml" 930 57098 57114 "cvc3_lexer.ml" 930 57098 57120
+)
+"cvc3_lexer.ml" 931 57123 57162 "cvc3_lexer.ml" 931 57123 57164
+type(
+  int
+)
+"cvc3_lexer.ml" 931 57123 57127 "cvc3_lexer.ml" 931 57123 57164
+call(
+  tail
+)
+type(
+  Cvc3_grammar.token
+)
+"cvc3_lexer.ml" 932 57165 57169 "cvc3_lexer.ml" 932 57165 57196
+type(
+  Lexing.lexbuf -> int -> Cvc3_grammar.token
+)
+ident(
+  def __ocaml_lex_read_numbin_rec "cvc3_lexer.ml" 799 54208 54208 --
+)
+"cvc3_lexer.ml" 932 57165 57197 "cvc3_lexer.ml" 932 57165 57203
+type(
+  Lexing.lexbuf
+)
+ident(
+  def lexbuf "cvc3_lexer.ml" 932 57165 57204 "cvc3_lexer.ml" 953 57754 57865
+)
+"cvc3_lexer.ml" 932 57165 57204 "cvc3_lexer.ml" 932 57165 57221
+type(
+  int
+)
+ident(
+  def __ocaml_lex_state "cvc3_lexer.ml" 933 57224 57226 "cvc3_lexer.ml" 953 57754 57865
+)
+"cvc3_lexer.ml" 933 57224 57232 "cvc3_lexer.ml" 933 57224 57245
+type(
+  Lexing.lex_tables -> int -> Lexing.lexbuf -> int
+)
+ident(
+  ext_ref Lexing.engine
+)
+"cvc3_lexer.ml" 933 57224 57246 "cvc3_lexer.ml" 933 57224 57264
+type(
+  Lexing.lex_tables
+)
+ident(
+  int_ref __ocaml_lex_tables "cvc3_lexer.ml" 9 135 139 "cvc3_lexer.ml" 9 135 157
+)
+"cvc3_lexer.ml" 933 57224 57265 "cvc3_lexer.ml" 933 57224 57282
+type(
+  int
+)
+ident(
+  int_ref __ocaml_lex_state "cvc3_lexer.ml" 932 57165 57204 "cvc3_lexer.ml" 932 57165 57221
+)
+"cvc3_lexer.ml" 933 57224 57283 "cvc3_lexer.ml" 933 57224 57289
+type(
+  Lexing.lexbuf
+)
+ident(
+  int_ref lexbuf "cvc3_lexer.ml" 932 57165 57197 "cvc3_lexer.ml" 932 57165 57203
+)
+"cvc3_lexer.ml" 933 57224 57232 "cvc3_lexer.ml" 933 57224 57289
+call(
+  stack
+)
+type(
+  int
+)
+"cvc3_lexer.ml" 934 57295 57303 "cvc3_lexer.ml" 934 57295 57304
+type(
+  int
+)
+"cvc3_lexer.mll" 42 57334 57348 "cvc3_lexer.mll" 42 57334 57349
+type(
+  string
+)
+"cvc3_lexer.ml" 939 57372 57374 "cvc3_lexer.ml" 939 57372 57391
+type(
+  Lexing.lexbuf -> int -> int -> string
+)
+ident(
+  ext_ref Lexing.sub_lexeme
+)
+"cvc3_lexer.ml" 939 57372 57392 "cvc3_lexer.ml" 939 57372 57398
+type(
+  Lexing.lexbuf
+)
+ident(
+  int_ref lexbuf "cvc3_lexer.ml" 932 57165 57197 "cvc3_lexer.ml" 932 57165 57203
+)
+"cvc3_lexer.ml" 939 57372 57399 "cvc3_lexer.ml" 939 57372 57405
+type(
+  Lexing.lexbuf
+)
+ident(
+  int_ref lexbuf "cvc3_lexer.ml" 932 57165 57197 "cvc3_lexer.ml" 932 57165 57203
+)
+"cvc3_lexer.ml" 939 57372 57399 "cvc3_lexer.ml" 939 57372 57426
+type(
+  int
+)
+"cvc3_lexer.ml" 939 57372 57427 "cvc3_lexer.ml" 939 57372 57433
+type(
+  Lexing.lexbuf
+)
+ident(
+  int_ref lexbuf "cvc3_lexer.ml" 932 57165 57197 "cvc3_lexer.ml" 932 57165 57203
+)
+"cvc3_lexer.ml" 939 57372 57427 "cvc3_lexer.ml" 939 57372 57453
+type(
+  int
+)
+"cvc3_lexer.ml" 939 57372 57374 "cvc3_lexer.ml" 939 57372 57453
+call(
+  stack
+)
+type(
+  string
+)
+"cvc3_lexer.mll" 43 57502 57514 "cvc3_lexer.mll" 43 57502 57536
+type(
+  string -> Big_int_Z.big_int
+)
+ident(
+  ext_ref Util.big_int_of_string
+)
+"cvc3_lexer.mll" 43 57502 57538 "cvc3_lexer.mll" 43 57502 57542
+type(
+  string
+)
+"cvc3_lexer.mll" 43 57502 57542 "cvc3_lexer.mll" 43 57502 57543
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"cvc3_lexer.mll" 43 57502 57543 "cvc3_lexer.mll" 43 57502 57544
+type(
+  string
+)
+ident(
+  int_ref n "cvc3_lexer.mll" 42 57334 57348 "cvc3_lexer.mll" 42 57334 57349
+)
+"cvc3_lexer.mll" 43 57502 57537 "cvc3_lexer.mll" 43 57502 57545
+call(
+  stack
+)
+type(
+  string
+)
+"cvc3_lexer.mll" 43 57502 57513 "cvc3_lexer.mll" 43 57502 57546
+call(
+  stack
+)
+type(
+  Big_int_Z.big_int
+)
+"cvc3_lexer.mll" 43 57502 57510 "cvc3_lexer.mll" 43 57502 57546
+type(
+  Cvc3_grammar.token
+)
+"cvc3_lexer.mll" 44 57547 57564 "cvc3_lexer.mll" 44 57547 57579
+type(
+  string
+)
+"cvc3_lexer.mll" 44 57547 57556 "cvc3_lexer.mll" 44 57547 57579
+type(
+  exn
+)
+"cvc3_lexer.mll" 45 57583 57589 "cvc3_lexer.mll" 45 57583 57594
+type(
+  exn -> Cvc3_grammar.token
+)
+ident(
+  ext_ref Pervasives.raise
+)
+"cvc3_lexer.mll" 45 57583 57604 "cvc3_lexer.mll" 45 57583 57630
+type(
+  string
+)
+"cvc3_lexer.mll" 45 57583 57594 "cvc3_lexer.mll" 45 57583 57631
+type(
+  exn
+)
+"cvc3_lexer.mll" 45 57583 57589 "cvc3_lexer.mll" 45 57583 57632
+type(
+  Cvc3_grammar.token
+)
+"cvc3_lexer.mll" 42 57479 57500 "cvc3_lexer.mll" 46 57633 57638
+type(
+  Cvc3_grammar.token
+)
+"cvc3_lexer.ml" 935 57308 57308 "cvc3_lexer.mll" 46 57633 57638
+type(
+  Cvc3_grammar.token
+)
+"cvc3_lexer.ml" 948 57662 57666 "cvc3_lexer.ml" 948 57662 57667
+type(
+  int
+)
+"cvc3_lexer.mll" 47 57693 57716 "cvc3_lexer.mll" 47 57693 57721
+type(
+  Lexing.lexbuf -> Cvc3_grammar.token
+)
+ident(
+  int_ref token "cvc3_lexer.ml" 799 54208 54216 "cvc3_lexer.ml" 799 54208 54221
+)
+"cvc3_lexer.mll" 47 57693 57722 "cvc3_lexer.mll" 47 57693 57728
+type(
+  Lexing.lexbuf
+)
+ident(
+  int_ref lexbuf "cvc3_lexer.ml" 932 57165 57197 "cvc3_lexer.ml" 932 57165 57203
+)
+"cvc3_lexer.mll" 47 57693 57714 "cvc3_lexer.mll" 47 57693 57730
+call(
+  tail
+)
+type(
+  Cvc3_grammar.token
+)
+"cvc3_lexer.ml" 953 57754 57758 "cvc3_lexer.ml" 953 57754 57775
+type(
+  int
+)
+ident(
+  def __ocaml_lex_state "cvc3_lexer.ml" 953 57754 57779 "cvc3_lexer.ml" 953 57754 57865
+)
+"cvc3_lexer.ml" 953 57754 57779 "cvc3_lexer.ml" 953 57754 57785
+type(
+  Lexing.lexbuf
+)
+ident(
+  int_ref lexbuf "cvc3_lexer.ml" 932 57165 57197 "cvc3_lexer.ml" 932 57165 57203
+)
+"cvc3_lexer.ml" 953 57754 57779 "cvc3_lexer.ml" 953 57754 57804
+type(
+  Lexing.lexbuf -> unit
+)
+"cvc3_lexer.ml" 953 57754 57805 "cvc3_lexer.ml" 953 57754 57811
+type(
+  Lexing.lexbuf
+)
+ident(
+  int_ref lexbuf "cvc3_lexer.ml" 932 57165 57197 "cvc3_lexer.ml" 932 57165 57203
+)
+"cvc3_lexer.ml" 953 57754 57779 "cvc3_lexer.ml" 953 57754 57811
+call(
+  stack
+)
+type(
+  unit
+)
+"cvc3_lexer.ml" 953 57754 57813 "cvc3_lexer.ml" 953 57754 57840
+type(
+  Lexing.lexbuf -> int -> Cvc3_grammar.token
+)
+ident(
+  int_ref __ocaml_lex_read_numbin_rec "cvc3_lexer.ml" 932 57165 57169 "cvc3_lexer.ml" 932 57165 57196
+)
+"cvc3_lexer.ml" 953 57754 57841 "cvc3_lexer.ml" 953 57754 57847
+type(
+  Lexing.lexbuf
+)
+ident(
+  int_ref lexbuf "cvc3_lexer.ml" 932 57165 57197 "cvc3_lexer.ml" 932 57165 57203
+)
+"cvc3_lexer.ml" 953 57754 57848 "cvc3_lexer.ml" 953 57754 57865
+type(
+  int
+)
+ident(
+  int_ref __ocaml_lex_state "cvc3_lexer.ml" 953 57754 57758 "cvc3_lexer.ml" 953 57754 57775
+)
+"cvc3_lexer.ml" 953 57754 57813 "cvc3_lexer.ml" 953 57754 57865
+call(
+  tail
+)
+type(
+  Cvc3_grammar.token
+)
+"cvc3_lexer.ml" 953 57754 57779 "cvc3_lexer.ml" 953 57754 57865
+type(
+  Cvc3_grammar.token
+)
+"cvc3_lexer.ml" 933 57224 57226 "cvc3_lexer.ml" 953 57754 57865
+type(
+  Cvc3_grammar.token
+)
+"cvc3_lexer.ml" 955 57867 57871 "cvc3_lexer.ml" 955 57867 57883
+type(
+  Lexing.lexbuf -> Cvc3_grammar.token
+)
+ident(
+  def read_comment "cvc3_lexer.ml" 799 54208 54208 --
+)
+"cvc3_lexer.ml" 955 57867 57884 "cvc3_lexer.ml" 955 57867 57890
+type(
+  Lexing.lexbuf
+)
+ident(
+  def lexbuf "cvc3_lexer.ml" 956 57893 57897 "cvc3_lexer.ml" 956 57893 57935
+)
+"cvc3_lexer.ml" 956 57893 57897 "cvc3_lexer.ml" 956 57893 57925
+type(
+  Lexing.lexbuf -> int -> Cvc3_grammar.token
+)
+ident(
+  int_ref __ocaml_lex_read_comment_rec "cvc3_lexer.ml" 957 57936 57940 "cvc3_lexer.ml" 957 57936 57968
+)
+"cvc3_lexer.ml" 956 57893 57926 "cvc3_lexer.ml" 956 57893 57932
+type(
+  Lexing.lexbuf
+)
+ident(
+  int_ref lexbuf "cvc3_lexer.ml" 955 57867 57884 "cvc3_lexer.ml" 955 57867 57890
+)
+"cvc3_lexer.ml" 956 57893 57933 "cvc3_lexer.ml" 956 57893 57935
+type(
+  int
+)
+"cvc3_lexer.ml" 956 57893 57897 "cvc3_lexer.ml" 956 57893 57935
+call(
+  tail
+)
+type(
+  Cvc3_grammar.token
+)
+"cvc3_lexer.ml" 957 57936 57940 "cvc3_lexer.ml" 957 57936 57968
+type(
+  Lexing.lexbuf -> int -> Cvc3_grammar.token
+)
+ident(
+  def __ocaml_lex_read_comment_rec "cvc3_lexer.ml" 799 54208 54208 --
+)
+"cvc3_lexer.ml" 957 57936 57969 "cvc3_lexer.ml" 957 57936 57975
+type(
+  Lexing.lexbuf
+)
+ident(
+  def lexbuf "cvc3_lexer.ml" 957 57936 57976 "cvc3_lexer.ml" 969 58262 58374
+)
+"cvc3_lexer.ml" 957 57936 57976 "cvc3_lexer.ml" 957 57936 57993
+type(
+  int
+)
+ident(
+  def __ocaml_lex_state "cvc3_lexer.ml" 958 57996 57998 "cvc3_lexer.ml" 969 58262 58374
+)
+"cvc3_lexer.ml" 958 57996 58004 "cvc3_lexer.ml" 958 57996 58017
+type(
+  Lexing.lex_tables -> int -> Lexing.lexbuf -> int
+)
+ident(
+  ext_ref Lexing.engine
+)
+"cvc3_lexer.ml" 958 57996 58018 "cvc3_lexer.ml" 958 57996 58036
+type(
+  Lexing.lex_tables
+)
+ident(
+  int_ref __ocaml_lex_tables "cvc3_lexer.ml" 9 135 139 "cvc3_lexer.ml" 9 135 157
+)
+"cvc3_lexer.ml" 958 57996 58037 "cvc3_lexer.ml" 958 57996 58054
+type(
+  int
+)
+ident(
+  int_ref __ocaml_lex_state "cvc3_lexer.ml" 957 57936 57976 "cvc3_lexer.ml" 957 57936 57993
+)
+"cvc3_lexer.ml" 958 57996 58055 "cvc3_lexer.ml" 958 57996 58061
+type(
+  Lexing.lexbuf
+)
+ident(
+  int_ref lexbuf "cvc3_lexer.ml" 957 57936 57969 "cvc3_lexer.ml" 957 57936 57975
+)
+"cvc3_lexer.ml" 958 57996 58004 "cvc3_lexer.ml" 958 57996 58061
+call(
+  stack
+)
+type(
+  int
+)
+"cvc3_lexer.ml" 959 58067 58075 "cvc3_lexer.ml" 959 58067 58076
+type(
+  int
+)
+"cvc3_lexer.mll" 51 58102 58125 "cvc3_lexer.mll" 51 58102 58130
+type(
+  Lexing.lexbuf -> Cvc3_grammar.token
+)
+ident(
+  int_ref token "cvc3_lexer.ml" 799 54208 54216 "cvc3_lexer.ml" 799 54208 54221
+)
+"cvc3_lexer.mll" 51 58102 58131 "cvc3_lexer.mll" 51 58102 58137
+type(
+  Lexing.lexbuf
+)
+ident(
+  int_ref lexbuf "cvc3_lexer.ml" 957 57936 57969 "cvc3_lexer.ml" 957 57936 57975
+)
+"cvc3_lexer.mll" 51 58102 58123 "cvc3_lexer.mll" 51 58102 58139
+call(
+  tail
+)
+type(
+  Cvc3_grammar.token
+)
+"cvc3_lexer.ml" 964 58163 58167 "cvc3_lexer.ml" 964 58163 58168
+type(
+  int
+)
+"cvc3_lexer.mll" 52 58194 58217 "cvc3_lexer.mll" 52 58194 58229
+type(
+  Lexing.lexbuf -> Cvc3_grammar.token
+)
+ident(
+  int_ref read_comment "cvc3_lexer.ml" 955 57867 57871 "cvc3_lexer.ml" 955 57867 57883
+)
+"cvc3_lexer.mll" 52 58194 58230 "cvc3_lexer.mll" 52 58194 58236
+type(
+  Lexing.lexbuf
+)
+ident(
+  int_ref lexbuf "cvc3_lexer.ml" 957 57936 57969 "cvc3_lexer.ml" 957 57936 57975
+)
+"cvc3_lexer.mll" 52 58194 58215 "cvc3_lexer.mll" 52 58194 58238
+call(
+  tail
+)
+type(
+  Cvc3_grammar.token
+)
+"cvc3_lexer.ml" 969 58262 58266 "cvc3_lexer.ml" 969 58262 58283
+type(
+  int
+)
+ident(
+  def __ocaml_lex_state "cvc3_lexer.ml" 969 58262 58287 "cvc3_lexer.ml" 969 58262 58374
+)
+"cvc3_lexer.ml" 969 58262 58287 "cvc3_lexer.ml" 969 58262 58293
+type(
+  Lexing.lexbuf
+)
+ident(
+  int_ref lexbuf "cvc3_lexer.ml" 957 57936 57969 "cvc3_lexer.ml" 957 57936 57975
+)
+"cvc3_lexer.ml" 969 58262 58287 "cvc3_lexer.ml" 969 58262 58312
+type(
+  Lexing.lexbuf -> unit
+)
+"cvc3_lexer.ml" 969 58262 58313 "cvc3_lexer.ml" 969 58262 58319
+type(
+  Lexing.lexbuf
+)
+ident(
+  int_ref lexbuf "cvc3_lexer.ml" 957 57936 57969 "cvc3_lexer.ml" 957 57936 57975
+)
+"cvc3_lexer.ml" 969 58262 58287 "cvc3_lexer.ml" 969 58262 58319
+call(
+  stack
+)
+type(
+  unit
+)
+"cvc3_lexer.ml" 969 58262 58321 "cvc3_lexer.ml" 969 58262 58349
+type(
+  Lexing.lexbuf -> int -> Cvc3_grammar.token
+)
+ident(
+  int_ref __ocaml_lex_read_comment_rec "cvc3_lexer.ml" 957 57936 57940 "cvc3_lexer.ml" 957 57936 57968
+)
+"cvc3_lexer.ml" 969 58262 58350 "cvc3_lexer.ml" 969 58262 58356
+type(
+  Lexing.lexbuf
+)
+ident(
+  int_ref lexbuf "cvc3_lexer.ml" 957 57936 57969 "cvc3_lexer.ml" 957 57936 57975
+)
+"cvc3_lexer.ml" 969 58262 58357 "cvc3_lexer.ml" 969 58262 58374
+type(
+  int
+)
+ident(
+  int_ref __ocaml_lex_state "cvc3_lexer.ml" 969 58262 58266 "cvc3_lexer.ml" 969 58262 58283
+)
+"cvc3_lexer.ml" 969 58262 58321 "cvc3_lexer.ml" 969 58262 58374
+call(
+  tail
+)
+type(
+  Cvc3_grammar.token
+)
+"cvc3_lexer.ml" 969 58262 58287 "cvc3_lexer.ml" 969 58262 58374
+type(
+  Cvc3_grammar.token
+)
+"cvc3_lexer.ml" 958 57996 57998 "cvc3_lexer.ml" 969 58262 58374
+type(
+  Cvc3_grammar.token
+)

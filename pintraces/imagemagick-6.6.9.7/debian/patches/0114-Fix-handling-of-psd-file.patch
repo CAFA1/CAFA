@@ -1,0 +1,62 @@
+Backport of:
+
+From 57215ed5df4f96db1c19103ec1e4a671b5df61a1 Mon Sep 17 00:00:00 2001
+From: dirk <dirk@git.imagemagick.org>
+Date: Tue, 2 Feb 2016 21:36:50 +0100
+Subject: [PATCH] Fix handling of psd file
+
+Added check for out of bounds read (https://github.com/ImageMagick/ImageMagick/issues/109).
+
+[Upstream commit is misleading it is for 109 not 108]
+
+Origin: upstream, https://github.com/ImageMagick/ImageMagick/commit/b39b377fa8f3379542cc6b76784f552cb48bc41f
+bug: https://github.com/ImageMagick/ImageMagick/issues/109
+bug-ubuntu: https://bugs.launchpad.net/ubuntu/+source/imagemagick/+bug/1539066
+bug-debian: https://bugs.debian.org/832776
+---
+ coders/psd.c | 18 ++++++++++++------
+ 1 file changed, 12 insertions(+), 6 deletions(-)
+
+Index: imagemagick-6.6.9.7/coders/psd.c
+===================================================================
+--- imagemagick-6.6.9.7.orig/coders/psd.c	2016-11-16 07:38:42.417135302 -0500
++++ imagemagick-6.6.9.7/coders/psd.c	2016-11-16 07:38:42.417135302 -0500
+@@ -2062,18 +2062,23 @@
+     register unsigned char
+       *q;
+ 
++    ssize_t
++      cnt;
++
+     q=(unsigned char *) p;
+     if (LocaleNCompare((const char *) p,"8BIM",4) != 0)
+-      break;
++      return;
+     p=PushLongPixel(MSBEndian,p,&long_sans);
+     p=PushShortPixel(MSBEndian,p,&id);
+     p=PushShortPixel(MSBEndian,p,&short_sans);
+     p=PushLongPixel(MSBEndian,p,&count);
+-    if (id == 0x000003ed)
++    cnt=PSDQuantum(count);
++    if (cnt < 0)
++      return;
++    if ((id == 0x000003ed) && (cnt < (ssize_t) (length-12)))
+       {
+-        (void) CopyMagickMemory(q,q+PSDQuantum(count)+12,length-
+-          (PSDQuantum(count)+12)-(q-datum));
+-        SetStringInfoLength(bim_profile,length-(PSDQuantum(count)+12));
++        (void) CopyMagickMemory(q,q+cnt+12,length-(cnt+12)-(q-datum));
++        SetStringInfoLength(bim_profile,length-(cnt+12));
+         break;
+       }
+     p+=count;
+@@ -2082,7 +2087,8 @@
+   }
+ }
+ 
+-static MagickBooleanType WritePSDImage(const ImageInfo *image_info,Image *image)
++static MagickBooleanType WritePSDImage(const ImageInfo *image_info,
++  Image *image)
+ {
+   const char
+     *property;

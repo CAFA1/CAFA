@@ -1,0 +1,2061 @@
+"src/classic.ml" 32 1534 1540 "src/classic.ml" 32 1534 1548
+type(
+  int -> B.G.t
+)
+ident(
+  def divisors "src/classic.ml" 49 2020 2022 "src/classic.ml" 81 2999 3002
+)
+"src/classic.ml" 32 1534 1549 "src/classic.ml" 32 1534 1550
+type(
+  int
+)
+ident(
+  def n "src/classic.ml" 33 1553 1557 "src/classic.ml" 47 1994 2017
+)
+"src/classic.ml" 33 1553 1560 "src/classic.ml" 33 1553 1561
+type(
+  int
+)
+ident(
+  int_ref n "src/classic.ml" 32 1534 1549 "src/classic.ml" 32 1534 1550
+)
+"src/classic.ml" 33 1553 1562 "src/classic.ml" 33 1553 1563
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( < )
+)
+"src/classic.ml" 33 1553 1564 "src/classic.ml" 33 1553 1565
+type(
+  int
+)
+"src/classic.ml" 33 1553 1560 "src/classic.ml" 33 1553 1565
+type(
+  bool
+)
+"src/classic.ml" 33 1553 1571 "src/classic.ml" 33 1553 1582
+type(
+  string -> unit
+)
+ident(
+  ext_ref Pervasives.invalid_arg
+)
+"src/classic.ml" 33 1553 1583 "src/classic.ml" 33 1553 1593
+type(
+  string
+)
+"src/classic.ml" 33 1553 1571 "src/classic.ml" 33 1553 1593
+call(
+  stack
+)
+type(
+  unit
+)
+"src/classic.ml" 33 1553 1557 "src/classic.ml" 33 1553 1593
+type(
+  unit
+)
+"src/classic.ml" 34 1595 1603 "src/classic.ml" 34 1595 1604
+type(
+  B.G.V.t array
+)
+"src/classic.ml" 34 1595 1607 "src/classic.ml" 34 1595 1617
+type(
+  int -> (B.G.V.label -> B.G.V.t) -> B.G.V.t array
+)
+ident(
+  ext_ref Array.init
+)
+"src/classic.ml" 34 1595 1619 "src/classic.ml" 34 1595 1620
+type(
+  int
+)
+ident(
+  int_ref n "src/classic.ml" 32 1534 1549 "src/classic.ml" 32 1534 1550
+)
+"src/classic.ml" 34 1595 1621 "src/classic.ml" 34 1595 1622
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( + )
+)
+"src/classic.ml" 34 1595 1623 "src/classic.ml" 34 1595 1624
+type(
+  int
+)
+"src/classic.ml" 34 1595 1618 "src/classic.ml" 34 1595 1625
+type(
+  int
+)
+"src/classic.ml" 34 1595 1631 "src/classic.ml" 34 1595 1632
+type(
+  B.G.V.label
+)
+ident(
+  def i "src/classic.ml" 34 1595 1636 "src/classic.ml" 34 1595 1650
+)
+"src/classic.ml" 34 1595 1636 "src/classic.ml" 34 1595 1648
+type(
+  B.G.V.label -> B.G.V.t
+)
+ident(
+  ext_ref B.G.V.create
+)
+"src/classic.ml" 34 1595 1649 "src/classic.ml" 34 1595 1650
+type(
+  B.G.V.label
+)
+ident(
+  int_ref i "src/classic.ml" 34 1595 1631 "src/classic.ml" 34 1595 1632
+)
+"src/classic.ml" 34 1595 1636 "src/classic.ml" 34 1595 1650
+call(
+  tail
+)
+type(
+  B.G.V.t
+)
+"src/classic.ml" 34 1595 1626 "src/classic.ml" 34 1595 1651
+type(
+  B.G.V.label -> B.G.V.t
+)
+"src/classic.ml" 34 1595 1607 "src/classic.ml" 34 1595 1651
+call(
+  stack
+)
+type(
+  B.G.V.t array
+)
+"src/classic.ml" 35 1655 1667 "src/classic.ml" 35 1655 1671
+type(
+  B.G.t -> int -> B.G.t
+)
+"src/classic.ml" 35 1655 1672 "src/classic.ml" 35 1655 1673
+type(
+  B.G.t
+)
+ident(
+  def g "src/classic.ml" 35 1655 1674 "src/classic.ml" 45 1915 1986
+)
+"src/classic.ml" 35 1655 1674 "src/classic.ml" 35 1655 1675
+type(
+  int
+)
+ident(
+  def i "src/classic.ml" 36 1678 1684 "src/classic.ml" 45 1915 1986
+)
+"src/classic.ml" 36 1678 1688 "src/classic.ml" 36 1678 1694
+type(
+  int
+)
+"src/classic.ml" 36 1678 1697 "src/classic.ml" 36 1678 1705
+type(
+  float -> int
+)
+ident(
+  ext_ref Pervasives.truncate
+)
+"src/classic.ml" 36 1678 1707 "src/classic.ml" 36 1678 1711
+type(
+  float -> float
+)
+ident(
+  ext_ref Pervasives.sqrt
+)
+"src/classic.ml" 36 1678 1713 "src/classic.ml" 36 1678 1718
+type(
+  int -> float
+)
+ident(
+  ext_ref Pervasives.float
+)
+"src/classic.ml" 36 1678 1719 "src/classic.ml" 36 1678 1720
+type(
+  int
+)
+ident(
+  int_ref i "src/classic.ml" 35 1655 1674 "src/classic.ml" 35 1655 1675
+)
+"src/classic.ml" 36 1678 1712 "src/classic.ml" 36 1678 1721
+type(
+  float
+)
+"src/classic.ml" 36 1678 1706 "src/classic.ml" 36 1678 1722
+type(
+  float
+)
+"src/classic.ml" 36 1678 1697 "src/classic.ml" 36 1678 1722
+type(
+  int
+)
+"src/classic.ml" 37 1726 1740 "src/classic.ml" 37 1726 1746
+type(
+  B.G.t -> int -> B.G.t
+)
+"src/classic.ml" 37 1726 1747 "src/classic.ml" 37 1726 1748
+type(
+  B.G.t
+)
+ident(
+  def g "src/classic.ml" 37 1726 1749 "src/classic.ml" 43 1885 1905
+)
+"src/classic.ml" 37 1726 1749 "src/classic.ml" 37 1726 1750
+type(
+  int
+)
+ident(
+  def d "src/classic.ml" 38 1753 1754 "src/classic.ml" 43 1885 1905
+)
+"src/classic.ml" 38 1753 1757 "src/classic.ml" 38 1753 1758
+type(
+  int
+)
+ident(
+  int_ref d "src/classic.ml" 37 1726 1749 "src/classic.ml" 37 1726 1750
+)
+"src/classic.ml" 38 1753 1759 "src/classic.ml" 38 1753 1760
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( > )
+)
+"src/classic.ml" 38 1753 1761 "src/classic.ml" 38 1753 1767
+type(
+  int
+)
+ident(
+  int_ref sqrt_i "src/classic.ml" 36 1678 1688 "src/classic.ml" 36 1678 1694
+)
+"src/classic.ml" 38 1753 1757 "src/classic.ml" 38 1753 1767
+type(
+  bool
+)
+"src/classic.ml" 39 1774 1777 "src/classic.ml" 39 1774 1778
+type(
+  B.G.t
+)
+ident(
+  int_ref g "src/classic.ml" 37 1726 1747 "src/classic.ml" 37 1726 1748
+)
+"src/classic.ml" 40 1780 1789 "src/classic.ml" 40 1780 1790
+type(
+  int
+)
+ident(
+  int_ref i "src/classic.ml" 35 1655 1674 "src/classic.ml" 35 1655 1675
+)
+"src/classic.ml" 40 1780 1791 "src/classic.ml" 40 1780 1794
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( mod )
+)
+"src/classic.ml" 40 1780 1795 "src/classic.ml" 40 1780 1796
+type(
+  int
+)
+ident(
+  int_ref d "src/classic.ml" 37 1726 1749 "src/classic.ml" 37 1726 1750
+)
+"src/classic.ml" 40 1780 1789 "src/classic.ml" 40 1780 1796
+type(
+  int
+)
+"src/classic.ml" 40 1780 1797 "src/classic.ml" 40 1780 1799
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( == )
+)
+"src/classic.ml" 40 1780 1800 "src/classic.ml" 40 1780 1801
+type(
+  int
+)
+"src/classic.ml" 40 1780 1789 "src/classic.ml" 40 1780 1801
+type(
+  bool
+)
+"src/classic.ml" 41 1807 1810 "src/classic.ml" 41 1807 1816
+type(
+  B.G.t -> int -> B.G.t
+)
+ident(
+  int_ref loop_i "src/classic.ml" 37 1726 1740 "src/classic.ml" 37 1726 1746
+)
+"src/classic.ml" 41 1807 1818 "src/classic.ml" 41 1807 1828
+type(
+  B.G.t -> B.G.V.t -> B.G.V.t -> B.G.t
+)
+ident(
+  ext_ref B.add_edge
+)
+"src/classic.ml" 41 1807 1830 "src/classic.ml" 41 1807 1840
+type(
+  B.G.t -> B.G.V.t -> B.G.V.t -> B.G.t
+)
+ident(
+  ext_ref B.add_edge
+)
+"src/classic.ml" 41 1807 1841 "src/classic.ml" 41 1807 1842
+type(
+  B.G.t
+)
+ident(
+  int_ref g "src/classic.ml" 37 1726 1747 "src/classic.ml" 37 1726 1748
+)
+"src/classic.ml" 41 1807 1843 "src/classic.ml" 41 1807 1844
+type(
+  B.G.V.t array
+)
+ident(
+  int_ref v "src/classic.ml" 34 1595 1603 "src/classic.ml" 34 1595 1604
+)
+"src/classic.ml" 41 1807 1846 "src/classic.ml" 41 1807 1847
+type(
+  int
+)
+ident(
+  int_ref i "src/classic.ml" 35 1655 1674 "src/classic.ml" 35 1655 1675
+)
+"src/classic.ml" 41 1807 1848 "src/classic.ml" 41 1807 1849
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( / )
+)
+"src/classic.ml" 41 1807 1850 "src/classic.ml" 41 1807 1851
+type(
+  int
+)
+ident(
+  int_ref d "src/classic.ml" 37 1726 1749 "src/classic.ml" 37 1726 1750
+)
+"src/classic.ml" 41 1807 1846 "src/classic.ml" 41 1807 1851
+type(
+  int
+)
+"src/classic.ml" 41 1807 1843 "src/classic.ml" 41 1807 1852
+type(
+  B.G.V.t
+)
+"src/classic.ml" 41 1807 1853 "src/classic.ml" 41 1807 1854
+type(
+  B.G.V.t array
+)
+ident(
+  int_ref v "src/classic.ml" 34 1595 1603 "src/classic.ml" 34 1595 1604
+)
+"src/classic.ml" 41 1807 1856 "src/classic.ml" 41 1807 1857
+type(
+  int
+)
+ident(
+  int_ref i "src/classic.ml" 35 1655 1674 "src/classic.ml" 35 1655 1675
+)
+"src/classic.ml" 41 1807 1853 "src/classic.ml" 41 1807 1858
+type(
+  B.G.V.t
+)
+"src/classic.ml" 41 1807 1829 "src/classic.ml" 41 1807 1859
+call(
+  stack
+)
+type(
+  B.G.t
+)
+"src/classic.ml" 41 1807 1860 "src/classic.ml" 41 1807 1861
+type(
+  B.G.V.t array
+)
+ident(
+  int_ref v "src/classic.ml" 34 1595 1603 "src/classic.ml" 34 1595 1604
+)
+"src/classic.ml" 41 1807 1863 "src/classic.ml" 41 1807 1864
+type(
+  int
+)
+ident(
+  int_ref d "src/classic.ml" 37 1726 1749 "src/classic.ml" 37 1726 1750
+)
+"src/classic.ml" 41 1807 1860 "src/classic.ml" 41 1807 1865
+type(
+  B.G.V.t
+)
+"src/classic.ml" 41 1807 1866 "src/classic.ml" 41 1807 1867
+type(
+  B.G.V.t array
+)
+ident(
+  int_ref v "src/classic.ml" 34 1595 1603 "src/classic.ml" 34 1595 1604
+)
+"src/classic.ml" 41 1807 1869 "src/classic.ml" 41 1807 1870
+type(
+  int
+)
+ident(
+  int_ref i "src/classic.ml" 35 1655 1674 "src/classic.ml" 35 1655 1675
+)
+"src/classic.ml" 41 1807 1866 "src/classic.ml" 41 1807 1871
+type(
+  B.G.V.t
+)
+"src/classic.ml" 41 1807 1817 "src/classic.ml" 41 1807 1872
+call(
+  stack
+)
+type(
+  B.G.t
+)
+"src/classic.ml" 41 1807 1874 "src/classic.ml" 41 1807 1875
+type(
+  int
+)
+ident(
+  int_ref d "src/classic.ml" 37 1726 1749 "src/classic.ml" 37 1726 1750
+)
+"src/classic.ml" 41 1807 1875 "src/classic.ml" 41 1807 1876
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( + )
+)
+"src/classic.ml" 41 1807 1876 "src/classic.ml" 41 1807 1877
+type(
+  int
+)
+"src/classic.ml" 41 1807 1873 "src/classic.ml" 41 1807 1878
+type(
+  int
+)
+"src/classic.ml" 41 1807 1810 "src/classic.ml" 41 1807 1878
+call(
+  tail
+)
+type(
+  B.G.t
+)
+"src/classic.ml" 43 1885 1888 "src/classic.ml" 43 1885 1894
+type(
+  B.G.t -> int -> B.G.t
+)
+ident(
+  int_ref loop_i "src/classic.ml" 37 1726 1740 "src/classic.ml" 37 1726 1746
+)
+"src/classic.ml" 43 1885 1895 "src/classic.ml" 43 1885 1896
+type(
+  B.G.t
+)
+ident(
+  int_ref g "src/classic.ml" 37 1726 1747 "src/classic.ml" 37 1726 1748
+)
+"src/classic.ml" 43 1885 1898 "src/classic.ml" 43 1885 1902
+type(
+  int -> int
+)
+ident(
+  ext_ref Pervasives.succ
+)
+"src/classic.ml" 43 1885 1903 "src/classic.ml" 43 1885 1904
+type(
+  int
+)
+ident(
+  int_ref d "src/classic.ml" 37 1726 1749 "src/classic.ml" 37 1726 1750
+)
+"src/classic.ml" 43 1885 1897 "src/classic.ml" 43 1885 1905
+type(
+  int
+)
+"src/classic.ml" 43 1885 1888 "src/classic.ml" 43 1885 1905
+call(
+  tail
+)
+type(
+  B.G.t
+)
+"src/classic.ml" 40 1780 1786 "src/classic.ml" 43 1885 1905
+type(
+  B.G.t
+)
+"src/classic.ml" 38 1753 1754 "src/classic.ml" 43 1885 1905
+type(
+  B.G.t
+)
+"src/classic.ml" 45 1915 1924 "src/classic.ml" 45 1915 1925
+type(
+  int
+)
+ident(
+  int_ref i "src/classic.ml" 35 1655 1674 "src/classic.ml" 35 1655 1675
+)
+"src/classic.ml" 45 1915 1926 "src/classic.ml" 45 1915 1927
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( > )
+)
+"src/classic.ml" 45 1915 1928 "src/classic.ml" 45 1915 1929
+type(
+  int
+)
+ident(
+  int_ref n "src/classic.ml" 32 1534 1549 "src/classic.ml" 32 1534 1550
+)
+"src/classic.ml" 45 1915 1924 "src/classic.ml" 45 1915 1929
+type(
+  bool
+)
+"src/classic.ml" 45 1915 1935 "src/classic.ml" 45 1915 1936
+type(
+  B.G.t
+)
+ident(
+  int_ref g "src/classic.ml" 35 1655 1672 "src/classic.ml" 35 1655 1673
+)
+"src/classic.ml" 45 1915 1942 "src/classic.ml" 45 1915 1946
+type(
+  B.G.t -> int -> B.G.t
+)
+ident(
+  int_ref loop "src/classic.ml" 35 1655 1667 "src/classic.ml" 35 1655 1671
+)
+"src/classic.ml" 45 1915 1948 "src/classic.ml" 45 1915 1954
+type(
+  B.G.t -> int -> B.G.t
+)
+ident(
+  int_ref loop_i "src/classic.ml" 37 1726 1740 "src/classic.ml" 37 1726 1746
+)
+"src/classic.ml" 45 1915 1956 "src/classic.ml" 45 1915 1968
+type(
+  B.G.t -> B.G.V.t -> B.G.t
+)
+ident(
+  ext_ref B.add_vertex
+)
+"src/classic.ml" 45 1915 1969 "src/classic.ml" 45 1915 1970
+type(
+  B.G.t
+)
+ident(
+  int_ref g "src/classic.ml" 35 1655 1672 "src/classic.ml" 35 1655 1673
+)
+"src/classic.ml" 45 1915 1971 "src/classic.ml" 45 1915 1972
+type(
+  B.G.V.t array
+)
+ident(
+  int_ref v "src/classic.ml" 34 1595 1603 "src/classic.ml" 34 1595 1604
+)
+"src/classic.ml" 45 1915 1974 "src/classic.ml" 45 1915 1975
+type(
+  int
+)
+ident(
+  int_ref i "src/classic.ml" 35 1655 1674 "src/classic.ml" 35 1655 1675
+)
+"src/classic.ml" 45 1915 1971 "src/classic.ml" 45 1915 1976
+type(
+  B.G.V.t
+)
+"src/classic.ml" 45 1915 1955 "src/classic.ml" 45 1915 1977
+call(
+  stack
+)
+type(
+  B.G.t
+)
+"src/classic.ml" 45 1915 1978 "src/classic.ml" 45 1915 1979
+type(
+  int
+)
+"src/classic.ml" 45 1915 1947 "src/classic.ml" 45 1915 1980
+call(
+  stack
+)
+type(
+  B.G.t
+)
+"src/classic.ml" 45 1915 1982 "src/classic.ml" 45 1915 1983
+type(
+  int
+)
+ident(
+  int_ref i "src/classic.ml" 35 1655 1674 "src/classic.ml" 35 1655 1675
+)
+"src/classic.ml" 45 1915 1983 "src/classic.ml" 45 1915 1984
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( + )
+)
+"src/classic.ml" 45 1915 1984 "src/classic.ml" 45 1915 1985
+type(
+  int
+)
+"src/classic.ml" 45 1915 1981 "src/classic.ml" 45 1915 1986
+type(
+  int
+)
+"src/classic.ml" 45 1915 1942 "src/classic.ml" 45 1915 1986
+call(
+  tail
+)
+type(
+  B.G.t
+)
+"src/classic.ml" 45 1915 1921 "src/classic.ml" 45 1915 1986
+type(
+  B.G.t
+)
+"src/classic.ml" 37 1726 1732 "src/classic.ml" 45 1915 1986
+type(
+  B.G.t
+)
+"src/classic.ml" 36 1678 1684 "src/classic.ml" 45 1915 1986
+type(
+  B.G.t
+)
+"src/classic.ml" 47 1994 1998 "src/classic.ml" 47 1994 2002
+type(
+  B.G.t -> int -> B.G.t
+)
+ident(
+  int_ref loop "src/classic.ml" 35 1655 1667 "src/classic.ml" 35 1655 1671
+)
+"src/classic.ml" 47 1994 2004 "src/classic.ml" 47 1994 2011
+type(
+  unit -> B.G.t
+)
+ident(
+  ext_ref B.empty
+)
+"src/classic.ml" 47 1994 2012 "src/classic.ml" 47 1994 2014
+type(
+  unit
+)
+"src/classic.ml" 47 1994 2003 "src/classic.ml" 47 1994 2015
+call(
+  stack
+)
+type(
+  B.G.t
+)
+"src/classic.ml" 47 1994 2016 "src/classic.ml" 47 1994 2017
+type(
+  int
+)
+"src/classic.ml" 47 1994 1998 "src/classic.ml" 47 1994 2017
+call(
+  tail
+)
+type(
+  B.G.t
+)
+"src/classic.ml" 35 1655 1659 "src/classic.ml" 47 1994 2017
+type(
+  B.G.t
+)
+"src/classic.ml" 34 1595 1599 "src/classic.ml" 47 1994 2017
+type(
+  B.G.t
+)
+"src/classic.ml" 33 1553 1557 "src/classic.ml" 47 1994 2017
+type(
+  B.G.t
+)
+"src/classic.ml" 49 2020 2026 "src/classic.ml" 49 2020 2034
+type(
+  int -> int -> ('a -> int -> 'a) -> 'a -> 'a
+)
+ident(
+  def fold_for "src/classic.ml" 53 2127 2129 "src/classic.ml" 81 2999 3002
+)
+"src/classic.ml" 49 2020 2035 "src/classic.ml" 49 2020 2037
+type(
+  int
+)
+ident(
+  def i0 "src/classic.ml" 49 2020 2038 "src/classic.ml" 51 2114 2125
+)
+"src/classic.ml" 49 2020 2038 "src/classic.ml" 49 2020 2040
+type(
+  int
+)
+ident(
+  def i1 "src/classic.ml" 49 2020 2041 "src/classic.ml" 51 2114 2125
+)
+"src/classic.ml" 49 2020 2041 "src/classic.ml" 49 2020 2042
+type(
+  'a -> int -> 'a
+)
+ident(
+  def f "src/classic.ml" 50 2045 2049 "src/classic.ml" 51 2114 2125
+)
+"src/classic.ml" 50 2045 2057 "src/classic.ml" 50 2045 2061
+type(
+  int -> 'a -> 'a
+)
+"src/classic.ml" 50 2045 2062 "src/classic.ml" 50 2045 2063
+type(
+  int
+)
+ident(
+  def i "src/classic.ml" 50 2045 2064 "src/classic.ml" 50 2045 2110
+)
+"src/classic.ml" 50 2045 2064 "src/classic.ml" 50 2045 2065
+type(
+  'a
+)
+ident(
+  def v "src/classic.ml" 50 2045 2068 "src/classic.ml" 50 2045 2110
+)
+"src/classic.ml" 50 2045 2071 "src/classic.ml" 50 2045 2072
+type(
+  int
+)
+ident(
+  int_ref i "src/classic.ml" 50 2045 2062 "src/classic.ml" 50 2045 2063
+)
+"src/classic.ml" 50 2045 2073 "src/classic.ml" 50 2045 2074
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( > )
+)
+"src/classic.ml" 50 2045 2075 "src/classic.ml" 50 2045 2077
+type(
+  int
+)
+ident(
+  int_ref i1 "src/classic.ml" 49 2020 2038 "src/classic.ml" 49 2020 2040
+)
+"src/classic.ml" 50 2045 2071 "src/classic.ml" 50 2045 2077
+type(
+  bool
+)
+"src/classic.ml" 50 2045 2083 "src/classic.ml" 50 2045 2084
+type(
+  'a
+)
+ident(
+  int_ref v "src/classic.ml" 50 2045 2064 "src/classic.ml" 50 2045 2065
+)
+"src/classic.ml" 50 2045 2090 "src/classic.ml" 50 2045 2094
+type(
+  int -> 'a -> 'a
+)
+ident(
+  int_ref loop "src/classic.ml" 50 2045 2057 "src/classic.ml" 50 2045 2061
+)
+"src/classic.ml" 50 2045 2096 "src/classic.ml" 50 2045 2097
+type(
+  int
+)
+ident(
+  int_ref i "src/classic.ml" 50 2045 2062 "src/classic.ml" 50 2045 2063
+)
+"src/classic.ml" 50 2045 2098 "src/classic.ml" 50 2045 2099
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( + )
+)
+"src/classic.ml" 50 2045 2100 "src/classic.ml" 50 2045 2101
+type(
+  int
+)
+"src/classic.ml" 50 2045 2095 "src/classic.ml" 50 2045 2102
+type(
+  int
+)
+"src/classic.ml" 50 2045 2104 "src/classic.ml" 50 2045 2105
+type(
+  'a -> int -> 'a
+)
+ident(
+  int_ref f "src/classic.ml" 49 2020 2041 "src/classic.ml" 49 2020 2042
+)
+"src/classic.ml" 50 2045 2106 "src/classic.ml" 50 2045 2107
+type(
+  'a
+)
+ident(
+  int_ref v "src/classic.ml" 50 2045 2064 "src/classic.ml" 50 2045 2065
+)
+"src/classic.ml" 50 2045 2108 "src/classic.ml" 50 2045 2109
+type(
+  int
+)
+ident(
+  int_ref i "src/classic.ml" 50 2045 2062 "src/classic.ml" 50 2045 2063
+)
+"src/classic.ml" 50 2045 2103 "src/classic.ml" 50 2045 2110
+call(
+  stack
+)
+type(
+  'a
+)
+"src/classic.ml" 50 2045 2090 "src/classic.ml" 50 2045 2110
+call(
+  tail
+)
+type(
+  'a
+)
+"src/classic.ml" 50 2045 2068 "src/classic.ml" 50 2045 2110
+type(
+  'a
+)
+"src/classic.ml" 51 2114 2118 "src/classic.ml" 51 2114 2122
+type(
+  int -> 'a -> 'a
+)
+ident(
+  int_ref loop "src/classic.ml" 50 2045 2057 "src/classic.ml" 50 2045 2061
+)
+"src/classic.ml" 51 2114 2123 "src/classic.ml" 51 2114 2125
+type(
+  int
+)
+ident(
+  int_ref i0 "src/classic.ml" 49 2020 2035 "src/classic.ml" 49 2020 2037
+)
+"src/classic.ml" 51 2114 2118 "src/classic.ml" 51 2114 2125
+call(
+  tail
+)
+type(
+  'a -> 'a
+)
+"src/classic.ml" 50 2045 2049 "src/classic.ml" 51 2114 2125
+type(
+  'a -> 'a
+)
+"src/classic.ml" 53 2127 2133 "src/classic.ml" 53 2127 2142
+type(
+  int -> B.G.t
+)
+ident(
+  def de_bruijn "src/classic.ml" 69 2615 2617 "src/classic.ml" 81 2999 3002
+)
+"src/classic.ml" 53 2127 2143 "src/classic.ml" 53 2127 2144
+type(
+  int
+)
+ident(
+  def n "src/classic.ml" 54 2147 2151 "src/classic.ml" 67 2601 2613
+)
+"src/classic.ml" 54 2147 2154 "src/classic.ml" 54 2147 2155
+type(
+  int
+)
+ident(
+  int_ref n "src/classic.ml" 53 2127 2143 "src/classic.ml" 53 2127 2144
+)
+"src/classic.ml" 54 2147 2156 "src/classic.ml" 54 2147 2157
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( < )
+)
+"src/classic.ml" 54 2147 2158 "src/classic.ml" 54 2147 2159
+type(
+  int
+)
+"src/classic.ml" 54 2147 2154 "src/classic.ml" 54 2147 2159
+type(
+  bool
+)
+"src/classic.ml" 54 2147 2160 "src/classic.ml" 54 2147 2162
+type(
+  bool -> bool -> bool
+)
+ident(
+  ext_ref Pervasives.( || )
+)
+"src/classic.ml" 54 2147 2163 "src/classic.ml" 54 2147 2164
+type(
+  int
+)
+ident(
+  int_ref n "src/classic.ml" 53 2127 2143 "src/classic.ml" 53 2127 2144
+)
+"src/classic.ml" 54 2147 2165 "src/classic.ml" 54 2147 2166
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( > )
+)
+"src/classic.ml" 54 2147 2167 "src/classic.ml" 54 2147 2180
+type(
+  int
+)
+ident(
+  ext_ref Sys.word_size
+)
+"src/classic.ml" 54 2147 2181 "src/classic.ml" 54 2147 2182
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( - )
+)
+"src/classic.ml" 54 2147 2183 "src/classic.ml" 54 2147 2184
+type(
+  int
+)
+"src/classic.ml" 54 2147 2167 "src/classic.ml" 54 2147 2184
+type(
+  int
+)
+"src/classic.ml" 54 2147 2163 "src/classic.ml" 54 2147 2184
+type(
+  bool
+)
+"src/classic.ml" 54 2147 2154 "src/classic.ml" 54 2147 2184
+type(
+  bool
+)
+"src/classic.ml" 54 2147 2190 "src/classic.ml" 54 2147 2201
+type(
+  string -> unit
+)
+ident(
+  ext_ref Pervasives.invalid_arg
+)
+"src/classic.ml" 54 2147 2202 "src/classic.ml" 54 2147 2213
+type(
+  string
+)
+"src/classic.ml" 54 2147 2190 "src/classic.ml" 54 2147 2213
+call(
+  stack
+)
+type(
+  unit
+)
+"src/classic.ml" 54 2147 2151 "src/classic.ml" 54 2147 2213
+type(
+  unit
+)
+"src/classic.ml" 55 2215 2223 "src/classic.ml" 55 2215 2224
+type(
+  B.G.V.t array
+)
+"src/classic.ml" 55 2215 2227 "src/classic.ml" 55 2215 2237
+type(
+  int -> (B.G.V.label -> B.G.V.t) -> B.G.V.t array
+)
+ident(
+  ext_ref Array.init
+)
+"src/classic.ml" 55 2215 2239 "src/classic.ml" 55 2215 2240
+type(
+  int
+)
+"src/classic.ml" 55 2215 2241 "src/classic.ml" 55 2215 2244
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( lsl )
+)
+"src/classic.ml" 55 2215 2245 "src/classic.ml" 55 2215 2246
+type(
+  int
+)
+ident(
+  int_ref n "src/classic.ml" 53 2127 2143 "src/classic.ml" 53 2127 2144
+)
+"src/classic.ml" 55 2215 2238 "src/classic.ml" 55 2215 2247
+type(
+  int
+)
+"src/classic.ml" 55 2215 2253 "src/classic.ml" 55 2215 2254
+type(
+  B.G.V.label
+)
+ident(
+  def i "src/classic.ml" 55 2215 2258 "src/classic.ml" 55 2215 2272
+)
+"src/classic.ml" 55 2215 2258 "src/classic.ml" 55 2215 2270
+type(
+  B.G.V.label -> B.G.V.t
+)
+ident(
+  ext_ref B.G.V.create
+)
+"src/classic.ml" 55 2215 2271 "src/classic.ml" 55 2215 2272
+type(
+  B.G.V.label
+)
+ident(
+  int_ref i "src/classic.ml" 55 2215 2253 "src/classic.ml" 55 2215 2254
+)
+"src/classic.ml" 55 2215 2258 "src/classic.ml" 55 2215 2272
+call(
+  tail
+)
+type(
+  B.G.V.t
+)
+"src/classic.ml" 55 2215 2248 "src/classic.ml" 55 2215 2273
+type(
+  B.G.V.label -> B.G.V.t
+)
+"src/classic.ml" 55 2215 2227 "src/classic.ml" 55 2215 2273
+call(
+  stack
+)
+type(
+  B.G.V.t array
+)
+"src/classic.ml" 56 2277 2285 "src/classic.ml" 56 2277 2290
+type(
+  int
+)
+"src/classic.ml" 56 2277 2293 "src/classic.ml" 56 2277 2294
+type(
+  int
+)
+"src/classic.ml" 56 2277 2295 "src/classic.ml" 56 2277 2298
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( lsl )
+)
+"src/classic.ml" 56 2277 2299 "src/classic.ml" 56 2277 2300
+type(
+  int
+)
+ident(
+  int_ref n "src/classic.ml" 53 2127 2143 "src/classic.ml" 53 2127 2144
+)
+"src/classic.ml" 56 2277 2293 "src/classic.ml" 56 2277 2300
+type(
+  int
+)
+"src/classic.ml" 56 2277 2301 "src/classic.ml" 56 2277 2302
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( - )
+)
+"src/classic.ml" 56 2277 2303 "src/classic.ml" 56 2277 2304
+type(
+  int
+)
+"src/classic.ml" 56 2277 2293 "src/classic.ml" 56 2277 2304
+type(
+  int
+)
+"src/classic.ml" 57 2321 2329 "src/classic.ml" 57 2321 2330
+type(
+  B.G.t
+)
+"src/classic.ml" 57 2321 2333 "src/classic.ml" 57 2321 2341
+type(
+  int -> int -> (B.G.t -> int -> B.G.t) -> B.G.t -> B.G.t
+)
+ident(
+  int_ref fold_for "src/classic.ml" 49 2020 2026 "src/classic.ml" 49 2020 2034
+)
+"src/classic.ml" 57 2321 2342 "src/classic.ml" 57 2321 2343
+type(
+  int
+)
+"src/classic.ml" 57 2321 2344 "src/classic.ml" 57 2321 2349
+type(
+  int
+)
+ident(
+  int_ref all_1 "src/classic.ml" 56 2277 2285 "src/classic.ml" 56 2277 2290
+)
+"src/classic.ml" 57 2321 2355 "src/classic.ml" 57 2321 2356
+type(
+  B.G.t
+)
+ident(
+  def g "src/classic.ml" 57 2321 2357 "src/classic.ml" 57 2321 2382
+)
+"src/classic.ml" 57 2321 2357 "src/classic.ml" 57 2321 2358
+type(
+  int
+)
+ident(
+  def i "src/classic.ml" 57 2321 2362 "src/classic.ml" 57 2321 2382
+)
+"src/classic.ml" 57 2321 2362 "src/classic.ml" 57 2321 2374
+type(
+  B.G.t -> B.G.V.t -> B.G.t
+)
+ident(
+  ext_ref B.add_vertex
+)
+"src/classic.ml" 57 2321 2375 "src/classic.ml" 57 2321 2376
+type(
+  B.G.t
+)
+ident(
+  int_ref g "src/classic.ml" 57 2321 2355 "src/classic.ml" 57 2321 2356
+)
+"src/classic.ml" 57 2321 2377 "src/classic.ml" 57 2321 2378
+type(
+  B.G.V.t array
+)
+ident(
+  int_ref v "src/classic.ml" 55 2215 2223 "src/classic.ml" 55 2215 2224
+)
+"src/classic.ml" 57 2321 2380 "src/classic.ml" 57 2321 2381
+type(
+  int
+)
+ident(
+  int_ref i "src/classic.ml" 57 2321 2357 "src/classic.ml" 57 2321 2358
+)
+"src/classic.ml" 57 2321 2377 "src/classic.ml" 57 2321 2382
+type(
+  B.G.V.t
+)
+"src/classic.ml" 57 2321 2362 "src/classic.ml" 57 2321 2382
+call(
+  tail
+)
+type(
+  B.G.t
+)
+"src/classic.ml" 57 2321 2350 "src/classic.ml" 57 2321 2383
+type(
+  B.G.t -> int -> B.G.t
+)
+"src/classic.ml" 57 2321 2385 "src/classic.ml" 57 2321 2392
+type(
+  unit -> B.G.t
+)
+ident(
+  ext_ref B.empty
+)
+"src/classic.ml" 57 2321 2393 "src/classic.ml" 57 2321 2395
+type(
+  unit
+)
+"src/classic.ml" 57 2321 2384 "src/classic.ml" 57 2321 2396
+call(
+  stack
+)
+type(
+  B.G.t
+)
+"src/classic.ml" 57 2321 2333 "src/classic.ml" 57 2321 2396
+call(
+  stack
+)
+type(
+  B.G.t
+)
+"src/classic.ml" 58 2400 2412 "src/classic.ml" 58 2400 2416
+type(
+  B.G.t -> int -> B.G.t
+)
+"src/classic.ml" 58 2400 2417 "src/classic.ml" 58 2400 2418
+type(
+  B.G.t
+)
+ident(
+  def g "src/classic.ml" 58 2400 2419 "src/classic.ml" 65 2578 2593
+)
+"src/classic.ml" 58 2400 2419 "src/classic.ml" 58 2400 2420
+type(
+  int
+)
+ident(
+  def i "src/classic.ml" 59 2423 2429 "src/classic.ml" 65 2578 2593
+)
+"src/classic.ml" 59 2423 2432 "src/classic.ml" 59 2423 2433
+type(
+  int
+)
+ident(
+  int_ref i "src/classic.ml" 58 2400 2419 "src/classic.ml" 58 2400 2420
+)
+"src/classic.ml" 59 2423 2434 "src/classic.ml" 59 2423 2435
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( > )
+)
+"src/classic.ml" 59 2423 2436 "src/classic.ml" 59 2423 2441
+type(
+  int
+)
+ident(
+  int_ref all_1 "src/classic.ml" 56 2277 2285 "src/classic.ml" 56 2277 2290
+)
+"src/classic.ml" 59 2423 2432 "src/classic.ml" 59 2423 2441
+type(
+  bool
+)
+"src/classic.ml" 60 2447 2448 "src/classic.ml" 60 2447 2449
+type(
+  B.G.t
+)
+ident(
+  int_ref g "src/classic.ml" 58 2400 2417 "src/classic.ml" 58 2400 2418
+)
+"src/classic.ml" 62 2462 2467 "src/classic.ml" 62 2462 2469
+type(
+  int
+)
+"src/classic.ml" 62 2462 2473 "src/classic.ml" 62 2462 2474
+type(
+  int
+)
+ident(
+  int_ref i "src/classic.ml" 58 2400 2419 "src/classic.ml" 58 2400 2420
+)
+"src/classic.ml" 62 2462 2475 "src/classic.ml" 62 2462 2478
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( lsl )
+)
+"src/classic.ml" 62 2462 2479 "src/classic.ml" 62 2462 2480
+type(
+  int
+)
+"src/classic.ml" 62 2462 2472 "src/classic.ml" 62 2462 2481
+type(
+  int
+)
+"src/classic.ml" 62 2462 2482 "src/classic.ml" 62 2462 2486
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( land )
+)
+"src/classic.ml" 62 2462 2487 "src/classic.ml" 62 2462 2492
+type(
+  int
+)
+ident(
+  int_ref all_1 "src/classic.ml" 56 2277 2285 "src/classic.ml" 56 2277 2290
+)
+"src/classic.ml" 62 2462 2472 "src/classic.ml" 62 2462 2492
+type(
+  int
+)
+"src/classic.ml" 63 2496 2501 "src/classic.ml" 63 2496 2502
+type(
+  B.G.t
+)
+"src/classic.ml" 63 2496 2505 "src/classic.ml" 63 2496 2515
+type(
+  B.G.t -> B.G.V.t -> B.G.V.t -> B.G.t
+)
+ident(
+  ext_ref B.add_edge
+)
+"src/classic.ml" 63 2496 2516 "src/classic.ml" 63 2496 2517
+type(
+  B.G.t
+)
+ident(
+  int_ref g "src/classic.ml" 58 2400 2417 "src/classic.ml" 58 2400 2418
+)
+"src/classic.ml" 63 2496 2518 "src/classic.ml" 63 2496 2519
+type(
+  B.G.V.t array
+)
+ident(
+  int_ref v "src/classic.ml" 55 2215 2223 "src/classic.ml" 55 2215 2224
+)
+"src/classic.ml" 63 2496 2521 "src/classic.ml" 63 2496 2522
+type(
+  int
+)
+ident(
+  int_ref i "src/classic.ml" 58 2400 2419 "src/classic.ml" 58 2400 2420
+)
+"src/classic.ml" 63 2496 2518 "src/classic.ml" 63 2496 2523
+type(
+  B.G.V.t
+)
+"src/classic.ml" 63 2496 2524 "src/classic.ml" 63 2496 2525
+type(
+  B.G.V.t array
+)
+ident(
+  int_ref v "src/classic.ml" 55 2215 2223 "src/classic.ml" 55 2215 2224
+)
+"src/classic.ml" 63 2496 2527 "src/classic.ml" 63 2496 2529
+type(
+  int
+)
+ident(
+  int_ref si "src/classic.ml" 62 2462 2467 "src/classic.ml" 62 2462 2469
+)
+"src/classic.ml" 63 2496 2524 "src/classic.ml" 63 2496 2530
+type(
+  B.G.V.t
+)
+"src/classic.ml" 63 2496 2505 "src/classic.ml" 63 2496 2530
+call(
+  stack
+)
+type(
+  B.G.t
+)
+"src/classic.ml" 64 2534 2539 "src/classic.ml" 64 2534 2540
+type(
+  B.G.t
+)
+"src/classic.ml" 64 2534 2543 "src/classic.ml" 64 2534 2553
+type(
+  B.G.t -> B.G.V.t -> B.G.V.t -> B.G.t
+)
+ident(
+  ext_ref B.add_edge
+)
+"src/classic.ml" 64 2534 2554 "src/classic.ml" 64 2534 2555
+type(
+  B.G.t
+)
+ident(
+  int_ref g "src/classic.ml" 63 2496 2501 "src/classic.ml" 63 2496 2502
+)
+"src/classic.ml" 64 2534 2556 "src/classic.ml" 64 2534 2557
+type(
+  B.G.V.t array
+)
+ident(
+  int_ref v "src/classic.ml" 55 2215 2223 "src/classic.ml" 55 2215 2224
+)
+"src/classic.ml" 64 2534 2559 "src/classic.ml" 64 2534 2560
+type(
+  int
+)
+ident(
+  int_ref i "src/classic.ml" 58 2400 2419 "src/classic.ml" 58 2400 2420
+)
+"src/classic.ml" 64 2534 2556 "src/classic.ml" 64 2534 2561
+type(
+  B.G.V.t
+)
+"src/classic.ml" 64 2534 2562 "src/classic.ml" 64 2534 2563
+type(
+  B.G.V.t array
+)
+ident(
+  int_ref v "src/classic.ml" 55 2215 2223 "src/classic.ml" 55 2215 2224
+)
+"src/classic.ml" 64 2534 2565 "src/classic.ml" 64 2534 2567
+type(
+  int
+)
+ident(
+  int_ref si "src/classic.ml" 62 2462 2467 "src/classic.ml" 62 2462 2469
+)
+"src/classic.ml" 64 2534 2568 "src/classic.ml" 64 2534 2571
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( lor )
+)
+"src/classic.ml" 64 2534 2572 "src/classic.ml" 64 2534 2573
+type(
+  int
+)
+"src/classic.ml" 64 2534 2565 "src/classic.ml" 64 2534 2573
+type(
+  int
+)
+"src/classic.ml" 64 2534 2562 "src/classic.ml" 64 2534 2574
+type(
+  B.G.V.t
+)
+"src/classic.ml" 64 2534 2543 "src/classic.ml" 64 2534 2574
+call(
+  stack
+)
+type(
+  B.G.t
+)
+"src/classic.ml" 65 2578 2579 "src/classic.ml" 65 2578 2583
+type(
+  B.G.t -> int -> B.G.t
+)
+ident(
+  int_ref loop "src/classic.ml" 58 2400 2412 "src/classic.ml" 58 2400 2416
+)
+"src/classic.ml" 65 2578 2584 "src/classic.ml" 65 2578 2585
+type(
+  B.G.t
+)
+ident(
+  int_ref g "src/classic.ml" 64 2534 2539 "src/classic.ml" 64 2534 2540
+)
+"src/classic.ml" 65 2578 2587 "src/classic.ml" 65 2578 2588
+type(
+  int
+)
+ident(
+  int_ref i "src/classic.ml" 58 2400 2419 "src/classic.ml" 58 2400 2420
+)
+"src/classic.ml" 65 2578 2589 "src/classic.ml" 65 2578 2590
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( + )
+)
+"src/classic.ml" 65 2578 2591 "src/classic.ml" 65 2578 2592
+type(
+  int
+)
+"src/classic.ml" 65 2578 2586 "src/classic.ml" 65 2578 2593
+type(
+  int
+)
+"src/classic.ml" 65 2578 2579 "src/classic.ml" 65 2578 2593
+call(
+  tail
+)
+type(
+  B.G.t
+)
+"src/classic.ml" 64 2534 2535 "src/classic.ml" 65 2578 2593
+type(
+  B.G.t
+)
+"src/classic.ml" 63 2496 2497 "src/classic.ml" 65 2578 2593
+type(
+  B.G.t
+)
+"src/classic.ml" 62 2462 2463 "src/classic.ml" 65 2578 2593
+type(
+  B.G.t
+)
+"src/classic.ml" 59 2423 2429 "src/classic.ml" 65 2578 2593
+type(
+  B.G.t
+)
+"src/classic.ml" 67 2601 2605 "src/classic.ml" 67 2601 2609
+type(
+  B.G.t -> int -> B.G.t
+)
+ident(
+  int_ref loop "src/classic.ml" 58 2400 2412 "src/classic.ml" 58 2400 2416
+)
+"src/classic.ml" 67 2601 2610 "src/classic.ml" 67 2601 2611
+type(
+  B.G.t
+)
+ident(
+  int_ref g "src/classic.ml" 57 2321 2329 "src/classic.ml" 57 2321 2330
+)
+"src/classic.ml" 67 2601 2612 "src/classic.ml" 67 2601 2613
+type(
+  int
+)
+"src/classic.ml" 67 2601 2605 "src/classic.ml" 67 2601 2613
+call(
+  tail
+)
+type(
+  B.G.t
+)
+"src/classic.ml" 58 2400 2404 "src/classic.ml" 67 2601 2613
+type(
+  B.G.t
+)
+"src/classic.ml" 57 2321 2325 "src/classic.ml" 67 2601 2613
+type(
+  B.G.t
+)
+"src/classic.ml" 56 2277 2281 "src/classic.ml" 67 2601 2613
+type(
+  B.G.t
+)
+"src/classic.ml" 55 2215 2219 "src/classic.ml" 67 2601 2613
+type(
+  B.G.t
+)
+"src/classic.ml" 54 2147 2151 "src/classic.ml" 67 2601 2613
+type(
+  B.G.t
+)
+"src/classic.ml" 69 2615 2621 "src/classic.ml" 69 2615 2632
+type(
+  B.G.V.label -> B.G.t
+)
+ident(
+  def vertex_only "src/classic.ml" 72 2713 2715 "src/classic.ml" 81 2999 3002
+)
+"src/classic.ml" 69 2615 2633 "src/classic.ml" 69 2615 2634
+type(
+  B.G.V.label
+)
+ident(
+  def n "src/classic.ml" 70 2637 2641 "src/classic.ml" 70 2637 2711
+)
+"src/classic.ml" 70 2637 2641 "src/classic.ml" 70 2637 2649
+type(
+  B.G.V.label ->
+  B.G.V.label -> (B.G.t -> B.G.V.label -> B.G.t) -> B.G.t -> B.G.t
+)
+ident(
+  int_ref fold_for "src/classic.ml" 49 2020 2026 "src/classic.ml" 49 2020 2034
+)
+"src/classic.ml" 70 2637 2650 "src/classic.ml" 70 2637 2651
+type(
+  B.G.V.label
+)
+"src/classic.ml" 70 2637 2652 "src/classic.ml" 70 2637 2653
+type(
+  B.G.V.label
+)
+ident(
+  int_ref n "src/classic.ml" 69 2615 2633 "src/classic.ml" 69 2615 2634
+)
+"src/classic.ml" 70 2637 2659 "src/classic.ml" 70 2637 2660
+type(
+  B.G.t
+)
+ident(
+  def g "src/classic.ml" 70 2637 2661 "src/classic.ml" 70 2637 2697
+)
+"src/classic.ml" 70 2637 2661 "src/classic.ml" 70 2637 2662
+type(
+  B.G.V.label
+)
+ident(
+  def i "src/classic.ml" 70 2637 2666 "src/classic.ml" 70 2637 2697
+)
+"src/classic.ml" 70 2637 2666 "src/classic.ml" 70 2637 2678
+type(
+  B.G.t -> B.G.V.t -> B.G.t
+)
+ident(
+  ext_ref B.add_vertex
+)
+"src/classic.ml" 70 2637 2679 "src/classic.ml" 70 2637 2680
+type(
+  B.G.t
+)
+ident(
+  int_ref g "src/classic.ml" 70 2637 2659 "src/classic.ml" 70 2637 2660
+)
+"src/classic.ml" 70 2637 2682 "src/classic.ml" 70 2637 2694
+type(
+  B.G.V.label -> B.G.V.t
+)
+ident(
+  ext_ref B.G.V.create
+)
+"src/classic.ml" 70 2637 2695 "src/classic.ml" 70 2637 2696
+type(
+  B.G.V.label
+)
+ident(
+  int_ref i "src/classic.ml" 70 2637 2661 "src/classic.ml" 70 2637 2662
+)
+"src/classic.ml" 70 2637 2681 "src/classic.ml" 70 2637 2697
+call(
+  stack
+)
+type(
+  B.G.V.t
+)
+"src/classic.ml" 70 2637 2666 "src/classic.ml" 70 2637 2697
+call(
+  tail
+)
+type(
+  B.G.t
+)
+"src/classic.ml" 70 2637 2654 "src/classic.ml" 70 2637 2698
+type(
+  B.G.t -> B.G.V.label -> B.G.t
+)
+"src/classic.ml" 70 2637 2700 "src/classic.ml" 70 2637 2707
+type(
+  unit -> B.G.t
+)
+ident(
+  ext_ref B.empty
+)
+"src/classic.ml" 70 2637 2708 "src/classic.ml" 70 2637 2710
+type(
+  unit
+)
+"src/classic.ml" 70 2637 2699 "src/classic.ml" 70 2637 2711
+call(
+  stack
+)
+type(
+  B.G.t
+)
+"src/classic.ml" 70 2637 2641 "src/classic.ml" 70 2637 2711
+call(
+  tail
+)
+type(
+  B.G.t
+)
+"src/classic.ml" 72 2713 2719 "src/classic.ml" 72 2713 2723
+type(
+  ?self:bool -> int -> B.G.t
+)
+ident(
+  def full "src/classic.ml" 79 2930 2997 "src/classic.ml" 81 2999 3002
+)
+"src/classic.ml" 72 2713 2726 "src/classic.ml" 72 2713 2730
+type(
+  bool
+)
+"src/classic.ml" 72 2713 2731 "src/classic.ml" 72 2713 2735
+type(
+  bool
+)
+type(
+  bool
+)
+ident(
+  int_ref *sth* "src/classic.ml" 72 2713 2731 "src/classic.ml" 72 2713 2735
+)
+type(
+  bool option
+)
+type(
+  bool option
+)
+type(
+  bool
+)
+ident(
+  def *sth* "src/classic.ml" 72 2713 2731 "src/classic.ml" 72 2713 2735
+)
+"src/classic.ml" 72 2713 2737 "src/classic.ml" 72 2713 2738
+type(
+  int
+)
+ident(
+  def n "src/classic.ml" 73 2741 2745 "src/classic.ml" 79 2930 2997
+)
+"src/classic.ml" 73 2741 2749 "src/classic.ml" 73 2741 2750
+type(
+  B.G.V.t array
+)
+"src/classic.ml" 73 2741 2753 "src/classic.ml" 73 2741 2763
+type(
+  int -> (B.G.V.label -> B.G.V.t) -> B.G.V.t array
+)
+ident(
+  ext_ref Array.init
+)
+"src/classic.ml" 73 2741 2765 "src/classic.ml" 73 2741 2766
+type(
+  int
+)
+ident(
+  int_ref n "src/classic.ml" 72 2713 2737 "src/classic.ml" 72 2713 2738
+)
+"src/classic.ml" 73 2741 2767 "src/classic.ml" 73 2741 2768
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( + )
+)
+"src/classic.ml" 73 2741 2769 "src/classic.ml" 73 2741 2770
+type(
+  int
+)
+"src/classic.ml" 73 2741 2764 "src/classic.ml" 73 2741 2771
+type(
+  int
+)
+"src/classic.ml" 73 2741 2777 "src/classic.ml" 73 2741 2778
+type(
+  B.G.V.label
+)
+ident(
+  def i "src/classic.ml" 73 2741 2782 "src/classic.ml" 73 2741 2796
+)
+"src/classic.ml" 73 2741 2782 "src/classic.ml" 73 2741 2794
+type(
+  B.G.V.label -> B.G.V.t
+)
+ident(
+  ext_ref B.G.V.create
+)
+"src/classic.ml" 73 2741 2795 "src/classic.ml" 73 2741 2796
+type(
+  B.G.V.label
+)
+ident(
+  int_ref i "src/classic.ml" 73 2741 2777 "src/classic.ml" 73 2741 2778
+)
+"src/classic.ml" 73 2741 2782 "src/classic.ml" 73 2741 2796
+call(
+  tail
+)
+type(
+  B.G.V.t
+)
+"src/classic.ml" 73 2741 2772 "src/classic.ml" 73 2741 2797
+type(
+  B.G.V.label -> B.G.V.t
+)
+"src/classic.ml" 73 2741 2753 "src/classic.ml" 73 2741 2797
+call(
+  stack
+)
+type(
+  B.G.V.t array
+)
+"src/classic.ml" 74 2801 2805 "src/classic.ml" 74 2801 2813
+type(
+  int -> int -> (B.G.t -> int -> B.G.t) -> B.G.t -> B.G.t
+)
+ident(
+  int_ref fold_for "src/classic.ml" 49 2020 2026 "src/classic.ml" 49 2020 2034
+)
+"src/classic.ml" 74 2801 2814 "src/classic.ml" 74 2801 2815
+type(
+  int
+)
+"src/classic.ml" 74 2801 2816 "src/classic.ml" 74 2801 2817
+type(
+  int
+)
+ident(
+  int_ref n "src/classic.ml" 72 2713 2737 "src/classic.ml" 72 2713 2738
+)
+"src/classic.ml" 75 2818 2829 "src/classic.ml" 75 2818 2830
+type(
+  B.G.t
+)
+ident(
+  def g "src/classic.ml" 75 2818 2831 "src/classic.ml" 78 2923 2928
+)
+"src/classic.ml" 75 2818 2831 "src/classic.ml" 75 2818 2832
+type(
+  int
+)
+ident(
+  def i "src/classic.ml" 76 2836 2838 "src/classic.ml" 78 2923 2928
+)
+"src/classic.ml" 76 2836 2838 "src/classic.ml" 76 2836 2846
+type(
+  int -> int -> (B.G.t -> int -> B.G.t) -> B.G.t -> B.G.t
+)
+ident(
+  int_ref fold_for "src/classic.ml" 49 2020 2026 "src/classic.ml" 49 2020 2034
+)
+"src/classic.ml" 76 2836 2847 "src/classic.ml" 76 2836 2848
+type(
+  int
+)
+"src/classic.ml" 76 2836 2849 "src/classic.ml" 76 2836 2850
+type(
+  int
+)
+ident(
+  int_ref n "src/classic.ml" 72 2713 2737 "src/classic.ml" 72 2713 2738
+)
+"src/classic.ml" 77 2851 2860 "src/classic.ml" 77 2851 2861
+type(
+  B.G.t
+)
+ident(
+  def g "src/classic.ml" 77 2851 2862 "src/classic.ml" 77 2851 2921
+)
+"src/classic.ml" 77 2851 2862 "src/classic.ml" 77 2851 2863
+type(
+  int
+)
+ident(
+  def j "src/classic.ml" 77 2851 2867 "src/classic.ml" 77 2851 2921
+)
+"src/classic.ml" 77 2851 2870 "src/classic.ml" 77 2851 2874
+type(
+  bool
+)
+ident(
+  int_ref self "src/classic.ml" 72 2713 2726 "src/classic.ml" 72 2713 2730
+)
+"src/classic.ml" 77 2851 2875 "src/classic.ml" 77 2851 2877
+type(
+  bool -> bool -> bool
+)
+ident(
+  ext_ref Pervasives.( || )
+)
+"src/classic.ml" 77 2851 2878 "src/classic.ml" 77 2851 2879
+type(
+  int
+)
+ident(
+  int_ref i "src/classic.ml" 75 2818 2831 "src/classic.ml" 75 2818 2832
+)
+"src/classic.ml" 77 2851 2880 "src/classic.ml" 77 2851 2882
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( <> )
+)
+"src/classic.ml" 77 2851 2883 "src/classic.ml" 77 2851 2884
+type(
+  int
+)
+ident(
+  int_ref j "src/classic.ml" 77 2851 2862 "src/classic.ml" 77 2851 2863
+)
+"src/classic.ml" 77 2851 2878 "src/classic.ml" 77 2851 2884
+type(
+  bool
+)
+"src/classic.ml" 77 2851 2870 "src/classic.ml" 77 2851 2884
+type(
+  bool
+)
+"src/classic.ml" 77 2851 2890 "src/classic.ml" 77 2851 2900
+type(
+  B.G.t -> B.G.V.t -> B.G.V.t -> B.G.t
+)
+ident(
+  ext_ref B.add_edge
+)
+"src/classic.ml" 77 2851 2901 "src/classic.ml" 77 2851 2902
+type(
+  B.G.t
+)
+ident(
+  int_ref g "src/classic.ml" 77 2851 2860 "src/classic.ml" 77 2851 2861
+)
+"src/classic.ml" 77 2851 2903 "src/classic.ml" 77 2851 2904
+type(
+  B.G.V.t array
+)
+ident(
+  int_ref v "src/classic.ml" 73 2741 2749 "src/classic.ml" 73 2741 2750
+)
+"src/classic.ml" 77 2851 2906 "src/classic.ml" 77 2851 2907
+type(
+  int
+)
+ident(
+  int_ref i "src/classic.ml" 75 2818 2831 "src/classic.ml" 75 2818 2832
+)
+"src/classic.ml" 77 2851 2903 "src/classic.ml" 77 2851 2908
+type(
+  B.G.V.t
+)
+"src/classic.ml" 77 2851 2909 "src/classic.ml" 77 2851 2910
+type(
+  B.G.V.t array
+)
+ident(
+  int_ref v "src/classic.ml" 73 2741 2749 "src/classic.ml" 73 2741 2750
+)
+"src/classic.ml" 77 2851 2912 "src/classic.ml" 77 2851 2913
+type(
+  int
+)
+ident(
+  int_ref j "src/classic.ml" 77 2851 2862 "src/classic.ml" 77 2851 2863
+)
+"src/classic.ml" 77 2851 2909 "src/classic.ml" 77 2851 2914
+type(
+  B.G.V.t
+)
+"src/classic.ml" 77 2851 2890 "src/classic.ml" 77 2851 2914
+call(
+  tail
+)
+type(
+  B.G.t
+)
+"src/classic.ml" 77 2851 2920 "src/classic.ml" 77 2851 2921
+type(
+  B.G.t
+)
+ident(
+  int_ref g "src/classic.ml" 77 2851 2860 "src/classic.ml" 77 2851 2861
+)
+"src/classic.ml" 77 2851 2867 "src/classic.ml" 77 2851 2921
+type(
+  B.G.t
+)
+"src/classic.ml" 77 2851 2855 "src/classic.ml" 77 2851 2922
+type(
+  B.G.t -> int -> B.G.t
+)
+"src/classic.ml" 78 2923 2927 "src/classic.ml" 78 2923 2928
+type(
+  B.G.t
+)
+ident(
+  int_ref g "src/classic.ml" 75 2818 2829 "src/classic.ml" 75 2818 2830
+)
+"src/classic.ml" 76 2836 2838 "src/classic.ml" 78 2923 2928
+call(
+  tail
+)
+type(
+  B.G.t
+)
+"src/classic.ml" 75 2818 2824 "src/classic.ml" 78 2923 2929
+type(
+  B.G.t -> int -> B.G.t
+)
+"src/classic.ml" 79 2930 2937 "src/classic.ml" 79 2930 2945
+type(
+  int -> int -> (B.G.t -> int -> B.G.t) -> B.G.t -> B.G.t
+)
+ident(
+  int_ref fold_for "src/classic.ml" 49 2020 2026 "src/classic.ml" 49 2020 2034
+)
+"src/classic.ml" 79 2930 2946 "src/classic.ml" 79 2930 2947
+type(
+  int
+)
+"src/classic.ml" 79 2930 2948 "src/classic.ml" 79 2930 2949
+type(
+  int
+)
+ident(
+  int_ref n "src/classic.ml" 72 2713 2737 "src/classic.ml" 72 2713 2738
+)
+"src/classic.ml" 79 2930 2955 "src/classic.ml" 79 2930 2956
+type(
+  B.G.t
+)
+ident(
+  def g "src/classic.ml" 79 2930 2957 "src/classic.ml" 79 2930 2982
+)
+"src/classic.ml" 79 2930 2957 "src/classic.ml" 79 2930 2958
+type(
+  int
+)
+ident(
+  def i "src/classic.ml" 79 2930 2962 "src/classic.ml" 79 2930 2982
+)
+"src/classic.ml" 79 2930 2962 "src/classic.ml" 79 2930 2974
+type(
+  B.G.t -> B.G.V.t -> B.G.t
+)
+ident(
+  ext_ref B.add_vertex
+)
+"src/classic.ml" 79 2930 2975 "src/classic.ml" 79 2930 2976
+type(
+  B.G.t
+)
+ident(
+  int_ref g "src/classic.ml" 79 2930 2955 "src/classic.ml" 79 2930 2956
+)
+"src/classic.ml" 79 2930 2977 "src/classic.ml" 79 2930 2978
+type(
+  B.G.V.t array
+)
+ident(
+  int_ref v "src/classic.ml" 73 2741 2749 "src/classic.ml" 73 2741 2750
+)
+"src/classic.ml" 79 2930 2980 "src/classic.ml" 79 2930 2981
+type(
+  int
+)
+ident(
+  int_ref i "src/classic.ml" 79 2930 2957 "src/classic.ml" 79 2930 2958
+)
+"src/classic.ml" 79 2930 2977 "src/classic.ml" 79 2930 2982
+type(
+  B.G.V.t
+)
+"src/classic.ml" 79 2930 2962 "src/classic.ml" 79 2930 2982
+call(
+  tail
+)
+type(
+  B.G.t
+)
+"src/classic.ml" 79 2930 2950 "src/classic.ml" 79 2930 2983
+type(
+  B.G.t -> int -> B.G.t
+)
+"src/classic.ml" 79 2930 2985 "src/classic.ml" 79 2930 2992
+type(
+  unit -> B.G.t
+)
+ident(
+  ext_ref B.empty
+)
+"src/classic.ml" 79 2930 2993 "src/classic.ml" 79 2930 2995
+type(
+  unit
+)
+"src/classic.ml" 79 2930 2984 "src/classic.ml" 79 2930 2996
+call(
+  stack
+)
+type(
+  B.G.t
+)
+"src/classic.ml" 79 2930 2936 "src/classic.ml" 79 2930 2997
+call(
+  stack
+)
+type(
+  B.G.t
+)
+"src/classic.ml" 74 2801 2805 "src/classic.ml" 79 2930 2997
+call(
+  tail
+)
+type(
+  B.G.t
+)
+"src/classic.ml" 73 2741 2745 "src/classic.ml" 79 2930 2997
+type(
+  B.G.t
+)
+"src/classic.ml" 83 3004 3059 "src/classic.ml" 83 3004 3071
+call(
+  stack
+)
+"src/classic.ml" 83 3004 3051 "src/classic.ml" 83 3004 3072
+call(
+  tail
+)
+"src/classic.ml" 85 3074 3129 "src/classic.ml" 85 3074 3141
+call(
+  stack
+)
+"src/classic.ml" 85 3074 3121 "src/classic.ml" 85 3074 3142
+call(
+  tail
+)

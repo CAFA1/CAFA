@@ -1,0 +1,32 @@
+Backport of:
+
+From 7a576da3f4deca0926b101dcf6a18953d0455144 Mon Sep 17 00:00:00 2001
+From: dirk <dirk@git.imagemagick.org>
+Date: Sat, 18 Jul 2015 22:13:41 +0000
+Subject: [PATCH] Removed incorrect EOF check.
+
+(cherry picked from commit 0b7172f2ba2c9e664d4df148e7d6e14a50edb57a)
+
+This is needed for fixing CVE-2016-5687
+
+origin: upstream,https://github.com/ImageMagick/ImageMagick/commit/0b7172f2ba2c9e664d4df148e7d6e14a50edb57a
+bug-debian: https://bugs.debian.org/832890
+---
+ coders/dds.c | 4 ----
+ 1 file changed, 4 deletions(-)
+
+Index: imagemagick-6.7.7.10/coders/dds.c
+===================================================================
+--- imagemagick-6.7.7.10.orig/coders/dds.c	2016-11-14 09:57:05.581133405 -0500
++++ imagemagick-6.7.7.10/coders/dds.c	2016-11-14 09:57:37.181134879 -0500
+@@ -396,10 +396,6 @@
+       }
+   }
+   
+-  if (EOFBlob(image) != MagickFalse)
+-    ThrowFileException(exception,CorruptImageError,"UnexpectedEndOfFile",
+-      image->filename);
+-  
+   (void) CloseBlob(image);
+   return(GetFirstImageInList(image));
+ }

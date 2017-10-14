@@ -1,0 +1,42 @@
+
+config.h.in,997
+#undef HAVE_BZERO4,126
+#undef HAVE_FCNTL_H7,202
+#undef HAVE_INTTYPES_H10,283
+#undef HAVE_LIBBFD13,364
+#undef HAVE_LIBIBERTY16,447
+#undef HAVE_LIBPCRE19,529
+#undef HAVE_LIBZ22,603
+#undef HAVE_MALLOC26,722
+#undef HAVE_MEMORY_H29,800
+#undef HAVE_MEMSET32,875
+#undef HAVE_STDBOOL_H35,943
+#undef HAVE_STDINT_H38,1024
+#undef HAVE_STDLIB_H41,1104
+#undef HAVE_STRINGS_H44,1185
+#undef HAVE_STRING_H47,1266
+#undef HAVE_STRSTR50,1341
+#undef HAVE_STRTOUL53,1415
+#undef HAVE_SYS_STAT_H56,1496
+#undef HAVE_SYS_TYPES_H59,1581
+#undef HAVE_UNISTD_H62,1664
+#undef HAVE_Z3_BINDINGS65,1718
+#undef HAVE__BOOL68,1797
+#undef PACKAGE71,1838
+#undef PACKAGE_BUGREPORT74,1933
+#undef PACKAGE_NAME77,2006
+#undef PACKAGE_STRING80,2086
+#undef PACKAGE_TARNAME83,2168
+#undef PACKAGE_URL86,2240
+#undef PACKAGE_VERSION89,2305
+#undef SIZEOF_BFD_VMA92,2381
+#undef STDC_HEADERS95,2459
+#undef VERSION98,2512
+#undef VEX_VERSION101,2554
+#undef const104,2635
+#undef malloc107,2720
+#undef size_t110,2800
+
+/home/bap/workspace/bap-0.7/libasmir/src/TAGS,include
+
+/home/bap/workspace/bap-0.7/libasmir/apps/TAGS,include

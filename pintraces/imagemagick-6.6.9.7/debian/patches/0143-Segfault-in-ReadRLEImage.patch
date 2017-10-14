@@ -1,0 +1,36 @@
+Backport of:
+
+From 221c2275537d968c2a798ea4c6f36715fcdcf106 Mon Sep 17 00:00:00 2001
+From: Cristy <urban-warrior@imagemagick.org>
+Date: Tue, 17 May 2016 15:05:03 -0400
+Subject: [PATCH] Segfault in ReadRLEImage
+
+Trigger by corrupted RLE file. Buffer overflow class
+
+bug: https://www.imagemagick.org/discourse-server/viewtopic.php?f=3&t=29710
+origin: upstream, https://github.com/ImageMagick/ImageMagick/commit/3e9165285eda6e1bb71172031d3048b51bb443a4
+bug-debian: https://bugs.debian.org/833743
+
+(cherry picked from commit 3e9165285eda6e1bb71172031d3048b51bb443a4)
+---
+ coders/rle.c | 5 +++--
+ 1 file changed, 3 insertions(+), 2 deletions(-)
+
+Index: imagemagick-6.7.7.10/coders/rle.c
+===================================================================
+--- imagemagick-6.7.7.10.orig/coders/rle.c	2016-11-14 11:08:59.589334573 -0500
++++ imagemagick-6.7.7.10/coders/rle.c	2016-11-14 11:10:31.713338869 -0500
+@@ -319,10 +319,11 @@
+     if (image->rows < (image->rows*number_planes_filled*sizeof(*rle_pixels)))
+       ThrowReaderException(CorruptImageError,"ImproperImageHeader");
+     rle_pixels=AcquireQuantumMemory(image->columns,image->rows*
+-      number_planes_filled*sizeof(*rle_pixels));
++      MagickMax(number_planes_filled,4)*sizeof(*rle_pixels));
+     if (rle_pixels == (unsigned char *) NULL)
+       ThrowReaderException(ResourceLimitError,"MemoryAllocationFailed");
+-    pixel_info_length=image->columns*image->rows*number_planes_filled;
++    pixel_info_length=image->columns*image->rows*
++      MagickMax(number_planes_filled,4);
+     if ((flags & 0x01) && !(flags & 0x02))
+       {
+         ssize_t

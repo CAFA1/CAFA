@@ -1,0 +1,5141 @@
+"hacks.ml" 11 118 151 "hacks.ml" 11 118 155
+type(
+  string
+)
+ident(
+  def name "hacks.ml" 11 118 186 "hacks.ml" 11 118 190
+)
+"hacks.ml" 11 118 158 "hacks.ml" 11 118 165
+type(
+  string
+)
+"hacks.ml" 11 118 170 "hacks.ml" 11 118 177
+type(
+  [> `NoDebug ]
+)
+ident(
+  def default "hacks.ml" 11 118 186 "hacks.ml" 11 118 190
+)
+"hacks.ml" 11 118 178 "hacks.ml" 11 118 186
+type(
+  [> `NoDebug ] as 'a
+)
+"hacks.ml" 11 118 129 "hacks.ml" 11 118 191
+call(
+  stack
+)
+"hacks.ml" 14 200 204 "hacks.ml" 14 200 212
+type(
+  Var.t
+)
+ident(
+  def ra_final "hacks.ml" 23 465 465 --
+)
+"hacks.ml" 14 200 215 "hacks.ml" 14 200 225
+type(
+  string -> Type.typ -> Var.t
+)
+ident(
+  ext_ref Var.newvar
+)
+"hacks.ml" 14 200 226 "hacks.ml" 14 200 236
+type(
+  string
+)
+"hacks.ml" 14 200 237 "hacks.ml" 14 200 243
+type(
+  Type.typ
+)
+ident(
+  ext_ref Ast.reg_32
+)
+"hacks.ml" 14 200 215 "hacks.ml" 14 200 243
+call(
+  stack
+)
+type(
+  Var.t
+)
+"hacks.ml" 15 244 248 "hacks.ml" 15 244 251
+type(
+  Var.t
+)
+ident(
+  def ra0 "hacks.ml" 23 465 465 --
+)
+"hacks.ml" 15 244 254 "hacks.ml" 15 244 264
+type(
+  string -> Type.typ -> Var.t
+)
+ident(
+  ext_ref Var.newvar
+)
+"hacks.ml" 15 244 265 "hacks.ml" 15 244 270
+type(
+  string
+)
+"hacks.ml" 15 244 271 "hacks.ml" 15 244 281
+type(
+  Type.typ
+)
+ident(
+  ext_ref Ast.reg_32
+)
+"hacks.ml" 15 244 254 "hacks.ml" 15 244 281
+call(
+  stack
+)
+type(
+  Var.t
+)
+"hacks.ml" 16 282 287 "hacks.ml" 16 282 290
+type(
+  Ast.var
+)
+ident(
+  def mem "hacks.ml" 23 465 465 --
+)
+"hacks.ml" 16 282 291 "hacks.ml" 16 282 293
+type(
+  Ast.var
+)
+ident(
+  def sp "hacks.ml" 23 465 465 --
+)
+"hacks.ml" 16 282 294 "hacks.ml" 16 282 298
+type(
+  Ast.var
+)
+ident(
+  def r_of "hacks.ml" 23 465 465 --
+)
+"hacks.ml" 16 282 286 "hacks.ml" 16 282 299
+type(
+  Ast.var * Ast.var * Ast.var
+)
+"hacks.ml" 17 302 308 "hacks.ml" 17 302 309
+type(
+  Ast.var list
+)
+"hacks.ml" 17 302 312 "hacks.ml" 17 302 332
+type(
+  Asmir.arch -> Ast.var list
+)
+ident(
+  ext_ref Asmir.decls_for_arch
+)
+"hacks.ml" 17 302 333 "hacks.ml" 17 302 348
+type(
+  Asmir.arch
+)
+ident(
+  ext_ref Asmir.arch_i386
+)
+"hacks.ml" 17 302 312 "hacks.ml" 17 302 348
+call(
+  stack
+)
+type(
+  Ast.var list
+)
+"hacks.ml" 18 352 355 "hacks.ml" 18 352 362
+type(
+  Ast.var list -> Ast.var
+)
+ident(
+  ext_ref BatListFull.List.hd
+)
+"hacks.ml" 18 352 363 "hacks.ml" 18 352 364
+type(
+  Ast.var list
+)
+ident(
+  int_ref d "hacks.ml" 17 302 308 "hacks.ml" 17 302 309
+)
+"hacks.ml" 18 352 355 "hacks.ml" 18 352 364
+call(
+  stack
+)
+type(
+  Ast.var
+)
+"hacks.ml" 19 366 369 "hacks.ml" 19 366 378
+type(
+  (Ast.var -> bool) -> Ast.var list -> Ast.var
+)
+ident(
+  ext_ref BatListFull.List.find
+)
+"hacks.ml" 19 366 384 "hacks.ml" 19 366 385
+type(
+  Ast.var
+)
+ident(
+  def v "hacks.ml" 19 366 389 "hacks.ml" 19 366 409
+)
+"hacks.ml" 19 366 389 "hacks.ml" 19 366 397
+type(
+  Ast.var -> string
+)
+ident(
+  ext_ref Var.name
+)
+"hacks.ml" 19 366 398 "hacks.ml" 19 366 399
+type(
+  Ast.var
+)
+ident(
+  int_ref v "hacks.ml" 19 366 384 "hacks.ml" 19 366 385
+)
+"hacks.ml" 19 366 389 "hacks.ml" 19 366 399
+call(
+  stack
+)
+type(
+  string
+)
+"hacks.ml" 19 366 400 "hacks.ml" 19 366 401
+type(
+  string -> string -> bool
+)
+ident(
+  ext_ref Pervasives.( = )
+)
+"hacks.ml" 19 366 402 "hacks.ml" 19 366 409
+type(
+  string
+)
+"hacks.ml" 19 366 389 "hacks.ml" 19 366 409
+type(
+  bool
+)
+"hacks.ml" 19 366 379 "hacks.ml" 19 366 410
+type(
+  Ast.var -> bool
+)
+"hacks.ml" 19 366 411 "hacks.ml" 19 366 412
+type(
+  Ast.var list
+)
+ident(
+  int_ref d "hacks.ml" 17 302 308 "hacks.ml" 17 302 309
+)
+"hacks.ml" 19 366 369 "hacks.ml" 19 366 412
+call(
+  stack
+)
+type(
+  Ast.var
+)
+"hacks.ml" 20 414 417 "hacks.ml" 20 414 426
+type(
+  (Ast.var -> bool) -> Ast.var list -> Ast.var
+)
+ident(
+  ext_ref BatListFull.List.find
+)
+"hacks.ml" 20 414 432 "hacks.ml" 20 414 433
+type(
+  Ast.var
+)
+ident(
+  def v "hacks.ml" 20 414 437 "hacks.ml" 20 414 456
+)
+"hacks.ml" 20 414 437 "hacks.ml" 20 414 445
+type(
+  Ast.var -> string
+)
+ident(
+  ext_ref Var.name
+)
+"hacks.ml" 20 414 446 "hacks.ml" 20 414 447
+type(
+  Ast.var
+)
+ident(
+  int_ref v "hacks.ml" 20 414 432 "hacks.ml" 20 414 433
+)
+"hacks.ml" 20 414 437 "hacks.ml" 20 414 447
+call(
+  stack
+)
+type(
+  string
+)
+"hacks.ml" 20 414 448 "hacks.ml" 20 414 449
+type(
+  string -> string -> bool
+)
+ident(
+  ext_ref Pervasives.( = )
+)
+"hacks.ml" 20 414 450 "hacks.ml" 20 414 456
+type(
+  string
+)
+"hacks.ml" 20 414 437 "hacks.ml" 20 414 456
+type(
+  bool
+)
+"hacks.ml" 20 414 427 "hacks.ml" 20 414 457
+type(
+  Ast.var -> bool
+)
+"hacks.ml" 20 414 458 "hacks.ml" 20 414 459
+type(
+  Ast.var list
+)
+ident(
+  int_ref d "hacks.ml" 17 302 308 "hacks.ml" 17 302 309
+)
+"hacks.ml" 20 414 417 "hacks.ml" 20 414 459
+call(
+  stack
+)
+type(
+  Ast.var
+)
+"hacks.ml" 18 352 354 "hacks.ml" 21 460 463
+type(
+  Ast.var * Ast.var * Ast.var
+)
+"hacks.ml" 17 302 304 "hacks.ml" 21 460 463
+type(
+  Ast.var * Ast.var * Ast.var
+)
+"hacks.ml" 23 465 469 "hacks.ml" 23 465 481
+type(
+  string
+)
+ident(
+  def function_end "hacks.ml" 25 532 532 --
+)
+"hacks.ml" 23 465 484 "hacks.ml" 23 465 498
+type(
+  string
+)
+"hacks.ml" 24 499 503 "hacks.ml" 24 499 508
+type(
+  Type.attribute list
+)
+ident(
+  def attrs "hacks.ml" 25 532 532 --
+)
+"hacks.ml" 24 499 520 "hacks.ml" 24 499 530
+type(
+  string
+)
+"hacks.ml" 24 499 512 "hacks.ml" 24 499 530
+type(
+  Type.attribute
+)
+"hacks.ml" 24 499 511 "hacks.ml" 24 499 531
+type(
+  Type.attribute list
+)
+"hacks.ml" 25 532 536 "hacks.ml" 25 532 544
+type(
+  Ast.stmt
+)
+ident(
+  def save_ra0 "hacks.ml" 27 607 607 --
+)
+"hacks.ml" 25 532 552 "hacks.ml" 25 532 555
+type(
+  Ast.var
+)
+ident(
+  int_ref ra0 "hacks.ml" 15 244 248 "hacks.ml" 15 244 251
+)
+"hacks.ml" 25 532 566 "hacks.ml" 25 532 569
+type(
+  Ast.var
+)
+ident(
+  int_ref mem "hacks.ml" 16 282 287 "hacks.ml" 16 282 290
+)
+"hacks.ml" 25 532 562 "hacks.ml" 25 532 569
+type(
+  Ast.exp
+)
+"hacks.ml" 25 532 575 "hacks.ml" 25 532 577
+type(
+  Ast.var
+)
+ident(
+  int_ref sp "hacks.ml" 16 282 291 "hacks.ml" 16 282 293
+)
+"hacks.ml" 25 532 571 "hacks.ml" 25 532 577
+type(
+  Ast.exp
+)
+"hacks.ml" 25 532 579 "hacks.ml" 25 532 588
+type(
+  Ast.exp
+)
+ident(
+  ext_ref Ast.exp_false
+)
+"hacks.ml" 25 532 590 "hacks.ml" 25 532 596
+type(
+  Type.typ
+)
+ident(
+  ext_ref Ast.reg_32
+)
+"hacks.ml" 25 532 561 "hacks.ml" 25 532 597
+type(
+  Ast.exp * Ast.exp * Ast.exp * Type.typ
+)
+"hacks.ml" 25 532 557 "hacks.ml" 25 532 597
+type(
+  Ast.exp
+)
+"hacks.ml" 25 532 599 "hacks.ml" 25 532 604
+type(
+  Ast.attrs
+)
+ident(
+  int_ref attrs "hacks.ml" 24 499 503 "hacks.ml" 24 499 508
+)
+"hacks.ml" 25 532 551 "hacks.ml" 25 532 605
+type(
+  Ast.var * Ast.exp * Ast.attrs
+)
+"hacks.ml" 25 532 547 "hacks.ml" 25 532 605
+type(
+  Ast.stmt
+)
+"hacks.ml" 27 607 611 "hacks.ml" 27 607 621
+type(
+  ?ra:Ast.var -> Ast.stmt list -> Ast.stmt list
+)
+ident(
+  def ret_to_jmp "hacks.ml" 47 1183 1183 --
+)
+"hacks.ml" 27 607 624 "hacks.ml" 27 607 626
+type(
+  Ast.var
+)
+"hacks.ml" 27 607 627 "hacks.ml" 27 607 635
+type(
+  Ast.var
+)
+ident(
+  int_ref ra_final "hacks.ml" 14 200 204 "hacks.ml" 14 200 212
+)
+type(
+  Ast.var
+)
+ident(
+  int_ref *sth* "hacks.ml" 27 607 627 "hacks.ml" 27 607 635
+)
+type(
+  Ast.var option
+)
+type(
+  Ast.var option
+)
+type(
+  Ast.var
+)
+ident(
+  def *sth* "hacks.ml" 27 607 627 "hacks.ml" 27 607 635
+)
+"hacks.ml" 27 607 637 "hacks.ml" 27 607 638
+type(
+  Ast.stmt list
+)
+ident(
+  def p "hacks.ml" 28 641 643 "hacks.ml" 44 1133 1180
+)
+"hacks.ml" 28 641 647 "hacks.ml" 28 641 648
+type(
+  Ast.stmt array
+)
+"hacks.ml" 28 641 651 "hacks.ml" 28 641 664
+type(
+  Ast.stmt list -> Ast.stmt array
+)
+ident(
+  ext_ref Array.of_list
+)
+"hacks.ml" 28 641 665 "hacks.ml" 28 641 666
+type(
+  Ast.stmt list
+)
+ident(
+  int_ref p "hacks.ml" 27 607 637 "hacks.ml" 27 607 638
+)
+"hacks.ml" 28 641 651 "hacks.ml" 28 641 666
+call(
+  stack
+)
+type(
+  Ast.stmt array
+)
+"hacks.ml" 29 670 672 "hacks.ml" 29 670 683
+type(
+  (int -> Ast.stmt -> unit) -> Ast.stmt array -> unit
+)
+ident(
+  ext_ref Array.iteri
+)
+"hacks.ml" 30 684 693 "hacks.ml" 30 684 694
+type(
+  int
+)
+ident(
+  def i "hacks.ml" 30 684 695 "hacks.ml" 41 1080 1094
+)
+"hacks.ml" 30 684 695 "hacks.ml" 30 684 696
+type(
+  Ast.stmt
+)
+ident(
+  def s "hacks.ml" 30 684 700 "hacks.ml" 41 1080 1094
+)
+"hacks.ml" 30 684 706 "hacks.ml" 30 684 707
+type(
+  Ast.stmt
+)
+ident(
+  int_ref s "hacks.ml" 30 684 695 "hacks.ml" 30 684 696
+)
+"hacks.ml" 32 744 759 "hacks.ml" 32 744 764
+type(
+  string
+)
+"hacks.ml" 32 744 766 "hacks.ml" 32 744 767
+type(
+  Ast.attrs
+)
+"hacks.ml" 32 744 758 "hacks.ml" 32 744 768
+type(
+  string * Ast.attrs
+)
+"hacks.ml" 32 744 751 "hacks.ml" 32 744 768
+type(
+  Ast.stmt
+)
+"hacks.ml" 33 772 774 "hacks.ml" 33 772 775
+type(
+  Ast.stmt array
+)
+ident(
+  int_ref a "hacks.ml" 28 641 647 "hacks.ml" 28 641 648
+)
+"hacks.ml" 33 772 777 "hacks.ml" 33 772 778
+type(
+  int
+)
+ident(
+  int_ref i "hacks.ml" 30 684 693 "hacks.ml" 30 684 694
+)
+"hacks.ml" 33 772 791 "hacks.ml" 33 772 803
+type(
+  string
+)
+ident(
+  int_ref function_end "hacks.ml" 23 465 469 "hacks.ml" 23 465 481
+)
+"hacks.ml" 33 772 787 "hacks.ml" 33 772 803
+type(
+  Ast.exp
+)
+"hacks.ml" 33 772 805 "hacks.ml" 33 772 810
+type(
+  Ast.attrs
+)
+ident(
+  int_ref attrs "hacks.ml" 24 499 503 "hacks.ml" 24 499 508
+)
+"hacks.ml" 33 772 786 "hacks.ml" 33 772 811
+type(
+  Ast.exp * Ast.attrs
+)
+"hacks.ml" 33 772 783 "hacks.ml" 33 772 811
+type(
+  Ast.stmt
+)
+"hacks.ml" 33 772 774 "hacks.ml" 33 772 811
+type(
+  unit
+)
+"hacks.ml" 34 813 822 "hacks.ml" 34 813 823
+type(
+  Ast.stmt array
+)
+ident(
+  int_ref a "hacks.ml" 28 641 647 "hacks.ml" 28 641 648
+)
+"hacks.ml" 34 813 825 "hacks.ml" 34 813 826
+type(
+  int
+)
+ident(
+  int_ref i "hacks.ml" 30 684 693 "hacks.ml" 30 684 694
+)
+"hacks.ml" 34 813 826 "hacks.ml" 34 813 827
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( - )
+)
+"hacks.ml" 34 813 827 "hacks.ml" 34 813 828
+type(
+  int
+)
+"hacks.ml" 34 813 825 "hacks.ml" 34 813 828
+type(
+  int
+)
+"hacks.ml" 34 813 822 "hacks.ml" 34 813 829
+type(
+  Ast.stmt
+)
+"hacks.ml" 35 836 845 "hacks.ml" 35 836 846
+type(
+  Ast.exp
+)
+ident(
+  def t "hacks.ml" 35 836 854 "hacks.ml" 35 836 886
+)
+"hacks.ml" 35 836 847 "hacks.ml" 35 836 849
+type(
+  Ast.attrs
+)
+ident(
+  def at "hacks.ml" 35 836 854 "hacks.ml" 35 836 886
+)
+"hacks.ml" 35 836 844 "hacks.ml" 35 836 850
+type(
+  Ast.exp * Ast.attrs
+)
+"hacks.ml" 35 836 841 "hacks.ml" 35 836 850
+type(
+  Ast.stmt
+)
+"hacks.ml" 35 836 854 "hacks.ml" 35 836 855
+type(
+  Ast.stmt array
+)
+ident(
+  int_ref a "hacks.ml" 28 641 647 "hacks.ml" 28 641 648
+)
+"hacks.ml" 35 836 857 "hacks.ml" 35 836 858
+type(
+  int
+)
+ident(
+  int_ref i "hacks.ml" 30 684 693 "hacks.ml" 30 684 694
+)
+"hacks.ml" 35 836 858 "hacks.ml" 35 836 859
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( - )
+)
+"hacks.ml" 35 836 859 "hacks.ml" 35 836 860
+type(
+  int
+)
+"hacks.ml" 35 836 857 "hacks.ml" 35 836 860
+type(
+  int
+)
+"hacks.ml" 35 836 870 "hacks.ml" 35 836 872
+type(
+  Ast.var
+)
+ident(
+  int_ref ra "hacks.ml" 27 607 624 "hacks.ml" 27 607 626
+)
+"hacks.ml" 35 836 874 "hacks.ml" 35 836 875
+type(
+  Ast.exp
+)
+ident(
+  int_ref t "hacks.ml" 35 836 845 "hacks.ml" 35 836 846
+)
+"hacks.ml" 35 836 877 "hacks.ml" 35 836 882
+type(
+  Type.attribute list
+)
+ident(
+  int_ref attrs "hacks.ml" 24 499 503 "hacks.ml" 24 499 508
+)
+"hacks.ml" 35 836 882 "hacks.ml" 35 836 883
+type(
+  Type.attribute list -> Ast.attrs -> Ast.attrs
+)
+ident(
+  ext_ref Pervasives.( @ )
+)
+"hacks.ml" 35 836 883 "hacks.ml" 35 836 885
+type(
+  Ast.attrs
+)
+ident(
+  int_ref at "hacks.ml" 35 836 847 "hacks.ml" 35 836 849
+)
+"hacks.ml" 35 836 877 "hacks.ml" 35 836 885
+call(
+  stack
+)
+type(
+  Ast.attrs
+)
+"hacks.ml" 35 836 869 "hacks.ml" 35 836 886
+type(
+  Ast.var * Ast.exp * Ast.attrs
+)
+"hacks.ml" 35 836 865 "hacks.ml" 35 836 886
+type(
+  Ast.stmt
+)
+"hacks.ml" 35 836 854 "hacks.ml" 35 836 886
+type(
+  unit
+)
+"hacks.ml" 36 887 892 "hacks.ml" 36 887 893
+type(
+  Ast.stmt
+)
+"hacks.ml" 36 887 897 "hacks.ml" 36 887 905
+type(
+  string -> unit
+)
+ident(
+  ext_ref Pervasives.failwith
+)
+"hacks.ml" 36 887 906 "hacks.ml" 36 887 939
+type(
+  string
+)
+"hacks.ml" 36 887 897 "hacks.ml" 36 887 939
+type(
+  unit
+)
+"hacks.ml" 34 813 815 "hacks.ml" 37 940 943
+type(
+  unit
+)
+"hacks.ml" 33 772 774 "hacks.ml" 37 940 943
+type(
+  unit
+)
+"hacks.ml" 39 982 993 "hacks.ml" 39 982 994
+type(
+  Ast.exp
+)
+ident(
+  def t "hacks.ml" 39 982 1003 "hacks.ml" 40 1035 1079
+)
+"hacks.ml" 39 982 996 "hacks.ml" 39 982 1001
+type(
+  Ast.attrs
+)
+ident(
+  def attrs "hacks.ml" 39 982 1003 "hacks.ml" 40 1035 1079
+)
+"hacks.ml" 39 982 992 "hacks.ml" 39 982 1002
+type(
+  Ast.exp * Ast.attrs
+)
+"hacks.ml" 39 982 989 "hacks.ml" 39 982 1002
+type(
+  Ast.stmt
+)
+"hacks.ml" 39 982 1008 "hacks.ml" 39 982 1013
+type(
+  Ast.attrs
+)
+ident(
+  int_ref attrs "hacks.ml" 39 982 996 "hacks.ml" 39 982 1001
+)
+"hacks.ml" 39 982 1014 "hacks.ml" 39 982 1015
+type(
+  Ast.attrs -> Ast.attrs -> bool
+)
+ident(
+  ext_ref Pervasives.( = )
+)
+"hacks.ml" 39 982 1025 "hacks.ml" 39 982 1030
+type(
+  string
+)
+"hacks.ml" 39 982 1017 "hacks.ml" 39 982 1030
+type(
+  Type.attribute
+)
+"hacks.ml" 39 982 1016 "hacks.ml" 39 982 1031
+type(
+  Ast.attrs
+)
+"hacks.ml" 39 982 1008 "hacks.ml" 39 982 1031
+type(
+  bool
+)
+"hacks.ml" 40 1035 1042 "hacks.ml" 40 1035 1043
+type(
+  Ast.stmt array
+)
+ident(
+  int_ref a "hacks.ml" 28 641 647 "hacks.ml" 28 641 648
+)
+"hacks.ml" 40 1035 1045 "hacks.ml" 40 1035 1046
+type(
+  int
+)
+ident(
+  int_ref i "hacks.ml" 30 684 693 "hacks.ml" 30 684 694
+)
+"hacks.ml" 40 1035 1059 "hacks.ml" 40 1035 1071
+type(
+  string
+)
+ident(
+  int_ref function_end "hacks.ml" 23 465 469 "hacks.ml" 23 465 481
+)
+"hacks.ml" 40 1035 1055 "hacks.ml" 40 1035 1071
+type(
+  Ast.exp
+)
+"hacks.ml" 40 1035 1073 "hacks.ml" 40 1035 1078
+type(
+  Ast.attrs
+)
+ident(
+  int_ref attrs "hacks.ml" 39 982 996 "hacks.ml" 39 982 1001
+)
+"hacks.ml" 40 1035 1054 "hacks.ml" 40 1035 1079
+type(
+  Ast.exp * Ast.attrs
+)
+"hacks.ml" 40 1035 1051 "hacks.ml" 40 1035 1079
+type(
+  Ast.stmt
+)
+"hacks.ml" 40 1035 1042 "hacks.ml" 40 1035 1079
+type(
+  unit
+)
+"hacks.ml" 39 982 1003 "hacks.ml" 40 1035 1079
+type(
+  unit
+)
+"hacks.ml" 41 1080 1087 "hacks.ml" 41 1080 1088
+type(
+  Ast.stmt
+)
+"hacks.ml" 41 1080 1092 "hacks.ml" 41 1080 1094
+type(
+  unit
+)
+"hacks.ml" 30 684 700 "hacks.ml" 41 1080 1094
+type(
+  unit
+)
+"hacks.ml" 30 684 688 "hacks.ml" 42 1095 1100
+type(
+  int -> Ast.stmt -> unit
+)
+"hacks.ml" 42 1095 1101 "hacks.ml" 42 1095 1102
+type(
+  Ast.stmt array
+)
+ident(
+  int_ref a "hacks.ml" 28 641 647 "hacks.ml" 28 641 648
+)
+"hacks.ml" 29 670 672 "hacks.ml" 42 1095 1102
+call(
+  stack
+)
+type(
+  unit
+)
+"hacks.ml" 43 1104 1110 "hacks.ml" 43 1104 1111
+type(
+  Ast.stmt list
+)
+"hacks.ml" 43 1104 1114 "hacks.ml" 43 1104 1127
+type(
+  Ast.stmt array -> Ast.stmt list
+)
+ident(
+  ext_ref Array.to_list
+)
+"hacks.ml" 43 1104 1128 "hacks.ml" 43 1104 1129
+type(
+  Ast.stmt array
+)
+ident(
+  int_ref a "hacks.ml" 28 641 647 "hacks.ml" 28 641 648
+)
+"hacks.ml" 43 1104 1114 "hacks.ml" 43 1104 1129
+call(
+  stack
+)
+type(
+  Ast.stmt list
+)
+"hacks.ml" 44 1133 1135 "hacks.ml" 44 1133 1143
+type(
+  Ast.stmt
+)
+ident(
+  int_ref save_ra0 "hacks.ml" 25 532 536 "hacks.ml" 25 532 544
+)
+"hacks.ml" 44 1133 1145 "hacks.ml" 44 1133 1146
+type(
+  Ast.stmt list
+)
+ident(
+  int_ref l "hacks.ml" 43 1104 1110 "hacks.ml" 43 1104 1111
+)
+"hacks.ml" 44 1133 1135 "hacks.ml" 44 1133 1146
+type(
+  Ast.stmt list
+)
+"hacks.ml" 44 1133 1146 "hacks.ml" 44 1133 1147
+type(
+  Ast.stmt list -> Ast.stmt list -> Ast.stmt list
+)
+ident(
+  ext_ref Pervasives.( @ )
+)
+"hacks.ml" 44 1133 1159 "hacks.ml" 44 1133 1171
+type(
+  string
+)
+ident(
+  int_ref function_end "hacks.ml" 23 465 469 "hacks.ml" 23 465 481
+)
+"hacks.ml" 44 1133 1154 "hacks.ml" 44 1133 1171
+type(
+  Type.label
+)
+"hacks.ml" 44 1133 1173 "hacks.ml" 44 1133 1178
+type(
+  Ast.attrs
+)
+ident(
+  int_ref attrs "hacks.ml" 24 499 503 "hacks.ml" 24 499 508
+)
+"hacks.ml" 44 1133 1153 "hacks.ml" 44 1133 1179
+type(
+  Type.label * Ast.attrs
+)
+"hacks.ml" 44 1133 1148 "hacks.ml" 44 1133 1179
+type(
+  Ast.stmt
+)
+"hacks.ml" 44 1133 1147 "hacks.ml" 44 1133 1180
+type(
+  Ast.stmt list
+)
+"hacks.ml" 44 1133 1135 "hacks.ml" 44 1133 1180
+call(
+  tail
+)
+type(
+  Ast.stmt list
+)
+"hacks.ml" 43 1104 1106 "hacks.ml" 44 1133 1180
+type(
+  Ast.stmt list
+)
+"hacks.ml" 29 670 672 "hacks.ml" 44 1133 1180
+type(
+  Ast.stmt list
+)
+"hacks.ml" 28 641 643 "hacks.ml" 44 1133 1180
+type(
+  Ast.stmt list
+)
+"hacks.ml" 47 1183 1187 "hacks.ml" 47 1183 1192
+type(
+  Type.attribute list
+)
+ident(
+  def attrs "hacks.ml" 48 1217 1217 --
+)
+"hacks.ml" 47 1183 1204 "hacks.ml" 47 1183 1215
+type(
+  string
+)
+"hacks.ml" 47 1183 1196 "hacks.ml" 47 1183 1215
+type(
+  Type.attribute
+)
+"hacks.ml" 47 1183 1195 "hacks.ml" 47 1183 1216
+type(
+  Type.attribute list
+)
+"hacks.ml" 48 1217 1221 "hacks.ml" 48 1217 1232
+type(
+  Ast.stmt list -> Ast.stmt list
+)
+ident(
+  def assert_noof "hacks.ml" 58 1407 1407 --
+)
+"hacks.ml" 48 1217 1233 "hacks.ml" 48 1217 1234
+type(
+  Ast.stmt list
+)
+ident(
+  def p "hacks.ml" 49 1237 1239 "hacks.ml" 56 1388 1405
+)
+"hacks.ml" 49 1237 1243 "hacks.ml" 49 1237 1245
+type(
+  Ast.stmt list list
+)
+"hacks.ml" 49 1237 1248 "hacks.ml" 49 1237 1256
+type(
+  (Ast.stmt -> Ast.stmt list) -> Ast.stmt list -> Ast.stmt list list
+)
+ident(
+  ext_ref BatListFull.List.map
+)
+"hacks.ml" 51 1271 1285 "hacks.ml" 51 1271 1286
+type(
+  Ast.var
+)
+ident(
+  def v "hacks.ml" 51 1271 1299 "hacks.ml" 52 1317 1356
+)
+"hacks.ml" 51 1271 1288 "hacks.ml" 51 1271 1289
+type(
+  Ast.exp
+)
+ident(
+  def e "hacks.ml" 51 1271 1299 "hacks.ml" 52 1317 1356
+)
+"hacks.ml" 51 1271 1291 "hacks.ml" 51 1271 1292
+type(
+  Ast.attrs
+)
+ident(
+  def a "hacks.ml" 51 1271 1299 "hacks.ml" 52 1317 1356
+)
+"hacks.ml" 51 1271 1284 "hacks.ml" 51 1271 1293
+type(
+  Ast.var * Ast.exp * Ast.attrs
+)
+"hacks.ml" 51 1271 1280 "hacks.ml" 51 1271 1293
+type(
+  Ast.stmt
+)
+"hacks.ml" 51 1271 1280 "hacks.ml" 51 1271 1298
+type(
+  Ast.stmt
+)
+ident(
+  def s "hacks.ml" 51 1271 1299 "hacks.ml" 52 1317 1356
+)
+"hacks.ml" 51 1271 1304 "hacks.ml" 51 1271 1305
+type(
+  Ast.var
+)
+ident(
+  int_ref v "hacks.ml" 51 1271 1285 "hacks.ml" 51 1271 1286
+)
+"hacks.ml" 51 1271 1306 "hacks.ml" 51 1271 1308
+type(
+  Ast.var -> Ast.var -> bool
+)
+ident(
+  ext_ref Pervasives.( == )
+)
+"hacks.ml" 51 1271 1309 "hacks.ml" 51 1271 1313
+type(
+  Ast.var
+)
+ident(
+  int_ref r_of "hacks.ml" 16 282 294 "hacks.ml" 16 282 298
+)
+"hacks.ml" 51 1271 1304 "hacks.ml" 51 1271 1313
+type(
+  bool
+)
+"hacks.ml" 52 1317 1322 "hacks.ml" 52 1317 1323
+type(
+  Ast.stmt
+)
+ident(
+  int_ref s "hacks.ml" 51 1271 1280 "hacks.ml" 51 1271 1298
+)
+"hacks.ml" 52 1317 1332 "hacks.ml" 52 1317 1339
+type(
+  Ast.exp -> Ast.exp
+)
+ident(
+  ext_ref Ast_convenience.exp_not
+)
+"hacks.ml" 52 1317 1345 "hacks.ml" 52 1317 1346
+type(
+  Ast.var
+)
+ident(
+  int_ref v "hacks.ml" 51 1271 1285 "hacks.ml" 51 1271 1286
+)
+"hacks.ml" 52 1317 1340 "hacks.ml" 52 1317 1347
+type(
+  Ast.exp
+)
+"hacks.ml" 52 1317 1332 "hacks.ml" 52 1317 1347
+call(
+  stack
+)
+type(
+  Ast.exp
+)
+"hacks.ml" 52 1317 1349 "hacks.ml" 52 1317 1354
+type(
+  Ast.attrs
+)
+ident(
+  int_ref attrs "hacks.ml" 47 1183 1187 "hacks.ml" 47 1183 1192
+)
+"hacks.ml" 52 1317 1331 "hacks.ml" 52 1317 1355
+type(
+  Ast.exp * Ast.attrs
+)
+"hacks.ml" 52 1317 1325 "hacks.ml" 52 1317 1355
+type(
+  Ast.stmt
+)
+"hacks.ml" 52 1317 1321 "hacks.ml" 52 1317 1356
+type(
+  Ast.stmt list
+)
+"hacks.ml" 51 1271 1299 "hacks.ml" 52 1317 1356
+type(
+  Ast.stmt list
+)
+"hacks.ml" 53 1357 1366 "hacks.ml" 53 1357 1367
+type(
+  Ast.stmt
+)
+ident(
+  def s "hacks.ml" 53 1357 1371 "hacks.ml" 53 1357 1374
+)
+"hacks.ml" 53 1357 1372 "hacks.ml" 53 1357 1373
+type(
+  Ast.stmt
+)
+ident(
+  int_ref s "hacks.ml" 53 1357 1366 "hacks.ml" 53 1357 1367
+)
+"hacks.ml" 53 1357 1371 "hacks.ml" 53 1357 1374
+type(
+  Ast.stmt list
+)
+"hacks.ml" 50 1257 1261 "hacks.ml" 54 1375 1380
+type(
+  Ast.stmt -> Ast.stmt list
+)
+"hacks.ml" 54 1375 1381 "hacks.ml" 54 1375 1382
+type(
+  Ast.stmt list
+)
+ident(
+  int_ref p "hacks.ml" 48 1217 1233 "hacks.ml" 48 1217 1234
+)
+"hacks.ml" 49 1237 1248 "hacks.ml" 54 1375 1382
+call(
+  stack
+)
+type(
+  Ast.stmt list list
+)
+"hacks.ml" 56 1388 1390 "hacks.ml" 56 1388 1402
+type(
+  Ast.stmt list list -> Ast.stmt list
+)
+ident(
+  ext_ref BatListFull.List.flatten
+)
+"hacks.ml" 56 1388 1403 "hacks.ml" 56 1388 1405
+type(
+  Ast.stmt list list
+)
+ident(
+  int_ref il "hacks.ml" 49 1237 1243 "hacks.ml" 49 1237 1245
+)
+"hacks.ml" 56 1388 1390 "hacks.ml" 56 1388 1405
+call(
+  tail
+)
+type(
+  Ast.stmt list
+)
+"hacks.ml" 49 1237 1239 "hacks.ml" 56 1388 1405
+type(
+  Ast.stmt list
+)
+"hacks.ml" 60 1442 1446 "hacks.ml" 60 1442 1459
+type(
+  Cfg.AST.G.t -> Cfg.AST.G.t
+)
+ident(
+  def remove_cycles "hacks.ml" 115 3321 3321 --
+)
+"hacks.ml" 60 1442 1460 "hacks.ml" 60 1442 1463
+type(
+  Cfg.AST.G.t
+)
+ident(
+  def cfg "hacks.ml" 61 1466 1468 "hacks.ml" 112 3233 3279
+)
+"hacks.ml" 62 1494 1500 "hacks.ml" 62 1494 1501
+type(
+  Type.attribute
+)
+ident(
+  def a "hacks.ml" 64 1591 1593 "hacks.ml" 112 3233 3279
+)
+"hacks.ml" 62 1494 1512 "hacks.ml" 62 1494 1536
+type(
+  string
+)
+"hacks.ml" 62 1494 1504 "hacks.ml" 62 1494 1536
+type(
+  Type.attribute
+)
+"hacks.ml" 64 1591 1597 "hacks.ml" 64 1591 1609
+type(
+  Ast.stmt
+)
+ident(
+  def assert_false "hacks.ml" 65 1643 1645 "hacks.ml" 112 3233 3279
+)
+"hacks.ml" 64 1591 1619 "hacks.ml" 64 1591 1631
+type(
+  string
+)
+"hacks.ml" 64 1591 1616 "hacks.ml" 64 1591 1631
+type(
+  Ast.exp
+)
+"hacks.ml" 64 1591 1633 "hacks.ml" 64 1591 1634
+type(
+  Type.attribute
+)
+ident(
+  int_ref a "hacks.ml" 62 1494 1500 "hacks.ml" 62 1494 1501
+)
+"hacks.ml" 64 1591 1636 "hacks.ml" 64 1591 1638
+type(
+  Type.attribute list
+)
+"hacks.ml" 64 1591 1633 "hacks.ml" 64 1591 1638
+type(
+  Ast.attrs
+)
+"hacks.ml" 64 1591 1615 "hacks.ml" 64 1591 1639
+type(
+  Ast.exp * Ast.attrs
+)
+"hacks.ml" 64 1591 1612 "hacks.ml" 64 1591 1639
+type(
+  Ast.stmt
+)
+"hacks.ml" 65 1643 1649 "hacks.ml" 65 1643 1652
+type(
+  Cfg.AST.G.t
+)
+ident(
+  def cfg "hacks.ml" 66 1688 1690 "hacks.ml" 112 3233 3279
+)
+"hacks.ml" 65 1643 1654 "hacks.ml" 65 1643 1659
+type(
+  Cfg.AST.G.V.t
+)
+ident(
+  def error "hacks.ml" 66 1688 1690 "hacks.ml" 112 3233 3279
+)
+"hacks.ml" 65 1643 1649 "hacks.ml" 65 1643 1659
+type(
+  Cfg.AST.G.t * Cfg.AST.G.V.t
+)
+"hacks.ml" 65 1643 1662 "hacks.ml" 65 1643 1680
+type(
+  Cfg.AST.G.t -> Cfg.AST.G.t * Cfg.AST.G.V.t
+)
+ident(
+  ext_ref Cfg_ast.find_error
+)
+"hacks.ml" 65 1643 1681 "hacks.ml" 65 1643 1684
+type(
+  Cfg.AST.G.t
+)
+ident(
+  int_ref cfg "hacks.ml" 60 1442 1460 "hacks.ml" 60 1442 1463
+)
+"hacks.ml" 65 1643 1662 "hacks.ml" 65 1643 1684
+call(
+  stack
+)
+type(
+  Cfg.AST.G.t * Cfg.AST.G.V.t
+)
+"hacks.ml" 66 1688 1694 "hacks.ml" 66 1688 1709
+type(
+  C.G.t -> C.G.E.t -> C.G.t
+)
+ident(
+  def handle_backedge "hacks.ml" 88 2439 2441 "hacks.ml" 112 3233 3279
+)
+"hacks.ml" 66 1688 1710 "hacks.ml" 66 1688 1713
+type(
+  C.G.t
+)
+ident(
+  def cfg "hacks.ml" 66 1688 1714 "hacks.ml" 86 2426 2433
+)
+"hacks.ml" 66 1688 1714 "hacks.ml" 66 1688 1715
+type(
+  C.G.E.t
+)
+ident(
+  def e "hacks.ml" 67 1718 1722 "hacks.ml" 86 2426 2433
+)
+"hacks.ml" 67 1718 1726 "hacks.ml" 67 1718 1727
+type(
+  C.G.E.vertex
+)
+"hacks.ml" 67 1718 1730 "hacks.ml" 67 1718 1739
+type(
+  C.G.E.t -> C.G.E.vertex
+)
+ident(
+  ext_ref C.G.E.src
+)
+"hacks.ml" 67 1718 1740 "hacks.ml" 67 1718 1741
+type(
+  C.G.E.t
+)
+ident(
+  int_ref e "hacks.ml" 66 1688 1714 "hacks.ml" 66 1688 1715
+)
+"hacks.ml" 67 1718 1730 "hacks.ml" 67 1718 1741
+call(
+  stack
+)
+type(
+  C.G.E.vertex
+)
+"hacks.ml" 68 1745 1753 "hacks.ml" 68 1745 1754
+type(
+  C.G.E.label
+)
+"hacks.ml" 68 1745 1757 "hacks.ml" 68 1745 1768
+type(
+  C.G.E.t -> C.G.E.label
+)
+ident(
+  ext_ref C.G.E.label
+)
+"hacks.ml" 68 1745 1769 "hacks.ml" 68 1745 1770
+type(
+  C.G.E.t
+)
+ident(
+  int_ref e "hacks.ml" 66 1688 1714 "hacks.ml" 66 1688 1715
+)
+"hacks.ml" 68 1745 1757 "hacks.ml" 68 1745 1770
+call(
+  stack
+)
+type(
+  C.G.E.label
+)
+"hacks.ml" 69 1774 1782 "hacks.ml" 69 1774 1790
+type(
+  Ast.stmt list
+)
+"hacks.ml" 69 1774 1793 "hacks.ml" 69 1774 1801
+type(
+  C.lang -> Ast.stmt list
+)
+ident(
+  ext_ref BatListFull.List.rev
+)
+"hacks.ml" 69 1774 1803 "hacks.ml" 69 1774 1814
+type(
+  C.G.t -> C.G.V.t -> C.lang
+)
+ident(
+  ext_ref C.get_stmts
+)
+"hacks.ml" 69 1774 1815 "hacks.ml" 69 1774 1818
+type(
+  C.G.t
+)
+ident(
+  int_ref cfg "hacks.ml" 66 1688 1710 "hacks.ml" 66 1688 1713
+)
+"hacks.ml" 69 1774 1819 "hacks.ml" 69 1774 1820
+type(
+  C.G.E.vertex
+)
+ident(
+  int_ref s "hacks.ml" 67 1718 1726 "hacks.ml" 67 1718 1727
+)
+"hacks.ml" 69 1774 1802 "hacks.ml" 69 1774 1821
+call(
+  stack
+)
+type(
+  C.lang
+)
+"hacks.ml" 69 1774 1793 "hacks.ml" 69 1774 1821
+call(
+  stack
+)
+type(
+  Ast.stmt list
+)
+"hacks.ml" 70 1825 1833 "hacks.ml" 70 1825 1841
+type(
+  Ast.stmt list
+)
+"hacks.ml" 70 1825 1850 "hacks.ml" 70 1825 1858
+type(
+  Ast.stmt list
+)
+ident(
+  int_ref revstmts "hacks.ml" 69 1774 1782 "hacks.ml" 69 1774 1790
+)
+"hacks.ml" 71 1864 1876 "hacks.ml" 71 1864 1877
+type(
+  Ast.exp
+)
+ident(
+  def t "hacks.ml" 72 1890 1893 "hacks.ml" 72 1890 1911
+)
+"hacks.ml" 71 1864 1878 "hacks.ml" 71 1864 1879
+type(
+  Ast.attrs
+)
+"hacks.ml" 71 1864 1875 "hacks.ml" 71 1864 1880
+type(
+  Ast.exp * Ast.attrs
+)
+"hacks.ml" 71 1864 1872 "hacks.ml" 71 1864 1880
+type(
+  Ast.stmt
+)
+"hacks.ml" 71 1864 1882 "hacks.ml" 71 1864 1886
+type(
+  Ast.stmt list
+)
+ident(
+  def rest "hacks.ml" 72 1890 1893 "hacks.ml" 72 1890 1911
+)
+"hacks.ml" 71 1864 1872 "hacks.ml" 71 1864 1886
+type(
+  Ast.stmt list
+)
+"hacks.ml" 72 1890 1893 "hacks.ml" 72 1890 1905
+type(
+  Ast.stmt
+)
+ident(
+  int_ref assert_false "hacks.ml" 64 1591 1597 "hacks.ml" 64 1591 1609
+)
+"hacks.ml" 72 1890 1907 "hacks.ml" 72 1890 1911
+type(
+  Ast.stmt list
+)
+ident(
+  int_ref rest "hacks.ml" 71 1864 1882 "hacks.ml" 71 1864 1886
+)
+"hacks.ml" 72 1890 1893 "hacks.ml" 72 1890 1911
+type(
+  Ast.stmt list
+)
+"hacks.ml" 73 1912 1925 "hacks.ml" 73 1912 1926
+type(
+  Ast.exp
+)
+ident(
+  def c "hacks.ml" 75 1987 1988 "hacks.ml" 79 2165 2181
+)
+"hacks.ml" 73 1912 1927 "hacks.ml" 73 1912 1929
+type(
+  Ast.exp
+)
+ident(
+  def t1 "hacks.ml" 75 1987 1988 "hacks.ml" 79 2165 2181
+)
+"hacks.ml" 73 1912 1930 "hacks.ml" 73 1912 1932
+type(
+  Ast.exp
+)
+ident(
+  def t2 "hacks.ml" 75 1987 1988 "hacks.ml" 79 2165 2181
+)
+"hacks.ml" 73 1912 1933 "hacks.ml" 73 1912 1938
+type(
+  Ast.attrs
+)
+ident(
+  def attrs "hacks.ml" 75 1987 1988 "hacks.ml" 79 2165 2181
+)
+"hacks.ml" 73 1912 1924 "hacks.ml" 73 1912 1939
+type(
+  Ast.exp * Ast.exp * Ast.exp * Ast.attrs
+)
+"hacks.ml" 73 1912 1920 "hacks.ml" 73 1912 1939
+type(
+  Ast.stmt
+)
+"hacks.ml" 73 1912 1941 "hacks.ml" 73 1912 1945
+type(
+  Ast.stmt list
+)
+ident(
+  def rest "hacks.ml" 75 1987 1988 "hacks.ml" 79 2165 2181
+)
+"hacks.ml" 73 1912 1920 "hacks.ml" 73 1912 1945
+type(
+  Ast.stmt list
+)
+"hacks.ml" 75 1987 1995 "hacks.ml" 75 1987 1996
+type(
+  C.G.E.label
+)
+ident(
+  int_ref l "hacks.ml" 68 1745 1753 "hacks.ml" 68 1745 1754
+)
+"hacks.ml" 76 2002 2010 "hacks.ml" 76 2002 2014
+type(
+  bool
+)
+"hacks.ml" 76 2002 2005 "hacks.ml" 76 2002 2014
+type(
+  C.G.E.label
+)
+"hacks.ml" 76 2002 2023 "hacks.ml" 76 2002 2024
+type(
+  Ast.exp
+)
+ident(
+  int_ref c "hacks.ml" 73 1912 1925 "hacks.ml" 73 1912 1926
+)
+"hacks.ml" 76 2002 2029 "hacks.ml" 76 2002 2041
+type(
+  string
+)
+"hacks.ml" 76 2002 2026 "hacks.ml" 76 2002 2041
+type(
+  Ast.exp
+)
+"hacks.ml" 76 2002 2043 "hacks.ml" 76 2002 2045
+type(
+  Ast.exp
+)
+ident(
+  int_ref t2 "hacks.ml" 73 1912 1930 "hacks.ml" 73 1912 1932
+)
+"hacks.ml" 76 2002 2047 "hacks.ml" 76 2002 2048
+type(
+  Type.attribute
+)
+ident(
+  int_ref a "hacks.ml" 62 1494 1500 "hacks.ml" 62 1494 1501
+)
+"hacks.ml" 76 2002 2050 "hacks.ml" 76 2002 2055
+type(
+  Ast.attrs
+)
+ident(
+  int_ref attrs "hacks.ml" 73 1912 1933 "hacks.ml" 73 1912 1938
+)
+"hacks.ml" 76 2002 2047 "hacks.ml" 76 2002 2055
+type(
+  Ast.attrs
+)
+"hacks.ml" 76 2002 2022 "hacks.ml" 76 2002 2056
+type(
+  Ast.exp * Ast.exp * Ast.exp * Ast.attrs
+)
+"hacks.ml" 76 2002 2018 "hacks.ml" 76 2002 2056
+type(
+  Ast.stmt
+)
+"hacks.ml" 77 2057 2065 "hacks.ml" 77 2057 2070
+type(
+  bool
+)
+"hacks.ml" 77 2057 2060 "hacks.ml" 77 2057 2070
+type(
+  C.G.E.label
+)
+"hacks.ml" 77 2057 2079 "hacks.ml" 77 2057 2080
+type(
+  Ast.exp
+)
+ident(
+  int_ref c "hacks.ml" 73 1912 1925 "hacks.ml" 73 1912 1926
+)
+"hacks.ml" 77 2057 2082 "hacks.ml" 77 2057 2084
+type(
+  Ast.exp
+)
+ident(
+  int_ref t1 "hacks.ml" 73 1912 1927 "hacks.ml" 73 1912 1929
+)
+"hacks.ml" 77 2057 2089 "hacks.ml" 77 2057 2101
+type(
+  string
+)
+"hacks.ml" 77 2057 2086 "hacks.ml" 77 2057 2101
+type(
+  Ast.exp
+)
+"hacks.ml" 77 2057 2103 "hacks.ml" 77 2057 2104
+type(
+  Type.attribute
+)
+ident(
+  int_ref a "hacks.ml" 62 1494 1500 "hacks.ml" 62 1494 1501
+)
+"hacks.ml" 77 2057 2106 "hacks.ml" 77 2057 2111
+type(
+  Ast.attrs
+)
+ident(
+  int_ref attrs "hacks.ml" 73 1912 1933 "hacks.ml" 73 1912 1938
+)
+"hacks.ml" 77 2057 2103 "hacks.ml" 77 2057 2111
+type(
+  Ast.attrs
+)
+"hacks.ml" 77 2057 2078 "hacks.ml" 77 2057 2112
+type(
+  Ast.exp * Ast.exp * Ast.exp * Ast.attrs
+)
+"hacks.ml" 77 2057 2074 "hacks.ml" 77 2057 2112
+type(
+  Ast.stmt
+)
+"hacks.ml" 78 2113 2116 "hacks.ml" 78 2113 2120
+type(
+  C.G.E.label
+)
+"hacks.ml" 78 2113 2124 "hacks.ml" 78 2113 2132
+type(
+  string -> Ast.stmt
+)
+ident(
+  ext_ref Pervasives.failwith
+)
+"hacks.ml" 78 2113 2133 "hacks.ml" 78 2113 2163
+type(
+  string
+)
+"hacks.ml" 78 2113 2124 "hacks.ml" 78 2113 2163
+call(
+  stack
+)
+type(
+  Ast.stmt
+)
+"hacks.ml" 75 1987 1988 "hacks.ml" 78 2113 2164
+type(
+  Ast.stmt
+)
+"hacks.ml" 79 2165 2177 "hacks.ml" 79 2165 2181
+type(
+  Ast.stmt list
+)
+ident(
+  int_ref rest "hacks.ml" 73 1912 1941 "hacks.ml" 73 1912 1945
+)
+"hacks.ml" 75 1987 1988 "hacks.ml" 79 2165 2181
+type(
+  Ast.stmt list
+)
+"hacks.ml" 80 2182 2190 "hacks.ml" 80 2182 2194
+type(
+  Ast.stmt list
+)
+ident(
+  def rest "hacks.ml" 80 2182 2198 "hacks.ml" 80 2182 2216
+)
+"hacks.ml" 80 2182 2198 "hacks.ml" 80 2182 2210
+type(
+  Ast.stmt
+)
+ident(
+  int_ref assert_false "hacks.ml" 64 1591 1597 "hacks.ml" 64 1591 1609
+)
+"hacks.ml" 80 2182 2212 "hacks.ml" 80 2182 2216
+type(
+  Ast.stmt list
+)
+ident(
+  int_ref rest "hacks.ml" 80 2182 2190 "hacks.ml" 80 2182 2194
+)
+"hacks.ml" 80 2182 2198 "hacks.ml" 80 2182 2216
+type(
+  Ast.stmt list
+)
+"hacks.ml" 70 1825 1844 "hacks.ml" 80 2182 2216
+type(
+  Ast.stmt list
+)
+"hacks.ml" 82 2224 2232 "hacks.ml" 82 2224 2235
+type(
+  C.G.t
+)
+"hacks.ml" 82 2224 2238 "hacks.ml" 82 2224 2249
+type(
+  C.G.t -> C.G.V.t -> C.lang -> C.G.t
+)
+ident(
+  ext_ref C.set_stmts
+)
+"hacks.ml" 82 2224 2250 "hacks.ml" 82 2224 2253
+type(
+  C.G.t
+)
+ident(
+  int_ref cfg "hacks.ml" 66 1688 1710 "hacks.ml" 66 1688 1713
+)
+"hacks.ml" 82 2224 2254 "hacks.ml" 82 2224 2255
+type(
+  C.G.E.vertex
+)
+ident(
+  int_ref s "hacks.ml" 67 1718 1726 "hacks.ml" 67 1718 1727
+)
+"hacks.ml" 82 2224 2257 "hacks.ml" 82 2224 2265
+type(
+  Ast.stmt list -> C.lang
+)
+ident(
+  ext_ref BatListFull.List.rev
+)
+"hacks.ml" 82 2224 2266 "hacks.ml" 82 2224 2274
+type(
+  Ast.stmt list
+)
+ident(
+  int_ref revstmts "hacks.ml" 70 1825 1833 "hacks.ml" 70 1825 1841
+)
+"hacks.ml" 82 2224 2256 "hacks.ml" 82 2224 2275
+call(
+  stack
+)
+type(
+  C.lang
+)
+"hacks.ml" 82 2224 2238 "hacks.ml" 82 2224 2275
+call(
+  stack
+)
+type(
+  C.G.t
+)
+"hacks.ml" 83 2279 2287 "hacks.ml" 83 2279 2290
+type(
+  C.G.t
+)
+"hacks.ml" 83 2279 2293 "hacks.ml" 83 2279 2308
+type(
+  C.G.t -> C.G.E.t -> C.G.t
+)
+ident(
+  ext_ref C.remove_edge_e
+)
+"hacks.ml" 83 2279 2309 "hacks.ml" 83 2279 2312
+type(
+  C.G.t
+)
+ident(
+  int_ref cfg "hacks.ml" 82 2224 2232 "hacks.ml" 82 2224 2235
+)
+"hacks.ml" 83 2279 2313 "hacks.ml" 83 2279 2314
+type(
+  C.G.E.t
+)
+ident(
+  int_ref e "hacks.ml" 66 1688 1714 "hacks.ml" 66 1688 1715
+)
+"hacks.ml" 83 2279 2293 "hacks.ml" 83 2279 2314
+call(
+  stack
+)
+type(
+  C.G.t
+)
+"hacks.ml" 84 2318 2326 "hacks.ml" 84 2318 2333
+type(
+  C.G.E.t
+)
+"hacks.ml" 84 2318 2336 "hacks.ml" 84 2318 2348
+type(
+  C.G.E.vertex -> C.G.E.label -> C.G.E.vertex -> C.G.E.t
+)
+ident(
+  ext_ref C.G.E.create
+)
+"hacks.ml" 84 2318 2349 "hacks.ml" 84 2318 2350
+type(
+  C.G.E.vertex
+)
+ident(
+  int_ref s "hacks.ml" 67 1718 1726 "hacks.ml" 67 1718 1727
+)
+"hacks.ml" 84 2318 2351 "hacks.ml" 84 2318 2352
+type(
+  C.G.E.label
+)
+ident(
+  int_ref l "hacks.ml" 68 1745 1753 "hacks.ml" 68 1745 1754
+)
+"hacks.ml" 84 2318 2354 "hacks.ml" 84 2318 2366
+type(
+  C.G.V.label -> C.G.V.t
+)
+ident(
+  ext_ref C.G.V.create
+)
+"hacks.ml" 84 2318 2367 "hacks.ml" 84 2318 2379
+type(
+  C.G.V.label
+)
+"hacks.ml" 84 2318 2353 "hacks.ml" 84 2318 2380
+call(
+  stack
+)
+type(
+  C.G.V.t
+)
+"hacks.ml" 84 2318 2336 "hacks.ml" 84 2318 2380
+call(
+  stack
+)
+type(
+  C.G.E.t
+)
+"hacks.ml" 85 2384 2392 "hacks.ml" 85 2384 2395
+type(
+  C.G.t
+)
+"hacks.ml" 85 2384 2398 "hacks.ml" 85 2384 2410
+type(
+  C.G.t -> C.G.E.t -> C.G.t
+)
+ident(
+  ext_ref C.add_edge_e
+)
+"hacks.ml" 85 2384 2411 "hacks.ml" 85 2384 2414
+type(
+  C.G.t
+)
+ident(
+  int_ref cfg "hacks.ml" 83 2279 2287 "hacks.ml" 83 2279 2290
+)
+"hacks.ml" 85 2384 2415 "hacks.ml" 85 2384 2422
+type(
+  C.G.E.t
+)
+ident(
+  int_ref newedge "hacks.ml" 84 2318 2326 "hacks.ml" 84 2318 2333
+)
+"hacks.ml" 85 2384 2398 "hacks.ml" 85 2384 2422
+call(
+  stack
+)
+type(
+  C.G.t
+)
+"hacks.ml" 86 2426 2430 "hacks.ml" 86 2426 2433
+type(
+  C.G.t
+)
+ident(
+  int_ref cfg "hacks.ml" 85 2384 2392 "hacks.ml" 85 2384 2395
+)
+"hacks.ml" 85 2384 2388 "hacks.ml" 86 2426 2433
+type(
+  C.G.t
+)
+"hacks.ml" 84 2318 2322 "hacks.ml" 86 2426 2433
+type(
+  C.G.t
+)
+"hacks.ml" 83 2279 2283 "hacks.ml" 86 2426 2433
+type(
+  C.G.t
+)
+"hacks.ml" 82 2224 2228 "hacks.ml" 86 2426 2433
+type(
+  C.G.t
+)
+"hacks.ml" 70 1825 1829 "hacks.ml" 86 2426 2433
+type(
+  C.G.t
+)
+"hacks.ml" 69 1774 1778 "hacks.ml" 86 2426 2433
+type(
+  C.G.t
+)
+"hacks.ml" 68 1745 1749 "hacks.ml" 86 2426 2433
+type(
+  C.G.t
+)
+"hacks.ml" 67 1718 1722 "hacks.ml" 86 2426 2433
+type(
+  C.G.t
+)
+"hacks.ml" 88 2439 2445 "hacks.ml" 88 2439 2459
+type(
+  C.G.t -> C.G.E.t list
+)
+ident(
+  def find_backedges "hacks.ml" 108 3061 3063 "hacks.ml" 112 3233 3279
+)
+"hacks.ml" 88 2439 2460 "hacks.ml" 88 2439 2463
+type(
+  C.G.t
+)
+ident(
+  def cfg "hacks.ml" 89 2466 2470 "hacks.ml" 106 3038 3055
+)
+"hacks.ml" 89 2466 2485 "hacks.ml" 89 2466 2507
+call(
+  stack
+)
+"hacks.ml" 90 2511 2519 "hacks.ml" 90 2511 2520
+type(
+  color H.t
+)
+ident(
+  def h "hacks.ml" 92 2602 2606 "hacks.ml" 106 3038 3055
+)
+"hacks.ml" 90 2511 2523 "hacks.ml" 90 2511 2531
+type(
+  int -> color H.t
+)
+ident(
+  ext_ref H.create
+)
+"hacks.ml" 90 2511 2533 "hacks.ml" 90 2511 2546
+type(
+  C.G.t -> int
+)
+ident(
+  ext_ref C.G.nb_vertex
+)
+"hacks.ml" 90 2511 2547 "hacks.ml" 90 2511 2550
+type(
+  C.G.t
+)
+ident(
+  int_ref cfg "hacks.ml" 88 2439 2460 "hacks.ml" 88 2439 2463
+)
+"hacks.ml" 90 2511 2532 "hacks.ml" 90 2511 2551
+call(
+  stack
+)
+type(
+  int
+)
+"hacks.ml" 90 2511 2523 "hacks.ml" 90 2511 2551
+call(
+  stack
+)
+type(
+  color H.t
+)
+"hacks.ml" 91 2552 2560 "hacks.ml" 91 2552 2565
+type(
+  C.G.V.t
+)
+ident(
+  def entry "hacks.ml" 92 2602 2606 "hacks.ml" 106 3038 3055
+)
+"hacks.ml" 91 2552 2568 "hacks.ml" 91 2552 2581
+type(
+  C.G.t -> C.G.V.label -> C.G.V.t
+)
+ident(
+  ext_ref C.find_vertex
+)
+"hacks.ml" 91 2552 2582 "hacks.ml" 91 2552 2585
+type(
+  C.G.t
+)
+ident(
+  int_ref cfg "hacks.ml" 88 2439 2460 "hacks.ml" 88 2439 2463
+)
+"hacks.ml" 91 2552 2586 "hacks.ml" 91 2552 2598
+type(
+  C.G.V.label
+)
+"hacks.ml" 91 2552 2568 "hacks.ml" 91 2552 2598
+call(
+  stack
+)
+type(
+  C.G.V.t
+)
+"hacks.ml" 92 2602 2610 "hacks.ml" 92 2602 2615
+type(
+  C.G.V.t -> color
+)
+ident(
+  def color "hacks.ml" 94 2729 2733 "hacks.ml" 106 3038 3055
+)
+"hacks.ml" 92 2602 2616 "hacks.ml" 92 2602 2617
+type(
+  C.G.V.t
+)
+ident(
+  def v "hacks.ml" 92 2602 2620 "hacks.ml" 92 2602 2672
+)
+"hacks.ml" 92 2602 2624 "hacks.ml" 92 2602 2630
+type(
+  color H.t -> H.key -> color
+)
+ident(
+  ext_ref H.find
+)
+"hacks.ml" 92 2602 2631 "hacks.ml" 92 2602 2632
+type(
+  color H.t
+)
+ident(
+  int_ref h "hacks.ml" 90 2511 2519 "hacks.ml" 90 2511 2520
+)
+"hacks.ml" 92 2602 2634 "hacks.ml" 92 2602 2645
+type(
+  C.G.V.t -> C.G.V.label
+)
+ident(
+  ext_ref C.G.V.label
+)
+"hacks.ml" 92 2602 2646 "hacks.ml" 92 2602 2647
+type(
+  C.G.V.t
+)
+ident(
+  int_ref v "hacks.ml" 92 2602 2616 "hacks.ml" 92 2602 2617
+)
+"hacks.ml" 92 2602 2633 "hacks.ml" 92 2602 2648
+call(
+  stack
+)
+type(
+  C.G.V.label
+)
+"hacks.ml" 92 2602 2624 "hacks.ml" 92 2602 2648
+call(
+  stack
+)
+type(
+  color
+)
+"hacks.ml" 92 2602 2654 "hacks.ml" 92 2602 2663
+type(
+  exn
+)
+"hacks.ml" 92 2602 2667 "hacks.ml" 92 2602 2672
+type(
+  color
+)
+"hacks.ml" 92 2602 2620 "hacks.ml" 92 2602 2672
+type(
+  color
+)
+"hacks.ml" 93 2673 2681 "hacks.ml" 93 2673 2689
+type(
+  C.G.V.t -> color -> unit
+)
+ident(
+  def setcolor "hacks.ml" 94 2729 2733 "hacks.ml" 106 3038 3055
+)
+"hacks.ml" 93 2673 2690 "hacks.ml" 93 2673 2691
+type(
+  C.G.V.t
+)
+ident(
+  def v "hacks.ml" 93 2673 2692 "hacks.ml" 93 2673 2725
+)
+"hacks.ml" 93 2673 2692 "hacks.ml" 93 2673 2693
+type(
+  color
+)
+ident(
+  def c "hacks.ml" 93 2673 2696 "hacks.ml" 93 2673 2725
+)
+"hacks.ml" 93 2673 2696 "hacks.ml" 93 2673 2705
+type(
+  color H.t -> H.key -> color -> unit
+)
+ident(
+  ext_ref H.replace
+)
+"hacks.ml" 93 2673 2706 "hacks.ml" 93 2673 2707
+type(
+  color H.t
+)
+ident(
+  int_ref h "hacks.ml" 90 2511 2519 "hacks.ml" 90 2511 2520
+)
+"hacks.ml" 93 2673 2709 "hacks.ml" 93 2673 2720
+type(
+  C.G.V.t -> C.G.V.label
+)
+ident(
+  ext_ref C.G.V.label
+)
+"hacks.ml" 93 2673 2721 "hacks.ml" 93 2673 2722
+type(
+  C.G.V.t
+)
+ident(
+  int_ref v "hacks.ml" 93 2673 2690 "hacks.ml" 93 2673 2691
+)
+"hacks.ml" 93 2673 2708 "hacks.ml" 93 2673 2723
+call(
+  stack
+)
+type(
+  C.G.V.label
+)
+"hacks.ml" 93 2673 2724 "hacks.ml" 93 2673 2725
+type(
+  color
+)
+ident(
+  int_ref c "hacks.ml" 93 2673 2692 "hacks.ml" 93 2673 2693
+)
+"hacks.ml" 93 2673 2696 "hacks.ml" 93 2673 2725
+call(
+  tail
+)
+type(
+  unit
+)
+"hacks.ml" 94 2729 2741 "hacks.ml" 94 2729 2745
+type(
+  C.G.E.vertex -> C.G.E.t list -> C.G.E.t list
+)
+ident(
+  def walk "hacks.ml" 94 2729 2733 "hacks.ml" 106 3038 3055
+)
+"hacks.ml" 94 2729 2746 "hacks.ml" 94 2729 2747
+type(
+  C.G.E.vertex
+)
+ident(
+  def v "hacks.ml" 94 2729 2748 "hacks.ml" 104 3019 3030
+)
+"hacks.ml" 94 2729 2748 "hacks.ml" 94 2729 2753
+type(
+  C.G.E.t list
+)
+ident(
+  def edges "hacks.ml" 95 2755 2761 "hacks.ml" 104 3019 3030
+)
+"hacks.ml" 95 2755 2765 "hacks.ml" 95 2755 2774
+type(
+  C.G.E.t -> C.G.E.t list -> C.G.E.t list
+)
+"hacks.ml" 95 2755 2775 "hacks.ml" 95 2755 2776
+type(
+  C.G.E.t
+)
+ident(
+  def e "hacks.ml" 95 2755 2777 "hacks.ml" 99 2885 2903
+)
+"hacks.ml" 95 2755 2777 "hacks.ml" 95 2755 2782
+type(
+  C.G.E.t list
+)
+ident(
+  def edges "hacks.ml" 96 2785 2786 "hacks.ml" 99 2885 2903
+)
+"hacks.ml" 96 2785 2790 "hacks.ml" 96 2785 2791
+type(
+  C.G.E.vertex
+)
+"hacks.ml" 96 2785 2794 "hacks.ml" 96 2785 2803
+type(
+  C.G.E.t -> C.G.E.vertex
+)
+ident(
+  ext_ref C.G.E.dst
+)
+"hacks.ml" 96 2785 2804 "hacks.ml" 96 2785 2805
+type(
+  C.G.E.t
+)
+ident(
+  int_ref e "hacks.ml" 95 2755 2775 "hacks.ml" 95 2755 2776
+)
+"hacks.ml" 96 2785 2794 "hacks.ml" 96 2785 2805
+call(
+  stack
+)
+type(
+  C.G.E.vertex
+)
+"hacks.ml" 97 2809 2813 "hacks.ml" 97 2809 2818
+type(
+  C.G.V.t -> color
+)
+ident(
+  int_ref color "hacks.ml" 92 2602 2610 "hacks.ml" 92 2602 2615
+)
+"hacks.ml" 97 2809 2819 "hacks.ml" 97 2809 2820
+type(
+  C.G.E.vertex
+)
+ident(
+  int_ref d "hacks.ml" 96 2785 2790 "hacks.ml" 96 2785 2791
+)
+"hacks.ml" 97 2809 2813 "hacks.ml" 97 2809 2820
+call(
+  stack
+)
+type(
+  color
+)
+"hacks.ml" 97 2809 2821 "hacks.ml" 97 2809 2822
+type(
+  color -> color -> bool
+)
+ident(
+  ext_ref Pervasives.( = )
+)
+"hacks.ml" 97 2809 2823 "hacks.ml" 97 2809 2828
+type(
+  color
+)
+"hacks.ml" 97 2809 2813 "hacks.ml" 97 2809 2828
+type(
+  bool
+)
+"hacks.ml" 97 2809 2834 "hacks.ml" 97 2809 2838
+type(
+  C.G.E.vertex -> C.G.E.t list -> C.G.E.t list
+)
+ident(
+  int_ref walk "hacks.ml" 94 2729 2741 "hacks.ml" 94 2729 2745
+)
+"hacks.ml" 97 2809 2839 "hacks.ml" 97 2809 2840
+type(
+  C.G.E.vertex
+)
+ident(
+  int_ref d "hacks.ml" 96 2785 2790 "hacks.ml" 96 2785 2791
+)
+"hacks.ml" 97 2809 2841 "hacks.ml" 97 2809 2846
+type(
+  C.G.E.t list
+)
+ident(
+  int_ref edges "hacks.ml" 95 2755 2777 "hacks.ml" 95 2755 2782
+)
+"hacks.ml" 97 2809 2834 "hacks.ml" 97 2809 2846
+call(
+  tail
+)
+type(
+  C.G.E.t list
+)
+"hacks.ml" 98 2847 2856 "hacks.ml" 98 2847 2861
+type(
+  C.G.V.t -> color
+)
+ident(
+  int_ref color "hacks.ml" 92 2602 2610 "hacks.ml" 92 2602 2615
+)
+"hacks.ml" 98 2847 2862 "hacks.ml" 98 2847 2863
+type(
+  C.G.E.vertex
+)
+ident(
+  int_ref d "hacks.ml" 96 2785 2790 "hacks.ml" 96 2785 2791
+)
+"hacks.ml" 98 2847 2856 "hacks.ml" 98 2847 2863
+call(
+  stack
+)
+type(
+  color
+)
+"hacks.ml" 98 2847 2864 "hacks.ml" 98 2847 2865
+type(
+  color -> color -> bool
+)
+ident(
+  ext_ref Pervasives.( = )
+)
+"hacks.ml" 98 2847 2866 "hacks.ml" 98 2847 2870
+type(
+  color
+)
+"hacks.ml" 98 2847 2856 "hacks.ml" 98 2847 2870
+type(
+  bool
+)
+"hacks.ml" 98 2847 2876 "hacks.ml" 98 2847 2877
+type(
+  C.G.E.t
+)
+ident(
+  int_ref e "hacks.ml" 95 2755 2775 "hacks.ml" 95 2755 2776
+)
+"hacks.ml" 98 2847 2879 "hacks.ml" 98 2847 2884
+type(
+  C.G.E.t list
+)
+ident(
+  int_ref edges "hacks.ml" 95 2755 2777 "hacks.ml" 95 2755 2782
+)
+"hacks.ml" 98 2847 2876 "hacks.ml" 98 2847 2884
+type(
+  C.G.E.t list
+)
+"hacks.ml" 99 2885 2898 "hacks.ml" 99 2885 2903
+type(
+  C.G.E.t list
+)
+ident(
+  int_ref edges "hacks.ml" 95 2755 2777 "hacks.ml" 95 2755 2782
+)
+"hacks.ml" 98 2847 2853 "hacks.ml" 99 2885 2903
+type(
+  C.G.E.t list
+)
+"hacks.ml" 97 2809 2810 "hacks.ml" 99 2885 2903
+type(
+  C.G.E.t list
+)
+"hacks.ml" 96 2785 2786 "hacks.ml" 99 2885 2903
+type(
+  C.G.E.t list
+)
+"hacks.ml" 101 2913 2919 "hacks.ml" 101 2913 2927
+type(
+  C.G.V.t -> color -> unit
+)
+ident(
+  int_ref setcolor "hacks.ml" 93 2673 2681 "hacks.ml" 93 2673 2689
+)
+"hacks.ml" 101 2913 2928 "hacks.ml" 101 2913 2929
+type(
+  C.G.E.vertex
+)
+ident(
+  int_ref v "hacks.ml" 94 2729 2746 "hacks.ml" 94 2729 2747
+)
+"hacks.ml" 101 2913 2930 "hacks.ml" 101 2913 2934
+type(
+  color
+)
+"hacks.ml" 101 2913 2919 "hacks.ml" 101 2913 2934
+call(
+  stack
+)
+type(
+  unit
+)
+"hacks.ml" 102 2936 2946 "hacks.ml" 102 2936 2951
+type(
+  C.G.E.t list
+)
+"hacks.ml" 102 2936 2954 "hacks.ml" 102 2936 2969
+type(
+  (C.G.edge -> C.G.E.t list -> C.G.E.t list) ->
+  C.G.t -> C.G.vertex -> C.G.E.t list -> C.G.E.t list
+)
+ident(
+  ext_ref C.G.fold_succ_e
+)
+"hacks.ml" 102 2936 2970 "hacks.ml" 102 2936 2979
+type(
+  C.G.edge -> C.G.E.t list -> C.G.E.t list
+)
+ident(
+  int_ref walk_edge "hacks.ml" 95 2755 2765 "hacks.ml" 95 2755 2774
+)
+"hacks.ml" 102 2936 2980 "hacks.ml" 102 2936 2983
+type(
+  C.G.t
+)
+ident(
+  int_ref cfg "hacks.ml" 88 2439 2460 "hacks.ml" 88 2439 2463
+)
+"hacks.ml" 102 2936 2984 "hacks.ml" 102 2936 2985
+type(
+  C.G.E.vertex
+)
+ident(
+  int_ref v "hacks.ml" 94 2729 2746 "hacks.ml" 94 2729 2747
+)
+"hacks.ml" 102 2936 2986 "hacks.ml" 102 2936 2991
+type(
+  C.G.E.t list
+)
+ident(
+  int_ref edges "hacks.ml" 94 2729 2748 "hacks.ml" 94 2729 2753
+)
+"hacks.ml" 102 2936 2954 "hacks.ml" 102 2936 2991
+call(
+  stack
+)
+type(
+  C.G.E.t list
+)
+"hacks.ml" 103 2995 3001 "hacks.ml" 103 2995 3009
+type(
+  C.G.V.t -> color -> unit
+)
+ident(
+  int_ref setcolor "hacks.ml" 93 2673 2681 "hacks.ml" 93 2673 2689
+)
+"hacks.ml" 103 2995 3010 "hacks.ml" 103 2995 3011
+type(
+  C.G.E.vertex
+)
+ident(
+  int_ref v "hacks.ml" 94 2729 2746 "hacks.ml" 94 2729 2747
+)
+"hacks.ml" 103 2995 3012 "hacks.ml" 103 2995 3017
+type(
+  color
+)
+"hacks.ml" 103 2995 3001 "hacks.ml" 103 2995 3017
+call(
+  stack
+)
+type(
+  unit
+)
+"hacks.ml" 104 3019 3025 "hacks.ml" 104 3019 3030
+type(
+  C.G.E.t list
+)
+ident(
+  int_ref edges "hacks.ml" 102 2936 2946 "hacks.ml" 102 2936 2951
+)
+"hacks.ml" 103 2995 3001 "hacks.ml" 104 3019 3030
+type(
+  C.G.E.t list
+)
+"hacks.ml" 102 2936 2942 "hacks.ml" 104 3019 3030
+type(
+  C.G.E.t list
+)
+"hacks.ml" 101 2913 2919 "hacks.ml" 104 3019 3030
+type(
+  C.G.E.t list
+)
+"hacks.ml" 95 2755 2761 "hacks.ml" 104 3019 3030
+type(
+  C.G.E.t list
+)
+"hacks.ml" 106 3038 3042 "hacks.ml" 106 3038 3046
+type(
+  C.G.E.vertex -> C.G.E.t list -> C.G.E.t list
+)
+ident(
+  int_ref walk "hacks.ml" 94 2729 2741 "hacks.ml" 94 2729 2745
+)
+"hacks.ml" 106 3038 3047 "hacks.ml" 106 3038 3052
+type(
+  C.G.V.t
+)
+ident(
+  int_ref entry "hacks.ml" 91 2552 2560 "hacks.ml" 91 2552 2565
+)
+"hacks.ml" 106 3038 3053 "hacks.ml" 106 3038 3055
+type(
+  C.G.E.t list
+)
+"hacks.ml" 106 3038 3042 "hacks.ml" 106 3038 3055
+call(
+  tail
+)
+type(
+  C.G.E.t list
+)
+"hacks.ml" 94 2729 2733 "hacks.ml" 106 3038 3055
+type(
+  C.G.E.t list
+)
+"hacks.ml" 92 2602 2606 "hacks.ml" 106 3038 3055
+type(
+  C.G.E.t list
+)
+"hacks.ml" 90 2511 2515 "hacks.ml" 106 3038 3055
+type(
+  C.G.E.t list
+)
+"hacks.ml" 89 2466 2470 "hacks.ml" 106 3038 3055
+type(
+  C.G.E.t list
+)
+"hacks.ml" 108 3061 3063 "hacks.ml" 108 3061 3070
+type(
+  (unit, unit, string, unit) format4 -> unit
+)
+ident(
+  ext_ref D.dprintf
+)
+"hacks.ml" 108 3061 3071 "hacks.ml" 108 3061 3091
+type(
+  (unit, unit, string, unit) format4
+)
+"hacks.ml" 108 3061 3063 "hacks.ml" 108 3061 3091
+call(
+  stack
+)
+type(
+  unit
+)
+"hacks.ml" 109 3093 3099 "hacks.ml" 109 3093 3108
+type(
+  C.G.E.t list
+)
+ident(
+  def backedges "hacks.ml" 112 3233 3235 "hacks.ml" 112 3233 3279
+)
+"hacks.ml" 109 3093 3111 "hacks.ml" 109 3093 3125
+type(
+  C.G.t -> C.G.E.t list
+)
+ident(
+  int_ref find_backedges "hacks.ml" 88 2439 2445 "hacks.ml" 88 2439 2459
+)
+"hacks.ml" 109 3093 3126 "hacks.ml" 109 3093 3129
+type(
+  C.G.t
+)
+ident(
+  int_ref cfg "hacks.ml" 65 1643 1649 "hacks.ml" 65 1643 1652
+)
+"hacks.ml" 109 3093 3111 "hacks.ml" 109 3093 3129
+call(
+  stack
+)
+type(
+  C.G.E.t list
+)
+"hacks.ml" 112 3233 3235 "hacks.ml" 112 3233 3249
+type(
+  (Cfg.AST.G.t -> C.G.E.t -> Cfg.AST.G.t) ->
+  Cfg.AST.G.t -> C.G.E.t list -> Cfg.AST.G.t
+)
+ident(
+  ext_ref BatListFull.List.fold_left
+)
+"hacks.ml" 112 3233 3250 "hacks.ml" 112 3233 3265
+type(
+  Cfg.AST.G.t -> C.G.E.t -> Cfg.AST.G.t
+)
+ident(
+  int_ref handle_backedge "hacks.ml" 66 1688 1694 "hacks.ml" 66 1688 1709
+)
+"hacks.ml" 112 3233 3266 "hacks.ml" 112 3233 3269
+type(
+  Cfg.AST.G.t
+)
+ident(
+  int_ref cfg "hacks.ml" 65 1643 1649 "hacks.ml" 65 1643 1652
+)
+"hacks.ml" 112 3233 3270 "hacks.ml" 112 3233 3279
+type(
+  C.G.E.t list
+)
+ident(
+  int_ref backedges "hacks.ml" 109 3093 3099 "hacks.ml" 109 3093 3108
+)
+"hacks.ml" 112 3233 3235 "hacks.ml" 112 3233 3279
+call(
+  tail
+)
+type(
+  Cfg.AST.G.t
+)
+"hacks.ml" 109 3093 3095 "hacks.ml" 112 3233 3279
+type(
+  Cfg.AST.G.t
+)
+"hacks.ml" 108 3061 3063 "hacks.ml" 112 3233 3279
+type(
+  Cfg.AST.G.t
+)
+"hacks.ml" 88 2439 2441 "hacks.ml" 112 3233 3279
+type(
+  Cfg.AST.G.t
+)
+"hacks.ml" 66 1688 1690 "hacks.ml" 112 3233 3279
+type(
+  Cfg.AST.G.t
+)
+"hacks.ml" 65 1643 1645 "hacks.ml" 112 3233 3279
+type(
+  Cfg.AST.G.t
+)
+"hacks.ml" 64 1591 1593 "hacks.ml" 112 3233 3279
+type(
+  Cfg.AST.G.t
+)
+"hacks.ml" 62 1494 1496 "hacks.ml" 112 3233 3279
+type(
+  Cfg.AST.G.t
+)
+"hacks.ml" 61 1466 1468 "hacks.ml" 112 3233 3279
+type(
+  Cfg.AST.G.t
+)
+"hacks.ml" 115 3321 3325 "hacks.ml" 115 3321 3336
+type(
+  Cfg.AST.G.t -> C.G.vertex -> C.G.t
+)
+ident(
+  def repair_node "hacks.ml" 145 4421 4421 --
+)
+"hacks.ml" 115 3321 3337 "hacks.ml" 115 3321 3338
+type(
+  Cfg.AST.G.t
+)
+ident(
+  def g "hacks.ml" 115 3321 3339 "hacks.ml" 142 4284 4353
+)
+"hacks.ml" 115 3321 3339 "hacks.ml" 115 3321 3340
+type(
+  C.G.vertex
+)
+ident(
+  def n "hacks.ml" 116 3343 3345 "hacks.ml" 142 4284 4353
+)
+"hacks.ml" 116 3343 3349 "hacks.ml" 116 3343 3350
+type(
+  Cfg.AST.G.t
+)
+"hacks.ml" 116 3343 3352 "hacks.ml" 116 3343 3357
+type(
+  Cfg.AST.G.V.t
+)
+"hacks.ml" 116 3343 3349 "hacks.ml" 116 3343 3357
+type(
+  Cfg.AST.G.t * Cfg.AST.G.V.t
+)
+"hacks.ml" 116 3343 3360 "hacks.ml" 116 3343 3378
+type(
+  Cfg.AST.G.t -> Cfg.AST.G.t * Cfg.AST.G.V.t
+)
+ident(
+  ext_ref Cfg_ast.find_error
+)
+"hacks.ml" 116 3343 3379 "hacks.ml" 116 3343 3380
+type(
+  Cfg.AST.G.t
+)
+ident(
+  int_ref g "hacks.ml" 115 3321 3337 "hacks.ml" 115 3321 3338
+)
+"hacks.ml" 116 3343 3360 "hacks.ml" 116 3343 3380
+call(
+  stack
+)
+type(
+  Cfg.AST.G.t * Cfg.AST.G.V.t
+)
+"hacks.ml" 117 3384 3390 "hacks.ml" 117 3384 3391
+type(
+  Cfg.AST.G.t
+)
+"hacks.ml" 117 3384 3393 "hacks.ml" 117 3384 3397
+type(
+  Cfg.AST.G.V.t
+)
+"hacks.ml" 117 3384 3390 "hacks.ml" 117 3384 3397
+type(
+  Cfg.AST.G.t * Cfg.AST.G.V.t
+)
+"hacks.ml" 117 3384 3400 "hacks.ml" 117 3384 3417
+type(
+  Cfg.AST.G.t -> Cfg.AST.G.t * Cfg.AST.G.V.t
+)
+ident(
+  ext_ref Cfg_ast.find_exit
+)
+"hacks.ml" 117 3384 3418 "hacks.ml" 117 3384 3419
+type(
+  Cfg.AST.G.t
+)
+ident(
+  int_ref g "hacks.ml" 116 3343 3349 "hacks.ml" 116 3343 3350
+)
+"hacks.ml" 117 3384 3400 "hacks.ml" 117 3384 3419
+call(
+  stack
+)
+type(
+  Cfg.AST.G.t * Cfg.AST.G.V.t
+)
+"hacks.ml" 118 3423 3429 "hacks.ml" 118 3423 3430
+type(
+  Cfg.AST.G.t
+)
+"hacks.ml" 118 3423 3432 "hacks.ml" 118 3423 3440
+type(
+  Cfg.AST.G.V.t
+)
+"hacks.ml" 118 3423 3429 "hacks.ml" 118 3423 3440
+type(
+  Cfg.AST.G.t * Cfg.AST.G.V.t
+)
+"hacks.ml" 118 3423 3443 "hacks.ml" 118 3423 3464
+type(
+  Cfg.AST.G.t -> Cfg.AST.G.t * Cfg.AST.G.V.t
+)
+ident(
+  ext_ref Cfg_ast.find_indirect
+)
+"hacks.ml" 118 3423 3465 "hacks.ml" 118 3423 3466
+type(
+  Cfg.AST.G.t
+)
+ident(
+  int_ref g "hacks.ml" 117 3384 3390 "hacks.ml" 117 3384 3391
+)
+"hacks.ml" 118 3423 3443 "hacks.ml" 118 3423 3466
+call(
+  stack
+)
+type(
+  Cfg.AST.G.t * Cfg.AST.G.V.t
+)
+"hacks.ml" 120 3522 3528 "hacks.ml" 120 3522 3537
+type(
+  C.G.t -> C.G.E.vertex -> ?lab:bool -> Ast.exp -> C.G.t
+)
+"hacks.ml" 120 3522 3538 "hacks.ml" 120 3522 3539
+type(
+  C.G.t
+)
+ident(
+  def g "hacks.ml" 120 3522 3540 "hacks.ml" 131 3867 3910
+)
+"hacks.ml" 120 3522 3540 "hacks.ml" 120 3522 3541
+type(
+  C.G.E.vertex
+)
+ident(
+  def v "hacks.ml" 120 3522 3542 "hacks.ml" 131 3867 3910
+)
+"hacks.ml" 120 3522 3543 "hacks.ml" 120 3522 3546
+type(
+  C.G.E.label
+)
+ident(
+  def lab "hacks.ml" 120 3522 3547 "hacks.ml" 131 3867 3910
+)
+"hacks.ml" 120 3522 3547 "hacks.ml" 120 3522 3548
+type(
+  Ast.exp
+)
+ident(
+  def t "hacks.ml" 121 3551 3555 "hacks.ml" 131 3867 3910
+)
+"hacks.ml" 121 3551 3559 "hacks.ml" 121 3551 3562
+type(
+  Type.label option
+)
+"hacks.ml" 121 3551 3565 "hacks.ml" 121 3551 3575
+type(
+  Ast.exp -> Type.label option
+)
+ident(
+  ext_ref Ast.lab_of_exp
+)
+"hacks.ml" 121 3551 3576 "hacks.ml" 121 3551 3577
+type(
+  Ast.exp
+)
+ident(
+  int_ref t "hacks.ml" 120 3522 3547 "hacks.ml" 120 3522 3548
+)
+"hacks.ml" 121 3551 3565 "hacks.ml" 121 3551 3577
+call(
+  stack
+)
+type(
+  Type.label option
+)
+"hacks.ml" 122 3581 3589 "hacks.ml" 122 3581 3592
+type(
+  C.G.V.t
+)
+"hacks.ml" 122 3581 3601 "hacks.ml" 122 3581 3604
+type(
+  Type.label option
+)
+ident(
+  int_ref dst "hacks.ml" 121 3551 3559 "hacks.ml" 121 3551 3562
+)
+"hacks.ml" 123 3610 3618 "hacks.ml" 123 3610 3622
+type(
+  Type.label option
+)
+"hacks.ml" 123 3610 3626 "hacks.ml" 123 3610 3634
+type(
+  C.G.V.t
+)
+ident(
+  int_ref indirect "hacks.ml" 118 3423 3432 "hacks.ml" 118 3423 3440
+)
+"hacks.ml" 124 3635 3648 "hacks.ml" 124 3635 3649
+type(
+  Type.label
+)
+ident(
+  def l "hacks.ml" 125 3653 3656 "hacks.ml" 128 3768 3778
+)
+"hacks.ml" 124 3635 3643 "hacks.ml" 124 3635 3649
+type(
+  Type.label option
+)
+"hacks.ml" 125 3653 3661 "hacks.ml" 125 3653 3673
+type(
+  C.G.t -> Type.label -> C.G.V.t
+)
+ident(
+  ext_ref C.find_label
+)
+"hacks.ml" 125 3653 3674 "hacks.ml" 125 3653 3675
+type(
+  C.G.t
+)
+ident(
+  int_ref g "hacks.ml" 120 3522 3538 "hacks.ml" 120 3522 3539
+)
+"hacks.ml" 125 3653 3676 "hacks.ml" 125 3653 3677
+type(
+  Type.label
+)
+ident(
+  int_ref l "hacks.ml" 124 3635 3648 "hacks.ml" 124 3635 3649
+)
+"hacks.ml" 125 3653 3660 "hacks.ml" 125 3653 3678
+call(
+  stack
+)
+type(
+  C.G.V.t
+)
+"hacks.ml" 126 3679 3687 "hacks.ml" 126 3679 3696
+type(
+  exn
+)
+"hacks.ml" 127 3700 3705 "hacks.ml" 127 3700 3712
+type(
+  (string -> unit, unit, string, unit) format4 -> string -> unit
+)
+ident(
+  ext_ref D.wprintf
+)
+"hacks.ml" 127 3700 3713 "hacks.ml" 127 3700 3743
+type(
+  (string -> unit, unit, string, unit) format4
+)
+"hacks.ml" 127 3700 3745 "hacks.ml" 127 3700 3763
+type(
+  Type.label -> string
+)
+ident(
+  ext_ref Pp.label_to_string
+)
+"hacks.ml" 127 3700 3764 "hacks.ml" 127 3700 3765
+type(
+  Type.label
+)
+ident(
+  int_ref l "hacks.ml" 124 3635 3648 "hacks.ml" 124 3635 3649
+)
+"hacks.ml" 127 3700 3744 "hacks.ml" 127 3700 3766
+call(
+  stack
+)
+type(
+  string
+)
+"hacks.ml" 127 3700 3705 "hacks.ml" 127 3700 3766
+call(
+  stack
+)
+type(
+  unit
+)
+"hacks.ml" 128 3768 3773 "hacks.ml" 128 3768 3778
+type(
+  C.G.V.t
+)
+ident(
+  int_ref error "hacks.ml" 116 3343 3352 "hacks.ml" 116 3343 3357
+)
+"hacks.ml" 127 3700 3705 "hacks.ml" 128 3768 3778
+type(
+  C.G.V.t
+)
+"hacks.ml" 125 3653 3656 "hacks.ml" 128 3768 3778
+type(
+  C.G.V.t
+)
+"hacks.ml" 122 3581 3595 "hacks.ml" 128 3768 3778
+type(
+  C.G.V.t
+)
+"hacks.ml" 131 3867 3871 "hacks.ml" 131 3867 3883
+type(
+  C.G.t -> C.G.E.t -> C.G.t
+)
+ident(
+  ext_ref C.add_edge_e
+)
+"hacks.ml" 131 3867 3884 "hacks.ml" 131 3867 3885
+type(
+  C.G.t
+)
+ident(
+  int_ref g "hacks.ml" 120 3522 3538 "hacks.ml" 120 3522 3539
+)
+"hacks.ml" 131 3867 3887 "hacks.ml" 131 3867 3899
+type(
+  C.G.E.vertex -> C.G.E.label -> C.G.E.vertex -> C.G.E.t
+)
+ident(
+  ext_ref C.G.E.create
+)
+"hacks.ml" 131 3867 3900 "hacks.ml" 131 3867 3901
+type(
+  C.G.E.vertex
+)
+ident(
+  int_ref v "hacks.ml" 120 3522 3540 "hacks.ml" 120 3522 3541
+)
+"hacks.ml" 131 3867 3902 "hacks.ml" 131 3867 3905
+type(
+  C.G.E.label
+)
+ident(
+  int_ref lab "hacks.ml" 120 3522 3543 "hacks.ml" 120 3522 3546
+)
+"hacks.ml" 131 3867 3906 "hacks.ml" 131 3867 3909
+type(
+  C.G.V.t
+)
+ident(
+  int_ref tgt "hacks.ml" 122 3581 3589 "hacks.ml" 122 3581 3592
+)
+"hacks.ml" 131 3867 3886 "hacks.ml" 131 3867 3910
+call(
+  stack
+)
+type(
+  C.G.E.t
+)
+"hacks.ml" 131 3867 3871 "hacks.ml" 131 3867 3910
+call(
+  tail
+)
+type(
+  C.G.t
+)
+"hacks.ml" 122 3581 3585 "hacks.ml" 131 3867 3910
+type(
+  C.G.t
+)
+"hacks.ml" 121 3551 3555 "hacks.ml" 131 3867 3910
+type(
+  C.G.t
+)
+"hacks.ml" 133 3916 3922 "hacks.ml" 133 3916 3927
+type(
+  C.G.edge list
+)
+"hacks.ml" 133 3916 3930 "hacks.ml" 133 3916 3940
+type(
+  C.G.t -> C.G.vertex -> C.G.edge list
+)
+ident(
+  ext_ref C.G.succ_e
+)
+"hacks.ml" 133 3916 3941 "hacks.ml" 133 3916 3942
+type(
+  C.G.t
+)
+ident(
+  int_ref g "hacks.ml" 118 3423 3429 "hacks.ml" 118 3423 3430
+)
+"hacks.ml" 133 3916 3943 "hacks.ml" 133 3916 3944
+type(
+  C.G.vertex
+)
+ident(
+  int_ref n "hacks.ml" 115 3321 3339 "hacks.ml" 115 3321 3340
+)
+"hacks.ml" 133 3916 3930 "hacks.ml" 133 3916 3944
+call(
+  stack
+)
+type(
+  C.G.edge list
+)
+"hacks.ml" 134 3948 3954 "hacks.ml" 134 3948 3955
+type(
+  C.G.t
+)
+"hacks.ml" 134 3948 3958 "hacks.ml" 134 3948 3972
+type(
+  (C.G.t -> C.G.E.t -> C.G.t) -> C.G.t -> C.G.E.t list -> C.G.t
+)
+ident(
+  ext_ref BatListFull.List.fold_left
+)
+"hacks.ml" 134 3948 3973 "hacks.ml" 134 3948 3988
+type(
+  C.G.t -> C.G.E.t -> C.G.t
+)
+ident(
+  ext_ref C.remove_edge_e
+)
+"hacks.ml" 134 3948 3989 "hacks.ml" 134 3948 3990
+type(
+  C.G.t
+)
+ident(
+  int_ref g "hacks.ml" 118 3423 3429 "hacks.ml" 118 3423 3430
+)
+"hacks.ml" 134 3948 3991 "hacks.ml" 134 3948 3996
+type(
+  C.G.E.t list
+)
+ident(
+  int_ref edges "hacks.ml" 133 3916 3922 "hacks.ml" 133 3916 3927
+)
+"hacks.ml" 134 3948 3958 "hacks.ml" 134 3948 3996
+call(
+  stack
+)
+type(
+  C.G.t
+)
+"hacks.ml" 135 4000 4006 "hacks.ml" 135 4000 4011
+type(
+  C.lang
+)
+"hacks.ml" 135 4000 4014 "hacks.ml" 135 4000 4025
+type(
+  C.G.t -> C.G.V.t -> C.lang
+)
+ident(
+  ext_ref C.get_stmts
+)
+"hacks.ml" 135 4000 4026 "hacks.ml" 135 4000 4027
+type(
+  C.G.t
+)
+ident(
+  int_ref g "hacks.ml" 134 3948 3954 "hacks.ml" 134 3948 3955
+)
+"hacks.ml" 135 4000 4028 "hacks.ml" 135 4000 4029
+type(
+  C.G.vertex
+)
+ident(
+  int_ref n "hacks.ml" 115 3321 3339 "hacks.ml" 115 3321 3340
+)
+"hacks.ml" 135 4000 4014 "hacks.ml" 135 4000 4029
+call(
+  stack
+)
+type(
+  C.lang
+)
+"hacks.ml" 136 4033 4041 "hacks.ml" 136 4033 4049
+type(
+  C.lang -> Ast.stmt list
+)
+ident(
+  ext_ref BatListFull.List.rev
+)
+"hacks.ml" 136 4033 4050 "hacks.ml" 136 4033 4055
+type(
+  C.lang
+)
+ident(
+  int_ref stmts "hacks.ml" 135 4000 4006 "hacks.ml" 135 4000 4011
+)
+"hacks.ml" 136 4033 4041 "hacks.ml" 136 4033 4055
+call(
+  stack
+)
+type(
+  Ast.stmt list
+)
+"hacks.ml" 137 4061 4069 "hacks.ml" 137 4061 4070
+type(
+  Ast.exp
+)
+ident(
+  def t "hacks.ml" 137 4061 4081 "hacks.ml" 137 4061 4096
+)
+"hacks.ml" 137 4061 4072 "hacks.ml" 137 4061 4073
+type(
+  Ast.attrs
+)
+"hacks.ml" 137 4061 4068 "hacks.ml" 137 4061 4074
+type(
+  Ast.exp * Ast.attrs
+)
+"hacks.ml" 137 4061 4065 "hacks.ml" 137 4061 4074
+type(
+  Ast.stmt
+)
+"hacks.ml" 137 4061 4076 "hacks.ml" 137 4061 4077
+type(
+  Ast.stmt list
+)
+"hacks.ml" 137 4061 4065 "hacks.ml" 137 4061 4077
+type(
+  Ast.stmt list
+)
+"hacks.ml" 137 4061 4081 "hacks.ml" 137 4061 4090
+type(
+  C.G.t -> C.G.E.vertex -> ?lab:bool -> Ast.exp -> C.G.t
+)
+ident(
+  int_ref make_edge "hacks.ml" 120 3522 3528 "hacks.ml" 120 3522 3537
+)
+"hacks.ml" 137 4061 4091 "hacks.ml" 137 4061 4092
+type(
+  C.G.t
+)
+ident(
+  int_ref g "hacks.ml" 134 3948 3954 "hacks.ml" 134 3948 3955
+)
+"hacks.ml" 137 4061 4093 "hacks.ml" 137 4061 4094
+type(
+  C.G.vertex
+)
+ident(
+  int_ref n "hacks.ml" 115 3321 3339 "hacks.ml" 115 3321 3340
+)
+"hacks.ml" 137 4061 4095 "hacks.ml" 137 4061 4096
+type(
+  Ast.exp
+)
+ident(
+  int_ref t "hacks.ml" 137 4061 4069 "hacks.ml" 137 4061 4070
+)
+"hacks.ml" 137 4061 4081 "hacks.ml" 137 4061 4096
+call(
+  tail
+)
+type(
+  C.G.t
+)
+"hacks.ml" 138 4097 4106 "hacks.ml" 138 4097 4107
+type(
+  Ast.exp
+)
+"hacks.ml" 138 4097 4108 "hacks.ml" 138 4097 4109
+type(
+  Ast.exp
+)
+ident(
+  def t "hacks.ml" 138 4097 4121 "hacks.ml" 139 4158 4205
+)
+"hacks.ml" 138 4097 4110 "hacks.ml" 138 4097 4111
+type(
+  Ast.exp
+)
+ident(
+  def f "hacks.ml" 138 4097 4121 "hacks.ml" 139 4158 4205
+)
+"hacks.ml" 138 4097 4112 "hacks.ml" 138 4097 4113
+type(
+  Ast.attrs
+)
+"hacks.ml" 138 4097 4105 "hacks.ml" 138 4097 4114
+type(
+  Ast.exp * Ast.exp * Ast.exp * Ast.attrs
+)
+"hacks.ml" 138 4097 4101 "hacks.ml" 138 4097 4114
+type(
+  Ast.stmt
+)
+"hacks.ml" 138 4097 4116 "hacks.ml" 138 4097 4117
+type(
+  Ast.stmt list
+)
+"hacks.ml" 138 4097 4101 "hacks.ml" 138 4097 4117
+type(
+  Ast.stmt list
+)
+"hacks.ml" 138 4097 4125 "hacks.ml" 138 4097 4126
+type(
+  C.G.t
+)
+"hacks.ml" 138 4097 4129 "hacks.ml" 138 4097 4138
+type(
+  C.G.t -> C.G.E.vertex -> ?lab:bool -> Ast.exp -> C.G.t
+)
+ident(
+  int_ref make_edge "hacks.ml" 120 3522 3528 "hacks.ml" 120 3522 3537
+)
+"hacks.ml" 138 4097 4139 "hacks.ml" 138 4097 4140
+type(
+  C.G.t
+)
+ident(
+  int_ref g "hacks.ml" 134 3948 3954 "hacks.ml" 134 3948 3955
+)
+"hacks.ml" 138 4097 4141 "hacks.ml" 138 4097 4142
+type(
+  C.G.vertex
+)
+ident(
+  int_ref n "hacks.ml" 115 3321 3339 "hacks.ml" 115 3321 3340
+)
+"hacks.ml" 138 4097 4148 "hacks.ml" 138 4097 4152
+type(
+  bool
+)
+"hacks.ml" 138 4097 4153 "hacks.ml" 138 4097 4154
+type(
+  Ast.exp
+)
+ident(
+  int_ref t "hacks.ml" 138 4097 4108 "hacks.ml" 138 4097 4109
+)
+"hacks.ml" 138 4097 4129 "hacks.ml" 138 4097 4154
+call(
+  stack
+)
+type(
+  C.G.t
+)
+"hacks.ml" 139 4158 4179 "hacks.ml" 139 4158 4188
+type(
+  C.G.t -> C.G.E.vertex -> ?lab:bool -> Ast.exp -> C.G.t
+)
+ident(
+  int_ref make_edge "hacks.ml" 120 3522 3528 "hacks.ml" 120 3522 3537
+)
+"hacks.ml" 139 4158 4189 "hacks.ml" 139 4158 4190
+type(
+  C.G.t
+)
+ident(
+  int_ref g "hacks.ml" 138 4097 4125 "hacks.ml" 138 4097 4126
+)
+"hacks.ml" 139 4158 4191 "hacks.ml" 139 4158 4192
+type(
+  C.G.vertex
+)
+ident(
+  int_ref n "hacks.ml" 115 3321 3339 "hacks.ml" 115 3321 3340
+)
+"hacks.ml" 139 4158 4198 "hacks.ml" 139 4158 4203
+type(
+  bool
+)
+"hacks.ml" 139 4158 4204 "hacks.ml" 139 4158 4205
+type(
+  Ast.exp
+)
+ident(
+  int_ref f "hacks.ml" 138 4097 4110 "hacks.ml" 138 4097 4111
+)
+"hacks.ml" 139 4158 4179 "hacks.ml" 139 4158 4205
+call(
+  tail
+)
+type(
+  C.G.t
+)
+"hacks.ml" 138 4097 4121 "hacks.ml" 139 4158 4205
+type(
+  C.G.t
+)
+"hacks.ml" 140 4206 4218 "hacks.ml" 140 4206 4219
+type(
+  string * Ast.attrs
+)
+"hacks.ml" 140 4206 4210 "hacks.ml" 140 4206 4219
+type(
+  Ast.stmt
+)
+"hacks.ml" 140 4206 4221 "hacks.ml" 140 4206 4222
+type(
+  Ast.stmt list
+)
+"hacks.ml" 140 4206 4210 "hacks.ml" 140 4206 4222
+type(
+  Ast.stmt list
+)
+"hacks.ml" 140 4206 4226 "hacks.ml" 140 4206 4236
+type(
+  C.G.t -> C.G.V.t -> C.G.V.t -> C.G.t
+)
+ident(
+  ext_ref C.add_edge
+)
+"hacks.ml" 140 4206 4237 "hacks.ml" 140 4206 4238
+type(
+  C.G.t
+)
+ident(
+  int_ref g "hacks.ml" 134 3948 3954 "hacks.ml" 134 3948 3955
+)
+"hacks.ml" 140 4206 4239 "hacks.ml" 140 4206 4240
+type(
+  C.G.vertex
+)
+ident(
+  int_ref n "hacks.ml" 115 3321 3339 "hacks.ml" 115 3321 3340
+)
+"hacks.ml" 140 4206 4241 "hacks.ml" 140 4206 4246
+type(
+  C.G.V.t
+)
+ident(
+  int_ref error "hacks.ml" 116 3343 3352 "hacks.ml" 116 3343 3357
+)
+"hacks.ml" 140 4206 4226 "hacks.ml" 140 4206 4246
+call(
+  tail
+)
+type(
+  C.G.t
+)
+"hacks.ml" 141 4247 4256 "hacks.ml" 141 4247 4257
+type(
+  Ast.exp * Ast.attrs
+)
+"hacks.ml" 141 4247 4251 "hacks.ml" 141 4247 4257
+type(
+  Ast.stmt
+)
+"hacks.ml" 141 4247 4259 "hacks.ml" 141 4247 4260
+type(
+  Ast.stmt list
+)
+"hacks.ml" 141 4247 4251 "hacks.ml" 141 4247 4260
+type(
+  Ast.stmt list
+)
+"hacks.ml" 141 4247 4264 "hacks.ml" 141 4247 4274
+type(
+  C.G.t -> C.G.V.t -> C.G.V.t -> C.G.t
+)
+ident(
+  ext_ref C.add_edge
+)
+"hacks.ml" 141 4247 4275 "hacks.ml" 141 4247 4276
+type(
+  C.G.t
+)
+ident(
+  int_ref g "hacks.ml" 134 3948 3954 "hacks.ml" 134 3948 3955
+)
+"hacks.ml" 141 4247 4277 "hacks.ml" 141 4247 4278
+type(
+  C.G.vertex
+)
+ident(
+  int_ref n "hacks.ml" 115 3321 3339 "hacks.ml" 115 3321 3340
+)
+"hacks.ml" 141 4247 4279 "hacks.ml" 141 4247 4283
+type(
+  C.G.V.t
+)
+ident(
+  int_ref exit "hacks.ml" 117 3384 3393 "hacks.ml" 117 3384 3397
+)
+"hacks.ml" 141 4247 4264 "hacks.ml" 141 4247 4283
+call(
+  tail
+)
+type(
+  C.G.t
+)
+"hacks.ml" 142 4284 4288 "hacks.ml" 142 4284 4289
+type(
+  Ast.stmt list
+)
+"hacks.ml" 142 4284 4352 "hacks.ml" 142 4284 4353
+type(
+  C.G.t
+)
+ident(
+  int_ref g "hacks.ml" 134 3948 3954 "hacks.ml" 134 3948 3955
+)
+"hacks.ml" 136 4033 4035 "hacks.ml" 142 4284 4353
+type(
+  C.G.t
+)
+"hacks.ml" 135 4000 4002 "hacks.ml" 142 4284 4353
+type(
+  C.G.t
+)
+"hacks.ml" 134 3948 3950 "hacks.ml" 142 4284 4353
+type(
+  C.G.t
+)
+"hacks.ml" 133 3916 3918 "hacks.ml" 142 4284 4353
+type(
+  C.G.t
+)
+"hacks.ml" 120 3522 3524 "hacks.ml" 142 4284 4353
+type(
+  C.G.t
+)
+"hacks.ml" 118 3423 3425 "hacks.ml" 142 4284 4353
+type(
+  C.G.t
+)
+"hacks.ml" 117 3384 3386 "hacks.ml" 142 4284 4353
+type(
+  C.G.t
+)
+"hacks.ml" 116 3343 3345 "hacks.ml" 142 4284 4353
+type(
+  C.G.t
+)
+"hacks.ml" 145 4421 4425 "hacks.ml" 145 4421 4435
+type(
+  Cfg.AST.G.t -> Reachable.AST.gt
+)
+ident(
+  def repair_cfg "hacks.ml" 157 4823 4823 --
+)
+"hacks.ml" 145 4421 4436 "hacks.ml" 145 4421 4437
+type(
+  Cfg.AST.G.t
+)
+ident(
+  def g "hacks.ml" 147 4475 4477 "hacks.ml" 154 4701 4745
+)
+"hacks.ml" 147 4475 4481 "hacks.ml" 147 4475 4482
+type(
+  Ast.program
+)
+"hacks.ml" 147 4475 4485 "hacks.ml" 147 4475 4500
+type(
+  Cfg.AST.G.t -> Ast.program
+)
+ident(
+  ext_ref Cfg_ast.to_prog
+)
+"hacks.ml" 147 4475 4501 "hacks.ml" 147 4475 4502
+type(
+  Cfg.AST.G.t
+)
+ident(
+  int_ref g "hacks.ml" 145 4421 4436 "hacks.ml" 145 4421 4437
+)
+"hacks.ml" 147 4475 4485 "hacks.ml" 147 4475 4502
+call(
+  stack
+)
+type(
+  Ast.program
+)
+"hacks.ml" 152 4623 4629 "hacks.ml" 152 4623 4632
+type(
+  Cfg.AST.G.t
+)
+"hacks.ml" 152 4623 4635 "hacks.ml" 152 4623 4650
+type(
+  ?special_error:bool -> Ast.program -> Cfg.AST.G.t
+)
+ident(
+  ext_ref Cfg_ast.of_prog
+)
+"hacks.ml" 152 4623 4651 "hacks.ml" 152 4623 4652
+type(
+  Ast.program
+)
+ident(
+  int_ref p "hacks.ml" 147 4475 4481 "hacks.ml" 147 4475 4482
+)
+"hacks.ml" 152 4623 4635 "hacks.ml" 152 4623 4652
+call(
+  stack
+)
+type(
+  Cfg.AST.G.t
+)
+"hacks.ml" 153 4656 4662 "hacks.ml" 153 4656 4665
+type(
+  Cfg.AST.G.t
+)
+"hacks.ml" 153 4656 4667 "hacks.ml" 153 4656 4672
+type(
+  Cfg.AST.G.V.t
+)
+"hacks.ml" 153 4656 4662 "hacks.ml" 153 4656 4672
+type(
+  Cfg.AST.G.t * Cfg.AST.G.V.t
+)
+"hacks.ml" 153 4656 4675 "hacks.ml" 153 4656 4693
+type(
+  Cfg.AST.G.t -> Cfg.AST.G.t * Cfg.AST.G.V.t
+)
+ident(
+  ext_ref Cfg_ast.find_entry
+)
+"hacks.ml" 153 4656 4694 "hacks.ml" 153 4656 4697
+type(
+  Cfg.AST.G.t
+)
+ident(
+  int_ref cfg "hacks.ml" 152 4623 4629 "hacks.ml" 152 4623 4632
+)
+"hacks.ml" 153 4656 4675 "hacks.ml" 153 4656 4697
+call(
+  stack
+)
+type(
+  Cfg.AST.G.t * Cfg.AST.G.V.t
+)
+"hacks.ml" 154 4701 4703 "hacks.ml" 154 4701 4735
+type(
+  Reachable.AST.gt -> Reachable.AST.vt -> Reachable.AST.gt
+)
+ident(
+  ext_ref Reachable.AST.remove_unreachable
+)
+"hacks.ml" 154 4701 4736 "hacks.ml" 154 4701 4739
+type(
+  Reachable.AST.gt
+)
+ident(
+  int_ref cfg "hacks.ml" 153 4656 4662 "hacks.ml" 153 4656 4665
+)
+"hacks.ml" 154 4701 4740 "hacks.ml" 154 4701 4745
+type(
+  Reachable.AST.vt
+)
+ident(
+  int_ref entry "hacks.ml" 153 4656 4667 "hacks.ml" 153 4656 4672
+)
+"hacks.ml" 154 4701 4703 "hacks.ml" 154 4701 4745
+call(
+  tail
+)
+type(
+  Reachable.AST.gt
+)
+"hacks.ml" 153 4656 4658 "hacks.ml" 154 4701 4745
+type(
+  Reachable.AST.gt
+)
+"hacks.ml" 152 4623 4625 "hacks.ml" 154 4701 4745
+type(
+  Reachable.AST.gt
+)
+"hacks.ml" 147 4475 4477 "hacks.ml" 154 4701 4745
+type(
+  Reachable.AST.gt
+)
+"hacks.ml" 157 4823 4827 "hacks.ml" 157 4823 4843
+type(
+  Ast.program -> Ast.program
+)
+ident(
+  def uniqueify_labels "hacks.ml" 184 5513 5513 --
+)
+"hacks.ml" 157 4823 4844 "hacks.ml" 157 4823 4845
+type(
+  Ast.program
+)
+ident(
+  def p "hacks.ml" 158 4848 4850 "hacks.ml" 182 5471 5511
+)
+"hacks.ml" 158 4848 4854 "hacks.ml" 158 4848 4856
+type(
+  (string, int) Hashtbl.t
+)
+"hacks.ml" 158 4848 4859 "hacks.ml" 158 4848 4873
+type(
+  int -> (string, int) Hashtbl.t
+)
+ident(
+  ext_ref Hashtbl.create
+)
+"hacks.ml" 158 4848 4874 "hacks.ml" 158 4848 4878
+type(
+  int
+)
+"hacks.ml" 158 4848 4859 "hacks.ml" 158 4848 4878
+call(
+  stack
+)
+type(
+  (string, int) Hashtbl.t
+)
+"hacks.ml" 159 4882 4888 "hacks.ml" 159 4882 4902
+type(
+  Type.label -> Type.label
+)
+"hacks.ml" 159 4882 4903 "hacks.ml" 159 4882 4904
+type(
+  Type.label
+)
+ident(
+  def l "hacks.ml" 160 4907 4911 "hacks.ml" 175 5320 5337
+)
+"hacks.ml" 160 4907 4915 "hacks.ml" 160 4907 4919
+type(
+  string
+)
+"hacks.ml" 160 4907 4928 "hacks.ml" 160 4907 4929
+type(
+  Type.label
+)
+ident(
+  int_ref l "hacks.ml" 159 4882 4903 "hacks.ml" 159 4882 4904
+)
+"hacks.ml" 161 4935 4947 "hacks.ml" 161 4935 4950
+type(
+  string
+)
+ident(
+  def s "hacks.ml" 161 4935 4954 "hacks.ml" 161 4935 4955
+)
+"hacks.ml" 161 4935 4943 "hacks.ml" 161 4935 4950
+type(
+  Type.label
+)
+"hacks.ml" 161 4935 4954 "hacks.ml" 161 4935 4955
+type(
+  string
+)
+ident(
+  int_ref s "hacks.ml" 161 4935 4947 "hacks.ml" 161 4935 4950
+)
+"hacks.ml" 162 4956 4968 "hacks.ml" 162 4956 4971
+type(
+  Type.addr
+)
+ident(
+  def a "hacks.ml" 162 4956 4975 "hacks.ml" 162 4956 5002
+)
+"hacks.ml" 162 4956 4964 "hacks.ml" 162 4956 4971
+type(
+  Type.label
+)
+"hacks.ml" 162 4956 4975 "hacks.ml" 162 4956 4989
+type(
+  (Type.addr -> string, unit, string) format -> Type.addr -> string
+)
+ident(
+  ext_ref Printf.sprintf
+)
+"hacks.ml" 162 4956 4990 "hacks.ml" 162 4956 5000
+type(
+  (Type.addr -> string, unit, string) format
+)
+"hacks.ml" 162 4956 5001 "hacks.ml" 162 4956 5002
+type(
+  Type.addr
+)
+ident(
+  int_ref a "hacks.ml" 162 4956 4968 "hacks.ml" 162 4956 4971
+)
+"hacks.ml" 162 4956 4975 "hacks.ml" 162 4956 5002
+call(
+  stack
+)
+type(
+  string
+)
+"hacks.ml" 160 4907 4922 "hacks.ml" 162 4956 5002
+type(
+  string
+)
+"hacks.ml" 164 5010 5018 "hacks.ml" 164 5010 5019
+type(
+  int
+)
+"hacks.ml" 165 5022 5033 "hacks.ml" 165 5022 5045
+type(
+  (string, int) Hashtbl.t -> string -> int
+)
+ident(
+  ext_ref Hashtbl.find
+)
+"hacks.ml" 165 5022 5046 "hacks.ml" 165 5022 5048
+type(
+  (string, int) Hashtbl.t
+)
+ident(
+  int_ref lh "hacks.ml" 158 4848 4854 "hacks.ml" 158 4848 4856
+)
+"hacks.ml" 165 5022 5049 "hacks.ml" 165 5022 5053
+type(
+  string
+)
+ident(
+  int_ref strl "hacks.ml" 160 4907 4915 "hacks.ml" 160 4907 4919
+)
+"hacks.ml" 165 5022 5032 "hacks.ml" 165 5022 5054
+call(
+  stack
+)
+type(
+  int
+)
+"hacks.ml" 165 5022 5054 "hacks.ml" 165 5022 5055
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( + )
+)
+"hacks.ml" 165 5022 5055 "hacks.ml" 165 5022 5056
+type(
+  int
+)
+"hacks.ml" 165 5022 5032 "hacks.ml" 165 5022 5056
+type(
+  int
+)
+"hacks.ml" 166 5057 5068 "hacks.ml" 166 5057 5077
+type(
+  exn
+)
+"hacks.ml" 166 5057 5081 "hacks.ml" 166 5057 5082
+type(
+  int
+)
+"hacks.ml" 165 5022 5028 "hacks.ml" 166 5057 5082
+type(
+  int
+)
+"hacks.ml" 168 5091 5095 "hacks.ml" 168 5091 5110
+type(
+  (string, int) Hashtbl.t -> string -> int -> unit
+)
+ident(
+  ext_ref Hashtbl.replace
+)
+"hacks.ml" 168 5091 5111 "hacks.ml" 168 5091 5113
+type(
+  (string, int) Hashtbl.t
+)
+ident(
+  int_ref lh "hacks.ml" 158 4848 4854 "hacks.ml" 158 4848 4856
+)
+"hacks.ml" 168 5091 5114 "hacks.ml" 168 5091 5118
+type(
+  string
+)
+ident(
+  int_ref strl "hacks.ml" 160 4907 4915 "hacks.ml" 160 4907 4919
+)
+"hacks.ml" 168 5091 5119 "hacks.ml" 168 5091 5120
+type(
+  int
+)
+ident(
+  int_ref n "hacks.ml" 164 5010 5018 "hacks.ml" 164 5010 5019
+)
+"hacks.ml" 168 5091 5095 "hacks.ml" 168 5091 5120
+call(
+  stack
+)
+type(
+  unit
+)
+"hacks.ml" 171 5221 5229 "hacks.ml" 171 5221 5236
+type(
+  string
+)
+"hacks.ml" 172 5239 5248 "hacks.ml" 172 5239 5249
+type(
+  int
+)
+ident(
+  int_ref n "hacks.ml" 164 5010 5018 "hacks.ml" 164 5010 5019
+)
+"hacks.ml" 172 5239 5250 "hacks.ml" 172 5239 5251
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( = )
+)
+"hacks.ml" 172 5239 5252 "hacks.ml" 172 5239 5253
+type(
+  int
+)
+"hacks.ml" 172 5239 5248 "hacks.ml" 172 5239 5253
+type(
+  bool
+)
+"hacks.ml" 172 5239 5259 "hacks.ml" 172 5239 5263
+type(
+  string
+)
+ident(
+  int_ref strl "hacks.ml" 160 4907 4915 "hacks.ml" 160 4907 4919
+)
+"hacks.ml" 173 5269 5278 "hacks.ml" 173 5269 5282
+type(
+  string
+)
+ident(
+  int_ref strl "hacks.ml" 160 4907 4915 "hacks.ml" 160 4907 4919
+)
+"hacks.ml" 173 5269 5282 "hacks.ml" 173 5269 5283
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"hacks.ml" 173 5269 5283 "hacks.ml" 173 5269 5293
+type(
+  string
+)
+"hacks.ml" 173 5269 5293 "hacks.ml" 173 5269 5294
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"hacks.ml" 173 5269 5295 "hacks.ml" 173 5269 5308
+type(
+  int -> string
+)
+ident(
+  ext_ref Pervasives.string_of_int
+)
+"hacks.ml" 173 5269 5309 "hacks.ml" 173 5269 5310
+type(
+  int
+)
+ident(
+  int_ref n "hacks.ml" 164 5010 5018 "hacks.ml" 164 5010 5019
+)
+"hacks.ml" 173 5269 5294 "hacks.ml" 173 5269 5311
+call(
+  stack
+)
+type(
+  string
+)
+"hacks.ml" 173 5269 5283 "hacks.ml" 173 5269 5311
+call(
+  stack
+)
+type(
+  string
+)
+"hacks.ml" 173 5269 5277 "hacks.ml" 173 5269 5312
+call(
+  stack
+)
+type(
+  string
+)
+"hacks.ml" 172 5239 5245 "hacks.ml" 173 5269 5312
+type(
+  string
+)
+"hacks.ml" 175 5320 5328 "hacks.ml" 175 5320 5337
+type(
+  string
+)
+ident(
+  int_ref newname "hacks.ml" 171 5221 5229 "hacks.ml" 171 5221 5236
+)
+"hacks.ml" 175 5320 5324 "hacks.ml" 175 5320 5337
+type(
+  Type.label
+)
+"hacks.ml" 171 5221 5225 "hacks.ml" 175 5320 5337
+type(
+  Type.label
+)
+"hacks.ml" 168 5091 5095 "hacks.ml" 175 5320 5337
+type(
+  Type.label
+)
+"hacks.ml" 164 5010 5014 "hacks.ml" 175 5320 5337
+type(
+  Type.label
+)
+"hacks.ml" 160 4907 4911 "hacks.ml" 175 5320 5337
+type(
+  Type.label
+)
+"hacks.ml" 177 5343 5349 "hacks.ml" 177 5343 5361
+type(
+  Ast_visitor.nop
+)
+"hacks.ml" 177 5343 5370 "hacks.ml" 177 5343 5376
+type(
+  Ast_visitor.nop
+)
+"hacks.ml" 179 5405 5428 "hacks.ml" 179 5405 5429
+type(
+  Type.label
+)
+ident(
+  def l "hacks.ml" 179 5405 5432 "hacks.ml" 179 5405 5459
+)
+"hacks.ml" 179 5405 5442 "hacks.ml" 179 5405 5456
+type(
+  Type.label -> Type.label
+)
+ident(
+  int_ref find_new_label "hacks.ml" 159 4882 4888 "hacks.ml" 159 4882 4902
+)
+"hacks.ml" 179 5405 5457 "hacks.ml" 179 5405 5458
+type(
+  Type.label
+)
+ident(
+  int_ref l "hacks.ml" 179 5405 5428 "hacks.ml" 179 5405 5429
+)
+"hacks.ml" 179 5405 5441 "hacks.ml" 179 5405 5459
+call(
+  stack
+)
+type(
+  Type.label
+)
+"hacks.ml" 179 5405 5432 "hacks.ml" 179 5405 5459
+type(
+  Type.label Type.visit_action
+)
+"hacks.ml" 177 5343 5364 "hacks.ml" 180 5460 5465
+type(
+  Ast_visitor.nop
+)
+"hacks.ml" 182 5471 5473 "hacks.ml" 182 5471 5496
+type(
+  Ast_visitor.t -> Ast.program -> Ast.program
+)
+ident(
+  ext_ref Ast_visitor.prog_accept
+)
+"hacks.ml" 182 5471 5497 "hacks.ml" 182 5471 5509
+type(
+  Ast_visitor.t
+)
+ident(
+  int_ref renamelabels "hacks.ml" 177 5343 5349 "hacks.ml" 177 5343 5361
+)
+"hacks.ml" 182 5471 5510 "hacks.ml" 182 5471 5511
+type(
+  Ast.program
+)
+ident(
+  int_ref p "hacks.ml" 157 4823 4844 "hacks.ml" 157 4823 4845
+)
+"hacks.ml" 182 5471 5473 "hacks.ml" 182 5471 5511
+call(
+  tail
+)
+type(
+  Ast.program
+)
+"hacks.ml" 177 5343 5345 "hacks.ml" 182 5471 5511
+type(
+  Ast.program
+)
+"hacks.ml" 159 4882 4884 "hacks.ml" 182 5471 5511
+type(
+  Ast.program
+)
+"hacks.ml" 158 4848 4850 "hacks.ml" 182 5471 5511
+type(
+  Ast.program
+)
+"hacks.ml" 185 5544 5550 "hacks.ml" 185 5544 5565
+type(
+  C.G.t -> C.G.t
+)
+ident(
+  def remove_indirect "hacks.ml" 186 5570 5622 "hacks.ml" 187 5623 5626
+)
+"hacks.ml" 185 5544 5566 "hacks.ml" 185 5544 5567
+type(
+  C.G.t
+)
+ident(
+  def g "hacks.ml" 186 5570 5574 "hacks.ml" 186 5570 5622
+)
+"hacks.ml" 186 5570 5574 "hacks.ml" 186 5570 5589
+type(
+  C.G.t -> C.G.V.t -> C.G.t
+)
+ident(
+  ext_ref C.remove_vertex
+)
+"hacks.ml" 186 5570 5590 "hacks.ml" 186 5570 5591
+type(
+  C.G.t
+)
+ident(
+  int_ref g "hacks.ml" 185 5544 5566 "hacks.ml" 185 5544 5567
+)
+"hacks.ml" 186 5570 5593 "hacks.ml" 186 5570 5605
+type(
+  C.G.V.label -> C.G.V.t
+)
+ident(
+  ext_ref C.G.V.create
+)
+"hacks.ml" 186 5570 5606 "hacks.ml" 186 5570 5621
+type(
+  C.G.V.label
+)
+"hacks.ml" 186 5570 5592 "hacks.ml" 186 5570 5622
+call(
+  stack
+)
+type(
+  C.G.V.t
+)
+"hacks.ml" 186 5570 5574 "hacks.ml" 186 5570 5622
+call(
+  tail
+)
+type(
+  C.G.t
+)
+"hacks.ml" 189 5628 5632 "hacks.ml" 189 5628 5651
+type(
+  Cfg.AST.G.t -> Cfg.AST.G.t
+)
+ident(
+  def ast_remove_indirect "hacks.ml" 193 5709 5709 --
+)
+"hacks.ml" 190 5654 5672 "hacks.ml" 190 5654 5683
+call(
+  stack
+)
+"hacks.ml" 191 5687 5689 "hacks.ml" 191 5687 5707
+type(
+  Cfg.AST.G.t -> Cfg.AST.G.t
+)
+ident(
+  ext_ref Rm.remove_indirect
+)
+"hacks.ml" 190 5654 5656 "hacks.ml" 191 5687 5707
+type(
+  Cfg.AST.G.t -> Cfg.AST.G.t
+)
+"hacks.ml" 193 5709 5713 "hacks.ml" 193 5709 5732
+type(
+  Cfg.SSA.G.t -> Cfg.SSA.G.t
+)
+ident(
+  def ssa_remove_indirect "hacks.ml" 198 5844 5844 --
+)
+"hacks.ml" 194 5735 5753 "hacks.ml" 194 5735 5764
+call(
+  stack
+)
+"hacks.ml" 195 5768 5770 "hacks.ml" 195 5768 5788
+type(
+  Cfg.SSA.G.t -> Cfg.SSA.G.t
+)
+ident(
+  ext_ref Rm.remove_indirect
+)
+"hacks.ml" 194 5735 5737 "hacks.ml" 195 5768 5788
+type(
+  Cfg.SSA.G.t -> Cfg.SSA.G.t
+)
+"hacks.ml" 198 5844 5848 "hacks.ml" 198 5844 5864
+type(
+  Ast.program -> Ast.program
+)
+ident(
+  def replace_unknowns "hacks.ml" 211 6138 6138 --
+)
+"hacks.ml" 198 5844 5865 "hacks.ml" 198 5844 5866
+type(
+  Ast.program
+)
+ident(
+  def p "hacks.ml" 199 5869 5871 "hacks.ml" 208 6082 6111
+)
+"hacks.ml" 199 5869 5875 "hacks.ml" 199 5869 5876
+type(
+  Type.typ -> Ast.exp
+)
+"hacks.ml" 199 5869 5877 "hacks.ml" 199 5869 5878
+type(
+  Type.typ
+)
+ident(
+  def t "hacks.ml" 199 5869 5881 "hacks.ml" 199 5869 5912
+)
+"hacks.ml" 199 5869 5885 "hacks.ml" 199 5869 5908
+type(
+  Big_int_Z.big_int
+)
+ident(
+  ext_ref Big_int_convenience.bi0
+)
+"hacks.ml" 199 5869 5910 "hacks.ml" 199 5869 5911
+type(
+  Type.typ
+)
+ident(
+  int_ref t "hacks.ml" 199 5869 5877 "hacks.ml" 199 5869 5878
+)
+"hacks.ml" 199 5869 5884 "hacks.ml" 199 5869 5912
+type(
+  Big_int_Z.big_int * Type.typ
+)
+"hacks.ml" 199 5869 5881 "hacks.ml" 199 5869 5912
+type(
+  Ast.exp
+)
+"hacks.ml" 200 5916 5922 "hacks.ml" 200 5916 5923
+type(
+  Ast_visitor.nop
+)
+"hacks.ml" 200 5916 5932 "hacks.ml" 200 5916 5938
+type(
+  Ast_visitor.nop
+)
+"hacks.ml" 203 5999 6015 "hacks.ml" 203 5999 6016
+type(
+  string
+)
+"hacks.ml" 203 5999 6018 "hacks.ml" 203 5999 6019
+type(
+  Type.typ
+)
+ident(
+  def t "hacks.ml" 204 6024 6032 "hacks.ml" 204 6024 6046
+)
+"hacks.ml" 203 5999 6014 "hacks.ml" 203 5999 6020
+type(
+  string * Type.typ
+)
+"hacks.ml" 203 5999 6007 "hacks.ml" 203 5999 6020
+type(
+  Ast.exp
+)
+"hacks.ml" 204 6024 6042 "hacks.ml" 204 6024 6043
+type(
+  Type.typ -> Ast.exp
+)
+ident(
+  int_ref i "hacks.ml" 199 5869 5875 "hacks.ml" 199 5869 5876
+)
+"hacks.ml" 204 6024 6044 "hacks.ml" 204 6024 6045
+type(
+  Type.typ
+)
+ident(
+  int_ref t "hacks.ml" 203 5999 6018 "hacks.ml" 203 5999 6019
+)
+"hacks.ml" 204 6024 6041 "hacks.ml" 204 6024 6046
+call(
+  stack
+)
+type(
+  Ast.exp
+)
+"hacks.ml" 204 6024 6032 "hacks.ml" 204 6024 6046
+type(
+  Ast.exp Type.visit_action
+)
+"hacks.ml" 205 6047 6055 "hacks.ml" 205 6047 6056
+type(
+  Ast.exp
+)
+"hacks.ml" 205 6047 6060 "hacks.ml" 205 6047 6070
+type(
+  Ast.exp Type.visit_action
+)
+"hacks.ml" 202 5967 5990 "hacks.ml" 205 6047 6070
+type(
+  Ast.exp -> Ast.exp Type.visit_action
+)
+type(
+  Ast.exp -> Ast.exp Type.visit_action
+)
+"hacks.ml" 200 5916 5926 "hacks.ml" 206 6071 6076
+type(
+  Ast_visitor.nop
+)
+"hacks.ml" 208 6082 6084 "hacks.ml" 208 6082 6107
+type(
+  Ast_visitor.t -> Ast.program -> Ast.program
+)
+ident(
+  ext_ref Ast_visitor.prog_accept
+)
+"hacks.ml" 208 6082 6108 "hacks.ml" 208 6082 6109
+type(
+  Ast_visitor.t
+)
+ident(
+  int_ref v "hacks.ml" 200 5916 5922 "hacks.ml" 200 5916 5923
+)
+"hacks.ml" 208 6082 6110 "hacks.ml" 208 6082 6111
+type(
+  Ast.program
+)
+ident(
+  int_ref p "hacks.ml" 198 5844 5865 "hacks.ml" 198 5844 5866
+)
+"hacks.ml" 208 6082 6084 "hacks.ml" 208 6082 6111
+call(
+  tail
+)
+type(
+  Ast.program
+)
+"hacks.ml" 200 5916 5918 "hacks.ml" 208 6082 6111
+type(
+  Ast.program
+)
+"hacks.ml" 199 5869 5871 "hacks.ml" 208 6082 6111
+type(
+  Ast.program
+)
+"hacks.ml" 211 6138 6142 "hacks.ml" 211 6138 6153
+type(
+  string -> string -> unit
+)
+ident(
+  def append_file "hacks.ml" 229 6615 6615 --
+)
+"hacks.ml" 211 6138 6154 "hacks.ml" 211 6138 6157
+type(
+  string
+)
+ident(
+  def src "hacks.ml" 211 6138 6158 "hacks.ml" 222 6451 6465
+)
+"hacks.ml" 211 6138 6158 "hacks.ml" 211 6138 6161
+type(
+  string
+)
+ident(
+  def dst "hacks.ml" 212 6164 6166 "hacks.ml" 222 6451 6465
+)
+"hacks.ml" 212 6164 6170 "hacks.ml" 212 6164 6173
+type(
+  out_channel
+)
+"hacks.ml" 212 6164 6176 "hacks.ml" 212 6164 6188
+type(
+  open_flag list -> int -> string -> out_channel
+)
+ident(
+  ext_ref Pervasives.open_out_gen
+)
+"hacks.ml" 212 6164 6190 "hacks.ml" 212 6164 6199
+type(
+  open_flag
+)
+"hacks.ml" 212 6164 6201 "hacks.ml" 212 6164 6212
+type(
+  open_flag
+)
+"hacks.ml" 212 6164 6189 "hacks.ml" 212 6164 6213
+type(
+  open_flag list
+)
+"hacks.ml" 212 6164 6214 "hacks.ml" 212 6164 6219
+type(
+  int
+)
+"hacks.ml" 212 6164 6220 "hacks.ml" 212 6164 6223
+type(
+  string
+)
+ident(
+  int_ref dst "hacks.ml" 211 6138 6158 "hacks.ml" 211 6138 6161
+)
+"hacks.ml" 212 6164 6176 "hacks.ml" 212 6164 6223
+call(
+  stack
+)
+type(
+  out_channel
+)
+"hacks.ml" 213 6227 6233 "hacks.ml" 213 6227 6236
+type(
+  in_channel
+)
+"hacks.ml" 213 6227 6239 "hacks.ml" 213 6227 6246
+type(
+  string -> in_channel
+)
+ident(
+  ext_ref Pervasives.open_in
+)
+"hacks.ml" 213 6227 6247 "hacks.ml" 213 6227 6250
+type(
+  string
+)
+ident(
+  int_ref src "hacks.ml" 211 6138 6154 "hacks.ml" 211 6138 6157
+)
+"hacks.ml" 213 6227 6239 "hacks.ml" 213 6227 6250
+call(
+  stack
+)
+type(
+  in_channel
+)
+"hacks.ml" 214 6254 6264 "hacks.ml" 214 6254 6273
+type(
+  out_channel -> in_channel -> unit
+)
+"hacks.ml" 214 6254 6274 "hacks.ml" 214 6254 6280
+type(
+  out_channel
+)
+ident(
+  def oc_out "hacks.ml" 214 6254 6281 "hacks.ml" 218 6381 6407
+)
+"hacks.ml" 214 6254 6281 "hacks.ml" 214 6254 6286
+type(
+  in_channel
+)
+ident(
+  def oc_in "hacks.ml" 215 6289 6293 "hacks.ml" 218 6381 6407
+)
+"hacks.ml" 216 6298 6304 "hacks.ml" 216 6298 6317
+type(
+  out_channel -> string -> unit
+)
+ident(
+  ext_ref Pervasives.output_string
+)
+"hacks.ml" 216 6298 6318 "hacks.ml" 216 6298 6324
+type(
+  out_channel
+)
+ident(
+  int_ref oc_out "hacks.ml" 214 6254 6274 "hacks.ml" 214 6254 6280
+)
+"hacks.ml" 216 6298 6327 "hacks.ml" 216 6298 6337
+type(
+  in_channel -> string
+)
+ident(
+  ext_ref Pervasives.input_line
+)
+"hacks.ml" 216 6298 6338 "hacks.ml" 216 6298 6343
+type(
+  in_channel
+)
+ident(
+  int_ref oc_in "hacks.ml" 214 6254 6281 "hacks.ml" 214 6254 6286
+)
+"hacks.ml" 216 6298 6326 "hacks.ml" 216 6298 6344
+call(
+  stack
+)
+type(
+  string
+)
+"hacks.ml" 216 6298 6344 "hacks.ml" 216 6298 6345
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"hacks.ml" 216 6298 6345 "hacks.ml" 216 6298 6349
+type(
+  string
+)
+"hacks.ml" 216 6298 6325 "hacks.ml" 216 6298 6350
+call(
+  stack
+)
+type(
+  string
+)
+"hacks.ml" 216 6298 6304 "hacks.ml" 216 6298 6350
+call(
+  stack
+)
+type(
+  unit
+)
+"hacks.ml" 217 6352 6358 "hacks.ml" 217 6352 6367
+type(
+  out_channel -> in_channel -> unit
+)
+ident(
+  int_ref do_append "hacks.ml" 214 6254 6264 "hacks.ml" 214 6254 6273
+)
+"hacks.ml" 217 6352 6368 "hacks.ml" 217 6352 6374
+type(
+  out_channel
+)
+ident(
+  int_ref oc_out "hacks.ml" 214 6254 6274 "hacks.ml" 214 6254 6280
+)
+"hacks.ml" 217 6352 6375 "hacks.ml" 217 6352 6380
+type(
+  in_channel
+)
+ident(
+  int_ref oc_in "hacks.ml" 214 6254 6281 "hacks.ml" 214 6254 6286
+)
+"hacks.ml" 217 6352 6358 "hacks.ml" 217 6352 6380
+call(
+  stack
+)
+type(
+  unit
+)
+"hacks.ml" 216 6298 6304 "hacks.ml" 217 6352 6380
+type(
+  unit
+)
+"hacks.ml" 218 6381 6390 "hacks.ml" 218 6381 6401
+type(
+  exn
+)
+"hacks.ml" 218 6381 6405 "hacks.ml" 218 6381 6407
+type(
+  unit
+)
+"hacks.ml" 215 6289 6293 "hacks.ml" 218 6381 6407
+type(
+  unit
+)
+"hacks.ml" 220 6413 6415 "hacks.ml" 220 6413 6424
+type(
+  out_channel -> in_channel -> unit
+)
+ident(
+  int_ref do_append "hacks.ml" 214 6254 6264 "hacks.ml" 214 6254 6273
+)
+"hacks.ml" 220 6413 6425 "hacks.ml" 220 6413 6428
+type(
+  out_channel
+)
+ident(
+  int_ref oc1 "hacks.ml" 212 6164 6170 "hacks.ml" 212 6164 6173
+)
+"hacks.ml" 220 6413 6429 "hacks.ml" 220 6413 6432
+type(
+  in_channel
+)
+ident(
+  int_ref oc2 "hacks.ml" 213 6227 6233 "hacks.ml" 213 6227 6236
+)
+"hacks.ml" 220 6413 6415 "hacks.ml" 220 6413 6432
+call(
+  stack
+)
+type(
+  unit
+)
+"hacks.ml" 221 6434 6436 "hacks.ml" 221 6434 6445
+type(
+  out_channel -> unit
+)
+ident(
+  ext_ref Pervasives.close_out
+)
+"hacks.ml" 221 6434 6446 "hacks.ml" 221 6434 6449
+type(
+  out_channel
+)
+ident(
+  int_ref oc1 "hacks.ml" 212 6164 6170 "hacks.ml" 212 6164 6173
+)
+"hacks.ml" 221 6434 6436 "hacks.ml" 221 6434 6449
+call(
+  stack
+)
+type(
+  unit
+)
+"hacks.ml" 222 6451 6453 "hacks.ml" 222 6451 6461
+type(
+  in_channel -> unit
+)
+ident(
+  ext_ref Pervasives.close_in
+)
+"hacks.ml" 222 6451 6462 "hacks.ml" 222 6451 6465
+type(
+  in_channel
+)
+ident(
+  int_ref oc2 "hacks.ml" 213 6227 6233 "hacks.ml" 213 6227 6236
+)
+"hacks.ml" 222 6451 6453 "hacks.ml" 222 6451 6465
+call(
+  tail
+)
+type(
+  unit
+)
+"hacks.ml" 221 6434 6436 "hacks.ml" 222 6451 6465
+type(
+  unit
+)
+"hacks.ml" 220 6413 6415 "hacks.ml" 222 6451 6465
+type(
+  unit
+)
+"hacks.ml" 214 6254 6256 "hacks.ml" 222 6451 6465
+type(
+  unit
+)
+"hacks.ml" 213 6227 6229 "hacks.ml" 222 6451 6465
+type(
+  unit
+)
+"hacks.ml" 212 6164 6166 "hacks.ml" 222 6451 6465
+type(
+  unit
+)
+"hacks.ml" 229 6615 6619 "hacks.ml" 229 6615 6639
+type(
+  Cfg.AST.G.t -> C.G.t
+)
+ident(
+  def bberror_assume_false "hacks.ml" 256 7550 7557 --
+)
+"hacks.ml" 229 6615 6640 "hacks.ml" 229 6615 6645
+type(
+  Cfg.AST.G.t
+)
+ident(
+  def graph "hacks.ml" 230 6648 6650 "hacks.ml" 256 7550 7557
+)
+"hacks.ml" 230 6648 6654 "hacks.ml" 230 6648 6659
+type(
+  Cfg.AST.G.t
+)
+"hacks.ml" 230 6648 6661 "hacks.ml" 230 6648 6666
+type(
+  Cfg.AST.G.V.t
+)
+"hacks.ml" 230 6648 6654 "hacks.ml" 230 6648 6666
+type(
+  Cfg.AST.G.t * Cfg.AST.G.V.t
+)
+"hacks.ml" 230 6648 6669 "hacks.ml" 230 6648 6687
+type(
+  Cfg.AST.G.t -> Cfg.AST.G.t * Cfg.AST.G.V.t
+)
+ident(
+  ext_ref Cfg_ast.find_error
+)
+"hacks.ml" 230 6648 6688 "hacks.ml" 230 6648 6693
+type(
+  Cfg.AST.G.t
+)
+ident(
+  int_ref graph "hacks.ml" 229 6615 6640 "hacks.ml" 229 6615 6645
+)
+"hacks.ml" 230 6648 6669 "hacks.ml" 230 6648 6693
+call(
+  stack
+)
+type(
+  Cfg.AST.G.t * Cfg.AST.G.V.t
+)
+"hacks.ml" 231 6697 6703 "hacks.ml" 231 6697 6708
+type(
+  Cfg.AST.G.t
+)
+"hacks.ml" 231 6697 6710 "hacks.ml" 231 6697 6714
+type(
+  Cfg.AST.G.V.t
+)
+"hacks.ml" 231 6697 6703 "hacks.ml" 231 6697 6714
+type(
+  Cfg.AST.G.t * Cfg.AST.G.V.t
+)
+"hacks.ml" 231 6697 6717 "hacks.ml" 231 6697 6734
+type(
+  Cfg.AST.G.t -> Cfg.AST.G.t * Cfg.AST.G.V.t
+)
+ident(
+  ext_ref Cfg_ast.find_exit
+)
+"hacks.ml" 231 6697 6735 "hacks.ml" 231 6697 6740
+type(
+  Cfg.AST.G.t
+)
+ident(
+  int_ref graph "hacks.ml" 230 6648 6654 "hacks.ml" 230 6648 6659
+)
+"hacks.ml" 231 6697 6717 "hacks.ml" 231 6697 6740
+call(
+  stack
+)
+type(
+  Cfg.AST.G.t * Cfg.AST.G.V.t
+)
+"hacks.ml" 232 6744 6750 "hacks.ml" 232 6744 6755
+type(
+  C.G.vertex list
+)
+"hacks.ml" 232 6744 6758 "hacks.ml" 232 6744 6766
+type(
+  C.G.t -> C.G.vertex -> C.G.vertex list
+)
+ident(
+  ext_ref C.G.pred
+)
+"hacks.ml" 232 6744 6767 "hacks.ml" 232 6744 6772
+type(
+  C.G.t
+)
+ident(
+  int_ref graph "hacks.ml" 231 6697 6703 "hacks.ml" 231 6697 6708
+)
+"hacks.ml" 232 6744 6773 "hacks.ml" 232 6744 6778
+type(
+  C.G.vertex
+)
+ident(
+  int_ref error "hacks.ml" 230 6648 6661 "hacks.ml" 230 6648 6666
+)
+"hacks.ml" 232 6744 6758 "hacks.ml" 232 6744 6778
+call(
+  stack
+)
+type(
+  C.G.vertex list
+)
+"hacks.ml" 233 6782 6788 "hacks.ml" 233 6782 6800
+type(
+  string
+)
+"hacks.ml" 233 6782 6803 "hacks.ml" 233 6782 6816
+type(
+  string
+)
+"hacks.ml" 234 6820 6826 "hacks.ml" 234 6820 6838
+type(
+  Ast.stmt list
+)
+"hacks.ml" 236 6847 6864 "hacks.ml" 236 6847 6876
+type(
+  string
+)
+ident(
+  int_ref assume_label "hacks.ml" 233 6782 6788 "hacks.ml" 233 6782 6800
+)
+"hacks.ml" 236 6847 6859 "hacks.ml" 236 6847 6876
+type(
+  Type.label
+)
+"hacks.ml" 236 6847 6878 "hacks.ml" 236 6847 6880
+type(
+  Ast.attrs
+)
+"hacks.ml" 236 6847 6858 "hacks.ml" 236 6847 6881
+type(
+  Type.label * Ast.attrs
+)
+"hacks.ml" 236 6847 6853 "hacks.ml" 236 6847 6881
+type(
+  Ast.stmt
+)
+"hacks.ml" 237 6883 6896 "hacks.ml" 237 6883 6905
+type(
+  Ast.exp
+)
+ident(
+  ext_ref Ast.exp_false
+)
+"hacks.ml" 237 6883 6916 "hacks.ml" 237 6883 6944
+type(
+  string
+)
+"hacks.ml" 237 6883 6908 "hacks.ml" 237 6883 6944
+type(
+  Type.attribute
+)
+"hacks.ml" 237 6883 6907 "hacks.ml" 237 6883 6945
+type(
+  Ast.attrs
+)
+"hacks.ml" 237 6883 6895 "hacks.ml" 237 6883 6946
+type(
+  Ast.exp * Ast.attrs
+)
+"hacks.ml" 237 6883 6889 "hacks.ml" 237 6883 6946
+type(
+  Ast.stmt
+)
+"hacks.ml" 235 6841 6845 "hacks.ml" 238 6947 6952
+type(
+  Ast.stmt list
+)
+"hacks.ml" 240 6958 6964 "hacks.ml" 240 6958 6969
+type(
+  C.G.t
+)
+"hacks.ml" 240 6958 6971 "hacks.ml" 240 6958 6977
+type(
+  C.G.V.t
+)
+"hacks.ml" 240 6958 6964 "hacks.ml" 240 6958 6977
+type(
+  C.G.t * C.G.V.t
+)
+"hacks.ml" 240 6958 6980 "hacks.ml" 240 6958 6995
+type(
+  C.G.t -> C.lang -> C.G.t * C.G.V.t
+)
+ident(
+  ext_ref C.create_vertex
+)
+"hacks.ml" 240 6958 6996 "hacks.ml" 240 6958 7001
+type(
+  C.G.t
+)
+ident(
+  int_ref graph "hacks.ml" 231 6697 6703 "hacks.ml" 231 6697 6708
+)
+"hacks.ml" 240 6958 7002 "hacks.ml" 240 6958 7014
+type(
+  C.lang
+)
+ident(
+  int_ref assume_stmts "hacks.ml" 234 6820 6826 "hacks.ml" 234 6820 6838
+)
+"hacks.ml" 240 6958 6980 "hacks.ml" 240 6958 7014
+call(
+  stack
+)
+type(
+  C.G.t * C.G.V.t
+)
+"hacks.ml" 241 7018 7024 "hacks.ml" 241 7018 7037
+type(
+  Ast.exp -> Ast.exp Type.visit_action
+)
+"hacks.ml" 242 7049 7059 "hacks.ml" 242 7049 7069
+type(
+  string
+)
+"hacks.ml" 242 7049 7055 "hacks.ml" 242 7049 7069
+type(
+  Ast.exp
+)
+"hacks.ml" 242 7049 7087 "hacks.ml" 242 7049 7099
+type(
+  string
+)
+ident(
+  int_ref assume_label "hacks.ml" 233 6782 6788 "hacks.ml" 233 6782 6800
+)
+"hacks.ml" 242 7049 7082 "hacks.ml" 242 7049 7100
+type(
+  Ast.exp
+)
+"hacks.ml" 242 7049 7073 "hacks.ml" 242 7049 7100
+type(
+  Ast.exp Type.visit_action
+)
+"hacks.ml" 243 7101 7107 "hacks.ml" 243 7101 7108
+type(
+  Ast.exp
+)
+"hacks.ml" 243 7101 7112 "hacks.ml" 243 7101 7122
+type(
+  Ast.exp Type.visit_action
+)
+"hacks.ml" 241 7018 7040 "hacks.ml" 243 7101 7122
+type(
+  Ast.exp -> Ast.exp Type.visit_action
+)
+"hacks.ml" 245 7128 7134 "hacks.ml" 245 7128 7141
+type(
+  C.G.t -> C.G.V.t -> C.G.t
+)
+"hacks.ml" 245 7128 7142 "hacks.ml" 245 7128 7145
+type(
+  C.G.t
+)
+ident(
+  def cfg "hacks.ml" 245 7128 7146 "hacks.ml" 251 7394 7401
+)
+"hacks.ml" 245 7128 7146 "hacks.ml" 245 7128 7150
+type(
+  C.G.V.t
+)
+ident(
+  def node "hacks.ml" 246 7153 7157 "hacks.ml" 251 7394 7401
+)
+"hacks.ml" 246 7153 7161 "hacks.ml" 246 7153 7166
+type(
+  C.lang
+)
+"hacks.ml" 246 7153 7169 "hacks.ml" 246 7153 7180
+type(
+  C.G.t -> C.G.V.t -> C.lang
+)
+ident(
+  ext_ref C.get_stmts
+)
+"hacks.ml" 246 7153 7181 "hacks.ml" 246 7153 7184
+type(
+  C.G.t
+)
+ident(
+  int_ref cfg "hacks.ml" 245 7128 7142 "hacks.ml" 245 7128 7145
+)
+"hacks.ml" 246 7153 7185 "hacks.ml" 246 7153 7189
+type(
+  C.G.V.t
+)
+ident(
+  int_ref node "hacks.ml" 245 7128 7146 "hacks.ml" 245 7128 7150
+)
+"hacks.ml" 246 7153 7169 "hacks.ml" 246 7153 7189
+call(
+  stack
+)
+type(
+  C.lang
+)
+"hacks.ml" 247 7193 7201 "hacks.ml" 247 7193 7206
+type(
+  Ast.program
+)
+"hacks.ml" 247 7193 7210 "hacks.ml" 247 7193 7226
+type(
+  (Ast.exp -> Ast.exp Type.visit_action) -> Ast_mapper.map
+)
+ident(
+  ext_ref Ast_mapper.map_e
+)
+"hacks.ml" 247 7193 7227 "hacks.ml" 247 7193 7240
+type(
+  Ast.exp -> Ast.exp Type.visit_action
+)
+ident(
+  int_ref replace_label "hacks.ml" 241 7018 7024 "hacks.ml" 241 7018 7037
+)
+"hacks.ml" 247 7193 7209 "hacks.ml" 247 7193 7241
+call(
+  stack
+)
+type(
+  Ast_mapper.map
+)
+"hacks.ml" 247 7193 7209 "hacks.ml" 247 7193 7246
+call(
+  stack
+)
+type(
+  Ast.program -> Ast.program
+)
+"hacks.ml" 247 7193 7247 "hacks.ml" 247 7193 7252
+type(
+  C.lang
+)
+ident(
+  int_ref stmts "hacks.ml" 246 7153 7161 "hacks.ml" 246 7153 7166
+)
+"hacks.ml" 247 7193 7209 "hacks.ml" 247 7193 7252
+type(
+  Ast.program
+)
+"hacks.ml" 248 7256 7264 "hacks.ml" 248 7256 7267
+type(
+  C.G.t
+)
+"hacks.ml" 248 7256 7270 "hacks.ml" 248 7256 7281
+type(
+  C.G.t -> C.G.V.t -> C.lang -> C.G.t
+)
+ident(
+  ext_ref C.set_stmts
+)
+"hacks.ml" 248 7256 7282 "hacks.ml" 248 7256 7285
+type(
+  C.G.t
+)
+ident(
+  int_ref cfg "hacks.ml" 245 7128 7142 "hacks.ml" 245 7128 7145
+)
+"hacks.ml" 248 7256 7286 "hacks.ml" 248 7256 7290
+type(
+  C.G.V.t
+)
+ident(
+  int_ref node "hacks.ml" 245 7128 7146 "hacks.ml" 245 7128 7150
+)
+"hacks.ml" 248 7256 7291 "hacks.ml" 248 7256 7296
+type(
+  Ast.program
+)
+ident(
+  int_ref stmts "hacks.ml" 247 7193 7201 "hacks.ml" 247 7193 7206
+)
+"hacks.ml" 248 7256 7270 "hacks.ml" 248 7256 7296
+call(
+  stack
+)
+type(
+  C.G.t
+)
+"hacks.ml" 250 7350 7358 "hacks.ml" 250 7350 7361
+type(
+  C.G.t
+)
+"hacks.ml" 250 7350 7364 "hacks.ml" 250 7350 7374
+type(
+  C.G.t -> C.G.V.t -> C.G.V.t -> C.G.t
+)
+ident(
+  ext_ref C.add_edge
+)
+"hacks.ml" 250 7350 7375 "hacks.ml" 250 7350 7378
+type(
+  C.G.t
+)
+ident(
+  int_ref cfg "hacks.ml" 248 7256 7264 "hacks.ml" 248 7256 7267
+)
+"hacks.ml" 250 7350 7379 "hacks.ml" 250 7350 7383
+type(
+  C.G.V.t
+)
+ident(
+  int_ref node "hacks.ml" 245 7128 7146 "hacks.ml" 245 7128 7150
+)
+"hacks.ml" 250 7350 7384 "hacks.ml" 250 7350 7390
+type(
+  C.G.V.t
+)
+ident(
+  int_ref assume "hacks.ml" 240 6958 6971 "hacks.ml" 240 6958 6977
+)
+"hacks.ml" 250 7350 7364 "hacks.ml" 250 7350 7390
+call(
+  stack
+)
+type(
+  C.G.t
+)
+"hacks.ml" 251 7394 7398 "hacks.ml" 251 7394 7401
+type(
+  C.G.t
+)
+ident(
+  int_ref cfg "hacks.ml" 250 7350 7358 "hacks.ml" 250 7350 7361
+)
+"hacks.ml" 250 7350 7354 "hacks.ml" 251 7394 7401
+type(
+  C.G.t
+)
+"hacks.ml" 248 7256 7260 "hacks.ml" 251 7394 7401
+type(
+  C.G.t
+)
+"hacks.ml" 247 7193 7197 "hacks.ml" 251 7394 7401
+type(
+  C.G.t
+)
+"hacks.ml" 246 7153 7157 "hacks.ml" 251 7394 7401
+type(
+  C.G.t
+)
+"hacks.ml" 253 7407 7413 "hacks.ml" 253 7407 7418
+type(
+  C.G.t
+)
+"hacks.ml" 253 7407 7421 "hacks.ml" 253 7407 7436
+type(
+  C.G.t -> C.G.V.t -> C.G.t
+)
+ident(
+  ext_ref C.remove_vertex
+)
+"hacks.ml" 253 7407 7437 "hacks.ml" 253 7407 7442
+type(
+  C.G.t
+)
+ident(
+  int_ref graph "hacks.ml" 240 6958 6964 "hacks.ml" 240 6958 6969
+)
+"hacks.ml" 253 7407 7443 "hacks.ml" 253 7407 7448
+type(
+  C.G.V.t
+)
+ident(
+  int_ref error "hacks.ml" 230 6648 6661 "hacks.ml" 230 6648 6666
+)
+"hacks.ml" 253 7407 7421 "hacks.ml" 253 7407 7448
+call(
+  stack
+)
+type(
+  C.G.t
+)
+"hacks.ml" 254 7452 7458 "hacks.ml" 254 7452 7463
+type(
+  C.G.t
+)
+"hacks.ml" 254 7452 7466 "hacks.ml" 254 7452 7480
+type(
+  (C.G.t -> C.G.V.t -> C.G.t) -> C.G.t -> C.G.V.t list -> C.G.t
+)
+ident(
+  ext_ref BatListFull.List.fold_left
+)
+"hacks.ml" 254 7452 7481 "hacks.ml" 254 7452 7488
+type(
+  C.G.t -> C.G.V.t -> C.G.t
+)
+ident(
+  int_ref reroute "hacks.ml" 245 7128 7134 "hacks.ml" 245 7128 7141
+)
+"hacks.ml" 254 7452 7489 "hacks.ml" 254 7452 7494
+type(
+  C.G.t
+)
+ident(
+  int_ref graph "hacks.ml" 253 7407 7413 "hacks.ml" 253 7407 7418
+)
+"hacks.ml" 254 7452 7495 "hacks.ml" 254 7452 7500
+type(
+  C.G.V.t list
+)
+ident(
+  int_ref preds "hacks.ml" 232 6744 6750 "hacks.ml" 232 6744 6755
+)
+"hacks.ml" 254 7452 7466 "hacks.ml" 254 7452 7500
+call(
+  stack
+)
+type(
+  C.G.t
+)
+"hacks.ml" 255 7504 7510 "hacks.ml" 255 7504 7515
+type(
+  C.G.t
+)
+"hacks.ml" 255 7504 7518 "hacks.ml" 255 7504 7528
+type(
+  C.G.t -> C.G.V.t -> C.G.V.t -> C.G.t
+)
+ident(
+  ext_ref C.add_edge
+)
+"hacks.ml" 255 7504 7529 "hacks.ml" 255 7504 7534
+type(
+  C.G.t
+)
+ident(
+  int_ref graph "hacks.ml" 254 7452 7458 "hacks.ml" 254 7452 7463
+)
+"hacks.ml" 255 7504 7535 "hacks.ml" 255 7504 7541
+type(
+  C.G.V.t
+)
+ident(
+  int_ref assume "hacks.ml" 240 6958 6971 "hacks.ml" 240 6958 6977
+)
+"hacks.ml" 255 7504 7542 "hacks.ml" 255 7504 7546
+type(
+  C.G.V.t
+)
+ident(
+  int_ref exit "hacks.ml" 231 6697 6710 "hacks.ml" 231 6697 6714
+)
+"hacks.ml" 255 7504 7518 "hacks.ml" 255 7504 7546
+call(
+  stack
+)
+type(
+  C.G.t
+)
+"hacks.ml" 256 7550 7552 "hacks.ml" 256 7550 7557
+type(
+  C.G.t
+)
+ident(
+  int_ref graph "hacks.ml" 255 7504 7510 "hacks.ml" 255 7504 7515
+)
+"hacks.ml" 255 7504 7506 "hacks.ml" 256 7550 7557
+type(
+  C.G.t
+)
+"hacks.ml" 254 7452 7454 "hacks.ml" 256 7550 7557
+type(
+  C.G.t
+)
+"hacks.ml" 253 7407 7409 "hacks.ml" 256 7550 7557
+type(
+  C.G.t
+)
+"hacks.ml" 245 7128 7130 "hacks.ml" 256 7550 7557
+type(
+  C.G.t
+)
+"hacks.ml" 241 7018 7020 "hacks.ml" 256 7550 7557
+type(
+  C.G.t
+)
+"hacks.ml" 240 6958 6960 "hacks.ml" 256 7550 7557
+type(
+  C.G.t
+)
+"hacks.ml" 234 6820 6822 "hacks.ml" 256 7550 7557
+type(
+  C.G.t
+)
+"hacks.ml" 233 6782 6784 "hacks.ml" 256 7550 7557
+type(
+  C.G.t
+)
+"hacks.ml" 232 6744 6746 "hacks.ml" 256 7550 7557
+type(
+  C.G.t
+)
+"hacks.ml" 231 6697 6699 "hacks.ml" 256 7550 7557
+type(
+  C.G.t
+)
+"hacks.ml" 230 6648 6650 "hacks.ml" 256 7550 7557
+type(
+  C.G.t
+)

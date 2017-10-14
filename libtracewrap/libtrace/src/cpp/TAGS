@@ -1,0 +1,1417 @@
+
+pb/frame.piqi.pb.h,46866
+#define PROTOBUF_frame_2epiqi_2eproto__INCLUDED5,137
+class frame 58,1674
+  inline frame& operator=(frame::operator=65,1799
+  inline const ::google::protobuf::UnknownFieldSet& unknown_fields(frame::unknown_fields70,1891
+  inline ::google::protobuf::UnknownFieldSet* mutable_unknown_fields(frame::mutable_unknown_fields74,2004
+  int GetCachedSize(frame::GetCachedSize99,2901
+  static const int kStdFrameFieldNumber frame::kStdFrameFieldNumber115,3372
+  static const int kSyscallFrameFieldNumber frame::kSyscallFrameFieldNumber123,3679
+  static const int kExceptionFrameFieldNumber frame::kExceptionFrameFieldNumber131,4022
+  static const int kTaintIntroFrameFieldNumber frame::kTaintIntroFrameFieldNumber139,4387
+  static const int kModloadFrameFieldNumber frame::kModloadFrameFieldNumber147,4749
+  static const int kKeyFrameFieldNumber frame::kKeyFrameFieldNumber155,5068
+  ::google::protobuf::UnknownFieldSet _unknown_fields_;frame::_unknown_fields_175,5787
+  ::std_frame* std_frame_;frame::std_frame_177,5846
+  ::syscall_frame* syscall_frame_;frame::syscall_frame_178,5873
+  ::exception_frame* exception_frame_;frame::exception_frame_179,5908
+  ::taint_intro_frame* taint_intro_frame_;frame::taint_intro_frame_180,5947
+  ::modload_frame* modload_frame_;frame::modload_frame_181,5990
+  ::key_frame* key_frame_;frame::key_frame_182,6025
+  mutable int _cached_size_;frame::_cached_size_184,6055
+  ::google::protobuf::uint32 _has_bits_[frame::_has_bits_185,6084
+  static frame* default_instance_;frame::default_instance_192,6352
+class operand_list 196,6462
+  inline operand_list& operator=(operand_list::operator=203,6622
+  inline const ::google::protobuf::UnknownFieldSet& unknown_fields(operand_list::unknown_fields208,6728
+  inline ::google::protobuf::UnknownFieldSet* mutable_unknown_fields(operand_list::mutable_unknown_fields212,6841
+  int GetCachedSize(operand_list::GetCachedSize237,7773
+  static const int kElemFieldNumber operand_list::kElemFieldNumber253,8232
+  ::google::protobuf::UnknownFieldSet _unknown_fields_;operand_list::_unknown_fields_265,8664
+  ::google::protobuf::RepeatedPtrField< ::operand_info > elem_;operand_list::elem_267,8723
+  mutable int _cached_size_;operand_list::_cached_size_269,8790
+  ::google::protobuf::uint32 _has_bits_[operand_list::_has_bits_270,8819
+  static operand_list* default_instance_;operand_list::default_instance_277,9087
+class operand_info 281,9204
+  inline operand_info& operator=(operand_info::operator=288,9364
+  inline const ::google::protobuf::UnknownFieldSet& unknown_fields(operand_info::unknown_fields293,9470
+  inline ::google::protobuf::UnknownFieldSet* mutable_unknown_fields(operand_info::mutable_unknown_fields297,9583
+  int GetCachedSize(operand_info::GetCachedSize322,10515
+  static const int kOperandInfoSpecificFieldNumber operand_info::kOperandInfoSpecificFieldNumber338,11034
+  static const int kBitLengthFieldNumber operand_info::kBitLengthFieldNumber346,11407
+  static const int kOperandUsageFieldNumber operand_info::kOperandUsageFieldNumber353,11700
+  static const int kTaintInfoFieldNumber operand_info::kTaintInfoFieldNumber361,12023
+  static const int kValueFieldNumber operand_info::kValueFieldNumber369,12304
+  ::google::protobuf::UnknownFieldSet _unknown_fields_;operand_info::_unknown_fields_390,13087
+  ::operand_info_specific* operand_info_specific_;operand_info::operand_info_specific_392,13146
+  ::operand_usage* operand_usage_;operand_info::operand_usage_393,13197
+  ::taint_info* taint_info_;operand_info::taint_info_394,13232
+  ::std::string* value_;operand_info::value_395,13261
+  ::google::protobuf::int32 bit_length_;operand_info::bit_length_396,13286
+  mutable int _cached_size_;operand_info::_cached_size_398,13330
+  ::google::protobuf::uint32 _has_bits_[operand_info::_has_bits_399,13359
+  static operand_info* default_instance_;operand_info::default_instance_406,13627
+class operand_info_specific 410,13744
+  inline operand_info_specific& operator=(operand_info_specific::operator=417,13949
+  inline const ::google::protobuf::UnknownFieldSet& unknown_fields(operand_info_specific::unknown_fields422,14073
+  inline ::google::protobuf::UnknownFieldSet* mutable_unknown_fields(operand_info_specific::mutable_unknown_fields426,14186
+  int GetCachedSize(operand_info_specific::GetCachedSize451,15163
+  static const int kMemOperandFieldNumber operand_info_specific::kMemOperandFieldNumber467,15642
+  static const int kRegOperandFieldNumber operand_info_specific::kRegOperandFieldNumber475,15955
+  ::google::protobuf::UnknownFieldSet _unknown_fields_;operand_info_specific::_unknown_fields_487,16380
+  ::mem_operand* mem_operand_;operand_info_specific::mem_operand_489,16439
+  ::reg_operand* reg_operand_;operand_info_specific::reg_operand_490,16470
+  mutable int _cached_size_;operand_info_specific::_cached_size_492,16504
+  ::google::protobuf::uint32 _has_bits_[operand_info_specific::_has_bits_493,16533
+  static operand_info_specific* default_instance_;operand_info_specific::default_instance_500,16801
+class reg_operand 504,16927
+  inline reg_operand& operator=(reg_operand::operator=511,17082
+  inline const ::google::protobuf::UnknownFieldSet& unknown_fields(reg_operand::unknown_fields516,17186
+  inline ::google::protobuf::UnknownFieldSet* mutable_unknown_fields(reg_operand::mutable_unknown_fields520,17299
+  int GetCachedSize(reg_operand::GetCachedSize545,18226
+  static const int kNameFieldNumber reg_operand::kNameFieldNumber561,18678
+  ::google::protobuf::UnknownFieldSet _unknown_fields_;reg_operand::_unknown_fields_574,19127
+  ::std::string* name_;reg_operand::name_576,19186
+  mutable int _cached_size_;reg_operand::_cached_size_578,19213
+  ::google::protobuf::uint32 _has_bits_[reg_operand::_has_bits_579,19242
+  static reg_operand* default_instance_;reg_operand::default_instance_586,19510
+class mem_operand 590,19626
+  inline mem_operand& operator=(mem_operand::operator=597,19781
+  inline const ::google::protobuf::UnknownFieldSet& unknown_fields(mem_operand::unknown_fields602,19885
+  inline ::google::protobuf::UnknownFieldSet* mutable_unknown_fields(mem_operand::mutable_unknown_fields606,19998
+  int GetCachedSize(mem_operand::GetCachedSize631,20925
+  static const int kAddressFieldNumber mem_operand::kAddressFieldNumber647,21386
+  ::google::protobuf::UnknownFieldSet _unknown_fields_;mem_operand::_unknown_fields_656,21683
+  ::google::protobuf::uint64 address_;mem_operand::address_658,21742
+  mutable int _cached_size_;mem_operand::_cached_size_660,21784
+  ::google::protobuf::uint32 _has_bits_[mem_operand::_has_bits_661,21813
+  static mem_operand* default_instance_;mem_operand::default_instance_668,22081
+class operand_usage 672,22197
+  inline operand_usage& operator=(operand_usage::operator=679,22362
+  inline const ::google::protobuf::UnknownFieldSet& unknown_fields(operand_usage::unknown_fields684,22470
+  inline ::google::protobuf::UnknownFieldSet* mutable_unknown_fields(operand_usage::mutable_unknown_fields688,22583
+  int GetCachedSize(operand_usage::GetCachedSize713,23520
+  static const int kReadFieldNumber operand_usage::kReadFieldNumber729,23970
+  static const int kWrittenFieldNumber operand_usage::kWrittenFieldNumber736,24176
+  static const int kIndexFieldNumber operand_usage::kIndexFieldNumber743,24385
+  static const int kBaseFieldNumber operand_usage::kBaseFieldNumber750,24585
+  ::google::protobuf::UnknownFieldSet _unknown_fields_;operand_usage::_unknown_fields_765,25019
+  bool read_;operand_usage::read_767,25078
+  bool written_;operand_usage::written_768,25092
+  bool index_;operand_usage::index_769,25109
+  bool base_;operand_usage::base_770,25124
+  mutable int _cached_size_;operand_usage::_cached_size_772,25141
+  ::google::protobuf::uint32 _has_bits_[operand_usage::_has_bits_773,25170
+  static operand_usage* default_instance_;operand_usage::default_instance_780,25438
+class taint_info 784,25556
+  inline taint_info& operator=(taint_info::operator=791,25706
+  inline const ::google::protobuf::UnknownFieldSet& unknown_fields(taint_info::unknown_fields796,25808
+  inline ::google::protobuf::UnknownFieldSet* mutable_unknown_fields(taint_info::mutable_unknown_fields800,25921
+  int GetCachedSize(taint_info::GetCachedSize825,26843
+  static const int kNoTaintFieldNumber taint_info::kNoTaintFieldNumber841,27305
+  static const int kTaintIdFieldNumber taint_info::kTaintIdFieldNumber848,27527
+  static const int kTaintMultipleFieldNumber taint_info::kTaintMultipleFieldNumber855,27809
+  ::google::protobuf::UnknownFieldSet _unknown_fields_;taint_info::_unknown_fields_868,28235
+  ::google::protobuf::uint64 taint_id_;taint_info::taint_id_870,28294
+  bool no_taint_;taint_info::no_taint_871,28334
+  bool taint_multiple_;taint_info::taint_multiple_872,28352
+  mutable int _cached_size_;taint_info::_cached_size_874,28379
+  ::google::protobuf::uint32 _has_bits_[taint_info::_has_bits_875,28408
+  static taint_info* default_instance_;taint_info::default_instance_882,28676
+class std_frame 886,28791
+  inline std_frame& operator=(std_frame::operator=893,28936
+  inline const ::google::protobuf::UnknownFieldSet& unknown_fields(std_frame::unknown_fields898,29036
+  inline ::google::protobuf::UnknownFieldSet* mutable_unknown_fields(std_frame::mutable_unknown_fields902,29149
+  int GetCachedSize(std_frame::GetCachedSize927,30066
+  static const int kAddressFieldNumber std_frame::kAddressFieldNumber943,30527
+  static const int kThreadIdFieldNumber std_frame::kThreadIdFieldNumber950,30794
+  static const int kRawbytesFieldNumber std_frame::kRawbytesFieldNumber957,31062
+  static const int kOperandListFieldNumber std_frame::kOperandListFieldNumber968,31531
+  ::google::protobuf::UnknownFieldSet _unknown_fields_;std_frame::_unknown_fields_984,32087
+  ::google::protobuf::uint64 address_;std_frame::address_986,32146
+  ::google::protobuf::uint64 thread_id_;std_frame::thread_id_987,32185
+  ::std::string* rawbytes_;std_frame::rawbytes_988,32226
+  ::operand_list* operand_list_;std_frame::operand_list_989,32254
+  mutable int _cached_size_;std_frame::_cached_size_991,32290
+  ::google::protobuf::uint32 _has_bits_[std_frame::_has_bits_992,32319
+  static std_frame* default_instance_;std_frame::default_instance_999,32587
+class syscall_frame 1003,32701
+  inline syscall_frame& operator=(syscall_frame::operator=1010,32866
+  inline const ::google::protobuf::UnknownFieldSet& unknown_fields(syscall_frame::unknown_fields1015,32974
+  inline ::google::protobuf::UnknownFieldSet* mutable_unknown_fields(syscall_frame::mutable_unknown_fields1019,33087
+  int GetCachedSize(syscall_frame::GetCachedSize1044,34024
+  static const int kAddressFieldNumber syscall_frame::kAddressFieldNumber1060,34485
+  static const int kThreadIdFieldNumber syscall_frame::kThreadIdFieldNumber1067,34752
+  static const int kNumberFieldNumber syscall_frame::kNumberFieldNumber1074,35015
+  static const int kArgumentListFieldNumber syscall_frame::kArgumentListFieldNumber1081,35299
+  ::google::protobuf::UnknownFieldSet _unknown_fields_;syscall_frame::_unknown_fields_1097,35864
+  ::google::protobuf::uint64 address_;syscall_frame::address_1099,35923
+  ::google::protobuf::uint64 thread_id_;syscall_frame::thread_id_1100,35962
+  ::google::protobuf::uint64 number_;syscall_frame::number_1101,36003
+  ::argument_list* argument_list_;syscall_frame::argument_list_1102,36041
+  mutable int _cached_size_;syscall_frame::_cached_size_1104,36079
+  ::google::protobuf::uint32 _has_bits_[syscall_frame::_has_bits_1105,36108
+  static syscall_frame* default_instance_;syscall_frame::default_instance_1112,36376
+class argument_list 1116,36494
+  inline argument_list& operator=(argument_list::operator=1123,36659
+  inline const ::google::protobuf::UnknownFieldSet& unknown_fields(argument_list::unknown_fields1128,36767
+  inline ::google::protobuf::UnknownFieldSet* mutable_unknown_fields(argument_list::mutable_unknown_fields1132,36880
+  int GetCachedSize(argument_list::GetCachedSize1157,37817
+  static const int kElemFieldNumber argument_list::kElemFieldNumber1173,38269
+  ::google::protobuf::UnknownFieldSet _unknown_fields_;argument_list::_unknown_fields_1185,38760
+  ::google::protobuf::RepeatedField< ::google::protobuf::int64 > elem_;argument_list::elem_1187,38819
+  mutable int _cached_size_;argument_list::_cached_size_1189,38894
+  ::google::protobuf::uint32 _has_bits_[argument_list::_has_bits_1190,38923
+  static argument_list* default_instance_;argument_list::default_instance_1197,39191
+class exception_frame 1201,39309
+  inline exception_frame& operator=(exception_frame::operator=1208,39484
+  inline const ::google::protobuf::UnknownFieldSet& unknown_fields(exception_frame::unknown_fields1213,39596
+  inline ::google::protobuf::UnknownFieldSet* mutable_unknown_fields(exception_frame::mutable_unknown_fields1217,39709
+  int GetCachedSize(exception_frame::GetCachedSize1242,40656
+  static const int kExceptionNumberFieldNumber exception_frame::kExceptionNumberFieldNumber1258,41144
+  static const int kThreadIdFieldNumber exception_frame::kThreadIdFieldNumber1265,41437
+  static const int kFromAddrFieldNumber exception_frame::kFromAddrFieldNumber1272,41709
+  static const int kToAddrFieldNumber exception_frame::kToAddrFieldNumber1279,41975
+  ::google::protobuf::UnknownFieldSet _unknown_fields_;exception_frame::_unknown_fields_1294,42505
+  ::google::protobuf::uint64 exception_number_;exception_frame::exception_number_1296,42564
+  ::google::protobuf::uint64 thread_id_;exception_frame::thread_id_1297,42612
+  ::google::protobuf::uint64 from_addr_;exception_frame::from_addr_1298,42653
+  ::google::protobuf::uint64 to_addr_;exception_frame::to_addr_1299,42694
+  mutable int _cached_size_;exception_frame::_cached_size_1301,42736
+  ::google::protobuf::uint32 _has_bits_[exception_frame::_has_bits_1302,42765
+  static exception_frame* default_instance_;exception_frame::default_instance_1309,43033
+class taint_intro_frame 1313,43153
+  inline taint_intro_frame& operator=(taint_intro_frame::operator=1320,43338
+  inline const ::google::protobuf::UnknownFieldSet& unknown_fields(taint_intro_frame::unknown_fields1325,43454
+  inline ::google::protobuf::UnknownFieldSet* mutable_unknown_fields(taint_intro_frame::mutable_unknown_fields1329,43567
+  int GetCachedSize(taint_intro_frame::GetCachedSize1354,44524
+  static const int kTaintIntroListFieldNumber taint_intro_frame::kTaintIntroListFieldNumber1370,45023
+  ::google::protobuf::UnknownFieldSet _unknown_fields_;taint_intro_frame::_unknown_fields_1380,45412
+  ::taint_intro_list* taint_intro_list_;taint_intro_frame::taint_intro_list_1382,45471
+  mutable int _cached_size_;taint_intro_frame::_cached_size_1384,45515
+  ::google::protobuf::uint32 _has_bits_[taint_intro_frame::_has_bits_1385,45544
+  static taint_intro_frame* default_instance_;taint_intro_frame::default_instance_1392,45812
+class taint_intro_list 1396,45934
+  inline taint_intro_list& operator=(taint_intro_list::operator=1403,46114
+  inline const ::google::protobuf::UnknownFieldSet& unknown_fields(taint_intro_list::unknown_fields1408,46228
+  inline ::google::protobuf::UnknownFieldSet* mutable_unknown_fields(taint_intro_list::mutable_unknown_fields1412,46341
+  int GetCachedSize(taint_intro_list::GetCachedSize1437,47293
+  static const int kElemFieldNumber taint_intro_list::kElemFieldNumber1453,47751
+  ::google::protobuf::UnknownFieldSet _unknown_fields_;taint_intro_list::_unknown_fields_1465,48182
+  ::google::protobuf::RepeatedPtrField< ::taint_intro > elem_;taint_intro_list::elem_1467,48241
+  mutable int _cached_size_;taint_intro_list::_cached_size_1469,48307
+  ::google::protobuf::uint32 _has_bits_[taint_intro_list::_has_bits_1470,48336
+  static taint_intro_list* default_instance_;taint_intro_list::default_instance_1477,48604
+class taint_intro 1481,48725
+  inline taint_intro& operator=(taint_intro::operator=1488,48880
+  inline const ::google::protobuf::UnknownFieldSet& unknown_fields(taint_intro::unknown_fields1493,48984
+  inline ::google::protobuf::UnknownFieldSet* mutable_unknown_fields(taint_intro::mutable_unknown_fields1497,49097
+  int GetCachedSize(taint_intro::GetCachedSize1522,50024
+  static const int kAddrFieldNumber taint_intro::kAddrFieldNumber1538,50476
+  static const int kTaintIdFieldNumber taint_intro::kTaintIdFieldNumber1545,50731
+  static const int kValueFieldNumber taint_intro::kValueFieldNumber1552,50987
+  ::google::protobuf::UnknownFieldSet _unknown_fields_;taint_intro::_unknown_fields_1569,51577
+  ::google::protobuf::uint64 addr_;taint_intro::addr_1571,51636
+  ::google::protobuf::uint64 taint_id_;taint_intro::taint_id_1572,51672
+  ::std::string* value_;taint_intro::value_1573,51712
+  mutable int _cached_size_;taint_intro::_cached_size_1575,51740
+  ::google::protobuf::uint32 _has_bits_[taint_intro::_has_bits_1576,51769
+  static taint_intro* default_instance_;taint_intro::default_instance_1583,52037
+class modload_frame 1587,52153
+  inline modload_frame& operator=(modload_frame::operator=1594,52318
+  inline const ::google::protobuf::UnknownFieldSet& unknown_fields(modload_frame::unknown_fields1599,52426
+  inline ::google::protobuf::UnknownFieldSet* mutable_unknown_fields(modload_frame::mutable_unknown_fields1603,52539
+  int GetCachedSize(modload_frame::GetCachedSize1628,53476
+  static const int kModuleNameFieldNumber modload_frame::kModuleNameFieldNumber1644,53949
+  static const int kLowAddressFieldNumber modload_frame::kLowAddressFieldNumber1655,54428
+  static const int kHighAddressFieldNumber modload_frame::kHighAddressFieldNumber1662,54715
+  ::google::protobuf::UnknownFieldSet _unknown_fields_;modload_frame::_unknown_fields_1675,55190
+  ::std::string* module_name_;modload_frame::module_name_1677,55249
+  ::google::protobuf::uint64 low_address_;modload_frame::low_address_1678,55280
+  ::google::protobuf::uint64 high_address_;modload_frame::high_address_1679,55323
+  mutable int _cached_size_;modload_frame::_cached_size_1681,55370
+  ::google::protobuf::uint32 _has_bits_[modload_frame::_has_bits_1682,55399
+  static modload_frame* default_instance_;modload_frame::default_instance_1689,55667
+class key_frame 1693,55785
+  inline key_frame& operator=(key_frame::operator=1700,55930
+  inline const ::google::protobuf::UnknownFieldSet& unknown_fields(key_frame::unknown_fields1705,56030
+  inline ::google::protobuf::UnknownFieldSet* mutable_unknown_fields(key_frame::mutable_unknown_fields1709,56143
+  int GetCachedSize(key_frame::GetCachedSize1734,57060
+  static const int kTaggedValueListsFieldNumber key_frame::kTaggedValueListsFieldNumber1750,57567
+  ::google::protobuf::UnknownFieldSet _unknown_fields_;key_frame::_unknown_fields_1760,57966
+  ::tagged_value_lists* tagged_value_lists_;key_frame::tagged_value_lists_1762,58025
+  mutable int _cached_size_;key_frame::_cached_size_1764,58073
+  ::google::protobuf::uint32 _has_bits_[key_frame::_has_bits_1765,58102
+  static key_frame* default_instance_;key_frame::default_instance_1772,58370
+class tagged_value_lists 1776,58484
+  inline tagged_value_lists& operator=(tagged_value_lists::operator=1783,58674
+  inline const ::google::protobuf::UnknownFieldSet& unknown_fields(tagged_value_lists::unknown_fields1788,58792
+  inline ::google::protobuf::UnknownFieldSet* mutable_unknown_fields(tagged_value_lists::mutable_unknown_fields1792,58905
+  int GetCachedSize(tagged_value_lists::GetCachedSize1817,59867
+  static const int kElemFieldNumber tagged_value_lists::kElemFieldNumber1833,60331
+  ::google::protobuf::UnknownFieldSet _unknown_fields_;tagged_value_lists::_unknown_fields_1845,60794
+  ::google::protobuf::RepeatedPtrField< ::tagged_value_list > elem_;tagged_value_lists::elem_1847,60853
+  mutable int _cached_size_;tagged_value_lists::_cached_size_1849,60925
+  ::google::protobuf::uint32 _has_bits_[tagged_value_lists::_has_bits_1850,60954
+  static tagged_value_lists* default_instance_;tagged_value_lists::default_instance_1857,61222
+class tagged_value_list 1861,61345
+  inline tagged_value_list& operator=(tagged_value_list::operator=1868,61530
+  inline const ::google::protobuf::UnknownFieldSet& unknown_fields(tagged_value_list::unknown_fields1873,61646
+  inline ::google::protobuf::UnknownFieldSet* mutable_unknown_fields(tagged_value_list::mutable_unknown_fields1877,61759
+  int GetCachedSize(tagged_value_list::GetCachedSize1902,62716
+  static const int kValueSourceTagFieldNumber tagged_value_list::kValueSourceTagFieldNumber1918,63215
+  static const int kValueListFieldNumber tagged_value_list::kValueListFieldNumber1926,63558
+  ::google::protobuf::UnknownFieldSet _unknown_fields_;tagged_value_list::_unknown_fields_1938,63980
+  ::value_source_tag* value_source_tag_;tagged_value_list::value_source_tag_1940,64039
+  ::value_list* value_list_;tagged_value_list::value_list_1941,64080
+  mutable int _cached_size_;tagged_value_list::_cached_size_1943,64112
+  ::google::protobuf::uint32 _has_bits_[tagged_value_list::_has_bits_1944,64141
+  static tagged_value_list* default_instance_;tagged_value_list::default_instance_1951,64409
+class value_source_tag 1955,64531
+  inline value_source_tag& operator=(value_source_tag::operator=1962,64711
+  inline const ::google::protobuf::UnknownFieldSet& unknown_fields(value_source_tag::unknown_fields1967,64825
+  inline ::google::protobuf::UnknownFieldSet* mutable_unknown_fields(value_source_tag::mutable_unknown_fields1971,64938
+  int GetCachedSize(value_source_tag::GetCachedSize1996,65890
+  static const int kNoThreadIdFieldNumber value_source_tag::kNoThreadIdFieldNumber2012,66364
+  static const int kThreadIdFieldNumber value_source_tag::kThreadIdFieldNumber2019,66600
+  ::google::protobuf::UnknownFieldSet _unknown_fields_;value_source_tag::_unknown_fields_2030,66989
+  ::google::protobuf::uint64 thread_id_;value_source_tag::thread_id_2032,67048
+  bool no_thread_id_;value_source_tag::no_thread_id_2033,67089
+  mutable int _cached_size_;value_source_tag::_cached_size_2035,67114
+  ::google::protobuf::uint32 _has_bits_[value_source_tag::_has_bits_2036,67143
+  static value_source_tag* default_instance_;value_source_tag::default_instance_2043,67411
+class value_list 2047,67532
+  inline value_list& operator=(value_list::operator=2054,67682
+  inline const ::google::protobuf::UnknownFieldSet& unknown_fields(value_list::unknown_fields2059,67784
+  inline ::google::protobuf::UnknownFieldSet* mutable_unknown_fields(value_list::mutable_unknown_fields2063,67897
+  int GetCachedSize(value_list::GetCachedSize2088,68819
+  static const int kElemFieldNumber value_list::kElemFieldNumber2104,69276
+  ::google::protobuf::UnknownFieldSet _unknown_fields_;value_list::_unknown_fields_2116,69696
+  ::google::protobuf::RepeatedPtrField< ::value_info > elem_;value_list::elem_2118,69755
+  mutable int _cached_size_;value_list::_cached_size_2120,69820
+  ::google::protobuf::uint32 _has_bits_[value_list::_has_bits_2121,69849
+  static value_list* default_instance_;value_list::default_instance_2128,70117
+class value_info 2132,70232
+  inline value_info& operator=(value_info::operator=2139,70382
+  inline const ::google::protobuf::UnknownFieldSet& unknown_fields(value_info::unknown_fields2144,70484
+  inline ::google::protobuf::UnknownFieldSet* mutable_unknown_fields(value_info::mutable_unknown_fields2148,70597
+  int GetCachedSize(value_info::GetCachedSize2173,71519
+  static const int kOperandInfoSpecificFieldNumber value_info::kOperandInfoSpecificFieldNumber2189,72038
+  static const int kBitLengthFieldNumber value_info::kBitLengthFieldNumber2197,72411
+  static const int kTaintInfoFieldNumber value_info::kTaintInfoFieldNumber2204,72692
+  static const int kValueFieldNumber value_info::kValueFieldNumber2212,72973
+  ::google::protobuf::UnknownFieldSet _unknown_fields_;value_info::_unknown_fields_2231,73674
+  ::operand_info_specific* operand_info_specific_;value_info::operand_info_specific_2233,73733
+  ::taint_info* taint_info_;value_info::taint_info_2234,73784
+  ::std::string* value_;value_info::value_2235,73813
+  ::google::protobuf::int32 bit_length_;value_info::bit_length_2236,73838
+  mutable int _cached_size_;value_info::_cached_size_2238,73882
+  ::google::protobuf::uint32 _has_bits_[value_info::_has_bits_2239,73911
+  static value_info* default_instance_;value_info::default_instance_2246,74179
+inline bool frame::has_std_frame(2256,74415
+inline void frame::set_has_std_frame(2259,74505
+inline void frame::clear_has_std_frame(2262,74580
+inline void frame::clear_std_frame(2265,74658
+inline const ::std_frame& frame::std_frame(2269,74784
+inline ::std_frame* frame::mutable_std_frame(2272,74915
+inline ::std_frame* frame::release_std_frame(2277,75066
+inline bool frame::has_syscall_frame(2285,75259
+inline void frame::set_has_syscall_frame(2288,75353
+inline void frame::clear_has_syscall_frame(2291,75432
+inline void frame::clear_syscall_frame(2294,75514
+inline const ::syscall_frame& frame::syscall_frame(2298,75660
+inline ::syscall_frame* frame::mutable_syscall_frame(2301,75811
+inline ::syscall_frame* frame::release_syscall_frame(2306,75990
+inline bool frame::has_exception_frame(2314,76211
+inline void frame::set_has_exception_frame(2317,76307
+inline void frame::clear_has_exception_frame(2320,76388
+inline void frame::clear_exception_frame(2323,76472
+inline const ::exception_frame& frame::exception_frame(2327,76628
+inline ::exception_frame* frame::mutable_exception_frame(2330,76789
+inline ::exception_frame* frame::release_exception_frame(2335,76982
+inline bool frame::has_taint_intro_frame(2343,77219
+inline void frame::set_has_taint_intro_frame(2346,77317
+inline void frame::clear_has_taint_intro_frame(2349,77400
+inline void frame::clear_taint_intro_frame(2352,77486
+inline const ::taint_intro_frame& frame::taint_intro_frame(2356,77652
+inline ::taint_intro_frame* frame::mutable_taint_intro_frame(2359,77823
+inline ::taint_intro_frame* frame::release_taint_intro_frame(2364,78030
+inline bool frame::has_modload_frame(2372,78271
+inline void frame::set_has_modload_frame(2375,78365
+inline void frame::clear_has_modload_frame(2378,78444
+inline void frame::clear_modload_frame(2381,78526
+inline const ::modload_frame& frame::modload_frame(2385,78672
+inline ::modload_frame* frame::mutable_modload_frame(2388,78823
+inline ::modload_frame* frame::release_modload_frame(2393,79002
+inline bool frame::has_key_frame(2401,79211
+inline void frame::set_has_key_frame(2404,79301
+inline void frame::clear_has_key_frame(2407,79376
+inline void frame::clear_key_frame(2410,79454
+inline const ::key_frame& frame::key_frame(2414,79580
+inline ::key_frame* frame::mutable_key_frame(2417,79711
+inline ::key_frame* frame::release_key_frame(2422,79862
+inline int operand_list::elem_size(2434,80134
+inline void operand_list::clear_elem(2437,80204
+inline const ::operand_info& operand_list::elem(2440,80264
+inline ::operand_info* operand_list::mutable_elem(2443,80360
+inline ::operand_info* operand_list::add_elem(2446,80456
+operand_list::elem(2450,80599
+operand_list::mutable_elem(2454,80709
+inline bool operand_info::has_operand_info_specific(2463,80911
+inline void operand_info::set_has_operand_info_specific(2466,81020
+inline void operand_info::clear_has_operand_info_specific(2469,81114
+inline void operand_info::clear_operand_info_specific(2472,81211
+inline const ::operand_info_specific& operand_info::operand_info_specific(2476,81404
+inline ::operand_info_specific* operand_info::mutable_operand_info_specific(2479,81602
+inline ::operand_info_specific* operand_info::release_operand_info_specific(2484,81844
+inline bool operand_info::has_bit_length(2492,82105
+inline void operand_info::set_has_bit_length(2495,82203
+inline void operand_info::clear_has_bit_length(2498,82286
+inline void operand_info::clear_bit_length(2501,82372
+inline ::google::protobuf::int32 operand_info::bit_length(2505,82466
+inline void operand_info::set_bit_length(2508,82558
+inline bool operand_info::has_operand_usage(2514,82730
+inline void operand_info::set_has_operand_usage(2517,82831
+inline void operand_info::clear_has_operand_usage(2520,82917
+inline void operand_info::clear_operand_usage(2523,83006
+inline const ::operand_usage& operand_info::operand_usage(2527,83159
+inline ::operand_usage* operand_info::mutable_operand_usage(2530,83317
+inline ::operand_usage* operand_info::release_operand_usage(2535,83503
+inline bool operand_info::has_taint_info(2543,83721
+inline void operand_info::set_has_taint_info(2546,83819
+inline void operand_info::clear_has_taint_info(2549,83902
+inline void operand_info::clear_taint_info(2552,83988
+inline const ::taint_info& operand_info::taint_info(2556,84126
+inline ::taint_info* operand_info::mutable_taint_info(2559,84269
+inline ::taint_info* operand_info::release_taint_info(2564,84434
+inline bool operand_info::has_value(2572,84623
+inline void operand_info::set_has_value(2575,84716
+inline void operand_info::clear_has_value(2578,84794
+inline void operand_info::clear_value(2581,84875
+inline const ::std::string& operand_info::value(2587,85028
+inline void operand_info::set_value(2590,85106
+inline void operand_info::set_value(2597,85317
+inline void operand_info::set_value(2604,85519
+inline ::std::string* operand_info::mutable_value(2611,85771
+inline ::std::string* operand_info::release_value(2618,85962
+inline bool operand_info_specific::has_mem_operand(2634,86413
+inline void operand_info_specific::set_has_mem_operand(2637,86521
+inline void operand_info_specific::clear_has_mem_operand(2640,86614
+inline void operand_info_specific::clear_mem_operand(2643,86710
+inline const ::mem_operand& operand_info_specific::mem_operand(2647,86862
+inline ::mem_operand* operand_info_specific::mutable_mem_operand(2650,87019
+inline ::mem_operand* operand_info_specific::release_mem_operand(2655,87200
+inline bool operand_info_specific::has_reg_operand(2663,87417
+inline void operand_info_specific::set_has_reg_operand(2666,87525
+inline void operand_info_specific::clear_has_reg_operand(2669,87618
+inline void operand_info_specific::clear_reg_operand(2672,87714
+inline const ::reg_operand& operand_info_specific::reg_operand(2676,87866
+inline ::reg_operand* operand_info_specific::mutable_reg_operand(2679,88023
+inline ::reg_operand* operand_info_specific::release_reg_operand(2684,88204
+inline bool reg_operand::has_name(2696,88496
+inline void reg_operand::set_has_name(2699,88587
+inline void reg_operand::clear_has_name(2702,88663
+inline void reg_operand::clear_name(2705,88742
+inline const ::std::string& reg_operand::name(2711,88890
+inline void reg_operand::set_name(2714,88965
+inline void reg_operand::set_name(2721,89170
+inline void reg_operand::set_name(2728,89366
+inline ::std::string* reg_operand::mutable_name(2735,89612
+inline ::std::string* reg_operand::release_name(2742,89797
+inline bool mem_operand::has_address(2758,90222
+inline void mem_operand::set_has_address(2761,90316
+inline void mem_operand::clear_has_address(2764,90395
+inline void mem_operand::clear_address(2767,90477
+inline ::google::protobuf::uint64 mem_operand::address(2771,90579
+inline void mem_operand::set_address(2774,90665
+inline bool operand_usage::has_read(2784,90899
+inline void operand_usage::set_has_read(2787,90992
+inline void operand_usage::clear_has_read(2790,91070
+inline void operand_usage::clear_read(2793,91151
+inline bool operand_usage::read(2797,91232
+inline void operand_usage::set_read(2800,91292
+inline bool operand_usage::has_written(2806,91410
+inline void operand_usage::set_has_written(2809,91506
+inline void operand_usage::clear_has_written(2812,91587
+inline void operand_usage::clear_written(2815,91671
+inline bool operand_usage::written(2819,91761
+inline void operand_usage::set_written(2822,91827
+inline bool operand_usage::has_index(2828,91952
+inline void operand_usage::set_has_index(2831,92046
+inline void operand_usage::clear_has_index(2834,92125
+inline void operand_usage::clear_index(2837,92207
+inline bool operand_usage::index(2841,92291
+inline void operand_usage::set_index(2844,92353
+inline bool operand_usage::has_base(2850,92471
+inline void operand_usage::set_has_base(2853,92564
+inline void operand_usage::clear_has_base(2856,92642
+inline void operand_usage::clear_base(2859,92723
+inline bool operand_usage::base(2863,92804
+inline void operand_usage::set_base(2866,92864
+inline bool taint_info::has_no_taint(2876,93070
+inline void taint_info::set_has_no_taint(2879,93164
+inline void taint_info::clear_has_no_taint(2882,93243
+inline void taint_info::clear_no_taint(2885,93325
+inline bool taint_info::no_taint(2889,93415
+inline void taint_info::set_no_taint(2892,93480
+inline bool taint_info::has_taint_id(2898,93610
+inline void taint_info::set_has_taint_id(2901,93704
+inline void taint_info::clear_has_taint_id(2904,93783
+inline void taint_info::clear_taint_id(2907,93865
+inline ::google::protobuf::uint64 taint_info::taint_id(2911,93969
+inline void taint_info::set_taint_id(2914,94056
+inline bool taint_info::has_taint_multiple(2920,94212
+inline void taint_info::set_has_taint_multiple(2923,94312
+inline void taint_info::clear_has_taint_multiple(2926,94397
+inline void taint_info::clear_taint_multiple(2929,94485
+inline bool taint_info::taint_multiple(2933,94593
+inline void taint_info::set_taint_multiple(2936,94670
+inline bool std_frame::has_address(2946,94903
+inline void std_frame::set_has_address(2949,94995
+inline void std_frame::clear_has_address(2952,95072
+inline void std_frame::clear_address(2955,95152
+inline ::google::protobuf::uint64 std_frame::address(2959,95252
+inline void std_frame::set_address(2962,95336
+inline bool std_frame::has_thread_id(2968,95485
+inline void std_frame::set_has_thread_id(2971,95579
+inline void std_frame::clear_has_thread_id(2974,95658
+inline void std_frame::clear_thread_id(2977,95740
+inline ::google::protobuf::uint64 std_frame::thread_id(2981,95846
+inline void std_frame::set_thread_id(2984,95934
+inline bool std_frame::has_rawbytes(2990,96087
+inline void std_frame::set_has_rawbytes(2993,96180
+inline void std_frame::clear_has_rawbytes(2996,96258
+inline void std_frame::clear_rawbytes(2999,96339
+inline const ::std::string& std_frame::rawbytes(3005,96501
+inline void std_frame::set_rawbytes(3008,96582
+inline void std_frame::set_rawbytes(3015,96805
+inline void std_frame::set_rawbytes(3022,97019
+inline ::std::string* std_frame::mutable_rawbytes(3029,97283
+inline ::std::string* std_frame::release_rawbytes(3036,97486
+inline bool std_frame::has_operand_list(3048,97853
+inline void std_frame::set_has_operand_list(3051,97950
+inline void std_frame::clear_has_operand_list(3054,98032
+inline void std_frame::clear_operand_list(3057,98117
+inline const ::operand_list& std_frame::operand_list(3061,98262
+inline ::operand_list* std_frame::mutable_operand_list(3064,98412
+inline ::operand_list* std_frame::release_operand_list(3069,98588
+inline bool syscall_frame::has_address(3081,98879
+inline void syscall_frame::set_has_address(3084,98975
+inline void syscall_frame::clear_has_address(3087,99056
+inline void syscall_frame::clear_address(3090,99140
+inline ::google::protobuf::uint64 syscall_frame::address(3094,99244
+inline void syscall_frame::set_address(3097,99332
+inline bool syscall_frame::has_thread_id(3103,99485
+inline void syscall_frame::set_has_thread_id(3106,99583
+inline void syscall_frame::clear_has_thread_id(3109,99666
+inline void syscall_frame::clear_thread_id(3112,99752
+inline ::google::protobuf::uint64 syscall_frame::thread_id(3116,99862
+inline void syscall_frame::set_thread_id(3119,99954
+inline bool syscall_frame::has_number(3125,100110
+inline void syscall_frame::set_has_number(3128,100205
+inline void syscall_frame::clear_has_number(3131,100285
+inline void syscall_frame::clear_number(3134,100368
+inline ::google::protobuf::uint64 syscall_frame::number(3138,100469
+inline void syscall_frame::set_number(3141,100555
+inline bool syscall_frame::has_argument_list(3147,100717
+inline void syscall_frame::set_has_argument_list(3150,100819
+inline void syscall_frame::clear_has_argument_list(3153,100906
+inline void syscall_frame::clear_argument_list(3156,100996
+inline const ::argument_list& syscall_frame::argument_list(3160,101150
+inline ::argument_list* syscall_frame::mutable_argument_list(3163,101309
+inline ::argument_list* syscall_frame::release_argument_list(3168,101496
+inline int argument_list::elem_size(3180,101794
+inline void argument_list::clear_elem(3183,101865
+inline ::google::protobuf::int64 argument_list::elem(3186,101926
+inline void argument_list::set_elem(3189,102027
+inline void argument_list::add_elem(3192,102138
+argument_list::elem(3196,102308
+argument_list::mutable_elem(3200,102427
+inline bool exception_frame::has_exception_number(3209,102612
+inline void exception_frame::set_has_exception_number(3212,102719
+inline void exception_frame::clear_has_exception_number(3215,102811
+inline void exception_frame::clear_exception_number(3218,102906
+inline ::google::protobuf::uint64 exception_frame::exception_number(3222,103039
+inline void exception_frame::set_exception_number(3225,103147
+inline bool exception_frame::has_thread_id(3231,103329
+inline void exception_frame::set_has_thread_id(3234,103429
+inline void exception_frame::clear_has_thread_id(3237,103514
+inline void exception_frame::clear_thread_id(3240,103602
+inline ::google::protobuf::uint64 exception_frame::thread_id(3244,103714
+inline void exception_frame::set_thread_id(3247,103808
+inline bool exception_frame::has_from_addr(3253,103969
+inline void exception_frame::set_has_from_addr(3256,104069
+inline void exception_frame::clear_has_from_addr(3259,104154
+inline void exception_frame::clear_from_addr(3262,104242
+inline ::google::protobuf::uint64 exception_frame::from_addr(3266,104354
+inline void exception_frame::set_from_addr(3269,104448
+inline bool exception_frame::has_to_addr(3275,104607
+inline void exception_frame::set_has_to_addr(3278,104705
+inline void exception_frame::clear_has_to_addr(3281,104788
+inline void exception_frame::clear_to_addr(3284,104874
+inline ::google::protobuf::uint64 exception_frame::to_addr(3288,104980
+inline void exception_frame::set_to_addr(3291,105070
+inline bool taint_intro_frame::has_taint_intro_list(3301,105337
+inline void taint_intro_frame::set_has_taint_intro_list(3304,105446
+inline void taint_intro_frame::clear_has_taint_intro_list(3307,105540
+inline void taint_intro_frame::clear_taint_intro_list(3310,105637
+inline const ::taint_intro_list& taint_intro_frame::taint_intro_list(3314,105810
+inline ::taint_intro_list* taint_intro_frame::mutable_taint_intro_list(3317,105988
+inline ::taint_intro_list* taint_intro_frame::release_taint_intro_list(3322,106200
+inline int taint_intro_list::elem_size(3334,106529
+inline void taint_intro_list::clear_elem(3337,106603
+inline const ::taint_intro& taint_intro_list::elem(3340,106667
+inline ::taint_intro* taint_intro_list::mutable_elem(3343,106766
+inline ::taint_intro* taint_intro_list::add_elem(3346,106865
+taint_intro_list::elem(3350,107010
+taint_intro_list::mutable_elem(3354,107123
+inline bool taint_intro::has_addr(3363,107295
+inline void taint_intro::set_has_addr(3366,107386
+inline void taint_intro::clear_has_addr(3369,107462
+inline void taint_intro::clear_addr(3372,107541
+inline ::google::protobuf::uint64 taint_intro::addr(3376,107634
+inline void taint_intro::set_addr(3379,107714
+inline bool taint_intro::has_taint_id(3385,107855
+inline void taint_intro::set_has_taint_id(3388,107950
+inline void taint_intro::clear_has_taint_id(3391,108030
+inline void taint_intro::clear_taint_id(3394,108113
+inline ::google::protobuf::uint64 taint_intro::taint_id(3398,108218
+inline void taint_intro::set_taint_id(3401,108306
+inline bool taint_intro::has_value(3407,108455
+inline void taint_intro::set_has_value(3410,108547
+inline void taint_intro::clear_has_value(3413,108624
+inline void taint_intro::clear_value(3416,108704
+inline const ::std::string& taint_intro::value(3422,108856
+inline void taint_intro::set_value(3425,108933
+inline void taint_intro::set_value(3432,109143
+inline void taint_intro::set_value(3439,109344
+inline ::std::string* taint_intro::mutable_value(3446,109595
+inline ::std::string* taint_intro::release_value(3453,109785
+inline bool modload_frame::has_module_name(3469,110221
+inline void modload_frame::set_has_module_name(3472,110321
+inline void modload_frame::clear_has_module_name(3475,110406
+inline void modload_frame::clear_module_name(3478,110494
+inline const ::std::string& modload_frame::module_name(3484,110672
+inline void modload_frame::set_module_name(3487,110763
+inline void modload_frame::set_module_name(3494,111005
+inline void modload_frame::set_module_name(3501,111238
+inline ::std::string* modload_frame::mutable_module_name(3508,111521
+inline ::std::string* modload_frame::release_module_name(3515,111743
+inline bool modload_frame::has_low_address(3527,112121
+inline void modload_frame::set_has_low_address(3530,112221
+inline void modload_frame::clear_has_low_address(3533,112306
+inline void modload_frame::clear_low_address(3536,112394
+inline ::google::protobuf::uint64 modload_frame::low_address(3540,112510
+inline void modload_frame::set_low_address(3543,112606
+inline bool modload_frame::has_high_address(3549,112774
+inline void modload_frame::set_has_high_address(3552,112875
+inline void modload_frame::clear_has_high_address(3555,112961
+inline void modload_frame::clear_high_address(3558,113050
+inline ::google::protobuf::uint64 modload_frame::high_address(3562,113169
+inline void modload_frame::set_high_address(3565,113267
+inline bool key_frame::has_tagged_value_lists(3575,113543
+inline void key_frame::set_has_tagged_value_lists(3578,113646
+inline void key_frame::clear_has_tagged_value_lists(3581,113734
+inline void key_frame::clear_tagged_value_lists(3584,113825
+inline const ::tagged_value_lists& key_frame::tagged_value_lists(3588,114000
+inline ::tagged_value_lists* key_frame::mutable_tagged_value_lists(3591,114180
+inline ::tagged_value_lists* key_frame::release_tagged_value_lists(3596,114398
+inline int tagged_value_lists::elem_size(3608,114739
+inline void tagged_value_lists::clear_elem(3611,114815
+inline const ::tagged_value_list& tagged_value_lists::elem(3614,114881
+inline ::tagged_value_list* tagged_value_lists::mutable_elem(3617,114988
+inline ::tagged_value_list* tagged_value_lists::add_elem(3620,115095
+tagged_value_lists::elem(3624,115254
+tagged_value_lists::mutable_elem(3628,115375
+inline bool tagged_value_list::has_value_source_tag(3637,115578
+inline void tagged_value_list::set_has_value_source_tag(3640,115687
+inline void tagged_value_list::clear_has_value_source_tag(3643,115781
+inline void tagged_value_list::clear_value_source_tag(3646,115878
+inline const ::value_source_tag& tagged_value_list::value_source_tag(3650,116051
+inline ::value_source_tag* tagged_value_list::mutable_value_source_tag(3653,116229
+inline ::value_source_tag* tagged_value_list::release_value_source_tag(3658,116441
+inline bool tagged_value_list::has_value_list(3666,116682
+inline void tagged_value_list::set_has_value_list(3669,116785
+inline void tagged_value_list::clear_has_value_list(3672,116873
+inline void tagged_value_list::clear_value_list(3675,116964
+inline const ::value_list& tagged_value_list::value_list(3679,117107
+inline ::value_list* tagged_value_list::mutable_value_list(3682,117255
+inline ::value_list* tagged_value_list::release_value_list(3687,117425
+inline bool value_source_tag::has_no_thread_id(3699,117718
+inline void value_source_tag::set_has_no_thread_id(3702,117822
+inline void value_source_tag::clear_has_no_thread_id(3705,117911
+inline void value_source_tag::clear_no_thread_id(3708,118003
+inline bool value_source_tag::no_thread_id(3712,118111
+inline void value_source_tag::set_no_thread_id(3715,118190
+inline bool value_source_tag::has_thread_id(3721,118339
+inline void value_source_tag::set_has_thread_id(3724,118440
+inline void value_source_tag::clear_has_thread_id(3727,118526
+inline void value_source_tag::clear_thread_id(3730,118615
+inline ::google::protobuf::uint64 value_source_tag::thread_id(3734,118728
+inline void value_source_tag::set_thread_id(3737,118823
+inline int value_list::elem_size(3747,119072
+inline void value_list::clear_elem(3750,119140
+inline const ::value_info& value_list::elem(3753,119198
+inline ::value_info* value_list::mutable_elem(3756,119290
+inline ::value_info* value_list::add_elem(3759,119382
+value_list::elem(3763,119519
+value_list::mutable_elem(3767,119625
+inline bool value_info::has_operand_info_specific(3776,119823
+inline void value_info::set_has_operand_info_specific(3779,119930
+inline void value_info::clear_has_operand_info_specific(3782,120022
+inline void value_info::clear_operand_info_specific(3785,120117
+inline const ::operand_info_specific& value_info::operand_info_specific(3789,120308
+inline ::operand_info_specific* value_info::mutable_operand_info_specific(3792,120504
+inline ::operand_info_specific* value_info::release_operand_info_specific(3797,120744
+inline bool value_info::has_bit_length(3805,121003
+inline void value_info::set_has_bit_length(3808,121099
+inline void value_info::clear_has_bit_length(3811,121180
+inline void value_info::clear_bit_length(3814,121264
+inline ::google::protobuf::int32 value_info::bit_length(3818,121356
+inline void value_info::set_bit_length(3821,121446
+inline bool value_info::has_taint_info(3827,121610
+inline void value_info::set_has_taint_info(3830,121706
+inline void value_info::clear_has_taint_info(3833,121787
+inline void value_info::clear_taint_info(3836,121871
+inline const ::taint_info& value_info::taint_info(3840,122007
+inline ::taint_info* value_info::mutable_taint_info(3843,122148
+inline ::taint_info* value_info::release_taint_info(3848,122311
+inline bool value_info::has_value(3856,122498
+inline void value_info::set_has_value(3859,122589
+inline void value_info::clear_has_value(3862,122665
+inline void value_info::clear_value(3865,122744
+inline const ::std::string& value_info::value(3871,122895
+inline void value_info::set_value(3874,122971
+inline void value_info::set_value(3881,123180
+inline void value_info::set_value(3888,123380
+inline ::std::string* value_info::mutable_value(3895,123630
+inline ::std::string* value_info::release_value(3902,123819
+namespace google 3917,124188
+namespace protobuf google::protobuf3918,124207
+
+pb/frame.piqi.pb.cc,34126
+#define INTERNAL_SUPPRESS_PROTOBUF_FIELD_DEPRECATION3,61
+const ::google::protobuf::Descriptor* frame_descriptor_ ::frame_descriptor_18,476
+  frame_reflection_ ::frame_reflection_20,604
+const ::google::protobuf::Descriptor* operand_list_descriptor_ ::operand_list_descriptor_21,632
+  operand_list_reflection_ ::operand_list_reflection_23,767
+const ::google::protobuf::Descriptor* operand_info_descriptor_ ::operand_info_descriptor_24,802
+  operand_info_reflection_ ::operand_info_reflection_26,937
+const ::google::protobuf::Descriptor* operand_info_specific_descriptor_ ::operand_info_specific_descriptor_27,972
+  operand_info_specific_reflection_ ::operand_info_specific_reflection_29,1116
+const ::google::protobuf::Descriptor* reg_operand_descriptor_ ::reg_operand_descriptor_30,1160
+  reg_operand_reflection_ ::reg_operand_reflection_32,1294
+const ::google::protobuf::Descriptor* mem_operand_descriptor_ ::mem_operand_descriptor_33,1328
+  mem_operand_reflection_ ::mem_operand_reflection_35,1462
+const ::google::protobuf::Descriptor* operand_usage_descriptor_ ::operand_usage_descriptor_36,1496
+  operand_usage_reflection_ ::operand_usage_reflection_38,1632
+const ::google::protobuf::Descriptor* taint_info_descriptor_ ::taint_info_descriptor_39,1668
+  taint_info_reflection_ ::taint_info_reflection_41,1801
+const ::google::protobuf::Descriptor* std_frame_descriptor_ ::std_frame_descriptor_42,1834
+  std_frame_reflection_ ::std_frame_reflection_44,1966
+const ::google::protobuf::Descriptor* syscall_frame_descriptor_ ::syscall_frame_descriptor_45,1998
+  syscall_frame_reflection_ ::syscall_frame_reflection_47,2134
+const ::google::protobuf::Descriptor* argument_list_descriptor_ ::argument_list_descriptor_48,2170
+  argument_list_reflection_ ::argument_list_reflection_50,2306
+const ::google::protobuf::Descriptor* exception_frame_descriptor_ ::exception_frame_descriptor_51,2342
+  exception_frame_reflection_ ::exception_frame_reflection_53,2480
+const ::google::protobuf::Descriptor* taint_intro_frame_descriptor_ ::taint_intro_frame_descriptor_54,2518
+  taint_intro_frame_reflection_ ::taint_intro_frame_reflection_56,2658
+const ::google::protobuf::Descriptor* taint_intro_list_descriptor_ ::taint_intro_list_descriptor_57,2698
+  taint_intro_list_reflection_ ::taint_intro_list_reflection_59,2837
+const ::google::protobuf::Descriptor* taint_intro_descriptor_ ::taint_intro_descriptor_60,2876
+  taint_intro_reflection_ ::taint_intro_reflection_62,3010
+const ::google::protobuf::Descriptor* modload_frame_descriptor_ ::modload_frame_descriptor_63,3044
+  modload_frame_reflection_ ::modload_frame_reflection_65,3180
+const ::google::protobuf::Descriptor* key_frame_descriptor_ ::key_frame_descriptor_66,3216
+  key_frame_reflection_ ::key_frame_reflection_68,3348
+const ::google::protobuf::Descriptor* tagged_value_lists_descriptor_ ::tagged_value_lists_descriptor_69,3380
+  tagged_value_lists_reflection_ ::tagged_value_lists_reflection_71,3521
+const ::google::protobuf::Descriptor* tagged_value_list_descriptor_ ::tagged_value_list_descriptor_72,3562
+  tagged_value_list_reflection_ ::tagged_value_list_reflection_74,3702
+const ::google::protobuf::Descriptor* value_source_tag_descriptor_ ::value_source_tag_descriptor_75,3742
+  value_source_tag_reflection_ ::value_source_tag_reflection_77,3881
+const ::google::protobuf::Descriptor* value_list_descriptor_ ::value_list_descriptor_78,3920
+  value_list_reflection_ ::value_list_reflection_80,4053
+const ::google::protobuf::Descriptor* value_info_descriptor_ ::value_info_descriptor_81,4086
+  value_info_reflection_ ::value_info_reflection_83,4219
+void protobuf_AssignDesc_frame_2epiqi_2eproto(88,4271
+inline void protobuf_AssignDescriptorsOnce(::protobuf_AssignDescriptorsOnce462,23002
+void protobuf_RegisterTypes(467,23185
+void protobuf_ShutdownFile_frame_2epiqi_2eproto(517,26365
+void protobuf_AddDesc_frame_2epiqi_2eproto(564,28150
+struct StaticDescriptorInitializer_frame_2epiqi_2eproto 668,34759
+  StaticDescriptorInitializer_frame_2epiqi_2eproto(StaticDescriptorInitializer_frame_2epiqi_2eproto::StaticDescriptorInitializer_frame_2epiqi_2eproto669,34817
+} static_descriptor_initializer_frame_2epiqi_2eproto_;672,34921
+const int frame::kStdFrameFieldNumber;678,35067
+const int frame::kSyscallFrameFieldNumber;679,35106
+const int frame::kExceptionFrameFieldNumber;680,35149
+const int frame::kTaintIntroFrameFieldNumber;681,35194
+const int frame::kModloadFrameFieldNumber;682,35240
+const int frame::kKeyFrameFieldNumber;683,35283
+frame::frame(686,35344
+void frame::InitAsDefaultInstance(691,35414
+frame::frame(700,35977
+void frame::SharedCtor(706,36083
+frame::~frame(717,36329
+void frame::SharedDtor(721,36366
+void frame::SetCachedSize(732,36595
+const ::google::protobuf::Descriptor* frame::descriptor(737,36745
+const frame& frame::default_instance(742,36872
+frame* frame::default_instance_ 746,37018
+frame* frame::New(748,37059
+void frame::Clear(752,37110
+bool frame::MergePartialFromCodedStream(777,37943
+#define DO_(779,38039
+#undef DO_879,41922
+void frame::SerializeWithCachedSizes(882,41936
+::google::protobuf::uint8* frame::SerializeWithCachedSizesToArray(926,43382
+int frame::ByteSize(977,45006
+void frame::MergeFrom(1035,46755
+void frame::MergeFrom(1047,47099
+void frame::CopyFrom(1072,48028
+void frame::CopyFrom(1078,48154
+bool frame::IsInitialized(1084,48258
+void frame::Swap(1107,48881
+::google::protobuf::Metadata frame::GetMetadata(1121,49421
+const int operand_list::kElemFieldNumber;1133,49754
+operand_list::operand_list(1136,49818
+void operand_list::InitAsDefaultInstance(1141,49902
+operand_list::operand_list(1144,49950
+void operand_list::SharedCtor(1150,50077
+operand_list::~operand_list(1155,50182
+void operand_list::SharedDtor(1159,50233
+void operand_list::SetCachedSize(1164,50309
+const ::google::protobuf::Descriptor* operand_list::descriptor(1169,50466
+const operand_list& operand_list::default_instance(1174,50607
+operand_list* operand_list::default_instance_ 1178,50767
+operand_list* operand_list::New(1180,50822
+void operand_list::Clear(1184,50894
+bool operand_list::MergePartialFromCodedStream(1190,51027
+#define DO_(1192,51130
+#undef DO_1224,52310
+void operand_list::SerializeWithCachedSizes(1227,52324
+::google::protobuf::uint8* operand_list::SerializeWithCachedSizesToArray(1241,52781
+int operand_list::ByteSize(1257,53306
+void operand_list::MergeFrom(1279,53908
+void operand_list::MergeFrom(1291,54273
+void operand_list::CopyFrom(1297,54458
+void operand_list::CopyFrom(1303,54591
+bool operand_list::IsInitialized(1309,54709
+void operand_list::Swap(1317,54873
+::google::protobuf::Metadata operand_list::GetMetadata(1326,55138
+const int operand_info::kOperandInfoSpecificFieldNumber;1338,55492
+const int operand_info::kBitLengthFieldNumber;1339,55549
+const int operand_info::kOperandUsageFieldNumber;1340,55596
+const int operand_info::kTaintInfoFieldNumber;1341,55646
+const int operand_info::kValueFieldNumber;1342,55693
+operand_info::operand_info(1345,55758
+void operand_info::InitAsDefaultInstance(1350,55842
+operand_info::operand_info(1356,56169
+void operand_info::SharedCtor(1362,56296
+operand_info::~operand_info(1372,56585
+void operand_info::SharedDtor(1376,56636
+void operand_info::SetCachedSize(1387,56884
+const ::google::protobuf::Descriptor* operand_info::descriptor(1392,57041
+const operand_info& operand_info::default_instance(1397,57182
+operand_info* operand_info::default_instance_ 1401,57342
+operand_info* operand_info::New(1403,57397
+void operand_info::Clear(1407,57469
+bool operand_info::MergePartialFromCodedStream(1429,58148
+#define DO_(1431,58251
+#undef DO_1519,61646
+void operand_info::SerializeWithCachedSizes(1522,61660
+::google::protobuf::uint8* operand_info::SerializeWithCachedSizesToArray(1559,62856
+int operand_info::ByteSize(1601,64204
+void operand_info::MergeFrom(1652,65691
+void operand_info::MergeFrom(1664,66056
+void operand_info::CopyFrom(1686,66803
+void operand_info::CopyFrom(1692,66936
+bool operand_info::IsInitialized(1698,67054
+void operand_info::Swap(1710,67388
+::google::protobuf::Metadata operand_info::GetMetadata(1723,67880
+const int operand_info_specific::kMemOperandFieldNumber;1735,68234
+const int operand_info_specific::kRegOperandFieldNumber;1736,68291
+operand_info_specific::operand_info_specific(1739,68370
+void operand_info_specific::InitAsDefaultInstance(1744,68472
+operand_info_specific::operand_info_specific(1749,68693
+void operand_info_specific::SharedCtor(1755,68847
+operand_info_specific::~operand_info_specific(1762,69007
+void operand_info_specific::SharedDtor(1766,69076
+void operand_info_specific::SetCachedSize(1773,69211
+const ::google::protobuf::Descriptor* operand_info_specific::descriptor(1778,69377
+const operand_info_specific& operand_info_specific::default_instance(1783,69536
+operand_info_specific* operand_info_specific::default_instance_ 1787,69714
+operand_info_specific* operand_info_specific::New(1789,69787
+void operand_info_specific::Clear(1793,69886
+bool operand_info_specific::MergePartialFromCodedStream(1806,70275
+#define DO_(1808,70387
+#undef DO_1852,72052
+void operand_info_specific::SerializeWithCachedSizes(1855,72066
+::google::protobuf::uint8* operand_info_specific::SerializeWithCachedSizesToArray(1875,72716
+int operand_info_specific::ByteSize(1898,73456
+void operand_info_specific::MergeFrom(1928,74309
+void operand_info_specific::MergeFrom(1940,74701
+void operand_info_specific::CopyFrom(1953,75162
+void operand_info_specific::CopyFrom(1959,75304
+bool operand_info_specific::IsInitialized(1965,75440
+void operand_info_specific::Swap(1976,75695
+::google::protobuf::Metadata operand_info_specific::GetMetadata(1986,76047
+const int reg_operand::kNameFieldNumber;1998,76428
+reg_operand::reg_operand(2001,76491
+void reg_operand::InitAsDefaultInstance(2006,76573
+reg_operand::reg_operand(2009,76620
+void reg_operand::SharedCtor(2015,76744
+reg_operand::~reg_operand(2021,76932
+void reg_operand::SharedDtor(2025,76981
+void reg_operand::SetCachedSize(2033,77140
+const ::google::protobuf::Descriptor* reg_operand::descriptor(2038,77296
+const reg_operand& reg_operand::default_instance(2043,77435
+reg_operand* reg_operand::default_instance_ 2047,77593
+reg_operand* reg_operand::New(2049,77646
+void reg_operand::Clear(2053,77715
+bool reg_operand::MergePartialFromCodedStream(2065,78010
+#define DO_(2067,78112
+#undef DO_2100,79401
+void reg_operand::SerializeWithCachedSizes(2103,79415
+::google::protobuf::uint8* reg_operand::SerializeWithCachedSizesToArray(2120,79996
+int reg_operand::ByteSize(2139,80647
+void reg_operand::MergeFrom(2162,81235
+void reg_operand::MergeFrom(2174,81597
+void reg_operand::CopyFrom(2184,81870
+void reg_operand::CopyFrom(2190,82002
+bool reg_operand::IsInitialized(2196,82118
+void reg_operand::Swap(2202,82245
+::google::protobuf::Metadata reg_operand::GetMetadata(2211,82513
+const int mem_operand::kAddressFieldNumber;2223,82864
+mem_operand::mem_operand(2226,82930
+void mem_operand::InitAsDefaultInstance(2231,83012
+mem_operand::mem_operand(2234,83059
+void mem_operand::SharedCtor(2240,83183
+mem_operand::~mem_operand(2246,83321
+void mem_operand::SharedDtor(2250,83370
+void mem_operand::SetCachedSize(2255,83445
+const ::google::protobuf::Descriptor* mem_operand::descriptor(2260,83601
+const mem_operand& mem_operand::default_instance(2265,83740
+mem_operand* mem_operand::default_instance_ 2269,83898
+mem_operand* mem_operand::New(2271,83951
+void mem_operand::Clear(2275,84020
+bool mem_operand::MergePartialFromCodedStream(2283,84225
+#define DO_(2285,84327
+#undef DO_2317,85552
+void mem_operand::SerializeWithCachedSizes(2320,85566
+::google::protobuf::uint8* mem_operand::SerializeWithCachedSizesToArray(2333,85975
+int mem_operand::ByteSize(2347,86446
+void mem_operand::MergeFrom(2370,87043
+void mem_operand::MergeFrom(2382,87405
+void mem_operand::CopyFrom(2392,87687
+void mem_operand::CopyFrom(2398,87819
+bool mem_operand::IsInitialized(2404,87935
+void mem_operand::Swap(2410,88062
+::google::protobuf::Metadata mem_operand::GetMetadata(2419,88336
+const int operand_usage::kReadFieldNumber;2431,88687
+const int operand_usage::kWrittenFieldNumber;2432,88730
+const int operand_usage::kIndexFieldNumber;2433,88776
+const int operand_usage::kBaseFieldNumber;2434,88820
+operand_usage::operand_usage(2437,88885
+void operand_usage::InitAsDefaultInstance(2442,88971
+operand_usage::operand_usage(2445,89020
+void operand_usage::SharedCtor(2451,89150
+operand_usage::~operand_usage(2460,89328
+void operand_usage::SharedDtor(2464,89381
+void operand_usage::SetCachedSize(2469,89458
+const ::google::protobuf::Descriptor* operand_usage::descriptor(2474,89616
+const operand_usage& operand_usage::default_instance(2479,89759
+operand_usage* operand_usage::default_instance_ 2483,89921
+operand_usage* operand_usage::New(2485,89978
+void operand_usage::Clear(2489,90053
+bool operand_usage::MergePartialFromCodedStream(2500,90304
+#define DO_(2502,90408
+#undef DO_2582,93397
+void operand_usage::SerializeWithCachedSizes(2585,93411
+::google::protobuf::uint8* operand_usage::SerializeWithCachedSizesToArray(2613,94247
+int operand_usage::ByteSize(2642,95193
+void operand_usage::MergeFrom(2678,95974
+void operand_usage::MergeFrom(2690,96342
+void operand_usage::CopyFrom(2709,96817
+void operand_usage::CopyFrom(2715,96951
+bool operand_usage::IsInitialized(2721,97071
+void operand_usage::Swap(2727,97200
+::google::protobuf::Metadata operand_usage::GetMetadata(2739,97588
+const int taint_info::kNoTaintFieldNumber;2751,97945
+const int taint_info::kTaintIdFieldNumber;2752,97988
+const int taint_info::kTaintMultipleFieldNumber;2753,98031
+taint_info::taint_info(2756,98102
+void taint_info::InitAsDefaultInstance(2761,98182
+taint_info::taint_info(2764,98228
+void taint_info::SharedCtor(2770,98349
+taint_info::~taint_info(2778,98535
+void taint_info::SharedDtor(2782,98582
+void taint_info::SetCachedSize(2787,98656
+const ::google::protobuf::Descriptor* taint_info::descriptor(2792,98811
+const taint_info& taint_info::default_instance(2797,98948
+taint_info* taint_info::default_instance_ 2801,99104
+taint_info* taint_info::New(2803,99155
+void taint_info::Clear(2807,99221
+bool taint_info::MergePartialFromCodedStream(2817,99478
+#define DO_(2819,99579
+#undef DO_2883,102063
+void taint_info::SerializeWithCachedSizes(2886,102077
+::google::protobuf::uint8* taint_info::SerializeWithCachedSizesToArray(2909,102814
+int taint_info::ByteSize(2933,103645
+void taint_info::MergeFrom(2966,104454
+void taint_info::MergeFrom(2978,104813
+void taint_info::CopyFrom(2994,105262
+void taint_info::CopyFrom(3000,105393
+bool taint_info::IsInitialized(3006,105507
+void taint_info::Swap(3011,105569
+::google::protobuf::Metadata taint_info::GetMetadata(3022,105943
+const int std_frame::kAddressFieldNumber;3034,106291
+const int std_frame::kThreadIdFieldNumber;3035,106333
+const int std_frame::kRawbytesFieldNumber;3036,106376
+const int std_frame::kOperandListFieldNumber;3037,106419
+std_frame::std_frame(3040,106487
+void std_frame::InitAsDefaultInstance(3045,106565
+std_frame::std_frame(3049,106695
+void std_frame::SharedCtor(3055,106813
+std_frame::~std_frame(3064,107097
+void std_frame::SharedDtor(3068,107142
+void std_frame::SetCachedSize(3077,107333
+const ::google::protobuf::Descriptor* std_frame::descriptor(3082,107487
+const std_frame& std_frame::default_instance(3087,107622
+std_frame* std_frame::default_instance_ 3091,107776
+std_frame* std_frame::New(3093,107825
+void std_frame::Clear(3097,107888
+bool std_frame::MergePartialFromCodedStream(3114,108376
+#define DO_(3116,108476
+#undef DO_3192,111409
+void std_frame::SerializeWithCachedSizes(3195,111423
+::google::protobuf::uint8* std_frame::SerializeWithCachedSizesToArray(3225,112351
+int std_frame::ByteSize(3258,113403
+void std_frame::MergeFrom(3302,114607
+void std_frame::MergeFrom(3314,114963
+void std_frame::CopyFrom(3333,115511
+void std_frame::CopyFrom(3339,115641
+bool std_frame::IsInitialized(3345,115753
+void std_frame::Swap(3354,115971
+::google::protobuf::Metadata std_frame::GetMetadata(3366,116383
+const int syscall_frame::kAddressFieldNumber;3378,116728
+const int syscall_frame::kThreadIdFieldNumber;3379,116774
+const int syscall_frame::kNumberFieldNumber;3380,116821
+const int syscall_frame::kArgumentListFieldNumber;3381,116866
+syscall_frame::syscall_frame(3384,116939
+void syscall_frame::InitAsDefaultInstance(3389,117025
+syscall_frame::syscall_frame(3393,117162
+void syscall_frame::SharedCtor(3399,117292
+syscall_frame::~syscall_frame(3408,117526
+void syscall_frame::SharedDtor(3412,117579
+void syscall_frame::SetCachedSize(3418,117683
+const ::google::protobuf::Descriptor* syscall_frame::descriptor(3423,117841
+const syscall_frame& syscall_frame::default_instance(3428,117984
+syscall_frame* syscall_frame::default_instance_ 3432,118146
+syscall_frame* syscall_frame::New(3434,118203
+void syscall_frame::Clear(3438,118278
+bool syscall_frame::MergePartialFromCodedStream(3451,118671
+#define DO_(3453,118775
+#undef DO_3531,121824
+void syscall_frame::SerializeWithCachedSizes(3534,121838
+::google::protobuf::uint8* syscall_frame::SerializeWithCachedSizesToArray(3563,122763
+int syscall_frame::ByteSize(3594,123804
+void syscall_frame::MergeFrom(3638,125012
+void syscall_frame::MergeFrom(3650,125380
+void syscall_frame::CopyFrom(3669,125934
+void syscall_frame::CopyFrom(3675,126068
+bool syscall_frame::IsInitialized(3681,126188
+void syscall_frame::Swap(3687,126317
+::google::protobuf::Metadata syscall_frame::GetMetadata(3699,126735
+const int argument_list::kElemFieldNumber;3711,127092
+argument_list::argument_list(3714,127157
+void argument_list::InitAsDefaultInstance(3719,127243
+argument_list::argument_list(3722,127292
+void argument_list::SharedCtor(3728,127422
+argument_list::~argument_list(3733,127528
+void argument_list::SharedDtor(3737,127581
+void argument_list::SetCachedSize(3742,127658
+const ::google::protobuf::Descriptor* argument_list::descriptor(3747,127816
+const argument_list& argument_list::default_instance(3752,127959
+argument_list* argument_list::default_instance_ 3756,128121
+argument_list* argument_list::New(3758,128178
+void argument_list::Clear(3762,128253
+bool argument_list::MergePartialFromCodedStream(3768,128387
+#define DO_(3770,128491
+#undef DO_3809,130229
+void argument_list::SerializeWithCachedSizes(3812,130243
+::google::protobuf::uint8* argument_list::SerializeWithCachedSizesToArray(3826,130681
+int argument_list::ByteSize(3841,131181
+void argument_list::MergeFrom(3865,131811
+void argument_list::MergeFrom(3877,132179
+void argument_list::CopyFrom(3883,132366
+void argument_list::CopyFrom(3889,132500
+bool argument_list::IsInitialized(3895,132620
+void argument_list::Swap(3900,132685
+::google::protobuf::Metadata argument_list::GetMetadata(3909,132952
+const int exception_frame::kExceptionNumberFieldNumber;3921,133309
+const int exception_frame::kThreadIdFieldNumber;3922,133365
+const int exception_frame::kFromAddrFieldNumber;3923,133414
+const int exception_frame::kToAddrFieldNumber;3924,133463
+exception_frame::exception_frame(3927,133532
+void exception_frame::InitAsDefaultInstance(3932,133622
+exception_frame::exception_frame(3935,133673
+void exception_frame::SharedCtor(3941,133809
+exception_frame::~exception_frame(3950,134066
+void exception_frame::SharedDtor(3954,134123
+void exception_frame::SetCachedSize(3959,134202
+const ::google::protobuf::Descriptor* exception_frame::descriptor(3964,134362
+const exception_frame& exception_frame::default_instance(3969,134509
+exception_frame* exception_frame::default_instance_ 3973,134675
+exception_frame* exception_frame::New(3975,134736
+void exception_frame::Clear(3979,134817
+bool exception_frame::MergePartialFromCodedStream(3990,135147
+#define DO_(3992,135253
+#undef DO_4072,138427
+void exception_frame::SerializeWithCachedSizes(4075,138441
+::google::protobuf::uint8* exception_frame::SerializeWithCachedSizesToArray(4103,139358
+int exception_frame::ByteSize(4132,140385
+void exception_frame::MergeFrom(4176,141595
+void exception_frame::MergeFrom(4188,141969
+void exception_frame::CopyFrom(4207,142511
+void exception_frame::CopyFrom(4213,142647
+bool exception_frame::IsInitialized(4219,142771
+void exception_frame::Swap(4225,142902
+::google::protobuf::Metadata exception_frame::GetMetadata(4237,143336
+const int taint_intro_frame::kTaintIntroListFieldNumber;4249,143699
+taint_intro_frame::taint_intro_frame(4252,143778
+void taint_intro_frame::InitAsDefaultInstance(4257,143872
+taint_intro_frame::taint_intro_frame(4261,144022
+void taint_intro_frame::SharedCtor(4267,144164
+taint_intro_frame::~taint_intro_frame(4273,144302
+void taint_intro_frame::SharedDtor(4277,144363
+void taint_intro_frame::SetCachedSize(4283,144474
+const ::google::protobuf::Descriptor* taint_intro_frame::descriptor(4288,144636
+const taint_intro_frame& taint_intro_frame::default_instance(4293,144787
+taint_intro_frame* taint_intro_frame::default_instance_ 4297,144957
+taint_intro_frame* taint_intro_frame::New(4299,145022
+void taint_intro_frame::Clear(4303,145109
+bool taint_intro_frame::MergePartialFromCodedStream(4313,145409
+#define DO_(4315,145517
+#undef DO_4345,146656
+void taint_intro_frame::SerializeWithCachedSizes(4348,146670
+::google::protobuf::uint8* taint_intro_frame::SerializeWithCachedSizesToArray(4362,147143
+int taint_intro_frame::ByteSize(4378,147684
+void taint_intro_frame::MergeFrom(4401,148335
+void taint_intro_frame::MergeFrom(4413,148715
+void taint_intro_frame::CopyFrom(4423,149073
+void taint_intro_frame::CopyFrom(4429,149211
+bool taint_intro_frame::IsInitialized(4435,149339
+void taint_intro_frame::Swap(4444,149573
+::google::protobuf::Metadata taint_intro_frame::GetMetadata(4453,149877
+const int taint_intro_list::kElemFieldNumber;4465,150246
+taint_intro_list::taint_intro_list(4468,150314
+void taint_intro_list::InitAsDefaultInstance(4473,150406
+taint_intro_list::taint_intro_list(4476,150458
+void taint_intro_list::SharedCtor(4482,150597
+taint_intro_list::~taint_intro_list(4487,150706
+void taint_intro_list::SharedDtor(4491,150765
+void taint_intro_list::SetCachedSize(4496,150845
+const ::google::protobuf::Descriptor* taint_intro_list::descriptor(4501,151006
+const taint_intro_list& taint_intro_list::default_instance(4506,151155
+taint_intro_list* taint_intro_list::default_instance_ 4510,151323
+taint_intro_list* taint_intro_list::New(4512,151386
+void taint_intro_list::Clear(4516,151470
+bool taint_intro_list::MergePartialFromCodedStream(4522,151607
+#define DO_(4524,151714
+#undef DO_4556,152893
+void taint_intro_list::SerializeWithCachedSizes(4559,152907
+::google::protobuf::uint8* taint_intro_list::SerializeWithCachedSizesToArray(4573,153367
+int taint_intro_list::ByteSize(4589,153895
+void taint_intro_list::MergeFrom(4611,154500
+void taint_intro_list::MergeFrom(4623,154877
+void taint_intro_list::CopyFrom(4629,155070
+void taint_intro_list::CopyFrom(4635,155207
+bool taint_intro_list::IsInitialized(4641,155333
+void taint_intro_list::Swap(4649,155501
+::google::protobuf::Metadata taint_intro_list::GetMetadata(4658,155774
+const int taint_intro::kAddrFieldNumber;4670,156140
+const int taint_intro::kTaintIdFieldNumber;4671,156181
+const int taint_intro::kValueFieldNumber;4672,156225
+taint_intro::taint_intro(4675,156289
+void taint_intro::InitAsDefaultInstance(4680,156371
+taint_intro::taint_intro(4683,156418
+void taint_intro::SharedCtor(4689,156542
+taint_intro::~taint_intro(4697,156797
+void taint_intro::SharedDtor(4701,156846
+void taint_intro::SetCachedSize(4709,157007
+const ::google::protobuf::Descriptor* taint_intro::descriptor(4714,157163
+const taint_intro& taint_intro::default_instance(4719,157302
+taint_intro* taint_intro::default_instance_ 4723,157460
+taint_intro* taint_intro::New(4725,157513
+void taint_intro::Clear(4729,157582
+bool taint_intro::MergePartialFromCodedStream(4743,157950
+#define DO_(4745,158052
+#undef DO_4807,160413
+void taint_intro::SerializeWithCachedSizes(4810,160427
+::google::protobuf::uint8* taint_intro::SerializeWithCachedSizesToArray(4834,161139
+int taint_intro::ByteSize(4860,161953
+void taint_intro::MergeFrom(4897,162916
+void taint_intro::MergeFrom(4909,163278
+void taint_intro::CopyFrom(4925,163690
+void taint_intro::CopyFrom(4931,163822
+bool taint_intro::IsInitialized(4937,163938
+void taint_intro::Swap(4943,164065
+::google::protobuf::Metadata taint_intro::GetMetadata(4954,164415
+const int modload_frame::kModuleNameFieldNumber;4966,164766
+const int modload_frame::kLowAddressFieldNumber;4967,164815
+const int modload_frame::kHighAddressFieldNumber;4968,164864
+modload_frame::modload_frame(4971,164936
+void modload_frame::InitAsDefaultInstance(4976,165022
+modload_frame::modload_frame(4979,165071
+void modload_frame::SharedCtor(4985,165201
+modload_frame::~modload_frame(4993,165475
+void modload_frame::SharedDtor(4997,165528
+void modload_frame::SetCachedSize(5005,165703
+const ::google::protobuf::Descriptor* modload_frame::descriptor(5010,165861
+const modload_frame& modload_frame::default_instance(5015,166004
+modload_frame* modload_frame::default_instance_ 5019,166166
+modload_frame* modload_frame::New(5021,166223
+void modload_frame::Clear(5025,166298
+bool modload_frame::MergePartialFromCodedStream(5039,166697
+#define DO_(5041,166801
+#undef DO_5106,169431
+void modload_frame::SerializeWithCachedSizes(5109,169445
+::google::protobuf::uint8* modload_frame::SerializeWithCachedSizesToArray(5136,170400
+int modload_frame::ByteSize(5165,171457
+void modload_frame::MergeFrom(5202,172475
+void modload_frame::MergeFrom(5214,172843
+void modload_frame::CopyFrom(5230,173310
+void modload_frame::CopyFrom(5236,173444
+bool modload_frame::IsInitialized(5242,173564
+void modload_frame::Swap(5248,173693
+::google::protobuf::Metadata modload_frame::GetMetadata(5259,174081
+const int key_frame::kTaggedValueListsFieldNumber;5271,174438
+key_frame::key_frame(5274,174511
+void key_frame::InitAsDefaultInstance(5279,174589
+key_frame::key_frame(5283,174737
+void key_frame::SharedCtor(5289,174855
+key_frame::~key_frame(5295,174987
+void key_frame::SharedDtor(5299,175032
+void key_frame::SetCachedSize(5305,175137
+const ::google::protobuf::Descriptor* key_frame::descriptor(5310,175291
+const key_frame& key_frame::default_instance(5315,175426
+key_frame* key_frame::default_instance_ 5319,175580
+key_frame* key_frame::New(5321,175629
+void key_frame::Clear(5325,175692
+bool key_frame::MergePartialFromCodedStream(5335,175992
+#define DO_(5337,176092
+#undef DO_5367,177237
+void key_frame::SerializeWithCachedSizes(5370,177251
+::google::protobuf::uint8* key_frame::SerializeWithCachedSizesToArray(5384,177724
+int key_frame::ByteSize(5400,178265
+void key_frame::MergeFrom(5423,178916
+void key_frame::MergeFrom(5435,179272
+void key_frame::CopyFrom(5445,179622
+void key_frame::CopyFrom(5451,179752
+bool key_frame::IsInitialized(5457,179864
+void key_frame::Swap(5466,180094
+::google::protobuf::Metadata key_frame::GetMetadata(5475,180386
+const int tagged_value_lists::kElemFieldNumber;5487,180731
+tagged_value_lists::tagged_value_lists(5490,180801
+void tagged_value_lists::InitAsDefaultInstance(5495,180897
+tagged_value_lists::tagged_value_lists(5498,180951
+void tagged_value_lists::SharedCtor(5504,181096
+tagged_value_lists::~tagged_value_lists(5509,181207
+void tagged_value_lists::SharedDtor(5513,181270
+void tagged_value_lists::SetCachedSize(5518,181352
+const ::google::protobuf::Descriptor* tagged_value_lists::descriptor(5523,181515
+const tagged_value_lists& tagged_value_lists::default_instance(5528,181668
+tagged_value_lists* tagged_value_lists::default_instance_ 5532,181840
+tagged_value_lists* tagged_value_lists::New(5534,181907
+void tagged_value_lists::Clear(5538,181997
+bool tagged_value_lists::MergePartialFromCodedStream(5544,182136
+#define DO_(5546,182245
+#undef DO_5578,183430
+void tagged_value_lists::SerializeWithCachedSizes(5581,183444
+::google::protobuf::uint8* tagged_value_lists::SerializeWithCachedSizesToArray(5595,183912
+int tagged_value_lists::ByteSize(5611,184448
+void tagged_value_lists::MergeFrom(5633,185061
+void tagged_value_lists::MergeFrom(5645,185444
+void tagged_value_lists::CopyFrom(5651,185641
+void tagged_value_lists::CopyFrom(5657,185780
+bool tagged_value_lists::IsInitialized(5663,185910
+void tagged_value_lists::Swap(5671,186080
+::google::protobuf::Metadata tagged_value_lists::GetMetadata(5680,186357
+const int tagged_value_list::kValueSourceTagFieldNumber;5692,186729
+const int tagged_value_list::kValueListFieldNumber;5693,186786
+tagged_value_list::tagged_value_list(5696,186860
+void tagged_value_list::InitAsDefaultInstance(5701,186954
+tagged_value_list::tagged_value_list(5706,187183
+void tagged_value_list::SharedCtor(5712,187325
+tagged_value_list::~tagged_value_list(5719,187485
+void tagged_value_list::SharedDtor(5723,187546
+void tagged_value_list::SetCachedSize(5730,187681
+const ::google::protobuf::Descriptor* tagged_value_list::descriptor(5735,187843
+const tagged_value_list& tagged_value_list::default_instance(5740,187994
+tagged_value_list* tagged_value_list::default_instance_ 5744,188164
+tagged_value_list* tagged_value_list::New(5746,188229
+void tagged_value_list::Clear(5750,188316
+bool tagged_value_list::MergePartialFromCodedStream(5763,188717
+#define DO_(5765,188825
+#undef DO_5809,190500
+void tagged_value_list::SerializeWithCachedSizes(5812,190514
+::google::protobuf::uint8* tagged_value_list::SerializeWithCachedSizesToArray(5832,191176
+int tagged_value_list::ByteSize(5855,191928
+void tagged_value_list::MergeFrom(5885,192793
+void tagged_value_list::MergeFrom(5897,193173
+void tagged_value_list::CopyFrom(5910,193642
+void tagged_value_list::CopyFrom(5916,193780
+bool tagged_value_list::IsInitialized(5922,193908
+void tagged_value_list::Swap(5931,194130
+::google::protobuf::Metadata tagged_value_list::GetMetadata(5941,194482
+const int value_source_tag::kNoThreadIdFieldNumber;5953,194851
+const int value_source_tag::kThreadIdFieldNumber;5954,194903
+value_source_tag::value_source_tag(5957,194975
+void value_source_tag::InitAsDefaultInstance(5962,195067
+value_source_tag::value_source_tag(5965,195119
+void value_source_tag::SharedCtor(5971,195258
+value_source_tag::~value_source_tag(5978,195428
+void value_source_tag::SharedDtor(5982,195487
+void value_source_tag::SetCachedSize(5987,195567
+const ::google::protobuf::Descriptor* value_source_tag::descriptor(5992,195728
+const value_source_tag& value_source_tag::default_instance(5997,195877
+value_source_tag* value_source_tag::default_instance_ 6001,196045
+value_source_tag* value_source_tag::New(6003,196108
+void value_source_tag::Clear(6007,196192
+bool value_source_tag::MergePartialFromCodedStream(6016,196431
+#define DO_(6018,196538
+#undef DO_6066,198396
+void value_source_tag::SerializeWithCachedSizes(6069,198410
+::google::protobuf::uint8* value_source_tag::SerializeWithCachedSizesToArray(6087,198996
+int value_source_tag::ByteSize(6106,199660
+void value_source_tag::MergeFrom(6134,200375
+void value_source_tag::MergeFrom(6146,200752
+void value_source_tag::CopyFrom(6159,201136
+void value_source_tag::CopyFrom(6165,201273
+bool value_source_tag::IsInitialized(6171,201399
+void value_source_tag::Swap(6176,201467
+::google::protobuf::Metadata value_source_tag::GetMetadata(6186,201807
+const int value_list::kElemFieldNumber;6198,202173
+value_list::value_list(6201,202235
+void value_list::InitAsDefaultInstance(6206,202315
+value_list::value_list(6209,202361
+void value_list::SharedCtor(6215,202482
+value_list::~value_list(6220,202585
+void value_list::SharedDtor(6224,202632
+void value_list::SetCachedSize(6229,202706
+const ::google::protobuf::Descriptor* value_list::descriptor(6234,202861
+const value_list& value_list::default_instance(6239,202998
+value_list* value_list::default_instance_ 6243,203154
+value_list* value_list::New(6245,203205
+void value_list::Clear(6249,203271
+bool value_list::MergePartialFromCodedStream(6255,203402
+#define DO_(6257,203503
+#undef DO_6289,204681
+void value_list::SerializeWithCachedSizes(6292,204695
+::google::protobuf::uint8* value_list::SerializeWithCachedSizesToArray(6306,205148
+int value_list::ByteSize(6322,205669
+void value_list::MergeFrom(6344,206267
+void value_list::MergeFrom(6356,206626
+void value_list::CopyFrom(6362,206807
+void value_list::CopyFrom(6368,206938
+bool value_list::IsInitialized(6374,207052
+void value_list::Swap(6382,207214
+::google::protobuf::Metadata value_list::GetMetadata(6391,207475
+const int value_info::kOperandInfoSpecificFieldNumber;6403,207823
+const int value_info::kBitLengthFieldNumber;6404,207878
+const int value_info::kTaintInfoFieldNumber;6405,207923
+const int value_info::kValueFieldNumber;6406,207968
+value_info::value_info(6409,208031
+void value_info::InitAsDefaultInstance(6414,208111
+value_info::value_info(6419,208348
+void value_info::SharedCtor(6425,208469
+value_info::~value_info(6434,208731
+void value_info::SharedDtor(6438,208778
+void value_info::SetCachedSize(6448,208997
+const ::google::protobuf::Descriptor* value_info::descriptor(6453,209152
+const value_info& value_info::default_instance(6458,209289
+value_info* value_info::default_instance_ 6462,209445
+value_info* value_info::New(6464,209496
+void value_info::Clear(6468,209562
+bool value_info::MergePartialFromCodedStream(6487,210126
+#define DO_(6489,210227
+#undef DO_6563,213071
+void value_info::SerializeWithCachedSizes(6566,213085
+::google::protobuf::uint8* value_info::SerializeWithCachedSizesToArray(6597,214078
+int value_info::ByteSize(6632,215201
+void value_info::MergeFrom(6676,216460
+void value_info::MergeFrom(6688,216819
+void value_info::CopyFrom(6707,217439
+void value_info::CopyFrom(6713,217570
+bool value_info::IsInitialized(6719,217684
+void value_info::Swap(6728,217921
+::google::protobuf::Metadata value_info::GetMetadata(6740,218355
+
+config.h.in,838
+#undef HAVE_FSEEKO4,149
+#undef HAVE_INTTYPES_H7,229
+#undef HAVE_LIBPTHREAD10,318
+#undef HAVE_MEMORY_H13,400
+#undef HAVE_MEMSET16,475
+#undef HAVE_STDBOOL_H19,543
+#undef HAVE_STDINT_H22,624
+#undef HAVE_STDLIB_H25,704
+#undef HAVE_STRINGS_H28,785
+#undef HAVE_STRING_H31,866
+#undef HAVE_SYS_STAT_H34,948
+#undef HAVE_SYS_TYPES_H37,1033
+#undef HAVE_UNISTD_H40,1116
+#undef HAVE__BOOL43,1192
+#undef PACKAGE46,1233
+#undef PACKAGE_BUGREPORT49,1328
+#undef PACKAGE_NAME52,1401
+#undef PACKAGE_STRING55,1481
+#undef PACKAGE_TARNAME58,1563
+#undef PACKAGE_URL61,1635
+#undef PACKAGE_VERSION64,1700
+#undef STDC_HEADERS67,1779
+#undef VERSION70,1832
+#undef _FILE_OFFSET_BITS73,1920
+#undef _LARGEFILE_SOURCE76,2019
+#undef _LARGE_FILES79,2095
+#undef _UINT64_T84,2315
+#undef inline89,2499
+#undef size_t93,2586
+#undef uint64_t97,2748
+
+trace.container.cpp,2387
+#define WRITE(12,203
+#define READ(13,322
+typedef uint64_t traceoff_t;15,454
+#define SEEKNAME 16,483
+#define SEEK(17,510
+#define TELL(18,637
+typedef off_t traceoff_t;20,672
+#define SEEKNAME 21,698
+#define SEEK(22,722
+#define TELL(23,849
+namespace SerializedTrace 26,883
+  TraceContainerWriter::TraceContainerWriter(SerializedTrace::TraceContainerWriter::TraceContainerWriter28,912
+  TraceContainerWriter::~TraceContainerWriter(SerializedTrace::TraceContainerWriter::~TraceContainerWriter45,1625
+  void TraceContainerWriter::add(SerializedTrace::TraceContainerWriter::add59,2033
+  void TraceContainerWriter::finish(SerializedTrace::TraceContainerWriter::finish96,3151
+  bool TraceContainerWriter::has_finished(SerializedTrace::TraceContainerWriter::has_finished153,4727
+  TraceContainerReader::TraceContainerReader(SerializedTrace::TraceContainerReader::TraceContainerReader157,4815
+  TraceContainerReader::~TraceContainerReader(SerializedTrace::TraceContainerReader::~TraceContainerReader212,6284
+  uint64_t TraceContainerReader::get_num_frames(SerializedTrace::TraceContainerReader::get_num_frames216,6375
+  uint64_t TraceContainerReader::get_frames_per_toc_entry(SerializedTrace::TraceContainerReader::get_frames_per_toc_entry220,6468
+  bfd_architecture TraceContainerReader::get_arch(SerializedTrace::TraceContainerReader::get_arch224,6581
+  uint64_t TraceContainerReader::get_machine(SerializedTrace::TraceContainerReader::get_machine228,6670
+  uint64_t TraceContainerReader::get_trace_version(SerializedTrace::TraceContainerReader::get_trace_version232,6754
+  void TraceContainerReader::seek(SerializedTrace::TraceContainerReader::seek236,6853
+  std::auto_ptr<frame> TraceContainerReader::get_frame(SerializedTrace::TraceContainerReader::get_frame261,7679
+  std::auto_ptr<std::vector<frame> > TraceContainerReader::get_frames(SerializedTrace::TraceContainerReader::get_frames293,8673
+  bool TraceContainerReader::end_of_trace(SerializedTrace::TraceContainerReader::end_of_trace304,9085
+  bool TraceContainerReader::end_of_trace_num(SerializedTrace::TraceContainerReader::end_of_trace_num308,9193
+  void TraceContainerReader::check_end_of_trace_num(SerializedTrace::TraceContainerReader::check_end_of_trace_num316,9371
+    void TraceContainerReader::check_end_of_trace(SerializedTrace::TraceContainerReader::check_end_of_trace322,9570
+
+/home/bap/workspace/bap-0.7/libtracewrap/libtrace/src/cpp/utils/TAGS,include

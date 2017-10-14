@@ -1,0 +1,4537 @@
+"src/rand.ml" 42 1811 1817 "src/rand.ml" 42 1811 1826
+type(
+  loops:bool -> v:int -> e:int -> int64
+)
+ident(
+  def max_edges "src/rand.ml" 51 2165 2167 "src/rand.ml" 121 4379 4382
+)
+"src/rand.ml" 42 1811 1828 "src/rand.ml" 42 1811 1833
+type(
+  bool
+)
+ident(
+  def loops "src/rand.ml" 42 1811 1834 "src/rand.ml" 49 2154 2163
+)
+"src/rand.ml" 42 1811 1835 "src/rand.ml" 42 1811 1836
+type(
+  int
+)
+ident(
+  def v "src/rand.ml" 42 1811 1837 "src/rand.ml" 49 2154 2163
+)
+"src/rand.ml" 42 1811 1838 "src/rand.ml" 42 1811 1839
+type(
+  int
+)
+ident(
+  def e "src/rand.ml" 43 1842 1846 "src/rand.ml" 49 2154 2163
+)
+"src/rand.ml" 43 1842 1849 "src/rand.ml" 43 1842 1850
+type(
+  int
+)
+ident(
+  int_ref v "src/rand.ml" 42 1811 1835 "src/rand.ml" 42 1811 1836
+)
+"src/rand.ml" 43 1842 1851 "src/rand.ml" 43 1842 1853
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( <= )
+)
+"src/rand.ml" 43 1842 1854 "src/rand.ml" 43 1842 1855
+type(
+  int
+)
+"src/rand.ml" 43 1842 1849 "src/rand.ml" 43 1842 1855
+type(
+  bool
+)
+"src/rand.ml" 43 1842 1856 "src/rand.ml" 43 1842 1858
+type(
+  bool -> bool -> bool
+)
+ident(
+  ext_ref Pervasives.( || )
+)
+"src/rand.ml" 43 1842 1859 "src/rand.ml" 43 1842 1860
+type(
+  int
+)
+ident(
+  int_ref e "src/rand.ml" 42 1811 1838 "src/rand.ml" 42 1811 1839
+)
+"src/rand.ml" 43 1842 1861 "src/rand.ml" 43 1842 1862
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( < )
+)
+"src/rand.ml" 43 1842 1863 "src/rand.ml" 43 1842 1864
+type(
+  int
+)
+"src/rand.ml" 43 1842 1859 "src/rand.ml" 43 1842 1864
+type(
+  bool
+)
+"src/rand.ml" 43 1842 1849 "src/rand.ml" 43 1842 1864
+type(
+  bool
+)
+"src/rand.ml" 43 1842 1870 "src/rand.ml" 43 1842 1881
+type(
+  string -> unit
+)
+ident(
+  ext_ref Pervasives.invalid_arg
+)
+"src/rand.ml" 43 1842 1882 "src/rand.ml" 43 1842 1890
+type(
+  string
+)
+"src/rand.ml" 43 1842 1870 "src/rand.ml" 43 1842 1890
+call(
+  stack
+)
+type(
+  unit
+)
+"src/rand.ml" 43 1842 1846 "src/rand.ml" 43 1842 1890
+type(
+  unit
+)
+"src/rand.ml" 44 1892 1900 "src/rand.ml" 44 1892 1903
+type(
+  int64
+)
+"src/rand.ml" 44 1892 1906 "src/rand.ml" 44 1892 1912
+type(
+  int -> int64
+)
+ident(
+  ext_ref Int64.of_int
+)
+"src/rand.ml" 44 1892 1913 "src/rand.ml" 44 1892 1914
+type(
+  int
+)
+ident(
+  int_ref v "src/rand.ml" 42 1811 1835 "src/rand.ml" 42 1811 1836
+)
+"src/rand.ml" 44 1892 1906 "src/rand.ml" 44 1892 1914
+type(
+  int64
+)
+"src/rand.ml" 45 1918 1926 "src/rand.ml" 45 1918 1931
+type(
+  int64
+)
+"src/rand.ml" 45 1918 1934 "src/rand.ml" 45 1918 1937
+type(
+  int64 -> int64 -> int64
+)
+ident(
+  ext_ref Int64.mul
+)
+"src/rand.ml" 45 1918 1938 "src/rand.ml" 45 1918 1941
+type(
+  int64
+)
+ident(
+  int_ref v64 "src/rand.ml" 44 1892 1900 "src/rand.ml" 44 1892 1903
+)
+"src/rand.ml" 45 1918 1943 "src/rand.ml" 45 1918 1947
+type(
+  int64 -> int64
+)
+ident(
+  ext_ref Int64.pred
+)
+"src/rand.ml" 45 1918 1948 "src/rand.ml" 45 1918 1951
+type(
+  int64
+)
+ident(
+  int_ref v64 "src/rand.ml" 44 1892 1900 "src/rand.ml" 44 1892 1903
+)
+"src/rand.ml" 45 1918 1942 "src/rand.ml" 45 1918 1952
+call(
+  stack
+)
+type(
+  int64
+)
+"src/rand.ml" 45 1918 1934 "src/rand.ml" 45 1918 1952
+type(
+  int64
+)
+"src/rand.ml" 46 1956 1964 "src/rand.ml" 46 1956 1969
+type(
+  int64
+)
+"src/rand.ml" 46 1956 1975 "src/rand.ml" 46 1956 1988
+type(
+  bool
+)
+ident(
+  ext_ref B.G.is_directed
+)
+"src/rand.ml" 46 1956 1994 "src/rand.ml" 46 1956 1999
+type(
+  int64
+)
+ident(
+  int_ref max_e "src/rand.ml" 45 1918 1926 "src/rand.ml" 45 1918 1931
+)
+"src/rand.ml" 46 1956 2005 "src/rand.ml" 46 1956 2008
+type(
+  int64 -> int64 -> int64
+)
+ident(
+  ext_ref Int64.div
+)
+"src/rand.ml" 46 1956 2009 "src/rand.ml" 46 1956 2014
+type(
+  int64
+)
+ident(
+  int_ref max_e "src/rand.ml" 45 1918 1926 "src/rand.ml" 45 1918 1931
+)
+"src/rand.ml" 46 1956 2016 "src/rand.ml" 46 1956 2022
+type(
+  int -> int64
+)
+ident(
+  ext_ref Int64.of_int
+)
+"src/rand.ml" 46 1956 2023 "src/rand.ml" 46 1956 2024
+type(
+  int
+)
+"src/rand.ml" 46 1956 2015 "src/rand.ml" 46 1956 2025
+type(
+  int64
+)
+"src/rand.ml" 46 1956 2005 "src/rand.ml" 46 1956 2025
+type(
+  int64
+)
+"src/rand.ml" 46 1956 1972 "src/rand.ml" 46 1956 2025
+type(
+  int64
+)
+"src/rand.ml" 47 2029 2037 "src/rand.ml" 47 2029 2042
+type(
+  int64
+)
+"src/rand.ml" 47 2029 2048 "src/rand.ml" 47 2029 2053
+type(
+  bool
+)
+ident(
+  int_ref loops "src/rand.ml" 42 1811 1828 "src/rand.ml" 42 1811 1833
+)
+"src/rand.ml" 47 2029 2059 "src/rand.ml" 47 2029 2062
+type(
+  int64 -> int64 -> int64
+)
+ident(
+  ext_ref Int64.add
+)
+"src/rand.ml" 47 2029 2063 "src/rand.ml" 47 2029 2068
+type(
+  int64
+)
+ident(
+  int_ref max_e "src/rand.ml" 46 1956 1964 "src/rand.ml" 46 1956 1969
+)
+"src/rand.ml" 47 2029 2069 "src/rand.ml" 47 2029 2072
+type(
+  int64
+)
+ident(
+  int_ref v64 "src/rand.ml" 44 1892 1900 "src/rand.ml" 44 1892 1903
+)
+"src/rand.ml" 47 2029 2059 "src/rand.ml" 47 2029 2072
+type(
+  int64
+)
+"src/rand.ml" 47 2029 2078 "src/rand.ml" 47 2029 2083
+type(
+  int64
+)
+ident(
+  int_ref max_e "src/rand.ml" 46 1956 1964 "src/rand.ml" 46 1956 1969
+)
+"src/rand.ml" 47 2029 2045 "src/rand.ml" 47 2029 2083
+type(
+  int64
+)
+"src/rand.ml" 48 2087 2094 "src/rand.ml" 48 2087 2100
+type(
+  int -> int64
+)
+ident(
+  ext_ref Int64.of_int
+)
+"src/rand.ml" 48 2087 2101 "src/rand.ml" 48 2087 2102
+type(
+  int
+)
+ident(
+  int_ref e "src/rand.ml" 42 1811 1838 "src/rand.ml" 42 1811 1839
+)
+"src/rand.ml" 48 2087 2094 "src/rand.ml" 48 2087 2102
+type(
+  int64
+)
+"src/rand.ml" 48 2087 2103 "src/rand.ml" 48 2087 2104
+type(
+  int64 -> int64 -> bool
+)
+ident(
+  ext_ref Pervasives.( > )
+)
+"src/rand.ml" 48 2087 2105 "src/rand.ml" 48 2087 2110
+type(
+  int64
+)
+ident(
+  int_ref max_e "src/rand.ml" 47 2029 2037 "src/rand.ml" 47 2029 2042
+)
+"src/rand.ml" 48 2087 2094 "src/rand.ml" 48 2087 2110
+type(
+  bool
+)
+"src/rand.ml" 48 2087 2116 "src/rand.ml" 48 2087 2127
+type(
+  string -> unit
+)
+ident(
+  ext_ref Pervasives.invalid_arg
+)
+"src/rand.ml" 48 2087 2128 "src/rand.ml" 48 2087 2152
+type(
+  string
+)
+"src/rand.ml" 48 2087 2116 "src/rand.ml" 48 2087 2152
+call(
+  stack
+)
+type(
+  unit
+)
+"src/rand.ml" 48 2087 2091 "src/rand.ml" 48 2087 2152
+type(
+  unit
+)
+"src/rand.ml" 49 2154 2158 "src/rand.ml" 49 2154 2163
+type(
+  int64
+)
+ident(
+  int_ref max_e "src/rand.ml" 47 2029 2037 "src/rand.ml" 47 2029 2042
+)
+"src/rand.ml" 48 2087 2091 "src/rand.ml" 49 2154 2163
+type(
+  int64
+)
+"src/rand.ml" 47 2029 2033 "src/rand.ml" 49 2154 2163
+type(
+  int64
+)
+"src/rand.ml" 46 1956 1960 "src/rand.ml" 49 2154 2163
+type(
+  int64
+)
+"src/rand.ml" 45 1918 1922 "src/rand.ml" 49 2154 2163
+type(
+  int64
+)
+"src/rand.ml" 44 1892 1896 "src/rand.ml" 49 2154 2163
+type(
+  int64
+)
+"src/rand.ml" 43 1842 1846 "src/rand.ml" 49 2154 2163
+type(
+  int64
+)
+"src/rand.ml" 51 2165 2171 "src/rand.ml" 51 2165 2179
+type(
+  int -> int -> ('a -> int -> 'a) -> 'a -> 'a
+)
+ident(
+  def fold_for "src/rand.ml" 56 2352 2354 "src/rand.ml" 121 4379 4382
+)
+"src/rand.ml" 51 2165 2180 "src/rand.ml" 51 2165 2182
+type(
+  int
+)
+ident(
+  def i0 "src/rand.ml" 51 2165 2183 "src/rand.ml" 53 2259 2270
+)
+"src/rand.ml" 51 2165 2183 "src/rand.ml" 51 2165 2185
+type(
+  int
+)
+ident(
+  def i1 "src/rand.ml" 51 2165 2186 "src/rand.ml" 53 2259 2270
+)
+"src/rand.ml" 51 2165 2186 "src/rand.ml" 51 2165 2187
+type(
+  'a -> int -> 'a
+)
+ident(
+  def f "src/rand.ml" 52 2190 2194 "src/rand.ml" 53 2259 2270
+)
+"src/rand.ml" 52 2190 2202 "src/rand.ml" 52 2190 2206
+type(
+  int -> 'a -> 'a
+)
+"src/rand.ml" 52 2190 2207 "src/rand.ml" 52 2190 2208
+type(
+  int
+)
+ident(
+  def i "src/rand.ml" 52 2190 2209 "src/rand.ml" 52 2190 2255
+)
+"src/rand.ml" 52 2190 2209 "src/rand.ml" 52 2190 2210
+type(
+  'a
+)
+ident(
+  def v "src/rand.ml" 52 2190 2213 "src/rand.ml" 52 2190 2255
+)
+"src/rand.ml" 52 2190 2216 "src/rand.ml" 52 2190 2217
+type(
+  int
+)
+ident(
+  int_ref i "src/rand.ml" 52 2190 2207 "src/rand.ml" 52 2190 2208
+)
+"src/rand.ml" 52 2190 2218 "src/rand.ml" 52 2190 2219
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( > )
+)
+"src/rand.ml" 52 2190 2220 "src/rand.ml" 52 2190 2222
+type(
+  int
+)
+ident(
+  int_ref i1 "src/rand.ml" 51 2165 2183 "src/rand.ml" 51 2165 2185
+)
+"src/rand.ml" 52 2190 2216 "src/rand.ml" 52 2190 2222
+type(
+  bool
+)
+"src/rand.ml" 52 2190 2228 "src/rand.ml" 52 2190 2229
+type(
+  'a
+)
+ident(
+  int_ref v "src/rand.ml" 52 2190 2209 "src/rand.ml" 52 2190 2210
+)
+"src/rand.ml" 52 2190 2235 "src/rand.ml" 52 2190 2239
+type(
+  int -> 'a -> 'a
+)
+ident(
+  int_ref loop "src/rand.ml" 52 2190 2202 "src/rand.ml" 52 2190 2206
+)
+"src/rand.ml" 52 2190 2241 "src/rand.ml" 52 2190 2242
+type(
+  int
+)
+ident(
+  int_ref i "src/rand.ml" 52 2190 2207 "src/rand.ml" 52 2190 2208
+)
+"src/rand.ml" 52 2190 2243 "src/rand.ml" 52 2190 2244
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( + )
+)
+"src/rand.ml" 52 2190 2245 "src/rand.ml" 52 2190 2246
+type(
+  int
+)
+"src/rand.ml" 52 2190 2240 "src/rand.ml" 52 2190 2247
+type(
+  int
+)
+"src/rand.ml" 52 2190 2249 "src/rand.ml" 52 2190 2250
+type(
+  'a -> int -> 'a
+)
+ident(
+  int_ref f "src/rand.ml" 51 2165 2186 "src/rand.ml" 51 2165 2187
+)
+"src/rand.ml" 52 2190 2251 "src/rand.ml" 52 2190 2252
+type(
+  'a
+)
+ident(
+  int_ref v "src/rand.ml" 52 2190 2209 "src/rand.ml" 52 2190 2210
+)
+"src/rand.ml" 52 2190 2253 "src/rand.ml" 52 2190 2254
+type(
+  int
+)
+ident(
+  int_ref i "src/rand.ml" 52 2190 2207 "src/rand.ml" 52 2190 2208
+)
+"src/rand.ml" 52 2190 2248 "src/rand.ml" 52 2190 2255
+call(
+  stack
+)
+type(
+  'a
+)
+"src/rand.ml" 52 2190 2235 "src/rand.ml" 52 2190 2255
+call(
+  tail
+)
+type(
+  'a
+)
+"src/rand.ml" 52 2190 2213 "src/rand.ml" 52 2190 2255
+type(
+  'a
+)
+"src/rand.ml" 53 2259 2263 "src/rand.ml" 53 2259 2267
+type(
+  int -> 'a -> 'a
+)
+ident(
+  int_ref loop "src/rand.ml" 52 2190 2202 "src/rand.ml" 52 2190 2206
+)
+"src/rand.ml" 53 2259 2268 "src/rand.ml" 53 2259 2270
+type(
+  int
+)
+ident(
+  int_ref i0 "src/rand.ml" 51 2165 2180 "src/rand.ml" 51 2165 2182
+)
+"src/rand.ml" 53 2259 2263 "src/rand.ml" 53 2259 2270
+call(
+  tail
+)
+type(
+  'a -> 'a
+)
+"src/rand.ml" 52 2190 2194 "src/rand.ml" 53 2259 2270
+type(
+  'a -> 'a
+)
+"src/rand.ml" 56 2352 2358 "src/rand.ml" 56 2352 2374
+type(
+  (B.G.t -> B.G.vertex -> B.G.vertex -> B.G.t) ->
+  loops:bool -> v:int -> e:int -> B.G.t
+)
+ident(
+  def random_few_edges "src/rand.ml" 71 2854 2856 "src/rand.ml" 121 4379 4382
+)
+"src/rand.ml" 56 2352 2375 "src/rand.ml" 56 2352 2383
+type(
+  B.G.t -> B.G.vertex -> B.G.vertex -> B.G.t
+)
+ident(
+  def add_edge "src/rand.ml" 56 2352 2384 "src/rand.ml" 68 2740 2785
+)
+"src/rand.ml" 56 2352 2385 "src/rand.ml" 56 2352 2390
+type(
+  bool
+)
+ident(
+  def loops "src/rand.ml" 56 2352 2391 "src/rand.ml" 68 2740 2785
+)
+"src/rand.ml" 56 2352 2392 "src/rand.ml" 56 2352 2393
+type(
+  int
+)
+ident(
+  def v "src/rand.ml" 56 2352 2394 "src/rand.ml" 68 2740 2785
+)
+"src/rand.ml" 56 2352 2395 "src/rand.ml" 56 2352 2396
+type(
+  int
+)
+ident(
+  def e "src/rand.ml" 57 2399 2403 "src/rand.ml" 68 2740 2785
+)
+"src/rand.ml" 57 2399 2407 "src/rand.ml" 57 2399 2408
+type(
+  int64
+)
+"src/rand.ml" 57 2399 2411 "src/rand.ml" 57 2399 2420
+type(
+  loops:bool -> v:int -> e:int -> int64
+)
+ident(
+  int_ref max_edges "src/rand.ml" 42 1811 1817 "src/rand.ml" 42 1811 1826
+)
+"src/rand.ml" 57 2399 2422 "src/rand.ml" 57 2399 2427
+type(
+  bool
+)
+ident(
+  int_ref loops "src/rand.ml" 56 2352 2385 "src/rand.ml" 56 2352 2390
+)
+"src/rand.ml" 57 2399 2429 "src/rand.ml" 57 2399 2430
+type(
+  int
+)
+ident(
+  int_ref v "src/rand.ml" 56 2352 2392 "src/rand.ml" 56 2352 2393
+)
+"src/rand.ml" 57 2399 2432 "src/rand.ml" 57 2399 2433
+type(
+  int
+)
+ident(
+  int_ref e "src/rand.ml" 56 2352 2395 "src/rand.ml" 56 2352 2396
+)
+"src/rand.ml" 57 2399 2411 "src/rand.ml" 57 2399 2433
+call(
+  stack
+)
+type(
+  int64
+)
+"src/rand.ml" 58 2437 2445 "src/rand.ml" 58 2437 2446
+type(
+  B.G.vertex array
+)
+"src/rand.ml" 58 2437 2449 "src/rand.ml" 58 2437 2459
+type(
+  int -> (B.G.V.label -> B.G.vertex) -> B.G.vertex array
+)
+ident(
+  ext_ref Array.init
+)
+"src/rand.ml" 58 2437 2460 "src/rand.ml" 58 2437 2461
+type(
+  int
+)
+ident(
+  int_ref v "src/rand.ml" 56 2352 2392 "src/rand.ml" 56 2352 2393
+)
+"src/rand.ml" 58 2437 2462 "src/rand.ml" 58 2437 2472
+type(
+  B.G.V.label -> B.G.vertex
+)
+ident(
+  ext_ref B.G.V.create
+)
+"src/rand.ml" 58 2437 2449 "src/rand.ml" 58 2437 2472
+call(
+  stack
+)
+type(
+  B.G.vertex array
+)
+"src/rand.ml" 59 2476 2484 "src/rand.ml" 59 2476 2485
+type(
+  B.G.t
+)
+"src/rand.ml" 59 2476 2488 "src/rand.ml" 59 2476 2503
+type(
+  (B.G.t -> B.G.vertex -> B.G.t) -> B.G.t -> B.G.vertex array -> B.G.t
+)
+ident(
+  ext_ref Array.fold_left
+)
+"src/rand.ml" 59 2476 2504 "src/rand.ml" 59 2476 2514
+type(
+  B.G.t -> B.G.vertex -> B.G.t
+)
+ident(
+  ext_ref B.add_vertex
+)
+"src/rand.ml" 59 2476 2516 "src/rand.ml" 59 2476 2521
+type(
+  unit -> B.G.t
+)
+ident(
+  ext_ref B.empty
+)
+"src/rand.ml" 59 2476 2522 "src/rand.ml" 59 2476 2524
+type(
+  unit
+)
+"src/rand.ml" 59 2476 2515 "src/rand.ml" 59 2476 2525
+call(
+  stack
+)
+type(
+  B.G.t
+)
+"src/rand.ml" 59 2476 2526 "src/rand.ml" 59 2476 2527
+type(
+  B.G.vertex array
+)
+ident(
+  int_ref a "src/rand.ml" 58 2437 2445 "src/rand.ml" 58 2437 2446
+)
+"src/rand.ml" 59 2476 2488 "src/rand.ml" 59 2476 2527
+call(
+  stack
+)
+type(
+  B.G.t
+)
+"src/rand.ml" 60 2531 2543 "src/rand.ml" 60 2531 2554
+type(
+  B.G.t -> B.G.t
+)
+"src/rand.ml" 60 2531 2555 "src/rand.ml" 60 2531 2556
+type(
+  B.G.t
+)
+ident(
+  def g "src/rand.ml" 61 2559 2565 "src/rand.ml" 66 2709 2732
+)
+"src/rand.ml" 61 2559 2569 "src/rand.ml" 61 2559 2570
+type(
+  int
+)
+"src/rand.ml" 61 2559 2573 "src/rand.ml" 61 2559 2583
+type(
+  int -> int
+)
+ident(
+  ext_ref Random.int
+)
+"src/rand.ml" 61 2559 2584 "src/rand.ml" 61 2559 2585
+type(
+  int
+)
+ident(
+  int_ref v "src/rand.ml" 56 2352 2392 "src/rand.ml" 56 2352 2393
+)
+"src/rand.ml" 61 2559 2573 "src/rand.ml" 61 2559 2585
+call(
+  stack
+)
+type(
+  int
+)
+"src/rand.ml" 62 2589 2599 "src/rand.ml" 62 2589 2600
+type(
+  int
+)
+"src/rand.ml" 62 2589 2603 "src/rand.ml" 62 2589 2613
+type(
+  int -> int
+)
+ident(
+  ext_ref Random.int
+)
+"src/rand.ml" 62 2589 2614 "src/rand.ml" 62 2589 2615
+type(
+  int
+)
+ident(
+  int_ref v "src/rand.ml" 56 2352 2392 "src/rand.ml" 56 2352 2393
+)
+"src/rand.ml" 62 2589 2603 "src/rand.ml" 62 2589 2615
+call(
+  stack
+)
+type(
+  int
+)
+"src/rand.ml" 63 2619 2629 "src/rand.ml" 63 2619 2630
+type(
+  int
+)
+ident(
+  int_ref i "src/rand.ml" 61 2559 2569 "src/rand.ml" 61 2559 2570
+)
+"src/rand.ml" 63 2619 2631 "src/rand.ml" 63 2619 2632
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( = )
+)
+"src/rand.ml" 63 2619 2633 "src/rand.ml" 63 2619 2634
+type(
+  int
+)
+ident(
+  int_ref j "src/rand.ml" 62 2589 2599 "src/rand.ml" 62 2589 2600
+)
+"src/rand.ml" 63 2619 2629 "src/rand.ml" 63 2619 2634
+type(
+  bool
+)
+"src/rand.ml" 63 2619 2635 "src/rand.ml" 63 2619 2637
+type(
+  bool -> bool -> bool
+)
+ident(
+  ext_ref Pervasives.( && )
+)
+"src/rand.ml" 63 2619 2638 "src/rand.ml" 63 2619 2641
+type(
+  bool -> bool
+)
+ident(
+  ext_ref Pervasives.not
+)
+"src/rand.ml" 63 2619 2642 "src/rand.ml" 63 2619 2647
+type(
+  bool
+)
+ident(
+  int_ref loops "src/rand.ml" 56 2352 2385 "src/rand.ml" 56 2352 2390
+)
+"src/rand.ml" 63 2619 2638 "src/rand.ml" 63 2619 2647
+type(
+  bool
+)
+"src/rand.ml" 63 2619 2628 "src/rand.ml" 63 2619 2648
+type(
+  bool
+)
+"src/rand.ml" 63 2619 2649 "src/rand.ml" 63 2619 2651
+type(
+  bool -> bool -> bool
+)
+ident(
+  ext_ref Pervasives.( || )
+)
+"src/rand.ml" 63 2619 2652 "src/rand.ml" 63 2619 2662
+type(
+  B.G.t -> B.G.vertex -> B.G.vertex -> bool
+)
+ident(
+  ext_ref B.G.mem_edge
+)
+"src/rand.ml" 63 2619 2663 "src/rand.ml" 63 2619 2664
+type(
+  B.G.t
+)
+ident(
+  int_ref g "src/rand.ml" 60 2531 2555 "src/rand.ml" 60 2531 2556
+)
+"src/rand.ml" 63 2619 2665 "src/rand.ml" 63 2619 2666
+type(
+  B.G.vertex array
+)
+ident(
+  int_ref a "src/rand.ml" 58 2437 2445 "src/rand.ml" 58 2437 2446
+)
+"src/rand.ml" 63 2619 2668 "src/rand.ml" 63 2619 2669
+type(
+  int
+)
+ident(
+  int_ref i "src/rand.ml" 61 2559 2569 "src/rand.ml" 61 2559 2570
+)
+"src/rand.ml" 63 2619 2665 "src/rand.ml" 63 2619 2670
+type(
+  B.G.vertex
+)
+"src/rand.ml" 63 2619 2671 "src/rand.ml" 63 2619 2672
+type(
+  B.G.vertex array
+)
+ident(
+  int_ref a "src/rand.ml" 58 2437 2445 "src/rand.ml" 58 2437 2446
+)
+"src/rand.ml" 63 2619 2674 "src/rand.ml" 63 2619 2675
+type(
+  int
+)
+ident(
+  int_ref j "src/rand.ml" 62 2589 2599 "src/rand.ml" 62 2589 2600
+)
+"src/rand.ml" 63 2619 2671 "src/rand.ml" 63 2619 2676
+type(
+  B.G.vertex
+)
+"src/rand.ml" 63 2619 2652 "src/rand.ml" 63 2619 2676
+call(
+  stack
+)
+type(
+  bool
+)
+"src/rand.ml" 63 2619 2628 "src/rand.ml" 63 2619 2676
+type(
+  bool
+)
+"src/rand.ml" 64 2683 2684 "src/rand.ml" 64 2683 2695
+type(
+  B.G.t -> B.G.t
+)
+ident(
+  int_ref random_edge "src/rand.ml" 60 2531 2543 "src/rand.ml" 60 2531 2554
+)
+"src/rand.ml" 64 2683 2696 "src/rand.ml" 64 2683 2697
+type(
+  B.G.t
+)
+ident(
+  int_ref g "src/rand.ml" 60 2531 2555 "src/rand.ml" 60 2531 2556
+)
+"src/rand.ml" 64 2683 2684 "src/rand.ml" 64 2683 2697
+call(
+  tail
+)
+type(
+  B.G.t
+)
+"src/rand.ml" 66 2709 2710 "src/rand.ml" 66 2709 2718
+type(
+  B.G.t -> B.G.vertex -> B.G.vertex -> B.G.t
+)
+ident(
+  int_ref add_edge "src/rand.ml" 56 2352 2375 "src/rand.ml" 56 2352 2383
+)
+"src/rand.ml" 66 2709 2719 "src/rand.ml" 66 2709 2720
+type(
+  B.G.t
+)
+ident(
+  int_ref g "src/rand.ml" 60 2531 2555 "src/rand.ml" 60 2531 2556
+)
+"src/rand.ml" 66 2709 2721 "src/rand.ml" 66 2709 2722
+type(
+  B.G.vertex array
+)
+ident(
+  int_ref a "src/rand.ml" 58 2437 2445 "src/rand.ml" 58 2437 2446
+)
+"src/rand.ml" 66 2709 2724 "src/rand.ml" 66 2709 2725
+type(
+  int
+)
+ident(
+  int_ref i "src/rand.ml" 61 2559 2569 "src/rand.ml" 61 2559 2570
+)
+"src/rand.ml" 66 2709 2721 "src/rand.ml" 66 2709 2726
+type(
+  B.G.vertex
+)
+"src/rand.ml" 66 2709 2727 "src/rand.ml" 66 2709 2728
+type(
+  B.G.vertex array
+)
+ident(
+  int_ref a "src/rand.ml" 58 2437 2445 "src/rand.ml" 58 2437 2446
+)
+"src/rand.ml" 66 2709 2730 "src/rand.ml" 66 2709 2731
+type(
+  int
+)
+ident(
+  int_ref j "src/rand.ml" 62 2589 2599 "src/rand.ml" 62 2589 2600
+)
+"src/rand.ml" 66 2709 2727 "src/rand.ml" 66 2709 2732
+type(
+  B.G.vertex
+)
+"src/rand.ml" 66 2709 2710 "src/rand.ml" 66 2709 2732
+call(
+  tail
+)
+type(
+  B.G.t
+)
+"src/rand.ml" 63 2619 2625 "src/rand.ml" 66 2709 2732
+type(
+  B.G.t
+)
+"src/rand.ml" 62 2589 2595 "src/rand.ml" 66 2709 2732
+type(
+  B.G.t
+)
+"src/rand.ml" 61 2559 2565 "src/rand.ml" 66 2709 2732
+type(
+  B.G.t
+)
+"src/rand.ml" 68 2740 2744 "src/rand.ml" 68 2740 2752
+type(
+  int -> int -> (B.G.t -> int -> B.G.t) -> B.G.t -> B.G.t
+)
+ident(
+  int_ref fold_for "src/rand.ml" 51 2165 2171 "src/rand.ml" 51 2165 2179
+)
+"src/rand.ml" 68 2740 2753 "src/rand.ml" 68 2740 2754
+type(
+  int
+)
+"src/rand.ml" 68 2740 2755 "src/rand.ml" 68 2740 2756
+type(
+  int
+)
+ident(
+  int_ref e "src/rand.ml" 56 2352 2395 "src/rand.ml" 56 2352 2396
+)
+"src/rand.ml" 68 2740 2762 "src/rand.ml" 68 2740 2763
+type(
+  B.G.t
+)
+ident(
+  def g "src/rand.ml" 68 2740 2764 "src/rand.ml" 68 2740 2782
+)
+"src/rand.ml" 68 2740 2764 "src/rand.ml" 68 2740 2765
+type(
+  int
+)
+"src/rand.ml" 68 2740 2769 "src/rand.ml" 68 2740 2780
+type(
+  B.G.t -> B.G.t
+)
+ident(
+  int_ref random_edge "src/rand.ml" 60 2531 2543 "src/rand.ml" 60 2531 2554
+)
+"src/rand.ml" 68 2740 2781 "src/rand.ml" 68 2740 2782
+type(
+  B.G.t
+)
+ident(
+  int_ref g "src/rand.ml" 68 2740 2762 "src/rand.ml" 68 2740 2763
+)
+"src/rand.ml" 68 2740 2769 "src/rand.ml" 68 2740 2782
+call(
+  tail
+)
+type(
+  B.G.t
+)
+"src/rand.ml" 68 2740 2757 "src/rand.ml" 68 2740 2783
+type(
+  B.G.t -> int -> B.G.t
+)
+"src/rand.ml" 68 2740 2784 "src/rand.ml" 68 2740 2785
+type(
+  B.G.t
+)
+ident(
+  int_ref g "src/rand.ml" 59 2476 2484 "src/rand.ml" 59 2476 2485
+)
+"src/rand.ml" 68 2740 2744 "src/rand.ml" 68 2740 2785
+call(
+  tail
+)
+type(
+  B.G.t
+)
+"src/rand.ml" 60 2531 2535 "src/rand.ml" 68 2740 2785
+type(
+  B.G.t
+)
+"src/rand.ml" 59 2476 2480 "src/rand.ml" 68 2740 2785
+type(
+  B.G.t
+)
+"src/rand.ml" 58 2437 2441 "src/rand.ml" 68 2740 2785
+type(
+  B.G.t
+)
+"src/rand.ml" 57 2399 2403 "src/rand.ml" 68 2740 2785
+type(
+  B.G.t
+)
+"src/rand.ml" 71 2854 2860 "src/rand.ml" 71 2854 2877
+type(
+  (B.G.t -> B.G.V.t -> B.G.V.t -> B.G.t) ->
+  loops:bool -> v:int -> e:int -> B.G.t
+)
+ident(
+  def random_many_edges "src/rand.ml" 106 3891 3893 "src/rand.ml" 121 4379 4382
+)
+"src/rand.ml" 71 2854 2878 "src/rand.ml" 71 2854 2886
+type(
+  B.G.t -> B.G.V.t -> B.G.V.t -> B.G.t
+)
+ident(
+  def add_edge "src/rand.ml" 71 2854 2887 "src/rand.ml" 104 3862 3889
+)
+"src/rand.ml" 71 2854 2888 "src/rand.ml" 71 2854 2893
+type(
+  bool
+)
+ident(
+  def loops "src/rand.ml" 71 2854 2894 "src/rand.ml" 104 3862 3889
+)
+"src/rand.ml" 71 2854 2895 "src/rand.ml" 71 2854 2896
+type(
+  int
+)
+ident(
+  def v "src/rand.ml" 71 2854 2897 "src/rand.ml" 104 3862 3889
+)
+"src/rand.ml" 71 2854 2898 "src/rand.ml" 71 2854 2899
+type(
+  int
+)
+ident(
+  def e "src/rand.ml" 72 2902 2906 "src/rand.ml" 104 3862 3889
+)
+"src/rand.ml" 72 2902 2910 "src/rand.ml" 72 2902 2913
+type(
+  int64
+)
+"src/rand.ml" 72 2902 2916 "src/rand.ml" 72 2902 2922
+type(
+  int -> int64
+)
+ident(
+  ext_ref Int64.of_int
+)
+"src/rand.ml" 72 2902 2923 "src/rand.ml" 72 2902 2924
+type(
+  int
+)
+ident(
+  int_ref v "src/rand.ml" 71 2854 2895 "src/rand.ml" 71 2854 2896
+)
+"src/rand.ml" 72 2902 2916 "src/rand.ml" 72 2902 2924
+type(
+  int64
+)
+"src/rand.ml" 73 2928 2936 "src/rand.ml" 73 2928 2941
+type(
+  int64
+)
+"src/rand.ml" 73 2928 2944 "src/rand.ml" 73 2928 2953
+type(
+  loops:bool -> v:int -> e:int -> int64
+)
+ident(
+  int_ref max_edges "src/rand.ml" 42 1811 1817 "src/rand.ml" 42 1811 1826
+)
+"src/rand.ml" 73 2928 2955 "src/rand.ml" 73 2928 2960
+type(
+  bool
+)
+ident(
+  int_ref loops "src/rand.ml" 71 2854 2888 "src/rand.ml" 71 2854 2893
+)
+"src/rand.ml" 73 2928 2962 "src/rand.ml" 73 2928 2963
+type(
+  int
+)
+ident(
+  int_ref v "src/rand.ml" 71 2854 2895 "src/rand.ml" 71 2854 2896
+)
+"src/rand.ml" 73 2928 2965 "src/rand.ml" 73 2928 2966
+type(
+  int
+)
+ident(
+  int_ref e "src/rand.ml" 71 2854 2898 "src/rand.ml" 71 2854 2899
+)
+"src/rand.ml" 73 2928 2944 "src/rand.ml" 73 2928 2966
+call(
+  stack
+)
+type(
+  int64
+)
+"src/rand.ml" 74 2970 2978 "src/rand.ml" 74 2970 2979
+type(
+  B.G.V.t array
+)
+"src/rand.ml" 74 2970 2982 "src/rand.ml" 74 2970 2992
+type(
+  int -> (B.G.V.label -> B.G.V.t) -> B.G.V.t array
+)
+ident(
+  ext_ref Array.init
+)
+"src/rand.ml" 74 2970 2993 "src/rand.ml" 74 2970 2994
+type(
+  int
+)
+ident(
+  int_ref v "src/rand.ml" 71 2854 2895 "src/rand.ml" 71 2854 2896
+)
+"src/rand.ml" 74 2970 2995 "src/rand.ml" 74 2970 3005
+type(
+  B.G.V.label -> B.G.V.t
+)
+ident(
+  ext_ref B.G.V.create
+)
+"src/rand.ml" 74 2970 2982 "src/rand.ml" 74 2970 3005
+call(
+  stack
+)
+type(
+  B.G.V.t array
+)
+"src/rand.ml" 75 3009 3017 "src/rand.ml" 75 3009 3018
+type(
+  B.G.t
+)
+"src/rand.ml" 75 3009 3021 "src/rand.ml" 75 3009 3036
+type(
+  (B.G.t -> B.G.V.t -> B.G.t) -> B.G.t -> B.G.V.t array -> B.G.t
+)
+ident(
+  ext_ref Array.fold_left
+)
+"src/rand.ml" 75 3009 3037 "src/rand.ml" 75 3009 3047
+type(
+  B.G.t -> B.G.V.t -> B.G.t
+)
+ident(
+  ext_ref B.add_vertex
+)
+"src/rand.ml" 75 3009 3049 "src/rand.ml" 75 3009 3054
+type(
+  unit -> B.G.t
+)
+ident(
+  ext_ref B.empty
+)
+"src/rand.ml" 75 3009 3055 "src/rand.ml" 75 3009 3057
+type(
+  unit
+)
+"src/rand.ml" 75 3009 3048 "src/rand.ml" 75 3009 3058
+call(
+  stack
+)
+type(
+  B.G.t
+)
+"src/rand.ml" 75 3009 3059 "src/rand.ml" 75 3009 3060
+type(
+  B.G.V.t array
+)
+ident(
+  int_ref a "src/rand.ml" 74 2970 2978 "src/rand.ml" 74 2970 2979
+)
+"src/rand.ml" 75 3009 3021 "src/rand.ml" 75 3009 3060
+call(
+  stack
+)
+type(
+  B.G.t
+)
+"src/rand.ml" 76 3064 3076 "src/rand.ml" 76 3064 3085
+type(
+  int -> int -> Int64.t -> int -> B.G.t -> B.G.t
+)
+"src/rand.ml" 76 3064 3086 "src/rand.ml" 76 3064 3087
+type(
+  int
+)
+ident(
+  def i "src/rand.ml" 76 3064 3088 "src/rand.ml" 102 3835 3854
+)
+"src/rand.ml" 76 3064 3088 "src/rand.ml" 76 3064 3089
+type(
+  int
+)
+ident(
+  def j "src/rand.ml" 76 3064 3090 "src/rand.ml" 102 3835 3854
+)
+"src/rand.ml" 76 3064 3090 "src/rand.ml" 76 3064 3093
+type(
+  Int64.t
+)
+ident(
+  def max "src/rand.ml" 76 3064 3094 "src/rand.ml" 102 3835 3854
+)
+"src/rand.ml" 76 3064 3094 "src/rand.ml" 76 3064 3096
+type(
+  int
+)
+ident(
+  def nb "src/rand.ml" 76 3064 3097 "src/rand.ml" 102 3835 3854
+)
+"src/rand.ml" 76 3064 3097 "src/rand.ml" 76 3064 3098
+type(
+  B.G.t
+)
+ident(
+  def g "src/rand.ml" 77 3101 3107 "src/rand.ml" 102 3835 3854
+)
+"src/rand.ml" 78 3115 3117 "src/rand.ml" 78 3115 3120
+type(
+  Int64.t
+)
+ident(
+  int_ref max "src/rand.ml" 76 3064 3090 "src/rand.ml" 76 3064 3093
+)
+"src/rand.ml" 78 3115 3121 "src/rand.ml" 78 3115 3123
+type(
+  Int64.t -> Int64.t -> bool
+)
+ident(
+  ext_ref Pervasives.( >= )
+)
+"src/rand.ml" 78 3115 3124 "src/rand.ml" 78 3115 3126
+type(
+  Int64.t
+)
+"src/rand.ml" 78 3115 3117 "src/rand.ml" 78 3115 3126
+type(
+  bool
+)
+"src/rand.ml" 78 3115 3127 "src/rand.ml" 78 3115 3129
+type(
+  bool -> bool -> bool
+)
+ident(
+  ext_ref Pervasives.( && )
+)
+"src/rand.ml" 79 3130 3139 "src/rand.ml" 79 3130 3144
+type(
+  int64
+)
+ident(
+  int_ref max_e "src/rand.ml" 73 2928 2936 "src/rand.ml" 73 2928 2941
+)
+"src/rand.ml" 79 3130 3145 "src/rand.ml" 79 3130 3146
+type(
+  int64 -> int64 -> bool
+)
+ident(
+  ext_ref Pervasives.( = )
+)
+"src/rand.ml" 80 3148 3152 "src/rand.ml" 80 3148 3155
+type(
+  Int64.t -> int64 -> int64
+)
+ident(
+  ext_ref Int64.add
+)
+"src/rand.ml" 80 3148 3156 "src/rand.ml" 80 3148 3159
+type(
+  Int64.t
+)
+ident(
+  int_ref max "src/rand.ml" 76 3064 3090 "src/rand.ml" 76 3064 3093
+)
+"src/rand.ml" 80 3148 3161 "src/rand.ml" 80 3148 3164
+type(
+  int64 -> int64 -> int64
+)
+ident(
+  ext_ref Int64.add
+)
+"src/rand.ml" 80 3148 3166 "src/rand.ml" 80 3148 3169
+type(
+  int64 -> int64 -> int64
+)
+ident(
+  ext_ref Int64.mul
+)
+"src/rand.ml" 80 3148 3171 "src/rand.ml" 80 3148 3177
+type(
+  int -> int64
+)
+ident(
+  ext_ref Int64.of_int
+)
+"src/rand.ml" 80 3148 3178 "src/rand.ml" 80 3148 3179
+type(
+  int
+)
+ident(
+  int_ref i "src/rand.ml" 76 3064 3086 "src/rand.ml" 76 3064 3087
+)
+"src/rand.ml" 80 3148 3170 "src/rand.ml" 80 3148 3180
+type(
+  int64
+)
+"src/rand.ml" 80 3148 3181 "src/rand.ml" 80 3148 3184
+type(
+  int64
+)
+ident(
+  int_ref v64 "src/rand.ml" 72 2902 2910 "src/rand.ml" 72 2902 2913
+)
+"src/rand.ml" 80 3148 3165 "src/rand.ml" 80 3148 3185
+type(
+  int64
+)
+"src/rand.ml" 81 3187 3199 "src/rand.ml" 81 3187 3205
+type(
+  int -> int64
+)
+ident(
+  ext_ref Int64.of_int
+)
+"src/rand.ml" 82 3207 3215 "src/rand.ml" 82 3207 3216
+type(
+  int
+)
+ident(
+  int_ref j "src/rand.ml" 76 3064 3088 "src/rand.ml" 76 3064 3089
+)
+"src/rand.ml" 82 3207 3217 "src/rand.ml" 82 3207 3218
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( - )
+)
+"src/rand.ml" 83 3220 3232 "src/rand.ml" 83 3220 3245
+type(
+  bool
+)
+ident(
+  ext_ref B.G.is_directed
+)
+"src/rand.ml" 83 3220 3247 "src/rand.ml" 83 3220 3252
+type(
+  bool
+)
+ident(
+  int_ref loops "src/rand.ml" 71 2854 2888 "src/rand.ml" 71 2854 2893
+)
+"src/rand.ml" 83 3220 3232 "src/rand.ml" 83 3220 3252
+type(
+  bool * bool
+)
+"src/rand.ml" 84 3258 3268 "src/rand.ml" 84 3258 3272
+type(
+  bool
+)
+"src/rand.ml" 84 3258 3274 "src/rand.ml" 84 3258 3278
+type(
+  bool
+)
+"src/rand.ml" 84 3258 3268 "src/rand.ml" 84 3258 3278
+type(
+  bool * bool
+)
+"src/rand.ml" 84 3258 3282 "src/rand.ml" 84 3258 3283
+type(
+  int
+)
+"src/rand.ml" 85 3284 3294 "src/rand.ml" 85 3284 3298
+type(
+  bool
+)
+"src/rand.ml" 85 3284 3300 "src/rand.ml" 85 3284 3305
+type(
+  bool
+)
+"src/rand.ml" 85 3284 3294 "src/rand.ml" 85 3284 3305
+type(
+  bool * bool
+)
+"src/rand.ml" 85 3284 3312 "src/rand.ml" 85 3284 3313
+type(
+  int
+)
+ident(
+  int_ref j "src/rand.ml" 76 3064 3088 "src/rand.ml" 76 3064 3089
+)
+"src/rand.ml" 85 3284 3314 "src/rand.ml" 85 3284 3315
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( > )
+)
+"src/rand.ml" 85 3284 3316 "src/rand.ml" 85 3284 3317
+type(
+  int
+)
+ident(
+  int_ref i "src/rand.ml" 76 3064 3086 "src/rand.ml" 76 3064 3087
+)
+"src/rand.ml" 85 3284 3312 "src/rand.ml" 85 3284 3317
+type(
+  bool
+)
+"src/rand.ml" 85 3284 3323 "src/rand.ml" 85 3284 3324
+type(
+  int
+)
+ident(
+  int_ref i "src/rand.ml" 76 3064 3086 "src/rand.ml" 76 3064 3087
+)
+"src/rand.ml" 85 3284 3325 "src/rand.ml" 85 3284 3326
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( + )
+)
+"src/rand.ml" 85 3284 3327 "src/rand.ml" 85 3284 3328
+type(
+  int
+)
+"src/rand.ml" 85 3284 3323 "src/rand.ml" 85 3284 3328
+type(
+  int
+)
+"src/rand.ml" 85 3284 3334 "src/rand.ml" 85 3284 3335
+type(
+  int
+)
+ident(
+  int_ref i "src/rand.ml" 76 3064 3086 "src/rand.ml" 76 3064 3087
+)
+"src/rand.ml" 85 3284 3309 "src/rand.ml" 85 3284 3335
+type(
+  int
+)
+"src/rand.ml" 86 3336 3346 "src/rand.ml" 86 3336 3351
+type(
+  bool
+)
+"src/rand.ml" 86 3336 3353 "src/rand.ml" 86 3336 3357
+type(
+  bool
+)
+"src/rand.ml" 86 3336 3346 "src/rand.ml" 86 3336 3357
+type(
+  bool * bool
+)
+"src/rand.ml" 86 3336 3361 "src/rand.ml" 86 3336 3362
+type(
+  int
+)
+ident(
+  int_ref i "src/rand.ml" 76 3064 3086 "src/rand.ml" 76 3064 3087
+)
+"src/rand.ml" 86 3336 3363 "src/rand.ml" 86 3336 3364
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( * )
+)
+"src/rand.ml" 86 3336 3366 "src/rand.ml" 86 3336 3367
+type(
+  int
+)
+ident(
+  int_ref i "src/rand.ml" 76 3064 3086 "src/rand.ml" 76 3064 3087
+)
+"src/rand.ml" 86 3336 3368 "src/rand.ml" 86 3336 3369
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( - )
+)
+"src/rand.ml" 86 3336 3370 "src/rand.ml" 86 3336 3371
+type(
+  int
+)
+"src/rand.ml" 86 3336 3365 "src/rand.ml" 86 3336 3372
+type(
+  int
+)
+"src/rand.ml" 86 3336 3361 "src/rand.ml" 86 3336 3372
+type(
+  int
+)
+"src/rand.ml" 86 3336 3373 "src/rand.ml" 86 3336 3374
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( / )
+)
+"src/rand.ml" 86 3336 3375 "src/rand.ml" 86 3336 3376
+type(
+  int
+)
+"src/rand.ml" 86 3336 3361 "src/rand.ml" 86 3336 3376
+type(
+  int
+)
+"src/rand.ml" 86 3336 3377 "src/rand.ml" 86 3336 3378
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( + )
+)
+"src/rand.ml" 86 3336 3382 "src/rand.ml" 86 3336 3383
+type(
+  int
+)
+ident(
+  int_ref j "src/rand.ml" 76 3064 3088 "src/rand.ml" 76 3064 3089
+)
+"src/rand.ml" 86 3336 3384 "src/rand.ml" 86 3336 3385
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( > )
+)
+"src/rand.ml" 86 3336 3386 "src/rand.ml" 86 3336 3387
+type(
+  int
+)
+ident(
+  int_ref i "src/rand.ml" 76 3064 3086 "src/rand.ml" 76 3064 3087
+)
+"src/rand.ml" 86 3336 3382 "src/rand.ml" 86 3336 3387
+type(
+  bool
+)
+"src/rand.ml" 86 3336 3393 "src/rand.ml" 86 3336 3394
+type(
+  int
+)
+ident(
+  int_ref i "src/rand.ml" 76 3064 3086 "src/rand.ml" 76 3064 3087
+)
+"src/rand.ml" 86 3336 3400 "src/rand.ml" 86 3336 3401
+type(
+  int
+)
+ident(
+  int_ref j "src/rand.ml" 76 3064 3088 "src/rand.ml" 76 3064 3089
+)
+"src/rand.ml" 86 3336 3379 "src/rand.ml" 86 3336 3401
+type(
+  int
+)
+"src/rand.ml" 86 3336 3361 "src/rand.ml" 86 3336 3401
+type(
+  int
+)
+"src/rand.ml" 87 3402 3412 "src/rand.ml" 87 3402 3417
+type(
+  bool
+)
+"src/rand.ml" 87 3402 3419 "src/rand.ml" 87 3402 3424
+type(
+  bool
+)
+"src/rand.ml" 87 3402 3412 "src/rand.ml" 87 3402 3424
+type(
+  bool * bool
+)
+"src/rand.ml" 87 3402 3428 "src/rand.ml" 87 3402 3429
+type(
+  int
+)
+ident(
+  int_ref i "src/rand.ml" 76 3064 3086 "src/rand.ml" 76 3064 3087
+)
+"src/rand.ml" 87 3402 3429 "src/rand.ml" 87 3402 3430
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( * )
+)
+"src/rand.ml" 87 3402 3431 "src/rand.ml" 87 3402 3432
+type(
+  int
+)
+ident(
+  int_ref i "src/rand.ml" 76 3064 3086 "src/rand.ml" 76 3064 3087
+)
+"src/rand.ml" 87 3402 3432 "src/rand.ml" 87 3402 3433
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( + )
+)
+"src/rand.ml" 87 3402 3433 "src/rand.ml" 87 3402 3434
+type(
+  int
+)
+"src/rand.ml" 87 3402 3430 "src/rand.ml" 87 3402 3435
+type(
+  int
+)
+"src/rand.ml" 87 3402 3428 "src/rand.ml" 87 3402 3435
+type(
+  int
+)
+"src/rand.ml" 87 3402 3435 "src/rand.ml" 87 3402 3436
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( / )
+)
+"src/rand.ml" 87 3402 3436 "src/rand.ml" 87 3402 3437
+type(
+  int
+)
+"src/rand.ml" 87 3402 3428 "src/rand.ml" 87 3402 3437
+type(
+  int
+)
+"src/rand.ml" 87 3402 3438 "src/rand.ml" 87 3402 3439
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( + )
+)
+"src/rand.ml" 87 3402 3443 "src/rand.ml" 87 3402 3444
+type(
+  int
+)
+ident(
+  int_ref j "src/rand.ml" 76 3064 3088 "src/rand.ml" 76 3064 3089
+)
+"src/rand.ml" 87 3402 3445 "src/rand.ml" 87 3402 3446
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( > )
+)
+"src/rand.ml" 87 3402 3447 "src/rand.ml" 87 3402 3448
+type(
+  int
+)
+ident(
+  int_ref i "src/rand.ml" 76 3064 3086 "src/rand.ml" 76 3064 3087
+)
+"src/rand.ml" 87 3402 3443 "src/rand.ml" 87 3402 3448
+type(
+  bool
+)
+"src/rand.ml" 87 3402 3454 "src/rand.ml" 87 3402 3455
+type(
+  int
+)
+ident(
+  int_ref i "src/rand.ml" 76 3064 3086 "src/rand.ml" 76 3064 3087
+)
+"src/rand.ml" 87 3402 3455 "src/rand.ml" 87 3402 3456
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( + )
+)
+"src/rand.ml" 87 3402 3456 "src/rand.ml" 87 3402 3457
+type(
+  int
+)
+"src/rand.ml" 87 3402 3454 "src/rand.ml" 87 3402 3457
+type(
+  int
+)
+"src/rand.ml" 87 3402 3463 "src/rand.ml" 87 3402 3464
+type(
+  int
+)
+ident(
+  int_ref j "src/rand.ml" 76 3064 3088 "src/rand.ml" 76 3064 3089
+)
+"src/rand.ml" 87 3402 3440 "src/rand.ml" 87 3402 3464
+type(
+  int
+)
+"src/rand.ml" 87 3402 3428 "src/rand.ml" 87 3402 3464
+type(
+  int
+)
+"src/rand.ml" 83 3220 3225 "src/rand.ml" 87 3402 3465
+type(
+  int
+)
+"src/rand.ml" 82 3207 3214 "src/rand.ml" 87 3402 3466
+type(
+  int
+)
+"src/rand.ml" 81 3187 3198 "src/rand.ml" 87 3402 3467
+type(
+  int64
+)
+"src/rand.ml" 80 3148 3160 "src/rand.ml" 87 3402 3468
+type(
+  int64
+)
+"src/rand.ml" 80 3148 3152 "src/rand.ml" 87 3402 3468
+type(
+  int64
+)
+"src/rand.ml" 79 3130 3139 "src/rand.ml" 87 3402 3468
+type(
+  bool
+)
+"src/rand.ml" 78 3115 3116 "src/rand.ml" 87 3402 3469
+type(
+  bool
+)
+"src/rand.ml" 77 3101 3107 "src/rand.ml" 87 3402 3469
+type(
+  unit
+)
+"src/rand.ml" 88 3471 3480 "src/rand.ml" 88 3471 3482
+type(
+  int
+)
+ident(
+  int_ref nb "src/rand.ml" 76 3064 3094 "src/rand.ml" 76 3064 3096
+)
+"src/rand.ml" 88 3471 3483 "src/rand.ml" 88 3471 3484
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( = )
+)
+"src/rand.ml" 88 3471 3485 "src/rand.ml" 88 3471 3486
+type(
+  int
+)
+"src/rand.ml" 88 3471 3480 "src/rand.ml" 88 3471 3486
+type(
+  bool
+)
+"src/rand.ml" 89 3492 3493 "src/rand.ml" 89 3492 3494
+type(
+  B.G.t
+)
+ident(
+  int_ref g "src/rand.ml" 76 3064 3097 "src/rand.ml" 76 3064 3098
+)
+"src/rand.ml" 91 3506 3511 "src/rand.ml" 91 3506 3520
+type(
+  Int64.t -> int -> B.G.t -> B.G.t
+)
+"src/rand.ml" 92 3524 3531 "src/rand.ml" 92 3524 3532
+type(
+  int
+)
+"src/rand.ml" 92 3524 3534 "src/rand.ml" 92 3524 3535
+type(
+  int
+)
+"src/rand.ml" 92 3524 3531 "src/rand.ml" 92 3524 3535
+type(
+  int * int
+)
+"src/rand.ml" 92 3524 3541 "src/rand.ml" 92 3524 3542
+type(
+  int
+)
+ident(
+  int_ref j "src/rand.ml" 76 3064 3088 "src/rand.ml" 76 3064 3089
+)
+"src/rand.ml" 92 3524 3543 "src/rand.ml" 92 3524 3544
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( = )
+)
+"src/rand.ml" 92 3524 3545 "src/rand.ml" 92 3524 3546
+type(
+  int
+)
+ident(
+  int_ref v "src/rand.ml" 71 2854 2895 "src/rand.ml" 71 2854 2896
+)
+"src/rand.ml" 92 3524 3547 "src/rand.ml" 92 3524 3548
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( - )
+)
+"src/rand.ml" 92 3524 3549 "src/rand.ml" 92 3524 3550
+type(
+  int
+)
+"src/rand.ml" 92 3524 3545 "src/rand.ml" 92 3524 3550
+type(
+  int
+)
+"src/rand.ml" 92 3524 3541 "src/rand.ml" 92 3524 3550
+type(
+  bool
+)
+"src/rand.ml" 92 3524 3556 "src/rand.ml" 92 3524 3557
+type(
+  int
+)
+ident(
+  int_ref i "src/rand.ml" 76 3064 3086 "src/rand.ml" 76 3064 3087
+)
+"src/rand.ml" 92 3524 3558 "src/rand.ml" 92 3524 3559
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( + )
+)
+"src/rand.ml" 92 3524 3560 "src/rand.ml" 92 3524 3561
+type(
+  int
+)
+"src/rand.ml" 92 3524 3556 "src/rand.ml" 92 3524 3561
+type(
+  int
+)
+"src/rand.ml" 92 3524 3563 "src/rand.ml" 92 3524 3564
+type(
+  int
+)
+"src/rand.ml" 92 3524 3556 "src/rand.ml" 92 3524 3564
+type(
+  int * int
+)
+"src/rand.ml" 92 3524 3570 "src/rand.ml" 92 3524 3571
+type(
+  int
+)
+ident(
+  int_ref i "src/rand.ml" 76 3064 3086 "src/rand.ml" 76 3064 3087
+)
+"src/rand.ml" 92 3524 3573 "src/rand.ml" 92 3524 3574
+type(
+  int
+)
+ident(
+  int_ref j "src/rand.ml" 76 3064 3088 "src/rand.ml" 76 3064 3089
+)
+"src/rand.ml" 92 3524 3575 "src/rand.ml" 92 3524 3576
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( + )
+)
+"src/rand.ml" 92 3524 3577 "src/rand.ml" 92 3524 3578
+type(
+  int
+)
+"src/rand.ml" 92 3524 3573 "src/rand.ml" 92 3524 3578
+type(
+  int
+)
+"src/rand.ml" 92 3524 3570 "src/rand.ml" 92 3524 3578
+type(
+  int * int
+)
+"src/rand.ml" 92 3524 3538 "src/rand.ml" 92 3524 3578
+type(
+  int * int
+)
+"src/rand.ml" 93 3582 3585 "src/rand.ml" 93 3582 3594
+type(
+  int -> int -> Int64.t -> int -> B.G.t -> B.G.t
+)
+ident(
+  int_ref add_edges "src/rand.ml" 76 3064 3076 "src/rand.ml" 76 3064 3085
+)
+"src/rand.ml" 93 3582 3595 "src/rand.ml" 93 3582 3596
+type(
+  int
+)
+ident(
+  int_ref i "src/rand.ml" 92 3524 3531 "src/rand.ml" 92 3524 3532
+)
+"src/rand.ml" 93 3582 3597 "src/rand.ml" 93 3582 3598
+type(
+  int
+)
+ident(
+  int_ref j "src/rand.ml" 92 3524 3534 "src/rand.ml" 92 3524 3535
+)
+"src/rand.ml" 93 3582 3585 "src/rand.ml" 93 3582 3598
+call(
+  stack
+)
+type(
+  Int64.t -> int -> B.G.t -> B.G.t
+)
+"src/rand.ml" 92 3524 3527 "src/rand.ml" 93 3582 3598
+type(
+  Int64.t -> int -> B.G.t -> B.G.t
+)
+"src/rand.ml" 95 3604 3609 "src/rand.ml" 95 3604 3610
+type(
+  int
+)
+ident(
+  int_ref i "src/rand.ml" 76 3064 3086 "src/rand.ml" 76 3064 3087
+)
+"src/rand.ml" 95 3604 3611 "src/rand.ml" 95 3604 3612
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( = )
+)
+"src/rand.ml" 95 3604 3613 "src/rand.ml" 95 3604 3614
+type(
+  int
+)
+ident(
+  int_ref j "src/rand.ml" 76 3064 3088 "src/rand.ml" 76 3064 3089
+)
+"src/rand.ml" 95 3604 3609 "src/rand.ml" 95 3604 3614
+type(
+  bool
+)
+"src/rand.ml" 95 3604 3615 "src/rand.ml" 95 3604 3617
+type(
+  bool -> bool -> bool
+)
+ident(
+  ext_ref Pervasives.( && )
+)
+"src/rand.ml" 95 3604 3618 "src/rand.ml" 95 3604 3621
+type(
+  bool -> bool
+)
+ident(
+  ext_ref Pervasives.not
+)
+"src/rand.ml" 95 3604 3622 "src/rand.ml" 95 3604 3627
+type(
+  bool
+)
+ident(
+  int_ref loops "src/rand.ml" 71 2854 2888 "src/rand.ml" 71 2854 2893
+)
+"src/rand.ml" 95 3604 3618 "src/rand.ml" 95 3604 3627
+type(
+  bool
+)
+"src/rand.ml" 95 3604 3608 "src/rand.ml" 95 3604 3628
+type(
+  bool
+)
+"src/rand.ml" 95 3604 3629 "src/rand.ml" 95 3604 3631
+type(
+  bool -> bool -> bool
+)
+ident(
+  ext_ref Pervasives.( || )
+)
+"src/rand.ml" 95 3604 3633 "src/rand.ml" 95 3604 3636
+type(
+  bool -> bool
+)
+ident(
+  ext_ref Pervasives.not
+)
+"src/rand.ml" 95 3604 3637 "src/rand.ml" 95 3604 3650
+type(
+  bool
+)
+ident(
+  ext_ref B.G.is_directed
+)
+"src/rand.ml" 95 3604 3633 "src/rand.ml" 95 3604 3650
+type(
+  bool
+)
+"src/rand.ml" 95 3604 3651 "src/rand.ml" 95 3604 3653
+type(
+  bool -> bool -> bool
+)
+ident(
+  ext_ref Pervasives.( && )
+)
+"src/rand.ml" 95 3604 3654 "src/rand.ml" 95 3604 3655
+type(
+  int
+)
+ident(
+  int_ref i "src/rand.ml" 76 3064 3086 "src/rand.ml" 76 3064 3087
+)
+"src/rand.ml" 95 3604 3656 "src/rand.ml" 95 3604 3657
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( > )
+)
+"src/rand.ml" 95 3604 3658 "src/rand.ml" 95 3604 3659
+type(
+  int
+)
+ident(
+  int_ref j "src/rand.ml" 76 3064 3088 "src/rand.ml" 76 3064 3089
+)
+"src/rand.ml" 95 3604 3654 "src/rand.ml" 95 3604 3659
+type(
+  bool
+)
+"src/rand.ml" 95 3604 3632 "src/rand.ml" 95 3604 3660
+type(
+  bool
+)
+"src/rand.ml" 95 3604 3608 "src/rand.ml" 95 3604 3660
+type(
+  bool
+)
+"src/rand.ml" 96 3667 3670 "src/rand.ml" 96 3667 3679
+type(
+  Int64.t -> int -> B.G.t -> B.G.t
+)
+ident(
+  int_ref add_edges "src/rand.ml" 91 3506 3511 "src/rand.ml" 91 3506 3520
+)
+"src/rand.ml" 96 3667 3680 "src/rand.ml" 96 3667 3683
+type(
+  Int64.t
+)
+ident(
+  int_ref max "src/rand.ml" 76 3064 3090 "src/rand.ml" 76 3064 3093
+)
+"src/rand.ml" 96 3667 3684 "src/rand.ml" 96 3667 3686
+type(
+  int
+)
+ident(
+  int_ref nb "src/rand.ml" 76 3064 3094 "src/rand.ml" 76 3064 3096
+)
+"src/rand.ml" 96 3667 3687 "src/rand.ml" 96 3667 3688
+type(
+  B.G.t
+)
+ident(
+  int_ref g "src/rand.ml" 76 3064 3097 "src/rand.ml" 76 3064 3098
+)
+"src/rand.ml" 96 3667 3670 "src/rand.ml" 96 3667 3688
+call(
+  tail
+)
+type(
+  B.G.t
+)
+"src/rand.ml" 98 3695 3702 "src/rand.ml" 98 3695 3711
+type(
+  int -> B.G.t -> B.G.t
+)
+"src/rand.ml" 98 3695 3714 "src/rand.ml" 98 3695 3723
+type(
+  Int64.t -> int -> B.G.t -> B.G.t
+)
+ident(
+  int_ref add_edges "src/rand.ml" 91 3506 3511 "src/rand.ml" 91 3506 3520
+)
+"src/rand.ml" 98 3695 3725 "src/rand.ml" 98 3695 3729
+type(
+  Int64.t -> Int64.t
+)
+ident(
+  ext_ref Int64.pred
+)
+"src/rand.ml" 98 3695 3730 "src/rand.ml" 98 3695 3733
+type(
+  Int64.t
+)
+ident(
+  int_ref max "src/rand.ml" 76 3064 3090 "src/rand.ml" 76 3064 3093
+)
+"src/rand.ml" 98 3695 3724 "src/rand.ml" 98 3695 3734
+call(
+  stack
+)
+type(
+  Int64.t
+)
+"src/rand.ml" 98 3695 3714 "src/rand.ml" 98 3695 3734
+call(
+  stack
+)
+type(
+  int -> B.G.t -> B.G.t
+)
+"src/rand.ml" 99 3738 3744 "src/rand.ml" 99 3738 3756
+type(
+  Int64.t -> Int64.t
+)
+ident(
+  ext_ref Random.int64
+)
+"src/rand.ml" 99 3738 3757 "src/rand.ml" 99 3738 3760
+type(
+  Int64.t
+)
+ident(
+  int_ref max "src/rand.ml" 76 3064 3090 "src/rand.ml" 76 3064 3093
+)
+"src/rand.ml" 99 3738 3744 "src/rand.ml" 99 3738 3760
+call(
+  stack
+)
+type(
+  Int64.t
+)
+"src/rand.ml" 99 3738 3761 "src/rand.ml" 99 3738 3762
+type(
+  Int64.t -> Int64.t -> bool
+)
+ident(
+  ext_ref Pervasives.( < )
+)
+"src/rand.ml" 99 3738 3763 "src/rand.ml" 99 3738 3769
+type(
+  int -> Int64.t
+)
+ident(
+  ext_ref Int64.of_int
+)
+"src/rand.ml" 99 3738 3770 "src/rand.ml" 99 3738 3772
+type(
+  int
+)
+ident(
+  int_ref nb "src/rand.ml" 76 3064 3094 "src/rand.ml" 76 3064 3096
+)
+"src/rand.ml" 99 3738 3763 "src/rand.ml" 99 3738 3772
+type(
+  Int64.t
+)
+"src/rand.ml" 99 3738 3744 "src/rand.ml" 99 3738 3772
+type(
+  bool
+)
+"src/rand.ml" 100 3778 3783 "src/rand.ml" 100 3778 3792
+type(
+  int -> B.G.t -> B.G.t
+)
+ident(
+  int_ref add_edges "src/rand.ml" 98 3695 3702 "src/rand.ml" 98 3695 3711
+)
+"src/rand.ml" 100 3778 3794 "src/rand.ml" 100 3778 3796
+type(
+  int
+)
+ident(
+  int_ref nb "src/rand.ml" 76 3064 3094 "src/rand.ml" 76 3064 3096
+)
+"src/rand.ml" 100 3778 3797 "src/rand.ml" 100 3778 3798
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( - )
+)
+"src/rand.ml" 100 3778 3799 "src/rand.ml" 100 3778 3800
+type(
+  int
+)
+"src/rand.ml" 100 3778 3793 "src/rand.ml" 100 3778 3801
+type(
+  int
+)
+"src/rand.ml" 100 3778 3803 "src/rand.ml" 100 3778 3811
+type(
+  B.G.t -> B.G.V.t -> B.G.V.t -> B.G.t
+)
+ident(
+  int_ref add_edge "src/rand.ml" 71 2854 2878 "src/rand.ml" 71 2854 2886
+)
+"src/rand.ml" 100 3778 3812 "src/rand.ml" 100 3778 3813
+type(
+  B.G.t
+)
+ident(
+  int_ref g "src/rand.ml" 76 3064 3097 "src/rand.ml" 76 3064 3098
+)
+"src/rand.ml" 100 3778 3814 "src/rand.ml" 100 3778 3815
+type(
+  B.G.V.t array
+)
+ident(
+  int_ref a "src/rand.ml" 74 2970 2978 "src/rand.ml" 74 2970 2979
+)
+"src/rand.ml" 100 3778 3817 "src/rand.ml" 100 3778 3818
+type(
+  int
+)
+ident(
+  int_ref i "src/rand.ml" 76 3064 3086 "src/rand.ml" 76 3064 3087
+)
+"src/rand.ml" 100 3778 3814 "src/rand.ml" 100 3778 3819
+type(
+  B.G.V.t
+)
+"src/rand.ml" 100 3778 3820 "src/rand.ml" 100 3778 3821
+type(
+  B.G.V.t array
+)
+ident(
+  int_ref a "src/rand.ml" 74 2970 2978 "src/rand.ml" 74 2970 2979
+)
+"src/rand.ml" 100 3778 3823 "src/rand.ml" 100 3778 3824
+type(
+  int
+)
+ident(
+  int_ref j "src/rand.ml" 76 3064 3088 "src/rand.ml" 76 3064 3089
+)
+"src/rand.ml" 100 3778 3820 "src/rand.ml" 100 3778 3825
+type(
+  B.G.V.t
+)
+"src/rand.ml" 100 3778 3802 "src/rand.ml" 100 3778 3826
+call(
+  stack
+)
+type(
+  B.G.t
+)
+"src/rand.ml" 100 3778 3783 "src/rand.ml" 100 3778 3826
+call(
+  tail
+)
+type(
+  B.G.t
+)
+"src/rand.ml" 102 3835 3840 "src/rand.ml" 102 3835 3849
+type(
+  int -> B.G.t -> B.G.t
+)
+ident(
+  int_ref add_edges "src/rand.ml" 98 3695 3702 "src/rand.ml" 98 3695 3711
+)
+"src/rand.ml" 102 3835 3850 "src/rand.ml" 102 3835 3852
+type(
+  int
+)
+ident(
+  int_ref nb "src/rand.ml" 76 3064 3094 "src/rand.ml" 76 3064 3096
+)
+"src/rand.ml" 102 3835 3853 "src/rand.ml" 102 3835 3854
+type(
+  B.G.t
+)
+ident(
+  int_ref g "src/rand.ml" 76 3064 3097 "src/rand.ml" 76 3064 3098
+)
+"src/rand.ml" 102 3835 3840 "src/rand.ml" 102 3835 3854
+call(
+  tail
+)
+type(
+  B.G.t
+)
+"src/rand.ml" 99 3738 3741 "src/rand.ml" 102 3835 3854
+type(
+  B.G.t
+)
+"src/rand.ml" 98 3695 3698 "src/rand.ml" 102 3835 3854
+type(
+  B.G.t
+)
+"src/rand.ml" 95 3604 3605 "src/rand.ml" 102 3835 3854
+type(
+  B.G.t
+)
+"src/rand.ml" 91 3506 3507 "src/rand.ml" 102 3835 3854
+type(
+  B.G.t
+)
+"src/rand.ml" 88 3471 3477 "src/rand.ml" 102 3835 3854
+type(
+  B.G.t
+)
+"src/rand.ml" 77 3101 3107 "src/rand.ml" 102 3835 3854
+type(
+  B.G.t
+)
+"src/rand.ml" 104 3862 3866 "src/rand.ml" 104 3862 3875
+type(
+  int -> int -> Int64.t -> int -> B.G.t -> B.G.t
+)
+ident(
+  int_ref add_edges "src/rand.ml" 76 3064 3076 "src/rand.ml" 76 3064 3085
+)
+"src/rand.ml" 104 3862 3876 "src/rand.ml" 104 3862 3877
+type(
+  int
+)
+"src/rand.ml" 104 3862 3878 "src/rand.ml" 104 3862 3879
+type(
+  int
+)
+"src/rand.ml" 104 3862 3880 "src/rand.ml" 104 3862 3885
+type(
+  Int64.t
+)
+ident(
+  int_ref max_e "src/rand.ml" 73 2928 2936 "src/rand.ml" 73 2928 2941
+)
+"src/rand.ml" 104 3862 3886 "src/rand.ml" 104 3862 3887
+type(
+  int
+)
+ident(
+  int_ref e "src/rand.ml" 71 2854 2898 "src/rand.ml" 71 2854 2899
+)
+"src/rand.ml" 104 3862 3888 "src/rand.ml" 104 3862 3889
+type(
+  B.G.t
+)
+ident(
+  int_ref g "src/rand.ml" 75 3009 3017 "src/rand.ml" 75 3009 3018
+)
+"src/rand.ml" 104 3862 3866 "src/rand.ml" 104 3862 3889
+call(
+  tail
+)
+type(
+  B.G.t
+)
+"src/rand.ml" 76 3064 3068 "src/rand.ml" 104 3862 3889
+type(
+  B.G.t
+)
+"src/rand.ml" 75 3009 3013 "src/rand.ml" 104 3862 3889
+type(
+  B.G.t
+)
+"src/rand.ml" 74 2970 2974 "src/rand.ml" 104 3862 3889
+type(
+  B.G.t
+)
+"src/rand.ml" 73 2928 2932 "src/rand.ml" 104 3862 3889
+type(
+  B.G.t
+)
+"src/rand.ml" 72 2902 2906 "src/rand.ml" 104 3862 3889
+type(
+  B.G.t
+)
+"src/rand.ml" 106 3891 3897 "src/rand.ml" 106 3891 3903
+type(
+  loops:bool ->
+  v:int -> e:int -> (B.G.t -> B.G.vertex -> B.G.vertex -> B.G.t) -> B.G.t
+)
+ident(
+  def random "src/rand.ml" 110 4043 4045 "src/rand.ml" 121 4379 4382
+)
+"src/rand.ml" 106 3891 3905 "src/rand.ml" 106 3891 3910
+type(
+  bool
+)
+ident(
+  def loops "src/rand.ml" 106 3891 3911 "src/rand.ml" 108 3967 4041
+)
+"src/rand.ml" 106 3891 3912 "src/rand.ml" 106 3891 3913
+type(
+  int
+)
+ident(
+  def v "src/rand.ml" 106 3891 3914 "src/rand.ml" 108 3967 4041
+)
+"src/rand.ml" 106 3891 3915 "src/rand.ml" 106 3891 3916
+type(
+  int
+)
+ident(
+  def e "src/rand.ml" 107 3920 3924 "src/rand.ml" 108 3967 4041
+)
+"src/rand.ml" 107 3920 3928 "src/rand.ml" 107 3920 3929
+type(
+  float
+)
+"src/rand.ml" 107 3920 3932 "src/rand.ml" 107 3920 3937
+type(
+  int -> float
+)
+ident(
+  ext_ref Pervasives.float
+)
+"src/rand.ml" 107 3920 3938 "src/rand.ml" 107 3920 3939
+type(
+  int
+)
+ident(
+  int_ref e "src/rand.ml" 106 3891 3915 "src/rand.ml" 106 3891 3916
+)
+"src/rand.ml" 107 3920 3932 "src/rand.ml" 107 3920 3939
+type(
+  float
+)
+"src/rand.ml" 107 3920 3940 "src/rand.ml" 107 3920 3942
+type(
+  float -> float -> float
+)
+ident(
+  ext_ref Pervasives.( /. )
+)
+"src/rand.ml" 107 3920 3944 "src/rand.ml" 107 3920 3949
+type(
+  int -> float
+)
+ident(
+  ext_ref Pervasives.float
+)
+"src/rand.ml" 107 3920 3950 "src/rand.ml" 107 3920 3951
+type(
+  int
+)
+ident(
+  int_ref v "src/rand.ml" 106 3891 3912 "src/rand.ml" 106 3891 3913
+)
+"src/rand.ml" 107 3920 3944 "src/rand.ml" 107 3920 3951
+type(
+  float
+)
+"src/rand.ml" 107 3920 3952 "src/rand.ml" 107 3920 3954
+type(
+  float -> float -> float
+)
+ident(
+  ext_ref Pervasives.( *. )
+)
+"src/rand.ml" 107 3920 3955 "src/rand.ml" 107 3920 3960
+type(
+  int -> float
+)
+ident(
+  ext_ref Pervasives.float
+)
+"src/rand.ml" 107 3920 3961 "src/rand.ml" 107 3920 3962
+type(
+  int
+)
+ident(
+  int_ref v "src/rand.ml" 106 3891 3912 "src/rand.ml" 106 3891 3913
+)
+"src/rand.ml" 107 3920 3955 "src/rand.ml" 107 3920 3962
+type(
+  float
+)
+"src/rand.ml" 107 3920 3943 "src/rand.ml" 107 3920 3963
+type(
+  float
+)
+"src/rand.ml" 107 3920 3932 "src/rand.ml" 107 3920 3963
+type(
+  float
+)
+"src/rand.ml" 108 3967 3975 "src/rand.ml" 108 3967 3976
+type(
+  float
+)
+ident(
+  int_ref r "src/rand.ml" 107 3920 3928 "src/rand.ml" 107 3920 3929
+)
+"src/rand.ml" 108 3967 3977 "src/rand.ml" 108 3967 3978
+type(
+  float -> float -> bool
+)
+ident(
+  ext_ref Pervasives.( < )
+)
+"src/rand.ml" 108 3967 3979 "src/rand.ml" 108 3967 3982
+type(
+  float
+)
+"src/rand.ml" 108 3967 3975 "src/rand.ml" 108 3967 3982
+type(
+  bool
+)
+"src/rand.ml" 108 3967 3988 "src/rand.ml" 108 3967 4004
+type(
+  (B.G.t -> B.G.vertex -> B.G.vertex -> B.G.t) ->
+  loops:bool -> v:int -> e:int -> B.G.t
+)
+ident(
+  int_ref random_few_edges "src/rand.ml" 56 2352 2358 "src/rand.ml" 56 2352 2374
+)
+"src/rand.ml" 108 3967 4010 "src/rand.ml" 108 3967 4027
+type(
+  (B.G.t -> B.G.vertex -> B.G.vertex -> B.G.t) ->
+  loops:bool -> v:int -> e:int -> B.G.t
+)
+ident(
+  int_ref random_many_edges "src/rand.ml" 71 2854 2860 "src/rand.ml" 71 2854 2877
+)
+"src/rand.ml" 108 3967 3971 "src/rand.ml" 108 3967 4028
+type(
+  (B.G.t -> B.G.vertex -> B.G.vertex -> B.G.t) ->
+  loops:bool -> v:int -> e:int -> B.G.t
+)
+"src/rand.ml" 108 3967 4030 "src/rand.ml" 108 3967 4035
+type(
+  bool
+)
+ident(
+  int_ref loops "src/rand.ml" 106 3891 3905 "src/rand.ml" 106 3891 3910
+)
+"src/rand.ml" 108 3967 4037 "src/rand.ml" 108 3967 4038
+type(
+  int
+)
+ident(
+  int_ref v "src/rand.ml" 106 3891 3912 "src/rand.ml" 106 3891 3913
+)
+"src/rand.ml" 108 3967 4040 "src/rand.ml" 108 3967 4041
+type(
+  int
+)
+ident(
+  int_ref e "src/rand.ml" 106 3891 3915 "src/rand.ml" 106 3891 3916
+)
+"src/rand.ml" 108 3967 3971 "src/rand.ml" 108 3967 4041
+call(
+  tail
+)
+type(
+  (B.G.t -> B.G.vertex -> B.G.vertex -> B.G.t) -> B.G.t
+)
+"src/rand.ml" 107 3920 3924 "src/rand.ml" 108 3967 4041
+type(
+  (B.G.t -> B.G.vertex -> B.G.vertex -> B.G.t) -> B.G.t
+)
+"src/rand.ml" 110 4043 4049 "src/rand.ml" 110 4043 4054
+type(
+  ?loops:bool -> v:int -> e:int -> unit -> B.G.t
+)
+ident(
+  def graph "src/rand.ml" 112 4113 4115 "src/rand.ml" 121 4379 4382
+)
+"src/rand.ml" 110 4043 4057 "src/rand.ml" 110 4043 4062
+type(
+  bool
+)
+"src/rand.ml" 110 4043 4063 "src/rand.ml" 110 4043 4068
+type(
+  bool
+)
+type(
+  bool
+)
+ident(
+  int_ref *sth* "src/rand.ml" 110 4043 4063 "src/rand.ml" 110 4043 4068
+)
+type(
+  bool option
+)
+type(
+  bool option
+)
+type(
+  bool
+)
+ident(
+  def *sth* "src/rand.ml" 110 4043 4063 "src/rand.ml" 110 4043 4068
+)
+"src/rand.ml" 110 4043 4071 "src/rand.ml" 110 4043 4072
+type(
+  int
+)
+ident(
+  def v "src/rand.ml" 110 4043 4073 "src/rand.ml" 110 4043 4111
+)
+"src/rand.ml" 110 4043 4074 "src/rand.ml" 110 4043 4075
+type(
+  int
+)
+ident(
+  def e "src/rand.ml" 110 4043 4076 "src/rand.ml" 110 4043 4111
+)
+"src/rand.ml" 110 4043 4076 "src/rand.ml" 110 4043 4078
+type(
+  unit
+)
+"src/rand.ml" 110 4043 4081 "src/rand.ml" 110 4043 4087
+type(
+  loops:bool ->
+  v:int -> e:int -> (B.G.t -> B.G.vertex -> B.G.vertex -> B.G.t) -> B.G.t
+)
+ident(
+  int_ref random "src/rand.ml" 106 3891 3897 "src/rand.ml" 106 3891 3903
+)
+"src/rand.ml" 110 4043 4088 "src/rand.ml" 110 4043 4098
+type(
+  B.G.t -> B.G.vertex -> B.G.vertex -> B.G.t
+)
+ident(
+  ext_ref B.add_edge
+)
+"src/rand.ml" 110 4043 4100 "src/rand.ml" 110 4043 4105
+type(
+  bool
+)
+ident(
+  int_ref loops "src/rand.ml" 110 4043 4057 "src/rand.ml" 110 4043 4062
+)
+"src/rand.ml" 110 4043 4107 "src/rand.ml" 110 4043 4108
+type(
+  int
+)
+ident(
+  int_ref v "src/rand.ml" 110 4043 4071 "src/rand.ml" 110 4043 4072
+)
+"src/rand.ml" 110 4043 4110 "src/rand.ml" 110 4043 4111
+type(
+  int
+)
+ident(
+  int_ref e "src/rand.ml" 110 4043 4074 "src/rand.ml" 110 4043 4075
+)
+"src/rand.ml" 110 4043 4081 "src/rand.ml" 110 4043 4111
+call(
+  tail
+)
+type(
+  B.G.t
+)
+"src/rand.ml" 112 4113 4119 "src/rand.ml" 112 4113 4126
+type(
+  (B.G.vertex -> B.G.vertex -> B.G.E.label) ->
+  ?loops:bool -> v:int -> e:int -> unit -> B.G.t
+)
+ident(
+  def labeled "src/rand.ml" 118 4270 4272 "src/rand.ml" 121 4379 4382
+)
+"src/rand.ml" 112 4113 4127 "src/rand.ml" 112 4113 4128
+type(
+  B.G.vertex -> B.G.vertex -> B.G.E.label
+)
+ident(
+  def f "src/rand.ml" 112 4113 4129 "src/rand.ml" 115 4236 4254
+)
+"src/rand.ml" 112 4113 4131 "src/rand.ml" 112 4113 4136
+type(
+  bool
+)
+"src/rand.ml" 112 4113 4137 "src/rand.ml" 112 4113 4142
+type(
+  bool
+)
+type(
+  bool
+)
+ident(
+  int_ref *sth* "src/rand.ml" 112 4113 4137 "src/rand.ml" 112 4113 4142
+)
+type(
+  bool option
+)
+type(
+  bool option
+)
+type(
+  bool
+)
+ident(
+  def *sth* "src/rand.ml" 112 4113 4137 "src/rand.ml" 112 4113 4142
+)
+"src/rand.ml" 112 4113 4145 "src/rand.ml" 112 4113 4146
+type(
+  int
+)
+ident(
+  def v "src/rand.ml" 112 4113 4147 "src/rand.ml" 115 4236 4254
+)
+"src/rand.ml" 112 4113 4148 "src/rand.ml" 112 4113 4149
+type(
+  int
+)
+ident(
+  def e "src/rand.ml" 112 4113 4150 "src/rand.ml" 115 4236 4254
+)
+"src/rand.ml" 112 4113 4150 "src/rand.ml" 112 4113 4152
+type(
+  unit
+)
+"src/rand.ml" 113 4156 4160 "src/rand.ml" 113 4156 4166
+type(
+  loops:bool ->
+  v:int -> e:int -> (B.G.t -> B.G.vertex -> B.G.vertex -> B.G.t) -> B.G.t
+)
+ident(
+  int_ref random "src/rand.ml" 106 3891 3897 "src/rand.ml" 106 3891 3903
+)
+"src/rand.ml" 114 4168 4179 "src/rand.ml" 114 4168 4180
+type(
+  B.G.t
+)
+ident(
+  def g "src/rand.ml" 114 4168 4181 "src/rand.ml" 114 4168 4233
+)
+"src/rand.ml" 114 4168 4181 "src/rand.ml" 114 4168 4183
+type(
+  B.G.vertex
+)
+ident(
+  def v1 "src/rand.ml" 114 4168 4184 "src/rand.ml" 114 4168 4233
+)
+"src/rand.ml" 114 4168 4184 "src/rand.ml" 114 4168 4186
+type(
+  B.G.vertex
+)
+ident(
+  def v2 "src/rand.ml" 114 4168 4190 "src/rand.ml" 114 4168 4233
+)
+"src/rand.ml" 114 4168 4190 "src/rand.ml" 114 4168 4202
+type(
+  B.G.t -> B.G.E.t -> B.G.t
+)
+ident(
+  ext_ref B.add_edge_e
+)
+"src/rand.ml" 114 4168 4203 "src/rand.ml" 114 4168 4204
+type(
+  B.G.t
+)
+ident(
+  int_ref g "src/rand.ml" 114 4168 4179 "src/rand.ml" 114 4168 4180
+)
+"src/rand.ml" 114 4168 4206 "src/rand.ml" 114 4168 4216
+type(
+  B.G.E.vertex -> B.G.E.label -> B.G.E.vertex -> B.G.E.t
+)
+ident(
+  ext_ref B.G.E.create
+)
+"src/rand.ml" 114 4168 4217 "src/rand.ml" 114 4168 4219
+type(
+  B.G.vertex
+)
+ident(
+  int_ref v1 "src/rand.ml" 114 4168 4181 "src/rand.ml" 114 4168 4183
+)
+"src/rand.ml" 114 4168 4221 "src/rand.ml" 114 4168 4222
+type(
+  B.G.vertex -> B.G.vertex -> B.G.E.label
+)
+ident(
+  int_ref f "src/rand.ml" 112 4113 4127 "src/rand.ml" 112 4113 4128
+)
+"src/rand.ml" 114 4168 4223 "src/rand.ml" 114 4168 4225
+type(
+  B.G.vertex
+)
+ident(
+  int_ref v1 "src/rand.ml" 114 4168 4181 "src/rand.ml" 114 4168 4183
+)
+"src/rand.ml" 114 4168 4226 "src/rand.ml" 114 4168 4228
+type(
+  B.G.vertex
+)
+ident(
+  int_ref v2 "src/rand.ml" 114 4168 4184 "src/rand.ml" 114 4168 4186
+)
+"src/rand.ml" 114 4168 4220 "src/rand.ml" 114 4168 4229
+call(
+  stack
+)
+type(
+  B.G.E.label
+)
+"src/rand.ml" 114 4168 4230 "src/rand.ml" 114 4168 4232
+type(
+  B.G.vertex
+)
+ident(
+  int_ref v2 "src/rand.ml" 114 4168 4184 "src/rand.ml" 114 4168 4186
+)
+"src/rand.ml" 114 4168 4205 "src/rand.ml" 114 4168 4233
+call(
+  stack
+)
+type(
+  B.G.E.t
+)
+"src/rand.ml" 114 4168 4190 "src/rand.ml" 114 4168 4233
+call(
+  tail
+)
+type(
+  B.G.t
+)
+"src/rand.ml" 114 4168 4174 "src/rand.ml" 114 4168 4234
+type(
+  B.G.t -> B.G.vertex -> B.G.vertex -> B.G.t
+)
+"src/rand.ml" 115 4236 4243 "src/rand.ml" 115 4236 4248
+type(
+  bool
+)
+ident(
+  int_ref loops "src/rand.ml" 112 4113 4131 "src/rand.ml" 112 4113 4136
+)
+"src/rand.ml" 115 4236 4250 "src/rand.ml" 115 4236 4251
+type(
+  int
+)
+ident(
+  int_ref v "src/rand.ml" 112 4113 4145 "src/rand.ml" 112 4113 4146
+)
+"src/rand.ml" 115 4236 4253 "src/rand.ml" 115 4236 4254
+type(
+  int
+)
+ident(
+  int_ref e "src/rand.ml" 112 4113 4148 "src/rand.ml" 112 4113 4149
+)
+"src/rand.ml" 113 4156 4160 "src/rand.ml" 115 4236 4254
+call(
+  tail
+)
+type(
+  B.G.t
+)
+"src/rand.ml" 118 4270 4276 "src/rand.ml" 118 4270 4292
+type(
+  loops:bool -> v:int -> e:int -> B.G.t
+)
+ident(
+  def random_few_edges "src/rand.ml" 119 4323 4325 "src/rand.ml" 121 4379 4382
+)
+"src/rand.ml" 118 4270 4295 "src/rand.ml" 118 4270 4311
+type(
+  (B.G.t -> B.G.vertex -> B.G.vertex -> B.G.t) ->
+  loops:bool -> v:int -> e:int -> B.G.t
+)
+ident(
+  int_ref random_few_edges "src/rand.ml" 56 2352 2358 "src/rand.ml" 56 2352 2374
+)
+"src/rand.ml" 118 4270 4312 "src/rand.ml" 118 4270 4322
+type(
+  B.G.t -> B.G.vertex -> B.G.vertex -> B.G.t
+)
+ident(
+  ext_ref B.add_edge
+)
+"src/rand.ml" 118 4270 4295 "src/rand.ml" 118 4270 4322
+call(
+  stack
+)
+type(
+  loops:bool -> v:int -> e:int -> B.G.t
+)
+"src/rand.ml" 119 4323 4329 "src/rand.ml" 119 4323 4346
+type(
+  loops:bool -> v:int -> e:int -> B.G.t
+)
+ident(
+  def random_many_edges "src/rand.ml" 119 4323 4377 "src/rand.ml" 121 4379 4382
+)
+"src/rand.ml" 119 4323 4349 "src/rand.ml" 119 4323 4366
+type(
+  (B.G.t -> B.G.V.t -> B.G.V.t -> B.G.t) ->
+  loops:bool -> v:int -> e:int -> B.G.t
+)
+ident(
+  int_ref random_many_edges "src/rand.ml" 71 2854 2860 "src/rand.ml" 71 2854 2877
+)
+"src/rand.ml" 119 4323 4367 "src/rand.ml" 119 4323 4377
+type(
+  B.G.t -> B.G.V.t -> B.G.V.t -> B.G.t
+)
+ident(
+  ext_ref B.add_edge
+)
+"src/rand.ml" 119 4323 4349 "src/rand.ml" 119 4323 4377
+call(
+  stack
+)
+type(
+  loops:bool -> v:int -> e:int -> B.G.t
+)
+"src/rand.ml" 123 4384 4436 "src/rand.ml" 123 4384 4448
+call(
+  stack
+)
+"src/rand.ml" 123 4384 4431 "src/rand.ml" 123 4384 4449
+call(
+  tail
+)
+"src/rand.ml" 125 4451 4503 "src/rand.ml" 125 4451 4515
+call(
+  stack
+)
+"src/rand.ml" 125 4451 4498 "src/rand.ml" 125 4451 4516
+call(
+  tail
+)
+"src/rand.ml" 148 4908 4918 "src/rand.ml" 148 4908 4921
+type(
+  B.G.V.t -> B.G.V.t -> B.G.V.t -> bool
+)
+ident(
+  def ccw "src/rand.ml" 150 4997 5003 "src/rand.ml" 158 5290 5297
+)
+"src/rand.ml" 148 4908 4922 "src/rand.ml" 148 4908 4924
+type(
+  B.G.V.t
+)
+ident(
+  def v1 "src/rand.ml" 148 4908 4925 "src/rand.ml" 149 4934 4996
+)
+"src/rand.ml" 148 4908 4925 "src/rand.ml" 148 4908 4927
+type(
+  B.G.V.t
+)
+ident(
+  def v2 "src/rand.ml" 148 4908 4928 "src/rand.ml" 149 4934 4996
+)
+"src/rand.ml" 148 4908 4928 "src/rand.ml" 148 4908 4930
+type(
+  B.G.V.t
+)
+ident(
+  def v3 "src/rand.ml" 149 4934 4935 "src/rand.ml" 149 4934 4996
+)
+"src/rand.ml" 149 4934 4935 "src/rand.ml" 149 4934 4957
+type(
+  Delaunay.IntPoints.point ->
+  Delaunay.IntPoints.point -> Delaunay.IntPoints.point -> bool
+)
+ident(
+  ext_ref Delaunay.IntPoints.ccw
+)
+"src/rand.ml" 149 4934 4959 "src/rand.ml" 149 4934 4966
+type(
+  B.G.V.t -> B.G.V.label
+)
+ident(
+  ext_ref B.G.V.label
+)
+"src/rand.ml" 149 4934 4967 "src/rand.ml" 149 4934 4969
+type(
+  B.G.V.t
+)
+ident(
+  int_ref v1 "src/rand.ml" 148 4908 4922 "src/rand.ml" 148 4908 4924
+)
+"src/rand.ml" 149 4934 4958 "src/rand.ml" 149 4934 4970
+call(
+  stack
+)
+type(
+  B.G.V.label
+)
+"src/rand.ml" 149 4934 4972 "src/rand.ml" 149 4934 4979
+type(
+  B.G.V.t -> B.G.V.label
+)
+ident(
+  ext_ref B.G.V.label
+)
+"src/rand.ml" 149 4934 4980 "src/rand.ml" 149 4934 4982
+type(
+  B.G.V.t
+)
+ident(
+  int_ref v2 "src/rand.ml" 148 4908 4925 "src/rand.ml" 148 4908 4927
+)
+"src/rand.ml" 149 4934 4971 "src/rand.ml" 149 4934 4983
+call(
+  stack
+)
+type(
+  B.G.V.label
+)
+"src/rand.ml" 149 4934 4985 "src/rand.ml" 149 4934 4992
+type(
+  B.G.V.t -> B.G.V.label
+)
+ident(
+  ext_ref B.G.V.label
+)
+"src/rand.ml" 149 4934 4993 "src/rand.ml" 149 4934 4995
+type(
+  B.G.V.t
+)
+ident(
+  int_ref v3 "src/rand.ml" 148 4908 4928 "src/rand.ml" 148 4908 4930
+)
+"src/rand.ml" 149 4934 4984 "src/rand.ml" 149 4934 4996
+call(
+  stack
+)
+type(
+  B.G.V.label
+)
+"src/rand.ml" 149 4934 4935 "src/rand.ml" 149 4934 4996
+call(
+  tail
+)
+type(
+  bool
+)
+"src/rand.ml" 150 4997 5007 "src/rand.ml" 150 4997 5016
+type(
+  B.G.V.t -> B.G.V.t -> B.G.V.t -> B.G.V.t -> bool
+)
+ident(
+  def in_circle "src/rand.ml" 153 5117 5123 "src/rand.ml" 158 5290 5297
+)
+"src/rand.ml" 150 4997 5017 "src/rand.ml" 150 4997 5019
+type(
+  B.G.V.t
+)
+ident(
+  def v1 "src/rand.ml" 150 4997 5020 "src/rand.ml" 152 5062 5116
+)
+"src/rand.ml" 150 4997 5020 "src/rand.ml" 150 4997 5022
+type(
+  B.G.V.t
+)
+ident(
+  def v2 "src/rand.ml" 150 4997 5023 "src/rand.ml" 152 5062 5116
+)
+"src/rand.ml" 150 4997 5023 "src/rand.ml" 150 4997 5025
+type(
+  B.G.V.t
+)
+ident(
+  def v3 "src/rand.ml" 150 4997 5026 "src/rand.ml" 152 5062 5116
+)
+"src/rand.ml" 150 4997 5026 "src/rand.ml" 150 4997 5028
+type(
+  B.G.V.t
+)
+ident(
+  def v4 "src/rand.ml" 151 5031 5032 "src/rand.ml" 152 5062 5116
+)
+"src/rand.ml" 151 5031 5032 "src/rand.ml" 151 5031 5060
+type(
+  Delaunay.IntPoints.point ->
+  Delaunay.IntPoints.point ->
+  Delaunay.IntPoints.point -> Delaunay.IntPoints.point -> bool
+)
+ident(
+  ext_ref Delaunay.IntPoints.in_circle
+)
+"src/rand.ml" 152 5062 5066 "src/rand.ml" 152 5062 5073
+type(
+  B.G.V.t -> B.G.V.label
+)
+ident(
+  ext_ref B.G.V.label
+)
+"src/rand.ml" 152 5062 5074 "src/rand.ml" 152 5062 5076
+type(
+  B.G.V.t
+)
+ident(
+  int_ref v1 "src/rand.ml" 150 4997 5017 "src/rand.ml" 150 4997 5019
+)
+"src/rand.ml" 152 5062 5065 "src/rand.ml" 152 5062 5077
+call(
+  stack
+)
+type(
+  B.G.V.label
+)
+"src/rand.ml" 152 5062 5079 "src/rand.ml" 152 5062 5086
+type(
+  B.G.V.t -> B.G.V.label
+)
+ident(
+  ext_ref B.G.V.label
+)
+"src/rand.ml" 152 5062 5087 "src/rand.ml" 152 5062 5089
+type(
+  B.G.V.t
+)
+ident(
+  int_ref v2 "src/rand.ml" 150 4997 5020 "src/rand.ml" 150 4997 5022
+)
+"src/rand.ml" 152 5062 5078 "src/rand.ml" 152 5062 5090
+call(
+  stack
+)
+type(
+  B.G.V.label
+)
+"src/rand.ml" 152 5062 5092 "src/rand.ml" 152 5062 5099
+type(
+  B.G.V.t -> B.G.V.label
+)
+ident(
+  ext_ref B.G.V.label
+)
+"src/rand.ml" 152 5062 5100 "src/rand.ml" 152 5062 5102
+type(
+  B.G.V.t
+)
+ident(
+  int_ref v3 "src/rand.ml" 150 4997 5023 "src/rand.ml" 150 4997 5025
+)
+"src/rand.ml" 152 5062 5091 "src/rand.ml" 152 5062 5103
+call(
+  stack
+)
+type(
+  B.G.V.label
+)
+"src/rand.ml" 152 5062 5105 "src/rand.ml" 152 5062 5112
+type(
+  B.G.V.t -> B.G.V.label
+)
+ident(
+  ext_ref B.G.V.label
+)
+"src/rand.ml" 152 5062 5113 "src/rand.ml" 152 5062 5115
+type(
+  B.G.V.t
+)
+ident(
+  int_ref v4 "src/rand.ml" 150 4997 5026 "src/rand.ml" 150 4997 5028
+)
+"src/rand.ml" 152 5062 5104 "src/rand.ml" 152 5062 5116
+call(
+  stack
+)
+type(
+  B.G.V.label
+)
+"src/rand.ml" 151 5031 5032 "src/rand.ml" 152 5062 5116
+call(
+  tail
+)
+type(
+  bool
+)
+"src/rand.ml" 153 5117 5127 "src/rand.ml" 153 5117 5135
+type(
+  B.G.V.t -> B.G.V.t -> int
+)
+ident(
+  def distance "src/rand.ml" 157 5240 5289 "src/rand.ml" 158 5290 5297
+)
+"src/rand.ml" 153 5117 5136 "src/rand.ml" 153 5117 5138
+type(
+  B.G.V.t
+)
+ident(
+  def v1 "src/rand.ml" 153 5117 5139 "src/rand.ml" 157 5240 5289
+)
+"src/rand.ml" 153 5117 5139 "src/rand.ml" 153 5117 5141
+type(
+  B.G.V.t
+)
+ident(
+  def v2 "src/rand.ml" 154 5144 5145 "src/rand.ml" 157 5240 5289
+)
+"src/rand.ml" 154 5144 5149 "src/rand.ml" 154 5144 5151
+type(
+  int
+)
+"src/rand.ml" 154 5144 5152 "src/rand.ml" 154 5144 5154
+type(
+  int
+)
+"src/rand.ml" 154 5144 5149 "src/rand.ml" 154 5144 5154
+type(
+  B.G.V.label
+)
+"src/rand.ml" 154 5144 5157 "src/rand.ml" 154 5144 5164
+type(
+  B.G.V.t -> B.G.V.label
+)
+ident(
+  ext_ref B.G.V.label
+)
+"src/rand.ml" 154 5144 5165 "src/rand.ml" 154 5144 5167
+type(
+  B.G.V.t
+)
+ident(
+  int_ref v1 "src/rand.ml" 153 5117 5136 "src/rand.ml" 153 5117 5138
+)
+"src/rand.ml" 154 5144 5157 "src/rand.ml" 154 5144 5167
+call(
+  stack
+)
+type(
+  B.G.V.label
+)
+"src/rand.ml" 155 5171 5176 "src/rand.ml" 155 5171 5178
+type(
+  int
+)
+"src/rand.ml" 155 5171 5179 "src/rand.ml" 155 5171 5181
+type(
+  int
+)
+"src/rand.ml" 155 5171 5176 "src/rand.ml" 155 5171 5181
+type(
+  B.G.V.label
+)
+"src/rand.ml" 155 5171 5184 "src/rand.ml" 155 5171 5191
+type(
+  B.G.V.t -> B.G.V.label
+)
+ident(
+  ext_ref B.G.V.label
+)
+"src/rand.ml" 155 5171 5192 "src/rand.ml" 155 5171 5194
+type(
+  B.G.V.t
+)
+ident(
+  int_ref v2 "src/rand.ml" 153 5117 5139 "src/rand.ml" 153 5117 5141
+)
+"src/rand.ml" 155 5171 5184 "src/rand.ml" 155 5171 5194
+call(
+  stack
+)
+type(
+  B.G.V.label
+)
+"src/rand.ml" 156 5198 5203 "src/rand.ml" 156 5198 5206
+type(
+  int -> float
+)
+"src/rand.ml" 156 5198 5207 "src/rand.ml" 156 5198 5208
+type(
+  int
+)
+ident(
+  def x "src/rand.ml" 156 5198 5211 "src/rand.ml" 156 5198 5236
+)
+"src/rand.ml" 156 5198 5215 "src/rand.ml" 156 5198 5216
+type(
+  float
+)
+"src/rand.ml" 156 5198 5219 "src/rand.ml" 156 5198 5224
+type(
+  int -> float
+)
+ident(
+  ext_ref Pervasives.float
+)
+"src/rand.ml" 156 5198 5225 "src/rand.ml" 156 5198 5226
+type(
+  int
+)
+ident(
+  int_ref x "src/rand.ml" 156 5198 5207 "src/rand.ml" 156 5198 5208
+)
+"src/rand.ml" 156 5198 5219 "src/rand.ml" 156 5198 5226
+type(
+  float
+)
+"src/rand.ml" 156 5198 5230 "src/rand.ml" 156 5198 5231
+type(
+  float
+)
+ident(
+  int_ref x "src/rand.ml" 156 5198 5215 "src/rand.ml" 156 5198 5216
+)
+"src/rand.ml" 156 5198 5232 "src/rand.ml" 156 5198 5234
+type(
+  float -> float -> float
+)
+ident(
+  ext_ref Pervasives.( *. )
+)
+"src/rand.ml" 156 5198 5235 "src/rand.ml" 156 5198 5236
+type(
+  float
+)
+ident(
+  int_ref x "src/rand.ml" 156 5198 5215 "src/rand.ml" 156 5198 5216
+)
+"src/rand.ml" 156 5198 5230 "src/rand.ml" 156 5198 5236
+type(
+  float
+)
+"src/rand.ml" 156 5198 5211 "src/rand.ml" 156 5198 5236
+type(
+  float
+)
+"src/rand.ml" 157 5240 5241 "src/rand.ml" 157 5240 5249
+type(
+  float -> int
+)
+ident(
+  ext_ref Pervasives.truncate
+)
+"src/rand.ml" 157 5240 5251 "src/rand.ml" 157 5240 5255
+type(
+  float -> float
+)
+ident(
+  ext_ref Pervasives.sqrt
+)
+"src/rand.ml" 157 5240 5257 "src/rand.ml" 157 5240 5260
+type(
+  int -> float
+)
+ident(
+  int_ref sqr "src/rand.ml" 156 5198 5203 "src/rand.ml" 156 5198 5206
+)
+"src/rand.ml" 157 5240 5262 "src/rand.ml" 157 5240 5264
+type(
+  int
+)
+ident(
+  int_ref x1 "src/rand.ml" 154 5144 5149 "src/rand.ml" 154 5144 5151
+)
+"src/rand.ml" 157 5240 5265 "src/rand.ml" 157 5240 5266
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( - )
+)
+"src/rand.ml" 157 5240 5267 "src/rand.ml" 157 5240 5269
+type(
+  int
+)
+ident(
+  int_ref x2 "src/rand.ml" 155 5171 5176 "src/rand.ml" 155 5171 5178
+)
+"src/rand.ml" 157 5240 5261 "src/rand.ml" 157 5240 5270
+type(
+  int
+)
+"src/rand.ml" 157 5240 5257 "src/rand.ml" 157 5240 5270
+call(
+  stack
+)
+type(
+  float
+)
+"src/rand.ml" 157 5240 5271 "src/rand.ml" 157 5240 5273
+type(
+  float -> float -> float
+)
+ident(
+  ext_ref Pervasives.( +. )
+)
+"src/rand.ml" 157 5240 5274 "src/rand.ml" 157 5240 5277
+type(
+  int -> float
+)
+ident(
+  int_ref sqr "src/rand.ml" 156 5198 5203 "src/rand.ml" 156 5198 5206
+)
+"src/rand.ml" 157 5240 5279 "src/rand.ml" 157 5240 5281
+type(
+  int
+)
+ident(
+  int_ref y1 "src/rand.ml" 154 5144 5152 "src/rand.ml" 154 5144 5154
+)
+"src/rand.ml" 157 5240 5282 "src/rand.ml" 157 5240 5283
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( - )
+)
+"src/rand.ml" 157 5240 5284 "src/rand.ml" 157 5240 5286
+type(
+  int
+)
+ident(
+  int_ref y2 "src/rand.ml" 155 5171 5179 "src/rand.ml" 155 5171 5181
+)
+"src/rand.ml" 157 5240 5278 "src/rand.ml" 157 5240 5287
+type(
+  int
+)
+"src/rand.ml" 157 5240 5274 "src/rand.ml" 157 5240 5287
+call(
+  stack
+)
+type(
+  float
+)
+"src/rand.ml" 157 5240 5256 "src/rand.ml" 157 5240 5288
+type(
+  float
+)
+"src/rand.ml" 157 5240 5250 "src/rand.ml" 157 5240 5289
+type(
+  float
+)
+"src/rand.ml" 157 5240 5241 "src/rand.ml" 157 5240 5289
+type(
+  int
+)
+"src/rand.ml" 156 5198 5199 "src/rand.ml" 157 5240 5289
+type(
+  int
+)
+"src/rand.ml" 155 5171 5172 "src/rand.ml" 157 5240 5289
+type(
+  int
+)
+"src/rand.ml" 154 5144 5145 "src/rand.ml" 157 5240 5289
+type(
+  int
+)
+"src/rand.ml" 160 5299 5326 "src/rand.ml" 160 5299 5346
+call(
+  stack
+)
+"src/rand.ml" 162 5348 5356 "src/rand.ml" 162 5348 5361
+type(
+  ?loops:bool ->
+  xrange:int * int -> yrange:int * int -> prob:float -> int -> B.G.t
+)
+ident(
+  def graph "src/rand.ml" 197 6544 6548 "src/rand.ml" 199 6550 6555
+)
+"src/rand.ml" 162 5348 5364 "src/rand.ml" 162 5348 5369
+type(
+  bool
+)
+"src/rand.ml" 162 5348 5370 "src/rand.ml" 162 5348 5375
+type(
+  bool
+)
+type(
+  bool
+)
+ident(
+  int_ref *sth* "src/rand.ml" 162 5348 5370 "src/rand.ml" 162 5348 5375
+)
+type(
+  bool option
+)
+type(
+  bool option
+)
+type(
+  bool
+)
+ident(
+  def *sth* "src/rand.ml" 162 5348 5370 "src/rand.ml" 162 5348 5375
+)
+"src/rand.ml" 162 5348 5386 "src/rand.ml" 162 5348 5390
+type(
+  int
+)
+ident(
+  def xmin "src/rand.ml" 162 5348 5397 "src/rand.ml" 197 6544 6548
+)
+"src/rand.ml" 162 5348 5391 "src/rand.ml" 162 5348 5395
+type(
+  int
+)
+ident(
+  def xmax "src/rand.ml" 162 5348 5397 "src/rand.ml" 197 6544 6548
+)
+"src/rand.ml" 162 5348 5385 "src/rand.ml" 162 5348 5396
+type(
+  int * int
+)
+"src/rand.ml" 162 5348 5406 "src/rand.ml" 162 5348 5410
+type(
+  int
+)
+ident(
+  def ymin "src/rand.ml" 162 5348 5417 "src/rand.ml" 197 6544 6548
+)
+"src/rand.ml" 162 5348 5411 "src/rand.ml" 162 5348 5415
+type(
+  int
+)
+ident(
+  def ymax "src/rand.ml" 162 5348 5417 "src/rand.ml" 197 6544 6548
+)
+"src/rand.ml" 162 5348 5405 "src/rand.ml" 162 5348 5416
+type(
+  int * int
+)
+"src/rand.ml" 162 5348 5418 "src/rand.ml" 162 5348 5422
+type(
+  float
+)
+ident(
+  def prob "src/rand.ml" 162 5348 5423 "src/rand.ml" 197 6544 6548
+)
+"src/rand.ml" 162 5348 5423 "src/rand.ml" 162 5348 5424
+type(
+  int
+)
+ident(
+  def v "src/rand.ml" 163 5427 5433 "src/rand.ml" 197 6544 6548
+)
+"src/rand.ml" 163 5427 5436 "src/rand.ml" 163 5427 5439
+type(
+  bool -> bool
+)
+ident(
+  ext_ref Pervasives.not
+)
+"src/rand.ml" 163 5427 5441 "src/rand.ml" 163 5427 5444
+type(
+  float
+)
+"src/rand.ml" 163 5427 5445 "src/rand.ml" 163 5427 5447
+type(
+  float -> float -> bool
+)
+ident(
+  ext_ref Pervasives.( <= )
+)
+"src/rand.ml" 163 5427 5448 "src/rand.ml" 163 5427 5452
+type(
+  float
+)
+ident(
+  int_ref prob "src/rand.ml" 162 5348 5418 "src/rand.ml" 162 5348 5422
+)
+"src/rand.ml" 163 5427 5441 "src/rand.ml" 163 5427 5452
+type(
+  bool
+)
+"src/rand.ml" 163 5427 5453 "src/rand.ml" 163 5427 5455
+type(
+  bool -> bool -> bool
+)
+ident(
+  ext_ref Pervasives.( && )
+)
+"src/rand.ml" 163 5427 5456 "src/rand.ml" 163 5427 5460
+type(
+  float
+)
+ident(
+  int_ref prob "src/rand.ml" 162 5348 5418 "src/rand.ml" 162 5348 5422
+)
+"src/rand.ml" 163 5427 5461 "src/rand.ml" 163 5427 5463
+type(
+  float -> float -> bool
+)
+ident(
+  ext_ref Pervasives.( <= )
+)
+"src/rand.ml" 163 5427 5464 "src/rand.ml" 163 5427 5467
+type(
+  float
+)
+"src/rand.ml" 163 5427 5456 "src/rand.ml" 163 5427 5467
+type(
+  bool
+)
+"src/rand.ml" 163 5427 5440 "src/rand.ml" 163 5427 5468
+type(
+  bool
+)
+"src/rand.ml" 163 5427 5436 "src/rand.ml" 163 5427 5468
+type(
+  bool
+)
+"src/rand.ml" 163 5427 5474 "src/rand.ml" 163 5427 5485
+type(
+  string -> unit
+)
+ident(
+  ext_ref Pervasives.invalid_arg
+)
+"src/rand.ml" 163 5427 5486 "src/rand.ml" 163 5427 5500
+type(
+  string
+)
+"src/rand.ml" 163 5427 5474 "src/rand.ml" 163 5427 5500
+call(
+  stack
+)
+type(
+  unit
+)
+"src/rand.ml" 163 5427 5433 "src/rand.ml" 163 5427 5500
+type(
+  unit
+)
+"src/rand.ml" 164 5502 5511 "src/rand.ml" 164 5502 5512
+type(
+  int
+)
+ident(
+  int_ref v "src/rand.ml" 162 5348 5423 "src/rand.ml" 162 5348 5424
+)
+"src/rand.ml" 164 5502 5513 "src/rand.ml" 164 5502 5514
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( < )
+)
+"src/rand.ml" 164 5502 5515 "src/rand.ml" 164 5502 5516
+type(
+  int
+)
+"src/rand.ml" 164 5502 5511 "src/rand.ml" 164 5502 5516
+type(
+  bool
+)
+"src/rand.ml" 164 5502 5522 "src/rand.ml" 164 5502 5533
+type(
+  string -> unit
+)
+ident(
+  ext_ref Pervasives.invalid_arg
+)
+"src/rand.ml" 164 5502 5534 "src/rand.ml" 164 5502 5548
+type(
+  string
+)
+"src/rand.ml" 164 5502 5522 "src/rand.ml" 164 5502 5548
+call(
+  stack
+)
+type(
+  unit
+)
+"src/rand.ml" 164 5502 5508 "src/rand.ml" 164 5502 5548
+type(
+  unit
+)
+"src/rand.ml" 166 5613 5623 "src/rand.ml" 166 5613 5635
+type(
+  unit -> int * int
+)
+"src/rand.ml" 166 5613 5636 "src/rand.ml" 166 5613 5638
+type(
+  unit
+)
+"src/rand.ml" 167 5641 5642 "src/rand.ml" 167 5641 5646
+type(
+  int
+)
+ident(
+  int_ref xmin "src/rand.ml" 162 5348 5386 "src/rand.ml" 162 5348 5390
+)
+"src/rand.ml" 167 5641 5647 "src/rand.ml" 167 5641 5648
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( + )
+)
+"src/rand.ml" 167 5641 5649 "src/rand.ml" 167 5641 5659
+type(
+  int -> int
+)
+ident(
+  ext_ref Random.int
+)
+"src/rand.ml" 167 5641 5661 "src/rand.ml" 167 5641 5662
+type(
+  int
+)
+"src/rand.ml" 167 5641 5663 "src/rand.ml" 167 5641 5664
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( + )
+)
+"src/rand.ml" 167 5641 5665 "src/rand.ml" 167 5641 5669
+type(
+  int
+)
+ident(
+  int_ref xmax "src/rand.ml" 162 5348 5391 "src/rand.ml" 162 5348 5395
+)
+"src/rand.ml" 167 5641 5661 "src/rand.ml" 167 5641 5669
+type(
+  int
+)
+"src/rand.ml" 167 5641 5670 "src/rand.ml" 167 5641 5671
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( - )
+)
+"src/rand.ml" 167 5641 5672 "src/rand.ml" 167 5641 5676
+type(
+  int
+)
+ident(
+  int_ref xmin "src/rand.ml" 162 5348 5386 "src/rand.ml" 162 5348 5390
+)
+"src/rand.ml" 167 5641 5660 "src/rand.ml" 167 5641 5677
+type(
+  int
+)
+"src/rand.ml" 167 5641 5649 "src/rand.ml" 167 5641 5677
+call(
+  stack
+)
+type(
+  int
+)
+"src/rand.ml" 167 5641 5642 "src/rand.ml" 167 5641 5677
+type(
+  int
+)
+"src/rand.ml" 168 5679 5680 "src/rand.ml" 168 5679 5684
+type(
+  int
+)
+ident(
+  int_ref ymin "src/rand.ml" 162 5348 5406 "src/rand.ml" 162 5348 5410
+)
+"src/rand.ml" 168 5679 5685 "src/rand.ml" 168 5679 5686
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( + )
+)
+"src/rand.ml" 168 5679 5687 "src/rand.ml" 168 5679 5697
+type(
+  int -> int
+)
+ident(
+  ext_ref Random.int
+)
+"src/rand.ml" 168 5679 5699 "src/rand.ml" 168 5679 5700
+type(
+  int
+)
+"src/rand.ml" 168 5679 5701 "src/rand.ml" 168 5679 5702
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( + )
+)
+"src/rand.ml" 168 5679 5703 "src/rand.ml" 168 5679 5707
+type(
+  int
+)
+ident(
+  int_ref ymax "src/rand.ml" 162 5348 5411 "src/rand.ml" 162 5348 5415
+)
+"src/rand.ml" 168 5679 5699 "src/rand.ml" 168 5679 5707
+type(
+  int
+)
+"src/rand.ml" 168 5679 5708 "src/rand.ml" 168 5679 5709
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( - )
+)
+"src/rand.ml" 168 5679 5710 "src/rand.ml" 168 5679 5714
+type(
+  int
+)
+ident(
+  int_ref ymin "src/rand.ml" 162 5348 5406 "src/rand.ml" 162 5348 5410
+)
+"src/rand.ml" 168 5679 5698 "src/rand.ml" 168 5679 5715
+type(
+  int
+)
+"src/rand.ml" 168 5679 5687 "src/rand.ml" 168 5679 5715
+call(
+  stack
+)
+type(
+  int
+)
+"src/rand.ml" 168 5679 5680 "src/rand.ml" 168 5679 5715
+type(
+  int
+)
+"src/rand.ml" 167 5641 5642 "src/rand.ml" 168 5679 5715
+type(
+  int * int
+)
+"src/rand.ml" 170 5725 5735 "src/rand.ml" 170 5725 5743
+type(
+  Triangulation.S.point array
+)
+"src/rand.ml" 170 5725 5746 "src/rand.ml" 170 5725 5756
+type(
+  int -> (int -> Triangulation.S.point) -> Triangulation.S.point array
+)
+ident(
+  ext_ref Array.init
+)
+"src/rand.ml" 170 5725 5757 "src/rand.ml" 170 5725 5758
+type(
+  int
+)
+ident(
+  int_ref v "src/rand.ml" 162 5348 5423 "src/rand.ml" 162 5348 5424
+)
+"src/rand.ml" 170 5725 5764 "src/rand.ml" 170 5725 5765
+type(
+  int
+)
+"src/rand.ml" 170 5725 5769 "src/rand.ml" 170 5725 5777
+type(
+  B.G.V.label -> Triangulation.S.point
+)
+ident(
+  ext_ref B.G.V.create
+)
+"src/rand.ml" 170 5725 5779 "src/rand.ml" 170 5725 5791
+type(
+  unit -> B.G.V.label
+)
+ident(
+  int_ref random_point "src/rand.ml" 166 5613 5623 "src/rand.ml" 166 5613 5635
+)
+"src/rand.ml" 170 5725 5792 "src/rand.ml" 170 5725 5794
+type(
+  unit
+)
+"src/rand.ml" 170 5725 5778 "src/rand.ml" 170 5725 5795
+call(
+  stack
+)
+type(
+  B.G.V.label
+)
+"src/rand.ml" 170 5725 5769 "src/rand.ml" 170 5725 5795
+call(
+  tail
+)
+type(
+  Triangulation.S.point
+)
+"src/rand.ml" 170 5725 5759 "src/rand.ml" 170 5725 5796
+type(
+  int -> Triangulation.S.point
+)
+"src/rand.ml" 170 5725 5746 "src/rand.ml" 170 5725 5796
+call(
+  stack
+)
+type(
+  Triangulation.S.point array
+)
+"src/rand.ml" 171 5800 5810 "src/rand.ml" 171 5800 5811
+type(
+  Triangulation.triangulation
+)
+"src/rand.ml" 171 5800 5814 "src/rand.ml" 171 5800 5839
+type(
+  Triangulation.S.point array -> Triangulation.triangulation
+)
+ident(
+  ext_ref Triangulation.triangulate
+)
+"src/rand.ml" 171 5800 5840 "src/rand.ml" 171 5800 5848
+type(
+  Triangulation.S.point array
+)
+ident(
+  int_ref vertices "src/rand.ml" 170 5725 5735 "src/rand.ml" 170 5725 5743
+)
+"src/rand.ml" 171 5800 5814 "src/rand.ml" 171 5800 5848
+call(
+  stack
+)
+type(
+  Triangulation.triangulation
+)
+"src/rand.ml" 173 5914 5924 "src/rand.ml" 173 5914 5925
+type(
+  B.G.t
+)
+"src/rand.ml" 173 5914 5928 "src/rand.ml" 173 5914 5943
+type(
+  (B.G.t -> Triangulation.S.point -> B.G.t) ->
+  B.G.t -> Triangulation.S.point array -> B.G.t
+)
+ident(
+  ext_ref Array.fold_left
+)
+"src/rand.ml" 173 5914 5944 "src/rand.ml" 173 5914 5956
+type(
+  B.G.t -> Triangulation.S.point -> B.G.t
+)
+ident(
+  ext_ref B.add_vertex
+)
+"src/rand.ml" 173 5914 5958 "src/rand.ml" 173 5914 5965
+type(
+  unit -> B.G.t
+)
+ident(
+  ext_ref B.empty
+)
+"src/rand.ml" 173 5914 5966 "src/rand.ml" 173 5914 5968
+type(
+  unit
+)
+"src/rand.ml" 173 5914 5957 "src/rand.ml" 173 5914 5969
+call(
+  stack
+)
+type(
+  B.G.t
+)
+"src/rand.ml" 173 5914 5970 "src/rand.ml" 173 5914 5978
+type(
+  Triangulation.S.point array
+)
+ident(
+  int_ref vertices "src/rand.ml" 170 5725 5735 "src/rand.ml" 170 5725 5743
+)
+"src/rand.ml" 173 5914 5928 "src/rand.ml" 173 5914 5978
+call(
+  stack
+)
+type(
+  B.G.t
+)
+"src/rand.ml" 174 5982 5992 "src/rand.ml" 174 5982 5993
+type(
+  B.G.t
+)
+"src/rand.ml" 175 5997 6001 "src/rand.ml" 175 5997 6006
+type(
+  bool
+)
+ident(
+  int_ref loops "src/rand.ml" 162 5348 5364 "src/rand.ml" 162 5348 5369
+)
+"src/rand.ml" 176 6013 6016 "src/rand.ml" 176 6013 6031
+type(
+  (B.G.t -> B.G.E.vertex -> B.G.t) -> B.G.t -> B.G.E.vertex array -> B.G.t
+)
+ident(
+  ext_ref Array.fold_left
+)
+"src/rand.ml" 177 6033 6043 "src/rand.ml" 177 6033 6044
+type(
+  B.G.t
+)
+ident(
+  def g "src/rand.ml" 177 6033 6045 "src/rand.ml" 181 6110 6155
+)
+"src/rand.ml" 177 6033 6045 "src/rand.ml" 177 6033 6046
+type(
+  B.G.E.vertex
+)
+ident(
+  def v "src/rand.ml" 178 6051 6059 "src/rand.ml" 181 6110 6155
+)
+"src/rand.ml" 178 6051 6062 "src/rand.ml" 178 6051 6074
+type(
+  float -> float
+)
+ident(
+  ext_ref Random.float
+)
+"src/rand.ml" 178 6051 6075 "src/rand.ml" 178 6051 6078
+type(
+  float
+)
+"src/rand.ml" 178 6051 6062 "src/rand.ml" 178 6051 6078
+call(
+  stack
+)
+type(
+  float
+)
+"src/rand.ml" 178 6051 6079 "src/rand.ml" 178 6051 6080
+type(
+  float -> float -> bool
+)
+ident(
+  ext_ref Pervasives.( < )
+)
+"src/rand.ml" 178 6051 6081 "src/rand.ml" 178 6051 6085
+type(
+  float
+)
+ident(
+  int_ref prob "src/rand.ml" 162 5348 5418 "src/rand.ml" 162 5348 5422
+)
+"src/rand.ml" 178 6051 6062 "src/rand.ml" 178 6051 6085
+type(
+  bool
+)
+"src/rand.ml" 179 6092 6095 "src/rand.ml" 179 6092 6096
+type(
+  B.G.t
+)
+ident(
+  int_ref g "src/rand.ml" 177 6033 6043 "src/rand.ml" 177 6033 6044
+)
+"src/rand.ml" 181 6110 6117 "src/rand.ml" 181 6110 6118
+type(
+  B.G.E.t
+)
+"src/rand.ml" 181 6110 6121 "src/rand.ml" 181 6110 6129
+type(
+  B.G.E.vertex -> B.G.E.label -> B.G.E.vertex -> B.G.E.t
+)
+ident(
+  ext_ref B.G.E.create
+)
+"src/rand.ml" 181 6110 6130 "src/rand.ml" 181 6110 6131
+type(
+  B.G.E.vertex
+)
+ident(
+  int_ref v "src/rand.ml" 177 6033 6045 "src/rand.ml" 177 6033 6046
+)
+"src/rand.ml" 181 6110 6132 "src/rand.ml" 181 6110 6133
+type(
+  B.G.E.label
+)
+"src/rand.ml" 181 6110 6134 "src/rand.ml" 181 6110 6135
+type(
+  B.G.E.vertex
+)
+ident(
+  int_ref v "src/rand.ml" 177 6033 6045 "src/rand.ml" 177 6033 6046
+)
+"src/rand.ml" 181 6110 6121 "src/rand.ml" 181 6110 6135
+call(
+  stack
+)
+type(
+  B.G.E.t
+)
+"src/rand.ml" 181 6110 6139 "src/rand.ml" 181 6110 6151
+type(
+  B.G.t -> B.G.E.t -> B.G.t
+)
+ident(
+  ext_ref B.add_edge_e
+)
+"src/rand.ml" 181 6110 6152 "src/rand.ml" 181 6110 6153
+type(
+  B.G.t
+)
+ident(
+  int_ref g "src/rand.ml" 177 6033 6043 "src/rand.ml" 177 6033 6044
+)
+"src/rand.ml" 181 6110 6154 "src/rand.ml" 181 6110 6155
+type(
+  B.G.E.t
+)
+ident(
+  int_ref e "src/rand.ml" 181 6110 6117 "src/rand.ml" 181 6110 6118
+)
+"src/rand.ml" 181 6110 6139 "src/rand.ml" 181 6110 6155
+call(
+  tail
+)
+type(
+  B.G.t
+)
+"src/rand.ml" 181 6110 6113 "src/rand.ml" 181 6110 6155
+type(
+  B.G.t
+)
+"src/rand.ml" 178 6051 6059 "src/rand.ml" 181 6110 6155
+type(
+  B.G.t
+)
+"src/rand.ml" 177 6033 6038 "src/rand.ml" 181 6110 6156
+type(
+  B.G.t -> B.G.E.vertex -> B.G.t
+)
+"src/rand.ml" 182 6157 6162 "src/rand.ml" 182 6157 6163
+type(
+  B.G.t
+)
+ident(
+  int_ref g "src/rand.ml" 173 5914 5924 "src/rand.ml" 173 5914 5925
+)
+"src/rand.ml" 182 6157 6164 "src/rand.ml" 182 6157 6172
+type(
+  B.G.E.vertex array
+)
+ident(
+  int_ref vertices "src/rand.ml" 170 5725 5735 "src/rand.ml" 170 5725 5743
+)
+"src/rand.ml" 176 6013 6016 "src/rand.ml" 182 6157 6172
+call(
+  stack
+)
+type(
+  B.G.t
+)
+"src/rand.ml" 184 6180 6183 "src/rand.ml" 184 6180 6184
+type(
+  B.G.t
+)
+ident(
+  int_ref g "src/rand.ml" 173 5914 5924 "src/rand.ml" 173 5914 5925
+)
+"src/rand.ml" 175 5997 5998 "src/rand.ml" 184 6180 6184
+type(
+  B.G.t
+)
+"src/rand.ml" 187 6268 6278 "src/rand.ml" 187 6268 6286
+type(
+  B.G.E.vertex -> B.G.E.vertex -> B.G.t -> B.G.t
+)
+"src/rand.ml" 187 6268 6287 "src/rand.ml" 187 6268 6289
+type(
+  B.G.E.vertex
+)
+ident(
+  def v1 "src/rand.ml" 187 6268 6290 "src/rand.ml" 191 6342 6410
+)
+"src/rand.ml" 187 6268 6290 "src/rand.ml" 187 6268 6292
+type(
+  B.G.E.vertex
+)
+ident(
+  def v2 "src/rand.ml" 187 6268 6293 "src/rand.ml" 191 6342 6410
+)
+"src/rand.ml" 187 6268 6293 "src/rand.ml" 187 6268 6294
+type(
+  B.G.t
+)
+ident(
+  def g "src/rand.ml" 188 6297 6298 "src/rand.ml" 191 6342 6410
+)
+"src/rand.ml" 188 6297 6301 "src/rand.ml" 188 6297 6313
+type(
+  float -> float
+)
+ident(
+  ext_ref Random.float
+)
+"src/rand.ml" 188 6297 6314 "src/rand.ml" 188 6297 6317
+type(
+  float
+)
+"src/rand.ml" 188 6297 6301 "src/rand.ml" 188 6297 6317
+call(
+  stack
+)
+type(
+  float
+)
+"src/rand.ml" 188 6297 6318 "src/rand.ml" 188 6297 6319
+type(
+  float -> float -> bool
+)
+ident(
+  ext_ref Pervasives.( < )
+)
+"src/rand.ml" 188 6297 6320 "src/rand.ml" 188 6297 6324
+type(
+  float
+)
+ident(
+  int_ref prob "src/rand.ml" 162 5348 5418 "src/rand.ml" 162 5348 5422
+)
+"src/rand.ml" 188 6297 6301 "src/rand.ml" 188 6297 6324
+type(
+  bool
+)
+"src/rand.ml" 189 6331 6334 "src/rand.ml" 189 6331 6335
+type(
+  B.G.t
+)
+ident(
+  int_ref g "src/rand.ml" 187 6268 6293 "src/rand.ml" 187 6268 6294
+)
+"src/rand.ml" 191 6342 6349 "src/rand.ml" 191 6342 6350
+type(
+  B.G.E.t
+)
+"src/rand.ml" 191 6342 6353 "src/rand.ml" 191 6342 6361
+type(
+  B.G.E.vertex -> B.G.E.label -> B.G.E.vertex -> B.G.E.t
+)
+ident(
+  ext_ref B.G.E.create
+)
+"src/rand.ml" 191 6342 6362 "src/rand.ml" 191 6342 6364
+type(
+  B.G.E.vertex
+)
+ident(
+  int_ref v1 "src/rand.ml" 187 6268 6287 "src/rand.ml" 187 6268 6289
+)
+"src/rand.ml" 191 6342 6366 "src/rand.ml" 191 6342 6380
+type(
+  B.G.E.vertex -> B.G.E.vertex -> B.G.E.label
+)
+ident(
+  ext_ref Point.distance
+)
+"src/rand.ml" 191 6342 6381 "src/rand.ml" 191 6342 6383
+type(
+  B.G.E.vertex
+)
+ident(
+  int_ref v1 "src/rand.ml" 187 6268 6287 "src/rand.ml" 187 6268 6289
+)
+"src/rand.ml" 191 6342 6384 "src/rand.ml" 191 6342 6386
+type(
+  B.G.E.vertex
+)
+ident(
+  int_ref v2 "src/rand.ml" 187 6268 6290 "src/rand.ml" 187 6268 6292
+)
+"src/rand.ml" 191 6342 6365 "src/rand.ml" 191 6342 6387
+call(
+  stack
+)
+type(
+  B.G.E.label
+)
+"src/rand.ml" 191 6342 6388 "src/rand.ml" 191 6342 6390
+type(
+  B.G.E.vertex
+)
+ident(
+  int_ref v2 "src/rand.ml" 187 6268 6290 "src/rand.ml" 187 6268 6292
+)
+"src/rand.ml" 191 6342 6353 "src/rand.ml" 191 6342 6390
+call(
+  stack
+)
+type(
+  B.G.E.t
+)
+"src/rand.ml" 191 6342 6394 "src/rand.ml" 191 6342 6406
+type(
+  B.G.t -> B.G.E.t -> B.G.t
+)
+ident(
+  ext_ref B.add_edge_e
+)
+"src/rand.ml" 191 6342 6407 "src/rand.ml" 191 6342 6408
+type(
+  B.G.t
+)
+ident(
+  int_ref g "src/rand.ml" 187 6268 6293 "src/rand.ml" 187 6268 6294
+)
+"src/rand.ml" 191 6342 6409 "src/rand.ml" 191 6342 6410
+type(
+  B.G.E.t
+)
+ident(
+  int_ref e "src/rand.ml" 191 6342 6349 "src/rand.ml" 191 6342 6350
+)
+"src/rand.ml" 191 6342 6394 "src/rand.ml" 191 6342 6410
+call(
+  tail
+)
+type(
+  B.G.t
+)
+"src/rand.ml" 191 6342 6345 "src/rand.ml" 191 6342 6410
+type(
+  B.G.t
+)
+"src/rand.ml" 188 6297 6298 "src/rand.ml" 191 6342 6410
+type(
+  B.G.t
+)
+"src/rand.ml" 193 6420 6426 "src/rand.ml" 193 6420 6444
+type(
+  (Triangulation.S.point -> Triangulation.S.point -> B.G.t -> B.G.t) ->
+  Triangulation.triangulation -> B.G.t -> B.G.t
+)
+ident(
+  ext_ref Triangulation.fold
+)
+"src/rand.ml" 194 6445 6451 "src/rand.ml" 194 6445 6453
+type(
+  Triangulation.S.point
+)
+ident(
+  def v1 "src/rand.ml" 194 6445 6454 "src/rand.ml" 196 6495 6542
+)
+"src/rand.ml" 194 6445 6454 "src/rand.ml" 194 6445 6456
+type(
+  Triangulation.S.point
+)
+ident(
+  def v2 "src/rand.ml" 194 6445 6457 "src/rand.ml" 196 6495 6542
+)
+"src/rand.ml" 194 6445 6457 "src/rand.ml" 194 6445 6458
+type(
+  B.G.t
+)
+ident(
+  def g "src/rand.ml" 195 6463 6467 "src/rand.ml" 196 6495 6542
+)
+"src/rand.ml" 195 6463 6471 "src/rand.ml" 195 6463 6472
+type(
+  B.G.t
+)
+"src/rand.ml" 195 6463 6475 "src/rand.ml" 195 6463 6483
+type(
+  B.G.E.vertex -> B.G.E.vertex -> B.G.t -> B.G.t
+)
+ident(
+  int_ref add_edge "src/rand.ml" 187 6268 6278 "src/rand.ml" 187 6268 6286
+)
+"src/rand.ml" 195 6463 6484 "src/rand.ml" 195 6463 6486
+type(
+  Triangulation.S.point
+)
+ident(
+  int_ref v1 "src/rand.ml" 194 6445 6451 "src/rand.ml" 194 6445 6453
+)
+"src/rand.ml" 195 6463 6487 "src/rand.ml" 195 6463 6489
+type(
+  Triangulation.S.point
+)
+ident(
+  int_ref v2 "src/rand.ml" 194 6445 6454 "src/rand.ml" 194 6445 6456
+)
+"src/rand.ml" 195 6463 6490 "src/rand.ml" 195 6463 6491
+type(
+  B.G.t
+)
+ident(
+  int_ref g "src/rand.ml" 194 6445 6457 "src/rand.ml" 194 6445 6458
+)
+"src/rand.ml" 195 6463 6475 "src/rand.ml" 195 6463 6491
+call(
+  stack
+)
+type(
+  B.G.t
+)
+"src/rand.ml" 196 6495 6502 "src/rand.ml" 196 6495 6513
+type(
+  bool
+)
+ident(
+  ext_ref B.G.is_directed
+)
+"src/rand.ml" 196 6495 6519 "src/rand.ml" 196 6495 6527
+type(
+  B.G.E.vertex -> B.G.E.vertex -> B.G.t -> B.G.t
+)
+ident(
+  int_ref add_edge "src/rand.ml" 187 6268 6278 "src/rand.ml" 187 6268 6286
+)
+"src/rand.ml" 196 6495 6528 "src/rand.ml" 196 6495 6530
+type(
+  Triangulation.S.point
+)
+ident(
+  int_ref v2 "src/rand.ml" 194 6445 6454 "src/rand.ml" 194 6445 6456
+)
+"src/rand.ml" 196 6495 6531 "src/rand.ml" 196 6495 6533
+type(
+  Triangulation.S.point
+)
+ident(
+  int_ref v1 "src/rand.ml" 194 6445 6451 "src/rand.ml" 194 6445 6453
+)
+"src/rand.ml" 196 6495 6534 "src/rand.ml" 196 6495 6535
+type(
+  B.G.t
+)
+ident(
+  int_ref g "src/rand.ml" 195 6463 6471 "src/rand.ml" 195 6463 6472
+)
+"src/rand.ml" 196 6495 6519 "src/rand.ml" 196 6495 6535
+call(
+  tail
+)
+type(
+  B.G.t
+)
+"src/rand.ml" 196 6495 6541 "src/rand.ml" 196 6495 6542
+type(
+  B.G.t
+)
+ident(
+  int_ref g "src/rand.ml" 195 6463 6471 "src/rand.ml" 195 6463 6472
+)
+"src/rand.ml" 196 6495 6499 "src/rand.ml" 196 6495 6542
+type(
+  B.G.t
+)
+"src/rand.ml" 195 6463 6467 "src/rand.ml" 196 6495 6542
+type(
+  B.G.t
+)
+"src/rand.ml" 194 6445 6446 "src/rand.ml" 196 6495 6543
+type(
+  Triangulation.S.point -> Triangulation.S.point -> B.G.t -> B.G.t
+)
+"src/rand.ml" 197 6544 6545 "src/rand.ml" 197 6544 6546
+type(
+  Triangulation.triangulation
+)
+ident(
+  int_ref t "src/rand.ml" 171 5800 5810 "src/rand.ml" 171 5800 5811
+)
+"src/rand.ml" 197 6544 6547 "src/rand.ml" 197 6544 6548
+type(
+  B.G.t
+)
+ident(
+  int_ref g "src/rand.ml" 174 5982 5992 "src/rand.ml" 174 5982 5993
+)
+"src/rand.ml" 193 6420 6426 "src/rand.ml" 197 6544 6548
+call(
+  tail
+)
+type(
+  B.G.t
+)
+"src/rand.ml" 187 6268 6274 "src/rand.ml" 197 6544 6548
+type(
+  B.G.t
+)
+"src/rand.ml" 174 5982 5988 "src/rand.ml" 197 6544 6548
+type(
+  B.G.t
+)
+"src/rand.ml" 173 5914 5920 "src/rand.ml" 197 6544 6548
+type(
+  B.G.t
+)
+"src/rand.ml" 171 5800 5806 "src/rand.ml" 197 6544 6548
+type(
+  B.G.t
+)
+"src/rand.ml" 170 5725 5731 "src/rand.ml" 197 6544 6548
+type(
+  B.G.t
+)
+"src/rand.ml" 166 5613 5619 "src/rand.ml" 197 6544 6548
+type(
+  B.G.t
+)
+"src/rand.ml" 164 5502 5508 "src/rand.ml" 197 6544 6548
+type(
+  B.G.t
+)
+"src/rand.ml" 163 5427 5433 "src/rand.ml" 197 6544 6548
+type(
+  B.G.t
+)
+"src/rand.ml" 202 6636 6645 "src/rand.ml" 202 6636 6657
+call(
+  stack
+)
+"src/rand.ml" 202 6636 6640 "src/rand.ml" 202 6636 6658
+call(
+  tail
+)
+"src/rand.ml" 205 6739 6748 "src/rand.ml" 205 6739 6760
+call(
+  stack
+)
+"src/rand.ml" 205 6739 6743 "src/rand.ml" 205 6739 6761
+call(
+  tail
+)

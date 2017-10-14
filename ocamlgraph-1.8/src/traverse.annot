@@ -1,0 +1,7138 @@
+"src/traverse.ml" 32 1610 1623 "src/traverse.ml" 32 1610 1640
+call(
+  stack
+)
+"src/traverse.ml" 34 1642 1648 "src/traverse.ml" 34 1642 1652
+type(
+  ?pre:(H.key -> unit) -> ?post:(H.key -> unit) -> G.t -> unit
+)
+ident(
+  def iter "src/traverse.ml" 46 1883 1885 "src/traverse.ml" 235 6804 6807
+)
+"src/traverse.ml" 34 1642 1655 "src/traverse.ml" 34 1642 1658
+type(
+  H.key -> unit
+)
+"src/traverse.ml" 34 1642 1663 "src/traverse.ml" 34 1642 1664
+type(
+  H.key
+)
+"src/traverse.ml" 34 1642 1668 "src/traverse.ml" 34 1642 1670
+type(
+  unit
+)
+"src/traverse.ml" 34 1642 1659 "src/traverse.ml" 34 1642 1670
+type(
+  H.key -> unit
+)
+type(
+  H.key -> unit
+)
+ident(
+  int_ref *sth* "src/traverse.ml" 34 1642 1659 "src/traverse.ml" 34 1642 1670
+)
+type(
+  (H.key -> unit) option
+)
+type(
+  (H.key -> unit) option
+)
+type(
+  H.key -> unit
+)
+ident(
+  def *sth* "src/traverse.ml" 34 1642 1659 "src/traverse.ml" 34 1642 1670
+)
+"src/traverse.ml" 34 1642 1674 "src/traverse.ml" 34 1642 1678
+type(
+  H.key -> unit
+)
+"src/traverse.ml" 34 1642 1683 "src/traverse.ml" 34 1642 1684
+type(
+  H.key
+)
+"src/traverse.ml" 34 1642 1688 "src/traverse.ml" 34 1642 1690
+type(
+  unit
+)
+"src/traverse.ml" 34 1642 1679 "src/traverse.ml" 34 1642 1690
+type(
+  H.key -> unit
+)
+type(
+  H.key -> unit
+)
+ident(
+  int_ref *sth* "src/traverse.ml" 34 1642 1679 "src/traverse.ml" 34 1642 1690
+)
+type(
+  (H.key -> unit) option
+)
+type(
+  (H.key -> unit) option
+)
+type(
+  H.key -> unit
+)
+ident(
+  def *sth* "src/traverse.ml" 34 1642 1679 "src/traverse.ml" 34 1642 1690
+)
+"src/traverse.ml" 34 1642 1692 "src/traverse.ml" 34 1642 1693
+type(
+  G.t
+)
+ident(
+  def g "src/traverse.ml" 35 1696 1700 "src/traverse.ml" 44 1856 1881
+)
+"src/traverse.ml" 35 1696 1704 "src/traverse.ml" 35 1696 1705
+type(
+  unit H.t
+)
+"src/traverse.ml" 35 1696 1708 "src/traverse.ml" 35 1696 1716
+type(
+  int -> unit H.t
+)
+ident(
+  ext_ref H.create
+)
+"src/traverse.ml" 35 1696 1717 "src/traverse.ml" 35 1696 1722
+type(
+  int
+)
+"src/traverse.ml" 35 1696 1708 "src/traverse.ml" 35 1696 1722
+call(
+  stack
+)
+type(
+  unit H.t
+)
+"src/traverse.ml" 36 1726 1738 "src/traverse.ml" 36 1726 1743
+type(
+  H.key -> unit
+)
+"src/traverse.ml" 36 1726 1744 "src/traverse.ml" 36 1726 1745
+type(
+  H.key
+)
+ident(
+  def v "src/traverse.ml" 37 1748 1754 "src/traverse.ml" 42 1839 1848
+)
+"src/traverse.ml" 37 1748 1757 "src/traverse.ml" 37 1748 1760
+type(
+  bool -> bool
+)
+ident(
+  ext_ref Pervasives.not
+)
+"src/traverse.ml" 37 1748 1762 "src/traverse.ml" 37 1748 1767
+type(
+  unit H.t -> H.key -> bool
+)
+ident(
+  ext_ref H.mem
+)
+"src/traverse.ml" 37 1748 1768 "src/traverse.ml" 37 1748 1769
+type(
+  unit H.t
+)
+ident(
+  int_ref h "src/traverse.ml" 35 1696 1704 "src/traverse.ml" 35 1696 1705
+)
+"src/traverse.ml" 37 1748 1770 "src/traverse.ml" 37 1748 1771
+type(
+  H.key
+)
+ident(
+  int_ref v "src/traverse.ml" 36 1726 1744 "src/traverse.ml" 36 1726 1745
+)
+"src/traverse.ml" 37 1748 1761 "src/traverse.ml" 37 1748 1772
+call(
+  stack
+)
+type(
+  bool
+)
+"src/traverse.ml" 37 1748 1757 "src/traverse.ml" 37 1748 1772
+type(
+  bool
+)
+"src/traverse.ml" 38 1784 1785 "src/traverse.ml" 38 1784 1790
+type(
+  unit H.t -> H.key -> unit -> unit
+)
+ident(
+  ext_ref H.add
+)
+"src/traverse.ml" 38 1784 1791 "src/traverse.ml" 38 1784 1792
+type(
+  unit H.t
+)
+ident(
+  int_ref h "src/traverse.ml" 35 1696 1704 "src/traverse.ml" 35 1696 1705
+)
+"src/traverse.ml" 38 1784 1793 "src/traverse.ml" 38 1784 1794
+type(
+  H.key
+)
+ident(
+  int_ref v "src/traverse.ml" 36 1726 1744 "src/traverse.ml" 36 1726 1745
+)
+"src/traverse.ml" 38 1784 1795 "src/traverse.ml" 38 1784 1797
+type(
+  unit
+)
+"src/traverse.ml" 38 1784 1785 "src/traverse.ml" 38 1784 1797
+call(
+  stack
+)
+type(
+  unit
+)
+"src/traverse.ml" 39 1799 1800 "src/traverse.ml" 39 1799 1803
+type(
+  H.key -> unit
+)
+ident(
+  int_ref pre "src/traverse.ml" 34 1642 1655 "src/traverse.ml" 34 1642 1658
+)
+"src/traverse.ml" 39 1799 1804 "src/traverse.ml" 39 1799 1805
+type(
+  H.key
+)
+ident(
+  int_ref v "src/traverse.ml" 36 1726 1744 "src/traverse.ml" 36 1726 1745
+)
+"src/traverse.ml" 39 1799 1800 "src/traverse.ml" 39 1799 1805
+call(
+  stack
+)
+type(
+  unit
+)
+"src/traverse.ml" 40 1807 1808 "src/traverse.ml" 40 1807 1819
+type(
+  (H.key -> unit) -> G.t -> H.key -> unit
+)
+ident(
+  ext_ref G.iter_succ
+)
+"src/traverse.ml" 40 1807 1820 "src/traverse.ml" 40 1807 1825
+type(
+  H.key -> unit
+)
+ident(
+  int_ref visit "src/traverse.ml" 36 1726 1738 "src/traverse.ml" 36 1726 1743
+)
+"src/traverse.ml" 40 1807 1826 "src/traverse.ml" 40 1807 1827
+type(
+  G.t
+)
+ident(
+  int_ref g "src/traverse.ml" 34 1642 1692 "src/traverse.ml" 34 1642 1693
+)
+"src/traverse.ml" 40 1807 1828 "src/traverse.ml" 40 1807 1829
+type(
+  H.key
+)
+ident(
+  int_ref v "src/traverse.ml" 36 1726 1744 "src/traverse.ml" 36 1726 1745
+)
+"src/traverse.ml" 40 1807 1808 "src/traverse.ml" 40 1807 1829
+call(
+  stack
+)
+type(
+  unit
+)
+"src/traverse.ml" 41 1831 1832 "src/traverse.ml" 41 1831 1836
+type(
+  H.key -> unit
+)
+ident(
+  int_ref post "src/traverse.ml" 34 1642 1674 "src/traverse.ml" 34 1642 1678
+)
+"src/traverse.ml" 41 1831 1837 "src/traverse.ml" 41 1831 1838
+type(
+  H.key
+)
+ident(
+  int_ref v "src/traverse.ml" 36 1726 1744 "src/traverse.ml" 36 1726 1745
+)
+"src/traverse.ml" 41 1831 1832 "src/traverse.ml" 41 1831 1838
+call(
+  tail
+)
+type(
+  unit
+)
+"src/traverse.ml" 40 1807 1808 "src/traverse.ml" 41 1831 1838
+type(
+  unit
+)
+"src/traverse.ml" 39 1799 1800 "src/traverse.ml" 41 1831 1838
+type(
+  unit
+)
+"src/traverse.ml" 37 1748 1778 "src/traverse.ml" 42 1839 1848
+type(
+  unit
+)
+"src/traverse.ml" 37 1748 1754 "src/traverse.ml" 42 1839 1848
+type(
+  unit
+)
+"src/traverse.ml" 44 1856 1860 "src/traverse.ml" 44 1856 1873
+type(
+  (H.key -> unit) -> G.t -> unit
+)
+ident(
+  ext_ref G.iter_vertex
+)
+"src/traverse.ml" 44 1856 1874 "src/traverse.ml" 44 1856 1879
+type(
+  H.key -> unit
+)
+ident(
+  int_ref visit "src/traverse.ml" 36 1726 1738 "src/traverse.ml" 36 1726 1743
+)
+"src/traverse.ml" 44 1856 1880 "src/traverse.ml" 44 1856 1881
+type(
+  G.t
+)
+ident(
+  int_ref g "src/traverse.ml" 34 1642 1692 "src/traverse.ml" 34 1642 1693
+)
+"src/traverse.ml" 44 1856 1860 "src/traverse.ml" 44 1856 1881
+call(
+  tail
+)
+type(
+  unit
+)
+"src/traverse.ml" 36 1726 1730 "src/traverse.ml" 44 1856 1881
+type(
+  unit
+)
+"src/traverse.ml" 35 1696 1700 "src/traverse.ml" 44 1856 1881
+type(
+  unit
+)
+"src/traverse.ml" 46 1883 1889 "src/traverse.ml" 46 1883 1896
+type(
+  (H.key -> unit) -> G.t -> unit
+)
+ident(
+  def postfix "src/traverse.ml" 48 1920 1922 "src/traverse.ml" 235 6804 6807
+)
+"src/traverse.ml" 46 1883 1897 "src/traverse.ml" 46 1883 1901
+type(
+  H.key -> unit
+)
+ident(
+  def post "src/traverse.ml" 46 1883 1902 "src/traverse.ml" 46 1883 1918
+)
+"src/traverse.ml" 46 1883 1902 "src/traverse.ml" 46 1883 1903
+type(
+  G.t
+)
+ident(
+  def g "src/traverse.ml" 46 1883 1906 "src/traverse.ml" 46 1883 1918
+)
+"src/traverse.ml" 46 1883 1906 "src/traverse.ml" 46 1883 1910
+type(
+  ?pre:(H.key -> unit) -> ?post:(H.key -> unit) -> G.t -> unit
+)
+ident(
+  int_ref iter "src/traverse.ml" 34 1642 1648 "src/traverse.ml" 34 1642 1652
+)
+"src/traverse.ml" 46 1883 1912 "src/traverse.ml" 46 1883 1916
+type(
+  H.key -> unit
+)
+ident(
+  int_ref post "src/traverse.ml" 46 1883 1897 "src/traverse.ml" 46 1883 1901
+)
+"src/traverse.ml" 46 1883 1917 "src/traverse.ml" 46 1883 1918
+type(
+  G.t
+)
+ident(
+  int_ref g "src/traverse.ml" 46 1883 1902 "src/traverse.ml" 46 1883 1903
+)
+"src/traverse.ml" 46 1883 1906 "src/traverse.ml" 46 1883 1918
+call(
+  tail
+)
+type(
+  unit
+)
+"src/traverse.ml" 48 1920 1926 "src/traverse.ml" 48 1920 1940
+type(
+  ?pre:(H.key -> unit) -> ?post:(H.key -> unit) -> G.t -> H.key -> unit
+)
+ident(
+  def iter_component "src/traverse.ml" 58 2170 2172 "src/traverse.ml" 235 6804 6807
+)
+"src/traverse.ml" 48 1920 1943 "src/traverse.ml" 48 1920 1946
+type(
+  H.key -> unit
+)
+"src/traverse.ml" 48 1920 1951 "src/traverse.ml" 48 1920 1952
+type(
+  H.key
+)
+"src/traverse.ml" 48 1920 1956 "src/traverse.ml" 48 1920 1958
+type(
+  unit
+)
+"src/traverse.ml" 48 1920 1947 "src/traverse.ml" 48 1920 1958
+type(
+  H.key -> unit
+)
+type(
+  H.key -> unit
+)
+ident(
+  int_ref *sth* "src/traverse.ml" 48 1920 1947 "src/traverse.ml" 48 1920 1958
+)
+type(
+  (H.key -> unit) option
+)
+type(
+  (H.key -> unit) option
+)
+type(
+  H.key -> unit
+)
+ident(
+  def *sth* "src/traverse.ml" 48 1920 1947 "src/traverse.ml" 48 1920 1958
+)
+"src/traverse.ml" 48 1920 1962 "src/traverse.ml" 48 1920 1966
+type(
+  H.key -> unit
+)
+"src/traverse.ml" 48 1920 1971 "src/traverse.ml" 48 1920 1972
+type(
+  H.key
+)
+"src/traverse.ml" 48 1920 1976 "src/traverse.ml" 48 1920 1978
+type(
+  unit
+)
+"src/traverse.ml" 48 1920 1967 "src/traverse.ml" 48 1920 1978
+type(
+  H.key -> unit
+)
+type(
+  H.key -> unit
+)
+ident(
+  int_ref *sth* "src/traverse.ml" 48 1920 1967 "src/traverse.ml" 48 1920 1978
+)
+type(
+  (H.key -> unit) option
+)
+type(
+  (H.key -> unit) option
+)
+type(
+  H.key -> unit
+)
+ident(
+  def *sth* "src/traverse.ml" 48 1920 1967 "src/traverse.ml" 48 1920 1978
+)
+"src/traverse.ml" 48 1920 1980 "src/traverse.ml" 48 1920 1981
+type(
+  G.t
+)
+ident(
+  def g "src/traverse.ml" 48 1920 1982 "src/traverse.ml" 56 2157 2168
+)
+"src/traverse.ml" 48 1920 1982 "src/traverse.ml" 48 1920 1983
+type(
+  H.key
+)
+ident(
+  def v "src/traverse.ml" 49 1986 1990 "src/traverse.ml" 56 2157 2168
+)
+"src/traverse.ml" 49 1986 1994 "src/traverse.ml" 49 1986 1995
+type(
+  unit H.t
+)
+"src/traverse.ml" 49 1986 1998 "src/traverse.ml" 49 1986 2006
+type(
+  int -> unit H.t
+)
+ident(
+  ext_ref H.create
+)
+"src/traverse.ml" 49 1986 2007 "src/traverse.ml" 49 1986 2012
+type(
+  int
+)
+"src/traverse.ml" 49 1986 1998 "src/traverse.ml" 49 1986 2012
+call(
+  stack
+)
+type(
+  unit H.t
+)
+"src/traverse.ml" 50 2016 2028 "src/traverse.ml" 50 2016 2033
+type(
+  H.key -> unit
+)
+"src/traverse.ml" 50 2016 2034 "src/traverse.ml" 50 2016 2035
+type(
+  H.key
+)
+ident(
+  def v "src/traverse.ml" 51 2038 2044 "src/traverse.ml" 54 2137 2149
+)
+"src/traverse.ml" 51 2038 2044 "src/traverse.ml" 51 2038 2049
+type(
+  unit H.t -> H.key -> unit -> unit
+)
+ident(
+  ext_ref H.add
+)
+"src/traverse.ml" 51 2038 2050 "src/traverse.ml" 51 2038 2051
+type(
+  unit H.t
+)
+ident(
+  int_ref h "src/traverse.ml" 49 1986 1994 "src/traverse.ml" 49 1986 1995
+)
+"src/traverse.ml" 51 2038 2052 "src/traverse.ml" 51 2038 2053
+type(
+  H.key
+)
+ident(
+  int_ref v "src/traverse.ml" 50 2016 2034 "src/traverse.ml" 50 2016 2035
+)
+"src/traverse.ml" 51 2038 2054 "src/traverse.ml" 51 2038 2056
+type(
+  unit
+)
+"src/traverse.ml" 51 2038 2044 "src/traverse.ml" 51 2038 2056
+call(
+  stack
+)
+type(
+  unit
+)
+"src/traverse.ml" 52 2058 2064 "src/traverse.ml" 52 2058 2067
+type(
+  H.key -> unit
+)
+ident(
+  int_ref pre "src/traverse.ml" 48 1920 1943 "src/traverse.ml" 48 1920 1946
+)
+"src/traverse.ml" 52 2058 2068 "src/traverse.ml" 52 2058 2069
+type(
+  H.key
+)
+ident(
+  int_ref v "src/traverse.ml" 50 2016 2034 "src/traverse.ml" 50 2016 2035
+)
+"src/traverse.ml" 52 2058 2064 "src/traverse.ml" 52 2058 2069
+call(
+  stack
+)
+type(
+  unit
+)
+"src/traverse.ml" 53 2071 2077 "src/traverse.ml" 53 2071 2088
+type(
+  (H.key -> unit) -> G.t -> H.key -> unit
+)
+ident(
+  ext_ref G.iter_succ
+)
+"src/traverse.ml" 53 2071 2094 "src/traverse.ml" 53 2071 2095
+type(
+  H.key
+)
+ident(
+  def w "src/traverse.ml" 53 2071 2099 "src/traverse.ml" 53 2071 2130
+)
+"src/traverse.ml" 53 2071 2102 "src/traverse.ml" 53 2071 2105
+type(
+  bool -> bool
+)
+ident(
+  ext_ref Pervasives.not
+)
+"src/traverse.ml" 53 2071 2107 "src/traverse.ml" 53 2071 2112
+type(
+  unit H.t -> H.key -> bool
+)
+ident(
+  ext_ref H.mem
+)
+"src/traverse.ml" 53 2071 2113 "src/traverse.ml" 53 2071 2114
+type(
+  unit H.t
+)
+ident(
+  int_ref h "src/traverse.ml" 49 1986 1994 "src/traverse.ml" 49 1986 1995
+)
+"src/traverse.ml" 53 2071 2115 "src/traverse.ml" 53 2071 2116
+type(
+  H.key
+)
+ident(
+  int_ref w "src/traverse.ml" 53 2071 2094 "src/traverse.ml" 53 2071 2095
+)
+"src/traverse.ml" 53 2071 2106 "src/traverse.ml" 53 2071 2117
+call(
+  stack
+)
+type(
+  bool
+)
+"src/traverse.ml" 53 2071 2102 "src/traverse.ml" 53 2071 2117
+type(
+  bool
+)
+"src/traverse.ml" 53 2071 2123 "src/traverse.ml" 53 2071 2128
+type(
+  H.key -> unit
+)
+ident(
+  int_ref visit "src/traverse.ml" 50 2016 2028 "src/traverse.ml" 50 2016 2033
+)
+"src/traverse.ml" 53 2071 2129 "src/traverse.ml" 53 2071 2130
+type(
+  H.key
+)
+ident(
+  int_ref w "src/traverse.ml" 53 2071 2094 "src/traverse.ml" 53 2071 2095
+)
+"src/traverse.ml" 53 2071 2123 "src/traverse.ml" 53 2071 2130
+call(
+  tail
+)
+type(
+  unit
+)
+"src/traverse.ml" 53 2071 2099 "src/traverse.ml" 53 2071 2130
+type(
+  unit
+)
+"src/traverse.ml" 53 2071 2089 "src/traverse.ml" 53 2071 2131
+type(
+  H.key -> unit
+)
+"src/traverse.ml" 53 2071 2132 "src/traverse.ml" 53 2071 2133
+type(
+  G.t
+)
+ident(
+  int_ref g "src/traverse.ml" 48 1920 1980 "src/traverse.ml" 48 1920 1981
+)
+"src/traverse.ml" 53 2071 2134 "src/traverse.ml" 53 2071 2135
+type(
+  H.key
+)
+ident(
+  int_ref v "src/traverse.ml" 50 2016 2034 "src/traverse.ml" 50 2016 2035
+)
+"src/traverse.ml" 53 2071 2077 "src/traverse.ml" 53 2071 2135
+call(
+  stack
+)
+type(
+  unit
+)
+"src/traverse.ml" 54 2137 2143 "src/traverse.ml" 54 2137 2147
+type(
+  H.key -> unit
+)
+ident(
+  int_ref post "src/traverse.ml" 48 1920 1962 "src/traverse.ml" 48 1920 1966
+)
+"src/traverse.ml" 54 2137 2148 "src/traverse.ml" 54 2137 2149
+type(
+  H.key
+)
+ident(
+  int_ref v "src/traverse.ml" 50 2016 2034 "src/traverse.ml" 50 2016 2035
+)
+"src/traverse.ml" 54 2137 2143 "src/traverse.ml" 54 2137 2149
+call(
+  tail
+)
+type(
+  unit
+)
+"src/traverse.ml" 53 2071 2077 "src/traverse.ml" 54 2137 2149
+type(
+  unit
+)
+"src/traverse.ml" 52 2058 2064 "src/traverse.ml" 54 2137 2149
+type(
+  unit
+)
+"src/traverse.ml" 51 2038 2044 "src/traverse.ml" 54 2137 2149
+type(
+  unit
+)
+"src/traverse.ml" 56 2157 2161 "src/traverse.ml" 56 2157 2166
+type(
+  H.key -> unit
+)
+ident(
+  int_ref visit "src/traverse.ml" 50 2016 2028 "src/traverse.ml" 50 2016 2033
+)
+"src/traverse.ml" 56 2157 2167 "src/traverse.ml" 56 2157 2168
+type(
+  H.key
+)
+ident(
+  int_ref v "src/traverse.ml" 48 1920 1982 "src/traverse.ml" 48 1920 1983
+)
+"src/traverse.ml" 56 2157 2161 "src/traverse.ml" 56 2157 2168
+call(
+  tail
+)
+type(
+  unit
+)
+"src/traverse.ml" 50 2016 2020 "src/traverse.ml" 56 2157 2168
+type(
+  unit
+)
+"src/traverse.ml" 49 1986 1990 "src/traverse.ml" 56 2157 2168
+type(
+  unit
+)
+"src/traverse.ml" 58 2170 2176 "src/traverse.ml" 58 2170 2192
+type(
+  (H.key -> unit) -> G.t -> H.key -> unit
+)
+ident(
+  def prefix_component "src/traverse.ml" 59 2223 2225 "src/traverse.ml" 235 6804 6807
+)
+"src/traverse.ml" 58 2170 2193 "src/traverse.ml" 58 2170 2196
+type(
+  H.key -> unit
+)
+ident(
+  def pre "src/traverse.ml" 58 2170 2197 "src/traverse.ml" 58 2170 2222
+)
+"src/traverse.ml" 58 2170 2197 "src/traverse.ml" 58 2170 2198
+type(
+  G.t
+)
+ident(
+  def g "src/traverse.ml" 58 2170 2201 "src/traverse.ml" 58 2170 2222
+)
+"src/traverse.ml" 58 2170 2201 "src/traverse.ml" 58 2170 2215
+type(
+  ?pre:(H.key -> unit) -> ?post:(H.key -> unit) -> G.t -> H.key -> unit
+)
+ident(
+  int_ref iter_component "src/traverse.ml" 48 1920 1926 "src/traverse.ml" 48 1920 1940
+)
+"src/traverse.ml" 58 2170 2217 "src/traverse.ml" 58 2170 2220
+type(
+  H.key -> unit
+)
+ident(
+  int_ref pre "src/traverse.ml" 58 2170 2193 "src/traverse.ml" 58 2170 2196
+)
+"src/traverse.ml" 58 2170 2221 "src/traverse.ml" 58 2170 2222
+type(
+  G.t
+)
+ident(
+  int_ref g "src/traverse.ml" 58 2170 2197 "src/traverse.ml" 58 2170 2198
+)
+"src/traverse.ml" 58 2170 2201 "src/traverse.ml" 58 2170 2222
+call(
+  tail
+)
+type(
+  H.key -> unit
+)
+"src/traverse.ml" 59 2223 2229 "src/traverse.ml" 59 2223 2246
+type(
+  (H.key -> unit) -> G.t -> H.key -> unit
+)
+ident(
+  def postfix_component "src/traverse.ml" 64 2459 2461 "src/traverse.ml" 235 6804 6807
+)
+"src/traverse.ml" 59 2223 2247 "src/traverse.ml" 59 2223 2251
+type(
+  H.key -> unit
+)
+ident(
+  def post "src/traverse.ml" 59 2223 2252 "src/traverse.ml" 59 2223 2278
+)
+"src/traverse.ml" 59 2223 2252 "src/traverse.ml" 59 2223 2253
+type(
+  G.t
+)
+ident(
+  def g "src/traverse.ml" 59 2223 2256 "src/traverse.ml" 59 2223 2278
+)
+"src/traverse.ml" 59 2223 2256 "src/traverse.ml" 59 2223 2270
+type(
+  ?pre:(H.key -> unit) -> ?post:(H.key -> unit) -> G.t -> H.key -> unit
+)
+ident(
+  int_ref iter_component "src/traverse.ml" 48 1920 1926 "src/traverse.ml" 48 1920 1940
+)
+"src/traverse.ml" 59 2223 2272 "src/traverse.ml" 59 2223 2276
+type(
+  H.key -> unit
+)
+ident(
+  int_ref post "src/traverse.ml" 59 2223 2247 "src/traverse.ml" 59 2223 2251
+)
+"src/traverse.ml" 59 2223 2277 "src/traverse.ml" 59 2223 2278
+type(
+  G.t
+)
+ident(
+  int_ref g "src/traverse.ml" 59 2223 2252 "src/traverse.ml" 59 2223 2253
+)
+"src/traverse.ml" 59 2223 2256 "src/traverse.ml" 59 2223 2278
+call(
+  tail
+)
+type(
+  H.key -> unit
+)
+"src/traverse.ml" 64 2459 2465 "src/traverse.ml" 64 2459 2474
+type(
+  G.t -> bool
+)
+ident(
+  def has_cycle "src/traverse.ml" 76 2779 2781 "src/traverse.ml" 235 6804 6807
+)
+"src/traverse.ml" 64 2459 2475 "src/traverse.ml" 64 2459 2476
+type(
+  G.t
+)
+ident(
+  def g "src/traverse.ml" 65 2479 2483 "src/traverse.ml" 74 2756 2777
+)
+"src/traverse.ml" 65 2479 2487 "src/traverse.ml" 65 2479 2488
+type(
+  bool H.t
+)
+"src/traverse.ml" 65 2479 2491 "src/traverse.ml" 65 2479 2499
+type(
+  int -> bool H.t
+)
+ident(
+  ext_ref H.create
+)
+"src/traverse.ml" 65 2479 2500 "src/traverse.ml" 65 2479 2505
+type(
+  int
+)
+"src/traverse.ml" 65 2479 2491 "src/traverse.ml" 65 2479 2505
+call(
+  stack
+)
+type(
+  bool H.t
+)
+"src/traverse.ml" 66 2509 2521 "src/traverse.ml" 66 2509 2526
+type(
+  H.key -> unit
+)
+"src/traverse.ml" 66 2509 2527 "src/traverse.ml" 66 2509 2528
+type(
+  H.key
+)
+ident(
+  def v "src/traverse.ml" 67 2531 2537 "src/traverse.ml" 71 2649 2674
+)
+"src/traverse.ml" 67 2531 2537 "src/traverse.ml" 67 2531 2542
+type(
+  bool H.t -> H.key -> bool -> unit
+)
+ident(
+  ext_ref H.add
+)
+"src/traverse.ml" 67 2531 2543 "src/traverse.ml" 67 2531 2544
+type(
+  bool H.t
+)
+ident(
+  int_ref h "src/traverse.ml" 65 2479 2487 "src/traverse.ml" 65 2479 2488
+)
+"src/traverse.ml" 67 2531 2545 "src/traverse.ml" 67 2531 2546
+type(
+  H.key
+)
+ident(
+  int_ref v "src/traverse.ml" 66 2509 2527 "src/traverse.ml" 66 2509 2528
+)
+"src/traverse.ml" 67 2531 2547 "src/traverse.ml" 67 2531 2551
+type(
+  bool
+)
+"src/traverse.ml" 67 2531 2537 "src/traverse.ml" 67 2531 2551
+call(
+  stack
+)
+type(
+  unit
+)
+"src/traverse.ml" 68 2553 2559 "src/traverse.ml" 68 2553 2570
+type(
+  (H.key -> unit) -> G.t -> H.key -> unit
+)
+ident(
+  ext_ref G.iter_succ
+)
+"src/traverse.ml" 69 2571 2577 "src/traverse.ml" 69 2571 2578
+type(
+  H.key
+)
+ident(
+  def w "src/traverse.ml" 69 2571 2582 "src/traverse.ml" 69 2571 2641
+)
+"src/traverse.ml" 69 2571 2589 "src/traverse.ml" 69 2571 2595
+type(
+  bool H.t -> H.key -> bool
+)
+ident(
+  ext_ref H.find
+)
+"src/traverse.ml" 69 2571 2596 "src/traverse.ml" 69 2571 2597
+type(
+  bool H.t
+)
+ident(
+  int_ref h "src/traverse.ml" 65 2479 2487 "src/traverse.ml" 65 2479 2488
+)
+"src/traverse.ml" 69 2571 2598 "src/traverse.ml" 69 2571 2599
+type(
+  H.key
+)
+ident(
+  int_ref w "src/traverse.ml" 69 2571 2577 "src/traverse.ml" 69 2571 2578
+)
+"src/traverse.ml" 69 2571 2589 "src/traverse.ml" 69 2571 2599
+call(
+  stack
+)
+type(
+  bool
+)
+"src/traverse.ml" 69 2571 2605 "src/traverse.ml" 69 2571 2610
+type(
+  exn -> unit
+)
+ident(
+  ext_ref Pervasives.raise
+)
+"src/traverse.ml" 69 2571 2611 "src/traverse.ml" 69 2571 2615
+type(
+  exn
+)
+"src/traverse.ml" 69 2571 2605 "src/traverse.ml" 69 2571 2615
+type(
+  unit
+)
+"src/traverse.ml" 69 2571 2586 "src/traverse.ml" 69 2571 2615
+type(
+  unit
+)
+"src/traverse.ml" 69 2571 2621 "src/traverse.ml" 69 2571 2630
+type(
+  exn
+)
+"src/traverse.ml" 69 2571 2634 "src/traverse.ml" 69 2571 2639
+type(
+  H.key -> unit
+)
+ident(
+  int_ref visit "src/traverse.ml" 66 2509 2521 "src/traverse.ml" 66 2509 2526
+)
+"src/traverse.ml" 69 2571 2640 "src/traverse.ml" 69 2571 2641
+type(
+  H.key
+)
+ident(
+  int_ref w "src/traverse.ml" 69 2571 2577 "src/traverse.ml" 69 2571 2578
+)
+"src/traverse.ml" 69 2571 2634 "src/traverse.ml" 69 2571 2641
+call(
+  tail
+)
+type(
+  unit
+)
+"src/traverse.ml" 69 2571 2582 "src/traverse.ml" 69 2571 2641
+type(
+  unit
+)
+"src/traverse.ml" 69 2571 2572 "src/traverse.ml" 69 2571 2642
+type(
+  H.key -> unit
+)
+"src/traverse.ml" 70 2643 2644 "src/traverse.ml" 70 2643 2645
+type(
+  G.t
+)
+ident(
+  int_ref g "src/traverse.ml" 64 2459 2475 "src/traverse.ml" 64 2459 2476
+)
+"src/traverse.ml" 70 2643 2646 "src/traverse.ml" 70 2643 2647
+type(
+  H.key
+)
+ident(
+  int_ref v "src/traverse.ml" 66 2509 2527 "src/traverse.ml" 66 2509 2528
+)
+"src/traverse.ml" 68 2553 2559 "src/traverse.ml" 70 2643 2647
+call(
+  stack
+)
+type(
+  unit
+)
+"src/traverse.ml" 71 2649 2655 "src/traverse.ml" 71 2649 2664
+type(
+  bool H.t -> H.key -> bool -> unit
+)
+ident(
+  ext_ref H.replace
+)
+"src/traverse.ml" 71 2649 2665 "src/traverse.ml" 71 2649 2666
+type(
+  bool H.t
+)
+ident(
+  int_ref h "src/traverse.ml" 65 2479 2487 "src/traverse.ml" 65 2479 2488
+)
+"src/traverse.ml" 71 2649 2667 "src/traverse.ml" 71 2649 2668
+type(
+  H.key
+)
+ident(
+  int_ref v "src/traverse.ml" 66 2509 2527 "src/traverse.ml" 66 2509 2528
+)
+"src/traverse.ml" 71 2649 2669 "src/traverse.ml" 71 2649 2674
+type(
+  bool
+)
+"src/traverse.ml" 71 2649 2655 "src/traverse.ml" 71 2649 2674
+call(
+  tail
+)
+type(
+  unit
+)
+"src/traverse.ml" 68 2553 2559 "src/traverse.ml" 71 2649 2674
+type(
+  unit
+)
+"src/traverse.ml" 67 2531 2537 "src/traverse.ml" 71 2649 2674
+type(
+  unit
+)
+"src/traverse.ml" 73 2682 2690 "src/traverse.ml" 73 2682 2703
+type(
+  (H.key -> unit) -> G.t -> unit
+)
+ident(
+  ext_ref G.iter_vertex
+)
+"src/traverse.ml" 73 2682 2709 "src/traverse.ml" 73 2682 2710
+type(
+  H.key
+)
+ident(
+  def v "src/traverse.ml" 73 2682 2714 "src/traverse.ml" 73 2682 2745
+)
+"src/traverse.ml" 73 2682 2717 "src/traverse.ml" 73 2682 2720
+type(
+  bool -> bool
+)
+ident(
+  ext_ref Pervasives.not
+)
+"src/traverse.ml" 73 2682 2722 "src/traverse.ml" 73 2682 2727
+type(
+  bool H.t -> H.key -> bool
+)
+ident(
+  ext_ref H.mem
+)
+"src/traverse.ml" 73 2682 2728 "src/traverse.ml" 73 2682 2729
+type(
+  bool H.t
+)
+ident(
+  int_ref h "src/traverse.ml" 65 2479 2487 "src/traverse.ml" 65 2479 2488
+)
+"src/traverse.ml" 73 2682 2730 "src/traverse.ml" 73 2682 2731
+type(
+  H.key
+)
+ident(
+  int_ref v "src/traverse.ml" 73 2682 2709 "src/traverse.ml" 73 2682 2710
+)
+"src/traverse.ml" 73 2682 2721 "src/traverse.ml" 73 2682 2732
+call(
+  stack
+)
+type(
+  bool
+)
+"src/traverse.ml" 73 2682 2717 "src/traverse.ml" 73 2682 2732
+type(
+  bool
+)
+"src/traverse.ml" 73 2682 2738 "src/traverse.ml" 73 2682 2743
+type(
+  H.key -> unit
+)
+ident(
+  int_ref visit "src/traverse.ml" 66 2509 2521 "src/traverse.ml" 66 2509 2526
+)
+"src/traverse.ml" 73 2682 2744 "src/traverse.ml" 73 2682 2745
+type(
+  H.key
+)
+ident(
+  int_ref v "src/traverse.ml" 73 2682 2709 "src/traverse.ml" 73 2682 2710
+)
+"src/traverse.ml" 73 2682 2738 "src/traverse.ml" 73 2682 2745
+call(
+  tail
+)
+type(
+  unit
+)
+"src/traverse.ml" 73 2682 2714 "src/traverse.ml" 73 2682 2745
+type(
+  unit
+)
+"src/traverse.ml" 73 2682 2704 "src/traverse.ml" 73 2682 2746
+type(
+  H.key -> unit
+)
+"src/traverse.ml" 73 2682 2747 "src/traverse.ml" 73 2682 2748
+type(
+  G.t
+)
+ident(
+  int_ref g "src/traverse.ml" 64 2459 2475 "src/traverse.ml" 64 2459 2476
+)
+"src/traverse.ml" 73 2682 2690 "src/traverse.ml" 73 2682 2748
+call(
+  stack
+)
+type(
+  unit
+)
+"src/traverse.ml" 73 2682 2750 "src/traverse.ml" 73 2682 2755
+type(
+  bool
+)
+"src/traverse.ml" 73 2682 2690 "src/traverse.ml" 73 2682 2755
+type(
+  bool
+)
+"src/traverse.ml" 74 2756 2765 "src/traverse.ml" 74 2756 2769
+type(
+  exn
+)
+"src/traverse.ml" 74 2756 2773 "src/traverse.ml" 74 2756 2777
+type(
+  bool
+)
+"src/traverse.ml" 73 2682 2686 "src/traverse.ml" 74 2756 2777
+type(
+  bool
+)
+"src/traverse.ml" 66 2509 2513 "src/traverse.ml" 74 2756 2777
+type(
+  bool
+)
+"src/traverse.ml" 65 2479 2483 "src/traverse.ml" 74 2756 2777
+type(
+  bool
+)
+"src/traverse.ml" 76 2779 2785 "src/traverse.ml" 76 2779 2805
+type(
+  G.t -> bool
+)
+ident(
+  def has_cycle_undirected "src/traverse.ml" 95 3360 3362 "src/traverse.ml" 235 6804 6807
+)
+"src/traverse.ml" 76 2779 2806 "src/traverse.ml" 76 2779 2807
+type(
+  G.t
+)
+ident(
+  def g "src/traverse.ml" 77 2810 2814 "src/traverse.ml" 93 3337 3358
+)
+"src/traverse.ml" 77 2810 2818 "src/traverse.ml" 77 2810 2819
+type(
+  bool H.t
+)
+"src/traverse.ml" 77 2810 2822 "src/traverse.ml" 77 2810 2830
+type(
+  int -> bool H.t
+)
+ident(
+  ext_ref H.create
+)
+"src/traverse.ml" 77 2810 2831 "src/traverse.ml" 77 2810 2836
+type(
+  int
+)
+"src/traverse.ml" 77 2810 2822 "src/traverse.ml" 77 2810 2836
+call(
+  stack
+)
+type(
+  bool H.t
+)
+"src/traverse.ml" 78 2840 2848 "src/traverse.ml" 78 2840 2854
+type(
+  H.key H.t
+)
+"src/traverse.ml" 78 2840 2857 "src/traverse.ml" 78 2840 2865
+type(
+  int -> H.key H.t
+)
+ident(
+  ext_ref H.create
+)
+"src/traverse.ml" 78 2840 2866 "src/traverse.ml" 78 2840 2871
+type(
+  int
+)
+"src/traverse.ml" 78 2840 2857 "src/traverse.ml" 78 2840 2871
+call(
+  stack
+)
+type(
+  H.key H.t
+)
+"src/traverse.ml" 79 2875 2883 "src/traverse.ml" 79 2875 2892
+type(
+  G.V.t -> H.key -> bool
+)
+"src/traverse.ml" 79 2875 2893 "src/traverse.ml" 79 2875 2894
+type(
+  G.V.t
+)
+ident(
+  def u "src/traverse.ml" 79 2875 2895 "src/traverse.ml" 80 2945 3008
+)
+"src/traverse.ml" 79 2875 2895 "src/traverse.ml" 79 2875 2896
+type(
+  H.key
+)
+ident(
+  def v "src/traverse.ml" 80 2945 2951 "src/traverse.ml" 80 2945 3008
+)
+"src/traverse.ml" 80 2945 2955 "src/traverse.ml" 80 2945 2964
+type(
+  H.key -> G.V.t -> bool
+)
+ident(
+  ext_ref G.V.equal
+)
+"src/traverse.ml" 80 2945 2966 "src/traverse.ml" 80 2945 2972
+type(
+  H.key H.t -> H.key -> H.key
+)
+ident(
+  ext_ref H.find
+)
+"src/traverse.ml" 80 2945 2973 "src/traverse.ml" 80 2945 2979
+type(
+  H.key H.t
+)
+ident(
+  int_ref father "src/traverse.ml" 78 2840 2848 "src/traverse.ml" 78 2840 2854
+)
+"src/traverse.ml" 80 2945 2980 "src/traverse.ml" 80 2945 2981
+type(
+  H.key
+)
+ident(
+  int_ref v "src/traverse.ml" 79 2875 2895 "src/traverse.ml" 79 2875 2896
+)
+"src/traverse.ml" 80 2945 2965 "src/traverse.ml" 80 2945 2982
+call(
+  stack
+)
+type(
+  H.key
+)
+"src/traverse.ml" 80 2945 2983 "src/traverse.ml" 80 2945 2984
+type(
+  G.V.t
+)
+ident(
+  int_ref u "src/traverse.ml" 79 2875 2893 "src/traverse.ml" 79 2875 2894
+)
+"src/traverse.ml" 80 2945 2955 "src/traverse.ml" 80 2945 2984
+call(
+  stack
+)
+type(
+  bool
+)
+"src/traverse.ml" 80 2945 2990 "src/traverse.ml" 80 2945 2999
+type(
+  exn
+)
+"src/traverse.ml" 80 2945 3003 "src/traverse.ml" 80 2945 3008
+type(
+  bool
+)
+"src/traverse.ml" 80 2945 2951 "src/traverse.ml" 80 2945 3008
+type(
+  bool
+)
+"src/traverse.ml" 82 3016 3028 "src/traverse.ml" 82 3016 3033
+type(
+  H.key -> unit
+)
+"src/traverse.ml" 82 3016 3034 "src/traverse.ml" 82 3016 3035
+type(
+  H.key
+)
+ident(
+  def v "src/traverse.ml" 83 3038 3044 "src/traverse.ml" 90 3230 3255
+)
+"src/traverse.ml" 83 3038 3044 "src/traverse.ml" 83 3038 3049
+type(
+  bool H.t -> H.key -> bool -> unit
+)
+ident(
+  ext_ref H.add
+)
+"src/traverse.ml" 83 3038 3050 "src/traverse.ml" 83 3038 3051
+type(
+  bool H.t
+)
+ident(
+  int_ref h "src/traverse.ml" 77 2810 2818 "src/traverse.ml" 77 2810 2819
+)
+"src/traverse.ml" 83 3038 3052 "src/traverse.ml" 83 3038 3053
+type(
+  H.key
+)
+ident(
+  int_ref v "src/traverse.ml" 82 3016 3034 "src/traverse.ml" 82 3016 3035
+)
+"src/traverse.ml" 83 3038 3054 "src/traverse.ml" 83 3038 3058
+type(
+  bool
+)
+"src/traverse.ml" 83 3038 3044 "src/traverse.ml" 83 3038 3058
+call(
+  stack
+)
+type(
+  unit
+)
+"src/traverse.ml" 84 3060 3066 "src/traverse.ml" 84 3060 3077
+type(
+  (H.key -> unit) -> G.t -> H.key -> unit
+)
+ident(
+  ext_ref G.iter_succ
+)
+"src/traverse.ml" 85 3078 3084 "src/traverse.ml" 85 3078 3085
+type(
+  H.key
+)
+ident(
+  def w "src/traverse.ml" 86 3089 3093 "src/traverse.ml" 87 3150 3197
+)
+"src/traverse.ml" 86 3089 3100 "src/traverse.ml" 86 3089 3106
+type(
+  bool H.t -> H.key -> bool
+)
+ident(
+  ext_ref H.find
+)
+"src/traverse.ml" 86 3089 3107 "src/traverse.ml" 86 3089 3108
+type(
+  bool H.t
+)
+ident(
+  int_ref h "src/traverse.ml" 77 2810 2818 "src/traverse.ml" 77 2810 2819
+)
+"src/traverse.ml" 86 3089 3109 "src/traverse.ml" 86 3089 3110
+type(
+  H.key
+)
+ident(
+  int_ref w "src/traverse.ml" 85 3078 3084 "src/traverse.ml" 85 3078 3085
+)
+"src/traverse.ml" 86 3089 3100 "src/traverse.ml" 86 3089 3110
+call(
+  stack
+)
+type(
+  bool
+)
+"src/traverse.ml" 86 3089 3111 "src/traverse.ml" 86 3089 3113
+type(
+  bool -> bool -> bool
+)
+ident(
+  ext_ref Pervasives.( && )
+)
+"src/traverse.ml" 86 3089 3114 "src/traverse.ml" 86 3089 3117
+type(
+  bool -> bool
+)
+ident(
+  ext_ref Pervasives.not
+)
+"src/traverse.ml" 86 3089 3119 "src/traverse.ml" 86 3089 3128
+type(
+  H.key -> H.key -> bool
+)
+ident(
+  int_ref is_father "src/traverse.ml" 79 2875 2883 "src/traverse.ml" 79 2875 2892
+)
+"src/traverse.ml" 86 3089 3129 "src/traverse.ml" 86 3089 3130
+type(
+  H.key
+)
+ident(
+  int_ref w "src/traverse.ml" 85 3078 3084 "src/traverse.ml" 85 3078 3085
+)
+"src/traverse.ml" 86 3089 3131 "src/traverse.ml" 86 3089 3132
+type(
+  H.key
+)
+ident(
+  int_ref v "src/traverse.ml" 82 3016 3034 "src/traverse.ml" 82 3016 3035
+)
+"src/traverse.ml" 86 3089 3118 "src/traverse.ml" 86 3089 3133
+call(
+  stack
+)
+type(
+  bool
+)
+"src/traverse.ml" 86 3089 3114 "src/traverse.ml" 86 3089 3133
+type(
+  bool
+)
+"src/traverse.ml" 86 3089 3100 "src/traverse.ml" 86 3089 3133
+type(
+  bool
+)
+"src/traverse.ml" 86 3089 3139 "src/traverse.ml" 86 3089 3144
+type(
+  exn -> unit
+)
+ident(
+  ext_ref Pervasives.raise
+)
+"src/traverse.ml" 86 3089 3145 "src/traverse.ml" 86 3089 3149
+type(
+  exn
+)
+"src/traverse.ml" 86 3089 3139 "src/traverse.ml" 86 3089 3149
+type(
+  unit
+)
+"src/traverse.ml" 86 3089 3097 "src/traverse.ml" 86 3089 3149
+type(
+  unit
+)
+"src/traverse.ml" 87 3150 3159 "src/traverse.ml" 87 3150 3168
+type(
+  exn
+)
+"src/traverse.ml" 87 3150 3172 "src/traverse.ml" 87 3150 3177
+type(
+  H.key H.t -> H.key -> H.key -> unit
+)
+ident(
+  ext_ref H.add
+)
+"src/traverse.ml" 87 3150 3178 "src/traverse.ml" 87 3150 3184
+type(
+  H.key H.t
+)
+ident(
+  int_ref father "src/traverse.ml" 78 2840 2848 "src/traverse.ml" 78 2840 2854
+)
+"src/traverse.ml" 87 3150 3185 "src/traverse.ml" 87 3150 3186
+type(
+  H.key
+)
+ident(
+  int_ref w "src/traverse.ml" 85 3078 3084 "src/traverse.ml" 85 3078 3085
+)
+"src/traverse.ml" 87 3150 3187 "src/traverse.ml" 87 3150 3188
+type(
+  H.key
+)
+ident(
+  int_ref v "src/traverse.ml" 82 3016 3034 "src/traverse.ml" 82 3016 3035
+)
+"src/traverse.ml" 87 3150 3172 "src/traverse.ml" 87 3150 3188
+call(
+  stack
+)
+type(
+  unit
+)
+"src/traverse.ml" 87 3150 3190 "src/traverse.ml" 87 3150 3195
+type(
+  H.key -> unit
+)
+ident(
+  int_ref visit "src/traverse.ml" 82 3016 3028 "src/traverse.ml" 82 3016 3033
+)
+"src/traverse.ml" 87 3150 3196 "src/traverse.ml" 87 3150 3197
+type(
+  H.key
+)
+ident(
+  int_ref w "src/traverse.ml" 85 3078 3084 "src/traverse.ml" 85 3078 3085
+)
+"src/traverse.ml" 87 3150 3190 "src/traverse.ml" 87 3150 3197
+call(
+  tail
+)
+type(
+  unit
+)
+"src/traverse.ml" 87 3150 3172 "src/traverse.ml" 87 3150 3197
+type(
+  unit
+)
+"src/traverse.ml" 86 3089 3093 "src/traverse.ml" 87 3150 3197
+type(
+  unit
+)
+"src/traverse.ml" 85 3078 3079 "src/traverse.ml" 87 3150 3198
+type(
+  H.key -> unit
+)
+"src/traverse.ml" 88 3199 3200 "src/traverse.ml" 88 3199 3201
+type(
+  G.t
+)
+ident(
+  int_ref g "src/traverse.ml" 76 2779 2806 "src/traverse.ml" 76 2779 2807
+)
+"src/traverse.ml" 88 3199 3202 "src/traverse.ml" 88 3199 3203
+type(
+  H.key
+)
+ident(
+  int_ref v "src/traverse.ml" 82 3016 3034 "src/traverse.ml" 82 3016 3035
+)
+"src/traverse.ml" 84 3060 3066 "src/traverse.ml" 88 3199 3203
+call(
+  stack
+)
+type(
+  unit
+)
+"src/traverse.ml" 89 3205 3211 "src/traverse.ml" 89 3205 3219
+type(
+  H.key H.t -> H.key -> unit
+)
+ident(
+  ext_ref H.remove
+)
+"src/traverse.ml" 89 3205 3220 "src/traverse.ml" 89 3205 3226
+type(
+  H.key H.t
+)
+ident(
+  int_ref father "src/traverse.ml" 78 2840 2848 "src/traverse.ml" 78 2840 2854
+)
+"src/traverse.ml" 89 3205 3227 "src/traverse.ml" 89 3205 3228
+type(
+  H.key
+)
+ident(
+  int_ref v "src/traverse.ml" 82 3016 3034 "src/traverse.ml" 82 3016 3035
+)
+"src/traverse.ml" 89 3205 3211 "src/traverse.ml" 89 3205 3228
+call(
+  stack
+)
+type(
+  unit
+)
+"src/traverse.ml" 90 3230 3236 "src/traverse.ml" 90 3230 3245
+type(
+  bool H.t -> H.key -> bool -> unit
+)
+ident(
+  ext_ref H.replace
+)
+"src/traverse.ml" 90 3230 3246 "src/traverse.ml" 90 3230 3247
+type(
+  bool H.t
+)
+ident(
+  int_ref h "src/traverse.ml" 77 2810 2818 "src/traverse.ml" 77 2810 2819
+)
+"src/traverse.ml" 90 3230 3248 "src/traverse.ml" 90 3230 3249
+type(
+  H.key
+)
+ident(
+  int_ref v "src/traverse.ml" 82 3016 3034 "src/traverse.ml" 82 3016 3035
+)
+"src/traverse.ml" 90 3230 3250 "src/traverse.ml" 90 3230 3255
+type(
+  bool
+)
+"src/traverse.ml" 90 3230 3236 "src/traverse.ml" 90 3230 3255
+call(
+  tail
+)
+type(
+  unit
+)
+"src/traverse.ml" 89 3205 3211 "src/traverse.ml" 90 3230 3255
+type(
+  unit
+)
+"src/traverse.ml" 84 3060 3066 "src/traverse.ml" 90 3230 3255
+type(
+  unit
+)
+"src/traverse.ml" 83 3038 3044 "src/traverse.ml" 90 3230 3255
+type(
+  unit
+)
+"src/traverse.ml" 92 3263 3271 "src/traverse.ml" 92 3263 3284
+type(
+  (H.key -> unit) -> G.t -> unit
+)
+ident(
+  ext_ref G.iter_vertex
+)
+"src/traverse.ml" 92 3263 3290 "src/traverse.ml" 92 3263 3291
+type(
+  H.key
+)
+ident(
+  def v "src/traverse.ml" 92 3263 3295 "src/traverse.ml" 92 3263 3326
+)
+"src/traverse.ml" 92 3263 3298 "src/traverse.ml" 92 3263 3301
+type(
+  bool -> bool
+)
+ident(
+  ext_ref Pervasives.not
+)
+"src/traverse.ml" 92 3263 3303 "src/traverse.ml" 92 3263 3308
+type(
+  bool H.t -> H.key -> bool
+)
+ident(
+  ext_ref H.mem
+)
+"src/traverse.ml" 92 3263 3309 "src/traverse.ml" 92 3263 3310
+type(
+  bool H.t
+)
+ident(
+  int_ref h "src/traverse.ml" 77 2810 2818 "src/traverse.ml" 77 2810 2819
+)
+"src/traverse.ml" 92 3263 3311 "src/traverse.ml" 92 3263 3312
+type(
+  H.key
+)
+ident(
+  int_ref v "src/traverse.ml" 92 3263 3290 "src/traverse.ml" 92 3263 3291
+)
+"src/traverse.ml" 92 3263 3302 "src/traverse.ml" 92 3263 3313
+call(
+  stack
+)
+type(
+  bool
+)
+"src/traverse.ml" 92 3263 3298 "src/traverse.ml" 92 3263 3313
+type(
+  bool
+)
+"src/traverse.ml" 92 3263 3319 "src/traverse.ml" 92 3263 3324
+type(
+  H.key -> unit
+)
+ident(
+  int_ref visit "src/traverse.ml" 82 3016 3028 "src/traverse.ml" 82 3016 3033
+)
+"src/traverse.ml" 92 3263 3325 "src/traverse.ml" 92 3263 3326
+type(
+  H.key
+)
+ident(
+  int_ref v "src/traverse.ml" 92 3263 3290 "src/traverse.ml" 92 3263 3291
+)
+"src/traverse.ml" 92 3263 3319 "src/traverse.ml" 92 3263 3326
+call(
+  tail
+)
+type(
+  unit
+)
+"src/traverse.ml" 92 3263 3295 "src/traverse.ml" 92 3263 3326
+type(
+  unit
+)
+"src/traverse.ml" 92 3263 3285 "src/traverse.ml" 92 3263 3327
+type(
+  H.key -> unit
+)
+"src/traverse.ml" 92 3263 3328 "src/traverse.ml" 92 3263 3329
+type(
+  G.t
+)
+ident(
+  int_ref g "src/traverse.ml" 76 2779 2806 "src/traverse.ml" 76 2779 2807
+)
+"src/traverse.ml" 92 3263 3271 "src/traverse.ml" 92 3263 3329
+call(
+  stack
+)
+type(
+  unit
+)
+"src/traverse.ml" 92 3263 3331 "src/traverse.ml" 92 3263 3336
+type(
+  bool
+)
+"src/traverse.ml" 92 3263 3271 "src/traverse.ml" 92 3263 3336
+type(
+  bool
+)
+"src/traverse.ml" 93 3337 3346 "src/traverse.ml" 93 3337 3350
+type(
+  exn
+)
+"src/traverse.ml" 93 3337 3354 "src/traverse.ml" 93 3337 3358
+type(
+  bool
+)
+"src/traverse.ml" 92 3263 3267 "src/traverse.ml" 93 3337 3358
+type(
+  bool
+)
+"src/traverse.ml" 82 3016 3020 "src/traverse.ml" 93 3337 3358
+type(
+  bool
+)
+"src/traverse.ml" 79 2875 2879 "src/traverse.ml" 93 3337 3358
+type(
+  bool
+)
+"src/traverse.ml" 78 2840 2844 "src/traverse.ml" 93 3337 3358
+type(
+  bool
+)
+"src/traverse.ml" 77 2810 2814 "src/traverse.ml" 93 3337 3358
+type(
+  bool
+)
+"src/traverse.ml" 95 3360 3366 "src/traverse.ml" 95 3360 3375
+type(
+  G.t -> bool
+)
+ident(
+  def has_cycle "src/traverse.ml" 98 3447 3449 "src/traverse.ml" 235 6804 6807
+)
+"src/traverse.ml" 95 3360 3376 "src/traverse.ml" 95 3360 3377
+type(
+  G.t
+)
+ident(
+  def g "src/traverse.ml" 96 3380 3384 "src/traverse.ml" 96 3380 3445
+)
+"src/traverse.ml" 96 3380 3387 "src/traverse.ml" 96 3380 3400
+type(
+  bool
+)
+ident(
+  ext_ref G.is_directed
+)
+"src/traverse.ml" 96 3380 3406 "src/traverse.ml" 96 3380 3415
+type(
+  G.t -> bool
+)
+ident(
+  int_ref has_cycle "src/traverse.ml" 64 2459 2465 "src/traverse.ml" 64 2459 2474
+)
+"src/traverse.ml" 96 3380 3416 "src/traverse.ml" 96 3380 3417
+type(
+  G.t
+)
+ident(
+  int_ref g "src/traverse.ml" 95 3360 3376 "src/traverse.ml" 95 3360 3377
+)
+"src/traverse.ml" 96 3380 3406 "src/traverse.ml" 96 3380 3417
+call(
+  tail
+)
+type(
+  bool
+)
+"src/traverse.ml" 96 3380 3423 "src/traverse.ml" 96 3380 3443
+type(
+  G.t -> bool
+)
+ident(
+  int_ref has_cycle_undirected "src/traverse.ml" 76 2779 2785 "src/traverse.ml" 76 2779 2805
+)
+"src/traverse.ml" 96 3380 3444 "src/traverse.ml" 96 3380 3445
+type(
+  G.t
+)
+ident(
+  int_ref g "src/traverse.ml" 95 3360 3376 "src/traverse.ml" 95 3360 3377
+)
+"src/traverse.ml" 96 3380 3423 "src/traverse.ml" 96 3380 3445
+call(
+  tail
+)
+type(
+  bool
+)
+"src/traverse.ml" 96 3380 3384 "src/traverse.ml" 96 3380 3445
+type(
+  bool
+)
+"src/traverse.ml" 100 3471 3479 "src/traverse.ml" 100 3471 3488
+type(
+  G.t -> bool
+)
+ident(
+  def has_cycle "src/traverse.ml" 131 4177 4181 "src/traverse.ml" 202 6013 6018
+)
+"src/traverse.ml" 100 3471 3489 "src/traverse.ml" 100 3471 3490
+type(
+  G.t
+)
+ident(
+  def g "src/traverse.ml" 101 3493 3499 "src/traverse.ml" 129 4170 4175
+)
+"src/traverse.ml" 101 3493 3503 "src/traverse.ml" 101 3493 3504
+type(
+  bool H.t
+)
+"src/traverse.ml" 101 3493 3507 "src/traverse.ml" 101 3493 3515
+type(
+  int -> bool H.t
+)
+ident(
+  ext_ref H.create
+)
+"src/traverse.ml" 101 3493 3516 "src/traverse.ml" 101 3493 3521
+type(
+  int
+)
+"src/traverse.ml" 101 3493 3507 "src/traverse.ml" 101 3493 3521
+call(
+  stack
+)
+type(
+  bool H.t
+)
+"src/traverse.ml" 102 3525 3535 "src/traverse.ml" 102 3525 3540
+type(
+  H.key Stack.t
+)
+"src/traverse.ml" 102 3525 3543 "src/traverse.ml" 102 3525 3555
+type(
+  unit -> H.key Stack.t
+)
+ident(
+  ext_ref Stack.create
+)
+"src/traverse.ml" 102 3525 3556 "src/traverse.ml" 102 3525 3558
+type(
+  unit
+)
+"src/traverse.ml" 102 3525 3543 "src/traverse.ml" 102 3525 3558
+call(
+  stack
+)
+type(
+  H.key Stack.t
+)
+"src/traverse.ml" 103 3562 3572 "src/traverse.ml" 103 3562 3576
+type(
+  unit -> unit
+)
+"src/traverse.ml" 103 3562 3577 "src/traverse.ml" 103 3562 3579
+type(
+  unit
+)
+"src/traverse.ml" 104 3582 3589 "src/traverse.ml" 104 3582 3592
+type(
+  bool -> bool
+)
+ident(
+  ext_ref Pervasives.not
+)
+"src/traverse.ml" 104 3582 3594 "src/traverse.ml" 104 3582 3608
+type(
+  H.key Stack.t -> bool
+)
+ident(
+  ext_ref Stack.is_empty
+)
+"src/traverse.ml" 104 3582 3609 "src/traverse.ml" 104 3582 3614
+type(
+  H.key Stack.t
+)
+ident(
+  int_ref stack "src/traverse.ml" 102 3525 3535 "src/traverse.ml" 102 3525 3540
+)
+"src/traverse.ml" 104 3582 3593 "src/traverse.ml" 104 3582 3615
+call(
+  stack
+)
+type(
+  bool
+)
+"src/traverse.ml" 104 3582 3589 "src/traverse.ml" 104 3582 3615
+type(
+  bool
+)
+"src/traverse.ml" 105 3619 3626 "src/traverse.ml" 105 3619 3627
+type(
+  H.key
+)
+ident(
+  def v "src/traverse.ml" 106 3649 3652 "src/traverse.ml" 119 4009 4015
+)
+"src/traverse.ml" 105 3619 3630 "src/traverse.ml" 105 3619 3639
+type(
+  H.key Stack.t -> H.key
+)
+ident(
+  ext_ref Stack.top
+)
+"src/traverse.ml" 105 3619 3640 "src/traverse.ml" 105 3619 3645
+type(
+  H.key Stack.t
+)
+ident(
+  int_ref stack "src/traverse.ml" 102 3525 3535 "src/traverse.ml" 102 3525 3540
+)
+"src/traverse.ml" 105 3619 3630 "src/traverse.ml" 105 3619 3645
+call(
+  stack
+)
+type(
+  H.key
+)
+"src/traverse.ml" 106 3649 3655 "src/traverse.ml" 106 3649 3660
+type(
+  bool H.t -> H.key -> bool
+)
+ident(
+  ext_ref H.mem
+)
+"src/traverse.ml" 106 3649 3661 "src/traverse.ml" 106 3649 3662
+type(
+  bool H.t
+)
+ident(
+  int_ref h "src/traverse.ml" 101 3493 3503 "src/traverse.ml" 101 3493 3504
+)
+"src/traverse.ml" 106 3649 3663 "src/traverse.ml" 106 3649 3664
+type(
+  H.key
+)
+ident(
+  int_ref v "src/traverse.ml" 105 3619 3626 "src/traverse.ml" 105 3619 3627
+)
+"src/traverse.ml" 106 3649 3655 "src/traverse.ml" 106 3649 3664
+call(
+  stack
+)
+type(
+  bool
+)
+"src/traverse.ml" 109 3754 3759 "src/traverse.ml" 109 3754 3768
+type(
+  bool H.t -> H.key -> bool -> unit
+)
+ident(
+  ext_ref H.replace
+)
+"src/traverse.ml" 109 3754 3769 "src/traverse.ml" 109 3754 3770
+type(
+  bool H.t
+)
+ident(
+  int_ref h "src/traverse.ml" 101 3493 3503 "src/traverse.ml" 101 3493 3504
+)
+"src/traverse.ml" 109 3754 3771 "src/traverse.ml" 109 3754 3772
+type(
+  H.key
+)
+ident(
+  int_ref v "src/traverse.ml" 105 3619 3626 "src/traverse.ml" 105 3619 3627
+)
+"src/traverse.ml" 109 3754 3773 "src/traverse.ml" 109 3754 3778
+type(
+  bool
+)
+"src/traverse.ml" 109 3754 3759 "src/traverse.ml" 109 3754 3778
+call(
+  stack
+)
+type(
+  unit
+)
+"src/traverse.ml" 110 3780 3785 "src/traverse.ml" 110 3780 3791
+type(
+  H.key -> unit
+)
+ident(
+  ext_ref Pervasives.ignore
+)
+"src/traverse.ml" 110 3780 3793 "src/traverse.ml" 110 3780 3802
+type(
+  H.key Stack.t -> H.key
+)
+ident(
+  ext_ref Stack.pop
+)
+"src/traverse.ml" 110 3780 3803 "src/traverse.ml" 110 3780 3808
+type(
+  H.key Stack.t
+)
+ident(
+  int_ref stack "src/traverse.ml" 102 3525 3535 "src/traverse.ml" 102 3525 3540
+)
+"src/traverse.ml" 110 3780 3792 "src/traverse.ml" 110 3780 3809
+call(
+  stack
+)
+type(
+  H.key
+)
+"src/traverse.ml" 110 3780 3785 "src/traverse.ml" 110 3780 3809
+type(
+  unit
+)
+"src/traverse.ml" 106 3649 3670 "src/traverse.ml" 111 3810 3816
+type(
+  unit
+)
+"src/traverse.ml" 113 3864 3869 "src/traverse.ml" 113 3864 3874
+type(
+  bool H.t -> H.key -> bool -> unit
+)
+ident(
+  ext_ref H.add
+)
+"src/traverse.ml" 113 3864 3875 "src/traverse.ml" 113 3864 3876
+type(
+  bool H.t
+)
+ident(
+  int_ref h "src/traverse.ml" 101 3493 3503 "src/traverse.ml" 101 3493 3504
+)
+"src/traverse.ml" 113 3864 3877 "src/traverse.ml" 113 3864 3878
+type(
+  H.key
+)
+ident(
+  int_ref v "src/traverse.ml" 105 3619 3626 "src/traverse.ml" 105 3619 3627
+)
+"src/traverse.ml" 113 3864 3879 "src/traverse.ml" 113 3864 3883
+type(
+  bool
+)
+"src/traverse.ml" 113 3864 3869 "src/traverse.ml" 113 3864 3883
+call(
+  stack
+)
+type(
+  unit
+)
+"src/traverse.ml" 114 3885 3890 "src/traverse.ml" 114 3885 3901
+type(
+  (H.key -> unit) -> G.t -> H.key -> unit
+)
+ident(
+  ext_ref G.iter_succ
+)
+"src/traverse.ml" 115 3902 3914 "src/traverse.ml" 115 3902 3915
+type(
+  H.key
+)
+ident(
+  def w "src/traverse.ml" 116 3919 3922 "src/traverse.ml" 117 3956 3995
+)
+"src/traverse.ml" 116 3919 3929 "src/traverse.ml" 116 3919 3935
+type(
+  bool H.t -> H.key -> bool
+)
+ident(
+  ext_ref H.find
+)
+"src/traverse.ml" 116 3919 3936 "src/traverse.ml" 116 3919 3937
+type(
+  bool H.t
+)
+ident(
+  int_ref h "src/traverse.ml" 101 3493 3503 "src/traverse.ml" 101 3493 3504
+)
+"src/traverse.ml" 116 3919 3938 "src/traverse.ml" 116 3919 3939
+type(
+  H.key
+)
+ident(
+  int_ref w "src/traverse.ml" 115 3902 3914 "src/traverse.ml" 115 3902 3915
+)
+"src/traverse.ml" 116 3919 3929 "src/traverse.ml" 116 3919 3939
+call(
+  stack
+)
+type(
+  bool
+)
+"src/traverse.ml" 116 3919 3945 "src/traverse.ml" 116 3919 3950
+type(
+  exn -> unit
+)
+ident(
+  ext_ref Pervasives.raise
+)
+"src/traverse.ml" 116 3919 3951 "src/traverse.ml" 116 3919 3955
+type(
+  exn
+)
+"src/traverse.ml" 116 3919 3945 "src/traverse.ml" 116 3919 3955
+type(
+  unit
+)
+"src/traverse.ml" 116 3919 3926 "src/traverse.ml" 116 3919 3955
+type(
+  unit
+)
+"src/traverse.ml" 117 3956 3964 "src/traverse.ml" 117 3956 3973
+type(
+  exn
+)
+"src/traverse.ml" 117 3956 3977 "src/traverse.ml" 117 3956 3987
+type(
+  H.key -> H.key Stack.t -> unit
+)
+ident(
+  ext_ref Stack.push
+)
+"src/traverse.ml" 117 3956 3988 "src/traverse.ml" 117 3956 3989
+type(
+  H.key
+)
+ident(
+  int_ref w "src/traverse.ml" 115 3902 3914 "src/traverse.ml" 115 3902 3915
+)
+"src/traverse.ml" 117 3956 3990 "src/traverse.ml" 117 3956 3995
+type(
+  H.key Stack.t
+)
+ident(
+  int_ref stack "src/traverse.ml" 102 3525 3535 "src/traverse.ml" 102 3525 3540
+)
+"src/traverse.ml" 117 3956 3977 "src/traverse.ml" 117 3956 3995
+call(
+  tail
+)
+type(
+  unit
+)
+"src/traverse.ml" 116 3919 3922 "src/traverse.ml" 117 3956 3995
+type(
+  unit
+)
+"src/traverse.ml" 115 3902 3909 "src/traverse.ml" 117 3956 3996
+type(
+  H.key -> unit
+)
+"src/traverse.ml" 118 3997 4004 "src/traverse.ml" 118 3997 4005
+type(
+  G.t
+)
+ident(
+  int_ref g "src/traverse.ml" 100 3471 3489 "src/traverse.ml" 100 3471 3490
+)
+"src/traverse.ml" 118 3997 4006 "src/traverse.ml" 118 3997 4007
+type(
+  H.key
+)
+ident(
+  int_ref v "src/traverse.ml" 105 3619 3626 "src/traverse.ml" 105 3619 3627
+)
+"src/traverse.ml" 114 3885 3890 "src/traverse.ml" 118 3997 4008
+call(
+  stack
+)
+type(
+  unit
+)
+"src/traverse.ml" 111 3810 3822 "src/traverse.ml" 119 4009 4015
+type(
+  unit
+)
+"src/traverse.ml" 106 3649 3652 "src/traverse.ml" 119 4009 4015
+type(
+  unit
+)
+"src/traverse.ml" 105 3619 3622 "src/traverse.ml" 119 4009 4015
+type(
+  unit
+)
+"src/traverse.ml" 104 3582 3583 "src/traverse.ml" 120 4016 4021
+type(
+  unit
+)
+"src/traverse.ml" 123 4041 4042 "src/traverse.ml" 123 4041 4055
+type(
+  (H.key -> unit) -> G.t -> unit
+)
+ident(
+  ext_ref G.iter_vertex
+)
+"src/traverse.ml" 124 4056 4064 "src/traverse.ml" 124 4056 4065
+type(
+  H.key
+)
+ident(
+  def v "src/traverse.ml" 125 4069 4075 "src/traverse.ml" 125 4069 4136
+)
+"src/traverse.ml" 125 4069 4078 "src/traverse.ml" 125 4069 4081
+type(
+  bool -> bool
+)
+ident(
+  ext_ref Pervasives.not
+)
+"src/traverse.ml" 125 4069 4083 "src/traverse.ml" 125 4069 4088
+type(
+  bool H.t -> H.key -> bool
+)
+ident(
+  ext_ref H.mem
+)
+"src/traverse.ml" 125 4069 4089 "src/traverse.ml" 125 4069 4090
+type(
+  bool H.t
+)
+ident(
+  int_ref h "src/traverse.ml" 101 3493 3503 "src/traverse.ml" 101 3493 3504
+)
+"src/traverse.ml" 125 4069 4091 "src/traverse.ml" 125 4069 4092
+type(
+  H.key
+)
+ident(
+  int_ref v "src/traverse.ml" 124 4056 4064 "src/traverse.ml" 124 4056 4065
+)
+"src/traverse.ml" 125 4069 4082 "src/traverse.ml" 125 4069 4093
+call(
+  stack
+)
+type(
+  bool
+)
+"src/traverse.ml" 125 4069 4078 "src/traverse.ml" 125 4069 4093
+type(
+  bool
+)
+"src/traverse.ml" 125 4069 4105 "src/traverse.ml" 125 4069 4115
+type(
+  H.key -> H.key Stack.t -> unit
+)
+ident(
+  ext_ref Stack.push
+)
+"src/traverse.ml" 125 4069 4116 "src/traverse.ml" 125 4069 4117
+type(
+  H.key
+)
+ident(
+  int_ref v "src/traverse.ml" 124 4056 4064 "src/traverse.ml" 124 4056 4065
+)
+"src/traverse.ml" 125 4069 4118 "src/traverse.ml" 125 4069 4123
+type(
+  H.key Stack.t
+)
+ident(
+  int_ref stack "src/traverse.ml" 102 3525 3535 "src/traverse.ml" 102 3525 3540
+)
+"src/traverse.ml" 125 4069 4105 "src/traverse.ml" 125 4069 4123
+call(
+  stack
+)
+type(
+  unit
+)
+"src/traverse.ml" 125 4069 4125 "src/traverse.ml" 125 4069 4129
+type(
+  unit -> unit
+)
+ident(
+  int_ref loop "src/traverse.ml" 103 3562 3572 "src/traverse.ml" 103 3562 3576
+)
+"src/traverse.ml" 125 4069 4130 "src/traverse.ml" 125 4069 4132
+type(
+  unit
+)
+"src/traverse.ml" 125 4069 4125 "src/traverse.ml" 125 4069 4132
+call(
+  tail
+)
+type(
+  unit
+)
+"src/traverse.ml" 125 4069 4099 "src/traverse.ml" 125 4069 4136
+type(
+  unit
+)
+"src/traverse.ml" 125 4069 4075 "src/traverse.ml" 125 4069 4136
+type(
+  unit
+)
+"src/traverse.ml" 124 4056 4059 "src/traverse.ml" 125 4069 4137
+type(
+  H.key -> unit
+)
+"src/traverse.ml" 126 4138 4141 "src/traverse.ml" 126 4138 4142
+type(
+  G.t
+)
+ident(
+  int_ref g "src/traverse.ml" 100 3471 3489 "src/traverse.ml" 100 3471 3490
+)
+"src/traverse.ml" 123 4041 4042 "src/traverse.ml" 126 4138 4142
+call(
+  stack
+)
+type(
+  unit
+)
+"src/traverse.ml" 127 4144 4145 "src/traverse.ml" 127 4144 4150
+type(
+  bool
+)
+"src/traverse.ml" 123 4041 4042 "src/traverse.ml" 127 4144 4150
+type(
+  bool
+)
+"src/traverse.ml" 128 4151 4162 "src/traverse.ml" 128 4151 4166
+type(
+  exn
+)
+"src/traverse.ml" 129 4170 4171 "src/traverse.ml" 129 4170 4175
+type(
+  bool
+)
+"src/traverse.ml" 122 4031 4037 "src/traverse.ml" 129 4170 4175
+type(
+  bool
+)
+"src/traverse.ml" 103 3562 3568 "src/traverse.ml" 129 4170 4175
+type(
+  bool
+)
+"src/traverse.ml" 102 3525 3531 "src/traverse.ml" 129 4170 4175
+type(
+  bool
+)
+"src/traverse.ml" 101 3493 3499 "src/traverse.ml" 129 4170 4175
+type(
+  bool
+)
+"src/traverse.ml" 131 4177 4185 "src/traverse.ml" 131 4177 4205
+type(
+  G.t -> bool
+)
+ident(
+  def has_cycle_undirected "src/traverse.ml" 167 5136 5140 "src/traverse.ml" 202 6013 6018
+)
+"src/traverse.ml" 131 4177 4206 "src/traverse.ml" 131 4177 4207
+type(
+  G.t
+)
+ident(
+  def g "src/traverse.ml" 132 4210 4216 "src/traverse.ml" 165 5129 5134
+)
+"src/traverse.ml" 132 4210 4220 "src/traverse.ml" 132 4210 4221
+type(
+  bool H.t
+)
+"src/traverse.ml" 132 4210 4224 "src/traverse.ml" 132 4210 4232
+type(
+  int -> bool H.t
+)
+ident(
+  ext_ref H.create
+)
+"src/traverse.ml" 132 4210 4233 "src/traverse.ml" 132 4210 4238
+type(
+  int
+)
+"src/traverse.ml" 132 4210 4224 "src/traverse.ml" 132 4210 4238
+call(
+  stack
+)
+type(
+  bool H.t
+)
+"src/traverse.ml" 133 4242 4252 "src/traverse.ml" 133 4242 4258
+type(
+  H.key H.t
+)
+"src/traverse.ml" 133 4242 4261 "src/traverse.ml" 133 4242 4269
+type(
+  int -> H.key H.t
+)
+ident(
+  ext_ref H.create
+)
+"src/traverse.ml" 133 4242 4270 "src/traverse.ml" 133 4242 4275
+type(
+  int
+)
+"src/traverse.ml" 133 4242 4261 "src/traverse.ml" 133 4242 4275
+call(
+  stack
+)
+type(
+  H.key H.t
+)
+"src/traverse.ml" 134 4279 4289 "src/traverse.ml" 134 4279 4298
+type(
+  G.V.t -> H.key -> bool
+)
+"src/traverse.ml" 134 4279 4299 "src/traverse.ml" 134 4279 4300
+type(
+  G.V.t
+)
+ident(
+  def u "src/traverse.ml" 134 4279 4301 "src/traverse.ml" 135 4351 4409
+)
+"src/traverse.ml" 134 4279 4301 "src/traverse.ml" 134 4279 4302
+type(
+  H.key
+)
+ident(
+  def v "src/traverse.ml" 135 4351 4352 "src/traverse.ml" 135 4351 4409
+)
+"src/traverse.ml" 135 4351 4356 "src/traverse.ml" 135 4351 4365
+type(
+  H.key -> G.V.t -> bool
+)
+ident(
+  ext_ref G.V.equal
+)
+"src/traverse.ml" 135 4351 4367 "src/traverse.ml" 135 4351 4373
+type(
+  H.key H.t -> H.key -> H.key
+)
+ident(
+  ext_ref H.find
+)
+"src/traverse.ml" 135 4351 4374 "src/traverse.ml" 135 4351 4380
+type(
+  H.key H.t
+)
+ident(
+  int_ref father "src/traverse.ml" 133 4242 4252 "src/traverse.ml" 133 4242 4258
+)
+"src/traverse.ml" 135 4351 4381 "src/traverse.ml" 135 4351 4382
+type(
+  H.key
+)
+ident(
+  int_ref v "src/traverse.ml" 134 4279 4301 "src/traverse.ml" 134 4279 4302
+)
+"src/traverse.ml" 135 4351 4366 "src/traverse.ml" 135 4351 4383
+call(
+  stack
+)
+type(
+  H.key
+)
+"src/traverse.ml" 135 4351 4384 "src/traverse.ml" 135 4351 4385
+type(
+  G.V.t
+)
+ident(
+  int_ref u "src/traverse.ml" 134 4279 4299 "src/traverse.ml" 134 4279 4300
+)
+"src/traverse.ml" 135 4351 4356 "src/traverse.ml" 135 4351 4385
+call(
+  stack
+)
+type(
+  bool
+)
+"src/traverse.ml" 135 4351 4391 "src/traverse.ml" 135 4351 4400
+type(
+  exn
+)
+"src/traverse.ml" 135 4351 4404 "src/traverse.ml" 135 4351 4409
+type(
+  bool
+)
+"src/traverse.ml" 135 4351 4352 "src/traverse.ml" 135 4351 4409
+type(
+  bool
+)
+"src/traverse.ml" 137 4419 4429 "src/traverse.ml" 137 4419 4434
+type(
+  H.key Stack.t
+)
+"src/traverse.ml" 137 4419 4437 "src/traverse.ml" 137 4419 4449
+type(
+  unit -> H.key Stack.t
+)
+ident(
+  ext_ref Stack.create
+)
+"src/traverse.ml" 137 4419 4450 "src/traverse.ml" 137 4419 4452
+type(
+  unit
+)
+"src/traverse.ml" 137 4419 4437 "src/traverse.ml" 137 4419 4452
+call(
+  stack
+)
+type(
+  H.key Stack.t
+)
+"src/traverse.ml" 138 4456 4466 "src/traverse.ml" 138 4456 4470
+type(
+  unit -> unit
+)
+"src/traverse.ml" 138 4456 4471 "src/traverse.ml" 138 4456 4473
+type(
+  unit
+)
+"src/traverse.ml" 139 4476 4483 "src/traverse.ml" 139 4476 4486
+type(
+  bool -> bool
+)
+ident(
+  ext_ref Pervasives.not
+)
+"src/traverse.ml" 139 4476 4488 "src/traverse.ml" 139 4476 4502
+type(
+  H.key Stack.t -> bool
+)
+ident(
+  ext_ref Stack.is_empty
+)
+"src/traverse.ml" 139 4476 4503 "src/traverse.ml" 139 4476 4508
+type(
+  H.key Stack.t
+)
+ident(
+  int_ref stack "src/traverse.ml" 137 4419 4429 "src/traverse.ml" 137 4419 4434
+)
+"src/traverse.ml" 139 4476 4487 "src/traverse.ml" 139 4476 4509
+call(
+  stack
+)
+type(
+  bool
+)
+"src/traverse.ml" 139 4476 4483 "src/traverse.ml" 139 4476 4509
+type(
+  bool
+)
+"src/traverse.ml" 140 4513 4520 "src/traverse.ml" 140 4513 4521
+type(
+  H.key
+)
+ident(
+  def v "src/traverse.ml" 141 4543 4546 "src/traverse.ml" 155 4968 4974
+)
+"src/traverse.ml" 140 4513 4524 "src/traverse.ml" 140 4513 4533
+type(
+  H.key Stack.t -> H.key
+)
+ident(
+  ext_ref Stack.top
+)
+"src/traverse.ml" 140 4513 4534 "src/traverse.ml" 140 4513 4539
+type(
+  H.key Stack.t
+)
+ident(
+  int_ref stack "src/traverse.ml" 137 4419 4429 "src/traverse.ml" 137 4419 4434
+)
+"src/traverse.ml" 140 4513 4524 "src/traverse.ml" 140 4513 4539
+call(
+  stack
+)
+type(
+  H.key
+)
+"src/traverse.ml" 141 4543 4549 "src/traverse.ml" 141 4543 4554
+type(
+  bool H.t -> H.key -> bool
+)
+ident(
+  ext_ref H.mem
+)
+"src/traverse.ml" 141 4543 4555 "src/traverse.ml" 141 4543 4556
+type(
+  bool H.t
+)
+ident(
+  int_ref h "src/traverse.ml" 132 4210 4220 "src/traverse.ml" 132 4210 4221
+)
+"src/traverse.ml" 141 4543 4557 "src/traverse.ml" 141 4543 4558
+type(
+  H.key
+)
+ident(
+  int_ref v "src/traverse.ml" 140 4513 4520 "src/traverse.ml" 140 4513 4521
+)
+"src/traverse.ml" 141 4543 4549 "src/traverse.ml" 141 4543 4558
+call(
+  stack
+)
+type(
+  bool
+)
+"src/traverse.ml" 144 4648 4653 "src/traverse.ml" 144 4648 4661
+type(
+  H.key H.t -> H.key -> unit
+)
+ident(
+  ext_ref H.remove
+)
+"src/traverse.ml" 144 4648 4662 "src/traverse.ml" 144 4648 4668
+type(
+  H.key H.t
+)
+ident(
+  int_ref father "src/traverse.ml" 133 4242 4252 "src/traverse.ml" 133 4242 4258
+)
+"src/traverse.ml" 144 4648 4669 "src/traverse.ml" 144 4648 4670
+type(
+  H.key
+)
+ident(
+  int_ref v "src/traverse.ml" 140 4513 4520 "src/traverse.ml" 140 4513 4521
+)
+"src/traverse.ml" 144 4648 4653 "src/traverse.ml" 144 4648 4670
+call(
+  stack
+)
+type(
+  unit
+)
+"src/traverse.ml" 145 4672 4677 "src/traverse.ml" 145 4672 4686
+type(
+  bool H.t -> H.key -> bool -> unit
+)
+ident(
+  ext_ref H.replace
+)
+"src/traverse.ml" 145 4672 4687 "src/traverse.ml" 145 4672 4688
+type(
+  bool H.t
+)
+ident(
+  int_ref h "src/traverse.ml" 132 4210 4220 "src/traverse.ml" 132 4210 4221
+)
+"src/traverse.ml" 145 4672 4689 "src/traverse.ml" 145 4672 4690
+type(
+  H.key
+)
+ident(
+  int_ref v "src/traverse.ml" 140 4513 4520 "src/traverse.ml" 140 4513 4521
+)
+"src/traverse.ml" 145 4672 4691 "src/traverse.ml" 145 4672 4696
+type(
+  bool
+)
+"src/traverse.ml" 145 4672 4677 "src/traverse.ml" 145 4672 4696
+call(
+  stack
+)
+type(
+  unit
+)
+"src/traverse.ml" 146 4698 4703 "src/traverse.ml" 146 4698 4709
+type(
+  H.key -> unit
+)
+ident(
+  ext_ref Pervasives.ignore
+)
+"src/traverse.ml" 146 4698 4711 "src/traverse.ml" 146 4698 4720
+type(
+  H.key Stack.t -> H.key
+)
+ident(
+  ext_ref Stack.pop
+)
+"src/traverse.ml" 146 4698 4721 "src/traverse.ml" 146 4698 4726
+type(
+  H.key Stack.t
+)
+ident(
+  int_ref stack "src/traverse.ml" 137 4419 4429 "src/traverse.ml" 137 4419 4434
+)
+"src/traverse.ml" 146 4698 4710 "src/traverse.ml" 146 4698 4727
+call(
+  stack
+)
+type(
+  H.key
+)
+"src/traverse.ml" 146 4698 4703 "src/traverse.ml" 146 4698 4727
+type(
+  unit
+)
+"src/traverse.ml" 145 4672 4677 "src/traverse.ml" 146 4698 4727
+type(
+  unit
+)
+"src/traverse.ml" 141 4543 4564 "src/traverse.ml" 147 4728 4734
+type(
+  unit
+)
+"src/traverse.ml" 149 4782 4787 "src/traverse.ml" 149 4782 4792
+type(
+  bool H.t -> H.key -> bool -> unit
+)
+ident(
+  ext_ref H.add
+)
+"src/traverse.ml" 149 4782 4793 "src/traverse.ml" 149 4782 4794
+type(
+  bool H.t
+)
+ident(
+  int_ref h "src/traverse.ml" 132 4210 4220 "src/traverse.ml" 132 4210 4221
+)
+"src/traverse.ml" 149 4782 4795 "src/traverse.ml" 149 4782 4796
+type(
+  H.key
+)
+ident(
+  int_ref v "src/traverse.ml" 140 4513 4520 "src/traverse.ml" 140 4513 4521
+)
+"src/traverse.ml" 149 4782 4797 "src/traverse.ml" 149 4782 4801
+type(
+  bool
+)
+"src/traverse.ml" 149 4782 4787 "src/traverse.ml" 149 4782 4801
+call(
+  stack
+)
+type(
+  unit
+)
+"src/traverse.ml" 150 4803 4808 "src/traverse.ml" 150 4803 4819
+type(
+  (H.key -> unit) -> G.t -> H.key -> unit
+)
+ident(
+  ext_ref G.iter_succ
+)
+"src/traverse.ml" 151 4820 4832 "src/traverse.ml" 151 4820 4833
+type(
+  H.key
+)
+ident(
+  def w "src/traverse.ml" 152 4837 4840 "src/traverse.ml" 153 4897 4954
+)
+"src/traverse.ml" 152 4837 4847 "src/traverse.ml" 152 4837 4853
+type(
+  bool H.t -> H.key -> bool
+)
+ident(
+  ext_ref H.find
+)
+"src/traverse.ml" 152 4837 4854 "src/traverse.ml" 152 4837 4855
+type(
+  bool H.t
+)
+ident(
+  int_ref h "src/traverse.ml" 132 4210 4220 "src/traverse.ml" 132 4210 4221
+)
+"src/traverse.ml" 152 4837 4856 "src/traverse.ml" 152 4837 4857
+type(
+  H.key
+)
+ident(
+  int_ref w "src/traverse.ml" 151 4820 4832 "src/traverse.ml" 151 4820 4833
+)
+"src/traverse.ml" 152 4837 4847 "src/traverse.ml" 152 4837 4857
+call(
+  stack
+)
+type(
+  bool
+)
+"src/traverse.ml" 152 4837 4858 "src/traverse.ml" 152 4837 4860
+type(
+  bool -> bool -> bool
+)
+ident(
+  ext_ref Pervasives.( && )
+)
+"src/traverse.ml" 152 4837 4861 "src/traverse.ml" 152 4837 4864
+type(
+  bool -> bool
+)
+ident(
+  ext_ref Pervasives.not
+)
+"src/traverse.ml" 152 4837 4866 "src/traverse.ml" 152 4837 4875
+type(
+  H.key -> H.key -> bool
+)
+ident(
+  int_ref is_father "src/traverse.ml" 134 4279 4289 "src/traverse.ml" 134 4279 4298
+)
+"src/traverse.ml" 152 4837 4876 "src/traverse.ml" 152 4837 4877
+type(
+  H.key
+)
+ident(
+  int_ref w "src/traverse.ml" 151 4820 4832 "src/traverse.ml" 151 4820 4833
+)
+"src/traverse.ml" 152 4837 4878 "src/traverse.ml" 152 4837 4879
+type(
+  H.key
+)
+ident(
+  int_ref v "src/traverse.ml" 140 4513 4520 "src/traverse.ml" 140 4513 4521
+)
+"src/traverse.ml" 152 4837 4865 "src/traverse.ml" 152 4837 4880
+call(
+  stack
+)
+type(
+  bool
+)
+"src/traverse.ml" 152 4837 4861 "src/traverse.ml" 152 4837 4880
+type(
+  bool
+)
+"src/traverse.ml" 152 4837 4847 "src/traverse.ml" 152 4837 4880
+type(
+  bool
+)
+"src/traverse.ml" 152 4837 4886 "src/traverse.ml" 152 4837 4891
+type(
+  exn -> unit
+)
+ident(
+  ext_ref Pervasives.raise
+)
+"src/traverse.ml" 152 4837 4892 "src/traverse.ml" 152 4837 4896
+type(
+  exn
+)
+"src/traverse.ml" 152 4837 4886 "src/traverse.ml" 152 4837 4896
+type(
+  unit
+)
+"src/traverse.ml" 152 4837 4844 "src/traverse.ml" 152 4837 4896
+type(
+  unit
+)
+"src/traverse.ml" 153 4897 4905 "src/traverse.ml" 153 4897 4914
+type(
+  exn
+)
+"src/traverse.ml" 153 4897 4918 "src/traverse.ml" 153 4897 4923
+type(
+  H.key H.t -> H.key -> H.key -> unit
+)
+ident(
+  ext_ref H.add
+)
+"src/traverse.ml" 153 4897 4924 "src/traverse.ml" 153 4897 4930
+type(
+  H.key H.t
+)
+ident(
+  int_ref father "src/traverse.ml" 133 4242 4252 "src/traverse.ml" 133 4242 4258
+)
+"src/traverse.ml" 153 4897 4931 "src/traverse.ml" 153 4897 4932
+type(
+  H.key
+)
+ident(
+  int_ref w "src/traverse.ml" 151 4820 4832 "src/traverse.ml" 151 4820 4833
+)
+"src/traverse.ml" 153 4897 4933 "src/traverse.ml" 153 4897 4934
+type(
+  H.key
+)
+ident(
+  int_ref v "src/traverse.ml" 140 4513 4520 "src/traverse.ml" 140 4513 4521
+)
+"src/traverse.ml" 153 4897 4918 "src/traverse.ml" 153 4897 4934
+call(
+  stack
+)
+type(
+  unit
+)
+"src/traverse.ml" 153 4897 4936 "src/traverse.ml" 153 4897 4946
+type(
+  H.key -> H.key Stack.t -> unit
+)
+ident(
+  ext_ref Stack.push
+)
+"src/traverse.ml" 153 4897 4947 "src/traverse.ml" 153 4897 4948
+type(
+  H.key
+)
+ident(
+  int_ref w "src/traverse.ml" 151 4820 4832 "src/traverse.ml" 151 4820 4833
+)
+"src/traverse.ml" 153 4897 4949 "src/traverse.ml" 153 4897 4954
+type(
+  H.key Stack.t
+)
+ident(
+  int_ref stack "src/traverse.ml" 137 4419 4429 "src/traverse.ml" 137 4419 4434
+)
+"src/traverse.ml" 153 4897 4936 "src/traverse.ml" 153 4897 4954
+call(
+  tail
+)
+type(
+  unit
+)
+"src/traverse.ml" 153 4897 4918 "src/traverse.ml" 153 4897 4954
+type(
+  unit
+)
+"src/traverse.ml" 152 4837 4840 "src/traverse.ml" 153 4897 4954
+type(
+  unit
+)
+"src/traverse.ml" 151 4820 4827 "src/traverse.ml" 153 4897 4955
+type(
+  H.key -> unit
+)
+"src/traverse.ml" 154 4956 4963 "src/traverse.ml" 154 4956 4964
+type(
+  G.t
+)
+ident(
+  int_ref g "src/traverse.ml" 131 4177 4206 "src/traverse.ml" 131 4177 4207
+)
+"src/traverse.ml" 154 4956 4965 "src/traverse.ml" 154 4956 4966
+type(
+  H.key
+)
+ident(
+  int_ref v "src/traverse.ml" 140 4513 4520 "src/traverse.ml" 140 4513 4521
+)
+"src/traverse.ml" 150 4803 4808 "src/traverse.ml" 154 4956 4967
+call(
+  stack
+)
+type(
+  unit
+)
+"src/traverse.ml" 147 4728 4740 "src/traverse.ml" 155 4968 4974
+type(
+  unit
+)
+"src/traverse.ml" 141 4543 4546 "src/traverse.ml" 155 4968 4974
+type(
+  unit
+)
+"src/traverse.ml" 140 4513 4516 "src/traverse.ml" 155 4968 4974
+type(
+  unit
+)
+"src/traverse.ml" 139 4476 4477 "src/traverse.ml" 156 4975 4980
+type(
+  unit
+)
+"src/traverse.ml" 159 5000 5001 "src/traverse.ml" 159 5000 5014
+type(
+  (H.key -> unit) -> G.t -> unit
+)
+ident(
+  ext_ref G.iter_vertex
+)
+"src/traverse.ml" 160 5015 5023 "src/traverse.ml" 160 5015 5024
+type(
+  H.key
+)
+ident(
+  def v "src/traverse.ml" 161 5028 5034 "src/traverse.ml" 161 5028 5095
+)
+"src/traverse.ml" 161 5028 5037 "src/traverse.ml" 161 5028 5040
+type(
+  bool -> bool
+)
+ident(
+  ext_ref Pervasives.not
+)
+"src/traverse.ml" 161 5028 5042 "src/traverse.ml" 161 5028 5047
+type(
+  bool H.t -> H.key -> bool
+)
+ident(
+  ext_ref H.mem
+)
+"src/traverse.ml" 161 5028 5048 "src/traverse.ml" 161 5028 5049
+type(
+  bool H.t
+)
+ident(
+  int_ref h "src/traverse.ml" 132 4210 4220 "src/traverse.ml" 132 4210 4221
+)
+"src/traverse.ml" 161 5028 5050 "src/traverse.ml" 161 5028 5051
+type(
+  H.key
+)
+ident(
+  int_ref v "src/traverse.ml" 160 5015 5023 "src/traverse.ml" 160 5015 5024
+)
+"src/traverse.ml" 161 5028 5041 "src/traverse.ml" 161 5028 5052
+call(
+  stack
+)
+type(
+  bool
+)
+"src/traverse.ml" 161 5028 5037 "src/traverse.ml" 161 5028 5052
+type(
+  bool
+)
+"src/traverse.ml" 161 5028 5064 "src/traverse.ml" 161 5028 5074
+type(
+  H.key -> H.key Stack.t -> unit
+)
+ident(
+  ext_ref Stack.push
+)
+"src/traverse.ml" 161 5028 5075 "src/traverse.ml" 161 5028 5076
+type(
+  H.key
+)
+ident(
+  int_ref v "src/traverse.ml" 160 5015 5023 "src/traverse.ml" 160 5015 5024
+)
+"src/traverse.ml" 161 5028 5077 "src/traverse.ml" 161 5028 5082
+type(
+  H.key Stack.t
+)
+ident(
+  int_ref stack "src/traverse.ml" 137 4419 4429 "src/traverse.ml" 137 4419 4434
+)
+"src/traverse.ml" 161 5028 5064 "src/traverse.ml" 161 5028 5082
+call(
+  stack
+)
+type(
+  unit
+)
+"src/traverse.ml" 161 5028 5084 "src/traverse.ml" 161 5028 5088
+type(
+  unit -> unit
+)
+ident(
+  int_ref loop "src/traverse.ml" 138 4456 4466 "src/traverse.ml" 138 4456 4470
+)
+"src/traverse.ml" 161 5028 5089 "src/traverse.ml" 161 5028 5091
+type(
+  unit
+)
+"src/traverse.ml" 161 5028 5084 "src/traverse.ml" 161 5028 5091
+call(
+  tail
+)
+type(
+  unit
+)
+"src/traverse.ml" 161 5028 5058 "src/traverse.ml" 161 5028 5095
+type(
+  unit
+)
+"src/traverse.ml" 161 5028 5034 "src/traverse.ml" 161 5028 5095
+type(
+  unit
+)
+"src/traverse.ml" 160 5015 5018 "src/traverse.ml" 161 5028 5096
+type(
+  H.key -> unit
+)
+"src/traverse.ml" 162 5097 5100 "src/traverse.ml" 162 5097 5101
+type(
+  G.t
+)
+ident(
+  int_ref g "src/traverse.ml" 131 4177 4206 "src/traverse.ml" 131 4177 4207
+)
+"src/traverse.ml" 159 5000 5001 "src/traverse.ml" 162 5097 5101
+call(
+  stack
+)
+type(
+  unit
+)
+"src/traverse.ml" 163 5103 5104 "src/traverse.ml" 163 5103 5109
+type(
+  bool
+)
+"src/traverse.ml" 159 5000 5001 "src/traverse.ml" 163 5103 5109
+type(
+  bool
+)
+"src/traverse.ml" 164 5110 5121 "src/traverse.ml" 164 5110 5125
+type(
+  exn
+)
+"src/traverse.ml" 165 5129 5130 "src/traverse.ml" 165 5129 5134
+type(
+  bool
+)
+"src/traverse.ml" 158 4990 4996 "src/traverse.ml" 165 5129 5134
+type(
+  bool
+)
+"src/traverse.ml" 138 4456 4462 "src/traverse.ml" 165 5129 5134
+type(
+  bool
+)
+"src/traverse.ml" 137 4419 4425 "src/traverse.ml" 165 5129 5134
+type(
+  bool
+)
+"src/traverse.ml" 134 4279 4285 "src/traverse.ml" 165 5129 5134
+type(
+  bool
+)
+"src/traverse.ml" 133 4242 4248 "src/traverse.ml" 165 5129 5134
+type(
+  bool
+)
+"src/traverse.ml" 132 4210 4216 "src/traverse.ml" 165 5129 5134
+type(
+  bool
+)
+"src/traverse.ml" 167 5136 5144 "src/traverse.ml" 167 5136 5153
+type(
+  G.t -> bool
+)
+ident(
+  def has_cycle "src/traverse.ml" 170 5227 5231 "src/traverse.ml" 202 6013 6018
+)
+"src/traverse.ml" 167 5136 5154 "src/traverse.ml" 167 5136 5155
+type(
+  G.t
+)
+ident(
+  def g "src/traverse.ml" 168 5158 5164 "src/traverse.ml" 168 5158 5225
+)
+"src/traverse.ml" 168 5158 5167 "src/traverse.ml" 168 5158 5180
+type(
+  bool
+)
+ident(
+  ext_ref G.is_directed
+)
+"src/traverse.ml" 168 5158 5186 "src/traverse.ml" 168 5158 5195
+type(
+  G.t -> bool
+)
+ident(
+  int_ref has_cycle "src/traverse.ml" 100 3471 3479 "src/traverse.ml" 100 3471 3488
+)
+"src/traverse.ml" 168 5158 5196 "src/traverse.ml" 168 5158 5197
+type(
+  G.t
+)
+ident(
+  int_ref g "src/traverse.ml" 167 5136 5154 "src/traverse.ml" 167 5136 5155
+)
+"src/traverse.ml" 168 5158 5186 "src/traverse.ml" 168 5158 5197
+call(
+  tail
+)
+type(
+  bool
+)
+"src/traverse.ml" 168 5158 5203 "src/traverse.ml" 168 5158 5223
+type(
+  G.t -> bool
+)
+ident(
+  int_ref has_cycle_undirected "src/traverse.ml" 131 4177 4185 "src/traverse.ml" 131 4177 4205
+)
+"src/traverse.ml" 168 5158 5224 "src/traverse.ml" 168 5158 5225
+type(
+  G.t
+)
+ident(
+  int_ref g "src/traverse.ml" 167 5136 5154 "src/traverse.ml" 167 5136 5155
+)
+"src/traverse.ml" 168 5158 5203 "src/traverse.ml" 168 5158 5225
+call(
+  tail
+)
+type(
+  bool
+)
+"src/traverse.ml" 168 5158 5164 "src/traverse.ml" 168 5158 5225
+type(
+  bool
+)
+"src/traverse.ml" 170 5227 5235 "src/traverse.ml" 170 5227 5239
+type(
+  (H.key -> 'a) -> G.t -> unit
+)
+ident(
+  def iter "src/traverse.ml" 189 5669 5673 "src/traverse.ml" 202 6013 6018
+)
+"src/traverse.ml" 170 5227 5240 "src/traverse.ml" 170 5227 5241
+type(
+  H.key -> 'a
+)
+ident(
+  def f "src/traverse.ml" 170 5227 5242 "src/traverse.ml" 187 5665 5667
+)
+"src/traverse.ml" 170 5227 5242 "src/traverse.ml" 170 5227 5243
+type(
+  G.t
+)
+ident(
+  def g "src/traverse.ml" 171 5246 5252 "src/traverse.ml" 187 5665 5667
+)
+"src/traverse.ml" 171 5246 5256 "src/traverse.ml" 171 5246 5257
+type(
+  unit H.t
+)
+"src/traverse.ml" 171 5246 5260 "src/traverse.ml" 171 5246 5268
+type(
+  int -> unit H.t
+)
+ident(
+  ext_ref H.create
+)
+"src/traverse.ml" 171 5246 5269 "src/traverse.ml" 171 5246 5274
+type(
+  int
+)
+"src/traverse.ml" 171 5246 5260 "src/traverse.ml" 171 5246 5274
+call(
+  stack
+)
+type(
+  unit H.t
+)
+"src/traverse.ml" 172 5278 5288 "src/traverse.ml" 172 5278 5293
+type(
+  H.key Stack.t
+)
+"src/traverse.ml" 172 5278 5296 "src/traverse.ml" 172 5278 5308
+type(
+  unit -> H.key Stack.t
+)
+ident(
+  ext_ref Stack.create
+)
+"src/traverse.ml" 172 5278 5309 "src/traverse.ml" 172 5278 5311
+type(
+  unit
+)
+"src/traverse.ml" 172 5278 5296 "src/traverse.ml" 172 5278 5311
+call(
+  stack
+)
+type(
+  H.key Stack.t
+)
+"src/traverse.ml" 173 5315 5325 "src/traverse.ml" 173 5315 5329
+type(
+  unit -> unit
+)
+"src/traverse.ml" 173 5315 5330 "src/traverse.ml" 173 5315 5332
+type(
+  unit
+)
+"src/traverse.ml" 174 5335 5342 "src/traverse.ml" 174 5335 5345
+type(
+  bool -> bool
+)
+ident(
+  ext_ref Pervasives.not
+)
+"src/traverse.ml" 174 5335 5347 "src/traverse.ml" 174 5335 5361
+type(
+  H.key Stack.t -> bool
+)
+ident(
+  ext_ref Stack.is_empty
+)
+"src/traverse.ml" 174 5335 5362 "src/traverse.ml" 174 5335 5367
+type(
+  H.key Stack.t
+)
+ident(
+  int_ref stack "src/traverse.ml" 172 5278 5288 "src/traverse.ml" 172 5278 5293
+)
+"src/traverse.ml" 174 5335 5346 "src/traverse.ml" 174 5335 5368
+call(
+  stack
+)
+type(
+  bool
+)
+"src/traverse.ml" 174 5335 5342 "src/traverse.ml" 174 5335 5368
+type(
+  bool
+)
+"src/traverse.ml" 175 5372 5379 "src/traverse.ml" 175 5372 5380
+type(
+  H.key
+)
+ident(
+  def v "src/traverse.ml" 176 5402 5405 "src/traverse.ml" 181 5546 5552
+)
+"src/traverse.ml" 175 5372 5383 "src/traverse.ml" 175 5372 5392
+type(
+  H.key Stack.t -> H.key
+)
+ident(
+  ext_ref Stack.pop
+)
+"src/traverse.ml" 175 5372 5393 "src/traverse.ml" 175 5372 5398
+type(
+  H.key Stack.t
+)
+ident(
+  int_ref stack "src/traverse.ml" 172 5278 5288 "src/traverse.ml" 172 5278 5293
+)
+"src/traverse.ml" 175 5372 5383 "src/traverse.ml" 175 5372 5398
+call(
+  stack
+)
+type(
+  H.key
+)
+"src/traverse.ml" 176 5402 5408 "src/traverse.ml" 176 5402 5411
+type(
+  bool -> bool
+)
+ident(
+  ext_ref Pervasives.not
+)
+"src/traverse.ml" 176 5402 5413 "src/traverse.ml" 176 5402 5418
+type(
+  unit H.t -> H.key -> bool
+)
+ident(
+  ext_ref H.mem
+)
+"src/traverse.ml" 176 5402 5419 "src/traverse.ml" 176 5402 5420
+type(
+  unit H.t
+)
+ident(
+  int_ref h "src/traverse.ml" 171 5246 5256 "src/traverse.ml" 171 5246 5257
+)
+"src/traverse.ml" 176 5402 5421 "src/traverse.ml" 176 5402 5422
+type(
+  H.key
+)
+ident(
+  int_ref v "src/traverse.ml" 175 5372 5379 "src/traverse.ml" 175 5372 5380
+)
+"src/traverse.ml" 176 5402 5412 "src/traverse.ml" 176 5402 5423
+call(
+  stack
+)
+type(
+  bool
+)
+"src/traverse.ml" 176 5402 5408 "src/traverse.ml" 176 5402 5423
+type(
+  bool
+)
+"src/traverse.ml" 177 5435 5440 "src/traverse.ml" 177 5435 5445
+type(
+  unit H.t -> H.key -> unit -> unit
+)
+ident(
+  ext_ref H.add
+)
+"src/traverse.ml" 177 5435 5446 "src/traverse.ml" 177 5435 5447
+type(
+  unit H.t
+)
+ident(
+  int_ref h "src/traverse.ml" 171 5246 5256 "src/traverse.ml" 171 5246 5257
+)
+"src/traverse.ml" 177 5435 5448 "src/traverse.ml" 177 5435 5449
+type(
+  H.key
+)
+ident(
+  int_ref v "src/traverse.ml" 175 5372 5379 "src/traverse.ml" 175 5372 5380
+)
+"src/traverse.ml" 177 5435 5450 "src/traverse.ml" 177 5435 5452
+type(
+  unit
+)
+"src/traverse.ml" 177 5435 5440 "src/traverse.ml" 177 5435 5452
+call(
+  stack
+)
+type(
+  unit
+)
+"src/traverse.ml" 178 5454 5459 "src/traverse.ml" 178 5454 5460
+type(
+  H.key -> 'a
+)
+ident(
+  int_ref f "src/traverse.ml" 170 5227 5240 "src/traverse.ml" 170 5227 5241
+)
+"src/traverse.ml" 178 5454 5461 "src/traverse.ml" 178 5454 5462
+type(
+  H.key
+)
+ident(
+  int_ref v "src/traverse.ml" 175 5372 5379 "src/traverse.ml" 175 5372 5380
+)
+"src/traverse.ml" 178 5454 5459 "src/traverse.ml" 178 5454 5462
+call(
+  stack
+)
+type(
+  'a
+)
+"src/traverse.ml" 179 5464 5469 "src/traverse.ml" 179 5464 5480
+type(
+  (H.key -> unit) -> G.t -> H.key -> unit
+)
+ident(
+  ext_ref G.iter_succ
+)
+"src/traverse.ml" 180 5481 5493 "src/traverse.ml" 180 5481 5494
+type(
+  H.key
+)
+ident(
+  def w "src/traverse.ml" 180 5481 5498 "src/traverse.ml" 180 5481 5540
+)
+"src/traverse.ml" 180 5481 5501 "src/traverse.ml" 180 5481 5504
+type(
+  bool -> bool
+)
+ident(
+  ext_ref Pervasives.not
+)
+"src/traverse.ml" 180 5481 5506 "src/traverse.ml" 180 5481 5511
+type(
+  unit H.t -> H.key -> bool
+)
+ident(
+  ext_ref H.mem
+)
+"src/traverse.ml" 180 5481 5512 "src/traverse.ml" 180 5481 5513
+type(
+  unit H.t
+)
+ident(
+  int_ref h "src/traverse.ml" 171 5246 5256 "src/traverse.ml" 171 5246 5257
+)
+"src/traverse.ml" 180 5481 5514 "src/traverse.ml" 180 5481 5515
+type(
+  H.key
+)
+ident(
+  int_ref w "src/traverse.ml" 180 5481 5493 "src/traverse.ml" 180 5481 5494
+)
+"src/traverse.ml" 180 5481 5505 "src/traverse.ml" 180 5481 5516
+call(
+  stack
+)
+type(
+  bool
+)
+"src/traverse.ml" 180 5481 5501 "src/traverse.ml" 180 5481 5516
+type(
+  bool
+)
+"src/traverse.ml" 180 5481 5522 "src/traverse.ml" 180 5481 5532
+type(
+  H.key -> H.key Stack.t -> unit
+)
+ident(
+  ext_ref Stack.push
+)
+"src/traverse.ml" 180 5481 5533 "src/traverse.ml" 180 5481 5534
+type(
+  H.key
+)
+ident(
+  int_ref w "src/traverse.ml" 180 5481 5493 "src/traverse.ml" 180 5481 5494
+)
+"src/traverse.ml" 180 5481 5535 "src/traverse.ml" 180 5481 5540
+type(
+  H.key Stack.t
+)
+ident(
+  int_ref stack "src/traverse.ml" 172 5278 5288 "src/traverse.ml" 172 5278 5293
+)
+"src/traverse.ml" 180 5481 5522 "src/traverse.ml" 180 5481 5540
+call(
+  tail
+)
+type(
+  unit
+)
+"src/traverse.ml" 180 5481 5498 "src/traverse.ml" 180 5481 5540
+type(
+  unit
+)
+"src/traverse.ml" 180 5481 5488 "src/traverse.ml" 180 5481 5541
+type(
+  H.key -> unit
+)
+"src/traverse.ml" 180 5481 5542 "src/traverse.ml" 180 5481 5543
+type(
+  G.t
+)
+ident(
+  int_ref g "src/traverse.ml" 170 5227 5242 "src/traverse.ml" 170 5227 5243
+)
+"src/traverse.ml" 180 5481 5544 "src/traverse.ml" 180 5481 5545
+type(
+  H.key
+)
+ident(
+  int_ref v "src/traverse.ml" 175 5372 5379 "src/traverse.ml" 175 5372 5380
+)
+"src/traverse.ml" 179 5464 5469 "src/traverse.ml" 180 5481 5545
+call(
+  stack
+)
+type(
+  unit
+)
+"src/traverse.ml" 178 5454 5459 "src/traverse.ml" 180 5481 5545
+type(
+  unit
+)
+"src/traverse.ml" 176 5402 5429 "src/traverse.ml" 181 5546 5552
+type(
+  unit
+)
+"src/traverse.ml" 176 5402 5405 "src/traverse.ml" 181 5546 5552
+type(
+  unit
+)
+"src/traverse.ml" 175 5372 5375 "src/traverse.ml" 181 5546 5552
+type(
+  unit
+)
+"src/traverse.ml" 174 5335 5336 "src/traverse.ml" 182 5553 5558
+type(
+  unit
+)
+"src/traverse.ml" 184 5568 5574 "src/traverse.ml" 184 5568 5587
+type(
+  (H.key -> unit) -> G.t -> unit
+)
+ident(
+  ext_ref G.iter_vertex
+)
+"src/traverse.ml" 185 5588 5594 "src/traverse.ml" 185 5588 5595
+type(
+  H.key
+)
+ident(
+  def v "src/traverse.ml" 186 5599 5602 "src/traverse.ml" 186 5599 5663
+)
+"src/traverse.ml" 186 5599 5605 "src/traverse.ml" 186 5599 5608
+type(
+  bool -> bool
+)
+ident(
+  ext_ref Pervasives.not
+)
+"src/traverse.ml" 186 5599 5610 "src/traverse.ml" 186 5599 5615
+type(
+  unit H.t -> H.key -> bool
+)
+ident(
+  ext_ref H.mem
+)
+"src/traverse.ml" 186 5599 5616 "src/traverse.ml" 186 5599 5617
+type(
+  unit H.t
+)
+ident(
+  int_ref h "src/traverse.ml" 171 5246 5256 "src/traverse.ml" 171 5246 5257
+)
+"src/traverse.ml" 186 5599 5618 "src/traverse.ml" 186 5599 5619
+type(
+  H.key
+)
+ident(
+  int_ref v "src/traverse.ml" 185 5588 5594 "src/traverse.ml" 185 5588 5595
+)
+"src/traverse.ml" 186 5599 5609 "src/traverse.ml" 186 5599 5620
+call(
+  stack
+)
+type(
+  bool
+)
+"src/traverse.ml" 186 5599 5605 "src/traverse.ml" 186 5599 5620
+type(
+  bool
+)
+"src/traverse.ml" 186 5599 5632 "src/traverse.ml" 186 5599 5642
+type(
+  H.key -> H.key Stack.t -> unit
+)
+ident(
+  ext_ref Stack.push
+)
+"src/traverse.ml" 186 5599 5643 "src/traverse.ml" 186 5599 5644
+type(
+  H.key
+)
+ident(
+  int_ref v "src/traverse.ml" 185 5588 5594 "src/traverse.ml" 185 5588 5595
+)
+"src/traverse.ml" 186 5599 5645 "src/traverse.ml" 186 5599 5650
+type(
+  H.key Stack.t
+)
+ident(
+  int_ref stack "src/traverse.ml" 172 5278 5288 "src/traverse.ml" 172 5278 5293
+)
+"src/traverse.ml" 186 5599 5632 "src/traverse.ml" 186 5599 5650
+call(
+  stack
+)
+type(
+  unit
+)
+"src/traverse.ml" 186 5599 5652 "src/traverse.ml" 186 5599 5656
+type(
+  unit -> unit
+)
+ident(
+  int_ref loop "src/traverse.ml" 173 5315 5325 "src/traverse.ml" 173 5315 5329
+)
+"src/traverse.ml" 186 5599 5657 "src/traverse.ml" 186 5599 5659
+type(
+  unit
+)
+"src/traverse.ml" 186 5599 5652 "src/traverse.ml" 186 5599 5659
+call(
+  tail
+)
+type(
+  unit
+)
+"src/traverse.ml" 186 5599 5626 "src/traverse.ml" 186 5599 5663
+type(
+  unit
+)
+"src/traverse.ml" 186 5599 5602 "src/traverse.ml" 186 5599 5663
+type(
+  unit
+)
+"src/traverse.ml" 185 5588 5589 "src/traverse.ml" 186 5599 5664
+type(
+  H.key -> unit
+)
+"src/traverse.ml" 187 5665 5666 "src/traverse.ml" 187 5665 5667
+type(
+  G.t
+)
+ident(
+  int_ref g "src/traverse.ml" 170 5227 5242 "src/traverse.ml" 170 5227 5243
+)
+"src/traverse.ml" 184 5568 5574 "src/traverse.ml" 187 5665 5667
+call(
+  tail
+)
+type(
+  unit
+)
+"src/traverse.ml" 173 5315 5321 "src/traverse.ml" 187 5665 5667
+type(
+  unit
+)
+"src/traverse.ml" 172 5278 5284 "src/traverse.ml" 187 5665 5667
+type(
+  unit
+)
+"src/traverse.ml" 171 5246 5252 "src/traverse.ml" 187 5665 5667
+type(
+  unit
+)
+"src/traverse.ml" 189 5669 5677 "src/traverse.ml" 189 5669 5691
+type(
+  (H.key -> 'b) -> G.t -> H.key -> unit
+)
+ident(
+  def iter_component "src/traverse.ml" 200 6001 6011 "src/traverse.ml" 202 6013 6018
+)
+"src/traverse.ml" 189 5669 5692 "src/traverse.ml" 189 5669 5693
+type(
+  H.key -> 'b
+)
+ident(
+  def f "src/traverse.ml" 189 5669 5694 "src/traverse.ml" 200 6001 6011
+)
+"src/traverse.ml" 189 5669 5694 "src/traverse.ml" 189 5669 5695
+type(
+  G.t
+)
+ident(
+  def g "src/traverse.ml" 189 5669 5696 "src/traverse.ml" 200 6001 6011
+)
+"src/traverse.ml" 189 5669 5696 "src/traverse.ml" 189 5669 5698
+type(
+  H.key
+)
+ident(
+  def v0 "src/traverse.ml" 190 5701 5707 "src/traverse.ml" 200 6001 6011
+)
+"src/traverse.ml" 190 5701 5711 "src/traverse.ml" 190 5701 5712
+type(
+  unit H.t
+)
+"src/traverse.ml" 190 5701 5715 "src/traverse.ml" 190 5701 5723
+type(
+  int -> unit H.t
+)
+ident(
+  ext_ref H.create
+)
+"src/traverse.ml" 190 5701 5724 "src/traverse.ml" 190 5701 5729
+type(
+  int
+)
+"src/traverse.ml" 190 5701 5715 "src/traverse.ml" 190 5701 5729
+call(
+  stack
+)
+type(
+  unit H.t
+)
+"src/traverse.ml" 191 5733 5743 "src/traverse.ml" 191 5733 5748
+type(
+  H.key Stack.t
+)
+"src/traverse.ml" 191 5733 5751 "src/traverse.ml" 191 5733 5763
+type(
+  unit -> H.key Stack.t
+)
+ident(
+  ext_ref Stack.create
+)
+"src/traverse.ml" 191 5733 5764 "src/traverse.ml" 191 5733 5766
+type(
+  unit
+)
+"src/traverse.ml" 191 5733 5751 "src/traverse.ml" 191 5733 5766
+call(
+  stack
+)
+type(
+  H.key Stack.t
+)
+"src/traverse.ml" 192 5770 5776 "src/traverse.ml" 192 5770 5786
+type(
+  H.key -> H.key Stack.t -> unit
+)
+ident(
+  ext_ref Stack.push
+)
+"src/traverse.ml" 192 5770 5787 "src/traverse.ml" 192 5770 5789
+type(
+  H.key
+)
+ident(
+  int_ref v0 "src/traverse.ml" 189 5669 5696 "src/traverse.ml" 189 5669 5698
+)
+"src/traverse.ml" 192 5770 5790 "src/traverse.ml" 192 5770 5795
+type(
+  H.key Stack.t
+)
+ident(
+  int_ref stack "src/traverse.ml" 191 5733 5743 "src/traverse.ml" 191 5733 5748
+)
+"src/traverse.ml" 192 5770 5776 "src/traverse.ml" 192 5770 5795
+call(
+  stack
+)
+type(
+  unit
+)
+"src/traverse.ml" 193 5797 5809 "src/traverse.ml" 193 5797 5812
+type(
+  bool -> bool
+)
+ident(
+  ext_ref Pervasives.not
+)
+"src/traverse.ml" 193 5797 5814 "src/traverse.ml" 193 5797 5828
+type(
+  H.key Stack.t -> bool
+)
+ident(
+  ext_ref Stack.is_empty
+)
+"src/traverse.ml" 193 5797 5829 "src/traverse.ml" 193 5797 5834
+type(
+  H.key Stack.t
+)
+ident(
+  int_ref stack "src/traverse.ml" 191 5733 5743 "src/traverse.ml" 191 5733 5748
+)
+"src/traverse.ml" 193 5797 5813 "src/traverse.ml" 193 5797 5835
+call(
+  stack
+)
+type(
+  bool
+)
+"src/traverse.ml" 193 5797 5809 "src/traverse.ml" 193 5797 5835
+type(
+  bool
+)
+"src/traverse.ml" 194 5839 5844 "src/traverse.ml" 194 5839 5845
+type(
+  H.key
+)
+ident(
+  def v "src/traverse.ml" 195 5867 5868 "src/traverse.ml" 199 5996 6000
+)
+"src/traverse.ml" 194 5839 5848 "src/traverse.ml" 194 5839 5857
+type(
+  H.key Stack.t -> H.key
+)
+ident(
+  ext_ref Stack.pop
+)
+"src/traverse.ml" 194 5839 5858 "src/traverse.ml" 194 5839 5863
+type(
+  H.key Stack.t
+)
+ident(
+  int_ref stack "src/traverse.ml" 191 5733 5743 "src/traverse.ml" 191 5733 5748
+)
+"src/traverse.ml" 194 5839 5848 "src/traverse.ml" 194 5839 5863
+call(
+  stack
+)
+type(
+  H.key
+)
+"src/traverse.ml" 195 5867 5871 "src/traverse.ml" 195 5867 5874
+type(
+  bool -> bool
+)
+ident(
+  ext_ref Pervasives.not
+)
+"src/traverse.ml" 195 5867 5876 "src/traverse.ml" 195 5867 5881
+type(
+  unit H.t -> H.key -> bool
+)
+ident(
+  ext_ref H.mem
+)
+"src/traverse.ml" 195 5867 5882 "src/traverse.ml" 195 5867 5883
+type(
+  unit H.t
+)
+ident(
+  int_ref h "src/traverse.ml" 190 5701 5711 "src/traverse.ml" 190 5701 5712
+)
+"src/traverse.ml" 195 5867 5884 "src/traverse.ml" 195 5867 5885
+type(
+  H.key
+)
+ident(
+  int_ref v "src/traverse.ml" 194 5839 5844 "src/traverse.ml" 194 5839 5845
+)
+"src/traverse.ml" 195 5867 5875 "src/traverse.ml" 195 5867 5886
+call(
+  stack
+)
+type(
+  bool
+)
+"src/traverse.ml" 195 5867 5871 "src/traverse.ml" 195 5867 5886
+type(
+  bool
+)
+"src/traverse.ml" 196 5898 5901 "src/traverse.ml" 196 5898 5906
+type(
+  unit H.t -> H.key -> unit -> unit
+)
+ident(
+  ext_ref H.add
+)
+"src/traverse.ml" 196 5898 5907 "src/traverse.ml" 196 5898 5908
+type(
+  unit H.t
+)
+ident(
+  int_ref h "src/traverse.ml" 190 5701 5711 "src/traverse.ml" 190 5701 5712
+)
+"src/traverse.ml" 196 5898 5909 "src/traverse.ml" 196 5898 5910
+type(
+  H.key
+)
+ident(
+  int_ref v "src/traverse.ml" 194 5839 5844 "src/traverse.ml" 194 5839 5845
+)
+"src/traverse.ml" 196 5898 5911 "src/traverse.ml" 196 5898 5913
+type(
+  unit
+)
+"src/traverse.ml" 196 5898 5901 "src/traverse.ml" 196 5898 5913
+call(
+  stack
+)
+type(
+  unit
+)
+"src/traverse.ml" 197 5915 5918 "src/traverse.ml" 197 5915 5919
+type(
+  H.key -> 'b
+)
+ident(
+  int_ref f "src/traverse.ml" 189 5669 5692 "src/traverse.ml" 189 5669 5693
+)
+"src/traverse.ml" 197 5915 5920 "src/traverse.ml" 197 5915 5921
+type(
+  H.key
+)
+ident(
+  int_ref v "src/traverse.ml" 194 5839 5844 "src/traverse.ml" 194 5839 5845
+)
+"src/traverse.ml" 197 5915 5918 "src/traverse.ml" 197 5915 5921
+call(
+  stack
+)
+type(
+  'b
+)
+"src/traverse.ml" 198 5923 5926 "src/traverse.ml" 198 5923 5937
+type(
+  (H.key -> unit) -> G.t -> H.key -> unit
+)
+ident(
+  ext_ref G.iter_succ
+)
+"src/traverse.ml" 198 5923 5943 "src/traverse.ml" 198 5923 5944
+type(
+  H.key
+)
+ident(
+  def w "src/traverse.ml" 198 5923 5948 "src/traverse.ml" 198 5923 5990
+)
+"src/traverse.ml" 198 5923 5951 "src/traverse.ml" 198 5923 5954
+type(
+  bool -> bool
+)
+ident(
+  ext_ref Pervasives.not
+)
+"src/traverse.ml" 198 5923 5956 "src/traverse.ml" 198 5923 5961
+type(
+  unit H.t -> H.key -> bool
+)
+ident(
+  ext_ref H.mem
+)
+"src/traverse.ml" 198 5923 5962 "src/traverse.ml" 198 5923 5963
+type(
+  unit H.t
+)
+ident(
+  int_ref h "src/traverse.ml" 190 5701 5711 "src/traverse.ml" 190 5701 5712
+)
+"src/traverse.ml" 198 5923 5964 "src/traverse.ml" 198 5923 5965
+type(
+  H.key
+)
+ident(
+  int_ref w "src/traverse.ml" 198 5923 5943 "src/traverse.ml" 198 5923 5944
+)
+"src/traverse.ml" 198 5923 5955 "src/traverse.ml" 198 5923 5966
+call(
+  stack
+)
+type(
+  bool
+)
+"src/traverse.ml" 198 5923 5951 "src/traverse.ml" 198 5923 5966
+type(
+  bool
+)
+"src/traverse.ml" 198 5923 5972 "src/traverse.ml" 198 5923 5982
+type(
+  H.key -> H.key Stack.t -> unit
+)
+ident(
+  ext_ref Stack.push
+)
+"src/traverse.ml" 198 5923 5983 "src/traverse.ml" 198 5923 5984
+type(
+  H.key
+)
+ident(
+  int_ref w "src/traverse.ml" 198 5923 5943 "src/traverse.ml" 198 5923 5944
+)
+"src/traverse.ml" 198 5923 5985 "src/traverse.ml" 198 5923 5990
+type(
+  H.key Stack.t
+)
+ident(
+  int_ref stack "src/traverse.ml" 191 5733 5743 "src/traverse.ml" 191 5733 5748
+)
+"src/traverse.ml" 198 5923 5972 "src/traverse.ml" 198 5923 5990
+call(
+  tail
+)
+type(
+  unit
+)
+"src/traverse.ml" 198 5923 5948 "src/traverse.ml" 198 5923 5990
+type(
+  unit
+)
+"src/traverse.ml" 198 5923 5938 "src/traverse.ml" 198 5923 5991
+type(
+  H.key -> unit
+)
+"src/traverse.ml" 198 5923 5992 "src/traverse.ml" 198 5923 5993
+type(
+  G.t
+)
+ident(
+  int_ref g "src/traverse.ml" 189 5669 5694 "src/traverse.ml" 189 5669 5695
+)
+"src/traverse.ml" 198 5923 5994 "src/traverse.ml" 198 5923 5995
+type(
+  H.key
+)
+ident(
+  int_ref v "src/traverse.ml" 194 5839 5844 "src/traverse.ml" 194 5839 5845
+)
+"src/traverse.ml" 198 5923 5926 "src/traverse.ml" 198 5923 5995
+call(
+  stack
+)
+type(
+  unit
+)
+"src/traverse.ml" 197 5915 5918 "src/traverse.ml" 198 5923 5995
+type(
+  unit
+)
+"src/traverse.ml" 195 5867 5892 "src/traverse.ml" 199 5996 6000
+type(
+  unit
+)
+"src/traverse.ml" 195 5867 5868 "src/traverse.ml" 199 5996 6000
+type(
+  unit
+)
+"src/traverse.ml" 194 5839 5840 "src/traverse.ml" 199 5996 6000
+type(
+  unit
+)
+"src/traverse.ml" 193 5797 5803 "src/traverse.ml" 200 6001 6011
+type(
+  unit
+)
+"src/traverse.ml" 192 5770 5776 "src/traverse.ml" 200 6001 6011
+type(
+  unit
+)
+"src/traverse.ml" 191 5733 5739 "src/traverse.ml" 200 6001 6011
+type(
+  unit
+)
+"src/traverse.ml" 190 5701 5707 "src/traverse.ml" 200 6001 6011
+type(
+  unit
+)
+"src/traverse.ml" 204 6020 6026 "src/traverse.ml" 204 6020 6032
+type(
+  (H.key -> 'c) -> G.t -> unit
+)
+ident(
+  def prefix "src/traverse.ml" 205 6045 6047 "src/traverse.ml" 235 6804 6807
+)
+"src/traverse.ml" 204 6020 6035 "src/traverse.ml" 204 6020 6044
+type(
+  (H.key -> 'c) -> G.t -> unit
+)
+ident(
+  ext_ref Tail.iter
+)
+"src/traverse.ml" 205 6045 6051 "src/traverse.ml" 205 6045 6060
+type(
+  G.t -> bool
+)
+ident(
+  def has_cycle "src/traverse.ml" 206 6078 6080 "src/traverse.ml" 235 6804 6807
+)
+"src/traverse.ml" 205 6045 6063 "src/traverse.ml" 205 6045 6077
+type(
+  G.t -> bool
+)
+ident(
+  ext_ref Tail.has_cycle
+)
+"src/traverse.ml" 206 6078 6084 "src/traverse.ml" 206 6078 6100
+type(
+  (H.key -> 'd) -> G.t -> H.key -> unit
+)
+ident(
+  def prefix_component "src/traverse.ml" 209 6154 6156 "src/traverse.ml" 235 6804 6807
+)
+"src/traverse.ml" 206 6078 6103 "src/traverse.ml" 206 6078 6122
+type(
+  (H.key -> 'd) -> G.t -> H.key -> unit
+)
+ident(
+  ext_ref Tail.iter_component
+)
+"src/traverse.ml" 209 6154 6167 "src/traverse.ml" 209 6154 6180
+call(
+  stack
+)
+"src/traverse.ml" 215 6372 6378 "src/traverse.ml" 215 6372 6383
+type(
+  G.t -> S.t * G.V.t list * G.t
+)
+ident(
+  def start "src/traverse.ml" 219 6465 6467 "src/traverse.ml" 235 6804 6807
+)
+"src/traverse.ml" 215 6372 6384 "src/traverse.ml" 215 6372 6385
+type(
+  G.t
+)
+ident(
+  def g "src/traverse.ml" 216 6388 6392 "src/traverse.ml" 217 6445 6463
+)
+"src/traverse.ml" 216 6388 6396 "src/traverse.ml" 216 6388 6398
+type(
+  G.V.t list
+)
+"src/traverse.ml" 216 6388 6401 "src/traverse.ml" 216 6388 6414
+type(
+  (G.V.t -> G.V.t list -> G.V.t list) -> G.t -> G.V.t list -> G.V.t list
+)
+ident(
+  ext_ref G.fold_vertex
+)
+"src/traverse.ml" 216 6388 6420 "src/traverse.ml" 216 6388 6421
+type(
+  G.V.t
+)
+ident(
+  def v "src/traverse.ml" 216 6388 6422 "src/traverse.ml" 216 6388 6435
+)
+"src/traverse.ml" 216 6388 6422 "src/traverse.ml" 216 6388 6424
+type(
+  G.V.t list
+)
+ident(
+  def st "src/traverse.ml" 216 6388 6428 "src/traverse.ml" 216 6388 6435
+)
+"src/traverse.ml" 216 6388 6428 "src/traverse.ml" 216 6388 6429
+type(
+  G.V.t
+)
+ident(
+  int_ref v "src/traverse.ml" 216 6388 6420 "src/traverse.ml" 216 6388 6421
+)
+"src/traverse.ml" 216 6388 6433 "src/traverse.ml" 216 6388 6435
+type(
+  G.V.t list
+)
+ident(
+  int_ref st "src/traverse.ml" 216 6388 6422 "src/traverse.ml" 216 6388 6424
+)
+"src/traverse.ml" 216 6388 6428 "src/traverse.ml" 216 6388 6435
+type(
+  G.V.t list
+)
+"src/traverse.ml" 216 6388 6415 "src/traverse.ml" 216 6388 6436
+type(
+  G.V.t -> G.V.t list -> G.V.t list
+)
+"src/traverse.ml" 216 6388 6437 "src/traverse.ml" 216 6388 6438
+type(
+  G.t
+)
+ident(
+  int_ref g "src/traverse.ml" 215 6372 6384 "src/traverse.ml" 215 6372 6385
+)
+"src/traverse.ml" 216 6388 6439 "src/traverse.ml" 216 6388 6441
+type(
+  G.V.t list
+)
+"src/traverse.ml" 216 6388 6401 "src/traverse.ml" 216 6388 6441
+call(
+  stack
+)
+type(
+  G.V.t list
+)
+"src/traverse.ml" 217 6445 6449 "src/traverse.ml" 217 6445 6456
+type(
+  S.t
+)
+ident(
+  ext_ref S.empty
+)
+"src/traverse.ml" 217 6445 6458 "src/traverse.ml" 217 6445 6460
+type(
+  G.V.t list
+)
+ident(
+  int_ref st "src/traverse.ml" 216 6388 6396 "src/traverse.ml" 216 6388 6398
+)
+"src/traverse.ml" 217 6445 6462 "src/traverse.ml" 217 6445 6463
+type(
+  G.t
+)
+ident(
+  int_ref g "src/traverse.ml" 215 6372 6384 "src/traverse.ml" 215 6372 6385
+)
+"src/traverse.ml" 217 6445 6449 "src/traverse.ml" 217 6445 6463
+type(
+  S.t * G.V.t list * G.t
+)
+"src/traverse.ml" 216 6388 6392 "src/traverse.ml" 217 6445 6463
+type(
+  S.t * G.V.t list * G.t
+)
+"src/traverse.ml" 219 6465 6471 "src/traverse.ml" 219 6465 6474
+type(
+  'e * 'f list * 'g -> 'f
+)
+ident(
+  def get "src/traverse.ml" 223 6543 6545 "src/traverse.ml" 235 6804 6807
+)
+"src/traverse.ml" 219 6465 6476 "src/traverse.ml" 219 6465 6477
+type(
+  'e
+)
+ident(
+  def s "src/traverse.ml" 219 6465 6486 "src/traverse.ml" 221 6523 6541
+)
+"src/traverse.ml" 219 6465 6478 "src/traverse.ml" 219 6465 6480
+type(
+  'f list
+)
+ident(
+  def st "src/traverse.ml" 219 6465 6486 "src/traverse.ml" 221 6523 6541
+)
+"src/traverse.ml" 219 6465 6481 "src/traverse.ml" 219 6465 6482
+type(
+  'g
+)
+"src/traverse.ml" 219 6465 6475 "src/traverse.ml" 219 6465 6483
+type(
+  'e * 'f list * 'g
+)
+"src/traverse.ml" 219 6465 6492 "src/traverse.ml" 219 6465 6494
+type(
+  'f list
+)
+ident(
+  int_ref st "src/traverse.ml" 219 6465 6478 "src/traverse.ml" 219 6465 6480
+)
+"src/traverse.ml" 220 6500 6506 "src/traverse.ml" 220 6500 6508
+type(
+  'f list
+)
+"src/traverse.ml" 220 6500 6512 "src/traverse.ml" 220 6500 6517
+type(
+  exn -> 'f
+)
+ident(
+  ext_ref Pervasives.raise
+)
+"src/traverse.ml" 220 6500 6518 "src/traverse.ml" 220 6500 6522
+type(
+  exn
+)
+"src/traverse.ml" 220 6500 6512 "src/traverse.ml" 220 6500 6522
+type(
+  'f
+)
+"src/traverse.ml" 221 6523 6529 "src/traverse.ml" 221 6523 6530
+type(
+  'f
+)
+ident(
+  def v "src/traverse.ml" 221 6523 6540 "src/traverse.ml" 221 6523 6541
+)
+"src/traverse.ml" 221 6523 6534 "src/traverse.ml" 221 6523 6535
+type(
+  'f list
+)
+"src/traverse.ml" 221 6523 6529 "src/traverse.ml" 221 6523 6535
+type(
+  'f list
+)
+"src/traverse.ml" 221 6523 6540 "src/traverse.ml" 221 6523 6541
+type(
+  'f
+)
+ident(
+  int_ref v "src/traverse.ml" 221 6523 6529 "src/traverse.ml" 221 6523 6530
+)
+"src/traverse.ml" 219 6465 6486 "src/traverse.ml" 221 6523 6541
+type(
+  'f
+)
+"src/traverse.ml" 223 6543 6549 "src/traverse.ml" 223 6543 6553
+type(
+  S.t * S.elt list * G.t -> S.t * S.elt list * G.t
+)
+ident(
+  def step "src/traverse.ml" 233 6783 6802 "src/traverse.ml" 235 6804 6807
+)
+"src/traverse.ml" 223 6543 6555 "src/traverse.ml" 223 6543 6556
+type(
+  S.t
+)
+ident(
+  def s "src/traverse.ml" 223 6543 6565 "src/traverse.ml" 233 6783 6802
+)
+"src/traverse.ml" 223 6543 6557 "src/traverse.ml" 223 6543 6559
+type(
+  S.elt list
+)
+ident(
+  def st "src/traverse.ml" 223 6543 6565 "src/traverse.ml" 233 6783 6802
+)
+"src/traverse.ml" 223 6543 6560 "src/traverse.ml" 223 6543 6561
+type(
+  G.t
+)
+ident(
+  def g "src/traverse.ml" 223 6543 6565 "src/traverse.ml" 233 6783 6802
+)
+"src/traverse.ml" 223 6543 6554 "src/traverse.ml" 223 6543 6562
+type(
+  S.t * S.elt list * G.t
+)
+"src/traverse.ml" 223 6543 6571 "src/traverse.ml" 223 6543 6573
+type(
+  S.elt list
+)
+ident(
+  int_ref st "src/traverse.ml" 223 6543 6557 "src/traverse.ml" 223 6543 6559
+)
+"src/traverse.ml" 224 6579 6585 "src/traverse.ml" 224 6579 6587
+type(
+  S.elt list
+)
+"src/traverse.ml" 225 6591 6592 "src/traverse.ml" 225 6591 6597
+type(
+  exn -> S.t * S.elt list * G.t
+)
+ident(
+  ext_ref Pervasives.raise
+)
+"src/traverse.ml" 225 6591 6598 "src/traverse.ml" 225 6591 6602
+type(
+  exn
+)
+"src/traverse.ml" 225 6591 6592 "src/traverse.ml" 225 6591 6602
+type(
+  S.t * S.elt list * G.t
+)
+"src/traverse.ml" 226 6603 6609 "src/traverse.ml" 226 6603 6610
+type(
+  S.elt
+)
+ident(
+  def v "src/traverse.ml" 227 6620 6621 "src/traverse.ml" 233 6783 6802
+)
+"src/traverse.ml" 226 6603 6614 "src/traverse.ml" 226 6603 6616
+type(
+  S.elt list
+)
+ident(
+  def st "src/traverse.ml" 227 6620 6621 "src/traverse.ml" 233 6783 6802
+)
+"src/traverse.ml" 226 6603 6609 "src/traverse.ml" 226 6603 6616
+type(
+  S.elt list
+)
+"src/traverse.ml" 227 6620 6625 "src/traverse.ml" 227 6620 6627
+type(
+  S.t
+)
+"src/traverse.ml" 227 6620 6630 "src/traverse.ml" 227 6620 6635
+type(
+  S.elt -> S.t -> S.t
+)
+ident(
+  ext_ref S.add
+)
+"src/traverse.ml" 227 6620 6636 "src/traverse.ml" 227 6620 6637
+type(
+  S.elt
+)
+ident(
+  int_ref v "src/traverse.ml" 226 6603 6609 "src/traverse.ml" 226 6603 6610
+)
+"src/traverse.ml" 227 6620 6638 "src/traverse.ml" 227 6620 6639
+type(
+  S.t
+)
+ident(
+  int_ref s "src/traverse.ml" 223 6543 6555 "src/traverse.ml" 223 6543 6556
+)
+"src/traverse.ml" 227 6620 6630 "src/traverse.ml" 227 6620 6639
+call(
+  stack
+)
+type(
+  S.t
+)
+"src/traverse.ml" 228 6643 6648 "src/traverse.ml" 228 6643 6651
+type(
+  S.elt list
+)
+"src/traverse.ml" 228 6643 6654 "src/traverse.ml" 228 6643 6665
+type(
+  (S.elt -> S.elt list -> S.elt list) ->
+  G.t -> S.elt -> S.elt list -> S.elt list
+)
+ident(
+  ext_ref G.fold_succ
+)
+"src/traverse.ml" 228 6643 6671 "src/traverse.ml" 228 6643 6672
+type(
+  S.elt
+)
+ident(
+  def w "src/traverse.ml" 228 6643 6673 "src/traverse.ml" 228 6643 6686
+)
+"src/traverse.ml" 228 6643 6673 "src/traverse.ml" 228 6643 6675
+type(
+  S.elt list
+)
+ident(
+  def st "src/traverse.ml" 228 6643 6679 "src/traverse.ml" 228 6643 6686
+)
+"src/traverse.ml" 228 6643 6679 "src/traverse.ml" 228 6643 6680
+type(
+  S.elt
+)
+ident(
+  int_ref w "src/traverse.ml" 228 6643 6671 "src/traverse.ml" 228 6643 6672
+)
+"src/traverse.ml" 228 6643 6684 "src/traverse.ml" 228 6643 6686
+type(
+  S.elt list
+)
+ident(
+  int_ref st "src/traverse.ml" 228 6643 6673 "src/traverse.ml" 228 6643 6675
+)
+"src/traverse.ml" 228 6643 6679 "src/traverse.ml" 228 6643 6686
+type(
+  S.elt list
+)
+"src/traverse.ml" 228 6643 6666 "src/traverse.ml" 228 6643 6687
+type(
+  S.elt -> S.elt list -> S.elt list
+)
+"src/traverse.ml" 228 6643 6688 "src/traverse.ml" 228 6643 6689
+type(
+  G.t
+)
+ident(
+  int_ref g "src/traverse.ml" 223 6543 6560 "src/traverse.ml" 223 6543 6561
+)
+"src/traverse.ml" 228 6643 6690 "src/traverse.ml" 228 6643 6691
+type(
+  S.elt
+)
+ident(
+  int_ref v "src/traverse.ml" 226 6603 6609 "src/traverse.ml" 226 6603 6610
+)
+"src/traverse.ml" 228 6643 6692 "src/traverse.ml" 228 6643 6694
+type(
+  S.elt list
+)
+ident(
+  int_ref st "src/traverse.ml" 226 6603 6614 "src/traverse.ml" 226 6603 6616
+)
+"src/traverse.ml" 228 6643 6654 "src/traverse.ml" 228 6643 6694
+call(
+  stack
+)
+type(
+  S.elt list
+)
+"src/traverse.ml" 229 6698 6707 "src/traverse.ml" 229 6698 6712
+type(
+  S.elt list -> S.elt list
+)
+"src/traverse.ml" 230 6724 6729 "src/traverse.ml" 230 6724 6730
+type(
+  S.elt
+)
+ident(
+  def w "src/traverse.ml" 230 6724 6737 "src/traverse.ml" 230 6724 6764
+)
+"src/traverse.ml" 230 6724 6734 "src/traverse.ml" 230 6724 6736
+type(
+  S.elt list
+)
+ident(
+  def st "src/traverse.ml" 230 6724 6737 "src/traverse.ml" 230 6724 6764
+)
+"src/traverse.ml" 230 6724 6729 "src/traverse.ml" 230 6724 6736
+type(
+  S.elt list
+)
+"src/traverse.ml" 230 6724 6742 "src/traverse.ml" 230 6724 6747
+type(
+  S.elt -> S.t -> bool
+)
+ident(
+  ext_ref S.mem
+)
+"src/traverse.ml" 230 6724 6748 "src/traverse.ml" 230 6724 6749
+type(
+  S.elt
+)
+ident(
+  int_ref w "src/traverse.ml" 230 6724 6729 "src/traverse.ml" 230 6724 6730
+)
+"src/traverse.ml" 230 6724 6750 "src/traverse.ml" 230 6724 6752
+type(
+  S.t
+)
+ident(
+  int_ref s' "src/traverse.ml" 227 6620 6625 "src/traverse.ml" 227 6620 6627
+)
+"src/traverse.ml" 230 6724 6742 "src/traverse.ml" 230 6724 6752
+call(
+  stack
+)
+type(
+  bool
+)
+"src/traverse.ml" 230 6724 6756 "src/traverse.ml" 230 6724 6761
+type(
+  S.elt list -> S.elt list
+)
+ident(
+  int_ref clean "src/traverse.ml" 229 6698 6707 "src/traverse.ml" 229 6698 6712
+)
+"src/traverse.ml" 230 6724 6762 "src/traverse.ml" 230 6724 6764
+type(
+  S.elt list
+)
+ident(
+  int_ref st "src/traverse.ml" 230 6724 6734 "src/traverse.ml" 230 6724 6736
+)
+"src/traverse.ml" 230 6724 6756 "src/traverse.ml" 230 6724 6764
+call(
+  tail
+)
+type(
+  S.elt list
+)
+"src/traverse.ml" 230 6724 6737 "src/traverse.ml" 230 6724 6764
+type(
+  S.elt list
+)
+"src/traverse.ml" 231 6765 6770 "src/traverse.ml" 231 6765 6772
+type(
+  S.elt list
+)
+ident(
+  def st "src/traverse.ml" 231 6765 6776 "src/traverse.ml" 231 6765 6778
+)
+"src/traverse.ml" 231 6765 6776 "src/traverse.ml" 231 6765 6778
+type(
+  S.elt list
+)
+ident(
+  int_ref st "src/traverse.ml" 231 6765 6770 "src/traverse.ml" 231 6765 6772
+)
+"src/traverse.ml" 229 6698 6715 "src/traverse.ml" 231 6765 6778
+type(
+  S.elt list -> S.elt list
+)
+"src/traverse.ml" 233 6783 6785 "src/traverse.ml" 233 6783 6787
+type(
+  S.t
+)
+ident(
+  int_ref s' "src/traverse.ml" 227 6620 6625 "src/traverse.ml" 227 6620 6627
+)
+"src/traverse.ml" 233 6783 6789 "src/traverse.ml" 233 6783 6794
+type(
+  S.elt list -> S.elt list
+)
+ident(
+  int_ref clean "src/traverse.ml" 229 6698 6707 "src/traverse.ml" 229 6698 6712
+)
+"src/traverse.ml" 233 6783 6795 "src/traverse.ml" 233 6783 6798
+type(
+  S.elt list
+)
+ident(
+  int_ref st' "src/traverse.ml" 228 6643 6648 "src/traverse.ml" 228 6643 6651
+)
+"src/traverse.ml" 233 6783 6789 "src/traverse.ml" 233 6783 6798
+call(
+  stack
+)
+type(
+  S.elt list
+)
+"src/traverse.ml" 233 6783 6800 "src/traverse.ml" 233 6783 6801
+type(
+  G.t
+)
+ident(
+  int_ref g "src/traverse.ml" 223 6543 6560 "src/traverse.ml" 223 6543 6561
+)
+"src/traverse.ml" 233 6783 6784 "src/traverse.ml" 233 6783 6802
+type(
+  S.t * S.elt list * G.t
+)
+"src/traverse.ml" 229 6698 6699 "src/traverse.ml" 233 6783 6802
+type(
+  S.t * S.elt list * G.t
+)
+"src/traverse.ml" 228 6643 6644 "src/traverse.ml" 233 6783 6802
+type(
+  S.t * S.elt list * G.t
+)
+"src/traverse.ml" 227 6620 6621 "src/traverse.ml" 233 6783 6802
+type(
+  S.t * S.elt list * G.t
+)
+"src/traverse.ml" 223 6543 6565 "src/traverse.ml" 233 6783 6802
+type(
+  S.t * S.elt list * G.t
+)
+"src/traverse.ml" 239 6863 6876 "src/traverse.ml" 239 6863 6893
+call(
+  stack
+)
+"src/traverse.ml" 241 6895 6901 "src/traverse.ml" 241 6895 6905
+type(
+  (H.key -> 'a) -> G.t -> unit
+)
+ident(
+  def iter "src/traverse.ml" 257 7317 7319 "src/traverse.ml" 323 8908 8911
+)
+"src/traverse.ml" 241 6895 6906 "src/traverse.ml" 241 6895 6907
+type(
+  H.key -> 'a
+)
+ident(
+  def f "src/traverse.ml" 241 6895 6908 "src/traverse.ml" 255 7269 7315
+)
+"src/traverse.ml" 241 6895 6908 "src/traverse.ml" 241 6895 6909
+type(
+  G.t
+)
+ident(
+  def g "src/traverse.ml" 242 6912 6916 "src/traverse.ml" 255 7269 7315
+)
+"src/traverse.ml" 242 6912 6920 "src/traverse.ml" 242 6912 6921
+type(
+  unit H.t
+)
+"src/traverse.ml" 242 6912 6924 "src/traverse.ml" 242 6912 6932
+type(
+  int -> unit H.t
+)
+ident(
+  ext_ref H.create
+)
+"src/traverse.ml" 242 6912 6933 "src/traverse.ml" 242 6912 6938
+type(
+  int
+)
+"src/traverse.ml" 242 6912 6924 "src/traverse.ml" 242 6912 6938
+call(
+  stack
+)
+type(
+  unit H.t
+)
+"src/traverse.ml" 243 6942 6950 "src/traverse.ml" 243 6942 6951
+type(
+  H.key Queue.t
+)
+"src/traverse.ml" 243 6942 6954 "src/traverse.ml" 243 6942 6966
+type(
+  unit -> H.key Queue.t
+)
+ident(
+  ext_ref Queue.create
+)
+"src/traverse.ml" 243 6942 6967 "src/traverse.ml" 243 6942 6969
+type(
+  unit
+)
+"src/traverse.ml" 243 6942 6954 "src/traverse.ml" 243 6942 6969
+call(
+  stack
+)
+type(
+  H.key Queue.t
+)
+"src/traverse.ml" 245 7051 7059 "src/traverse.ml" 245 7051 7063
+type(
+  H.key -> unit
+)
+"src/traverse.ml" 245 7051 7064 "src/traverse.ml" 245 7051 7065
+type(
+  H.key
+)
+ident(
+  def v "src/traverse.ml" 246 7068 7074 "src/traverse.ml" 246 7068 7135
+)
+"src/traverse.ml" 246 7068 7077 "src/traverse.ml" 246 7068 7080
+type(
+  bool -> bool
+)
+ident(
+  ext_ref Pervasives.not
+)
+"src/traverse.ml" 246 7068 7082 "src/traverse.ml" 246 7068 7087
+type(
+  unit H.t -> H.key -> bool
+)
+ident(
+  ext_ref H.mem
+)
+"src/traverse.ml" 246 7068 7088 "src/traverse.ml" 246 7068 7089
+type(
+  unit H.t
+)
+ident(
+  int_ref h "src/traverse.ml" 242 6912 6920 "src/traverse.ml" 242 6912 6921
+)
+"src/traverse.ml" 246 7068 7090 "src/traverse.ml" 246 7068 7091
+type(
+  H.key
+)
+ident(
+  int_ref v "src/traverse.ml" 245 7051 7064 "src/traverse.ml" 245 7051 7065
+)
+"src/traverse.ml" 246 7068 7081 "src/traverse.ml" 246 7068 7092
+call(
+  stack
+)
+type(
+  bool
+)
+"src/traverse.ml" 246 7068 7077 "src/traverse.ml" 246 7068 7092
+type(
+  bool
+)
+"src/traverse.ml" 246 7068 7104 "src/traverse.ml" 246 7068 7109
+type(
+  unit H.t -> H.key -> unit -> unit
+)
+ident(
+  ext_ref H.add
+)
+"src/traverse.ml" 246 7068 7110 "src/traverse.ml" 246 7068 7111
+type(
+  unit H.t
+)
+ident(
+  int_ref h "src/traverse.ml" 242 6912 6920 "src/traverse.ml" 242 6912 6921
+)
+"src/traverse.ml" 246 7068 7112 "src/traverse.ml" 246 7068 7113
+type(
+  H.key
+)
+ident(
+  int_ref v "src/traverse.ml" 245 7051 7064 "src/traverse.ml" 245 7051 7065
+)
+"src/traverse.ml" 246 7068 7114 "src/traverse.ml" 246 7068 7116
+type(
+  unit
+)
+"src/traverse.ml" 246 7068 7104 "src/traverse.ml" 246 7068 7116
+call(
+  stack
+)
+type(
+  unit
+)
+"src/traverse.ml" 246 7068 7118 "src/traverse.ml" 246 7068 7127
+type(
+  H.key -> H.key Queue.t -> unit
+)
+ident(
+  ext_ref Queue.add
+)
+"src/traverse.ml" 246 7068 7128 "src/traverse.ml" 246 7068 7129
+type(
+  H.key
+)
+ident(
+  int_ref v "src/traverse.ml" 245 7051 7064 "src/traverse.ml" 245 7051 7065
+)
+"src/traverse.ml" 246 7068 7130 "src/traverse.ml" 246 7068 7131
+type(
+  H.key Queue.t
+)
+ident(
+  int_ref q "src/traverse.ml" 243 6942 6950 "src/traverse.ml" 243 6942 6951
+)
+"src/traverse.ml" 246 7068 7118 "src/traverse.ml" 246 7068 7131
+call(
+  tail
+)
+type(
+  unit
+)
+"src/traverse.ml" 246 7068 7098 "src/traverse.ml" 246 7068 7135
+type(
+  unit
+)
+"src/traverse.ml" 246 7068 7074 "src/traverse.ml" 246 7068 7135
+type(
+  unit
+)
+"src/traverse.ml" 248 7143 7151 "src/traverse.ml" 248 7143 7155
+type(
+  unit -> unit
+)
+"src/traverse.ml" 248 7143 7156 "src/traverse.ml" 248 7143 7158
+type(
+  unit
+)
+"src/traverse.ml" 249 7161 7173 "src/traverse.ml" 249 7161 7176
+type(
+  bool -> bool
+)
+ident(
+  ext_ref Pervasives.not
+)
+"src/traverse.ml" 249 7161 7178 "src/traverse.ml" 249 7161 7192
+type(
+  H.key Queue.t -> bool
+)
+ident(
+  ext_ref Queue.is_empty
+)
+"src/traverse.ml" 249 7161 7193 "src/traverse.ml" 249 7161 7194
+type(
+  H.key Queue.t
+)
+ident(
+  int_ref q "src/traverse.ml" 243 6942 6950 "src/traverse.ml" 243 6942 6951
+)
+"src/traverse.ml" 249 7161 7177 "src/traverse.ml" 249 7161 7195
+call(
+  stack
+)
+type(
+  bool
+)
+"src/traverse.ml" 249 7161 7173 "src/traverse.ml" 249 7161 7195
+type(
+  bool
+)
+"src/traverse.ml" 250 7199 7204 "src/traverse.ml" 250 7199 7205
+type(
+  H.key
+)
+ident(
+  def v "src/traverse.ml" 251 7223 7224 "src/traverse.ml" 252 7229 7250
+)
+"src/traverse.ml" 250 7199 7208 "src/traverse.ml" 250 7199 7217
+type(
+  H.key Queue.t -> H.key
+)
+ident(
+  ext_ref Queue.pop
+)
+"src/traverse.ml" 250 7199 7218 "src/traverse.ml" 250 7199 7219
+type(
+  H.key Queue.t
+)
+ident(
+  int_ref q "src/traverse.ml" 243 6942 6950 "src/traverse.ml" 243 6942 6951
+)
+"src/traverse.ml" 250 7199 7208 "src/traverse.ml" 250 7199 7219
+call(
+  stack
+)
+type(
+  H.key
+)
+"src/traverse.ml" 251 7223 7224 "src/traverse.ml" 251 7223 7225
+type(
+  H.key -> 'a
+)
+ident(
+  int_ref f "src/traverse.ml" 241 6895 6906 "src/traverse.ml" 241 6895 6907
+)
+"src/traverse.ml" 251 7223 7226 "src/traverse.ml" 251 7223 7227
+type(
+  H.key
+)
+ident(
+  int_ref v "src/traverse.ml" 250 7199 7204 "src/traverse.ml" 250 7199 7205
+)
+"src/traverse.ml" 251 7223 7224 "src/traverse.ml" 251 7223 7227
+call(
+  stack
+)
+type(
+  'a
+)
+"src/traverse.ml" 252 7229 7230 "src/traverse.ml" 252 7229 7241
+type(
+  (H.key -> unit) -> G.t -> H.key -> unit
+)
+ident(
+  ext_ref G.iter_succ
+)
+"src/traverse.ml" 252 7229 7242 "src/traverse.ml" 252 7229 7246
+type(
+  H.key -> unit
+)
+ident(
+  int_ref push "src/traverse.ml" 245 7051 7059 "src/traverse.ml" 245 7051 7063
+)
+"src/traverse.ml" 252 7229 7247 "src/traverse.ml" 252 7229 7248
+type(
+  G.t
+)
+ident(
+  int_ref g "src/traverse.ml" 241 6895 6908 "src/traverse.ml" 241 6895 6909
+)
+"src/traverse.ml" 252 7229 7249 "src/traverse.ml" 252 7229 7250
+type(
+  H.key
+)
+ident(
+  int_ref v "src/traverse.ml" 250 7199 7204 "src/traverse.ml" 250 7199 7205
+)
+"src/traverse.ml" 252 7229 7230 "src/traverse.ml" 252 7229 7250
+call(
+  stack
+)
+type(
+  unit
+)
+"src/traverse.ml" 251 7223 7224 "src/traverse.ml" 252 7229 7250
+type(
+  unit
+)
+"src/traverse.ml" 250 7199 7200 "src/traverse.ml" 252 7229 7250
+type(
+  unit
+)
+"src/traverse.ml" 249 7161 7167 "src/traverse.ml" 253 7251 7261
+type(
+  unit
+)
+"src/traverse.ml" 255 7269 7273 "src/traverse.ml" 255 7269 7286
+type(
+  (H.key -> unit) -> G.t -> unit
+)
+ident(
+  ext_ref G.iter_vertex
+)
+"src/traverse.ml" 255 7269 7292 "src/traverse.ml" 255 7269 7293
+type(
+  H.key
+)
+ident(
+  def v "src/traverse.ml" 255 7269 7297 "src/traverse.ml" 255 7269 7312
+)
+"src/traverse.ml" 255 7269 7297 "src/traverse.ml" 255 7269 7301
+type(
+  H.key -> unit
+)
+ident(
+  int_ref push "src/traverse.ml" 245 7051 7059 "src/traverse.ml" 245 7051 7063
+)
+"src/traverse.ml" 255 7269 7302 "src/traverse.ml" 255 7269 7303
+type(
+  H.key
+)
+ident(
+  int_ref v "src/traverse.ml" 255 7269 7292 "src/traverse.ml" 255 7269 7293
+)
+"src/traverse.ml" 255 7269 7297 "src/traverse.ml" 255 7269 7303
+call(
+  stack
+)
+type(
+  unit
+)
+"src/traverse.ml" 255 7269 7305 "src/traverse.ml" 255 7269 7309
+type(
+  unit -> unit
+)
+ident(
+  int_ref loop "src/traverse.ml" 248 7143 7151 "src/traverse.ml" 248 7143 7155
+)
+"src/traverse.ml" 255 7269 7310 "src/traverse.ml" 255 7269 7312
+type(
+  unit
+)
+"src/traverse.ml" 255 7269 7305 "src/traverse.ml" 255 7269 7312
+call(
+  tail
+)
+type(
+  unit
+)
+"src/traverse.ml" 255 7269 7297 "src/traverse.ml" 255 7269 7312
+type(
+  unit
+)
+"src/traverse.ml" 255 7269 7287 "src/traverse.ml" 255 7269 7313
+type(
+  H.key -> unit
+)
+"src/traverse.ml" 255 7269 7314 "src/traverse.ml" 255 7269 7315
+type(
+  G.t
+)
+ident(
+  int_ref g "src/traverse.ml" 241 6895 6908 "src/traverse.ml" 241 6895 6909
+)
+"src/traverse.ml" 255 7269 7273 "src/traverse.ml" 255 7269 7315
+call(
+  tail
+)
+type(
+  unit
+)
+"src/traverse.ml" 248 7143 7147 "src/traverse.ml" 255 7269 7315
+type(
+  unit
+)
+"src/traverse.ml" 245 7051 7055 "src/traverse.ml" 255 7269 7315
+type(
+  unit
+)
+"src/traverse.ml" 243 6942 6946 "src/traverse.ml" 255 7269 7315
+type(
+  unit
+)
+"src/traverse.ml" 242 6912 6916 "src/traverse.ml" 255 7269 7315
+type(
+  unit
+)
+"src/traverse.ml" 257 7317 7323 "src/traverse.ml" 257 7317 7337
+type(
+  (H.key -> 'b) -> G.t -> H.key -> unit
+)
+ident(
+  def iter_component "src/traverse.ml" 274 7789 7791 "src/traverse.ml" 323 8908 8911
+)
+"src/traverse.ml" 257 7317 7338 "src/traverse.ml" 257 7317 7339
+type(
+  H.key -> 'b
+)
+ident(
+  def f "src/traverse.ml" 257 7317 7340 "src/traverse.ml" 269 7694 7702
+)
+"src/traverse.ml" 257 7317 7340 "src/traverse.ml" 257 7317 7341
+type(
+  G.t
+)
+ident(
+  def g "src/traverse.ml" 257 7317 7342 "src/traverse.ml" 269 7694 7702
+)
+"src/traverse.ml" 257 7317 7342 "src/traverse.ml" 257 7317 7344
+type(
+  H.key
+)
+ident(
+  def v0 "src/traverse.ml" 258 7347 7351 "src/traverse.ml" 269 7694 7702
+)
+"src/traverse.ml" 258 7347 7355 "src/traverse.ml" 258 7347 7356
+type(
+  unit H.t
+)
+"src/traverse.ml" 258 7347 7359 "src/traverse.ml" 258 7347 7367
+type(
+  int -> unit H.t
+)
+ident(
+  ext_ref H.create
+)
+"src/traverse.ml" 258 7347 7368 "src/traverse.ml" 258 7347 7373
+type(
+  int
+)
+"src/traverse.ml" 258 7347 7359 "src/traverse.ml" 258 7347 7373
+call(
+  stack
+)
+type(
+  unit H.t
+)
+"src/traverse.ml" 259 7377 7385 "src/traverse.ml" 259 7377 7386
+type(
+  H.key Queue.t
+)
+"src/traverse.ml" 259 7377 7389 "src/traverse.ml" 259 7377 7401
+type(
+  unit -> H.key Queue.t
+)
+ident(
+  ext_ref Queue.create
+)
+"src/traverse.ml" 259 7377 7402 "src/traverse.ml" 259 7377 7404
+type(
+  unit
+)
+"src/traverse.ml" 259 7377 7389 "src/traverse.ml" 259 7377 7404
+call(
+  stack
+)
+type(
+  H.key Queue.t
+)
+"src/traverse.ml" 261 7486 7494 "src/traverse.ml" 261 7486 7498
+type(
+  H.key -> unit
+)
+"src/traverse.ml" 261 7486 7499 "src/traverse.ml" 261 7486 7500
+type(
+  H.key
+)
+ident(
+  def v "src/traverse.ml" 262 7503 7509 "src/traverse.ml" 262 7503 7570
+)
+"src/traverse.ml" 262 7503 7512 "src/traverse.ml" 262 7503 7515
+type(
+  bool -> bool
+)
+ident(
+  ext_ref Pervasives.not
+)
+"src/traverse.ml" 262 7503 7517 "src/traverse.ml" 262 7503 7522
+type(
+  unit H.t -> H.key -> bool
+)
+ident(
+  ext_ref H.mem
+)
+"src/traverse.ml" 262 7503 7523 "src/traverse.ml" 262 7503 7524
+type(
+  unit H.t
+)
+ident(
+  int_ref h "src/traverse.ml" 258 7347 7355 "src/traverse.ml" 258 7347 7356
+)
+"src/traverse.ml" 262 7503 7525 "src/traverse.ml" 262 7503 7526
+type(
+  H.key
+)
+ident(
+  int_ref v "src/traverse.ml" 261 7486 7499 "src/traverse.ml" 261 7486 7500
+)
+"src/traverse.ml" 262 7503 7516 "src/traverse.ml" 262 7503 7527
+call(
+  stack
+)
+type(
+  bool
+)
+"src/traverse.ml" 262 7503 7512 "src/traverse.ml" 262 7503 7527
+type(
+  bool
+)
+"src/traverse.ml" 262 7503 7539 "src/traverse.ml" 262 7503 7544
+type(
+  unit H.t -> H.key -> unit -> unit
+)
+ident(
+  ext_ref H.add
+)
+"src/traverse.ml" 262 7503 7545 "src/traverse.ml" 262 7503 7546
+type(
+  unit H.t
+)
+ident(
+  int_ref h "src/traverse.ml" 258 7347 7355 "src/traverse.ml" 258 7347 7356
+)
+"src/traverse.ml" 262 7503 7547 "src/traverse.ml" 262 7503 7548
+type(
+  H.key
+)
+ident(
+  int_ref v "src/traverse.ml" 261 7486 7499 "src/traverse.ml" 261 7486 7500
+)
+"src/traverse.ml" 262 7503 7549 "src/traverse.ml" 262 7503 7551
+type(
+  unit
+)
+"src/traverse.ml" 262 7503 7539 "src/traverse.ml" 262 7503 7551
+call(
+  stack
+)
+type(
+  unit
+)
+"src/traverse.ml" 262 7503 7553 "src/traverse.ml" 262 7503 7562
+type(
+  H.key -> H.key Queue.t -> unit
+)
+ident(
+  ext_ref Queue.add
+)
+"src/traverse.ml" 262 7503 7563 "src/traverse.ml" 262 7503 7564
+type(
+  H.key
+)
+ident(
+  int_ref v "src/traverse.ml" 261 7486 7499 "src/traverse.ml" 261 7486 7500
+)
+"src/traverse.ml" 262 7503 7565 "src/traverse.ml" 262 7503 7566
+type(
+  H.key Queue.t
+)
+ident(
+  int_ref q "src/traverse.ml" 259 7377 7385 "src/traverse.ml" 259 7377 7386
+)
+"src/traverse.ml" 262 7503 7553 "src/traverse.ml" 262 7503 7566
+call(
+  tail
+)
+type(
+  unit
+)
+"src/traverse.ml" 262 7503 7533 "src/traverse.ml" 262 7503 7570
+type(
+  unit
+)
+"src/traverse.ml" 262 7503 7509 "src/traverse.ml" 262 7503 7570
+type(
+  unit
+)
+"src/traverse.ml" 264 7578 7582 "src/traverse.ml" 264 7578 7586
+type(
+  H.key -> unit
+)
+ident(
+  int_ref push "src/traverse.ml" 261 7486 7494 "src/traverse.ml" 261 7486 7498
+)
+"src/traverse.ml" 264 7578 7587 "src/traverse.ml" 264 7578 7589
+type(
+  H.key
+)
+ident(
+  int_ref v0 "src/traverse.ml" 257 7317 7342 "src/traverse.ml" 257 7317 7344
+)
+"src/traverse.ml" 264 7578 7582 "src/traverse.ml" 264 7578 7589
+call(
+  stack
+)
+type(
+  unit
+)
+"src/traverse.ml" 265 7591 7601 "src/traverse.ml" 265 7591 7604
+type(
+  bool -> bool
+)
+ident(
+  ext_ref Pervasives.not
+)
+"src/traverse.ml" 265 7591 7606 "src/traverse.ml" 265 7591 7620
+type(
+  H.key Queue.t -> bool
+)
+ident(
+  ext_ref Queue.is_empty
+)
+"src/traverse.ml" 265 7591 7621 "src/traverse.ml" 265 7591 7622
+type(
+  H.key Queue.t
+)
+ident(
+  int_ref q "src/traverse.ml" 259 7377 7385 "src/traverse.ml" 259 7377 7386
+)
+"src/traverse.ml" 265 7591 7605 "src/traverse.ml" 265 7591 7623
+call(
+  stack
+)
+type(
+  bool
+)
+"src/traverse.ml" 265 7591 7601 "src/traverse.ml" 265 7591 7623
+type(
+  bool
+)
+"src/traverse.ml" 266 7627 7637 "src/traverse.ml" 266 7627 7638
+type(
+  H.key
+)
+ident(
+  def v "src/traverse.ml" 267 7656 7662 "src/traverse.ml" 268 7667 7693
+)
+"src/traverse.ml" 266 7627 7641 "src/traverse.ml" 266 7627 7650
+type(
+  H.key Queue.t -> H.key
+)
+ident(
+  ext_ref Queue.pop
+)
+"src/traverse.ml" 266 7627 7651 "src/traverse.ml" 266 7627 7652
+type(
+  H.key Queue.t
+)
+ident(
+  int_ref q "src/traverse.ml" 259 7377 7385 "src/traverse.ml" 259 7377 7386
+)
+"src/traverse.ml" 266 7627 7641 "src/traverse.ml" 266 7627 7652
+call(
+  stack
+)
+type(
+  H.key
+)
+"src/traverse.ml" 267 7656 7662 "src/traverse.ml" 267 7656 7663
+type(
+  H.key -> 'b
+)
+ident(
+  int_ref f "src/traverse.ml" 257 7317 7338 "src/traverse.ml" 257 7317 7339
+)
+"src/traverse.ml" 267 7656 7664 "src/traverse.ml" 267 7656 7665
+type(
+  H.key
+)
+ident(
+  int_ref v "src/traverse.ml" 266 7627 7637 "src/traverse.ml" 266 7627 7638
+)
+"src/traverse.ml" 267 7656 7662 "src/traverse.ml" 267 7656 7665
+call(
+  stack
+)
+type(
+  'b
+)
+"src/traverse.ml" 268 7667 7673 "src/traverse.ml" 268 7667 7684
+type(
+  (H.key -> unit) -> G.t -> H.key -> unit
+)
+ident(
+  ext_ref G.iter_succ
+)
+"src/traverse.ml" 268 7667 7685 "src/traverse.ml" 268 7667 7689
+type(
+  H.key -> unit
+)
+ident(
+  int_ref push "src/traverse.ml" 261 7486 7494 "src/traverse.ml" 261 7486 7498
+)
+"src/traverse.ml" 268 7667 7690 "src/traverse.ml" 268 7667 7691
+type(
+  G.t
+)
+ident(
+  int_ref g "src/traverse.ml" 257 7317 7340 "src/traverse.ml" 257 7317 7341
+)
+"src/traverse.ml" 268 7667 7692 "src/traverse.ml" 268 7667 7693
+type(
+  H.key
+)
+ident(
+  int_ref v "src/traverse.ml" 266 7627 7637 "src/traverse.ml" 266 7627 7638
+)
+"src/traverse.ml" 268 7667 7673 "src/traverse.ml" 268 7667 7693
+call(
+  stack
+)
+type(
+  unit
+)
+"src/traverse.ml" 267 7656 7662 "src/traverse.ml" 268 7667 7693
+type(
+  unit
+)
+"src/traverse.ml" 266 7627 7633 "src/traverse.ml" 268 7667 7693
+type(
+  unit
+)
+"src/traverse.ml" 265 7591 7595 "src/traverse.ml" 269 7694 7702
+type(
+  unit
+)
+"src/traverse.ml" 264 7578 7582 "src/traverse.ml" 269 7694 7702
+type(
+  unit
+)
+"src/traverse.ml" 261 7486 7490 "src/traverse.ml" 269 7694 7702
+type(
+  unit
+)
+"src/traverse.ml" 259 7377 7381 "src/traverse.ml" 269 7694 7702
+type(
+  unit
+)
+"src/traverse.ml" 258 7347 7351 "src/traverse.ml" 269 7694 7702
+type(
+  unit
+)
+"src/traverse.ml" 277 7863 7871 "src/traverse.ml" 277 7863 7876
+type(
+  'c list * 'd list
+)
+ident(
+  def empty "src/traverse.ml" 278 7886 7890 "src/traverse.ml" 287 8178 8183
+)
+"src/traverse.ml" 277 7863 7879 "src/traverse.ml" 277 7863 7881
+type(
+  'c list
+)
+"src/traverse.ml" 277 7863 7883 "src/traverse.ml" 277 7863 7885
+type(
+  'd list
+)
+"src/traverse.ml" 277 7863 7879 "src/traverse.ml" 277 7863 7885
+type(
+  'c list * 'd list
+)
+"src/traverse.ml" 278 7886 7894 "src/traverse.ml" 278 7886 7902
+type(
+  'e list * 'f list -> bool
+)
+ident(
+  def is_empty "src/traverse.ml" 279 7942 7946 "src/traverse.ml" 287 8178 8183
+)
+"src/traverse.ml" 278 7886 7914 "src/traverse.ml" 278 7886 7916
+type(
+  'e list
+)
+"src/traverse.ml" 278 7886 7918 "src/traverse.ml" 278 7886 7920
+type(
+  'f list
+)
+"src/traverse.ml" 278 7886 7914 "src/traverse.ml" 278 7886 7920
+type(
+  'e list * 'f list
+)
+"src/traverse.ml" 278 7886 7924 "src/traverse.ml" 278 7886 7928
+type(
+  bool
+)
+"src/traverse.ml" 278 7886 7931 "src/traverse.ml" 278 7886 7932
+type(
+  'e list * 'f list
+)
+"src/traverse.ml" 278 7886 7936 "src/traverse.ml" 278 7886 7941
+type(
+  bool
+)
+"src/traverse.ml" 278 7886 7905 "src/traverse.ml" 278 7886 7941
+type(
+  'e list * 'f list -> bool
+)
+"src/traverse.ml" 279 7942 7950 "src/traverse.ml" 279 7942 7954
+type(
+  'g -> 'g list * 'h -> 'g list * 'h
+)
+ident(
+  def push "src/traverse.ml" 280 7977 7981 "src/traverse.ml" 287 8178 8183
+)
+"src/traverse.ml" 279 7942 7955 "src/traverse.ml" 279 7942 7956
+type(
+  'g
+)
+ident(
+  def x "src/traverse.ml" 279 7942 7957 "src/traverse.ml" 279 7942 7976
+)
+"src/traverse.ml" 279 7942 7958 "src/traverse.ml" 279 7942 7959
+type(
+  'g list
+)
+ident(
+  def i "src/traverse.ml" 279 7942 7965 "src/traverse.ml" 279 7942 7976
+)
+"src/traverse.ml" 279 7942 7960 "src/traverse.ml" 279 7942 7961
+type(
+  'h
+)
+ident(
+  def o "src/traverse.ml" 279 7942 7965 "src/traverse.ml" 279 7942 7976
+)
+"src/traverse.ml" 279 7942 7957 "src/traverse.ml" 279 7942 7962
+type(
+  'g list * 'h
+)
+"src/traverse.ml" 279 7942 7966 "src/traverse.ml" 279 7942 7967
+type(
+  'g
+)
+ident(
+  int_ref x "src/traverse.ml" 279 7942 7955 "src/traverse.ml" 279 7942 7956
+)
+"src/traverse.ml" 279 7942 7971 "src/traverse.ml" 279 7942 7972
+type(
+  'g list
+)
+ident(
+  int_ref i "src/traverse.ml" 279 7942 7958 "src/traverse.ml" 279 7942 7959
+)
+"src/traverse.ml" 279 7942 7966 "src/traverse.ml" 279 7942 7972
+type(
+  'g list
+)
+"src/traverse.ml" 279 7942 7974 "src/traverse.ml" 279 7942 7975
+type(
+  'h
+)
+ident(
+  int_ref o "src/traverse.ml" 279 7942 7960 "src/traverse.ml" 279 7942 7961
+)
+"src/traverse.ml" 279 7942 7965 "src/traverse.ml" 279 7942 7976
+type(
+  'g list * 'h
+)
+"src/traverse.ml" 280 7977 7985 "src/traverse.ml" 280 7977 7988
+type(
+  'i list * 'i list -> 'i * ('i list * 'i list)
+)
+ident(
+  def pop "src/traverse.ml" 286 8149 8153 "src/traverse.ml" 287 8178 8183
+)
+"src/traverse.ml" 281 8000 8008 "src/traverse.ml" 281 8000 8009
+type(
+  'i list
+)
+ident(
+  def i "src/traverse.ml" 281 8000 8021 "src/traverse.ml" 281 8000 8029
+)
+"src/traverse.ml" 281 8000 8011 "src/traverse.ml" 281 8000 8012
+type(
+  'i
+)
+ident(
+  def y "src/traverse.ml" 281 8000 8021 "src/traverse.ml" 281 8000 8029
+)
+"src/traverse.ml" 281 8000 8016 "src/traverse.ml" 281 8000 8017
+type(
+  'i list
+)
+ident(
+  def o "src/traverse.ml" 281 8000 8021 "src/traverse.ml" 281 8000 8029
+)
+"src/traverse.ml" 281 8000 8011 "src/traverse.ml" 281 8000 8017
+type(
+  'i list
+)
+"src/traverse.ml" 281 8000 8008 "src/traverse.ml" 281 8000 8017
+type(
+  'i list * 'i list
+)
+"src/traverse.ml" 281 8000 8021 "src/traverse.ml" 281 8000 8022
+type(
+  'i
+)
+ident(
+  int_ref y "src/traverse.ml" 281 8000 8011 "src/traverse.ml" 281 8000 8012
+)
+"src/traverse.ml" 281 8000 8025 "src/traverse.ml" 281 8000 8026
+type(
+  'i list
+)
+ident(
+  int_ref i "src/traverse.ml" 281 8000 8008 "src/traverse.ml" 281 8000 8009
+)
+"src/traverse.ml" 281 8000 8027 "src/traverse.ml" 281 8000 8028
+type(
+  'i list
+)
+ident(
+  int_ref o "src/traverse.ml" 281 8000 8016 "src/traverse.ml" 281 8000 8017
+)
+"src/traverse.ml" 281 8000 8024 "src/traverse.ml" 281 8000 8029
+type(
+  'i list * 'i list
+)
+"src/traverse.ml" 281 8000 8021 "src/traverse.ml" 281 8000 8029
+type(
+  'i * ('i list * 'i list)
+)
+"src/traverse.ml" 282 8030 8038 "src/traverse.ml" 282 8030 8040
+type(
+  'i list
+)
+"src/traverse.ml" 282 8030 8042 "src/traverse.ml" 282 8030 8044
+type(
+  'i list
+)
+"src/traverse.ml" 282 8030 8038 "src/traverse.ml" 282 8030 8044
+type(
+  'i list * 'i list
+)
+"src/traverse.ml" 282 8030 8048 "src/traverse.ml" 282 8030 8053
+type(
+  exn -> 'i * ('i list * 'i list)
+)
+ident(
+  ext_ref Pervasives.raise
+)
+"src/traverse.ml" 282 8030 8054 "src/traverse.ml" 282 8030 8059
+type(
+  exn
+)
+"src/traverse.ml" 282 8030 8048 "src/traverse.ml" 282 8030 8059
+type(
+  'i * ('i list * 'i list)
+)
+"src/traverse.ml" 283 8060 8068 "src/traverse.ml" 283 8060 8069
+type(
+  'i list
+)
+ident(
+  def i "src/traverse.ml" 283 8060 8077 "src/traverse.ml" 285 8125 8148
+)
+"src/traverse.ml" 283 8060 8071 "src/traverse.ml" 283 8060 8073
+type(
+  'i list
+)
+"src/traverse.ml" 283 8060 8068 "src/traverse.ml" 283 8060 8073
+type(
+  'i list * 'i list
+)
+"src/traverse.ml" 283 8060 8083 "src/traverse.ml" 283 8060 8091
+type(
+  'i list -> 'i list
+)
+ident(
+  ext_ref List.rev
+)
+"src/traverse.ml" 283 8060 8092 "src/traverse.ml" 283 8060 8093
+type(
+  'i list
+)
+ident(
+  int_ref i "src/traverse.ml" 283 8060 8068 "src/traverse.ml" 283 8060 8069
+)
+"src/traverse.ml" 283 8060 8083 "src/traverse.ml" 283 8060 8093
+call(
+  stack
+)
+type(
+  'i list
+)
+"src/traverse.ml" 284 8099 8104 "src/traverse.ml" 284 8099 8105
+type(
+  'i
+)
+ident(
+  def x "src/traverse.ml" 284 8099 8114 "src/traverse.ml" 284 8099 8124
+)
+"src/traverse.ml" 284 8099 8109 "src/traverse.ml" 284 8099 8110
+type(
+  'i list
+)
+ident(
+  def o "src/traverse.ml" 284 8099 8114 "src/traverse.ml" 284 8099 8124
+)
+"src/traverse.ml" 284 8099 8104 "src/traverse.ml" 284 8099 8110
+type(
+  'i list
+)
+"src/traverse.ml" 284 8099 8114 "src/traverse.ml" 284 8099 8115
+type(
+  'i
+)
+ident(
+  int_ref x "src/traverse.ml" 284 8099 8104 "src/traverse.ml" 284 8099 8105
+)
+"src/traverse.ml" 284 8099 8118 "src/traverse.ml" 284 8099 8120
+type(
+  'i list
+)
+"src/traverse.ml" 284 8099 8122 "src/traverse.ml" 284 8099 8123
+type(
+  'i list
+)
+ident(
+  int_ref o "src/traverse.ml" 284 8099 8109 "src/traverse.ml" 284 8099 8110
+)
+"src/traverse.ml" 284 8099 8117 "src/traverse.ml" 284 8099 8124
+type(
+  'i list * 'i list
+)
+"src/traverse.ml" 284 8099 8114 "src/traverse.ml" 284 8099 8124
+type(
+  'i * ('i list * 'i list)
+)
+"src/traverse.ml" 285 8125 8130 "src/traverse.ml" 285 8125 8132
+type(
+  'i list
+)
+"src/traverse.ml" 285 8125 8136 "src/traverse.ml" 285 8125 8148
+type(
+  'i * ('i list * 'i list)
+)
+"src/traverse.ml" 283 8060 8077 "src/traverse.ml" 285 8125 8148
+type(
+  'i * ('i list * 'i list)
+)
+"src/traverse.ml" 280 7977 7991 "src/traverse.ml" 285 8125 8148
+type(
+  'i list * 'i list -> 'i * ('i list * 'i list)
+)
+"src/traverse.ml" 286 8149 8157 "src/traverse.ml" 286 8149 8161
+type(
+  'j list * 'j list -> 'j
+)
+ident(
+  def peek "src/traverse.ml" 286 8149 8177 "src/traverse.ml" 287 8178 8183
+)
+"src/traverse.ml" 286 8149 8162 "src/traverse.ml" 286 8149 8163
+type(
+  'j list * 'j list
+)
+ident(
+  def q "src/traverse.ml" 286 8149 8166 "src/traverse.ml" 286 8149 8177
+)
+"src/traverse.ml" 286 8149 8166 "src/traverse.ml" 286 8149 8169
+type(
+  'j * ('j list * 'j list) -> 'j
+)
+ident(
+  ext_ref Pervasives.fst
+)
+"src/traverse.ml" 286 8149 8171 "src/traverse.ml" 286 8149 8174
+type(
+  'j list * 'j list -> 'j * ('j list * 'j list)
+)
+ident(
+  int_ref pop "src/traverse.ml" 280 7977 7985 "src/traverse.ml" 280 7977 7988
+)
+"src/traverse.ml" 286 8149 8175 "src/traverse.ml" 286 8149 8176
+type(
+  'j list * 'j list
+)
+ident(
+  int_ref q "src/traverse.ml" 286 8149 8162 "src/traverse.ml" 286 8149 8163
+)
+"src/traverse.ml" 286 8149 8170 "src/traverse.ml" 286 8149 8177
+call(
+  stack
+)
+type(
+  'j * ('j list * 'j list)
+)
+"src/traverse.ml" 286 8149 8166 "src/traverse.ml" 286 8149 8177
+type(
+  'j
+)
+"src/traverse.ml" 289 8185 8198 "src/traverse.ml" 289 8185 8211
+call(
+  stack
+)
+"src/traverse.ml" 294 8330 8336 "src/traverse.ml" 294 8330 8341
+type(
+  G.t -> S.t * ('k list * 'l list) * G.t
+)
+ident(
+  def start "src/traverse.ml" 298 8410 8412 "src/traverse.ml" 323 8908 8911
+)
+"src/traverse.ml" 294 8330 8342 "src/traverse.ml" 294 8330 8343
+type(
+  G.t
+)
+ident(
+  def g "src/traverse.ml" 295 8346 8350 "src/traverse.ml" 296 8391 8408
+)
+"src/traverse.ml" 295 8346 8354 "src/traverse.ml" 295 8346 8355
+type(
+  S.t
+)
+"src/traverse.ml" 295 8346 8358 "src/traverse.ml" 295 8346 8371
+type(
+  (S.elt -> S.t -> S.t) -> G.t -> S.t -> S.t
+)
+ident(
+  ext_ref G.fold_vertex
+)
+"src/traverse.ml" 295 8346 8372 "src/traverse.ml" 295 8346 8377
+type(
+  S.elt -> S.t -> S.t
+)
+ident(
+  ext_ref S.add
+)
+"src/traverse.ml" 295 8346 8378 "src/traverse.ml" 295 8346 8379
+type(
+  G.t
+)
+ident(
+  int_ref g "src/traverse.ml" 294 8330 8342 "src/traverse.ml" 294 8330 8343
+)
+"src/traverse.ml" 295 8346 8380 "src/traverse.ml" 295 8346 8387
+type(
+  S.t
+)
+ident(
+  ext_ref S.empty
+)
+"src/traverse.ml" 295 8346 8358 "src/traverse.ml" 295 8346 8387
+call(
+  stack
+)
+type(
+  S.t
+)
+"src/traverse.ml" 296 8391 8395 "src/traverse.ml" 296 8391 8396
+type(
+  S.t
+)
+ident(
+  int_ref s "src/traverse.ml" 295 8346 8354 "src/traverse.ml" 295 8346 8355
+)
+"src/traverse.ml" 296 8391 8398 "src/traverse.ml" 296 8391 8405
+type(
+  'k list * 'l list
+)
+ident(
+  ext_ref Q.empty
+)
+"src/traverse.ml" 296 8391 8407 "src/traverse.ml" 296 8391 8408
+type(
+  G.t
+)
+ident(
+  int_ref g "src/traverse.ml" 294 8330 8342 "src/traverse.ml" 294 8330 8343
+)
+"src/traverse.ml" 296 8391 8395 "src/traverse.ml" 296 8391 8408
+type(
+  S.t * ('k list * 'l list) * G.t
+)
+"src/traverse.ml" 295 8346 8350 "src/traverse.ml" 296 8391 8408
+type(
+  S.t * ('k list * 'l list) * G.t
+)
+"src/traverse.ml" 298 8410 8416 "src/traverse.ml" 298 8410 8419
+type(
+  S.t * (S.elt list * S.elt list) * 'm -> S.elt
+)
+ident(
+  def get "src/traverse.ml" 304 8534 8536 "src/traverse.ml" 323 8908 8911
+)
+"src/traverse.ml" 298 8410 8421 "src/traverse.ml" 298 8410 8422
+type(
+  S.t
+)
+ident(
+  def s "src/traverse.ml" 299 8430 8434 "src/traverse.ml" 302 8518 8532
+)
+"src/traverse.ml" 298 8410 8423 "src/traverse.ml" 298 8410 8424
+type(
+  S.elt list * S.elt list
+)
+ident(
+  def q "src/traverse.ml" 299 8430 8434 "src/traverse.ml" 302 8518 8532
+)
+"src/traverse.ml" 298 8410 8425 "src/traverse.ml" 298 8410 8426
+type(
+  'm
+)
+ident(
+  def g "src/traverse.ml" 299 8430 8434 "src/traverse.ml" 302 8518 8532
+)
+"src/traverse.ml" 298 8410 8420 "src/traverse.ml" 298 8410 8427
+type(
+  S.t * (S.elt list * S.elt list) * 'm
+)
+"src/traverse.ml" 299 8430 8437 "src/traverse.ml" 299 8430 8447
+type(
+  S.elt list * S.elt list -> bool
+)
+ident(
+  ext_ref Q.is_empty
+)
+"src/traverse.ml" 299 8430 8448 "src/traverse.ml" 299 8430 8449
+type(
+  S.elt list * S.elt list
+)
+ident(
+  int_ref q "src/traverse.ml" 298 8410 8423 "src/traverse.ml" 298 8410 8424
+)
+"src/traverse.ml" 299 8430 8437 "src/traverse.ml" 299 8430 8449
+call(
+  stack
+)
+type(
+  bool
+)
+"src/traverse.ml" 300 8455 8464 "src/traverse.ml" 300 8455 8474
+type(
+  S.t -> bool
+)
+ident(
+  ext_ref S.is_empty
+)
+"src/traverse.ml" 300 8455 8475 "src/traverse.ml" 300 8455 8476
+type(
+  S.t
+)
+ident(
+  int_ref s "src/traverse.ml" 298 8410 8421 "src/traverse.ml" 298 8410 8422
+)
+"src/traverse.ml" 300 8455 8464 "src/traverse.ml" 300 8455 8476
+call(
+  stack
+)
+type(
+  bool
+)
+"src/traverse.ml" 300 8455 8482 "src/traverse.ml" 300 8455 8487
+type(
+  exn -> S.elt
+)
+ident(
+  ext_ref Pervasives.raise
+)
+"src/traverse.ml" 300 8455 8488 "src/traverse.ml" 300 8455 8492
+type(
+  exn
+)
+"src/traverse.ml" 300 8455 8482 "src/traverse.ml" 300 8455 8492
+type(
+  S.elt
+)
+"src/traverse.ml" 300 8455 8498 "src/traverse.ml" 300 8455 8506
+type(
+  S.t -> S.elt
+)
+ident(
+  ext_ref S.choose
+)
+"src/traverse.ml" 300 8455 8507 "src/traverse.ml" 300 8455 8508
+type(
+  S.t
+)
+ident(
+  int_ref s "src/traverse.ml" 298 8410 8421 "src/traverse.ml" 298 8410 8422
+)
+"src/traverse.ml" 300 8455 8498 "src/traverse.ml" 300 8455 8508
+call(
+  tail
+)
+type(
+  S.elt
+)
+"src/traverse.ml" 300 8455 8461 "src/traverse.ml" 300 8455 8508
+type(
+  S.elt
+)
+"src/traverse.ml" 302 8518 8524 "src/traverse.ml" 302 8518 8530
+type(
+  S.elt list * S.elt list -> S.elt
+)
+ident(
+  ext_ref Q.peek
+)
+"src/traverse.ml" 302 8518 8531 "src/traverse.ml" 302 8518 8532
+type(
+  S.elt list * S.elt list
+)
+ident(
+  int_ref q "src/traverse.ml" 298 8410 8423 "src/traverse.ml" 298 8410 8424
+)
+"src/traverse.ml" 302 8518 8524 "src/traverse.ml" 302 8518 8532
+call(
+  tail
+)
+type(
+  S.elt
+)
+"src/traverse.ml" 299 8430 8434 "src/traverse.ml" 302 8518 8532
+type(
+  S.elt
+)
+"src/traverse.ml" 304 8534 8540 "src/traverse.ml" 304 8534 8544
+type(
+  S.t * (S.elt list * S.elt list) * G.t ->
+  S.t * (S.elt list * S.elt list) * G.t
+)
+ident(
+  def step "src/traverse.ml" 321 8891 8906 "src/traverse.ml" 323 8908 8911
+)
+"src/traverse.ml" 304 8534 8546 "src/traverse.ml" 304 8534 8547
+type(
+  S.t
+)
+ident(
+  def s "src/traverse.ml" 305 8555 8559 "src/traverse.ml" 321 8891 8906
+)
+"src/traverse.ml" 304 8534 8548 "src/traverse.ml" 304 8534 8549
+type(
+  S.elt list * S.elt list
+)
+ident(
+  def q "src/traverse.ml" 305 8555 8559 "src/traverse.ml" 321 8891 8906
+)
+"src/traverse.ml" 304 8534 8550 "src/traverse.ml" 304 8534 8551
+type(
+  G.t
+)
+ident(
+  def g "src/traverse.ml" 305 8555 8559 "src/traverse.ml" 321 8891 8906
+)
+"src/traverse.ml" 304 8534 8545 "src/traverse.ml" 304 8534 8552
+type(
+  S.t * (S.elt list * S.elt list) * G.t
+)
+"src/traverse.ml" 305 8555 8563 "src/traverse.ml" 305 8555 8567
+type(
+  S.elt -> S.t * (S.elt list * 'n) -> S.t * (S.elt list * 'n)
+)
+"src/traverse.ml" 305 8555 8568 "src/traverse.ml" 305 8555 8569
+type(
+  S.elt
+)
+ident(
+  def v "src/traverse.ml" 305 8555 8570 "src/traverse.ml" 309 8646 8650
+)
+"src/traverse.ml" 305 8555 8571 "src/traverse.ml" 305 8555 8572
+type(
+  S.t
+)
+ident(
+  def s "src/traverse.ml" 306 8585 8591 "src/traverse.ml" 309 8646 8650
+)
+"src/traverse.ml" 305 8555 8573 "src/traverse.ml" 305 8555 8574
+type(
+  S.elt list * 'n
+)
+ident(
+  def q "src/traverse.ml" 306 8585 8591 "src/traverse.ml" 309 8646 8650
+)
+"src/traverse.ml" 305 8555 8571 "src/traverse.ml" 305 8555 8574
+type(
+  S.t * (S.elt list * 'n)
+)
+"src/traverse.ml" 305 8555 8570 "src/traverse.ml" 305 8555 8582
+type(
+  S.t * (S.elt list * 'n)
+)
+ident(
+  def acc "src/traverse.ml" 306 8585 8591 "src/traverse.ml" 309 8646 8650
+)
+"src/traverse.ml" 306 8585 8594 "src/traverse.ml" 306 8585 8599
+type(
+  S.elt -> S.t -> bool
+)
+ident(
+  ext_ref S.mem
+)
+"src/traverse.ml" 306 8585 8600 "src/traverse.ml" 306 8585 8601
+type(
+  S.elt
+)
+ident(
+  int_ref v "src/traverse.ml" 305 8555 8568 "src/traverse.ml" 305 8555 8569
+)
+"src/traverse.ml" 306 8585 8602 "src/traverse.ml" 306 8585 8603
+type(
+  S.t
+)
+ident(
+  int_ref s "src/traverse.ml" 305 8555 8571 "src/traverse.ml" 305 8555 8572
+)
+"src/traverse.ml" 306 8585 8594 "src/traverse.ml" 306 8585 8603
+call(
+  stack
+)
+type(
+  bool
+)
+"src/traverse.ml" 307 8609 8610 "src/traverse.ml" 307 8609 8618
+type(
+  S.elt -> S.t -> S.t
+)
+ident(
+  ext_ref S.remove
+)
+"src/traverse.ml" 307 8609 8619 "src/traverse.ml" 307 8609 8620
+type(
+  S.elt
+)
+ident(
+  int_ref v "src/traverse.ml" 305 8555 8568 "src/traverse.ml" 305 8555 8569
+)
+"src/traverse.ml" 307 8609 8621 "src/traverse.ml" 307 8609 8622
+type(
+  S.t
+)
+ident(
+  int_ref s "src/traverse.ml" 305 8555 8571 "src/traverse.ml" 305 8555 8572
+)
+"src/traverse.ml" 307 8609 8610 "src/traverse.ml" 307 8609 8622
+call(
+  stack
+)
+type(
+  S.t
+)
+"src/traverse.ml" 307 8609 8624 "src/traverse.ml" 307 8609 8630
+type(
+  S.elt -> S.elt list * 'n -> S.elt list * 'n
+)
+ident(
+  ext_ref Q.push
+)
+"src/traverse.ml" 307 8609 8631 "src/traverse.ml" 307 8609 8632
+type(
+  S.elt
+)
+ident(
+  int_ref v "src/traverse.ml" 305 8555 8568 "src/traverse.ml" 305 8555 8569
+)
+"src/traverse.ml" 307 8609 8633 "src/traverse.ml" 307 8609 8634
+type(
+  S.elt list * 'n
+)
+ident(
+  int_ref q "src/traverse.ml" 305 8555 8573 "src/traverse.ml" 305 8555 8574
+)
+"src/traverse.ml" 307 8609 8624 "src/traverse.ml" 307 8609 8634
+call(
+  stack
+)
+type(
+  S.elt list * 'n
+)
+"src/traverse.ml" 307 8609 8610 "src/traverse.ml" 307 8609 8634
+type(
+  S.t * (S.elt list * 'n)
+)
+"src/traverse.ml" 309 8646 8647 "src/traverse.ml" 309 8646 8650
+type(
+  S.t * (S.elt list * 'n)
+)
+ident(
+  int_ref acc "src/traverse.ml" 305 8555 8570 "src/traverse.ml" 305 8555 8582
+)
+"src/traverse.ml" 306 8585 8591 "src/traverse.ml" 309 8646 8650
+type(
+  S.t * (S.elt list * 'n)
+)
+"src/traverse.ml" 311 8658 8666 "src/traverse.ml" 311 8658 8667
+type(
+  S.elt
+)
+"src/traverse.ml" 311 8658 8668 "src/traverse.ml" 311 8658 8670
+type(
+  S.t
+)
+"src/traverse.ml" 311 8658 8671 "src/traverse.ml" 311 8658 8673
+type(
+  S.elt list * S.elt list
+)
+"src/traverse.ml" 311 8658 8666 "src/traverse.ml" 311 8658 8673
+type(
+  S.elt * S.t * (S.elt list * S.elt list)
+)
+"src/traverse.ml" 312 8676 8685 "src/traverse.ml" 312 8676 8695
+type(
+  S.elt list * S.elt list -> bool
+)
+ident(
+  ext_ref Q.is_empty
+)
+"src/traverse.ml" 312 8676 8696 "src/traverse.ml" 312 8676 8697
+type(
+  S.elt list * S.elt list
+)
+ident(
+  int_ref q "src/traverse.ml" 304 8534 8548 "src/traverse.ml" 304 8534 8549
+)
+"src/traverse.ml" 312 8676 8685 "src/traverse.ml" 312 8676 8697
+call(
+  stack
+)
+type(
+  bool
+)
+"src/traverse.ml" 313 8709 8713 "src/traverse.ml" 313 8709 8723
+type(
+  S.t -> bool
+)
+ident(
+  ext_ref S.is_empty
+)
+"src/traverse.ml" 313 8709 8724 "src/traverse.ml" 313 8709 8725
+type(
+  S.t
+)
+ident(
+  int_ref s "src/traverse.ml" 304 8534 8546 "src/traverse.ml" 304 8534 8547
+)
+"src/traverse.ml" 313 8709 8713 "src/traverse.ml" 313 8709 8725
+call(
+  stack
+)
+type(
+  bool
+)
+"src/traverse.ml" 313 8709 8731 "src/traverse.ml" 313 8709 8736
+type(
+  exn -> unit
+)
+ident(
+  ext_ref Pervasives.raise
+)
+"src/traverse.ml" 313 8709 8737 "src/traverse.ml" 313 8709 8741
+type(
+  exn
+)
+"src/traverse.ml" 313 8709 8731 "src/traverse.ml" 313 8709 8741
+type(
+  unit
+)
+"src/traverse.ml" 313 8709 8710 "src/traverse.ml" 313 8709 8741
+type(
+  unit
+)
+"src/traverse.ml" 314 8743 8748 "src/traverse.ml" 314 8743 8749
+type(
+  S.elt
+)
+ident(
+  def v "src/traverse.ml" 315 8766 8767 "src/traverse.ml" 315 8766 8785
+)
+"src/traverse.ml" 314 8743 8752 "src/traverse.ml" 314 8743 8760
+type(
+  S.t -> S.elt
+)
+ident(
+  ext_ref S.choose
+)
+"src/traverse.ml" 314 8743 8761 "src/traverse.ml" 314 8743 8762
+type(
+  S.t
+)
+ident(
+  int_ref s "src/traverse.ml" 304 8534 8546 "src/traverse.ml" 304 8534 8547
+)
+"src/traverse.ml" 314 8743 8752 "src/traverse.ml" 314 8743 8762
+call(
+  stack
+)
+type(
+  S.elt
+)
+"src/traverse.ml" 315 8766 8767 "src/traverse.ml" 315 8766 8768
+type(
+  S.elt
+)
+ident(
+  int_ref v "src/traverse.ml" 314 8743 8748 "src/traverse.ml" 314 8743 8749
+)
+"src/traverse.ml" 315 8766 8770 "src/traverse.ml" 315 8766 8778
+type(
+  S.elt -> S.t -> S.t
+)
+ident(
+  ext_ref S.remove
+)
+"src/traverse.ml" 315 8766 8779 "src/traverse.ml" 315 8766 8780
+type(
+  S.elt
+)
+ident(
+  int_ref v "src/traverse.ml" 314 8743 8748 "src/traverse.ml" 314 8743 8749
+)
+"src/traverse.ml" 315 8766 8781 "src/traverse.ml" 315 8766 8782
+type(
+  S.t
+)
+ident(
+  int_ref s "src/traverse.ml" 304 8534 8546 "src/traverse.ml" 304 8534 8547
+)
+"src/traverse.ml" 315 8766 8770 "src/traverse.ml" 315 8766 8782
+call(
+  stack
+)
+type(
+  S.t
+)
+"src/traverse.ml" 315 8766 8784 "src/traverse.ml" 315 8766 8785
+type(
+  S.elt list * S.elt list
+)
+ident(
+  int_ref q "src/traverse.ml" 304 8534 8548 "src/traverse.ml" 304 8534 8549
+)
+"src/traverse.ml" 315 8766 8767 "src/traverse.ml" 315 8766 8785
+type(
+  S.elt * S.t * (S.elt list * S.elt list)
+)
+"src/traverse.ml" 314 8743 8744 "src/traverse.ml" 315 8766 8785
+type(
+  S.elt * S.t * (S.elt list * S.elt list)
+)
+"src/traverse.ml" 312 8676 8703 "src/traverse.ml" 316 8786 8795
+type(
+  S.elt * S.t * (S.elt list * S.elt list)
+)
+"src/traverse.ml" 317 8801 8806 "src/traverse.ml" 317 8801 8807
+type(
+  S.elt
+)
+"src/traverse.ml" 317 8801 8808 "src/traverse.ml" 317 8801 8810
+type(
+  S.elt list * S.elt list
+)
+"src/traverse.ml" 317 8801 8806 "src/traverse.ml" 317 8801 8810
+type(
+  S.elt * (S.elt list * S.elt list)
+)
+"src/traverse.ml" 317 8801 8813 "src/traverse.ml" 317 8801 8818
+type(
+  S.elt list * S.elt list -> S.elt * (S.elt list * S.elt list)
+)
+ident(
+  ext_ref Q.pop
+)
+"src/traverse.ml" 317 8801 8819 "src/traverse.ml" 317 8801 8820
+type(
+  S.elt list * S.elt list
+)
+ident(
+  int_ref q "src/traverse.ml" 304 8534 8548 "src/traverse.ml" 304 8534 8549
+)
+"src/traverse.ml" 317 8801 8813 "src/traverse.ml" 317 8801 8820
+call(
+  stack
+)
+type(
+  S.elt * (S.elt list * S.elt list)
+)
+"src/traverse.ml" 318 8824 8825 "src/traverse.ml" 318 8824 8826
+type(
+  S.elt
+)
+ident(
+  int_ref v "src/traverse.ml" 317 8801 8806 "src/traverse.ml" 317 8801 8807
+)
+"src/traverse.ml" 318 8824 8828 "src/traverse.ml" 318 8824 8829
+type(
+  S.t
+)
+ident(
+  int_ref s "src/traverse.ml" 304 8534 8546 "src/traverse.ml" 304 8534 8547
+)
+"src/traverse.ml" 318 8824 8831 "src/traverse.ml" 318 8824 8833
+type(
+  S.elt list * S.elt list
+)
+ident(
+  int_ref q' "src/traverse.ml" 317 8801 8808 "src/traverse.ml" 317 8801 8810
+)
+"src/traverse.ml" 318 8824 8825 "src/traverse.ml" 318 8824 8833
+type(
+  S.elt * S.t * (S.elt list * S.elt list)
+)
+"src/traverse.ml" 317 8801 8802 "src/traverse.ml" 318 8824 8833
+type(
+  S.elt * S.t * (S.elt list * S.elt list)
+)
+"src/traverse.ml" 312 8676 8682 "src/traverse.ml" 318 8824 8833
+type(
+  S.elt * S.t * (S.elt list * S.elt list)
+)
+"src/traverse.ml" 320 8841 8849 "src/traverse.ml" 320 8841 8852
+type(
+  S.t
+)
+"src/traverse.ml" 320 8841 8853 "src/traverse.ml" 320 8841 8856
+type(
+  S.elt list * S.elt list
+)
+"src/traverse.ml" 320 8841 8849 "src/traverse.ml" 320 8841 8856
+type(
+  S.t * (S.elt list * S.elt list)
+)
+"src/traverse.ml" 320 8841 8859 "src/traverse.ml" 320 8841 8870
+type(
+  (S.elt ->
+   S.t * (S.elt list * S.elt list) -> S.t * (S.elt list * S.elt list)) ->
+  G.t ->
+  S.elt -> S.t * (S.elt list * S.elt list) -> S.t * (S.elt list * S.elt list)
+)
+ident(
+  ext_ref G.fold_succ
+)
+"src/traverse.ml" 320 8841 8871 "src/traverse.ml" 320 8841 8875
+type(
+  S.elt -> S.t * (S.elt list * S.elt list) -> S.t * (S.elt list * S.elt list)
+)
+ident(
+  int_ref push "src/traverse.ml" 305 8555 8563 "src/traverse.ml" 305 8555 8567
+)
+"src/traverse.ml" 320 8841 8876 "src/traverse.ml" 320 8841 8877
+type(
+  G.t
+)
+ident(
+  int_ref g "src/traverse.ml" 304 8534 8550 "src/traverse.ml" 304 8534 8551
+)
+"src/traverse.ml" 320 8841 8878 "src/traverse.ml" 320 8841 8879
+type(
+  S.elt
+)
+ident(
+  int_ref v "src/traverse.ml" 311 8658 8666 "src/traverse.ml" 311 8658 8667
+)
+"src/traverse.ml" 320 8841 8881 "src/traverse.ml" 320 8841 8883
+type(
+  S.t
+)
+ident(
+  int_ref s' "src/traverse.ml" 311 8658 8668 "src/traverse.ml" 311 8658 8670
+)
+"src/traverse.ml" 320 8841 8884 "src/traverse.ml" 320 8841 8886
+type(
+  S.elt list * S.elt list
+)
+ident(
+  int_ref q' "src/traverse.ml" 311 8658 8671 "src/traverse.ml" 311 8658 8673
+)
+"src/traverse.ml" 320 8841 8880 "src/traverse.ml" 320 8841 8887
+type(
+  S.t * (S.elt list * S.elt list)
+)
+"src/traverse.ml" 320 8841 8859 "src/traverse.ml" 320 8841 8887
+call(
+  stack
+)
+type(
+  S.t * (S.elt list * S.elt list)
+)
+"src/traverse.ml" 321 8891 8896 "src/traverse.ml" 321 8891 8899
+type(
+  S.t
+)
+ident(
+  int_ref s'' "src/traverse.ml" 320 8841 8849 "src/traverse.ml" 320 8841 8852
+)
+"src/traverse.ml" 321 8891 8900 "src/traverse.ml" 321 8891 8903
+type(
+  S.elt list * S.elt list
+)
+ident(
+  int_ref q'' "src/traverse.ml" 320 8841 8853 "src/traverse.ml" 320 8841 8856
+)
+"src/traverse.ml" 321 8891 8904 "src/traverse.ml" 321 8891 8905
+type(
+  G.t
+)
+ident(
+  int_ref g "src/traverse.ml" 304 8534 8550 "src/traverse.ml" 304 8534 8551
+)
+"src/traverse.ml" 321 8891 8895 "src/traverse.ml" 321 8891 8906
+type(
+  S.t * (S.elt list * S.elt list) * G.t
+)
+"src/traverse.ml" 320 8841 8845 "src/traverse.ml" 321 8891 8906
+type(
+  S.t * (S.elt list * S.elt list) * G.t
+)
+"src/traverse.ml" 311 8658 8662 "src/traverse.ml" 321 8891 8906
+type(
+  S.t * (S.elt list * S.elt list) * G.t
+)
+"src/traverse.ml" 305 8555 8559 "src/traverse.ml" 321 8891 8906
+type(
+  S.t * (S.elt list * S.elt list) * G.t
+)
+"src/traverse.ml" 342 9253 9259 "src/traverse.ml" 342 9253 9262
+type(
+  G.t -> unit
+)
+ident(
+  def dfs "src/traverse.ml" 357 9632 9634 "src/traverse.ml" 372 9962 9965
+)
+"src/traverse.ml" 342 9253 9263 "src/traverse.ml" 342 9253 9264
+type(
+  G.t
+)
+ident(
+  def g "src/traverse.ml" 343 9267 9271 "src/traverse.ml" 352 9434 9459
+)
+"src/traverse.ml" 343 9267 9271 "src/traverse.ml" 343 9267 9283
+type(
+  G.t -> unit
+)
+ident(
+  ext_ref G.Mark.clear
+)
+"src/traverse.ml" 343 9267 9284 "src/traverse.ml" 343 9267 9285
+type(
+  G.t
+)
+ident(
+  int_ref g "src/traverse.ml" 342 9253 9263 "src/traverse.ml" 342 9253 9264
+)
+"src/traverse.ml" 343 9267 9271 "src/traverse.ml" 343 9267 9285
+call(
+  stack
+)
+type(
+  unit
+)
+"src/traverse.ml" 344 9287 9295 "src/traverse.ml" 344 9287 9296
+type(
+  int ref
+)
+"src/traverse.ml" 344 9287 9299 "src/traverse.ml" 344 9287 9302
+type(
+  int -> int ref
+)
+ident(
+  ext_ref Pervasives.ref
+)
+"src/traverse.ml" 344 9287 9303 "src/traverse.ml" 344 9287 9304
+type(
+  int
+)
+"src/traverse.ml" 344 9287 9299 "src/traverse.ml" 344 9287 9304
+type(
+  int ref
+)
+"src/traverse.ml" 345 9308 9320 "src/traverse.ml" 345 9308 9325
+type(
+  G.V.t -> unit
+)
+"src/traverse.ml" 345 9308 9326 "src/traverse.ml" 345 9308 9327
+type(
+  G.V.t
+)
+ident(
+  def v "src/traverse.ml" 346 9330 9336 "src/traverse.ml" 350 9417 9426
+)
+"src/traverse.ml" 346 9330 9339 "src/traverse.ml" 346 9330 9349
+type(
+  G.V.t -> int
+)
+ident(
+  ext_ref G.Mark.get
+)
+"src/traverse.ml" 346 9330 9350 "src/traverse.ml" 346 9330 9351
+type(
+  G.V.t
+)
+ident(
+  int_ref v "src/traverse.ml" 345 9308 9326 "src/traverse.ml" 345 9308 9327
+)
+"src/traverse.ml" 346 9330 9339 "src/traverse.ml" 346 9330 9351
+call(
+  stack
+)
+type(
+  int
+)
+"src/traverse.ml" 346 9330 9352 "src/traverse.ml" 346 9330 9353
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( = )
+)
+"src/traverse.ml" 346 9330 9354 "src/traverse.ml" 346 9330 9355
+type(
+  int
+)
+"src/traverse.ml" 346 9330 9339 "src/traverse.ml" 346 9330 9355
+type(
+  bool
+)
+"src/traverse.ml" 347 9367 9368 "src/traverse.ml" 347 9367 9372
+type(
+  int ref -> unit
+)
+ident(
+  ext_ref Pervasives.incr
+)
+"src/traverse.ml" 347 9367 9373 "src/traverse.ml" 347 9367 9374
+type(
+  int ref
+)
+ident(
+  int_ref n "src/traverse.ml" 344 9287 9295 "src/traverse.ml" 344 9287 9296
+)
+"src/traverse.ml" 347 9367 9368 "src/traverse.ml" 347 9367 9374
+type(
+  unit
+)
+"src/traverse.ml" 348 9376 9377 "src/traverse.ml" 348 9376 9387
+type(
+  G.V.t -> int -> unit
+)
+ident(
+  ext_ref G.Mark.set
+)
+"src/traverse.ml" 348 9376 9388 "src/traverse.ml" 348 9376 9389
+type(
+  G.V.t
+)
+ident(
+  int_ref v "src/traverse.ml" 345 9308 9326 "src/traverse.ml" 345 9308 9327
+)
+"src/traverse.ml" 348 9376 9390 "src/traverse.ml" 348 9376 9391
+type(
+  int ref -> int
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"src/traverse.ml" 348 9376 9391 "src/traverse.ml" 348 9376 9392
+type(
+  int ref
+)
+ident(
+  int_ref n "src/traverse.ml" 344 9287 9295 "src/traverse.ml" 344 9287 9296
+)
+"src/traverse.ml" 348 9376 9390 "src/traverse.ml" 348 9376 9392
+type(
+  int
+)
+"src/traverse.ml" 348 9376 9377 "src/traverse.ml" 348 9376 9392
+call(
+  stack
+)
+type(
+  unit
+)
+"src/traverse.ml" 349 9394 9395 "src/traverse.ml" 349 9394 9406
+type(
+  (G.V.t -> unit) -> G.t -> G.V.t -> unit
+)
+ident(
+  ext_ref G.iter_succ
+)
+"src/traverse.ml" 349 9394 9407 "src/traverse.ml" 349 9394 9412
+type(
+  G.V.t -> unit
+)
+ident(
+  int_ref visit "src/traverse.ml" 345 9308 9320 "src/traverse.ml" 345 9308 9325
+)
+"src/traverse.ml" 349 9394 9413 "src/traverse.ml" 349 9394 9414
+type(
+  G.t
+)
+ident(
+  int_ref g "src/traverse.ml" 342 9253 9263 "src/traverse.ml" 342 9253 9264
+)
+"src/traverse.ml" 349 9394 9415 "src/traverse.ml" 349 9394 9416
+type(
+  G.V.t
+)
+ident(
+  int_ref v "src/traverse.ml" 345 9308 9326 "src/traverse.ml" 345 9308 9327
+)
+"src/traverse.ml" 349 9394 9395 "src/traverse.ml" 349 9394 9416
+call(
+  tail
+)
+type(
+  unit
+)
+"src/traverse.ml" 348 9376 9377 "src/traverse.ml" 349 9394 9416
+type(
+  unit
+)
+"src/traverse.ml" 346 9330 9361 "src/traverse.ml" 350 9417 9426
+type(
+  unit
+)
+"src/traverse.ml" 346 9330 9336 "src/traverse.ml" 350 9417 9426
+type(
+  unit
+)
+"src/traverse.ml" 352 9434 9438 "src/traverse.ml" 352 9434 9451
+type(
+  (G.V.t -> unit) -> G.t -> unit
+)
+ident(
+  ext_ref G.iter_vertex
+)
+"src/traverse.ml" 352 9434 9452 "src/traverse.ml" 352 9434 9457
+type(
+  G.V.t -> unit
+)
+ident(
+  int_ref visit "src/traverse.ml" 345 9308 9320 "src/traverse.ml" 345 9308 9325
+)
+"src/traverse.ml" 352 9434 9458 "src/traverse.ml" 352 9434 9459
+type(
+  G.t
+)
+ident(
+  int_ref g "src/traverse.ml" 342 9253 9263 "src/traverse.ml" 342 9253 9264
+)
+"src/traverse.ml" 352 9434 9438 "src/traverse.ml" 352 9434 9459
+call(
+  tail
+)
+type(
+  unit
+)
+"src/traverse.ml" 345 9308 9312 "src/traverse.ml" 352 9434 9459
+type(
+  unit
+)
+"src/traverse.ml" 344 9287 9291 "src/traverse.ml" 352 9434 9459
+type(
+  unit
+)
+"src/traverse.ml" 343 9267 9271 "src/traverse.ml" 352 9434 9459
+type(
+  unit
+)
+"src/traverse.ml" 357 9632 9638 "src/traverse.ml" 357 9632 9647
+type(
+  G.t -> bool
+)
+ident(
+  def has_cycle "src/traverse.ml" 370 9939 9960 "src/traverse.ml" 372 9962 9965
+)
+"src/traverse.ml" 357 9632 9648 "src/traverse.ml" 357 9632 9649
+type(
+  G.t
+)
+ident(
+  def g "src/traverse.ml" 358 9652 9656 "src/traverse.ml" 370 9939 9960
+)
+"src/traverse.ml" 358 9652 9656 "src/traverse.ml" 358 9652 9668
+type(
+  G.t -> unit
+)
+ident(
+  ext_ref G.Mark.clear
+)
+"src/traverse.ml" 358 9652 9669 "src/traverse.ml" 358 9652 9670
+type(
+  G.t
+)
+ident(
+  int_ref g "src/traverse.ml" 357 9632 9648 "src/traverse.ml" 357 9632 9649
+)
+"src/traverse.ml" 358 9652 9656 "src/traverse.ml" 358 9652 9670
+call(
+  stack
+)
+type(
+  unit
+)
+"src/traverse.ml" 359 9672 9684 "src/traverse.ml" 359 9672 9689
+type(
+  G.V.t -> unit
+)
+"src/traverse.ml" 359 9672 9690 "src/traverse.ml" 359 9672 9691
+type(
+  G.V.t
+)
+ident(
+  def v "src/traverse.ml" 360 9694 9700 "src/traverse.ml" 367 9836 9856
+)
+"src/traverse.ml" 360 9694 9700 "src/traverse.ml" 360 9694 9710
+type(
+  G.V.t -> int -> unit
+)
+ident(
+  ext_ref G.Mark.set
+)
+"src/traverse.ml" 360 9694 9711 "src/traverse.ml" 360 9694 9712
+type(
+  G.V.t
+)
+ident(
+  int_ref v "src/traverse.ml" 359 9672 9690 "src/traverse.ml" 359 9672 9691
+)
+"src/traverse.ml" 360 9694 9713 "src/traverse.ml" 360 9694 9714
+type(
+  int
+)
+"src/traverse.ml" 360 9694 9700 "src/traverse.ml" 360 9694 9714
+call(
+  stack
+)
+type(
+  unit
+)
+"src/traverse.ml" 361 9716 9722 "src/traverse.ml" 361 9716 9733
+type(
+  (G.V.t -> unit) -> G.t -> G.V.t -> unit
+)
+ident(
+  ext_ref G.iter_succ
+)
+"src/traverse.ml" 362 9734 9740 "src/traverse.ml" 362 9734 9741
+type(
+  G.V.t
+)
+ident(
+  def w "src/traverse.ml" 363 9745 9749 "src/traverse.ml" 365 9803 9828
+)
+"src/traverse.ml" 363 9745 9753 "src/traverse.ml" 363 9745 9754
+type(
+  int
+)
+"src/traverse.ml" 363 9745 9757 "src/traverse.ml" 363 9745 9767
+type(
+  G.V.t -> int
+)
+ident(
+  ext_ref G.Mark.get
+)
+"src/traverse.ml" 363 9745 9768 "src/traverse.ml" 363 9745 9769
+type(
+  G.V.t
+)
+ident(
+  int_ref w "src/traverse.ml" 362 9734 9740 "src/traverse.ml" 362 9734 9741
+)
+"src/traverse.ml" 363 9745 9757 "src/traverse.ml" 363 9745 9769
+call(
+  stack
+)
+type(
+  int
+)
+"src/traverse.ml" 364 9773 9780 "src/traverse.ml" 364 9773 9781
+type(
+  int
+)
+ident(
+  int_ref m "src/traverse.ml" 363 9745 9753 "src/traverse.ml" 363 9745 9754
+)
+"src/traverse.ml" 364 9773 9782 "src/traverse.ml" 364 9773 9783
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( = )
+)
+"src/traverse.ml" 364 9773 9784 "src/traverse.ml" 364 9773 9785
+type(
+  int
+)
+"src/traverse.ml" 364 9773 9780 "src/traverse.ml" 364 9773 9785
+type(
+  bool
+)
+"src/traverse.ml" 364 9773 9791 "src/traverse.ml" 364 9773 9796
+type(
+  exn -> unit
+)
+ident(
+  ext_ref Pervasives.raise
+)
+"src/traverse.ml" 364 9773 9797 "src/traverse.ml" 364 9773 9801
+type(
+  exn
+)
+"src/traverse.ml" 364 9773 9791 "src/traverse.ml" 364 9773 9801
+type(
+  unit
+)
+"src/traverse.ml" 364 9773 9777 "src/traverse.ml" 364 9773 9801
+type(
+  unit
+)
+"src/traverse.ml" 365 9803 9810 "src/traverse.ml" 365 9803 9811
+type(
+  int
+)
+ident(
+  int_ref m "src/traverse.ml" 363 9745 9753 "src/traverse.ml" 363 9745 9754
+)
+"src/traverse.ml" 365 9803 9812 "src/traverse.ml" 365 9803 9813
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( = )
+)
+"src/traverse.ml" 365 9803 9814 "src/traverse.ml" 365 9803 9815
+type(
+  int
+)
+"src/traverse.ml" 365 9803 9810 "src/traverse.ml" 365 9803 9815
+type(
+  bool
+)
+"src/traverse.ml" 365 9803 9821 "src/traverse.ml" 365 9803 9826
+type(
+  G.V.t -> unit
+)
+ident(
+  int_ref visit "src/traverse.ml" 359 9672 9684 "src/traverse.ml" 359 9672 9689
+)
+"src/traverse.ml" 365 9803 9827 "src/traverse.ml" 365 9803 9828
+type(
+  G.V.t
+)
+ident(
+  int_ref w "src/traverse.ml" 362 9734 9740 "src/traverse.ml" 362 9734 9741
+)
+"src/traverse.ml" 365 9803 9821 "src/traverse.ml" 365 9803 9828
+call(
+  tail
+)
+type(
+  unit
+)
+"src/traverse.ml" 365 9803 9807 "src/traverse.ml" 365 9803 9828
+type(
+  unit
+)
+"src/traverse.ml" 364 9773 9777 "src/traverse.ml" 365 9803 9828
+type(
+  unit
+)
+"src/traverse.ml" 363 9745 9749 "src/traverse.ml" 365 9803 9828
+type(
+  unit
+)
+"src/traverse.ml" 362 9734 9735 "src/traverse.ml" 365 9803 9829
+type(
+  G.V.t -> unit
+)
+"src/traverse.ml" 366 9830 9831 "src/traverse.ml" 366 9830 9832
+type(
+  G.t
+)
+ident(
+  int_ref g "src/traverse.ml" 357 9632 9648 "src/traverse.ml" 357 9632 9649
+)
+"src/traverse.ml" 366 9830 9833 "src/traverse.ml" 366 9830 9834
+type(
+  G.V.t
+)
+ident(
+  int_ref v "src/traverse.ml" 359 9672 9690 "src/traverse.ml" 359 9672 9691
+)
+"src/traverse.ml" 361 9716 9722 "src/traverse.ml" 366 9830 9834
+call(
+  stack
+)
+type(
+  unit
+)
+"src/traverse.ml" 367 9836 9842 "src/traverse.ml" 367 9836 9852
+type(
+  G.V.t -> int -> unit
+)
+ident(
+  ext_ref G.Mark.set
+)
+"src/traverse.ml" 367 9836 9853 "src/traverse.ml" 367 9836 9854
+type(
+  G.V.t
+)
+ident(
+  int_ref v "src/traverse.ml" 359 9672 9690 "src/traverse.ml" 359 9672 9691
+)
+"src/traverse.ml" 367 9836 9855 "src/traverse.ml" 367 9836 9856
+type(
+  int
+)
+"src/traverse.ml" 367 9836 9842 "src/traverse.ml" 367 9836 9856
+call(
+  tail
+)
+type(
+  unit
+)
+"src/traverse.ml" 361 9716 9722 "src/traverse.ml" 367 9836 9856
+type(
+  unit
+)
+"src/traverse.ml" 360 9694 9700 "src/traverse.ml" 367 9836 9856
+type(
+  unit
+)
+"src/traverse.ml" 369 9864 9872 "src/traverse.ml" 369 9864 9885
+type(
+  (G.V.t -> unit) -> G.t -> unit
+)
+ident(
+  ext_ref G.iter_vertex
+)
+"src/traverse.ml" 369 9864 9891 "src/traverse.ml" 369 9864 9892
+type(
+  G.V.t
+)
+ident(
+  def v "src/traverse.ml" 369 9864 9896 "src/traverse.ml" 369 9864 9928
+)
+"src/traverse.ml" 369 9864 9899 "src/traverse.ml" 369 9864 9909
+type(
+  G.V.t -> int
+)
+ident(
+  ext_ref G.Mark.get
+)
+"src/traverse.ml" 369 9864 9910 "src/traverse.ml" 369 9864 9911
+type(
+  G.V.t
+)
+ident(
+  int_ref v "src/traverse.ml" 369 9864 9891 "src/traverse.ml" 369 9864 9892
+)
+"src/traverse.ml" 369 9864 9899 "src/traverse.ml" 369 9864 9911
+call(
+  stack
+)
+type(
+  int
+)
+"src/traverse.ml" 369 9864 9912 "src/traverse.ml" 369 9864 9913
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( = )
+)
+"src/traverse.ml" 369 9864 9914 "src/traverse.ml" 369 9864 9915
+type(
+  int
+)
+"src/traverse.ml" 369 9864 9899 "src/traverse.ml" 369 9864 9915
+type(
+  bool
+)
+"src/traverse.ml" 369 9864 9921 "src/traverse.ml" 369 9864 9926
+type(
+  G.V.t -> unit
+)
+ident(
+  int_ref visit "src/traverse.ml" 359 9672 9684 "src/traverse.ml" 359 9672 9689
+)
+"src/traverse.ml" 369 9864 9927 "src/traverse.ml" 369 9864 9928
+type(
+  G.V.t
+)
+ident(
+  int_ref v "src/traverse.ml" 369 9864 9891 "src/traverse.ml" 369 9864 9892
+)
+"src/traverse.ml" 369 9864 9921 "src/traverse.ml" 369 9864 9928
+call(
+  tail
+)
+type(
+  unit
+)
+"src/traverse.ml" 369 9864 9896 "src/traverse.ml" 369 9864 9928
+type(
+  unit
+)
+"src/traverse.ml" 369 9864 9886 "src/traverse.ml" 369 9864 9929
+type(
+  G.V.t -> unit
+)
+"src/traverse.ml" 369 9864 9930 "src/traverse.ml" 369 9864 9931
+type(
+  G.t
+)
+ident(
+  int_ref g "src/traverse.ml" 357 9632 9648 "src/traverse.ml" 357 9632 9649
+)
+"src/traverse.ml" 369 9864 9872 "src/traverse.ml" 369 9864 9931
+call(
+  stack
+)
+type(
+  unit
+)
+"src/traverse.ml" 369 9864 9933 "src/traverse.ml" 369 9864 9938
+type(
+  bool
+)
+"src/traverse.ml" 369 9864 9872 "src/traverse.ml" 369 9864 9938
+type(
+  bool
+)
+"src/traverse.ml" 370 9939 9948 "src/traverse.ml" 370 9939 9952
+type(
+  exn
+)
+"src/traverse.ml" 370 9939 9956 "src/traverse.ml" 370 9939 9960
+type(
+  bool
+)
+"src/traverse.ml" 369 9864 9868 "src/traverse.ml" 370 9939 9960
+type(
+  bool
+)
+"src/traverse.ml" 359 9672 9676 "src/traverse.ml" 370 9939 9960
+type(
+  bool
+)
+"src/traverse.ml" 358 9652 9656 "src/traverse.ml" 370 9939 9960
+type(
+  bool
+)

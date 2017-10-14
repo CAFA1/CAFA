@@ -1,0 +1,65 @@
+Backport of:
+
+From dec6fa18cf5a8190e3c5aef1233074b82598a6ce Mon Sep 17 00:00:00 2001
+From: Cristy <urban-warrior@imagemagick.org>
+Date: Tue, 3 May 2016 18:17:56 -0400
+Subject: [PATCH] Fix possible memory leak
+
+cherry-picked from 4ddd650a766379a5ac369d8316de5321cc1d8b72
+
+It is a partial fix for CVE-2016-4563
+
+origin: upstream, https://github.com/ImageMagick/ImageMagick/commit/4ddd650a766379a5ac369d8316de5321cc1d8b72
+bug-debian: https://bugs.debian.org/832885
+---
+ magick/draw.c | 10 ++++++----
+ 1 file changed, 6 insertions(+), 4 deletions(-)
+
+Index: imagemagick-6.6.9.7/magick/draw.c
+===================================================================
+--- imagemagick-6.6.9.7.orig/magick/draw.c	2016-11-15 15:27:50.009855577 -0500
++++ imagemagick-6.6.9.7/magick/draw.c	2016-11-15 15:30:00.375447381 -0500
+@@ -1514,14 +1514,14 @@
+   assert(draw_info != (const DrawInfo *) NULL);
+   if (image->debug != MagickFalse)
+     (void) LogMagickEvent(DrawEvent,GetMagickModule(),"    begin draw-dash");
+-  clone_info=CloneDrawInfo((ImageInfo *) NULL,draw_info);
+-  clone_info->miterlimit=0;
+   for (i=0; primitive_info[i].primitive != UndefinedPrimitive; i++) ;
+   number_vertices=(size_t) i;
+   dash_polygon=(PrimitiveInfo *) AcquireQuantumMemory((size_t)
+     (2UL*number_vertices+1UL),sizeof(*dash_polygon));
+   if (dash_polygon == (PrimitiveInfo *) NULL)
+     return(MagickFalse);
++  clone_info=CloneDrawInfo((ImageInfo *) NULL,draw_info);
++  clone_info->miterlimit=0;
+   dash_polygon[0]=primitive_info[0];
+   scale=ExpandAffine(&draw_info->affine);
+   length=scale*(draw_info->dash_pattern[0]-0.5);
+@@ -1551,7 +1551,7 @@
+   status=MagickTrue;
+   maximum_length=0.0;
+   total_length=0.0;
+-  for (i=1; i < (ssize_t) number_vertices; i++)
++  for (i=1; (i < number_vertices) && (length >= 0.0); i++)
+   {
+     dx=primitive_info[i].point.x-primitive_info[i-1].point.x;
+     dy=primitive_info[i].point.y-primitive_info[i-1].point.y;
+@@ -1563,7 +1563,7 @@
+           n=0;
+         length=scale*(draw_info->dash_pattern[n]+(n == 0 ? -0.5 : 0.5));
+       }
+-    for (total_length=0.0; (total_length+length) < maximum_length; )
++    for (total_length=0.0; (length >= 0.0) && (maximum_length >= (total_length+length)); )
+     {
+       total_length+=length;
+       if ((n & 0x01) != 0)
+@@ -2571,6 +2571,8 @@
+                   if (*token == ',')
+                     GetMagickToken(q,&q,token);
+                   graphic_context[n]->dash_pattern[j]=StringToDouble(token);
++                  if (graphic_context[n]->dash_pattern[j] < 0.0)
++                    status=MagickFalse;
+                 }
+                 if ((x & 0x01) != 0)
+                   for ( ; j < (2*x); j++)

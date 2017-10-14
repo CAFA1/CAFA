@@ -1,0 +1,51 @@
+Backport of:
+
+From a9e1260dcd2c48bc7d56d168bcaf2537897d3221 Mon Sep 17 00:00:00 2001
+From: Cristy <urban-warrior@imagemagick.org>
+Date: Sun, 7 Feb 2016 15:13:08 -0500
+Subject: [PATCH] Fix an out of bound in generic decoder
+
+Origin: upstream, https://github.com/ImageMagick/ImageMagick/commit/430403b0029b37decf216d57f810899cab2317dd
+bug-ubuntu: https://bugs.launchpad.net/ubuntu/+source/imagemagick/+bug/1542785
+bug-debian: https://bugs.debian.org/#832785
+bug: https://github.com/ImageMagick/ImageMagick/issues/126
+---
+ magick/quantum-import.c | 2 +-
+ magick/quantum.c        | 4 +++-
+ 2 files changed, 4 insertions(+), 2 deletions(-)
+
+Index: imagemagick-6.6.9.7/magick/quantum-import.c
+===================================================================
+--- imagemagick-6.6.9.7.orig/magick/quantum-import.c	2016-11-15 15:26:12.404663788 -0500
++++ imagemagick-6.6.9.7/magick/quantum-import.c	2016-11-15 15:26:45.725070640 -0500
+@@ -3151,7 +3151,7 @@
+ 
+               n=0;
+               quantum=0;
+-              for (x=0; x < (ssize_t) number_pixels; x+=2)
++              for (x=0; x < (ssize_t) number_pixels; x+=4)
+               {
+                 for (i=0; i < 4; i++)
+                 {
+Index: imagemagick-6.6.9.7/magick/quantum.c
+===================================================================
+--- imagemagick-6.6.9.7.orig/magick/quantum.c	2016-11-15 15:26:12.404663788 -0500
++++ imagemagick-6.6.9.7/magick/quantum.c	2016-11-15 15:26:12.404663788 -0500
+@@ -320,6 +320,9 @@
+     case BGRAQuantum: packet_size=4; break;
+     case CMYKQuantum: packet_size=4; break;
+     case CMYKAQuantum: packet_size=5; break;
++    case CbYCrAQuantum: packet_size=4; break;
++    case CbYCrQuantum: packet_size=3; break;
++    case CbYCrYQuantum: packet_size=4; break;
+     default: break;
+   }
+   extent=MagickMax(image->columns,image->rows);
+@@ -724,7 +727,6 @@
+   quantum_info->pack=pack;
+ }
+ 
+-
+ /*
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+ %                                                                             %

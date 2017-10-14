@@ -1,0 +1,4170 @@
+"func_boundary.ml" 5 31 64 "func_boundary.ml" 5 31 68
+type(
+  string
+)
+ident(
+  def name "func_boundary.ml" 5 31 107 "func_boundary.ml" 5 31 111
+)
+"func_boundary.ml" 5 31 71 "func_boundary.ml" 5 31 86
+type(
+  string
+)
+"func_boundary.ml" 5 31 91 "func_boundary.ml" 5 31 98
+type(
+  [> `NoDebug ]
+)
+ident(
+  def default "func_boundary.ml" 5 31 107 "func_boundary.ml" 5 31 111
+)
+"func_boundary.ml" 5 31 99 "func_boundary.ml" 5 31 107
+type(
+  [> `NoDebug ] as 'a
+)
+"func_boundary.ml" 5 31 42 "func_boundary.ml" 5 31 112
+call(
+  stack
+)
+"func_boundary.ml" 11 231 239 "func_boundary.ml" 11 231 263
+type(
+  Asmir.asmprogram -> Libbfd.address_t -> Libbfd.address_t -> bool
+)
+ident(
+  def liftable_asm_addr_to_bap "func_boundary.ml" 11 231 231 --
+)
+"func_boundary.ml" 11 231 264 "func_boundary.ml" 11 231 265
+type(
+  Asmir.asmprogram
+)
+ident(
+  def p "func_boundary.ml" 11 231 266 "func_boundary.ml" 16 433 477
+)
+"func_boundary.ml" 11 231 266 "func_boundary.ml" 11 231 276
+type(
+  Libbfd.address_t
+)
+ident(
+  def start_addr "func_boundary.ml" 11 231 277 "func_boundary.ml" 16 433 477
+)
+"func_boundary.ml" 11 231 277 "func_boundary.ml" 11 231 285
+type(
+  Libbfd.address_t
+)
+ident(
+  def end_addr "func_boundary.ml" 12 288 290 "func_boundary.ml" 16 433 477
+)
+"func_boundary.ml" 12 288 293 "func_boundary.ml" 12 288 303
+type(
+  Libbfd.address_t
+)
+ident(
+  int_ref start_addr "func_boundary.ml" 11 231 266 "func_boundary.ml" 11 231 276
+)
+"func_boundary.ml" 12 288 304 "func_boundary.ml" 12 288 305
+type(
+  Libbfd.address_t -> Libbfd.address_t -> bool
+)
+ident(
+  ext_ref Pervasives.( > )
+)
+"func_boundary.ml" 12 288 306 "func_boundary.ml" 12 288 314
+type(
+  Libbfd.address_t
+)
+ident(
+  int_ref end_addr "func_boundary.ml" 11 231 277 "func_boundary.ml" 11 231 285
+)
+"func_boundary.ml" 12 288 293 "func_boundary.ml" 12 288 314
+type(
+  bool
+)
+"func_boundary.ml" 12 288 320 "func_boundary.ml" 12 288 325
+type(
+  bool
+)
+"func_boundary.ml" 13 326 336 "func_boundary.ml" 13 326 346
+type(
+  Libbfd.address_t
+)
+ident(
+  int_ref start_addr "func_boundary.ml" 11 231 266 "func_boundary.ml" 11 231 276
+)
+"func_boundary.ml" 13 326 347 "func_boundary.ml" 13 326 348
+type(
+  Libbfd.address_t -> Libbfd.address_t -> bool
+)
+ident(
+  ext_ref Pervasives.( = )
+)
+"func_boundary.ml" 13 326 349 "func_boundary.ml" 13 326 357
+type(
+  Libbfd.address_t
+)
+ident(
+  int_ref end_addr "func_boundary.ml" 11 231 277 "func_boundary.ml" 11 231 285
+)
+"func_boundary.ml" 13 326 336 "func_boundary.ml" 13 326 357
+type(
+  bool
+)
+"func_boundary.ml" 13 326 363 "func_boundary.ml" 13 326 367
+type(
+  bool
+)
+"func_boundary.ml" 15 375 384 "func_boundary.ml" 15 375 385
+type(
+  Ast.program
+)
+"func_boundary.ml" 15 375 387 "func_boundary.ml" 15 375 391
+type(
+  Libbfd.address_t
+)
+"func_boundary.ml" 15 375 383 "func_boundary.ml" 15 375 392
+type(
+  Ast.program * Libbfd.address_t
+)
+"func_boundary.ml" 15 375 395 "func_boundary.ml" 15 375 416
+type(
+  Asmir.asmprogram -> Libbfd.address_t -> Ast.program * Libbfd.address_t
+)
+ident(
+  ext_ref Asmir.asm_addr_to_bap
+)
+"func_boundary.ml" 15 375 417 "func_boundary.ml" 15 375 418
+type(
+  Asmir.asmprogram
+)
+ident(
+  int_ref p "func_boundary.ml" 11 231 264 "func_boundary.ml" 11 231 265
+)
+"func_boundary.ml" 15 375 419 "func_boundary.ml" 15 375 429
+type(
+  Libbfd.address_t
+)
+ident(
+  int_ref start_addr "func_boundary.ml" 11 231 266 "func_boundary.ml" 11 231 276
+)
+"func_boundary.ml" 15 375 395 "func_boundary.ml" 15 375 429
+call(
+  stack
+)
+type(
+  Ast.program * Libbfd.address_t
+)
+"func_boundary.ml" 16 433 437 "func_boundary.ml" 16 433 461
+type(
+  Asmir.asmprogram -> Libbfd.address_t -> Libbfd.address_t -> bool
+)
+ident(
+  int_ref liftable_asm_addr_to_bap "func_boundary.ml" 11 231 239 "func_boundary.ml" 11 231 263
+)
+"func_boundary.ml" 16 433 462 "func_boundary.ml" 16 433 463
+type(
+  Asmir.asmprogram
+)
+ident(
+  int_ref p "func_boundary.ml" 11 231 264 "func_boundary.ml" 11 231 265
+)
+"func_boundary.ml" 16 433 464 "func_boundary.ml" 16 433 468
+type(
+  Libbfd.address_t
+)
+ident(
+  int_ref next "func_boundary.ml" 15 375 387 "func_boundary.ml" 15 375 391
+)
+"func_boundary.ml" 16 433 469 "func_boundary.ml" 16 433 477
+type(
+  Libbfd.address_t
+)
+ident(
+  int_ref end_addr "func_boundary.ml" 11 231 277 "func_boundary.ml" 11 231 285
+)
+"func_boundary.ml" 16 433 437 "func_boundary.ml" 16 433 477
+call(
+  tail
+)
+type(
+  bool
+)
+"func_boundary.ml" 15 375 379 "func_boundary.ml" 16 433 477
+type(
+  bool
+)
+"func_boundary.ml" 13 326 333 "func_boundary.ml" 16 433 477
+type(
+  bool
+)
+"func_boundary.ml" 12 288 290 "func_boundary.ml" 16 433 477
+type(
+  bool
+)
+"func_boundary.ml" 18 479 483 "func_boundary.ml" 18 479 498
+type(
+  Ast.stmt list -> string -> bool
+)
+ident(
+  def check_mnemonics "func_boundary.ml" 44 1342 1342 --
+)
+"func_boundary.ml" 18 479 499 "func_boundary.ml" 18 479 501
+type(
+  Ast.stmt list
+)
+ident(
+  def ir "func_boundary.ml" 18 479 502 "func_boundary.ml" 30 787 791
+)
+"func_boundary.ml" 18 479 502 "func_boundary.ml" 18 479 505
+type(
+  string
+)
+ident(
+  def str "func_boundary.ml" 19 508 510 "func_boundary.ml" 30 787 791
+)
+"func_boundary.ml" 19 508 510 "func_boundary.ml" 19 508 521
+type(
+  (Ast.stmt -> bool) -> Ast.stmt list -> bool
+)
+ident(
+  ext_ref List.exists
+)
+"func_boundary.ml" 19 508 527 "func_boundary.ml" 19 508 528
+type(
+  Ast.stmt
+)
+ident(
+  def s "func_boundary.ml" 19 508 532 "func_boundary.ml" 28 766 782
+)
+"func_boundary.ml" 19 508 538 "func_boundary.ml" 19 508 539
+type(
+  Ast.stmt
+)
+ident(
+  int_ref s "func_boundary.ml" 19 508 527 "func_boundary.ml" 19 508 528
+)
+"func_boundary.ml" 20 545 558 "func_boundary.ml" 20 545 563
+type(
+  Type.label
+)
+ident(
+  def label "func_boundary.ml" 21 575 581 "func_boundary.ml" 27 752 765
+)
+"func_boundary.ml" 20 545 565 "func_boundary.ml" 20 545 570
+type(
+  Ast.attrs
+)
+ident(
+  def attrs "func_boundary.ml" 21 575 581 "func_boundary.ml" 27 752 765
+)
+"func_boundary.ml" 20 545 557 "func_boundary.ml" 20 545 571
+type(
+  Type.label * Ast.attrs
+)
+"func_boundary.ml" 20 545 551 "func_boundary.ml" 20 545 571
+type(
+  Ast.stmt
+)
+"func_boundary.ml" 21 575 581 "func_boundary.ml" 21 575 592
+type(
+  (Type.attribute -> bool) -> Ast.attrs -> bool
+)
+ident(
+  ext_ref List.exists
+)
+"func_boundary.ml" 21 575 598 "func_boundary.ml" 21 575 602
+type(
+  Type.attribute
+)
+ident(
+  def attr "func_boundary.ml" 22 606 607 "func_boundary.ml" 26 738 751
+)
+"func_boundary.ml" 22 606 613 "func_boundary.ml" 22 606 617
+type(
+  Type.attribute
+)
+ident(
+  int_ref attr "func_boundary.ml" 21 575 598 "func_boundary.ml" 21 575 602
+)
+"func_boundary.ml" 23 623 630 "func_boundary.ml" 23 623 631
+type(
+  string
+)
+ident(
+  def s "func_boundary.ml" 24 635 645 "func_boundary.ml" 25 693 737
+)
+"func_boundary.ml" 23 623 626 "func_boundary.ml" 23 623 631
+type(
+  Type.attribute
+)
+"func_boundary.ml" 24 635 651 "func_boundary.ml" 24 635 661
+type(
+  string -> int -> int -> string
+)
+ident(
+  ext_ref String.sub
+)
+"func_boundary.ml" 24 635 662 "func_boundary.ml" 24 635 663
+type(
+  string
+)
+ident(
+  int_ref s "func_boundary.ml" 23 623 630 "func_boundary.ml" 23 623 631
+)
+"func_boundary.ml" 24 635 664 "func_boundary.ml" 24 635 665
+type(
+  int
+)
+"func_boundary.ml" 24 635 667 "func_boundary.ml" 24 635 680
+type(
+  string -> int
+)
+ident(
+  ext_ref String.length
+)
+"func_boundary.ml" 24 635 681 "func_boundary.ml" 24 635 684
+type(
+  string
+)
+ident(
+  int_ref str "func_boundary.ml" 18 479 502 "func_boundary.ml" 18 479 505
+)
+"func_boundary.ml" 24 635 666 "func_boundary.ml" 24 635 685
+type(
+  int
+)
+"func_boundary.ml" 24 635 650 "func_boundary.ml" 24 635 686
+call(
+  stack
+)
+type(
+  string
+)
+"func_boundary.ml" 24 635 687 "func_boundary.ml" 24 635 688
+type(
+  string -> string -> bool
+)
+ident(
+  ext_ref Pervasives.( = )
+)
+"func_boundary.ml" 24 635 689 "func_boundary.ml" 24 635 692
+type(
+  string
+)
+ident(
+  int_ref str "func_boundary.ml" 18 479 502 "func_boundary.ml" 18 479 505
+)
+"func_boundary.ml" 24 635 650 "func_boundary.ml" 24 635 692
+type(
+  bool
+)
+"func_boundary.ml" 25 693 726 "func_boundary.ml" 25 693 727
+type(
+  string
+)
+"func_boundary.ml" 25 693 709 "func_boundary.ml" 25 693 727
+type(
+  exn
+)
+"func_boundary.ml" 25 693 731 "func_boundary.ml" 25 693 736
+type(
+  bool
+)
+"func_boundary.ml" 24 635 645 "func_boundary.ml" 25 693 737
+type(
+  bool
+)
+"func_boundary.ml" 26 738 741 "func_boundary.ml" 26 738 742
+type(
+  Type.attribute
+)
+"func_boundary.ml" 26 738 746 "func_boundary.ml" 26 738 751
+type(
+  bool
+)
+"func_boundary.ml" 22 606 607 "func_boundary.ml" 26 738 751
+type(
+  bool
+)
+"func_boundary.ml" 21 575 593 "func_boundary.ml" 27 752 759
+type(
+  Type.attribute -> bool
+)
+"func_boundary.ml" 27 752 760 "func_boundary.ml" 27 752 765
+type(
+  Ast.attrs
+)
+ident(
+  int_ref attrs "func_boundary.ml" 20 545 565 "func_boundary.ml" 20 545 570
+)
+"func_boundary.ml" 21 575 581 "func_boundary.ml" 27 752 765
+call(
+  tail
+)
+type(
+  bool
+)
+"func_boundary.ml" 28 766 772 "func_boundary.ml" 28 766 773
+type(
+  Ast.stmt
+)
+"func_boundary.ml" 28 766 777 "func_boundary.ml" 28 766 782
+type(
+  bool
+)
+"func_boundary.ml" 19 508 532 "func_boundary.ml" 28 766 782
+type(
+  bool
+)
+"func_boundary.ml" 19 508 522 "func_boundary.ml" 29 783 786
+type(
+  Ast.stmt -> bool
+)
+"func_boundary.ml" 30 787 789 "func_boundary.ml" 30 787 791
+type(
+  Ast.stmt list
+)
+ident(
+  int_ref ir "func_boundary.ml" 18 479 499 "func_boundary.ml" 18 479 501
+)
+"func_boundary.ml" 19 508 510 "func_boundary.ml" 30 787 791
+call(
+  tail
+)
+type(
+  bool
+)
+"func_boundary.ml" 44 1342 1350 "func_boundary.ml" 44 1342 1358
+type(
+  Asmir.asmprogram ->
+  (Libbfd.address_t * 'a) list ->
+  int -> int -> Libbfd.address_t -> Libbfd.address_t option
+)
+ident(
+  def backward "func_boundary.ml" 44 1342 1342 --
+)
+"func_boundary.ml" 44 1342 1359 "func_boundary.ml" 44 1342 1360
+type(
+  Asmir.asmprogram
+)
+ident(
+  def p "func_boundary.ml" 44 1342 1361 "func_boundary.ml" 62 2255 2314
+)
+"func_boundary.ml" 44 1342 1361 "func_boundary.ml" 44 1342 1363
+type(
+  (Libbfd.address_t * 'a) list
+)
+ident(
+  def bl "func_boundary.ml" 44 1342 1364 "func_boundary.ml" 62 2255 2314
+)
+"func_boundary.ml" 44 1342 1364 "func_boundary.ml" 44 1342 1365
+type(
+  int
+)
+ident(
+  def i "func_boundary.ml" 44 1342 1366 "func_boundary.ml" 62 2255 2314
+)
+"func_boundary.ml" 44 1342 1366 "func_boundary.ml" 44 1342 1373
+type(
+  int
+)
+ident(
+  def e_index "func_boundary.ml" 44 1342 1374 "func_boundary.ml" 62 2255 2314
+)
+"func_boundary.ml" 44 1342 1374 "func_boundary.ml" 44 1342 1391
+type(
+  Libbfd.address_t
+)
+ident(
+  def last_startaddress "func_boundary.ml" 45 1394 1396 "func_boundary.ml" 62 2255 2314
+)
+"func_boundary.ml" 45 1394 1400 "func_boundary.ml" 45 1394 1408
+type(
+  Libbfd.address_t
+)
+"func_boundary.ml" 45 1394 1411 "func_boundary.ml" 45 1394 1414
+type(
+  Libbfd.address_t * 'a -> Libbfd.address_t
+)
+ident(
+  ext_ref Pervasives.fst
+)
+"func_boundary.ml" 45 1394 1416 "func_boundary.ml" 45 1394 1424
+type(
+  (Libbfd.address_t * 'a) list -> int -> Libbfd.address_t * 'a
+)
+ident(
+  ext_ref List.nth
+)
+"func_boundary.ml" 45 1394 1425 "func_boundary.ml" 45 1394 1427
+type(
+  (Libbfd.address_t * 'a) list
+)
+ident(
+  int_ref bl "func_boundary.ml" 44 1342 1361 "func_boundary.ml" 44 1342 1363
+)
+"func_boundary.ml" 45 1394 1428 "func_boundary.ml" 45 1394 1435
+type(
+  int
+)
+ident(
+  int_ref e_index "func_boundary.ml" 44 1342 1366 "func_boundary.ml" 44 1342 1373
+)
+"func_boundary.ml" 45 1394 1415 "func_boundary.ml" 45 1394 1436
+call(
+  stack
+)
+type(
+  Libbfd.address_t * 'a
+)
+"func_boundary.ml" 45 1394 1411 "func_boundary.ml" 45 1394 1436
+type(
+  Libbfd.address_t
+)
+"func_boundary.ml" 46 1440 1446 "func_boundary.ml" 46 1440 1456
+type(
+  Libbfd.address_t
+)
+"func_boundary.ml" 46 1440 1459 "func_boundary.ml" 46 1440 1462
+type(
+  Libbfd.address_t * 'a -> Libbfd.address_t
+)
+ident(
+  ext_ref Pervasives.fst
+)
+"func_boundary.ml" 46 1440 1464 "func_boundary.ml" 46 1440 1472
+type(
+  (Libbfd.address_t * 'a) list -> int -> Libbfd.address_t * 'a
+)
+ident(
+  ext_ref List.nth
+)
+"func_boundary.ml" 46 1440 1473 "func_boundary.ml" 46 1440 1475
+type(
+  (Libbfd.address_t * 'a) list
+)
+ident(
+  int_ref bl "func_boundary.ml" 44 1342 1361 "func_boundary.ml" 44 1342 1363
+)
+"func_boundary.ml" 46 1440 1477 "func_boundary.ml" 46 1440 1484
+type(
+  int
+)
+ident(
+  int_ref e_index "func_boundary.ml" 44 1342 1366 "func_boundary.ml" 44 1342 1373
+)
+"func_boundary.ml" 46 1440 1484 "func_boundary.ml" 46 1440 1485
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( - )
+)
+"func_boundary.ml" 46 1440 1485 "func_boundary.ml" 46 1440 1486
+type(
+  int
+)
+ident(
+  int_ref i "func_boundary.ml" 44 1342 1364 "func_boundary.ml" 44 1342 1365
+)
+"func_boundary.ml" 46 1440 1476 "func_boundary.ml" 46 1440 1487
+type(
+  int
+)
+"func_boundary.ml" 46 1440 1463 "func_boundary.ml" 46 1440 1488
+call(
+  stack
+)
+type(
+  Libbfd.address_t * 'a
+)
+"func_boundary.ml" 46 1440 1459 "func_boundary.ml" 46 1440 1488
+type(
+  Libbfd.address_t
+)
+"func_boundary.ml" 47 1492 1497 "func_boundary.ml" 47 1492 1507
+type(
+  Libbfd.address_t
+)
+ident(
+  int_ref start_addr "func_boundary.ml" 46 1440 1446 "func_boundary.ml" 46 1440 1456
+)
+"func_boundary.ml" 47 1492 1508 "func_boundary.ml" 47 1492 1510
+type(
+  Libbfd.address_t -> Libbfd.address_t -> bool
+)
+ident(
+  ext_ref Pervasives.( <= )
+)
+"func_boundary.ml" 47 1492 1511 "func_boundary.ml" 47 1492 1528
+type(
+  Libbfd.address_t
+)
+ident(
+  int_ref last_startaddress "func_boundary.ml" 44 1342 1374 "func_boundary.ml" 44 1342 1391
+)
+"func_boundary.ml" 47 1492 1497 "func_boundary.ml" 47 1492 1528
+type(
+  bool
+)
+"func_boundary.ml" 47 1492 1534 "func_boundary.ml" 47 1492 1538
+type(
+  Libbfd.address_t option
+)
+"func_boundary.ml" 48 1539 1549 "func_boundary.ml" 48 1539 1550
+type(
+  int
+)
+ident(
+  int_ref i "func_boundary.ml" 44 1342 1364 "func_boundary.ml" 44 1342 1365
+)
+"func_boundary.ml" 48 1539 1551 "func_boundary.ml" 48 1539 1552
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( = )
+)
+"func_boundary.ml" 48 1539 1553 "func_boundary.ml" 48 1539 1560
+type(
+  int
+)
+ident(
+  int_ref e_index "func_boundary.ml" 44 1342 1366 "func_boundary.ml" 44 1342 1373
+)
+"func_boundary.ml" 48 1539 1549 "func_boundary.ml" 48 1539 1560
+type(
+  bool
+)
+"func_boundary.ml" 48 1539 1571 "func_boundary.ml" 48 1539 1581
+type(
+  Libbfd.address_t
+)
+ident(
+  int_ref start_addr "func_boundary.ml" 46 1440 1446 "func_boundary.ml" 46 1440 1456
+)
+"func_boundary.ml" 48 1539 1566 "func_boundary.ml" 48 1539 1581
+type(
+  Libbfd.address_t option
+)
+"func_boundary.ml" 52 1712 1723 "func_boundary.ml" 52 1712 1725
+type(
+  Ast.program
+)
+ident(
+  def ir "func_boundary.ml" 53 1770 1776 "func_boundary.ml" 60 2192 2248
+)
+"func_boundary.ml" 52 1712 1727 "func_boundary.ml" 52 1712 1728
+type(
+  Libbfd.address_t
+)
+ident(
+  def n "func_boundary.ml" 53 1770 1776 "func_boundary.ml" 60 2192 2248
+)
+"func_boundary.ml" 52 1712 1722 "func_boundary.ml" 52 1712 1729
+type(
+  Ast.program * Libbfd.address_t
+)
+"func_boundary.ml" 52 1712 1732 "func_boundary.ml" 52 1712 1753
+type(
+  Asmir.asmprogram -> Libbfd.address_t -> Ast.program * Libbfd.address_t
+)
+ident(
+  ext_ref Asmir.asm_addr_to_bap
+)
+"func_boundary.ml" 52 1712 1754 "func_boundary.ml" 52 1712 1755
+type(
+  Asmir.asmprogram
+)
+ident(
+  int_ref p "func_boundary.ml" 44 1342 1359 "func_boundary.ml" 44 1342 1360
+)
+"func_boundary.ml" 52 1712 1756 "func_boundary.ml" 52 1712 1766
+type(
+  Libbfd.address_t
+)
+ident(
+  int_ref start_addr "func_boundary.ml" 46 1440 1446 "func_boundary.ml" 46 1440 1456
+)
+"func_boundary.ml" 52 1712 1732 "func_boundary.ml" 52 1712 1766
+call(
+  stack
+)
+type(
+  Ast.program * Libbfd.address_t
+)
+"func_boundary.ml" 53 1770 1780 "func_boundary.ml" 53 1770 1804
+type(
+  Asmir.asmprogram -> Libbfd.address_t -> Libbfd.address_t -> bool
+)
+ident(
+  int_ref liftable_asm_addr_to_bap "func_boundary.ml" 11 231 239 "func_boundary.ml" 11 231 263
+)
+"func_boundary.ml" 53 1770 1805 "func_boundary.ml" 53 1770 1806
+type(
+  Asmir.asmprogram
+)
+ident(
+  int_ref p "func_boundary.ml" 44 1342 1359 "func_boundary.ml" 44 1342 1360
+)
+"func_boundary.ml" 53 1770 1807 "func_boundary.ml" 53 1770 1808
+type(
+  Libbfd.address_t
+)
+ident(
+  int_ref n "func_boundary.ml" 52 1712 1727 "func_boundary.ml" 52 1712 1728
+)
+"func_boundary.ml" 53 1770 1809 "func_boundary.ml" 53 1770 1817
+type(
+  Libbfd.address_t
+)
+ident(
+  int_ref end_addr "func_boundary.ml" 45 1394 1400 "func_boundary.ml" 45 1394 1408
+)
+"func_boundary.ml" 53 1770 1779 "func_boundary.ml" 53 1770 1818
+call(
+  stack
+)
+type(
+  bool
+)
+"func_boundary.ml" 53 1770 1819 "func_boundary.ml" 53 1770 1821
+type(
+  bool -> bool -> bool
+)
+ident(
+  ext_ref Pervasives.( && )
+)
+"func_boundary.ml" 53 1770 1824 "func_boundary.ml" 53 1770 1839
+type(
+  Ast.program -> string -> bool
+)
+ident(
+  int_ref check_mnemonics "func_boundary.ml" 18 479 483 "func_boundary.ml" 18 479 498
+)
+"func_boundary.ml" 53 1770 1840 "func_boundary.ml" 53 1770 1842
+type(
+  Ast.program
+)
+ident(
+  int_ref ir "func_boundary.ml" 52 1712 1723 "func_boundary.ml" 52 1712 1725
+)
+"func_boundary.ml" 53 1770 1843 "func_boundary.ml" 53 1770 1848
+type(
+  string
+)
+"func_boundary.ml" 53 1770 1823 "func_boundary.ml" 53 1770 1849
+call(
+  stack
+)
+type(
+  bool
+)
+"func_boundary.ml" 53 1770 1850 "func_boundary.ml" 53 1770 1852
+type(
+  bool -> bool -> bool
+)
+ident(
+  ext_ref Pervasives.( || )
+)
+"func_boundary.ml" 53 1770 1854 "func_boundary.ml" 53 1770 1869
+type(
+  Ast.program -> string -> bool
+)
+ident(
+  int_ref check_mnemonics "func_boundary.ml" 18 479 483 "func_boundary.ml" 18 479 498
+)
+"func_boundary.ml" 53 1770 1870 "func_boundary.ml" 53 1770 1872
+type(
+  Ast.program
+)
+ident(
+  int_ref ir "func_boundary.ml" 52 1712 1723 "func_boundary.ml" 52 1712 1725
+)
+"func_boundary.ml" 53 1770 1873 "func_boundary.ml" 53 1770 1878
+type(
+  string
+)
+"func_boundary.ml" 53 1770 1853 "func_boundary.ml" 53 1770 1879
+call(
+  stack
+)
+type(
+  bool
+)
+"func_boundary.ml" 53 1770 1880 "func_boundary.ml" 53 1770 1882
+type(
+  bool -> bool -> bool
+)
+ident(
+  ext_ref Pervasives.( || )
+)
+"func_boundary.ml" 53 1770 1884 "func_boundary.ml" 53 1770 1899
+type(
+  Ast.program -> string -> bool
+)
+ident(
+  int_ref check_mnemonics "func_boundary.ml" 18 479 483 "func_boundary.ml" 18 479 498
+)
+"func_boundary.ml" 53 1770 1900 "func_boundary.ml" 53 1770 1902
+type(
+  Ast.program
+)
+ident(
+  int_ref ir "func_boundary.ml" 52 1712 1723 "func_boundary.ml" 52 1712 1725
+)
+"func_boundary.ml" 53 1770 1903 "func_boundary.ml" 53 1770 1908
+type(
+  string
+)
+"func_boundary.ml" 53 1770 1883 "func_boundary.ml" 53 1770 1909
+call(
+  stack
+)
+type(
+  bool
+)
+"func_boundary.ml" 53 1770 1910 "func_boundary.ml" 53 1770 1912
+type(
+  bool -> bool -> bool
+)
+ident(
+  ext_ref Pervasives.( || )
+)
+"func_boundary.ml" 53 1770 1914 "func_boundary.ml" 53 1770 1929
+type(
+  Ast.program -> string -> bool
+)
+ident(
+  int_ref check_mnemonics "func_boundary.ml" 18 479 483 "func_boundary.ml" 18 479 498
+)
+"func_boundary.ml" 53 1770 1930 "func_boundary.ml" 53 1770 1932
+type(
+  Ast.program
+)
+ident(
+  int_ref ir "func_boundary.ml" 52 1712 1723 "func_boundary.ml" 52 1712 1725
+)
+"func_boundary.ml" 53 1770 1933 "func_boundary.ml" 53 1770 1939
+type(
+  string
+)
+"func_boundary.ml" 53 1770 1913 "func_boundary.ml" 53 1770 1940
+call(
+  stack
+)
+type(
+  bool
+)
+"func_boundary.ml" 53 1770 1883 "func_boundary.ml" 53 1770 1940
+type(
+  bool
+)
+"func_boundary.ml" 53 1770 1853 "func_boundary.ml" 53 1770 1940
+type(
+  bool
+)
+"func_boundary.ml" 53 1770 1822 "func_boundary.ml" 53 1770 1941
+type(
+  bool
+)
+"func_boundary.ml" 53 1770 1779 "func_boundary.ml" 53 1770 1941
+type(
+  bool
+)
+"func_boundary.ml" 55 1993 1999 "func_boundary.ml" 55 1993 2003
+type(
+  Ast.program
+)
+ident(
+  def n_ir "func_boundary.ml" 56 2040 2041 "func_boundary.ml" 58 2170 2182
+)
+"func_boundary.ml" 55 1993 2005 "func_boundary.ml" 55 1993 2007
+type(
+  Libbfd.address_t
+)
+ident(
+  def nn "func_boundary.ml" 56 2040 2041 "func_boundary.ml" 58 2170 2182
+)
+"func_boundary.ml" 55 1993 1998 "func_boundary.ml" 55 1993 2008
+type(
+  Ast.program * Libbfd.address_t
+)
+"func_boundary.ml" 55 1993 2011 "func_boundary.ml" 55 1993 2032
+type(
+  Asmir.asmprogram -> Libbfd.address_t -> Ast.program * Libbfd.address_t
+)
+ident(
+  ext_ref Asmir.asm_addr_to_bap
+)
+"func_boundary.ml" 55 1993 2033 "func_boundary.ml" 55 1993 2034
+type(
+  Asmir.asmprogram
+)
+ident(
+  int_ref p "func_boundary.ml" 44 1342 1359 "func_boundary.ml" 44 1342 1360
+)
+"func_boundary.ml" 55 1993 2035 "func_boundary.ml" 55 1993 2036
+type(
+  Libbfd.address_t
+)
+ident(
+  int_ref n "func_boundary.ml" 52 1712 1727 "func_boundary.ml" 52 1712 1728
+)
+"func_boundary.ml" 55 1993 2011 "func_boundary.ml" 55 1993 2036
+call(
+  stack
+)
+type(
+  Ast.program * Libbfd.address_t
+)
+"func_boundary.ml" 56 2040 2046 "func_boundary.ml" 56 2040 2051
+type(
+  Ast.program
+)
+ident(
+  def nn_ir "func_boundary.ml" 57 2090 2091 "func_boundary.ml" 58 2170 2182
+)
+"func_boundary.ml" 56 2040 2053 "func_boundary.ml" 56 2040 2056
+type(
+  Libbfd.address_t
+)
+ident(
+  def nnn "func_boundary.ml" 57 2090 2091 "func_boundary.ml" 58 2170 2182
+)
+"func_boundary.ml" 56 2040 2045 "func_boundary.ml" 56 2040 2057
+type(
+  Ast.program * Libbfd.address_t
+)
+"func_boundary.ml" 56 2040 2060 "func_boundary.ml" 56 2040 2081
+type(
+  Asmir.asmprogram -> Libbfd.address_t -> Ast.program * Libbfd.address_t
+)
+ident(
+  ext_ref Asmir.asm_addr_to_bap
+)
+"func_boundary.ml" 56 2040 2082 "func_boundary.ml" 56 2040 2083
+type(
+  Asmir.asmprogram
+)
+ident(
+  int_ref p "func_boundary.ml" 44 1342 1359 "func_boundary.ml" 44 1342 1360
+)
+"func_boundary.ml" 56 2040 2084 "func_boundary.ml" 56 2040 2086
+type(
+  Libbfd.address_t
+)
+ident(
+  int_ref nn "func_boundary.ml" 55 1993 2005 "func_boundary.ml" 55 1993 2007
+)
+"func_boundary.ml" 56 2040 2060 "func_boundary.ml" 56 2040 2086
+call(
+  stack
+)
+type(
+  Ast.program * Libbfd.address_t
+)
+"func_boundary.ml" 57 2090 2095 "func_boundary.ml" 57 2090 2110
+type(
+  Ast.program -> string -> bool
+)
+ident(
+  int_ref check_mnemonics "func_boundary.ml" 18 479 483 "func_boundary.ml" 18 479 498
+)
+"func_boundary.ml" 57 2090 2111 "func_boundary.ml" 57 2090 2115
+type(
+  Ast.program
+)
+ident(
+  int_ref n_ir "func_boundary.ml" 55 1993 1999 "func_boundary.ml" 55 1993 2003
+)
+"func_boundary.ml" 57 2090 2116 "func_boundary.ml" 57 2090 2121
+type(
+  string
+)
+"func_boundary.ml" 57 2090 2094 "func_boundary.ml" 57 2090 2122
+call(
+  stack
+)
+type(
+  bool
+)
+"func_boundary.ml" 57 2090 2123 "func_boundary.ml" 57 2090 2125
+type(
+  bool -> bool -> bool
+)
+ident(
+  ext_ref Pervasives.( && )
+)
+"func_boundary.ml" 57 2090 2127 "func_boundary.ml" 57 2090 2142
+type(
+  Ast.program -> string -> bool
+)
+ident(
+  int_ref check_mnemonics "func_boundary.ml" 18 479 483 "func_boundary.ml" 18 479 498
+)
+"func_boundary.ml" 57 2090 2143 "func_boundary.ml" 57 2090 2148
+type(
+  Ast.program
+)
+ident(
+  int_ref nn_ir "func_boundary.ml" 56 2040 2046 "func_boundary.ml" 56 2040 2051
+)
+"func_boundary.ml" 57 2090 2149 "func_boundary.ml" 57 2090 2154
+type(
+  string
+)
+"func_boundary.ml" 57 2090 2126 "func_boundary.ml" 57 2090 2155
+call(
+  stack
+)
+type(
+  bool
+)
+"func_boundary.ml" 57 2090 2094 "func_boundary.ml" 57 2090 2155
+type(
+  bool
+)
+"func_boundary.ml" 57 2090 2166 "func_boundary.ml" 57 2090 2169
+type(
+  Libbfd.address_t
+)
+ident(
+  int_ref nnn "func_boundary.ml" 56 2040 2053 "func_boundary.ml" 56 2040 2056
+)
+"func_boundary.ml" 57 2090 2161 "func_boundary.ml" 57 2090 2169
+type(
+  Libbfd.address_t option
+)
+"func_boundary.ml" 58 2170 2181 "func_boundary.ml" 58 2170 2182
+type(
+  Libbfd.address_t
+)
+ident(
+  int_ref n "func_boundary.ml" 52 1712 1727 "func_boundary.ml" 52 1712 1728
+)
+"func_boundary.ml" 58 2170 2176 "func_boundary.ml" 58 2170 2182
+type(
+  Libbfd.address_t option
+)
+"func_boundary.ml" 57 2090 2091 "func_boundary.ml" 58 2170 2182
+type(
+  Libbfd.address_t option
+)
+"func_boundary.ml" 56 2040 2041 "func_boundary.ml" 58 2170 2182
+type(
+  Libbfd.address_t option
+)
+"func_boundary.ml" 53 1770 1947 "func_boundary.ml" 59 2184 2191
+type(
+  Libbfd.address_t option
+)
+"func_boundary.ml" 60 2192 2203 "func_boundary.ml" 60 2192 2211
+type(
+  Asmir.asmprogram ->
+  (Libbfd.address_t * 'a) list ->
+  int -> int -> Libbfd.address_t -> Libbfd.address_t option
+)
+ident(
+  int_ref backward "func_boundary.ml" 44 1342 1350 "func_boundary.ml" 44 1342 1358
+)
+"func_boundary.ml" 60 2192 2212 "func_boundary.ml" 60 2192 2213
+type(
+  Asmir.asmprogram
+)
+ident(
+  int_ref p "func_boundary.ml" 44 1342 1359 "func_boundary.ml" 44 1342 1360
+)
+"func_boundary.ml" 60 2192 2214 "func_boundary.ml" 60 2192 2216
+type(
+  (Libbfd.address_t * 'a) list
+)
+ident(
+  int_ref bl "func_boundary.ml" 44 1342 1361 "func_boundary.ml" 44 1342 1363
+)
+"func_boundary.ml" 60 2192 2218 "func_boundary.ml" 60 2192 2219
+type(
+  int
+)
+ident(
+  int_ref i "func_boundary.ml" 44 1342 1364 "func_boundary.ml" 44 1342 1365
+)
+"func_boundary.ml" 60 2192 2219 "func_boundary.ml" 60 2192 2220
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( + )
+)
+"func_boundary.ml" 60 2192 2220 "func_boundary.ml" 60 2192 2221
+type(
+  int
+)
+"func_boundary.ml" 60 2192 2217 "func_boundary.ml" 60 2192 2222
+type(
+  int
+)
+"func_boundary.ml" 60 2192 2223 "func_boundary.ml" 60 2192 2230
+type(
+  int
+)
+ident(
+  int_ref e_index "func_boundary.ml" 44 1342 1366 "func_boundary.ml" 44 1342 1373
+)
+"func_boundary.ml" 60 2192 2231 "func_boundary.ml" 60 2192 2248
+type(
+  Libbfd.address_t
+)
+ident(
+  int_ref last_startaddress "func_boundary.ml" 44 1342 1374 "func_boundary.ml" 44 1342 1391
+)
+"func_boundary.ml" 60 2192 2203 "func_boundary.ml" 60 2192 2248
+call(
+  stack
+)
+type(
+  Libbfd.address_t option
+)
+"func_boundary.ml" 53 1770 1776 "func_boundary.ml" 60 2192 2248
+type(
+  Libbfd.address_t option
+)
+"func_boundary.ml" 51 1702 1710 "func_boundary.ml" 61 2249 2254
+type(
+  Libbfd.address_t option
+)
+"func_boundary.ml" 62 2255 2264 "func_boundary.ml" 62 2255 2265
+type(
+  exn
+)
+"func_boundary.ml" 62 2255 2269 "func_boundary.ml" 62 2255 2277
+type(
+  Asmir.asmprogram ->
+  (Libbfd.address_t * 'a) list ->
+  int -> int -> Libbfd.address_t -> Libbfd.address_t option
+)
+ident(
+  int_ref backward "func_boundary.ml" 44 1342 1350 "func_boundary.ml" 44 1342 1358
+)
+"func_boundary.ml" 62 2255 2278 "func_boundary.ml" 62 2255 2279
+type(
+  Asmir.asmprogram
+)
+ident(
+  int_ref p "func_boundary.ml" 44 1342 1359 "func_boundary.ml" 44 1342 1360
+)
+"func_boundary.ml" 62 2255 2280 "func_boundary.ml" 62 2255 2282
+type(
+  (Libbfd.address_t * 'a) list
+)
+ident(
+  int_ref bl "func_boundary.ml" 44 1342 1361 "func_boundary.ml" 44 1342 1363
+)
+"func_boundary.ml" 62 2255 2284 "func_boundary.ml" 62 2255 2285
+type(
+  int
+)
+ident(
+  int_ref i "func_boundary.ml" 44 1342 1364 "func_boundary.ml" 44 1342 1365
+)
+"func_boundary.ml" 62 2255 2285 "func_boundary.ml" 62 2255 2286
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( + )
+)
+"func_boundary.ml" 62 2255 2286 "func_boundary.ml" 62 2255 2287
+type(
+  int
+)
+"func_boundary.ml" 62 2255 2283 "func_boundary.ml" 62 2255 2288
+type(
+  int
+)
+"func_boundary.ml" 62 2255 2289 "func_boundary.ml" 62 2255 2296
+type(
+  int
+)
+ident(
+  int_ref e_index "func_boundary.ml" 44 1342 1366 "func_boundary.ml" 44 1342 1373
+)
+"func_boundary.ml" 62 2255 2297 "func_boundary.ml" 62 2255 2314
+type(
+  Libbfd.address_t
+)
+ident(
+  int_ref last_startaddress "func_boundary.ml" 44 1342 1374 "func_boundary.ml" 44 1342 1391
+)
+"func_boundary.ml" 62 2255 2269 "func_boundary.ml" 62 2255 2314
+call(
+  tail
+)
+type(
+  Libbfd.address_t option
+)
+"func_boundary.ml" 51 1702 1706 "func_boundary.ml" 62 2255 2314
+type(
+  Libbfd.address_t option
+)
+"func_boundary.ml" 48 1539 1546 "func_boundary.ml" 62 2255 2314
+type(
+  Libbfd.address_t option
+)
+"func_boundary.ml" 47 1492 1494 "func_boundary.ml" 62 2255 2314
+type(
+  Libbfd.address_t option
+)
+"func_boundary.ml" 46 1440 1442 "func_boundary.ml" 62 2255 2314
+type(
+  Libbfd.address_t option
+)
+"func_boundary.ml" 45 1394 1396 "func_boundary.ml" 62 2255 2314
+type(
+  Libbfd.address_t option
+)
+"func_boundary.ml" 64 2316 2320 "func_boundary.ml" 64 2316 2335
+type(
+  Asmir.asmprogram -> Libbfd.address_t list
+)
+ident(
+  def start_addresses "func_boundary.ml" 114 4629 4629 --
+)
+"func_boundary.ml" 64 2316 2336 "func_boundary.ml" 64 2316 2337
+type(
+  Asmir.asmprogram
+)
+ident(
+  def p "func_boundary.ml" 65 2340 2342 "func_boundary.ml" 112 4607 4627
+)
+"func_boundary.ml" 65 2340 2345 "func_boundary.ml" 65 2340 2370
+type(
+  Asmir.asmprogram -> Asmir.arch
+)
+ident(
+  ext_ref Asmir.get_asmprogram_arch
+)
+"func_boundary.ml" 65 2340 2371 "func_boundary.ml" 65 2340 2372
+type(
+  Asmir.asmprogram
+)
+ident(
+  int_ref p "func_boundary.ml" 64 2316 2336 "func_boundary.ml" 64 2316 2337
+)
+"func_boundary.ml" 65 2340 2345 "func_boundary.ml" 65 2340 2372
+call(
+  stack
+)
+type(
+  Asmir.arch
+)
+"func_boundary.ml" 65 2340 2373 "func_boundary.ml" 65 2340 2375
+type(
+  Asmir.arch -> Asmir.arch -> bool
+)
+ident(
+  ext_ref Pervasives.( <> )
+)
+"func_boundary.ml" 65 2340 2376 "func_boundary.ml" 65 2340 2391
+type(
+  Asmir.arch
+)
+ident(
+  ext_ref Asmir.arch_i386
+)
+"func_boundary.ml" 65 2340 2345 "func_boundary.ml" 65 2340 2391
+type(
+  bool
+)
+"func_boundary.ml" 65 2340 2397 "func_boundary.ml" 65 2340 2402
+type(
+  exn -> unit
+)
+ident(
+  ext_ref Pervasives.raise
+)
+"func_boundary.ml" 65 2340 2421 "func_boundary.ml" 65 2340 2477
+type(
+  string
+)
+"func_boundary.ml" 65 2340 2403 "func_boundary.ml" 65 2340 2478
+type(
+  exn
+)
+"func_boundary.ml" 65 2340 2397 "func_boundary.ml" 65 2340 2478
+type(
+  unit
+)
+"func_boundary.ml" 65 2340 2342 "func_boundary.ml" 65 2340 2478
+type(
+  unit
+)
+"func_boundary.ml" 66 2480 2486 "func_boundary.ml" 66 2480 2494
+type(
+  (Libbfd.address_t * char) list
+)
+"func_boundary.ml" 66 2480 2497 "func_boundary.ml" 66 2480 2529
+type(
+  Asmir.asmprogram -> (Libbfd.address_t * char) list
+)
+ident(
+  ext_ref Asmir.get_exec_mem_contents_list
+)
+"func_boundary.ml" 66 2480 2530 "func_boundary.ml" 66 2480 2531
+type(
+  Asmir.asmprogram
+)
+ident(
+  int_ref p "func_boundary.ml" 64 2316 2336 "func_boundary.ml" 64 2316 2337
+)
+"func_boundary.ml" 66 2480 2497 "func_boundary.ml" 66 2480 2531
+call(
+  stack
+)
+type(
+  (Libbfd.address_t * char) list
+)
+"func_boundary.ml" 67 2535 2541 "func_boundary.ml" 67 2535 2549
+type(
+  (Libbfd.address_t * int) list
+)
+"func_boundary.ml" 67 2535 2552 "func_boundary.ml" 67 2535 2560
+type(
+  (Libbfd.address_t * char -> Libbfd.address_t * int) ->
+  (Libbfd.address_t * char) list -> (Libbfd.address_t * int) list
+)
+ident(
+  ext_ref List.map
+)
+"func_boundary.ml" 67 2535 2567 "func_boundary.ml" 67 2535 2568
+type(
+  Libbfd.address_t
+)
+ident(
+  def x "func_boundary.ml" 67 2535 2575 "func_boundary.ml" 67 2535 2591
+)
+"func_boundary.ml" 67 2535 2569 "func_boundary.ml" 67 2535 2570
+type(
+  char
+)
+ident(
+  def c "func_boundary.ml" 67 2535 2575 "func_boundary.ml" 67 2535 2591
+)
+"func_boundary.ml" 67 2535 2566 "func_boundary.ml" 67 2535 2571
+type(
+  Libbfd.address_t * char
+)
+"func_boundary.ml" 67 2535 2576 "func_boundary.ml" 67 2535 2577
+type(
+  Libbfd.address_t
+)
+ident(
+  int_ref x "func_boundary.ml" 67 2535 2567 "func_boundary.ml" 67 2535 2568
+)
+"func_boundary.ml" 67 2535 2579 "func_boundary.ml" 67 2535 2588
+type(
+  char -> int
+)
+ident(
+  ext_ref Char.code
+)
+"func_boundary.ml" 67 2535 2589 "func_boundary.ml" 67 2535 2590
+type(
+  char
+)
+ident(
+  int_ref c "func_boundary.ml" 67 2535 2569 "func_boundary.ml" 67 2535 2570
+)
+"func_boundary.ml" 67 2535 2579 "func_boundary.ml" 67 2535 2590
+type(
+  int
+)
+"func_boundary.ml" 67 2535 2575 "func_boundary.ml" 67 2535 2591
+type(
+  Libbfd.address_t * int
+)
+"func_boundary.ml" 67 2535 2561 "func_boundary.ml" 67 2535 2592
+type(
+  Libbfd.address_t * char -> Libbfd.address_t * int
+)
+"func_boundary.ml" 67 2535 2593 "func_boundary.ml" 67 2535 2601
+type(
+  (Libbfd.address_t * char) list
+)
+ident(
+  int_ref bytelist "func_boundary.ml" 66 2480 2486 "func_boundary.ml" 66 2480 2494
+)
+"func_boundary.ml" 67 2535 2552 "func_boundary.ml" 67 2535 2601
+call(
+  stack
+)
+type(
+  (Libbfd.address_t * int) list
+)
+"func_boundary.ml" 68 2605 2615 "func_boundary.ml" 68 2605 2616
+type(
+  (Libbfd.address_t * int) list ->
+  int -> Libbfd.address_t -> Libbfd.address_t list
+)
+"func_boundary.ml" 68 2605 2617 "func_boundary.ml" 68 2605 2618
+type(
+  (Libbfd.address_t * int) list
+)
+ident(
+  def l "func_boundary.ml" 68 2605 2619 "func_boundary.ml" 108 4457 4471
+)
+"func_boundary.ml" 68 2605 2619 "func_boundary.ml" 68 2605 2624
+type(
+  int
+)
+ident(
+  def index "func_boundary.ml" 68 2605 2625 "func_boundary.ml" 108 4457 4471
+)
+"func_boundary.ml" 68 2605 2625 "func_boundary.ml" 68 2605 2642
+type(
+  Libbfd.address_t
+)
+ident(
+  def last_startaddress "func_boundary.ml" 69 2645 2649 "func_boundary.ml" 108 4457 4471
+)
+"func_boundary.ml" 69 2645 2655 "func_boundary.ml" 69 2645 2656
+type(
+  (Libbfd.address_t * int) list
+)
+ident(
+  int_ref l "func_boundary.ml" 68 2605 2617 "func_boundary.ml" 68 2605 2618
+)
+"func_boundary.ml" 71 2714 2721 "func_boundary.ml" 71 2714 2726
+type(
+  Libbfd.address_t
+)
+ident(
+  def addr1 "func_boundary.ml" 72 2773 2779 "func_boundary.ml" 76 2986 3038
+)
+"func_boundary.ml" 71 2714 2728 "func_boundary.ml" 71 2714 2732
+type(
+  int
+)
+"func_boundary.ml" 71 2714 2720 "func_boundary.ml" 71 2714 2733
+type(
+  Libbfd.address_t * int
+)
+"func_boundary.ml" 71 2714 2736 "func_boundary.ml" 71 2714 2741
+type(
+  Libbfd.address_t
+)
+ident(
+  def addr2 "func_boundary.ml" 72 2773 2779 "func_boundary.ml" 76 2986 3038
+)
+"func_boundary.ml" 71 2714 2743 "func_boundary.ml" 71 2714 2747
+type(
+  int
+)
+"func_boundary.ml" 71 2714 2735 "func_boundary.ml" 71 2714 2748
+type(
+  Libbfd.address_t * int
+)
+"func_boundary.ml" 71 2714 2751 "func_boundary.ml" 71 2714 2756
+type(
+  Libbfd.address_t
+)
+ident(
+  def addr3 "func_boundary.ml" 72 2773 2779 "func_boundary.ml" 76 2986 3038
+)
+"func_boundary.ml" 71 2714 2758 "func_boundary.ml" 71 2714 2762
+type(
+  int
+)
+"func_boundary.ml" 71 2714 2750 "func_boundary.ml" 71 2714 2763
+type(
+  Libbfd.address_t * int
+)
+"func_boundary.ml" 71 2714 2765 "func_boundary.ml" 71 2714 2769
+type(
+  (Libbfd.address_t * int) list
+)
+ident(
+  def rest "func_boundary.ml" 72 2773 2779 "func_boundary.ml" 76 2986 3038
+)
+"func_boundary.ml" 71 2714 2750 "func_boundary.ml" 71 2714 2769
+type(
+  (Libbfd.address_t * int) list
+)
+"func_boundary.ml" 71 2714 2735 "func_boundary.ml" 71 2714 2769
+type(
+  (Libbfd.address_t * int) list
+)
+"func_boundary.ml" 71 2714 2720 "func_boundary.ml" 71 2714 2769
+type(
+  (Libbfd.address_t * int) list
+)
+"func_boundary.ml" 72 2773 2783 "func_boundary.ml" 72 2773 2784
+type(
+  unit
+)
+"func_boundary.ml" 72 2773 2787 "func_boundary.ml" 72 2773 2794
+type(
+  (Libbfd.address_t -> unit, unit, string, unit) format4 ->
+  Libbfd.address_t -> unit
+)
+ident(
+  ext_ref D.dprintf
+)
+"func_boundary.ml" 72 2773 2795 "func_boundary.ml" 72 2773 2824
+type(
+  (Libbfd.address_t -> unit, unit, string, unit) format4
+)
+"func_boundary.ml" 72 2773 2825 "func_boundary.ml" 72 2773 2830
+type(
+  Libbfd.address_t
+)
+ident(
+  int_ref addr1 "func_boundary.ml" 71 2714 2721 "func_boundary.ml" 71 2714 2726
+)
+"func_boundary.ml" 72 2773 2787 "func_boundary.ml" 72 2773 2830
+call(
+  stack
+)
+type(
+  unit
+)
+"func_boundary.ml" 73 2834 2844 "func_boundary.ml" 73 2834 2852
+type(
+  Libbfd.address_t option
+)
+"func_boundary.ml" 73 2834 2855 "func_boundary.ml" 73 2834 2863
+type(
+  Asmir.asmprogram ->
+  (Libbfd.address_t * int) list ->
+  int -> int -> Libbfd.address_t -> Libbfd.address_t option
+)
+ident(
+  int_ref backward "func_boundary.ml" 44 1342 1350 "func_boundary.ml" 44 1342 1358
+)
+"func_boundary.ml" 73 2834 2864 "func_boundary.ml" 73 2834 2865
+type(
+  Asmir.asmprogram
+)
+ident(
+  int_ref p "func_boundary.ml" 64 2316 2336 "func_boundary.ml" 64 2316 2337
+)
+"func_boundary.ml" 73 2834 2866 "func_boundary.ml" 73 2834 2874
+type(
+  (Libbfd.address_t * int) list
+)
+ident(
+  int_ref bytelist "func_boundary.ml" 67 2535 2541 "func_boundary.ml" 67 2535 2549
+)
+"func_boundary.ml" 73 2834 2875 "func_boundary.ml" 73 2834 2876
+type(
+  int
+)
+"func_boundary.ml" 73 2834 2877 "func_boundary.ml" 73 2834 2882
+type(
+  int
+)
+ident(
+  int_ref index "func_boundary.ml" 68 2605 2619 "func_boundary.ml" 68 2605 2624
+)
+"func_boundary.ml" 73 2834 2883 "func_boundary.ml" 73 2834 2900
+type(
+  Libbfd.address_t
+)
+ident(
+  int_ref last_startaddress "func_boundary.ml" 68 2605 2625 "func_boundary.ml" 68 2605 2642
+)
+"func_boundary.ml" 73 2834 2855 "func_boundary.ml" 73 2834 2900
+call(
+  stack
+)
+type(
+  Libbfd.address_t option
+)
+"func_boundary.ml" 74 2904 2917 "func_boundary.ml" 74 2904 2925
+type(
+  Libbfd.address_t option
+)
+ident(
+  int_ref entrance "func_boundary.ml" 73 2834 2844 "func_boundary.ml" 73 2834 2852
+)
+"func_boundary.ml" 75 2931 2946 "func_boundary.ml" 75 2931 2950
+type(
+  Libbfd.address_t
+)
+ident(
+  def addr "func_boundary.ml" 75 2931 2954 "func_boundary.ml" 75 2931 2985
+)
+"func_boundary.ml" 75 2931 2941 "func_boundary.ml" 75 2931 2950
+type(
+  Libbfd.address_t option
+)
+"func_boundary.ml" 75 2931 2954 "func_boundary.ml" 75 2931 2958
+type(
+  Libbfd.address_t
+)
+ident(
+  int_ref addr "func_boundary.ml" 75 2931 2946 "func_boundary.ml" 75 2931 2950
+)
+"func_boundary.ml" 75 2931 2962 "func_boundary.ml" 75 2931 2963
+type(
+  (Libbfd.address_t * int) list ->
+  int -> Libbfd.address_t -> Libbfd.address_t list
+)
+ident(
+  int_ref f "func_boundary.ml" 68 2605 2615 "func_boundary.ml" 68 2605 2616
+)
+"func_boundary.ml" 75 2931 2964 "func_boundary.ml" 75 2931 2968
+type(
+  (Libbfd.address_t * int) list
+)
+ident(
+  int_ref rest "func_boundary.ml" 71 2714 2765 "func_boundary.ml" 71 2714 2769
+)
+"func_boundary.ml" 75 2931 2970 "func_boundary.ml" 75 2931 2975
+type(
+  int
+)
+ident(
+  int_ref index "func_boundary.ml" 68 2605 2619 "func_boundary.ml" 68 2605 2624
+)
+"func_boundary.ml" 75 2931 2976 "func_boundary.ml" 75 2931 2977
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( + )
+)
+"func_boundary.ml" 75 2931 2978 "func_boundary.ml" 75 2931 2979
+type(
+  int
+)
+"func_boundary.ml" 75 2931 2969 "func_boundary.ml" 75 2931 2980
+type(
+  int
+)
+"func_boundary.ml" 75 2931 2981 "func_boundary.ml" 75 2931 2985
+type(
+  Libbfd.address_t
+)
+ident(
+  int_ref addr "func_boundary.ml" 75 2931 2946 "func_boundary.ml" 75 2931 2950
+)
+"func_boundary.ml" 75 2931 2962 "func_boundary.ml" 75 2931 2985
+call(
+  stack
+)
+type(
+  Libbfd.address_t list
+)
+"func_boundary.ml" 75 2931 2954 "func_boundary.ml" 75 2931 2985
+type(
+  Libbfd.address_t list
+)
+"func_boundary.ml" 76 2986 2996 "func_boundary.ml" 76 2986 2997
+type(
+  Libbfd.address_t option
+)
+"func_boundary.ml" 76 2986 3001 "func_boundary.ml" 76 2986 3002
+type(
+  (Libbfd.address_t * int) list ->
+  int -> Libbfd.address_t -> Libbfd.address_t list
+)
+ident(
+  int_ref f "func_boundary.ml" 68 2605 2615 "func_boundary.ml" 68 2605 2616
+)
+"func_boundary.ml" 76 2986 3003 "func_boundary.ml" 76 2986 3007
+type(
+  (Libbfd.address_t * int) list
+)
+ident(
+  int_ref rest "func_boundary.ml" 71 2714 2765 "func_boundary.ml" 71 2714 2769
+)
+"func_boundary.ml" 76 2986 3009 "func_boundary.ml" 76 2986 3014
+type(
+  int
+)
+ident(
+  int_ref index "func_boundary.ml" 68 2605 2619 "func_boundary.ml" 68 2605 2624
+)
+"func_boundary.ml" 76 2986 3015 "func_boundary.ml" 76 2986 3016
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( + )
+)
+"func_boundary.ml" 76 2986 3017 "func_boundary.ml" 76 2986 3018
+type(
+  int
+)
+"func_boundary.ml" 76 2986 3008 "func_boundary.ml" 76 2986 3019
+type(
+  int
+)
+"func_boundary.ml" 76 2986 3020 "func_boundary.ml" 76 2986 3037
+type(
+  Libbfd.address_t
+)
+ident(
+  int_ref last_startaddress "func_boundary.ml" 68 2605 2625 "func_boundary.ml" 68 2605 2642
+)
+"func_boundary.ml" 76 2986 3001 "func_boundary.ml" 76 2986 3037
+call(
+  tail
+)
+type(
+  Libbfd.address_t list
+)
+"func_boundary.ml" 74 2904 2910 "func_boundary.ml" 76 2986 3038
+type(
+  Libbfd.address_t list
+)
+"func_boundary.ml" 73 2834 2840 "func_boundary.ml" 76 2986 3038
+type(
+  Libbfd.address_t list
+)
+"func_boundary.ml" 72 2773 2779 "func_boundary.ml" 76 2986 3038
+type(
+  Libbfd.address_t list
+)
+"func_boundary.ml" 79 3103 3110 "func_boundary.ml" 79 3103 3115
+type(
+  Libbfd.address_t
+)
+ident(
+  def addr1 "func_boundary.ml" 81 3196 3203 "func_boundary.ml" 85 3414 3467
+)
+"func_boundary.ml" 79 3103 3117 "func_boundary.ml" 79 3103 3121
+type(
+  int
+)
+"func_boundary.ml" 79 3103 3109 "func_boundary.ml" 79 3103 3122
+type(
+  Libbfd.address_t * int
+)
+"func_boundary.ml" 79 3103 3127 "func_boundary.ml" 79 3103 3132
+type(
+  Libbfd.address_t
+)
+ident(
+  def addr2 "func_boundary.ml" 81 3196 3203 "func_boundary.ml" 85 3414 3467
+)
+"func_boundary.ml" 79 3103 3134 "func_boundary.ml" 79 3103 3138
+type(
+  int
+)
+"func_boundary.ml" 79 3103 3126 "func_boundary.ml" 79 3103 3139
+type(
+  Libbfd.address_t * int
+)
+"func_boundary.ml" 79 3103 3143 "func_boundary.ml" 79 3103 3147
+type(
+  (Libbfd.address_t * int) list
+)
+ident(
+  def rest "func_boundary.ml" 81 3196 3203 "func_boundary.ml" 85 3414 3467
+)
+"func_boundary.ml" 79 3103 3126 "func_boundary.ml" 79 3103 3147
+type(
+  (Libbfd.address_t * int) list
+)
+"func_boundary.ml" 79 3103 3109 "func_boundary.ml" 79 3103 3147
+type(
+  (Libbfd.address_t * int) list
+)
+"func_boundary.ml" 80 3148 3155 "func_boundary.ml" 80 3148 3160
+type(
+  Libbfd.address_t
+)
+ident(
+  def addr1 "func_boundary.ml" 81 3196 3203 "func_boundary.ml" 85 3414 3467
+)
+"func_boundary.ml" 80 3148 3162 "func_boundary.ml" 80 3148 3166
+type(
+  int
+)
+"func_boundary.ml" 80 3148 3154 "func_boundary.ml" 80 3148 3167
+type(
+  Libbfd.address_t * int
+)
+"func_boundary.ml" 80 3148 3172 "func_boundary.ml" 80 3148 3177
+type(
+  Libbfd.address_t
+)
+ident(
+  def addr2 "func_boundary.ml" 81 3196 3203 "func_boundary.ml" 85 3414 3467
+)
+"func_boundary.ml" 80 3148 3179 "func_boundary.ml" 80 3148 3183
+type(
+  int
+)
+"func_boundary.ml" 80 3148 3171 "func_boundary.ml" 80 3148 3184
+type(
+  Libbfd.address_t * int
+)
+"func_boundary.ml" 80 3148 3188 "func_boundary.ml" 80 3148 3192
+type(
+  (Libbfd.address_t * int) list
+)
+ident(
+  def rest "func_boundary.ml" 81 3196 3203 "func_boundary.ml" 85 3414 3467
+)
+"func_boundary.ml" 80 3148 3171 "func_boundary.ml" 80 3148 3192
+type(
+  (Libbfd.address_t * int) list
+)
+"func_boundary.ml" 80 3148 3154 "func_boundary.ml" 80 3148 3192
+type(
+  (Libbfd.address_t * int) list
+)
+"func_boundary.ml" 79 3103 3109 "func_boundary.ml" 80 3148 3192
+type(
+  (Libbfd.address_t * int) list
+)
+"func_boundary.ml" 81 3196 3207 "func_boundary.ml" 81 3196 3208
+type(
+  unit
+)
+"func_boundary.ml" 81 3196 3211 "func_boundary.ml" 81 3196 3218
+type(
+  (Libbfd.address_t -> unit, unit, string, unit) format4 ->
+  Libbfd.address_t -> unit
+)
+ident(
+  ext_ref D.dprintf
+)
+"func_boundary.ml" 81 3196 3219 "func_boundary.ml" 81 3196 3247
+type(
+  (Libbfd.address_t -> unit, unit, string, unit) format4
+)
+"func_boundary.ml" 81 3196 3248 "func_boundary.ml" 81 3196 3253
+type(
+  Libbfd.address_t
+)
+ident(
+  int_ref addr1 "func_boundary.ml" 79 3103 3110 "func_boundary.ml" 79 3103 3115
+)
+"func_boundary.ml" 81 3196 3211 "func_boundary.ml" 81 3196 3253
+call(
+  stack
+)
+type(
+  unit
+)
+"func_boundary.ml" 82 3257 3268 "func_boundary.ml" 82 3257 3276
+type(
+  Libbfd.address_t option
+)
+"func_boundary.ml" 82 3257 3279 "func_boundary.ml" 82 3257 3287
+type(
+  Asmir.asmprogram ->
+  (Libbfd.address_t * int) list ->
+  int -> int -> Libbfd.address_t -> Libbfd.address_t option
+)
+ident(
+  int_ref backward "func_boundary.ml" 44 1342 1350 "func_boundary.ml" 44 1342 1358
+)
+"func_boundary.ml" 82 3257 3288 "func_boundary.ml" 82 3257 3289
+type(
+  Asmir.asmprogram
+)
+ident(
+  int_ref p "func_boundary.ml" 64 2316 2336 "func_boundary.ml" 64 2316 2337
+)
+"func_boundary.ml" 82 3257 3290 "func_boundary.ml" 82 3257 3298
+type(
+  (Libbfd.address_t * int) list
+)
+ident(
+  int_ref bytelist "func_boundary.ml" 67 2535 2541 "func_boundary.ml" 67 2535 2549
+)
+"func_boundary.ml" 82 3257 3299 "func_boundary.ml" 82 3257 3300
+type(
+  int
+)
+"func_boundary.ml" 82 3257 3301 "func_boundary.ml" 82 3257 3306
+type(
+  int
+)
+ident(
+  int_ref index "func_boundary.ml" 68 2605 2619 "func_boundary.ml" 68 2605 2624
+)
+"func_boundary.ml" 82 3257 3307 "func_boundary.ml" 82 3257 3324
+type(
+  Libbfd.address_t
+)
+ident(
+  int_ref last_startaddress "func_boundary.ml" 68 2605 2625 "func_boundary.ml" 68 2605 2642
+)
+"func_boundary.ml" 82 3257 3279 "func_boundary.ml" 82 3257 3324
+call(
+  stack
+)
+type(
+  Libbfd.address_t option
+)
+"func_boundary.ml" 83 3329 3343 "func_boundary.ml" 83 3329 3351
+type(
+  Libbfd.address_t option
+)
+ident(
+  int_ref entrance "func_boundary.ml" 82 3257 3268 "func_boundary.ml" 82 3257 3276
+)
+"func_boundary.ml" 84 3357 3373 "func_boundary.ml" 84 3357 3377
+type(
+  Libbfd.address_t
+)
+ident(
+  def addr "func_boundary.ml" 84 3357 3381 "func_boundary.ml" 84 3357 3412
+)
+"func_boundary.ml" 84 3357 3368 "func_boundary.ml" 84 3357 3377
+type(
+  Libbfd.address_t option
+)
+"func_boundary.ml" 84 3357 3381 "func_boundary.ml" 84 3357 3385
+type(
+  Libbfd.address_t
+)
+ident(
+  int_ref addr "func_boundary.ml" 84 3357 3373 "func_boundary.ml" 84 3357 3377
+)
+"func_boundary.ml" 84 3357 3389 "func_boundary.ml" 84 3357 3390
+type(
+  (Libbfd.address_t * int) list ->
+  int -> Libbfd.address_t -> Libbfd.address_t list
+)
+ident(
+  int_ref f "func_boundary.ml" 68 2605 2615 "func_boundary.ml" 68 2605 2616
+)
+"func_boundary.ml" 84 3357 3391 "func_boundary.ml" 84 3357 3395
+type(
+  (Libbfd.address_t * int) list
+)
+ident(
+  int_ref rest "func_boundary.ml" 79 3103 3143 "func_boundary.ml" 79 3103 3147
+)
+"func_boundary.ml" 84 3357 3397 "func_boundary.ml" 84 3357 3402
+type(
+  int
+)
+ident(
+  int_ref index "func_boundary.ml" 68 2605 2619 "func_boundary.ml" 68 2605 2624
+)
+"func_boundary.ml" 84 3357 3403 "func_boundary.ml" 84 3357 3404
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( + )
+)
+"func_boundary.ml" 84 3357 3405 "func_boundary.ml" 84 3357 3406
+type(
+  int
+)
+"func_boundary.ml" 84 3357 3396 "func_boundary.ml" 84 3357 3407
+type(
+  int
+)
+"func_boundary.ml" 84 3357 3408 "func_boundary.ml" 84 3357 3412
+type(
+  Libbfd.address_t
+)
+ident(
+  int_ref addr "func_boundary.ml" 84 3357 3373 "func_boundary.ml" 84 3357 3377
+)
+"func_boundary.ml" 84 3357 3389 "func_boundary.ml" 84 3357 3412
+call(
+  stack
+)
+type(
+  Libbfd.address_t list
+)
+"func_boundary.ml" 84 3357 3381 "func_boundary.ml" 84 3357 3412
+type(
+  Libbfd.address_t list
+)
+"func_boundary.ml" 85 3414 3425 "func_boundary.ml" 85 3414 3426
+type(
+  Libbfd.address_t option
+)
+"func_boundary.ml" 85 3414 3430 "func_boundary.ml" 85 3414 3431
+type(
+  (Libbfd.address_t * int) list ->
+  int -> Libbfd.address_t -> Libbfd.address_t list
+)
+ident(
+  int_ref f "func_boundary.ml" 68 2605 2615 "func_boundary.ml" 68 2605 2616
+)
+"func_boundary.ml" 85 3414 3432 "func_boundary.ml" 85 3414 3436
+type(
+  (Libbfd.address_t * int) list
+)
+ident(
+  int_ref rest "func_boundary.ml" 79 3103 3143 "func_boundary.ml" 79 3103 3147
+)
+"func_boundary.ml" 85 3414 3438 "func_boundary.ml" 85 3414 3443
+type(
+  int
+)
+ident(
+  int_ref index "func_boundary.ml" 68 2605 2619 "func_boundary.ml" 68 2605 2624
+)
+"func_boundary.ml" 85 3414 3444 "func_boundary.ml" 85 3414 3445
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( + )
+)
+"func_boundary.ml" 85 3414 3446 "func_boundary.ml" 85 3414 3447
+type(
+  int
+)
+"func_boundary.ml" 85 3414 3437 "func_boundary.ml" 85 3414 3448
+type(
+  int
+)
+"func_boundary.ml" 85 3414 3449 "func_boundary.ml" 85 3414 3466
+type(
+  Libbfd.address_t
+)
+ident(
+  int_ref last_startaddress "func_boundary.ml" 68 2605 2625 "func_boundary.ml" 68 2605 2642
+)
+"func_boundary.ml" 85 3414 3430 "func_boundary.ml" 85 3414 3466
+call(
+  tail
+)
+type(
+  Libbfd.address_t list
+)
+"func_boundary.ml" 83 3329 3336 "func_boundary.ml" 85 3414 3467
+type(
+  Libbfd.address_t list
+)
+"func_boundary.ml" 82 3257 3264 "func_boundary.ml" 85 3414 3467
+type(
+  Libbfd.address_t list
+)
+"func_boundary.ml" 81 3196 3203 "func_boundary.ml" 85 3414 3467
+type(
+  Libbfd.address_t list
+)
+"func_boundary.ml" 88 3525 3532 "func_boundary.ml" 88 3525 3537
+type(
+  Libbfd.address_t
+)
+ident(
+  def addr1 "func_boundary.ml" 89 3569 3575 "func_boundary.ml" 89 3569 3608
+)
+"func_boundary.ml" 88 3525 3539 "func_boundary.ml" 88 3525 3543
+type(
+  int
+)
+"func_boundary.ml" 88 3525 3531 "func_boundary.ml" 88 3525 3544
+type(
+  Libbfd.address_t * int
+)
+"func_boundary.ml" 88 3525 3547 "func_boundary.ml" 88 3525 3552
+type(
+  Libbfd.address_t
+)
+ident(
+  def addr2 "func_boundary.ml" 89 3569 3575 "func_boundary.ml" 89 3569 3608
+)
+"func_boundary.ml" 88 3525 3554 "func_boundary.ml" 88 3525 3558
+type(
+  int
+)
+"func_boundary.ml" 88 3525 3546 "func_boundary.ml" 88 3525 3559
+type(
+  Libbfd.address_t * int
+)
+"func_boundary.ml" 88 3525 3561 "func_boundary.ml" 88 3525 3565
+type(
+  (Libbfd.address_t * int) list
+)
+ident(
+  def rest "func_boundary.ml" 89 3569 3575 "func_boundary.ml" 89 3569 3608
+)
+"func_boundary.ml" 88 3525 3546 "func_boundary.ml" 88 3525 3565
+type(
+  (Libbfd.address_t * int) list
+)
+"func_boundary.ml" 88 3525 3531 "func_boundary.ml" 88 3525 3565
+type(
+  (Libbfd.address_t * int) list
+)
+"func_boundary.ml" 89 3569 3575 "func_boundary.ml" 89 3569 3580
+type(
+  Libbfd.address_t
+)
+ident(
+  int_ref addr1 "func_boundary.ml" 88 3525 3532 "func_boundary.ml" 88 3525 3537
+)
+"func_boundary.ml" 89 3569 3584 "func_boundary.ml" 89 3569 3585
+type(
+  (Libbfd.address_t * int) list ->
+  int -> Libbfd.address_t -> Libbfd.address_t list
+)
+ident(
+  int_ref f "func_boundary.ml" 68 2605 2615 "func_boundary.ml" 68 2605 2616
+)
+"func_boundary.ml" 89 3569 3586 "func_boundary.ml" 89 3569 3590
+type(
+  (Libbfd.address_t * int) list
+)
+ident(
+  int_ref rest "func_boundary.ml" 88 3525 3561 "func_boundary.ml" 88 3525 3565
+)
+"func_boundary.ml" 89 3569 3592 "func_boundary.ml" 89 3569 3597
+type(
+  int
+)
+ident(
+  int_ref index "func_boundary.ml" 68 2605 2619 "func_boundary.ml" 68 2605 2624
+)
+"func_boundary.ml" 89 3569 3598 "func_boundary.ml" 89 3569 3599
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( + )
+)
+"func_boundary.ml" 89 3569 3600 "func_boundary.ml" 89 3569 3601
+type(
+  int
+)
+"func_boundary.ml" 89 3569 3591 "func_boundary.ml" 89 3569 3602
+type(
+  int
+)
+"func_boundary.ml" 89 3569 3603 "func_boundary.ml" 89 3569 3608
+type(
+  Libbfd.address_t
+)
+ident(
+  int_ref addr1 "func_boundary.ml" 88 3525 3532 "func_boundary.ml" 88 3525 3537
+)
+"func_boundary.ml" 89 3569 3584 "func_boundary.ml" 89 3569 3608
+call(
+  stack
+)
+type(
+  Libbfd.address_t list
+)
+"func_boundary.ml" 89 3569 3575 "func_boundary.ml" 89 3569 3608
+type(
+  Libbfd.address_t list
+)
+"func_boundary.ml" 92 3691 3698 "func_boundary.ml" 92 3691 3703
+type(
+  Libbfd.address_t
+)
+ident(
+  def addr1 "func_boundary.ml" 93 3756 3762 "func_boundary.ml" 93 3756 3795
+)
+"func_boundary.ml" 92 3691 3705 "func_boundary.ml" 92 3691 3709
+type(
+  int
+)
+"func_boundary.ml" 92 3691 3697 "func_boundary.ml" 92 3691 3710
+type(
+  Libbfd.address_t * int
+)
+"func_boundary.ml" 92 3691 3715 "func_boundary.ml" 92 3691 3720
+type(
+  Libbfd.address_t
+)
+ident(
+  def addr2 "func_boundary.ml" 93 3756 3762 "func_boundary.ml" 93 3756 3795
+)
+"func_boundary.ml" 92 3691 3722 "func_boundary.ml" 92 3691 3726
+type(
+  int
+)
+"func_boundary.ml" 92 3691 3714 "func_boundary.ml" 92 3691 3727
+type(
+  Libbfd.address_t * int
+)
+"func_boundary.ml" 92 3691 3732 "func_boundary.ml" 92 3691 3737
+type(
+  Libbfd.address_t
+)
+ident(
+  def addr3 "func_boundary.ml" 93 3756 3762 "func_boundary.ml" 93 3756 3795
+)
+"func_boundary.ml" 92 3691 3739 "func_boundary.ml" 92 3691 3743
+type(
+  int
+)
+"func_boundary.ml" 92 3691 3731 "func_boundary.ml" 92 3691 3744
+type(
+  Libbfd.address_t * int
+)
+"func_boundary.ml" 92 3691 3748 "func_boundary.ml" 92 3691 3752
+type(
+  (Libbfd.address_t * int) list
+)
+ident(
+  def rest "func_boundary.ml" 93 3756 3762 "func_boundary.ml" 93 3756 3795
+)
+"func_boundary.ml" 92 3691 3731 "func_boundary.ml" 92 3691 3752
+type(
+  (Libbfd.address_t * int) list
+)
+"func_boundary.ml" 92 3691 3714 "func_boundary.ml" 92 3691 3752
+type(
+  (Libbfd.address_t * int) list
+)
+"func_boundary.ml" 92 3691 3697 "func_boundary.ml" 92 3691 3752
+type(
+  (Libbfd.address_t * int) list
+)
+"func_boundary.ml" 93 3756 3762 "func_boundary.ml" 93 3756 3767
+type(
+  Libbfd.address_t
+)
+ident(
+  int_ref addr1 "func_boundary.ml" 92 3691 3698 "func_boundary.ml" 92 3691 3703
+)
+"func_boundary.ml" 93 3756 3771 "func_boundary.ml" 93 3756 3772
+type(
+  (Libbfd.address_t * int) list ->
+  int -> Libbfd.address_t -> Libbfd.address_t list
+)
+ident(
+  int_ref f "func_boundary.ml" 68 2605 2615 "func_boundary.ml" 68 2605 2616
+)
+"func_boundary.ml" 93 3756 3773 "func_boundary.ml" 93 3756 3777
+type(
+  (Libbfd.address_t * int) list
+)
+ident(
+  int_ref rest "func_boundary.ml" 92 3691 3748 "func_boundary.ml" 92 3691 3752
+)
+"func_boundary.ml" 93 3756 3779 "func_boundary.ml" 93 3756 3784
+type(
+  int
+)
+ident(
+  int_ref index "func_boundary.ml" 68 2605 2619 "func_boundary.ml" 68 2605 2624
+)
+"func_boundary.ml" 93 3756 3785 "func_boundary.ml" 93 3756 3786
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( + )
+)
+"func_boundary.ml" 93 3756 3787 "func_boundary.ml" 93 3756 3788
+type(
+  int
+)
+"func_boundary.ml" 93 3756 3778 "func_boundary.ml" 93 3756 3789
+type(
+  int
+)
+"func_boundary.ml" 93 3756 3790 "func_boundary.ml" 93 3756 3795
+type(
+  Libbfd.address_t
+)
+ident(
+  int_ref addr1 "func_boundary.ml" 92 3691 3698 "func_boundary.ml" 92 3691 3703
+)
+"func_boundary.ml" 93 3756 3771 "func_boundary.ml" 93 3756 3795
+call(
+  stack
+)
+type(
+  Libbfd.address_t list
+)
+"func_boundary.ml" 93 3756 3762 "func_boundary.ml" 93 3756 3795
+type(
+  Libbfd.address_t list
+)
+"func_boundary.ml" 96 3859 3866 "func_boundary.ml" 96 3859 3871
+type(
+  Libbfd.address_t
+)
+ident(
+  def addr1 "func_boundary.ml" 97 3907 3913 "func_boundary.ml" 97 3907 3946
+)
+"func_boundary.ml" 96 3859 3873 "func_boundary.ml" 96 3859 3877
+type(
+  int
+)
+"func_boundary.ml" 96 3859 3865 "func_boundary.ml" 96 3859 3878
+type(
+  Libbfd.address_t * int
+)
+"func_boundary.ml" 96 3859 3883 "func_boundary.ml" 96 3859 3888
+type(
+  Libbfd.address_t
+)
+ident(
+  def addr2 "func_boundary.ml" 97 3907 3913 "func_boundary.ml" 97 3907 3946
+)
+"func_boundary.ml" 96 3859 3890 "func_boundary.ml" 96 3859 3894
+type(
+  int
+)
+"func_boundary.ml" 96 3859 3882 "func_boundary.ml" 96 3859 3895
+type(
+  Libbfd.address_t * int
+)
+"func_boundary.ml" 96 3859 3899 "func_boundary.ml" 96 3859 3903
+type(
+  (Libbfd.address_t * int) list
+)
+ident(
+  def rest "func_boundary.ml" 97 3907 3913 "func_boundary.ml" 97 3907 3946
+)
+"func_boundary.ml" 96 3859 3882 "func_boundary.ml" 96 3859 3903
+type(
+  (Libbfd.address_t * int) list
+)
+"func_boundary.ml" 96 3859 3865 "func_boundary.ml" 96 3859 3903
+type(
+  (Libbfd.address_t * int) list
+)
+"func_boundary.ml" 97 3907 3913 "func_boundary.ml" 97 3907 3918
+type(
+  Libbfd.address_t
+)
+ident(
+  int_ref addr1 "func_boundary.ml" 96 3859 3866 "func_boundary.ml" 96 3859 3871
+)
+"func_boundary.ml" 97 3907 3922 "func_boundary.ml" 97 3907 3923
+type(
+  (Libbfd.address_t * int) list ->
+  int -> Libbfd.address_t -> Libbfd.address_t list
+)
+ident(
+  int_ref f "func_boundary.ml" 68 2605 2615 "func_boundary.ml" 68 2605 2616
+)
+"func_boundary.ml" 97 3907 3924 "func_boundary.ml" 97 3907 3928
+type(
+  (Libbfd.address_t * int) list
+)
+ident(
+  int_ref rest "func_boundary.ml" 96 3859 3899 "func_boundary.ml" 96 3859 3903
+)
+"func_boundary.ml" 97 3907 3930 "func_boundary.ml" 97 3907 3935
+type(
+  int
+)
+ident(
+  int_ref index "func_boundary.ml" 68 2605 2619 "func_boundary.ml" 68 2605 2624
+)
+"func_boundary.ml" 97 3907 3936 "func_boundary.ml" 97 3907 3937
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( + )
+)
+"func_boundary.ml" 97 3907 3938 "func_boundary.ml" 97 3907 3939
+type(
+  int
+)
+"func_boundary.ml" 97 3907 3929 "func_boundary.ml" 97 3907 3940
+type(
+  int
+)
+"func_boundary.ml" 97 3907 3941 "func_boundary.ml" 97 3907 3946
+type(
+  Libbfd.address_t
+)
+ident(
+  int_ref addr1 "func_boundary.ml" 96 3859 3866 "func_boundary.ml" 96 3859 3871
+)
+"func_boundary.ml" 97 3907 3922 "func_boundary.ml" 97 3907 3946
+call(
+  stack
+)
+type(
+  Libbfd.address_t list
+)
+"func_boundary.ml" 97 3907 3913 "func_boundary.ml" 97 3907 3946
+type(
+  Libbfd.address_t list
+)
+"func_boundary.ml" 100 4029 4036 "func_boundary.ml" 100 4029 4041
+type(
+  Libbfd.address_t
+)
+ident(
+  def addr1 "func_boundary.ml" 101 4111 4117 "func_boundary.ml" 101 4111 4150
+)
+"func_boundary.ml" 100 4029 4043 "func_boundary.ml" 100 4029 4047
+type(
+  int
+)
+"func_boundary.ml" 100 4029 4035 "func_boundary.ml" 100 4029 4048
+type(
+  Libbfd.address_t * int
+)
+"func_boundary.ml" 100 4029 4053 "func_boundary.ml" 100 4029 4058
+type(
+  Libbfd.address_t
+)
+ident(
+  def addr2 "func_boundary.ml" 101 4111 4117 "func_boundary.ml" 101 4111 4150
+)
+"func_boundary.ml" 100 4029 4060 "func_boundary.ml" 100 4029 4064
+type(
+  int
+)
+"func_boundary.ml" 100 4029 4052 "func_boundary.ml" 100 4029 4065
+type(
+  Libbfd.address_t * int
+)
+"func_boundary.ml" 100 4029 4070 "func_boundary.ml" 100 4029 4075
+type(
+  Libbfd.address_t
+)
+ident(
+  def addr3 "func_boundary.ml" 101 4111 4117 "func_boundary.ml" 101 4111 4150
+)
+"func_boundary.ml" 100 4029 4077 "func_boundary.ml" 100 4029 4081
+type(
+  int
+)
+"func_boundary.ml" 100 4029 4069 "func_boundary.ml" 100 4029 4082
+type(
+  Libbfd.address_t * int
+)
+"func_boundary.ml" 100 4029 4087 "func_boundary.ml" 100 4029 4092
+type(
+  Libbfd.address_t
+)
+ident(
+  def addr4 "func_boundary.ml" 101 4111 4117 "func_boundary.ml" 101 4111 4150
+)
+"func_boundary.ml" 100 4029 4094 "func_boundary.ml" 100 4029 4098
+type(
+  int
+)
+"func_boundary.ml" 100 4029 4086 "func_boundary.ml" 100 4029 4099
+type(
+  Libbfd.address_t * int
+)
+"func_boundary.ml" 100 4029 4103 "func_boundary.ml" 100 4029 4107
+type(
+  (Libbfd.address_t * int) list
+)
+ident(
+  def rest "func_boundary.ml" 101 4111 4117 "func_boundary.ml" 101 4111 4150
+)
+"func_boundary.ml" 100 4029 4086 "func_boundary.ml" 100 4029 4107
+type(
+  (Libbfd.address_t * int) list
+)
+"func_boundary.ml" 100 4029 4069 "func_boundary.ml" 100 4029 4107
+type(
+  (Libbfd.address_t * int) list
+)
+"func_boundary.ml" 100 4029 4052 "func_boundary.ml" 100 4029 4107
+type(
+  (Libbfd.address_t * int) list
+)
+"func_boundary.ml" 100 4029 4035 "func_boundary.ml" 100 4029 4107
+type(
+  (Libbfd.address_t * int) list
+)
+"func_boundary.ml" 101 4111 4117 "func_boundary.ml" 101 4111 4122
+type(
+  Libbfd.address_t
+)
+ident(
+  int_ref addr1 "func_boundary.ml" 100 4029 4036 "func_boundary.ml" 100 4029 4041
+)
+"func_boundary.ml" 101 4111 4126 "func_boundary.ml" 101 4111 4127
+type(
+  (Libbfd.address_t * int) list ->
+  int -> Libbfd.address_t -> Libbfd.address_t list
+)
+ident(
+  int_ref f "func_boundary.ml" 68 2605 2615 "func_boundary.ml" 68 2605 2616
+)
+"func_boundary.ml" 101 4111 4128 "func_boundary.ml" 101 4111 4132
+type(
+  (Libbfd.address_t * int) list
+)
+ident(
+  int_ref rest "func_boundary.ml" 100 4029 4103 "func_boundary.ml" 100 4029 4107
+)
+"func_boundary.ml" 101 4111 4134 "func_boundary.ml" 101 4111 4139
+type(
+  int
+)
+ident(
+  int_ref index "func_boundary.ml" 68 2605 2619 "func_boundary.ml" 68 2605 2624
+)
+"func_boundary.ml" 101 4111 4140 "func_boundary.ml" 101 4111 4141
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( + )
+)
+"func_boundary.ml" 101 4111 4142 "func_boundary.ml" 101 4111 4143
+type(
+  int
+)
+"func_boundary.ml" 101 4111 4133 "func_boundary.ml" 101 4111 4144
+type(
+  int
+)
+"func_boundary.ml" 101 4111 4145 "func_boundary.ml" 101 4111 4150
+type(
+  Libbfd.address_t
+)
+ident(
+  int_ref addr1 "func_boundary.ml" 100 4029 4036 "func_boundary.ml" 100 4029 4041
+)
+"func_boundary.ml" 101 4111 4126 "func_boundary.ml" 101 4111 4150
+call(
+  stack
+)
+type(
+  Libbfd.address_t list
+)
+"func_boundary.ml" 101 4111 4117 "func_boundary.ml" 101 4111 4150
+type(
+  Libbfd.address_t list
+)
+"func_boundary.ml" 104 4239 4246 "func_boundary.ml" 104 4239 4251
+type(
+  Libbfd.address_t
+)
+ident(
+  def addr1 "func_boundary.ml" 105 4355 4361 "func_boundary.ml" 105 4355 4394
+)
+"func_boundary.ml" 104 4239 4253 "func_boundary.ml" 104 4239 4257
+type(
+  int
+)
+"func_boundary.ml" 104 4239 4245 "func_boundary.ml" 104 4239 4258
+type(
+  Libbfd.address_t * int
+)
+"func_boundary.ml" 104 4239 4263 "func_boundary.ml" 104 4239 4268
+type(
+  Libbfd.address_t
+)
+ident(
+  def addr2 "func_boundary.ml" 105 4355 4361 "func_boundary.ml" 105 4355 4394
+)
+"func_boundary.ml" 104 4239 4270 "func_boundary.ml" 104 4239 4274
+type(
+  int
+)
+"func_boundary.ml" 104 4239 4262 "func_boundary.ml" 104 4239 4275
+type(
+  Libbfd.address_t * int
+)
+"func_boundary.ml" 104 4239 4280 "func_boundary.ml" 104 4239 4285
+type(
+  Libbfd.address_t
+)
+ident(
+  def addr3 "func_boundary.ml" 105 4355 4361 "func_boundary.ml" 105 4355 4394
+)
+"func_boundary.ml" 104 4239 4287 "func_boundary.ml" 104 4239 4291
+type(
+  int
+)
+"func_boundary.ml" 104 4239 4279 "func_boundary.ml" 104 4239 4292
+type(
+  Libbfd.address_t * int
+)
+"func_boundary.ml" 104 4239 4297 "func_boundary.ml" 104 4239 4302
+type(
+  Libbfd.address_t
+)
+ident(
+  def addr4 "func_boundary.ml" 105 4355 4361 "func_boundary.ml" 105 4355 4394
+)
+"func_boundary.ml" 104 4239 4304 "func_boundary.ml" 104 4239 4308
+type(
+  int
+)
+"func_boundary.ml" 104 4239 4296 "func_boundary.ml" 104 4239 4309
+type(
+  Libbfd.address_t * int
+)
+"func_boundary.ml" 104 4239 4314 "func_boundary.ml" 104 4239 4319
+type(
+  Libbfd.address_t
+)
+ident(
+  def addr5 "func_boundary.ml" 105 4355 4361 "func_boundary.ml" 105 4355 4394
+)
+"func_boundary.ml" 104 4239 4321 "func_boundary.ml" 104 4239 4325
+type(
+  int
+)
+"func_boundary.ml" 104 4239 4313 "func_boundary.ml" 104 4239 4326
+type(
+  Libbfd.address_t * int
+)
+"func_boundary.ml" 104 4239 4331 "func_boundary.ml" 104 4239 4336
+type(
+  Libbfd.address_t
+)
+ident(
+  def addr6 "func_boundary.ml" 105 4355 4361 "func_boundary.ml" 105 4355 4394
+)
+"func_boundary.ml" 104 4239 4338 "func_boundary.ml" 104 4239 4342
+type(
+  int
+)
+"func_boundary.ml" 104 4239 4330 "func_boundary.ml" 104 4239 4343
+type(
+  Libbfd.address_t * int
+)
+"func_boundary.ml" 104 4239 4347 "func_boundary.ml" 104 4239 4351
+type(
+  (Libbfd.address_t * int) list
+)
+ident(
+  def rest "func_boundary.ml" 105 4355 4361 "func_boundary.ml" 105 4355 4394
+)
+"func_boundary.ml" 104 4239 4330 "func_boundary.ml" 104 4239 4351
+type(
+  (Libbfd.address_t * int) list
+)
+"func_boundary.ml" 104 4239 4313 "func_boundary.ml" 104 4239 4351
+type(
+  (Libbfd.address_t * int) list
+)
+"func_boundary.ml" 104 4239 4296 "func_boundary.ml" 104 4239 4351
+type(
+  (Libbfd.address_t * int) list
+)
+"func_boundary.ml" 104 4239 4279 "func_boundary.ml" 104 4239 4351
+type(
+  (Libbfd.address_t * int) list
+)
+"func_boundary.ml" 104 4239 4262 "func_boundary.ml" 104 4239 4351
+type(
+  (Libbfd.address_t * int) list
+)
+"func_boundary.ml" 104 4239 4245 "func_boundary.ml" 104 4239 4351
+type(
+  (Libbfd.address_t * int) list
+)
+"func_boundary.ml" 105 4355 4361 "func_boundary.ml" 105 4355 4366
+type(
+  Libbfd.address_t
+)
+ident(
+  int_ref addr1 "func_boundary.ml" 104 4239 4246 "func_boundary.ml" 104 4239 4251
+)
+"func_boundary.ml" 105 4355 4370 "func_boundary.ml" 105 4355 4371
+type(
+  (Libbfd.address_t * int) list ->
+  int -> Libbfd.address_t -> Libbfd.address_t list
+)
+ident(
+  int_ref f "func_boundary.ml" 68 2605 2615 "func_boundary.ml" 68 2605 2616
+)
+"func_boundary.ml" 105 4355 4372 "func_boundary.ml" 105 4355 4376
+type(
+  (Libbfd.address_t * int) list
+)
+ident(
+  int_ref rest "func_boundary.ml" 104 4239 4347 "func_boundary.ml" 104 4239 4351
+)
+"func_boundary.ml" 105 4355 4378 "func_boundary.ml" 105 4355 4383
+type(
+  int
+)
+ident(
+  int_ref index "func_boundary.ml" 68 2605 2619 "func_boundary.ml" 68 2605 2624
+)
+"func_boundary.ml" 105 4355 4384 "func_boundary.ml" 105 4355 4385
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( + )
+)
+"func_boundary.ml" 105 4355 4386 "func_boundary.ml" 105 4355 4387
+type(
+  int
+)
+"func_boundary.ml" 105 4355 4377 "func_boundary.ml" 105 4355 4388
+type(
+  int
+)
+"func_boundary.ml" 105 4355 4389 "func_boundary.ml" 105 4355 4394
+type(
+  Libbfd.address_t
+)
+ident(
+  int_ref addr1 "func_boundary.ml" 104 4239 4246 "func_boundary.ml" 104 4239 4251
+)
+"func_boundary.ml" 105 4355 4370 "func_boundary.ml" 105 4355 4394
+call(
+  stack
+)
+type(
+  Libbfd.address_t list
+)
+"func_boundary.ml" 105 4355 4361 "func_boundary.ml" 105 4355 4394
+type(
+  Libbfd.address_t list
+)
+"func_boundary.ml" 107 4396 4402 "func_boundary.ml" 107 4396 4407
+type(
+  Libbfd.address_t * int
+)
+ident(
+  def first "func_boundary.ml" 107 4396 4419 "func_boundary.ml" 107 4396 4455
+)
+"func_boundary.ml" 107 4396 4411 "func_boundary.ml" 107 4396 4415
+type(
+  (Libbfd.address_t * int) list
+)
+ident(
+  def rest "func_boundary.ml" 107 4396 4419 "func_boundary.ml" 107 4396 4455
+)
+"func_boundary.ml" 107 4396 4402 "func_boundary.ml" 107 4396 4415
+type(
+  (Libbfd.address_t * int) list
+)
+"func_boundary.ml" 107 4396 4419 "func_boundary.ml" 107 4396 4420
+type(
+  (Libbfd.address_t * int) list ->
+  int -> Libbfd.address_t -> Libbfd.address_t list
+)
+ident(
+  int_ref f "func_boundary.ml" 68 2605 2615 "func_boundary.ml" 68 2605 2616
+)
+"func_boundary.ml" 107 4396 4421 "func_boundary.ml" 107 4396 4425
+type(
+  (Libbfd.address_t * int) list
+)
+ident(
+  int_ref rest "func_boundary.ml" 107 4396 4411 "func_boundary.ml" 107 4396 4415
+)
+"func_boundary.ml" 107 4396 4427 "func_boundary.ml" 107 4396 4432
+type(
+  int
+)
+ident(
+  int_ref index "func_boundary.ml" 68 2605 2619 "func_boundary.ml" 68 2605 2624
+)
+"func_boundary.ml" 107 4396 4433 "func_boundary.ml" 107 4396 4434
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( + )
+)
+"func_boundary.ml" 107 4396 4435 "func_boundary.ml" 107 4396 4436
+type(
+  int
+)
+"func_boundary.ml" 107 4396 4426 "func_boundary.ml" 107 4396 4437
+type(
+  int
+)
+"func_boundary.ml" 107 4396 4438 "func_boundary.ml" 107 4396 4455
+type(
+  Libbfd.address_t
+)
+ident(
+  int_ref last_startaddress "func_boundary.ml" 68 2605 2625 "func_boundary.ml" 68 2605 2642
+)
+"func_boundary.ml" 107 4396 4419 "func_boundary.ml" 107 4396 4455
+call(
+  tail
+)
+type(
+  Libbfd.address_t list
+)
+"func_boundary.ml" 108 4457 4463 "func_boundary.ml" 108 4457 4465
+type(
+  (Libbfd.address_t * int) list
+)
+"func_boundary.ml" 108 4457 4469 "func_boundary.ml" 108 4457 4471
+type(
+  Libbfd.address_t list
+)
+"func_boundary.ml" 69 2645 2649 "func_boundary.ml" 108 4457 4471
+type(
+  Libbfd.address_t list
+)
+"func_boundary.ml" 110 4478 4484 "func_boundary.ml" 110 4478 4502
+type(
+  Libbfd.address_t list
+)
+"func_boundary.ml" 110 4478 4505 "func_boundary.ml" 110 4478 4506
+type(
+  (Libbfd.address_t * int) list ->
+  int -> Libbfd.address_t -> Libbfd.address_t list
+)
+ident(
+  int_ref f "func_boundary.ml" 68 2605 2615 "func_boundary.ml" 68 2605 2616
+)
+"func_boundary.ml" 110 4478 4507 "func_boundary.ml" 110 4478 4515
+type(
+  (Libbfd.address_t * int) list
+)
+ident(
+  int_ref bytelist "func_boundary.ml" 67 2535 2541 "func_boundary.ml" 67 2535 2549
+)
+"func_boundary.ml" 110 4478 4516 "func_boundary.ml" 110 4478 4517
+type(
+  int
+)
+"func_boundary.ml" 110 4478 4518 "func_boundary.ml" 110 4478 4528
+type(
+  Libbfd.address_t
+)
+ident(
+  ext_ref Int64.zero
+)
+"func_boundary.ml" 110 4478 4505 "func_boundary.ml" 110 4478 4528
+call(
+  stack
+)
+type(
+  Libbfd.address_t list
+)
+"func_boundary.ml" 111 4532 4538 "func_boundary.ml" 111 4532 4539
+type(
+  unit
+)
+"func_boundary.ml" 111 4532 4542 "func_boundary.ml" 111 4532 4551
+type(
+  (Libbfd.address_t -> unit) -> Libbfd.address_t list -> unit
+)
+ident(
+  ext_ref List.iter
+)
+"func_boundary.ml" 111 4532 4557 "func_boundary.ml" 111 4532 4561
+type(
+  Libbfd.address_t
+)
+ident(
+  def addr "func_boundary.ml" 111 4532 4565 "func_boundary.ml" 111 4532 4583
+)
+"func_boundary.ml" 111 4532 4565 "func_boundary.ml" 111 4532 4572
+type(
+  (Libbfd.address_t -> unit, unit, string, unit) format4 ->
+  Libbfd.address_t -> unit
+)
+ident(
+  ext_ref D.dprintf
+)
+"func_boundary.ml" 111 4532 4573 "func_boundary.ml" 111 4532 4578
+type(
+  (Libbfd.address_t -> unit, unit, string, unit) format4
+)
+"func_boundary.ml" 111 4532 4579 "func_boundary.ml" 111 4532 4583
+type(
+  Libbfd.address_t
+)
+ident(
+  int_ref addr "func_boundary.ml" 111 4532 4557 "func_boundary.ml" 111 4532 4561
+)
+"func_boundary.ml" 111 4532 4565 "func_boundary.ml" 111 4532 4583
+call(
+  tail
+)
+type(
+  unit
+)
+"func_boundary.ml" 111 4532 4552 "func_boundary.ml" 111 4532 4584
+type(
+  Libbfd.address_t -> unit
+)
+"func_boundary.ml" 111 4532 4585 "func_boundary.ml" 111 4532 4603
+type(
+  Libbfd.address_t list
+)
+ident(
+  int_ref start_address_list "func_boundary.ml" 110 4478 4484 "func_boundary.ml" 110 4478 4502
+)
+"func_boundary.ml" 111 4532 4542 "func_boundary.ml" 111 4532 4603
+call(
+  stack
+)
+type(
+  unit
+)
+"func_boundary.ml" 112 4607 4609 "func_boundary.ml" 112 4607 4627
+type(
+  Libbfd.address_t list
+)
+ident(
+  int_ref start_address_list "func_boundary.ml" 110 4478 4484 "func_boundary.ml" 110 4478 4502
+)
+"func_boundary.ml" 111 4532 4534 "func_boundary.ml" 112 4607 4627
+type(
+  Libbfd.address_t list
+)
+"func_boundary.ml" 110 4478 4480 "func_boundary.ml" 112 4607 4627
+type(
+  Libbfd.address_t list
+)
+"func_boundary.ml" 68 2605 2607 "func_boundary.ml" 112 4607 4627
+type(
+  Libbfd.address_t list
+)
+"func_boundary.ml" 67 2535 2537 "func_boundary.ml" 112 4607 4627
+type(
+  Libbfd.address_t list
+)
+"func_boundary.ml" 66 2480 2482 "func_boundary.ml" 112 4607 4627
+type(
+  Libbfd.address_t list
+)
+"func_boundary.ml" 65 2340 2342 "func_boundary.ml" 112 4607 4627
+type(
+  Libbfd.address_t list
+)
+"func_boundary.ml" 114 4629 4633 "func_boundary.ml" 114 4629 4652
+type(
+  Asmir.asmprogram -> (string * Libbfd.address_t * Libbfd.address_t) list
+)
+ident(
+  def get_function_ranges "func_boundary.ml" 175 6804 6818 --
+)
+"func_boundary.ml" 114 4629 4653 "func_boundary.ml" 114 4629 4654
+type(
+  Asmir.asmprogram
+)
+ident(
+  def p "func_boundary.ml" 115 4657 4659 "func_boundary.ml" 175 6804 6818
+)
+"func_boundary.ml" 119 4748 4754 "func_boundary.ml" 119 4748 4760
+type(
+  (Libbfd.address_t * Libbfd.address_t * string) list
+)
+ident(
+  def starts "func_boundary.ml" 157 6255 6257 "func_boundary.ml" 175 6804 6818
+)
+"func_boundary.ml" 121 4771 4781 "func_boundary.ml" 121 4771 4785
+type(
+  Libbfd.asymbol array
+)
+ident(
+  def symb "func_boundary.ml" 122 4805 4811 "func_boundary.ml" 145 5855 5870
+)
+"func_boundary.ml" 121 4771 4788 "func_boundary.ml" 121 4771 4799
+type(
+  ?all:bool -> Asmir.asmprogram -> Libbfd.asymbol array
+)
+ident(
+  ext_ref Asmir.get_symbols
+)
+"func_boundary.ml" 121 4771 4800 "func_boundary.ml" 121 4771 4801
+type(
+  Asmir.asmprogram
+)
+ident(
+  int_ref p "func_boundary.ml" 114 4629 4653 "func_boundary.ml" 114 4629 4654
+)
+"func_boundary.ml" 121 4771 4788 "func_boundary.ml" 121 4771 4801
+call(
+  stack
+)
+type(
+  Libbfd.asymbol array
+)
+"func_boundary.ml" 122 4805 4815 "func_boundary.ml" 122 4805 4826
+type(
+  Libbfd.asymbol -> bool
+)
+ident(
+  def is_function "func_boundary.ml" 141 5721 5727 "func_boundary.ml" 145 5855 5870
+)
+"func_boundary.ml" 122 4805 4835 "func_boundary.ml" 122 4805 4852
+type(
+  Asmir.asmprogram -> Libbfd.bfd_flavour
+)
+ident(
+  ext_ref Asmir.get_flavour
+)
+"func_boundary.ml" 122 4805 4853 "func_boundary.ml" 122 4805 4854
+type(
+  Asmir.asmprogram
+)
+ident(
+  int_ref p "func_boundary.ml" 114 4629 4653 "func_boundary.ml" 114 4629 4654
+)
+"func_boundary.ml" 122 4805 4835 "func_boundary.ml" 122 4805 4854
+call(
+  stack
+)
+type(
+  Libbfd.bfd_flavour
+)
+"func_boundary.ml" 123 4860 4870 "func_boundary.ml" 123 4860 4892
+type(
+  Libbfd.bfd_flavour
+)
+"func_boundary.ml" 124 4893 4903 "func_boundary.ml" 124 4893 4926
+type(
+  Libbfd.bfd_flavour
+)
+"func_boundary.ml" 123 4860 4870 "func_boundary.ml" 124 4893 4926
+type(
+  Libbfd.bfd_flavour
+)
+"func_boundary.ml" 125 4930 4945 "func_boundary.ml" 125 4930 4946
+type(
+  Libbfd.asymbol
+)
+ident(
+  def s "func_boundary.ml" 125 4930 4950 "func_boundary.ml" 125 4930 4991
+)
+"func_boundary.ml" 125 4930 4950 "func_boundary.ml" 125 4930 4951
+type(
+  Libbfd.asymbol
+)
+ident(
+  int_ref s "func_boundary.ml" 125 4930 4945 "func_boundary.ml" 125 4930 4946
+)
+"func_boundary.ml" 125 4930 4950 "func_boundary.ml" 125 4930 4968
+type(
+  int
+)
+"func_boundary.ml" 125 4930 4969 "func_boundary.ml" 125 4930 4973
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( land )
+)
+"func_boundary.ml" 125 4930 4974 "func_boundary.ml" 125 4930 4986
+type(
+  int
+)
+ident(
+  ext_ref Asmir_consts.bsf_function
+)
+"func_boundary.ml" 125 4930 4950 "func_boundary.ml" 125 4930 4986
+type(
+  int
+)
+"func_boundary.ml" 125 4930 4987 "func_boundary.ml" 125 4930 4989
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( <> )
+)
+"func_boundary.ml" 125 4930 4990 "func_boundary.ml" 125 4930 4991
+type(
+  int
+)
+"func_boundary.ml" 125 4930 4950 "func_boundary.ml" 125 4930 4991
+type(
+  bool
+)
+"func_boundary.ml" 125 4930 4940 "func_boundary.ml" 125 4930 4992
+type(
+  Libbfd.asymbol -> bool
+)
+"func_boundary.ml" 126 4993 5003 "func_boundary.ml" 126 4993 5028
+type(
+  Libbfd.bfd_flavour
+)
+"func_boundary.ml" 127 5032 5047 "func_boundary.ml" 127 5032 5048
+type(
+  Libbfd.asymbol
+)
+ident(
+  def s "func_boundary.ml" 127 5032 5052 "func_boundary.ml" 128 5121 5165
+)
+"func_boundary.ml" 127 5032 5052 "func_boundary.ml" 127 5032 5059
+type(
+  (string -> int -> unit, unit, string, unit) format4 ->
+  string -> int -> unit
+)
+ident(
+  ext_ref D.dprintf
+)
+"func_boundary.ml" 127 5032 5060 "func_boundary.ml" 127 5032 5082
+type(
+  (string -> int -> unit, unit, string, unit) format4
+)
+"func_boundary.ml" 127 5032 5083 "func_boundary.ml" 127 5032 5084
+type(
+  Libbfd.asymbol
+)
+ident(
+  int_ref s "func_boundary.ml" 127 5032 5047 "func_boundary.ml" 127 5032 5048
+)
+"func_boundary.ml" 127 5032 5083 "func_boundary.ml" 127 5032 5100
+type(
+  string
+)
+"func_boundary.ml" 127 5032 5101 "func_boundary.ml" 127 5032 5102
+type(
+  Libbfd.asymbol
+)
+ident(
+  int_ref s "func_boundary.ml" 127 5032 5047 "func_boundary.ml" 127 5032 5048
+)
+"func_boundary.ml" 127 5032 5101 "func_boundary.ml" 127 5032 5119
+type(
+  int
+)
+"func_boundary.ml" 127 5032 5052 "func_boundary.ml" 127 5032 5119
+call(
+  stack
+)
+type(
+  unit
+)
+"func_boundary.ml" 128 5121 5126 "func_boundary.ml" 128 5121 5127
+type(
+  Libbfd.asymbol
+)
+ident(
+  int_ref s "func_boundary.ml" 127 5032 5047 "func_boundary.ml" 127 5032 5048
+)
+"func_boundary.ml" 128 5121 5126 "func_boundary.ml" 128 5121 5144
+type(
+  int
+)
+"func_boundary.ml" 128 5121 5145 "func_boundary.ml" 128 5121 5149
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( land )
+)
+"func_boundary.ml" 128 5121 5150 "func_boundary.ml" 128 5121 5160
+type(
+  int
+)
+ident(
+  ext_ref Asmir_consts.bsf_global
+)
+"func_boundary.ml" 128 5121 5126 "func_boundary.ml" 128 5121 5160
+type(
+  int
+)
+"func_boundary.ml" 128 5121 5161 "func_boundary.ml" 128 5121 5163
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( <> )
+)
+"func_boundary.ml" 128 5121 5164 "func_boundary.ml" 128 5121 5165
+type(
+  int
+)
+"func_boundary.ml" 128 5121 5126 "func_boundary.ml" 128 5121 5165
+type(
+  bool
+)
+"func_boundary.ml" 127 5032 5052 "func_boundary.ml" 128 5121 5165
+type(
+  bool
+)
+"func_boundary.ml" 127 5032 5042 "func_boundary.ml" 128 5121 5166
+type(
+  Libbfd.asymbol -> bool
+)
+"func_boundary.ml" 129 5167 5177 "func_boundary.ml" 129 5167 5178
+type(
+  Libbfd.bfd_flavour
+)
+"func_boundary.ml" 130 5182 5192 "func_boundary.ml" 130 5182 5199
+type(
+  (unit, unit, string, unit) format4 -> unit
+)
+ident(
+  ext_ref D.wprintf
+)
+"func_boundary.ml" 130 5182 5200 "func_boundary.ml" 130 5182 5300
+type(
+  (unit, unit, string, unit) format4
+)
+"func_boundary.ml" 130 5182 5192 "func_boundary.ml" 130 5182 5300
+call(
+  stack
+)
+type(
+  unit
+)
+"func_boundary.ml" 131 5302 5317 "func_boundary.ml" 131 5302 5318
+type(
+  Libbfd.asymbol
+)
+ident(
+  def s "func_boundary.ml" 131 5302 5322 "func_boundary.ml" 131 5302 5363
+)
+"func_boundary.ml" 131 5302 5322 "func_boundary.ml" 131 5302 5323
+type(
+  Libbfd.asymbol
+)
+ident(
+  int_ref s "func_boundary.ml" 131 5302 5317 "func_boundary.ml" 131 5302 5318
+)
+"func_boundary.ml" 131 5302 5322 "func_boundary.ml" 131 5302 5340
+type(
+  int
+)
+"func_boundary.ml" 131 5302 5341 "func_boundary.ml" 131 5302 5345
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( land )
+)
+"func_boundary.ml" 131 5302 5346 "func_boundary.ml" 131 5302 5358
+type(
+  int
+)
+ident(
+  ext_ref Asmir_consts.bsf_function
+)
+"func_boundary.ml" 131 5302 5322 "func_boundary.ml" 131 5302 5358
+type(
+  int
+)
+"func_boundary.ml" 131 5302 5359 "func_boundary.ml" 131 5302 5361
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( <> )
+)
+"func_boundary.ml" 131 5302 5362 "func_boundary.ml" 131 5302 5363
+type(
+  int
+)
+"func_boundary.ml" 131 5302 5322 "func_boundary.ml" 131 5302 5363
+type(
+  bool
+)
+"func_boundary.ml" 131 5302 5312 "func_boundary.ml" 131 5302 5364
+type(
+  Libbfd.asymbol -> bool
+)
+"func_boundary.ml" 130 5182 5192 "func_boundary.ml" 131 5302 5364
+type(
+  Libbfd.asymbol -> bool
+)
+"func_boundary.ml" 122 4805 4829 "func_boundary.ml" 131 5302 5364
+type(
+  Libbfd.asymbol -> bool
+)
+"func_boundary.ml" 132 5365 5375 "func_boundary.ml" 132 5365 5388
+type(
+  Libbfd.bfd_symbol -> int64 * int64 * string
+)
+ident(
+  def symb_to_tuple "func_boundary.ml" 141 5721 5727 "func_boundary.ml" 145 5855 5870
+)
+"func_boundary.ml" 132 5365 5389 "func_boundary.ml" 132 5365 5390
+type(
+  Libbfd.bfd_symbol
+)
+ident(
+  def s "func_boundary.ml" 135 5503 5511 "func_boundary.ml" 139 5684 5711
+)
+"func_boundary.ml" 135 5503 5515 "func_boundary.ml" 135 5503 5518
+type(
+  Libbfd.section_ptr
+)
+"func_boundary.ml" 135 5503 5521 "func_boundary.ml" 135 5503 5522
+type(
+  Libbfd.bfd_symbol
+)
+ident(
+  int_ref s "func_boundary.ml" 132 5365 5389 "func_boundary.ml" 132 5365 5390
+)
+"func_boundary.ml" 135 5503 5521 "func_boundary.ml" 135 5503 5541
+type(
+  Libbfd.section_ptr
+)
+"func_boundary.ml" 136 5545 5557 "func_boundary.ml" 136 5545 5560
+type(
+  Libbfd.address_t
+)
+"func_boundary.ml" 136 5545 5563 "func_boundary.ml" 136 5545 5582
+type(
+  Libbfd.section_ptr -> Libbfd.address_t
+)
+ident(
+  ext_ref Libbfd.bfd_section_get_vma
+)
+"func_boundary.ml" 136 5545 5583 "func_boundary.ml" 136 5545 5586
+type(
+  Libbfd.section_ptr
+)
+ident(
+  int_ref sec "func_boundary.ml" 135 5503 5515 "func_boundary.ml" 135 5503 5518
+)
+"func_boundary.ml" 136 5545 5563 "func_boundary.ml" 136 5545 5586
+type(
+  Libbfd.address_t
+)
+"func_boundary.ml" 137 5590 5599 "func_boundary.ml" 137 5590 5608
+type(
+  int64 -> Libbfd.address_t -> int64
+)
+ident(
+  ext_ref Int64.add
+)
+"func_boundary.ml" 137 5590 5609 "func_boundary.ml" 137 5590 5610
+type(
+  Libbfd.bfd_symbol
+)
+ident(
+  int_ref s "func_boundary.ml" 132 5365 5389 "func_boundary.ml" 132 5365 5390
+)
+"func_boundary.ml" 137 5590 5609 "func_boundary.ml" 137 5590 5627
+type(
+  int64
+)
+"func_boundary.ml" 137 5590 5628 "func_boundary.ml" 137 5590 5631
+type(
+  Libbfd.address_t
+)
+ident(
+  int_ref vma "func_boundary.ml" 136 5545 5557 "func_boundary.ml" 136 5545 5560
+)
+"func_boundary.ml" 137 5590 5599 "func_boundary.ml" 137 5590 5631
+type(
+  int64
+)
+"func_boundary.ml" 138 5633 5642 "func_boundary.ml" 138 5633 5651
+type(
+  Libbfd.address_t -> Libbfd.bfd_size_type -> int64
+)
+ident(
+  ext_ref Int64.add
+)
+"func_boundary.ml" 138 5633 5652 "func_boundary.ml" 138 5633 5655
+type(
+  Libbfd.address_t
+)
+ident(
+  int_ref vma "func_boundary.ml" 136 5545 5557 "func_boundary.ml" 136 5545 5560
+)
+"func_boundary.ml" 138 5633 5657 "func_boundary.ml" 138 5633 5677
+type(
+  Libbfd.section_ptr -> Libbfd.bfd_size_type
+)
+ident(
+  ext_ref Libbfd.bfd_section_get_size
+)
+"func_boundary.ml" 138 5633 5678 "func_boundary.ml" 138 5633 5681
+type(
+  Libbfd.section_ptr
+)
+ident(
+  int_ref sec "func_boundary.ml" 135 5503 5515 "func_boundary.ml" 135 5503 5518
+)
+"func_boundary.ml" 138 5633 5656 "func_boundary.ml" 138 5633 5682
+type(
+  Libbfd.bfd_size_type
+)
+"func_boundary.ml" 138 5633 5642 "func_boundary.ml" 138 5633 5682
+type(
+  int64
+)
+"func_boundary.ml" 139 5684 5693 "func_boundary.ml" 139 5684 5694
+type(
+  Libbfd.bfd_symbol
+)
+ident(
+  int_ref s "func_boundary.ml" 132 5365 5389 "func_boundary.ml" 132 5365 5390
+)
+"func_boundary.ml" 139 5684 5693 "func_boundary.ml" 139 5684 5710
+type(
+  string
+)
+"func_boundary.ml" 137 5590 5598 "func_boundary.ml" 139 5684 5711
+type(
+  int64 * int64 * string
+)
+"func_boundary.ml" 136 5545 5553 "func_boundary.ml" 139 5684 5711
+type(
+  int64 * int64 * string
+)
+"func_boundary.ml" 135 5503 5511 "func_boundary.ml" 139 5684 5711
+type(
+  int64 * int64 * string
+)
+"func_boundary.ml" 141 5721 5731 "func_boundary.ml" 141 5721 5737
+type(
+  (int64 * int64 * string) list
+)
+ident(
+  def starts "func_boundary.ml" 145 5855 5864 "func_boundary.ml" 145 5855 5870
+)
+"func_boundary.ml" 142 5740 5748 "func_boundary.ml" 142 5740 5763
+type(
+  ((int64 * int64 * string) list ->
+   Libbfd.asymbol -> (int64 * int64 * string) list) ->
+  (int64 * int64 * string) list ->
+  Libbfd.asymbol array -> (int64 * int64 * string) list
+)
+ident(
+  ext_ref Array.fold_left
+)
+"func_boundary.ml" 143 5764 5779 "func_boundary.ml" 143 5764 5780
+type(
+  (int64 * int64 * string) list
+)
+ident(
+  def l "func_boundary.ml" 143 5764 5781 "func_boundary.ml" 143 5764 5835
+)
+"func_boundary.ml" 143 5764 5781 "func_boundary.ml" 143 5764 5782
+type(
+  Libbfd.asymbol
+)
+ident(
+  def s "func_boundary.ml" 143 5764 5786 "func_boundary.ml" 143 5764 5835
+)
+"func_boundary.ml" 143 5764 5789 "func_boundary.ml" 143 5764 5800
+type(
+  Libbfd.asymbol -> bool
+)
+ident(
+  int_ref is_function "func_boundary.ml" 122 4805 4815 "func_boundary.ml" 122 4805 4826
+)
+"func_boundary.ml" 143 5764 5801 "func_boundary.ml" 143 5764 5802
+type(
+  Libbfd.asymbol
+)
+ident(
+  int_ref s "func_boundary.ml" 143 5764 5781 "func_boundary.ml" 143 5764 5782
+)
+"func_boundary.ml" 143 5764 5789 "func_boundary.ml" 143 5764 5802
+call(
+  stack
+)
+type(
+  bool
+)
+"func_boundary.ml" 143 5764 5808 "func_boundary.ml" 143 5764 5821
+type(
+  Libbfd.asymbol -> int64 * int64 * string
+)
+ident(
+  int_ref symb_to_tuple "func_boundary.ml" 132 5365 5375 "func_boundary.ml" 132 5365 5388
+)
+"func_boundary.ml" 143 5764 5822 "func_boundary.ml" 143 5764 5823
+type(
+  Libbfd.asymbol
+)
+ident(
+  int_ref s "func_boundary.ml" 143 5764 5781 "func_boundary.ml" 143 5764 5782
+)
+"func_boundary.ml" 143 5764 5808 "func_boundary.ml" 143 5764 5823
+call(
+  stack
+)
+type(
+  int64 * int64 * string
+)
+"func_boundary.ml" 143 5764 5827 "func_boundary.ml" 143 5764 5828
+type(
+  (int64 * int64 * string) list
+)
+ident(
+  int_ref l "func_boundary.ml" 143 5764 5779 "func_boundary.ml" 143 5764 5780
+)
+"func_boundary.ml" 143 5764 5808 "func_boundary.ml" 143 5764 5828
+type(
+  (int64 * int64 * string) list
+)
+"func_boundary.ml" 143 5764 5834 "func_boundary.ml" 143 5764 5835
+type(
+  (int64 * int64 * string) list
+)
+ident(
+  int_ref l "func_boundary.ml" 143 5764 5779 "func_boundary.ml" 143 5764 5780
+)
+"func_boundary.ml" 143 5764 5786 "func_boundary.ml" 143 5764 5835
+type(
+  (int64 * int64 * string) list
+)
+"func_boundary.ml" 143 5764 5774 "func_boundary.ml" 143 5764 5836
+type(
+  (int64 * int64 * string) list ->
+  Libbfd.asymbol -> (int64 * int64 * string) list
+)
+"func_boundary.ml" 144 5837 5847 "func_boundary.ml" 144 5837 5849
+type(
+  (int64 * int64 * string) list
+)
+"func_boundary.ml" 144 5837 5850 "func_boundary.ml" 144 5837 5854
+type(
+  Libbfd.asymbol array
+)
+ident(
+  int_ref symb "func_boundary.ml" 121 4771 4781 "func_boundary.ml" 121 4771 4785
+)
+"func_boundary.ml" 142 5740 5748 "func_boundary.ml" 144 5837 5854
+call(
+  stack
+)
+type(
+  (int64 * int64 * string) list
+)
+"func_boundary.ml" 145 5855 5864 "func_boundary.ml" 145 5855 5870
+type(
+  (Libbfd.address_t * Libbfd.address_t * string) list
+)
+ident(
+  int_ref starts "func_boundary.ml" 141 5721 5731 "func_boundary.ml" 141 5721 5737
+)
+"func_boundary.ml" 141 5721 5727 "func_boundary.ml" 145 5855 5870
+type(
+  (Libbfd.address_t * Libbfd.address_t * string) list
+)
+"func_boundary.ml" 122 4805 4811 "func_boundary.ml" 145 5855 5870
+type(
+  (Libbfd.address_t * Libbfd.address_t * string) list
+)
+"func_boundary.ml" 121 4771 4777 "func_boundary.ml" 145 5855 5870
+type(
+  (Libbfd.address_t * Libbfd.address_t * string) list
+)
+"func_boundary.ml" 146 5871 5888 "func_boundary.ml" 146 5871 5901
+type(
+  string
+)
+"func_boundary.ml" 146 5871 5880 "func_boundary.ml" 146 5871 5901
+type(
+  exn
+)
+"func_boundary.ml" 147 5905 5915 "func_boundary.ml" 147 5905 5916
+type(
+  int ref
+)
+"func_boundary.ml" 147 5905 5919 "func_boundary.ml" 147 5905 5922
+type(
+  int -> int ref
+)
+ident(
+  ext_ref Pervasives.ref
+)
+"func_boundary.ml" 147 5905 5923 "func_boundary.ml" 147 5905 5924
+type(
+  int
+)
+"func_boundary.ml" 147 5905 5919 "func_boundary.ml" 147 5905 5924
+type(
+  int ref
+)
+"func_boundary.ml" 149 6004 6014 "func_boundary.ml" 149 6004 6025
+type(
+  Libbfd.address_t
+)
+"func_boundary.ml" 149 6004 6034 "func_boundary.ml" 149 6004 6042
+type(
+  (Libbfd.address_t * char) list -> (Libbfd.address_t * char) list
+)
+ident(
+  ext_ref List.rev
+)
+"func_boundary.ml" 149 6004 6044 "func_boundary.ml" 149 6004 6070
+type(
+  Asmir.asmprogram -> (Libbfd.address_t * char) list
+)
+ident(
+  ext_ref Asmir.get_exec_mem_contents_list
+)
+"func_boundary.ml" 149 6004 6071 "func_boundary.ml" 149 6004 6072
+type(
+  Asmir.asmprogram
+)
+ident(
+  int_ref p "func_boundary.ml" 114 4629 4653 "func_boundary.ml" 114 4629 4654
+)
+"func_boundary.ml" 149 6004 6043 "func_boundary.ml" 149 6004 6073
+call(
+  stack
+)
+type(
+  (Libbfd.address_t * char) list
+)
+"func_boundary.ml" 149 6004 6034 "func_boundary.ml" 149 6004 6073
+call(
+  stack
+)
+type(
+  (Libbfd.address_t * char) list
+)
+"func_boundary.ml" 150 6079 6090 "func_boundary.ml" 150 6079 6091
+type(
+  Libbfd.address_t
+)
+ident(
+  def a "func_boundary.ml" 150 6079 6102 "func_boundary.ml" 150 6079 6103
+)
+"func_boundary.ml" 150 6079 6093 "func_boundary.ml" 150 6079 6094
+type(
+  char
+)
+"func_boundary.ml" 150 6079 6089 "func_boundary.ml" 150 6079 6095
+type(
+  Libbfd.address_t * char
+)
+"func_boundary.ml" 150 6079 6097 "func_boundary.ml" 150 6079 6098
+type(
+  (Libbfd.address_t * char) list
+)
+"func_boundary.ml" 150 6079 6089 "func_boundary.ml" 150 6079 6098
+type(
+  (Libbfd.address_t * char) list
+)
+"func_boundary.ml" 150 6079 6102 "func_boundary.ml" 150 6079 6103
+type(
+  Libbfd.address_t
+)
+ident(
+  int_ref a "func_boundary.ml" 150 6079 6090 "func_boundary.ml" 150 6079 6091
+)
+"func_boundary.ml" 151 6104 6114 "func_boundary.ml" 151 6104 6115
+type(
+  (Libbfd.address_t * char) list
+)
+"func_boundary.ml" 151 6104 6119 "func_boundary.ml" 151 6104 6122
+type(
+  Libbfd.address_t
+)
+"func_boundary.ml" 149 6004 6028 "func_boundary.ml" 151 6104 6122
+type(
+  Libbfd.address_t
+)
+"func_boundary.ml" 153 6132 6138 "func_boundary.ml" 153 6132 6146
+type(
+  (Libbfd.address_t -> Libbfd.address_t * Libbfd.address_t * string) ->
+  Libbfd.address_t list ->
+  (Libbfd.address_t * Libbfd.address_t * string) list
+)
+ident(
+  ext_ref List.map
+)
+"func_boundary.ml" 153 6132 6152 "func_boundary.ml" 153 6132 6153
+type(
+  Libbfd.address_t
+)
+ident(
+  def a "func_boundary.ml" 154 6157 6165 "func_boundary.ml" 155 6173 6228
+)
+"func_boundary.ml" 154 6157 6165 "func_boundary.ml" 154 6157 6169
+type(
+  int ref -> unit
+)
+ident(
+  ext_ref Pervasives.incr
+)
+"func_boundary.ml" 154 6157 6170 "func_boundary.ml" 154 6157 6171
+type(
+  int ref
+)
+ident(
+  int_ref n "func_boundary.ml" 147 5905 5915 "func_boundary.ml" 147 5905 5916
+)
+"func_boundary.ml" 154 6157 6165 "func_boundary.ml" 154 6157 6171
+type(
+  unit
+)
+"func_boundary.ml" 155 6173 6182 "func_boundary.ml" 155 6173 6183
+type(
+  Libbfd.address_t
+)
+ident(
+  int_ref a "func_boundary.ml" 153 6132 6152 "func_boundary.ml" 153 6132 6153
+)
+"func_boundary.ml" 155 6173 6185 "func_boundary.ml" 155 6173 6196
+type(
+  Libbfd.address_t
+)
+ident(
+  int_ref end_address "func_boundary.ml" 149 6004 6014 "func_boundary.ml" 149 6004 6025
+)
+"func_boundary.ml" 155 6173 6198 "func_boundary.ml" 155 6173 6208
+type(
+  string
+)
+"func_boundary.ml" 155 6173 6208 "func_boundary.ml" 155 6173 6209
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"func_boundary.ml" 155 6173 6210 "func_boundary.ml" 155 6173 6223
+type(
+  int -> string
+)
+ident(
+  ext_ref Pervasives.string_of_int
+)
+"func_boundary.ml" 155 6173 6224 "func_boundary.ml" 155 6173 6225
+type(
+  int ref -> int
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"func_boundary.ml" 155 6173 6225 "func_boundary.ml" 155 6173 6226
+type(
+  int ref
+)
+ident(
+  int_ref n "func_boundary.ml" 147 5905 5915 "func_boundary.ml" 147 5905 5916
+)
+"func_boundary.ml" 155 6173 6224 "func_boundary.ml" 155 6173 6226
+type(
+  int
+)
+"func_boundary.ml" 155 6173 6209 "func_boundary.ml" 155 6173 6227
+call(
+  stack
+)
+type(
+  string
+)
+"func_boundary.ml" 155 6173 6198 "func_boundary.ml" 155 6173 6227
+call(
+  stack
+)
+type(
+  string
+)
+"func_boundary.ml" 155 6173 6181 "func_boundary.ml" 155 6173 6228
+type(
+  Libbfd.address_t * Libbfd.address_t * string
+)
+"func_boundary.ml" 154 6157 6165 "func_boundary.ml" 155 6173 6228
+type(
+  Libbfd.address_t * Libbfd.address_t * string
+)
+"func_boundary.ml" 153 6132 6147 "func_boundary.ml" 155 6173 6229
+type(
+  Libbfd.address_t -> Libbfd.address_t * Libbfd.address_t * string
+)
+"func_boundary.ml" 155 6173 6231 "func_boundary.ml" 155 6173 6246
+type(
+  Asmir.asmprogram -> Libbfd.address_t list
+)
+ident(
+  int_ref start_addresses "func_boundary.ml" 64 2316 2320 "func_boundary.ml" 64 2316 2335
+)
+"func_boundary.ml" 155 6173 6247 "func_boundary.ml" 155 6173 6248
+type(
+  Asmir.asmprogram
+)
+ident(
+  int_ref p "func_boundary.ml" 114 4629 4653 "func_boundary.ml" 114 4629 4654
+)
+"func_boundary.ml" 155 6173 6230 "func_boundary.ml" 155 6173 6249
+call(
+  stack
+)
+type(
+  Libbfd.address_t list
+)
+"func_boundary.ml" 153 6132 6138 "func_boundary.ml" 155 6173 6249
+call(
+  stack
+)
+type(
+  (Libbfd.address_t * Libbfd.address_t * string) list
+)
+"func_boundary.ml" 149 6004 6010 "func_boundary.ml" 155 6173 6249
+type(
+  (Libbfd.address_t * Libbfd.address_t * string) list
+)
+"func_boundary.ml" 147 5905 5911 "func_boundary.ml" 155 6173 6249
+type(
+  (Libbfd.address_t * Libbfd.address_t * string) list
+)
+"func_boundary.ml" 120 4763 4767 "func_boundary.ml" 155 6173 6249
+type(
+  (Libbfd.address_t * Libbfd.address_t * string) list
+)
+"func_boundary.ml" 157 6255 6261 "func_boundary.ml" 157 6255 6267
+type(
+  (Libbfd.address_t * Libbfd.address_t * string) array
+)
+ident(
+  def starts "func_boundary.ml" 159 6348 6350 "func_boundary.ml" 175 6804 6818
+)
+"func_boundary.ml" 157 6255 6270 "func_boundary.ml" 157 6255 6283
+type(
+  (Libbfd.address_t * Libbfd.address_t * string) list ->
+  (Libbfd.address_t * Libbfd.address_t * string) array
+)
+ident(
+  ext_ref Array.of_list
+)
+"func_boundary.ml" 157 6255 6284 "func_boundary.ml" 157 6255 6290
+type(
+  (Libbfd.address_t * Libbfd.address_t * string) list
+)
+ident(
+  int_ref starts "func_boundary.ml" 119 4748 4754 "func_boundary.ml" 119 4748 4760
+)
+"func_boundary.ml" 157 6255 6270 "func_boundary.ml" 157 6255 6290
+call(
+  stack
+)
+type(
+  (Libbfd.address_t * Libbfd.address_t * string) array
+)
+"func_boundary.ml" 159 6348 6354 "func_boundary.ml" 159 6348 6356
+type(
+  unit
+)
+"func_boundary.ml" 159 6348 6359 "func_boundary.ml" 159 6348 6374
+type(
+  (Libbfd.address_t * Libbfd.address_t * string ->
+   Libbfd.address_t * Libbfd.address_t * string -> int) ->
+  (Libbfd.address_t * Libbfd.address_t * string) array -> unit
+)
+ident(
+  ext_ref Array.fast_sort
+)
+"func_boundary.ml" 159 6348 6375 "func_boundary.ml" 159 6348 6382
+type(
+  Libbfd.address_t * Libbfd.address_t * string ->
+  Libbfd.address_t * Libbfd.address_t * string -> int
+)
+ident(
+  ext_ref Pervasives.compare
+)
+"func_boundary.ml" 159 6348 6383 "func_boundary.ml" 159 6348 6389
+type(
+  (Libbfd.address_t * Libbfd.address_t * string) array
+)
+ident(
+  int_ref starts "func_boundary.ml" 157 6255 6261 "func_boundary.ml" 157 6255 6267
+)
+"func_boundary.ml" 159 6348 6359 "func_boundary.ml" 159 6348 6389
+call(
+  stack
+)
+type(
+  unit
+)
+"func_boundary.ml" 160 6393 6399 "func_boundary.ml" 160 6393 6405
+type(
+  (string * Libbfd.address_t * Libbfd.address_t) array
+)
+ident(
+  def ranges "func_boundary.ml" 169 6627 6629 "func_boundary.ml" 175 6804 6818
+)
+"func_boundary.ml" 160 6393 6408 "func_boundary.ml" 160 6393 6418
+type(
+  (int ->
+   Libbfd.address_t * Libbfd.address_t * string ->
+   string * Libbfd.address_t * Libbfd.address_t) ->
+  (Libbfd.address_t * Libbfd.address_t * string) array ->
+  (string * Libbfd.address_t * Libbfd.address_t) array
+)
+ident(
+  ext_ref Array.mapi
+)
+"func_boundary.ml" 161 6419 6428 "func_boundary.ml" 161 6419 6429
+type(
+  int
+)
+ident(
+  def i "func_boundary.ml" 161 6419 6430 "func_boundary.ml" 166 6559 6577
+)
+"func_boundary.ml" 161 6419 6431 "func_boundary.ml" 161 6419 6432
+type(
+  Libbfd.address_t
+)
+ident(
+  def s "func_boundary.ml" 162 6444 6451 "func_boundary.ml" 166 6559 6577
+)
+"func_boundary.ml" 161 6419 6433 "func_boundary.ml" 161 6419 6434
+type(
+  Libbfd.address_t
+)
+ident(
+  def e "func_boundary.ml" 162 6444 6451 "func_boundary.ml" 166 6559 6577
+)
+"func_boundary.ml" 161 6419 6435 "func_boundary.ml" 161 6419 6439
+type(
+  string
+)
+ident(
+  def name "func_boundary.ml" 162 6444 6451 "func_boundary.ml" 166 6559 6577
+)
+"func_boundary.ml" 161 6419 6430 "func_boundary.ml" 161 6419 6440
+type(
+  Libbfd.address_t * Libbfd.address_t * string
+)
+"func_boundary.ml" 162 6444 6455 "func_boundary.ml" 162 6444 6457
+type(
+  Libbfd.address_t
+)
+"func_boundary.ml" 163 6460 6471 "func_boundary.ml" 163 6460 6472
+type(
+  Libbfd.address_t
+)
+ident(
+  def s "func_boundary.ml" 163 6460 6496 "func_boundary.ml" 163 6460 6497
+)
+"func_boundary.ml" 163 6460 6473 "func_boundary.ml" 163 6460 6474
+type(
+  Libbfd.address_t
+)
+"func_boundary.ml" 163 6460 6475 "func_boundary.ml" 163 6460 6476
+type(
+  string
+)
+"func_boundary.ml" 163 6460 6470 "func_boundary.ml" 163 6460 6477
+type(
+  Libbfd.address_t * Libbfd.address_t * string
+)
+"func_boundary.ml" 163 6460 6480 "func_boundary.ml" 163 6460 6486
+type(
+  (Libbfd.address_t * Libbfd.address_t * string) array
+)
+ident(
+  int_ref starts "func_boundary.ml" 157 6255 6261 "func_boundary.ml" 157 6255 6267
+)
+"func_boundary.ml" 163 6460 6488 "func_boundary.ml" 163 6460 6489
+type(
+  int
+)
+ident(
+  int_ref i "func_boundary.ml" 161 6419 6428 "func_boundary.ml" 161 6419 6429
+)
+"func_boundary.ml" 163 6460 6489 "func_boundary.ml" 163 6460 6490
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( + )
+)
+"func_boundary.ml" 163 6460 6490 "func_boundary.ml" 163 6460 6491
+type(
+  int
+)
+"func_boundary.ml" 163 6460 6488 "func_boundary.ml" 163 6460 6491
+type(
+  int
+)
+"func_boundary.ml" 163 6460 6480 "func_boundary.ml" 163 6460 6492
+type(
+  Libbfd.address_t * Libbfd.address_t * string
+)
+"func_boundary.ml" 163 6460 6496 "func_boundary.ml" 163 6460 6497
+type(
+  Libbfd.address_t
+)
+ident(
+  int_ref s "func_boundary.ml" 163 6460 6471 "func_boundary.ml" 163 6460 6472
+)
+"func_boundary.ml" 163 6460 6466 "func_boundary.ml" 163 6460 6497
+type(
+  Libbfd.address_t
+)
+"func_boundary.ml" 164 6498 6522 "func_boundary.ml" 164 6498 6543
+type(
+  string
+)
+"func_boundary.ml" 164 6498 6505 "func_boundary.ml" 164 6498 6543
+type(
+  exn
+)
+"func_boundary.ml" 164 6498 6547 "func_boundary.ml" 164 6498 6548
+type(
+  Libbfd.address_t
+)
+ident(
+  int_ref e "func_boundary.ml" 161 6419 6433 "func_boundary.ml" 161 6419 6434
+)
+"func_boundary.ml" 163 6460 6462 "func_boundary.ml" 164 6498 6548
+type(
+  Libbfd.address_t
+)
+"func_boundary.ml" 166 6559 6567 "func_boundary.ml" 166 6559 6571
+type(
+  string
+)
+ident(
+  int_ref name "func_boundary.ml" 161 6419 6435 "func_boundary.ml" 161 6419 6439
+)
+"func_boundary.ml" 166 6559 6572 "func_boundary.ml" 166 6559 6573
+type(
+  Libbfd.address_t
+)
+ident(
+  int_ref s "func_boundary.ml" 161 6419 6431 "func_boundary.ml" 161 6419 6432
+)
+"func_boundary.ml" 166 6559 6574 "func_boundary.ml" 166 6559 6576
+type(
+  Libbfd.address_t
+)
+ident(
+  int_ref e' "func_boundary.ml" 162 6444 6455 "func_boundary.ml" 162 6444 6457
+)
+"func_boundary.ml" 166 6559 6566 "func_boundary.ml" 166 6559 6577
+type(
+  string * Libbfd.address_t * Libbfd.address_t
+)
+"func_boundary.ml" 162 6444 6451 "func_boundary.ml" 166 6559 6577
+type(
+  string * Libbfd.address_t * Libbfd.address_t
+)
+"func_boundary.ml" 161 6419 6423 "func_boundary.ml" 167 6609 6614
+type(
+  int ->
+  Libbfd.address_t * Libbfd.address_t * string ->
+  string * Libbfd.address_t * Libbfd.address_t
+)
+"func_boundary.ml" 167 6609 6615 "func_boundary.ml" 167 6609 6621
+type(
+  (Libbfd.address_t * Libbfd.address_t * string) array
+)
+ident(
+  int_ref starts "func_boundary.ml" 157 6255 6261 "func_boundary.ml" 157 6255 6267
+)
+"func_boundary.ml" 160 6393 6408 "func_boundary.ml" 167 6609 6621
+call(
+  stack
+)
+type(
+  (string * Libbfd.address_t * Libbfd.address_t) array
+)
+"func_boundary.ml" 169 6627 6633 "func_boundary.ml" 169 6627 6643
+type(
+  (string * Libbfd.address_t * Libbfd.address_t) list
+)
+ident(
+  def unfiltered "func_boundary.ml" 171 6715 6717 "func_boundary.ml" 175 6804 6818
+)
+"func_boundary.ml" 169 6627 6646 "func_boundary.ml" 169 6627 6659
+type(
+  (string * Libbfd.address_t * Libbfd.address_t) array ->
+  (string * Libbfd.address_t * Libbfd.address_t) list
+)
+ident(
+  ext_ref Array.to_list
+)
+"func_boundary.ml" 169 6627 6660 "func_boundary.ml" 169 6627 6666
+type(
+  (string * Libbfd.address_t * Libbfd.address_t) array
+)
+ident(
+  int_ref ranges "func_boundary.ml" 160 6393 6399 "func_boundary.ml" 160 6393 6405
+)
+"func_boundary.ml" 169 6627 6646 "func_boundary.ml" 169 6627 6666
+call(
+  stack
+)
+type(
+  (string * Libbfd.address_t * Libbfd.address_t) list
+)
+"func_boundary.ml" 171 6715 6717 "func_boundary.ml" 171 6715 6728
+type(
+  (string * Libbfd.address_t * Libbfd.address_t -> bool) ->
+  (string * Libbfd.address_t * Libbfd.address_t) list ->
+  (string * Libbfd.address_t * Libbfd.address_t) list
+)
+ident(
+  ext_ref List.filter
+)
+"func_boundary.ml" 172 6739 6744 "func_boundary.ml" 172 6739 6745
+type(
+  string
+)
+ident(
+  def s "func_boundary.ml" 172 6739 6755 "func_boundary.ml" 172 6739 6760
+)
+"func_boundary.ml" 172 6739 6746 "func_boundary.ml" 172 6739 6748
+type(
+  Libbfd.address_t
+)
+"func_boundary.ml" 172 6739 6749 "func_boundary.ml" 172 6739 6750
+type(
+  Libbfd.address_t
+)
+"func_boundary.ml" 172 6739 6743 "func_boundary.ml" 172 6739 6751
+type(
+  string * Libbfd.address_t * Libbfd.address_t
+)
+"func_boundary.ml" 172 6739 6755 "func_boundary.ml" 172 6739 6760
+type(
+  bool
+)
+"func_boundary.ml" 173 6761 6766 "func_boundary.ml" 173 6761 6773
+type(
+  string
+)
+"func_boundary.ml" 173 6761 6774 "func_boundary.ml" 173 6761 6775
+type(
+  Libbfd.address_t
+)
+"func_boundary.ml" 173 6761 6776 "func_boundary.ml" 173 6761 6777
+type(
+  Libbfd.address_t
+)
+"func_boundary.ml" 173 6761 6765 "func_boundary.ml" 173 6761 6778
+type(
+  string * Libbfd.address_t * Libbfd.address_t
+)
+"func_boundary.ml" 173 6761 6782 "func_boundary.ml" 173 6761 6787
+type(
+  bool
+)
+"func_boundary.ml" 174 6788 6793 "func_boundary.ml" 174 6788 6794
+type(
+  string * Libbfd.address_t * Libbfd.address_t
+)
+"func_boundary.ml" 174 6788 6798 "func_boundary.ml" 174 6788 6802
+type(
+  bool
+)
+"func_boundary.ml" 171 6715 6729 "func_boundary.ml" 174 6788 6803
+type(
+  string * Libbfd.address_t * Libbfd.address_t -> bool
+)
+"func_boundary.ml" 175 6804 6808 "func_boundary.ml" 175 6804 6818
+type(
+  (string * Libbfd.address_t * Libbfd.address_t) list
+)
+ident(
+  int_ref unfiltered "func_boundary.ml" 169 6627 6633 "func_boundary.ml" 169 6627 6643
+)
+"func_boundary.ml" 171 6715 6717 "func_boundary.ml" 175 6804 6818
+call(
+  tail
+)
+type(
+  (string * Libbfd.address_t * Libbfd.address_t) list
+)
+"func_boundary.ml" 169 6627 6629 "func_boundary.ml" 175 6804 6818
+type(
+  (string * Libbfd.address_t * Libbfd.address_t) list
+)
+"func_boundary.ml" 160 6393 6395 "func_boundary.ml" 175 6804 6818
+type(
+  (string * Libbfd.address_t * Libbfd.address_t) list
+)
+"func_boundary.ml" 159 6348 6350 "func_boundary.ml" 175 6804 6818
+type(
+  (string * Libbfd.address_t * Libbfd.address_t) list
+)
+"func_boundary.ml" 157 6255 6257 "func_boundary.ml" 175 6804 6818
+type(
+  (string * Libbfd.address_t * Libbfd.address_t) list
+)
+"func_boundary.ml" 119 4748 4750 "func_boundary.ml" 175 6804 6818
+type(
+  (string * Libbfd.address_t * Libbfd.address_t) list
+)

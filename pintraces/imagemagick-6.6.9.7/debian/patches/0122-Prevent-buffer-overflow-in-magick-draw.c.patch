@@ -1,0 +1,116 @@
+Backport of:
+
+From 02eeb476609d15176eb158f819d74c1b11075b6c Mon Sep 17 00:00:00 2001
+From: Cristy <urban-warrior@imagemagick.org>
+Date: Wed, 4 May 2016 19:09:35 -0400
+Subject: [PATCH] Prevent buffer overflow in magick/draw.c
+
+Fix CVE-2016-4562, CVE-2016-4563, CVE-2016-4564.
+
+bug-debian: https://bugs.debian.org/832887
+bug-debian: https://bugs.debian.org/832885
+bug-debian: https://bugs.debian.org/832888
+origin: upstream, https://github.com/ImageMagick/ImageMagick/commit/726812fa2fa7ce16bcf58f6e115f65427a1c0950
+---
+ magick/draw.c | 46 +++++++++++++++++++++++++++++-----------------
+ 1 file changed, 29 insertions(+), 17 deletions(-)
+
+Index: imagemagick-6.6.9.7/magick/draw.c
+===================================================================
+--- imagemagick-6.6.9.7.orig/magick/draw.c	2016-11-15 15:41:20.523752200 -0500
++++ imagemagick-6.6.9.7/magick/draw.c	2016-11-15 15:42:55.400910679 -0500
+@@ -1432,7 +1432,7 @@
+     }
+   (void) QueryColorDatabase("#00000000",&image->clip_mask->background_color,
+     &image->exception);
+-  image->clip_mask->background_color.opacity=(Quantum) TransparentOpacity;
++  image->clip_mask->background_color.opacity=(MagickRealType) TransparentOpacity;
+   (void) SetImageBackgroundColor(image->clip_mask);
+   if (image->debug != MagickFalse)
+     (void) LogMagickEvent(DrawEvent,GetMagickModule(),"\nbegin clip-path %s",
+@@ -1551,7 +1551,7 @@
+   status=MagickTrue;
+   maximum_length=0.0;
+   total_length=0.0;
+-  for (i=1; (i < number_vertices) && (length >= 0.0); i++)
++  for (i=1; (i < (ssize_t) number_vertices) && (length >= 0.0); i++)
+   {
+     dx=primitive_info[i].point.x-primitive_info[i-1].point.x;
+     dy=primitive_info[i].point.y-primitive_info[i-1].point.y;
+@@ -4506,7 +4506,7 @@
+           */
+           clone_info=CloneDrawInfo((ImageInfo *) NULL,draw_info);
+           clone_info->stroke_width=0.0;
+-          clone_info->stroke.opacity=(Quantum) TransparentOpacity;
++          clone_info->stroke.opacity=(MagickRealType) TransparentOpacity;
+           status=DrawPolygonPrimitive(image,clone_info,primitive_info);
+           clone_info=DestroyDrawInfo(clone_info);
+           (void) DrawDashPolygon(draw_info,primitive_info,image);
+@@ -4538,7 +4538,7 @@
+             }
+           clone_info=CloneDrawInfo((ImageInfo *) NULL,draw_info);
+           clone_info->stroke_width=0.0;
+-          clone_info->stroke.opacity=(Quantum) TransparentOpacity;
++          clone_info->stroke.opacity=(MagickRealType) TransparentOpacity;
+           status=DrawPolygonPrimitive(image,clone_info,primitive_info);
+           clone_info=DestroyDrawInfo(clone_info);
+           status|=DrawStrokePolygon(image,draw_info,primitive_info);
+@@ -4629,7 +4629,7 @@
+       "    begin draw-stroke-polygon");
+   clone_info=CloneDrawInfo((ImageInfo *) NULL,draw_info);
+   clone_info->fill=draw_info->stroke;
+-  clone_info->stroke.opacity=(Quantum) TransparentOpacity;
++  clone_info->stroke.opacity=(MagickRealType) TransparentOpacity;
+   clone_info->stroke_width=0.0;
+   clone_info->fill_rule=NonZeroRule;
+   status=MagickTrue;
+@@ -4748,7 +4748,7 @@
+   draw_info->pointsize=12.0;
+   if (clone_info->pointsize != 0.0)
+     draw_info->pointsize=clone_info->pointsize;
+-  draw_info->undercolor.opacity=(Quantum) TransparentOpacity;
++  draw_info->undercolor.opacity=(MagickRealType) TransparentOpacity;
+   draw_info->border_color=clone_info->border_color;
+   draw_info->compose=OverCompositeOp;
+   if (clone_info->server_name != (char *) NULL)
+@@ -5912,17 +5912,29 @@
+       }
+     if (q >= (ssize_t) (max_strokes-6*BezierQuantum-360))
+       {
+-         max_strokes+=6*BezierQuantum+360;
+-         path_p=(PointInfo *) ResizeQuantumMemory(path_p,(size_t) max_strokes,
+-           sizeof(*path_p));
+-         path_q=(PointInfo *) ResizeQuantumMemory(path_q,(size_t) max_strokes,
+-           sizeof(*path_q));
+-         if ((path_p == (PointInfo *) NULL) || (path_q == (PointInfo *) NULL))
+-           {
+-             polygon_primitive=(PrimitiveInfo *)
+-               RelinquishMagickMemory(polygon_primitive);
+-             return((PrimitiveInfo *) NULL);
+-           }
++        if (~max_strokes < (6*BezierQuantum+360))
++          {
++            path_p=(PointInfo *) RelinquishMagickMemory(path_p);
++            path_q=(PointInfo *) RelinquishMagickMemory(path_q);
++          }
++        else
++          {
++            max_strokes+=6*BezierQuantum+360;
++            path_p=(PointInfo *) ResizeQuantumMemory(path_p,max_strokes,
++              sizeof(*path_p));
++            path_q=(PointInfo *) ResizeQuantumMemory(path_q,max_strokes,
++              sizeof(*path_q));
++          }
++        if ((path_p == (PointInfo *) NULL) || (path_q == (PointInfo *) NULL))
++          {
++            if (path_p != (PointInfo *) NULL)
++              path_p=(PointInfo *) RelinquishMagickMemory(path_p);
++            if (path_q != (PointInfo *) NULL)
++              path_q=(PointInfo *) RelinquishMagickMemory(path_q);
++            polygon_primitive=(PrimitiveInfo *)
++              RelinquishMagickMemory(polygon_primitive);
++            return((PrimitiveInfo *) NULL);
++          }
+       }
+     dot_product=dx.q*dy.p-dx.p*dy.q;
+     if (dot_product <= 0.0)

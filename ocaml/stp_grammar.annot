@@ -1,0 +1,1086 @@
+"stp_grammar.ml" 16 192 196 "stp_grammar.ml" 16 192 210
+type(
+  int array
+)
+ident(
+  def yytransl_const "stp_grammar.ml" 29 427 427 --
+)
+"stp_grammar.ml" 17 216 218 "stp_grammar.ml" 17 216 221
+type(
+  int
+)
+"stp_grammar.ml" 18 239 241 "stp_grammar.ml" 18 239 244
+type(
+  int
+)
+"stp_grammar.ml" 19 261 263 "stp_grammar.ml" 19 261 266
+type(
+  int
+)
+"stp_grammar.ml" 20 283 285 "stp_grammar.ml" 20 283 288
+type(
+  int
+)
+"stp_grammar.ml" 21 302 304 "stp_grammar.ml" 21 302 307
+type(
+  int
+)
+"stp_grammar.ml" 22 322 324 "stp_grammar.ml" 22 322 327
+type(
+  int
+)
+"stp_grammar.ml" 23 343 345 "stp_grammar.ml" 23 343 348
+type(
+  int
+)
+"stp_grammar.ml" 24 362 364 "stp_grammar.ml" 24 362 367
+type(
+  int
+)
+"stp_grammar.ml" 25 381 383 "stp_grammar.ml" 25 381 386
+type(
+  int
+)
+"stp_grammar.ml" 26 401 405 "stp_grammar.ml" 26 401 406
+type(
+  int
+)
+"stp_grammar.ml" 27 418 422 "stp_grammar.ml" 27 418 423
+type(
+  int
+)
+"stp_grammar.ml" 16 192 213 "stp_grammar.ml" 27 418 425
+type(
+  int array
+)
+"stp_grammar.ml" 29 427 431 "stp_grammar.ml" 29 427 445
+type(
+  int array
+)
+ident(
+  def yytransl_block "stp_grammar.ml" 34 494 494 --
+)
+"stp_grammar.ml" 30 451 453 "stp_grammar.ml" 30 451 456
+type(
+  int
+)
+"stp_grammar.ml" 31 468 470 "stp_grammar.ml" 31 468 473
+type(
+  int
+)
+"stp_grammar.ml" 32 485 489 "stp_grammar.ml" 32 485 490
+type(
+  int
+)
+"stp_grammar.ml" 29 427 448 "stp_grammar.ml" 32 485 492
+type(
+  int array
+)
+"stp_grammar.ml" 34 494 498 "stp_grammar.ml" 34 494 503
+type(
+  string
+)
+ident(
+  def yylhs "stp_grammar.ml" 38 594 594 --
+)
+"stp_grammar.ml" 34 494 506 "stp_grammar.ml" 36 583 592
+type(
+  string
+)
+"stp_grammar.ml" 38 594 598 "stp_grammar.ml" 38 594 603
+type(
+  string
+)
+ident(
+  def yylen "stp_grammar.ml" 42 694 694 --
+)
+"stp_grammar.ml" 38 594 606 "stp_grammar.ml" 40 683 692
+type(
+  string
+)
+"stp_grammar.ml" 42 694 698 "stp_grammar.ml" 42 694 706
+type(
+  string
+)
+ident(
+  def yydefred "stp_grammar.ml" 47 919 919 --
+)
+"stp_grammar.ml" 42 694 709 "stp_grammar.ml" 45 852 917
+type(
+  string
+)
+"stp_grammar.ml" 47 919 923 "stp_grammar.ml" 47 919 930
+type(
+  string
+)
+ident(
+  def yydgoto "stp_grammar.ml" 50 987 987 --
+)
+"stp_grammar.ml" 47 919 933 "stp_grammar.ml" 48 944 985
+type(
+  string
+)
+"stp_grammar.ml" 50 987 991 "stp_grammar.ml" 50 987 999
+type(
+  string
+)
+ident(
+  def yysindex "stp_grammar.ml" 55 1212 1212 --
+)
+"stp_grammar.ml" 50 987 1002 "stp_grammar.ml" 53 1145 1210
+type(
+  string
+)
+"stp_grammar.ml" 55 1212 1216 "stp_grammar.ml" 55 1212 1224
+type(
+  string
+)
+ident(
+  def yyrindex "stp_grammar.ml" 60 1437 1437 --
+)
+"stp_grammar.ml" 55 1212 1227 "stp_grammar.ml" 58 1370 1435
+type(
+  string
+)
+"stp_grammar.ml" 60 1437 1441 "stp_grammar.ml" 60 1437 1449
+type(
+  string
+)
+ident(
+  def yygindex "stp_grammar.ml" 63 1506 1506 --
+)
+"stp_grammar.ml" 60 1437 1452 "stp_grammar.ml" 61 1463 1504
+type(
+  string
+)
+"stp_grammar.ml" 63 1506 1510 "stp_grammar.ml" 63 1506 1521
+type(
+  int
+)
+ident(
+  def yytablesize "stp_grammar.ml" 64 1528 1528 --
+)
+"stp_grammar.ml" 63 1506 1524 "stp_grammar.ml" 63 1506 1527
+type(
+  int
+)
+"stp_grammar.ml" 64 1528 1532 "stp_grammar.ml" 64 1528 1539
+type(
+  string
+)
+ident(
+  def yytable "stp_grammar.ml" 100 3742 3742 --
+)
+"stp_grammar.ml" 64 1528 1542 "stp_grammar.ml" 98 3731 3740
+type(
+  string
+)
+"stp_grammar.ml" 100 3742 3746 "stp_grammar.ml" 100 3742 3753
+type(
+  string
+)
+ident(
+  def yycheck "stp_grammar.ml" 136 5956 5956 --
+)
+"stp_grammar.ml" 100 3742 3756 "stp_grammar.ml" 134 5945 5954
+type(
+  string
+)
+"stp_grammar.ml" 136 5956 5960 "stp_grammar.ml" 136 5956 5973
+type(
+  string
+)
+ident(
+  def yynames_const "stp_grammar.ml" 149 6126 6126 --
+)
+"stp_grammar.ml" 136 5956 5976 "stp_grammar.ml" 147 6121 6124
+type(
+  string
+)
+"stp_grammar.ml" 149 6126 6130 "stp_grammar.ml" 149 6126 6143
+type(
+  string
+)
+ident(
+  def yynames_block "stp_grammar.ml" 154 6176 6176 --
+)
+"stp_grammar.ml" 149 6126 6146 "stp_grammar.ml" 152 6171 6174
+type(
+  string
+)
+"stp_grammar.ml" 154 6176 6180 "stp_grammar.ml" 154 6176 6185
+type(
+  (Parsing.parser_env -> Obj.t) array
+)
+ident(
+  def yyact "stp_grammar.ml" 216 8262 8262 --
+)
+"stp_grammar.ml" 155 6191 6198 "stp_grammar.ml" 155 6191 6199
+type(
+  Parsing.parser_env
+)
+"stp_grammar.ml" 155 6191 6203 "stp_grammar.ml" 155 6191 6211
+type(
+  string -> Obj.t
+)
+ident(
+  ext_ref Pervasives.failwith
+)
+"stp_grammar.ml" 155 6191 6212 "stp_grammar.ml" 155 6191 6220
+type(
+  string
+)
+"stp_grammar.ml" 155 6191 6203 "stp_grammar.ml" 155 6191 6220
+call(
+  tail
+)
+type(
+  Obj.t
+)
+"stp_grammar.ml" 155 6191 6193 "stp_grammar.ml" 155 6191 6221
+type(
+  Parsing.parser_env -> Obj.t
+)
+"stp_grammar.ml" 156 6222 6229 "stp_grammar.ml" 156 6222 6246
+type(
+  Parsing.parser_env
+)
+ident(
+  def __caml_parser_env "stp_grammar.ml" 157 6250 6254 "stp_grammar.ml" 163 6489 6547
+)
+"stp_grammar.ml" 157 6250 6258 "stp_grammar.ml" 157 6250 6260
+type(
+  (string * Big_int_Z.big_int) list
+)
+"stp_grammar.ml" 157 6250 6264 "stp_grammar.ml" 157 6250 6280
+type(
+  Parsing.parser_env -> int -> (string * Big_int_Z.big_int) list
+)
+ident(
+  ext_ref Parsing.peek_val
+)
+"stp_grammar.ml" 157 6250 6281 "stp_grammar.ml" 157 6250 6298
+type(
+  Parsing.parser_env
+)
+ident(
+  int_ref __caml_parser_env "stp_grammar.ml" 156 6222 6229 "stp_grammar.ml" 156 6222 6246
+)
+"stp_grammar.ml" 157 6250 6299 "stp_grammar.ml" 157 6250 6300
+type(
+  int
+)
+"stp_grammar.ml" 157 6250 6264 "stp_grammar.ml" 157 6250 6300
+call(
+  stack
+)
+type(
+  (string * Big_int_Z.big_int) list
+)
+type(
+  (string * Big_int_Z.big_int) list
+)
+"stp_grammar.ml" 158 6319 6327 "stp_grammar.ml" 158 6319 6329
+type(
+  unit
+)
+"stp_grammar.ml" 158 6319 6333 "stp_grammar.ml" 158 6319 6349
+type(
+  Parsing.parser_env -> int -> unit
+)
+ident(
+  ext_ref Parsing.peek_val
+)
+"stp_grammar.ml" 158 6319 6350 "stp_grammar.ml" 158 6319 6367
+type(
+  Parsing.parser_env
+)
+ident(
+  int_ref __caml_parser_env "stp_grammar.ml" 156 6222 6229 "stp_grammar.ml" 156 6222 6246
+)
+"stp_grammar.ml" 158 6319 6368 "stp_grammar.ml" 158 6319 6369
+type(
+  int
+)
+"stp_grammar.ml" 158 6319 6333 "stp_grammar.ml" 158 6319 6369
+call(
+  stack
+)
+type(
+  unit
+)
+type(
+  unit
+)
+"stp_grammar.ml" 159 6388 6392 "stp_grammar.ml" 159 6388 6400
+type(
+  (string * Big_int_Z.big_int) list option -> Obj.t
+)
+ident(
+  ext_ref Obj.repr
+)
+"stp_grammar.mly" 21 6425 6459 "stp_grammar.mly" 21 6425 6463
+type(
+  (string * Big_int_Z.big_int) list
+)
+ident(
+  int_ref _1 "stp_grammar.ml" 157 6250 6258 "stp_grammar.ml" 157 6250 6260
+)
+"stp_grammar.mly" 21 6425 6453 "stp_grammar.mly" 21 6425 6465
+type(
+  (string * Big_int_Z.big_int) list option
+)
+type(
+  (string * Big_int_Z.big_int) list option
+)
+"stp_grammar.ml" 159 6388 6392 "stp_grammar.ml" 163 6489 6547
+type(
+  Obj.t
+)
+"stp_grammar.ml" 158 6319 6323 "stp_grammar.ml" 163 6489 6547
+type(
+  Obj.t
+)
+"stp_grammar.ml" 157 6250 6254 "stp_grammar.ml" 163 6489 6547
+type(
+  Obj.t
+)
+"stp_grammar.ml" 156 6222 6224 "stp_grammar.ml" 163 6489 6548
+type(
+  Parsing.parser_env -> Obj.t
+)
+"stp_grammar.ml" 164 6549 6556 "stp_grammar.ml" 164 6549 6573
+type(
+  Parsing.parser_env
+)
+ident(
+  def __caml_parser_env "stp_grammar.ml" 165 6577 6581 "stp_grammar.ml" 171 6816 6874
+)
+"stp_grammar.ml" 165 6577 6585 "stp_grammar.ml" 165 6577 6587
+type(
+  unit
+)
+"stp_grammar.ml" 165 6577 6591 "stp_grammar.ml" 165 6577 6607
+type(
+  Parsing.parser_env -> int -> unit
+)
+ident(
+  ext_ref Parsing.peek_val
+)
+"stp_grammar.ml" 165 6577 6608 "stp_grammar.ml" 165 6577 6625
+type(
+  Parsing.parser_env
+)
+ident(
+  int_ref __caml_parser_env "stp_grammar.ml" 164 6549 6556 "stp_grammar.ml" 164 6549 6573
+)
+"stp_grammar.ml" 165 6577 6626 "stp_grammar.ml" 165 6577 6627
+type(
+  int
+)
+"stp_grammar.ml" 165 6577 6591 "stp_grammar.ml" 165 6577 6627
+call(
+  stack
+)
+type(
+  unit
+)
+type(
+  unit
+)
+"stp_grammar.ml" 166 6646 6654 "stp_grammar.ml" 166 6646 6656
+type(
+  (string * Big_int_Z.big_int) list
+)
+"stp_grammar.ml" 166 6646 6660 "stp_grammar.ml" 166 6646 6676
+type(
+  Parsing.parser_env -> int -> (string * Big_int_Z.big_int) list
+)
+ident(
+  ext_ref Parsing.peek_val
+)
+"stp_grammar.ml" 166 6646 6677 "stp_grammar.ml" 166 6646 6694
+type(
+  Parsing.parser_env
+)
+ident(
+  int_ref __caml_parser_env "stp_grammar.ml" 164 6549 6556 "stp_grammar.ml" 164 6549 6573
+)
+"stp_grammar.ml" 166 6646 6695 "stp_grammar.ml" 166 6646 6696
+type(
+  int
+)
+"stp_grammar.ml" 166 6646 6660 "stp_grammar.ml" 166 6646 6696
+call(
+  stack
+)
+type(
+  (string * Big_int_Z.big_int) list
+)
+type(
+  (string * Big_int_Z.big_int) list
+)
+"stp_grammar.ml" 167 6715 6719 "stp_grammar.ml" 167 6715 6727
+type(
+  (string * Big_int_Z.big_int) list option -> Obj.t
+)
+ident(
+  ext_ref Obj.repr
+)
+"stp_grammar.mly" 22 6752 6786 "stp_grammar.mly" 22 6752 6790
+type(
+  (string * Big_int_Z.big_int) list
+)
+ident(
+  int_ref _2 "stp_grammar.ml" 166 6646 6654 "stp_grammar.ml" 166 6646 6656
+)
+"stp_grammar.mly" 22 6752 6780 "stp_grammar.mly" 22 6752 6792
+type(
+  (string * Big_int_Z.big_int) list option
+)
+type(
+  (string * Big_int_Z.big_int) list option
+)
+"stp_grammar.ml" 167 6715 6719 "stp_grammar.ml" 171 6816 6874
+type(
+  Obj.t
+)
+"stp_grammar.ml" 166 6646 6650 "stp_grammar.ml" 171 6816 6874
+type(
+  Obj.t
+)
+"stp_grammar.ml" 165 6577 6581 "stp_grammar.ml" 171 6816 6874
+type(
+  Obj.t
+)
+"stp_grammar.ml" 164 6549 6551 "stp_grammar.ml" 171 6816 6875
+type(
+  Parsing.parser_env -> Obj.t
+)
+"stp_grammar.ml" 172 6876 6883 "stp_grammar.ml" 172 6876 6900
+type(
+  Parsing.parser_env
+)
+ident(
+  def __caml_parser_env "stp_grammar.ml" 173 6904 6908 "stp_grammar.ml" 178 7057 7115
+)
+"stp_grammar.ml" 173 6904 6912 "stp_grammar.ml" 173 6904 6914
+type(
+  unit
+)
+"stp_grammar.ml" 173 6904 6918 "stp_grammar.ml" 173 6904 6934
+type(
+  Parsing.parser_env -> int -> unit
+)
+ident(
+  ext_ref Parsing.peek_val
+)
+"stp_grammar.ml" 173 6904 6935 "stp_grammar.ml" 173 6904 6952
+type(
+  Parsing.parser_env
+)
+ident(
+  int_ref __caml_parser_env "stp_grammar.ml" 172 6876 6883 "stp_grammar.ml" 172 6876 6900
+)
+"stp_grammar.ml" 173 6904 6953 "stp_grammar.ml" 173 6904 6954
+type(
+  int
+)
+"stp_grammar.ml" 173 6904 6918 "stp_grammar.ml" 173 6904 6954
+call(
+  stack
+)
+type(
+  unit
+)
+type(
+  unit
+)
+"stp_grammar.ml" 174 6972 6976 "stp_grammar.ml" 174 6972 6984
+type(
+  (string * Big_int_Z.big_int) list option -> Obj.t
+)
+ident(
+  ext_ref Obj.repr
+)
+"stp_grammar.mly" 23 7009 7025 "stp_grammar.mly" 23 7009 7033
+type(
+  (string * Big_int_Z.big_int) list option
+)
+type(
+  (string * Big_int_Z.big_int) list option
+)
+"stp_grammar.ml" 174 6972 6976 "stp_grammar.ml" 178 7057 7115
+type(
+  Obj.t
+)
+"stp_grammar.ml" 173 6904 6908 "stp_grammar.ml" 178 7057 7115
+type(
+  Obj.t
+)
+"stp_grammar.ml" 172 6876 6878 "stp_grammar.ml" 178 7057 7116
+type(
+  Parsing.parser_env -> Obj.t
+)
+"stp_grammar.ml" 179 7117 7124 "stp_grammar.ml" 179 7117 7141
+type(
+  Parsing.parser_env
+)
+ident(
+  def __caml_parser_env "stp_grammar.ml" 180 7145 7149 "stp_grammar.ml" 184 7228 7257
+)
+"stp_grammar.ml" 180 7145 7149 "stp_grammar.ml" 180 7145 7157
+type(
+  (string * Big_int_Z.big_int) list -> Obj.t
+)
+ident(
+  ext_ref Obj.repr
+)
+"stp_grammar.mly" 27 7182 7198 "stp_grammar.mly" 27 7182 7204
+type(
+  (string * Big_int_Z.big_int) list
+)
+type(
+  (string * Big_int_Z.big_int) list
+)
+"stp_grammar.ml" 180 7145 7149 "stp_grammar.ml" 184 7228 7257
+type(
+  Obj.t
+)
+"stp_grammar.ml" 179 7117 7119 "stp_grammar.ml" 184 7228 7258
+type(
+  Parsing.parser_env -> Obj.t
+)
+"stp_grammar.ml" 185 7259 7266 "stp_grammar.ml" 185 7259 7283
+type(
+  Parsing.parser_env
+)
+ident(
+  def __caml_parser_env "stp_grammar.ml" 186 7287 7291 "stp_grammar.ml" 192 7532 7561
+)
+"stp_grammar.ml" 186 7287 7295 "stp_grammar.ml" 186 7287 7297
+type(
+  string * Big_int_Z.big_int
+)
+"stp_grammar.ml" 186 7287 7301 "stp_grammar.ml" 186 7287 7317
+type(
+  Parsing.parser_env -> int -> string * Big_int_Z.big_int
+)
+ident(
+  ext_ref Parsing.peek_val
+)
+"stp_grammar.ml" 186 7287 7318 "stp_grammar.ml" 186 7287 7335
+type(
+  Parsing.parser_env
+)
+ident(
+  int_ref __caml_parser_env "stp_grammar.ml" 185 7259 7266 "stp_grammar.ml" 185 7259 7283
+)
+"stp_grammar.ml" 186 7287 7336 "stp_grammar.ml" 186 7287 7337
+type(
+  int
+)
+"stp_grammar.ml" 186 7287 7301 "stp_grammar.ml" 186 7287 7337
+call(
+  stack
+)
+type(
+  string * Big_int_Z.big_int
+)
+type(
+  string * Big_int_Z.big_int
+)
+"stp_grammar.ml" 187 7355 7363 "stp_grammar.ml" 187 7355 7365
+type(
+  (string * Big_int_Z.big_int) list
+)
+"stp_grammar.ml" 187 7355 7369 "stp_grammar.ml" 187 7355 7385
+type(
+  Parsing.parser_env -> int -> (string * Big_int_Z.big_int) list
+)
+ident(
+  ext_ref Parsing.peek_val
+)
+"stp_grammar.ml" 187 7355 7386 "stp_grammar.ml" 187 7355 7403
+type(
+  Parsing.parser_env
+)
+ident(
+  int_ref __caml_parser_env "stp_grammar.ml" 185 7259 7266 "stp_grammar.ml" 185 7259 7283
+)
+"stp_grammar.ml" 187 7355 7404 "stp_grammar.ml" 187 7355 7405
+type(
+  int
+)
+"stp_grammar.ml" 187 7355 7369 "stp_grammar.ml" 187 7355 7405
+call(
+  stack
+)
+type(
+  (string * Big_int_Z.big_int) list
+)
+type(
+  (string * Big_int_Z.big_int) list
+)
+"stp_grammar.ml" 188 7424 7428 "stp_grammar.ml" 188 7424 7436
+type(
+  (string * Big_int_Z.big_int) list -> Obj.t
+)
+ident(
+  ext_ref Obj.repr
+)
+"stp_grammar.mly" 28 7461 7498 "stp_grammar.mly" 28 7461 7500
+type(
+  string * Big_int_Z.big_int
+)
+ident(
+  int_ref _1 "stp_grammar.ml" 186 7287 7295 "stp_grammar.ml" 186 7287 7297
+)
+"stp_grammar.mly" 28 7461 7504 "stp_grammar.mly" 28 7461 7506
+type(
+  (string * Big_int_Z.big_int) list
+)
+ident(
+  int_ref _3 "stp_grammar.ml" 187 7355 7363 "stp_grammar.ml" 187 7355 7365
+)
+"stp_grammar.mly" 28 7461 7496 "stp_grammar.mly" 28 7461 7508
+type(
+  (string * Big_int_Z.big_int) list
+)
+type(
+  (string * Big_int_Z.big_int) list
+)
+"stp_grammar.ml" 188 7424 7428 "stp_grammar.ml" 192 7532 7561
+type(
+  Obj.t
+)
+"stp_grammar.ml" 187 7355 7359 "stp_grammar.ml" 192 7532 7561
+type(
+  Obj.t
+)
+"stp_grammar.ml" 186 7287 7291 "stp_grammar.ml" 192 7532 7561
+type(
+  Obj.t
+)
+"stp_grammar.ml" 185 7259 7261 "stp_grammar.ml" 192 7532 7562
+type(
+  Parsing.parser_env -> Obj.t
+)
+"stp_grammar.ml" 193 7563 7570 "stp_grammar.ml" 193 7563 7587
+type(
+  Parsing.parser_env
+)
+ident(
+  def __caml_parser_env "stp_grammar.ml" 194 7591 7595 "stp_grammar.ml" 200 7844 7872
+)
+"stp_grammar.ml" 194 7591 7599 "stp_grammar.ml" 194 7591 7601
+type(
+  string
+)
+"stp_grammar.ml" 194 7591 7605 "stp_grammar.ml" 194 7591 7621
+type(
+  Parsing.parser_env -> int -> string
+)
+ident(
+  ext_ref Parsing.peek_val
+)
+"stp_grammar.ml" 194 7591 7622 "stp_grammar.ml" 194 7591 7639
+type(
+  Parsing.parser_env
+)
+ident(
+  int_ref __caml_parser_env "stp_grammar.ml" 193 7563 7570 "stp_grammar.ml" 193 7563 7587
+)
+"stp_grammar.ml" 194 7591 7640 "stp_grammar.ml" 194 7591 7641
+type(
+  int
+)
+"stp_grammar.ml" 194 7591 7605 "stp_grammar.ml" 194 7591 7641
+call(
+  stack
+)
+type(
+  string
+)
+type(
+  string
+)
+"stp_grammar.ml" 195 7655 7663 "stp_grammar.ml" 195 7655 7665
+type(
+  Big_int_Z.big_int
+)
+"stp_grammar.ml" 195 7655 7669 "stp_grammar.ml" 195 7655 7685
+type(
+  Parsing.parser_env -> int -> Big_int_Z.big_int
+)
+ident(
+  ext_ref Parsing.peek_val
+)
+"stp_grammar.ml" 195 7655 7686 "stp_grammar.ml" 195 7655 7703
+type(
+  Parsing.parser_env
+)
+ident(
+  int_ref __caml_parser_env "stp_grammar.ml" 193 7563 7570 "stp_grammar.ml" 193 7563 7587
+)
+"stp_grammar.ml" 195 7655 7704 "stp_grammar.ml" 195 7655 7705
+type(
+  int
+)
+"stp_grammar.ml" 195 7655 7669 "stp_grammar.ml" 195 7655 7705
+call(
+  stack
+)
+type(
+  Big_int_Z.big_int
+)
+type(
+  Big_int_Z.big_int
+)
+"stp_grammar.ml" 196 7730 7734 "stp_grammar.ml" 196 7730 7742
+type(
+  string * Big_int_Z.big_int -> Obj.t
+)
+ident(
+  ext_ref Obj.repr
+)
+"stp_grammar.mly" 32 7767 7811 "stp_grammar.mly" 32 7767 7813
+type(
+  string
+)
+ident(
+  int_ref _3 "stp_grammar.ml" 194 7591 7599 "stp_grammar.ml" 194 7591 7601
+)
+"stp_grammar.mly" 32 7767 7815 "stp_grammar.mly" 32 7767 7817
+type(
+  Big_int_Z.big_int
+)
+ident(
+  int_ref _5 "stp_grammar.ml" 195 7655 7663 "stp_grammar.ml" 195 7655 7665
+)
+"stp_grammar.mly" 32 7767 7808 "stp_grammar.mly" 32 7767 7820
+type(
+  string * Big_int_Z.big_int
+)
+type(
+  string * Big_int_Z.big_int
+)
+"stp_grammar.ml" 196 7730 7734 "stp_grammar.ml" 200 7844 7872
+type(
+  Obj.t
+)
+"stp_grammar.ml" 195 7655 7659 "stp_grammar.ml" 200 7844 7872
+type(
+  Obj.t
+)
+"stp_grammar.ml" 194 7591 7595 "stp_grammar.ml" 200 7844 7872
+type(
+  Obj.t
+)
+"stp_grammar.ml" 193 7563 7565 "stp_grammar.ml" 200 7844 7873
+type(
+  Parsing.parser_env -> Obj.t
+)
+"stp_grammar.ml" 201 7874 7881 "stp_grammar.ml" 201 7874 7898
+type(
+  Parsing.parser_env
+)
+ident(
+  def __caml_parser_env "stp_grammar.ml" 202 7902 7906 "stp_grammar.ml" 206 7983 8012
+)
+"stp_grammar.ml" 202 7902 7906 "stp_grammar.ml" 202 7902 7914
+type(
+  unit -> Obj.t
+)
+ident(
+  ext_ref Obj.repr
+)
+"stp_grammar.mly" 36 7939 7956 "stp_grammar.mly" 36 7939 7959
+type(
+  unit
+)
+type(
+  unit
+)
+"stp_grammar.ml" 202 7902 7906 "stp_grammar.ml" 206 7983 8012
+type(
+  Obj.t
+)
+"stp_grammar.ml" 201 7874 7876 "stp_grammar.ml" 206 7983 8013
+type(
+  Parsing.parser_env -> Obj.t
+)
+"stp_grammar.ml" 207 8014 8021 "stp_grammar.ml" 207 8014 8038
+type(
+  Parsing.parser_env
+)
+ident(
+  def __caml_parser_env "stp_grammar.ml" 208 8042 8046 "stp_grammar.ml" 212 8121 8149
+)
+"stp_grammar.ml" 208 8042 8046 "stp_grammar.ml" 208 8042 8054
+type(
+  unit -> Obj.t
+)
+ident(
+  ext_ref Obj.repr
+)
+"stp_grammar.mly" 40 8079 8094 "stp_grammar.mly" 40 8079 8097
+type(
+  unit
+)
+type(
+  unit
+)
+"stp_grammar.ml" 208 8042 8046 "stp_grammar.ml" 212 8121 8149
+type(
+  Obj.t
+)
+"stp_grammar.ml" 207 8014 8016 "stp_grammar.ml" 212 8121 8150
+type(
+  Parsing.parser_env -> Obj.t
+)
+"stp_grammar.ml" 214 8168 8175 "stp_grammar.ml" 214 8168 8192
+type(
+  Parsing.parser_env
+)
+ident(
+  def __caml_parser_env "stp_grammar.ml" 214 8168 8196 "stp_grammar.ml" 214 8168 8257
+)
+"stp_grammar.ml" 214 8168 8196 "stp_grammar.ml" 214 8168 8201
+type(
+  exn -> Obj.t
+)
+ident(
+  ext_ref Pervasives.raise
+)
+"stp_grammar.ml" 214 8168 8219 "stp_grammar.ml" 214 8168 8235
+type(
+  Parsing.parser_env -> int -> Obj.t
+)
+ident(
+  ext_ref Parsing.peek_val
+)
+"stp_grammar.ml" 214 8168 8236 "stp_grammar.ml" 214 8168 8253
+type(
+  Parsing.parser_env
+)
+ident(
+  int_ref __caml_parser_env "stp_grammar.ml" 214 8168 8175 "stp_grammar.ml" 214 8168 8192
+)
+"stp_grammar.ml" 214 8168 8254 "stp_grammar.ml" 214 8168 8255
+type(
+  int
+)
+"stp_grammar.ml" 214 8168 8218 "stp_grammar.ml" 214 8168 8256
+call(
+  stack
+)
+type(
+  Obj.t
+)
+"stp_grammar.ml" 214 8168 8202 "stp_grammar.ml" 214 8168 8257
+type(
+  exn
+)
+"stp_grammar.ml" 214 8168 8196 "stp_grammar.ml" 214 8168 8257
+type(
+  Obj.t
+)
+"stp_grammar.ml" 214 8168 8170 "stp_grammar.ml" 214 8168 8258
+type(
+  Parsing.parser_env -> Obj.t
+)
+"stp_grammar.ml" 154 6176 6188 "stp_grammar.ml" 215 8259 8261
+type(
+  (Parsing.parser_env -> Obj.t) array
+)
+"stp_grammar.ml" 216 8262 8266 "stp_grammar.ml" 216 8262 8274
+type(
+  Parsing.parse_tables
+)
+ident(
+  def yytables "stp_grammar.ml" 233 8783 8783 --
+)
+"stp_grammar.ml" 217 8277 8297 "stp_grammar.ml" 217 8277 8302
+type(
+  (Parsing.parser_env -> Obj.t) array
+)
+ident(
+  int_ref yyact "stp_grammar.ml" 154 6176 6180 "stp_grammar.ml" 154 6176 6185
+)
+"stp_grammar.ml" 218 8304 8329 "stp_grammar.ml" 218 8304 8343
+type(
+  int array
+)
+ident(
+  int_ref yytransl_const "stp_grammar.ml" 16 192 196 "stp_grammar.ml" 16 192 210
+)
+"stp_grammar.ml" 219 8345 8370 "stp_grammar.ml" 219 8345 8384
+type(
+  int array
+)
+ident(
+  int_ref yytransl_block "stp_grammar.ml" 29 427 431 "stp_grammar.ml" 29 427 445
+)
+"stp_grammar.ml" 220 8386 8402 "stp_grammar.ml" 220 8386 8407
+type(
+  string
+)
+ident(
+  int_ref yylhs "stp_grammar.ml" 34 494 498 "stp_grammar.ml" 34 494 503
+)
+"stp_grammar.ml" 221 8409 8425 "stp_grammar.ml" 221 8409 8430
+type(
+  string
+)
+ident(
+  int_ref yylen "stp_grammar.ml" 38 594 598 "stp_grammar.ml" 38 594 603
+)
+"stp_grammar.ml" 222 8432 8451 "stp_grammar.ml" 222 8432 8459
+type(
+  string
+)
+ident(
+  int_ref yydefred "stp_grammar.ml" 42 694 698 "stp_grammar.ml" 42 694 706
+)
+"stp_grammar.ml" 223 8461 8479 "stp_grammar.ml" 223 8461 8486
+type(
+  string
+)
+ident(
+  int_ref yydgoto "stp_grammar.ml" 47 919 923 "stp_grammar.ml" 47 919 930
+)
+"stp_grammar.ml" 224 8488 8507 "stp_grammar.ml" 224 8488 8515
+type(
+  string
+)
+ident(
+  int_ref yysindex "stp_grammar.ml" 50 987 991 "stp_grammar.ml" 50 987 999
+)
+"stp_grammar.ml" 225 8517 8536 "stp_grammar.ml" 225 8517 8544
+type(
+  string
+)
+ident(
+  int_ref yyrindex "stp_grammar.ml" 55 1212 1216 "stp_grammar.ml" 55 1212 1224
+)
+"stp_grammar.ml" 226 8546 8565 "stp_grammar.ml" 226 8546 8573
+type(
+  string
+)
+ident(
+  int_ref yygindex "stp_grammar.ml" 60 1437 1441 "stp_grammar.ml" 60 1437 1449
+)
+"stp_grammar.ml" 227 8575 8597 "stp_grammar.ml" 227 8575 8608
+type(
+  int
+)
+ident(
+  int_ref yytablesize "stp_grammar.ml" 63 1506 1510 "stp_grammar.ml" 63 1506 1521
+)
+"stp_grammar.ml" 228 8610 8628 "stp_grammar.ml" 228 8610 8635
+type(
+  string
+)
+ident(
+  int_ref yytable "stp_grammar.ml" 64 1528 1532 "stp_grammar.ml" 64 1528 1539
+)
+"stp_grammar.ml" 229 8637 8655 "stp_grammar.ml" 229 8637 8662
+type(
+  string
+)
+ident(
+  int_ref yycheck "stp_grammar.ml" 100 3742 3746 "stp_grammar.ml" 100 3742 3753
+)
+"stp_grammar.ml" 230 8664 8691 "stp_grammar.ml" 230 8664 8702
+type(
+  string -> unit
+)
+ident(
+  ext_ref Parsing.parse_error
+)
+"stp_grammar.ml" 231 8704 8728 "stp_grammar.ml" 231 8704 8741
+type(
+  string
+)
+ident(
+  int_ref yynames_const "stp_grammar.ml" 136 5956 5960 "stp_grammar.ml" 136 5956 5973
+)
+"stp_grammar.ml" 232 8743 8767 "stp_grammar.ml" 232 8743 8780
+type(
+  string
+)
+ident(
+  int_ref yynames_block "stp_grammar.ml" 149 6126 6130 "stp_grammar.ml" 149 6126 6143
+)
+"stp_grammar.ml" 217 8277 8279 "stp_grammar.ml" 232 8743 8782
+type(
+  Parsing.parse_tables
+)
+"stp_grammar.ml" 233 8783 8787 "stp_grammar.ml" 233 8783 8791
+type(
+  (Lexing.lexbuf -> token) ->
+  Lexing.lexbuf -> (string * Big_int_Z.big_int) list option
+)
+ident(
+  def main "stp_grammar.ml" 234 8853 8941 --
+)
+"stp_grammar.ml" 233 8783 8793 "stp_grammar.ml" 233 8783 8799
+type(
+  Lexing.lexbuf -> token
+)
+ident(
+  def lexfun "stp_grammar.ml" 233 8783 8826 "stp_grammar.ml" 234 8853 8941
+)
+"stp_grammar.ml" 233 8783 8827 "stp_grammar.ml" 233 8783 8833
+type(
+  Lexing.lexbuf
+)
+ident(
+  def lexbuf "stp_grammar.ml" 234 8853 8856 "stp_grammar.ml" 234 8853 8941
+)
+"stp_grammar.ml" 234 8853 8857 "stp_grammar.ml" 234 8853 8872
+type(
+  Parsing.parse_tables ->
+  int ->
+  (Lexing.lexbuf -> token) ->
+  Lexing.lexbuf -> (string * Big_int_Z.big_int) list option
+)
+ident(
+  ext_ref Parsing.yyparse
+)
+"stp_grammar.ml" 234 8853 8873 "stp_grammar.ml" 234 8853 8881
+type(
+  Parsing.parse_tables
+)
+ident(
+  int_ref yytables "stp_grammar.ml" 216 8262 8266 "stp_grammar.ml" 216 8262 8274
+)
+"stp_grammar.ml" 234 8853 8882 "stp_grammar.ml" 234 8853 8883
+type(
+  int
+)
+"stp_grammar.ml" 234 8853 8884 "stp_grammar.ml" 234 8853 8890
+type(
+  Lexing.lexbuf -> token
+)
+ident(
+  int_ref lexfun "stp_grammar.ml" 233 8783 8793 "stp_grammar.ml" 233 8783 8799
+)
+"stp_grammar.ml" 234 8853 8891 "stp_grammar.ml" 234 8853 8897
+type(
+  Lexing.lexbuf
+)
+ident(
+  int_ref lexbuf "stp_grammar.ml" 233 8783 8827 "stp_grammar.ml" 233 8783 8833
+)
+"stp_grammar.ml" 234 8853 8857 "stp_grammar.ml" 234 8853 8897
+call(
+  tail
+)
+type(
+  (string * Big_int_Z.big_int) list option
+)
+type(
+  (string * Big_int_Z.big_int) list option
+)

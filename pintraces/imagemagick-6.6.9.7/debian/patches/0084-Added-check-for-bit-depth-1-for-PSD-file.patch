@@ -1,0 +1,32 @@
+Backport of:
+
+From 407ffab5d5eb3260d8fdeb1163cea31a855c35cb Mon Sep 17 00:00:00 2001
+From: dirk <dirk@git.imagemagick.org>
+Date: Fri, 15 Jan 2016 11:17:30 +0100
+Subject: [PATCH] Added check for bit depth 1 for PSD file
+
+This is a partial fix of out-of-bounds read in coders/psd.c:797 ReadPSDChannelPixels
+
+It fix psd file handling for corrupted file.
+
+Origin: upstream, https://github.com/ImageMagick/ImageMagick/commit/198fffab4daf8aea88badd9c629350e5b26ec32f
+Bug-ubuntu: https://bugs.launchpad.net/ubuntu/+source/imagemagick/+bug/1533442
+Bug: https://github.com/ImageMagick/ImageMagick/issues/83
+Bug-debian: https://bugs.debian.org/832457
+---
+ coders/psd.c | 2 ++
+ 1 file changed, 2 insertions(+)
+
+Index: imagemagick-6.6.9.7/coders/psd.c
+===================================================================
+--- imagemagick-6.6.9.7.orig/coders/psd.c	2016-11-15 14:50:28.770489359 -0500
++++ imagemagick-6.6.9.7/coders/psd.c	2016-11-15 14:50:28.766489310 -0500
+@@ -921,6 +921,8 @@
+           image->matte=psd_info.channels >= 2 ? MagickTrue : MagickFalse;
+         }
+     }
++  if ((image->depth == 1) && (image->storage_class != PseudoClass))
++    ThrowReaderException(CorruptImageError, "ImproperImageHeader");
+   length=ReadBlobMSBLong(image);
+   if (length != 0)
+     {

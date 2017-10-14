@@ -1,0 +1,39 @@
+Backport of:
+
+From ce7e73c425cba8c1a85feb41ebb592e5061e9b86 Mon Sep 17 00:00:00 2001
+From: cristy <urban-warrior@git.imagemagick.org>
+Date: Sat, 10 Jan 2015 14:10:16 +0000
+Subject: [PATCH] Avoid a SIGABRT in sun file handling
+
+This is a partial fix for malformed sun file
+
+Bug: http://www.imagemagick.org/discourse-server/viewtopic.php?f=3&t=26857
+Bug-debian: https://bugs.debian.org/832465
+Origin: upstream, https://github.com/ImageMagick/ImageMagick/commit/b8f17d08b7418204bf8a05a5c24e87b2fc395b75
+---
+ coders/sun.c | 6 +++---
+ 1 file changed, 3 insertions(+), 3 deletions(-)
+
+Index: imagemagick-6.6.9.7/coders/sun.c
+===================================================================
+--- imagemagick-6.6.9.7.orig/coders/sun.c	2016-11-15 15:13:27.219320640 -0500
++++ imagemagick-6.6.9.7/coders/sun.c	2016-11-15 15:13:27.219320640 -0500
+@@ -404,8 +404,7 @@
+         sun_info.length || !sun_info.length)
+       ThrowReaderException(ResourceLimitError,"MemoryAllocationFailed");
+     number_pixels=(MagickSizeType) image->columns*image->rows;
+-    if ((sun_info.depth >= 8) &&
+-        ((number_pixels*((sun_info.depth+7)/8)) > sun_info.length))
++    if ((number_pixels*sun_info.depth) > (8*sun_info.length))
+       ThrowReaderException(CorruptImageError,"ImproperImageHeader");
+     bytes_per_line=sun_info.width*sun_info.depth;
+     sun_data=(unsigned char *) AcquireQuantumMemory((size_t) MagickMax(
+@@ -520,7 +519,7 @@
+             bytes_per_pixel++;
+           if (bytes_per_line == 0)
+             bytes_per_line=bytes_per_pixel*image->columns;
+-          length=image->rows*(bytes_per_line+image->columns % 2);
++          length=image->rows*(bytes_per_line+bytes_per_line % 2);
+           if (((sun_info.type == RT_ENCODED) &&
+                (length > (bytes_per_line*image->rows))) ||
+               ((sun_info.type != RT_ENCODED) && (length > sun_info.length)))

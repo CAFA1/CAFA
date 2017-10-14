@@ -1,0 +1,38 @@
+From 56bd777c614253bc6ad4dca20e109be6ab61df48 Mon Sep 17 00:00:00 2001
+From: cristy <cristy@aa41f4f7-0bf4-0310-aa73-e5a19afd5a74>
+Date: Sun, 21 Dec 2014 23:32:33 +0000
+Subject: [PATCH] Create IsValidColormapIndex function
+
+This function will be used to avoid a memory leak in rle.
+
+git-svn-id: https://subversion.imagemagick.org/subversion/ImageMagick/branches/ImageMagick-6@17379 aa41f4f7-0bf4-0310-aa73-e5a19afd5a74
+origin: http://trac.imagemagick.org/changeset/17379 and http://trac.imagemagick.org/changeset/17382
+---
+ magick/colormap-private.h | 14 ++++++++++++++
+ 1 file changed, 14 insertions(+)
+
+diff --git a/magick/colormap-private.h b/magick/colormap-private.h
+index 03c0b67..41da718 100644
+--- a/magick/colormap-private.h
++++ b/magick/colormap-private.h
+@@ -36,6 +36,20 @@ static inline IndexPacket ConstrainColormapIndex(Image *image,
+   return((IndexPacket) 0);
+ }
+ 
++static inline MagickBooleanType IsValidColormapIndex(Image *image,
++  const ssize_t index,IndexPacket *target,ExceptionInfo *exception)
++{
++  if ((index < 0) || (index >= (ssize_t) image->colors))
++    {
++      (void) ThrowMagickException(exception,GetMagickModule(),CorruptImageError,
++        "InvalidColormapIndex","`%s'",image->filename);
++      *target=(IndexPacket) 0;
++      return(MagickFalse);
++    }
++  *target=(IndexPacket) index;
++  return(MagickTrue);
++}
++
+ #if defined(__cplusplus) || defined(c_plusplus)
+ }
+ #endif
