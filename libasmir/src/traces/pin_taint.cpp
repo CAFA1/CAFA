@@ -1966,7 +1966,214 @@ VOID InstructionProp(INS ins, VOID *v)
     return;
   }
   //liu 1014
+
+    TempOps_t opndvals[MAX_VALUES_COUNT];
+    uint32_t valcount;
+    valcount = 0;
+    //get instruction's operand 
+    for(uint32_t i = 0; i < INS_OperandCount(ins); i++) {
+
+            opndvals[valcount].taint = 0;
+            if (INS_OperandRead(ins, i) )
+                opndvals[valcount].taint = RD;
+            if (INS_OperandWritten(ins, i))
+                opndvals[valcount].taint |= WR;
   
+            /* Handle register operands */
+            if (INS_OperandIsReg(ins, i)) {
+         
+                REG r = INS_OperandReg(ins, i);
+                if(r == REG_INVALID()) {
+                  cerr << "Warning: invalid register operand in " << INS_Disassemble(ins) << endl;
+                  continue;
+                }
+                assert(r != REG_INVALID());
+                opndvals[valcount].reg = r;
+                opndvals[valcount].type.type = REGISTER;
+
+                // This was causing problems with movd %eax, %xmm0,
+                // because %xmm0's operand width is 32, but BAP needs
+                // to know the full operand size, which is 128.
+                // opndvals[valcount].type.size = INS_OperandWidth(ins, i);
+
+                opndvals[valcount].type.size = GetBitsOfReg(r)/8;
+
+                REG fullr = REG_FullRegName(r);
+                if (fullr != REG_INVALID() && fullr != r) {
+                  /* We know the fuller register, so just use that! */
+                    //        cerr << "partial " << REG_StringShort(r) << " full " << REG_StringShort(fullr) << endl;
+                    opndvals[valcount].reg = fullr;
+                    opndvals[valcount].type.type = REGISTER;
+                    opndvals[valcount].type.size = GetBitsOfReg(fullr)/8;
+                }
+
+                valcount++;
+
+            } else if (INS_OperandIsMemory(ins, i) ||
+                       INS_OperandIsAddressGenerator(ins, i)) {
+
+
+                /* Note: Compiled code sometimes uses LEA instructions for
+                 * arithmetic.  As such, we always want to treat reads of
+                 * these base/index registers as tainted. */
+
+                REG basereg = INS_OperandMemoryBaseReg(ins, i);
+                if (basereg != REG_INVALID()) {
+
+                    opndvals[valcount].reg = basereg;
+                    opndvals[valcount].type.type = REGISTER;
+                    opndvals[valcount].type.size = GetBitsOfReg(basereg)/8;
+
+                    if (  INS_OperandIsAddressGenerator(ins, i))
+                        opndvals[valcount].taint = RD;
+                    else
+                        opndvals[valcount].taint = 0;
+
+                    valcount++;
+
+                }
+
+                REG idxreg = INS_OperandMemoryIndexReg(ins, i);
+                if (idxreg != REG_INVALID()) {
+
+                    opndvals[valcount].reg = idxreg;
+                    opndvals[valcount].type.type = REGISTER;
+                    opndvals[valcount].type.size = GetBitsOfReg(idxreg)/8;
+
+                    if ( INS_OperandIsAddressGenerator(ins, i))
+                        opndvals[valcount].taint = RD;
+                    else
+                        opndvals[valcount].taint = 0;
+
+                    valcount++;              
+
+                }
+            }      
+        }
+
+
+    int ii;
+    //TraceFile<< hex <<INS_Address(ins)<<endl;
+    //if(INS_Opcode(ins)==XED_ICLASS_FILD||XED_ICLASS_FSTP==INS_Opcode(ins)||XED_ICLASS_FLD==INS_Opcode(ins)||XED_ICLASS_FUCOMIP==INS_Opcode(ins))
+
+    
+    bool memRead = INS_IsMemoryRead(ins);
+    bool memRead2 = INS_HasMemoryRead2(ins);
+    bool memWrite = INS_IsMemoryWrite(ins);
+    
+    //for(; ii < valcount; ii++) {
+      //    TraceFile<<" mem operation: "<<opndvals[ii].taint<<" size: "<<opndvals[ii].type.size<<endl;
+     // }
+
+    //if(INS_Address(ins)==0x08048638)
+    int count_reg_read = 0;
+    int count_reg_write = 0;
+    uint32_t index_reg_read = 0;
+    uint32_t index_reg_write = 0;
+    uint32_t index_reg_read1 =0 ;
+    uint32_t index_reg_write1 =0 ;
+    uint32_t index_reg_write2 =0 ;
+    // dont transfort instructions
+    if(INS_Opcode(ins)==XED_ICLASS_CALL_FAR || INS_Opcode(ins)==XED_ICLASS_CALL_NEAR
+      || INS_Opcode(ins)==XED_ICLASS_RET_FAR || INS_Opcode(ins)==XED_ICLASS_RET_NEAR
+      )
+    {
+      
+      return;
+    }
+    // print operands of other instruction
+    if(INS_Opcode(ins)==XED_ICLASS_SETNZ || INS_Opcode(ins)==XED_ICLASS_SETZ
+      
+      )
+    {
+      TraceFile<< "here instructions: "<<INS_Disassemble(ins)<<endl;
+      for(ii=0; ii < valcount; ii++) 
+      {
+        //opndvals[valcount].type.type = MEM;
+        TraceFile<<" operation: "<<opndvals[ii].taint<<" reg: "<<REG_StringShort((LEVEL_BASE::REG)opndvals[ii].reg)<<" size: "<<opndvals[ii].type.size<<endl;
+      }
+      return;
+    }
+
+     for(ii=0; ii < valcount; ii++) 
+    {
+      //TraceFile<< "here instructions: "<<INS_Disassemble(ins)<<endl;
+      
+          //TraceFile<<" operation: "<<opndvals[ii].taint<<" reg: "<<REG_StringShort((LEVEL_BASE::REG)opndvals[ii].reg)<<" size: "<<opndvals[ii].type.size<<endl;
+      if(((opndvals[ii].taint) & RD)!=0 && opndvals[ii].type.type == REGISTER)
+      {
+        count_reg_read++;
+        if(count_reg_read==1)
+        {
+          index_reg_read=opndvals[ii].reg;
+        }
+        else if(count_reg_read==2)
+        {
+          index_reg_read1=opndvals[ii].reg;
+        }
+        else if(count_reg_read==3)
+        {
+          index_reg_read1=opndvals[ii].reg;
+        }
+        else
+        {
+          cerr<<"more reg_read!!!!!!!!!!!!"<<endl;
+        }
+      }
+      if(((opndvals[ii].taint) & WR)!=0 && opndvals[ii].type.type == REGISTER)
+      {
+        count_reg_write++;
+        if(count_reg_write==1)
+        {
+          index_reg_write=opndvals[ii].reg;
+        }
+        else if(count_reg_write==2)
+        {
+          index_reg_write1=opndvals[ii].reg;
+        }
+        else if(count_reg_write==3)
+        {
+          index_reg_write2=opndvals[ii].reg;
+        }
+        else
+        {
+          cerr<<"more reg_write!!!!!!!!!!!!!"<<endl;
+        }
+
+      }
+      
+    }
+
+
+    if(count_reg_read==0 && count_reg_write==0 && memRead==0 && memWrite==0)
+    {
+      
+      TraceFile<<" 0->0: "<<INS_Disassemble(ins)<<" iaddr "<<hex<<iaddr<<endl;
+
+        
+      return;
+    } 
+    //count_reg_read 0x2 count_reg_write 0x3 memRead 0 memWrite 0
+    else if(count_reg_read==2 && count_reg_write==3 && memRead==0 && memWrite==0)
+    {
+      if(REG_is_dift_eflag(static_cast<REG>(index_reg_write)))
+      {
+        TraceFile<<" R2->R3: "<<INS_Disassemble(ins)<<" iaddr "<<hex<<iaddr<<endl;
+
+        IFCOND(ins);   
+        INS_InsertThenCall(ins,IPOINT_BEFORE, 
+          (AFUNPTR) liuR2_R3,IARG_FAST_ANALYSIS_CALL,
+          IARG_UINT32, iaddr,
+          IARG_UINT32, index_reg_read,
+          IARG_UINT32, index_reg_write,
+          IARG_UINT32, index_reg_read1,
+          IARG_UINT32, index_reg_write1,
+          IARG_UINT32, index_reg_write2,
+          IARG_THREAD_ID,
+          IARG_END);
+      }
+      return;
+    }  
   //liu 1014
 
 
