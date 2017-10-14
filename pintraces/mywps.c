@@ -10,9 +10,9 @@ struct mm{
   int crc1;
   int crc2;
 };
-bool match(int a,int b)
+int match(int a,int b)
 {
-  return a==b
+  return a==b;
 }
 int main(int argc, char **argv)
 {
