@@ -1894,10 +1894,13 @@ VOID ModLoad(IMG img, VOID *v)
             
     }
     
-	//1208/////////////////////////////////////////////////////
+	//1015 coverage low high addrs
 	if(strstr(name.c_str(),CoverageModule) != NULL)
 	{
 			DllbaseAddress = IMG_LowAddress(img);
+            int DllbaseAddress1 = IMG_HighAddress(img);
+            TraceFile<<"lowaddr: "<<hex<<DllbaseAddress<<" highaddr: "<<DllbaseAddress1<<endl;
+
 
 	}
  

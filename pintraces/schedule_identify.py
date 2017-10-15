@@ -32,15 +32,26 @@ def get_high():
     for line in f1.readlines():
         if(line.find("[HIGH-TNT_JMP] PC ")!=-1):
             result.append(int(line[line.index("0x"):],16))
-         
+    f1.close()   
     return result
+def get_base():
+    f1 = open("1-1-0logs.txt","r")
+    
+    for line in f1.readlines():
+        if(line.find("lowaddr: ")!=-1):
+            lowaddr=(int(line[line.index("0x"):line.index(" highaddr:")],16))
+            highaddr=(int(line[line.index("highaddr: 0x")+len("highaddr: 0x"):],16))
+            #print hex(lowaddr)
+            #print hex(highaddr)
+    f1.close()       
+    return lowaddr,highaddr
 def get_bbl():
     f1 = open("1-1-addrs.txt","r")
     result = dict()
     for line in f1.readlines():
         line1 = line.split()
         result[int(line1[0],16)] = int(line1[1],10)
-         
+    f1.close()     
     return result 
 #make_samples()
 def print_list(list1):
@@ -130,7 +141,11 @@ def compare_run(offsets1,offsets2,coverage,elfpath):
     result_all=myset1&myset
     print "result_all!!!!!!"
     print_list(result_all)
-
+    print "result_all!!!!!!  ok"
+    lowaddr,highaddr=get_base()
+    for tmp in result_all:
+        if(tmp>lowaddr and tmp<highaddr):
+            print hex(tmp)
     
 
 
