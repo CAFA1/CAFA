@@ -23,7 +23,7 @@
 #include "pin_trace.h"
 #include "reg_mapping_pin.h"
 #include "cache.h"
-#include <capstone/capstone.h>
+//#include <capstone/capstone.h>
 
 /* The new trace container format */
 #include "trace.container.hpp"
@@ -2109,34 +2109,9 @@ bool FollowExec(CHILD_PROCESS cp, VOID *v) {
 int mydisam(char*buf,uint32_t myaddress,FILE * fp)
 
 {
- csh handle;
- cs_insn *insn;
- size_t count;
- char  buffer[2048];
 
-  if (cs_open(CS_ARCH_X86, CS_MODE_32, &handle) != CS_ERR_OK)
-      return -1;
- count = cs_disasm(handle, (const uint8_t*)buf, 30, myaddress, 0, &insn);
- cerr << "count = " << count <<endl;
-  if (count > 0) {
-      size_t j;
-      sprintf(buffer,"ASM code:\n");
-      fwrite(buffer,1,strlen(buffer),fp); 
-      for (j = 0; j < count; j++) {
-      //cerr << "j = " << j <<endl;
-
-      sprintf(buffer,"0x%x\t%s\t\t%s\n", (uint32_t)insn[j].address,insn[j].mnemonic, insn[j].op_str);
-      fwrite(buffer,1,strlen(buffer),fp); 
-      }
-      cs_free(insn, count);
-  } else{
-    sprintf(buffer,"ERROR: Failed to disassemble given code!\n");
-    fwrite(buffer,1,strlen(buffer),fp); 
-    //printf("ERROR: Failed to disassemble given code!\n");
-  }
-      
  
-  cs_close(&handle);
+  //cs_close(&handle);
 
   return 0;
  }

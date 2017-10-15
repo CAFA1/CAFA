@@ -97,7 +97,7 @@ CXXFLAGS += -I$(TRACEFORMATCOMMON) -I../libasmir/include -I../libasmir/src/trace
 # XXX We should probably use libtool
 PROTOBUFLIBDIR = $(PROTOBUFDIR)/.libs
 LIB_PATHS = -L$(PROTOBUFLIBDIR)
-LIBS = $(LIBTRACE) -Wl,-rpath=$(PROTOBUFLIBDIR) -pthread  -pthread -lprotobuf -lz -lpthread -lcapstone
+LIBS = $(LIBTRACE) -Wl,-rpath=$(PROTOBUFLIBDIR) -pthread  -pthread -lprotobuf -lz -lpthread 
 
 ##############################################################
 #
