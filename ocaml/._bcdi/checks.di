@@ -1,1 +1,0 @@
-checks.cmi: cfg.cmi

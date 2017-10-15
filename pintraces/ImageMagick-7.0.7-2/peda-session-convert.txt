@@ -1,8 +1,0 @@
-break magick.c:main
-break utilities/magick.c:149
-break MagickWand/mogrify.c:183
-break MagickWand/convert.c:641
-catch syscall read
-disable
-break pthread_create
-

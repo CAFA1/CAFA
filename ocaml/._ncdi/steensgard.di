@@ -1,1 +1,0 @@
-steensgard.cmi: cfg.cmi
