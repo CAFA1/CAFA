@@ -1775,10 +1775,12 @@ ADDRINT WriteBlock(THREADID threadid,ADDRINT addr,bool taken)
 //liu 1012
 VOID  CheckConditionalJMP(ADDRINT iaddr,THREADID tid,bool taken,ADDRINT target)
 {
-  WriteBlock(tid,iaddr,taken);
+  
   
   if(GetRegisterTaint(REG_EFLAGS, tid, iaddr))
   {
+    //1015 only taint jnz
+    WriteBlock(tid,iaddr,taken);
     cout<< "[HIGH-TNT_JMP] " << "PC " << hex <<iaddr <<endl;
     SysLog << "[HIGH-TNT_JMP] " << "PC " << hex <<iaddr <<endl;
   }
