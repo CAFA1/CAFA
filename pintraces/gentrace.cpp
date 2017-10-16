@@ -2154,7 +2154,7 @@ VOID ExceptionHandler(THREADID threadid, CONTEXT_CHANGE_REASON reason, const CON
     // If we want the exception to be the last thing in the trace when
     
     FlushBuffer(false, from, threadid, false);
-    //g_twnew->add(f);
+    
     cout<<"reason 2= "<<reason<<endl;
     if (reason == CONTEXT_CHANGE_REASON_FATALSIGNAL||CONTEXT_CHANGE_REASON_SIGNAL==reason) {
         cout<<"reason 1= "<<reason<<endl;
