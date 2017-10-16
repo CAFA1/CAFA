@@ -1,4 +1,4 @@
-#OS
+# OS
 ubuntu 12.04 (Other OS may have problems.)
 # taint_checksum
 longlong's checksum taint analysis based on bap's pintraces.

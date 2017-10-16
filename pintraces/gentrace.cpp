@@ -2152,7 +2152,7 @@ VOID ExceptionHandler(THREADID threadid, CONTEXT_CHANGE_REASON reason, const CON
     LLOG("got except lock!\n");
 
     // If we want the exception to be the last thing in the trace when
-    // we crash, then we need to flush.
+    
     FlushBuffer(false, from, threadid, false);
     //g_twnew->add(f);
     cout<<"reason 2= "<<reason<<endl;
