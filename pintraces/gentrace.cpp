@@ -1853,8 +1853,7 @@ static void After_crc32(CONTEXT *ctxt,THREADID tid)
     int crc32=PIN_GetContextReg(ctxt, REG_EAX);
     cout<<"get crc32: "<<hex<<crc32<<endl;
     crc32_Instrumentation_On = true;
-    TAINT_Analysis_On=true;
-  
+    TAINT_Analysis_On=true; 
     TAINT_Instrumentation_On = true;
     SetRegisterTaint( true, REG_EAX,tid, 0);
     set<int> tmp;
@@ -2345,25 +2344,13 @@ int main(int argc, char *argv[])
     } else {
         g_taint_introduced = false;
     }
-	//1208
-    //liu 11 9
-    /*
-	stringstream ss2;
-    ss2 <<KnobOut.Value()<<"-"<<"addrs.txt";
-	fpaddrs.open(ss2.str().c_str());
-    fpaddrs<<"meili"<<endl;
-    */
-    //liu 11 9
+	
     stringstream file_addrs;
     //stringstream file_assist;
     file_addrs<< KnobOut.Value() << "-" << "addrs.txt";
     //file_assist<<KnobOut.Value() << "-" << "assist.txt";
     strcpy(buf_file_addrs,file_addrs.str().c_str());
-    //strcpy(buf_file_assist,file_assist.str().c_str());
-
-
-	
-    
+  
     IMG_AddInstrumentFunction(ModLoad, 0);
     //TRACE_AddInstrumentFunction(InstrTrace, 0);
     PIN_AddThreadStartFunction(ThreadStart, 0);

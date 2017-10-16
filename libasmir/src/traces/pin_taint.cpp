@@ -516,31 +516,23 @@ bool Getmem_taint(ADDRINT addr, UINT32 size, ADDRINT instr)
 
   return (is_tainted);
 }
-//modified by richard
+
 VOID Setmem_taint(ADDRINT addr, UINT32 size, bool is_tainted, ADDRINT inst,THREADID id)
 {
  
   list<TaintSourceEntry>::iterator ptrEntry;
-  // Prints the last memory that was tainted and its content
-   if (!PropTaint(id))
-  {
-    return;
-  }
+  
   GetLock(&lock,id+1);
   if (is_tainted)
-  {
-    
-     //标记内存区域为污点
+  {   
+    //标记内存区域为污点
     for (UINT32 i = 0; i < size; i ++)
     {
       int accessAddr = addr+i;
-      //int _idx = getTableIndex(accessAddr);
-      //char _byteMask = getByteMask(accessAddr);
+      //global variable mem taint flags bit
       mem_taint[getTableIndex(accessAddr)] |= getByteMask(accessAddr);
     }
     
-    if (Measurement)
-      setmem_taint++;
   }
   else//该内存区域漂白
   {
@@ -548,7 +540,7 @@ VOID Setmem_taint(ADDRINT addr, UINT32 size, bool is_tainted, ADDRINT inst,THREA
     if (Getmem_taint(addr, size, inst))
     {
         
-      //inserted by richard,对于要漂白的原先污染的内存，清除对应在污点源映射表中的项
+      //对于要漂白的原先污染的内存，清除对应在污点源映射表中的项
       for (UINT32 i = 0; i < size; i ++)
       {
           if (!Getmem_taint(addr+i,1,inst))
@@ -569,7 +561,7 @@ VOID Setmem_taint(ADDRINT addr, UINT32 size, bool is_tainted, ADDRINT inst,THREA
       }
     } 
     
-    for (UINT32 i = 0; i < size; i ++)
+    for (UINT32 i = 0; i < size; i++)
     {
       int accessAddr = addr+i;
       mem_taint[getTableIndex(accessAddr)] &= (char)(~getByteMask(accessAddr));
@@ -581,21 +573,13 @@ VOID SetMemTaintSource(ADDRINT addr,ADDRINT size,set<int> taintsrc,ADDRINT inst,
 {
     TaintSourceEntry taintentry;
     list<TaintSourceEntry>::iterator ptrEntry;
-    if (!PropTaint(id))
-    {
-      return;
-    }
+    
     if (!taintsrc.empty())
     {
-        GetLock(&lock,id+1);
-        //update in 2012-11-1
-         //info:check taint degree
+         GetLock(&lock,id+1);
+        
          unsigned int imema=taintsrc.size();
-        // unsigned int immb=(double)(iTNTBuffLength)*0.2;
-         if (iTNTEncryDegree==0)
-         {
-             SysLog<<"";
-         }
+        
          if (imema>iTNTEncryDegree)
          {
              if(TNT_mem_node.addr_start==0)
@@ -653,10 +637,11 @@ VOID SetMemTaintSource(ADDRINT addr,ADDRINT size,set<int> taintsrc,ADDRINT inst,
                 taintentry.srcOffsets=taintsrc;
                 //尾插法
                 //cerr<<"addr: "<<taintentry.memaddr<<"  offset: "<<*(taintsrc.begin())<<" threadid: "<<PIN_ThreadId()<<endl;
+                //global variable
                 memTaintSrcTable.insert(memTaintSrcTable.begin(),taintentry);           
             }
         }
-         ReleaseLock(&lock);
+        ReleaseLock(&lock);
          
         
     }
@@ -1781,8 +1766,13 @@ VOID  CheckConditionalJMP(ADDRINT iaddr,THREADID tid,bool taken,ADDRINT target)
   {
     //1015 only taint jnz
     WriteBlock(tid,iaddr,taken);
-    cout<< "[HIGH-TNT_JMP] " << "PC " << hex <<iaddr <<endl;
-    SysLog << "[HIGH-TNT_JMP] " << "PC " << hex <<iaddr <<endl;
+    set<int> t= GetRegisterTaintSrc(REG_EFLAGS,tid,iaddr);
+    int size1= t.size();
+    if (size1>iTNTChksmDegree)
+    {
+      cout<< "[HIGH-TNT_JMP] " << "PC " << hex <<iaddr <<endl;
+      SysLog << "[HIGH-TNT_JMP] " << "PC " << hex <<iaddr <<endl;
+    }
   }
   return;
   
@@ -1954,11 +1944,8 @@ VOID InstructionProp(INS ins, VOID *v)
   bool is_mem_read1, is_mem_read2, is_mem_write;
   ADDRINT iaddr = INS_Address(ins);
   UINT32 gr_read, gr_write, xt_read, xt_write,eflag_write;
-  
-
-  if (!crc32_Instrumentation_On) return;//OnDemand，只有按下了ALT+<，下面的程序才会执行
-
-  
+  //liu 1016 taint
+  if (!TAINT_Instrumentation_On) return;//OnDemand，只有按下了ALT+<，下面的程序才会执行
 
   //////////////////////////////////////////////////////////////////////////
   //******************************************
@@ -2586,61 +2573,36 @@ void TaintTracker::printMem()
 // addr. If offset is -1, new tainted bytes are assigned. Otherwise,
 // the (source,offset) tuple are compared for each byte to see if that
 // resource has been used before, and if so, the same taint number is given.
-FrameOption_t TaintTracker::introMemTaint(uint32_t addr, uint32_t length, const char *source, int64_t offset) {
+FrameOption_t TaintTracker::introMemTaint(uint32_t addr, uint32_t length, const char *source, int64_t offset) 
+{
 
   FrameOption_t fb;
   THREADID idd= PIN_ThreadId();
-  TAINT_Analysis_On=true;
+  
   //liu 911
   for(ADDRINT i=0;i<length;i++)
-    {
-      set<int> t;
-      t.clear();
-      t.insert(offset+i);
-      SetMemTaintSource(addr+i,1,t,0,idd);
-    }
+  {
+    set<int> t;
+    t.clear();
+    t.insert(offset+i);
+    SetMemTaintSource(addr+i,1,t,0,idd);
+  }
 
-    Setmem_taint(addr,length, true, 0,idd);
-    TAINT_Instrumentation_On = true;
-    cerr<<"again!!!!!!!!!!!!!!!!!!!"<<endl;
-    cerr<<length<<" "<<offset<<endl;
-    dump_taint_src();
+  Setmem_taint(addr,length, true, 0,idd);
+  TAINT_Instrumentation_On = true;
+  TAINT_Analysis_On=true;
+  
+  //cerr<<length<<" "<<offset<<endl;
+  dump_taint_src();
 
-  if ((*pf)(addr, length, source) && length > 0) {
+  if (length > 0) 
+  {
 
-    for (unsigned int i = 0; i < length; i++) {
-      uint32_t t = 0;
-      if (offset == -1 || reuse_taintids == false) {
-        t = taintnum++;
-      } else {
-        // Check if (source, offset+i) has a byte. If not, assign one.
-        resource_t r(source, offset+i);
-        if (taint_mappings.find(r) != taint_mappings.end()) {
-          t = taint_mappings[r];
-          //cerr << "found mapping from " << source << " to " << offset+i << " on taint num " << t << endl;
-        } else {
-          t = taintnum++;
-          taint_mappings[r] = t;
-		  //1208////////////////////////////////////////////////
-          g_TaintAsistBuff[ g_tsbufidx + 1] = offset+i;
-		  g_tsbufidx++;
-		  *(uint32_t *)g_TaintAsistBuff = g_tsbufidx;
-		  ////////////////////////
-          //cerr << "adding new mapping from " << source << " to " << offset+i << " on taint num " << t << endl;
-        }
-      }
-      /* Mark memory as tainted */
-      setTaint(memory, addr+i, t);
-      taint_intro* tfi = fb.f.mutable_taint_intro_frame()->mutable_taint_intro_list()->add_elem();
-      tfi->set_taint_id(t);
-      tfi->set_addr(addr+i);
-      uint8_t value;
-      assert (PIN_SafeCopy((void*) &value, (void*) (addr+i), 1) == 1);
-      tfi->set_value((void*) &value, 1);
-    }
     fb.b = true;
     return fb;
-  } else {
+  } 
+  else 
+  {
     fb.b = false;
     return fb;
   }
@@ -2650,8 +2612,6 @@ FrameOption_t TaintTracker::introMemTaint(uint32_t addr, uint32_t length, const 
 // addr. Also adds length to the offset of the resource.
 FrameOption_t TaintTracker::introMemTaintFromFd(uint32_t fd, uint32_t addr, uint32_t length) {
   assert(fds.find(fd) != fds.end());
-  //1208/////////////////////////////////////////////////////////
-  //////////////////////////////////////////
   std::set<taint_s>::iterator pos;
   FrameOption_t tfs;
   for (pos = taint_sources.begin(); pos != taint_sources.end();pos++) 
@@ -2661,20 +2621,13 @@ FrameOption_t TaintTracker::introMemTaintFromFd(uint32_t fd, uint32_t addr, uint
   	int upper = pos->first + pos->second < fds[fd].offset +length? pos->first + pos->second:fds[fd].offset +length;
   	if(upper >=lower)
   	{
-      //char log[]="taint intro\n";
-      //mylog(log);
-  		
-  		
+
   		tfs = introMemTaint(addr+ lower - fds[fd].offset, upper - lower,
   			fds[fd].name.c_str(), lower);
   		  
   	}
   }
 
-
-
-  /////////////////////////////////////////////
-  //FrameOption_t tfs = introMemTaint(addr, length, fds[fd].name.c_str(), fds[fd].offset);
   fds[fd].offset += length;
   return tfs;
 }
@@ -2796,127 +2749,6 @@ FrameOption_t TaintTracker::recvHelper(uint32_t fd, void *ptr, size_t len) {
 
 /******** Taint Introduction **********/
 
-//
-#ifdef _WIN32
-std::vector<frame> TaintTracker::taintArgs(char *cmdA, wchar_t *cmdW)
-{
-  std::vector<frame> frms;
-  FrameOption_t fo;
-  std::vector<frame> tfrms;
-  if (taint_args) {
-    size_t lenA = strlen(cmdA);
-    size_t lenW = wcslen(cmdW);
-    size_t bytesA = lenA*sizeof(char);
-    size_t bytesW = lenW*sizeof(wchar_t);
-    cerr << "Tainting multibyte command-line arguments: " << bytesA << " bytes @ " << (unsigned int)(cmdA) << endl;
-    
-    /* Taint multibyte command line */
-    fo = introMemTaint((uint32_t)cmdA, bytesA, "Tainted Arguments", -1);
-    if (fo.b) { frms.push_back(fo.f); }
-    cerr << "Tainting wide command-line arguments: " << bytesW << " bytes @ " << (unsigned int)(cmdW) << endl;
-    fo = introMemTaint((uint32_t)cmdW, bytesW, "Tainted Arguments", -1);
-    if (fo.b) { frms.push_back(fo.f); }
-  }
-  return frms;
-}
-#else
-std::vector<frame> TaintTracker::taintArgs(int argc, char **argv)
-{
-
-  std::vector<frame> fv;
-
-  if (taint_args) {
-    cerr << "Tainting command-line arguments" << endl;
-    for ( int i = 1 ; i < argc ; i++ ) {
-      cerr << "Tainting " << argv[i] << endl;
-      size_t len = strlen(argv[i]);
-      FrameOption_t fo = introMemTaint((uint32_t)argv[i], len, "Arguments", -1);
-      if (fo.b) { fv.push_back(fo.f); }
-    }
-  }
-
-  return fv;
-}
-#endif
-
-//
-#ifdef _WIN32
-std::vector<frame> TaintTracker::taintEnv(char *env, wchar_t *wenv)
-{
-  /* See MSDN docs here: http://msdn.microsoft.com/en-us/library/ms683187(VS.85).aspx 
-   * Basically, env is a pointer to
-   * var=val\x00
-   * var2=val2\x00
-   * ...
-   * \x00\x00
-   */
-  std::vector<frame> fv;
-  //  std::vector<frame> frms;
-
-  // /* Multibyte strings */
-  // for ( ; *env != '\x00'; env += (strlen(env) + 1 /* null */)) {
-  //   string var(env);
-  //   int equal = var.find('=');
-  //   var = var.substr(0, equal);
-  //   if (taint_env.find(var) != taint_env.end()) {
-  //     uint32_t len = strlen(env) - var.size();
-  //     uint32_t addr = (uint32_t)env+equal+1;
-  //     cerr << "Tainting environment variable: " << var << " @" << (int)addr << " " << len << " bytes" << endl;
-  //     for (uint32_t j = 0 ; j < len ; j++) {
-  // 	setTaint(memory, (addr+j), taintnum++);
-  //     }
-  //     TaintFrame frm;
-  //     frm.id = ENV_ID;
-  //     frm.addr = addr;
-  //     frm.length = len;
-  //     frms.push_back(frm);
-  //   }
-  // }
-
-  /* Wide strings */
-  if (wenv) {
-    for ( ; *wenv != '\x00'; wenv += (wcslen(wenv) + 1 /* null */)) {
-      string ns = *GetNarrowOfWide(wenv);
-      wstring wvar(wenv);
-      string var(ns);
-      int equal = var.find('=');
-      var = var.substr(0, equal);
-      
-      if (taint_env.find(var) != taint_env.end()) {
-        uint32_t numChars = wcslen(wenv) - var.size();
-	uint32_t numBytes = numChars * sizeof(wchar_t);
-        uint32_t addr = (uint32_t) (wenv+equal+1);
-        cerr << "Tainting environment variable: " << var << " @" << (int)addr << " " << numChars << " bytes" << endl;
-	FrameOption_t fo = introMemTaint(addr, numBytes, "Environment Variable", -1);
-	if (fo.b) { fv.push_back(fo.f); }
-      }
-    }
-  }
-
-  return fv;
-}
-#else /* unix */
-std::vector<frame> TaintTracker::taintEnv(char **env)
-{
-
-  std::vector<frame> fv;
-
-  for ( int i = 1 ; env[i] ; i++ ) {
-    string var(env[i]);
-    int equal = var.find('=');
-    var = var.substr(0,equal);
-    if (taint_env.find(var) != taint_env.end()) {
-      uint32_t len = strlen(env[i]) - var.size();
-      uint32_t addr = (uint32_t)env[i]+equal+1;
-      cerr << "Tainting environment variable: " << var << " @" << (int)addr << endl;
-      FrameOption_t fo = introMemTaint(addr, len, "environment variable", -1);
-      if (fo.b) { fv.push_back(fo.f); }
-    }
-  }
-  return std::vector<frame> ();
-}
-#endif
-
 /** This function is called right before a system call. */
 bool TaintTracker::taintPreSC(uint32_t callno, const uint64_t *args, /* out */ uint32_t &state)
 {
@@ -2987,6 +2819,7 @@ FrameOption_t TaintTracker::taintPostSC(const uint32_t bytes,
   
   switch (state) { 
   case __NR_open:
+        char filename[128];
         // "bytes" contains the file descriptor
         if (bytes != (uint32_t)(UNIX_FAILURE)) 
         { /* -1 == error */
