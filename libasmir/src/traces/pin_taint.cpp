@@ -2923,41 +2923,31 @@ bool TaintTracker::taintPreSC(uint32_t callno, const uint64_t *args, /* out */ u
   state = __NR_nosyscall;
   bool reading_tainted = false;
   char filename[128];
-  switch (callno) {
+  switch (callno) 
+  {
       case __NR_open:
       {
           strncpy(filename, (char *)args[0],128); 
-          //cerr<<filename<<endl;
-  	       // Search for each tainted filename in filename
+          
         	string cppfilename(filename);
-          //cerr<<filename<<endl;
-          //mylog(filename);
-          //char log[100];
-          //sprintf(log,"before open fd=%s pid=%x tid=%x\n ",(char*)args[0],PIN_GetPid(),PIN_GetTid());
-          //mylog(log);
+          
         	for (std::set<string>::iterator i = taint_files.begin();
         	     i != taint_files.end();
-        	     i++) {
-        	     if (cppfilename.find(*i) != string::npos) {
-        	       state = __NR_open;
-                  //char log[100];
-                  //sprintf(log,"before open fd=%s pid=%x tid=%x\n ",(char*)args[0],PIN_GetPid(),PIN_GetTid());
-                  //cerr << log << endl;
-                  //mylog(log);
+        	     i++) 
+          {
+        	     if (cppfilename.find(*i) != string::npos) 
+               {
+        	       state = __NR_open;  
         	     }
         	}
           
-        	if (state == __NR_open) {
-        	  cerr << "Opening tainted file: " << cppfilename << endl;
-        	} else {
-        	  //cerr << "Not opening " << cppfilename << endl;
-        	}
+          break; 
       }
-              break;
+      
       case __NR_close:
         state = __NR_close;
         break;
-        // TODO: do we care about the offset?
+       
       case __NR_mmap:
       case __NR_mmap2:
       
@@ -2967,58 +2957,20 @@ bool TaintTracker::taintPreSC(uint32_t callno, const uint64_t *args, /* out */ u
         }
         break;
       case __NR_read: 
-        //char log[100];
-        //sprintf(log,"before read fd=%lld  pid=%x tid=%x\n ",args[0],PIN_GetPid(),PIN_GetTid());
-        //mylog(log);
-        //cerr<<log<<endl;
-        //cerr<<"before read "<<fds[args[0]].name <<endl;
-        
-        //cerr << log << endl;
-        
-        //if (fds.find(args[0]) != fds.end()) {
-
-        //if(args[0]==taintfd)
-        //char taint_fd_file[20];
-        //int suc ;
-        //int intaintfd;
-        //suc = read_file(taint_fd_file,"taint_file.txt");
-        //intaintfd = atoi(taint_fd_file);
-
-        //if((args[0] == intaintfd)&& (suc==1))
+       
         if (fds.find(args[0]) != fds.end()) 
         {
           state = __NR_read;
-          cerr << "find fd " << fds[args[0]].name <<  endl;
-          //cerr <<"before read "<<endl;
+          cerr << "read fd " << fds[args[0]].name <<  endl;
           reading_tainted = true;
         }
-        else
-        {
-          //cerr << args[0] << " not found" << endl;
-        }
-        break;
-      case __NR_socketcall:
-        // TODO: do we need to distinguish between sockets?
-        if (taint_net) {
-          state = __NR_socketcall;
-          if (args[0] == _A1_recv)
-            reading_tainted = true;
-        }
-        break;
-      case __NR_execve:
+        
         break;
       case __NR_lseek:
-        if (fds.find(args[0]) != fds.end()) {
-          state = __NR_lseek;
-        }
+        state = __NR_lseek;
         break;
-        
-
-    
-  default:
-    //    LOG(string("Unknown system call") + *(get_name(callno)) + string("\n"));
-    //    cerr << "Unknown system call " << callno << " " << *(get_name(callno)) << endl;
-    break;
+      default:
+        break;
   }
   return reading_tainted;
 }
@@ -3030,65 +2982,31 @@ FrameOption_t TaintTracker::taintPostSC(const uint32_t bytes,
                                      uint32_t &length,
 				     const uint32_t state)
 {
-  //for ( int i = 0 ; i < MAX_SYSCALL_ARGS ; i ++ )
-  //cout << hex << " " << args[i] ;
-  //cout << endl ;
-  //cerr<<"taintPostSC"<<endl;
+  
   uint32_t fd = -1;
   
-  switch (state) {
-
-    case __NR_socketcall:
-      switch (args[0]) {
-        case _A1_recv:
-              addr = ((uint32_t *)args[1])[1];
-              fd = ((uint32_t*) args[1])[0];
-              length = bytes;
-              cerr << "Tainting " 
-                   << bytes 
-                   << " bytes from socket " << fd << endl;
-              return introMemTaintFromFd(fd, addr, length);
-              //return true;
-      
-        case _A1_accept:
-              if (bytes != (uint32_t)UNIX_FAILURE) {
-                cerr << "Accepting an incoming connection" << endl;
-                fdInfo_t fdinfo(string("accept"), 0);
-                fds[bytes] = fdinfo;
-              }
-              break;
-        case _A1_socket:
-              if (bytes != (uint32_t)UNIX_FAILURE) {
-                cerr << "Opening a tainted socket " << bytes << endl;
-                fdInfo_t fdinfo(string("socket"), 0);
-                fds[bytes] = fdinfo;
-              }
-              break;
-        default:
-              break;
-        }
-        break;
+  switch (state) { 
   case __NR_open:
         // "bytes" contains the file descriptor
-        if (bytes != (uint32_t)(UNIX_FAILURE)) { /* -1 == error */
+        if (bytes != (uint32_t)(UNIX_FAILURE)) 
+        { /* -1 == error */
           /* args[0] is filename */
-          char *filename = reinterpret_cast< char *> (args[0]);
-          fdInfo_t fdinfo(string("file ") + string(filename), 0);
-          fds[bytes] = fdinfo;
-          //cerr<<"open taint file "<<filename<<endl;
-          //char taint_fd_file[10];
-          //sprintf(taint_fd_file,"%d ",bytes);
-          //write_file(taint_fd_file,"taint_file.txt");
+          strncpy(filename, (char *)args[0],128); 
           
-          //taintfd = bytes;
+          string cppfilename(filename);
           
-          //char log[100];
-          //sprintf(log,"after open fd=%d %s pid=%x tid=%x\n ",bytes,openfilename,PIN_GetPid(),PIN_GetTid());
-          //mylog(log);
-          //cerr << log << endl;
-          
-          
-          
+          for (std::set<string>::iterator i = taint_files.begin();
+               i != taint_files.end();
+               i++) 
+          {
+               if (cppfilename.find(*i) != string::npos) 
+               {
+                 cerr << "Opening tainted file: " << cppfilename << endl;
+                 char *filename = reinterpret_cast< char *> (args[0]);
+                 fdInfo_t fdinfo(string("file ") + string(filename), 0);
+                 fds[bytes] = fdinfo;  
+               }
+          }  
         }
         break;
   case __NR_close:
@@ -3099,23 +3017,25 @@ FrameOption_t TaintTracker::taintPostSC(const uint32_t bytes,
         break;
   case __NR_mmap:
   case __NR_mmap2:
-      
-      
         addr = bytes;
         fd = args[4];
         length = args[1];
         //uint32_t offset = args[6];
-        if ((int)addr != -1) {
-          off_t offset;
-          assert (PIN_SafeCopy(&offset, (void*) args[5], sizeof(off_t)) == sizeof(off_t));
-          cout << "Tainting " 
-               << length 
-               << " bytes from mmap of fd "
-               << fd
-               << " at offset "
-               << offset
-               << endl;
-          //return introMemTaint(addr, length, fds[fd].name.c_str(), (int64_t)offset);
+        if ((int)addr != -1) 
+        {
+          if (fds.find(fd) != fds.end()) 
+          {
+            off_t offset;
+            assert (PIN_SafeCopy(&offset, (void*) args[5], sizeof(off_t)) == sizeof(off_t));
+            cout << "Tainting " 
+                 << length 
+                 << " bytes from mmap of fd "
+                 << fd
+                 << " at offset "
+                 << offset
+                 << endl;
+            return introMemTaint(addr, length, fds[fd].name.c_str(), (int64_t)offset);
+          }
         }
         break;
       
@@ -3125,24 +3045,32 @@ FrameOption_t TaintTracker::taintPostSC(const uint32_t bytes,
         fd = args[0];
         addr = args[1];
         length = bytes;
-        if ((int)length != -1) {
+        if ((int)length != -1) 
+        {
+          if (fds.find(fd) != fds.end()) 
+          {
 
-          cout << "Tainting " 
-               << length 
-               << " bytes from read at " << addr << ", fd=" << args[0]
-               << endl;
-          
-          //return introMemTaintFromFd(fd, addr, length);
+            cout << "Tainting " 
+                 << length 
+                 << " bytes from read at " << addr << ", fd=" << args[0]
+                 << endl;
+            
+            return introMemTaintFromFd(fd, addr, length);
+          }
         }
         break;
       }
   case __NR_lseek:
-        if (bytes != UNIX_FAILURE) {
-          cerr << "Changing offset for fd " << args[0] << " to " << bytes << endl;
-          fds[args[0]].offset = bytes;
-        } else {
-          cerr << "lseek() failure!" << endl;
-        }
+        fd = args[0];
+
+        if (bytes != -1) 
+        {
+          if (fds.find(fd) != fds.end()) 
+          {
+            cerr << "Changing offset for fd " << args[0] << " to " << bytes << endl;
+            fds[args[0]].offset = bytes;
+          }
+        } 
         break;
 
 

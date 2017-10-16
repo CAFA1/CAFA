@@ -1870,29 +1870,7 @@ VOID ModLoad(IMG img, VOID *v)
     //crc32_Instrumentation_On = false;
     //cout<<"so: "<<name<<endl;
         // Skip all images, but kernel32.dll  libz.so.1.2.3.4
-    if(strstr(name.c_str(),"libz.so") != NULL)
-    //if (!CmpBaseImageName(IMG_Name(img), "libz.so.1.2.3.4"))
-    {
-        
-        //cout<<"get libz"<<endl;
-        RTN rtn = RTN_FindByName(img, "crc32");
-        if (RTN_Valid(rtn))
-        {
-            
-            //cout<<"get crc32 !!!!"<<endl;
-            RTN_Open(rtn);
-            RTN_InsertCall(rtn, IPOINT_AFTER, AFUNPTR(After_crc32),IARG_CONTEXT, IARG_THREAD_ID, IARG_END);
-            RTN_Close(rtn);
-        }
-    }
-
-    //1015 load address
-    if(strstr(name.c_str(),"libpng") != NULL)
-    {
-            DllbaseAddress = IMG_LowAddress(img);
-            cout<<"libpng: "<<hex<<DllbaseAddress;
-            
-    }
+    
     
 	//1015 coverage low high addrs
 	if(strstr(name.c_str(),CoverageModule) != NULL)
