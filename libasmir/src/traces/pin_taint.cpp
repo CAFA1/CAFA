@@ -75,6 +75,7 @@ list <TaintSourceEntry> memTaintSrcTable;
 PIN_LOCK lock;
 PIN_LOCK lock1;
 bool TAINT_Analysis_On = false;
+bool liu_debug = true;
 char mem_taint[TAINT_TABLE_SIZE+1];
 #define RECORD_REP_COUNT 1
 #define REMOVE_MEM_ADDRESSING 0
@@ -921,7 +922,7 @@ VOID PIN_FAST_ANALYSIS_CALL DoPropMemtoMem(ADDRINT iaddr, ADDRINT memsrc,
                         THREADID id)
 {
   //count_profile(iaddr);
-  //modified by richhard
+  //modified by long
   set<int> t=copytaint(memsrc, memdst, memsrcsz, 1, memdstsz, 1, id);
   if (!t.empty())
   PrintTaintInstrunction(iaddr,t);
@@ -940,7 +941,7 @@ VOID PIN_FAST_ANALYSIS_CALL DoPropMemBaseIndextoReg(ADDRINT iaddr, ADDRINT memsr
   //源基址寄存器或者索引寄存器有一个被污染（尽管内存可能没有被污染），那么目标寄存器也被污染
   if (GetRegisterTaint(static_cast<REG>(reg_indexid), id, iaddr) ||GetRegisterTaint(static_cast<REG>(reg_baseid), id, iaddr) ) // index is tainted
   { 
-    //modified my richhard
+    //modified my long
     t=Union(GetRegisterTaintSrc(static_cast<REG>(reg_indexid), id, iaddr),GetRegisterTaintSrc(static_cast<REG>(reg_baseid),id,iaddr));   
     SetRegisterTaintSrc(t,static_cast<REG>(reg_dstid),id,iaddr);
     SetRegisterTaint(true, static_cast<REG>(reg_dstid), id, iaddr);
@@ -956,7 +957,7 @@ VOID PIN_FAST_ANALYSIS_CALL DoPropMemBaseIndextoReg(ADDRINT iaddr, ADDRINT memsr
   //print taint ins
   if(!t.empty())
     PrintTaintInstrunction(iaddr,t);
-  //modified by richhard
+  //modified by long
   }
 }
 //只有mov调用，寄存器宽度和内存宽度一定相同
@@ -1055,7 +1056,7 @@ VOID PIN_FAST_ANALYSIS_CALL liuR_M(ADDRINT iaddr,
 
   if (mem_write != iaddr)
   { 
-   //modified by richhard
+   //modified by long
     if(is_tainted)
     {
     
@@ -1118,7 +1119,7 @@ VOID PIN_FAST_ANALYSIS_CALL DoPropNoExtReg(ADDRINT iaddr, UINT32 gr_read,
         reg = static_cast<REG> (REG_GR_BASE + i);
       else
         reg = static_cast<REG> (REG_AL + i - NR_REG(REG_GR));
-    //modified by richhard
+    //modified by long
     taintsrc=Union(taintsrc,GetRegisterTaintSrc(reg,id,iaddr));
     is_tainted |= (!taintsrc.empty());
 
@@ -1128,14 +1129,14 @@ VOID PIN_FAST_ANALYSIS_CALL DoPropNoExtReg(ADDRINT iaddr, UINT32 gr_read,
   //查看是否有读的内存被污染的，所读内存地址不是该指令所在地址
   if (mem_read1 != iaddr)
   {
-  //modified by richhard
-  taintsrc=Union(taintsrc,GetMemTaintSource(mem_read1, (UINT32)mem_read_sz, iaddr, id));
+    //modified by long
+    taintsrc=Union(taintsrc,GetMemTaintSource(mem_read1, (UINT32)mem_read_sz, iaddr, id));
     is_tainted |= (!taintsrc.empty());  
   }
   if (mem_read2 != iaddr)
   {
-  //modified by richhard
-  taintsrc=Union(taintsrc,GetMemTaintSource(mem_read2, (UINT32)mem_read_sz, iaddr, id));
+    //modified by long
+    taintsrc=Union(taintsrc,GetMemTaintSource(mem_read2, (UINT32)mem_read_sz, iaddr, id));
     is_tainted |=(!taintsrc.empty()); 
   }
 
@@ -1158,20 +1159,20 @@ VOID PIN_FAST_ANALYSIS_CALL DoPropNoExtReg(ADDRINT iaddr, UINT32 gr_read,
         reg = static_cast<REG> (REG_GR_BASE + i);
       else
         reg = static_cast<REG> (REG_AL + i - NR_REG(REG_GR));
-    SetRegisterTaintSrc(taintsrc,reg,id,iaddr);
+      SetRegisterTaintSrc(taintsrc,reg,id,iaddr);
       SetRegisterTaint(is_tainted,reg,id,iaddr);
     }
   }
   if (mem_write != iaddr)
   { 
-   //modified by richhard
+    //modified by long
     if(is_tainted)
-  {
-    if(taintsrc.empty())
-      PrintErr("taint source empty","DoPropNoExtReg",iaddr);
-    SetMemTaintSource(mem_write, mem_write_sz,taintsrc, iaddr, id);
-    
-  }
+    {
+      if(taintsrc.empty())
+        PrintErr("taint source empty","DoPropNoExtReg",iaddr);
+      SetMemTaintSource(mem_write, mem_write_sz,taintsrc, iaddr, id);
+      
+    }
     Setmem_taint(mem_write, mem_write_sz, is_tainted, iaddr, id);
   }
 
@@ -1226,7 +1227,7 @@ VOID PIN_FAST_ANALYSIS_CALL liu0_R(ADDRINT iaddr,  UINT32 reg_dstid, THREADID id
 /************************************************************************/
 /* 读了一个寄存器,R->R，只需把污点信息复制到目标寄存器                  */
 /************************************************************************/
-VOID PIN_FAST_ANALYSIS_CALL liuR_R(ADDRINT iaddr, UINT32 reg_srcid, UINT32 reg_dstid, THREADID id)
+VOID PIN_FAST_ANALYSIS_CALL liuR_R(ADDRINT iaddr, UINT32 reg_srcid, UINT32 reg_dstid, THREADID id,string *disas)
 {       
   //count_profile(iaddr);  
   //REG reg_read=static_cast<REG>(reg_srcid);
@@ -1235,7 +1236,13 @@ VOID PIN_FAST_ANALYSIS_CALL liuR_R(ADDRINT iaddr, UINT32 reg_srcid, UINT32 reg_d
   SetRegisterTaintSrc(t,static_cast<REG>(reg_dstid),id,iaddr);
 
   SetRegisterTaint(GetRegisterTaint(static_cast<REG>(reg_srcid), id, iaddr),static_cast<REG>(reg_dstid),id,iaddr);
-  
+  if(liu_debug)
+  {
+    if(t.size()>0)
+    {
+      TraceFile<<"liuR_R "<<hex<<iaddr<<" "<<*disas<<endl;
+    }
+  }
 }
 /************************************************************************/
 /* 读了一个寄存器,R->R，只需把污点信息复制到目标寄存器                  */
@@ -1391,7 +1398,7 @@ VOID PIN_FAST_ANALYSIS_CALL DoProp(ADDRINT iaddr, UINT32 gr_read, UINT32 xt_read
         reg = static_cast<REG> (REG_GR_BASE + i);
       else
         reg = static_cast<REG> (REG_AL + i - NR_REG(REG_GR));
-      //modified by richhard
+      //modified by long
       taintsrc=Union(taintsrc,GetRegisterTaintSrc(reg,id,iaddr));
       is_tainted |= (!taintsrc.empty());
     }
@@ -1404,7 +1411,7 @@ VOID PIN_FAST_ANALYSIS_CALL DoProp(ADDRINT iaddr, UINT32 gr_read, UINT32 xt_read
         reg = static_cast<REG> (REG_MM_BASE + i);
       else
         reg = static_cast<REG> (REG_XMM_BASE + i - NR_REG(REG_MM));
-      //modified by richhard
+      //modified by long
       taintsrc=Union(taintsrc,GetRegisterTaintSrc(reg,id,iaddr));
       is_tainted |= (!taintsrc.empty());
     }
@@ -1412,13 +1419,13 @@ VOID PIN_FAST_ANALYSIS_CALL DoProp(ADDRINT iaddr, UINT32 gr_read, UINT32 xt_read
   //查看是否有读的内存被污染的，所读内存地址不是该指令所在地址
   if (mem_read1 != iaddr)
   {
-    //modified by richhard
+    //modified by long
     taintsrc=Union(taintsrc,GetMemTaintSource(mem_read1, (UINT32)mem_read_sz, iaddr, id));
     is_tainted |= (!taintsrc.empty());  
   }
   if (mem_read2 != iaddr)
   {
-    //modified by richhard
+    //modified by long
     taintsrc=Union(taintsrc,GetMemTaintSource(mem_read2, (UINT32)mem_read_sz, iaddr, id));
     is_tainted |=(!taintsrc.empty()); 
   }
@@ -1538,7 +1545,7 @@ static bool Instrument_FUCOMI(INS ins) {
 static bool Instrument_MOV(INS ins) {
   // handle rep operations first, as a special case，首先处理REP前缀的MOV指令.一定是mem->mem
   if (!REMOVE_REP && INS_RepPrefix(ins)) {// rep operations only make sense as mem -> mem
-    //by richhard
+    //by long
 #if RECORD_REP_COUNT
     IFCOND(ins);
     INS_InsertThenCall(ins, 
@@ -2174,6 +2181,7 @@ VOID InstructionProp(INS ins, VOID *v)
           IARG_UINT32, index_reg_write,
           
           IARG_THREAD_ID,
+          IARG_PTR, new string(INS_Disassemble(ins)),
           IARG_END);
       }
       return;
@@ -2234,7 +2242,7 @@ VOID InstructionProp(INS ins, VOID *v)
     {
       gr_read |= 1 << (reg - REG_AL + NR_REG(REG_GR));
     }
-     //add by richard 2012-11-1,considering the xmm register
+     
   else if(REG_is_mm(reg))
   {
     xt_read |=1<<(reg-REG_MM_BASE);
@@ -2245,7 +2253,7 @@ VOID InstructionProp(INS ins, VOID *v)
   }
 
   }
-  //找到所有写的寄存器,modified by richard :add writing eflags.
+ 
   for (UINT32 i=0; i < INS_MaxNumWRegs(ins); i++)
   {
     reg = INS_RegW(ins,i);
@@ -2321,7 +2329,12 @@ VOID InstructionProp(INS ins, VOID *v)
         IARG_UINT32, iaddr,
         IARG_UINT32, MaskReg(gr_write,0),
         IARG_THREAD_ID,
+        
         IARG_END);
+      if(liu_debug)
+      {
+        TraceFile<<"RegisterUntaint: "<<iaddr<<" "<<INS_Disassemble(ins)<<endl;
+      }
     }
   //读了一个寄存器，写了一个寄存器，如果读得寄存器被污染了，写的寄存器也被污染了。
     else if (MaxNumMaskReg(gr_read) == 1)
@@ -2335,9 +2348,13 @@ VOID InstructionProp(INS ins, VOID *v)
         IARG_UINT32, iaddr,
         IARG_UINT32, MaskReg(gr_read,0) + REG_GR_BASE,
         IARG_UINT32, MaskReg(gr_write,0) + REG_GR_BASE,
-    IARG_UINT32,eflag_write,
+        IARG_UINT32,eflag_write,
         IARG_THREAD_ID,
         IARG_END);
+      if(liu_debug)
+      {
+        TraceFile<<"DoPropRegR1: "<<iaddr<<" "<<INS_Disassemble(ins)<<endl;
+      }
       return;
     } 
   //读了两个寄存器，写了一个寄存器。读的两个寄存器中有一个被污染了，那么写的寄存器也被污染了。
@@ -2354,8 +2371,12 @@ VOID InstructionProp(INS ins, VOID *v)
         IARG_UINT32, MaskReg(gr_read,1) + REG_GR_BASE,
         IARG_UINT32, MaskReg(gr_write,0) + REG_GR_BASE,
         IARG_UINT32,eflag_write,
-    IARG_THREAD_ID,
+        IARG_THREAD_ID,
         IARG_END);
+      if(liu_debug)
+      {
+        TraceFile<<"DoPropRegR2: "<<iaddr<<" "<<INS_Disassemble(ins)<<endl;
+      }
       return;
     }
   }
@@ -2375,8 +2396,12 @@ VOID InstructionProp(INS ins, VOID *v)
       is_mem_write ? IARG_MEMORYWRITE_EA : IARG_INST_PTR,
       is_mem_write ? IARG_MEMORYWRITE_SIZE : IARG_INST_PTR,
       IARG_UINT32,eflag_write,
-    IARG_THREAD_ID,
+      IARG_THREAD_ID,
       IARG_END);
+    if(liu_debug)
+    {
+      TraceFile<<"DoPropNoExtReg: "<<iaddr<<" "<<INS_Disassemble(ins)<<endl;
+    }
     return;
   }
   
@@ -2395,6 +2420,11 @@ VOID InstructionProp(INS ins, VOID *v)
     is_mem_write ? IARG_MEMORYWRITE_SIZE : IARG_INST_PTR,
     IARG_THREAD_ID,
     IARG_END);
+  if(liu_debug)
+  {
+    TraceFile<<"DoProp xmm : "<<iaddr<<" "<<INS_Disassemble(ins)<<endl;
+  }
+  return;
 }
 //liu func end 911
 
