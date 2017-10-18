@@ -2147,7 +2147,7 @@ VOID InstructionProp(INS ins, VOID *v)
         TraceFile<<" operation: "<<opndvals[ii].taint<<" reg: "<<REG_StringShort((LEVEL_BASE::REG)opndvals[ii].reg)<<" size: "<<opndvals[ii].type.size<<endl;
       }
       
-    }*/
+    }
 
     if(count_reg_read==0 && count_reg_write==0 && memRead==0 && memWrite==0)
     {
@@ -2177,7 +2177,8 @@ VOID InstructionProp(INS ins, VOID *v)
           IARG_END);
       }
       return;
-    }  
+    } 
+
   //liu 1014
 
 
@@ -2289,12 +2290,6 @@ VOID InstructionProp(INS ins, VOID *v)
     gr_write &= ~(1 << (REG_ESI -REG_GR_BASE )); // esi is used as counter in rep instructions
 
     
-  if (KnobDebug && !CompactLog)
-    TraceFile << " remove_addr_reg " << REG_StringShort(REG_ECX) << REG_StringShort(REG_EDI) << REG_StringShort(REG_ESI) << " from gr_read and gr_write " ;
-  }
-  if (KnobDebug && !CompactLog)
-    TraceFile << endl;
-
   if (!gr_write && !xt_write&& !is_mem_write&&!eflag_write) 
     return; /* If we don't update any registers or memory 
              * then by definition no propagation will take place
