@@ -75,7 +75,7 @@ list <TaintSourceEntry> memTaintSrcTable;
 PIN_LOCK lock;
 PIN_LOCK lock1;
 bool TAINT_Analysis_On = false;
-bool liu_debug = false;
+bool liu_debug = true;
 bool liu_debug_analysis = true;
 char mem_taint[TAINT_TABLE_SIZE+1];
 #define RECORD_REP_COUNT 1
@@ -164,7 +164,7 @@ inline void PrintErr(string err,string modulename,ADDRINT addr)
     TraceFile<<"***************************ERROR**********************************"<<endl;
     TraceFile<<"Info :"<<err<<"Module Name:"<<modulename<<"Instruction addr:"<<hex<<addr<<endl;
 }
-//by richard ，求两个集合的并
+//by long ，求两个集合的并
 //输入输出：set<int>
 set<int> Union(set<int> a ,set<int> b)
 {
@@ -261,7 +261,7 @@ static bool REG_is_dift(REG r)
   if (REG_is_gr(r))
   {
     //不处理EIP,EFLAGS和ESP
-    if (r == REG_EIP || r==REG_EFLAGS||r == REG_ESP)
+    if (r == REG_EIP || r==REG_EFLAGS)
       return false;
     return true;
   }
@@ -344,11 +344,11 @@ static bool GetRegisterTaint(REG r, THREADID id, ADDRINT iaddr)
   case REG_BP:
     is_tainted |= __GetRegisterTaint(REG_BP, id);
     break;
-    /*case REG_ESP:
-    is_tainted |= __GetRegisterTaint(REG_ESP);
-    case REG_SP:
-    is_tainted |= __GetRegisterTaint(REG_SP);
-    break; */
+  case REG_ESP:
+    is_tainted |= __GetRegisterTaint(REG_ESP,id);
+  case REG_SP:
+    is_tainted |= __GetRegisterTaint(REG_SP,id);
+    break; 
   default:
     assert(0);
   }
@@ -367,7 +367,7 @@ __GetRegisterTaintSrc(REG r,THREADID id) {
   return (thread_info1[id].ptaintsrc_table[r]);
 }
 /************************************************************************/
-/* By richard 获取寄存器污染源 ,需用在GetRegisterTaint函数后,只有包含了污染数据才进行*/
+/* By long 获取寄存器污染源 ,需用在GetRegisterTaint函数后,只有包含了污染数据才进行*/
 /************************************************************************/
 static set<int> GetRegisterTaintSrc(REG r, THREADID id, ADDRINT iaddr)
 {
@@ -436,7 +436,7 @@ static set<int> GetRegisterTaintSrc(REG r, THREADID id, ADDRINT iaddr)
     break;
   case REG_ESP:
     taintsrc = Union(taintsrc,__GetRegisterTaintSrc(REG_ESP, id));
-    break;
+    
   case REG_SP:
     taintsrc = Union(taintsrc,__GetRegisterTaintSrc(REG_SP, id));
     break;
@@ -484,7 +484,7 @@ bool UnimplementedInstruction(INS ins)
 
 
 
-//by richard ,输出集合中的元素
+//by long ,输出集合中的元素
 
 
 
@@ -657,7 +657,7 @@ VOID SetMemTaintSource(ADDRINT addr,ADDRINT size,set<int> taintsrc,ADDRINT inst,
 
 }
 /************************************************************************/
-/* by richard
+/* by long
 打印污染指令*/
 /************************************************************************/
 VOID PrintTaintInstrunction(ADDRINT addr,set<int>& t)
@@ -826,13 +826,14 @@ void SetRegisterTaint(bool is_tainted, REG r, THREADID id, ADDRINT iaddr)
   case REG_BP:
     __SetRegisterTaint(is_tainted,REG_BP, id);
     break;
-    /*
-    case REG_ESP:
-    __SetRegisterTaint(is_tainted,REG_ESP);
-    case REG_SP:
-    __SetRegisterTaint(is_tainted,REG_SP);
+    
+  case REG_ESP:
+    __SetRegisterTaint(false,REG_ESP,id);
+
+  case REG_SP:
+    __SetRegisterTaint(false,REG_SP,id);
     break;
-    */
+    
   default:
     assert(0);
   }
@@ -846,6 +847,7 @@ __SetRegisterTaintSrc(set<int> taintsrc, REG r, THREADID id) {
 void SetRegisterTaintSrc(set<int> taintsrc, REG r, THREADID id, ADDRINT iaddr)
 {
   //先排除一部分寄存器，如ESP,EIP,EFLAGS
+  set<int> empty;
   if (!REG_is_dift(r)&&r!=REG_EFLAGS) return;
 
   //如果是多媒体扩展寄存器或者是8位的通用寄存器，则先处理
@@ -899,6 +901,12 @@ void SetRegisterTaintSrc(set<int> taintsrc, REG r, THREADID id, ADDRINT iaddr)
   case REG_BP:
     __SetRegisterTaintSrc(taintsrc,REG_BP, id);
     break;
+  case REG_ESP:
+    __SetRegisterTaintSrc(empty,REG_ESP, id);
+    
+  case REG_SP:
+    __SetRegisterTaintSrc(empty,REG_SP, id);
+    break;
   default:
     assert(0);
   }
@@ -911,9 +919,9 @@ VOID PIN_FAST_ANALYSIS_CALL RegisterUntaint(ADDRINT iaddr, UINT32 regid, THREADI
     reg = static_cast<REG>(REG_GR_BASE + regid);
   else
     reg = static_cast<REG>(REG_AL + regid - NR_REG(REG_GR));
-  //modified by richard
+  //modified by long
   set<int> t;
-  SetRegisterTaintSrc(t,reg,id,iaddr);//将源污点源清空
+  SetRegisterTaintSrc(t,reg,id,iaddr);
   SetRegisterTaint(false, reg, id, iaddr);
 
 }
@@ -988,7 +996,7 @@ VOID PIN_FAST_ANALYSIS_CALL DoPropMemtoReg(ADDRINT iaddr, ADDRINT memsrc,
   #if DEBUG_MOV
   TraceFile<<"Prop Mem To Reg With PC: "<<iaddr<<" src addr: "<<memsrc<<" memsize: "<<memsz<<" whether taint: "<<Getmem_taint(memsrc, memsz, iaddr, id)<<endl;
   #endif
-  // by richard 
+  // by long 
   t=GetMemTaintSource(memsrc, memsz, iaddr, id);
   SetRegisterTaintSrc(t,static_cast<REG>(reg_dstid), id, iaddr);
   SetRegisterTaint((!t.empty()), static_cast<REG>(reg_dstid), id, iaddr);
@@ -1218,7 +1226,7 @@ VOID PIN_FAST_ANALYSIS_CALL DoPropRegR2(ADDRINT iaddr, UINT32 reg_src1id, UINT32
                         UINT32 reg_dstid,UINT32  eflags_wt,THREADID id,string*disas)
 {
   //count_profile(iaddr); 
-  //by richard，如果两个操作数进行了运算，那么目的操作数的污点源一定是这两个操作数污点源的并
+  //by long，如果两个操作数进行了运算，那么目的操作数的污点源一定是这两个操作数污点源的并
   set<int> t=Union(GetRegisterTaintSrc(static_cast<REG>(reg_src1id), id, iaddr),GetRegisterTaintSrc(static_cast<REG>(reg_src2id), id, iaddr));
   SetRegisterTaintSrc(t,static_cast<REG>(reg_dstid),id,iaddr);
 
@@ -1766,6 +1774,60 @@ static bool Instrument_MOV(INS ins) {
   }
   return true;
 }
+/************************************************************************/
+/* Mov 指令的污点传播               INS_Address(ins)                                    */
+/************************************************************************/
+static bool Instrument_LEA(INS ins) {
+  // handle rep operations first, as a special case，首先处理REP前缀的MOV指令.一定是mem->mem
+
+   /************************************************************************/
+   /*    //源(INS_OperandIsReg(ins, 1))是寄存器                            */
+   /************************************************************************/
+  int count = INS_OperandCount(ins);
+  //TraceFile<<"lea: "<<INS_Disassemble(ins)<<" "<<count<<endl;
+  if(count==2)
+  {
+    if(INS_OperandIsReg(ins, 1) && INS_OperandIsReg(ins, 0)) 
+    {
+     //源是寄存器，目标是寄存器
+      //reg->reg
+        IFCOND(ins); 
+        INS_InsertThenCall(ins, 
+          IPOINT_BEFORE, 
+          AFUNPTR(DoPropRegR1), 
+          IARG_FAST_ANALYSIS_CALL,
+          IARG_INST_PTR,
+          IARG_ADDRINT, INS_OperandReg(ins, 1), //src reg
+          IARG_ADDRINT, INS_OperandReg(ins, 0), //dst reg
+          IARG_ADDRINT,0,
+          IARG_THREAD_ID,
+          IARG_PTR, new string(INS_Disassemble(ins)),
+          IARG_END);
+    }
+  }
+  else if(count==3)
+  {
+    if (INS_OperandIsReg(ins, 2) && INS_OperandIsReg(ins, 0)) 
+    {
+         
+        IFCOND(ins);
+        INS_InsertThenCall(ins,IPOINT_BEFORE, 
+          (AFUNPTR) DoPropRegR2,IARG_FAST_ANALYSIS_CALL,
+          IARG_UINT32, IARG_INST_PTR,
+          IARG_UINT32, INS_OperandReg(ins, 1),
+          IARG_UINT32, INS_OperandReg(ins, 2),
+          IARG_UINT32, INS_OperandReg(ins, 0),
+          IARG_UINT32, 0,
+          IARG_THREAD_ID,
+          IARG_PTR, new string(INS_Disassemble(ins)),
+          IARG_END);
+    }
+  }
+
+ 
+ 
+  return true;
+}
 void InitInstr() {
   for(int i = 0; i < XED_ICLASS_LAST; i++)
   {
@@ -1779,7 +1841,7 @@ void InitInstr() {
   instrument_functions[XED_ICLASS_MOVSD] = &Instrument_MOV; //83
   instrument_functions[XED_ICLASS_MOVZX] = &Instrument_MOV; //236
   instrument_functions[XED_ICLASS_MOVSX] = &Instrument_MOV; //378
-  //instrument_functions[XED_ICLASS_MOVSX] = &Instrument_MOV; //378
+  instrument_functions[XED_ICLASS_LEA] = &Instrument_LEA; //378
   //instrument_functions[XED_ICLASS_FXCH] = &Instrument_FXCH; //378
   //instrument_functions[XED_ICLASS_FUCOMI] = &Instrument_FUCOMI; //378
   
@@ -1819,7 +1881,7 @@ ADDRINT WriteBlock(THREADID threadid,ADDRINT addr,bool taken)
   return 1;
 }
 //liu 1012
-VOID  CheckConditionalJMP(ADDRINT iaddr,THREADID tid,bool taken,ADDRINT target)
+VOID  CheckConditionalJMP(ADDRINT iaddr,THREADID tid,bool taken,string*disas)
 {
   
   
@@ -1829,6 +1891,7 @@ VOID  CheckConditionalJMP(ADDRINT iaddr,THREADID tid,bool taken,ADDRINT target)
     WriteBlock(tid,iaddr,taken);
     set<int> t= GetRegisterTaintSrc(REG_EFLAGS,tid,iaddr);
     int size1= t.size();
+    TraceFile<<"CheckConditionalJMP: "<<iaddr<<" "<<*disas<<endl;
     if (size1>iTNTChksmDegree)
     {
       cout<< "[HIGH-TNT_JMP] " << "PC " << hex <<iaddr <<endl;
@@ -2023,7 +2086,7 @@ VOID InstructionProp(INS ins, VOID *v)
       IARG_UINT32, iaddr,
       IARG_THREAD_ID,
       IARG_BRANCH_TAKEN,
-      IARG_BRANCH_TARGET_ADDR,
+      IARG_PTR, new string(INS_Disassemble(ins)),
       IARG_END);
     return;
   }
@@ -2145,7 +2208,7 @@ VOID InstructionProp(INS ins, VOID *v)
     }
     
 
-     for(ii=0; ii < valcount; ii++) 
+    for(ii=0; ii < valcount; ii++) 
     {
       //TraceFile<< "here instructions: "<<INS_Disassemble(ins)<<endl;
       
@@ -2194,9 +2257,12 @@ VOID InstructionProp(INS ins, VOID *v)
       
     }
     
+    
     // print operands of other instruction
-    if(INS_Opcode(ins)==XED_ICLASS_LEA
-      //|| INS_Opcode(ins)==XED_ICLASS_SETNZ || XED_ICLASS_JMP == INS_Opcode(ins) || XED_ICLASS_CMP == INS_Opcode(ins)
+    if(INS_Opcode(ins)==XED_ICLASS_CMOVBE
+  
+      || INS_Opcode(ins)==XED_ICLASS_CMOVLE 
+      //|| XED_ICLASS_JMP == INS_Opcode(ins) || XED_ICLASS_CMP == INS_Opcode(ins)
       
       )
     {
@@ -2281,14 +2347,10 @@ VOID InstructionProp(INS ins, VOID *v)
    */
   //gr_read记录读的寄存器的编号，每一位表示一个寄存器编号，值1代表读了该寄存器，同理gr_write
   gr_read = gr_write = xt_read = xt_write = eflag_write=0;
+  int eflag_read =0;
   for (UINT32 i=0; i < INS_MaxNumRRegs(ins); i++)  //INS_MaxNumRRegs:Maximum number of read operands
   {
     reg =  INS_RegR(ins, i);
-
-    if (!REG_is_dift(reg)) continue;
-
-    if (KnobDebug && !CompactLog)
-      TraceFile << " reg_r " << REG_StringShort(reg);
 
     if (REG_is_gr(reg))
       gr_read |= 1 << (reg - REG_GR_BASE);
@@ -2296,15 +2358,18 @@ VOID InstructionProp(INS ins, VOID *v)
     {
       gr_read |= 1 << (reg - REG_AL + NR_REG(REG_GR));
     }
-     
-  else if(REG_is_mm(reg))
-  {
-    xt_read |=1<<(reg-REG_MM_BASE);
-  }
-  else if (REG_is_xmm(reg))
-  {
-    xt_read |=1<< (reg-REG_MM_BASE+NR_REG(REG_MM));
-  }
+    else if(reg==REG_EFLAGS)
+    {
+      eflag_read=1;
+    }
+    else if(REG_is_mm(reg))
+    {
+      xt_read |=1<<(reg-REG_MM_BASE);
+    }
+    else if (REG_is_xmm(reg))
+    {
+      xt_read |=1<< (reg-REG_MM_BASE+NR_REG(REG_MM));
+    }
 
   }
  
@@ -2312,29 +2377,27 @@ VOID InstructionProp(INS ins, VOID *v)
   {
     reg = INS_RegW(ins,i);
 
-    if (!REG_is_dift(reg)&&reg!=REG_EFLAGS) continue;
-           
-    if (KnobDebug && !CompactLog) 
-      TraceFile << " reg_w " << REG_StringShort(reg);
+    //if (!REG_is_dift(reg)&&reg!=REG_EFLAGS) continue;
+         
     if (REG_is_gr(reg))
       gr_write |= 1 << (reg - REG_GR_BASE);
     else if (REG_is_gr8(reg) || REG_is_gr16(reg))
     {
       gr_write |= 1 << (reg - REG_AL + NR_REG(REG_GR));
     }
-  else if (reg==REG_EFLAGS)
-  {
-    eflag_write=1;
-  }
-  //add by richard 2012-11-1,considering the xmm register
-  else if(REG_is_mm(reg))
-  {
-    xt_write |=1<<(reg-REG_MM_BASE);
-  }
-  else if (REG_is_xmm(reg))
-  {
-    xt_write |=1<< (reg-REG_MM_BASE+NR_REG(REG_MM));
-  }
+    else if (reg==REG_EFLAGS)
+    {
+      eflag_write=1;
+    }
+    //add by long 2012-11-1,considering the xmm register
+    else if(REG_is_mm(reg))
+    {
+      xt_write |=1<<(reg-REG_MM_BASE);
+    }
+    else if (REG_is_xmm(reg))
+    {
+      xt_write |=1<< (reg-REG_MM_BASE+NR_REG(REG_MM));
+    }
   }
 
  
@@ -2351,11 +2414,8 @@ VOID InstructionProp(INS ins, VOID *v)
     gr_write &= ~(1 << (REG_ESI -REG_GR_BASE )); // esi is used as counter in rep instructions
 
     
-  if (KnobDebug && !CompactLog)
-    TraceFile << " remove_addr_reg " << REG_StringShort(REG_ECX) << REG_StringShort(REG_EDI) << REG_StringShort(REG_ESI) << " from gr_read and gr_write " ;
   }
-  if (KnobDebug && !CompactLog)
-    TraceFile << endl;
+  
 
   if (!gr_write && !xt_write&& !is_mem_write&&!eflag_write) 
     return; /* If we don't update any registers or memory 
@@ -2391,7 +2451,7 @@ VOID InstructionProp(INS ins, VOID *v)
       }
     }
   //读了一个寄存器，写了一个寄存器，如果读得寄存器被污染了，写的寄存器也被污染了。
-    else if (MaxNumMaskReg(gr_read) == 1)
+    else if (MaxNumMaskReg(gr_read) == 1 && eflag_read==0)
     {
       assert (MaskReg(gr_read,0) < NR_REG(REG_GR));
       assert (MaskReg(gr_write,0) < NR_REG(REG_GR));
@@ -2412,6 +2472,25 @@ VOID InstructionProp(INS ins, VOID *v)
       }
       return;
     } 
+    else if(MaxNumMaskReg(gr_read) == 1 && eflag_read==1)
+    {
+      IFCOND(ins);
+      INS_InsertThenCall(ins,IPOINT_BEFORE, 
+        (AFUNPTR) DoPropRegR2,IARG_FAST_ANALYSIS_CALL,
+        IARG_UINT32, iaddr,
+        IARG_UINT32, MaskReg(gr_read,0) + REG_GR_BASE,
+        IARG_UINT32, REG_EFLAGS,
+        IARG_UINT32, MaskReg(gr_write,0) + REG_GR_BASE,
+        IARG_UINT32, eflag_write,
+        IARG_THREAD_ID,
+        IARG_PTR, new string(INS_Disassemble(ins)),
+        IARG_END);
+      if(liu_debug)
+      {
+        TraceFile<<"DoPropRegR2_eflag: "<<iaddr<<" "<<INS_Disassemble(ins)<<endl;
+      }
+      return;
+    }
   //读了两个寄存器，写了一个寄存器。读的两个寄存器中有一个被污染了，那么写的寄存器也被污染了。
     else if (MaxNumMaskReg(gr_read) == 2)
     {
@@ -2431,7 +2510,8 @@ VOID InstructionProp(INS ins, VOID *v)
         IARG_END);
       if(liu_debug)
       {
-        TraceFile<<"DoPropRegR2: "<<iaddr<<" "<<INS_Disassemble(ins)<<endl;
+        TraceFile<<"eflag: "<<eflag_read<<"DoPropRegR2: "<<iaddr<<" "<<INS_Disassemble(ins)<<endl;
+
       }
       return;
     }
@@ -2457,7 +2537,7 @@ VOID InstructionProp(INS ins, VOID *v)
       IARG_END);
     if(liu_debug)
     {
-      TraceFile<<"DoPropNoExtReg: "<<iaddr<<" "<<INS_Disassemble(ins)<<endl;
+      TraceFile<<eflag_read<<"DoPropNoExtReg: "<<iaddr<<" "<<INS_Disassemble(ins)<<endl;
     }
     return;
   }
@@ -2480,7 +2560,7 @@ VOID InstructionProp(INS ins, VOID *v)
     IARG_END);
   if(liu_debug)
   {
-    TraceFile<<"DoProp xmm : "<<iaddr<<" "<<INS_Disassemble(ins)<<endl;
+    TraceFile<<eflag_read<<"DoProp xmm : "<<iaddr<<" "<<INS_Disassemble(ins)<<endl;
   }
   return;
 }
