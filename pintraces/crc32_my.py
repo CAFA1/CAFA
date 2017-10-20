@@ -1,10 +1,7 @@
 from binascii import *
-ll= "\x0d\x4a\x11\x85"
-ll2= "\x85\x11\x4a\x0d"
-print "0x%08x" %crc32("hello world")
-print "0x%08x" %crc32("hello world")
-print "0x%08x" %crc32("hello world"+"hello world")
-print "0x%08x" %crc32("hello world"+ll2)
+ll= "\x45\x00\x00\x54\x1a"
+
+
 
 print crc32("hello world")
 # Or, in two pieces:
