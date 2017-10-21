@@ -29,7 +29,7 @@ make test_fuzz
 1. before patch  
 cd pintraces/sample/png
 afl-fuzz -i in -o out -Q -- /usr/local/bin/magick identify @@
-2. after patch
+2. after patch  
 cd pintraces/sample/png   
 cp ../libpng12.so.0.46.0 /usr/local/lib/libpng12.so.0.46.0  
 afl-fuzz -i in -o out -Q -- /usr/local/bin/magick identify @@
