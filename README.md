@@ -27,7 +27,7 @@ make test
 make test_fuzz  
 # afl-fuzz libpng
 1. before patch  
-cd pintraces/sample/png
+cd pintraces/sample/png  
 afl-fuzz -i in -o out -Q -- /usr/local/bin/magick identify @@
 2. after patch  
 cd pintraces/sample/png   
