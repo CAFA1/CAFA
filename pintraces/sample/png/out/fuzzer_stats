@@ -1,0 +1,27 @@
+start_time        : 1508577988
+last_update       : 1508578341
+fuzzer_pid        : 26651
+cycles_done       : 0
+execs_done        : 1422
+execs_per_sec     : 4.02
+paths_total       : 41
+paths_favored     : 1
+paths_found       : 40
+paths_imported    : 0
+max_depth         : 2
+cur_path          : 0
+pending_favs      : 1
+pending_total     : 41
+variable_paths    : 0
+stability         : 100.00%
+bitmap_cvg        : 18.85%
+unique_crashes    : 0
+unique_hangs      : 0
+last_path         : 1508578267
+last_crash        : 0
+last_hang         : 0
+execs_since_crash : 1422
+exec_timeout      : 600
+afl_banner        : magick
+afl_version       : 2.51b
+command_line      : afl-fuzz -i in -o out/ -Q -- /usr/local/bin/magick identify @@

@@ -5,7 +5,7 @@ import struct
 import shutil
 import sys
 good = "/home/bap/workspace/bap-0.7/pintraces/sample/png/good.png"
-bad = "/home/bap/workspace/bap-0.7/pintraces/sample/png/bad.png"
+bad = "/home/bap/workspace/bap-0.7/pintraces/sample/png/bad2.png"
 def _crc32( v):   
     return (binascii.crc32(v) & 0xffffffff) 
 def make_samples():
