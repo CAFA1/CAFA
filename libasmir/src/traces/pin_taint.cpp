@@ -2357,7 +2357,7 @@ VOID InstructionProp(INS ins, VOID *v)
       }
       
     }
-    
+    /*
     bool tmpbool=false;
     // print operands of other instruction
     if(
@@ -2379,6 +2379,7 @@ VOID InstructionProp(INS ins, VOID *v)
       }
       
     }
+    */
     
 
     if(count_reg_read==0 && count_reg_write==0 && memRead==0 && memWrite==0)
