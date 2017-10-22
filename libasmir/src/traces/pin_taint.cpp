@@ -3198,9 +3198,11 @@ FrameOption_t TaintTracker::taintPostSC(const uint32_t bytes,
         {
           if (fds.find(fd) != fds.end()) 
           {
+            THREADID idd= PIN_ThreadId();
             off_t offset;
             assert (PIN_SafeCopy(&offset, (void*) args[5], sizeof(off_t)) == sizeof(off_t));
-            cout << "Tainting " 
+            cout <<"threadid: "<<idd
+                 << " Tainting " 
                  << length 
                  << " bytes from mmap of fd "
                  << fd
@@ -3222,8 +3224,8 @@ FrameOption_t TaintTracker::taintPostSC(const uint32_t bytes,
         {
           if (fds.find(fd) != fds.end()) 
           {
-
-            cout << "Tainting " 
+            THREADID idd= PIN_ThreadId();
+            cout <<"threadid: "<<idd<< " Tainting " 
                  << length 
                  << " bytes from read at " << addr << ", fd=" << args[0]
                  << endl;
