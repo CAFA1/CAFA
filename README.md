@@ -18,7 +18,8 @@ python schedule_identify.py 1 30 libpng /usr/local/bin/magick
 python schedule_udp.py 0x10 0x80 abcd /usr/local/sbin/tcpdump  
 python schedule_ip.py 0x5 0x60 abcd /usr/local/sbin/tcpdump  
 python schedule_igmp.py 0x3 0x60 abcd /usr/local/sbin/tcpdump  
-python schedule_tcp.py 0x3 0x53 abcd /usr/local/sbin/tcpdump
+python schedule_tcp.py 0x3 0x53 abcd /usr/local/sbin/tcpdump  
+python schedule_gz.py 1 0x18 gzip /usr/local/bin/gzip  
 
 # afl-fuzz my own sample
 cd pintraces/sample/lib/  
