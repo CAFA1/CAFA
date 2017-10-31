@@ -184,6 +184,7 @@ def main(argv=sys.argv):
     offsets2 = argv[2]
     coverage = argv[3]
     elfpath = argv[4]
+    os.system("cp ~/workspace/bap-0.7/pintraces/sample/gz/bak/* ~/workspace/bap-0.7/pintraces/sample/gz/")
     #check = argv[5]
     compare_run(offsets1,offsets2,coverage,elfpath)
     print "result"
