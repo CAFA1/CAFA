@@ -130,22 +130,25 @@ def compare_run(offsets1,offsets2,coverage,elfpath):
                         result_jz.append(jz)
     if(len(result_jz)):
         result_jz.sort()
-        myset = set(result_jz)
-        for item in myset:
+        result_SET4 = set(result_jz)
+        for item in result_SET4:
             print("the %x has found %d" %(item,result_jz.count(item)))
         #print_list(result_jz)
     #print_dict(r_good)
     #print_dict(r_bad)
     result_high=get_high()
-    myset1 = set(result_high)
-    result_all=myset1&myset
+    result_SET1 = set(result_high)
+    if(len(result_SET1)):
+        result_all=result_SET1&result_SET4
+    else:
+        result_all=result_SET4
     print "result_all!!!!!!"
     print_list(result_all)
-    print "result_all!!!!!!  ok"
+    print "result_all!!!!!!  in range "
     lowaddr,highaddr=get_base()
     for tmp in result_all:
         if(tmp>lowaddr and tmp<highaddr):
-            print hex(tmp)
+            print hex(tmp-lowaddr)
     
 
 
