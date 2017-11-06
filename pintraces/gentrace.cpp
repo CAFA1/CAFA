@@ -1859,7 +1859,7 @@ static void After_crc32(CONTEXT *ctxt,THREADID tid)
     SetRegisterTaint( true, REG_EAX,tid, 0);
     set<int> tmp;
     tmp.insert(1);
-    tmp.insert(2);
+    //tmp.insert(2);
     SetRegisterTaintSrc(tmp,REG_EAX,tid,0);
 }
 
