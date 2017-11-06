@@ -1851,7 +1851,7 @@ void SetRegisterTaint(bool is_tainted, REG r, THREADID id, ADDRINT iaddr);
 static void After_crc32(CONTEXT *ctxt,THREADID tid)
 {
     int crc32=PIN_GetContextReg(ctxt, REG_EAX);
-    cout<<"get crc32: "<<hex<<crc32<<endl;
+    TraceFile<<"get crc32: "<<hex<<crc32<<endl;
     crc32_Instrumentation_On = true;
     TAINT_Analysis_On=true;
   
