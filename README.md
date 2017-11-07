@@ -7,4 +7,4 @@ note that there is the other branch (taint branch).
 python schedule_identify.py 1 30 libpng /usr/local/bin/magick  
 # AFL Fuzz command
 cd pintraces/sample/png  
-afl-fuzz -i in -o out -Q -- /usr/local/bin/magick identify @@  
+AFL_INST_LIBS=1 afl-fuzz -i in -o out -Q -- /usr/local/bin/magick identify @@  
