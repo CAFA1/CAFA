@@ -2151,6 +2151,7 @@ VOID InstructionProp(INS ins, VOID *v)
     TempOps_t opndvals[MAX_VALUES_COUNT];
     uint32_t valcount;
     valcount = 0;
+    
     //get instruction's operand 
     for(uint32_t i = 0; i < INS_OperandCount(ins); i++) {
 
@@ -2312,19 +2313,19 @@ VOID InstructionProp(INS ins, VOID *v)
       }
       
     }
-    /*
-    bool tmpbool=false;
+    
+    //bool tmpbool=false;
     // print operands of other instruction
     if(
-      //INS_Opcode(ins)==XED_ICLASS_POP|| 
+      INS_Opcode(ins)==XED_ICLASS_POP//|| 
   
-      INS_Opcode(ins)==XED_ICLASS_TEST 
+      //INS_Opcode(ins)==XED_ICLASS_TEST 
       //|| XED_ICLASS_JMP == INS_Opcode(ins) || XED_ICLASS_CMP == INS_Opcode(ins)
       
       )
     {
-      tmpbool=count_reg_read==2 && count_reg_write==1 && memRead==0 && memWrite==0 && REG_is_eflag((LEVEL_BASE::REG)index_reg_write);
-      TraceFile<< "here instructions: "<<INS_Disassemble(ins)<<" count_reg_read: "<<count_reg_read<<" count_reg_write: "<<count_reg_write<<" memRead: "<<memRead<<" memWrite: "<<memWrite<<" index_reg_read: "<<index_reg_read<<" eflag: "<<REG_EFLAGS<<" bool: "<<tmpbool<<endl;
+      //tmpbool=count_reg_read==2 && count_reg_write==1 && memRead==0 && memWrite==0 && REG_is_eflag((LEVEL_BASE::REG)index_reg_write);
+      TraceFile<< "here instructions: "<<INS_Disassemble(ins)<<" count_reg_read: "<<count_reg_read<<" count_reg_write: "<<count_reg_write<<" memRead: "<<memRead<<" memWrite: "<<memWrite<<" index_reg_read: "<<index_reg_read<<" eflag: "<<REG_EFLAGS<<" count: "<<INS_OperandCount(ins)<<endl;
       
       for(ii=0; ii < valcount; ii++) 
       {
@@ -2333,7 +2334,7 @@ VOID InstructionProp(INS ins, VOID *v)
       }
       
     }
-    */
+    
     
 
     if(count_reg_read==0 && count_reg_write==0 && memRead==0 && memWrite==0)
