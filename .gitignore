@@ -9,3 +9,4 @@ pintraces/good_1.txt
 pintraces/bad_2.txt
 pintraces/.gdb_history
 pintraces/sample/png/out/
+*.gdb_history
