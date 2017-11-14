@@ -2249,7 +2249,7 @@ VOID InstructionProp(INS ins, VOID *v)
                     opndvals[valcount].reg = basereg;
                     opndvals[valcount].type.type = REGISTER;
                     opndvals[valcount].type.size = GetBitsOfReg(basereg)/8;
-
+                    //true if this operand generates an address, but the address does not access memory (e.g. load effective address instruction) 
                     if (  INS_OperandIsAddressGenerator(ins, i))
                         opndvals[valcount].taint = RD;
                     else
@@ -2357,29 +2357,33 @@ VOID InstructionProp(INS ins, VOID *v)
       }
       
     }
-    /*
-    bool tmpbool=false;
-    // print operands of other instruction
-    if(
-      //INS_Opcode(ins)==XED_ICLASS_POP|| 
-  
-      INS_Opcode(ins)==XED_ICLASS_TEST 
-      //|| XED_ICLASS_JMP == INS_Opcode(ins) || XED_ICLASS_CMP == INS_Opcode(ins)
-      
-      )
+    
+    bool logins=true;
+    if(logins)
     {
-      tmpbool=count_reg_read==2 && count_reg_write==1 && memRead==0 && memWrite==0 && REG_is_eflag((LEVEL_BASE::REG)index_reg_write);
-      TraceFile<< "here instructions: "<<INS_Disassemble(ins)<<" count_reg_read: "<<count_reg_read<<" count_reg_write: "<<count_reg_write<<" memRead: "<<memRead<<" memWrite: "<<memWrite<<" index_reg_read: "<<index_reg_read<<" eflag: "<<REG_EFLAGS<<" bool: "<<tmpbool<<endl;
-      
-      for(ii=0; ii < valcount; ii++) 
-      {
+        // print operands of other instruction
+        if(   
+            //INS_Opcode(ins)==XED_ICLASS_TEST 
+              valcount>3
+          )
+        {
+          
+          TraceFile<< "here instructions: "<<INS_Disassemble(ins)<<endl
+          <<" count_reg_read: "<<count_reg_read<<" count_reg_write: "<<count_reg_write<<endl
+          <<" memRead: "<<memRead<<" memWrite: "<<memWrite<<endl
+          <<" valcount: "<<valcount<<" count: "<<INS_OperandCount(ins)
+          <<endl;
+          
+          for(ii=0; ii < valcount; ii++) 
+          {
 
-        
-        TraceFile<<" operation: "<<opndvals[ii].taint<<" reg: "<<REG_StringShort((LEVEL_BASE::REG)opndvals[ii].reg)<<" size: "<<opndvals[ii].type.size<<endl;
-      }
-      
+            
+            TraceFile<<" operation: "<<opndvals[ii].taint<<" reg: "<<REG_StringShort((LEVEL_BASE::REG)opndvals[ii].reg)<<" size: "<<opndvals[ii].type.size<<endl;
+          }
+          
+        }
     }
-    */
+    
     
 
     if(count_reg_read==0 && count_reg_write==0 && memRead==0 && memWrite==0)
