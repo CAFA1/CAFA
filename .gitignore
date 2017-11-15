@@ -10,3 +10,5 @@ pintraces/bad_2.txt
 pintraces/.gdb_history
 pintraces/sample/png/out/
 *.gdb_history
+*1.txt
+*peda*
