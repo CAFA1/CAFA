@@ -4,12 +4,25 @@ import binascii
 import struct
 import shutil
 import sys
-
-
-def run_cmd(offsets1,offsets2,coverage,elfpath,filepath,ext_command):
+good = "/home/bap/workspace/bap-0.7/pintraces/sample/rar/good.rar"
+bad = "/home/bap/workspace/bap-0.7/pintraces/sample/rar/bad4.rar"
+def _crc32( v):   
+    return (binascii.crc32(v) & 0xffffffff) 
+def make_samples():
+    f1 = open("good.txt","w")
+    crcfile = _crc32("a"*20)
+    crcfilestr = struct.pack("<I",crcfile)
+    f1.write("a"*20+crcfilestr)
+    f1.close()
+    f1 = open("bad.txt","w")
+    crcfile = 0x5678
+    crcfilestr = struct.pack("<I",crcfile)
+    f1.write("a"*20+crcfilestr)
+    f1.close()
+def run_cmd(offsets1,offsets2,coverage,elfpath,filepath):
      
     filename = filepath.split("/")[-1]
-    pin_cmd = "/home/bap/workspace/bap-0.7/pin/pin -t /home/bap/workspace/bap-0.7/pintraces/obj-ia32/gentrace.so -taint-offsets "+offsets1+" -taint-offsets "+offsets2+"  -o 1-1 -log-limit 10000 -ins-limit 1000000 -time-limit 35  -c "+coverage+" -taint-files "+filename+" --  "+elfpath+" "+ext_command+" "+filepath
+    pin_cmd = "/home/bap/workspace/bap-0.7/pin/pin -t /home/bap/workspace/bap-0.7/pintraces/obj-ia32/gentrace.so -taint-offsets "+offsets1+" -taint-offsets "+offsets2+"  -o 1-1 -log-limit 10000 -ins-limit 1000000 -time-limit 35  -c "+coverage+" -taint-files "+filename+" --  "+elfpath+" e "+filepath
     print "[*] Just about to run ", pin_cmd  #-skip-taints 2
     os.system(pin_cmd)
     
@@ -52,12 +65,12 @@ def cleandir():
     os.remove("1-1-addrs.txt")
 def find_all_next(arr,item):
     return [arr[i+1] for i,a in enumerate(arr) if a==item]
-def compare_run(offsets1,offsets2,coverage,elfpath,ext_command,good_sample,bad_sample):
+def compare_run(offsets1,offsets2,coverage,elfpath):
     os.system("rm 1.txt")
-    run_cmd(offsets1,offsets2,coverage,elfpath,good_sample,ext_command)
+    run_cmd(offsets1,offsets2,coverage,elfpath,good)
     os.system("cp 1-1-addrs.txt good_1.txt")
     os.system("rm 1.txt")
-    run_cmd(offsets1,offsets2,coverage,elfpath,bad_sample,ext_command)
+    run_cmd(offsets1,offsets2,coverage,elfpath,bad)
     os.system("cp 1-1-addrs.txt bad_2.txt")
     os.system("diff good_1.txt bad_2.txt > diff.txt")
     os.system("echo 1,1 >> diff.txt")
@@ -117,18 +130,18 @@ def compare_run(offsets1,offsets2,coverage,elfpath,ext_command,good_sample,bad_s
                 if(result_bad.has_key(jz) ):
                     if(result_good[jz]!=result_bad[jz]):
                         result_jz.append(jz)
-    print "result taint jnz(SET4)"
-    myset=set()
+    print "result taint jnz"
     if(len(result_jz)):
         result_jz.sort()
         myset = set(result_jz)
         for item in myset:
             print("the %x has found %d" %(item,result_jz.count(item)))
+        #print_list(result_jz)
+    #print_dict(r_good)
+    #print_dict(r_bad)
     result_high=get_high()
     myset1 = set(result_high)
-    print "|SET1| = %d" % len(myset1)
-    print "|SET4| = %d" % len(myset)
-    if(len(myset1)):
+    if myset1:
         result_all=myset1&myset
     else:
         result_all=myset
@@ -144,30 +157,52 @@ def compare_run(offsets1,offsets2,coverage,elfpath,ext_command,good_sample,bad_s
     print "result relative address of checksum"
     for tmp in result_relative:
         print hex(tmp-lowaddr)
+    
+
+
+
+    '''
+    result_good_jz = list()
+    result_good_bool = list()
+    for line in f1.readlines():
+        line1 = line.split()
+        
+        result_good_jz.append(int(line1[0],16))
+        result_good_bool.append(int(line1[1],16))
+    #cleandir()
+    run_cmd(offsets1,offsets2,coverage,elfpath,bad)
+    f1 = open("1-1-addrs.txt","r")
+    result_bad_jz = list()
+    result_bad_bool = list()
+    for line in f1.readlines():
+        line1 = line.split()
+        
+        result_bad_jz.append(int(line1[0],16))
+        result_bad_bool.append(int(line1[1],16))
+    result_jz=set()
+    for jz in :
+        if bbl_bad.has_key(jz):
+            if(bbl_good[jz]!=bbl_bad[jz]):
+                result_jz.add(jz)
+    print "next_good:"
+    #print_dict(bbl_good)
+    print "next_bad:"
+    #print_dict(bbl_bad)
+    '''
+
     return #result_jz
 def main(argv=sys.argv):
     offsets1 = argv[1]
     offsets2 = argv[2]
     coverage = argv[3]
     elfpath = argv[4]
-    ext_command = argv[5]
-    good_sample = argv[6]
-    bad_sample = argv[7]
-    # for gz test 
-    # change based on your own directory
-    os.system("rm ~/workspace/bap-0.7/pintraces/sample/gz/good.txt")
-    os.system("cp ~/workspace/bap-0.7/pintraces/sample/gz/bak/* ~/workspace/bap-0.7/pintraces/sample/gz/")
-    compare_run(offsets1,offsets2,coverage,elfpath,ext_command,good_sample,bad_sample)
-    
-    
+    #check = argv[5]
+    compare_run(offsets1,offsets2,coverage,elfpath)
+    print "result"
+    #print_list(result_jz)
 
 if __name__ == "__main__":
-    print "python schedule_identify.py taint_start taint_length module_name elf_path ext_command good_sample bad_sample"
-    print len(sys.argv)
-    if(len(sys.argv)!=8):
-        print "python schedule_identify.py taint_start taint_length module_name elf_path ext_command good_sample bad_sample"
-    else:
-        main(sys.argv)
+    main(sys.argv)
 
 
 

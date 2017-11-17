@@ -2323,7 +2323,7 @@ int main(int argc, char *argv[])
 	
 	uint32_t NumOffsetsParams;
 	NumOffsetsParams =  TaintedOffsets.NumberOfValues()>>1;
-	      
+	iTNTChksmDegree = KnobChksmDegree.Value();      
 	for (uint32_t j = 0; j <NumOffsetsParams; j++) 
 	{
 	//if (TaintedOffsets.Value(2*j) != 0 && TaintedOffsets.Value(2*j+1) != 0)
@@ -2380,7 +2380,7 @@ int main(int argc, char *argv[])
 	ss << g_threadname<<KnobOut.Value() << "-" << "trace.bpt";
     //ss << PIN_GetPid() << "-" << KnobOut.Value();
     //liu 925
-   iTNTChksmDegree = KnobChksmDegree.Value();
+   
     //g_twnew = new TraceContainerWriter(ss.str().c_str(), bfd_arch_i386, bfd_mach_i386_i386, default_frames_per_toc_entry, false);
 
     g_bufidx = 0;

@@ -86,7 +86,7 @@ TNT_mem TNT_mem_node;
 set<int> perthread_taintsrctable[MAX_NUM_CPUS][REG_XMM_LAST+1];
 
 unsigned int iTNTEncryDegree=10;  //taint count
-unsigned int iTNTChksmDegree=10;  //taint count
+unsigned int iTNTChksmDegree;  //taint count
 //liu 925
 typedef struct TempOps_s {
     uint32_t reg;
@@ -2358,7 +2358,7 @@ VOID InstructionProp(INS ins, VOID *v)
       
     }
     
-    bool logins=true;
+    bool logins=false;
     if(logins)
     {
         // print operands of other instruction
@@ -2963,6 +2963,11 @@ FrameOption_t TaintTracker::introMemTaintFromFd(uint32_t fd, uint32_t addr, uint
   	///first is file offset ,second is length
   	int lower = pos->first > fds[fd].offset ? pos->first:fds[fd].offset;
   	int upper = pos->first + pos->second < fds[fd].offset +length? pos->first + pos->second:fds[fd].offset +length;
+    if(iTNTChksmDegree == 10)
+    {
+      iTNTChksmDegree = (pos->second)*0.5;
+      TraceFile << "iTNTChksmDegree: "<<iTNTChksmDegree<<endl;
+    }
   	if(upper >=lower)
   	{
 
