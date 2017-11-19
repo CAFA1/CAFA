@@ -31,42 +31,49 @@ python schedule_identify.py 0x20 881 libpng /usr/local/bin/magick identify ./sam
 
 2. pngcheck   
 ```
-python schedule_identify.py 8 13 pngcheck /usr/bin/pngcheck " " ./sample/png/good.png ./sample/png/bad.png  
-python schedule_identify.py 0x20 881 pngcheck /usr/bin/pngcheck " " ./sample/png/good.png ./sample/png/bad.png  
+python schedule_identify.py 8 13 pngcheck ./sample/png/origin_pngcheck/pngcheck " " ./sample/png/good.png ./sample/png/bad.png  
+python schedule_identify.py 0x20 881 pngcheck ./sample/png/origin_pngcheck/pngcheck " " ./sample/png/good.png ./sample/png/bad.png  
 ```
 
 3. gz  
 ```
-python schedule_identify.py 0 0x21 gzip /usr/local/bin/gzip -d ./sample/gz/good.txt.gz ./sample/gz/bad.txt.gz  
+python schedule_identify.py 0 0x21 gzip ./sample/gz/origin/gzip -d ./sample/gz/good.txt.gz ./sample/gz/bad.txt.gz  
 ``` 
  
 4. unzip  
 ``` 
-python schedule_identify.py 0 0x26 unzip /usr/bin/unzip " " ./sample/zip/good.zip ./sample/zip/bad.zip
+python schedule_identify.py 0 0x26 unzip ./sample/zip/origin/unzip " " ./sample/zip/good.zip ./sample/zip/bad.zip
 ```
 
 5. rar
 ```
-python schedule_identify.py 7 13 rar /usr/local/bin/rar e ./sample/rar/good.rar ./sample/rar/bad2.rar  
-python schedule_identify.py 0x14 0x34 rar /usr/local/bin/rar e ./sample/rar/good.rar ./sample/rar/bad3.rar 
+python schedule_identify.py 7 13 rar ./sample/rar/origin/rar e ./sample/rar/good.rar ./sample/rar/bad2.rar  
+python schedule_identify.py 0x14 0x34 rar ./sample/rar/origin/rar e ./sample/rar/good.rar ./sample/rar/bad3.rar 
+python schedule_identify.py 0x14 0x34 rar ./sample/rar/origin/rar e ./sample/rar/good.rar ./sample/rar/bad4.rar
 ``` 
 
-6. pcap  
-    6.1 udp checksum point  
+6. tar
+```
+python schedule_identify.py 0 0x159 tar ./sample/tar/origin/tar -tf ./sample/tar/good.tar ./sample/tar/bad.tar  
+
+``` 
+
+7. pcap  
+    7.1 udp checksum point  
     ```
-    python schedule_identify.py 0x5e 8 tcpdump /usr/local/sbin/tcpdump " -v -r  " ./sample/udp/good_udp.pcap ./sample/udp/bad_udp.pcap 
+    python schedule_identify.py 0x5e 8 tcpdump ./sample/tcp/origin/tcpdump " -v -r  " ./sample/udp/good_udp.pcap ./sample/udp/bad_udp.pcap 
     ``` 
-    6.2 tcp checksum point  
+    7.2 tcp checksum point  
     ```
-    python schedule_identify.py 0x4a 20 tcpdump /usr/local/sbin/tcpdump " -v -r  " ./sample/tcp/good_tcp.pcap ./sample/tcp/bad_tcp.pcap  
+    python schedule_identify.py 0x4a 20 tcpdump ./sample/tcp/origin/tcpdump " -v -r  " ./sample/tcp/good_tcp.pcap ./sample/tcp/bad_tcp.pcap  
     ```
-    6.3 ip checksum point  
+    7.3 ip checksum point  
     ```
-    python schedule_identify.py 0x36 20 tcpdump /usr/local/sbin/tcpdump " -v -r  " ./sample/ip/good_ip.pcap ./sample/ip/bad_ip.pcap  
+    python schedule_identify.py 0x36 20 tcpdump ./sample/tcp/origin/tcpdump " -v -r  " ./sample/ip/good_ip.pcap ./sample/ip/bad_ip.pcap  
     ```
-    6.3 igmp checksum point  
+    7.4 igmp checksum point  
     ```
-    python schedule_identify.py 0x4e 16 tcpdump /usr/local/sbin/tcpdump " -v -r  " ./sample/igmp/good_igmp.pcap ./sample/igmp/bad_igmp.pcap 
+    python schedule_identify.py 0x4e 16 tcpdump ./sample/tcp/origin/tcpdump " -v -r  " ./sample/igmp/good_igmp.pcap ./sample/igmp/bad_igmp.pcap 
     ``` 
 
 # afl-fuzz my own sample
