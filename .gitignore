@@ -8,5 +8,7 @@ pintraces/diff.txt
 pintraces/good_1.txt
 pintraces/bad_2.txt
 pintraces/.gdb_history
-pintraces/sample/png/out/*
-pintraces/sample/png/.gdb_history
+pintraces/sample/png/out/
+*.gdb_history
+*1.txt
+*peda*
