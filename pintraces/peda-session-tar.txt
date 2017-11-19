@@ -1,0 +1,4 @@
+break main
+break *0x805eeae
+break *(0x08048000+0x16eae)
+

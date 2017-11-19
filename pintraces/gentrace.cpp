@@ -2395,8 +2395,8 @@ int main(int argc, char *argv[])
 
     //PIN_AddFollowChildProcessFunction(FollowExec, 0);
    
-    PIN_AddSyscallEntryFunction(SyscallEntry, 0);
-    PIN_AddSyscallExitFunction(SyscallExit, 0);
+    //PIN_AddSyscallEntryFunction(SyscallEntry, 0);
+    //PIN_AddSyscallExitFunction(SyscallExit, 0);
     //liu 911
     //INS_AddInstrumentFunction(InstructionProp, 0); //污点传播
     //liu 1010 
