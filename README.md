@@ -30,7 +30,7 @@ python schedule_identify.py  libpng /usr/local/bin/magick  identify ./sample/png
 ```
 2. pngcheck
 ```
-python schedule_identify.py  libpng /usr/bin/magick  identify ./sample/png/good.png ./sample/png/bad.png
+python schedule_identify.py pngcheck ./sample/png/origin_pngcheck/pngcheck " " ./sample/png/good.png ./sample/png/bad.png
 ```
 # AFL Fuzz command
 cd pintraces/sample/png  
