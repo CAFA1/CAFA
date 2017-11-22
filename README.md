@@ -15,12 +15,8 @@ make
 # require and configure
 echo core >/proc/sys/kernel/core_pattern  
 echo 0 >/proc/sys/kernel/randomize_va_space  
-set  AFL_PATH to the root directory of afl-fuzz and set AFL_INST_LIBS to 1.
-```
-export AFL_INST_LIBS=1
-export AFL_PATH=/home/bap/Download/afl-2.51b
-```
-install the test software and afl-fuzz
+set  AFL_PATH env to the root directory of afl-fuzz.  
+install the test software and afl-fuzz.  
 
 # test command
 1. imagemagick   
@@ -81,11 +77,24 @@ cd pintraces/sample/lib/
 make  
 make test  
 make test_fuzz  
-# afl-fuzz libpng
-1. before patch  
-cd pintraces/sample/png  
+# 1. afl-fuzz ImageMagick
+```
+1. before patch   
 afl-fuzz -i in -o out -Q -- /usr/local/bin/magick identify @@
-2. after patch  
-cd pintraces/sample/png   
-cp ../libpng12.so.0.46.0 /usr/local/lib/libpng12.so.0.46.0  
-afl-fuzz -i in -o out -Q -- /usr/local/bin/magick identify @@
+2. after patch   
+LD_PRELOAD=./libpng/patch/libpng12.so.0.46.0 afl-fuzz -i in -o out -Q -- /usr/local/bin/magick identify @@
+```
+# 2. afl-fuzz rar
+```
+1. before patch   
+afl-fuzz -i in -o out -Q -- ./origin/rar identify @@
+2. after patch   
+afl-fuzz -i in -o out -Q -- ./patch/rar identify @@
+```
+# 3. afl-fuzz pngcheck
+```
+1. before patch   
+afl-fuzz -i in -o out -Q -- origin_pngcheck/pngcheck -pvv identify @@
+2. after patch   
+afl-fuzz -i in -o out -Q -- patch_pngcheck/pngcheck -pvv identify @@
+```
