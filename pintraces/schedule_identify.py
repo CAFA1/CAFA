@@ -162,10 +162,29 @@ def main(argv=sys.argv):
     
 
 if __name__ == "__main__":
-    print "python schedule_identify.py taint_start taint_length module_name elf_path ext_command good_sample bad_sample"
+    
+    print '''
+    python schedule_identify.py taint_start taint_length module_name elf_path ext_command good_sample bad_sample
+    taint_start: the starting offset of the taint source.
+    taint_length: the length of the taint source.
+    module_name: the name of the module where the checksum check is located.
+    elf_path: the path of the test program.
+    ext_command: the options of the test program.
+    good_sample: the path of the well-formed sample.
+    bad_sample: the path of the malformed sample.
+    '''
     print len(sys.argv)
     if(len(sys.argv)!=8):
-        print "python schedule_identify.py taint_start taint_length module_name elf_path ext_command good_sample bad_sample"
+        print '''
+        python schedule_identify.py taint_start taint_length module_name elf_path ext_command good_sample bad_sample
+        taint_start: the starting offset of the taint source.
+        taint_length: the length of the taint source.
+        module_name: the name of the module where the checksum check is located.
+        elf_path: the path of the test program.
+        ext_command: the options of the test program.
+        good_sample: the path of the well-formed sample.
+        bad_sample: the path of the malformed sample.
+        '''
     else:
         main(sys.argv)
 
