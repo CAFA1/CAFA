@@ -12,3 +12,4 @@ pintraces/sample/png/out/
 *.gdb_history
 *1.txt
 *peda*
+*log.txt

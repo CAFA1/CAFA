@@ -1,8 +1,9 @@
-# taint_checksum
-longlong's checksum taint analysis system.
+# note that there is the other branch (master branch).   
+# The master branch is for software with the crc32 checksum algorithm, while the taint branch is for the general checksum algorithm.
+
 
 # OS
-ubuntu 12.04 (Other OS may have problems.)
+ubuntu 12.04 32bit (Other OS may have problems.)
 
 # Install
 ```
@@ -70,29 +71,16 @@ python schedule_identify.py 0 0x159 tar ./sample/tar/origin/tar -tf ./sample/tar
     python schedule_identify.py 0x4e 16 tcpdump ./sample/tcp/origin/tcpdump " -v -r  " ./sample/igmp/good_igmp.pcap ./sample/igmp/bad_igmp.pcap 
     ``` 
 
-# afl-fuzz my own sample
-cd pintraces/sample/lib/  
-make  
-make test  
-make test_fuzz  
-# 1. afl-fuzz ImageMagick
+# AFL Fuzz command
+1. Before patching  
 ```
-1. before patch   
-afl-fuzz -i in -o out -Q -- /usr/local/bin/magick identify @@
-2. after patch   
-LD_PRELOAD=./libpng/patch/libpng12.so.0.46.0 afl-fuzz -i in -o out -Q -- /usr/local/bin/magick identify @@
+cd pintraces/sample/png  
+afl-fuzz -i in -o out -Q -- /usr/local/bin/magick identify @@  
 ```
-# 2. afl-fuzz rar
+2. After patching  
 ```
-1. before patch   
-afl-fuzz -i in -o out -Q -- ./origin/rar identify @@
-2. after patch   
-afl-fuzz -i in -o out -Q -- ./patch/rar identify @@
-```
-# 3. afl-fuzz pngcheck
-```
-1. before patch   
-afl-fuzz -i in -o out -Q -- origin_pngcheck/pngcheck -pvv identify @@
-2. after patch   
-afl-fuzz -i in -o out -Q -- patch_pngcheck/pngcheck -pvv identify @@
-```
+cd pintraces/sample/png  
+cp ./libpng/patch/libpng12.so.0.46.0 /usr/local/lib/libpng12.so.0    
+afl-fuzz -i in -o out -Q -- /usr/local/bin/magick identify @@  
+``` 
+
