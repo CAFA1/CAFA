@@ -12,14 +12,14 @@ cd pintraces
 make 
 ``` 
 
-# require and configure
+# Require and configure
 echo core >/proc/sys/kernel/core_pattern  
 echo 0 >/proc/sys/kernel/randomize_va_space  
 Install the test software and afl-fuzz.  
 Set  AFL_PATH to the root directory of afl-fuzz.  
    
 
-# test command
+# Test command
 python schedule_identify.py  module_name elf_path ext_command good_sample bad_sample   
 1. ImageMagick
 ``` 
