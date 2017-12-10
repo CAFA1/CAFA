@@ -1,5 +1,5 @@
 # Note that there is the other branch (master branch).   
-# The master branch is for software with the crc32 checksum algorithm, while the taint branch is for the general checksum algorithm.
+The master branch is for software with the crc32 checksum algorithm, while the taint branch is for the general checksum algorithm.
 
 
 # OS
