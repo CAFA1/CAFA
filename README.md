@@ -1,9 +1,9 @@
-# note that there is the other branch (master branch).   
+# Note that there is the other branch (master branch).   
 # The master branch is for software with the crc32 checksum algorithm, while the taint branch is for the general checksum algorithm.
 
 
 # OS
-ubuntu 12.04 32bit (Other OS may have problems.)
+Ubuntu 12.04 32bit (Other OS may have problems.)
 
 # Install
 ```
@@ -13,14 +13,15 @@ cd pintraces
 make 
 ``` 
 
-# require and configure
-echo core >/proc/sys/kernel/core_pattern  
-echo 0 >/proc/sys/kernel/randomize_va_space  
-set  AFL_PATH env to the root directory of afl-fuzz.  
-install the test software and afl-fuzz.  
+# Require and configure
+echo core >/proc/sys/kernel/core_pattern    
+echo 0 >/proc/sys/kernel/randomize_va_space    
+Install the test software and afl-fuzz.  
+Set  AFL_PATH env to the root directory of afl-fuzz.      
+  
 
-# test command
-1. imagemagick   
+# Commands to identify checksum points
+1. ImageMagick   
 ```
 python schedule_identify.py 8 13 libpng /usr/local/bin/magick identify ./sample/png/good.png ./sample/png/bad.png    
 python schedule_identify.py 0x20 881 libpng /usr/local/bin/magick identify ./sample/png/good.png ./sample/png/bad2.png 
