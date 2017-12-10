@@ -19,7 +19,7 @@ Install the test software and afl-fuzz.
 Set  AFL_PATH to the root directory of afl-fuzz.  
    
 
-# Test command
+# Commands to identify checksum points
 python schedule_identify.py  module_name elf_path ext_command good_sample bad_sample   
 1. ImageMagick
 ``` 
