@@ -1,5 +1,5 @@
 # note that there is the other branch (taint branch).   
-# The master branch is for software with the crc32 checksum algorithm, while the taint branch is for the general checksum algorithm.
+The master branch is for software with the crc32 checksum algorithm, while the taint branch is for the general checksum algorithm.
 
 # OS
 ubuntu 12.04 32bit (Other OS may have problems.)
@@ -15,7 +15,7 @@ make
 # require and configure
 echo core >/proc/sys/kernel/core_pattern  
 echo 0 >/proc/sys/kernel/randomize_va_space  
-set  AFL_PATH to the root directory of afl-fuzz .
+set  AFL_PATH to the root directory of afl-fuzz.  
 install the test software and afl-fuzz   
 
 # test command
