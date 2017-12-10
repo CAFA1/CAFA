@@ -44,8 +44,6 @@ python schedule_identify.py 0 0x26 unzip ./sample/zip/origin/unzip " " ./sample/
 5. rar
 ```
 python schedule_identify.py 7 13 rar ./sample/rar/origin/rar e ./sample/rar/good.rar ./sample/rar/bad2.rar  
-python schedule_identify.py 0x14 0x34 rar ./sample/rar/origin/rar e ./sample/rar/good.rar ./sample/rar/bad3.rar 
-python schedule_identify.py 0x14 0x34 rar ./sample/rar/origin/rar e ./sample/rar/good.rar ./sample/rar/bad4.rar
 ``` 
 
 6. tar
