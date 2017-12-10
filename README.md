@@ -20,7 +20,14 @@ Set  AFL_PATH to the root directory of afl-fuzz.
    
 
 # Commands to identify checksum points
-python schedule_identify.py  module_name elf_path ext_command good_sample bad_sample   
+```
+python schedule_identify.py module_name elf_path ext_command good_sample bad_sample
+module_name: the name of the module where the checksum check is located.
+elf_path: the path of the test program.
+ext_command: the options of the test program.
+good_sample: the path of the well-formed sample.
+bad_sample: the path of the malformed sample.
+``` 
 1. ImageMagick
 ``` 
 python schedule_identify.py  libpng /usr/local/bin/magick  identify ./sample/png/good.png ./sample/png/bad.png
