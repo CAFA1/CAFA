@@ -1,13 +1,13 @@
 # note that there is the other branch (taint branch).   
-# This branch is for software with crc32 checksum, while the taint branch is for general checksum.  
+# The master branch is for software with the crc32 checksum algorithm, while the taint branch is for the general checksum algorithm.
 
 # OS
-ubuntu 12.04 (Other OS may have problems.)
+ubuntu 12.04 32bit (Other OS may have problems.)
 
 # Install
 ```
 git clone https://github.com/zhuceyongdela1234/taint_checksum.git  
-git checkout taint(if you want)
+git checkout master
 cd pintraces  
 make 
 ``` 
@@ -30,7 +30,14 @@ python schedule_identify.py pngcheck ./sample/png/origin_pngcheck/pngcheck " " .
 ```
 
 # AFL Fuzz command
+1. Before patching  
 ```
 cd pintraces/sample/png  
+afl-fuzz -i in -o out -Q -- /usr/local/bin/magick identify @@  
+```
+2. After patching  
+```
+cd pintraces/sample/png  
+cp ./libpng/patch/libpng12.so.0.46.0 /usr/local/lib/libpng12.so.0    
 afl-fuzz -i in -o out -Q -- /usr/local/bin/magick identify @@  
 ```
