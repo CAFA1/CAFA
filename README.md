@@ -6,7 +6,7 @@ Ubuntu 12.04 32bit (Other OS may have problems.)
 
 # Install
 ```
-git clone https://github.com/zhuceyongdela1234/taint_checksum.git  
+git clone https://github.com/CAFA1/CAFA.git  
 git checkout master
 cd pintraces  
 make 
