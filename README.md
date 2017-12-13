@@ -1,4 +1,5 @@
-# Note that there is the other branch (taint branch).   
+# CAFA: A Checksum-Aware Fuzzing Assistant For More Coverage
+Note that there is the other branch (taint branch).    
 The master branch is for software with the crc32 checksum algorithm, while the taint branch is for the general checksum algorithm.
 
 # OS
