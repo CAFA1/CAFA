@@ -33,7 +33,11 @@ bad_sample: the path of the malformed sample.
 ``` 
 python schedule_identify.py  libpng /usr/local/bin/magick  identify ./sample/png/good.png ./sample/png/bad.png
 ```
-2. pngcheck
+2. optipng
+``` 
+python schedule_identify.py  libpng ./sample/png/optipng/optipng  " " ./sample/png/bak/good.png ./sample/png/bak/bad.png
+```
+3. pngcheck
 ```
 python schedule_identify.py pngcheck ./sample/png/origin_pngcheck/pngcheck " " ./sample/png/good.png ./sample/png/bad.png
 ```

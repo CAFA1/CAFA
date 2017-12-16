@@ -61,7 +61,7 @@ bool CompactLog = true;
 #define NR_REG(_TYPE) ((_TYPE ## _LAST) - (_TYPE ## _BASE) + 1)
 bool TAINT_Instrumentation_On = false;
 bool liu_debug = false;
-bool liu_debug_analysis = true;
+bool liu_debug_analysis = false;
 InstrumentFunction instrument_functions[XED_ICLASS_LAST];
 unsigned int setmem_untaint = 0;
 unsigned int setmem_taint = 0;
