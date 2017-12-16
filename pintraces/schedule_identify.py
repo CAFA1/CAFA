@@ -156,6 +156,7 @@ def main(argv=sys.argv):
     # for gz test 
     # change based on your own directory
     os.system("rm ~/workspace/bap-0.7/pintraces/sample/gz/good.txt")
+    os.system("cp ~/workspace/bap-0.7/pintraces/sample/png/*.png ~/workspace/bap-0.7/pintraces/sample/png/bak/")
     os.system("cp ~/workspace/bap-0.7/pintraces/sample/gz/bak/* ~/workspace/bap-0.7/pintraces/sample/gz/")
     compare_run(offsets1,offsets2,coverage,elfpath,ext_command,good_sample,bad_sample)
     
