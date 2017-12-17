@@ -42,7 +42,7 @@ python schedule_identify.py  libpng ./sample/png/optipng/optipng  " " ./sample/p
 python schedule_identify.py pngcheck ./sample/png/origin_pngcheck/pngcheck " " ./sample/png/good.png ./sample/png/bad.png
 ```
 
-# AFL Fuzz command
+# AFL Fuzz ImageMagick command
 1. Before patching  
 ```
 cd pintraces/sample/png  
@@ -51,6 +51,18 @@ afl-fuzz -i in -o out -Q -- /usr/local/bin/magick identify @@
 2. After patching  
 ```
 cd pintraces/sample/png  
-cp ./libpng/patch/libpng12.so.0.46.0 /usr/local/lib/libpng12.so.0    
+cp ./libpng/patch/libpng12.so.0.46.0 /usr/local/lib/libpng12.so.0.46.0    
 afl-fuzz -i in -o out -Q -- /usr/local/bin/magick identify @@  
+``` 
+# AFL Fuzz optipng command
+1. Before patching  
 ```
+cd pintraces/sample/png  
+afl-fuzz -i in -o out -Q -- ./optipng/optipng  @@  
+```
+2. After patching  
+```
+cd pintraces/sample/png  
+cp ./libpng/patch/libpng12.so.0.46.0 /usr/local/lib/libpng12.so.0.46.0    
+afl-fuzz -i in -o out -Q -- ./optipng/optipng  @@   
+``` 
