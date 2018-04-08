@@ -42,8 +42,8 @@ python schedule_identify.py Taint-S 8 0x16 libpng ./sample/png/optipng/optipng "
 ```
 3. pngcheck   
 ```
-python schedule_identify.py 8 13 pngcheck ./sample/png/origin_pngcheck/pngcheck " " ./sample/png/good.png ./sample/png/bad.png  
-python schedule_identify.py 0x20 881 pngcheck ./sample/png/origin_pngcheck/pngcheck " " ./sample/png/good.png ./sample/png/bad.png  
+python schedule_identify.py CRC32-S libz.so crc32 pngcheck ./sample/png/origin_pngcheck/pngcheck " " ./sample/png/good.png ./sample/png/bad.png  
+python schedule_identify.py Taint-S 8 0x16 pngcheck ./sample/png/origin_pngcheck/pngcheck " " ./sample/png/good.png ./sample/png/bad.png    
 ```
 
 4. gz  
