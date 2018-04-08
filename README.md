@@ -1,7 +1,4 @@
 # CAFA: A Checksum-Aware Fuzzing Assistant For More Coverage
-Note that there is the other branch (master branch).   
-The master branch is for software with the crc32 checksum algorithm, while the taint branch is for the general checksum algorithm.
-
 
 # OS
 Ubuntu 12.04 32bit (Other OS may have problems.)
@@ -9,7 +6,6 @@ Ubuntu 12.04 32bit (Other OS may have problems.)
 # Install
 ```
 git clone https://github.com/CAFA1/CAFA.git  
-git checkout taint
 cd pintraces  
 make 
 ``` 
@@ -23,19 +19,20 @@ Set  AFL_PATH env to the root directory of afl-fuzz.
 
 # Commands to identify checksum points
 ```
-python schedule_identify.py taint_start taint_length module_name elf_path ext_command good_sample bad_sample
-taint_start: the starting offset of the taint source.
-taint_length: the length of the taint source.
-module_name: the name of the module where the checksum check is located.
-elf_path: the path of the test program.
-ext_command: the options of the test program.
-good_sample: the path of the well-formed sample.
-bad_sample: the path of the malformed sample.
+python schedule_identify.py strategy taint_start(CksumLib) taint_length(CkmsumFunc) module_name elf_path ext_command good_sample bad_sample
+    stategy: CRC32-S strategy or Taint-S strategy
+    taint_start: the starting offset of the taint source.
+    taint_length: the length of the taint source.
+    module_name: the name of the module where the checksum check is located.
+    elf_path: the path of the test program.
+    ext_command: the options of the test program.
+    good_sample: the path of the well-formed sample.
+    bad_sample: the path of the malformed sample.
 ```
 1. ImageMagick   
 ```
-python schedule_identify.py 8 13 libpng /usr/local/bin/magick identify ./sample/png/good.png ./sample/png/bad.png    
-python schedule_identify.py 0x20 881 libpng /usr/local/bin/magick identify ./sample/png/good.png ./sample/png/bad2.png 
+python schedule_identify.py CRC32-S libz.so crc32 libpng /usr/local/bin/magick identify ./sample/png/good.png ./sample/png/bad.png    
+python schedule_identify.py Taint-S 8 0x16 libpng /usr/local/bin/magick identify ./sample/png/good.png ./sample/png/bad.png
 ```
 2. optipng  
 ```
