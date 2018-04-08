@@ -48,41 +48,41 @@ python schedule_identify.py Taint-S 8 0x16 pngcheck ./sample/png/origin_pngcheck
 
 4. gz  
 ```
-python schedule_identify.py 0 0x21 gzip ./sample/gz/origin/gzip -d ./sample/gz/good.txt.gz ./sample/gz/bad.txt.gz  
+python schedule_identify.py Taint-S 0 0x21 gzip ./sample/gz/origin/gzip -d ./sample/gz/good.txt.gz ./sample/gz/bad.txt.gz  
 ``` 
  
 5. unzip  
 ``` 
-python schedule_identify.py 0 0x26 unzip ./sample/zip/origin/unzip " " ./sample/zip/good.zip ./sample/zip/bad.zip
+python schedule_identify.py Taint-S 0 0x26 unzip ./sample/zip/origin/unzip " " ./sample/zip/good.zip ./sample/zip/bad.zip
 ```
 
 6. rar
 ```
-python schedule_identify.py 7 13 rar ./sample/rar/origin/rar e ./sample/rar/good.rar ./sample/rar/bad2.rar  
+python schedule_identify.py Taint-S 7 13 rar ./sample/rar/origin/rar e ./sample/rar/good.rar ./sample/rar/bad2.rar  
 ``` 
 
 7. tar
 ```
-python schedule_identify.py 0 0x159 tar ./sample/tar/origin/tar -tf ./sample/tar/good.tar ./sample/tar/bad.tar  
+python schedule_identify.py Taint-S 0 0x159 tar ./sample/tar/origin/tar -tf ./sample/tar/good.tar ./sample/tar/bad.tar  
 
 ``` 
 
 8. tcpdump  
     8.1 udp checksum point  
     ```
-    python schedule_identify.py 0x5e 8 tcpdump ./sample/tcp/origin/tcpdump " -v -r  " ./sample/udp/good_udp.pcap ./sample/udp/bad_udp.pcap 
+    python schedule_identify.py Taint-S 0x5e 8 tcpdump ./sample/tcp/origin/tcpdump " -v -r  " ./sample/udp/good_udp.pcap ./sample/udp/bad_udp.pcap 
     ``` 
     8.2 tcp checksum point  
     ```
-    python schedule_identify.py 0x4a 20 tcpdump ./sample/tcp/origin/tcpdump " -v -r  " ./sample/tcp/good_tcp.pcap ./sample/tcp/bad_tcp.pcap  
+    python schedule_identify.py Taint-S 0x4a 20 tcpdump ./sample/tcp/origin/tcpdump " -v -r  " ./sample/tcp/good_tcp.pcap ./sample/tcp/bad_tcp.pcap  
     ```
     8.3 ip checksum point  
     ```
-    python schedule_identify.py 0x36 20 tcpdump ./sample/tcp/origin/tcpdump " -v -r  " ./sample/ip/good_ip.pcap ./sample/ip/bad_ip.pcap  
+    python schedule_identify.py Taint-S 0x36 20 tcpdump ./sample/tcp/origin/tcpdump " -v -r  " ./sample/ip/good_ip.pcap ./sample/ip/bad_ip.pcap  
     ```
     8.4 igmp checksum point  
     ```
-    python schedule_identify.py 0x4e 16 tcpdump ./sample/tcp/origin/tcpdump " -v -r  " ./sample/igmp/good_igmp.pcap ./sample/igmp/bad_igmp.pcap 
+    python schedule_identify.py Taint-S 0x4e 16 tcpdump ./sample/tcp/origin/tcpdump " -v -r  " ./sample/igmp/good_igmp.pcap ./sample/igmp/bad_igmp.pcap 
     ``` 
 
 # AFL Fuzz ImageMagick command
