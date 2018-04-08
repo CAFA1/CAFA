@@ -1,6 +1,5 @@
 # CAFA: A Checksum-Aware Fuzzing Assistant For More Coverage
 
-
 # OS
 Ubuntu 12.04 32bit (Other OS may have problems.)
 
@@ -85,7 +84,6 @@ python schedule_identify.py Taint-S 0 0x159 tar ./sample/tar/origin/tar -tf ./sa
     ```
     python schedule_identify.py Taint-S 0x4e 16 tcpdump ./sample/tcp/origin/tcpdump " -v -r  " ./sample/igmp/good_igmp.pcap ./sample/igmp/bad_igmp.pcap 
     ``` 
-
 
 # AFL Fuzz ImageMagick command
 1. Before patching  

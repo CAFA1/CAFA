@@ -800,7 +800,7 @@ uint32_t OpenWrapper(CONTEXT *ctx, AFUNPTR fp, THREADID tid, char* s, int flags,
     ReleaseLock(&lock);
 
     return ret;
-			      
+                  
 }
 /*
 
@@ -833,7 +833,7 @@ uint32_t WSAConnectWrapper(CONTEXT *ctx, AFUNPTR fp, THREADID tid, uint32_t s, v
     ReleaseLock(&lock);
 
     return ret;
-			      
+                  
 }
 
 
@@ -866,7 +866,7 @@ uint32_t ConnectWrapper(CONTEXT *ctx, AFUNPTR fp, THREADID tid, uint32_t s, void
     ReleaseLock(&lock);
 
     return ret;
-			      
+                  
 }
 
 void BeforeRecv(THREADID tid, uint32_t s, char* buf) {
@@ -922,11 +922,11 @@ void AfterRecv(THREADID tid, int ret, char *f) {
             ReleaseLock(&lock);
       
             if (fo.b) {
-	
+    
                 if (!g_taint_introduced) {
                     TActivate();
                 }
-	
+    
                 GetLock(&lock, tid+1);
                 g_twnew->add(fo.f);
                 ReleaseLock(&lock);
@@ -1066,17 +1066,17 @@ VOID AppendBuffer(ADDRINT addr,
 
 
 
-	//1208//////////////////////////////////////////////
-	if(g_Execlimit!=0 && g_counter>g_Execlimit )
-	{
-		cerr << "Logged required number:"<<g_Execlimit<<"  "<<g_counter<<" instructions, quitting.\n";
-		
+    //1208//////////////////////////////////////////////
+    if(g_Execlimit!=0 && g_counter>g_Execlimit )
+    {
+        cerr << "Logged required number:"<<g_Execlimit<<"  "<<g_counter<<" instructions, quitting.\n";
+        
         Cleanup();
         
        
 
-	}
-	///////////////////////
+    }
+    ///////////////////////
 
     LLOG("big thing\n");
   
@@ -1090,12 +1090,12 @@ VOID AppendBuffer(ADDRINT addr,
         
         values[i].type.size = va_arg(va, uint32_t);
         values[i].loc = va_arg(va, uint32_t);
-        values[i].value.dword[0] = va_arg(va, uint32_t);			
-        values[i].usage = va_arg(va, uint32_t);				
+        values[i].value.dword[0] = va_arg(va, uint32_t);            
+        values[i].usage = va_arg(va, uint32_t);             
         if (tracker->isMem(values[i].type)) {
-            /* Add memory byte offset */					
-            values[i].loc += values[i].value.dword[0];			
-        } 		    
+            /* Add memory byte offset */                    
+            values[i].loc += values[i].value.dword[0];          
+        }           
     }
 
     /* Perform taint propagation and checking */
@@ -1160,7 +1160,7 @@ VOID AppendBuffer(ADDRINT addr,
 
         // Now, fill in the buffer with information
 
-	assert (g_bufidx < BUFFER_SIZE);
+    assert (g_bufidx < BUFFER_SIZE);
       
         g_buffer[g_bufidx].addr = addr;
         g_buffer[g_bufidx].tid = tid;
@@ -1186,13 +1186,13 @@ VOID AppendBuffer(ADDRINT addr,
         // Store information to the buffer
         for (unsigned int i = 0; i < values_count; i++) {
 
-            g_buffer[g_bufidx].valspecs[i].type = values[i].type;		
-            g_buffer[g_bufidx].valspecs[i].usage = values[i].usage;		
-            g_buffer[g_bufidx].valspecs[i].loc = values[i].loc;			
+            g_buffer[g_bufidx].valspecs[i].type = values[i].type;       
+            g_buffer[g_bufidx].valspecs[i].usage = values[i].usage;     
+            g_buffer[g_bufidx].valspecs[i].loc = values[i].loc;         
             g_buffer[g_bufidx].valspecs[i].taint = pretaint[i];
      
-            if(values[i].type.type == REGISTER) {						
-                       /*r = REG_FullRegName((REG) valspec##i##_loc);*/		
+            if(values[i].type.type == REGISTER) {                       
+                       /*r = REG_FullRegName((REG) valspec##i##_loc);*/     
                 r = (REG)values[i].loc;
        
                 /* Find how we should access the register value */             
@@ -1203,7 +1203,7 @@ VOID AppendBuffer(ADDRINT addr,
                     break;
          
                 case P_REF:
-                    pr = (LEVEL_VM::PIN_REGISTER*) values[i].value.dword[0];	
+                    pr = (LEVEL_VM::PIN_REGISTER*) values[i].value.dword[0];    
                     memcpy(&(g_buffer[g_bufidx].valspecs[i].value),
                            pr,                                               
                            sizeof(LEVEL_VM::PIN_REGISTER));                  
@@ -1238,7 +1238,7 @@ VOID AppendBuffer(ADDRINT addr,
                     break;                                                   
                 }                                                              
             } else if(values[i].type.type == MEM) {
-                PIN_SafeCopy((VOID*) &(g_buffer[g_bufidx].valspecs[i].value),	
+                PIN_SafeCopy((VOID*) &(g_buffer[g_bufidx].valspecs[i].value),   
                              (const VOID *)(g_buffer[g_bufidx].valspecs[i].loc),
                              GetByteSize(values[i].type));
             } else {
@@ -1492,7 +1492,7 @@ VOID InstrBlock(BBL bbl)
                 opndvals[valcount].taint = RD;
             if (INS_OperandWritten(ins, i))
                 opndvals[valcount].taint |= WR;
-	
+    
             /* Handle register operands */
             if (INS_OperandIsReg(ins, i)) {
          
@@ -1515,7 +1515,7 @@ VOID InstrBlock(BBL bbl)
                 REG fullr = REG_FullRegName(r);
                 if (fullr != REG_INVALID() && fullr != r) {
                   /* We know the fuller register, so just use that! */
-                    //	      cerr << "partial " << REG_StringShort(r) << " full " << REG_StringShort(fullr) << endl;
+                    //        cerr << "partial " << REG_StringShort(r) << " full " << REG_StringShort(fullr) << endl;
                     opndvals[valcount].reg = fullr;
                     opndvals[valcount].type.type = REGISTER;
                     opndvals[valcount].type.size = GetBitsOfReg(fullr);
@@ -1562,7 +1562,7 @@ VOID InstrBlock(BBL bbl)
                     valcount++;              
 
                 }
-            } 	   
+            }      
         }
 
         bool memRead = INS_IsMemoryRead(ins);
@@ -1697,7 +1697,7 @@ VOID InstrBlock(BBL bbl)
                 case REG_SEG_FS:
                     addreg = REG_SEG_FS_BASE;
                     break;
-	    
+        
                 case REG_SEG_GS:
                     addreg = REG_SEG_GS_BASE;
                     break;
@@ -1714,7 +1714,7 @@ VOID InstrBlock(BBL bbl)
                                       //IARG_MEMORYWRITE_SIZE,
                                       IARG_PTR, 0,
                                       IARG_UINT32, 0,
-                                      IARG_END);	  
+                                      IARG_END);      
                 valcount++;
             }
         }
@@ -1786,7 +1786,7 @@ static bool DoWriteAddr(ADDRINT addr)
 {
     IMG i = IMG_FindByAddress(addr);
     if (IMG_Valid(i))
-	{
+    {
         char tempbuf[BUFSIZE];
         char *tok = NULL;
         char *lasttok = NULL;
@@ -1795,15 +1795,15 @@ static bool DoWriteAddr(ADDRINT addr)
         // We don't need a lock, since this is an instrumentation function (strtok is not re-entrant)
         strtok(tempbuf, "/");
         while ((tok = strtok(NULL, "/")) != NULL)
-		{
+        {
             // Just keep parsing...
             lasttok = tok;
         }
         if (lasttok)
-		{
-			//liu
+        {
+            //liu
             if (strcmp(lasttok,KnobCksumPointModule.Value().c_str())==0)
-			{
+            {
                 return true;
             }
         }
@@ -1900,12 +1900,10 @@ VOID ModLoad(IMG img, VOID *v)
     }
 
         
-
     //1015 coverage low high addrs
     if(strstr(name.c_str(),KnobCksumPointModule.Value().c_str()) != NULL)
     {
             DllbaseAddress = IMG_LowAddress(img);
-
             int DllbaseAddress1 = IMG_HighAddress(img);
             TraceFile<<name<<" "<<"lowaddr: "<<hex<<DllbaseAddress<<" highaddr: "<<DllbaseAddress1<<endl;
 
@@ -2328,18 +2326,18 @@ int main(int argc, char *argv[])
         if (TaintedEnv.Value() != "")
             tracker->setTaintEnv(TaintedEnv.Value());
     }
-	//1208//liu
-	
-	uint32_t NumOffsetsParams;
-	NumOffsetsParams =  TaintedOffsets.NumberOfValues()>>1;
-	iTNTChksmDegree = KnobChksmDegree.Value();      
-	for (uint32_t j = 0; j <NumOffsetsParams; j++) 
-	{
-	
-	    tracker->trackOffset(TaintedOffsets.Value(2*j),TaintedOffsets.Value(2*j+1));
-	
-	}
-	
+    //1208//liu
+    
+    uint32_t NumOffsetsParams;
+    NumOffsetsParams =  TaintedOffsets.NumberOfValues()>>1;
+    iTNTChksmDegree = KnobChksmDegree.Value();      
+    for (uint32_t j = 0; j <NumOffsetsParams; j++) 
+    {
+    
+        tracker->trackOffset(TaintedOffsets.Value(2*j),TaintedOffsets.Value(2*j+1));
+    
+    }
+    
 
     /* Get a key for thread info */
     tl_key = PIN_CreateThreadDataKey(NULL);
@@ -2352,7 +2350,7 @@ int main(int argc, char *argv[])
     } else {
         g_taint_introduced = false;
     }
-	
+    
     stringstream file_addrs;
     //stringstream file_assist;
     file_addrs<< KnobOut.Value() << "-" << "addrs.txt";
@@ -2364,22 +2362,20 @@ int main(int argc, char *argv[])
     PIN_AddThreadStartFunction(ThreadStart, 0);
     PIN_AddThreadFiniFunction((THREAD_FINI_CALLBACK)ThreadEnd, 0);
    
-
     PIN_AddSyscallEntryFunction(SyscallEntry, 0);
     PIN_AddSyscallExitFunction(SyscallExit, 0);
-
     //liu 911
     INS_AddInstrumentFunction(InstructionProp, 0); //taint propagation
    
     PIN_AddFiniFunction(Fini, 0);
     //1208/////////////////////////////////////////////////
     //liu 11 9
-	ss << g_threadname<<KnobOut.Value() << "-" << "trace.bpt";
+    ss << g_threadname<<KnobOut.Value() << "-" << "trace.bpt";
     g_bufidx = 0;
     g_kfcount = 0;
-	//1208/////////////////////////////////
-	g_tsbufidx = 0;
-	//////////////////
+    //1208/////////////////////////////////
+    g_tsbufidx = 0;
+    //////////////////
    //9 20 liu
     cleanup_flag=0;
     start_time = time(0);
@@ -2391,7 +2387,7 @@ int main(int argc, char *argv[])
     g_loglimit = KnobLogLimit.Value();
     //1208////////////////////////////////////////////
     g_Execlimit = KnobInsLimit.Value();
-	////////////
+    ////////////
     g_skipTaints = SkipTaints.Value();
 
     g_timer = clock();

@@ -5,7 +5,6 @@ import struct
 import shutil
 import sys
 
-
 def run_cmd_master(lib,func,coverage,elfpath,filepath,ext_command):
      
     filename = filepath.split("/")[-1]
@@ -17,7 +16,6 @@ def run_cmd(offsets1,offsets2,coverage,elfpath,filepath,ext_command):
      
     filename = filepath.split("/")[-1]
     pin_cmd = "/home/bap/workspace/bap-0.7/pin/pin -t /home/bap/workspace/bap-0.7/pintraces/obj-ia32/gentrace.so -taint-offsets "+offsets1+" -taint-offsets "+offsets2+"  -o 1-1 -log-limit 10000 -ins-limit 1000000 -time-limit 35  -c "+coverage+" -taint-files "+filename+" --  "+elfpath+" "+ext_command+" "+filepath
-
     print "[*] Just about to run ", pin_cmd  #-skip-taints 2
     os.system(pin_cmd)
     
@@ -60,7 +58,6 @@ def cleandir():
     os.remove("1-1-addrs.txt")
 def find_all_next(arr,item):
     return [arr[i+1] for i,a in enumerate(arr) if a==item]
-
 def compare_run_master(lib,func,coverage,elfpath,ext_command,good_sample,bad_sample):
     #os.system("rm 1.txt")
     #run_cmd_master(lib,func,coverage,elfpath,filepath,ext_command)
@@ -151,7 +148,6 @@ def compare_run(offsets1,offsets2,coverage,elfpath,ext_command,good_sample,bad_s
     os.system("cp 1-1-addrs.txt good_1.txt")
     os.system("rm 1.txt")
     run_cmd(offsets1,offsets2,coverage,elfpath,bad_sample,ext_command)
-
     os.system("cp 1-1-addrs.txt bad_2.txt")
     os.system("diff good_1.txt bad_2.txt > diff.txt")
     os.system("echo 1,1 >> diff.txt")
@@ -240,7 +236,6 @@ def compare_run(offsets1,offsets2,coverage,elfpath,ext_command,good_sample,bad_s
         print hex(tmp-lowaddr)
     return #result_jz
 def main(argv=sys.argv):
-
     strategy = argv[1]
     
     module_name = argv[4]
@@ -262,12 +257,10 @@ def main(argv=sys.argv):
         taint_start = argv[2]
         taint_length = argv[3]
         compare_run(taint_start,taint_length,module_name,elf_path,ext_command,good_sample,bad_sample)
-
     
     
 
 if __name__ == "__main__":
-
     
     #python schedule_identify.py CRC32-S libz.so crc32 libpng /usr/local/bin/magick identify ./sample/png/good.png ./sample/png/bad.png
     #python schedule_identify.py Taint-S 8 0x16 libpng /usr/local/bin/magick identify ./sample/png/good.png ./sample/png/bad.png
@@ -295,10 +288,8 @@ if __name__ == "__main__":
         good_sample: the path of the well-formed sample.
         bad_sample: the path of the malformed sample.
         '''
-
     else:
         main(sys.argv)
-
 
 
 

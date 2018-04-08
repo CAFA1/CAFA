@@ -60,8 +60,6 @@ bool CompactLog = true;
 #define REMOVE_REP 0
 #define NR_REG(_TYPE) ((_TYPE ## _LAST) - (_TYPE ## _BASE) + 1)
 bool TAINT_Instrumentation_On = false;
-bool liu_debug = false;
-bool liu_debug_analysis = false;
 InstrumentFunction instrument_functions[XED_ICLASS_LAST];
 unsigned int setmem_untaint = 0;
 unsigned int setmem_taint = 0;
@@ -1069,6 +1067,8 @@ static UINT32 MaskReg(UINT32 mask, UINT32 idx)
 
   return regid;
 }
+//liu 925
+/************************************************************************/
 //R->M
 /************************************************************************/
 VOID PIN_FAST_ANALYSIS_CALL liuR_M1(ADDRINT iaddr, 
@@ -2160,7 +2160,6 @@ static uint32_t GetBitsOfReg(REG r) {
 // Generic propagation logic based on Pin's interpretation of what is being read and written by an instruction
 // For commonly invoked instructions, we create a fast path that is designed for each instruction specifically
 // to reduce both analysis cost and instrumentation cost.
-bool printins = true;
 VOID InstructionProp(INS ins, VOID *v)
 {
   REG reg;
@@ -2195,7 +2194,6 @@ VOID InstructionProp(INS ins, VOID *v)
     TempOps_t opndvals[MAX_VALUES_COUNT];
     uint32_t valcount;
     valcount = 0;
-
     //get instruction's operand 
     for(uint32_t i = 0; i < INS_OperandCount(ins); i++) {
 
@@ -2357,123 +2355,6 @@ VOID InstructionProp(INS ins, VOID *v)
       }
       
     }
-<<<<<<< HEAD
-    if(printins)
-    {
-      TempOps_t opndvals[MAX_VALUES_COUNT];
-      uint32_t valcount;
-      valcount = 0;
-
-      //get instruction's operand 
-      for(uint32_t i = 0; i < INS_OperandCount(ins); i++) 
-      {
-
-            opndvals[valcount].taint = 0;
-            if (INS_OperandRead(ins, i) )
-                opndvals[valcount].taint |= RD;
-            if (INS_OperandWritten(ins, i))
-                opndvals[valcount].taint |= WR;
-            /* Handle register operands */
-            if (INS_OperandIsReg(ins, i)) 
-            {
-         
-                REG r = INS_OperandReg(ins, i); 
-                opndvals[valcount].reg = r;
-                opndvals[valcount].type.type = REGISTER;
-                opndvals[valcount].type.size = GetBitsOfReg(r)/8;
-                REG fullr = REG_FullRegName(r);
-                if (fullr != REG_INVALID() && fullr != r) 
-                {                  
-                    opndvals[valcount].reg = fullr;
-                    opndvals[valcount].type.type = REGISTER;
-                    opndvals[valcount].type.size = GetBitsOfReg(fullr)/8;
-                }
-
-                valcount++;
-
-            } 
-            else if (INS_OperandIsMemory(ins, i)) 
-            {
-
-
-                 opndvals[valcount].reg = REG_EBP;
-                 opndvals[valcount].type.type = MEM;
-                 opndvals[valcount].type.size = INS_OperandWidth(ins,i);
-
-                 valcount++;          
-
-                
-            }
-            else if(INS_OperandIsAddressGenerator(ins, i)) 
-            {
-
-                REG basereg = INS_OperandMemoryBaseReg(ins, i);
-                if (basereg != REG_INVALID()) 
-                {
-
-                    opndvals[valcount].reg = basereg;
-                    opndvals[valcount].type.type = REGISTER;
-                    opndvals[valcount].type.size = GetBitsOfReg(basereg)/8;
-                    opndvals[valcount].taint = RD;
-
-                    valcount++;
-
-                }
-
-                REG idxreg = INS_OperandMemoryIndexReg(ins, i);
-                if (idxreg != REG_INVALID()) 
-                {
-
-                    opndvals[valcount].reg = idxreg;
-                    opndvals[valcount].type.type = REGISTER;
-                    opndvals[valcount].type.size = GetBitsOfReg(idxreg)/8;
-                    opndvals[valcount].taint = RD;
-                    valcount++;              
-
-                }
-            }       
-        }
-        if(INS_Opcode(ins)==XED_ICLASS_POP//|| 
-  
-        //INS_Opcode(ins)==XED_ICLASS_TEST 
-        //|| XED_ICLASS_JMP == INS_Opcode(ins) || XED_ICLASS_CMP == INS_Opcode(ins)
-      
-        )
-        {
-          //tmpbool=count_reg_read==2 && count_reg_write==1 && memRead==0 && memWrite==0 && REG_is_eflag((LEVEL_BASE::REG)index_reg_write);
-          TraceFile<< "here instructions: "<<INS_Disassemble(ins)<<" count: "<<INS_OperandCount(ins)<<" stack read: "<<INS_IsStackRead(ins)<<" stack write: "<<INS_IsStackWrite(ins)<<endl;
-          
-          for(ii=0; ii < valcount; ii++) 
-          {
-            
-            TraceFile<<" operation: "<<opndvals[ii].taint<<" reg: "<<REG_StringShort((LEVEL_BASE::REG)opndvals[ii].reg)<<" size: "<<opndvals[ii].type.size<<endl;
-          }
-          
-        }
-    }
-    //bool tmpbool=false;
-    // print operands of other instruction
-    /*
-    if(
-      INS_Opcode(ins)==XED_ICLASS_POP//|| 
-  
-      //INS_Opcode(ins)==XED_ICLASS_TEST 
-      //|| XED_ICLASS_JMP == INS_Opcode(ins) || XED_ICLASS_CMP == INS_Opcode(ins)
-      
-      )
-    {
-      //tmpbool=count_reg_read==2 && count_reg_write==1 && memRead==0 && memWrite==0 && REG_is_eflag((LEVEL_BASE::REG)index_reg_write);
-      TraceFile<< "here instructions: "<<INS_Disassemble(ins)<<" count_reg_read: "<<count_reg_read<<" count_reg_write: "<<count_reg_write<<" memRead: "<<memRead<<" memWrite: "<<memWrite<<" index_reg_read: "<<index_reg_read<<" eflag: "<<REG_EFLAGS<<" count: "<<INS_OperandCount(ins)<<endl;
-      
-      for(ii=0; ii < valcount; ii++) 
-      {
-        
-        TraceFile<<" operation: "<<opndvals[ii].taint<<" reg: "<<REG_StringShort((LEVEL_BASE::REG)opndvals[ii].reg)<<" size: "<<opndvals[ii].type.size<<endl;
-      }
-      
-    }
-    */
-=======
     
     bool logins=false;
     if(logins)
@@ -2500,7 +2381,6 @@ VOID InstructionProp(INS ins, VOID *v)
           
         }
     }
->>>>>>> debug
     
     
 
@@ -2860,7 +2740,6 @@ VOID InstructionProp(INS ins, VOID *v)
 }
 //liu func end 911
 
-
 auto_ptr<string> GetNarrowOfWide(wchar_t *in) {
   /* Our output */
   //  string *out = new string;
@@ -2869,7 +2748,7 @@ auto_ptr<string> GetNarrowOfWide(wchar_t *in) {
   for (unsigned int i = 0; i < wcslen(in); i++) {
     out->push_back(
       use_facet<ctype<wchar_t> >(std::locale("")).narrow(in[i], '?')
-		   );
+       );
   }
 
   return out;
@@ -3079,9 +2958,9 @@ FrameOption_t TaintTracker::introMemTaintFromFd(uint32_t fd, uint32_t addr, uint
   FrameOption_t tfs;
   for (pos = taint_sources.begin(); pos != taint_sources.end();pos++) 
   {
-  	///first is file offset ,second is length
-  	int lower = pos->first > fds[fd].offset ? pos->first:fds[fd].offset;
-  	int upper = pos->first + pos->second < fds[fd].offset +length? pos->first + pos->second:fds[fd].offset +length;
+    ///first is file offset ,second is length
+    int lower = pos->first > fds[fd].offset ? pos->first:fds[fd].offset;
+    int upper = pos->first + pos->second < fds[fd].offset +length? pos->first + pos->second:fds[fd].offset +length;
     //liu 47
     //You can specify the taint threshold.
     if(iTNTChksmDegree == 10)
@@ -3089,13 +2968,13 @@ FrameOption_t TaintTracker::introMemTaintFromFd(uint32_t fd, uint32_t addr, uint
       iTNTChksmDegree = (pos->second)*0.5;
       TraceFile << "iTNTChksmDegree: "<<iTNTChksmDegree<<endl;
     }
-  	if(upper >=lower)
-  	{
+    if(upper >=lower)
+    {
 
-  		tfs = introMemTaint(addr+ lower - fds[fd].offset, upper - lower,
-  			fds[fd].name.c_str(), lower);
-  		  
-  	}
+      tfs = introMemTaint(addr+ lower - fds[fd].offset, upper - lower,
+        fds[fd].name.c_str(), lower);
+        
+    }
   }
 
   fds[fd].offset += length;
@@ -3231,17 +3110,17 @@ bool TaintTracker::taintPreSC(uint32_t callno, const uint64_t *args, /* out */ u
       {
           strncpy(filename, (char *)args[0],128); 
           
-        	string cppfilename(filename);
+          string cppfilename(filename);
           
-        	for (std::set<string>::iterator i = taint_files.begin();
-        	     i != taint_files.end();
-        	     i++) 
+          for (std::set<string>::iterator i = taint_files.begin();
+               i != taint_files.end();
+               i++) 
           {
-        	     if (cppfilename.find(*i) != string::npos) 
+               if (cppfilename.find(*i) != string::npos) 
                {
-        	       state = __NR_open;  
-        	     }
-        	}
+                 state = __NR_open;  
+               }
+          }
           
           break; 
       }
@@ -3282,7 +3161,7 @@ FrameOption_t TaintTracker::taintPostSC(const uint32_t bytes,
                                      const uint64_t *args,
                                      uint32_t &addr,
                                      uint32_t &length,
-				     const uint32_t state)
+             const uint32_t state)
 {
   
   uint32_t fd = -1;
@@ -3394,7 +3273,7 @@ void TaintTracker::setTaintContext(context &delta)
   for (uint32_t i = 0 ; i < count ; i++) {
       if (isReg(values[i].type)) {
           if ((tag = getRegTaint(delta, values[i].loc)) != NOTAINT) {
-	// cerr << "register: " << REG_StringShort((REG)values[i].loc) << " is tainted" << endl;
+  // cerr << "register: " << REG_StringShort((REG)values[i].loc) << " is tainted" << endl;
               values[i].taint = tag;
           }
       } else if (isValid(values[i].type)) {
@@ -3421,21 +3300,21 @@ void TaintTracker::addTaintToWritten(context &delta, uint32_t tag)
   for (uint32_t i = 0 ; i < count ; i++) {
     if ((values[i].usage & WR) == WR)  {
       if (isReg(values[i].type)) {
-	loc = REG_FullRegName((REG)values[i].loc);
-	setTaint(delta,loc,tag);
-	values[i].taint = getRegTaint(delta, loc);
-	//cerr << "new " << REG_StringShort((REG)values[i].loc) 
-	//     << " taint: " << values[i].taint << endl;
+  loc = REG_FullRegName((REG)values[i].loc);
+  setTaint(delta,loc,tag);
+  values[i].taint = getRegTaint(delta, loc);
+  //cerr << "new " << REG_StringShort((REG)values[i].loc) 
+  //     << " taint: " << values[i].taint << endl;
       } else if (isMem(values[i].type)) {
-	//cerr << hex << "writing " << values[i].loc << " = " << tag << endl;
-	loc = values[i].loc;
-	uint32_t size = getSize(values[i].type);
-	for(uint32_t j = 0 ; j < size ; j++) {
-	  //cerr << " Tainting memory " << loc + j << endl;
-	  setTaint(memory,loc+j,tag);
-	}
-	values[i].taint = getTaint(memory,loc);
-	//cerr << "mem taint: " << values[i].taint << endl;
+  //cerr << hex << "writing " << values[i].loc << " = " << tag << endl;
+  loc = values[i].loc;
+  uint32_t size = getSize(values[i].type);
+  for(uint32_t j = 0 ; j < size ; j++) {
+    //cerr << " Tainting memory " << loc + j << endl;
+    setTaint(memory,loc+j,tag);
+  }
+  values[i].taint = getTaint(memory,loc);
+  //cerr << "mem taint: " << values[i].taint << endl;
       } 
     }
   }
@@ -3459,13 +3338,13 @@ bool TaintTracker::hasTaint(context &delta)
   for (uint32_t i = 0 ; i < count ; i++) {
     if (isReg(values[i].type)) {
       if (getRegTaint(delta, values[i].loc) != NOTAINT) {
-	//cerr << "Tainted: " << REG_StringShort((REG)values[i].loc) << endl;
-	return true;
+  //cerr << "Tainted: " << REG_StringShort((REG)values[i].loc) << endl;
+  return true;
       }
     } else if (isValid(values[i].type)) {
       if (getTaint(memory,values[i].loc) != NOTAINT) {
-	//cerr << "Tainted Memory: " << values[i].loc << endl;
-	return true;
+  //cerr << "Tainted Memory: " << values[i].loc << endl;
+  return true;
       }
     }
   }
