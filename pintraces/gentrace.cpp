@@ -121,7 +121,7 @@ namespace WINDOWS {
 #endif
 //1208/////////////////////////////////////////////////////
 int mylog(char * log);
-char CoverageModule[0x20];
+
 
 //ofstream fpaddrs;
 ADDRINT  DllbaseAddress=0;
@@ -144,10 +144,19 @@ bool crc32_Instrumentation_On = false;
 KNOB<string> KnobOut(KNOB_MODE_WRITEONCE, "pintool",
                      "o", "out.bpt",
                      "Trace file to output to.");
-//1208//////////////////////////////////////
-KNOB<string> KnobCoverage(KNOB_MODE_WRITEONCE, "pintool",
-                     "c", "docreader.dll",
+//liu 47
+// Specify the module where the checksum point is located
+KNOB<string> KnobCksumPointModule(KNOB_MODE_WRITEONCE, "pintool",
+                     "c", "",
                      "Coverage fraction module.");
+//liu 47
+// Specify library name and function name (checksum check completed)
+KNOB<string> KnobCheckLib(KNOB_MODE_WRITEONCE, "pintool",
+                     "lib", "",
+                     "checksum dynamical library.");
+KNOB<string> KnobCheckFunc(KNOB_MODE_WRITEONCE, "pintool",
+                     "func", "",
+                     "checksum function.");
 ///////////////////////////////
 //9 20 liu
 KNOB<int> KnobTime(KNOB_MODE_WRITEONCE, "pintool",
@@ -1793,7 +1802,7 @@ static bool DoWriteAddr(ADDRINT addr)
         if (lasttok)
 		{
 			//liu
-            if (strcmp(lasttok,CoverageModule)==0)
+            if (strcmp(lasttok,KnobCksumPointModule.Value().c_str())==0)
 			{
                 return true;
             }
@@ -1851,35 +1860,55 @@ void SetRegisterTaint(bool is_tainted, REG r, THREADID id, ADDRINT iaddr);
 static void After_crc32(CONTEXT *ctxt,THREADID tid)
 {
     int crc32=PIN_GetContextReg(ctxt, REG_EAX);
-    cout<<"get crc32: "<<hex<<crc32<<endl;
+    TraceFile<<"get crc32: "<<hex<<crc32<<endl;
     crc32_Instrumentation_On = true;
-    TAINT_Analysis_On=true; 
+    TAINT_Analysis_On=true;
+  
     TAINT_Instrumentation_On = true;
     SetRegisterTaint( true, REG_EAX,tid, 0);
     set<int> tmp;
     tmp.insert(1);
-    tmp.insert(2);
+    //tmp.insert(2);
     SetRegisterTaintSrc(tmp,REG_EAX,tid,0);
 }
 
+//liu 47
+//Record the module's base address and instrument the verification function.
 VOID ModLoad(IMG img, VOID *v)
 {
 
     const string &name = IMG_Name(img);
-    //crc32_Instrumentation_On = false;
-    //cout<<"so: "<<name<<endl;
-        // Skip all images, but kernel32.dll  libz.so.1.2.3.4
     
-    
-	//1015 coverage low high addrs
-	if(strstr(name.c_str(),CoverageModule) != NULL)
-	{
-			DllbaseAddress = IMG_LowAddress(img);
+    //if(strstr(name.c_str(),"libz.so") != NULL)
+    if(KnobCheckLib.Value().length()!=0)
+    {
+        if(strstr(name.c_str(),KnobCheckLib.Value().c_str()) != NULL)
+        {
+            if(KnobCheckFunc.Value().length()!=0)
+            {
+                RTN rtn = RTN_FindByName(img, KnobCheckFunc.Value().c_str());
+                if (RTN_Valid(rtn))
+                {
+                    
+                    //cout<<"get crc32 !!!!"<<endl;
+                    RTN_Open(rtn);
+                    RTN_InsertCall(rtn, IPOINT_AFTER, AFUNPTR(After_crc32),IARG_CONTEXT, IARG_THREAD_ID, IARG_END);
+                    RTN_Close(rtn);
+                }
+            }
+        }
+    }
+
+        
+    //1015 coverage low high addrs
+    if(strstr(name.c_str(),KnobCksumPointModule.Value().c_str()) != NULL)
+    {
+            DllbaseAddress = IMG_LowAddress(img);
             int DllbaseAddress1 = IMG_HighAddress(img);
-            TraceFile<<"lowaddr: "<<hex<<DllbaseAddress<<" highaddr: "<<DllbaseAddress1<<endl;
+            TraceFile<<name<<" "<<"lowaddr: "<<hex<<DllbaseAddress<<" highaddr: "<<DllbaseAddress1<<endl;
 
 
-	}
+    }
  
 }
 
@@ -2287,7 +2316,7 @@ int main(int argc, char *argv[])
     InitLock(&lock1);
     //liu 911
     InitLogs(0);
-    InitInstr();//初始化instruction函数处理数组
+    InitInstr();//
     //liu 911
     // Check if a trigger was specified.
     if (KnobTrigAddr.Value() != 0) {
@@ -2300,8 +2329,7 @@ int main(int argc, char *argv[])
     } else {
         g_usetrigger = false;
     }
-	//1208//liu
-	sprintf(CoverageModule,"%s",KnobCoverage.Value().c_str());
+
     // Check if taint tracking is on
     if (KnobTaintTracking.Value()) {
         tracker = new TaintTracker(values);
@@ -2370,9 +2398,9 @@ int main(int argc, char *argv[])
     PIN_AddSyscallEntryFunction(SyscallEntry, 0);
     PIN_AddSyscallExitFunction(SyscallExit, 0);
     //liu 911
-    //INS_AddInstrumentFunction(InstructionProp, 0); //污点传播
+    //INS_AddInstrumentFunction(InstructionProp, 0); //
     //liu 1010 
-    INS_AddInstrumentFunction(InstructionProp, 0); //污点传播
+    INS_AddInstrumentFunction(InstructionProp, 0); //taint propagation
    
     PIN_AddFiniFunction(Fini, 0);
     //1208/////////////////////////////////////////////////
