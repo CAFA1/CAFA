@@ -76,7 +76,7 @@ PIN_LOCK lock;
 PIN_LOCK lock1;
 bool TAINT_Analysis_On = false;
 bool liu_debug = false;
-bool liu_debug_analysis = false;
+bool liu_debug_analysis = true;
 char mem_taint[TAINT_TABLE_SIZE+1];
 #define RECORD_REP_COUNT 1
 #define REMOVE_MEM_ADDRESSING 0
@@ -753,7 +753,7 @@ VOID PIN_FAST_ANALYSIS_CALL HandleRepMov(ADDRINT iaddr, ADDRINT reg_ecx,ADDRINT 
    {
     if(!t.empty())
     {
-      TraceFile<<"HandleRepMov: "<<hex<<iaddr<<" "<<*disas<<" memdst: "<<memdst<<" tiantsize: "<<t.size()<<" ";
+      TraceFile<<"taintins HandleRepMov: "<<hex<<iaddr<<" "<<*disas<<" memdst: "<<memdst<<" tiantsize: "<<t.size()<<" ";
       string result;
       set<int>::iterator it;
       for(it=t.begin();it!=t.end();it++)
@@ -951,7 +951,7 @@ VOID PIN_FAST_ANALYSIS_CALL DoPropMemtoMem(ADDRINT iaddr, ADDRINT memsrc,
   {
     if(!t.empty())
     {
-      TraceFile<<"DoPropMemtoMem: "<<hex<<iaddr<<" "<<*disas<<" tiantsize: "<<t.size()<<" ";
+      TraceFile<<"taintins DoPropMemtoMem: "<<hex<<iaddr<<" "<<*disas<<" tiantsize: "<<t.size()<<" ";
       string result;
       set<int>::iterator it;
       for(it=t.begin();it!=t.end();it++)
@@ -996,7 +996,7 @@ VOID PIN_FAST_ANALYSIS_CALL DoPropMemBaseIndextoReg(ADDRINT iaddr, ADDRINT memsr
   {
     if(!t.empty())
     {
-      TraceFile<<"DoPropMemBaseIndextoReg: "<<hex<<iaddr<<" "<<*disas<<" tiantsize: "<<t.size()<<" ";
+      TraceFile<<"taintins DoPropMemBaseIndextoReg: "<<hex<<iaddr<<" "<<*disas<<" tiantsize: "<<t.size()<<" ";
       string result;
       set<int>::iterator it;
       for(it=t.begin();it!=t.end();it++)
@@ -1025,7 +1025,7 @@ VOID PIN_FAST_ANALYSIS_CALL DoPropMemtoReg(ADDRINT iaddr, ADDRINT memsrc,
   {
     if(!t.empty())
     {
-      TraceFile<<"DoPropMemtoReg: "<<hex<<iaddr<<" "<<*disas<<" tiantsize: "<<t.size()<<" ";
+      TraceFile<<"taintins DoPropMemtoReg: "<<hex<<iaddr<<" "<<*disas<<" tiantsize: "<<t.size()<<" ";
       string result;
       set<int>::iterator it;
       for(it=t.begin();it!=t.end();it++)
@@ -1144,7 +1144,7 @@ VOID PIN_FAST_ANALYSIS_CALL liuM_R(ADDRINT iaddr, ADDRINT memsrc,
   {
     if(!t.empty())
     {
-      TraceFile<<"liuM_R: "<<hex<<iaddr<<" "<<*disas<<" tiantsize: "<<t.size()<<" ";
+      TraceFile<<"taintins liuM_R: "<<hex<<iaddr<<" "<<*disas<<" tiantsize: "<<t.size()<<" ";
       string result;
       set<int>::iterator it;
       for(it=t.begin();it!=t.end();it++)
@@ -1257,7 +1257,7 @@ VOID PIN_FAST_ANALYSIS_CALL DoPropNoExtReg(ADDRINT iaddr, UINT32 gr_read,
   {
     if(!t.empty())
     {
-      TraceFile<<"DoPropNoExtReg: "<<hex<<iaddr<<" "<<*disas<<" tiantsize: "<<t.size()<<" ";
+      TraceFile<<"taintins DoPropNoExtReg: "<<hex<<iaddr<<" "<<*disas<<" tiantsize: "<<t.size()<<" ";
       string result;
       set<int>::iterator it;
       for(it=t.begin();it!=t.end();it++)
@@ -1297,7 +1297,7 @@ VOID PIN_FAST_ANALYSIS_CALL DoPropRegR2(ADDRINT iaddr, UINT32 reg_src1id, UINT32
   {
     if(!t.empty())
     {
-      TraceFile<<"DoPropRegR2: "<<hex<<iaddr<<" "<<*disas<<" tiantsize: "<<t.size()<<" ";
+      TraceFile<<"taintins DoPropRegR2: "<<hex<<iaddr<<" "<<*disas<<" tiantsize: "<<t.size()<<" ";
       string result;
       set<int>::iterator it;
       for(it=t.begin();it!=t.end();it++)
@@ -1447,7 +1447,7 @@ VOID PIN_FAST_ANALYSIS_CALL liuR2_R(ADDRINT iaddr, UINT32 reg_srcid,UINT32 reg_s
   {
     if(!t.empty())
     {
-      TraceFile<<"liuR2_R: "<<hex<<iaddr<<" "<<*disas<<" tiantsize: "<<t.size()<<" ";
+      TraceFile<<"taintins liuR2_R: "<<hex<<iaddr<<" "<<*disas<<" tiantsize: "<<t.size()<<" ";
       string result;
       set<int>::iterator it;
       for(it=t.begin();it!=t.end();it++)
@@ -1486,7 +1486,7 @@ VOID PIN_FAST_ANALYSIS_CALL DoPropRegR1(ADDRINT iaddr, UINT32 reg_srcid, UINT32 
   {
     if(!t.empty())
     {
-      TraceFile<<"DoPropRegR1: "<<hex<<iaddr<<" "<<*disas<<" tiantsize: "<<t.size()<<" ";
+      TraceFile<<"taintins DoPropRegR1: "<<hex<<iaddr<<" "<<*disas<<" tiantsize: "<<t.size()<<" ";
       string result;
       set<int>::iterator it;
       for(it=t.begin();it!=t.end();it++)
@@ -1591,7 +1591,7 @@ VOID PIN_FAST_ANALYSIS_CALL DoProp(ADDRINT iaddr, UINT32 gr_read, UINT32 xt_read
   {
     if(!t.empty())
     {
-      TraceFile<<"DoProp xmm: "<<hex<<iaddr<<" "<<*disas<<" tiantsize: "<<t.size()<<" ";
+      TraceFile<<"taintins DoProp xmm: "<<hex<<iaddr<<" "<<*disas<<" tiantsize: "<<t.size()<<" ";
       string result;
       set<int>::iterator it;
       for(it=t.begin();it!=t.end();it++)
@@ -1625,7 +1625,7 @@ VOID PIN_FAST_ANALYSIS_CALL DoPropRegtoMem(ADDRINT iaddr, UINT32 reg_srcid, ADDR
   {
     if(!t.empty())
     {
-      TraceFile<<"DoPropRegtoMem: "<<hex<<iaddr<<" "<<*disas<<" tiantsize: "<<t.size()<<" ";
+      TraceFile<<"taintins DoPropRegtoMem: "<<hex<<iaddr<<" "<<*disas<<" tiantsize: "<<t.size()<<" ";
       string result;
       set<int>::iterator it;
       for(it=t.begin();it!=t.end();it++)
