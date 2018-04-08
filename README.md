@@ -36,7 +36,8 @@ python schedule_identify.py Taint-S 8 0x16 libpng /usr/local/bin/magick identify
 ```
 2. optipng  
 ```
-python schedule_identify.py 8 13 libpng ./sample/png/optipng/optipng " " ./sample/png/bak/good.png ./sample/png/bak/bad.png
+python schedule_identify.py CRC32-S libz.so crc32 libpng ./sample/png/optipng/optipng " " ./sample/png/bak/good.png ./sample/png/bak/bad.png
+python schedule_identify.py Taint-S 8 0x16 libpng ./sample/png/optipng/optipng " " ./sample/png/bak/good.png ./sample/png/bak/bad.png
 
 ```
 3. pngcheck   
