@@ -1,6 +1,5 @@
 # CAFA: A Checksum-Aware Fuzzing Assistant For More Coverage
-Note that there is the other branch (taint branch).    
-The master branch is for software with the crc32 checksum algorithm, while the taint branch is for the general checksum algorithm.
+
 
 # OS
 Ubuntu 12.04 32bit (Other OS may have problems.)
@@ -8,39 +7,85 @@ Ubuntu 12.04 32bit (Other OS may have problems.)
 # Install
 ```
 git clone https://github.com/CAFA1/CAFA.git  
-git checkout master
 cd pintraces  
 make 
 ``` 
 
 # Require and configure
-echo core >/proc/sys/kernel/core_pattern  
-echo 0 >/proc/sys/kernel/randomize_va_space  
+echo core >/proc/sys/kernel/core_pattern    
+echo 0 >/proc/sys/kernel/randomize_va_space    
 Install the test software and afl-fuzz.  
-Set  AFL_PATH to the root directory of afl-fuzz.  
-   
+Set  AFL_PATH env to the root directory of afl-fuzz.      
+  
 
 # Commands to identify checksum points
 ```
-python schedule_identify.py module_name elf_path ext_command good_sample bad_sample
-module_name: the name of the module where the checksum check is located.
-elf_path: the path of the test program.
-ext_command: the options of the test program.
-good_sample: the path of the well-formed sample.
-bad_sample: the path of the malformed sample.
+python schedule_identify.py strategy taint_start(CksumLib) taint_length(CkmsumFunc) module_name elf_path ext_command good_sample bad_sample
+    stategy: CRC32-S strategy or Taint-S strategy
+    taint_start: the starting offset of the taint source.
+    taint_length: the length of the taint source.
+    module_name: the name of the module where the checksum check is located.
+    elf_path: the path of the test program.
+    ext_command: the options of the test program.
+    good_sample: the path of the well-formed sample.
+    bad_sample: the path of the malformed sample.
+```
+1. ImageMagick   
+```
+python schedule_identify.py CRC32-S libz.so crc32 libpng /usr/local/bin/magick identify ./sample/png/good.png ./sample/png/bad.png    
+python schedule_identify.py Taint-S 8 0x16 libpng /usr/local/bin/magick identify ./sample/png/good.png ./sample/png/bad.png
+```
+2. optipng  
+```
+python schedule_identify.py CRC32-S libz.so crc32 libpng ./sample/png/optipng/optipng " " ./sample/png/bak/good.png ./sample/png/bak/bad.png
+python schedule_identify.py Taint-S 8 0x16 libpng ./sample/png/optipng/optipng " " ./sample/png/bak/good.png ./sample/png/bak/bad.png
+
+```
+3. pngcheck   
+```
+python schedule_identify.py CRC32-S libz.so crc32 pngcheck ./sample/png/origin_pngcheck/pngcheck " " ./sample/png/good.png ./sample/png/bad.png  
+python schedule_identify.py Taint-S 8 0x16 pngcheck ./sample/png/origin_pngcheck/pngcheck " " ./sample/png/good.png ./sample/png/bad.png    
+```
+
+4. gz  
+```
+python schedule_identify.py Taint-S 0 0x21 gzip ./sample/gz/origin/gzip -d ./sample/gz/good.txt.gz ./sample/gz/bad.txt.gz  
 ``` 
-1. ImageMagick
+ 
+5. unzip  
 ``` 
-python schedule_identify.py  libpng /usr/local/bin/magick  identify ./sample/png/good.png ./sample/png/bad.png
+python schedule_identify.py Taint-S 0 0x26 unzip ./sample/zip/origin/unzip " " ./sample/zip/good.zip ./sample/zip/bad.zip
 ```
-2. optipng
+
+6. rar
+```
+python schedule_identify.py Taint-S 7 13 rar ./sample/rar/origin/rar e ./sample/rar/good.rar ./sample/rar/bad2.rar  
 ``` 
-python schedule_identify.py  libpng ./sample/png/optipng/optipng  " " ./sample/png/bak/good.png ./sample/png/bak/bad.png
+
+7. tar
 ```
-3. pngcheck
-```
-python schedule_identify.py pngcheck ./sample/png/origin_pngcheck/pngcheck " " ./sample/png/good.png ./sample/png/bad.png
-```
+python schedule_identify.py Taint-S 0 0x159 tar ./sample/tar/origin/tar -tf ./sample/tar/good.tar ./sample/tar/bad.tar  
+
+``` 
+
+8. tcpdump  
+    8.1 udp checksum point  
+    ```
+    python schedule_identify.py Taint-S 0x5e 8 tcpdump ./sample/tcp/origin/tcpdump " -v -r  " ./sample/udp/good_udp.pcap ./sample/udp/bad_udp.pcap 
+    ``` 
+    8.2 tcp checksum point  
+    ```
+    python schedule_identify.py Taint-S 0x4a 20 tcpdump ./sample/tcp/origin/tcpdump " -v -r  " ./sample/tcp/good_tcp.pcap ./sample/tcp/bad_tcp.pcap  
+    ```
+    8.3 ip checksum point  
+    ```
+    python schedule_identify.py Taint-S 0x36 20 tcpdump ./sample/tcp/origin/tcpdump " -v -r  " ./sample/ip/good_ip.pcap ./sample/ip/bad_ip.pcap  
+    ```
+    8.4 igmp checksum point  
+    ```
+    python schedule_identify.py Taint-S 0x4e 16 tcpdump ./sample/tcp/origin/tcpdump " -v -r  " ./sample/igmp/good_igmp.pcap ./sample/igmp/bad_igmp.pcap 
+    ``` 
+
 
 # AFL Fuzz ImageMagick command
 1. Before patching  

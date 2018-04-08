@@ -121,7 +121,7 @@ namespace WINDOWS {
 #endif
 //1208/////////////////////////////////////////////////////
 int mylog(char * log);
-char CoverageModule[0x20];
+
 
 //ofstream fpaddrs;
 ADDRINT  DllbaseAddress=0;
@@ -144,10 +144,19 @@ bool crc32_Instrumentation_On = false;
 KNOB<string> KnobOut(KNOB_MODE_WRITEONCE, "pintool",
                      "o", "out.bpt",
                      "Trace file to output to.");
-//1208//////////////////////////////////////
-KNOB<string> KnobCoverage(KNOB_MODE_WRITEONCE, "pintool",
-                     "c", "docreader.dll",
+//liu 47
+// Specify the module where the checksum point is located
+KNOB<string> KnobCksumPointModule(KNOB_MODE_WRITEONCE, "pintool",
+                     "c", "",
                      "Coverage fraction module.");
+//liu 47
+// Specify library name and function name (checksum check completed)
+KNOB<string> KnobCheckLib(KNOB_MODE_WRITEONCE, "pintool",
+                     "lib", "",
+                     "checksum dynamical library.");
+KNOB<string> KnobCheckFunc(KNOB_MODE_WRITEONCE, "pintool",
+                     "func", "",
+                     "checksum function.");
 ///////////////////////////////
 //9 20 liu
 KNOB<int> KnobTime(KNOB_MODE_WRITEONCE, "pintool",
@@ -1793,7 +1802,7 @@ static bool DoWriteAddr(ADDRINT addr)
         if (lasttok)
 		{
 			//liu
-            if (strcmp(lasttok,CoverageModule)==0)
+            if (strcmp(lasttok,KnobCksumPointModule.Value().c_str())==0)
 			{
                 return true;
             }
@@ -1863,39 +1872,45 @@ static void After_crc32(CONTEXT *ctxt,THREADID tid)
     SetRegisterTaintSrc(tmp,REG_EAX,tid,0);
 }
 
+//liu 47
+//Record the module's base address and instrument the verification function.
 VOID ModLoad(IMG img, VOID *v)
 {
 
     const string &name = IMG_Name(img);
-    //crc32_Instrumentation_On = false;
-    //cout<<"so: "<<name<<endl;
-        // Skip all images, but kernel32.dll  libz.so.1.2.3.4
-    if(strstr(name.c_str(),"libz.so") != NULL)
-    //if (!CmpBaseImageName(IMG_Name(img), "libz.so.1.2.3.4"))
+    
+    //if(strstr(name.c_str(),"libz.so") != NULL)
+    if(KnobCheckLib.Value().length()!=0)
     {
-        
-        //cout<<"get libz"<<endl;
-        RTN rtn = RTN_FindByName(img, "crc32");
-        if (RTN_Valid(rtn))
+        if(strstr(name.c_str(),KnobCheckLib.Value().c_str()) != NULL)
         {
-            
-            //cout<<"get crc32 !!!!"<<endl;
-            RTN_Open(rtn);
-            RTN_InsertCall(rtn, IPOINT_AFTER, AFUNPTR(After_crc32),IARG_CONTEXT, IARG_THREAD_ID, IARG_END);
-            RTN_Close(rtn);
+            if(KnobCheckFunc.Value().length()!=0)
+            {
+                RTN rtn = RTN_FindByName(img, KnobCheckFunc.Value().c_str());
+                if (RTN_Valid(rtn))
+                {
+                    
+                    //cout<<"get crc32 !!!!"<<endl;
+                    RTN_Open(rtn);
+                    RTN_InsertCall(rtn, IPOINT_AFTER, AFUNPTR(After_crc32),IARG_CONTEXT, IARG_THREAD_ID, IARG_END);
+                    RTN_Close(rtn);
+                }
+            }
         }
     }
 
         
-	//1015 coverage low high addrs
-	if(strstr(name.c_str(),CoverageModule) != NULL)
-	{
-			DllbaseAddress = IMG_LowAddress(img);
+
+    //1015 coverage low high addrs
+    if(strstr(name.c_str(),KnobCksumPointModule.Value().c_str()) != NULL)
+    {
+            DllbaseAddress = IMG_LowAddress(img);
+
             int DllbaseAddress1 = IMG_HighAddress(img);
             TraceFile<<name<<" "<<"lowaddr: "<<hex<<DllbaseAddress<<" highaddr: "<<DllbaseAddress1<<endl;
 
 
-	}
+    }
  
 }
 
@@ -2239,26 +2254,16 @@ VOID Cleanup()
     {
         cleanup_flag=1;
         //g_twnew->finish();
-        //liu 11 9
-        //printf("%s\n%s\n",buf_file_addrs,buf_file_assist);
-
+        //liu 47
+        //Finally, write the jump instruction address and jump result to the file
         fpaddrs.open(buf_file_addrs,ios::app);
-
         list<branch_st>::iterator iter;
-
-        //1208/////////////////////////////////////////////////\C9\FA\B3\C9assist.txt
         for(iter=g_bbls.begin();iter!=g_bbls.end();++iter)
         { 
             fpaddrs<<hex<<iter->addr<<" "<<iter->taken<<endl;
-        }
-        
+        }       
         fpaddrs.close();
-        //liu 11 9
-    	//stringstream ss;
-    	//ss << KnobOut.Value()<<"-"<<"assist.txt";
-    	//FILE *fp = fopen(buf_file_assist, "wb");
-    	//fwrite(g_TaintAsistBuff, 4, g_tsbufidx + 1, fp);
-    	//fclose(fp);
+
         cerr << "cleanup"<<endl;
         std::cerr << " process: " << PIN_GetPid() <<" "<< g_threadname << std::endl;
         
@@ -2275,18 +2280,7 @@ INT32 Usage()
     cerr << endl << KNOB_BASE::StringKnobSummary() << endl;
     return -1;
 }
-/*
-int mylog(char * log)
-{
-    int to_fd;
-    if ((to_fd = open("log.txt", O_WRONLY | O_CREAT | O_APPEND , S_IRUSR | S_IWUSR)) == -1) {  
-        fprintf(stderr, "Open  Error\n");  
-        exit(1);  
-    }
-    write(to_fd, log, strlen(log));
-    close(to_fd); 
-    return 1;
-}*/
+
 
 
 int main(int argc, char *argv[])
@@ -2303,7 +2297,7 @@ int main(int argc, char *argv[])
     InitLock(&lock1);
     //liu 911
     InitLogs(0);
-    InitInstr();//初始化instruction函数处理数组
+    InitInstr();//
     //liu 911
     // Check if a trigger was specified.
     if (KnobTrigAddr.Value() != 0) {
@@ -2316,8 +2310,7 @@ int main(int argc, char *argv[])
     } else {
         g_usetrigger = false;
     }
-	//1208//liu
-	sprintf(CoverageModule,"%s",KnobCoverage.Value().c_str());
+
     // Check if taint tracking is on
     if (KnobTaintTracking.Value()) {
         tracker = new TaintTracker(values);
@@ -2339,15 +2332,14 @@ int main(int argc, char *argv[])
 	
 	uint32_t NumOffsetsParams;
 	NumOffsetsParams =  TaintedOffsets.NumberOfValues()>>1;
-	      
+	iTNTChksmDegree = KnobChksmDegree.Value();      
 	for (uint32_t j = 0; j <NumOffsetsParams; j++) 
 	{
-	//if (TaintedOffsets.Value(2*j) != 0 && TaintedOffsets.Value(2*j+1) != 0)
-	//{
+	
 	    tracker->trackOffset(TaintedOffsets.Value(2*j),TaintedOffsets.Value(2*j+1));
 	
 	}
-	///////////////
+	
 
     /* Get a key for thread info */
     tl_key = PIN_CreateThreadDataKey(NULL);
@@ -2360,57 +2352,29 @@ int main(int argc, char *argv[])
     } else {
         g_taint_introduced = false;
     }
-	//1208
-    //liu 11 9
-    /*
-	stringstream ss2;
-    ss2 <<KnobOut.Value()<<"-"<<"addrs.txt";
-	fpaddrs.open(ss2.str().c_str());
-    fpaddrs<<"meili"<<endl;
-    */
-    //liu 11 9
+	
     stringstream file_addrs;
     //stringstream file_assist;
     file_addrs<< KnobOut.Value() << "-" << "addrs.txt";
     //file_assist<<KnobOut.Value() << "-" << "assist.txt";
     strcpy(buf_file_addrs,file_addrs.str().c_str());
-    //strcpy(buf_file_assist,file_assist.str().c_str());
-
-
-	
-    
+  
     IMG_AddInstrumentFunction(ModLoad, 0);
     //TRACE_AddInstrumentFunction(InstrTrace, 0);
     PIN_AddThreadStartFunction(ThreadStart, 0);
     PIN_AddThreadFiniFunction((THREAD_FINI_CALLBACK)ThreadEnd, 0);
    
-    //PIN_AddContextChangeFunction(ExceptionHandler, 0);
-   
-    /*
-    FPOINT_AFTER_IN_PARENT   Call-back in parent, immediately after fork.  
-    FPOINT_AFTER_IN_CHILD    Call-back in child, immediately after fork.
-    */
-    //PIN_AddForkFunction(FPOINT_AFTER_IN_CHILD, FollowChild, 0);
-    //PIN_AddForkFunction(FPOINT_AFTER_IN_PARENT, FollowParent, 0);
 
-    //PIN_AddFollowChildProcessFunction(FollowExec, 0);
-   
-    //PIN_AddSyscallEntryFunction(SyscallEntry, 0);
-    //PIN_AddSyscallExitFunction(SyscallExit, 0);
+    PIN_AddSyscallEntryFunction(SyscallEntry, 0);
+    PIN_AddSyscallExitFunction(SyscallExit, 0);
+
     //liu 911
-    //INS_AddInstrumentFunction(InstructionProp, 0); //污点传播
-    //liu 1010 
-    INS_AddInstrumentFunction(InstructionProp, 0); //污点传播
+    INS_AddInstrumentFunction(InstructionProp, 0); //taint propagation
    
     PIN_AddFiniFunction(Fini, 0);
     //1208/////////////////////////////////////////////////
     //liu 11 9
 	ss << g_threadname<<KnobOut.Value() << "-" << "trace.bpt";
-    //ss << PIN_GetPid() << "-" << KnobOut.Value();
-    //liu 925
-   iTNTChksmDegree = KnobChksmDegree.Value();
-    //g_twnew = new TraceContainerWriter(ss.str().c_str(), bfd_arch_i386, bfd_mach_i386_i386, default_frames_per_toc_entry, false);
-
     g_bufidx = 0;
     g_kfcount = 0;
 	//1208/////////////////////////////////

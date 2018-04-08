@@ -6,10 +6,18 @@ import shutil
 import sys
 
 
-def run_cmd(coverage,elfpath,filepath,ext_command):
+def run_cmd_master(lib,func,coverage,elfpath,filepath,ext_command):
      
     filename = filepath.split("/")[-1]
-    pin_cmd = "/home/bap/workspace/bap-0.7/pin/pin -t /home/bap/workspace/bap-0.7/pintraces/obj-ia32/gentrace.so  "+"  -o 1-1 -log-limit 10000 -ins-limit 1000000 -time-limit 35  -c "+coverage+" -taint-files "+filename+" --  "+elfpath+" "+ext_command+" "+filepath
+    pin_cmd = "/home/bap/workspace/bap-0.7/pin/pin -t /home/bap/workspace/bap-0.7/pintraces/obj-ia32/gentrace.so  "+"-lib "+lib+" -func "+func+"  -o 1-1 -log-limit 10000 -ins-limit 1000000 -time-limit 35  -c "+coverage+" -taint-files "+filename+" --  "+elfpath+" "+ext_command+" "+filepath
+    print "[*] Just about to run ", pin_cmd  #-skip-taints 2
+    os.system(pin_cmd)
+
+def run_cmd(offsets1,offsets2,coverage,elfpath,filepath,ext_command):
+     
+    filename = filepath.split("/")[-1]
+    pin_cmd = "/home/bap/workspace/bap-0.7/pin/pin -t /home/bap/workspace/bap-0.7/pintraces/obj-ia32/gentrace.so -taint-offsets "+offsets1+" -taint-offsets "+offsets2+"  -o 1-1 -log-limit 10000 -ins-limit 1000000 -time-limit 35  -c "+coverage+" -taint-files "+filename+" --  "+elfpath+" "+ext_command+" "+filepath
+
     print "[*] Just about to run ", pin_cmd  #-skip-taints 2
     os.system(pin_cmd)
     
@@ -52,12 +60,98 @@ def cleandir():
     os.remove("1-1-addrs.txt")
 def find_all_next(arr,item):
     return [arr[i+1] for i,a in enumerate(arr) if a==item]
-def compare_run(coverage,elfpath,ext_command,good_sample,bad_sample):
+
+def compare_run_master(lib,func,coverage,elfpath,ext_command,good_sample,bad_sample):
     #os.system("rm 1.txt")
-    run_cmd(coverage,elfpath,good_sample,ext_command)
+    #run_cmd_master(lib,func,coverage,elfpath,filepath,ext_command)
+    run_cmd_master(lib,func,coverage,elfpath,good_sample,ext_command)
     os.system("cp 1-1-addrs.txt good_1.txt")
     #os.system("rm 1.txt")
-    run_cmd(coverage,elfpath,bad_sample,ext_command)
+    run_cmd_master(lib,func,coverage,elfpath,bad_sample,ext_command)
+    os.system("cp 1-1-addrs.txt bad_2.txt")
+    os.system("diff good_1.txt bad_2.txt > diff.txt")
+    os.system("echo 1,1 >> diff.txt")
+    f1 = open("diff.txt","r")
+    #get seperate
+    r_good=dict()
+    r_bad = dict()
+    tmp_good=list()
+    tmp_bad=list()
+    gang=0
+    
+    index = 0
+    for line in f1.readlines():
+        
+        if(line.find("< ")!=-1 ): #good
+            #print line
+            tmp_good.append(line)
+        elif(line.find("> ")!=-1):
+            tmp_bad.append(line)
+        elif(line.find(",")!=-1):
+            if len(tmp_good):
+                r_good[index]=list(tmp_good)
+                del tmp_good[:]
+            else:
+                r_good[index]=[]
+            if len(tmp_bad):
+                r_bad[index]=list(tmp_bad)
+                del tmp_bad[:]
+            else:
+                r_bad[index]=[]
+            index=index+1
+        else:
+            pass
+    len_cmp = len(r_good)
+    result_jz=list()
+    for i in range(len_cmp):
+        if(len(r_good[i])!=0 and len(r_bad[i])!=0):
+            result_good=dict()
+            result_bad=dict()
+            for line in r_good[i]:
+                line1 = line.split()
+                result_good[int(line1[1],16)] = int(line1[2],10)
+            for line in r_bad[i]:
+                line1 = line.split()
+                result_bad[int(line1[1],16)] = int(line1[2],10)
+            for jz in result_good:
+                if(result_bad.has_key(jz) ):
+                    if(result_good[jz]!=result_bad[jz]):
+                        result_jz.append(jz)
+    print "result taint jnz(SET4)"
+    myset=set()
+    if(len(result_jz)):
+        result_jz.sort()
+        myset = set(result_jz)
+        for item in myset:
+            print("the %x has found %d" %(item,result_jz.count(item)))
+    result_high=get_high()
+    myset1 = set(result_high)
+    print "|SET1| = %d" % len(myset1)
+    print "|SET4| = %d" % len(myset)
+    if(len(myset1)):
+        result_all=myset1&myset
+    else:
+        result_all=myset
+    print "result (high taint jnz)&(tiant jnz)"
+    print_list(result_all)
+    print "result between range"
+    lowaddr,highaddr=get_base()
+    result_relative=set()
+    for tmp in result_all:
+        if(tmp>lowaddr and tmp<highaddr):
+            print hex(tmp)
+            result_relative.add(tmp)
+    print "result relative address of checksum"
+    for tmp in result_relative:
+        print hex(tmp-lowaddr)
+    return #result_jz
+def compare_run(offsets1,offsets2,coverage,elfpath,ext_command,good_sample,bad_sample):
+    os.system("rm 1.txt")
+    run_cmd(offsets1,offsets2,coverage,elfpath,good_sample,ext_command)
+    os.system("cp 1-1-addrs.txt good_1.txt")
+    os.system("rm 1.txt")
+    run_cmd(offsets1,offsets2,coverage,elfpath,bad_sample,ext_command)
+
     os.system("cp 1-1-addrs.txt bad_2.txt")
     os.system("diff good_1.txt bad_2.txt > diff.txt")
     os.system("echo 1,1 >> diff.txt")
@@ -146,26 +240,62 @@ def compare_run(coverage,elfpath,ext_command,good_sample,bad_sample):
         print hex(tmp-lowaddr)
     return #result_jz
 def main(argv=sys.argv):
-    #offsets1 = argv[1]
-    #offsets2 = argv[2]
-    coverage = argv[1]
-    elfpath = argv[2]
-    ext_command = argv[3]
-    good_sample = argv[4]
-    bad_sample = argv[5]
+
+    strategy = argv[1]
+    
+    module_name = argv[4]
+    elf_path = argv[5]
+    ext_command = argv[6]
+    good_sample = argv[7]
+    bad_sample = argv[8]
     # for gz test 
     # change based on your own directory
-    #os.system("rm ~/workspace/bap-0.7/pintraces/sample/gz/good.txt")
+    os.system("rm ~/workspace/bap-0.7/pintraces/sample/gz/good.txt")
     os.system("cp ~/workspace/bap-0.7/pintraces/sample/png/*.png ~/workspace/bap-0.7/pintraces/sample/png/bak/")
-    compare_run(coverage,elfpath,ext_command,good_sample,bad_sample)
+    os.system("cp ~/workspace/bap-0.7/pintraces/sample/gz/bak/* ~/workspace/bap-0.7/pintraces/sample/gz/")
+    if(strategy=='CRC32-S'):
+        CksumLib = argv[2]
+        CkmsumFunc = argv[3]
+        compare_run_master(CksumLib,CkmsumFunc,module_name,elf_path,ext_command,good_sample,bad_sample)
+        
+    elif(strategy=='Taint-S'):
+        taint_start = argv[2]
+        taint_length = argv[3]
+        compare_run(taint_start,taint_length,module_name,elf_path,ext_command,good_sample,bad_sample)
+
     
     
 
 if __name__ == "__main__":
-    print "python schedule_identify.py  module_name elf_path ext_command good_sample bad_sample"
+
+    
+    #python schedule_identify.py CRC32-S libz.so crc32 libpng /usr/local/bin/magick identify ./sample/png/good.png ./sample/png/bad.png
+    #python schedule_identify.py Taint-S 8 0x16 libpng /usr/local/bin/magick identify ./sample/png/good.png ./sample/png/bad.png
+    print '''
+    python schedule_identify.py strategy taint_start(CksumLib) taint_length(CkmsumFunc) module_name elf_path ext_command good_sample bad_sample
+    stategy: CRC32-S strategy or Taint-S strategy
+    taint_start: the starting offset of the taint source.
+    taint_length: the length of the taint source.
+    module_name: the name of the module where the checksum check is located.
+    elf_path: the path of the test program.
+    ext_command: the options of the test program.
+    good_sample: the path of the well-formed sample.
+    bad_sample: the path of the malformed sample.
+    '''
     print len(sys.argv)
-    if(len(sys.argv)!=6):
-        print "python schedule_identify.py  module_name elf_path ext_command good_sample bad_sample"
+    if(len(sys.argv)!=9):
+        print '''
+        python schedule_identify.py strategy taint_start(CksumLib) taint_length(CkmsumFunc) module_name elf_path ext_command good_sample bad_sample
+        stategy: CRC32-S strategy or Taint-S strategy
+        taint_start: the starting offset of the taint source.
+        taint_length: the length of the taint source.
+        module_name: the name of the module where the checksum check is located.
+        elf_path: the path of the test program.
+        ext_command: the options of the test program.
+        good_sample: the path of the well-formed sample.
+        bad_sample: the path of the malformed sample.
+        '''
+
     else:
         main(sys.argv)
 

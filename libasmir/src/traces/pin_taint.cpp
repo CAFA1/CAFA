@@ -77,6 +77,8 @@ list <TaintSourceEntry> memTaintSrcTable;
 PIN_LOCK lock;
 PIN_LOCK lock1;
 bool TAINT_Analysis_On = false;
+bool liu_debug = false;
+bool liu_debug_analysis = false;
 char mem_taint[TAINT_TABLE_SIZE+1];
 #define RECORD_REP_COUNT 1
 #define REMOVE_MEM_ADDRESSING 0
@@ -86,7 +88,7 @@ TNT_mem TNT_mem_node;
 set<int> perthread_taintsrctable[MAX_NUM_CPUS][REG_XMM_LAST+1];
 
 unsigned int iTNTEncryDegree=10;  //taint count
-unsigned int iTNTChksmDegree=10;  //taint count
+unsigned int iTNTChksmDegree;  //taint count
 //liu 925
 typedef struct TempOps_s {
     uint32_t reg;
@@ -164,7 +166,7 @@ inline void PrintErr(string err,string modulename,ADDRINT addr)
     TraceFile<<"***************************ERROR**********************************"<<endl;
     TraceFile<<"Info :"<<err<<"Module Name:"<<modulename<<"Instruction addr:"<<hex<<addr<<endl;
 }
-//by richard ，求两个集合的并
+//by long ，求两个集合的并
 //输入输出：set<int>
 set<int> Union(set<int> a ,set<int> b)
 {
@@ -261,7 +263,7 @@ static bool REG_is_dift(REG r)
   if (REG_is_gr(r))
   {
     //不处理EIP,EFLAGS和ESP
-    if (r == REG_EIP || r==REG_EFLAGS||r == REG_ESP)
+    if (r == REG_EIP || r==REG_EFLAGS)
       return false;
     return true;
   }
@@ -344,11 +346,11 @@ static bool GetRegisterTaint(REG r, THREADID id, ADDRINT iaddr)
   case REG_BP:
     is_tainted |= __GetRegisterTaint(REG_BP, id);
     break;
-    /*case REG_ESP:
-    is_tainted |= __GetRegisterTaint(REG_ESP);
-    case REG_SP:
-    is_tainted |= __GetRegisterTaint(REG_SP);
-    break; */
+  case REG_ESP:
+    is_tainted |= __GetRegisterTaint(REG_ESP,id);
+  case REG_SP:
+    is_tainted |= __GetRegisterTaint(REG_SP,id);
+    break; 
   default:
     assert(0);
   }
@@ -367,7 +369,7 @@ __GetRegisterTaintSrc(REG r,THREADID id) {
   return (thread_info1[id].ptaintsrc_table[r]);
 }
 /************************************************************************/
-/* By richard 获取寄存器污染源 ,需用在GetRegisterTaint函数后,只有包含了污染数据才进行*/
+/* By long 获取寄存器污染源 ,需用在GetRegisterTaint函数后,只有包含了污染数据才进行*/
 /************************************************************************/
 static set<int> GetRegisterTaintSrc(REG r, THREADID id, ADDRINT iaddr)
 {
@@ -434,6 +436,13 @@ static set<int> GetRegisterTaintSrc(REG r, THREADID id, ADDRINT iaddr)
   case REG_BP:
     taintsrc = Union(taintsrc,__GetRegisterTaintSrc(REG_BP, id));
     break;
+  case REG_ESP:
+    taintsrc = Union(taintsrc,__GetRegisterTaintSrc(REG_ESP, id));
+    
+  case REG_SP:
+    taintsrc = Union(taintsrc,__GetRegisterTaintSrc(REG_SP, id));
+    break;
+    
   default:
     assert(0);
   }
@@ -477,7 +486,7 @@ bool UnimplementedInstruction(INS ins)
 
 
 
-//by richard ,输出集合中的元素
+//by long ,输出集合中的元素
 
 
 
@@ -518,31 +527,23 @@ bool Getmem_taint(ADDRINT addr, UINT32 size, ADDRINT instr)
 
   return (is_tainted);
 }
-//modified by richard
+
 VOID Setmem_taint(ADDRINT addr, UINT32 size, bool is_tainted, ADDRINT inst,THREADID id)
 {
  
   list<TaintSourceEntry>::iterator ptrEntry;
-  // Prints the last memory that was tainted and its content
-   if (!PropTaint(id))
-  {
-    return;
-  }
+  
   GetLock(&lock,id+1);
   if (is_tainted)
-  {
-    
-     //标记内存区域为污点
+  {   
+    //标记内存区域为污点
     for (UINT32 i = 0; i < size; i ++)
     {
       int accessAddr = addr+i;
-      //int _idx = getTableIndex(accessAddr);
-      //char _byteMask = getByteMask(accessAddr);
+      //global variable mem taint flags bit
       mem_taint[getTableIndex(accessAddr)] |= getByteMask(accessAddr);
     }
     
-    if (Measurement)
-      setmem_taint++;
   }
   else//该内存区域漂白
   {
@@ -550,7 +551,7 @@ VOID Setmem_taint(ADDRINT addr, UINT32 size, bool is_tainted, ADDRINT inst,THREA
     if (Getmem_taint(addr, size, inst))
     {
         
-      //inserted by richard,对于要漂白的原先污染的内存，清除对应在污点源映射表中的项
+      //对于要漂白的原先污染的内存，清除对应在污点源映射表中的项
       for (UINT32 i = 0; i < size; i ++)
       {
           if (!Getmem_taint(addr+i,1,inst))
@@ -571,7 +572,7 @@ VOID Setmem_taint(ADDRINT addr, UINT32 size, bool is_tainted, ADDRINT inst,THREA
       }
     } 
     
-    for (UINT32 i = 0; i < size; i ++)
+    for (UINT32 i = 0; i < size; i++)
     {
       int accessAddr = addr+i;
       mem_taint[getTableIndex(accessAddr)] &= (char)(~getByteMask(accessAddr));
@@ -583,21 +584,13 @@ VOID SetMemTaintSource(ADDRINT addr,ADDRINT size,set<int> taintsrc,ADDRINT inst,
 {
     TaintSourceEntry taintentry;
     list<TaintSourceEntry>::iterator ptrEntry;
-    if (!PropTaint(id))
-    {
-      return;
-    }
+    
     if (!taintsrc.empty())
     {
-        GetLock(&lock,id+1);
-        //update in 2012-11-1
-         //info:check taint degree
+         GetLock(&lock,id+1);
+        
          unsigned int imema=taintsrc.size();
-        // unsigned int immb=(double)(iTNTBuffLength)*0.2;
-         if (iTNTEncryDegree==0)
-         {
-             SysLog<<"";
-         }
+        
          if (imema>iTNTEncryDegree)
          {
              if(TNT_mem_node.addr_start==0)
@@ -655,17 +648,18 @@ VOID SetMemTaintSource(ADDRINT addr,ADDRINT size,set<int> taintsrc,ADDRINT inst,
                 taintentry.srcOffsets=taintsrc;
                 //尾插法
                 //cerr<<"addr: "<<taintentry.memaddr<<"  offset: "<<*(taintsrc.begin())<<" threadid: "<<PIN_ThreadId()<<endl;
+                //global variable
                 memTaintSrcTable.insert(memTaintSrcTable.begin(),taintentry);           
             }
         }
-         ReleaseLock(&lock);
+        ReleaseLock(&lock);
          
         
     }
 
 }
 /************************************************************************/
-/* by richard
+/* by long
 打印污染指令*/
 /************************************************************************/
 VOID PrintTaintInstrunction(ADDRINT addr,set<int>& t)
@@ -731,16 +725,16 @@ set<int> copytaint(ADDRINT from, ADDRINT to, ADDRINT fromlen,  UINT32 from_step,
   set<int> result;
   for (unsigned int i = 0; i<fromlen && i<tolen;i++)
   {
-  t=GetMemTaintSource(from+i*from_step, from_step, 0, tid);
-  SetMemTaintSource(to+i*to_step, to_step,t,0,tid);
+    t=GetMemTaintSource(from+i*from_step, from_step, 0, tid);
+    SetMemTaintSource(to+i*to_step, to_step,t,0,tid);
     Setmem_taint(to+i*to_step, to_step,(!t.empty()), 0,tid);
-  result=Union(result,t);
+    result=Union(result,t);
   }
   return result;
 }
 VOID PIN_FAST_ANALYSIS_CALL HandleRepMov(ADDRINT iaddr, ADDRINT reg_ecx,ADDRINT memsrc, 
                        ADDRINT memsrcsz , ADDRINT memdst, ADDRINT memdstsz,
-                       THREADID id)
+                       THREADID id,string*disas)
 {
    set<int> t;
    if(GetRegisterTaint(REG_ECX,id,iaddr))
@@ -757,9 +751,20 @@ VOID PIN_FAST_ANALYSIS_CALL HandleRepMov(ADDRINT iaddr, ADDRINT reg_ecx,ADDRINT 
      PrintTaintInstrunction(iaddr,t);
    }
    t=copytaint(memsrc, memdst, memsrcsz, 1, memdstsz, 1, id);
-   if (!t.empty())
+   if(liu_debug_analysis)
    {
-     PrintTaintInstrunction(iaddr,t);
+    if(!t.empty())
+    {
+      TraceFile<<"HandleRepMov: "<<hex<<iaddr<<" "<<*disas<<" memdst: "<<memdst<<" tiantsize: "<<t.size()<<" ";
+      string result;
+      set<int>::iterator it;
+      for(it=t.begin();it!=t.end();it++)
+      {
+        result+=itoHex((*it))+" ";
+      }
+      
+      TraceFile<<result<<endl;
+    }
    }
 }
 inline void
@@ -772,16 +777,9 @@ void SetRegisterTaint(bool is_tainted, REG r, THREADID id, ADDRINT iaddr)
 
 
   //先排除一部分寄存器，如ESP,EIP,EFLAGS
-  if (!REG_is_dift(r)&&r!=REG_EFLAGS) return;
+  //if (!REG_is_dift(r)&&r!=REG_EFLAGS) return;
   //先打印污染或者漂白信息
-  if ( KnobDebug && PropTaint(id))
-  {
-    //打印污染信息
-    if (is_tainted)
-      TraceFile << "[TNT] "  << "PC " << hex << iaddr 
-      << " tainting reg " << REG_StringShort(r) << endl;
-    //打印漂白信息   
-  }
+  
 
   //如果是多媒体扩展寄存器或者是8位的通用寄存器，则先处理
   if (REG_is_xmm(r) || REG_is_mm(r) || REG_is_gr8(r)||r==REG_EFLAGS)
@@ -790,7 +788,7 @@ void SetRegisterTaint(bool is_tainted, REG r, THREADID id, ADDRINT iaddr)
     return;
   }
   //剩下的一定是8位或者16位的通用寄存器
-  assert (REG_is_gr(r) || REG_is_gr16(r));
+  //assert (REG_is_gr(r) || REG_is_gr16(r));
 
   //例如EAX被污染，那么AX，AH,AL，一定被污染，这里可能有误差（过度传播），如果EAX中只有最高字节被污染，那么AH,AL都没被污染，但这种可能性很小
   switch(r)
@@ -834,15 +832,17 @@ void SetRegisterTaint(bool is_tainted, REG r, THREADID id, ADDRINT iaddr)
   case REG_BP:
     __SetRegisterTaint(is_tainted,REG_BP, id);
     break;
-    /*
-    case REG_ESP:
-    __SetRegisterTaint(is_tainted,REG_ESP);
-    case REG_SP:
-    __SetRegisterTaint(is_tainted,REG_SP);
+    
+  case REG_ESP:
+    __SetRegisterTaint(false,REG_ESP,id);
+
+  case REG_SP:
+    __SetRegisterTaint(false,REG_SP,id);
     break;
-    */
+    
   default:
-    assert(0);
+    __SetRegisterTaint(is_tainted,r, id);
+    return;
   }
 }
 inline void 
@@ -854,7 +854,8 @@ __SetRegisterTaintSrc(set<int> taintsrc, REG r, THREADID id) {
 void SetRegisterTaintSrc(set<int> taintsrc, REG r, THREADID id, ADDRINT iaddr)
 {
   //先排除一部分寄存器，如ESP,EIP,EFLAGS
-  if (!REG_is_dift(r)&&r!=REG_EFLAGS) return;
+  set<int> empty;
+  //if (!REG_is_dift(r)&&r!=REG_EFLAGS) return;
 
   //如果是多媒体扩展寄存器或者是8位的通用寄存器，则先处理
   if (REG_is_xmm(r) || REG_is_mm(r) || REG_is_gr8(r)|| r==REG_EFLAGS)
@@ -863,7 +864,7 @@ void SetRegisterTaintSrc(set<int> taintsrc, REG r, THREADID id, ADDRINT iaddr)
     return;
   }
   //剩下的一定是32位或者16位的通用寄存器
-  assert (REG_is_gr(r) || REG_is_gr16(r));
+  //assert (REG_is_gr(r) || REG_is_gr16(r));
 
   //例如EAX被污染，那么AX，AH,AL，一定被污染，这里可能有误差（过度传播），如果EAX中只有最高字节被污染，那么AH,AL都没被污染，但这种可能性很小
   switch(r)
@@ -907,8 +908,16 @@ void SetRegisterTaintSrc(set<int> taintsrc, REG r, THREADID id, ADDRINT iaddr)
   case REG_BP:
     __SetRegisterTaintSrc(taintsrc,REG_BP, id);
     break;
+  case REG_ESP:
+    __SetRegisterTaintSrc(empty,REG_ESP, id);
+    
+  case REG_SP:
+    __SetRegisterTaintSrc(empty,REG_SP, id);
+    break;
   default:
-    assert(0);
+     __SetRegisterTaintSrc(taintsrc,r, id);
+    return;
+    
   }
 }
 VOID PIN_FAST_ANALYSIS_CALL RegisterUntaint(ADDRINT iaddr, UINT32 regid, THREADID id)
@@ -919,9 +928,9 @@ VOID PIN_FAST_ANALYSIS_CALL RegisterUntaint(ADDRINT iaddr, UINT32 regid, THREADI
     reg = static_cast<REG>(REG_GR_BASE + regid);
   else
     reg = static_cast<REG>(REG_AL + regid - NR_REG(REG_GR));
-  //modified by richard
+  //modified by long
   set<int> t;
-  SetRegisterTaintSrc(t,reg,id,iaddr);//将源污点源清空
+  SetRegisterTaintSrc(t,reg,id,iaddr);
   SetRegisterTaint(false, reg, id, iaddr);
 
 }
@@ -935,13 +944,26 @@ VOID PIN_FAST_ANALYSIS_CALL MemUntaint(ADDRINT iaddr, ADDRINT memaddr, ADDRINT m
 //iaddr:指令地址，memsrc：源地址，memsrcsz：源内存大小,memdst：目标地址,memdstsz：目标大小
 VOID PIN_FAST_ANALYSIS_CALL DoPropMemtoMem(ADDRINT iaddr, ADDRINT memsrc, 
                         ADDRINT memsrcsz , ADDRINT memdst, ADDRINT memdstsz,
-                        THREADID id)
+                        THREADID id,string*disas)
 {
   //count_profile(iaddr);
-  //modified by richhard
+  //modified by long
   set<int> t=copytaint(memsrc, memdst, memsrcsz, 1, memdstsz, 1, id);
-  if (!t.empty())
-  PrintTaintInstrunction(iaddr,t);
+  if(liu_debug_analysis)
+  {
+    if(!t.empty())
+    {
+      TraceFile<<"DoPropMemtoMem: "<<hex<<iaddr<<" "<<*disas<<" tiantsize: "<<t.size()<<" ";
+      string result;
+      set<int>::iterator it;
+      for(it=t.begin();it!=t.end();it++)
+      {
+        result+=itoHex((*it))+" ";
+      }
+      
+      TraceFile<<result<<endl;
+    }
+  }  
 }
 /************************************************************************/
 /* 基址内存寻址-》寄存器的污点传播                                      */
@@ -950,14 +972,14 @@ VOID PIN_FAST_ANALYSIS_CALL DoPropMemtoMem(ADDRINT iaddr, ADDRINT memsrc,
 reg_dstid:目标寄存器*/
 /************************************************************************/
 VOID PIN_FAST_ANALYSIS_CALL DoPropMemBaseIndextoReg(ADDRINT iaddr, ADDRINT memsrc, 
-                        ADDRINT memsz , UINT32 reg_baseid, UINT32 reg_indexid, UINT32 reg_dstid, THREADID id)
+                        ADDRINT memsz , UINT32 reg_baseid, UINT32 reg_indexid, UINT32 reg_dstid, THREADID id,string*disas)
 {
-  //count_profile(iaddr);
+  
   set<int> t;
   //源基址寄存器或者索引寄存器有一个被污染（尽管内存可能没有被污染），那么目标寄存器也被污染
   if (GetRegisterTaint(static_cast<REG>(reg_indexid), id, iaddr) ||GetRegisterTaint(static_cast<REG>(reg_baseid), id, iaddr) ) // index is tainted
   { 
-    //modified my richhard
+    //modified my long
     t=Union(GetRegisterTaintSrc(static_cast<REG>(reg_indexid), id, iaddr),GetRegisterTaintSrc(static_cast<REG>(reg_baseid),id,iaddr));   
     SetRegisterTaintSrc(t,static_cast<REG>(reg_dstid),id,iaddr);
     SetRegisterTaint(true, static_cast<REG>(reg_dstid), id, iaddr);
@@ -967,34 +989,57 @@ VOID PIN_FAST_ANALYSIS_CALL DoPropMemBaseIndextoReg(ADDRINT iaddr, ADDRINT memsr
   }
   else
   {
-  t=GetMemTaintSource(memsrc, memsz, iaddr, id);
-  SetRegisterTaintSrc(t,static_cast<REG>(reg_dstid), id, iaddr);
-    SetRegisterTaint((!t.empty()), static_cast<REG>(reg_dstid), id, iaddr);
-  //print taint ins
-  if(!t.empty())
-    PrintTaintInstrunction(iaddr,t);
-  //modified by richhard
+    t=GetMemTaintSource(memsrc, memsz, iaddr, id);
+    SetRegisterTaintSrc(t,static_cast<REG>(reg_dstid), id, iaddr);
+      SetRegisterTaint((!t.empty()), static_cast<REG>(reg_dstid), id, iaddr);
+  
   }
+  if(liu_debug_analysis)
+  {
+    if(!t.empty())
+    {
+      TraceFile<<"DoPropMemBaseIndextoReg: "<<hex<<iaddr<<" "<<*disas<<" tiantsize: "<<t.size()<<" ";
+      string result;
+      set<int>::iterator it;
+      for(it=t.begin();it!=t.end();it++)
+      {
+        result+=itoHex((*it))+" ";
+      }
+      
+      TraceFile<<result<<endl;
+    }
+  } 
 }
 //只有mov调用，寄存器宽度和内存宽度一定相同
 VOID PIN_FAST_ANALYSIS_CALL DoPropMemtoReg(ADDRINT iaddr, ADDRINT memsrc, 
-                        ADDRINT memsz , UINT32 reg_dstid, THREADID id)
+                        ADDRINT memsz , UINT32 reg_dstid, THREADID id,string*disas)
 {       
 
   
   //count_profile(iaddr);  
   set<int> t;
-  #if DEBUG_MOV
-  TraceFile<<"Prop Mem To Reg With PC: "<<iaddr<<" src addr: "<<memsrc<<" memsize: "<<memsz<<" whether taint: "<<Getmem_taint(memsrc, memsz, iaddr, id)<<endl;
-  #endif
-  // by richard 
+  
+  // by long 
   t=GetMemTaintSource(memsrc, memsz, iaddr, id);
   SetRegisterTaintSrc(t,static_cast<REG>(reg_dstid), id, iaddr);
   SetRegisterTaint((!t.empty()), static_cast<REG>(reg_dstid), id, iaddr);
- 
-  if(!t.empty())
-    //print taint ins
-    PrintTaintInstrunction(iaddr,t);
+  if(liu_debug_analysis)
+  {
+    if(!t.empty())
+    {
+      TraceFile<<"DoPropMemtoReg: "<<hex<<iaddr<<" "<<*disas<<" tiantsize: "<<t.size()<<" ";
+      string result;
+      set<int>::iterator it;
+      for(it=t.begin();it!=t.end();it++)
+      {
+        result+=itoHex((*it))+" ";
+      }
+      
+      TraceFile<<result<<endl;
+      TraceFile<<"    Prop Mem To Reg With PC: "<<iaddr<<" src addr: "<<memsrc<<" memsize: "<<memsz<<endl;
+    }
+  } 
+  
 
 }
 //返回mask中为1的个数
@@ -1916,14 +1961,11 @@ ADDRINT WriteBlock(THREADID threadid,ADDRINT addr,bool taken)
   tmp_branch.taken = taken;
   g_bbls.push_back(tmp_branch);
   
-  //cerr<<addr<<" jnz addr!!!!!!!!!!!!!!! "<<g_bbls.size()<<endl;
   if(g_bbls.size() > 1000)
   {
     
         fpaddrs.open(buf_file_addrs,ios::app);
         list<branch_st>::iterator iter;
-
-        //1208/////////////////////////////////////////////////\C9\FA\B3\C9assist.txt
         for(iter=g_bbls.begin();iter!=g_bbls.end();++iter)
         { 
             fpaddrs<<hex<<iter->addr<<" "<<iter->taken<<endl;
@@ -1932,7 +1974,7 @@ ADDRINT WriteBlock(THREADID threadid,ADDRINT addr,bool taken)
         fpaddrs.close();
         g_bbls.clear();
   }
-  //g_bbls.insert(addr);
+  
   ReleaseLock(&lock);
   return 1;
 }
@@ -1943,7 +1985,8 @@ VOID  CheckConditionalJMP(ADDRINT iaddr,THREADID tid,bool taken,string*disas)
   
   if(GetRegisterTaint(REG_EFLAGS, tid, iaddr))
   {
-    //1015 only taint jnz
+    //liu 47
+    //Write only tainted jump instruction address and jump result to file
     WriteBlock(tid,iaddr,taken);
     set<int> t= GetRegisterTaintSrc(REG_EFLAGS,tid,iaddr);
     int size1= t.size();
@@ -1957,7 +2000,7 @@ VOID  CheckConditionalJMP(ADDRINT iaddr,THREADID tid,bool taken,string*disas)
   return;
   
 }
-//对sub a,a；xor a,a形式的指令进行寄存器漂白
+//
 static bool UntaintXorSub(INS ins)
 {
   REG reg = REG_INVALID();
@@ -2206,7 +2249,7 @@ VOID InstructionProp(INS ins, VOID *v)
                     opndvals[valcount].reg = basereg;
                     opndvals[valcount].type.type = REGISTER;
                     opndvals[valcount].type.size = GetBitsOfReg(basereg)/8;
-
+                    //true if this operand generates an address, but the address does not access memory (e.g. load effective address instruction) 
                     if (  INS_OperandIsAddressGenerator(ins, i))
                         opndvals[valcount].taint = RD;
                     else
@@ -2314,6 +2357,7 @@ VOID InstructionProp(INS ins, VOID *v)
       }
       
     }
+<<<<<<< HEAD
     if(printins)
     {
       TempOps_t opndvals[MAX_VALUES_COUNT];
@@ -2429,6 +2473,34 @@ VOID InstructionProp(INS ins, VOID *v)
       
     }
     */
+=======
+    
+    bool logins=false;
+    if(logins)
+    {
+        // print operands of other instruction
+        if(   
+            //INS_Opcode(ins)==XED_ICLASS_TEST 
+              valcount>3
+          )
+        {
+          
+          TraceFile<< "here instructions: "<<INS_Disassemble(ins)<<endl
+          <<" count_reg_read: "<<count_reg_read<<" count_reg_write: "<<count_reg_write<<endl
+          <<" memRead: "<<memRead<<" memWrite: "<<memWrite<<endl
+          <<" valcount: "<<valcount<<" count: "<<INS_OperandCount(ins)
+          <<endl;
+          
+          for(ii=0; ii < valcount; ii++) 
+          {
+
+            
+            TraceFile<<" operation: "<<opndvals[ii].taint<<" reg: "<<REG_StringShort((LEVEL_BASE::REG)opndvals[ii].reg)<<" size: "<<opndvals[ii].type.size<<endl;
+          }
+          
+        }
+    }
+>>>>>>> debug
     
     
 
@@ -2964,61 +3036,36 @@ void TaintTracker::printMem()
 // addr. If offset is -1, new tainted bytes are assigned. Otherwise,
 // the (source,offset) tuple are compared for each byte to see if that
 // resource has been used before, and if so, the same taint number is given.
-FrameOption_t TaintTracker::introMemTaint(uint32_t addr, uint32_t length, const char *source, int64_t offset) {
+FrameOption_t TaintTracker::introMemTaint(uint32_t addr, uint32_t length, const char *source, int64_t offset) 
+{
 
   FrameOption_t fb;
   THREADID idd= PIN_ThreadId();
-  TAINT_Analysis_On=true;
+  
   //liu 911
   for(ADDRINT i=0;i<length;i++)
-    {
-      set<int> t;
-      t.clear();
-      t.insert(offset+i);
-      SetMemTaintSource(addr+i,1,t,0,idd);
-    }
+  {
+    set<int> t;
+    t.clear();
+    t.insert(offset+i);
+    SetMemTaintSource(addr+i,1,t,0,idd);
+  }
 
-    Setmem_taint(addr,length, true, 0,idd);
-    TAINT_Instrumentation_On = true;
-    cerr<<"again!!!!!!!!!!!!!!!!!!!"<<endl;
-    cerr<<length<<" "<<offset<<endl;
-    dump_taint_src();
+  Setmem_taint(addr,length, true, 0,idd);
+  TAINT_Instrumentation_On = true;
+  TAINT_Analysis_On=true;
+  
+  //cerr<<length<<" "<<offset<<endl;
+  dump_taint_src();
 
-  if ((*pf)(addr, length, source) && length > 0) {
+  if (length > 0) 
+  {
 
-    for (unsigned int i = 0; i < length; i++) {
-      uint32_t t = 0;
-      if (offset == -1 || reuse_taintids == false) {
-        t = taintnum++;
-      } else {
-        // Check if (source, offset+i) has a byte. If not, assign one.
-        resource_t r(source, offset+i);
-        if (taint_mappings.find(r) != taint_mappings.end()) {
-          t = taint_mappings[r];
-          //cerr << "found mapping from " << source << " to " << offset+i << " on taint num " << t << endl;
-        } else {
-          t = taintnum++;
-          taint_mappings[r] = t;
-		  //1208////////////////////////////////////////////////
-          g_TaintAsistBuff[ g_tsbufidx + 1] = offset+i;
-		  g_tsbufidx++;
-		  *(uint32_t *)g_TaintAsistBuff = g_tsbufidx;
-		  ////////////////////////
-          //cerr << "adding new mapping from " << source << " to " << offset+i << " on taint num " << t << endl;
-        }
-      }
-      /* Mark memory as tainted */
-      setTaint(memory, addr+i, t);
-      taint_intro* tfi = fb.f.mutable_taint_intro_frame()->mutable_taint_intro_list()->add_elem();
-      tfi->set_taint_id(t);
-      tfi->set_addr(addr+i);
-      uint8_t value;
-      assert (PIN_SafeCopy((void*) &value, (void*) (addr+i), 1) == 1);
-      tfi->set_value((void*) &value, 1);
-    }
     fb.b = true;
     return fb;
-  } else {
+  } 
+  else 
+  {
     fb.b = false;
     return fb;
   }
@@ -3028,8 +3075,6 @@ FrameOption_t TaintTracker::introMemTaint(uint32_t addr, uint32_t length, const 
 // addr. Also adds length to the offset of the resource.
 FrameOption_t TaintTracker::introMemTaintFromFd(uint32_t fd, uint32_t addr, uint32_t length) {
   assert(fds.find(fd) != fds.end());
-  //1208/////////////////////////////////////////////////////////
-  //////////////////////////////////////////
   std::set<taint_s>::iterator pos;
   FrameOption_t tfs;
   for (pos = taint_sources.begin(); pos != taint_sources.end();pos++) 
@@ -3037,22 +3082,22 @@ FrameOption_t TaintTracker::introMemTaintFromFd(uint32_t fd, uint32_t addr, uint
   	///first is file offset ,second is length
   	int lower = pos->first > fds[fd].offset ? pos->first:fds[fd].offset;
   	int upper = pos->first + pos->second < fds[fd].offset +length? pos->first + pos->second:fds[fd].offset +length;
+    //liu 47
+    //You can specify the taint threshold.
+    if(iTNTChksmDegree == 10)
+    {
+      iTNTChksmDegree = (pos->second)*0.5;
+      TraceFile << "iTNTChksmDegree: "<<iTNTChksmDegree<<endl;
+    }
   	if(upper >=lower)
   	{
-      //char log[]="taint intro\n";
-      //mylog(log);
-  		
-  		
+
   		tfs = introMemTaint(addr+ lower - fds[fd].offset, upper - lower,
   			fds[fd].name.c_str(), lower);
   		  
   	}
   }
 
-
-
-  /////////////////////////////////////////////
-  //FrameOption_t tfs = introMemTaint(addr, length, fds[fd].name.c_str(), fds[fd].offset);
   fds[fd].offset += length;
   return tfs;
 }
@@ -3174,168 +3219,37 @@ FrameOption_t TaintTracker::recvHelper(uint32_t fd, void *ptr, size_t len) {
 
 /******** Taint Introduction **********/
 
-//
-#ifdef _WIN32
-std::vector<frame> TaintTracker::taintArgs(char *cmdA, wchar_t *cmdW)
-{
-  std::vector<frame> frms;
-  FrameOption_t fo;
-  std::vector<frame> tfrms;
-  if (taint_args) {
-    size_t lenA = strlen(cmdA);
-    size_t lenW = wcslen(cmdW);
-    size_t bytesA = lenA*sizeof(char);
-    size_t bytesW = lenW*sizeof(wchar_t);
-    cerr << "Tainting multibyte command-line arguments: " << bytesA << " bytes @ " << (unsigned int)(cmdA) << endl;
-    
-    /* Taint multibyte command line */
-    fo = introMemTaint((uint32_t)cmdA, bytesA, "Tainted Arguments", -1);
-    if (fo.b) { frms.push_back(fo.f); }
-    cerr << "Tainting wide command-line arguments: " << bytesW << " bytes @ " << (unsigned int)(cmdW) << endl;
-    fo = introMemTaint((uint32_t)cmdW, bytesW, "Tainted Arguments", -1);
-    if (fo.b) { frms.push_back(fo.f); }
-  }
-  return frms;
-}
-#else
-std::vector<frame> TaintTracker::taintArgs(int argc, char **argv)
-{
-
-  std::vector<frame> fv;
-
-  if (taint_args) {
-    cerr << "Tainting command-line arguments" << endl;
-    for ( int i = 1 ; i < argc ; i++ ) {
-      cerr << "Tainting " << argv[i] << endl;
-      size_t len = strlen(argv[i]);
-      FrameOption_t fo = introMemTaint((uint32_t)argv[i], len, "Arguments", -1);
-      if (fo.b) { fv.push_back(fo.f); }
-    }
-  }
-
-  return fv;
-}
-#endif
-
-//
-#ifdef _WIN32
-std::vector<frame> TaintTracker::taintEnv(char *env, wchar_t *wenv)
-{
-  /* See MSDN docs here: http://msdn.microsoft.com/en-us/library/ms683187(VS.85).aspx 
-   * Basically, env is a pointer to
-   * var=val\x00
-   * var2=val2\x00
-   * ...
-   * \x00\x00
-   */
-  std::vector<frame> fv;
-  //  std::vector<frame> frms;
-
-  // /* Multibyte strings */
-  // for ( ; *env != '\x00'; env += (strlen(env) + 1 /* null */)) {
-  //   string var(env);
-  //   int equal = var.find('=');
-  //   var = var.substr(0, equal);
-  //   if (taint_env.find(var) != taint_env.end()) {
-  //     uint32_t len = strlen(env) - var.size();
-  //     uint32_t addr = (uint32_t)env+equal+1;
-  //     cerr << "Tainting environment variable: " << var << " @" << (int)addr << " " << len << " bytes" << endl;
-  //     for (uint32_t j = 0 ; j < len ; j++) {
-  // 	setTaint(memory, (addr+j), taintnum++);
-  //     }
-  //     TaintFrame frm;
-  //     frm.id = ENV_ID;
-  //     frm.addr = addr;
-  //     frm.length = len;
-  //     frms.push_back(frm);
-  //   }
-  // }
-
-  /* Wide strings */
-  if (wenv) {
-    for ( ; *wenv != '\x00'; wenv += (wcslen(wenv) + 1 /* null */)) {
-      string ns = *GetNarrowOfWide(wenv);
-      wstring wvar(wenv);
-      string var(ns);
-      int equal = var.find('=');
-      var = var.substr(0, equal);
-      
-      if (taint_env.find(var) != taint_env.end()) {
-        uint32_t numChars = wcslen(wenv) - var.size();
-	uint32_t numBytes = numChars * sizeof(wchar_t);
-        uint32_t addr = (uint32_t) (wenv+equal+1);
-        cerr << "Tainting environment variable: " << var << " @" << (int)addr << " " << numChars << " bytes" << endl;
-	FrameOption_t fo = introMemTaint(addr, numBytes, "Environment Variable", -1);
-	if (fo.b) { fv.push_back(fo.f); }
-      }
-    }
-  }
-
-  return fv;
-}
-#else /* unix */
-std::vector<frame> TaintTracker::taintEnv(char **env)
-{
-
-  std::vector<frame> fv;
-
-  for ( int i = 1 ; env[i] ; i++ ) {
-    string var(env[i]);
-    int equal = var.find('=');
-    var = var.substr(0,equal);
-    if (taint_env.find(var) != taint_env.end()) {
-      uint32_t len = strlen(env[i]) - var.size();
-      uint32_t addr = (uint32_t)env[i]+equal+1;
-      cerr << "Tainting environment variable: " << var << " @" << (int)addr << endl;
-      FrameOption_t fo = introMemTaint(addr, len, "environment variable", -1);
-      if (fo.b) { fv.push_back(fo.f); }
-    }
-  }
-  return std::vector<frame> ();
-}
-#endif
-
 /** This function is called right before a system call. */
 bool TaintTracker::taintPreSC(uint32_t callno, const uint64_t *args, /* out */ uint32_t &state)
 {
   state = __NR_nosyscall;
   bool reading_tainted = false;
   char filename[128];
-  switch (callno) {
+  switch (callno) 
+  {
       case __NR_open:
       {
           strncpy(filename, (char *)args[0],128); 
-          //cerr<<filename<<endl;
-  	       // Search for each tainted filename in filename
+          
         	string cppfilename(filename);
-          //cerr<<filename<<endl;
-          //mylog(filename);
-          //char log[100];
-          //sprintf(log,"before open fd=%s pid=%x tid=%x\n ",(char*)args[0],PIN_GetPid(),PIN_GetTid());
-          //mylog(log);
+          
         	for (std::set<string>::iterator i = taint_files.begin();
         	     i != taint_files.end();
-        	     i++) {
-        	     if (cppfilename.find(*i) != string::npos) {
-        	       state = __NR_open;
-                  //char log[100];
-                  //sprintf(log,"before open fd=%s pid=%x tid=%x\n ",(char*)args[0],PIN_GetPid(),PIN_GetTid());
-                  //cerr << log << endl;
-                  //mylog(log);
+        	     i++) 
+          {
+        	     if (cppfilename.find(*i) != string::npos) 
+               {
+        	       state = __NR_open;  
         	     }
         	}
           
-        	if (state == __NR_open) {
-        	  cerr << "Opening tainted file: " << cppfilename << endl;
-        	} else {
-        	  //cerr << "Not opening " << cppfilename << endl;
-        	}
+          break; 
       }
-              break;
+      
       case __NR_close:
         state = __NR_close;
         break;
-        // TODO: do we care about the offset?
+       
       case __NR_mmap:
       case __NR_mmap2:
       
@@ -3345,58 +3259,20 @@ bool TaintTracker::taintPreSC(uint32_t callno, const uint64_t *args, /* out */ u
         }
         break;
       case __NR_read: 
-        //char log[100];
-        //sprintf(log,"before read fd=%lld  pid=%x tid=%x\n ",args[0],PIN_GetPid(),PIN_GetTid());
-        //mylog(log);
-        //cerr<<log<<endl;
-        //cerr<<"before read "<<fds[args[0]].name <<endl;
-        
-        //cerr << log << endl;
-        
-        //if (fds.find(args[0]) != fds.end()) {
-
-        //if(args[0]==taintfd)
-        //char taint_fd_file[20];
-        //int suc ;
-        //int intaintfd;
-        //suc = read_file(taint_fd_file,"taint_file.txt");
-        //intaintfd = atoi(taint_fd_file);
-
-        //if((args[0] == intaintfd)&& (suc==1))
+       
         if (fds.find(args[0]) != fds.end()) 
         {
           state = __NR_read;
-          cerr << "find fd " << fds[args[0]].name <<  endl;
-          //cerr <<"before read "<<endl;
+          cerr << "read fd " << fds[args[0]].name <<  endl;
           reading_tainted = true;
         }
-        else
-        {
-          //cerr << args[0] << " not found" << endl;
-        }
-        break;
-      case __NR_socketcall:
-        // TODO: do we need to distinguish between sockets?
-        if (taint_net) {
-          state = __NR_socketcall;
-          if (args[0] == _A1_recv)
-            reading_tainted = true;
-        }
-        break;
-      case __NR_execve:
+        
         break;
       case __NR_lseek:
-        if (fds.find(args[0]) != fds.end()) {
-          state = __NR_lseek;
-        }
+        state = __NR_lseek;
         break;
-        
-
-    
-  default:
-    //    LOG(string("Unknown system call") + *(get_name(callno)) + string("\n"));
-    //    cerr << "Unknown system call " << callno << " " << *(get_name(callno)) << endl;
-    break;
+      default:
+        break;
   }
   return reading_tainted;
 }
@@ -3408,65 +3284,32 @@ FrameOption_t TaintTracker::taintPostSC(const uint32_t bytes,
                                      uint32_t &length,
 				     const uint32_t state)
 {
-  //for ( int i = 0 ; i < MAX_SYSCALL_ARGS ; i ++ )
-  //cout << hex << " " << args[i] ;
-  //cout << endl ;
-  //cerr<<"taintPostSC"<<endl;
+  
   uint32_t fd = -1;
   
-  switch (state) {
-
-    case __NR_socketcall:
-      switch (args[0]) {
-        case _A1_recv:
-              addr = ((uint32_t *)args[1])[1];
-              fd = ((uint32_t*) args[1])[0];
-              length = bytes;
-              cerr << "Tainting " 
-                   << bytes 
-                   << " bytes from socket " << fd << endl;
-              return introMemTaintFromFd(fd, addr, length);
-              //return true;
-      
-        case _A1_accept:
-              if (bytes != (uint32_t)UNIX_FAILURE) {
-                cerr << "Accepting an incoming connection" << endl;
-                fdInfo_t fdinfo(string("accept"), 0);
-                fds[bytes] = fdinfo;
-              }
-              break;
-        case _A1_socket:
-              if (bytes != (uint32_t)UNIX_FAILURE) {
-                cerr << "Opening a tainted socket " << bytes << endl;
-                fdInfo_t fdinfo(string("socket"), 0);
-                fds[bytes] = fdinfo;
-              }
-              break;
-        default:
-              break;
-        }
-        break;
+  switch (state) { 
   case __NR_open:
+        char filename[128];
         // "bytes" contains the file descriptor
-        if (bytes != (uint32_t)(UNIX_FAILURE)) { /* -1 == error */
+        if (bytes != (uint32_t)(UNIX_FAILURE)) 
+        { /* -1 == error */
           /* args[0] is filename */
-          char *filename = reinterpret_cast< char *> (args[0]);
-          fdInfo_t fdinfo(string("file ") + string(filename), 0);
-          fds[bytes] = fdinfo;
-          //cerr<<"open taint file "<<filename<<endl;
-          //char taint_fd_file[10];
-          //sprintf(taint_fd_file,"%d ",bytes);
-          //write_file(taint_fd_file,"taint_file.txt");
+          strncpy(filename, (char *)args[0],128); 
           
-          //taintfd = bytes;
+          string cppfilename(filename);
           
-          //char log[100];
-          //sprintf(log,"after open fd=%d %s pid=%x tid=%x\n ",bytes,openfilename,PIN_GetPid(),PIN_GetTid());
-          //mylog(log);
-          //cerr << log << endl;
-          
-          
-          
+          for (std::set<string>::iterator i = taint_files.begin();
+               i != taint_files.end();
+               i++) 
+          {
+               if (cppfilename.find(*i) != string::npos) 
+               {
+                 cerr << "Opening tainted file: " << cppfilename << endl;
+                 char *filename = reinterpret_cast< char *> (args[0]);
+                 fdInfo_t fdinfo(string("file ") + string(filename), 0);
+                 fds[bytes] = fdinfo;  
+               }
+          }  
         }
         break;
   case __NR_close:
@@ -3477,23 +3320,27 @@ FrameOption_t TaintTracker::taintPostSC(const uint32_t bytes,
         break;
   case __NR_mmap:
   case __NR_mmap2:
-      
-      
         addr = bytes;
         fd = args[4];
         length = args[1];
         //uint32_t offset = args[6];
-        if ((int)addr != -1) {
-          off_t offset;
-          assert (PIN_SafeCopy(&offset, (void*) args[5], sizeof(off_t)) == sizeof(off_t));
-          cout << "Tainting " 
-               << length 
-               << " bytes from mmap of fd "
-               << fd
-               << " at offset "
-               << offset
-               << endl;
-          //return introMemTaint(addr, length, fds[fd].name.c_str(), (int64_t)offset);
+        if ((int)addr != -1) 
+        {
+          if (fds.find(fd) != fds.end()) 
+          {
+            THREADID idd= PIN_ThreadId();
+            off_t offset;
+            assert (PIN_SafeCopy(&offset, (void*) args[5], sizeof(off_t)) == sizeof(off_t));
+            cout <<"threadid: "<<idd
+                 << " Tainting " 
+                 << length 
+                 << " bytes from mmap of fd "
+                 << fd
+                 << " at offset "
+                 << offset
+                 << endl;
+            return introMemTaint(addr, length, fds[fd].name.c_str(), (int64_t)offset);
+          }
         }
         break;
       
@@ -3503,24 +3350,32 @@ FrameOption_t TaintTracker::taintPostSC(const uint32_t bytes,
         fd = args[0];
         addr = args[1];
         length = bytes;
-        if ((int)length != -1) {
-
-          cout << "Tainting " 
-               << length 
-               << " bytes from read at " << addr << ", fd=" << args[0]
-               << endl;
-          
-          //return introMemTaintFromFd(fd, addr, length);
+        if ((int)length != -1) 
+        {
+          if (fds.find(fd) != fds.end()) 
+          {
+            THREADID idd= PIN_ThreadId();
+            cout <<"threadid: "<<idd<< " Tainting " 
+                 << length 
+                 << " bytes from read at " << addr << ", fd=" << args[0]
+                 << endl;
+            
+            return introMemTaintFromFd(fd, addr, length);
+          }
         }
         break;
       }
   case __NR_lseek:
-        if (bytes != UNIX_FAILURE) {
-          cerr << "Changing offset for fd " << args[0] << " to " << bytes << endl;
-          fds[args[0]].offset = bytes;
-        } else {
-          cerr << "lseek() failure!" << endl;
-        }
+        fd = args[0];
+
+        if (bytes != -1) 
+        {
+          if (fds.find(fd) != fds.end()) 
+          {
+            cerr << "Changing offset for fd " << args[0] << " to " << bytes << endl;
+            fds[args[0]].offset = bytes;
+          }
+        } 
         break;
 
 
