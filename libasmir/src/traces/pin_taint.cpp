@@ -1961,14 +1961,11 @@ ADDRINT WriteBlock(THREADID threadid,ADDRINT addr,bool taken)
   tmp_branch.taken = taken;
   g_bbls.push_back(tmp_branch);
   
-  //cerr<<addr<<" jnz addr!!!!!!!!!!!!!!! "<<g_bbls.size()<<endl;
   if(g_bbls.size() > 1000)
   {
     
         fpaddrs.open(buf_file_addrs,ios::app);
         list<branch_st>::iterator iter;
-
-        //1208/////////////////////////////////////////////////\C9\FA\B3\C9assist.txt
         for(iter=g_bbls.begin();iter!=g_bbls.end();++iter)
         { 
             fpaddrs<<hex<<iter->addr<<" "<<iter->taken<<endl;
@@ -1977,7 +1974,7 @@ ADDRINT WriteBlock(THREADID threadid,ADDRINT addr,bool taken)
         fpaddrs.close();
         g_bbls.clear();
   }
-  //g_bbls.insert(addr);
+  
   ReleaseLock(&lock);
   return 1;
 }
@@ -1988,7 +1985,8 @@ VOID  CheckConditionalJMP(ADDRINT iaddr,THREADID tid,bool taken,string*disas)
   
   if(GetRegisterTaint(REG_EFLAGS, tid, iaddr))
   {
-    //1015 only taint jnz
+    //liu 47
+    //Write only tainted jump instruction address and jump result to file
     WriteBlock(tid,iaddr,taken);
     set<int> t= GetRegisterTaintSrc(REG_EFLAGS,tid,iaddr);
     int size1= t.size();
@@ -2002,7 +2000,7 @@ VOID  CheckConditionalJMP(ADDRINT iaddr,THREADID tid,bool taken,string*disas)
   return;
   
 }
-//对sub a,a；xor a,a形式的指令进行寄存器漂白
+//
 static bool UntaintXorSub(INS ins)
 {
   REG reg = REG_INVALID();
@@ -2963,6 +2961,8 @@ FrameOption_t TaintTracker::introMemTaintFromFd(uint32_t fd, uint32_t addr, uint
   	///first is file offset ,second is length
   	int lower = pos->first > fds[fd].offset ? pos->first:fds[fd].offset;
   	int upper = pos->first + pos->second < fds[fd].offset +length? pos->first + pos->second:fds[fd].offset +length;
+    //liu 47
+    //You can specify the taint threshold.
     if(iTNTChksmDegree == 10)
     {
       iTNTChksmDegree = (pos->second)*0.5;
