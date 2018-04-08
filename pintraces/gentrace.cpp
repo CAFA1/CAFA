@@ -2252,26 +2252,16 @@ VOID Cleanup()
     {
         cleanup_flag=1;
         //g_twnew->finish();
-        //liu 11 9
-        //printf("%s\n%s\n",buf_file_addrs,buf_file_assist);
-
+        //liu 47
+        //Finally, write the jump instruction address and jump result to the file
         fpaddrs.open(buf_file_addrs,ios::app);
-
         list<branch_st>::iterator iter;
-
-        //1208/////////////////////////////////////////////////\C9\FA\B3\C9assist.txt
         for(iter=g_bbls.begin();iter!=g_bbls.end();++iter)
         { 
             fpaddrs<<hex<<iter->addr<<" "<<iter->taken<<endl;
-        }
-        
+        }       
         fpaddrs.close();
-        //liu 11 9
-    	//stringstream ss;
-    	//ss << KnobOut.Value()<<"-"<<"assist.txt";
-    	//FILE *fp = fopen(buf_file_assist, "wb");
-    	//fwrite(g_TaintAsistBuff, 4, g_tsbufidx + 1, fp);
-    	//fclose(fp);
+
         cerr << "cleanup"<<endl;
         std::cerr << " process: " << PIN_GetPid() <<" "<< g_threadname << std::endl;
         
@@ -2288,18 +2278,7 @@ INT32 Usage()
     cerr << endl << KNOB_BASE::StringKnobSummary() << endl;
     return -1;
 }
-/*
-int mylog(char * log)
-{
-    int to_fd;
-    if ((to_fd = open("log.txt", O_WRONLY | O_CREAT | O_APPEND , S_IRUSR | S_IWUSR)) == -1) {  
-        fprintf(stderr, "Open  Error\n");  
-        exit(1);  
-    }
-    write(to_fd, log, strlen(log));
-    close(to_fd); 
-    return 1;
-}*/
+
 
 
 int main(int argc, char *argv[])
@@ -2354,12 +2333,11 @@ int main(int argc, char *argv[])
 	iTNTChksmDegree = KnobChksmDegree.Value();      
 	for (uint32_t j = 0; j <NumOffsetsParams; j++) 
 	{
-	//if (TaintedOffsets.Value(2*j) != 0 && TaintedOffsets.Value(2*j+1) != 0)
-	//{
+	
 	    tracker->trackOffset(TaintedOffsets.Value(2*j),TaintedOffsets.Value(2*j+1));
 	
 	}
-	///////////////
+	
 
     /* Get a key for thread info */
     tl_key = PIN_CreateThreadDataKey(NULL);
@@ -2384,33 +2362,15 @@ int main(int argc, char *argv[])
     PIN_AddThreadStartFunction(ThreadStart, 0);
     PIN_AddThreadFiniFunction((THREAD_FINI_CALLBACK)ThreadEnd, 0);
    
-    //PIN_AddContextChangeFunction(ExceptionHandler, 0);
-   
-    /*
-    FPOINT_AFTER_IN_PARENT   Call-back in parent, immediately after fork.  
-    FPOINT_AFTER_IN_CHILD    Call-back in child, immediately after fork.
-    */
-    //PIN_AddForkFunction(FPOINT_AFTER_IN_CHILD, FollowChild, 0);
-    //PIN_AddForkFunction(FPOINT_AFTER_IN_PARENT, FollowParent, 0);
-
-    //PIN_AddFollowChildProcessFunction(FollowExec, 0);
-   
     PIN_AddSyscallEntryFunction(SyscallEntry, 0);
     PIN_AddSyscallExitFunction(SyscallExit, 0);
     //liu 911
-    //INS_AddInstrumentFunction(InstructionProp, 0); //
-    //liu 1010 
     INS_AddInstrumentFunction(InstructionProp, 0); //taint propagation
    
     PIN_AddFiniFunction(Fini, 0);
     //1208/////////////////////////////////////////////////
     //liu 11 9
 	ss << g_threadname<<KnobOut.Value() << "-" << "trace.bpt";
-    //ss << PIN_GetPid() << "-" << KnobOut.Value();
-    //liu 925
-   
-    //g_twnew = new TraceContainerWriter(ss.str().c_str(), bfd_arch_i386, bfd_mach_i386_i386, default_frames_per_toc_entry, false);
-
     g_bufidx = 0;
     g_kfcount = 0;
 	//1208/////////////////////////////////
