@@ -33,6 +33,7 @@ python schedule_identify.py strategy taint_start(CksumLib) taint_length(CkmsumFu
 ```
 python schedule_identify.py CRC32-S libz.so crc32 libpng /usr/local/bin/magick identify ./sample/png/good.png ./sample/png/bad.png    
 python schedule_identify.py Taint-S 8 0x16 libpng /usr/local/bin/magick identify ./sample/png/good.png ./sample/png/bad.png
+python schedule_identify.py Taint-S 0x1d 4 libpng /usr/local/bin/magick identify ./sample/png/good.png ./sample/png/bad.png
 ```
 2. optipng  
 ```

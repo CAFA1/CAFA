@@ -76,7 +76,7 @@ PIN_LOCK lock;
 PIN_LOCK lock1;
 bool TAINT_Analysis_On = false;
 bool liu_debug = false;
-bool liu_debug_analysis = true;
+bool liu_debug_analysis = false;
 char mem_taint[TAINT_TABLE_SIZE+1];
 #define RECORD_REP_COUNT 1
 #define REMOVE_MEM_ADDRESSING 0

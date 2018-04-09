@@ -4,6 +4,7 @@ import binascii
 import struct
 import shutil
 import sys
+import datetime
 
 def run_cmd_master(lib,func,coverage,elfpath,filepath,ext_command):
      
@@ -271,6 +272,7 @@ if __name__ == "__main__":
     
     #python schedule_identify.py CRC32-S libz.so crc32 libpng /usr/local/bin/magick identify ./sample/png/good.png ./sample/png/bad.png
     #python schedule_identify.py Taint-S 8 0x16 libpng /usr/local/bin/magick identify ./sample/png/good.png ./sample/png/bad.png
+    
     print '''
     python schedule_identify.py strategy taint_start(CksumLib) taint_length(CkmsumFunc) module_name elf_path ext_command good_sample bad_sample
     stategy: CRC32-S strategy or Taint-S strategy
@@ -297,6 +299,8 @@ if __name__ == "__main__":
         '''
     else:
         main(sys.argv)
+        
+        
 
 
 
