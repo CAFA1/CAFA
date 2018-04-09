@@ -6,17 +6,17 @@ import shutil
 import sys
 import datetime
 
-def run_cmd_master(lib,func,coverage,elfpath,filepath,ext_command):
+def run_cmd_master(threshold,lib,func,coverage,elfpath,filepath,ext_command):
      
     filename = filepath.split("/")[-1]
-    pin_cmd = "/home/bap/workspace/bap-0.7/pin/pin -t /home/bap/workspace/bap-0.7/pintraces/obj-ia32/gentrace.so  "+"-lib "+lib+" -func "+func+"  -o 1-1 -log-limit 10000 -ins-limit 1000000 -time-limit 35  -c "+coverage+" -taint-files "+filename+" --  "+elfpath+" "+ext_command+" "+filepath
+    pin_cmd = "/home/bap/workspace/bap-0.7/pin/pin -t /home/bap/workspace/bap-0.7/pintraces/obj-ia32/gentrace.so  "+"-lib "+lib+" -func "+func+" -check "+str(threshold)+"  -o 1-1 -log-limit 10000 -ins-limit 1000000 -time-limit 35  -c "+coverage+" -taint-files "+filename+" --  "+elfpath+" "+ext_command+" "+filepath
     print "[*] Just about to run ", pin_cmd  #-skip-taints 2
     os.system(pin_cmd)
 
-def run_cmd(offsets1,offsets2,coverage,elfpath,filepath,ext_command):
+def run_cmd(threshold,offsets1,offsets2,coverage,elfpath,filepath,ext_command):
      
     filename = filepath.split("/")[-1]
-    pin_cmd = "/home/bap/workspace/bap-0.7/pin/pin -t /home/bap/workspace/bap-0.7/pintraces/obj-ia32/gentrace.so -taint-offsets "+offsets1+" -taint-offsets "+offsets2+"  -o 1-1 -log-limit 10000 -ins-limit 1000000 -time-limit 35  -c "+coverage+" -taint-files "+filename+" --  "+elfpath+" "+ext_command+" "+filepath
+    pin_cmd = "/home/bap/workspace/bap-0.7/pin/pin -t /home/bap/workspace/bap-0.7/pintraces/obj-ia32/gentrace.so -taint-offsets "+offsets1+" -taint-offsets "+offsets2+" -check "+str(threshold)+"  -o 1-1 -log-limit 10000 -ins-limit 1000000 -time-limit 35  -c "+coverage+" -taint-files "+filename+" --  "+elfpath+" "+ext_command+" "+filepath
     print "[*] Just about to run ", pin_cmd  #-skip-taints 2
     os.system(pin_cmd)
     
@@ -59,14 +59,14 @@ def cleandir():
     os.remove("1-1-addrs.txt")
 def find_all_next(arr,item):
     return [arr[i+1] for i,a in enumerate(arr) if a==item]
-def compare_run_master(lib,func,coverage,elfpath,ext_command,good_sample,bad_sample):
+def compare_run_master(threshold,lib,func,coverage,elfpath,ext_command,good_sample,bad_sample):
     #os.system("rm 1.txt")
     #run_cmd_master(lib,func,coverage,elfpath,filepath,ext_command)
-    run_cmd_master(lib,func,coverage,elfpath,good_sample,ext_command)
+    run_cmd_master(threshold,lib,func,coverage,elfpath,good_sample,ext_command)
     os.system("grep 'taintins' 1-1-0logs.txt|wc -l > taintins.txt")
     os.system("cp 1-1-addrs.txt good_1.txt")
     #os.system("rm 1.txt")
-    run_cmd_master(lib,func,coverage,elfpath,bad_sample,ext_command)
+    run_cmd_master(threshold,lib,func,coverage,elfpath,bad_sample,ext_command)
     os.system("grep 'taintins' 1-1-0logs.txt|wc -l >> taintins.txt")
     os.system("cp 1-1-addrs.txt bad_2.txt")
     os.system("diff good_1.txt bad_2.txt > diff.txt")
@@ -145,14 +145,14 @@ def compare_run_master(lib,func,coverage,elfpath,ext_command,good_sample,bad_sam
     for tmp in result_relative:
         print hex(tmp-lowaddr)
     return #result_jz
-def compare_run(offsets1,offsets2,coverage,elfpath,ext_command,good_sample,bad_sample):
+def compare_run(threshold,offsets1,offsets2,coverage,elfpath,ext_command,good_sample,bad_sample):
     os.system("rm 1.txt")
-    run_cmd(offsets1,offsets2,coverage,elfpath,good_sample,ext_command)
+    run_cmd(threshold,offsets1,offsets2,coverage,elfpath,good_sample,ext_command)
     os.system("grep 'taintins' 1-1-0logs.txt|wc -l > taintins.txt")
     
     os.system("cp 1-1-addrs.txt good_1.txt")
     os.system("rm 1.txt")
-    run_cmd(offsets1,offsets2,coverage,elfpath,bad_sample,ext_command)
+    run_cmd(threshold,offsets1,offsets2,coverage,elfpath,bad_sample,ext_command)
     os.system("grep 'taintins' 1-1-0logs.txt|wc -l >> taintins.txt")
     
     
@@ -245,12 +245,12 @@ def compare_run(offsets1,offsets2,coverage,elfpath,ext_command,good_sample,bad_s
     return #result_jz
 def main(argv=sys.argv):
     strategy = argv[1]
-    
-    module_name = argv[4]
-    elf_path = argv[5]
-    ext_command = argv[6]
-    good_sample = argv[7]
-    bad_sample = argv[8]
+    threshold = argv[4]
+    module_name = argv[5]
+    elf_path = argv[6]
+    ext_command = argv[7]
+    good_sample = argv[8]
+    bad_sample = argv[9]
     # for gz test 
     # change based on your own directory
     os.system("rm ~/workspace/bap-0.7/pintraces/sample/gz/good.txt")
@@ -259,12 +259,12 @@ def main(argv=sys.argv):
     if(strategy=='CRC32-S'):
         CksumLib = argv[2]
         CkmsumFunc = argv[3]
-        compare_run_master(CksumLib,CkmsumFunc,module_name,elf_path,ext_command,good_sample,bad_sample)
+        compare_run_master(threshold,CksumLib,CkmsumFunc,module_name,elf_path,ext_command,good_sample,bad_sample)
         
     elif(strategy=='Taint-S'):
         taint_start = argv[2]
         taint_length = argv[3]
-        compare_run(taint_start,taint_length,module_name,elf_path,ext_command,good_sample,bad_sample)
+        compare_run(threshold,taint_start,taint_length,module_name,elf_path,ext_command,good_sample,bad_sample)
     
     
 
@@ -274,10 +274,13 @@ if __name__ == "__main__":
     #python schedule_identify.py Taint-S 8 0x16 libpng /usr/local/bin/magick identify ./sample/png/good.png ./sample/png/bad.png
     
     print '''
-    python schedule_identify.py strategy taint_start(CksumLib) taint_length(CkmsumFunc) module_name elf_path ext_command good_sample bad_sample
+    python schedule_identify.py strategy taint_start(CksumLib) taint_length(CkmsumFunc) threshold module_name elf_path ext_command good_sample bad_sample
     stategy: CRC32-S strategy or Taint-S strategy
     taint_start: the starting offset of the taint source.
     taint_length: the length of the taint source.
+    CksumLib: the library implementing the checksum algorithm.
+    CksumFunc: the function implementing the checksum algorithm.
+    threshold: the threshold of the taint labels.
     module_name: the name of the module where the checksum check is located.
     elf_path: the path of the test program.
     ext_command: the options of the test program.
@@ -285,12 +288,15 @@ if __name__ == "__main__":
     bad_sample: the path of the malformed sample.
     '''
     print len(sys.argv)
-    if(len(sys.argv)!=9):
+    if(len(sys.argv)!=10):
         print '''
-        python schedule_identify.py strategy taint_start(CksumLib) taint_length(CkmsumFunc) module_name elf_path ext_command good_sample bad_sample
+        python schedule_identify.py strategy taint_start(CksumLib) taint_length(CkmsumFunc) threshold module_name elf_path ext_command good_sample bad_sample
         stategy: CRC32-S strategy or Taint-S strategy
         taint_start: the starting offset of the taint source.
         taint_length: the length of the taint source.
+        CksumLib: the library implementing the checksum algorithm.
+        CksumFunc: the function implementing the checksum algorithm.
+        threshold: the threshold of the taint labels.
         module_name: the name of the module where the checksum check is located.
         elf_path: the path of the test program.
         ext_command: the options of the test program.

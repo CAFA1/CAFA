@@ -1991,7 +1991,7 @@ VOID  CheckConditionalJMP(ADDRINT iaddr,THREADID tid,bool taken,string*disas)
     set<int> t= GetRegisterTaintSrc(REG_EFLAGS,tid,iaddr);
     int size1= t.size();
     TraceFile<<"CheckConditionalJMP: "<<iaddr<<" "<<*disas<<endl;
-    if (size1>iTNTChksmDegree)
+    if (size1>=iTNTChksmDegree)
     {
       cout<< "[HIGH-TNT_JMP] " << "PC " << hex <<iaddr <<endl;
       SysLog << "[HIGH-TNT_JMP] " << "PC " << hex <<iaddr <<endl;
@@ -2963,7 +2963,8 @@ FrameOption_t TaintTracker::introMemTaintFromFd(uint32_t fd, uint32_t addr, uint
     int upper = pos->first + pos->second < fds[fd].offset +length? pos->first + pos->second:fds[fd].offset +length;
     //liu 47
     //You can specify the taint threshold.
-    if(iTNTChksmDegree == 10)
+    //TraceFile << "iTNTChksmDegree: "<<iTNTChksmDegree<<endl;
+    if(iTNTChksmDegree == 0)
     {
       iTNTChksmDegree = (pos->second)*0.5;
       TraceFile << "iTNTChksmDegree: "<<iTNTChksmDegree<<endl;

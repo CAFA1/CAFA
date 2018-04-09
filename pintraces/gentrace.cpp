@@ -188,7 +188,7 @@ KNOB<uint64_t> KnobLogLimit(KNOB_MODE_WRITEONCE, "pintool",
                             "Number of instructions to limit logging to.");
 //liu 925
 KNOB<uint64_t> KnobChksmDegree(KNOB_MODE_WRITEONCE, "pintool",
-                            "check", "10",
+                            "check", "0",
                             "Number of checksum reference.");
 //1208//////////////////////////////////
 KNOB<uint64_t> KnobInsLimit(KNOB_MODE_WRITEONCE, "pintool",
@@ -2330,6 +2330,7 @@ int main(int argc, char *argv[])
     
     uint32_t NumOffsetsParams;
     NumOffsetsParams =  TaintedOffsets.NumberOfValues()>>1;
+
     iTNTChksmDegree = KnobChksmDegree.Value();      
     for (uint32_t j = 0; j <NumOffsetsParams; j++) 
     {
