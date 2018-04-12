@@ -14,7 +14,8 @@ make
 echo core >/proc/sys/kernel/core_pattern    
 echo 0 >/proc/sys/kernel/randomize_va_space    
 Install the test software and afl-fuzz.  
-Set  AFL_PATH env to the root directory of afl-fuzz.      
+Set  AFL_PATH env to the root directory of afl-fuzz.  
+install capstone and the python binding
   
 
 # Commands to identify checksum points
@@ -97,6 +98,22 @@ python schedule_identify.py Taint-S 148 8 0 tar ./sample/tar/origin/tar -tf ./sa
     python schedule_identify.py Taint-S 0x4e 16 0 tcpdump ./sample/tcp/origin/tcpdump " -v -r  " ./sample/igmp/good_igmp.pcap ./sample/igmp/bad_igmp.pcap 
     python schedule_identify.py Taint-S 0x50 2 0 tcpdump ./sample/tcp/origin/tcpdump " -v -r  " ./sample/igmp/good_igmp.pcap ./sample/igmp/bad_igmp.pcap 
     ``` 
+# Commands to patch at the checksum point  
+'''
+python patch_checksum.py file_name checksum_point  
+
+python patch_checksum.py patch_sample/libpng/libpng12.so.0.46.0 0x7972    
+python patch_checksum.py patch_sample/pngcheck/pngcheck 0x11df6    
+python patch_checksum.py patch_sample/gzip/gzip 0x978e  
+python patch_checksum.py patch_sample/unzip/unzip 0x70d6
+python patch_checksum.py patch_sample/tar/tar 0x16eae
+python patch_checksum.py patch_sample/rar/rar 0xe728 
+python patch_checksum.py patch_sample/tcpdump/tcpdump 0x73115
+python patch_checksum.py patch_sample/tcpdump/tcpdump.patch 0x6e68b
+
+
+
+'''
 
 # AFL Fuzz ImageMagick command
 1. Before patching  
