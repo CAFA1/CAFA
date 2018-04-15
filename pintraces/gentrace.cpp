@@ -133,6 +133,7 @@ uint64_t g_Execlimit;
 time_t start_time ;
 time_t g_time;
 int cleanup_flag=0;
+bool output_module=false;
 //liu 1012
 bool crc32_Instrumentation_On = false;
 
@@ -1880,6 +1881,10 @@ VOID ModLoad(IMG img, VOID *v)
     const string &name = IMG_Name(img);
     
     //if(strstr(name.c_str(),"libz.so") != NULL)
+    if(output_module)
+    {
+        cout<<name<<" "<<hex<<IMG_LowAddress(img)<<"--"<<IMG_HighAddress(img)<<endl;
+    }
     if(KnobCheckLib.Value().length()!=0)
     {
         if(strstr(name.c_str(),KnobCheckLib.Value().c_str()) != NULL)

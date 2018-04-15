@@ -1,0 +1,1 @@
+cp patch_sample/libpng/libpng12.so.0.46.0  /usr/local/lib/libpng12.so.0.46.0 

@@ -32,22 +32,45 @@ python schedule_identify.py strategy taint_start(CksumLib) taint_length(CkmsumFu
 ```
 1. ImageMagick   
 ```
+1. Identify the crc32 checksum point:
 python schedule_identify.py CRC32-S libz.so crc32 0 libpng /usr/local/bin/magick identify ./sample/png/good.png ./sample/png/bad.png    
 python schedule_identify.py Taint-S 8 0x16 0 libpng /usr/local/bin/magick identify ./sample/png/good.png ./sample/png/bad.png
 python schedule_identify.py Taint-S 0x1d 4 0 libpng /usr/local/bin/magick identify ./sample/png/good.png ./sample/png/bad.png
+
+2. Identify the crc32 checksum point:
+python schedule_convert.py Taint-S 0x1aef 4 0 libpng /usr/local/bin/magick convert ./sample/adobe/good.png ./sample/adobe/bad_crc.png 
+
+3. Identify the Adler32 checksum point:
+python schedule_convert.py Taint-S 0x1aeb 4 0 libz.so /usr/local/bin/magick convert  ./sample/adobe/good.png ./sample/adobe/bad_adler.png 
+
 ```
 2. optipng  
 ```
+1. Identify the crc32 checksum point:
 python schedule_identify.py CRC32-S libz.so crc32 0 libpng ./sample/png/optipng/optipng " " ./sample/png/bak/good.png ./sample/png/bak/bad.png
 python schedule_identify.py Taint-S 8 0x16 0 libpng ./sample/png/optipng/optipng " " ./sample/png/bak/good.png ./sample/png/bak/bad.png
 python schedule_identify.py Taint-S 0x1d 4 0 libpng ./sample/png/optipng/optipng " " ./sample/png/bak/good.png ./sample/png/bak/bad.png
 
+2. Identify the crc32 checksum point:
+python schedule_identify.py Taint-S 0x1aef 4 0 libpng ./sample/png/optipng/optipng " " ./sample/adobe/good.png ./sample/adobe/bad_crc.png 
+
+3. Identify the Adler32 checksum point:
+python schedule_identify.py Taint-S 0x1aeb 4 0 libz.so ./sample/png/optipng/optipng " " ./sample/adobe/good.png ./sample/adobe/bad_adler.png 
+
 ```
 3. pngcheck   
 ```
+1. Identify the crc32 checksum point:
 python schedule_identify.py CRC32-S libz.so crc32 0 pngcheck ./sample/png/origin_pngcheck/pngcheck " " ./sample/png/good.png ./sample/png/bad.png  
 python schedule_identify.py Taint-S 8 0x16 0 pngcheck ./sample/png/origin_pngcheck/pngcheck " " ./sample/png/good.png ./sample/png/bad.png 
-python schedule_identify.py Taint-S 0x1d 4 0 pngcheck ./sample/png/origin_pngcheck/pngcheck " " ./sample/png/good.png ./sample/png/bad.png    
+python schedule_identify.py Taint-S 0x1d 4 0 pngcheck ./sample/png/origin_pngcheck/pngcheck " " ./sample/png/good.png ./sample/png/bad.png 
+
+2. Identify the crc32 checksum point:
+python schedule_identify.py Taint-S 0x1aef 4 0 pngcheck ./sample/png/origin_pngcheck/pngcheck " " ./sample/adobe/good.png ./sample/adobe/bad_crc.png 
+
+3. Identify the Adler32 checksum point:
+python schedule_identify.py Taint-S 0x1aeb 4 0 libz.so ./sample/png/optipng/optipng " " ./sample/adobe/good.png ./sample/adobe/bad_crc_adler.png 
+
 ```
 
 4. gz  
@@ -102,16 +125,26 @@ python schedule_identify.py Taint-S 148 8 0 tar ./sample/tar/origin/tar -tf ./sa
 '''
 python patch_checksum.py file_name checksum_point  
 
-python patch_checksum.py patch_sample/libpng/libpng12.so.0.46.0 0x7972    
+python patch_checksum.py patch_sample/libz/libz.so.1.2.3.4 0x922e
+python patch_checksum.py patch_sample/libpng/libpng12.so.0.46.0 0x7972  
+   
 python patch_checksum.py patch_sample/pngcheck/pngcheck 0x11df6    
 python patch_checksum.py patch_sample/gzip/gzip 0x978e  
 python patch_checksum.py patch_sample/unzip/unzip 0x70d6
 python patch_checksum.py patch_sample/tar/tar 0x16eae
 python patch_checksum.py patch_sample/rar/rar 0xe728 
-python patch_checksum.py patch_sample/tcpdump/tcpdump 0x73115
+
+'''
+You can also patch the same program multiple times.
+'''
+patching at the udp checksum point:
+python patch_checksum.py patch_sample/tcpdump/tcpdump 0x73115  
+patching at the tcp checksum point:
 python patch_checksum.py patch_sample/tcpdump/tcpdump.patch 0x6e68b
-
-
+patching at the ip checksum point:
+python patch_checksum.py patch_sample/tcpdump/tcpdump.patch.patch 0x31615
+patching at the ip checksum point:
+python patch_checksum.py patch_sample/tcpdump/tcpdump.patch.patch.patch 0x30146
 
 '''
 

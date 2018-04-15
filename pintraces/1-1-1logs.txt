@@ -1,0 +1,19 @@
+[DBG] thread begin
+[DBG] thread begin
+[DBG] thread begin
+[DBG] thread begin
+[DBG] thread begin
+taintins DoPropNoExtReg: 0xb7fe7e19 add dword ptr [ebx+0x538], 0x1 tiantsize: 0x4 1aeb 1aec 1aed 1aee 
+[DBG] thread begin
+[DBG] thread begin
+taintins DoPropNoExtReg: 0xb7fe7e19 add dword ptr [ebx+0x538], 0x1 tiantsize: 0x4 1aeb 1aec 1aed 1aee 
+[DBG] thread begin
+[DBG] thread begin
+taintins DoPropNoExtReg: 0xb7fe7e19 add dword ptr [ebx+0x538], 0x1 tiantsize: 0x4 1aeb 1aec 1aed 1aee 
+taintins DoPropNoExtReg: 0xb7fe7e19 add dword ptr [ebx+0x538], 0x1 tiantsize: 0x4 1aeb 1aec 1aed 1aee 
+[DBG] thread begin
+[DBG] thread begin
+[DBG] thread begin
+[DBG] thread begin
+taintins DoPropNoExtReg: 0xb7fe7e19 add dword ptr [ebx+0x538], 0x1 tiantsize: 0x4 1aeb 1aec 1aed 1aee 
+[DBG] thread begin
