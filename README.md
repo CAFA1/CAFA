@@ -122,7 +122,7 @@ python schedule_identify.py Taint-S 148 8 0 tar ./sample/tar/origin/tar -tf ./sa
     python schedule_identify.py Taint-S 0x50 2 0 tcpdump ./sample/tcp/origin/tcpdump " -v -r  " ./sample/igmp/good_igmp.pcap ./sample/igmp/bad_igmp.pcap 
     ``` 
 # Commands to patch at the checksum point   
-'''
+```
 python patch_checksum.py file_name checksum_point  
 
 python patch_checksum.py patch_sample/libz/libz.so.1.2.3.4 0x922e
@@ -134,9 +134,9 @@ python patch_checksum.py patch_sample/unzip/unzip 0x70d6
 python patch_checksum.py patch_sample/tar/tar 0x16eae
 python patch_checksum.py patch_sample/rar/rar 0xe728 
 
-'''
+```
 You can also patch the same program multiple times.   
-'''
+```
 patching at the udp checksum point:
 python patch_checksum.py patch_sample/tcpdump/tcpdump 0x73115  
 patching at the tcp checksum point:
@@ -146,7 +146,7 @@ python patch_checksum.py patch_sample/tcpdump/tcpdump.patch.patch 0x31615
 patching at the ip checksum point:
 python patch_checksum.py patch_sample/tcpdump/tcpdump.patch.patch.patch 0x30146
 
-'''
+```
 
 # AFL Fuzz ImageMagick command
 1. Before patching  
