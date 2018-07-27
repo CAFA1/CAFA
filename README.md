@@ -1,4 +1,5 @@
 # CAFA: A Checksum-Aware Fuzzing Assistant For More Coverage
+CAFA is an assistant tool designed by liuxiaolong to help the fuzzer(like AFL) bypass the checksum verification of the tested program for more coverage and more vulnerabilities.
 
 # OS
 Ubuntu 12.04 32bit (Other OS may have problems.)
