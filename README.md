@@ -73,7 +73,7 @@ python schedule_identify.py Taint-S 0x1aeb 4 0 libz.so ./sample/png/optipng/opti
 
 ```
 
-4. gz  
+4. gzip  
 ```
 python schedule_identify.py Taint-S 0 0x21 1 gzip ./sample/gz/origin/gzip -d ./sample/gz/good.txt.gz ./sample/gz/bad.txt.gz 
 python schedule_identify.py Taint-S 0x19 4 1 gzip ./sample/gz/origin/gzip -d ./sample/gz/good.txt.gz ./sample/gz/bad.txt.gz 
@@ -121,7 +121,7 @@ python schedule_identify.py Taint-S 148 8 0 tar ./sample/tar/origin/tar -tf ./sa
     python schedule_identify.py Taint-S 0x4e 16 0 tcpdump ./sample/tcp/origin/tcpdump " -v -r  " ./sample/igmp/good_igmp.pcap ./sample/igmp/bad_igmp.pcap 
     python schedule_identify.py Taint-S 0x50 2 0 tcpdump ./sample/tcp/origin/tcpdump " -v -r  " ./sample/igmp/good_igmp.pcap ./sample/igmp/bad_igmp.pcap 
     ``` 
-# Commands to patch at the checksum point  
+# Commands to patch at the checksum point   
 '''
 python patch_checksum.py file_name checksum_point  
 
@@ -135,7 +135,7 @@ python patch_checksum.py patch_sample/tar/tar 0x16eae
 python patch_checksum.py patch_sample/rar/rar 0xe728 
 
 '''
-You can also patch the same program multiple times.
+You can also patch the same program multiple times.   
 '''
 patching at the udp checksum point:
 python patch_checksum.py patch_sample/tcpdump/tcpdump 0x73115  
