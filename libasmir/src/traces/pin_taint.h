@@ -108,6 +108,9 @@ extern bool crc32_Instrumentation_On ;
 extern InstrumentFunction instrument_functions[XED_ICLASS_LAST];
 extern void InitInstr();
 #define SysLog ((thread_info1[0].trace_file))
+//liu 2018
+extern unsigned long long g_ins_count;
+extern unsigned long long g_taint_ins;
 typedef struct TNT_mem
 {
   ADDRINT addr_start;

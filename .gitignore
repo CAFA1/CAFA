@@ -13,5 +13,9 @@ pintraces/sample/png/out/*
 *1.txt
 *peda*
 *log.txt
+time.ods
+.~lock.time.ods#
+pintraces/pin.log
+pintraces/taintins.txt
 
 

@@ -1818,8 +1818,9 @@ VOID ThreadEnd(THREADID threadid, CONTEXT *ctx, INT32 code, VOID *v)
 {
     ThreadInfo_t *ti = NULL;
   
-    //cerr << "Thread " << threadid << " ending" << endl;
-
+    TraceFile << "Thread " << threadid << " ending" << endl;
+    TraceFile<< "g_ins_count: "<<dec<<g_ins_count<<endl;
+    TraceFile<< "g_taint_ins: "<<dec<<g_taint_ins<<endl;
     // Free thread-local data
     //liu 911
     thread_info1[threadid].taint_prop = false;
@@ -2268,7 +2269,9 @@ VOID Cleanup()
         fpaddrs.close();
 
         cerr << "cleanup"<<endl;
-        std::cerr << " process: " << PIN_GetPid() <<" "<< g_threadname << std::endl;
+        //std::cerr << " process: " << PIN_GetPid() <<" "<< g_threadname << std::endl;
+        cerr<< "g_ins_count: "<<dec<<g_ins_count<<endl;
+        cerr<< "g_taint_ins: "<<dec<<g_taint_ins<<endl;
         
     }
     ReleaseLock(&lock);
@@ -2301,6 +2304,8 @@ int main(int argc, char *argv[])
     //liu 911
     InitLogs(0);
     InitInstr();//
+    //liu 2018
+    g_ins_count=0;
     //liu 911
     // Check if a trigger was specified.
     if (KnobTrigAddr.Value() != 0) {

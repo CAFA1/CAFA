@@ -60,6 +60,9 @@ bool CompactLog = true;
 #define REMOVE_REP 0
 #define NR_REG(_TYPE) ((_TYPE ## _LAST) - (_TYPE ## _BASE) + 1)
 bool TAINT_Instrumentation_On = false;
+//long 2018
+unsigned long long g_ins_count = 0;
+unsigned long long g_taint_ins=0;
 InstrumentFunction instrument_functions[XED_ICLASS_LAST];
 unsigned int setmem_untaint = 0;
 unsigned int setmem_taint = 0;
@@ -76,7 +79,7 @@ PIN_LOCK lock;
 PIN_LOCK lock1;
 bool TAINT_Analysis_On = false;
 bool liu_debug = false;
-bool liu_debug_analysis = true;
+bool liu_debug_analysis = false;
 char mem_taint[TAINT_TABLE_SIZE+1];
 #define RECORD_REP_COUNT 1
 #define REMOVE_MEM_ADDRESSING 0
@@ -735,6 +738,7 @@ VOID PIN_FAST_ANALYSIS_CALL HandleRepMov(ADDRINT iaddr, ADDRINT reg_ecx,ADDRINT 
                        THREADID id,string*disas)
 {
    set<int> t;
+   g_ins_count++;
    if(GetRegisterTaint(REG_ECX,id,iaddr))
    {
      string info=string("REP ECX tainted with instruction addr 0x")+itoHex(iaddr);
@@ -749,6 +753,11 @@ VOID PIN_FAST_ANALYSIS_CALL HandleRepMov(ADDRINT iaddr, ADDRINT reg_ecx,ADDRINT 
      PrintTaintInstrunction(iaddr,t);
    }
    t=copytaint(memsrc, memdst, memsrcsz, 1, memdstsz, 1, id);
+   //g_ins_count++;
+   if(!t.empty())
+    {
+      g_taint_ins++;
+    }
    if(liu_debug_analysis)
    {
     if(!t.empty())
@@ -921,7 +930,7 @@ void SetRegisterTaintSrc(set<int> taintsrc, REG r, THREADID id, ADDRINT iaddr)
 VOID PIN_FAST_ANALYSIS_CALL RegisterUntaint(ADDRINT iaddr, UINT32 regid, THREADID id)
 {
   REG reg;
-      
+  g_ins_count++;
   if (regid < (NR_REG(REG_GR)))
     reg = static_cast<REG>(REG_GR_BASE + regid);
   else
@@ -930,12 +939,19 @@ VOID PIN_FAST_ANALYSIS_CALL RegisterUntaint(ADDRINT iaddr, UINT32 regid, THREADI
   set<int> t;
   SetRegisterTaintSrc(t,reg,id,iaddr);
   SetRegisterTaint(false, reg, id, iaddr);
+  
+  g_taint_ins++;
+    
 
 }
 //内存漂白
 VOID PIN_FAST_ANALYSIS_CALL MemUntaint(ADDRINT iaddr, ADDRINT memaddr, ADDRINT memsz, THREADID id)
 {
+  g_ins_count++;
   Setmem_taint(memaddr, memsz, false, iaddr, id); 
+  
+  g_taint_ins++;
+    
 }
 //仅仅mov用到，例如REP,CALL [0x1234]等
 //将某一内存区域的污点信息拷贝到另一内存区域中
@@ -946,7 +962,13 @@ VOID PIN_FAST_ANALYSIS_CALL DoPropMemtoMem(ADDRINT iaddr, ADDRINT memsrc,
 {
   //count_profile(iaddr);
   //modified by long
+  
   set<int> t=copytaint(memsrc, memdst, memsrcsz, 1, memdstsz, 1, id);
+  g_ins_count++;
+  if(!t.empty())
+  {
+      g_taint_ins++;
+  }
   if(liu_debug_analysis)
   {
     if(!t.empty())
@@ -992,6 +1014,11 @@ VOID PIN_FAST_ANALYSIS_CALL DoPropMemBaseIndextoReg(ADDRINT iaddr, ADDRINT memsr
       SetRegisterTaint((!t.empty()), static_cast<REG>(reg_dstid), id, iaddr);
   
   }
+  g_ins_count++;
+  if(!t.empty())
+  {
+      g_taint_ins++;
+  }
   if(liu_debug_analysis)
   {
     if(!t.empty())
@@ -1016,11 +1043,16 @@ VOID PIN_FAST_ANALYSIS_CALL DoPropMemtoReg(ADDRINT iaddr, ADDRINT memsrc,
   
   //count_profile(iaddr);  
   set<int> t;
-  
+  g_ins_count++;
   // by long 
   t=GetMemTaintSource(memsrc, memsz, iaddr, id);
   SetRegisterTaintSrc(t,static_cast<REG>(reg_dstid), id, iaddr);
   SetRegisterTaint((!t.empty()), static_cast<REG>(reg_dstid), id, iaddr);
+  //g_ins_count++;
+  if(!t.empty())
+  {
+      g_taint_ins++;
+  }
   if(liu_debug_analysis)
   {
     if(!t.empty())
@@ -1081,10 +1113,14 @@ VOID PIN_FAST_ANALYSIS_CALL liuR_M1(ADDRINT iaddr,
   REG reg;
   set<int> taintsrc; 
   reg = static_cast<REG>(reg_read);
-    
+  g_ins_count++;
   taintsrc=GetRegisterTaintSrc(reg,id,iaddr);
   is_tainted |= (!taintsrc.empty());
-  if (is_tainted)
+  if(!taintsrc.empty())
+  {
+      g_taint_ins++;
+  }
+  if (is_tainted && liu_debug_analysis)
   {
     //print taint ins
     TraceFile <<" liuR_M "<<hex<<iaddr<<" "<<*disas<<" reg: "<<REG_StringShort(reg)<<" mem: "<<mem_write<<" memsize: "<<mem_write_sz<<endl;  
@@ -1103,10 +1139,14 @@ VOID PIN_FAST_ANALYSIS_CALL liuR_M(ADDRINT iaddr,
   REG reg;
   set<int> taintsrc; 
   reg = static_cast<REG>(reg_read);
-    
+  g_ins_count++;
   taintsrc=GetRegisterTaintSrc(reg,id,iaddr);
   is_tainted |= (!taintsrc.empty());
-  if (is_tainted)
+  if(!taintsrc.empty())
+  {
+      g_taint_ins++;
+  }
+  if (is_tainted && liu_debug_analysis)
   {
     //print taint ins
     TraceFile <<" liuR_M "<<hex<<iaddr<<" "<<*disas<<" reg: "<<REG_StringShort(reg)<<" mem: "<<mem_write<<" memsize: "<<mem_write_sz<<endl;  
@@ -1135,11 +1175,16 @@ VOID PIN_FAST_ANALYSIS_CALL liuM_R(ADDRINT iaddr, ADDRINT memsrc,
   
   //count_profile(iaddr);  
   set<int> t;
-  
+  g_ins_count++;
   // by long 
   t=GetMemTaintSource(memsrc, memsz, iaddr, id);
   SetRegisterTaintSrc(t,static_cast<REG>(reg_dstid), id, iaddr);
   SetRegisterTaint((!t.empty()), static_cast<REG>(reg_dstid), id, iaddr);
+  //g_ins_count++;
+  if(!t.empty())
+  {
+      g_taint_ins++;
+  }
   if(liu_debug_analysis)
   {
     if(!t.empty())
@@ -1173,7 +1218,7 @@ VOID PIN_FAST_ANALYSIS_CALL DoPropNoExtReg(ADDRINT iaddr, UINT32 gr_read,
   REG reg;
   set<int> taintsrc;
   
-
+  g_ins_count++;
   /* Read in the tags of all register read operands -- 
    * full general purpose regs, partial general purpose regs,
    * mm regs, and xmm regs
@@ -1252,7 +1297,11 @@ VOID PIN_FAST_ANALYSIS_CALL DoPropNoExtReg(ADDRINT iaddr, UINT32 gr_read,
       static_cast<REG>(REG_EFLAGS),id,iaddr);
   }
   set<int>t=taintsrc;
-  
+  //g_ins_count++;
+  if(!t.empty())
+  {
+      g_taint_ins++;
+  }
   if(liu_debug_analysis)
   {
     if(!t.empty())
@@ -1278,6 +1327,7 @@ VOID PIN_FAST_ANALYSIS_CALL DoPropRegR2(ADDRINT iaddr, UINT32 reg_src1id, UINT32
 {
   //count_profile(iaddr); 
   //by long，如果两个操作数进行了运算，那么目的操作数的污点源一定是这两个操作数污点源的并
+  g_ins_count++;
   set<int> t=Union(GetRegisterTaintSrc(static_cast<REG>(reg_src1id), id, iaddr),GetRegisterTaintSrc(static_cast<REG>(reg_src2id), id, iaddr));
   SetRegisterTaintSrc(t,static_cast<REG>(reg_dstid),id,iaddr);
 
@@ -1292,6 +1342,11 @@ VOID PIN_FAST_ANALYSIS_CALL DoPropRegR2(ADDRINT iaddr, UINT32 reg_src1id, UINT32
     SetRegisterTaint(GetRegisterTaint(static_cast<REG>(reg_src1id), id, iaddr)
       | GetRegisterTaint(static_cast<REG>(reg_src2id), id, iaddr),
       static_cast<REG>(REG_EFLAGS),id,iaddr);
+  }
+  //g_ins_count++;
+  if(!t.empty())
+  {
+      g_taint_ins++;
   }
   if(liu_debug_analysis)
   {
@@ -1310,7 +1365,7 @@ VOID PIN_FAST_ANALYSIS_CALL DoPropRegR2(ADDRINT iaddr, UINT32 reg_src1id, UINT32
   }
 }
 /************************************************************************/
-/* 读了一个寄存器,R->R，只需把污点信息复制到目标寄存器                  */
+/*                 */
 /************************************************************************/
 VOID PIN_FAST_ANALYSIS_CALL liu0_R(ADDRINT iaddr,  UINT32 reg_dstid, THREADID id)
 {       
@@ -1318,9 +1373,12 @@ VOID PIN_FAST_ANALYSIS_CALL liu0_R(ADDRINT iaddr,  UINT32 reg_dstid, THREADID id
   //REG reg_read=static_cast<REG>(reg_srcid);
   //REG reg_write=static_cast<REG>(reg_dstid);
   set<int> t;
+  g_ins_count++;
   SetRegisterTaintSrc(t,static_cast<REG>(reg_dstid),id,iaddr);
 
   SetRegisterTaint(false,static_cast<REG>(reg_dstid),id,iaddr);
+  
+  g_taint_ins++;
   
 }
 /************************************************************************/
@@ -1332,10 +1390,15 @@ VOID PIN_FAST_ANALYSIS_CALL liuR_R(ADDRINT iaddr, UINT32 reg_srcid, UINT32 reg_d
   //REG reg_read=static_cast<REG>(reg_srcid);
   //REG reg_write=static_cast<REG>(reg_dstid);
   set<int> t=GetRegisterTaintSrc(static_cast<REG>(reg_srcid),id,iaddr);
+  g_ins_count++;
   SetRegisterTaintSrc(t,static_cast<REG>(reg_dstid),id,iaddr);
 
   SetRegisterTaint(GetRegisterTaint(static_cast<REG>(reg_srcid), id, iaddr),static_cast<REG>(reg_dstid),id,iaddr);
-  if(liu_debug)
+  if(!t.empty())
+  {
+      g_taint_ins++;
+  }
+  if(liu_debug_analysis)
   {
     if(t.size()>0)
     {
@@ -1351,11 +1414,16 @@ VOID PIN_FAST_ANALYSIS_CALL liuR_R2(ADDRINT iaddr, UINT32 reg_srcid, UINT32 reg_
   //count_profile(iaddr);  
   //REG reg_read=static_cast<REG>(reg_srcid);
   //REG reg_write=static_cast<REG>(reg_dstid);
+  g_ins_count++;
   set<int> t=GetRegisterTaintSrc(static_cast<REG>(reg_srcid),id,iaddr);
   SetRegisterTaintSrc(t,static_cast<REG>(reg_dstid),id,iaddr);
   SetRegisterTaintSrc(t,static_cast<REG>(reg_dstid1),id,iaddr);
   SetRegisterTaint(GetRegisterTaint(static_cast<REG>(reg_srcid), id, iaddr),static_cast<REG>(reg_dstid),id,iaddr);
   SetRegisterTaint(GetRegisterTaint(static_cast<REG>(reg_srcid), id, iaddr),static_cast<REG>(reg_dstid1),id,iaddr);
+  if(!t.empty())
+  {
+      g_taint_ins++;
+  }
   
 }
 /************************************************************************/
@@ -1367,12 +1435,17 @@ VOID PIN_FAST_ANALYSIS_CALL liuR2_R2(ADDRINT iaddr, UINT32 reg_srcid, UINT32 reg
   //REG reg_read=static_cast<REG>(reg_srcid);
   //REG reg_write=static_cast<REG>(reg_dstid);
   set<int> t=GetRegisterTaintSrc(static_cast<REG>(reg_srcid),id,iaddr);
+  g_ins_count++;
   t = Union(t,GetRegisterTaintSrc(static_cast<REG>(reg_srcid1),id,iaddr));
   SetRegisterTaintSrc(t,static_cast<REG>(reg_dstid),id,iaddr);
   SetRegisterTaintSrc(t,static_cast<REG>(reg_dstid1),id,iaddr);
   bool s = GetRegisterTaint(static_cast<REG>(reg_srcid), id, iaddr)||GetRegisterTaint(static_cast<REG>(reg_srcid), id, iaddr);
   SetRegisterTaint(s,static_cast<REG>(reg_dstid),id,iaddr);
   SetRegisterTaint(s,static_cast<REG>(reg_dstid1),id,iaddr);
+  if(!t.empty())
+  {
+      g_taint_ins++;
+  }
   
 }
 /************************************************************************/
@@ -1385,6 +1458,7 @@ VOID PIN_FAST_ANALYSIS_CALL liuR2_R3(ADDRINT iaddr, UINT32 reg_srcid, UINT32 reg
   //REG reg_write=static_cast<REG>(reg_dstid);
   set<int> t=GetRegisterTaintSrc(static_cast<REG>(reg_srcid),id,iaddr);
   t = Union(t,GetRegisterTaintSrc(static_cast<REG>(reg_srcid1),id,iaddr));
+  g_ins_count++;
   SetRegisterTaintSrc(t,static_cast<REG>(reg_dstid),id,iaddr);
   SetRegisterTaintSrc(t,static_cast<REG>(reg_dstid1),id,iaddr);
   SetRegisterTaintSrc(t,static_cast<REG>(reg_dstid2),id,iaddr);
@@ -1393,6 +1467,10 @@ VOID PIN_FAST_ANALYSIS_CALL liuR2_R3(ADDRINT iaddr, UINT32 reg_srcid, UINT32 reg
   SetRegisterTaint(s,static_cast<REG>(reg_dstid),id,iaddr);
   SetRegisterTaint(s,static_cast<REG>(reg_dstid1),id,iaddr);
   SetRegisterTaint(s,static_cast<REG>(reg_dstid2),id,iaddr);
+  if(!t.empty())
+  {
+      g_taint_ins++;
+  }
   
 }
 /************************************************************************/
@@ -1403,6 +1481,7 @@ VOID PIN_FAST_ANALYSIS_CALL liuR2_EXCH(ADDRINT iaddr, UINT32 reg_srcid, UINT32 r
   //count_profile(iaddr);  
   //REG reg_read=static_cast<REG>(reg_srcid);
   //REG reg_write=static_cast<REG>(reg_dstid);
+  g_ins_count++;
   set<int> t=GetRegisterTaintSrc(static_cast<REG>(reg_srcid),id,iaddr);
   set<int> t1=GetRegisterTaintSrc(static_cast<REG>(reg_dstid),id,iaddr);
   SetRegisterTaintSrc(t,static_cast<REG>(reg_dstid),id,iaddr);
@@ -1411,6 +1490,10 @@ VOID PIN_FAST_ANALYSIS_CALL liuR2_EXCH(ADDRINT iaddr, UINT32 reg_srcid, UINT32 r
   bool s1=GetRegisterTaint(static_cast<REG>(reg_dstid), id, iaddr);
   SetRegisterTaint(s,static_cast<REG>(reg_dstid),id,iaddr);
   SetRegisterTaint(s1,static_cast<REG>(reg_srcid),id,iaddr);
+  if(!t.empty()||!t1.empty())
+  {
+      g_taint_ins++;
+  }
   
 }
 /************************************************************************/
@@ -1423,12 +1506,16 @@ VOID PIN_FAST_ANALYSIS_CALL liuR2_FUCOMI(ADDRINT iaddr, UINT32 reg_srcid, UINT32
   //REG reg_write=static_cast<REG>(reg_dstid);
   set<int> t=GetRegisterTaintSrc(static_cast<REG>(reg_srcid),id,iaddr);
   set<int> t1=Union(t,GetRegisterTaintSrc(static_cast<REG>(reg_dstid),id,iaddr));
+  g_ins_count++;
   SetRegisterTaintSrc(t1,static_cast<REG>(REG_EFLAGS),id,iaddr);
   
   bool s=GetRegisterTaint(static_cast<REG>(reg_srcid), id, iaddr);
   bool s1=GetRegisterTaint(static_cast<REG>(reg_dstid), id, iaddr);
   SetRegisterTaint(s||s1,static_cast<REG>(REG_EFLAGS),id,iaddr);
- 
+  if(!t.empty()||!t1.empty())
+  {
+      g_taint_ins++;
+  }
   
 }
 /************************************************************************/
@@ -1439,10 +1526,15 @@ VOID PIN_FAST_ANALYSIS_CALL liuR2_R(ADDRINT iaddr, UINT32 reg_srcid,UINT32 reg_s
   
   set<int> t=GetRegisterTaintSrc(static_cast<REG>(reg_srcid),id,iaddr);
   t=Union(t,GetRegisterTaintSrc(static_cast<REG>(reg_srcid2),id,iaddr));
- 
+  g_ins_count++;
   SetRegisterTaintSrc(t,static_cast<REG>(reg_dstid),id,iaddr);
 
   SetRegisterTaint(GetRegisterTaint(static_cast<REG>(reg_srcid), id, iaddr)||GetRegisterTaint(static_cast<REG>(reg_srcid2), id, iaddr),static_cast<REG>(reg_dstid),id,iaddr);
+  //g_ins_count++;
+  if(!t.empty())
+  {
+      g_taint_ins++;
+  }
   if(liu_debug_analysis)
   {
     if(!t.empty())
@@ -1470,7 +1562,7 @@ VOID PIN_FAST_ANALYSIS_CALL DoPropRegR1(ADDRINT iaddr, UINT32 reg_srcid, UINT32 
   
   set<int> t=GetRegisterTaintSrc(static_cast<REG>(reg_srcid),id,iaddr);
   SetRegisterTaintSrc(t,static_cast<REG>(reg_dstid),id,iaddr);
-
+  g_ins_count++;
   SetRegisterTaint(GetRegisterTaint(static_cast<REG>(reg_srcid), id, iaddr),
     static_cast<REG>(reg_dstid),id,iaddr);
   
@@ -1481,7 +1573,11 @@ VOID PIN_FAST_ANALYSIS_CALL DoPropRegR1(ADDRINT iaddr, UINT32 reg_srcid, UINT32 
     SetRegisterTaint(GetRegisterTaint(static_cast<REG>(reg_srcid), id, iaddr),
       static_cast<REG>(REG_EFLAGS),id,iaddr);
   }
-  
+  //g_ins_count++;
+  if(!t.empty())
+  {
+      g_taint_ins++;
+  }
   if(liu_debug_analysis)
   {
     if(!t.empty())
@@ -1507,7 +1603,7 @@ VOID PIN_FAST_ANALYSIS_CALL DoProp(ADDRINT iaddr, UINT32 gr_read, UINT32 xt_read
   bool is_tainted = false;
   REG reg;        
   set<int> taintsrc;
-  
+  g_ins_count++;
   for (UINT32 i = 0; i < 32; i++)
   {
     if (gr_read & (1<<i))
@@ -1586,7 +1682,11 @@ VOID PIN_FAST_ANALYSIS_CALL DoProp(ADDRINT iaddr, UINT32 gr_read, UINT32 xt_read
     Setmem_taint(mem_write, mem_write_sz, is_tainted, iaddr, id);
   }
   set<int>t=taintsrc;
-  
+  //g_ins_count++;
+  if(!t.empty())
+  {
+      g_taint_ins++;
+  }
   if(liu_debug_analysis)
   {
     if(!t.empty())
@@ -1620,7 +1720,11 @@ VOID PIN_FAST_ANALYSIS_CALL DoPropRegtoMem(ADDRINT iaddr, UINT32 reg_srcid, ADDR
   t=GetRegisterTaintSrc(static_cast<REG>(reg_srcid),id,iaddr);
   SetMemTaintSource(memsrc,memsz,t,iaddr,id);
   Setmem_taint(memsrc, memsz,(!t.empty()), iaddr, id);
-  
+  g_ins_count++;
+  if(!t.empty())
+  {
+      g_taint_ins++;
+  }
   if(liu_debug_analysis)
   {
     if(!t.empty())
@@ -1982,7 +2086,7 @@ ADDRINT WriteBlock(THREADID threadid,ADDRINT addr,bool taken)
 VOID  CheckConditionalJMP(ADDRINT iaddr,THREADID tid,bool taken,string*disas)
 {
   
-  
+  g_ins_count++;
   if(GetRegisterTaint(REG_EFLAGS, tid, iaddr))
   {
     //liu 47
@@ -1990,13 +2094,18 @@ VOID  CheckConditionalJMP(ADDRINT iaddr,THREADID tid,bool taken,string*disas)
     WriteBlock(tid,iaddr,taken);
     set<int> t= GetRegisterTaintSrc(REG_EFLAGS,tid,iaddr);
     int size1= t.size();
+    if(!t.empty())
+    {
+      g_taint_ins++;
+    }
     TraceFile<<"CheckConditionalJMP: "<<iaddr<<" "<<*disas<<endl;
     if (size1>=iTNTChksmDegree)
     {
-      cout<< "[HIGH-TNT_JMP] " << "PC " << hex <<iaddr <<endl;
+      //cout<< "[HIGH-TNT_JMP] " << "PC " << hex <<iaddr <<endl;
       SysLog << "[HIGH-TNT_JMP] " << "PC " << hex <<iaddr <<endl;
     }
   }
+
   return;
   
 }
@@ -2160,6 +2269,8 @@ static uint32_t GetBitsOfReg(REG r) {
 // Generic propagation logic based on Pin's interpretation of what is being read and written by an instruction
 // For commonly invoked instructions, we create a fast path that is designed for each instruction specifically
 // to reduce both analysis cost and instrumentation cost.
+
+//g_ins_count=0;
 VOID InstructionProp(INS ins, VOID *v)
 {
   REG reg;
@@ -2167,6 +2278,9 @@ VOID InstructionProp(INS ins, VOID *v)
   bool is_mem_read1, is_mem_read2, is_mem_write;
   ADDRINT iaddr = INS_Address(ins);
   UINT32 gr_read, gr_write, xt_read, xt_write,eflag_write;
+  //liu 2018
+  //g_ins_count++;
+
   //liu 1016 taint
   if (!TAINT_Instrumentation_On) return;//OnDemand，只有按下了ALT+<，下面的程序才会执行
 
