@@ -39,10 +39,10 @@ python schedule_identify.py Taint-S 8 0x16 0 libpng /usr/local/bin/magick identi
 python schedule_identify.py Taint-S 0x1d 4 0 libpng /usr/local/bin/magick identify ./sample/png/good.png ./sample/png/bad.png
 
 2. Identify the crc32 checksum point:
-python schedule_convert.py Taint-S 0x1aef 4 0 libpng /usr/local/bin/magick convert ./sample/adobe/good.png ./sample/adobe/bad_crc.png 
+python schedule_identify.py Taint-S 0x1aef 4 0 libpng /usr/local/bin/magick convert ./sample/adobe/good.png ./sample/adobe/bad_crc.png 
 
 3. Identify the Adler32 checksum point:
-python schedule_convert.py Taint-S 0x1aeb 4 0 libz.so /usr/local/bin/magick convert  ./sample/adobe/good.png ./sample/adobe/bad_adler.png 
+python schedule_identify.py Taint-S 0x1aeb 4 0 libz.so /usr/local/bin/magick convert  ./sample/adobe/good.png ./sample/adobe/bad_adler.png 
 
 ```
 2. optipng  
@@ -70,7 +70,7 @@ python schedule_identify.py Taint-S 0x1d 4 0 pngcheck ./sample/png/origin_pngche
 python schedule_identify.py Taint-S 0x1aef 4 0 pngcheck ./sample/png/origin_pngcheck/pngcheck " " ./sample/adobe/good.png ./sample/adobe/bad_crc.png 
 
 3. Identify the Adler32 checksum point:
-python schedule_identify.py Taint-S 0x1aeb 4 0 libz.so ./sample/png/optipng/optipng " " ./sample/adobe/good.png ./sample/adobe/bad_crc_adler.png 
+python schedule_identify.py Taint-S 0x1aeb 4 0 libz.so ./sample/png/origin_pngcheck/pngcheck " " ./sample/adobe/good.png ./sample/adobe/bad_crc.png 
 
 ```
 
