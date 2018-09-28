@@ -152,7 +152,7 @@ def compare_run(threshold,offsets1,offsets2,coverage,elfpath,ext_command,good_sa
     run_cmd(threshold,offsets1,offsets2,coverage,elfpath,good_sample,ext_command)
     #os.system("grep 'taintins' 1-1-0logs.txt|wc -l > taintins.txt")
     os.system('grep -n g_ 1-1-0logs.txt')
-    
+
     os.system("cp 1-1-addrs.txt good_1.txt")
     os.system("rm 1.txt")
     run_cmd(threshold,offsets1,offsets2,coverage,elfpath,bad_sample,ext_command)
@@ -309,7 +309,7 @@ if __name__ == "__main__":
     else:
         main(sys.argv)
         #os.system('cat taintins.txt')
-        os.system('grep -n g_ 1-1-0logs.txt')
+        #os.system('grep -n g_ 1-1-0logs.txt')
         
         
 
